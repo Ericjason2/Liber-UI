@@ -1,0 +1,36 @@
+{
+  "slug": "vercel",
+  "kind": "logo",
+  "name": "Vercel",
+  "description": "Plateforme cloud de déploiement et d'hébergement frontend.",
+  "aliases": [
+    "zeit"
+  ],
+  "category": "devops",
+  "tags": [
+    "hosting",
+    "cloud",
+    "nextjs",
+    "deployment"
+  ],
+  "license": "trademark",
+  "author": "Vercel, Inc.",
+  "website": "https://vercel.com",
+  "brandGuidelinesUrl": "https://vercel.com/geist/brands",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/vercel/vercel-original.svg",
+    "retrievedAt": "2026-10-25"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#000000"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

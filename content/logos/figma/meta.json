@@ -1,0 +1,33 @@
+{
+  "slug": "figma",
+  "kind": "logo",
+  "name": "Figma",
+  "description": "Outil collaboratif de conception d'interfaces et de prototypage dans le navigateur.",
+  "aliases": [
+    "figma design"
+  ],
+  "category": "tools",
+  "tags": [
+    "design",
+    "ui",
+    "ux",
+    "vector"
+  ],
+  "license": "trademark",
+  "author": "Figma, Inc.",
+  "website": "https://www.figma.com",
+  "brandGuidelinesUrl": "https://www.figma.com/using-the-figma-brand/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/figma/figma-original.svg",
+    "retrievedAt": "2026-10-25"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#f24e1e"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

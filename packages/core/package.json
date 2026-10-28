@@ -1,0 +1,30 @@
+{
+  "name": "@liber/core",
+  "version": "0.1.0",
+  "description": "Liber core index and TypeScript types",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./schema": {
+      "types": "./dist/schema.d.ts",
+      "import": "./dist/schema.js"
+    },
+    "./index.json": "./index.json"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

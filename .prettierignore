@@ -1,0 +1,15 @@
+pnpm-lock.yaml
+node_modules
+dist
+out
+.next
+.turbo
+coverage
+packages/core/generated
+packages/svg/logos
+packages/react/src
+apps/web/public/r
+apps/web/public/svg
+apps/web/public/search-index.json
+content/**/*.svg
+scripts/__fixtures__/**/*.svg

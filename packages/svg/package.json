@@ -1,0 +1,10 @@
+{
+  "name": "@liber/svg",
+  "version": "0.1.0",
+  "description": "Liber raw optimized SVG logos",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "logos"
+  ]
+}

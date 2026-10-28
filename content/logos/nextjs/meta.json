@@ -1,0 +1,37 @@
+{
+  "slug": "nextjs",
+  "kind": "logo",
+  "name": "Next.js",
+  "description": "Framework React pour le rendu serveur et les applications web modernes.",
+  "aliases": [
+    "next.js",
+    "next"
+  ],
+  "category": "frontend",
+  "tags": [
+    "react",
+    "framework",
+    "ssr",
+    "frontend"
+  ],
+  "license": "trademark",
+  "author": "Vercel, Inc.",
+  "website": "https://nextjs.org",
+  "brandGuidelinesUrl": "https://vercel.com/geist/brands",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/nextjs/nextjs-original.svg",
+    "retrievedAt": "2026-10-25"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#000000"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

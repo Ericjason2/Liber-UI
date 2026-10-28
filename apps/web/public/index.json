@@ -1,0 +1,374 @@
+{
+  "version": "0.1.0",
+  "updatedAt": "2026-10-28T16:12:42.301Z",
+  "stats": {
+    "total": 10,
+    "logos": 10,
+    "blocks": 0,
+    "components": 0,
+    "themes": 0,
+    "fonts": 0
+  },
+  "items": [
+    {
+      "slug": "docker",
+      "kind": "logo",
+      "name": "Docker",
+      "description": "Plateforme de conteneurisation d'applications.",
+      "aliases": [
+        "container",
+        "docker engine"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "containers",
+        "docker",
+        "virtualization"
+      ],
+      "license": "trademark",
+      "author": "Docker Inc",
+      "website": "https://www.docker.com",
+      "brandGuidelinesUrl": "https://www.docker.com/company/newsroom/media-resources/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/docker/docker-original.svg",
+        "retrievedAt": "2026-10-25"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#019bc6"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "figma",
+      "kind": "logo",
+      "name": "Figma",
+      "description": "Outil collaboratif de conception d'interfaces et de prototypage dans le navigateur.",
+      "aliases": [
+        "figma design"
+      ],
+      "category": "tools",
+      "tags": [
+        "design",
+        "ui",
+        "ux",
+        "vector"
+      ],
+      "license": "trademark",
+      "author": "Figma, Inc.",
+      "website": "https://www.figma.com",
+      "brandGuidelinesUrl": "https://www.figma.com/using-the-figma-brand/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/figma/figma-original.svg",
+        "retrievedAt": "2026-10-25"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#f24e1e"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "git",
+      "kind": "logo",
+      "name": "Git",
+      "description": "Système de contrôle de version distribué rapide et éprouvé.",
+      "aliases": [
+        "vcs"
+      ],
+      "category": "tools",
+      "tags": [
+        "version-control",
+        "vcs",
+        "cli",
+        "git"
+      ],
+      "license": "trademark",
+      "author": "Software Freedom Conservancy",
+      "website": "https://git-scm.com",
+      "brandGuidelinesUrl": "https://git-scm.com/community/logos",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/git/git-original.svg",
+        "retrievedAt": "2026-10-25"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#f34f29"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "github",
+      "kind": "logo",
+      "name": "GitHub",
+      "description": "Plateforme d'hébergement de code et collaboration Git.",
+      "aliases": [
+        "git hub",
+        "gh"
+      ],
+      "category": "devops",
+      "tags": [
+        "git",
+        "version-control",
+        "hosting",
+        "code"
+      ],
+      "license": "trademark",
+      "author": "GitHub, Inc.",
+      "website": "https://github.com",
+      "brandGuidelinesUrl": "https://brand.github.com/foundations/logo",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/github/github-original.svg",
+        "retrievedAt": "2026-10-25"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#181717"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "nextjs",
+      "kind": "logo",
+      "name": "Next.js",
+      "description": "Framework React pour le rendu serveur et les applications web modernes.",
+      "aliases": [
+        "next.js",
+        "next"
+      ],
+      "category": "frontend",
+      "tags": [
+        "react",
+        "framework",
+        "ssr",
+        "frontend"
+      ],
+      "license": "trademark",
+      "author": "Vercel, Inc.",
+      "website": "https://nextjs.org",
+      "brandGuidelinesUrl": "https://vercel.com/geist/brands",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/nextjs/nextjs-original.svg",
+        "retrievedAt": "2026-10-25"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#000000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "nodejs",
+      "kind": "logo",
+      "name": "Node.js",
+      "description": "Environnement d'exécution JavaScript côté serveur.",
+      "aliases": [
+        "node",
+        "node.js"
+      ],
+      "category": "backend",
+      "tags": [
+        "javascript",
+        "runtime",
+        "server",
+        "backend"
+      ],
+      "license": "trademark",
+      "author": "OpenJS Foundation",
+      "website": "https://nodejs.org",
+      "brandGuidelinesUrl": "https://nodejs.org/en/about/branding",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/nodejs/nodejs-original.svg",
+        "retrievedAt": "2026-10-25"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#5fa04e"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "postgresql",
+      "kind": "logo",
+      "name": "PostgreSQL",
+      "description": "Système de gestion de base de données relationnelle objet libre et puissant.",
+      "aliases": [
+        "postgres",
+        "pgsql"
+      ],
+      "category": "backend",
+      "tags": [
+        "database",
+        "sql",
+        "relational",
+        "rdbms"
+      ],
+      "license": "trademark",
+      "author": "PostgreSQL Community Association",
+      "website": "https://www.postgresql.org",
+      "brandGuidelinesUrl": "https://www.postgresql.org/about/policies/trademarks/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/postgresql/postgresql-original.svg",
+        "retrievedAt": "2026-10-25"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#336791"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "tailwindcss",
+      "kind": "logo",
+      "name": "Tailwind CSS",
+      "description": "Framework CSS utilitaire pour concevoir rapidement des interfaces.",
+      "aliases": [
+        "tailwind",
+        "tw"
+      ],
+      "category": "tools",
+      "tags": [
+        "css",
+        "styling",
+        "framework",
+        "design"
+      ],
+      "license": "trademark",
+      "author": "Tailwind Labs",
+      "website": "https://tailwindcss.com",
+      "brandGuidelinesUrl": "https://tailwindcss.com/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/tailwindcss/tailwindcss-original.svg",
+        "retrievedAt": "2026-10-25"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#38bdf8"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "typescript",
+      "kind": "logo",
+      "name": "TypeScript",
+      "description": "Sur-ensemble typé de JavaScript développé par Microsoft.",
+      "aliases": [
+        "ts"
+      ],
+      "category": "languages",
+      "tags": [
+        "javascript",
+        "types",
+        "programming",
+        "language"
+      ],
+      "license": "trademark",
+      "author": "Microsoft",
+      "website": "https://www.typescriptlang.org",
+      "brandGuidelinesUrl": "https://www.typescriptlang.org/branding/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/typescript/typescript-original.svg",
+        "retrievedAt": "2026-10-25"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#007acc"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "vercel",
+      "kind": "logo",
+      "name": "Vercel",
+      "description": "Plateforme cloud de déploiement et d'hébergement frontend.",
+      "aliases": [
+        "zeit"
+      ],
+      "category": "devops",
+      "tags": [
+        "hosting",
+        "cloud",
+        "nextjs",
+        "deployment"
+      ],
+      "license": "trademark",
+      "author": "Vercel, Inc.",
+      "website": "https://vercel.com",
+      "brandGuidelinesUrl": "https://vercel.com/geist/brands",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/vercel/vercel-original.svg",
+        "retrievedAt": "2026-10-25"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#000000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "nodejs",
+  "kind": "logo",
+  "name": "Node.js",
+  "description": "Environnement d'exécution JavaScript côté serveur.",
+  "aliases": [
+    "node",
+    "node.js"
+  ],
+  "category": "backend",
+  "tags": [
+    "javascript",
+    "runtime",
+    "server",
+    "backend"
+  ],
+  "license": "trademark",
+  "author": "OpenJS Foundation",
+  "website": "https://nodejs.org",
+  "brandGuidelinesUrl": "https://nodejs.org/en/about/branding",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/nodejs/nodejs-original.svg",
+    "retrievedAt": "2026-10-25"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#5fa04e"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

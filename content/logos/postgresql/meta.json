@@ -1,0 +1,37 @@
+{
+  "slug": "postgresql",
+  "kind": "logo",
+  "name": "PostgreSQL",
+  "description": "Système de gestion de base de données relationnelle objet libre et puissant.",
+  "aliases": [
+    "postgres",
+    "pgsql"
+  ],
+  "category": "backend",
+  "tags": [
+    "database",
+    "sql",
+    "relational",
+    "rdbms"
+  ],
+  "license": "trademark",
+  "author": "PostgreSQL Community Association",
+  "website": "https://www.postgresql.org",
+  "brandGuidelinesUrl": "https://www.postgresql.org/about/policies/trademarks/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/postgresql/postgresql-original.svg",
+    "retrievedAt": "2026-10-25"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#336791"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

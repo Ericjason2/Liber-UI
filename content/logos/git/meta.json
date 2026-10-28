@@ -1,0 +1,36 @@
+{
+  "slug": "git",
+  "kind": "logo",
+  "name": "Git",
+  "description": "Système de contrôle de version distribué rapide et éprouvé.",
+  "aliases": [
+    "vcs"
+  ],
+  "category": "tools",
+  "tags": [
+    "version-control",
+    "vcs",
+    "cli",
+    "git"
+  ],
+  "license": "trademark",
+  "author": "Software Freedom Conservancy",
+  "website": "https://git-scm.com",
+  "brandGuidelinesUrl": "https://git-scm.com/community/logos",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/git/git-original.svg",
+    "retrievedAt": "2026-10-25"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#f34f29"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

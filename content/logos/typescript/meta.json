@@ -1,0 +1,33 @@
+{
+  "slug": "typescript",
+  "kind": "logo",
+  "name": "TypeScript",
+  "description": "Sur-ensemble typé de JavaScript développé par Microsoft.",
+  "aliases": [
+    "ts"
+  ],
+  "category": "languages",
+  "tags": [
+    "javascript",
+    "types",
+    "programming",
+    "language"
+  ],
+  "license": "trademark",
+  "author": "Microsoft",
+  "website": "https://www.typescriptlang.org",
+  "brandGuidelinesUrl": "https://www.typescriptlang.org/branding/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/typescript/typescript-original.svg",
+    "retrievedAt": "2026-10-25"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#007acc"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

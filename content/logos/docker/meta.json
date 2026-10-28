@@ -1,0 +1,37 @@
+{
+  "slug": "docker",
+  "kind": "logo",
+  "name": "Docker",
+  "description": "Plateforme de conteneurisation d'applications.",
+  "aliases": [
+    "container",
+    "docker engine"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "containers",
+    "docker",
+    "virtualization"
+  ],
+  "license": "trademark",
+  "author": "Docker Inc",
+  "website": "https://www.docker.com",
+  "brandGuidelinesUrl": "https://www.docker.com/company/newsroom/media-resources/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/docker/docker-original.svg",
+    "retrievedAt": "2026-10-25"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#019bc6"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

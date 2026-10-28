@@ -1,0 +1,25 @@
+{
+  "name": "@liber/scripts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "tsx validate.ts",
+    "generate": "tsx generate.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "culori": "^4.0.2",
+    "svgo": "^4.1.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.15",
+    "typescript": "^5.0.0",
+    "vitest": "^5.0.5"
+  }
+}

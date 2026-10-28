@@ -1,0 +1,37 @@
+{
+  "slug": "tailwindcss",
+  "kind": "logo",
+  "name": "Tailwind CSS",
+  "description": "Framework CSS utilitaire pour concevoir rapidement des interfaces.",
+  "aliases": [
+    "tailwind",
+    "tw"
+  ],
+  "category": "tools",
+  "tags": [
+    "css",
+    "styling",
+    "framework",
+    "design"
+  ],
+  "license": "trademark",
+  "author": "Tailwind Labs",
+  "website": "https://tailwindcss.com",
+  "brandGuidelinesUrl": "https://tailwindcss.com/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/tailwindcss/tailwindcss-original.svg",
+    "retrievedAt": "2026-10-25"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#38bdf8"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

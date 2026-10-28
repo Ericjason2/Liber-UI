@@ -1,0 +1,16 @@
+{
+  "slug": "broken-sample",
+  "kind": "logo",
+  "name": "Broken Sample",
+  "description": "Invalid logo fixture for unit tests.",
+  "aliases": ["broken"],
+  "category": "tools",
+  "license": "invalid-license",
+  "author": "Test",
+  "website": "not-a-valid-url",
+  "brandGuidelinesUrl": "http://insecure.com",
+  "source": { "url": "not-an-https-url", "retrievedAt": "bad-date" },
+  "variants": {
+    "color": { "file": "color.svg", "hex": "not-a-hex" }
+  }
+}

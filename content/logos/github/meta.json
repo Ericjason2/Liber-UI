@@ -1,0 +1,37 @@
+{
+  "slug": "github",
+  "kind": "logo",
+  "name": "GitHub",
+  "description": "Plateforme d'hébergement de code et collaboration Git.",
+  "aliases": [
+    "git hub",
+    "gh"
+  ],
+  "category": "devops",
+  "tags": [
+    "git",
+    "version-control",
+    "hosting",
+    "code"
+  ],
+  "license": "trademark",
+  "author": "GitHub, Inc.",
+  "website": "https://github.com",
+  "brandGuidelinesUrl": "https://brand.github.com/foundations/logo",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/4fbcc685c9a85434bc01b1c236c9076f54806236/icons/github/github-original.svg",
+    "retrievedAt": "2026-10-25"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#181717"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}
