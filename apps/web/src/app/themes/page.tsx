@@ -10,7 +10,6 @@ import {
   Download,
   Dices,
   SlidersHorizontal,
-  Bookmark,
   Code2,
   Sparkles,
 } from "lucide-react";
@@ -28,7 +27,7 @@ function getContrastColor(hex: string): string {
 export default function ThemesPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
-  const [sortBy, setSortBy] = useState<"popular" | "name">("popular");
+  const [sortBy, setSortBy] = useState<"default" | "name">("default");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [highlightedSlug, setHighlightedSlug] = useState<string | null>(null);
   const { toast } = useToast();
@@ -74,10 +73,10 @@ export default function ThemesPage() {
     });
 
     return list.sort((a, b) => {
-      if (sortBy === "popular") {
-        return (b.likes || 1000) - (a.likes || 1000);
+      if (sortBy === "name") {
+        return a.name.localeCompare(b.name);
       }
-      return a.name.localeCompare(b.name);
+      return 0;
     });
   }, [searchQuery, selectedCategory, sortBy]);
 
@@ -109,20 +108,6 @@ export default function ThemesPage() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [handleRandomPalette]);
 
-  const downloadAllPalettes = () => {
-    const dataStr = JSON.stringify(SAMPLE_THEMES, null, 2);
-    const blob = new Blob([dataStr], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "liber-color-palettes.json";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-    toast("Downloaded all color palettes as JSON");
-  };
-
   const downloadSinglePalette = (theme: ThemeItem) => {
     const dataStr = JSON.stringify(theme, null, 2);
     const blob = new Blob([dataStr], { type: "application/json" });
@@ -148,18 +133,18 @@ export default function ThemesPage() {
           <span>/</span>
           <span className="text-foreground font-medium">Themes</span>
           <span className="ml-2 px-2 py-0.5 rounded-full text-[10px] bg-muted border border-border text-muted-foreground">
-            Coolors.co Popular format
+            5-Swatch Palette System
           </span>
         </div>
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 border-b border-border">
           <div className="space-y-2 max-w-2xl">
             <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground">
-              Popular Color Palettes
+              Color Palettes & Themes
             </h1>
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-              Curated 5-swatch color schemes matching the most popular palettes on Coolors.
-              Click any color stripe to copy its HEX code instantly, or export full CSS and Tailwind variables.
+              Curated 5-swatch color schemes engineered with verified WCAG contrast standards.
+              Click any color stripe to copy its HEX code instantly, or export clean CSS variables and Tailwind tokens.
             </p>
           </div>
 
@@ -174,14 +159,6 @@ export default function ThemesPage() {
               <kbd className="hidden sm:inline font-mono text-[10px] px-1.5 py-0.5 rounded-[4px] bg-muted border border-border text-muted-foreground ml-1">
                 Space
               </kbd>
-            </button>
-
-            <button
-              onClick={downloadAllPalettes}
-              className="flex items-center gap-2 h-10 px-4 rounded-[10px] bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition-opacity"
-            >
-              <Download className="h-4 w-4" />
-              <span>Export All (.json)</span>
             </button>
           </div>
         </div>
@@ -207,10 +184,10 @@ export default function ThemesPage() {
               <span>Sort:</span>
               <select
                 value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as "popular" | "name")}
+                onChange={(e) => setSortBy(e.target.value as "default" | "name")}
                 className="bg-transparent text-foreground font-medium outline-none cursor-pointer"
               >
-                <option value="popular">Most Popular</option>
+                <option value="default">Curated</option>
                 <option value="name">Alphabetical</option>
               </select>
             </div>
@@ -272,7 +249,7 @@ export default function ThemesPage() {
                   : "border-border hover:border-neutral-400 dark:hover:border-neutral-600"
               }`}
             >
-              {/* Card Header: Title, Category Badge, Likes */}
+              {/* Card Header: Title, Category Badge, Contrast Ratio */}
               <div className="flex items-center justify-between gap-2">
                 <div className="space-y-0.5">
                   <h2 className="text-base font-semibold tracking-tight text-foreground">
@@ -290,9 +267,10 @@ export default function ThemesPage() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-1 text-xs font-mono text-muted-foreground">
-                  <Bookmark className="h-3.5 w-3.5 opacity-70" />
-                  <span>{theme.likes ? `${(theme.likes / 1000).toFixed(1)}k` : "12.4k"}</span>
+                <div className="flex items-center gap-1.5 text-xs font-mono text-muted-foreground">
+                  <span className="text-[11px] font-mono text-muted-foreground px-2 py-0.5 rounded-[6px] bg-muted/70 border border-border">
+                    {theme.contrastRatio}
+                  </span>
                 </div>
               </div>
 
@@ -429,25 +407,6 @@ export default function ThemesPage() {
           </button>
         </div>
       )}
-
-      {/* Bottom Export & Offline Backup Banner */}
-      <div className="p-6 sm:p-8 rounded-[10px] border border-border bg-card flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="space-y-1 text-center sm:text-left">
-          <h3 className="text-sm sm:text-base font-semibold text-foreground">
-            Complete Color System Offline Backup
-          </h3>
-          <p className="text-xs text-muted-foreground max-w-xl">
-            Download all {SAMPLE_THEMES.length} palettes with WCAG contrast metrics, 5-swatch arrays, and CSS variables in a single JSON bundle for your design systems.
-          </p>
-        </div>
-        <button
-          onClick={downloadAllPalettes}
-          className="flex items-center gap-2 h-10 px-5 rounded-[10px] bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition-opacity whitespace-nowrap"
-        >
-          <Download className="h-4 w-4" />
-          <span>Download All Palettes (.json)</span>
-        </button>
-      </div>
     </div>
   );
 }
