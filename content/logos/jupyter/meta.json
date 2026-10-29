@@ -1,0 +1,37 @@
+{
+  "slug": "jupyter",
+  "kind": "logo",
+  "name": "Jupyter",
+  "description": "Environnement informatique interactif open source pour créer des notebooks de données.",
+  "aliases": [
+    "jupyter-notebook",
+    "ipynb"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "jupyter",
+    "jupyter-notebook",
+    "ipynb"
+  ],
+  "license": "trademark",
+  "author": "Jupyter Team",
+  "website": "https://jupyter.org",
+  "brandGuidelinesUrl": "https://jupyter.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#F37726"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "digitalocean",
+  "kind": "logo",
+  "name": "DigitalOcean",
+  "description": "Fournisseur d'infrastructure cloud simplifié conçu pour les développeurs et les PME.",
+  "aliases": [
+    "droplet"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "digitalocean",
+    "droplet"
+  ],
+  "license": "trademark",
+  "author": "DigitalOcean Team",
+  "website": "https://www.digitalocean.com",
+  "brandGuidelinesUrl": "https://www.digitalocean.com/press",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/digitalocean/digitalocean-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#0080FF"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "geist",
+  "kind": "font",
+  "name": "Geist",
+  "family": "Geist",
+  "description": "Engineered by Vercel for code, typography, and technical UI.",
+  "author": "Vercel",
+  "tags": [
+    "sans",
+    "typography",
+    "geist"
+  ],
+  "category": "sans",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource/geist-sans",
+  "weights": [
+    400,
+    500,
+    600,
+    700
+  ],
+  "subsets": [
+    "latin"
+  ],
+  "variable": true,
+  "source": {
+    "url": "https://vercel.com/font"
+  },
+  "licenseFile": "OFL.txt"
+}

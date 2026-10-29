@@ -1,0 +1,37 @@
+{
+  "slug": "ruby",
+  "kind": "logo",
+  "name": "Ruby",
+  "description": "Langage dynamique et expressif favorisant la productivité et la simplicité.",
+  "aliases": [
+    "rb",
+    "rubylang"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "ruby",
+    "rb",
+    "rubylang"
+  ],
+  "license": "trademark",
+  "author": "Ruby Team",
+  "website": "https://www.ruby-lang.org",
+  "brandGuidelinesUrl": "https://www.ruby-lang.org/en/about/logo/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#d91404"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

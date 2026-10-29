@@ -1,0 +1,32 @@
+{
+  "slug": "dbeaver",
+  "kind": "logo",
+  "name": "DBeaver",
+  "description": "Client universel de gestion de bases de données SQL et NoSQL multiplateforme gratuit.",
+  "aliases": [
+    "dbeaver-ce"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "dbeaver",
+    "dbeaver-ce"
+  ],
+  "license": "trademark",
+  "author": "DBeaver Team",
+  "website": "https://dbeaver.io",
+  "brandGuidelinesUrl": "https://dbeaver.io",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/dbeaver/dbeaver-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#382a24"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

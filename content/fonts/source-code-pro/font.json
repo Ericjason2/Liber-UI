@@ -1,0 +1,29 @@
+{
+  "slug": "source-code-pro",
+  "kind": "font",
+  "name": "Source Code Pro",
+  "family": "Source Code Pro",
+  "description": "Adobe's open monospaced companion to Source Sans specifically for coding.",
+  "author": "Paul D. Hunt",
+  "tags": [
+    "mono",
+    "typography",
+    "source-code-pro"
+  ],
+  "category": "mono",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource-variable/source-code-pro",
+  "weights": [
+    400,
+    600,
+    700
+  ],
+  "subsets": [
+    "latin"
+  ],
+  "variable": true,
+  "source": {
+    "url": "https://github.com/adobe-fonts/source-code-pro"
+  },
+  "licenseFile": "OFL.txt"
+}

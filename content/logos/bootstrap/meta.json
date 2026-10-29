@@ -1,0 +1,35 @@
+{
+  "slug": "bootstrap",
+  "kind": "logo",
+  "name": "Bootstrap",
+  "description": "Framework CSS open-source populaire facilitant la conception de sites web réactifs.",
+  "aliases": [
+    "twitter bootstrap"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "bootstrap",
+    "twitter bootstrap"
+  ],
+  "license": "trademark",
+  "author": "Bootstrap Team",
+  "website": "https://getbootstrap.com",
+  "brandGuidelinesUrl": "https://getbootstrap.com/docs/5.3/about/brand/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#712cf9"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

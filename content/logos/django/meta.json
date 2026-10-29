@@ -1,0 +1,35 @@
+{
+  "slug": "django",
+  "kind": "logo",
+  "name": "Django",
+  "description": "Framework web de haut niveau en Python encourageant le développement rapide et sécurisé.",
+  "aliases": [
+    "django framework"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "django",
+    "django framework"
+  ],
+  "license": "trademark",
+  "author": "Django Team",
+  "website": "https://www.djangoproject.com",
+  "brandGuidelinesUrl": "https://www.djangoproject.com/foundation/logos/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#092e20"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

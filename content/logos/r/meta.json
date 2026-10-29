@@ -1,0 +1,34 @@
+{
+  "slug": "r",
+  "kind": "logo",
+  "name": "R",
+  "description": "Langage et environnement pour le calcul statistique et la visualisation de données.",
+  "aliases": [
+    "rlang",
+    "statistics"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "r",
+    "rlang",
+    "statistics"
+  ],
+  "license": "trademark",
+  "author": "R Team",
+  "website": "https://www.r-project.org",
+  "brandGuidelinesUrl": "https://www.r-project.org/logo/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/r/r-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#1f65b7"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "webpack",
+  "kind": "logo",
+  "name": "Webpack",
+  "description": "Module bundler statique hautement configurable pour les applications JavaScript modernes.",
+  "aliases": [
+    "webpackjs"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "webpack",
+    "webpackjs"
+  ],
+  "license": "trademark",
+  "author": "Webpack Team",
+  "website": "https://webpack.js.org",
+  "brandGuidelinesUrl": "https://webpack.js.org/branding/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/webpack/webpack-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#1C78C0"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

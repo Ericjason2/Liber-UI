@@ -1,0 +1,37 @@
+{
+  "slug": "kotlin",
+  "kind": "logo",
+  "name": "Kotlin",
+  "description": "Langage concis et moderne pour Android, la JVM et le développement multiplateforme.",
+  "aliases": [
+    "kt",
+    "android kotlin"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "kotlin",
+    "kt",
+    "android kotlin"
+  ],
+  "license": "trademark",
+  "author": "Kotlin Team",
+  "website": "https://kotlinlang.org",
+  "brandGuidelinesUrl": "https://kotlinlang.org/assets/static/brand/guidelines.pdf",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#c711e1"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

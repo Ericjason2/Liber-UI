@@ -1,0 +1,36 @@
+{
+  "slug": "bash",
+  "kind": "logo",
+  "name": "Bash",
+  "description": "Interpréteur de commandes standard pour les systèmes d'exploitation Unix et Linux.",
+  "aliases": [
+    "shell",
+    "sh",
+    "terminal"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "bash",
+    "shell",
+    "sh",
+    "terminal"
+  ],
+  "license": "trademark",
+  "author": "Bash Team",
+  "website": "https://www.gnu.org/software/bash/",
+  "brandGuidelinesUrl": "https://www.gnu.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#293138"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

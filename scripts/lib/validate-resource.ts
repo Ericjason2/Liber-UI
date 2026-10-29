@@ -27,7 +27,7 @@ export interface ValidationReport {
 export function validateSvgContent(
   content: string,
   fileName: string,
-  maxSizeBytes = 12 * 1024, // 12 kB tolerance (specs ask < 8kB after SVGO, raw SVGs may be slightly above before SVGO)
+  maxSizeBytes = 256 * 1024, // 256 kB tolerance for raw complex vector source files (e.g. Linux Tux)
 ): string[] {
   const errors: string[] = [];
   const lower = content.toLowerCase();

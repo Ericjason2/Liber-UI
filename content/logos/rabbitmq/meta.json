@@ -1,0 +1,35 @@
+{
+  "slug": "rabbitmq",
+  "kind": "logo",
+  "name": "RabbitMQ",
+  "description": "Message broker open-source fiable prenant en charge plusieurs protocoles de messagerie.",
+  "aliases": [
+    "message broker"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "rabbitmq",
+    "message broker"
+  ],
+  "license": "trademark",
+  "author": "RabbitMQ Team",
+  "website": "https://www.rabbitmq.com",
+  "brandGuidelinesUrl": "https://www.rabbitmq.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/rabbitmq/rabbitmq-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#ff6600"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

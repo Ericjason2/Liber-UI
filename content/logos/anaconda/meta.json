@@ -1,0 +1,35 @@
+{
+  "slug": "anaconda",
+  "kind": "logo",
+  "name": "Anaconda",
+  "description": "Distribution Python et R pour le calcul scientifique et la gestion de paquets de data science.",
+  "aliases": [
+    "conda"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "anaconda",
+    "conda"
+  ],
+  "license": "trademark",
+  "author": "Anaconda Team",
+  "website": "https://www.anaconda.com",
+  "brandGuidelinesUrl": "https://www.anaconda.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/anaconda/anaconda-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#3eb049"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

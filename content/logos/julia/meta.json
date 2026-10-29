@@ -1,0 +1,37 @@
+{
+  "slug": "julia",
+  "kind": "logo",
+  "name": "Julia",
+  "description": "Langage de programmation haute performance pour le calcul scientifique et numérique.",
+  "aliases": [
+    "jl",
+    "julialang"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "julia",
+    "jl",
+    "julialang"
+  ],
+  "license": "trademark",
+  "author": "Julia Team",
+  "website": "https://julialang.org",
+  "brandGuidelinesUrl": "https://julialang.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/julia/julia-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#28a745"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

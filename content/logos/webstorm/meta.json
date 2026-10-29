@@ -1,0 +1,35 @@
+{
+  "slug": "webstorm",
+  "kind": "logo",
+  "name": "WebStorm",
+  "description": "IDE JavaScript et TypeScript puissant avec autocomplétion intelligente par JetBrains.",
+  "aliases": [
+    "jetbrains webstorm"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "webstorm",
+    "jetbrains webstorm"
+  ],
+  "license": "trademark",
+  "author": "WebStorm Team",
+  "website": "https://www.jetbrains.com/webstorm/",
+  "brandGuidelinesUrl": "https://www.jetbrains.com/company/brand/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/webstorm/webstorm-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#000000"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

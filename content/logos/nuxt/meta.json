@@ -1,0 +1,37 @@
+{
+  "slug": "nuxt",
+  "kind": "logo",
+  "name": "Nuxt",
+  "description": "Framework open-source intuitif et complet pour créer des applications Vue.js de production.",
+  "aliases": [
+    "nuxt3",
+    "nuxtjs"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "nuxt",
+    "nuxt3",
+    "nuxtjs"
+  ],
+  "license": "trademark",
+  "author": "Nuxt Team",
+  "website": "https://nuxt.com",
+  "brandGuidelinesUrl": "https://nuxt.com/design-kit",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nuxtjs/nuxtjs-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#00c48d"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

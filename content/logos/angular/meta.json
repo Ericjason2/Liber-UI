@@ -1,0 +1,37 @@
+{
+  "slug": "angular",
+  "kind": "logo",
+  "name": "Angular",
+  "description": "Plateforme et framework pour applications web monopages modernes développé par Google.",
+  "aliases": [
+    "angularjs",
+    "ng"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "angular",
+    "angularjs",
+    "ng"
+  ],
+  "license": "trademark",
+  "author": "Angular Team",
+  "website": "https://angular.dev",
+  "brandGuidelinesUrl": "https://angular.dev/press-kit",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#c4473a"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

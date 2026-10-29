@@ -1,0 +1,34 @@
+{
+  "slug": "clojure",
+  "kind": "logo",
+  "name": "Clojure",
+  "description": "Dialecte Lisp dynamique et fonctionnel ciblant la machine virtuelle Java.",
+  "aliases": [
+    "clj",
+    "lisp"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "clojure",
+    "clj",
+    "lisp"
+  ],
+  "license": "trademark",
+  "author": "Clojure Team",
+  "website": "https://clojure.org",
+  "brandGuidelinesUrl": "https://clojure.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/clojure/clojure-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#5881d8"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

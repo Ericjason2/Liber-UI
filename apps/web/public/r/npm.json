@@ -1,0 +1,43 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "npm",
+  "type": "registry:ui",
+  "title": "npm",
+  "description": "Le gestionnaire de paquets par défaut pour l'écosystème JavaScript et le registre Node.js.",
+  "author": "npm Team",
+  "categories": [
+    "tools"
+  ],
+  "files": [
+    {
+      "path": "ui/logos/npm.tsx",
+      "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface NpmColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst NpmColor = ({ size = 24, ...props }: NpmColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"npm\"}</title><path fill=\"#cb3837\" d=\"M0 7.062C0 3.225 3.225 0 7.062 0h113.88c3.838 0 7.063 3.225 7.063 7.062v113.88c0 3.838-3.225 7.063-7.063 7.063H7.062c-3.837 0-7.062-3.225-7.062-7.063zm23.69 97.518h40.395l.05-58.532h19.494l-.05 58.581h19.543l.05-78.075-78.075-.1-.1 78.126z\" /><path fill=\"#fff\" d=\"M25.105 65.52V26.512H40.96c8.72 0 26.274.034 39.008.075l23.153.075v77.866H83.645v-58.54H64.057v58.54H25.105z\" /></svg>;\nexport { NpmColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface NpmMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst NpmMono = ({ size = 24, ...props }: NpmMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"npm (monochrome)\"}</title><path fill=\"currentColor\" d=\"M0 7.062C0 3.225 3.225 0 7.062 0h113.88c3.838 0 7.063 3.225 7.063 7.062v113.88c0 3.838-3.225 7.063-7.063 7.063H7.062c-3.837 0-7.062-3.225-7.062-7.063zm23.69 97.518h40.395l.05-58.532h19.494l-.05 58.581h19.543l.05-78.075-78.075-.1-.1 78.126z\" /></svg>;\nexport { NpmMono };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface NpmWordmarkProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst NpmWordmark = ({ size = 24, ...props }: NpmWordmarkProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"npm\"}</title><path fill=\"#cb3837\" d=\"M2 38.5h124v43.71H64v7.29H36.44v-7.29H2zm6.89 36.43h13.78V53.07h6.89v21.86h6.89V45.79H8.89zm34.44-29.14v36.42h13.78v-7.28h13.78V45.79zm13.78 7.29H64v14.56h-6.89zm20.67-7.29v29.14h13.78V53.07h6.89v21.86h6.89V53.07h6.89v21.86h6.89V45.79z\" /></svg>;\nexport { NpmWordmark };",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "logo",
+    "aliases": [
+      "npm registry",
+      "node package manager"
+    ],
+    "website": "https://www.npmjs.com",
+    "brandGuidelinesUrl": "https://www.npmjs.com/policies/logos",
+    "source": {
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original.svg",
+      "retrievedAt": "2026-10-29"
+    },
+    "variants": {
+      "color": {
+        "file": "color.svg",
+        "hex": "#cb3837"
+      },
+      "mono": {
+        "file": "mono.svg"
+      },
+      "wordmark": {
+        "file": "wordmark.svg"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "helm",
+  "kind": "logo",
+  "name": "Helm",
+  "description": "Gestionnaire de paquets pour Kubernetes permettant de définir, installer et mettre à jour des applications.",
+  "aliases": [
+    "k8s helm"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "helm",
+    "k8s helm"
+  ],
+  "license": "trademark",
+  "author": "Helm Team",
+  "website": "https://helm.sh",
+  "brandGuidelinesUrl": "https://helm.sh",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/helm/helm-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#0F1689"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

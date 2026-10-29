@@ -1,0 +1,37 @@
+{
+  "slug": "prometheus",
+  "kind": "logo",
+  "name": "Prometheus",
+  "description": "Système open-source de surveillance et d'alerte pour séries temporelles avec modèle de données dimensionnel.",
+  "aliases": [
+    "promql",
+    "monitoring"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "prometheus",
+    "promql",
+    "monitoring"
+  ],
+  "license": "trademark",
+  "author": "Prometheus Team",
+  "website": "https://prometheus.io",
+  "brandGuidelinesUrl": "https://prometheus.io",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/prometheus/prometheus-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#e75225"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

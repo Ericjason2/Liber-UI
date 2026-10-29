@@ -1,0 +1,34 @@
+{
+  "slug": "vim",
+  "kind": "logo",
+  "name": "Vim",
+  "description": "Éditeur de texte modal hautement efficace, puissant et omniprésent sur les systèmes Unix.",
+  "aliases": [
+    "vi",
+    "terminal editor"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "vim",
+    "vi",
+    "terminal editor"
+  ],
+  "license": "trademark",
+  "author": "Vim Team",
+  "website": "https://www.vim.org",
+  "brandGuidelinesUrl": "https://www.vim.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#179a33"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

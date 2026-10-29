@@ -1,0 +1,37 @@
+{
+  "slug": "haskell",
+  "kind": "logo",
+  "name": "Haskell",
+  "description": "Langage de programmation purement fonctionnel avec typage statique fort.",
+  "aliases": [
+    "hs",
+    "functional"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "haskell",
+    "hs",
+    "functional"
+  ],
+  "license": "trademark",
+  "author": "Haskell Team",
+  "website": "https://www.haskell.org",
+  "brandGuidelinesUrl": "https://wiki.haskell.org/Haskell_logo",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/haskell/haskell-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#5E5185"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "debian",
+  "kind": "logo",
+  "name": "Debian",
+  "description": "Système d'exploitation libre universel et robuste, pierre angulaire de multiples distributions.",
+  "aliases": [
+    "debian linux"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "debian",
+    "debian linux"
+  ],
+  "license": "trademark",
+  "author": "Debian Team",
+  "website": "https://www.debian.org",
+  "brandGuidelinesUrl": "https://www.debian.org/logos/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/debian/debian-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#A80030"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

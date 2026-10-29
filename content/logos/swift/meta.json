@@ -1,0 +1,37 @@
+{
+  "slug": "swift",
+  "kind": "logo",
+  "name": "Swift",
+  "description": "Langage moderne et rapide développé par Apple pour iOS, macOS et le cloud.",
+  "aliases": [
+    "apple swift",
+    "ios"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "swift",
+    "apple swift",
+    "ios"
+  ],
+  "license": "trademark",
+  "author": "Swift Team",
+  "website": "https://www.swift.org",
+  "brandGuidelinesUrl": "https://developer.apple.com/app-store/marketing/guidelines/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#F05138"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

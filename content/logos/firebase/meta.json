@@ -1,0 +1,35 @@
+{
+  "slug": "firebase",
+  "kind": "logo",
+  "name": "Firebase",
+  "description": "Plateforme de développement d'applications mobiles et web de Google.",
+  "aliases": [
+    "google firebase"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "firebase",
+    "google firebase"
+  ],
+  "license": "trademark",
+  "author": "Firebase Team",
+  "website": "https://firebase.google.com",
+  "brandGuidelinesUrl": "https://firebase.google.com/brand-guidelines",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#ffa000"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

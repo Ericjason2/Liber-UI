@@ -1,0 +1,35 @@
+{
+  "slug": "mongodb",
+  "kind": "logo",
+  "name": "MongoDB",
+  "description": "Base de données NoSQL distribuée orientée documents offrant scalabilité et flexibilité.",
+  "aliases": [
+    "mongo"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "mongodb",
+    "mongo"
+  ],
+  "license": "trademark",
+  "author": "MongoDB Team",
+  "website": "https://www.mongodb.com",
+  "brandGuidelinesUrl": "https://www.mongodb.com/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#4FAA41"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

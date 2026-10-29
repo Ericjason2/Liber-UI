@@ -1,0 +1,35 @@
+{
+  "slug": "nestjs",
+  "kind": "logo",
+  "name": "NestJS",
+  "description": "Framework Node.js progressif et structuré pour bâtir des applications serveur d'entreprise fiables.",
+  "aliases": [
+    "nest"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "nestjs",
+    "nest"
+  ],
+  "license": "trademark",
+  "author": "NestJS Team",
+  "website": "https://nestjs.com",
+  "brandGuidelinesUrl": "https://nestjs.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#df234f"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

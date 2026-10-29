@@ -1,0 +1,32 @@
+{
+  "slug": "redux",
+  "kind": "logo",
+  "name": "Redux",
+  "description": "Conteneur d'état prévisible pour applications JavaScript modernes.",
+  "aliases": [
+    "redux toolkit"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "redux",
+    "redux toolkit"
+  ],
+  "license": "trademark",
+  "author": "Redux Team",
+  "website": "https://redux.js.org",
+  "brandGuidelinesUrl": "https://redux.js.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#764abc"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "storybook",
+  "kind": "logo",
+  "name": "Storybook",
+  "description": "Atelier de développement d'interface utilisateur pour concevoir et tester des composants isolés.",
+  "aliases": [
+    "storybookjs"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "storybook",
+    "storybookjs"
+  ],
+  "license": "trademark",
+  "author": "Storybook Team",
+  "website": "https://storybook.js.org",
+  "brandGuidelinesUrl": "https://storybook.js.org/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/storybook/storybook-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#FF4785"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "solidity",
+  "kind": "logo",
+  "name": "Solidity",
+  "description": "Langage orienté objet pour écrire des contrats intelligents sur la blockchain Ethereum.",
+  "aliases": [
+    "sol",
+    "ethereum",
+    "web3"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "solidity",
+    "sol",
+    "ethereum",
+    "web3"
+  ],
+  "license": "trademark",
+  "author": "Solidity Team",
+  "website": "https://soliditylang.org",
+  "brandGuidelinesUrl": "https://soliditylang.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/solidity/solidity-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#383838"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

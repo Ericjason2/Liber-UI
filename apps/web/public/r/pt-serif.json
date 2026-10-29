@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pt-serif",
+  "type": "registry:font",
+  "title": "PT Serif",
+  "description": "Universal serif family developed for Russian linguistic typography.",
+  "author": "ParaType",
+  "categories": [
+    "serif"
+  ],
+  "dependencies": [
+    "@fontsource/pt-serif"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/pt-serif.css",
+      "content": "/* Self-hosted font definition for PT Serif */\n@import \"@fontsource/pt-serif\";\n:root {\n  --font-serif: 'PT Serif', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "PT Serif",
+    "weights": [
+      400,
+      700
+    ],
+    "subsets": [
+      "latin",
+      "cyrillic"
+    ],
+    "variable": false,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource/pt-serif"
+  }
+}

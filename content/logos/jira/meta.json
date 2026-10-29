@@ -1,0 +1,37 @@
+{
+  "slug": "jira",
+  "kind": "logo",
+  "name": "Jira",
+  "description": "Plateforme de gestion de projets agiles et de suivi des tickets pour équipes logicielles.",
+  "aliases": [
+    "atlassian jira",
+    "issue tracker"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "jira",
+    "atlassian jira",
+    "issue tracker"
+  ],
+  "license": "trademark",
+  "author": "Jira Team",
+  "website": "https://www.atlassian.com/software/jira",
+  "brandGuidelinesUrl": "https://www.atlassian.com/company/news/press-kit",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#2684ff"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

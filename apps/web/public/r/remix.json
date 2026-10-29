@@ -1,0 +1,42 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "remix",
+  "type": "registry:ui",
+  "title": "Remix",
+  "description": "Framework fullstack moderne pour React axé sur les standards du web et l'expérience utilisateur.",
+  "author": "Remix Team",
+  "categories": [
+    "frontend"
+  ],
+  "files": [
+    {
+      "path": "ui/logos/remix.tsx",
+      "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface RemixColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst RemixColor = ({ size = 24, ...props }: RemixColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"remix\"}</title><path fill=\"#121212\" d=\"M8.389 0v26.09h55.445c14.656 0 21.986 6.29 21.986 16.67 0 11.804-7.33 16.263-21.986 16.263H8.389v26.663h53.818c11.603 0 17.912 3.255 18.93 17.91.77 10.01.674 14.965.582 19.718-.03 1.53-.06 3.038-.06 4.686h34.218c0-7.567 0-14.5-1.15-29.29-1.425-14.857-9.161-22.386-22.393-25.032 15.674-2.036 27.277-14.248 27.277-32.973C119.611 15.671 103.122 0 69.941 0zm0 108.125V128h43.535v-12.72c0-2.674-1.312-7.155-7.356-7.155z\" /></svg>;\nexport { RemixColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface RemixMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst RemixMono = ({ size = 24, ...props }: RemixMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"remix (monochrome)\"}</title><path fill=\"currentColor\" d=\"M8.389 0v26.09h55.445c14.656 0 21.986 6.29 21.986 16.67 0 11.804-7.33 16.263-21.986 16.263H8.389v26.663h53.818c11.603 0 17.912 3.255 18.93 17.91.77 10.01.674 14.965.582 19.718-.03 1.53-.06 3.038-.06 4.686h34.218c0-7.567 0-14.5-1.15-29.29-1.425-14.857-9.161-22.386-22.393-25.032 15.674-2.036 27.277-14.248 27.277-32.973C119.611 15.671 103.122 0 69.941 0zm0 108.125V128h43.535v-12.72c0-2.674-1.312-7.155-7.356-7.155z\" /></svg>;\nexport { RemixMono };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface RemixWordmarkProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst RemixWordmark = ({ size = 24, ...props }: RemixWordmarkProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"remix\"}</title><path fill=\"#121212\" d=\"M0 48.021v6.446h13.594c3.593 0 5.39 1.554 5.39 4.119 0 2.916-1.797 4.018-5.39 4.018H0v6.587h13.195c2.845 0 4.391.806 4.64 4.426.19 2.473.166 3.697.144 4.871-.008.378-.014.751-.014 1.158h8.389c0-1.87 0-3.582-.282-7.236-.35-3.67-2.246-5.532-5.49-6.185 3.843-.503 6.688-3.52 6.688-8.147 0-6.185-4.043-10.057-12.178-10.057zm93.002.354v7.123h8.166v-7.123zm-53.11 7.773c-6.92 0-12.099 5.066-12.099 12.14 0 7.122 5.08 11.437 12.2 11.437 5.874 0 9.958-2.858 11.103-7.975l-6.473-.604c-.747 1.756-2.141 2.51-4.332 2.51-2.44 0-4.432-1.305-4.63-4.064h15.583v-2.258c0-6.07-3.933-11.186-11.351-11.186m28.116.707c-3.336 0-5.725 1.505-6.92 3.963v-3.361H53.02V79.83h8.067V68.844c0-3.361.945-5.569 3.584-5.569 2.44 0 3.037 1.606 3.037 4.666v11.89h8.066V68.843c0-3.361.896-5.569 3.584-5.569 2.44 0 2.989 1.606 2.989 4.666v11.89h8.066V65.782c0-4.665-1.792-8.928-7.916-8.928-3.734 0-6.373 1.906-7.568 4.415-.946-2.61-2.989-4.415-6.922-4.415m34.6.706 8.015 10.986-8.713 11.389h8.315l4.431-6.07 4.432 6.07H128l-8.764-11.74 8.067-10.635h-8.315l-3.785 5.318-3.683-5.318zm-9.555.044V79.98h8.064V57.605zm-53.26 4.362c2.39 0 3.684 1.706 3.783 3.713H35.76c.298-2.107 1.444-3.713 4.033-3.713M0 74.734v4.912h10.674v-3.142c0-.66-.321-1.77-1.803-1.77z\" /></svg>;\nexport { RemixWordmark };",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "logo",
+    "aliases": [
+      "remix-run"
+    ],
+    "website": "https://remix.run",
+    "brandGuidelinesUrl": "https://remix.run",
+    "source": {
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/remix/remix-original.svg",
+      "retrievedAt": "2026-10-29"
+    },
+    "variants": {
+      "color": {
+        "file": "color.svg",
+        "hex": "#121212"
+      },
+      "mono": {
+        "file": "mono.svg"
+      },
+      "wordmark": {
+        "file": "wordmark.svg"
+      }
+    }
+  }
+}

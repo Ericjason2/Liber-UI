@@ -1,0 +1,30 @@
+{
+  "slug": "dm-sans",
+  "kind": "font",
+  "name": "DM Sans",
+  "family": "DM Sans",
+  "description": "Low-contrast geometric sans-serif intended for small text sizes.",
+  "author": "Colophon Foundry",
+  "tags": [
+    "sans",
+    "typography",
+    "dm-sans"
+  ],
+  "category": "sans",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource-variable/dm-sans",
+  "weights": [
+    400,
+    500,
+    700
+  ],
+  "subsets": [
+    "latin",
+    "latin-ext"
+  ],
+  "variable": true,
+  "source": {
+    "url": "https://github.com/googlefonts/dm-fonts"
+  },
+  "licenseFile": "OFL.txt"
+}

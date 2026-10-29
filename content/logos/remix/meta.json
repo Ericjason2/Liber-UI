@@ -1,0 +1,35 @@
+{
+  "slug": "remix",
+  "kind": "logo",
+  "name": "Remix",
+  "description": "Framework fullstack moderne pour React axé sur les standards du web et l'expérience utilisateur.",
+  "aliases": [
+    "remix-run"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "remix",
+    "remix-run"
+  ],
+  "license": "trademark",
+  "author": "Remix Team",
+  "website": "https://remix.run",
+  "brandGuidelinesUrl": "https://remix.run",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/remix/remix-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#121212"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

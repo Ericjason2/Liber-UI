@@ -1,0 +1,34 @@
+{
+  "slug": "linux",
+  "kind": "logo",
+  "name": "Linux",
+  "description": "Noyau de système d'exploitation libre et open-source de référence dans le monde informatique.",
+  "aliases": [
+    "tux",
+    "kernel"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "linux",
+    "tux",
+    "kernel"
+  ],
+  "license": "trademark",
+  "author": "Linux Team",
+  "website": "https://www.kernel.org",
+  "brandGuidelinesUrl": "https://www.linuxfoundation.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#000000"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

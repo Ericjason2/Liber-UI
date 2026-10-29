@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "flutter",
+  "type": "registry:ui",
+  "title": "Flutter",
+  "description": "Framework open-source de Google pour compiler des applications natives mobiles, web et desktop.",
+  "author": "Flutter Team",
+  "categories": [
+    "frontend"
+  ],
+  "files": [
+    {
+      "path": "ui/logos/flutter.tsx",
+      "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface FlutterColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst FlutterColor = ({ size = 24, ...props }: FlutterColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"flutter\"}</title><path fill=\"#3fb6d3\" d=\"M12.3 64.2 76.3 0h39.4L32.1 83.6zm64 63.8h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z\" /><path fill=\"#27aacd\" d=\"m81.6 93.9-20-20-19.4 19.6 19.4 19.6z\" /><path fill=\"#19599a\" d=\"M115.7 128 81.6 93.9l-20 19.2L76.3 128z\" /><linearGradient id=\"liber-flutter-color__flutter-original-a\" x1={59.365} x2={86.825} y1={116.36} y2={99.399} gradientUnits=\"userSpaceOnUse\"><stop offset={0} stopColor=\"#1b4e94\" /><stop offset={0.63} stopColor=\"#1a5497\" /><stop offset={1} stopColor=\"#195a9b\" /></linearGradient><path fill=\"url(#liber-flutter-color__flutter-original-a)\" d=\"m61.6 113.1 30.8-8.4-10.8-10.8z\" /></svg>;\nexport { FlutterColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface FlutterMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst FlutterMono = ({ size = 24, ...props }: FlutterMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"flutter (monochrome)\"}</title><path fill=\"currentColor\" d=\"M12.3 64.2 76.3 0h39.4L32.1 83.6zm64 63.8h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z\" /></svg>;\nexport { FlutterMono };",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "logo",
+    "aliases": [
+      "flutter sdk"
+    ],
+    "website": "https://flutter.dev",
+    "brandGuidelinesUrl": "https://flutter.dev/brand",
+    "source": {
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg",
+      "retrievedAt": "2026-10-29"
+    },
+    "variants": {
+      "color": {
+        "file": "color.svg",
+        "hex": "#3FB6D3"
+      },
+      "mono": {
+        "file": "mono.svg"
+      }
+    }
+  }
+}

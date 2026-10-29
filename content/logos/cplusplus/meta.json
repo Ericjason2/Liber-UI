@@ -1,0 +1,34 @@
+{
+  "slug": "cplusplus",
+  "kind": "logo",
+  "name": "C++",
+  "description": "Langage de programmation système performant avec support orienté objet et générique.",
+  "aliases": [
+    "cpp",
+    "c plus plus"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "cplusplus",
+    "cpp",
+    "c plus plus"
+  ],
+  "license": "trademark",
+  "author": "C++ Team",
+  "website": "https://isocpp.org",
+  "brandGuidelinesUrl": "https://isocpp.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#004482"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

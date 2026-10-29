@@ -1,0 +1,34 @@
+{
+  "slug": "d3js",
+  "kind": "logo",
+  "name": "D3.js",
+  "description": "Bibliothèque JavaScript pour manipuler des documents web à partir de données dynamiques.",
+  "aliases": [
+    "d3",
+    "data visualization"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "d3js",
+    "d3",
+    "data visualization"
+  ],
+  "license": "trademark",
+  "author": "D3.js Team",
+  "website": "https://d3js.org",
+  "brandGuidelinesUrl": "https://d3js.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#f7974e"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

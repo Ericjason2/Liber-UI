@@ -1,0 +1,35 @@
+{
+  "slug": "keras",
+  "kind": "logo",
+  "name": "Keras",
+  "description": "API de Deep Learning de haut niveau pour Python, conçue pour l'expérimentation rapide.",
+  "aliases": [
+    "keras-io"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "keras",
+    "keras-io"
+  ],
+  "license": "trademark",
+  "author": "Keras Team",
+  "website": "https://keras.io",
+  "brandGuidelinesUrl": "https://keras.io",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/keras/keras-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#d00000"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

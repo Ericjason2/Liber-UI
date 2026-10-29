@@ -1,0 +1,32 @@
+{
+  "slug": "jenkins",
+  "kind": "logo",
+  "name": "Jenkins",
+  "description": "Serveur d'automatisation open-source facilitant l'intégration et le déploiement continus.",
+  "aliases": [
+    "jenkins ci"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "jenkins",
+    "jenkins ci"
+  ],
+  "license": "trademark",
+  "author": "Jenkins Team",
+  "website": "https://www.jenkins.io",
+  "brandGuidelinesUrl": "https://www.jenkins.io/press/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#F0D6B7"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

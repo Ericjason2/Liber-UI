@@ -75,7 +75,12 @@ export interface FontItem {
   googleFontsFamily?: string;
 }
 
-export const OFFICIAL_LOGOS = catalogData.items as LogoItem[];
+export const OFFICIAL_LOGOS: LogoItem[] = (catalogData.items as unknown[]).filter(
+  (item): item is LogoItem => {
+    const candidate = item as Partial<LogoItem>;
+    return candidate.kind === "logo" && candidate.variants !== undefined;
+  }
+);
 
 export const SAMPLE_BLOCKS: BlockItem[] = [
   {

@@ -1,0 +1,35 @@
+{
+  "slug": "css3",
+  "kind": "logo",
+  "name": "CSS3",
+  "description": "Langage de feuilles de style utilisé pour la présentation et l'apparence des documents web.",
+  "aliases": [
+    "css"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "css3",
+    "css"
+  ],
+  "license": "trademark",
+  "author": "CSS3 Team",
+  "website": "https://www.w3.org/Style/CSS/",
+  "brandGuidelinesUrl": "https://www.w3.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#3d8fc6"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

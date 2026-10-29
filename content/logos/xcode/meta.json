@@ -1,0 +1,32 @@
+{
+  "slug": "xcode",
+  "kind": "logo",
+  "name": "Xcode",
+  "description": "Environnement de développement intégré d'Apple pour concevoir des applications sur toutes ses plateformes.",
+  "aliases": [
+    "apple xcode"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "xcode",
+    "apple xcode"
+  ],
+  "license": "trademark",
+  "author": "Xcode Team",
+  "website": "https://developer.apple.com/xcode/",
+  "brandGuidelinesUrl": "https://developer.apple.com/app-store/marketing/guidelines/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/xcode/xcode-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#069CEC"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

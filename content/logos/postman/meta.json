@@ -1,0 +1,35 @@
+{
+  "slug": "postman",
+  "kind": "logo",
+  "name": "Postman",
+  "description": "Plateforme collaborative de conception, test, documentation et simulation d'APIs.",
+  "aliases": [
+    "api client"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "postman",
+    "api client"
+  ],
+  "license": "trademark",
+  "author": "Postman Team",
+  "website": "https://www.postman.com",
+  "brandGuidelinesUrl": "https://www.postman.com/brand-assets/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#f37036"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

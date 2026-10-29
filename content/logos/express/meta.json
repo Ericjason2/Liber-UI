@@ -1,0 +1,35 @@
+{
+  "slug": "express",
+  "kind": "logo",
+  "name": "Express",
+  "description": "Framework d'application web minimaliste, flexible et rapide pour Node.js.",
+  "aliases": [
+    "expressjs"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "express",
+    "expressjs"
+  ],
+  "license": "trademark",
+  "author": "Express Team",
+  "website": "https://expressjs.com",
+  "brandGuidelinesUrl": "https://expressjs.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#444"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

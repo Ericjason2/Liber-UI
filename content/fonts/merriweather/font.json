@@ -1,0 +1,30 @@
+{
+  "slug": "merriweather",
+  "kind": "font",
+  "name": "Merriweather",
+  "family": "Merriweather",
+  "description": "Engineered specifically to be pleasant and highly legible for screen reading.",
+  "author": "Eben Sorkin",
+  "tags": [
+    "serif",
+    "typography",
+    "merriweather"
+  ],
+  "category": "serif",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource/merriweather",
+  "weights": [
+    300,
+    400,
+    700
+  ],
+  "subsets": [
+    "latin",
+    "latin-ext"
+  ],
+  "variable": false,
+  "source": {
+    "url": "https://github.com/SorkinType/Merriweather"
+  },
+  "licenseFile": "OFL.txt"
+}

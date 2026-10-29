@@ -1,0 +1,31 @@
+{
+  "slug": "plus-jakarta-sans",
+  "kind": "font",
+  "name": "Plus Jakarta Sans",
+  "family": "Plus Jakarta Sans",
+  "description": "Modern neo-grotesque crafted specifically for tech branding and dashboards.",
+  "author": "Tokotype",
+  "tags": [
+    "sans",
+    "typography",
+    "plus-jakarta-sans"
+  ],
+  "category": "sans",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource-variable/plus-jakarta-sans",
+  "weights": [
+    400,
+    500,
+    600,
+    700
+  ],
+  "subsets": [
+    "latin",
+    "latin-ext"
+  ],
+  "variable": true,
+  "source": {
+    "url": "https://github.com/tokotype/PlusJakartaSans"
+  },
+  "licenseFile": "OFL.txt"
+}

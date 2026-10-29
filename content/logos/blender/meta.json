@@ -1,0 +1,35 @@
+{
+  "slug": "blender",
+  "kind": "logo",
+  "name": "Blender",
+  "description": "Suite logicielle libre et open-source complète de modélisation 3D, animation et rendu visuel.",
+  "aliases": [
+    "blender 3d"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "blender",
+    "blender 3d"
+  ],
+  "license": "trademark",
+  "author": "Blender Team",
+  "website": "https://www.blender.org",
+  "brandGuidelinesUrl": "https://www.blender.org/about/logo/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#DC7B2E"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

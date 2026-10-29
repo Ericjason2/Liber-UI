@@ -1,0 +1,32 @@
+{
+  "slug": "dynamodb",
+  "kind": "logo",
+  "name": "Amazon DynamoDB",
+  "description": "Service de base de données NoSQL clé-valeur et orienté document entièrement managé par AWS.",
+  "aliases": [
+    "aws dynamodb"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "dynamodb",
+    "aws dynamodb"
+  ],
+  "license": "trademark",
+  "author": "Amazon DynamoDB Team",
+  "website": "https://aws.amazon.com/dynamodb/",
+  "brandGuidelinesUrl": "https://aws.amazon.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/dynamodb/dynamodb-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#527fff"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

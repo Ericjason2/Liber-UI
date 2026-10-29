@@ -1,0 +1,35 @@
+{
+  "slug": "slack",
+  "kind": "logo",
+  "name": "Slack",
+  "description": "Plateforme de communication professionnelle et de messagerie d'équipe par canaux.",
+  "aliases": [
+    "slack chat"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "slack",
+    "slack chat"
+  ],
+  "license": "trademark",
+  "author": "Slack Team",
+  "website": "https://slack.com",
+  "brandGuidelinesUrl": "https://brandfolder.com/slack",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/slack/slack-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#2D333A"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

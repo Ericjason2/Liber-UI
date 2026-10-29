@@ -1,0 +1,35 @@
+{
+  "slug": "electron",
+  "kind": "logo",
+  "name": "Electron",
+  "description": "Framework permettant de concevoir des applications de bureau multiplateformes avec JavaScript.",
+  "aliases": [
+    "electronjs"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "electron",
+    "electronjs"
+  ],
+  "license": "trademark",
+  "author": "Electron Team",
+  "website": "https://www.electronjs.org",
+  "brandGuidelinesUrl": "https://www.electronjs.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#47848f"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

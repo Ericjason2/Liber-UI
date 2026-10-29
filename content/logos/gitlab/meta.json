@@ -1,0 +1,35 @@
+{
+  "slug": "gitlab",
+  "kind": "logo",
+  "name": "GitLab",
+  "description": "Plateforme DevSecOps complète intégrant contrôle de version, CI/CD et sécurité logicielle.",
+  "aliases": [
+    "gitlab ci"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "gitlab",
+    "gitlab ci"
+  ],
+  "license": "trademark",
+  "author": "GitLab Team",
+  "website": "https://about.gitlab.com",
+  "brandGuidelinesUrl": "https://about.gitlab.com/press/press-kit/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#E24329"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

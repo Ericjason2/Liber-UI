@@ -1,0 +1,32 @@
+{
+  "slug": "nginx",
+  "kind": "logo",
+  "name": "NGINX",
+  "description": "Serveur HTTP et reverse proxy ultra-rapide capable de traiter des millions de connexions.",
+  "aliases": [
+    "nginx web server"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "nginx",
+    "nginx web server"
+  ],
+  "license": "trademark",
+  "author": "NGINX Team",
+  "website": "https://nginx.org",
+  "brandGuidelinesUrl": "https://www.f5.com/company/guidelines",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#090"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

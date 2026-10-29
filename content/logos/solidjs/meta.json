@@ -1,0 +1,37 @@
+{
+  "slug": "solidjs",
+  "kind": "logo",
+  "name": "SolidJS",
+  "description": "Bibliothèque JavaScript déclarative, sans DOM virtuel, ultra-performante pour les interfaces web.",
+  "aliases": [
+    "solid",
+    "solid.js"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "solidjs",
+    "solid",
+    "solid.js"
+  ],
+  "license": "trademark",
+  "author": "SolidJS Team",
+  "website": "https://www.solidjs.com",
+  "brandGuidelinesUrl": "https://www.solidjs.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/solidjs/solidjs-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#2c4f7c"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dm-sans",
+  "type": "registry:font",
+  "title": "DM Sans",
+  "description": "Low-contrast geometric sans-serif intended for small text sizes.",
+  "author": "Colophon Foundry",
+  "categories": [
+    "sans"
+  ],
+  "dependencies": [
+    "@fontsource-variable/dm-sans"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/dm-sans.css",
+      "content": "/* Self-hosted font definition for DM Sans */\n@import \"@fontsource-variable/dm-sans\";\n:root {\n  --font-sans: 'DM Sans', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "DM Sans",
+    "weights": [
+      400,
+      500,
+      700
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext"
+    ],
+    "variable": true,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource-variable/dm-sans"
+  }
+}

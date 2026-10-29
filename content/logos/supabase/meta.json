@@ -1,0 +1,35 @@
+{
+  "slug": "supabase",
+  "kind": "logo",
+  "name": "Supabase",
+  "description": "Alternative open-source à Firebase proposant base de données PostgreSQL, authentification et stockage.",
+  "aliases": [
+    "supabase db"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "supabase",
+    "supabase db"
+  ],
+  "license": "trademark",
+  "author": "Supabase Team",
+  "website": "https://supabase.com",
+  "brandGuidelinesUrl": "https://supabase.com/brand-assets",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#3ecf8e"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "mysql",
+  "kind": "logo",
+  "name": "MySQL",
+  "description": "Système de gestion de base de données relationnelle SQL le plus populaire au monde.",
+  "aliases": [
+    "mysql db"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "mysql",
+    "mysql db"
+  ],
+  "license": "trademark",
+  "author": "MySQL Team",
+  "website": "https://www.mysql.com",
+  "brandGuidelinesUrl": "https://www.oracle.com/legal/trademarks.html",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#00618a"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

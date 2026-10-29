@@ -1,0 +1,9 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+
+export interface ClickhouseMonoProps extends SVGProps<SVGSVGElement> {
+  size?: number | string;
+  title?: string;
+}
+const ClickhouseMono = ({ size = 24, ...props }: ClickhouseMonoProps) => <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width={size ?? 24} height={size ?? 24} {...props}><title>{"clickhouse (monochrome)"}</title><path fill="currentColor" d="M26.54 23.21a.945.945 0 0 0-.938.938v79.618c0 .511.425.937.937.937h7.168a.945.945 0 0 0 .938-.937V24.148a.945.945 0 0 0-.938-.937Zm18.089 0a.945.945 0 0 0-.938.938v79.618c0 .511.426.937.938.937h7.168a.95.95 0 0 0 .941-.937V24.148a.95.95 0 0 0-.941-.937Zm18.09 0a.945.945 0 0 0-.938.938v79.618c0 .511.426.937.938.937h7.168a.95.95 0 0 0 .941-.937V24.148a.95.95 0 0 0-.941-.937Zm18.18 0a.946.946 0 0 0-.942.938v79.618c0 .511.426.937.941.937h7.165a.95.95 0 0 0 .94-.937V24.148a.95.95 0 0 0-.94-.937Zm18.09 31.743a.95.95 0 0 0-.942.942v16.21c0 .512.43.942.941.942h7.168a.95.95 0 0 0 .938-.942v-16.21a.95.95 0 0 0-.938-.942Zm0 0" /></svg>;
+export { ClickhouseMono };

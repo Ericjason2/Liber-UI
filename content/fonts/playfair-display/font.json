@@ -1,0 +1,30 @@
+{
+  "slug": "playfair-display",
+  "kind": "font",
+  "name": "Playfair Display",
+  "family": "Playfair Display",
+  "description": "Transitional serif with high contrast and delicate, refined hairlines.",
+  "author": "Claus Eggers Sorensen",
+  "tags": [
+    "serif",
+    "typography",
+    "playfair-display"
+  ],
+  "category": "serif",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource-variable/playfair-display",
+  "weights": [
+    400,
+    500,
+    600,
+    700
+  ],
+  "subsets": [
+    "latin"
+  ],
+  "variable": true,
+  "source": {
+    "url": "https://github.com/clauseggers/Playfair-Display"
+  },
+  "licenseFile": "OFL.txt"
+}

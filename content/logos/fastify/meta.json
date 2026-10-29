@@ -1,0 +1,35 @@
+{
+  "slug": "fastify",
+  "kind": "logo",
+  "name": "Fastify",
+  "description": "Framework web ultra-rapide et à faible surcharge pour Node.js avec validation de schéma.",
+  "aliases": [
+    "fastify-http"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "fastify",
+    "fastify-http"
+  ],
+  "license": "trademark",
+  "author": "Fastify Team",
+  "website": "https://fastify.dev",
+  "brandGuidelinesUrl": "https://fastify.dev",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/fastify/fastify-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#000000"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

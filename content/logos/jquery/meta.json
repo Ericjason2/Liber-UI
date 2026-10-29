@@ -1,0 +1,35 @@
+{
+  "slug": "jquery",
+  "kind": "logo",
+  "name": "jQuery",
+  "description": "Bibliothèque JavaScript classique rapide et concise facilitant la manipulation du DOM.",
+  "aliases": [
+    "jq"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "jquery",
+    "jq"
+  ],
+  "license": "trademark",
+  "author": "jQuery Team",
+  "website": "https://jquery.com",
+  "brandGuidelinesUrl": "https://brand.jquery.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#0769ad"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

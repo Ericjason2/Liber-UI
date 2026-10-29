@@ -1,0 +1,35 @@
+{
+  "slug": "neovim",
+  "kind": "logo",
+  "name": "Neovim",
+  "description": "Éditeur de texte moderne basé sur Vim, extensible via Lua et doté d'un client LSP intégré.",
+  "aliases": [
+    "nvim"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "neovim",
+    "nvim"
+  ],
+  "license": "trademark",
+  "author": "Neovim Team",
+  "website": "https://neovim.io",
+  "brandGuidelinesUrl": "https://neovim.io",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/neovim/neovim-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#5fb950"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

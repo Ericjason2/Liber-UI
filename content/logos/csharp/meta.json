@@ -1,0 +1,34 @@
+{
+  "slug": "csharp",
+  "kind": "logo",
+  "name": "C#",
+  "description": "Langage moderne et orienté objet développé par Microsoft pour l'écosystème .NET.",
+  "aliases": [
+    "c#",
+    "dotnet"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "csharp",
+    "c#",
+    "dotnet"
+  ],
+  "license": "trademark",
+  "author": "C# Team",
+  "website": "https://learn.microsoft.com/dotnet/csharp/",
+  "brandGuidelinesUrl": "https://www.microsoft.com/legal/intellectualproperty/trademarks",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#68217a"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

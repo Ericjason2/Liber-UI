@@ -1,0 +1,35 @@
+{
+  "slug": "kafka",
+  "kind": "logo",
+  "name": "Apache Kafka",
+  "description": "Plateforme de streaming d'événements distribuée à haut débit et tolérance aux pannes.",
+  "aliases": [
+    "kafka streaming"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "kafka",
+    "kafka streaming"
+  ],
+  "license": "trademark",
+  "author": "Apache Kafka Team",
+  "website": "https://kafka.apache.org",
+  "brandGuidelinesUrl": "https://kafka.apache.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/apachekafka/apachekafka-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#231f20"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

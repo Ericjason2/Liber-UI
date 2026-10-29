@@ -12,8 +12,8 @@ const fixtureRoot = join(__dirname, "../__fixtures__/content");
 describe("Liber resource validation", () => {
   it("passes cleanly on all official sample logos in content/", async () => {
     const report = await validateAll(contentRoot);
-    expect(report.totalChecked).toBe(10);
-    expect(report.byKind.logo).toBe(10);
+    expect(report.totalChecked).toBeGreaterThanOrEqual(150);
+    expect(report.byKind.logo).toBe(150);
     expect(report.issues).toEqual([]);
   });
 

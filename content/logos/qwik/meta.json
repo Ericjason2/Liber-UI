@@ -1,0 +1,35 @@
+{
+  "slug": "qwik",
+  "kind": "logo",
+  "name": "Qwik",
+  "description": "Framework web reprenable (resumable) à chargement instantané sans hydratation.",
+  "aliases": [
+    "qwikcity"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "qwik",
+    "qwikcity"
+  ],
+  "license": "trademark",
+  "author": "Qwik Team",
+  "website": "https://qwik.dev",
+  "brandGuidelinesUrl": "https://qwik.dev",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/qwik/qwik-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#18B6F6"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "ubuntu",
+  "kind": "logo",
+  "name": "Ubuntu",
+  "description": "Distribution Linux open-source réputée pour sa stabilité sur postes de travail et serveurs cloud.",
+  "aliases": [
+    "canonical ubuntu"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "ubuntu",
+    "canonical ubuntu"
+  ],
+  "license": "trademark",
+  "author": "Ubuntu Team",
+  "website": "https://ubuntu.com",
+  "brandGuidelinesUrl": "https://design.ubuntu.com/brand/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/ubuntu/ubuntu-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#e95420"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

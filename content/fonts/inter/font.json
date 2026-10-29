@@ -1,0 +1,32 @@
+{
+  "slug": "inter",
+  "kind": "font",
+  "name": "Inter",
+  "family": "Inter",
+  "description": "Extremely popular screen font with calibrated optical kerning.",
+  "author": "Rasmus Andersson",
+  "tags": [
+    "sans",
+    "typography",
+    "inter"
+  ],
+  "category": "sans",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource-variable/inter",
+  "weights": [
+    300,
+    400,
+    500,
+    600,
+    700
+  ],
+  "subsets": [
+    "latin",
+    "latin-ext"
+  ],
+  "variable": true,
+  "source": {
+    "url": "https://rsms.me/inter/"
+  },
+  "licenseFile": "OFL.txt"
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "datadog",
+  "kind": "logo",
+  "name": "Datadog",
+  "description": "Service de monitoring et d'observabilité SaaS pour serveurs, bases de données, outils et services cloud.",
+  "aliases": [
+    "dd"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "datadog",
+    "dd"
+  ],
+  "license": "trademark",
+  "author": "Datadog Team",
+  "website": "https://www.datadoghq.com",
+  "brandGuidelinesUrl": "https://www.datadoghq.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/datadog/datadog-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#632ca6"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

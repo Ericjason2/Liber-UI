@@ -1,0 +1,35 @@
+{
+  "slug": "sqlite",
+  "kind": "logo",
+  "name": "SQLite",
+  "description": "Moteur de base de données SQL léger, autonome, sans serveur et sans configuration.",
+  "aliases": [
+    "sqlite3"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "sqlite",
+    "sqlite3"
+  ],
+  "license": "trademark",
+  "author": "SQLite Team",
+  "website": "https://www.sqlite.org",
+  "brandGuidelinesUrl": "https://www.sqlite.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#0f80cc"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "gradle",
+  "kind": "logo",
+  "name": "Gradle",
+  "description": "Outil d'automatisation de build multi-langages performant et flexible pour la JVM.",
+  "aliases": [
+    "gradle build"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "gradle",
+    "gradle build"
+  ],
+  "license": "trademark",
+  "author": "Gradle Team",
+  "website": "https://gradle.org",
+  "brandGuidelinesUrl": "https://gradle.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/gradle/gradle-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#02303a"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

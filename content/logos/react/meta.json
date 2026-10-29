@@ -1,0 +1,37 @@
+{
+  "slug": "react",
+  "kind": "logo",
+  "name": "React",
+  "description": "Bibliothèque JavaScript open-source pour concevoir des interfaces utilisateur réactives.",
+  "aliases": [
+    "reactjs",
+    "react.js"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "react",
+    "reactjs",
+    "react.js"
+  ],
+  "license": "trademark",
+  "author": "React Team",
+  "website": "https://react.dev",
+  "brandGuidelinesUrl": "https://react.dev",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#61dafb"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "nomad",
+  "kind": "logo",
+  "name": "HashiCorp Nomad",
+  "description": "Orchestrateur de charge de travail flexible et simple pour conteneurs et applications non-conteneurisées.",
+  "aliases": [
+    "hashicorp nomad"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "nomad",
+    "hashicorp nomad"
+  ],
+  "license": "trademark",
+  "author": "HashiCorp Nomad Team",
+  "website": "https://www.nomadproject.io",
+  "brandGuidelinesUrl": "https://www.hashicorp.com/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nomad/nomad-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#00ca8e"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

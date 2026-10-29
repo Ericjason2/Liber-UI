@@ -1,0 +1,32 @@
+{
+  "slug": "jest",
+  "kind": "logo",
+  "name": "Jest",
+  "description": "Framework de test JavaScript axé sur la simplicité avec assertion, espion et couverture intégrés.",
+  "aliases": [
+    "jestjs"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "jest",
+    "jestjs"
+  ],
+  "license": "trademark",
+  "author": "Jest Team",
+  "website": "https://jestjs.io",
+  "brandGuidelinesUrl": "https://jestjs.io",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#99425b"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

@@ -1,18 +1,41 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Search, Sun, Moon, Menu, X } from "lucide-react";
+import { Search, Sun, Moon, Menu, X, Palette, Type, Check, RotateCcw } from "lucide-react";
 import { GithubMono } from "@liber/react";
 import { useTheme } from "@/context/ThemeContext";
 import { CommandPalette } from "./CommandPalette";
 
+const QUICK_PALETTES = [
+  { slug: "neutral", name: "Neutral", hex: "#171717" },
+  { slug: "ocean", name: "Ocean", hex: "#2563eb" },
+  { slug: "emerald", name: "Emerald", hex: "#059669" },
+  { slug: "violet", name: "Violet", hex: "#7c3aed" },
+  { slug: "amber", name: "Amber", hex: "#d97706" },
+  { slug: "rose", name: "Rose", hex: "#e11d48" },
+  { slug: "sunset", name: "Sunset", hex: "#ea580c" },
+  { slug: "midnight-oled", name: "Midnight", hex: "#0284c7" },
+  { slug: "catppuccin-mocha", name: "Mocha", hex: "#cba6f7" },
+];
+
+const QUICK_FONTS = [
+  { slug: "inter", name: "Inter", desc: "Clean UI" },
+  { slug: "geist", name: "Geist", desc: "Engineered" },
+  { slug: "roboto", name: "Roboto", desc: "Classic" },
+  { slug: "dm-sans", name: "DM Sans", desc: "Geometric" },
+  { slug: "jetbrains-mono", name: "JetBrains", desc: "Code" },
+  { slug: "space-grotesk", name: "Space Grotesk", desc: "Modern" },
+];
+
 export function Navbar() {
   const pathname = usePathname();
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme, activePalette, setActivePalette, activeFont, setActiveFont } = useTheme();
   const [searchOpen, setSearchOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [customizerOpen, setCustomizerOpen] = useState(false);
+  const customizerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -25,10 +48,23 @@ export function Navbar() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (customizerRef.current && !customizerRef.current.contains(e.target as Node)) {
+        setCustomizerOpen(false);
+      }
+    };
+    if (customizerOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [customizerOpen]);
+
   const [prevPathname, setPrevPathname] = useState(pathname);
   if (prevPathname !== pathname) {
     setPrevPathname(pathname);
     setSearchOpen(false);
+    setCustomizerOpen(false);
   }
 
   const navLinks = [
@@ -39,6 +75,13 @@ export function Navbar() {
     { href: "/fonts", label: "Fonts" },
     { href: "/docs", label: "Docs" },
   ];
+
+  const currentThemeObj =
+    QUICK_PALETTES.find((p) => p.slug === activePalette) || {
+      slug: "neutral",
+      name: "Neutral",
+      hex: "#171717",
+    };
 
   return (
     <>
@@ -90,6 +133,107 @@ export function Navbar() {
               </kbd>
             </button>
 
+            {/* Global Theme & Font Customizer */}
+            <div className="relative" ref={customizerRef}>
+              <button
+                onClick={() => setCustomizerOpen((prev) => !prev)}
+                aria-label="Customize global theme and font"
+                title="Global theme and font switcher"
+                className={`flex h-9 items-center gap-1.5 rounded-[10px] border px-2.5 text-xs font-medium transition-colors ${
+                  customizerOpen
+                    ? "border-foreground bg-muted text-foreground"
+                    : "border-border bg-card text-muted-foreground hover:text-foreground hover:bg-muted"
+                }`}
+              >
+                <Palette className="h-3.5 w-3.5" />
+                <span
+                  className="h-2.5 w-2.5 rounded-full border border-black/10 dark:border-white/20"
+                  style={{ backgroundColor: currentThemeObj?.hex ?? "#171717" }}
+                />
+                <span className="hidden xl:inline text-[11px] capitalize">{activePalette}</span>
+              </button>
+
+              {customizerOpen && (
+                <div className="absolute right-0 top-11 w-80 rounded-[12px] border border-border bg-card p-4 shadow-xl z-50 animate-in fade-in zoom-in-95 duration-100">
+                  <div className="flex items-center justify-between pb-3 border-b border-border">
+                    <div>
+                      <div className="text-xs font-semibold text-foreground">Global Previewer</div>
+                      <div className="text-[11px] text-muted-foreground">Applies live across all previews</div>
+                    </div>
+                    <button
+                      onClick={() => {
+                        setActivePalette("neutral");
+                        setActiveFont("inter");
+                      }}
+                      title="Reset defaults"
+                      className="flex items-center gap-1 text-[11px] text-muted-foreground hover:text-foreground px-1.5 py-0.5 rounded border border-border hover:bg-muted transition-colors"
+                    >
+                      <RotateCcw className="h-3 w-3" />
+                      <span>Reset</span>
+                    </button>
+                  </div>
+
+                  {/* Palette Selector */}
+                  <div className="pt-3">
+                    <div className="flex items-center gap-1.5 text-xs font-medium text-foreground mb-2">
+                      <Palette className="h-3 w-3 text-muted-foreground" />
+                      <span>Color Palette</span>
+                    </div>
+                    <div className="grid grid-cols-3 gap-1.5">
+                      {QUICK_PALETTES.map((p) => {
+                        const isSelected = activePalette === p.slug;
+                        return (
+                          <button
+                            key={p.slug}
+                            onClick={() => setActivePalette(p.slug)}
+                            className={`flex items-center gap-1.5 px-2 py-1.5 rounded-[6px] border text-left text-[11px] transition-all ${
+                              isSelected
+                                ? "border-foreground bg-muted font-semibold text-foreground"
+                                : "border-border/60 hover:border-border hover:bg-surface-subtle text-muted-foreground hover:text-foreground"
+                            }`}
+                          >
+                            <span
+                              className="h-2.5 w-2.5 rounded-full shrink-0"
+                              style={{ backgroundColor: p.hex }}
+                            />
+                            <span className="truncate">{p.name}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* Font Selector */}
+                  <div className="pt-4 border-t border-border mt-3">
+                    <div className="flex items-center gap-1.5 text-xs font-medium text-foreground mb-2">
+                      <Type className="h-3 w-3 text-muted-foreground" />
+                      <span>Typography</span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-1.5">
+                      {QUICK_FONTS.map((f) => {
+                        const isSelected = activeFont === f.slug;
+                        return (
+                          <button
+                            key={f.slug}
+                            onClick={() => setActiveFont(f.slug)}
+                            className={`flex items-center justify-between px-2.5 py-1.5 rounded-[6px] border text-left text-xs transition-all ${
+                              isSelected
+                                ? "border-foreground bg-muted font-semibold text-foreground"
+                                : "border-border/60 hover:border-border hover:bg-surface-subtle text-muted-foreground hover:text-foreground"
+                            }`}
+                          >
+                            <span className="truncate">{f.name}</span>
+                            {isSelected && <Check className="h-3 w-3 text-foreground" />}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Dark / Light Mode */}
             <button
               onClick={toggleTheme}
               aria-label="Toggle theme"
@@ -99,7 +243,7 @@ export function Navbar() {
             </button>
 
             <a
-              href="https://github.com/devicons/devicon"
+              href="https://github.com/Ericjason2/Liber-UI"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Repository"
