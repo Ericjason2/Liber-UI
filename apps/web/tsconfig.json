@@ -12,7 +12,11 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@liber/core": ["../../packages/core/src/index.ts"],
+      "@liber/core/*": ["../../packages/core/src/*"],
+      "@liber/react": ["../../packages/react/src/index.ts"],
+      "@liber/react/*": ["../../packages/react/src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
