@@ -1,0 +1,37 @@
+{
+  "slug": "erlang",
+  "kind": "logo",
+  "name": "Erlang",
+  "description": "Langage fonctionnel concurrent conçu pour bâtir des systèmes hautement distribués et tolérants aux pannes.",
+  "aliases": [
+    "erl",
+    "beam"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "erlang",
+    "erl",
+    "beam"
+  ],
+  "license": "trademark",
+  "author": "Erlang Team",
+  "website": "https://www.erlang.org",
+  "brandGuidelinesUrl": "https://www.erlang.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/erlang/erlang-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#a90533"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

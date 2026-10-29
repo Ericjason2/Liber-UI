@@ -1,0 +1,35 @@
+{
+  "slug": "ionic",
+  "kind": "logo",
+  "name": "Ionic",
+  "description": "Kit de développement d'interface mobile multiplateforme basé sur le web pour iOS, Android et le Web.",
+  "aliases": [
+    "ionicframework"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "ionic",
+    "ionicframework"
+  ],
+  "license": "trademark",
+  "author": "Ionic Team",
+  "website": "https://ionicframework.com",
+  "brandGuidelinesUrl": "https://ionicframework.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/ionic/ionic-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#4e8ef7"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

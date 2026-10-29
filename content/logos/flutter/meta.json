@@ -1,0 +1,32 @@
+{
+  "slug": "flutter",
+  "kind": "logo",
+  "name": "Flutter",
+  "description": "Framework open-source de Google pour compiler des applications natives mobiles, web et desktop.",
+  "aliases": [
+    "flutter sdk"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "flutter",
+    "flutter sdk"
+  ],
+  "license": "trademark",
+  "author": "Flutter Team",
+  "website": "https://flutter.dev",
+  "brandGuidelinesUrl": "https://flutter.dev/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#3FB6D3"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

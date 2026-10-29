@@ -5,6 +5,7 @@
   "scripts": {
     "validate": "tsx validate.ts",
     "generate": "tsx generate.ts",
+    "check-themes": "tsx check-themes.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },

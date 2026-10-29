@@ -1,0 +1,35 @@
+{
+  "slug": "elasticsearch",
+  "kind": "logo",
+  "name": "Elasticsearch",
+  "description": "Moteur de recherche et d'analyse distribué, RESTful et hautement scalable.",
+  "aliases": [
+    "elastic"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "elasticsearch",
+    "elastic"
+  ],
+  "license": "trademark",
+  "author": "Elasticsearch Team",
+  "website": "https://www.elastic.co",
+  "brandGuidelinesUrl": "https://www.elastic.co/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/elasticsearch/elasticsearch-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#00bfb3"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

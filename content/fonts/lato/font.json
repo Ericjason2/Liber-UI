@@ -1,0 +1,30 @@
+{
+  "slug": "lato",
+  "kind": "font",
+  "name": "Lato",
+  "family": "Lato",
+  "description": "Warm, semi-rounded details paired with solid, serious foundation.",
+  "author": "Lukasz Dziedzic",
+  "tags": [
+    "sans",
+    "typography",
+    "lato"
+  ],
+  "category": "sans",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource/lato",
+  "weights": [
+    300,
+    400,
+    700
+  ],
+  "subsets": [
+    "latin",
+    "latin-ext"
+  ],
+  "variable": false,
+  "source": {
+    "url": "https://www.latofonts.com"
+  },
+  "licenseFile": "OFL.txt"
+}

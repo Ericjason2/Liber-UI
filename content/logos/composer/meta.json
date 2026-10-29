@@ -1,0 +1,35 @@
+{
+  "slug": "composer",
+  "kind": "logo",
+  "name": "Composer",
+  "description": "Gestionnaire de dépendances standard pour l'écosystème de programmation PHP.",
+  "aliases": [
+    "packagist"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "composer",
+    "packagist"
+  ],
+  "license": "trademark",
+  "author": "Composer Team",
+  "website": "https://getcomposer.org",
+  "brandGuidelinesUrl": "https://getcomposer.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/composer/composer-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#000000"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

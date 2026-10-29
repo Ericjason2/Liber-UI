@@ -1,0 +1,32 @@
+{
+  "slug": "puppeteer",
+  "kind": "logo",
+  "name": "Puppeteer",
+  "description": "Bibliothèque Node.js fournissant une API de haut niveau pour contrôler Chrome ou Chromium en headless.",
+  "aliases": [
+    "chrome puppeteer"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "puppeteer",
+    "chrome puppeteer"
+  ],
+  "license": "trademark",
+  "author": "Puppeteer Team",
+  "website": "https://pptr.dev",
+  "brandGuidelinesUrl": "https://pptr.dev",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/puppeteer/puppeteer-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#00d8a2"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

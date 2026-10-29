@@ -1,0 +1,42 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "trello",
+  "type": "registry:ui",
+  "title": "Trello",
+  "description": "Outil de gestion de tâches et de collaboration basé sur les tableaux et cartes Kanban.",
+  "author": "Trello Team",
+  "categories": [
+    "tools"
+  ],
+  "files": [
+    {
+      "path": "ui/logos/trello.tsx",
+      "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface TrelloColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst TrelloColor = ({ size = 24, ...props }: TrelloColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"trello\"}</title><defs><linearGradient id=\"liber-trello-color__a\" x1={128} x2={128} y1={0} y2={256} gradientTransform=\"scale(.5)\" gradientUnits=\"userSpaceOnUse\"><stop offset={0} stopColor=\"#2684ff\" /><stop offset={1} stopColor=\"#0052cc\" /></linearGradient></defs><path fill=\"url(#liber-trello-color__a)\" d=\"M12.5 0h103c6.925 0 12.5 5.575 12.5 12.5v103c0 6.925-5.575 12.5-12.5 12.5h-103C5.575 128 0 122.425 0 115.5v-103C0 5.575 5.575 0 12.5 0\" /><path fill=\"#fff\" d=\"M78.32 16.64h27.04c3.324 0 6 2.676 6 6v44c0 3.324-2.676 6-6 6H78.32c-3.324 0-6-2.676-6-6v-44c0-3.324 2.676-6 6-6m-55.68 0h27.04c3.324 0 6 2.676 6 6v76c0 3.324-2.676 6-6 6H22.64c-3.324 0-6-2.676-6-6v-76c0-3.324 2.676-6 6-6\" /></svg>;\nexport { TrelloColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface TrelloMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst TrelloMono = ({ size = 24, ...props }: TrelloMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"trello (monochrome)\"}</title><path fill=\"currentColor\" d=\"M12.5 0C5.575 0 0 5.575 0 12.5v103c0 6.925 5.575 12.5 12.5 12.5h103c6.925 0 12.5-5.575 12.5-12.5v-103C128 5.575 122.425 0 115.5 0Zm10.14 16.64h27.04c3.324 0 6 2.677 6 6v76c0 3.325-2.676 6-6 6H22.64c-3.323 0-6-2.675-6-6v-76c0-3.323 2.677-6 6-6m55.68 0h27.04c3.323 0 6 2.677 6 6v44c0 3.325-2.677 6-6 6H78.32c-3.324 0-6-2.675-6-6v-44c0-3.323 2.676-6 6-6\" /></svg>;\nexport { TrelloMono };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface TrelloWordmarkProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst TrelloWordmark = ({ size = 24, ...props }: TrelloWordmarkProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"trello\"}</title><defs><linearGradient id=\"liber-trello-wordmark__a\" x1={128} x2={128} y1={0} y2={256} gradientTransform=\"translate(0 50.95)scale(.10032)\" gradientUnits=\"userSpaceOnUse\"><stop offset={0} stopColor=\"#2684ff\" /><stop offset={1} stopColor=\"#0052cc\" /></linearGradient></defs><path fill=\"#293856\" d=\"M88.89 50.95v20.27c0 3.892 2.162 5.537 5.597 5.537a7.7 7.7 0 0 0 2.109-.213v-4.562a6 6 0 0 1-.782.036c-.905 0-1.645-.4-1.645-1.522V50.95Zm11.007 0v20.27c0 3.892 2.164 5.537 5.6 5.537a7.7 7.7 0 0 0 2.122-.213v-4.562a6 6 0 0 1-.778.036c-.921 0-1.667-.4-1.667-1.522V50.95Zm-64.111 1.88v4.961h5.877v18.823h5.671V57.791h5.878v-4.96zm41.289 4.88c-5.645 0-9.26 4.092-9.26 9.811 0 5.937 3.117 9.463 10.165 9.463a16.9 16.9 0 0 0 6.122-1.094v-4.435c-1.81.58-3.847 1.156-5.937 1.156-2.806 0-4.76-.922-5.237-3.588a44 44 0 0 0 4.42.259c4.015 0 7.403-1.076 7.403-4.964 0-3.773-3.484-6.608-7.676-6.608m42.035.008c-5.67 0-8.962 3.913-8.962 9.632 0 5.682 3.33 9.7 8.962 9.7s8.89-3.969 8.89-9.7-3.22-9.632-8.89-9.632m-53.775.113c-2.514.023-3.973 1.475-4.906 3.816V58.1h-5.241v18.514h5.24v-9.702c0-2.966 1.72-3.871 5.423-3.583v-5.484a7 7 0 0 0-.516-.014m11.632 3.918c1.485 0 2.678 1.01 2.678 2.388 0 1.773-1.871 2.328-4.027 2.328a18.4 18.4 0 0 1-2.74-.22 6.2 6.2 0 0 1 .729-2.467 3.88 3.88 0 0 1 3.36-2.02zm42.143.662c2.625 0 3.755 2.154 3.755 4.939s-1.101 4.994-3.755 4.994-3.822-2.209-3.822-4.994c0-2.79 1.197-4.939 3.822-4.939\" /><path fill=\"url(#liber-trello-wordmark__a)\" d=\"M2.508 50.95h20.665a2.5 2.5 0 0 1 2.508 2.508v20.665a2.5 2.5 0 0 1-2.508 2.508H2.508A2.5 2.5 0 0 1 0 74.123V53.458a2.5 2.5 0 0 1 2.508-2.508\" /><path fill=\"#fff\" d=\"M15.714 54.288h5.425c.667 0 1.204.538 1.204 1.204v8.828a1.2 1.2 0 0 1-1.204 1.204h-5.425a1.2 1.2 0 0 1-1.204-1.204v-8.828a1.2 1.2 0 0 1 1.204-1.203zm-11.172 0h5.425c.667 0 1.204.538 1.204 1.204V70.74a1.2 1.2 0 0 1-1.204 1.204H4.542a1.2 1.2 0 0 1-1.204-1.204V55.492c0-.667.537-1.204 1.204-1.204\" /></svg>;\nexport { TrelloWordmark };",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "logo",
+    "aliases": [
+      "atlassian trello"
+    ],
+    "website": "https://trello.com",
+    "brandGuidelinesUrl": "https://www.atlassian.com/company/news/press-kit",
+    "source": {
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/trello/trello-original.svg",
+      "retrievedAt": "2026-10-29"
+    },
+    "variants": {
+      "color": {
+        "file": "color.svg",
+        "hex": "#0052cc"
+      },
+      "mono": {
+        "file": "mono.svg"
+      },
+      "wordmark": {
+        "file": "wordmark.svg"
+      }
+    }
+  }
+}

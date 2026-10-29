@@ -1,0 +1,32 @@
+{
+  "slug": "vitest",
+  "kind": "logo",
+  "name": "Vitest",
+  "description": "Framework de test unitaire ultra-rapide propulsé nativement par Vite.",
+  "aliases": [
+    "vite test"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "vitest",
+    "vite test"
+  ],
+  "license": "trademark",
+  "author": "Vitest Team",
+  "website": "https://vitest.dev",
+  "brandGuidelinesUrl": "https://vitest.dev",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vitest/vitest-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#fcc72b"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "inter",
+  "type": "registry:font",
+  "title": "Inter",
+  "description": "Extremely popular screen font with calibrated optical kerning.",
+  "author": "Rasmus Andersson",
+  "categories": [
+    "sans"
+  ],
+  "dependencies": [
+    "@fontsource-variable/inter"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/inter.css",
+      "content": "/* Self-hosted font definition for Inter */\n@import \"@fontsource-variable/inter\";\n:root {\n  --font-sans: 'Inter', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Inter",
+    "weights": [
+      300,
+      400,
+      500,
+      600,
+      700
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext"
+    ],
+    "variable": true,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource-variable/inter"
+  }
+}

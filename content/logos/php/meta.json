@@ -1,0 +1,32 @@
+{
+  "slug": "php",
+  "kind": "logo",
+  "name": "PHP",
+  "description": "Langage de script côté serveur largement utilisé pour le développement web dynamique.",
+  "aliases": [
+    "php8"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "php",
+    "php8"
+  ],
+  "license": "trademark",
+  "author": "PHP Team",
+  "website": "https://www.php.net",
+  "brandGuidelinesUrl": "https://www.php.net",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#777bb3"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

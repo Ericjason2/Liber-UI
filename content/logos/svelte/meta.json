@@ -1,0 +1,35 @@
+{
+  "slug": "svelte",
+  "kind": "logo",
+  "name": "Svelte",
+  "description": "Compilateur innovant générant du code JavaScript chirurgical sans Virtual DOM.",
+  "aliases": [
+    "sveltekit"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "svelte",
+    "sveltekit"
+  ],
+  "license": "trademark",
+  "author": "Svelte Team",
+  "website": "https://svelte.dev",
+  "brandGuidelinesUrl": "https://svelte.dev",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/svelte/svelte-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#ff3e00"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

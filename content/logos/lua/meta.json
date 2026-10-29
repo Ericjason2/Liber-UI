@@ -1,0 +1,32 @@
+{
+  "slug": "lua",
+  "kind": "logo",
+  "name": "Lua",
+  "description": "Langage de script puissant, léger et rapide conçu pour être embarqué dans des applications.",
+  "aliases": [
+    "lualang"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "lua",
+    "lualang"
+  ],
+  "license": "trademark",
+  "author": "Lua Team",
+  "website": "https://www.lua.org",
+  "brandGuidelinesUrl": "https://www.lua.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#000080"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

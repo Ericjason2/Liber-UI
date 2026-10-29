@@ -1,0 +1,35 @@
+{
+  "slug": "consul",
+  "kind": "logo",
+  "name": "HashiCorp Consul",
+  "description": "Plateforme de maillage de services pour la découverte, la configuration et la segmentation sécurisée.",
+  "aliases": [
+    "hashicorp consul"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "consul",
+    "hashicorp consul"
+  ],
+  "license": "trademark",
+  "author": "HashiCorp Consul Team",
+  "website": "https://www.consul.io",
+  "brandGuidelinesUrl": "https://www.hashicorp.com/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/consul/consul-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#e03875"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "grafana",
+  "kind": "logo",
+  "name": "Grafana",
+  "description": "Plateforme open-source d'analyse, d'observabilité et de tableaux de bord interactifs.",
+  "aliases": [
+    "grafana labs"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "grafana",
+    "grafana labs"
+  ],
+  "license": "trademark",
+  "author": "Grafana Team",
+  "website": "https://grafana.com",
+  "brandGuidelinesUrl": "https://grafana.com/about/press/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/grafana/grafana-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#f7a525"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

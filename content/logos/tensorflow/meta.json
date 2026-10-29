@@ -1,0 +1,35 @@
+{
+  "slug": "tensorflow",
+  "kind": "logo",
+  "name": "TensorFlow",
+  "description": "Plateforme open-source de Machine Learning et réseaux de neurones profonds développée par Google.",
+  "aliases": [
+    "tf"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "tensorflow",
+    "tf"
+  ],
+  "license": "trademark",
+  "author": "TensorFlow Team",
+  "website": "https://www.tensorflow.org",
+  "brandGuidelinesUrl": "https://www.tensorflow.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#ff6f00"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

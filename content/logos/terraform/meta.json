@@ -1,0 +1,37 @@
+{
+  "slug": "terraform",
+  "kind": "logo",
+  "name": "Terraform",
+  "description": "Outil d'infrastructure as code open-source créé par HashiCorp pour provisionner le cloud.",
+  "aliases": [
+    "iac",
+    "hashicorp terraform"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "terraform",
+    "iac",
+    "hashicorp terraform"
+  ],
+  "license": "trademark",
+  "author": "Terraform Team",
+  "website": "https://www.terraform.io",
+  "brandGuidelinesUrl": "https://www.hashicorp.com/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#5c4ee5"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

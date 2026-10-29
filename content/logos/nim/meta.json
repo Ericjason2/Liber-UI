@@ -1,0 +1,35 @@
+{
+  "slug": "nim",
+  "kind": "logo",
+  "name": "Nim",
+  "description": "Langage compilé expressif avec typage statique, métaprogrammation et garbage collector efficace.",
+  "aliases": [
+    "nimlang"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "nim",
+    "nimlang"
+  ],
+  "license": "trademark",
+  "author": "Nim Team",
+  "website": "https://nim-lang.org",
+  "brandGuidelinesUrl": "https://nim-lang.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nim/nim-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#ffe953"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

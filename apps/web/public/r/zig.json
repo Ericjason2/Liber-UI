@@ -1,0 +1,42 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "zig",
+  "type": "registry:ui",
+  "title": "Zig",
+  "description": "Langage de programmation système moderne, robuste, optimal et maintenable.",
+  "author": "Zig Team",
+  "categories": [
+    "languages"
+  ],
+  "files": [
+    {
+      "path": "ui/logos/zig.tsx",
+      "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface ZigColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst ZigColor = ({ size = 24, ...props }: ZigColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"zig\"}</title><g fill=\"#f7a41d\"><path d=\"m38.484 23.843-15.06 18.405-7.529-11.712z\" /><path d=\"m38.484 23.843-10.876 9.203-4.183 9.202h-5.02v42.667h7.53l-9.203 4.183-6.693 14.222H0V23.843z\" shapeRendering=\"crispEdges\" /><path d=\"M25.935 84.915 10.039 103.32l-6.693-9.202zM46.85 23.843l5.02 11.713-20.916 6.692z\" /><path d=\"M46.85 23.843h46.013v18.405H30.954L46.85 32.21z\" shapeRendering=\"crispEdges\" /><path d=\"M97.046 84.915 81.15 103.32l-5.856-10.875z\" /><path d=\"m97.046 84.915-13.386 7.53-2.51 10.875H35.137V84.915z\" shapeRendering=\"crispEdges\" /><path d=\"M125.49 5.438 43.503 103.32 2.51 122.562l81.987-98.719zm-7.53 18.405-.836 15.06-15.059 4.182z\" /><path d=\"M128 23.843v79.477H88.68l11.712-10.039 4.183-8.366h5.02v-41.83h-7.53l8.366-7.53 7.53-11.712z\" shapeRendering=\"crispEdges\" /><path d=\"m104.575 84.915 4.183 12.55-20.078 5.855z\" /></g></svg>;\nexport { ZigColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface ZigMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst ZigMono = ({ size = 24, ...props }: ZigMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"zig (monochrome)\"}</title><g fill=\"currentColor\"><path d=\"m38.484 23.843-15.06 18.405-7.529-11.712z\" /><path d=\"m38.484 23.843-10.876 9.203-4.183 9.202h-5.02v42.667h7.53l-9.203 4.183-6.693 14.222H0V23.843z\" shapeRendering=\"crispEdges\" /><path d=\"M25.935 84.915 10.039 103.32l-6.693-9.202zM46.85 23.843l5.02 11.713-20.916 6.692z\" /><path d=\"M46.85 23.843h46.013v18.405H30.954L46.85 32.21z\" shapeRendering=\"crispEdges\" /><path d=\"M97.046 84.915 81.15 103.32l-5.856-10.875z\" /><path d=\"m97.046 84.915-13.386 7.53-2.51 10.875H35.137V84.915z\" shapeRendering=\"crispEdges\" /><path d=\"M125.49 5.438 43.503 103.32 2.51 122.562l81.987-98.719zm-7.53 18.405-.836 15.06-15.059 4.182z\" /><path d=\"M128 23.843v79.477H88.68l11.712-10.039 4.183-8.366h5.02v-41.83h-7.53l8.366-7.53 7.53-11.712z\" shapeRendering=\"crispEdges\" /><path d=\"m104.575 84.915 4.183 12.55-20.078 5.855z\" /></g></svg>;\nexport { ZigMono };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface ZigWordmarkProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst ZigWordmark = ({ size = 24, ...props }: ZigWordmarkProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"zig\"}</title><g fill=\"#f7a41d\"><path d=\"m14.865 48.489-5.817 7.11-2.908-4.525z\" /><path d=\"m14.865 48.489-4.201 3.554-1.616 3.555H7.11v16.48h2.909l-3.555 1.617-2.585 5.493H0v-30.7z\" shapeRendering=\"crispEdges\" /><path d=\"m10.018 72.079-6.14 7.11-2.585-3.556zm8.078-23.59 1.94 4.524-8.08 2.585z\" /><path d=\"M18.096 48.489H35.87v7.11H11.957l6.14-3.879z\" shapeRendering=\"crispEdges\" /><path d=\"m37.485 72.079-6.14 7.11-2.261-4.202z\" /><path d=\"m37.485 72.079-5.17 2.908-.97 4.201H13.573v-7.11z\" shapeRendering=\"crispEdges\" /><path d=\"m48.473 41.38-31.67 37.808L.97 86.621l31.67-38.132zm-2.909 7.109-.323 5.817-5.817 1.615z\" /><path d=\"M49.442 48.489v30.7H34.254l4.524-3.879 1.616-3.231h1.939V55.92h-2.909l3.232-2.908 2.908-4.524z\" shapeRendering=\"crispEdges\" /><path d=\"m40.394 72.079 1.616 4.847-7.756 2.262z\" /></g><g fill=\"#fff\"><path d=\"M84.02 48.489v4.847l-10.018.97H57.198v-5.817z\" shapeRendering=\"crispEdges\" /><path d=\"M84.02 53.336 66.891 73.371v1.293H56.875l17.127-20.358v-.97z\" /><path d=\"M84.342 73.371v5.817H56.875v-4.524l9.694-1.293zm3.555-24.882h7.11v30.7h-7.11zm39.424 14.541v12.603h-5.816v-8.078L116.335 64l-4.525-.97z\" shapeRendering=\"crispEdges\" /><path d=\"m116.334 63.354 5.17 4.2-9.694-4.523z\" /><path d=\"M127.321 75.633c-3.296 2.36-7.755 3.878-12.182 3.878-9.372 0-16.513-6.721-16.513-15.608 0-8.822 7.27-15.543 16.803-15.543 4.621 0 9.436 1.777 12.571 4.524l-4.201 4.847c-2.294-2.036-5.429-3.232-8.37-3.232-5.493 0-9.759 4.17-9.759 9.533 0 5.43 4.298 9.566 9.792 9.566 1.842 0 4.136-.744 6.14-1.778z\" /></g></svg>;\nexport { ZigWordmark };",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "logo",
+    "aliases": [
+      "ziglang"
+    ],
+    "website": "https://ziglang.org",
+    "brandGuidelinesUrl": "https://ziglang.org",
+    "source": {
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/zig/zig-original.svg",
+      "retrievedAt": "2026-10-29"
+    },
+    "variants": {
+      "color": {
+        "file": "color.svg",
+        "hex": "#f7a41d"
+      },
+      "mono": {
+        "file": "mono.svg"
+      },
+      "wordmark": {
+        "file": "wordmark.svg"
+      }
+    }
+  }
+}

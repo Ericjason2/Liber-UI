@@ -1,0 +1,37 @@
+{
+  "slug": "vuejs",
+  "kind": "logo",
+  "name": "Vue.js",
+  "description": "Framework JavaScript progressif et intuitif pour la construction d'interfaces web.",
+  "aliases": [
+    "vue",
+    "vue3"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "vuejs",
+    "vue",
+    "vue3"
+  ],
+  "license": "trademark",
+  "author": "Vue.js Team",
+  "website": "https://vuejs.org",
+  "brandGuidelinesUrl": "https://vuejs.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#41B883"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

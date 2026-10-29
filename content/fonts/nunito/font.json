@@ -1,0 +1,31 @@
+{
+  "slug": "nunito",
+  "kind": "font",
+  "name": "Nunito",
+  "family": "Nunito",
+  "description": "Well-balanced rounded terminal sans-serif with lively personality.",
+  "author": "Vernon Adams",
+  "tags": [
+    "sans",
+    "typography",
+    "nunito"
+  ],
+  "category": "sans",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource-variable/nunito",
+  "weights": [
+    300,
+    400,
+    600,
+    700
+  ],
+  "subsets": [
+    "latin",
+    "latin-ext"
+  ],
+  "variable": true,
+  "source": {
+    "url": "https://github.com/googlefonts/nunito"
+  },
+  "licenseFile": "OFL.txt"
+}

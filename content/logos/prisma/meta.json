@@ -1,0 +1,35 @@
+{
+  "slug": "prisma",
+  "kind": "logo",
+  "name": "Prisma",
+  "description": "ORM nouvelle génération pour TypeScript et Node.js simplifiant l'accès aux bases de données.",
+  "aliases": [
+    "prisma orm"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "prisma",
+    "prisma orm"
+  ],
+  "license": "trademark",
+  "author": "Prisma Team",
+  "website": "https://www.prisma.io",
+  "brandGuidelinesUrl": "https://www.prisma.io/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/prisma/prisma-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#2D3748"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "html5",
+  "kind": "logo",
+  "name": "HTML5",
+  "description": "Cinquième révision majeure du langage de balisage standard du World Wide Web.",
+  "aliases": [
+    "html"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "html5",
+    "html"
+  ],
+  "license": "trademark",
+  "author": "HTML5 Team",
+  "website": "https://html.spec.whatwg.org",
+  "brandGuidelinesUrl": "https://www.w3.org/html/logo/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#e54d26"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

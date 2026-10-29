@@ -1,0 +1,35 @@
+{
+  "slug": "ansible",
+  "kind": "logo",
+  "name": "Ansible",
+  "description": "Outil open-source de gestion de configuration, de déploiement d'applications et d'automatisation.",
+  "aliases": [
+    "redhat ansible"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "ansible",
+    "redhat ansible"
+  ],
+  "license": "trademark",
+  "author": "Ansible Team",
+  "website": "https://www.ansible.com",
+  "brandGuidelinesUrl": "https://www.redhat.com/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#1A1918"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "couchdb",
+  "kind": "logo",
+  "name": "Apache CouchDB",
+  "description": "Base de données NoSQL orientée documents avec réplication bidirectionnelle et API JSON HTTP.",
+  "aliases": [
+    "couch"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "couchdb",
+    "couch"
+  ],
+  "license": "trademark",
+  "author": "Apache CouchDB Team",
+  "website": "https://couchdb.apache.org",
+  "brandGuidelinesUrl": "https://couchdb.apache.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/couchdb/couchdb-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#e42528"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

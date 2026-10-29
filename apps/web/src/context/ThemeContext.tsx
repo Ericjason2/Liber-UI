@@ -1,13 +1,18 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useSyncExternalStore, type ReactNode } from "react";
+import { SAMPLE_THEMES, SAMPLE_FONTS } from "@/lib/catalog";
 
 type Theme = "light" | "dark";
 
-interface ThemeContextType {
+export interface GlobalCustomizerContextType {
   theme: Theme;
   toggleTheme: () => void;
   setTheme: (t: Theme) => void;
+  activePalette: string;
+  setActivePalette: (slug: string) => void;
+  activeFont: string;
+  setActiveFont: (slug: string) => void;
 }
 
 function getSystemTheme(): Theme {
@@ -15,67 +20,100 @@ function getSystemTheme(): Theme {
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
-function getStoredTheme(): Theme {
-  if (typeof window === "undefined") return "light";
-  const stored = localStorage.getItem("liber-theme");
-  if (stored === "dark" || stored === "light") return stored;
-  return getSystemTheme();
-}
-
 let currentTheme: Theme = "light";
+let currentPalette = "neutral";
+let currentFont = "inter";
 const listeners = new Set<() => void>();
 
-function subscribeTheme(callback: () => void) {
+function notify() {
+  listeners.forEach((l) => l());
+}
+
+function subscribe(callback: () => void) {
   listeners.add(callback);
   return () => {
     listeners.delete(callback);
   };
 }
 
-function getThemeSnapshot(): Theme {
-  return currentTheme;
+function applyPaletteToDom(slug: string) {
+  if (typeof document === "undefined") return;
+  const found = SAMPLE_THEMES.find((t) => t.slug === slug);
+  if (!found || !found.tokens) return;
+  const root = document.documentElement;
+  if (found.tokens.primary) {
+    root.style.setProperty("--primary", found.tokens.primary);
+    root.style.setProperty("--ring", found.tokens.primary);
+  }
+  if (found.tokens.accent) {
+    root.style.setProperty("--accent", found.tokens.accent);
+  }
+  if (found.tokens.border) {
+    root.style.setProperty("--border", found.tokens.border);
+  }
 }
 
-function getThemeServerSnapshot(): Theme {
-  return "light";
+function applyFontToDom(slug: string) {
+  if (typeof document === "undefined") return;
+  const fontObj = SAMPLE_FONTS.find((f) => f.slug === slug);
+  const root = document.documentElement;
+  if (fontObj) {
+    const familyStr = `"${fontObj.name}", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`;
+    root.style.setProperty("--font-sans", familyStr);
+  } else {
+    root.style.removeProperty("--font-sans");
+  }
 }
 
-function setDocumentTheme(t: Theme) {
+function applyThemeToDom(t: Theme) {
   if (typeof document !== "undefined") {
     document.documentElement.classList.toggle("dark", t === "dark");
   }
 }
 
-const emptySubscribe = () => () => {};
-
-function useMounted() {
-  return useSyncExternalStore(emptySubscribe, () => true, () => false);
-}
-
-const ThemeContext = createContext<ThemeContextType>({
+const ThemeContext = createContext<GlobalCustomizerContextType>({
   theme: "light",
   toggleTheme: () => {},
   setTheme: () => {},
+  activePalette: "neutral",
+  setActivePalette: () => {},
+  activeFont: "inter",
+  setActiveFont: () => {},
 });
 
+const emptySubscribe = () => () => {};
+
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const mounted = useMounted();
-  const theme = useSyncExternalStore(subscribeTheme, getThemeSnapshot, getThemeServerSnapshot);
+  const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
+  const theme = useSyncExternalStore(subscribe, () => currentTheme, () => "light" as Theme);
+  const activePalette = useSyncExternalStore(subscribe, () => currentPalette, () => "neutral");
+  const activeFont = useSyncExternalStore(subscribe, () => currentFont, () => "inter");
 
   useEffect(() => {
-    const initial = getStoredTheme();
-    if (initial !== currentTheme) {
-      currentTheme = initial;
-      listeners.forEach((l) => l());
+    const storedTheme = localStorage.getItem("liber-theme") as Theme | null;
+    currentTheme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : getSystemTheme();
+    applyThemeToDom(currentTheme);
+
+    const storedPalette = localStorage.getItem("liber-palette");
+    if (storedPalette) {
+      currentPalette = storedPalette;
+      applyPaletteToDom(storedPalette);
     }
-    setDocumentTheme(initial);
+
+    const storedFont = localStorage.getItem("liber-font");
+    if (storedFont) {
+      currentFont = storedFont;
+      applyFontToDom(storedFont);
+    }
+
+    notify();
 
     const mql = window.matchMedia("(prefers-color-scheme: dark)");
     const handler = (e: MediaQueryListEvent) => {
       if (!localStorage.getItem("liber-theme")) {
         currentTheme = e.matches ? "dark" : "light";
-        setDocumentTheme(currentTheme);
-        listeners.forEach((l) => l());
+        applyThemeToDom(currentTheme);
+        notify();
       }
     };
     mql.addEventListener("change", handler);
@@ -85,16 +123,40 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const setTheme = (t: Theme) => {
     currentTheme = t;
     localStorage.setItem("liber-theme", t);
-    setDocumentTheme(t);
-    listeners.forEach((l) => l());
+    applyThemeToDom(t);
+    notify();
   };
 
   const toggleTheme = () => {
     setTheme(currentTheme === "dark" ? "light" : "dark");
   };
 
+  const setActivePalette = (slug: string) => {
+    currentPalette = slug;
+    localStorage.setItem("liber-palette", slug);
+    applyPaletteToDom(slug);
+    notify();
+  };
+
+  const setActiveFont = (slug: string) => {
+    currentFont = slug;
+    localStorage.setItem("liber-font", slug);
+    applyFontToDom(slug);
+    notify();
+  };
+
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>
+    <ThemeContext.Provider
+      value={{
+        theme,
+        toggleTheme,
+        setTheme,
+        activePalette,
+        setActivePalette,
+        activeFont,
+        setActiveFont,
+      }}
+    >
       <div className={mounted ? "" : "invisible"}>{children}</div>
     </ThemeContext.Provider>
   );

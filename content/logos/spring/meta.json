@@ -1,0 +1,37 @@
+{
+  "slug": "spring",
+  "kind": "logo",
+  "name": "Spring",
+  "description": "Framework open-source complet facilitant le développement d'applications d'entreprise en Java.",
+  "aliases": [
+    "springboot",
+    "spring boot"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "spring",
+    "springboot",
+    "spring boot"
+  ],
+  "license": "trademark",
+  "author": "Spring Team",
+  "website": "https://spring.io",
+  "brandGuidelinesUrl": "https://spring.io/trademarks",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#5FB832"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

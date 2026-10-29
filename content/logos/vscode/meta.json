@@ -1,0 +1,37 @@
+{
+  "slug": "vscode",
+  "kind": "logo",
+  "name": "VS Code",
+  "description": "Éditeur de code source léger et extensible développé par Microsoft.",
+  "aliases": [
+    "visual studio code",
+    "code editor"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "vscode",
+    "visual studio code",
+    "code editor"
+  ],
+  "license": "trademark",
+  "author": "VS Code Team",
+  "website": "https://code.visualstudio.com",
+  "brandGuidelinesUrl": "https://code.visualstudio.com/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#3C99D4"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

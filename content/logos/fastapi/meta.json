@@ -1,0 +1,35 @@
+{
+  "slug": "fastapi",
+  "kind": "logo",
+  "name": "FastAPI",
+  "description": "Framework web moderne et très performant pour créer des APIs avec Python 3.8+.",
+  "aliases": [
+    "fast api"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "fastapi",
+    "fast api"
+  ],
+  "license": "trademark",
+  "author": "FastAPI Team",
+  "website": "https://fastapi.tiangolo.com",
+  "brandGuidelinesUrl": "https://fastapi.tiangolo.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#009688"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

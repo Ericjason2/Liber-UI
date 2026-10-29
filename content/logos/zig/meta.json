@@ -1,0 +1,35 @@
+{
+  "slug": "zig",
+  "kind": "logo",
+  "name": "Zig",
+  "description": "Langage de programmation système moderne, robuste, optimal et maintenable.",
+  "aliases": [
+    "ziglang"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "zig",
+    "ziglang"
+  ],
+  "license": "trademark",
+  "author": "Zig Team",
+  "website": "https://ziglang.org",
+  "brandGuidelinesUrl": "https://ziglang.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/zig/zig-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#f7a41d"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

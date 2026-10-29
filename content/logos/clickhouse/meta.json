@@ -1,0 +1,32 @@
+{
+  "slug": "clickhouse",
+  "kind": "logo",
+  "name": "ClickHouse",
+  "description": "Système de gestion de bases de données orienté colonnes temps réel pour l'analytique OLAP.",
+  "aliases": [
+    "olap"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "clickhouse",
+    "olap"
+  ],
+  "license": "trademark",
+  "author": "ClickHouse Team",
+  "website": "https://clickhouse.com",
+  "brandGuidelinesUrl": "https://clickhouse.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/clickhouse/clickhouse-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#f9ff69"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "kubernetes",
+  "kind": "logo",
+  "name": "Kubernetes",
+  "description": "Système d'orchestration open-source pour automatiser le déploiement et la gestion de conteneurs.",
+  "aliases": [
+    "k8s"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "kubernetes",
+    "k8s"
+  ],
+  "license": "trademark",
+  "author": "Kubernetes Team",
+  "website": "https://kubernetes.io",
+  "brandGuidelinesUrl": "https://kubernetes.io/docs/contribute/brand/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#326ce5"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

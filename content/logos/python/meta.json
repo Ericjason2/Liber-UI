@@ -1,0 +1,37 @@
+{
+  "slug": "python",
+  "kind": "logo",
+  "name": "Python",
+  "description": "Langage de programmation polyvalent, interprété et populaire pour la data science et le web.",
+  "aliases": [
+    "py",
+    "python3"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "python",
+    "py",
+    "python3"
+  ],
+  "license": "trademark",
+  "author": "Python Team",
+  "website": "https://www.python.org",
+  "brandGuidelinesUrl": "https://www.python.org/community/logos/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#ffd845"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

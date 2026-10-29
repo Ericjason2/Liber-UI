@@ -1,0 +1,35 @@
+{
+  "slug": "scala",
+  "kind": "logo",
+  "name": "Scala",
+  "description": "Langage alliant programmation orientée objet et fonctionnelle sur la JVM.",
+  "aliases": [
+    "scalalang"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "scala",
+    "scalalang"
+  ],
+  "license": "trademark",
+  "author": "Scala Team",
+  "website": "https://www.scala-lang.org",
+  "brandGuidelinesUrl": "https://www.scala-lang.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#de3423"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

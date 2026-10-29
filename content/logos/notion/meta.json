@@ -1,0 +1,32 @@
+{
+  "slug": "notion",
+  "kind": "logo",
+  "name": "Notion",
+  "description": "Espace de travail connecté tout-en-un réunissant notes, wikis, bases de données et gestion de projets.",
+  "aliases": [
+    "notion workspace"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "notion",
+    "notion workspace"
+  ],
+  "license": "trademark",
+  "author": "Notion Team",
+  "website": "https://www.notion.so",
+  "brandGuidelinesUrl": "https://www.notion.so/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/notion/notion-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#fff"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "podman",
+  "kind": "logo",
+  "name": "Podman",
+  "description": "Moteur de conteneurs sans démon (daemonless) et rootless conforme OCI.",
+  "aliases": [
+    "libpod"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "podman",
+    "libpod"
+  ],
+  "license": "trademark",
+  "author": "Podman Team",
+  "website": "https://podman.io",
+  "brandGuidelinesUrl": "https://podman.io",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/podman/podman-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#892ca0"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

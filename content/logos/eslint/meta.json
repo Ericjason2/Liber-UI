@@ -1,0 +1,37 @@
+{
+  "slug": "eslint",
+  "kind": "logo",
+  "name": "ESLint",
+  "description": "Outil d'analyse statique configurable pour détecter et corriger les erreurs de code JavaScript.",
+  "aliases": [
+    "linter",
+    "js linter"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "eslint",
+    "linter",
+    "js linter"
+  ],
+  "license": "trademark",
+  "author": "ESLint Team",
+  "website": "https://eslint.org",
+  "brandGuidelinesUrl": "https://eslint.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/eslint/eslint-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#4b32c3"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

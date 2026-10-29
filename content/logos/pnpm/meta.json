@@ -1,0 +1,35 @@
+{
+  "slug": "pnpm",
+  "kind": "logo",
+  "name": "pnpm",
+  "description": "Gestionnaire de paquets ultra-rapide et économe en espace disque utilisant des liens durs.",
+  "aliases": [
+    "pnpm workspace"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "pnpm",
+    "pnpm workspace"
+  ],
+  "license": "trademark",
+  "author": "pnpm Team",
+  "website": "https://pnpm.io",
+  "brandGuidelinesUrl": "https://pnpm.io",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/pnpm/pnpm-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#f9ad00"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

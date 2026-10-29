@@ -1,0 +1,35 @@
+{
+  "slug": "archlinux",
+  "kind": "logo",
+  "name": "Arch Linux",
+  "description": "Distribution Linux légère et flexible suivant le principe KISS et une publication continue.",
+  "aliases": [
+    "arch"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "archlinux",
+    "arch"
+  ],
+  "license": "trademark",
+  "author": "Arch Linux Team",
+  "website": "https://archlinux.org",
+  "brandGuidelinesUrl": "https://wiki.archlinux.org/title/Arch_Linux_press_kit",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/archlinux/archlinux-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#1791cf"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

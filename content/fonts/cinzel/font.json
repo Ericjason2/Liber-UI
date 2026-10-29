@@ -1,0 +1,29 @@
+{
+  "slug": "cinzel",
+  "kind": "font",
+  "name": "Cinzel",
+  "family": "Cinzel",
+  "description": "Inspired by classical Roman monumental inscriptions from antiquity.",
+  "author": "Natanael Gama",
+  "tags": [
+    "serif",
+    "typography",
+    "cinzel"
+  ],
+  "category": "serif",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource-variable/cinzel",
+  "weights": [
+    400,
+    600,
+    700
+  ],
+  "subsets": [
+    "latin"
+  ],
+  "variable": true,
+  "source": {
+    "url": "https://github.com/NDISCOVER/Cinzel"
+  },
+  "licenseFile": "OFL.txt"
+}

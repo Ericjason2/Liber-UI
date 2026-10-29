@@ -30,6 +30,29 @@ export function optimizeSvgString(
       .replace(/stroke:#[0-9a-fA-F]{3,8}/gi, "stroke:currentColor");
   }
 
+  // Remove non-standard CSS properties from style attributes that break React CSSProperties types
+  intermediate = intermediate.replace(/style="([^"]*)"/gi, (_match, styleContent) => {
+    const cleaned = styleContent
+      .split(";")
+      .map((s: string) => s.trim())
+      .filter((s: string) => {
+        if (!s) return false;
+        const prop = s.split(":")[0]?.trim().toLowerCase();
+        const forbidden = [
+          "solid-color",
+          "solid-opacity",
+          "shape-padding",
+          "shape-margin",
+          "inline-size",
+          "block-progression",
+          "-inkscape-font-specification",
+        ];
+        return !forbidden.includes(prop) && !prop.startsWith("-inkscape");
+      })
+      .join("; ");
+    return cleaned ? `style="${cleaned}"` : "";
+  });
+
   const result = optimize(intermediate, {
     multipass: true,
     plugins: [

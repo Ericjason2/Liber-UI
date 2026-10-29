@@ -30,6 +30,12 @@ export async function generateReactComponent(
 
   // Replace standard props type with LiberLogoProps
   const typed = code
+    .replace(/solidColor:\s*[^,}]+,?/g, "")
+    .replace(/solidOpacity:\s*[^,}]+,?/g, "")
+    .replace(/shapePadding:\s*[^,}]+,?/g, "")
+    .replace(/shapeMargin:\s*[^,}]+,?/g, "")
+    .replace(/inlineSize:\s*[^,}]+,?/g, "")
+    .replace(/blockProgression:\s*[^,}]+,?/g, "")
     .replace(
       'import type { SVGProps } from "react";',
       'import type { SVGProps } from "react";\n\nexport interface ' +

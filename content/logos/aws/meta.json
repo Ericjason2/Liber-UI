@@ -1,0 +1,34 @@
+{
+  "slug": "aws",
+  "kind": "logo",
+  "name": "AWS",
+  "description": "Leader mondial des plateformes de cloud computing offrant plus de 200 services complets.",
+  "aliases": [
+    "amazon web services",
+    "cloud"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "aws",
+    "amazon web services",
+    "cloud"
+  ],
+  "license": "trademark",
+  "author": "AWS Team",
+  "website": "https://aws.amazon.com",
+  "brandGuidelinesUrl": "https://aws.amazon.com/co-marketing/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#f90"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

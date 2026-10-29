@@ -1,0 +1,29 @@
+{
+  "slug": "syne",
+  "kind": "font",
+  "name": "Syne",
+  "family": "Syne",
+  "description": "Experimental geometric display font designed for French design festivals.",
+  "author": "Bonjour Monde",
+  "tags": [
+    "display",
+    "typography",
+    "syne"
+  ],
+  "category": "display",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource-variable/syne",
+  "weights": [
+    500,
+    700,
+    800
+  ],
+  "subsets": [
+    "latin"
+  ],
+  "variable": true,
+  "source": {
+    "url": "https://github.com/bonjour-monde/syne-font"
+  },
+  "licenseFile": "OFL.txt"
+}

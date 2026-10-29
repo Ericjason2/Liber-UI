@@ -1,0 +1,35 @@
+{
+  "slug": "yarn",
+  "kind": "logo",
+  "name": "Yarn",
+  "description": "Gestionnaire de dépendances rapide, fiable et sécurisé pour les applications JavaScript.",
+  "aliases": [
+    "yarnpkg"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "yarn",
+    "yarnpkg"
+  ],
+  "license": "trademark",
+  "author": "Yarn Team",
+  "website": "https://yarnpkg.com",
+  "brandGuidelinesUrl": "https://yarnpkg.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/yarn/yarn-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#2c8ebb"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

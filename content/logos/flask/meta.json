@@ -1,0 +1,35 @@
+{
+  "slug": "flask",
+  "kind": "logo",
+  "name": "Flask",
+  "description": "Micro-framework web modulaire et léger écrit en Python.",
+  "aliases": [
+    "flask python"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "flask",
+    "flask python"
+  ],
+  "license": "trademark",
+  "author": "Flask Team",
+  "website": "https://flask.palletsprojects.com",
+  "brandGuidelinesUrl": "https://palletsprojects.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#010101"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

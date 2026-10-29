@@ -1,0 +1,35 @@
+{
+  "slug": "ember",
+  "kind": "logo",
+  "name": "Ember.js",
+  "description": "Framework JavaScript productif pour créer des applications web ambitieuses.",
+  "aliases": [
+    "emberjs"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "ember",
+    "emberjs"
+  ],
+  "license": "trademark",
+  "author": "Ember.js Team",
+  "website": "https://emberjs.com",
+  "brandGuidelinesUrl": "https://emberjs.com/logos",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/ember/ember-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#E04E39"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

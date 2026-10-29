@@ -1,0 +1,35 @@
+{
+  "slug": "neo4j",
+  "kind": "logo",
+  "name": "Neo4j",
+  "description": "Système de gestion de base de données orientée graphes le plus utilisé au monde.",
+  "aliases": [
+    "graph database"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "neo4j",
+    "graph database"
+  ],
+  "license": "trademark",
+  "author": "Neo4j Team",
+  "website": "https://neo4j.com",
+  "brandGuidelinesUrl": "https://neo4j.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/neo4j/neo4j-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#018BFF"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

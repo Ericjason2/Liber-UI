@@ -1,15 +1,1271 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-29T12:23:25.911Z",
+  "updatedAt": "2026-10-29T16:31:46.457Z",
   "stats": {
-    "total": 10,
-    "logos": 10,
+    "total": 171,
+    "logos": 150,
     "blocks": 0,
     "components": 0,
     "themes": 0,
-    "fonts": 0
+    "fonts": 21
   },
   "items": [
+    {
+      "slug": "alpinejs",
+      "kind": "logo",
+      "name": "Alpine.js",
+      "description": "Framework léger et robuste pour composer du comportement dynamique directement dans votre markup HTML.",
+      "aliases": [
+        "alpine"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "alpinejs",
+        "alpine"
+      ],
+      "license": "trademark",
+      "author": "Alpine.js Team",
+      "website": "https://alpinejs.dev",
+      "brandGuidelinesUrl": "https://alpinejs.dev",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/alpinejs/alpinejs-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#2d3441"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "anaconda",
+      "kind": "logo",
+      "name": "Anaconda",
+      "description": "Distribution Python et R pour le calcul scientifique et la gestion de paquets de data science.",
+      "aliases": [
+        "conda"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "anaconda",
+        "conda"
+      ],
+      "license": "trademark",
+      "author": "Anaconda Team",
+      "website": "https://www.anaconda.com",
+      "brandGuidelinesUrl": "https://www.anaconda.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/anaconda/anaconda-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#3eb049"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "androidstudio",
+      "kind": "logo",
+      "name": "Android Studio",
+      "description": "Environnement de développement officiel pour la création d'applications Android par Google.",
+      "aliases": [
+        "google android studio"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "androidstudio",
+        "google android studio"
+      ],
+      "license": "trademark",
+      "author": "Android Studio Team",
+      "website": "https://developer.android.com/studio",
+      "brandGuidelinesUrl": "https://developer.android.com/distribute/marketing-tools/brand-guidelines",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#4285F4"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "angular",
+      "kind": "logo",
+      "name": "Angular",
+      "description": "Plateforme et framework pour applications web monopages modernes développé par Google.",
+      "aliases": [
+        "angularjs",
+        "ng"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "angular",
+        "angularjs",
+        "ng"
+      ],
+      "license": "trademark",
+      "author": "Angular Team",
+      "website": "https://angular.dev",
+      "brandGuidelinesUrl": "https://angular.dev/press-kit",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#c4473a"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "ansible",
+      "kind": "logo",
+      "name": "Ansible",
+      "description": "Outil open-source de gestion de configuration, de déploiement d'applications et d'automatisation.",
+      "aliases": [
+        "redhat ansible"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "ansible",
+        "redhat ansible"
+      ],
+      "license": "trademark",
+      "author": "Ansible Team",
+      "website": "https://www.ansible.com",
+      "brandGuidelinesUrl": "https://www.redhat.com/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#1A1918"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "apache",
+      "kind": "logo",
+      "name": "Apache",
+      "description": "Serveur HTTP open-source historique et robuste soutenu par l'Apache Software Foundation.",
+      "aliases": [
+        "httpd",
+        "apache server"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "apache",
+        "httpd",
+        "apache server"
+      ],
+      "license": "trademark",
+      "author": "Apache Team",
+      "website": "https://httpd.apache.org",
+      "brandGuidelinesUrl": "https://www.apache.org/foundation/marks/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/apache/apache-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#cb2533"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "archlinux",
+      "kind": "logo",
+      "name": "Arch Linux",
+      "description": "Distribution Linux légère et flexible suivant le principe KISS et une publication continue.",
+      "aliases": [
+        "arch"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "archlinux",
+        "arch"
+      ],
+      "license": "trademark",
+      "author": "Arch Linux Team",
+      "website": "https://archlinux.org",
+      "brandGuidelinesUrl": "https://wiki.archlinux.org/title/Arch_Linux_press_kit",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/archlinux/archlinux-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#1791cf"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "astro",
+      "kind": "logo",
+      "name": "Astro",
+      "description": "Framework web tout-en-un ultra-rapide conçu pour les sites axés sur le contenu.",
+      "aliases": [
+        "astrojs"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "astro",
+        "astrojs"
+      ],
+      "license": "trademark",
+      "author": "Astro Team",
+      "website": "https://astro.build",
+      "brandGuidelinesUrl": "https://astro.build/press/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/astro/astro-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#ff5d01"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "aws",
+      "kind": "logo",
+      "name": "AWS",
+      "description": "Leader mondial des plateformes de cloud computing offrant plus de 200 services complets.",
+      "aliases": [
+        "amazon web services",
+        "cloud"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "aws",
+        "amazon web services",
+        "cloud"
+      ],
+      "license": "trademark",
+      "author": "AWS Team",
+      "website": "https://aws.amazon.com",
+      "brandGuidelinesUrl": "https://aws.amazon.com/co-marketing/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#f90"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "azure",
+      "kind": "logo",
+      "name": "Microsoft Azure",
+      "description": "Ensemble de services cloud de Microsoft pour créer, déployer et gérer des applications.",
+      "aliases": [
+        "microsoft azure"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "azure",
+        "microsoft azure"
+      ],
+      "license": "trademark",
+      "author": "Microsoft Azure Team",
+      "website": "https://azure.microsoft.com",
+      "brandGuidelinesUrl": "https://www.microsoft.com/legal/intellectualproperty/trademarks",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#0089D6"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "babel",
+      "kind": "logo",
+      "name": "Babel",
+      "description": "Compilateur JavaScript permettant d'utiliser la syntaxe de nouvelle génération sur tous les navigateurs.",
+      "aliases": [
+        "babeljs"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "babel",
+        "babeljs"
+      ],
+      "license": "trademark",
+      "author": "Babel Team",
+      "website": "https://babeljs.io",
+      "brandGuidelinesUrl": "https://babeljs.io",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/babel/babel-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#f9dc3e"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "backbonejs",
+      "kind": "logo",
+      "name": "Backbone.js",
+      "description": "Bibliothèque MVC légère fournissant des modèles, collections et vues pour les applications web.",
+      "aliases": [
+        "backbone"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "backbonejs",
+        "backbone"
+      ],
+      "license": "trademark",
+      "author": "Backbone.js Team",
+      "website": "https://backbonejs.org",
+      "brandGuidelinesUrl": "https://backbonejs.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/backbonejs/backbonejs-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#002A41"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "bash",
+      "kind": "logo",
+      "name": "Bash",
+      "description": "Interpréteur de commandes standard pour les systèmes d'exploitation Unix et Linux.",
+      "aliases": [
+        "shell",
+        "sh",
+        "terminal"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "bash",
+        "shell",
+        "sh",
+        "terminal"
+      ],
+      "license": "trademark",
+      "author": "Bash Team",
+      "website": "https://www.gnu.org/software/bash/",
+      "brandGuidelinesUrl": "https://www.gnu.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#293138"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "blender",
+      "kind": "logo",
+      "name": "Blender",
+      "description": "Suite logicielle libre et open-source complète de modélisation 3D, animation et rendu visuel.",
+      "aliases": [
+        "blender 3d"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "blender",
+        "blender 3d"
+      ],
+      "license": "trademark",
+      "author": "Blender Team",
+      "website": "https://www.blender.org",
+      "brandGuidelinesUrl": "https://www.blender.org/about/logo/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#DC7B2E"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "bootstrap",
+      "kind": "logo",
+      "name": "Bootstrap",
+      "description": "Framework CSS open-source populaire facilitant la conception de sites web réactifs.",
+      "aliases": [
+        "twitter bootstrap"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "bootstrap",
+        "twitter bootstrap"
+      ],
+      "license": "trademark",
+      "author": "Bootstrap Team",
+      "website": "https://getbootstrap.com",
+      "brandGuidelinesUrl": "https://getbootstrap.com/docs/5.3/about/brand/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#712cf9"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "bun",
+      "kind": "logo",
+      "name": "Bun",
+      "description": "Environnement d'exécution JavaScript & TypeScript tout-en-un ultra-rapide avec gestionnaire de paquets.",
+      "aliases": [
+        "bunjs",
+        "bun runtime"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "bun",
+        "bunjs",
+        "bun runtime"
+      ],
+      "license": "trademark",
+      "author": "Bun Team",
+      "website": "https://bun.sh",
+      "brandGuidelinesUrl": "https://bun.sh",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bun/bun-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#FBF0DF"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "capacitor",
+      "kind": "logo",
+      "name": "Capacitor",
+      "description": "Runtime natif multiplateforme pour créer des applications iOS, Android et PWA avec du code web.",
+      "aliases": [
+        "ionic-capacitor"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "capacitor",
+        "ionic-capacitor"
+      ],
+      "license": "trademark",
+      "author": "Capacitor Team",
+      "website": "https://capacitorjs.com",
+      "brandGuidelinesUrl": "https://capacitorjs.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/capacitor/capacitor-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#53B9FF"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "cassandra",
+      "kind": "logo",
+      "name": "Apache Cassandra",
+      "description": "Base de données NoSQL distribuée et scalable linéairement conçue pour les gros volumes de données.",
+      "aliases": [
+        "c*"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "cassandra",
+        "c*"
+      ],
+      "license": "trademark",
+      "author": "Apache Cassandra Team",
+      "website": "https://cassandra.apache.org",
+      "brandGuidelinesUrl": "https://cassandra.apache.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/cassandra/cassandra-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#1185b0"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "circleci",
+      "kind": "logo",
+      "name": "CircleCI",
+      "description": "Plateforme cloud leader d'intégration et de livraison continues avec parallélisation native.",
+      "aliases": [
+        "circle ci"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "circleci",
+        "circle ci"
+      ],
+      "license": "trademark",
+      "author": "CircleCI Team",
+      "website": "https://circleci.com",
+      "brandGuidelinesUrl": "https://circleci.com/brand/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/circleci/circleci-plain.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#343434"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "clickhouse",
+      "kind": "logo",
+      "name": "ClickHouse",
+      "description": "Système de gestion de bases de données orienté colonnes temps réel pour l'analytique OLAP.",
+      "aliases": [
+        "olap"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "clickhouse",
+        "olap"
+      ],
+      "license": "trademark",
+      "author": "ClickHouse Team",
+      "website": "https://clickhouse.com",
+      "brandGuidelinesUrl": "https://clickhouse.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/clickhouse/clickhouse-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#f9ff69"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "clojure",
+      "kind": "logo",
+      "name": "Clojure",
+      "description": "Dialecte Lisp dynamique et fonctionnel ciblant la machine virtuelle Java.",
+      "aliases": [
+        "clj",
+        "lisp"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "clojure",
+        "clj",
+        "lisp"
+      ],
+      "license": "trademark",
+      "author": "Clojure Team",
+      "website": "https://clojure.org",
+      "brandGuidelinesUrl": "https://clojure.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/clojure/clojure-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#5881d8"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "cloudflare",
+      "kind": "logo",
+      "name": "Cloudflare",
+      "description": "Réseau global garantissant la sécurité, la rapidité et la fiabilité de vos applications web.",
+      "aliases": [
+        "cf",
+        "edge cdn"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "cloudflare",
+        "cf",
+        "edge cdn"
+      ],
+      "license": "trademark",
+      "author": "Cloudflare Team",
+      "website": "https://www.cloudflare.com",
+      "brandGuidelinesUrl": "https://www.cloudflare.com/brand-assets/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/cloudflare/cloudflare-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#F38020"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "composer",
+      "kind": "logo",
+      "name": "Composer",
+      "description": "Gestionnaire de dépendances standard pour l'écosystème de programmation PHP.",
+      "aliases": [
+        "packagist"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "composer",
+        "packagist"
+      ],
+      "license": "trademark",
+      "author": "Composer Team",
+      "website": "https://getcomposer.org",
+      "brandGuidelinesUrl": "https://getcomposer.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/composer/composer-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#000000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "confluence",
+      "kind": "logo",
+      "name": "Confluence",
+      "description": "Espace de travail et base de connaissances collaborative pour équipes d'ingénierie.",
+      "aliases": [
+        "atlassian confluence",
+        "wiki"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "confluence",
+        "atlassian confluence",
+        "wiki"
+      ],
+      "license": "trademark",
+      "author": "Confluence Team",
+      "website": "https://www.atlassian.com/software/confluence",
+      "brandGuidelinesUrl": "https://www.atlassian.com/company/news/press-kit",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/confluence/confluence-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#136be6"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "consul",
+      "kind": "logo",
+      "name": "HashiCorp Consul",
+      "description": "Plateforme de maillage de services pour la découverte, la configuration et la segmentation sécurisée.",
+      "aliases": [
+        "hashicorp consul"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "consul",
+        "hashicorp consul"
+      ],
+      "license": "trademark",
+      "author": "HashiCorp Consul Team",
+      "website": "https://www.consul.io",
+      "brandGuidelinesUrl": "https://www.hashicorp.com/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/consul/consul-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#e03875"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "couchdb",
+      "kind": "logo",
+      "name": "Apache CouchDB",
+      "description": "Base de données NoSQL orientée documents avec réplication bidirectionnelle et API JSON HTTP.",
+      "aliases": [
+        "couch"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "couchdb",
+        "couch"
+      ],
+      "license": "trademark",
+      "author": "Apache CouchDB Team",
+      "website": "https://couchdb.apache.org",
+      "brandGuidelinesUrl": "https://couchdb.apache.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/couchdb/couchdb-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#e42528"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "cplusplus",
+      "kind": "logo",
+      "name": "C++",
+      "description": "Langage de programmation système performant avec support orienté objet et générique.",
+      "aliases": [
+        "cpp",
+        "c plus plus"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "cplusplus",
+        "cpp",
+        "c plus plus"
+      ],
+      "license": "trademark",
+      "author": "C++ Team",
+      "website": "https://isocpp.org",
+      "brandGuidelinesUrl": "https://isocpp.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#004482"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "csharp",
+      "kind": "logo",
+      "name": "C#",
+      "description": "Langage moderne et orienté objet développé par Microsoft pour l'écosystème .NET.",
+      "aliases": [
+        "c#",
+        "dotnet"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "csharp",
+        "c#",
+        "dotnet"
+      ],
+      "license": "trademark",
+      "author": "C# Team",
+      "website": "https://learn.microsoft.com/dotnet/csharp/",
+      "brandGuidelinesUrl": "https://www.microsoft.com/legal/intellectualproperty/trademarks",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#68217a"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "css3",
+      "kind": "logo",
+      "name": "CSS3",
+      "description": "Langage de feuilles de style utilisé pour la présentation et l'apparence des documents web.",
+      "aliases": [
+        "css"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "css3",
+        "css"
+      ],
+      "license": "trademark",
+      "author": "CSS3 Team",
+      "website": "https://www.w3.org/Style/CSS/",
+      "brandGuidelinesUrl": "https://www.w3.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#3d8fc6"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "d3js",
+      "kind": "logo",
+      "name": "D3.js",
+      "description": "Bibliothèque JavaScript pour manipuler des documents web à partir de données dynamiques.",
+      "aliases": [
+        "d3",
+        "data visualization"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "d3js",
+        "d3",
+        "data visualization"
+      ],
+      "license": "trademark",
+      "author": "D3.js Team",
+      "website": "https://d3js.org",
+      "brandGuidelinesUrl": "https://d3js.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#f7974e"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "dart",
+      "kind": "logo",
+      "name": "Dart",
+      "description": "Langage orienté client développé par Google, optimisé pour les applications multiplateformes.",
+      "aliases": [
+        "dartlang",
+        "flutter language"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "dart",
+        "dartlang",
+        "flutter language"
+      ],
+      "license": "trademark",
+      "author": "Dart Team",
+      "website": "https://dart.dev",
+      "brandGuidelinesUrl": "https://dart.dev/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#00A8E1"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "datadog",
+      "kind": "logo",
+      "name": "Datadog",
+      "description": "Service de monitoring et d'observabilité SaaS pour serveurs, bases de données, outils et services cloud.",
+      "aliases": [
+        "dd"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "datadog",
+        "dd"
+      ],
+      "license": "trademark",
+      "author": "Datadog Team",
+      "website": "https://www.datadoghq.com",
+      "brandGuidelinesUrl": "https://www.datadoghq.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/datadog/datadog-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#632ca6"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "dbeaver",
+      "kind": "logo",
+      "name": "DBeaver",
+      "description": "Client universel de gestion de bases de données SQL et NoSQL multiplateforme gratuit.",
+      "aliases": [
+        "dbeaver-ce"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "dbeaver",
+        "dbeaver-ce"
+      ],
+      "license": "trademark",
+      "author": "DBeaver Team",
+      "website": "https://dbeaver.io",
+      "brandGuidelinesUrl": "https://dbeaver.io",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/dbeaver/dbeaver-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#382a24"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "debian",
+      "kind": "logo",
+      "name": "Debian",
+      "description": "Système d'exploitation libre universel et robuste, pierre angulaire de multiples distributions.",
+      "aliases": [
+        "debian linux"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "debian",
+        "debian linux"
+      ],
+      "license": "trademark",
+      "author": "Debian Team",
+      "website": "https://www.debian.org",
+      "brandGuidelinesUrl": "https://www.debian.org/logos/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/debian/debian-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#A80030"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "digitalocean",
+      "kind": "logo",
+      "name": "DigitalOcean",
+      "description": "Fournisseur d'infrastructure cloud simplifié conçu pour les développeurs et les PME.",
+      "aliases": [
+        "droplet"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "digitalocean",
+        "droplet"
+      ],
+      "license": "trademark",
+      "author": "DigitalOcean Team",
+      "website": "https://www.digitalocean.com",
+      "brandGuidelinesUrl": "https://www.digitalocean.com/press",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/digitalocean/digitalocean-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#0080FF"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "django",
+      "kind": "logo",
+      "name": "Django",
+      "description": "Framework web de haut niveau en Python encourageant le développement rapide et sécurisé.",
+      "aliases": [
+        "django framework"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "django",
+        "django framework"
+      ],
+      "license": "trademark",
+      "author": "Django Team",
+      "website": "https://www.djangoproject.com",
+      "brandGuidelinesUrl": "https://www.djangoproject.com/foundation/logos/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#092e20"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
     {
       "slug": "docker",
       "kind": "logo",
@@ -48,6 +1304,359 @@
       }
     },
     {
+      "slug": "dynamodb",
+      "kind": "logo",
+      "name": "Amazon DynamoDB",
+      "description": "Service de base de données NoSQL clé-valeur et orienté document entièrement managé par AWS.",
+      "aliases": [
+        "aws dynamodb"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "dynamodb",
+        "aws dynamodb"
+      ],
+      "license": "trademark",
+      "author": "Amazon DynamoDB Team",
+      "website": "https://aws.amazon.com/dynamodb/",
+      "brandGuidelinesUrl": "https://aws.amazon.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/dynamodb/dynamodb-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#527fff"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "elasticsearch",
+      "kind": "logo",
+      "name": "Elasticsearch",
+      "description": "Moteur de recherche et d'analyse distribué, RESTful et hautement scalable.",
+      "aliases": [
+        "elastic"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "elasticsearch",
+        "elastic"
+      ],
+      "license": "trademark",
+      "author": "Elasticsearch Team",
+      "website": "https://www.elastic.co",
+      "brandGuidelinesUrl": "https://www.elastic.co/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/elasticsearch/elasticsearch-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#00bfb3"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "electron",
+      "kind": "logo",
+      "name": "Electron",
+      "description": "Framework permettant de concevoir des applications de bureau multiplateformes avec JavaScript.",
+      "aliases": [
+        "electronjs"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "electron",
+        "electronjs"
+      ],
+      "license": "trademark",
+      "author": "Electron Team",
+      "website": "https://www.electronjs.org",
+      "brandGuidelinesUrl": "https://www.electronjs.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#47848f"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "elixir",
+      "kind": "logo",
+      "name": "Elixir",
+      "description": "Langage fonctionnel et dynamique conçu pour concevoir des applications scalables et tolérantes aux pannes.",
+      "aliases": [
+        "ex",
+        "erlang ecosystem"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "elixir",
+        "ex",
+        "erlang ecosystem"
+      ],
+      "license": "trademark",
+      "author": "Elixir Team",
+      "website": "https://elixir-lang.org",
+      "brandGuidelinesUrl": "https://elixir-lang.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/elixir/elixir-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#8847B9"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "ember",
+      "kind": "logo",
+      "name": "Ember.js",
+      "description": "Framework JavaScript productif pour créer des applications web ambitieuses.",
+      "aliases": [
+        "emberjs"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "ember",
+        "emberjs"
+      ],
+      "license": "trademark",
+      "author": "Ember.js Team",
+      "website": "https://emberjs.com",
+      "brandGuidelinesUrl": "https://emberjs.com/logos",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/ember/ember-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#E04E39"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "erlang",
+      "kind": "logo",
+      "name": "Erlang",
+      "description": "Langage fonctionnel concurrent conçu pour bâtir des systèmes hautement distribués et tolérants aux pannes.",
+      "aliases": [
+        "erl",
+        "beam"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "erlang",
+        "erl",
+        "beam"
+      ],
+      "license": "trademark",
+      "author": "Erlang Team",
+      "website": "https://www.erlang.org",
+      "brandGuidelinesUrl": "https://www.erlang.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/erlang/erlang-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#a90533"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "eslint",
+      "kind": "logo",
+      "name": "ESLint",
+      "description": "Outil d'analyse statique configurable pour détecter et corriger les erreurs de code JavaScript.",
+      "aliases": [
+        "linter",
+        "js linter"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "eslint",
+        "linter",
+        "js linter"
+      ],
+      "license": "trademark",
+      "author": "ESLint Team",
+      "website": "https://eslint.org",
+      "brandGuidelinesUrl": "https://eslint.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/eslint/eslint-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#4b32c3"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "express",
+      "kind": "logo",
+      "name": "Express",
+      "description": "Framework d'application web minimaliste, flexible et rapide pour Node.js.",
+      "aliases": [
+        "expressjs"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "express",
+        "expressjs"
+      ],
+      "license": "trademark",
+      "author": "Express Team",
+      "website": "https://expressjs.com",
+      "brandGuidelinesUrl": "https://expressjs.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#444"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "fastapi",
+      "kind": "logo",
+      "name": "FastAPI",
+      "description": "Framework web moderne et très performant pour créer des APIs avec Python 3.8+.",
+      "aliases": [
+        "fast api"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "fastapi",
+        "fast api"
+      ],
+      "license": "trademark",
+      "author": "FastAPI Team",
+      "website": "https://fastapi.tiangolo.com",
+      "brandGuidelinesUrl": "https://fastapi.tiangolo.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#009688"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "fastify",
+      "kind": "logo",
+      "name": "Fastify",
+      "description": "Framework web ultra-rapide et à faible surcharge pour Node.js avec validation de schéma.",
+      "aliases": [
+        "fastify-http"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "fastify",
+        "fastify-http"
+      ],
+      "license": "trademark",
+      "author": "Fastify Team",
+      "website": "https://fastify.dev",
+      "brandGuidelinesUrl": "https://fastify.dev",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/fastify/fastify-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#000000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
       "slug": "figma",
       "kind": "logo",
       "name": "Figma",
@@ -74,6 +1683,108 @@
         "color": {
           "file": "color.svg",
           "hex": "#f24e1e"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "firebase",
+      "kind": "logo",
+      "name": "Firebase",
+      "description": "Plateforme de développement d'applications mobiles et web de Google.",
+      "aliases": [
+        "google firebase"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "firebase",
+        "google firebase"
+      ],
+      "license": "trademark",
+      "author": "Firebase Team",
+      "website": "https://firebase.google.com",
+      "brandGuidelinesUrl": "https://firebase.google.com/brand-guidelines",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#ffa000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "flask",
+      "kind": "logo",
+      "name": "Flask",
+      "description": "Micro-framework web modulaire et léger écrit en Python.",
+      "aliases": [
+        "flask python"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "flask",
+        "flask python"
+      ],
+      "license": "trademark",
+      "author": "Flask Team",
+      "website": "https://flask.palletsprojects.com",
+      "brandGuidelinesUrl": "https://palletsprojects.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#010101"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "flutter",
+      "kind": "logo",
+      "name": "Flutter",
+      "description": "Framework open-source de Google pour compiler des applications natives mobiles, web et desktop.",
+      "aliases": [
+        "flutter sdk"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "flutter",
+        "flutter sdk"
+      ],
+      "license": "trademark",
+      "author": "Flutter Team",
+      "website": "https://flutter.dev",
+      "brandGuidelinesUrl": "https://flutter.dev/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#3FB6D3"
         },
         "mono": {
           "file": "mono.svg"
@@ -154,6 +1865,1165 @@
       }
     },
     {
+      "slug": "gitlab",
+      "kind": "logo",
+      "name": "GitLab",
+      "description": "Plateforme DevSecOps complète intégrant contrôle de version, CI/CD et sécurité logicielle.",
+      "aliases": [
+        "gitlab ci"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "gitlab",
+        "gitlab ci"
+      ],
+      "license": "trademark",
+      "author": "GitLab Team",
+      "website": "https://about.gitlab.com",
+      "brandGuidelinesUrl": "https://about.gitlab.com/press/press-kit/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#E24329"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "go",
+      "kind": "logo",
+      "name": "Go",
+      "description": "Langage compilé et concurrent open-source conçu par Google pour les systèmes distribués.",
+      "aliases": [
+        "golang",
+        "google go"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "go",
+        "golang",
+        "google go"
+      ],
+      "license": "trademark",
+      "author": "Go Team",
+      "website": "https://go.dev",
+      "brandGuidelinesUrl": "https://go.dev/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#00acd7"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "godot",
+      "kind": "logo",
+      "name": "Godot",
+      "description": "Moteur de jeu open-source complet, léger et puissant pour la création de jeux 2D et 3D.",
+      "aliases": [
+        "godot engine"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "godot",
+        "godot engine"
+      ],
+      "license": "trademark",
+      "author": "Godot Team",
+      "website": "https://godotengine.org",
+      "brandGuidelinesUrl": "https://godotengine.org/press/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/godot/godot-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#478cbf"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "googlecloud",
+      "kind": "logo",
+      "name": "Google Cloud",
+      "description": "Suite modulaire de services cloud pour le calcul, le stockage, le big data et l'IA de Google.",
+      "aliases": [
+        "gcp",
+        "google cloud platform"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "googlecloud",
+        "gcp",
+        "google cloud platform"
+      ],
+      "license": "trademark",
+      "author": "Google Cloud Team",
+      "website": "https://cloud.google.com",
+      "brandGuidelinesUrl": "https://cloud.google.com/press",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#557ebf"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "gradle",
+      "kind": "logo",
+      "name": "Gradle",
+      "description": "Outil d'automatisation de build multi-langages performant et flexible pour la JVM.",
+      "aliases": [
+        "gradle build"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "gradle",
+        "gradle build"
+      ],
+      "license": "trademark",
+      "author": "Gradle Team",
+      "website": "https://gradle.org",
+      "brandGuidelinesUrl": "https://gradle.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/gradle/gradle-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#02303a"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "grafana",
+      "kind": "logo",
+      "name": "Grafana",
+      "description": "Plateforme open-source d'analyse, d'observabilité et de tableaux de bord interactifs.",
+      "aliases": [
+        "grafana labs"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "grafana",
+        "grafana labs"
+      ],
+      "license": "trademark",
+      "author": "Grafana Team",
+      "website": "https://grafana.com",
+      "brandGuidelinesUrl": "https://grafana.com/about/press/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/grafana/grafana-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#f7a525"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "graphql",
+      "kind": "logo",
+      "name": "GraphQL",
+      "description": "Langage de requête pour les API permettant aux clients de demander exactement les données voulues.",
+      "aliases": [
+        "gql"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "graphql",
+        "gql"
+      ],
+      "license": "trademark",
+      "author": "GraphQL Team",
+      "website": "https://graphql.org",
+      "brandGuidelinesUrl": "https://graphql.org/brand/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/graphql/graphql-plain.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#e434aa"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "haskell",
+      "kind": "logo",
+      "name": "Haskell",
+      "description": "Langage de programmation purement fonctionnel avec typage statique fort.",
+      "aliases": [
+        "hs",
+        "functional"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "haskell",
+        "hs",
+        "functional"
+      ],
+      "license": "trademark",
+      "author": "Haskell Team",
+      "website": "https://www.haskell.org",
+      "brandGuidelinesUrl": "https://wiki.haskell.org/Haskell_logo",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/haskell/haskell-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#5E5185"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "helm",
+      "kind": "logo",
+      "name": "Helm",
+      "description": "Gestionnaire de paquets pour Kubernetes permettant de définir, installer et mettre à jour des applications.",
+      "aliases": [
+        "k8s helm"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "helm",
+        "k8s helm"
+      ],
+      "license": "trademark",
+      "author": "Helm Team",
+      "website": "https://helm.sh",
+      "brandGuidelinesUrl": "https://helm.sh",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/helm/helm-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#0F1689"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "html5",
+      "kind": "logo",
+      "name": "HTML5",
+      "description": "Cinquième révision majeure du langage de balisage standard du World Wide Web.",
+      "aliases": [
+        "html"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "html5",
+        "html"
+      ],
+      "license": "trademark",
+      "author": "HTML5 Team",
+      "website": "https://html.spec.whatwg.org",
+      "brandGuidelinesUrl": "https://www.w3.org/html/logo/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#e54d26"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "insomnia",
+      "kind": "logo",
+      "name": "Insomnia",
+      "description": "Client de développement et de test pour APIs REST, GraphQL, gRPC et WebSocket.",
+      "aliases": [
+        "insomnia rest"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "insomnia",
+        "insomnia rest"
+      ],
+      "license": "trademark",
+      "author": "Insomnia Team",
+      "website": "https://insomnia.rest",
+      "brandGuidelinesUrl": "https://insomnia.rest",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/insomnia/insomnia-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#4000bf"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "intellij",
+      "kind": "logo",
+      "name": "IntelliJ IDEA",
+      "description": "Environnement de développement intégré phare de JetBrains pour Java et les langages JVM.",
+      "aliases": [
+        "jetbrains intellij"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "intellij",
+        "jetbrains intellij"
+      ],
+      "license": "trademark",
+      "author": "IntelliJ IDEA Team",
+      "website": "https://www.jetbrains.com/idea/",
+      "brandGuidelinesUrl": "https://www.jetbrains.com/company/brand/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/intellij/intellij-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#000000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "ionic",
+      "kind": "logo",
+      "name": "Ionic",
+      "description": "Kit de développement d'interface mobile multiplateforme basé sur le web pour iOS, Android et le Web.",
+      "aliases": [
+        "ionicframework"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "ionic",
+        "ionicframework"
+      ],
+      "license": "trademark",
+      "author": "Ionic Team",
+      "website": "https://ionicframework.com",
+      "brandGuidelinesUrl": "https://ionicframework.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/ionic/ionic-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#4e8ef7"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "java",
+      "kind": "logo",
+      "name": "Java",
+      "description": "Langage de programmation orienté objet et plateforme d'exécution JVM d'entreprise.",
+      "aliases": [
+        "jvm",
+        "oracle java"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "java",
+        "jvm",
+        "oracle java"
+      ],
+      "license": "trademark",
+      "author": "Java Team",
+      "website": "https://www.java.com",
+      "brandGuidelinesUrl": "https://www.oracle.com/legal/trademarks.html",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#EA2D2E"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "javascript",
+      "kind": "logo",
+      "name": "JavaScript",
+      "description": "Langage de script standard et dynamique du World Wide Web.",
+      "aliases": [
+        "js",
+        "es6",
+        "ecmascript"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "javascript",
+        "js",
+        "es6",
+        "ecmascript"
+      ],
+      "license": "trademark",
+      "author": "JavaScript Team",
+      "website": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "brandGuidelinesUrl": "https://github.com/voodootikigod/logo.js",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#f0db4f"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "jenkins",
+      "kind": "logo",
+      "name": "Jenkins",
+      "description": "Serveur d'automatisation open-source facilitant l'intégration et le déploiement continus.",
+      "aliases": [
+        "jenkins ci"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "jenkins",
+        "jenkins ci"
+      ],
+      "license": "trademark",
+      "author": "Jenkins Team",
+      "website": "https://www.jenkins.io",
+      "brandGuidelinesUrl": "https://www.jenkins.io/press/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#F0D6B7"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "jest",
+      "kind": "logo",
+      "name": "Jest",
+      "description": "Framework de test JavaScript axé sur la simplicité avec assertion, espion et couverture intégrés.",
+      "aliases": [
+        "jestjs"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "jest",
+        "jestjs"
+      ],
+      "license": "trademark",
+      "author": "Jest Team",
+      "website": "https://jestjs.io",
+      "brandGuidelinesUrl": "https://jestjs.io",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#99425b"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "jira",
+      "kind": "logo",
+      "name": "Jira",
+      "description": "Plateforme de gestion de projets agiles et de suivi des tickets pour équipes logicielles.",
+      "aliases": [
+        "atlassian jira",
+        "issue tracker"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "jira",
+        "atlassian jira",
+        "issue tracker"
+      ],
+      "license": "trademark",
+      "author": "Jira Team",
+      "website": "https://www.atlassian.com/software/jira",
+      "brandGuidelinesUrl": "https://www.atlassian.com/company/news/press-kit",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#2684ff"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "jquery",
+      "kind": "logo",
+      "name": "jQuery",
+      "description": "Bibliothèque JavaScript classique rapide et concise facilitant la manipulation du DOM.",
+      "aliases": [
+        "jq"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "jquery",
+        "jq"
+      ],
+      "license": "trademark",
+      "author": "jQuery Team",
+      "website": "https://jquery.com",
+      "brandGuidelinesUrl": "https://brand.jquery.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#0769ad"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "julia",
+      "kind": "logo",
+      "name": "Julia",
+      "description": "Langage de programmation haute performance pour le calcul scientifique et numérique.",
+      "aliases": [
+        "jl",
+        "julialang"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "julia",
+        "jl",
+        "julialang"
+      ],
+      "license": "trademark",
+      "author": "Julia Team",
+      "website": "https://julialang.org",
+      "brandGuidelinesUrl": "https://julialang.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/julia/julia-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#28a745"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "jupyter",
+      "kind": "logo",
+      "name": "Jupyter",
+      "description": "Environnement informatique interactif open source pour créer des notebooks de données.",
+      "aliases": [
+        "jupyter-notebook",
+        "ipynb"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "jupyter",
+        "jupyter-notebook",
+        "ipynb"
+      ],
+      "license": "trademark",
+      "author": "Jupyter Team",
+      "website": "https://jupyter.org",
+      "brandGuidelinesUrl": "https://jupyter.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#F37726"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "kafka",
+      "kind": "logo",
+      "name": "Apache Kafka",
+      "description": "Plateforme de streaming d'événements distribuée à haut débit et tolérance aux pannes.",
+      "aliases": [
+        "kafka streaming"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "kafka",
+        "kafka streaming"
+      ],
+      "license": "trademark",
+      "author": "Apache Kafka Team",
+      "website": "https://kafka.apache.org",
+      "brandGuidelinesUrl": "https://kafka.apache.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/apachekafka/apachekafka-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#231f20"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "keras",
+      "kind": "logo",
+      "name": "Keras",
+      "description": "API de Deep Learning de haut niveau pour Python, conçue pour l'expérimentation rapide.",
+      "aliases": [
+        "keras-io"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "keras",
+        "keras-io"
+      ],
+      "license": "trademark",
+      "author": "Keras Team",
+      "website": "https://keras.io",
+      "brandGuidelinesUrl": "https://keras.io",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/keras/keras-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#d00000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "kotlin",
+      "kind": "logo",
+      "name": "Kotlin",
+      "description": "Langage concis et moderne pour Android, la JVM et le développement multiplateforme.",
+      "aliases": [
+        "kt",
+        "android kotlin"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "kotlin",
+        "kt",
+        "android kotlin"
+      ],
+      "license": "trademark",
+      "author": "Kotlin Team",
+      "website": "https://kotlinlang.org",
+      "brandGuidelinesUrl": "https://kotlinlang.org/assets/static/brand/guidelines.pdf",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#c711e1"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "kubernetes",
+      "kind": "logo",
+      "name": "Kubernetes",
+      "description": "Système d'orchestration open-source pour automatiser le déploiement et la gestion de conteneurs.",
+      "aliases": [
+        "k8s"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "kubernetes",
+        "k8s"
+      ],
+      "license": "trademark",
+      "author": "Kubernetes Team",
+      "website": "https://kubernetes.io",
+      "brandGuidelinesUrl": "https://kubernetes.io/docs/contribute/brand/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#326ce5"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "laravel",
+      "kind": "logo",
+      "name": "Laravel",
+      "description": "Framework web PHP moderne et élégant avec une syntaxe expressive et intuitive.",
+      "aliases": [
+        "laravel framework"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "laravel",
+        "laravel framework"
+      ],
+      "license": "trademark",
+      "author": "Laravel Team",
+      "website": "https://laravel.com",
+      "brandGuidelinesUrl": "https://laravel.com/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#f0513f"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "linux",
+      "kind": "logo",
+      "name": "Linux",
+      "description": "Noyau de système d'exploitation libre et open-source de référence dans le monde informatique.",
+      "aliases": [
+        "tux",
+        "kernel"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "linux",
+        "tux",
+        "kernel"
+      ],
+      "license": "trademark",
+      "author": "Linux Team",
+      "website": "https://www.kernel.org",
+      "brandGuidelinesUrl": "https://www.linuxfoundation.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#000000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "lua",
+      "kind": "logo",
+      "name": "Lua",
+      "description": "Langage de script puissant, léger et rapide conçu pour être embarqué dans des applications.",
+      "aliases": [
+        "lualang"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "lua",
+        "lualang"
+      ],
+      "license": "trademark",
+      "author": "Lua Team",
+      "website": "https://www.lua.org",
+      "brandGuidelinesUrl": "https://www.lua.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#000080"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "mongodb",
+      "kind": "logo",
+      "name": "MongoDB",
+      "description": "Base de données NoSQL distribuée orientée documents offrant scalabilité et flexibilité.",
+      "aliases": [
+        "mongo"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "mongodb",
+        "mongo"
+      ],
+      "license": "trademark",
+      "author": "MongoDB Team",
+      "website": "https://www.mongodb.com",
+      "brandGuidelinesUrl": "https://www.mongodb.com/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#4FAA41"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "mysql",
+      "kind": "logo",
+      "name": "MySQL",
+      "description": "Système de gestion de base de données relationnelle SQL le plus populaire au monde.",
+      "aliases": [
+        "mysql db"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "mysql",
+        "mysql db"
+      ],
+      "license": "trademark",
+      "author": "MySQL Team",
+      "website": "https://www.mysql.com",
+      "brandGuidelinesUrl": "https://www.oracle.com/legal/trademarks.html",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#00618a"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "neo4j",
+      "kind": "logo",
+      "name": "Neo4j",
+      "description": "Système de gestion de base de données orientée graphes le plus utilisé au monde.",
+      "aliases": [
+        "graph database"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "neo4j",
+        "graph database"
+      ],
+      "license": "trademark",
+      "author": "Neo4j Team",
+      "website": "https://neo4j.com",
+      "brandGuidelinesUrl": "https://neo4j.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/neo4j/neo4j-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#018BFF"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "neovim",
+      "kind": "logo",
+      "name": "Neovim",
+      "description": "Éditeur de texte moderne basé sur Vim, extensible via Lua et doté d'un client LSP intégré.",
+      "aliases": [
+        "nvim"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "neovim",
+        "nvim"
+      ],
+      "license": "trademark",
+      "author": "Neovim Team",
+      "website": "https://neovim.io",
+      "brandGuidelinesUrl": "https://neovim.io",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/neovim/neovim-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#5fb950"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "nestjs",
+      "kind": "logo",
+      "name": "NestJS",
+      "description": "Framework Node.js progressif et structuré pour bâtir des applications serveur d'entreprise fiables.",
+      "aliases": [
+        "nest"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "nestjs",
+        "nest"
+      ],
+      "license": "trademark",
+      "author": "NestJS Team",
+      "website": "https://nestjs.com",
+      "brandGuidelinesUrl": "https://nestjs.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#df234f"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
       "slug": "nextjs",
       "kind": "logo",
       "name": "Next.js",
@@ -181,6 +3051,73 @@
         "color": {
           "file": "color.svg",
           "hex": "#000000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "nginx",
+      "kind": "logo",
+      "name": "NGINX",
+      "description": "Serveur HTTP et reverse proxy ultra-rapide capable de traiter des millions de connexions.",
+      "aliases": [
+        "nginx web server"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "nginx",
+        "nginx web server"
+      ],
+      "license": "trademark",
+      "author": "NGINX Team",
+      "website": "https://nginx.org",
+      "brandGuidelinesUrl": "https://www.f5.com/company/guidelines",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#090"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "nim",
+      "kind": "logo",
+      "name": "Nim",
+      "description": "Langage compilé expressif avec typage statique, métaprogrammation et garbage collector efficace.",
+      "aliases": [
+        "nimlang"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "nim",
+        "nimlang"
+      ],
+      "license": "trademark",
+      "author": "Nim Team",
+      "website": "https://nim-lang.org",
+      "brandGuidelinesUrl": "https://nim-lang.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nim/nim-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#ffe953"
         },
         "mono": {
           "file": "mono.svg"
@@ -228,6 +3165,351 @@
       }
     },
     {
+      "slug": "nomad",
+      "kind": "logo",
+      "name": "HashiCorp Nomad",
+      "description": "Orchestrateur de charge de travail flexible et simple pour conteneurs et applications non-conteneurisées.",
+      "aliases": [
+        "hashicorp nomad"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "nomad",
+        "hashicorp nomad"
+      ],
+      "license": "trademark",
+      "author": "HashiCorp Nomad Team",
+      "website": "https://www.nomadproject.io",
+      "brandGuidelinesUrl": "https://www.hashicorp.com/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nomad/nomad-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#00ca8e"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "notion",
+      "kind": "logo",
+      "name": "Notion",
+      "description": "Espace de travail connecté tout-en-un réunissant notes, wikis, bases de données et gestion de projets.",
+      "aliases": [
+        "notion workspace"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "notion",
+        "notion workspace"
+      ],
+      "license": "trademark",
+      "author": "Notion Team",
+      "website": "https://www.notion.so",
+      "brandGuidelinesUrl": "https://www.notion.so/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/notion/notion-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#fff"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "npm",
+      "kind": "logo",
+      "name": "npm",
+      "description": "Le gestionnaire de paquets par défaut pour l'écosystème JavaScript et le registre Node.js.",
+      "aliases": [
+        "npm registry",
+        "node package manager"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "npm",
+        "npm registry",
+        "node package manager"
+      ],
+      "license": "trademark",
+      "author": "npm Team",
+      "website": "https://www.npmjs.com",
+      "brandGuidelinesUrl": "https://www.npmjs.com/policies/logos",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#cb3837"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "numpy",
+      "kind": "logo",
+      "name": "NumPy",
+      "description": "Bibliothèque fondamentale pour le calcul scientifique et la manipulation de matrices multidimensionnelles en Python.",
+      "aliases": [
+        "numpy-array"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "numpy",
+        "numpy-array"
+      ],
+      "license": "trademark",
+      "author": "NumPy Team",
+      "website": "https://numpy.org",
+      "brandGuidelinesUrl": "https://numpy.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#4dabcf"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "nuxt",
+      "kind": "logo",
+      "name": "Nuxt",
+      "description": "Framework open-source intuitif et complet pour créer des applications Vue.js de production.",
+      "aliases": [
+        "nuxt3",
+        "nuxtjs"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "nuxt",
+        "nuxt3",
+        "nuxtjs"
+      ],
+      "license": "trademark",
+      "author": "Nuxt Team",
+      "website": "https://nuxt.com",
+      "brandGuidelinesUrl": "https://nuxt.com/design-kit",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nuxtjs/nuxtjs-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#00c48d"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "pandas",
+      "kind": "logo",
+      "name": "Pandas",
+      "description": "Bibliothèque logicielle d'analyse et de manipulation de données structurées pour Python.",
+      "aliases": [
+        "dataframe"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "pandas",
+        "dataframe"
+      ],
+      "license": "trademark",
+      "author": "Pandas Team",
+      "website": "https://pandas.pydata.org",
+      "brandGuidelinesUrl": "https://pandas.pydata.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#130754"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "php",
+      "kind": "logo",
+      "name": "PHP",
+      "description": "Langage de script côté serveur largement utilisé pour le développement web dynamique.",
+      "aliases": [
+        "php8"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "php",
+        "php8"
+      ],
+      "license": "trademark",
+      "author": "PHP Team",
+      "website": "https://www.php.net",
+      "brandGuidelinesUrl": "https://www.php.net",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#777bb3"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "playwright",
+      "kind": "logo",
+      "name": "Playwright",
+      "description": "Framework d'automatisation et de tests end-to-end multi-navigateurs par Microsoft.",
+      "aliases": [
+        "pw"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "playwright",
+        "pw"
+      ],
+      "license": "trademark",
+      "author": "Playwright Team",
+      "website": "https://playwright.dev",
+      "brandGuidelinesUrl": "https://playwright.dev",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/playwright/playwright-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#2EAD33"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "pnpm",
+      "kind": "logo",
+      "name": "pnpm",
+      "description": "Gestionnaire de paquets ultra-rapide et économe en espace disque utilisant des liens durs.",
+      "aliases": [
+        "pnpm workspace"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "pnpm",
+        "pnpm workspace"
+      ],
+      "license": "trademark",
+      "author": "pnpm Team",
+      "website": "https://pnpm.io",
+      "brandGuidelinesUrl": "https://pnpm.io",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/pnpm/pnpm-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#f9ad00"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "podman",
+      "kind": "logo",
+      "name": "Podman",
+      "description": "Moteur de conteneurs sans démon (daemonless) et rootless conforme OCI.",
+      "aliases": [
+        "libpod"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "podman",
+        "libpod"
+      ],
+      "license": "trademark",
+      "author": "Podman Team",
+      "website": "https://podman.io",
+      "brandGuidelinesUrl": "https://podman.io",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/podman/podman-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#892ca0"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
       "slug": "postgresql",
       "kind": "logo",
       "name": "PostgreSQL",
@@ -255,6 +3537,1059 @@
         "color": {
           "file": "color.svg",
           "hex": "#336791"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "postman",
+      "kind": "logo",
+      "name": "Postman",
+      "description": "Plateforme collaborative de conception, test, documentation et simulation d'APIs.",
+      "aliases": [
+        "api client"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "postman",
+        "api client"
+      ],
+      "license": "trademark",
+      "author": "Postman Team",
+      "website": "https://www.postman.com",
+      "brandGuidelinesUrl": "https://www.postman.com/brand-assets/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#f37036"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "prisma",
+      "kind": "logo",
+      "name": "Prisma",
+      "description": "ORM nouvelle génération pour TypeScript et Node.js simplifiant l'accès aux bases de données.",
+      "aliases": [
+        "prisma orm"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "prisma",
+        "prisma orm"
+      ],
+      "license": "trademark",
+      "author": "Prisma Team",
+      "website": "https://www.prisma.io",
+      "brandGuidelinesUrl": "https://www.prisma.io/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/prisma/prisma-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#2D3748"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "prometheus",
+      "kind": "logo",
+      "name": "Prometheus",
+      "description": "Système open-source de surveillance et d'alerte pour séries temporelles avec modèle de données dimensionnel.",
+      "aliases": [
+        "promql",
+        "monitoring"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "prometheus",
+        "promql",
+        "monitoring"
+      ],
+      "license": "trademark",
+      "author": "Prometheus Team",
+      "website": "https://prometheus.io",
+      "brandGuidelinesUrl": "https://prometheus.io",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/prometheus/prometheus-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#e75225"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "puppeteer",
+      "kind": "logo",
+      "name": "Puppeteer",
+      "description": "Bibliothèque Node.js fournissant une API de haut niveau pour contrôler Chrome ou Chromium en headless.",
+      "aliases": [
+        "chrome puppeteer"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "puppeteer",
+        "chrome puppeteer"
+      ],
+      "license": "trademark",
+      "author": "Puppeteer Team",
+      "website": "https://pptr.dev",
+      "brandGuidelinesUrl": "https://pptr.dev",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/puppeteer/puppeteer-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#00d8a2"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "pycharm",
+      "kind": "logo",
+      "name": "PyCharm",
+      "description": "IDE dédié au développement Python développé par JetBrains.",
+      "aliases": [
+        "jetbrains pycharm"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "pycharm",
+        "jetbrains pycharm"
+      ],
+      "license": "trademark",
+      "author": "PyCharm Team",
+      "website": "https://www.jetbrains.com/pycharm/",
+      "brandGuidelinesUrl": "https://www.jetbrains.com/company/brand/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/pycharm/pycharm-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#000000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "python",
+      "kind": "logo",
+      "name": "Python",
+      "description": "Langage de programmation polyvalent, interprété et populaire pour la data science et le web.",
+      "aliases": [
+        "py",
+        "python3"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "python",
+        "py",
+        "python3"
+      ],
+      "license": "trademark",
+      "author": "Python Team",
+      "website": "https://www.python.org",
+      "brandGuidelinesUrl": "https://www.python.org/community/logos/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#ffd845"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "pytorch",
+      "kind": "logo",
+      "name": "PyTorch",
+      "description": "Framework open-source de Machine Learning et Deep Learning pour la recherche et la production.",
+      "aliases": [
+        "torch"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "pytorch",
+        "torch"
+      ],
+      "license": "trademark",
+      "author": "PyTorch Team",
+      "website": "https://pytorch.org",
+      "brandGuidelinesUrl": "https://pytorch.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#EE4C2C"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "qwik",
+      "kind": "logo",
+      "name": "Qwik",
+      "description": "Framework web reprenable (resumable) à chargement instantané sans hydratation.",
+      "aliases": [
+        "qwikcity"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "qwik",
+        "qwikcity"
+      ],
+      "license": "trademark",
+      "author": "Qwik Team",
+      "website": "https://qwik.dev",
+      "brandGuidelinesUrl": "https://qwik.dev",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/qwik/qwik-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#18B6F6"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "r",
+      "kind": "logo",
+      "name": "R",
+      "description": "Langage et environnement pour le calcul statistique et la visualisation de données.",
+      "aliases": [
+        "rlang",
+        "statistics"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "r",
+        "rlang",
+        "statistics"
+      ],
+      "license": "trademark",
+      "author": "R Team",
+      "website": "https://www.r-project.org",
+      "brandGuidelinesUrl": "https://www.r-project.org/logo/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/r/r-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#1f65b7"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "rabbitmq",
+      "kind": "logo",
+      "name": "RabbitMQ",
+      "description": "Message broker open-source fiable prenant en charge plusieurs protocoles de messagerie.",
+      "aliases": [
+        "message broker"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "rabbitmq",
+        "message broker"
+      ],
+      "license": "trademark",
+      "author": "RabbitMQ Team",
+      "website": "https://www.rabbitmq.com",
+      "brandGuidelinesUrl": "https://www.rabbitmq.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/rabbitmq/rabbitmq-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#ff6600"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "rails",
+      "kind": "logo",
+      "name": "Ruby on Rails",
+      "description": "Framework web fullstack suivant le patron MVC et la philosophie de convention plutôt que configuration.",
+      "aliases": [
+        "ror",
+        "ruby on rails"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "rails",
+        "ror",
+        "ruby on rails"
+      ],
+      "license": "trademark",
+      "author": "Ruby on Rails Team",
+      "website": "https://rubyonrails.org",
+      "brandGuidelinesUrl": "https://rubyonrails.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-plain.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#CC0000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "react",
+      "kind": "logo",
+      "name": "React",
+      "description": "Bibliothèque JavaScript open-source pour concevoir des interfaces utilisateur réactives.",
+      "aliases": [
+        "reactjs",
+        "react.js"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "react",
+        "reactjs",
+        "react.js"
+      ],
+      "license": "trademark",
+      "author": "React Team",
+      "website": "https://react.dev",
+      "brandGuidelinesUrl": "https://react.dev",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#61dafb"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "redis",
+      "kind": "logo",
+      "name": "Redis",
+      "description": "Magasin de données en mémoire ultra-rapide utilisé comme base de données, cache et message broker.",
+      "aliases": [
+        "redis cache"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "redis",
+        "redis cache"
+      ],
+      "license": "trademark",
+      "author": "Redis Team",
+      "website": "https://redis.io",
+      "brandGuidelinesUrl": "https://redis.io/legal/brand-guidelines/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#d82c20"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "redux",
+      "kind": "logo",
+      "name": "Redux",
+      "description": "Conteneur d'état prévisible pour applications JavaScript modernes.",
+      "aliases": [
+        "redux toolkit"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "redux",
+        "redux toolkit"
+      ],
+      "license": "trademark",
+      "author": "Redux Team",
+      "website": "https://redux.js.org",
+      "brandGuidelinesUrl": "https://redux.js.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#764abc"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "remix",
+      "kind": "logo",
+      "name": "Remix",
+      "description": "Framework fullstack moderne pour React axé sur les standards du web et l'expérience utilisateur.",
+      "aliases": [
+        "remix-run"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "remix",
+        "remix-run"
+      ],
+      "license": "trademark",
+      "author": "Remix Team",
+      "website": "https://remix.run",
+      "brandGuidelinesUrl": "https://remix.run",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/remix/remix-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#121212"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "rollup",
+      "kind": "logo",
+      "name": "Rollup",
+      "description": "Empaqueteur de modules pour JavaScript qui compile de petits bouts de code en bibliothèques complexes.",
+      "aliases": [
+        "rollupjs"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "rollup",
+        "rollupjs"
+      ],
+      "license": "trademark",
+      "author": "Rollup Team",
+      "website": "https://rollupjs.org",
+      "brandGuidelinesUrl": "https://rollupjs.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/rollup/rollup-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#ff3333"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "ruby",
+      "kind": "logo",
+      "name": "Ruby",
+      "description": "Langage dynamique et expressif favorisant la productivité et la simplicité.",
+      "aliases": [
+        "rb",
+        "rubylang"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "ruby",
+        "rb",
+        "rubylang"
+      ],
+      "license": "trademark",
+      "author": "Ruby Team",
+      "website": "https://www.ruby-lang.org",
+      "brandGuidelinesUrl": "https://www.ruby-lang.org/en/about/logo/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#d91404"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "rust",
+      "kind": "logo",
+      "name": "Rust",
+      "description": "Langage système axé sur la sécurité mémoire, la concurrence et la performance sans garbage collector.",
+      "aliases": [
+        "rs",
+        "rustlang"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "rust",
+        "rs",
+        "rustlang"
+      ],
+      "license": "trademark",
+      "author": "Rust Team",
+      "website": "https://www.rust-lang.org",
+      "brandGuidelinesUrl": "https://www.rust-lang.org/policies/media-guide",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "sass",
+      "kind": "logo",
+      "name": "Sass",
+      "description": "Préprocesseur CSS mature, stable et puissant étendant les capacités des feuilles de style.",
+      "aliases": [
+        "scss"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "sass",
+        "scss"
+      ],
+      "license": "trademark",
+      "author": "Sass Team",
+      "website": "https://sass-lang.com",
+      "brandGuidelinesUrl": "https://sass-lang.com/styleguide/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#cc6699"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "scala",
+      "kind": "logo",
+      "name": "Scala",
+      "description": "Langage alliant programmation orientée objet et fonctionnelle sur la JVM.",
+      "aliases": [
+        "scalalang"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "scala",
+        "scalalang"
+      ],
+      "license": "trademark",
+      "author": "Scala Team",
+      "website": "https://www.scala-lang.org",
+      "brandGuidelinesUrl": "https://www.scala-lang.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#de3423"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "selenium",
+      "kind": "logo",
+      "name": "Selenium",
+      "description": "Suite d'outils pour l'automatisation des navigateurs web multi-plateforme.",
+      "aliases": [
+        "webdriver"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "selenium",
+        "webdriver"
+      ],
+      "license": "trademark",
+      "author": "Selenium Team",
+      "website": "https://www.selenium.dev",
+      "brandGuidelinesUrl": "https://www.selenium.dev",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/selenium/selenium-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#CF0A2C"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "slack",
+      "kind": "logo",
+      "name": "Slack",
+      "description": "Plateforme de communication professionnelle et de messagerie d'équipe par canaux.",
+      "aliases": [
+        "slack chat"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "slack",
+        "slack chat"
+      ],
+      "license": "trademark",
+      "author": "Slack Team",
+      "website": "https://slack.com",
+      "brandGuidelinesUrl": "https://brandfolder.com/slack",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/slack/slack-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#2D333A"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "solidity",
+      "kind": "logo",
+      "name": "Solidity",
+      "description": "Langage orienté objet pour écrire des contrats intelligents sur la blockchain Ethereum.",
+      "aliases": [
+        "sol",
+        "ethereum",
+        "web3"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "solidity",
+        "sol",
+        "ethereum",
+        "web3"
+      ],
+      "license": "trademark",
+      "author": "Solidity Team",
+      "website": "https://soliditylang.org",
+      "brandGuidelinesUrl": "https://soliditylang.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/solidity/solidity-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#383838"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "solidjs",
+      "kind": "logo",
+      "name": "SolidJS",
+      "description": "Bibliothèque JavaScript déclarative, sans DOM virtuel, ultra-performante pour les interfaces web.",
+      "aliases": [
+        "solid",
+        "solid.js"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "solidjs",
+        "solid",
+        "solid.js"
+      ],
+      "license": "trademark",
+      "author": "SolidJS Team",
+      "website": "https://www.solidjs.com",
+      "brandGuidelinesUrl": "https://www.solidjs.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/solidjs/solidjs-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#2c4f7c"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "spring",
+      "kind": "logo",
+      "name": "Spring",
+      "description": "Framework open-source complet facilitant le développement d'applications d'entreprise en Java.",
+      "aliases": [
+        "springboot",
+        "spring boot"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "spring",
+        "springboot",
+        "spring boot"
+      ],
+      "license": "trademark",
+      "author": "Spring Team",
+      "website": "https://spring.io",
+      "brandGuidelinesUrl": "https://spring.io/trademarks",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#5FB832"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "sqlite",
+      "kind": "logo",
+      "name": "SQLite",
+      "description": "Moteur de base de données SQL léger, autonome, sans serveur et sans configuration.",
+      "aliases": [
+        "sqlite3"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "sqlite",
+        "sqlite3"
+      ],
+      "license": "trademark",
+      "author": "SQLite Team",
+      "website": "https://www.sqlite.org",
+      "brandGuidelinesUrl": "https://www.sqlite.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#0f80cc"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "storybook",
+      "kind": "logo",
+      "name": "Storybook",
+      "description": "Atelier de développement d'interface utilisateur pour concevoir et tester des composants isolés.",
+      "aliases": [
+        "storybookjs"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "storybook",
+        "storybookjs"
+      ],
+      "license": "trademark",
+      "author": "Storybook Team",
+      "website": "https://storybook.js.org",
+      "brandGuidelinesUrl": "https://storybook.js.org/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/storybook/storybook-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#FF4785"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "supabase",
+      "kind": "logo",
+      "name": "Supabase",
+      "description": "Alternative open-source à Firebase proposant base de données PostgreSQL, authentification et stockage.",
+      "aliases": [
+        "supabase db"
+      ],
+      "category": "backend",
+      "tags": [
+        "backend",
+        "supabase",
+        "supabase db"
+      ],
+      "license": "trademark",
+      "author": "Supabase Team",
+      "website": "https://supabase.com",
+      "brandGuidelinesUrl": "https://supabase.com/brand-assets",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#3ecf8e"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "svelte",
+      "kind": "logo",
+      "name": "Svelte",
+      "description": "Compilateur innovant générant du code JavaScript chirurgical sans Virtual DOM.",
+      "aliases": [
+        "sveltekit"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "svelte",
+        "sveltekit"
+      ],
+      "license": "trademark",
+      "author": "Svelte Team",
+      "website": "https://svelte.dev",
+      "brandGuidelinesUrl": "https://svelte.dev",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/svelte/svelte-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#ff3e00"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "swift",
+      "kind": "logo",
+      "name": "Swift",
+      "description": "Langage moderne et rapide développé par Apple pour iOS, macOS et le cloud.",
+      "aliases": [
+        "apple swift",
+        "ios"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "swift",
+        "apple swift",
+        "ios"
+      ],
+      "license": "trademark",
+      "author": "Swift Team",
+      "website": "https://www.swift.org",
+      "brandGuidelinesUrl": "https://developer.apple.com/app-store/marketing/guidelines/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#F05138"
         },
         "mono": {
           "file": "mono.svg"
@@ -302,6 +4637,150 @@
       }
     },
     {
+      "slug": "tensorflow",
+      "kind": "logo",
+      "name": "TensorFlow",
+      "description": "Plateforme open-source de Machine Learning et réseaux de neurones profonds développée par Google.",
+      "aliases": [
+        "tf"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "tensorflow",
+        "tf"
+      ],
+      "license": "trademark",
+      "author": "TensorFlow Team",
+      "website": "https://www.tensorflow.org",
+      "brandGuidelinesUrl": "https://www.tensorflow.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#ff6f00"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "terraform",
+      "kind": "logo",
+      "name": "Terraform",
+      "description": "Outil d'infrastructure as code open-source créé par HashiCorp pour provisionner le cloud.",
+      "aliases": [
+        "iac",
+        "hashicorp terraform"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "terraform",
+        "iac",
+        "hashicorp terraform"
+      ],
+      "license": "trademark",
+      "author": "Terraform Team",
+      "website": "https://www.terraform.io",
+      "brandGuidelinesUrl": "https://www.hashicorp.com/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#5c4ee5"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "threejs",
+      "kind": "logo",
+      "name": "Three.js",
+      "description": "Bibliothèque JavaScript 3D légère utilisant WebGL pour l'affichage graphique dans le navigateur.",
+      "aliases": [
+        "three.js",
+        "webgl"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "threejs",
+        "three.js",
+        "webgl"
+      ],
+      "license": "trademark",
+      "author": "Three.js Team",
+      "website": "https://threejs.org",
+      "brandGuidelinesUrl": "https://threejs.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/threejs/threejs-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#000000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "trello",
+      "kind": "logo",
+      "name": "Trello",
+      "description": "Outil de gestion de tâches et de collaboration basé sur les tableaux et cartes Kanban.",
+      "aliases": [
+        "atlassian trello"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "trello",
+        "atlassian trello"
+      ],
+      "license": "trademark",
+      "author": "Trello Team",
+      "website": "https://trello.com",
+      "brandGuidelinesUrl": "https://www.atlassian.com/company/news/press-kit",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/trello/trello-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#0052cc"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
       "slug": "typescript",
       "kind": "logo",
       "name": "TypeScript",
@@ -331,6 +4810,113 @@
         },
         "mono": {
           "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "ubuntu",
+      "kind": "logo",
+      "name": "Ubuntu",
+      "description": "Distribution Linux open-source réputée pour sa stabilité sur postes de travail et serveurs cloud.",
+      "aliases": [
+        "canonical ubuntu"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "ubuntu",
+        "canonical ubuntu"
+      ],
+      "license": "trademark",
+      "author": "Ubuntu Team",
+      "website": "https://ubuntu.com",
+      "brandGuidelinesUrl": "https://design.ubuntu.com/brand/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/ubuntu/ubuntu-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#e95420"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "unity",
+      "kind": "logo",
+      "name": "Unity",
+      "description": "Moteur de création de jeux vidéo et d'expériences interactives 2D et 3D en temps réel.",
+      "aliases": [
+        "unity 3d",
+        "game engine"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "unity",
+        "unity 3d",
+        "game engine"
+      ],
+      "license": "trademark",
+      "author": "Unity Team",
+      "website": "https://unity.com",
+      "brandGuidelinesUrl": "https://unity.com/legal/brand-guidelines",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#4d4d4d"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "vault",
+      "kind": "logo",
+      "name": "HashiCorp Vault",
+      "description": "Solution de gestion des secrets, chiffrement des données sensibles et contrôle d'accès.",
+      "aliases": [
+        "hashicorp vault"
+      ],
+      "category": "devops",
+      "tags": [
+        "devops",
+        "vault",
+        "hashicorp vault"
+      ],
+      "license": "trademark",
+      "author": "HashiCorp Vault Team",
+      "website": "https://www.vaultproject.io",
+      "brandGuidelinesUrl": "https://www.hashicorp.com/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vault/vault-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#ffd814"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
         }
       }
     },
@@ -369,6 +4955,953 @@
           "file": "wordmark.svg"
         }
       }
+    },
+    {
+      "slug": "vim",
+      "kind": "logo",
+      "name": "Vim",
+      "description": "Éditeur de texte modal hautement efficace, puissant et omniprésent sur les systèmes Unix.",
+      "aliases": [
+        "vi",
+        "terminal editor"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "vim",
+        "vi",
+        "terminal editor"
+      ],
+      "license": "trademark",
+      "author": "Vim Team",
+      "website": "https://www.vim.org",
+      "brandGuidelinesUrl": "https://www.vim.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#179a33"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "vitest",
+      "kind": "logo",
+      "name": "Vitest",
+      "description": "Framework de test unitaire ultra-rapide propulsé nativement par Vite.",
+      "aliases": [
+        "vite test"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "vitest",
+        "vite test"
+      ],
+      "license": "trademark",
+      "author": "Vitest Team",
+      "website": "https://vitest.dev",
+      "brandGuidelinesUrl": "https://vitest.dev",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vitest/vitest-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#fcc72b"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "vscode",
+      "kind": "logo",
+      "name": "VS Code",
+      "description": "Éditeur de code source léger et extensible développé par Microsoft.",
+      "aliases": [
+        "visual studio code",
+        "code editor"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "vscode",
+        "visual studio code",
+        "code editor"
+      ],
+      "license": "trademark",
+      "author": "VS Code Team",
+      "website": "https://code.visualstudio.com",
+      "brandGuidelinesUrl": "https://code.visualstudio.com/brand",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#3C99D4"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "vuejs",
+      "kind": "logo",
+      "name": "Vue.js",
+      "description": "Framework JavaScript progressif et intuitif pour la construction d'interfaces web.",
+      "aliases": [
+        "vue",
+        "vue3"
+      ],
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "vuejs",
+        "vue",
+        "vue3"
+      ],
+      "license": "trademark",
+      "author": "Vue.js Team",
+      "website": "https://vuejs.org",
+      "brandGuidelinesUrl": "https://vuejs.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#41B883"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "webpack",
+      "kind": "logo",
+      "name": "Webpack",
+      "description": "Module bundler statique hautement configurable pour les applications JavaScript modernes.",
+      "aliases": [
+        "webpackjs"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "webpack",
+        "webpackjs"
+      ],
+      "license": "trademark",
+      "author": "Webpack Team",
+      "website": "https://webpack.js.org",
+      "brandGuidelinesUrl": "https://webpack.js.org/branding/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/webpack/webpack-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#1C78C0"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "webstorm",
+      "kind": "logo",
+      "name": "WebStorm",
+      "description": "IDE JavaScript et TypeScript puissant avec autocomplétion intelligente par JetBrains.",
+      "aliases": [
+        "jetbrains webstorm"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "webstorm",
+        "jetbrains webstorm"
+      ],
+      "license": "trademark",
+      "author": "WebStorm Team",
+      "website": "https://www.jetbrains.com/webstorm/",
+      "brandGuidelinesUrl": "https://www.jetbrains.com/company/brand/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/webstorm/webstorm-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#000000"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "xcode",
+      "kind": "logo",
+      "name": "Xcode",
+      "description": "Environnement de développement intégré d'Apple pour concevoir des applications sur toutes ses plateformes.",
+      "aliases": [
+        "apple xcode"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "xcode",
+        "apple xcode"
+      ],
+      "license": "trademark",
+      "author": "Xcode Team",
+      "website": "https://developer.apple.com/xcode/",
+      "brandGuidelinesUrl": "https://developer.apple.com/app-store/marketing/guidelines/",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/xcode/xcode-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#069CEC"
+        },
+        "mono": {
+          "file": "mono.svg"
+        }
+      }
+    },
+    {
+      "slug": "yarn",
+      "kind": "logo",
+      "name": "Yarn",
+      "description": "Gestionnaire de dépendances rapide, fiable et sécurisé pour les applications JavaScript.",
+      "aliases": [
+        "yarnpkg"
+      ],
+      "category": "tools",
+      "tags": [
+        "tools",
+        "yarn",
+        "yarnpkg"
+      ],
+      "license": "trademark",
+      "author": "Yarn Team",
+      "website": "https://yarnpkg.com",
+      "brandGuidelinesUrl": "https://yarnpkg.com",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/yarn/yarn-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#2c8ebb"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "zig",
+      "kind": "logo",
+      "name": "Zig",
+      "description": "Langage de programmation système moderne, robuste, optimal et maintenable.",
+      "aliases": [
+        "ziglang"
+      ],
+      "category": "languages",
+      "tags": [
+        "languages",
+        "zig",
+        "ziglang"
+      ],
+      "license": "trademark",
+      "author": "Zig Team",
+      "website": "https://ziglang.org",
+      "brandGuidelinesUrl": "https://ziglang.org",
+      "source": {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/zig/zig-original.svg",
+        "retrievedAt": "2026-10-29"
+      },
+      "variants": {
+        "color": {
+          "file": "color.svg",
+          "hex": "#f7a41d"
+        },
+        "mono": {
+          "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
+        }
+      }
+    },
+    {
+      "slug": "bebas-neue",
+      "kind": "font",
+      "name": "Bebas Neue",
+      "family": "Bebas Neue",
+      "description": "World-renowned all-caps headline typeface with towering vertical presence.",
+      "author": "Ryoichi Tsunekawa",
+      "tags": [
+        "display",
+        "typography",
+        "bebas-neue"
+      ],
+      "category": "display",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource/bebas-neue",
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "latin"
+      ],
+      "variable": false,
+      "source": {
+        "url": "https://github.com/dharmatype/Bebas-Neue"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "cinzel",
+      "kind": "font",
+      "name": "Cinzel",
+      "family": "Cinzel",
+      "description": "Inspired by classical Roman monumental inscriptions from antiquity.",
+      "author": "Natanael Gama",
+      "tags": [
+        "serif",
+        "typography",
+        "cinzel"
+      ],
+      "category": "serif",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/cinzel",
+      "weights": [
+        400,
+        600,
+        700
+      ],
+      "subsets": [
+        "latin"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://github.com/NDISCOVER/Cinzel"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "dm-sans",
+      "kind": "font",
+      "name": "DM Sans",
+      "family": "DM Sans",
+      "description": "Low-contrast geometric sans-serif intended for small text sizes.",
+      "author": "Colophon Foundry",
+      "tags": [
+        "sans",
+        "typography",
+        "dm-sans"
+      ],
+      "category": "sans",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/dm-sans",
+      "weights": [
+        400,
+        500,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://github.com/googlefonts/dm-fonts"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "fira-code",
+      "kind": "font",
+      "name": "Fira Code",
+      "family": "Fira Code",
+      "description": "Monospaced font with programming ligatures for operators like => and ==.",
+      "author": "Nikita Prokopov",
+      "tags": [
+        "mono",
+        "typography",
+        "fira-code"
+      ],
+      "category": "mono",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/fira-code",
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ],
+      "subsets": [
+        "latin"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://github.com/tonsky/FiraCode"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "geist",
+      "kind": "font",
+      "name": "Geist",
+      "family": "Geist",
+      "description": "Engineered by Vercel for code, typography, and technical UI.",
+      "author": "Vercel",
+      "tags": [
+        "sans",
+        "typography",
+        "geist"
+      ],
+      "category": "sans",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource/geist-sans",
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ],
+      "subsets": [
+        "latin"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://vercel.com/font"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "inter",
+      "kind": "font",
+      "name": "Inter",
+      "family": "Inter",
+      "description": "Extremely popular screen font with calibrated optical kerning.",
+      "author": "Rasmus Andersson",
+      "tags": [
+        "sans",
+        "typography",
+        "inter"
+      ],
+      "category": "sans",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/inter",
+      "weights": [
+        300,
+        400,
+        500,
+        600,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://rsms.me/inter/"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "jetbrains-mono",
+      "kind": "font",
+      "name": "JetBrains Mono",
+      "family": "JetBrains Mono",
+      "description": "Free developer monospace typeface designed for maximum code readability.",
+      "author": "JetBrains",
+      "tags": [
+        "mono",
+        "typography",
+        "jetbrains-mono"
+      ],
+      "category": "mono",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/jetbrains-mono",
+      "weights": [
+        400,
+        500,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "cyrillic"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://github.com/JetBrains/JetBrainsMono"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "lato",
+      "kind": "font",
+      "name": "Lato",
+      "family": "Lato",
+      "description": "Warm, semi-rounded details paired with solid, serious foundation.",
+      "author": "Lukasz Dziedzic",
+      "tags": [
+        "sans",
+        "typography",
+        "lato"
+      ],
+      "category": "sans",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource/lato",
+      "weights": [
+        300,
+        400,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variable": false,
+      "source": {
+        "url": "https://www.latofonts.com"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "lora",
+      "kind": "font",
+      "name": "Lora",
+      "family": "Lora",
+      "description": "Contemporary serif with brushed curves rooted in calligraphy.",
+      "author": "Cyreal",
+      "tags": [
+        "serif",
+        "typography",
+        "lora"
+      ],
+      "category": "serif",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/lora",
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://github.com/cyrealtype/Lora-Cyrillic"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "merriweather",
+      "kind": "font",
+      "name": "Merriweather",
+      "family": "Merriweather",
+      "description": "Engineered specifically to be pleasant and highly legible for screen reading.",
+      "author": "Eben Sorkin",
+      "tags": [
+        "serif",
+        "typography",
+        "merriweather"
+      ],
+      "category": "serif",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource/merriweather",
+      "weights": [
+        300,
+        400,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variable": false,
+      "source": {
+        "url": "https://github.com/SorkinType/Merriweather"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "montserrat",
+      "kind": "font",
+      "name": "Montserrat",
+      "family": "Montserrat",
+      "description": "Geometric sans inspired by traditional Buenos Aires neighborhood signage.",
+      "author": "Julieta Ulanovsky",
+      "tags": [
+        "sans",
+        "typography",
+        "montserrat"
+      ],
+      "category": "sans",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/montserrat",
+      "weights": [
+        300,
+        400,
+        500,
+        600,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://github.com/JulietaUla/Montserrat"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "nunito",
+      "kind": "font",
+      "name": "Nunito",
+      "family": "Nunito",
+      "description": "Well-balanced rounded terminal sans-serif with lively personality.",
+      "author": "Vernon Adams",
+      "tags": [
+        "sans",
+        "typography",
+        "nunito"
+      ],
+      "category": "sans",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/nunito",
+      "weights": [
+        300,
+        400,
+        600,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://github.com/googlefonts/nunito"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "open-sans",
+      "kind": "font",
+      "name": "Open Sans",
+      "family": "Open Sans",
+      "description": "Humanist sans-serif typeface designed with upright stress and open letterforms.",
+      "author": "Steve Matteson",
+      "tags": [
+        "sans",
+        "typography",
+        "open-sans"
+      ],
+      "category": "sans",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/open-sans",
+      "weights": [
+        300,
+        400,
+        500,
+        600,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://fonts.google.com/specimen/Open+Sans"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "playfair-display",
+      "kind": "font",
+      "name": "Playfair Display",
+      "family": "Playfair Display",
+      "description": "Transitional serif with high contrast and delicate, refined hairlines.",
+      "author": "Claus Eggers Sorensen",
+      "tags": [
+        "serif",
+        "typography",
+        "playfair-display"
+      ],
+      "category": "serif",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/playfair-display",
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ],
+      "subsets": [
+        "latin"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://github.com/clauseggers/Playfair-Display"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "plus-jakarta-sans",
+      "kind": "font",
+      "name": "Plus Jakarta Sans",
+      "family": "Plus Jakarta Sans",
+      "description": "Modern neo-grotesque crafted specifically for tech branding and dashboards.",
+      "author": "Tokotype",
+      "tags": [
+        "sans",
+        "typography",
+        "plus-jakarta-sans"
+      ],
+      "category": "sans",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/plus-jakarta-sans",
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://github.com/tokotype/PlusJakartaSans"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "poppins",
+      "kind": "font",
+      "name": "Poppins",
+      "family": "Poppins",
+      "description": "Geometric sans-serif with pure circular curves and sharp terminals.",
+      "author": "Indian Type Foundry",
+      "tags": [
+        "sans",
+        "typography",
+        "poppins"
+      ],
+      "category": "sans",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource/poppins",
+      "weights": [
+        300,
+        400,
+        500,
+        600,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variable": false,
+      "source": {
+        "url": "https://github.com/itfoundry/Poppins"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "pt-serif",
+      "kind": "font",
+      "name": "PT Serif",
+      "family": "PT Serif",
+      "description": "Universal serif family developed for Russian linguistic typography.",
+      "author": "ParaType",
+      "tags": [
+        "serif",
+        "typography",
+        "pt-serif"
+      ],
+      "category": "serif",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource/pt-serif",
+      "weights": [
+        400,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "cyrillic"
+      ],
+      "variable": false,
+      "source": {
+        "url": "https://www.paratype.com"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "roboto",
+      "kind": "font",
+      "name": "Roboto",
+      "family": "Roboto",
+      "description": "Google's signature neo-grotesque sans-serif with mechanical skeleton.",
+      "author": "Christian Robertson",
+      "tags": [
+        "sans",
+        "typography",
+        "roboto"
+      ],
+      "category": "sans",
+      "license": "Apache-2.0",
+      "fontsourcePackage": "@fontsource/roboto",
+      "weights": [
+        300,
+        400,
+        500,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variable": false,
+      "source": {
+        "url": "https://fonts.google.com/specimen/Roboto"
+      },
+      "licenseFile": "LICENSE.txt"
+    },
+    {
+      "slug": "source-code-pro",
+      "kind": "font",
+      "name": "Source Code Pro",
+      "family": "Source Code Pro",
+      "description": "Adobe's open monospaced companion to Source Sans specifically for coding.",
+      "author": "Paul D. Hunt",
+      "tags": [
+        "mono",
+        "typography",
+        "source-code-pro"
+      ],
+      "category": "mono",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/source-code-pro",
+      "weights": [
+        400,
+        600,
+        700
+      ],
+      "subsets": [
+        "latin"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://github.com/adobe-fonts/source-code-pro"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "space-grotesk",
+      "kind": "font",
+      "name": "Space Grotesk",
+      "family": "Space Grotesk",
+      "description": "Proportional variant of Space Mono with idiosyncratic futuristic geometry.",
+      "author": "Florian Karsten",
+      "tags": [
+        "display",
+        "typography",
+        "space-grotesk"
+      ],
+      "category": "display",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/space-grotesk",
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ],
+      "subsets": [
+        "latin"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://github.com/floriankarsten/space-grotesk"
+      },
+      "licenseFile": "OFL.txt"
+    },
+    {
+      "slug": "syne",
+      "kind": "font",
+      "name": "Syne",
+      "family": "Syne",
+      "description": "Experimental geometric display font designed for French design festivals.",
+      "author": "Bonjour Monde",
+      "tags": [
+        "display",
+        "typography",
+        "syne"
+      ],
+      "category": "display",
+      "license": "OFL-1.1",
+      "fontsourcePackage": "@fontsource-variable/syne",
+      "weights": [
+        500,
+        700,
+        800
+      ],
+      "subsets": [
+        "latin"
+      ],
+      "variable": true,
+      "source": {
+        "url": "https://github.com/bonjour-monde/syne-font"
+      },
+      "licenseFile": "OFL.txt"
     }
   ]
 }

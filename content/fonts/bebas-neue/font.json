@@ -1,0 +1,27 @@
+{
+  "slug": "bebas-neue",
+  "kind": "font",
+  "name": "Bebas Neue",
+  "family": "Bebas Neue",
+  "description": "World-renowned all-caps headline typeface with towering vertical presence.",
+  "author": "Ryoichi Tsunekawa",
+  "tags": [
+    "display",
+    "typography",
+    "bebas-neue"
+  ],
+  "category": "display",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource/bebas-neue",
+  "weights": [
+    400
+  ],
+  "subsets": [
+    "latin"
+  ],
+  "variable": false,
+  "source": {
+    "url": "https://github.com/dharmatype/Bebas-Neue"
+  },
+  "licenseFile": "OFL.txt"
+}

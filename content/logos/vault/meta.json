@@ -1,0 +1,35 @@
+{
+  "slug": "vault",
+  "kind": "logo",
+  "name": "HashiCorp Vault",
+  "description": "Solution de gestion des secrets, chiffrement des données sensibles et contrôle d'accès.",
+  "aliases": [
+    "hashicorp vault"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "vault",
+    "hashicorp vault"
+  ],
+  "license": "trademark",
+  "author": "HashiCorp Vault Team",
+  "website": "https://www.vaultproject.io",
+  "brandGuidelinesUrl": "https://www.hashicorp.com/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vault/vault-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#ffd814"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

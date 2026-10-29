@@ -1,0 +1,34 @@
+{
+  "slug": "rust",
+  "kind": "logo",
+  "name": "Rust",
+  "description": "Langage système axé sur la sécurité mémoire, la concurrence et la performance sans garbage collector.",
+  "aliases": [
+    "rs",
+    "rustlang"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "rust",
+    "rs",
+    "rustlang"
+  ],
+  "license": "trademark",
+  "author": "Rust Team",
+  "website": "https://www.rust-lang.org",
+  "brandGuidelinesUrl": "https://www.rust-lang.org/policies/media-guide",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#000"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

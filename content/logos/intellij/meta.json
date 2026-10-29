@@ -1,0 +1,35 @@
+{
+  "slug": "intellij",
+  "kind": "logo",
+  "name": "IntelliJ IDEA",
+  "description": "Environnement de développement intégré phare de JetBrains pour Java et les langages JVM.",
+  "aliases": [
+    "jetbrains intellij"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "intellij",
+    "jetbrains intellij"
+  ],
+  "license": "trademark",
+  "author": "IntelliJ IDEA Team",
+  "website": "https://www.jetbrains.com/idea/",
+  "brandGuidelinesUrl": "https://www.jetbrains.com/company/brand/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/intellij/intellij-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#000000"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

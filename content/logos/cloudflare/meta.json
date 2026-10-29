@@ -1,0 +1,37 @@
+{
+  "slug": "cloudflare",
+  "kind": "logo",
+  "name": "Cloudflare",
+  "description": "Réseau global garantissant la sécurité, la rapidité et la fiabilité de vos applications web.",
+  "aliases": [
+    "cf",
+    "edge cdn"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "cloudflare",
+    "cf",
+    "edge cdn"
+  ],
+  "license": "trademark",
+  "author": "Cloudflare Team",
+  "website": "https://www.cloudflare.com",
+  "brandGuidelinesUrl": "https://www.cloudflare.com/brand-assets/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/cloudflare/cloudflare-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#F38020"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

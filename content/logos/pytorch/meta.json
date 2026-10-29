@@ -1,0 +1,35 @@
+{
+  "slug": "pytorch",
+  "kind": "logo",
+  "name": "PyTorch",
+  "description": "Framework open-source de Machine Learning et Deep Learning pour la recherche et la production.",
+  "aliases": [
+    "torch"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "pytorch",
+    "torch"
+  ],
+  "license": "trademark",
+  "author": "PyTorch Team",
+  "website": "https://pytorch.org",
+  "brandGuidelinesUrl": "https://pytorch.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#EE4C2C"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "roboto",
+  "kind": "font",
+  "name": "Roboto",
+  "family": "Roboto",
+  "description": "Google's signature neo-grotesque sans-serif with mechanical skeleton.",
+  "author": "Christian Robertson",
+  "tags": [
+    "sans",
+    "typography",
+    "roboto"
+  ],
+  "category": "sans",
+  "license": "Apache-2.0",
+  "fontsourcePackage": "@fontsource/roboto",
+  "weights": [
+    300,
+    400,
+    500,
+    700
+  ],
+  "subsets": [
+    "latin",
+    "latin-ext"
+  ],
+  "variable": false,
+  "source": {
+    "url": "https://fonts.google.com/specimen/Roboto"
+  },
+  "licenseFile": "LICENSE.txt"
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "laravel",
+  "kind": "logo",
+  "name": "Laravel",
+  "description": "Framework web PHP moderne et élégant avec une syntaxe expressive et intuitive.",
+  "aliases": [
+    "laravel framework"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "laravel",
+    "laravel framework"
+  ],
+  "license": "trademark",
+  "author": "Laravel Team",
+  "website": "https://laravel.com",
+  "brandGuidelinesUrl": "https://laravel.com/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#f0513f"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

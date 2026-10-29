@@ -1,0 +1,34 @@
+{
+  "slug": "bun",
+  "kind": "logo",
+  "name": "Bun",
+  "description": "Environnement d'exécution JavaScript & TypeScript tout-en-un ultra-rapide avec gestionnaire de paquets.",
+  "aliases": [
+    "bunjs",
+    "bun runtime"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "bun",
+    "bunjs",
+    "bun runtime"
+  ],
+  "license": "trademark",
+  "author": "Bun Team",
+  "website": "https://bun.sh",
+  "brandGuidelinesUrl": "https://bun.sh",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bun/bun-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#FBF0DF"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

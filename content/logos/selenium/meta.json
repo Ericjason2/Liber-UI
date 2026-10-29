@@ -1,0 +1,32 @@
+{
+  "slug": "selenium",
+  "kind": "logo",
+  "name": "Selenium",
+  "description": "Suite d'outils pour l'automatisation des navigateurs web multi-plateforme.",
+  "aliases": [
+    "webdriver"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "selenium",
+    "webdriver"
+  ],
+  "license": "trademark",
+  "author": "Selenium Team",
+  "website": "https://www.selenium.dev",
+  "brandGuidelinesUrl": "https://www.selenium.dev",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/selenium/selenium-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#CF0A2C"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

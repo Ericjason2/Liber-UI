@@ -59,6 +59,35 @@ export function createLogoRegistryItem(
   };
 }
 
+export function createFontRegistryItem(font: any): RegistryItem {
+  return {
+    $schema: "https://ui.shadcn.com/schema/registry-item.json",
+    name: font.slug,
+    type: "registry:font",
+    title: font.name,
+    description: font.description,
+    author: font.author,
+    categories: [font.category],
+    dependencies: [font.fontsourcePackage],
+    files: [
+      {
+        path: `styles/fonts/${font.slug}.css`,
+        content: `/* Self-hosted font definition for ${font.name} */\n@import "${font.fontsourcePackage}";\n:root {\n  --font-${font.category}: '${font.family}', sans-serif;\n}\n`,
+        type: "registry:style",
+      },
+    ],
+    meta: {
+      kind: "font",
+      family: font.family,
+      weights: font.weights,
+      subsets: font.subsets,
+      variable: font.variable,
+      license: font.license,
+      fontsourcePackage: font.fontsourcePackage,
+    },
+  };
+}
+
 export function createRootRegistry(items: RegistryItem[]): RootRegistry {
   return {
     $schema: "https://ui.shadcn.com/schema/registry.json",

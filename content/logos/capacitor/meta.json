@@ -1,0 +1,35 @@
+{
+  "slug": "capacitor",
+  "kind": "logo",
+  "name": "Capacitor",
+  "description": "Runtime natif multiplateforme pour créer des applications iOS, Android et PWA avec du code web.",
+  "aliases": [
+    "ionic-capacitor"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "capacitor",
+    "ionic-capacitor"
+  ],
+  "license": "trademark",
+  "author": "Capacitor Team",
+  "website": "https://capacitorjs.com",
+  "brandGuidelinesUrl": "https://capacitorjs.com",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/capacitor/capacitor-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#53B9FF"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

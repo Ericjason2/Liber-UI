@@ -1,0 +1,35 @@
+{
+  "slug": "insomnia",
+  "kind": "logo",
+  "name": "Insomnia",
+  "description": "Client de développement et de test pour APIs REST, GraphQL, gRPC et WebSocket.",
+  "aliases": [
+    "insomnia rest"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "insomnia",
+    "insomnia rest"
+  ],
+  "license": "trademark",
+  "author": "Insomnia Team",
+  "website": "https://insomnia.rest",
+  "brandGuidelinesUrl": "https://insomnia.rest",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/insomnia/insomnia-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#4000bf"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "apache",
+  "kind": "logo",
+  "name": "Apache",
+  "description": "Serveur HTTP open-source historique et robuste soutenu par l'Apache Software Foundation.",
+  "aliases": [
+    "httpd",
+    "apache server"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "apache",
+    "httpd",
+    "apache server"
+  ],
+  "license": "trademark",
+  "author": "Apache Team",
+  "website": "https://httpd.apache.org",
+  "brandGuidelinesUrl": "https://www.apache.org/foundation/marks/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/apache/apache-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#cb2533"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

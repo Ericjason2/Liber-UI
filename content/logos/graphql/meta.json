@@ -1,0 +1,35 @@
+{
+  "slug": "graphql",
+  "kind": "logo",
+  "name": "GraphQL",
+  "description": "Langage de requête pour les API permettant aux clients de demander exactement les données voulues.",
+  "aliases": [
+    "gql"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "graphql",
+    "gql"
+  ],
+  "license": "trademark",
+  "author": "GraphQL Team",
+  "website": "https://graphql.org",
+  "brandGuidelinesUrl": "https://graphql.org/brand/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/graphql/graphql-plain.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#e434aa"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

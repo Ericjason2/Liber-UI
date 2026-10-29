@@ -1,0 +1,33 @@
+{
+  "name": "@liber/cli",
+  "version": "0.1.0",
+  "description": "Command line interface for installing Liber UI logos, components, themes, and fonts.",
+  "type": "module",
+  "bin": {
+    "liber": "./bin/liber.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "liber",
+    "cli",
+    "shadcn",
+    "logos",
+    "svg",
+    "react",
+    "components"
+  ],
+  "author": "Liber Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}

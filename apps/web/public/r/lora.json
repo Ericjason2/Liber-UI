@@ -1,0 +1,38 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "lora",
+  "type": "registry:font",
+  "title": "Lora",
+  "description": "Contemporary serif with brushed curves rooted in calligraphy.",
+  "author": "Cyreal",
+  "categories": [
+    "serif"
+  ],
+  "dependencies": [
+    "@fontsource-variable/lora"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/lora.css",
+      "content": "/* Self-hosted font definition for Lora */\n@import \"@fontsource-variable/lora\";\n:root {\n  --font-serif: 'Lora', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Lora",
+    "weights": [
+      400,
+      500,
+      600,
+      700
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext"
+    ],
+    "variable": true,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource-variable/lora"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "babel",
+  "kind": "logo",
+  "name": "Babel",
+  "description": "Compilateur JavaScript permettant d'utiliser la syntaxe de nouvelle génération sur tous les navigateurs.",
+  "aliases": [
+    "babeljs"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "babel",
+    "babeljs"
+  ],
+  "license": "trademark",
+  "author": "Babel Team",
+  "website": "https://babeljs.io",
+  "brandGuidelinesUrl": "https://babeljs.io",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/babel/babel-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#f9dc3e"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

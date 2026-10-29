@@ -1,0 +1,37 @@
+{
+  "slug": "threejs",
+  "kind": "logo",
+  "name": "Three.js",
+  "description": "Bibliothèque JavaScript 3D légère utilisant WebGL pour l'affichage graphique dans le navigateur.",
+  "aliases": [
+    "three.js",
+    "webgl"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "threejs",
+    "three.js",
+    "webgl"
+  ],
+  "license": "trademark",
+  "author": "Three.js Team",
+  "website": "https://threejs.org",
+  "brandGuidelinesUrl": "https://threejs.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/threejs/threejs-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#000000"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

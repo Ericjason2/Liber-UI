@@ -1,0 +1,32 @@
+{
+  "slug": "playwright",
+  "kind": "logo",
+  "name": "Playwright",
+  "description": "Framework d'automatisation et de tests end-to-end multi-navigateurs par Microsoft.",
+  "aliases": [
+    "pw"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "playwright",
+    "pw"
+  ],
+  "license": "trademark",
+  "author": "Playwright Team",
+  "website": "https://playwright.dev",
+  "brandGuidelinesUrl": "https://playwright.dev",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/playwright/playwright-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#2EAD33"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

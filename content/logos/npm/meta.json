@@ -1,0 +1,37 @@
+{
+  "slug": "npm",
+  "kind": "logo",
+  "name": "npm",
+  "description": "Le gestionnaire de paquets par défaut pour l'écosystème JavaScript et le registre Node.js.",
+  "aliases": [
+    "npm registry",
+    "node package manager"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "npm",
+    "npm registry",
+    "node package manager"
+  ],
+  "license": "trademark",
+  "author": "npm Team",
+  "website": "https://www.npmjs.com",
+  "brandGuidelinesUrl": "https://www.npmjs.com/policies/logos",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#cb3837"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "rails",
+  "kind": "logo",
+  "name": "Ruby on Rails",
+  "description": "Framework web fullstack suivant le patron MVC et la philosophie de convention plutôt que configuration.",
+  "aliases": [
+    "ror",
+    "ruby on rails"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "rails",
+    "ror",
+    "ruby on rails"
+  ],
+  "license": "trademark",
+  "author": "Ruby on Rails Team",
+  "website": "https://rubyonrails.org",
+  "brandGuidelinesUrl": "https://rubyonrails.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-plain.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#CC0000"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

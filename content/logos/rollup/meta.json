@@ -1,0 +1,35 @@
+{
+  "slug": "rollup",
+  "kind": "logo",
+  "name": "Rollup",
+  "description": "Empaqueteur de modules pour JavaScript qui compile de petits bouts de code en bibliothèques complexes.",
+  "aliases": [
+    "rollupjs"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "rollup",
+    "rollupjs"
+  ],
+  "license": "trademark",
+  "author": "Rollup Team",
+  "website": "https://rollupjs.org",
+  "brandGuidelinesUrl": "https://rollupjs.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/rollup/rollup-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#ff3333"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

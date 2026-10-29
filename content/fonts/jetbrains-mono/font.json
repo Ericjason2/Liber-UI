@@ -1,0 +1,30 @@
+{
+  "slug": "jetbrains-mono",
+  "kind": "font",
+  "name": "JetBrains Mono",
+  "family": "JetBrains Mono",
+  "description": "Free developer monospace typeface designed for maximum code readability.",
+  "author": "JetBrains",
+  "tags": [
+    "mono",
+    "typography",
+    "jetbrains-mono"
+  ],
+  "category": "mono",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource-variable/jetbrains-mono",
+  "weights": [
+    400,
+    500,
+    700
+  ],
+  "subsets": [
+    "latin",
+    "cyrillic"
+  ],
+  "variable": true,
+  "source": {
+    "url": "https://github.com/JetBrains/JetBrainsMono"
+  },
+  "licenseFile": "OFL.txt"
+}

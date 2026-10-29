@@ -1,0 +1,35 @@
+{
+  "slug": "pandas",
+  "kind": "logo",
+  "name": "Pandas",
+  "description": "Bibliothèque logicielle d'analyse et de manipulation de données structurées pour Python.",
+  "aliases": [
+    "dataframe"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "pandas",
+    "dataframe"
+  ],
+  "license": "trademark",
+  "author": "Pandas Team",
+  "website": "https://pandas.pydata.org",
+  "brandGuidelinesUrl": "https://pandas.pydata.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#130754"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

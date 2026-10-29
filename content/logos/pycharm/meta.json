@@ -1,0 +1,35 @@
+{
+  "slug": "pycharm",
+  "kind": "logo",
+  "name": "PyCharm",
+  "description": "IDE dédié au développement Python développé par JetBrains.",
+  "aliases": [
+    "jetbrains pycharm"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "pycharm",
+    "jetbrains pycharm"
+  ],
+  "license": "trademark",
+  "author": "PyCharm Team",
+  "website": "https://www.jetbrains.com/pycharm/",
+  "brandGuidelinesUrl": "https://www.jetbrains.com/company/brand/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/pycharm/pycharm-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#000000"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

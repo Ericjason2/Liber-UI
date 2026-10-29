@@ -1,0 +1,35 @@
+{
+  "slug": "circleci",
+  "kind": "logo",
+  "name": "CircleCI",
+  "description": "Plateforme cloud leader d'intégration et de livraison continues avec parallélisation native.",
+  "aliases": [
+    "circle ci"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "circleci",
+    "circle ci"
+  ],
+  "license": "trademark",
+  "author": "CircleCI Team",
+  "website": "https://circleci.com",
+  "brandGuidelinesUrl": "https://circleci.com/brand/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/circleci/circleci-plain.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#343434"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

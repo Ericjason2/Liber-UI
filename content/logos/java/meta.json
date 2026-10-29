@@ -1,0 +1,37 @@
+{
+  "slug": "java",
+  "kind": "logo",
+  "name": "Java",
+  "description": "Langage de programmation orienté objet et plateforme d'exécution JVM d'entreprise.",
+  "aliases": [
+    "jvm",
+    "oracle java"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "java",
+    "jvm",
+    "oracle java"
+  ],
+  "license": "trademark",
+  "author": "Java Team",
+  "website": "https://www.java.com",
+  "brandGuidelinesUrl": "https://www.oracle.com/legal/trademarks.html",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#EA2D2E"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

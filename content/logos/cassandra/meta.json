@@ -1,0 +1,35 @@
+{
+  "slug": "cassandra",
+  "kind": "logo",
+  "name": "Apache Cassandra",
+  "description": "Base de données NoSQL distribuée et scalable linéairement conçue pour les gros volumes de données.",
+  "aliases": [
+    "c*"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "cassandra",
+    "c*"
+  ],
+  "license": "trademark",
+  "author": "Apache Cassandra Team",
+  "website": "https://cassandra.apache.org",
+  "brandGuidelinesUrl": "https://cassandra.apache.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/cassandra/cassandra-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#1185b0"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

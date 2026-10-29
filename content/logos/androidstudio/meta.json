@@ -1,0 +1,35 @@
+{
+  "slug": "androidstudio",
+  "kind": "logo",
+  "name": "Android Studio",
+  "description": "Environnement de développement officiel pour la création d'applications Android par Google.",
+  "aliases": [
+    "google android studio"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "androidstudio",
+    "google android studio"
+  ],
+  "license": "trademark",
+  "author": "Android Studio Team",
+  "website": "https://developer.android.com/studio",
+  "brandGuidelinesUrl": "https://developer.android.com/distribute/marketing-tools/brand-guidelines",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#4285F4"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

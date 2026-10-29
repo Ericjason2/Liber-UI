@@ -1,0 +1,37 @@
+{
+  "slug": "googlecloud",
+  "kind": "logo",
+  "name": "Google Cloud",
+  "description": "Suite modulaire de services cloud pour le calcul, le stockage, le big data et l'IA de Google.",
+  "aliases": [
+    "gcp",
+    "google cloud platform"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "googlecloud",
+    "gcp",
+    "google cloud platform"
+  ],
+  "license": "trademark",
+  "author": "Google Cloud Team",
+  "website": "https://cloud.google.com",
+  "brandGuidelinesUrl": "https://cloud.google.com/press",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#557ebf"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

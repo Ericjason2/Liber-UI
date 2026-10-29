@@ -1,0 +1,35 @@
+{
+  "slug": "redis",
+  "kind": "logo",
+  "name": "Redis",
+  "description": "Magasin de données en mémoire ultra-rapide utilisé comme base de données, cache et message broker.",
+  "aliases": [
+    "redis cache"
+  ],
+  "category": "backend",
+  "tags": [
+    "backend",
+    "redis",
+    "redis cache"
+  ],
+  "license": "trademark",
+  "author": "Redis Team",
+  "website": "https://redis.io",
+  "brandGuidelinesUrl": "https://redis.io/legal/brand-guidelines/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#d82c20"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

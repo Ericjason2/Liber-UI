@@ -1,0 +1,30 @@
+{
+  "slug": "fira-code",
+  "kind": "font",
+  "name": "Fira Code",
+  "family": "Fira Code",
+  "description": "Monospaced font with programming ligatures for operators like => and ==.",
+  "author": "Nikita Prokopov",
+  "tags": [
+    "mono",
+    "typography",
+    "fira-code"
+  ],
+  "category": "mono",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource-variable/fira-code",
+  "weights": [
+    400,
+    500,
+    600,
+    700
+  ],
+  "subsets": [
+    "latin"
+  ],
+  "variable": true,
+  "source": {
+    "url": "https://github.com/tonsky/FiraCode"
+  },
+  "licenseFile": "OFL.txt"
+}

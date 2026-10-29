@@ -1,0 +1,35 @@
+{
+  "slug": "trello",
+  "kind": "logo",
+  "name": "Trello",
+  "description": "Outil de gestion de tâches et de collaboration basé sur les tableaux et cartes Kanban.",
+  "aliases": [
+    "atlassian trello"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "trello",
+    "atlassian trello"
+  ],
+  "license": "trademark",
+  "author": "Trello Team",
+  "website": "https://trello.com",
+  "brandGuidelinesUrl": "https://www.atlassian.com/company/news/press-kit",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/trello/trello-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#0052cc"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

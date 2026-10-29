@@ -1,0 +1,36 @@
+{
+  "slug": "javascript",
+  "kind": "logo",
+  "name": "JavaScript",
+  "description": "Langage de script standard et dynamique du World Wide Web.",
+  "aliases": [
+    "js",
+    "es6",
+    "ecmascript"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "javascript",
+    "js",
+    "es6",
+    "ecmascript"
+  ],
+  "license": "trademark",
+  "author": "JavaScript Team",
+  "website": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  "brandGuidelinesUrl": "https://github.com/voodootikigod/logo.js",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#f0db4f"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

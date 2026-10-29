@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "jetbrains-mono",
+  "type": "registry:font",
+  "title": "JetBrains Mono",
+  "description": "Free developer monospace typeface designed for maximum code readability.",
+  "author": "JetBrains",
+  "categories": [
+    "mono"
+  ],
+  "dependencies": [
+    "@fontsource-variable/jetbrains-mono"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/jetbrains-mono.css",
+      "content": "/* Self-hosted font definition for JetBrains Mono */\n@import \"@fontsource-variable/jetbrains-mono\";\n:root {\n  --font-mono: 'JetBrains Mono', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "JetBrains Mono",
+    "weights": [
+      400,
+      500,
+      700
+    ],
+    "subsets": [
+      "latin",
+      "cyrillic"
+    ],
+    "variable": true,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource-variable/jetbrains-mono"
+  }
+}

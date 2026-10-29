@@ -1,0 +1,37 @@
+{
+  "slug": "go",
+  "kind": "logo",
+  "name": "Go",
+  "description": "Langage compilé et concurrent open-source conçu par Google pour les systèmes distribués.",
+  "aliases": [
+    "golang",
+    "google go"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "go",
+    "golang",
+    "google go"
+  ],
+  "license": "trademark",
+  "author": "Go Team",
+  "website": "https://go.dev",
+  "brandGuidelinesUrl": "https://go.dev/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#00acd7"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

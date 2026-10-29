@@ -1,0 +1,35 @@
+{
+  "slug": "alpinejs",
+  "kind": "logo",
+  "name": "Alpine.js",
+  "description": "Framework léger et robuste pour composer du comportement dynamique directement dans votre markup HTML.",
+  "aliases": [
+    "alpine"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "alpinejs",
+    "alpine"
+  ],
+  "license": "trademark",
+  "author": "Alpine.js Team",
+  "website": "https://alpinejs.dev",
+  "brandGuidelinesUrl": "https://alpinejs.dev",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/alpinejs/alpinejs-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#2d3441"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

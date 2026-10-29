@@ -1,0 +1,37 @@
+{
+  "slug": "confluence",
+  "kind": "logo",
+  "name": "Confluence",
+  "description": "Espace de travail et base de connaissances collaborative pour équipes d'ingénierie.",
+  "aliases": [
+    "atlassian confluence",
+    "wiki"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "confluence",
+    "atlassian confluence",
+    "wiki"
+  ],
+  "license": "trademark",
+  "author": "Confluence Team",
+  "website": "https://www.atlassian.com/software/confluence",
+  "brandGuidelinesUrl": "https://www.atlassian.com/company/news/press-kit",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/confluence/confluence-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#136be6"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

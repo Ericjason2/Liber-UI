@@ -1,0 +1,35 @@
+{
+  "slug": "astro",
+  "kind": "logo",
+  "name": "Astro",
+  "description": "Framework web tout-en-un ultra-rapide conçu pour les sites axés sur le contenu.",
+  "aliases": [
+    "astrojs"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "astro",
+    "astrojs"
+  ],
+  "license": "trademark",
+  "author": "Astro Team",
+  "website": "https://astro.build",
+  "brandGuidelinesUrl": "https://astro.build/press/",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/astro/astro-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#ff5d01"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "poppins",
+  "kind": "font",
+  "name": "Poppins",
+  "family": "Poppins",
+  "description": "Geometric sans-serif with pure circular curves and sharp terminals.",
+  "author": "Indian Type Foundry",
+  "tags": [
+    "sans",
+    "typography",
+    "poppins"
+  ],
+  "category": "sans",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource/poppins",
+  "weights": [
+    300,
+    400,
+    500,
+    600,
+    700
+  ],
+  "subsets": [
+    "latin",
+    "latin-ext"
+  ],
+  "variable": false,
+  "source": {
+    "url": "https://github.com/itfoundry/Poppins"
+  },
+  "licenseFile": "OFL.txt"
+}

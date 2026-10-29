@@ -1,0 +1,35 @@
+{
+  "slug": "numpy",
+  "kind": "logo",
+  "name": "NumPy",
+  "description": "Bibliothèque fondamentale pour le calcul scientifique et la manipulation de matrices multidimensionnelles en Python.",
+  "aliases": [
+    "numpy-array"
+  ],
+  "category": "tools",
+  "tags": [
+    "tools",
+    "numpy",
+    "numpy-array"
+  ],
+  "license": "trademark",
+  "author": "NumPy Team",
+  "website": "https://numpy.org",
+  "brandGuidelinesUrl": "https://numpy.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#4dabcf"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

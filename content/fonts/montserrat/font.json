@@ -1,0 +1,32 @@
+{
+  "slug": "montserrat",
+  "kind": "font",
+  "name": "Montserrat",
+  "family": "Montserrat",
+  "description": "Geometric sans inspired by traditional Buenos Aires neighborhood signage.",
+  "author": "Julieta Ulanovsky",
+  "tags": [
+    "sans",
+    "typography",
+    "montserrat"
+  ],
+  "category": "sans",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource-variable/montserrat",
+  "weights": [
+    300,
+    400,
+    500,
+    600,
+    700
+  ],
+  "subsets": [
+    "latin",
+    "latin-ext"
+  ],
+  "variable": true,
+  "source": {
+    "url": "https://github.com/JulietaUla/Montserrat"
+  },
+  "licenseFile": "OFL.txt"
+}

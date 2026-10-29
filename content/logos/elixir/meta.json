@@ -1,0 +1,37 @@
+{
+  "slug": "elixir",
+  "kind": "logo",
+  "name": "Elixir",
+  "description": "Langage fonctionnel et dynamique conçu pour concevoir des applications scalables et tolérantes aux pannes.",
+  "aliases": [
+    "ex",
+    "erlang ecosystem"
+  ],
+  "category": "languages",
+  "tags": [
+    "languages",
+    "elixir",
+    "ex",
+    "erlang ecosystem"
+  ],
+  "license": "trademark",
+  "author": "Elixir Team",
+  "website": "https://elixir-lang.org",
+  "brandGuidelinesUrl": "https://elixir-lang.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/elixir/elixir-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#8847B9"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

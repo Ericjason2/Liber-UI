@@ -43,7 +43,7 @@ export default function LogosPage() {
     e.preventDefault();
     e.stopPropagation();
 
-    const vKey = logo.variants[variant] ? variant : "color";
+    const vKey = logo.variants?.[variant] ? variant : "color";
     try {
       const res = await fetch(`/svg/${logo.slug}/${vKey}.svg`);
       const svgText = await res.text();
@@ -171,7 +171,7 @@ export default function LogosPage() {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {filteredLogos.map((logo) => {
-            const hasRequestedVariant = !!logo.variants[variant];
+            const hasRequestedVariant = !!(logo.variants && logo.variants[variant]);
             const currentVKey = hasRequestedVariant ? variant : "color";
             const svgKey = `${logo.slug}-svg`;
             const cliKey = `${logo.slug}-cli`;

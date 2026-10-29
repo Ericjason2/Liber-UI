@@ -1,0 +1,35 @@
+{
+  "slug": "backbonejs",
+  "kind": "logo",
+  "name": "Backbone.js",
+  "description": "Bibliothèque MVC légère fournissant des modèles, collections et vues pour les applications web.",
+  "aliases": [
+    "backbone"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "backbonejs",
+    "backbone"
+  ],
+  "license": "trademark",
+  "author": "Backbone.js Team",
+  "website": "https://backbonejs.org",
+  "brandGuidelinesUrl": "https://backbonejs.org",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/backbonejs/backbonejs-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#002A41"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}

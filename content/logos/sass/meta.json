@@ -1,0 +1,32 @@
+{
+  "slug": "sass",
+  "kind": "logo",
+  "name": "Sass",
+  "description": "Préprocesseur CSS mature, stable et puissant étendant les capacités des feuilles de style.",
+  "aliases": [
+    "scss"
+  ],
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "sass",
+    "scss"
+  ],
+  "license": "trademark",
+  "author": "Sass Team",
+  "website": "https://sass-lang.com",
+  "brandGuidelinesUrl": "https://sass-lang.com/styleguide/brand",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#cc6699"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "pt-serif",
+  "kind": "font",
+  "name": "PT Serif",
+  "family": "PT Serif",
+  "description": "Universal serif family developed for Russian linguistic typography.",
+  "author": "ParaType",
+  "tags": [
+    "serif",
+    "typography",
+    "pt-serif"
+  ],
+  "category": "serif",
+  "license": "OFL-1.1",
+  "fontsourcePackage": "@fontsource/pt-serif",
+  "weights": [
+    400,
+    700
+  ],
+  "subsets": [
+    "latin",
+    "cyrillic"
+  ],
+  "variable": false,
+  "source": {
+    "url": "https://www.paratype.com"
+  },
+  "licenseFile": "OFL.txt"
+}

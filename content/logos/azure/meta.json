@@ -1,0 +1,35 @@
+{
+  "slug": "azure",
+  "kind": "logo",
+  "name": "Microsoft Azure",
+  "description": "Ensemble de services cloud de Microsoft pour créer, déployer et gérer des applications.",
+  "aliases": [
+    "microsoft azure"
+  ],
+  "category": "devops",
+  "tags": [
+    "devops",
+    "azure",
+    "microsoft azure"
+  ],
+  "license": "trademark",
+  "author": "Microsoft Azure Team",
+  "website": "https://azure.microsoft.com",
+  "brandGuidelinesUrl": "https://www.microsoft.com/legal/intellectualproperty/trademarks",
+  "source": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg",
+    "retrievedAt": "2026-10-29"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#0089D6"
+    },
+    "mono": {
+      "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
+    }
+  }
+}
