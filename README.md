@@ -21,19 +21,19 @@ scripts/      validation and build scripts (Zod schemas, SVGO, SVGR, registry)
 ```
 
 Golden rule: **adding a resource = adding a folder in `content/<family>/`**.
-Everything else (index, components, pages, registry) is produced by `pnpm build`.
+Everything else (index, components, pages, registry) is produced by `npm run build`.
 
 ## Commands
 
-| Command          | What it does                                                 |
-| ---------------- | ------------------------------------------------------------ |
-| `pnpm install`   | Install dependencies                                         |
-| `pnpm validate`  | Check every resource's metadata, license and SVG safety      |
-| `pnpm generate`  | Validate, optimize SVGs, generate React components, registry |
-| `pnpm build`     | `generate` then build every package and the website          |
-| `pnpm test`      | Unit tests (Vitest)                                          |
-| `pnpm test:e2e`  | End-to-end tests of the website (Playwright)                 |
-| `pnpm dev`       | Run the website locally                                      |
+| Command             | What it does                                                 |
+| ------------------- | ------------------------------------------------------------ |
+| `npm install`       | Install dependencies                                         |
+| `npm run validate`  | Check every resource's metadata, license and SVG safety      |
+| `npm run generate`  | Validate, optimize SVGs, generate React components, registry |
+| `npm run build`     | `generate` then build every package and the website          |
+| `npm test`          | Unit tests (Vitest)                                          |
+| `npm run test:e2e`  | End-to-end tests of the website (Playwright)                 |
+| `npm run dev`       | Run the website locally                                      |
 
 ## Licenses
 
