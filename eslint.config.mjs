@@ -19,6 +19,7 @@ export default tseslint.config(
       "packages/react/src/**",
       "apps/web/public/**",
       "scripts/__fixtures__/**",
+      "scripts/*.cjs",
     ],
   },
   js.configs.recommended,

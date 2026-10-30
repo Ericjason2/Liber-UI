@@ -1,7 +1,7 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { optimizeSvgString } from "./lib/optimize-svg.ts";
+import { optimizeSvgString } from "./lib/optimize-svg.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -22,7 +22,7 @@ for (const entry of entries) {
     try {
       const opt = optimizeSvgString(raw, {
         slug: entry.name,
-        variant: variant as any,
+        variant: variant as "color" | "mono" | "wordmark" | "light" | "dark",
         brandName: entry.name,
       });
       await writeFile(filePath, opt.svg, "utf8");

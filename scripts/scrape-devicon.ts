@@ -1096,7 +1096,11 @@ const deviconCatalog: Array<{
   name: string;
   color?: string;
   versions: { svg: string[] };
-}> = await deviconJsonRes.json();
+}> = (await deviconJsonRes.json()) as Array<{
+  name: string;
+  color?: string;
+  versions: { svg: string[] };
+}>;
 
 const catalogMap = new Map<string, { color?: string; versions: string[] }>();
 for (const item of deviconCatalog) {

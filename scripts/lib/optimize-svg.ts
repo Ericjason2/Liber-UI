@@ -38,6 +38,7 @@ export function optimizeSvgString(
       .filter((s: string) => {
         if (!s) return false;
         const prop = s.split(":")[0]?.trim().toLowerCase();
+        if (!prop) return false;
         const forbidden = [
           "solid-color",
           "solid-opacity",
