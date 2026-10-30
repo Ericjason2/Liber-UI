@@ -36,13 +36,13 @@ export default function DocsPage() {
   const getAddCommand = (slug = "react") => {
     switch (manager) {
       case "pnpm":
-        return `pnpm dlx @liber/cli add ${slug}`;
+        return `pnpm dlx @liber-ui/cli add ${slug}`;
       case "npm":
-        return `npx @liber/cli add ${slug}`;
+        return `npx @liber-ui/cli add ${slug}`;
       case "yarn":
-        return `yarn dlx @liber/cli add ${slug}`;
+        return `yarn dlx @liber-ui/cli add ${slug}`;
       case "bun":
-        return `bunx @liber/cli add ${slug}`;
+        return `bunx @liber-ui/cli add ${slug}`;
     }
   };
 
@@ -132,7 +132,7 @@ export default function DocsPage() {
                   <span>2. CLI & Registry</span>
                 </div>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Install any resource directly into your project repository using <code className="text-primary font-mono">@liber/cli</code> or standard <code className="text-primary font-mono">shadcn add</code>.
+                  Install any resource directly into your project repository using <code className="text-primary font-mono">@liber-ui/cli</code> or standard <code className="text-primary font-mono">shadcn add</code>.
                 </p>
               </div>
 
@@ -240,8 +240,8 @@ export default function DocsPage() {
 
               <div className="rounded-[8px] border border-border bg-card p-4 font-mono text-xs relative group">
                 <pre className="text-foreground overflow-x-auto leading-relaxed">
-{`// Option A: Using the @liber/react package (tree-shakeable, < 2 KB)
-import { ReactColor, FigmaColor, GithubMono } from "@liber/react";
+{`// Option A: Using the @liber-ui/react package (tree-shakeable, < 2 KB)
+import { ReactColor, FigmaColor, GithubMono } from "@liber-ui/react";
 
 export function TechStack() {
   return (
@@ -260,7 +260,7 @@ export function TechStack() {
                 <button
                   onClick={() =>
                     copyToClipboard(
-                      `import { ReactColor, FigmaColor, GithubMono } from "@liber/react";\n<ReactColor size={28} />`,
+                      `import { ReactColor, FigmaColor, GithubMono } from "@liber-ui/react";\n<ReactColor size={28} />`,
                       "react-logo-snippet",
                       "Logo code snippet copied"
                     )
@@ -380,11 +380,11 @@ export function TechStack() {
             <div className="flex items-center gap-2">
               <FileCode className="h-5 w-5 text-primary" />
               <h2 className="text-2xl font-semibold tracking-tight text-foreground">
-                CLI Command Reference (@liber/cli)
+                CLI Command Reference (@liber-ui/cli)
               </h2>
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed">
-              The <code className="font-mono text-primary">@liber/cli</code> package allows quick terminal interaction with the Liber registry:
+              The <code className="font-mono text-primary">@liber-ui/cli</code> package allows quick terminal interaction with the Liber registry:
             </p>
 
             <div className="overflow-x-auto rounded-[10px] border border-border">

@@ -58,13 +58,13 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
 
     switch (activeTab) {
       case "react":
-        return `import { ${reactComponentName} } from "@liber/react";\n\nexport function TechStack() {\n  return <${reactComponentName} size={32}${currentVariant === "mono" && monoColor !== "#000000" ? ` color="${monoColor}"` : ""} />;\n}`;
+        return `import { ${reactComponentName} } from "@liber-ui/react";\n\nexport function TechStack() {\n  return <${reactComponentName} size={32}${currentVariant === "mono" && monoColor !== "#000000" ? ` color="${monoColor}"` : ""} />;\n}`;
       case "svg":
         return effectiveSvg;
       case "cdn":
-        return `https://cdn.liber.dev/logos/${logo.slug}/${currentVariant}.svg`;
+        return `https://liber-ui.vercel.app/r/${logo.slug}.json`;
       case "cli":
-        return `pnpm dlx shadcn add https://liber.dev/r/${logo.slug}.json`;
+        return `npx @liber-ui/cli add ${logo.slug}`;
     }
   };
 
