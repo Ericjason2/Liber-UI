@@ -1,6 +1,6 @@
 {
   "name": "@liber-ui/svg",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Liber raw optimized SVG logos",
   "license": "MIT",
   "type": "module",
