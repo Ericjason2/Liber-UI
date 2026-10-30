@@ -35,7 +35,7 @@ export default function RootLayout({
         <ThemeProvider>
           <ToastProvider>
             <Navbar />
-            <main className="flex-1 pb-24 sm:pb-36">{children}</main>
+            <main className="flex-1">{children}</main>
             <Footer />
           </ToastProvider>
         </ThemeProvider>
