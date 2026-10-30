@@ -113,7 +113,7 @@ async function fetchRegistryItem(name: string, baseUrl: string) {
     }
     return await res.json();
   } catch (err) {
-    throw new Error(`Failed to fetch resource "${name}" from ${url}: ${(err as Error).message}`);
+    throw new Error(`Failed to fetch resource "${name}" from ${url}: ${(err as Error).message}`, { cause: err });
   }
 }
 
@@ -141,7 +141,8 @@ async function handleAdd(args: string[]) {
 
   for (const name of names) {
     try {
-      const item = await fetchRegistryItem(name, config.registryUrl || DEFAULT_CONFIG.registryUrl!);
+      const registryUrl = config.registryUrl || DEFAULT_CONFIG.registryUrl || "";
+      const item = await fetchRegistryItem(name, registryUrl);
       console.log(`\n-> Installing [${item.type || "ui"}] "${item.title || name}"...`);
 
       if (!item.files || item.files.length === 0) {
@@ -205,7 +206,13 @@ async function handleSearch(args: string[]) {
     const registry = await res.json();
     const items = registry.items || [];
 
-    const matches = items.filter((item: any) => {
+    interface RegistrySearchResult {
+      name?: string;
+      title?: string;
+      description?: string;
+      type?: string;
+    }
+    const matches = (items as RegistrySearchResult[]).filter((item) => {
       const matchName = item.name?.toLowerCase().includes(query);
       const matchTitle = item.title?.toLowerCase().includes(query);
       const matchDesc = item.description?.toLowerCase().includes(query);
@@ -214,7 +221,7 @@ async function handleSearch(args: string[]) {
 
     console.log(`Found ${matches.length} matching resources for "${query}":\n`);
     for (const m of matches.slice(0, 15)) {
-      console.log(`  - ${m.name.padEnd(20)} | ${m.title} (${m.type})`);
+      console.log(`  - ${(m.name || "").padEnd(20)} | ${m.title || ""} (${m.type || ""})`);
       if (m.description) {
         console.log(`    ${m.description.slice(0, 80)}...`);
       }
@@ -233,7 +240,8 @@ async function handleView(args: string[]) {
 
   const config = await loadConfig();
   try {
-    const item = await fetchRegistryItem(name, config.registryUrl || DEFAULT_CONFIG.registryUrl!);
+    const registryUrl = config.registryUrl || DEFAULT_CONFIG.registryUrl || "";
+    const item = await fetchRegistryItem(name, registryUrl);
     console.log(`\n=== ${item.title || name} ===`);
     console.log(`Type:        ${item.type}`);
     console.log(`Author:      ${item.author || "Liber Team"}`);

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* global process, console */
 import { runCli } from "../dist/index.js";
 
 runCli(process.argv).catch((err) => {

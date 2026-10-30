@@ -533,7 +533,11 @@ const deviconList: Array<{
   name: string;
   color?: string;
   versions: { svg: string[] };
-}> = await deviconIndexRes.json();
+}> = (await deviconIndexRes.json()) as Array<{
+  name: string;
+  color?: string;
+  versions: { svg: string[] };
+}>;
 
 let addedCount = 0;
 let skippedCount = 0;

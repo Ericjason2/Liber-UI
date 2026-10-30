@@ -1,4 +1,4 @@
-import type { LogoMeta } from "./schema.js";
+import type { LogoMeta, FontMeta } from "./schema.js";
 
 export interface RegistryItemFile {
   path: string;
@@ -59,7 +59,7 @@ export function createLogoRegistryItem(
   };
 }
 
-export function createFontRegistryItem(font: any): RegistryItem {
+export function createFontRegistryItem(font: FontMeta): RegistryItem {
   return {
     $schema: "https://ui.shadcn.com/schema/registry-item.json",
     name: font.slug,
