@@ -7,7 +7,7 @@
 
 ---
 
-## ⚡ What's Inside
+## What's Inside
 
 - **`index.json`** : Complete catalog listing of all 150+ logos, color palettes, and fonts with categories, tags, and license metadata.
 - **`@liber/core/schema`** : Zod validation schemas for Liber assets and registry entries.
@@ -15,7 +15,7 @@
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install @liber/core
@@ -23,7 +23,7 @@ npm install @liber/core
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ```ts
 import catalog from "@liber/core/index.json" with { type: "json" };
@@ -39,6 +39,6 @@ const result = logoSchema.safeParse(customLogo);
 
 ---
 
-## 📄 License
+## License
 
-MIT © [Liber UI](https://liber-ui.vercel.app)
+MIT © [Liber UI](https://liber-ui-delta.vercel.app)

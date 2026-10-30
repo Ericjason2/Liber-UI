@@ -7,7 +7,7 @@
 
 ---
 
-## ⚡ Use Cases
+## Use Cases
 
 Designed for developers and designers who need raw SVG files without React bindings:
 - **Vue, Svelte, Angular, Astro, Solid**
@@ -17,7 +17,7 @@ Designed for developers and designers who need raw SVG files without React bindi
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install @liber/svg
@@ -25,7 +25,7 @@ npm install @liber/svg
 
 ---
 
-## 📂 Directory Structure
+## Directory Structure
 
 ```
 node_modules/@liber/svg/logos/
@@ -41,7 +41,7 @@ node_modules/@liber/svg/logos/
 
 ---
 
-## 🚀 Usage Examples
+## Usage Examples
 
 ### Vite / Webpack (import as SVG URL or raw string)
 
@@ -63,6 +63,6 @@ import dockerRaw from "@liber/svg/logos/docker/color.svg?raw";
 
 ---
 
-## 📄 License
+## License
 
-MIT © [Liber UI](https://liber-ui.vercel.app)
+MIT © [Liber UI](https://liber-ui-delta.vercel.app)

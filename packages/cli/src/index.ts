@@ -14,7 +14,7 @@ const DEFAULT_CONFIG: LiberConfig = {
   format: "react",
   variant: "color",
   outDir: "src/components/ui/logos",
-  registryUrl: "https://liber-ui.vercel.app/r",
+  registryUrl: "https://liber-ui-delta.vercel.app/r",
 };
 
 export async function runCli(argv: string[]) {
@@ -74,7 +74,7 @@ Options for 'add':
   --format <react|svg>     Install React component or raw SVG
   --variant <color|mono>   Logo variant to install (default: color)
 
-Documentation: https://liber-ui.vercel.app/docs
+Documentation: https://liber-ui-delta.vercel.app/docs
 `);
 }
 

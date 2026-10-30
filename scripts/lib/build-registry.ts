@@ -92,7 +92,7 @@ export function createRootRegistry(items: RegistryItem[]): RootRegistry {
   return {
     $schema: "https://ui.shadcn.com/schema/registry.json",
     name: "liber",
-    homepage: "https://liber.dev",
+    homepage: "https://liber-ui-delta.vercel.app",
     items,
   };
 }

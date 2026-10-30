@@ -62,7 +62,7 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
       case "svg":
         return effectiveSvg;
       case "cdn":
-        return `https://liber-ui.vercel.app/r/${logo.slug}.json`;
+        return `https://liber-ui-delta.vercel.app/r/${logo.slug}.json`;
       case "cli":
         return `npx @liber-ui/cli add ${logo.slug}`;
     }

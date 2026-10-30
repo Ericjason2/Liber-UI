@@ -75,4 +75,4 @@ Examples:
 
 ##  License
 
-MIT © [Liber UI](https://liber-ui.vercel.app)
+MIT © [Liber UI](https://liber-ui-delta.vercel.app)

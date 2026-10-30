@@ -7,7 +7,7 @@
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 You don't need to install anything globally. Run directly with `npx`:
 
@@ -28,7 +28,7 @@ npx @liber/cli view docker
 
 ---
 
-## 🛠 Commands
+## Commands
 
 | Command | Description | Example |
 |---|---|---|
@@ -46,31 +46,31 @@ npx @liber/cli view docker
 
 ---
 
-## ⚙️ Configuration (`liber.json`)
+## Configuration (`liber.json`)
 
 Running `liber init` creates a configuration file in your project root:
 
 ```json
 {
-  "$schema": "https://liber-ui.vercel.app/schema.json",
+  "$schema": "https://liber-ui-delta.vercel.app/schema.json",
   "format": "react",
   "variant": "color",
   "outDir": "src/components/ui/logos",
-  "registryUrl": "https://liber-ui.vercel.app/r"
+  "registryUrl": "https://liber-ui-delta.vercel.app/r"
 }
 ```
 
 ---
 
-## 📦 Monorepo Packages
+## Monorepo Packages
 
-- [`@liber/react`](https://www.npmjs.com/package/@liber/react) : Pre-compiled tree-shakeable React components
-- [`@liber/svg`](https://www.npmjs.com/package/@liber/svg) : Raw optimized SVG assets
-- [`@liber/core`](https://www.npmjs.com/package/@liber/core) : Catalog metadata, Zod schemas, and types
-- [`@liber/cli`](https://www.npmjs.com/package/@liber/cli) : This CLI package
+- [`@liber-ui/react`](https://www.npmjs.com/package/@liber-ui/react) : Pre-compiled tree-shakeable React components
+- [`@liber-ui/svg`](https://www.npmjs.com/package/@liber-ui/svg) : Raw optimized SVG assets
+- [`@liber-ui/core`](https://www.npmjs.com/package/@liber-ui/core) : Catalog metadata, Zod schemas, and types
+- [`@liber-ui/cli`](https://www.npmjs.com/package/@liber-ui/cli) : This CLI package
 
 ---
 
-## 📄 License
+## License
 
-MIT © [Liber UI](https://liber-ui.vercel.app)
+MIT © [Liber UI](https://liber-ui-delta.vercel.app)
