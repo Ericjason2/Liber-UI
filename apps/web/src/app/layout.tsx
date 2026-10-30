@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Liber UI — The open code catalog for developers",
     description: "Browse, copy and install logos, blocks, themes, and fonts with one command.",
-    url: "https://liber.dev",
+    url: "https://liber-ui-delta.vercel.app",
     siteName: "Liber",
     type: "website",
   },

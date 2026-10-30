@@ -56,7 +56,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/docs#logos-guide" className="hover:text-foreground transition-colors">
-                  Using @liber/react
+                  Using @liber-ui/react
                 </Link>
               </li>
               <li>

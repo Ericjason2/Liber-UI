@@ -704,7 +704,7 @@ export default function BlocksPage() {
                           },
                           {
                             q: "Can I use Liber with Next.js, Vite, or Remix?",
-                            a: "Absolutely. Resources are installed directly as source code into your project or imported from @liber/react.",
+                            a: "Absolutely. Resources are installed directly as source code into your project or imported from @liber-ui/react.",
                           },
                         ].map((faq, i) => (
                           <div

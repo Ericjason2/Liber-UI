@@ -16,7 +16,11 @@
       "@liber/core": ["../../packages/core/src/index.ts"],
       "@liber/core/*": ["../../packages/core/src/*"],
       "@liber/react": ["../../packages/react/src/index.ts"],
-      "@liber/react/*": ["../../packages/react/src/*"]
+      "@liber/react/*": ["../../packages/react/src/*"],
+      "@liber-ui/core": ["../../packages/core/src/index.ts"],
+      "@liber-ui/core/*": ["../../packages/core/src/*"],
+      "@liber-ui/react": ["../../packages/react/src/index.ts"],
+      "@liber-ui/react/*": ["../../packages/react/src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
