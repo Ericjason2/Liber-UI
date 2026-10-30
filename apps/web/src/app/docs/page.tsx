@@ -293,128 +293,118 @@ export const fontSans = localFont({
               <div className="p-4 rounded-[10px] border border-emerald-500/30 bg-emerald-500/5 space-y-2 text-xs">
                 <div className="flex items-center gap-2 font-mono font-semibold text-emerald-600 dark:text-emerald-400">
                   <CheckCircle2 className="h-4 w-4" />
-                  <span>Phases 0 à 3 : Terminées & Déployées</span>
+                  <span>Phases Réalisées & Déployées</span>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Cadrage légal, schémas Zod, pipeline SVGO/SVGR, packages npm (@liber/core, @liber/svg, @liber/react), site Next.js avec catalogue unifié (Logos, Blocs, Composants, Thèmes, Polices) et déploiement Vercel.
+                  Cadrage légal, schémas Zod stricts, pipeline SVGO/SVGR, packages npm (@liber/core, @liber/svg, @liber/react), CLI officielle (@liber/cli), 150 logos de technologies, 72 thèmes WCAG AA, 21 polices avec guide d'auto-hébergement, et site Next.js statique déployé sur Vercel.
                 </p>
               </div>
 
-              {/* Next Phases to Develop */}
+              {/* Status and Next Phases */}
               <div className="space-y-4 pt-2">
-                {/* Phase 4 */}
+                {/* Phase 4 Status */}
                 <div className="p-5 rounded-[10px] border border-border bg-card space-y-3">
                   <div className="flex items-center justify-between">
                     <span className="font-mono text-xs font-bold text-foreground">
-                      Phase 4 · CLI Maison (@liber/cli) & Distribution CDN
+                      Phase 4 · CLI Officielle (@liber/cli) & Registry shadcn
+                    </span>
+                    <span className="font-mono text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 font-semibold">
+                      Terminé (v0.1.0)
+                    </span>
+                  </div>
+                  <ul className="text-xs text-muted-foreground space-y-1.5 leading-relaxed list-disc list-inside">
+                    <li>
+                      <strong className="text-foreground">Package CLI autonome :</strong> Package <code className="font-mono text-primary">packages/cli</code> opérationnel en Node.js + TypeScript strict.
+                    </li>
+                    <li>
+                      <strong className="text-foreground">Commandes disponibles :</strong> <code className="font-mono">liber add &lt;slug&gt;</code>, <code className="font-mono">liber search &lt;query&gt;</code>, <code className="font-mono">liber view &lt;slug&gt;</code>, <code className="font-mono">liber init</code> et <code className="font-mono">liber diff &lt;slug&gt;</code>.
+                    </li>
+                    <li>
+                      <strong className="text-foreground">Double compatibilité :</strong> Installation fluide via la CLI maison <code className="font-mono">npx @liber/cli add &lt;slug&gt;</code> ou via shadcn <code className="font-mono">npx shadcn add https://.../r/&lt;slug&gt;.json</code>.
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Phase 5 Status */}
+                <div className="p-5 rounded-[10px] border border-border bg-card space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="font-mono text-xs font-bold text-foreground">
+                      Phase 5 · Thèmes de Couleurs (72) & Typographies Libres (21)
+                    </span>
+                    <span className="font-mono text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 font-semibold">
+                      Terminé
+                    </span>
+                  </div>
+                  <ul className="text-xs text-muted-foreground space-y-1.5 leading-relaxed list-disc list-inside">
+                    <li>
+                      <strong className="text-foreground">72 Palettes de Couleurs :</strong> Variables CSS clair/sombre, export HEX/CSS/Tailwind, et vérification des ratios de contraste WCAG AA.
+                    </li>
+                    <li>
+                      <strong className="text-foreground">21 Typographies Auto-Hébergées :</strong> Guide complet de stockage dans <code className="font-mono">public/fonts/&lt;slug&gt;/</code> (.woff2/.woff), intégration Next.js localFont et npm @fontsource.
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Phase 7 (Logos Status) */}
+                <div className="p-5 rounded-[10px] border border-border bg-card space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="font-mono text-xs font-bold text-foreground">
+                      Phase 7 · Catalogue des 150 Logos de Technologies
+                    </span>
+                    <span className="font-mono text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 font-semibold">
+                      Terminé (150/150)
+                    </span>
+                  </div>
+                  <ul className="text-xs text-muted-foreground space-y-1.5 leading-relaxed list-disc list-inside">
+                    <li>
+                      <strong className="text-foreground">150 technologies intégrées :</strong> Langages, frameworks front-end, back-end, bases de données, DevOps et outils de développement.
+                    </li>
+                    <li>
+                      <strong className="text-foreground">Variantes et conformité :</strong> Chaque marque dispose de ses variantes officielles (color, mono currentColor, wordmark), optimisées par SVGO et exportées en composants React typés.
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Milestones à Développer pour la suite */}
+                <div className="p-5 rounded-[10px] border border-border bg-card space-y-4">
+                  <div className="flex items-center justify-between border-b border-border pb-2">
+                    <span className="font-mono text-xs font-bold text-foreground">
+                      Énumération : Ce qu'il reste à développer pour la suite
                     </span>
                     <span className="font-mono text-[10px] px-2 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 font-semibold">
-                      À développer
+                      Feuille de Route
                     </span>
                   </div>
-                  <ul className="text-xs text-muted-foreground space-y-1.5 leading-relaxed list-disc list-inside">
-                    <li>
-                      <strong className="text-foreground">Package CLI autonome :</strong> Créer <code className="font-mono text-primary">packages/cli</code> en Node.js + TypeScript compilé avec <span className="font-mono text-foreground">tsup</span>.
-                    </li>
-                    <li>
-                      <strong className="text-foreground">Commandes CLI :</strong> Implémenter <code className="font-mono">liber add &lt;slug&gt;</code>, <code className="font-mono">liber search &lt;query&gt;</code>, <code className="font-mono">liber view &lt;slug&gt;</code>, <code className="font-mono">liber init</code> (génération du <span className="font-mono">liber.json</span>) et <code className="font-mono">liber diff &lt;slug&gt;</code>.
-                    </li>
-                    <li>
-                      <strong className="text-foreground">Déploiement CDN :</strong> Stockage R2 / CDN pour accès statique brut aux SVGs via <span className="font-mono">cdn.liber.dev/logos/&lt;slug&gt;/color.svg</span>.
-                    </li>
-                    <li>
-                      <strong className="text-foreground">Publication automatisée :</strong> Configuration de Changesets et workflow GitHub Actions pour publication npm publique avec <code className="font-mono">--access public</code>.
-                    </li>
-                  </ul>
-                </div>
 
-                {/* Phase 5 */}
-                <div className="p-5 rounded-[10px] border border-border bg-card space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className="font-mono text-xs font-bold text-foreground">
-                      Phase 5 · Sélecteur Global de Thème & Police dans l'En-tête
-                    </span>
-                    <span className="font-mono text-[10px] px-2 py-0.5 rounded bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 font-semibold">
-                      À développer
-                    </span>
-                  </div>
-                  <ul className="text-xs text-muted-foreground space-y-1.5 leading-relaxed list-disc list-inside">
-                    <li>
-                      <strong className="text-foreground">Sélecteur Navbar global :</strong> Intégrer un switcher de thème et de typographie dans la barre de navigation du site qui modifie dynamiquement <strong className="text-foreground">tous</strong> les aperçus de blocs et composants en temps réel.
-                    </li>
-                    <li>
-                      <strong className="text-foreground">Validation WCAG automatisée :</strong> Script <code className="font-mono">scripts/check-themes.ts</code> utilisant <span className="font-mono text-foreground">culori</span> pour bloquer en CI tout thème avec un contraste inférieur à 4.5:1.
-                    </li>
-                  </ul>
-                </div>
+                  <div className="space-y-3 text-xs text-muted-foreground">
+                    <div>
+                      <span className="font-semibold text-foreground font-mono">1. Sélecteur Global de Thème dans l'En-tête (Navbar)</span>
+                      <p className="mt-0.5">
+                        Ajout d'un sélecteur interactif dans le header global permettant d'appliquer dynamiquement n'importe laquelle des 72 palettes à l'ensemble du site et des aperçus en temps réel.
+                      </p>
+                    </div>
 
-                {/* Phase 6 */}
-                <div className="p-5 rounded-[10px] border border-border bg-card space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className="font-mono text-xs font-bold text-foreground">
-                      Phase 6 · Aperçus en Iframe Isolée & 30 Blocs / 20 Composants
-                    </span>
-                    <span className="font-mono text-[10px] px-2 py-0.5 rounded bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20 font-semibold">
-                      À développer
-                    </span>
-                  </div>
-                  <ul className="text-xs text-muted-foreground space-y-1.5 leading-relaxed list-disc list-inside">
-                    <li>
-                      <strong className="text-foreground">Isolation totale par Iframe :</strong> Rendre chaque bloc dans une iframe avec injection de ses variables CSS propres afin d'éviter toute contamination par le CSS de la documentation.
-                    </li>
-                    <li>
-                      <strong className="text-foreground">Expansion à 30 blocs originaux :</strong> Compléter les catégories Hero (5), Features (6), Tarifs (4), Témoignages (3), CTA (3), Pieds de page (4), Headers (5).
-                    </li>
-                    <li>
-                      <strong className="text-foreground">Expansion à 20 composants :</strong> Intégrer les variantes complètes et le tableau interactif des props TypeScript.
-                    </li>
-                    <li>
-                      <strong className="text-foreground">Script Playwright de captures :</strong> <code className="font-mono">scripts/build-previews.ts</code> pour générer automatiquement les captures d'écran clair et sombre à 360px et 1280px.
-                    </li>
-                  </ul>
-                </div>
+                    <div>
+                      <span className="font-semibold text-foreground font-mono">2. Expansion des Blocs & Composants (Sources Externes Open Source)</span>
+                      <p className="mt-0.5">
+                        Collecter et intégrer les 30 blocs (Hero, Features, Pricing, Testimonials, CTA, Footers, Nav) et 20 composants trouvés sur le web sous licence MIT, avec isolation totale des styles dans des iframes.
+                      </p>
+                    </div>
 
-                {/* Phase 7 */}
-                <div className="p-5 rounded-[10px] border border-border bg-card space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className="font-mono text-xs font-bold text-foreground">
-                      Phase 7 · Expansion du Catalogue (150 Logos & Services Africains)
-                    </span>
-                    <span className="font-mono text-[10px] px-2 py-0.5 rounded bg-muted text-muted-foreground border border-border font-semibold">
-                      Étape suivante
-                    </span>
-                  </div>
-                  <ul className="text-xs text-muted-foreground space-y-1.5 leading-relaxed list-disc list-inside">
-                    <li>
-                      <strong className="text-foreground">Atteindre 150 logos vérifiés :</strong> Langages (20), Frameworks front (25), Backend & bases (30), Cloud & DevOps (30), Outils (30).
-                    </li>
-                    <li>
-                      <strong className="text-foreground">Services tech & fintech africains :</strong> Intégration des vecteurs vérifiés d'Orange Money, MTN MoMo, Wave, Flutterwave, Paystack et Chipper Cash (selon chartes de marque accessibles).
-                    </li>
-                    <li>
-                      <strong className="text-foreground">Script d'import par lot :</strong> Outil de validation de masse et de vérification des liens officiels de chartes de marque.
-                    </li>
-                  </ul>
-                </div>
+                    <div>
+                      <span className="font-semibold text-foreground font-mono">3. Logos des Services Régionaux (Afrique & Fintech)</span>
+                      <p className="mt-0.5">
+                        Ajout d'un lot de 15 logos sous réserve de chartes de marque vérifiées : Orange Money, MTN MoMo, Wave, Flutterwave, Paystack, Chipper Cash.
+                      </p>
+                    </div>
 
-                {/* Phase 8 */}
-                <div className="p-5 rounded-[10px] border border-border bg-card space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className="font-mono text-xs font-bold text-foreground">
-                      Phase 8 · Tests Playwright E2E & Score Lighthouse &gt; 90
-                    </span>
-                    <span className="font-mono text-[10px] px-2 py-0.5 rounded bg-muted text-muted-foreground border border-border font-semibold">
-                      Étape finale
-                    </span>
+                    <div>
+                      <span className="font-semibold text-foreground font-mono">4. Automatisation des Aperçus et Tests Playwright E2E</span>
+                      <p className="mt-0.5">
+                        Script <code className="font-mono">scripts/build-previews.ts</code> pour capturer automatiquement les blocs à 360px et 1280px (modes clair et sombre), tests de parcours utilisateur (recherche Ctrl+K, copie, téléchargement) et validation de score Lighthouse supérieur à 90.
+                      </p>
+                    </div>
                   </div>
-                  <ul className="text-xs text-muted-foreground space-y-1.5 leading-relaxed list-disc list-inside">
-                    <li>
-                      <strong className="text-foreground">Tests de parcours complets :</strong> Recherche instantanée Ctrl+K, copie de SVG et JSX, téléchargement PNG, testeur de polices.
-                    </li>
-                    <li>
-                      <strong className="text-foreground">Audits Lighthouse :</strong> Garantir un score de 90+ sur Performance, Accessibilité, Best Practices et SEO sur mobile et desktop.
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
