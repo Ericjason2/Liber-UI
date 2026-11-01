@@ -1,0 +1,9 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+
+export interface WaveColorProps extends SVGProps<SVGSVGElement> {
+  size?: number | string;
+  title?: string;
+}
+const WaveColor = ({ size = 24, ...props }: WaveColorProps) => <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width={size ?? 24} height={size ?? 24} {...props}><title>{"Wave"}</title><rect width={128} height={128} fill="#1dc3ff" rx={28} /><path fill="#fff" d="M64 24c-17.673 0-32 14.327-32 32 0 11.235 5.807 21.12 14.58 26.812L44 96l14.28-7.14c2 .76 3.82.87 5.72.87 17.673 0 32-14.327 32-32s-14.327-32-32-32zm-6 20a6 6 0 1 1 0 12 6 6 0 0 1 0-12m18 0a6 6 0 1 1 0 12 6 6 0 0 1 0-12M54 72.5C56.5 77 61.5 80 67 80s10.5-3 13-7.5l4 3c-3.5 6-10 10-17 10s-13.5-4-17-10z" /></svg>;
+export { WaveColor };

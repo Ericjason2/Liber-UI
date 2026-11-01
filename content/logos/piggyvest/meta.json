@@ -1,0 +1,35 @@
+{
+  "slug": "piggyvest",
+  "kind": "logo",
+  "name": "PiggyVest",
+  "description": "Première plateforme d'épargne en ligne et de micro-investissement automatisé en Afrique.",
+  "aliases": [
+    "piggybank.ng",
+    "piggy vest"
+  ],
+  "category": "africa",
+  "tags": [
+    "fintech",
+    "savings",
+    "investment",
+    "nigeria",
+    "africa"
+  ],
+  "license": "trademark",
+  "author": "PiggyTech Global Limited",
+  "website": "https://www.piggyvest.com",
+  "brandGuidelinesUrl": "https://www.piggyvest.com/about",
+  "source": {
+    "url": "https://www.piggyvest.com",
+    "retrievedAt": "2026-11-01"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#083E9E"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

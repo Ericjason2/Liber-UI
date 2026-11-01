@@ -6,7 +6,7 @@ export interface LogoItem {
   name: string;
   description: string;
   aliases: string[];
-  category: "languages" | "frontend" | "backend" | "devops" | "tools";
+  category: "languages" | "frontend" | "backend" | "devops" | "tools" | "africa";
   tags: string[];
   license: "trademark";
   author: string;

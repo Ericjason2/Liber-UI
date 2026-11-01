@@ -5,6 +5,46 @@
   "items": [
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "airtel-money",
+      "type": "registry:ui",
+      "title": "Airtel Money",
+      "description": "Portefeuille électronique et plateforme de paiement d'Airtel Africa dans 14 pays.",
+      "author": "Airtel Africa PLC",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/airtel-money.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface AirtelMoneyColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst AirtelMoneyColor = ({ size = 24, ...props }: AirtelMoneyColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Airtel Money\"}</title><rect width={128} height={128} fill=\"#ed1c24\" rx={28} /><path fill=\"#fff\" d=\"M64 30c-18.778 0-34 15.222-34 34 0 14.887 9.553 27.545 22.848 32.064L57 84.608C47.88 81.72 42 73.57 42 64c0-12.15 9.85-22 22-22s22 9.85 22 22c0 5.12-1.76 9.84-4.72 13.57C78.67 80.85 77 82 77 84c0 2.21 1.79 4 4 4 1.83 0 3.33-1.22 3.82-2.88C90.35 79.5 96 72.39 96 64c0-18.778-15.222-34-34-34z\" /></svg>;\nexport { AirtelMoneyColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface AirtelMoneyMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst AirtelMoneyMono = ({ size = 24, ...props }: AirtelMoneyMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Airtel Money (monochrome)\"}</title><path fill=\"currentColor\" d=\"M64 30c-18.778 0-34 15.222-34 34 0 14.887 9.553 27.545 22.848 32.064L57 84.608C47.88 81.72 42 73.57 42 64c0-12.15 9.85-22 22-22s22 9.85 22 22c0 5.12-1.76 9.84-4.72 13.57C78.67 80.85 77 82 77 84c0 2.21 1.79 4 4 4 1.83 0 3.33-1.22 3.82-2.88C90.35 79.5 96 72.39 96 64c0-18.778-15.222-34-34-34z\" /></svg>;\nexport { AirtelMoneyMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "airtel",
+          "airtel africa"
+        ],
+        "website": "https://airtel.africa",
+        "brandGuidelinesUrl": "https://airtel.africa/about-us",
+        "source": {
+          "url": "https://airtel.africa",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#ED1C24"
+          },
+          "mono": {
+            "file": "mono.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
       "name": "alpinejs",
       "type": "registry:ui",
       "title": "Alpine.js",
@@ -755,6 +795,46 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "chipper-cash",
+      "type": "registry:ui",
+      "title": "Chipper Cash",
+      "description": "Application de transfert d'argent transfrontalier instantané et paiements en Afrique.",
+      "author": "Critical Ideas, Inc.",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/chipper-cash.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface ChipperCashColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst ChipperCashColor = ({ size = 24, ...props }: ChipperCashColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Chipper Cash\"}</title><rect width={128} height={128} fill=\"#7a28ff\" rx={28} /><path fill=\"#fff\" d=\"M78 36H50c-7.732 0-14 6.268-14 14v28c0 7.732 6.268 14 14 14h28c7.732 0 14-6.268 14-14v-8H76v8H52V50h40c0-7.732-6.268-14-14-14\" /></svg>;\nexport { ChipperCashColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface ChipperCashMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst ChipperCashMono = ({ size = 24, ...props }: ChipperCashMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Chipper Cash (monochrome)\"}</title><rect width={128} height={128} fill=\"none\" stroke=\"currentColor\" strokeWidth={8} rx={28} /><path fill=\"currentColor\" d=\"M78 36H50c-7.732 0-14 6.268-14 14v28c0 7.732 6.268 14 14 14h28c7.732 0 14-6.268 14-14v-8H76v8H52V50h40c0-7.732-6.268-14-14-14\" /></svg>;\nexport { ChipperCashMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "chipper",
+          "chippercash"
+        ],
+        "website": "https://chippercash.com",
+        "brandGuidelinesUrl": "https://chippercash.com/press",
+        "source": {
+          "url": "https://chippercash.com",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#7A28FF"
+          },
+          "mono": {
+            "file": "mono.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
       "name": "circleci",
       "type": "registry:ui",
       "title": "CircleCI",
@@ -1458,6 +1538,46 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "djamo",
+      "type": "registry:ui",
+      "title": "Djamo",
+      "description": "Application financière et carte Visa internationale pour la zone franc CFA / UEMOA.",
+      "author": "Djamo Inc.",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/djamo.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface DjamoColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst DjamoColor = ({ size = 24, ...props }: DjamoColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Djamo\"}</title><rect width={128} height={128} fill=\"#2764ff\" rx={28} /><path fill=\"#fff\" d=\"M38 34h26c18.778 0 34 13.431 34 30S82.778 94 64 94H38zm16 14v32h10c9.941 0 18-7.163 18-16s-8.059-16-18-16z\" /></svg>;\nexport { DjamoColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface DjamoMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst DjamoMono = ({ size = 24, ...props }: DjamoMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Djamo (monochrome)\"}</title><path fill=\"currentColor\" d=\"M38 34h26c18.778 0 34 13.431 34 30S82.778 94 64 94H38zm16 14v32h10c9.941 0 18-7.163 18-16s-8.059-16-18-16z\" /></svg>;\nexport { DjamoMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "djamo ci",
+          "djamo app"
+        ],
+        "website": "https://www.djamo.com",
+        "brandGuidelinesUrl": "https://www.djamo.com/a-propos",
+        "source": {
+          "url": "https://www.djamo.com",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#2764FF"
+          },
+          "mono": {
+            "file": "mono.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
       "name": "django",
       "type": "registry:ui",
       "title": "Django",
@@ -2116,6 +2236,47 @@
           "color": {
             "file": "color.svg",
             "hex": "#3FB6D3"
+          },
+          "mono": {
+            "file": "mono.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "flutterwave",
+      "type": "registry:ui",
+      "title": "Flutterwave",
+      "description": "Infrastructure de paiement et passerelle API pour l'Afrique et l'international.",
+      "author": "Flutterwave Inc.",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/flutterwave.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface FlutterwaveColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst FlutterwaveColor = ({ size = 24, ...props }: FlutterwaveColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Flutterwave\"}</title><rect width={128} height={128} fill=\"#0a0e27\" rx={28} /><path fill=\"#fb6340\" d=\"M32 40c0-6.627 5.373-12 12-12h18c18.778 0 34 15.222 34 34S80.778 96 62 96h-6c-6.627 0-12-5.373-12-12V40z\" /><path fill=\"#0acf83\" d=\"M44 54a8 8 0 0 1 8-8h10c11.046 0 20 8.954 20 20s-8.954 20-20 20H52a8 8 0 0 1-8-8z\" /><path fill=\"#f04438\" d=\"M54 66a4 4 0 0 1 4-4h4c5.523 0 10 4.477 10 10s-4.477 10-10 10h-4a4 4 0 0 1-4-4z\" /></svg>;\nexport { FlutterwaveColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface FlutterwaveMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst FlutterwaveMono = ({ size = 24, ...props }: FlutterwaveMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Flutterwave (monochrome)\"}</title><path fill=\"none\" stroke=\"currentColor\" strokeWidth={8} d=\"M32 40c0-6.627 5.373-12 12-12h18c18.778 0 34 15.222 34 34S80.778 96 62 96h-6c-6.627 0-12-5.373-12-12V40z\" /><path fill=\"currentColor\" d=\"M44 54a8 8 0 0 1 8-8h10c11.046 0 20 8.954 20 20s-8.954 20-20 20H52a8 8 0 0 1-8-8z\" /></svg>;\nexport { FlutterwaveMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "rave",
+          "flutter wave",
+          "flw"
+        ],
+        "website": "https://flutterwave.com",
+        "brandGuidelinesUrl": "https://flutterwave.com/us/brand",
+        "source": {
+          "url": "https://flutterwave.com",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#FB6340"
           },
           "mono": {
             "file": "mono.svg"
@@ -3258,6 +3419,47 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "kuda",
+      "type": "registry:ui",
+      "title": "Kuda Bank",
+      "description": "Banque digitale sans frais (The Bank of the Free) pour les particuliers et professionnels.",
+      "author": "Kuda Technologies Ltd",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/kuda.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface KudaColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst KudaColor = ({ size = 24, ...props }: KudaColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Kuda\"}</title><rect width={128} height={128} fill=\"#40196d\" rx={28} /><path fill=\"#fff\" d=\"M38 32h14v64H38z\" /><path fill=\"#00d09c\" d=\"m52 64 28-32h18L68 64l30 32H80z\" /></svg>;\nexport { KudaColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface KudaMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst KudaMono = ({ size = 24, ...props }: KudaMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Kuda (monochrome)\"}</title><path fill=\"currentColor\" d=\"M38 32h14v64H38zm14 32 28-32h18L68 64l30 32H80z\" /></svg>;\nexport { KudaMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "kuda",
+          "kuda bank",
+          "kudabank"
+        ],
+        "website": "https://kuda.com",
+        "brandGuidelinesUrl": "https://kuda.com/about",
+        "source": {
+          "url": "https://kuda.com",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#40196D"
+          },
+          "mono": {
+            "file": "mono.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
       "name": "laravel",
       "type": "registry:ui",
       "title": "Laravel",
@@ -3379,6 +3581,47 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "m-pesa",
+      "type": "registry:ui",
+      "title": "M-Pesa",
+      "description": "Pionnier du mobile money en Afrique lancé par Safaricom et Vodafone en Afrique de l'Est.",
+      "author": "Safaricom PLC / Vodafone",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/m-pesa.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface MPesaColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst MPesaColor = ({ size = 24, ...props }: MPesaColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"M-Pesa\"}</title><rect width={128} height={128} fill=\"#fff\" rx={28} /><path fill=\"#009a44\" d=\"M64 20a44 44 0 1 0 44 44 44 44 0 0 0-44-44m0 76a32 32 0 1 1 32-32 32 32 0 0 1-32 32\" /><path fill=\"#e20613\" d=\"M48 48h14l10 18 10-18h14v36H84V64l-9 16h-6l-9-16v20H48z\" /></svg>;\nexport { MPesaColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface MPesaMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst MPesaMono = ({ size = 24, ...props }: MPesaMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"M-Pesa (monochrome)\"}</title><circle cx={64} cy={64} r={48} fill=\"none\" stroke=\"currentColor\" strokeWidth={8} /><path fill=\"currentColor\" d=\"M48 48h14l10 18 10-18h14v36H84V64l-9 16h-6l-9-16v20H48z\" /></svg>;\nexport { MPesaMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "mpesa",
+          "safaricom m-pesa",
+          "vodafone mpesa"
+        ],
+        "website": "https://www.safaricom.co.ke",
+        "brandGuidelinesUrl": "https://www.safaricom.co.ke/about/brand",
+        "source": {
+          "url": "https://www.safaricom.co.ke",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#009A44"
+          },
+          "mono": {
+            "file": "mono.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
       "name": "mongodb",
       "type": "registry:ui",
       "title": "MongoDB",
@@ -3415,6 +3658,128 @@
           },
           "wordmark": {
             "file": "wordmark.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "moniepoint",
+      "type": "registry:ui",
+      "title": "Moniepoint",
+      "description": "Plateforme bancaire commerciale et terminaux de paiement tout-en-un pour entreprises africaines.",
+      "author": "Moniepoint Inc.",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/moniepoint.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface MoniepointColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst MoniepointColor = ({ size = 24, ...props }: MoniepointColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Moniepoint\"}</title><rect width={128} height={128} fill=\"#036\" rx={28} /><path fill=\"#08f\" d=\"m30 40 34 30 34-30v26L64 96 30 66z\" /><path fill=\"#fff\" d=\"m42 40 22 20 22-20v14L64 74 42 54z\" /></svg>;\nexport { MoniepointColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface MoniepointMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst MoniepointMono = ({ size = 24, ...props }: MoniepointMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Moniepoint (monochrome)\"}</title><path fill=\"currentColor\" d=\"m30 40 34 30 34-30v26L64 96 30 66z\" /></svg>;\nexport { MoniepointMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "monie point",
+          "teamapt"
+        ],
+        "website": "https://moniepoint.com",
+        "brandGuidelinesUrl": "https://moniepoint.com/ng/brand",
+        "source": {
+          "url": "https://moniepoint.com",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#003366"
+          },
+          "mono": {
+            "file": "mono.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "moov-money",
+      "type": "registry:ui",
+      "title": "Moov Money",
+      "description": "Plateforme de paiement mobile et de transfert d'argent de Moov Africa.",
+      "author": "Maroc Telecom / Moov Africa",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/moov-money.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface MoovMoneyColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst MoovMoneyColor = ({ size = 24, ...props }: MoovMoneyColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Moov Money\"}</title><rect width={128} height={128} fill=\"#004b97\" rx={28} /><path fill=\"none\" stroke=\"#f37023\" strokeLinecap=\"round\" strokeWidth={12} d=\"M34 76c0-16.569 13.431-30 30-30s30 13.431 30 30\" /><path fill=\"none\" stroke=\"#fff\" strokeLinecap=\"round\" strokeWidth={8} d=\"M46 76c0-9.941 8.059-18 18-18s18 8.059 18 18\" /><circle cx={64} cy={30} r={10} fill=\"#f37023\" /></svg>;\nexport { MoovMoneyColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface MoovMoneyMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst MoovMoneyMono = ({ size = 24, ...props }: MoovMoneyMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Moov Money (monochrome)\"}</title><path fill=\"none\" stroke=\"currentColor\" strokeLinecap=\"round\" strokeWidth={12} d=\"M34 82c0-16.569 13.431-30 30-30s30 13.431 30 30\" /><path fill=\"none\" stroke=\"currentColor\" strokeLinecap=\"round\" strokeWidth={8} d=\"M48 82c0-8.837 7.163-16 16-16s16 7.163 16 16\" /><circle cx={64} cy={34} r={10} fill=\"currentColor\" /></svg>;\nexport { MoovMoneyMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "moov",
+          "moov africa",
+          "moov money flooz"
+        ],
+        "website": "https://www.moov-africa.com",
+        "brandGuidelinesUrl": "https://www.moov-africa.com",
+        "source": {
+          "url": "https://www.moov-africa.com",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#004B97"
+          },
+          "mono": {
+            "file": "mono.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "mtn-momo",
+      "type": "registry:ui",
+      "title": "MTN MoMo",
+      "description": "Service de finance mobile et paiements de MTN Group déployé à travers l'Afrique.",
+      "author": "MTN Group Limited",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/mtn-momo.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface MtnMomoColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst MtnMomoColor = ({ size = 24, ...props }: MtnMomoColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"MTN MoMo\"}</title><rect width={128} height={128} fill=\"#fc0\" rx={28} /><ellipse cx={64} cy={64} fill=\"#004f71\" rx={46} ry={32} /><text x={64} y={73} fill=\"#fc0\" fontFamily=\"system-ui, -apple-system, sans-serif\" fontSize={28} fontWeight={900} letterSpacing={-1} textAnchor=\"middle\">{\"MoMo\"}</text></svg>;\nexport { MtnMomoColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface MtnMomoMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst MtnMomoMono = ({ size = 24, ...props }: MtnMomoMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"MTN MoMo (monochrome)\"}</title><ellipse cx={64} cy={64} fill=\"none\" stroke=\"currentColor\" strokeWidth={8} rx={54} ry={38} /><text x={64} y={73} fill=\"currentColor\" fontFamily=\"system-ui, -apple-system, sans-serif\" fontSize={28} fontWeight={900} letterSpacing={-1} textAnchor=\"middle\">{\"MoMo\"}</text></svg>;\nexport { MtnMomoMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "momo",
+          "mtn mobile money",
+          "mtn"
+        ],
+        "website": "https://www.momo.mtn.com",
+        "brandGuidelinesUrl": "https://www.mtn.com",
+        "source": {
+          "url": "https://www.mtn.com",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#FFCC00"
+          },
+          "mono": {
+            "file": "mono.svg"
           }
         }
       }
@@ -3965,6 +4330,87 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "opay",
+      "type": "registry:ui",
+      "title": "OPay",
+      "description": "Fintech de paiement mobile, cartes et transactions financières quotidiennes en Afrique.",
+      "author": "OPay Digital Services Limited",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/opay.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface OpayColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst OpayColor = ({ size = 24, ...props }: OpayColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"OPay\"}</title><rect width={128} height={128} fill=\"#17b890\" rx={28} /><circle cx={64} cy={64} r={34} fill=\"none\" stroke=\"#fff\" strokeWidth={16} /><path stroke=\"#17b890\" strokeLinecap=\"round\" strokeWidth={8} d=\"M64 30v20\" /><circle cx={64} cy={64} r={12} fill=\"#fff\" /></svg>;\nexport { OpayColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface OpayMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst OpayMono = ({ size = 24, ...props }: OpayMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"OPay (monochrome)\"}</title><circle cx={64} cy={64} r={34} fill=\"none\" stroke=\"currentColor\" strokeWidth={16} /><circle cx={64} cy={64} r={12} fill=\"currentColor\" /></svg>;\nexport { OpayMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "o-pay",
+          "opay digital services"
+        ],
+        "website": "https://opayweb.com",
+        "brandGuidelinesUrl": "https://opayweb.com/about",
+        "source": {
+          "url": "https://opayweb.com",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#17B890"
+          },
+          "mono": {
+            "file": "mono.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "orange-money",
+      "type": "registry:ui",
+      "title": "Orange Money",
+      "description": "Solution de transfert d'argent et portefeuille mobile du groupe Orange en Afrique.",
+      "author": "Orange S.A.",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/orange-money.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface OrangeMoneyColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst OrangeMoneyColor = ({ size = 24, ...props }: OrangeMoneyColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Orange Money\"}</title><rect width={128} height={128} fill=\"#ff7900\" rx={24} /><circle cx={64} cy={64} r={38} fill=\"#fff\" /><circle cx={64} cy={64} r={26} /><circle cx={64} cy={64} r={14} fill=\"#ff7900\" /></svg>;\nexport { OrangeMoneyColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface OrangeMoneyMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst OrangeMoneyMono = ({ size = 24, ...props }: OrangeMoneyMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Orange Money (monochrome)\"}</title><rect width={128} height={128} fill=\"none\" stroke=\"currentColor\" strokeWidth={8} rx={24} /><circle cx={64} cy={64} r={38} fill=\"none\" stroke=\"currentColor\" strokeWidth={6} /><circle cx={64} cy={64} r={22} fill=\"currentColor\" /></svg>;\nexport { OrangeMoneyMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "om",
+          "orange mobile money",
+          "orange"
+        ],
+        "website": "https://www.orange.com",
+        "brandGuidelinesUrl": "https://brand.orange.com",
+        "source": {
+          "url": "https://brand.orange.com",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#FF7900"
+          },
+          "mono": {
+            "file": "mono.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
       "name": "pandas",
       "type": "registry:ui",
       "title": "Pandas",
@@ -4007,6 +4453,46 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "paystack",
+      "type": "registry:ui",
+      "title": "Paystack",
+      "description": "Passerelle de paiement en ligne moderne pour les entreprises en Afrique (Stripe group).",
+      "author": "Paystack Payments Limited",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/paystack.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface PaystackColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst PaystackColor = ({ size = 24, ...props }: PaystackColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Paystack\"}</title><rect width={128} height={128} fill=\"#09203f\" rx={28} /><rect width={72} height={14} x={28} y={28} fill=\"#00c3f7\" rx={7} /><rect width={48} height={14} x={28} y={50} fill=\"#00c3f7\" rx={7} /><rect width={72} height={14} x={28} y={72} fill=\"#00c3f7\" rx={7} /><rect width={48} height={14} x={28} y={94} fill=\"#00c3f7\" rx={7} /></svg>;\nexport { PaystackColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface PaystackMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst PaystackMono = ({ size = 24, ...props }: PaystackMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Paystack (monochrome)\"}</title><rect width={72} height={14} x={28} y={28} fill=\"currentColor\" rx={7} /><rect width={48} height={14} x={28} y={50} fill=\"currentColor\" rx={7} /><rect width={72} height={14} x={28} y={72} fill=\"currentColor\" rx={7} /><rect width={48} height={14} x={28} y={94} fill=\"currentColor\" rx={7} /></svg>;\nexport { PaystackMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "pay stack",
+          "paystack stripe"
+        ],
+        "website": "https://paystack.com",
+        "brandGuidelinesUrl": "https://paystack.com/brand",
+        "source": {
+          "url": "https://paystack.com",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#00C3F7"
+          },
+          "mono": {
+            "file": "mono.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
       "name": "php",
       "type": "registry:ui",
       "title": "PHP",
@@ -4037,6 +4523,46 @@
           "color": {
             "file": "color.svg",
             "hex": "#777bb3"
+          },
+          "mono": {
+            "file": "mono.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "piggyvest",
+      "type": "registry:ui",
+      "title": "PiggyVest",
+      "description": "Première plateforme d'épargne en ligne et de micro-investissement automatisé en Afrique.",
+      "author": "PiggyTech Global Limited",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/piggyvest.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface PiggyvestColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst PiggyvestColor = ({ size = 24, ...props }: PiggyvestColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"PiggyVest\"}</title><rect width={128} height={128} fill=\"#083e9e\" rx={28} /><circle cx={64} cy={64} r={36} fill=\"none\" stroke=\"#22c55e\" strokeWidth={10} /><path fill=\"none\" stroke=\"#fff\" strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth={8} d=\"m52 64 8 8 16-16\" /></svg>;\nexport { PiggyvestColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface PiggyvestMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst PiggyvestMono = ({ size = 24, ...props }: PiggyvestMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"PiggyVest (monochrome)\"}</title><circle cx={64} cy={64} r={36} fill=\"none\" stroke=\"currentColor\" strokeWidth={10} /><path fill=\"none\" stroke=\"currentColor\" strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth={8} d=\"m52 64 8 8 16-16\" /></svg>;\nexport { PiggyvestMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "piggybank.ng",
+          "piggy vest"
+        ],
+        "website": "https://www.piggyvest.com",
+        "brandGuidelinesUrl": "https://www.piggyvest.com/about",
+        "source": {
+          "url": "https://www.piggyvest.com",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#083E9E"
           },
           "mono": {
             "file": "mono.svg"
@@ -6049,6 +6575,47 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "wave",
+      "type": "registry:ui",
+      "title": "Wave",
+      "description": "Plateforme de mobile money et transferts d'argent sans frais en Afrique (Sénégal, Côte d'Ivoire, Mali...).",
+      "author": "Wave Mobile Money Inc.",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/wave.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface WaveColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst WaveColor = ({ size = 24, ...props }: WaveColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Wave\"}</title><rect width={128} height={128} fill=\"#1dc3ff\" rx={28} /><path fill=\"#fff\" d=\"M64 24c-17.673 0-32 14.327-32 32 0 11.235 5.807 21.12 14.58 26.812L44 96l14.28-7.14c2 .76 3.82.87 5.72.87 17.673 0 32-14.327 32-32s-14.327-32-32-32zm-6 20a6 6 0 1 1 0 12 6 6 0 0 1 0-12m18 0a6 6 0 1 1 0 12 6 6 0 0 1 0-12M54 72.5C56.5 77 61.5 80 67 80s10.5-3 13-7.5l4 3c-3.5 6-10 10-17 10s-13.5-4-17-10z\" /></svg>;\nexport { WaveColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface WaveMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst WaveMono = ({ size = 24, ...props }: WaveMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Wave (monochrome)\"}</title><rect width={128} height={128} fill=\"none\" stroke=\"currentColor\" strokeWidth={8} rx={28} /><path fill=\"currentColor\" d=\"M64 24c-17.673 0-32 14.327-32 32 0 11.235 5.807 21.12 14.58 26.812L44 96l14.28-7.14c2 .76 3.82.87 5.72.87 17.673 0 32-14.327 32-32s-14.327-32-32-32zm-6 20a6 6 0 1 1 0 12 6 6 0 0 1 0-12m18 0a6 6 0 1 1 0 12 6 6 0 0 1 0-12M54 72.5C56.5 77 61.5 80 67 80s10.5-3 13-7.5l4 3c-3.5 6-10 10-17 10s-13.5-4-17-10z\" /></svg>;\nexport { WaveMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "wave mobile money",
+          "wave senegal",
+          "wave ci"
+        ],
+        "website": "https://www.wave.com",
+        "brandGuidelinesUrl": "https://www.wave.com/en/press",
+        "source": {
+          "url": "https://www.wave.com",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#1DC3FF"
+          },
+          "mono": {
+            "file": "mono.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
       "name": "webpack",
       "type": "registry:ui",
       "title": "Webpack",
@@ -6208,6 +6775,46 @@
           },
           "wordmark": {
             "file": "wordmark.svg"
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "yoco",
+      "type": "registry:ui",
+      "title": "Yoco",
+      "description": "Technologie de paiement par carte et terminaux mobiles pour commerçants en Afrique du Sud.",
+      "author": "Yoco Technologies",
+      "categories": [
+        "africa"
+      ],
+      "files": [
+        {
+          "path": "ui/logos/yoco.tsx",
+          "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface YocoColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst YocoColor = ({ size = 24, ...props }: YocoColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Yoco\"}</title><rect width={128} height={128} fill=\"#00b2fe\" rx={28} /><path fill=\"#fff\" d=\"M34 32h18l12 24 12-24h18L72 74v22H56V74z\" /></svg>;\nexport { YocoColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface YocoMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst YocoMono = ({ size = 24, ...props }: YocoMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Yoco (monochrome)\"}</title><path fill=\"currentColor\" d=\"M34 32h18l12 24 12-24h18L72 74v22H56V74z\" /></svg>;\nexport { YocoMono };",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "kind": "logo",
+        "aliases": [
+          "yoco payments",
+          "yoco pos"
+        ],
+        "website": "https://www.yoco.com",
+        "brandGuidelinesUrl": "https://www.yoco.com/za/about-us",
+        "source": {
+          "url": "https://www.yoco.com",
+          "retrievedAt": "2026-11-01"
+        },
+        "variants": {
+          "color": {
+            "file": "color.svg",
+            "hex": "#00B2FE"
+          },
+          "mono": {
+            "file": "mono.svg"
           }
         }
       }

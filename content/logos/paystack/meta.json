@@ -1,0 +1,36 @@
+{
+  "slug": "paystack",
+  "kind": "logo",
+  "name": "Paystack",
+  "description": "Passerelle de paiement en ligne moderne pour les entreprises en Afrique (Stripe group).",
+  "aliases": [
+    "pay stack",
+    "paystack stripe"
+  ],
+  "category": "africa",
+  "tags": [
+    "fintech",
+    "payments",
+    "stripe",
+    "nigeria",
+    "ghana",
+    "south-africa"
+  ],
+  "license": "trademark",
+  "author": "Paystack Payments Limited",
+  "website": "https://paystack.com",
+  "brandGuidelinesUrl": "https://paystack.com/brand",
+  "source": {
+    "url": "https://paystack.com",
+    "retrievedAt": "2026-11-01"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#00C3F7"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

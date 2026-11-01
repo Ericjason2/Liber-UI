@@ -1,0 +1,35 @@
+{
+  "slug": "yoco",
+  "kind": "logo",
+  "name": "Yoco",
+  "description": "Technologie de paiement par carte et terminaux mobiles pour commerçants en Afrique du Sud.",
+  "aliases": [
+    "yoco payments",
+    "yoco pos"
+  ],
+  "category": "africa",
+  "tags": [
+    "fintech",
+    "payments",
+    "pos",
+    "south-africa",
+    "africa"
+  ],
+  "license": "trademark",
+  "author": "Yoco Technologies",
+  "website": "https://www.yoco.com",
+  "brandGuidelinesUrl": "https://www.yoco.com/za/about-us",
+  "source": {
+    "url": "https://www.yoco.com",
+    "retrievedAt": "2026-11-01"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#00B2FE"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

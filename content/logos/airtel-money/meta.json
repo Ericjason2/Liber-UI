@@ -1,0 +1,34 @@
+{
+  "slug": "airtel-money",
+  "kind": "logo",
+  "name": "Airtel Money",
+  "description": "Portefeuille électronique et plateforme de paiement d'Airtel Africa dans 14 pays.",
+  "aliases": [
+    "airtel",
+    "airtel africa"
+  ],
+  "category": "africa",
+  "tags": [
+    "fintech",
+    "mobile-money",
+    "airtel",
+    "africa"
+  ],
+  "license": "trademark",
+  "author": "Airtel Africa PLC",
+  "website": "https://airtel.africa",
+  "brandGuidelinesUrl": "https://airtel.africa/about-us",
+  "source": {
+    "url": "https://airtel.africa",
+    "retrievedAt": "2026-11-01"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#ED1C24"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

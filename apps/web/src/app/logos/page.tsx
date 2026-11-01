@@ -23,6 +23,16 @@ const ALPHABET = [
   "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"
 ];
 
+const CATEGORIES = [
+  { id: "all", label: "All Logos" },
+  { id: "africa", label: "Afrique / Fintech" },
+  { id: "frontend", label: "Front-end" },
+  { id: "backend", label: "Back-end & DB" },
+  { id: "devops", label: "Cloud & DevOps" },
+  { id: "languages", label: "Languages" },
+  { id: "tools", label: "Tools & Design" },
+] as const;
+
 function toPascalCase(str: string): string {
   return str
     .split(/[-_]/)
@@ -32,6 +42,7 @@ function toPascalCase(str: string): string {
 
 export default function LogosPage() {
   const [search, setSearch] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [selectedLetter, setSelectedLetter] = useState<string>("All");
   const [variant, setVariant] = useState<VariantType>("color");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
@@ -39,6 +50,11 @@ export default function LogosPage() {
 
   const filteredLogos = useMemo(() => {
     return OFFICIAL_LOGOS.filter((logo) => {
+      // Category filter
+      if (selectedCategory !== "all" && logo.category !== selectedCategory) {
+        return false;
+      }
+
       const q = search.toLowerCase().trim();
       const matchesSearch =
         !q ||
@@ -58,7 +74,7 @@ export default function LogosPage() {
 
       return firstChar === selectedLetter;
     });
-  }, [search, selectedLetter]);
+  }, [search, selectedCategory, selectedLetter]);
 
   const handleCopySvg = async (logo: LogoItem, e: React.MouseEvent) => {
     e.preventDefault();
@@ -133,6 +149,38 @@ export default function LogosPage() {
         </div>
       </div>
 
+      {/* Category Filter Chips */}
+      <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+        {CATEGORIES.map((cat) => {
+          const isSelected = selectedCategory === cat.id;
+          const count =
+            cat.id === "all"
+              ? OFFICIAL_LOGOS.length
+              : OFFICIAL_LOGOS.filter((l) => l.category === cat.id).length;
+          return (
+            <button
+              key={cat.id}
+              onClick={() => {
+                setSelectedCategory(cat.id);
+                setSelectedLetter("All");
+              }}
+              className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${isSelected
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "bg-muted/70 text-muted-foreground hover:text-foreground hover:bg-muted border border-border/60"
+                }`}
+            >
+              <span>{cat.label}</span>
+              <span
+                className={`text-[11px] px-1.5 py-0.5 rounded-full font-mono ${isSelected ? "bg-primary-foreground/20 text-primary-foreground" : "bg-card text-muted-foreground"
+                  }`}
+              >
+                {count}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+
       {/* 2. Controls Bar (Search + Variant Switcher) */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-3 bg-muted/40 rounded-xl border border-border">
         {/* Search Input */}
@@ -161,11 +209,10 @@ export default function LogosPage() {
             <button
               key={v}
               onClick={() => setVariant(v)}
-              className={`px-3 py-1 text-xs font-medium rounded-[6px] capitalize transition-colors ${
-                variant === v
+              className={`px-3 py-1 text-xs font-medium rounded-[6px] capitalize transition-colors ${variant === v
                   ? "bg-muted font-semibold text-foreground shadow-sm"
                   : "text-muted-foreground hover:text-foreground"
-              }`}
+                }`}
             >
               {v === "mono" ? "Monochrome" : v}
             </button>
@@ -179,11 +226,10 @@ export default function LogosPage() {
           <button
             key={letter}
             onClick={() => setSelectedLetter(letter)}
-            className={`min-w-[28px] h-7 px-2 rounded-[6px] flex items-center justify-center transition-colors ${
-              selectedLetter === letter
+            className={`min-w-[28px] h-7 px-2 rounded-[6px] flex items-center justify-center transition-colors ${selectedLetter === letter
                 ? "bg-primary text-primary-foreground font-bold shadow-sm"
                 : "text-muted-foreground hover:text-foreground hover:bg-muted"
-            }`}
+              }`}
           >
             {letter}
           </button>

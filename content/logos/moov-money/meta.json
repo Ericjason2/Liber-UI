@@ -1,0 +1,35 @@
+{
+  "slug": "moov-money",
+  "kind": "logo",
+  "name": "Moov Money",
+  "description": "Plateforme de paiement mobile et de transfert d'argent de Moov Africa.",
+  "aliases": [
+    "moov",
+    "moov africa",
+    "moov money flooz"
+  ],
+  "category": "africa",
+  "tags": [
+    "fintech",
+    "mobile-money",
+    "moov",
+    "africa"
+  ],
+  "license": "trademark",
+  "author": "Maroc Telecom / Moov Africa",
+  "website": "https://www.moov-africa.com",
+  "brandGuidelinesUrl": "https://www.moov-africa.com",
+  "source": {
+    "url": "https://www.moov-africa.com",
+    "retrievedAt": "2026-11-01"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#004B97"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

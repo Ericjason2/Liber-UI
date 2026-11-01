@@ -1,0 +1,40 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "opay",
+  "type": "registry:ui",
+  "title": "OPay",
+  "description": "Fintech de paiement mobile, cartes et transactions financières quotidiennes en Afrique.",
+  "author": "OPay Digital Services Limited",
+  "categories": [
+    "africa"
+  ],
+  "files": [
+    {
+      "path": "ui/logos/opay.tsx",
+      "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface OpayColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst OpayColor = ({ size = 24, ...props }: OpayColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"OPay\"}</title><rect width={128} height={128} fill=\"#17b890\" rx={28} /><circle cx={64} cy={64} r={34} fill=\"none\" stroke=\"#fff\" strokeWidth={16} /><path stroke=\"#17b890\" strokeLinecap=\"round\" strokeWidth={8} d=\"M64 30v20\" /><circle cx={64} cy={64} r={12} fill=\"#fff\" /></svg>;\nexport { OpayColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface OpayMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst OpayMono = ({ size = 24, ...props }: OpayMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"OPay (monochrome)\"}</title><circle cx={64} cy={64} r={34} fill=\"none\" stroke=\"currentColor\" strokeWidth={16} /><circle cx={64} cy={64} r={12} fill=\"currentColor\" /></svg>;\nexport { OpayMono };",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "logo",
+    "aliases": [
+      "o-pay",
+      "opay digital services"
+    ],
+    "website": "https://opayweb.com",
+    "brandGuidelinesUrl": "https://opayweb.com/about",
+    "source": {
+      "url": "https://opayweb.com",
+      "retrievedAt": "2026-11-01"
+    },
+    "variants": {
+      "color": {
+        "file": "color.svg",
+        "hex": "#17B890"
+      },
+      "mono": {
+        "file": "mono.svg"
+      }
+    }
+  }
+}

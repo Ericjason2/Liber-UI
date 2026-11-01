@@ -1,0 +1,36 @@
+{
+  "slug": "djamo",
+  "kind": "logo",
+  "name": "Djamo",
+  "description": "Application financière et carte Visa internationale pour la zone franc CFA / UEMOA.",
+  "aliases": [
+    "djamo ci",
+    "djamo app"
+  ],
+  "category": "africa",
+  "tags": [
+    "fintech",
+    "visa",
+    "banking",
+    "ivory-coast",
+    "senegal",
+    "uemoa"
+  ],
+  "license": "trademark",
+  "author": "Djamo Inc.",
+  "website": "https://www.djamo.com",
+  "brandGuidelinesUrl": "https://www.djamo.com/a-propos",
+  "source": {
+    "url": "https://www.djamo.com",
+    "retrievedAt": "2026-11-01"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#2764FF"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

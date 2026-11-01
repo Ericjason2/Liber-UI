@@ -1,0 +1,35 @@
+{
+  "slug": "opay",
+  "kind": "logo",
+  "name": "OPay",
+  "description": "Fintech de paiement mobile, cartes et transactions financières quotidiennes en Afrique.",
+  "aliases": [
+    "o-pay",
+    "opay digital services"
+  ],
+  "category": "africa",
+  "tags": [
+    "fintech",
+    "payments",
+    "mobile-money",
+    "nigeria",
+    "egypt"
+  ],
+  "license": "trademark",
+  "author": "OPay Digital Services Limited",
+  "website": "https://opayweb.com",
+  "brandGuidelinesUrl": "https://opayweb.com/about",
+  "source": {
+    "url": "https://opayweb.com",
+    "retrievedAt": "2026-11-01"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#17B890"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

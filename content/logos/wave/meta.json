@@ -1,0 +1,37 @@
+{
+  "slug": "wave",
+  "kind": "logo",
+  "name": "Wave",
+  "description": "Plateforme de mobile money et transferts d'argent sans frais en Afrique (Sénégal, Côte d'Ivoire, Mali...).",
+  "aliases": [
+    "wave mobile money",
+    "wave senegal",
+    "wave ci"
+  ],
+  "category": "africa",
+  "tags": [
+    "fintech",
+    "mobile-money",
+    "payments",
+    "africa",
+    "senegal",
+    "ivory-coast"
+  ],
+  "license": "trademark",
+  "author": "Wave Mobile Money Inc.",
+  "website": "https://www.wave.com",
+  "brandGuidelinesUrl": "https://www.wave.com/en/press",
+  "source": {
+    "url": "https://www.wave.com",
+    "retrievedAt": "2026-11-01"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#1DC3FF"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "orange-money",
+  "kind": "logo",
+  "name": "Orange Money",
+  "description": "Solution de transfert d'argent et portefeuille mobile du groupe Orange en Afrique.",
+  "aliases": [
+    "om",
+    "orange mobile money",
+    "orange"
+  ],
+  "category": "africa",
+  "tags": [
+    "fintech",
+    "mobile-money",
+    "orange",
+    "telecom",
+    "africa"
+  ],
+  "license": "trademark",
+  "author": "Orange S.A.",
+  "website": "https://www.orange.com",
+  "brandGuidelinesUrl": "https://brand.orange.com",
+  "source": {
+    "url": "https://brand.orange.com",
+    "retrievedAt": "2026-11-01"
+  },
+  "variants": {
+    "color": {
+      "file": "color.svg",
+      "hex": "#FF7900"
+    },
+    "mono": {
+      "file": "mono.svg"
+    }
+  }
+}

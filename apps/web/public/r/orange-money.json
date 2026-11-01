@@ -1,0 +1,41 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "orange-money",
+  "type": "registry:ui",
+  "title": "Orange Money",
+  "description": "Solution de transfert d'argent et portefeuille mobile du groupe Orange en Afrique.",
+  "author": "Orange S.A.",
+  "categories": [
+    "africa"
+  ],
+  "files": [
+    {
+      "path": "ui/logos/orange-money.tsx",
+      "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface OrangeMoneyColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst OrangeMoneyColor = ({ size = 24, ...props }: OrangeMoneyColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Orange Money\"}</title><rect width={128} height={128} fill=\"#ff7900\" rx={24} /><circle cx={64} cy={64} r={38} fill=\"#fff\" /><circle cx={64} cy={64} r={26} /><circle cx={64} cy={64} r={14} fill=\"#ff7900\" /></svg>;\nexport { OrangeMoneyColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface OrangeMoneyMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst OrangeMoneyMono = ({ size = 24, ...props }: OrangeMoneyMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Orange Money (monochrome)\"}</title><rect width={128} height={128} fill=\"none\" stroke=\"currentColor\" strokeWidth={8} rx={24} /><circle cx={64} cy={64} r={38} fill=\"none\" stroke=\"currentColor\" strokeWidth={6} /><circle cx={64} cy={64} r={22} fill=\"currentColor\" /></svg>;\nexport { OrangeMoneyMono };",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "logo",
+    "aliases": [
+      "om",
+      "orange mobile money",
+      "orange"
+    ],
+    "website": "https://www.orange.com",
+    "brandGuidelinesUrl": "https://brand.orange.com",
+    "source": {
+      "url": "https://brand.orange.com",
+      "retrievedAt": "2026-11-01"
+    },
+    "variants": {
+      "color": {
+        "file": "color.svg",
+        "hex": "#FF7900"
+      },
+      "mono": {
+        "file": "mono.svg"
+      }
+    }
+  }
+}

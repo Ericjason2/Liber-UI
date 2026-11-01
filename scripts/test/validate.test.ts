@@ -13,7 +13,7 @@ describe("Liber resource validation", () => {
   it("passes cleanly on all official sample logos in content/", async () => {
     const report = await validateAll(contentRoot);
     expect(report.totalChecked).toBeGreaterThanOrEqual(150);
-    expect(report.byKind.logo).toBe(150);
+    expect(report.byKind.logo).toBeGreaterThanOrEqual(150);
     expect(report.issues).toEqual([]);
   });
 

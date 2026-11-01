@@ -1,0 +1,40 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "chipper-cash",
+  "type": "registry:ui",
+  "title": "Chipper Cash",
+  "description": "Application de transfert d'argent transfrontalier instantané et paiements en Afrique.",
+  "author": "Critical Ideas, Inc.",
+  "categories": [
+    "africa"
+  ],
+  "files": [
+    {
+      "path": "ui/logos/chipper-cash.tsx",
+      "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface ChipperCashColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst ChipperCashColor = ({ size = 24, ...props }: ChipperCashColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Chipper Cash\"}</title><rect width={128} height={128} fill=\"#7a28ff\" rx={28} /><path fill=\"#fff\" d=\"M78 36H50c-7.732 0-14 6.268-14 14v28c0 7.732 6.268 14 14 14h28c7.732 0 14-6.268 14-14v-8H76v8H52V50h40c0-7.732-6.268-14-14-14\" /></svg>;\nexport { ChipperCashColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface ChipperCashMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst ChipperCashMono = ({ size = 24, ...props }: ChipperCashMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Chipper Cash (monochrome)\"}</title><rect width={128} height={128} fill=\"none\" stroke=\"currentColor\" strokeWidth={8} rx={28} /><path fill=\"currentColor\" d=\"M78 36H50c-7.732 0-14 6.268-14 14v28c0 7.732 6.268 14 14 14h28c7.732 0 14-6.268 14-14v-8H76v8H52V50h40c0-7.732-6.268-14-14-14\" /></svg>;\nexport { ChipperCashMono };",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "logo",
+    "aliases": [
+      "chipper",
+      "chippercash"
+    ],
+    "website": "https://chippercash.com",
+    "brandGuidelinesUrl": "https://chippercash.com/press",
+    "source": {
+      "url": "https://chippercash.com",
+      "retrievedAt": "2026-11-01"
+    },
+    "variants": {
+      "color": {
+        "file": "color.svg",
+        "hex": "#7A28FF"
+      },
+      "mono": {
+        "file": "mono.svg"
+      }
+    }
+  }
+}

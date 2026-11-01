@@ -1,0 +1,40 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "djamo",
+  "type": "registry:ui",
+  "title": "Djamo",
+  "description": "Application financière et carte Visa internationale pour la zone franc CFA / UEMOA.",
+  "author": "Djamo Inc.",
+  "categories": [
+    "africa"
+  ],
+  "files": [
+    {
+      "path": "ui/logos/djamo.tsx",
+      "content": "import * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface DjamoColorProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst DjamoColor = ({ size = 24, ...props }: DjamoColorProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Djamo\"}</title><rect width={128} height={128} fill=\"#2764ff\" rx={28} /><path fill=\"#fff\" d=\"M38 34h26c18.778 0 34 13.431 34 30S82.778 94 64 94H38zm16 14v32h10c9.941 0 18-7.163 18-16s-8.059-16-18-16z\" /></svg>;\nexport { DjamoColor };\n\nimport * as React from \"react\";\nimport type { SVGProps } from \"react\";\n\nexport interface DjamoMonoProps extends SVGProps<SVGSVGElement> {\n  size?: number | string;\n  title?: string;\n}\nconst DjamoMono = ({ size = 24, ...props }: DjamoMonoProps) => <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\" width={size ?? 24} height={size ?? 24} {...props}><title>{\"Djamo (monochrome)\"}</title><path fill=\"currentColor\" d=\"M38 34h26c18.778 0 34 13.431 34 30S82.778 94 64 94H38zm16 14v32h10c9.941 0 18-7.163 18-16s-8.059-16-18-16z\" /></svg>;\nexport { DjamoMono };",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "logo",
+    "aliases": [
+      "djamo ci",
+      "djamo app"
+    ],
+    "website": "https://www.djamo.com",
+    "brandGuidelinesUrl": "https://www.djamo.com/a-propos",
+    "source": {
+      "url": "https://www.djamo.com",
+      "retrievedAt": "2026-11-01"
+    },
+    "variants": {
+      "color": {
+        "file": "color.svg",
+        "hex": "#2764FF"
+      },
+      "mono": {
+        "file": "mono.svg"
+      }
+    }
+  }
+}
