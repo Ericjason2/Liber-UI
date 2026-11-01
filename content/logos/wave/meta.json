@@ -6,7 +6,8 @@
   "aliases": [
     "wave mobile money",
     "wave senegal",
-    "wave ci"
+    "wave ci",
+    "wave money"
   ],
   "category": "africa",
   "tags": [
@@ -22,16 +23,19 @@
   "website": "https://www.wave.com",
   "brandGuidelinesUrl": "https://www.wave.com/en/press",
   "source": {
-    "url": "https://www.wave.com",
+    "url": "https://www.wave.com/img/nav-logo.png",
     "retrievedAt": "2026-11-01"
   },
   "variants": {
     "color": {
       "file": "color.svg",
-      "hex": "#1DC3FF"
+      "hex": "#1DC4FF"
     },
     "mono": {
       "file": "mono.svg"
+    },
+    "wordmark": {
+      "file": "wordmark.svg"
     }
   }
 }

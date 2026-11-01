@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-01T18:08:53.844Z",
+  "updatedAt": "2026-11-01T18:41:42.633Z",
   "stats": {
     "total": 186,
     "logos": 165,
@@ -5567,7 +5567,8 @@
       "aliases": [
         "wave mobile money",
         "wave senegal",
-        "wave ci"
+        "wave ci",
+        "wave money"
       ],
       "category": "africa",
       "tags": [
@@ -5583,16 +5584,19 @@
       "website": "https://www.wave.com",
       "brandGuidelinesUrl": "https://www.wave.com/en/press",
       "source": {
-        "url": "https://www.wave.com",
+        "url": "https://www.wave.com/img/nav-logo.png",
         "retrievedAt": "2026-11-01"
       },
       "variants": {
         "color": {
           "file": "color.svg",
-          "hex": "#1DC3FF"
+          "hex": "#1DC4FF"
         },
         "mono": {
           "file": "mono.svg"
+        },
+        "wordmark": {
+          "file": "wordmark.svg"
         }
       }
     },

@@ -429,6 +429,7 @@ export * from "./components/VuejsMono";
 export * from "./components/VuejsWordmark";
 export * from "./components/WaveColor";
 export * from "./components/WaveMono";
+export * from "./components/WaveWordmark";
 export * from "./components/WebpackColor";
 export * from "./components/WebpackMono";
 export * from "./components/WebpackWordmark";
