@@ -11,7 +11,7 @@
   ],
   "packageManager": "npm@11.14.0",
   "engines": {
-    "node": ">=22"
+    "node": ">=20"
   },
   "scripts": {
     "validate": "npm run --workspace=@liber/scripts validate",
