@@ -21,7 +21,6 @@ const OPEN_FONTS_CATALOG_HREF =
 export default function FontsPage() {
   const defaultSample = "The quick brown fox jumps over the lazy dog";
   const [sampleText, setSampleText] = useState(defaultSample);
-  const [fontSize, setFontSize] = useState(36);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
@@ -92,7 +91,6 @@ export default function FontsPage() {
               <button
                 onClick={() => {
                   setSampleText(defaultSample);
-                  setFontSize(36);
                   setSearchQuery("");
                   setSelectedCategory("all");
                 }}
@@ -109,10 +107,9 @@ export default function FontsPage() {
           </div>
         </div>
 
-
-        {/* 3. Interactive Control Deck: Live Text Tester & Slider */}
+        {/* 3. Interactive Control Deck: Live Text Tester */}
         <div className="p-5 rounded-[10px] border border-border bg-card space-y-4">
-          <div className="flex flex-col lg:flex-row items-stretch lg:items-center gap-3">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
             {/* Live Text Tester Input */}
             <div className="relative flex-1 flex items-center">
               <input
@@ -135,22 +132,6 @@ export default function FontsPage() {
                   </button>
                 )}
               </div>
-            </div>
-
-            {/* Specimen Size Slider */}
-            <div className="flex items-center gap-3 bg-muted/40 border border-border px-4 py-1.5 rounded-[10px] h-11 min-w-[240px]">
-              <span className="text-xs font-medium text-muted-foreground font-mono">Size</span>
-              <input
-                type="range"
-                min="14"
-                max="72"
-                value={fontSize}
-                onChange={(e) => setFontSize(Number(e.target.value))}
-                className="w-28 h-1.5 bg-muted rounded-[6px] appearance-none cursor-pointer accent-primary"
-              />
-              <span className="font-mono text-xs font-semibold text-foreground bg-card px-2 py-0.5 rounded-[6px] border border-border ml-auto">
-                {fontSize}px
-              </span>
             </div>
           </div>
 
@@ -196,7 +177,7 @@ export default function FontsPage() {
                 ? "monospace"
                 : "sans-serif"
             }`;
-            const shadcnCmd = `pnpm dlx shadcn add https://liber.dev/r/font-${font.slug}.json`;
+            const liberCmd = `npx @liber-ui/cli add font-${font.slug}`;
             const cssFontFaceSnippet = `@font-face {\n  font-family: '${font.name}';\n  src: url('/fonts/${font.slug}/${font.name}-Regular.woff2') format('woff2');\n  font-weight: 400;\n  font-display: swap;\n}`;
 
             return (
@@ -232,21 +213,21 @@ export default function FontsPage() {
                       </span>
                     )}
 
-                    {/* Copy Shadcn Command */}
+                    {/* Copy Liber CLI Command */}
                     <button
                       onClick={() =>
                         copyToClipboard(
-                          shadcnCmd,
-                          `Copied shadcn command for ${font.name}`,
-                          `${font.slug}-shadcn`
+                          liberCmd,
+                          `Copied CLI command for ${font.name}`,
+                          `${font.slug}-liber`
                         )
                       }
                       className="flex items-center gap-1.5 font-mono text-xs bg-muted border border-border hover:bg-primary hover:text-primary-foreground text-foreground px-2.5 py-1 rounded-[6px] transition-colors ml-1"
-                      title="Copy shadcn add command"
+                      title="Copy Liber CLI command"
                     >
                       <Terminal className="h-3 w-3" />
-                      <span>shadcn add font-{font.slug}</span>
-                      {copiedKey === `${font.slug}-shadcn` ? (
+                      <span>liber add font-{font.slug}</span>
+                      {copiedKey === `${font.slug}-liber` ? (
                         <Check className="h-3 w-3 text-emerald-500" />
                       ) : (
                         <Copy className="h-3 w-3 opacity-60" />
@@ -282,7 +263,7 @@ export default function FontsPage() {
                     className="w-full text-foreground truncate outline-none select-all"
                     style={{
                       fontFamily: fontDisplayFamily,
-                      fontSize: `${fontSize}px`,
+                      fontSize: "32px",
                       lineHeight: 1.25,
                     }}
                   >
@@ -291,17 +272,12 @@ export default function FontsPage() {
                 </div>
 
                 {/* Specimen Footer Metadata */}
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between pt-3 border-t border-border/60 text-xs font-mono text-muted-foreground gap-2">
-                  <div className="flex items-center gap-2 flex-wrap">
-                    <span>Weights: {font.weights.join(", ")}</span>
-                    <span>·</span>
-                    <span>Formats: WOFF2, TTF</span>
-                    <span>·</span>
-                    <span>Open License ({font.license})</span>
-                  </div>
-                  <span className="text-[11px] opacity-80">
-                    Local folder: public/fonts/{font.slug}/ or @fontsource/{font.slug}
-                  </span>
+                <div className="flex items-center gap-2 flex-wrap pt-3 border-t border-border/60 text-xs font-mono text-muted-foreground">
+                  <span>Weights: {font.weights.join(", ")}</span>
+                  <span>·</span>
+                  <span>Formats: WOFF2, TTF</span>
+                  <span>·</span>
+                  <span>Open License ({font.license})</span>
                 </div>
               </article>
             );

@@ -21,7 +21,7 @@ export function ThemeLivePreview() {
   const { toast } = useToast();
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(`pnpm dlx shadcn add https://liber.dev/r/theme-${selected.slug}.json`);
+    navigator.clipboard.writeText(`npx @liber-ui/cli add theme-${selected.slug}`);
     setCopied(true);
     toast(`Copied ${selected.name} theme tokens`);
     setTimeout(() => setCopied(false), 2000);

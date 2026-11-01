@@ -56,7 +56,7 @@ export function CommandPalette({ open, onClose }: CommandPaletteProps) {
       } else if (e.key === "Tab" && results[selectedIndex]) {
         e.preventDefault();
         const item = results[selectedIndex];
-        navigator.clipboard.writeText(`pnpm dlx shadcn add https://liber.dev/r/${item.slug}.json`);
+        navigator.clipboard.writeText(`npx @liber-ui/cli add ${item.slug}`);
         toast(`Copied install command for ${item.name}`);
         onClose();
       }

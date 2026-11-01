@@ -14,13 +14,13 @@ export function InstallStrip() {
   const getCommand = (manager: PackageManager) => {
     switch (manager) {
       case "pnpm":
-        return "pnpm dlx shadcn add https://liber.dev/r/hero-centered.json";
+        return "pnpm dlx @liber-ui/cli add hero-centered";
       case "npm":
-        return "npx shadcn add https://liber.dev/r/hero-centered.json";
+        return "npx @liber-ui/cli add hero-centered";
       case "yarn":
-        return "yarn dlx shadcn add https://liber.dev/r/hero-centered.json";
+        return "yarn dlx @liber-ui/cli add hero-centered";
       case "bun":
-        return "bunx --bun shadcn add https://liber.dev/r/hero-centered.json";
+        return "bunx @liber-ui/cli add hero-centered";
     }
   };
 

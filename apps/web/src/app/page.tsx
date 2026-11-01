@@ -232,7 +232,7 @@ export default function HomePage() {
               <button
                 onClick={() =>
                   handleCopyCmd(
-                    `pnpm dlx shadcn add https://liber.dev/r/${featuredLogo.slug}.json`,
+                    `npx @liber-ui/cli add ${featuredLogo.slug}`,
                     featuredLogo.slug,
                   )
                 }
@@ -272,7 +272,7 @@ export default function HomePage() {
               <button
                 onClick={() =>
                   handleCopyCmd(
-                    `pnpm dlx shadcn add https://liber.dev/r/${featuredBlock.slug}.json`,
+                    `npx @liber-ui/cli add ${featuredBlock.slug}`,
                     featuredBlock.slug,
                   )
                 }
@@ -316,7 +316,7 @@ export default function HomePage() {
               <button
                 onClick={() =>
                   handleCopyCmd(
-                    `pnpm dlx shadcn add https://liber.dev/r/theme-${featuredTheme.slug}.json`,
+                    `npx @liber-ui/cli add theme-${featuredTheme.slug}`,
                     featuredTheme.slug,
                   )
                 }
@@ -352,7 +352,7 @@ export default function HomePage() {
               <button
                 onClick={() =>
                   handleCopyCmd(
-                    `pnpm dlx shadcn add https://liber.dev/r/font-${featuredFont.slug}.json`,
+                    `npx @liber-ui/cli add font-${featuredFont.slug}`,
                     featuredFont.slug,
                   )
                 }

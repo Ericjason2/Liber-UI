@@ -49,7 +49,7 @@ export default function ComponentsPage() {
   });
 
   const handleCopyCmd = (c: ComponentItem) => {
-    navigator.clipboard.writeText(`pnpm dlx shadcn add https://liber.dev/r/${c.slug}.json`);
+    navigator.clipboard.writeText(`npx @liber-ui/cli add ${c.slug}`);
     setCopiedKey(c.slug);
     toast(`Copied ${c.name} command`);
     setTimeout(() => setCopiedKey(null), 2000);
@@ -182,11 +182,11 @@ export default function ComponentsPage() {
                     </button>
                   </div>
 
-                  {/* Copy shadcn command */}
+                  {/* Copy CLI command */}
                   <button
                     onClick={() => handleCopyCmd(item)}
                     className="p-1 rounded-[6px] text-muted-foreground hover:text-foreground hover:bg-muted transition-colors ml-1"
-                    title={`Copy shadcn add ${item.slug}`}
+                    title={`Copy liber add ${item.slug}`}
                   >
                     {isCopied ? (
                       <Check className="h-3.5 w-3.5 text-emerald-500" />
@@ -477,7 +477,7 @@ export default function ComponentsPage() {
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded-[6px] bg-muted hover:bg-muted/80 text-foreground font-mono text-xs whitespace-nowrap transition-colors"
                 >
                   <Terminal className="h-3 w-3 text-muted-foreground" />
-                  <span>pnpm dlx shadcn add {item.slug}</span>
+                  <span>liber add {item.slug}</span>
                   {isCopied && <Check className="h-3 w-3 text-emerald-500 ml-1" />}
                 </button>
               </div>

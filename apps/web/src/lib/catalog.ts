@@ -2158,7 +2158,7 @@ export const SAMPLE_FONTS: FontItem[] = [
     license: "OFL-1.1",
     weights: [400, 500, 600],
     variable: true,
-    sampleText: "pnpm dlx shadcn add https://liber.dev/r/font-geist-mono.json",
+    sampleText: "npx @liber-ui/cli add font-geist-mono",
     googleFontsFamily: "Geist Mono",
   },
 

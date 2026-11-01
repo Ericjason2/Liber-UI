@@ -49,7 +49,7 @@ export default function BlocksPage() {
     : SAMPLE_BLOCKS.filter((b) => b.category === selectedCat);
 
   const handleCopyCmd = (block: BlockItem) => {
-    navigator.clipboard.writeText(`pnpm dlx shadcn add https://liber.dev/r/${block.slug}.json`);
+    navigator.clipboard.writeText(`npx @liber-ui/cli add ${block.slug}`);
     setCopiedKey(block.slug);
     toast(`Copied ${block.name} install command`);
     setTimeout(() => setCopiedKey(null), 2000);
@@ -231,10 +231,10 @@ export default function BlocksPage() {
                   <button
                     onClick={() => handleCopyCmd(block)}
                     className="flex items-center gap-1.5 h-8 px-3 rounded-[8px] bg-muted hover:bg-muted/80 text-foreground border border-border text-xs font-mono transition-colors ml-1"
-                    title="Copy shadcn add command"
+                    title="Copy Liber CLI command"
                   >
                     <Terminal className="h-3 w-3 text-muted-foreground" />
-                    <span>add {block.slug}</span>
+                    <span>liber add {block.slug}</span>
                     {isCopied ? (
                       <Check className="h-3 w-3 text-emerald-500" />
                     ) : (
