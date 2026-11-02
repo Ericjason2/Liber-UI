@@ -1,49 +1,15 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-01T18:41:42.633Z",
+  "updatedAt": "2026-11-02T18:00:12.008Z",
   "stats": {
-    "total": 186,
-    "logos": 165,
+    "total": 171,
+    "logos": 150,
     "blocks": 0,
     "components": 0,
     "themes": 0,
     "fonts": 21
   },
   "items": [
-    {
-      "slug": "airtel-money",
-      "kind": "logo",
-      "name": "Airtel Money",
-      "description": "Portefeuille électronique et plateforme de paiement d'Airtel Africa dans 14 pays.",
-      "aliases": [
-        "airtel",
-        "airtel africa"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "mobile-money",
-        "airtel",
-        "africa"
-      ],
-      "license": "trademark",
-      "author": "Airtel Africa PLC",
-      "website": "https://airtel.africa",
-      "brandGuidelinesUrl": "https://airtel.africa/about-us",
-      "source": {
-        "url": "https://airtel.africa",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#ED1C24"
-        },
-        "mono": {
-          "file": "mono.svg"
-        }
-      }
-    },
     {
       "slug": "alpinejs",
       "kind": "logo",
@@ -675,41 +641,6 @@
       }
     },
     {
-      "slug": "chipper-cash",
-      "kind": "logo",
-      "name": "Chipper Cash",
-      "description": "Application de transfert d'argent transfrontalier instantané et paiements en Afrique.",
-      "aliases": [
-        "chipper",
-        "chippercash"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "cross-border",
-        "payments",
-        "africa",
-        "remittance"
-      ],
-      "license": "trademark",
-      "author": "Critical Ideas, Inc.",
-      "website": "https://chippercash.com",
-      "brandGuidelinesUrl": "https://chippercash.com/press",
-      "source": {
-        "url": "https://chippercash.com",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#7A28FF"
-        },
-        "mono": {
-          "file": "mono.svg"
-        }
-      }
-    },
-    {
       "slug": "circleci",
       "kind": "logo",
       "name": "CircleCI",
@@ -1301,42 +1232,6 @@
       }
     },
     {
-      "slug": "djamo",
-      "kind": "logo",
-      "name": "Djamo",
-      "description": "Application financière et carte Visa internationale pour la zone franc CFA / UEMOA.",
-      "aliases": [
-        "djamo ci",
-        "djamo app"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "visa",
-        "banking",
-        "ivory-coast",
-        "senegal",
-        "uemoa"
-      ],
-      "license": "trademark",
-      "author": "Djamo Inc.",
-      "website": "https://www.djamo.com",
-      "brandGuidelinesUrl": "https://www.djamo.com/a-propos",
-      "source": {
-        "url": "https://www.djamo.com",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#2764FF"
-        },
-        "mono": {
-          "file": "mono.svg"
-        }
-      }
-    },
-    {
       "slug": "django",
       "kind": "logo",
       "name": "Django",
@@ -1890,43 +1785,6 @@
         "color": {
           "file": "color.svg",
           "hex": "#3FB6D3"
-        },
-        "mono": {
-          "file": "mono.svg"
-        }
-      }
-    },
-    {
-      "slug": "flutterwave",
-      "kind": "logo",
-      "name": "Flutterwave",
-      "description": "Infrastructure de paiement et passerelle API pour l'Afrique et l'international.",
-      "aliases": [
-        "rave",
-        "flutter wave",
-        "flw"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "payments",
-        "api",
-        "nigeria",
-        "africa",
-        "gateway"
-      ],
-      "license": "trademark",
-      "author": "Flutterwave Inc.",
-      "website": "https://flutterwave.com",
-      "brandGuidelinesUrl": "https://flutterwave.com/us/brand",
-      "source": {
-        "url": "https://flutterwave.com",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#FB6340"
         },
         "mono": {
           "file": "mono.svg"
@@ -2890,42 +2748,6 @@
       }
     },
     {
-      "slug": "kuda",
-      "kind": "logo",
-      "name": "Kuda Bank",
-      "description": "Banque digitale sans frais (The Bank of the Free) pour les particuliers et professionnels.",
-      "aliases": [
-        "kuda",
-        "kuda bank",
-        "kudabank"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "neobank",
-        "banking",
-        "nigeria",
-        "africa"
-      ],
-      "license": "trademark",
-      "author": "Kuda Technologies Ltd",
-      "website": "https://kuda.com",
-      "brandGuidelinesUrl": "https://kuda.com/about",
-      "source": {
-        "url": "https://kuda.com",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#40196D"
-        },
-        "mono": {
-          "file": "mono.svg"
-        }
-      }
-    },
-    {
       "slug": "laravel",
       "kind": "logo",
       "name": "Laravel",
@@ -3027,43 +2849,6 @@
       }
     },
     {
-      "slug": "m-pesa",
-      "kind": "logo",
-      "name": "M-Pesa",
-      "description": "Pionnier du mobile money en Afrique lancé par Safaricom et Vodafone en Afrique de l'Est.",
-      "aliases": [
-        "mpesa",
-        "safaricom m-pesa",
-        "vodafone mpesa"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "mobile-money",
-        "safaricom",
-        "kenya",
-        "tanzania",
-        "africa"
-      ],
-      "license": "trademark",
-      "author": "Safaricom PLC / Vodafone",
-      "website": "https://www.safaricom.co.ke",
-      "brandGuidelinesUrl": "https://www.safaricom.co.ke/about/brand",
-      "source": {
-        "url": "https://www.safaricom.co.ke",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#009A44"
-        },
-        "mono": {
-          "file": "mono.svg"
-        }
-      }
-    },
-    {
       "slug": "mongodb",
       "kind": "logo",
       "name": "MongoDB",
@@ -3095,112 +2880,6 @@
         },
         "wordmark": {
           "file": "wordmark.svg"
-        }
-      }
-    },
-    {
-      "slug": "moniepoint",
-      "kind": "logo",
-      "name": "Moniepoint",
-      "description": "Plateforme bancaire commerciale et terminaux de paiement tout-en-un pour entreprises africaines.",
-      "aliases": [
-        "monie point",
-        "teamapt"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "banking",
-        "pos",
-        "nigeria",
-        "africa"
-      ],
-      "license": "trademark",
-      "author": "Moniepoint Inc.",
-      "website": "https://moniepoint.com",
-      "brandGuidelinesUrl": "https://moniepoint.com/ng/brand",
-      "source": {
-        "url": "https://moniepoint.com",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#003366"
-        },
-        "mono": {
-          "file": "mono.svg"
-        }
-      }
-    },
-    {
-      "slug": "moov-money",
-      "kind": "logo",
-      "name": "Moov Money",
-      "description": "Plateforme de paiement mobile et de transfert d'argent de Moov Africa.",
-      "aliases": [
-        "moov",
-        "moov africa",
-        "moov money flooz"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "mobile-money",
-        "moov",
-        "africa"
-      ],
-      "license": "trademark",
-      "author": "Maroc Telecom / Moov Africa",
-      "website": "https://www.moov-africa.com",
-      "brandGuidelinesUrl": "https://www.moov-africa.com",
-      "source": {
-        "url": "https://www.moov-africa.com",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#004B97"
-        },
-        "mono": {
-          "file": "mono.svg"
-        }
-      }
-    },
-    {
-      "slug": "mtn-momo",
-      "kind": "logo",
-      "name": "MTN MoMo",
-      "description": "Service de finance mobile et paiements de MTN Group déployé à travers l'Afrique.",
-      "aliases": [
-        "momo",
-        "mtn mobile money",
-        "mtn"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "mobile-money",
-        "mtn",
-        "africa",
-        "payments"
-      ],
-      "license": "trademark",
-      "author": "MTN Group Limited",
-      "website": "https://www.momo.mtn.com",
-      "brandGuidelinesUrl": "https://www.mtn.com",
-      "source": {
-        "url": "https://www.mtn.com",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#FFCC00"
-        },
-        "mono": {
-          "file": "mono.svg"
         }
       }
     },
@@ -3662,77 +3341,6 @@
       }
     },
     {
-      "slug": "opay",
-      "kind": "logo",
-      "name": "OPay",
-      "description": "Fintech de paiement mobile, cartes et transactions financières quotidiennes en Afrique.",
-      "aliases": [
-        "o-pay",
-        "opay digital services"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "payments",
-        "mobile-money",
-        "nigeria",
-        "egypt"
-      ],
-      "license": "trademark",
-      "author": "OPay Digital Services Limited",
-      "website": "https://opayweb.com",
-      "brandGuidelinesUrl": "https://opayweb.com/about",
-      "source": {
-        "url": "https://opayweb.com",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#17B890"
-        },
-        "mono": {
-          "file": "mono.svg"
-        }
-      }
-    },
-    {
-      "slug": "orange-money",
-      "kind": "logo",
-      "name": "Orange Money",
-      "description": "Solution de transfert d'argent et portefeuille mobile du groupe Orange en Afrique.",
-      "aliases": [
-        "om",
-        "orange mobile money",
-        "orange"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "mobile-money",
-        "orange",
-        "telecom",
-        "africa"
-      ],
-      "license": "trademark",
-      "author": "Orange S.A.",
-      "website": "https://www.orange.com",
-      "brandGuidelinesUrl": "https://brand.orange.com",
-      "source": {
-        "url": "https://brand.orange.com",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#FF7900"
-        },
-        "mono": {
-          "file": "mono.svg"
-        }
-      }
-    },
-    {
       "slug": "pandas",
       "kind": "logo",
       "name": "Pandas",
@@ -3768,42 +3376,6 @@
       }
     },
     {
-      "slug": "paystack",
-      "kind": "logo",
-      "name": "Paystack",
-      "description": "Passerelle de paiement en ligne moderne pour les entreprises en Afrique (Stripe group).",
-      "aliases": [
-        "pay stack",
-        "paystack stripe"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "payments",
-        "stripe",
-        "nigeria",
-        "ghana",
-        "south-africa"
-      ],
-      "license": "trademark",
-      "author": "Paystack Payments Limited",
-      "website": "https://paystack.com",
-      "brandGuidelinesUrl": "https://paystack.com/brand",
-      "source": {
-        "url": "https://paystack.com",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#00C3F7"
-        },
-        "mono": {
-          "file": "mono.svg"
-        }
-      }
-    },
-    {
       "slug": "php",
       "kind": "logo",
       "name": "PHP",
@@ -3829,41 +3401,6 @@
         "color": {
           "file": "color.svg",
           "hex": "#777bb3"
-        },
-        "mono": {
-          "file": "mono.svg"
-        }
-      }
-    },
-    {
-      "slug": "piggyvest",
-      "kind": "logo",
-      "name": "PiggyVest",
-      "description": "Première plateforme d'épargne en ligne et de micro-investissement automatisé en Afrique.",
-      "aliases": [
-        "piggybank.ng",
-        "piggy vest"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "savings",
-        "investment",
-        "nigeria",
-        "africa"
-      ],
-      "license": "trademark",
-      "author": "PiggyTech Global Limited",
-      "website": "https://www.piggyvest.com",
-      "brandGuidelinesUrl": "https://www.piggyvest.com/about",
-      "source": {
-        "url": "https://www.piggyvest.com",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#083E9E"
         },
         "mono": {
           "file": "mono.svg"
@@ -5560,47 +5097,6 @@
       }
     },
     {
-      "slug": "wave",
-      "kind": "logo",
-      "name": "Wave",
-      "description": "Plateforme de mobile money et transferts d'argent sans frais en Afrique (Sénégal, Côte d'Ivoire, Mali...).",
-      "aliases": [
-        "wave mobile money",
-        "wave senegal",
-        "wave ci",
-        "wave money"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "mobile-money",
-        "payments",
-        "africa",
-        "senegal",
-        "ivory-coast"
-      ],
-      "license": "trademark",
-      "author": "Wave Mobile Money Inc.",
-      "website": "https://www.wave.com",
-      "brandGuidelinesUrl": "https://www.wave.com/en/press",
-      "source": {
-        "url": "https://www.wave.com/img/nav-logo.png",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#1DC4FF"
-        },
-        "mono": {
-          "file": "mono.svg"
-        },
-        "wordmark": {
-          "file": "wordmark.svg"
-        }
-      }
-    },
-    {
       "slug": "webpack",
       "kind": "logo",
       "name": "Webpack",
@@ -5734,41 +5230,6 @@
         },
         "wordmark": {
           "file": "wordmark.svg"
-        }
-      }
-    },
-    {
-      "slug": "yoco",
-      "kind": "logo",
-      "name": "Yoco",
-      "description": "Technologie de paiement par carte et terminaux mobiles pour commerçants en Afrique du Sud.",
-      "aliases": [
-        "yoco payments",
-        "yoco pos"
-      ],
-      "category": "africa",
-      "tags": [
-        "fintech",
-        "payments",
-        "pos",
-        "south-africa",
-        "africa"
-      ],
-      "license": "trademark",
-      "author": "Yoco Technologies",
-      "website": "https://www.yoco.com",
-      "brandGuidelinesUrl": "https://www.yoco.com/za/about-us",
-      "source": {
-        "url": "https://www.yoco.com",
-        "retrievedAt": "2026-11-01"
-      },
-      "variants": {
-        "color": {
-          "file": "color.svg",
-          "hex": "#00B2FE"
-        },
-        "mono": {
-          "file": "mono.svg"
         }
       }
     },

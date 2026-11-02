@@ -151,7 +151,10 @@ export default function LogosPage() {
 
       {/* Category Filter Chips */}
       <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
-        {CATEGORIES.map((cat) => {
+        {CATEGORIES.filter((cat) => {
+          if (cat.id === "all") return true;
+          return OFFICIAL_LOGOS.some((l) => l.category === cat.id);
+        }).map((cat) => {
           const isSelected = selectedCategory === cat.id;
           const count =
             cat.id === "all"
