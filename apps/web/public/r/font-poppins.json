@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "poppins",
+  "type": "registry:font",
+  "title": "Poppins",
+  "description": "Geometric sans-serif with pure circular curves and sharp terminals.",
+  "author": "Indian Type Foundry",
+  "categories": [
+    "sans"
+  ],
+  "dependencies": [
+    "@fontsource/poppins"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/poppins.css",
+      "content": "/* Self-hosted font definition for Poppins */\n@import \"@fontsource/poppins\";\n:root {\n  --font-sans: 'Poppins', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Poppins",
+    "weights": [
+      300,
+      400,
+      500,
+      600,
+      700
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext"
+    ],
+    "variable": false,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource/poppins"
+  }
+}

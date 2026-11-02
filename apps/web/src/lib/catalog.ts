@@ -68,7 +68,9 @@ export interface FontItem {
   kind: "font";
   name: string;
   description: string;
-  category: "sans" | "serif" | "mono" | "display";
+  category: "sans" | "serif" | "mono" | "display" | string;
+  theme?: string;
+  subtheme?: string;
   license: "OFL-1.1" | "Apache-2.0" | "100% Free" | "Public Domain" | string;
   weights: number[];
   variable: boolean;

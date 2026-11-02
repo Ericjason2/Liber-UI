@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "open-sans",
+  "type": "registry:font",
+  "title": "Open Sans",
+  "description": "Humanist sans-serif typeface designed with upright stress and open letterforms.",
+  "author": "Steve Matteson",
+  "categories": [
+    "sans"
+  ],
+  "dependencies": [
+    "@fontsource-variable/open-sans"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/open-sans.css",
+      "content": "/* Self-hosted font definition for Open Sans */\n@import \"@fontsource-variable/open-sans\";\n:root {\n  --font-sans: 'Open Sans', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Open Sans",
+    "weights": [
+      300,
+      400,
+      500,
+      600,
+      700
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext"
+    ],
+    "variable": true,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource-variable/open-sans"
+  }
+}

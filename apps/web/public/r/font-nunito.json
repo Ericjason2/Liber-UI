@@ -1,0 +1,38 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "nunito",
+  "type": "registry:font",
+  "title": "Nunito",
+  "description": "Well-balanced rounded terminal sans-serif with lively personality.",
+  "author": "Vernon Adams",
+  "categories": [
+    "sans"
+  ],
+  "dependencies": [
+    "@fontsource-variable/nunito"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/nunito.css",
+      "content": "/* Self-hosted font definition for Nunito */\n@import \"@fontsource-variable/nunito\";\n:root {\n  --font-sans: 'Nunito', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Nunito",
+    "weights": [
+      300,
+      400,
+      600,
+      700
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext"
+    ],
+    "variable": true,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource-variable/nunito"
+  }
+}

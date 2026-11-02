@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "montserrat",
+  "type": "registry:font",
+  "title": "Montserrat",
+  "description": "Geometric sans inspired by traditional Buenos Aires neighborhood signage.",
+  "author": "Julieta Ulanovsky",
+  "categories": [
+    "sans"
+  ],
+  "dependencies": [
+    "@fontsource-variable/montserrat"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/montserrat.css",
+      "content": "/* Self-hosted font definition for Montserrat */\n@import \"@fontsource-variable/montserrat\";\n:root {\n  --font-sans: 'Montserrat', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Montserrat",
+    "weights": [
+      300,
+      400,
+      500,
+      600,
+      700
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext"
+    ],
+    "variable": true,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource-variable/montserrat"
+  }
+}

@@ -2,22 +2,43 @@ const fs = require('fs');
 const path = require('path');
 
 const CATEGORY_URLS = [
-  { url: 'https://www.dafont.com/top.php?fpp=100&l[]=10&l[]=1', defaultCategory: 'display' },
-  { url: 'https://www.dafont.com/theme.php?cat=501&fpp=100&l[]=10&l[]=1', defaultCategory: 'sans' },
-  { url: 'https://www.dafont.com/theme.php?cat=502&fpp=100&l[]=10&l[]=1', defaultCategory: 'serif' },
-  { url: 'https://www.dafont.com/theme.php?cat=301&fpp=100&l[]=10&l[]=1', defaultCategory: 'display' }, // techno
-  { url: 'https://www.dafont.com/theme.php?cat=601&fpp=100&l[]=10&l[]=1', defaultCategory: 'display' }, // script
-  { url: 'https://www.dafont.com/theme.php?cat=401&fpp=100&l[]=10&l[]=1', defaultCategory: 'display' }, // gothic
-  { url: 'https://www.dafont.com/theme.php?cat=701&fpp=100&l[]=10&l[]=1', defaultCategory: 'mono' },    // bitmap
-];
+  // Top Popular
+  { url: 'https://www.dafont.com/top.php?fpp=100&l[]=10&l[]=1', defaultTheme: 'Fancy', defaultSubtheme: 'Popular' },
 
-function mapCategory(catName, fallback) {
-  const c = (catName || '').toLowerCase();
-  if (c.includes('sans') || c.includes('basic')) return 'sans';
-  if (c.includes('serif')) return 'serif';
-  if (c.includes('mono') || c.includes('bitmap') || c.includes('pixel') || c.includes('fixed')) return 'mono';
-  return 'display';
-}
+  // Fancy (Fantaisie)
+  { url: 'https://www.dafont.com/theme.php?cat=101&fpp=100&l[]=10&l[]=1', defaultTheme: 'Fancy', defaultSubtheme: 'Cartoon' },
+  { url: 'https://www.dafont.com/theme.php?cat=102&fpp=100&l[]=10&l[]=1', defaultTheme: 'Fancy', defaultSubtheme: 'Comic' },
+  { url: 'https://www.dafont.com/theme.php?cat=103&fpp=100&l[]=10&l[]=1', defaultTheme: 'Fancy', defaultSubtheme: 'Groovy' },
+  { url: 'https://www.dafont.com/theme.php?cat=104&fpp=100&l[]=10&l[]=1', defaultTheme: 'Fancy', defaultSubtheme: 'Old School' },
+  { url: 'https://www.dafont.com/theme.php?cat=106&fpp=100&l[]=10&l[]=1', defaultTheme: 'Fancy', defaultSubtheme: 'Western' },
+  { url: 'https://www.dafont.com/theme.php?cat=110&fpp=100&l[]=10&l[]=1', defaultTheme: 'Fancy', defaultSubtheme: 'Horror' },
+  { url: 'https://www.dafont.com/theme.php?cat=115&fpp=100&l[]=10&l[]=1', defaultTheme: 'Fancy', defaultSubtheme: 'Retro' },
+
+  // Basic (Basique)
+  { url: 'https://www.dafont.com/theme.php?cat=501&fpp=100&l[]=10&l[]=1', defaultTheme: 'Basic', defaultSubtheme: 'Sans serif' },
+  { url: 'https://www.dafont.com/theme.php?cat=502&fpp=100&l[]=10&l[]=1', defaultTheme: 'Basic', defaultSubtheme: 'Serif' },
+  { url: 'https://www.dafont.com/theme.php?cat=503&fpp=100&l[]=10&l[]=1', defaultTheme: 'Basic', defaultSubtheme: 'Fixed width' },
+
+  // Script (Manuscrit / Calligraphie)
+  { url: 'https://www.dafont.com/theme.php?cat=601&fpp=100&l[]=10&l[]=1', defaultTheme: 'Script', defaultSubtheme: 'Calligraphy' },
+  { url: 'https://www.dafont.com/theme.php?cat=603&fpp=100&l[]=10&l[]=1', defaultTheme: 'Script', defaultSubtheme: 'Handwritten' },
+  { url: 'https://www.dafont.com/theme.php?cat=604&fpp=100&l[]=10&l[]=1', defaultTheme: 'Script', defaultSubtheme: 'Brush' },
+  { url: 'https://www.dafont.com/theme.php?cat=606&fpp=100&l[]=10&l[]=1', defaultTheme: 'Script', defaultSubtheme: 'Graffiti' },
+
+  // Techno (Futuriste / Sci-Fi)
+  { url: 'https://www.dafont.com/theme.php?cat=301&fpp=100&l[]=10&l[]=1', defaultTheme: 'Techno', defaultSubtheme: 'Sci-fi' },
+  { url: 'https://www.dafont.com/theme.php?cat=302&fpp=100&l[]=10&l[]=1', defaultTheme: 'Techno', defaultSubtheme: '3D' },
+  { url: 'https://www.dafont.com/theme.php?cat=303&fpp=100&l[]=10&l[]=1', defaultTheme: 'Techno', defaultSubtheme: 'Square' },
+  { url: 'https://www.dafont.com/theme.php?cat=304&fpp=100&l[]=10&l[]=1', defaultTheme: 'Techno', defaultSubtheme: 'LCD' },
+
+  // Gothic (Gothique / Médiéval)
+  { url: 'https://www.dafont.com/theme.php?cat=401&fpp=100&l[]=10&l[]=1', defaultTheme: 'Gothic', defaultSubtheme: 'Medieval' },
+  { url: 'https://www.dafont.com/theme.php?cat=402&fpp=100&l[]=10&l[]=1', defaultTheme: 'Gothic', defaultSubtheme: 'Modern' },
+  { url: 'https://www.dafont.com/theme.php?cat=403&fpp=100&l[]=10&l[]=1', defaultTheme: 'Gothic', defaultSubtheme: 'Celtic' },
+
+  // Bitmap (Pixel / Rétro)
+  { url: 'https://www.dafont.com/theme.php?cat=701&fpp=100&l[]=10&l[]=1', defaultTheme: 'Bitmap', defaultSubtheme: 'Pixel' },
+];
 
 function cleanText(str) {
   if (!str) return '';
@@ -35,7 +56,20 @@ function cleanText(str) {
     .trim();
 }
 
-async function scrapeCategory(url, defaultCategory) {
+function mapNormalizedCategory(theme, subtheme) {
+  const t = (theme || '').toLowerCase();
+  const st = (subtheme || '').toLowerCase();
+  if (st.includes('sans')) return 'sans';
+  if (st.includes('serif')) return 'serif';
+  if (st.includes('fixed') || st.includes('pixel') || t.includes('bitmap')) return 'mono';
+  if (t.includes('script') || st.includes('calligraph') || st.includes('handwrit')) return 'script';
+  if (t.includes('techno') || st.includes('sci-fi') || st.includes('lcd')) return 'techno';
+  if (t.includes('gothic') || st.includes('medieval')) return 'gothic';
+  if (t.includes('bitmap')) return 'bitmap';
+  return 'fancy';
+}
+
+async function scrapeCategory(url, defaultTheme, defaultSubtheme) {
   console.log('Fetching', url, '...');
   try {
     const res = await fetch(url, {
@@ -66,8 +100,11 @@ async function scrapeCategory(url, defaultCategory) {
         const cleanSlug = rawSlug.toLowerCase().replace(/[^a-z0-9_-]/g, '-').replace(/_+/g, '-');
         const name = cleanText(nameMatch[2]);
         const author = authorMatch ? cleanText(authorMatch[1]) : 'Unknown';
-        const rawCategory = catMatch ? (catMatch[2] || catMatch[1]).trim() : defaultCategory;
-        const category = mapCategory(rawCategory, defaultCategory);
+        const rawTheme = catMatch ? cleanText(catMatch[1]) : defaultTheme;
+        const rawSubtheme = catMatch && catMatch[2] ? cleanText(catMatch[2]) : defaultSubtheme;
+        const theme = rawTheme || defaultTheme;
+        const subtheme = rawSubtheme || defaultSubtheme;
+        const category = mapNormalizedCategory(theme, subtheme);
         const license = licenseMatch ? cleanText(licenseMatch[1]) : '100% Free';
         const previewImg = previewMatch ? 'https://www.dafont.com' + previewMatch[1] : undefined;
 
@@ -77,6 +114,8 @@ async function scrapeCategory(url, defaultCategory) {
           name,
           description: `Typographie originale créée par ${author}.`,
           author,
+          theme,
+          subtheme,
           category,
           license: '100% Free',
           weights: [400],
@@ -98,7 +137,7 @@ async function main() {
   const allFontsMap = new Map();
 
   for (const item of CATEGORY_URLS) {
-    const list = await scrapeCategory(item.url, item.defaultCategory);
+    const list = await scrapeCategory(item.url, item.defaultTheme, item.defaultSubtheme);
     console.log(`  -> Got ${list.length} fonts from ${item.url}`);
     for (const f of list) {
       if (!allFontsMap.has(f.slug)) {
@@ -108,7 +147,14 @@ async function main() {
   }
 
   const scrapedFonts = Array.from(allFontsMap.values());
-  console.log(`\nTotal unique 100% Free fonts scraped: ${scrapedFonts.length}`);
+  console.log(`\nTotal unique 100% Free fonts scraped across themes: ${scrapedFonts.length}`);
+
+  // Summary by theme
+  const themeCounts = {};
+  for (const f of scrapedFonts) {
+    themeCounts[f.theme] = (themeCounts[f.theme] || 0) + 1;
+  }
+  console.log('Breakdown by theme:', themeCounts);
 
   // Save to JSON file
   const outPath = path.join(__dirname, '../apps/web/src/data/scraped-fonts.json');

@@ -105,16 +105,31 @@ async function handleInit(args: string[]) {
 }
 
 async function fetchRegistryItem(name: string, baseUrl: string) {
-  const url = `${baseUrl.replace(/\/$/, "")}/${name}.json`;
-  try {
-    const res = await fetch(url);
-    if (!res.ok) {
-      throw new Error(`HTTP ${res.status}`);
-    }
-    return await res.json();
-  } catch (err) {
-    throw new Error(`Failed to fetch resource "${name}" from ${url}: ${(err as Error).message}`, { cause: err });
+  const cleanBase = baseUrl.replace(/\/$/, "");
+  const candidates = [name];
+  if (name.startsWith("font-")) {
+    candidates.push(name.replace(/^font-/, ""));
+  } else {
+    candidates.push(`font-${name}`);
   }
+
+  let lastError: Error | null = null;
+  for (const candidate of candidates) {
+    const url = `${cleanBase}/${candidate}.json`;
+    try {
+      const res = await fetch(url);
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch (err) {
+      lastError = err as Error;
+    }
+  }
+
+  throw new Error(
+    `Failed to fetch resource "${name}" from ${cleanBase}: ${lastError ? lastError.message : "Not found"}`,
+    { cause: lastError }
+  );
 }
 
 async function handleAdd(args: string[]) {

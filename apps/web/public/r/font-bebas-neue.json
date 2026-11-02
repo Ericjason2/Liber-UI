@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "bebas-neue",
+  "type": "registry:font",
+  "title": "Bebas Neue",
+  "description": "World-renowned all-caps headline typeface with towering vertical presence.",
+  "author": "Ryoichi Tsunekawa",
+  "categories": [
+    "display"
+  ],
+  "dependencies": [
+    "@fontsource/bebas-neue"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/bebas-neue.css",
+      "content": "/* Self-hosted font definition for Bebas Neue */\n@import \"@fontsource/bebas-neue\";\n:root {\n  --font-display: 'Bebas Neue', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Bebas Neue",
+    "weights": [
+      400
+    ],
+    "subsets": [
+      "latin"
+    ],
+    "variable": false,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource/bebas-neue"
+  }
+}

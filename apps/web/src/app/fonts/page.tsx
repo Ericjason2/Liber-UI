@@ -30,26 +30,68 @@ export default function FontsPage() {
   const { toast } = useToast();
 
   const categories = useMemo(() => {
+    const getThemeCount = (themeName: string) => {
+      const lower = themeName.toLowerCase();
+      return SAMPLE_FONTS.filter((f) => {
+        const t = (f.theme || "").toLowerCase();
+        if (lower === "basic") {
+          return t === "basic" || f.category === "sans" || f.category === "serif";
+        }
+        if (lower === "bitmap") {
+          return t === "bitmap" || f.category === "mono";
+        }
+        if (lower === "fancy") {
+          return t === "fancy" || f.category === "display";
+        }
+        return t === lower;
+      }).length;
+    };
+
     return [
       { id: "all", label: "All Fonts", count: SAMPLE_FONTS.length },
-      { id: "sans", label: "Sans-Serif", count: SAMPLE_FONTS.filter((f) => f.category === "sans").length },
-      { id: "serif", label: "Serif", count: SAMPLE_FONTS.filter((f) => f.category === "serif").length },
-      { id: "mono", label: "Monospace", count: SAMPLE_FONTS.filter((f) => f.category === "mono").length },
-      { id: "display", label: "Display", count: SAMPLE_FONTS.filter((f) => f.category === "display").length },
+      { id: "basic", label: "Basic", count: getThemeCount("basic") },
+      { id: "fancy", label: "Fancy", count: getThemeCount("fancy") },
+      { id: "script", label: "Script", count: getThemeCount("script") },
+      { id: "techno", label: "Techno", count: getThemeCount("techno") },
+      { id: "gothic", label: "Gothic", count: getThemeCount("gothic") },
+      { id: "bitmap", label: "Bitmap", count: getThemeCount("bitmap") },
     ];
   }, []);
 
   const filtered = useMemo(() => {
     return SAMPLE_FONTS.filter((font) => {
       const q = searchQuery.toLowerCase().trim();
+      const fontTheme = (font.theme || "").toLowerCase();
+      const fontSubtheme = (font.subtheme || "").toLowerCase();
       const matchesSearch =
         !q ||
         font.name.toLowerCase().includes(q) ||
         font.description.toLowerCase().includes(q) ||
         font.slug.toLowerCase().includes(q) ||
+        fontTheme.includes(q) ||
+        fontSubtheme.includes(q) ||
         (font.author && font.author.toLowerCase().includes(q));
-      const matchesCategory =
-        selectedCategory === "all" || font.category === selectedCategory;
+
+      let matchesCategory = selectedCategory === "all";
+      if (!matchesCategory) {
+        if (selectedCategory === "basic") {
+          matchesCategory =
+            fontTheme === "basic" ||
+            font.category === "sans" ||
+            font.category === "serif";
+        } else if (selectedCategory === "bitmap") {
+          matchesCategory = fontTheme === "bitmap" || font.category === "mono";
+        } else if (selectedCategory === "fancy") {
+          matchesCategory =
+            fontTheme === "fancy" || font.category === "display";
+        } else {
+          matchesCategory =
+            fontTheme === selectedCategory ||
+            font.category === selectedCategory ||
+            fontSubtheme === selectedCategory;
+        }
+      }
+
       return matchesSearch && matchesCategory;
     });
   }, [searchQuery, selectedCategory]);
@@ -203,13 +245,18 @@ export default function FontsPage() {
               >
                 {/* Row Header */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-                  <div className="flex items-center gap-3 flex-wrap">
+                  <div className="flex items-center gap-2.5 flex-wrap">
                     <h2 className="text-xl font-semibold tracking-tight text-foreground">
                       {font.name}
                     </h2>
-                    <span className="px-2 py-0.5 rounded-full text-xs font-mono bg-muted text-muted-foreground border border-border capitalize">
-                      {font.category}
+                    <span className="px-2.5 py-0.5 rounded-full text-xs font-mono bg-muted text-muted-foreground border border-border">
+                      {font.theme || (font.category === "mono" ? "Bitmap" : font.category === "display" ? "Fancy" : "Basic")}
                     </span>
+                    {font.subtheme && (
+                      <span className="px-2 py-0.5 rounded-full text-[11px] font-mono bg-muted/60 text-muted-foreground border border-border/70">
+                        {font.subtheme}
+                      </span>
+                    )}
                     <span className="text-xs text-muted-foreground hidden md:inline">
                       {font.description}
                     </span>
