@@ -10,6 +10,7 @@ import {
   Search,
   Code2,
   Type,
+  Download,
 } from "lucide-react";
 import { SAMPLE_FONTS } from "@/lib/catalog";
 import { useToast } from "@/context/ToastContext";
@@ -24,6 +25,8 @@ export default function FontsPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
+  const [displayCount, setDisplayCount] = useState<number>(36);
+  const [failedImages, setFailedImages] = useState<Record<string, boolean>>({});
   const { toast } = useToast();
 
   const categories = useMemo(() => {
@@ -43,12 +46,17 @@ export default function FontsPage() {
         !q ||
         font.name.toLowerCase().includes(q) ||
         font.description.toLowerCase().includes(q) ||
-        font.slug.toLowerCase().includes(q);
+        font.slug.toLowerCase().includes(q) ||
+        (font.author && font.author.toLowerCase().includes(q));
       const matchesCategory =
         selectedCategory === "all" || font.category === selectedCategory;
       return matchesSearch && matchesCategory;
     });
   }, [searchQuery, selectedCategory]);
+
+  const visibleFonts = useMemo(() => {
+    return filtered.slice(0, displayCount);
+  }, [filtered, displayCount]);
 
   const copyToClipboard = (text: string, label: string, key: string) => {
     navigator.clipboard.writeText(text);
@@ -72,7 +80,7 @@ export default function FontsPage() {
             <span>/</span>
             <span className="text-foreground font-medium">Fonts & Assets</span>
             <span className="ml-2 px-2 py-0.5 rounded-full text-[10px] bg-muted border border-border text-muted-foreground">
-              Open Source Typographies · SIL OFL & Apache 2.0
+              Open Source Typographies · Free Commercial & Personal Use
             </span>
           </div>
 
@@ -93,6 +101,7 @@ export default function FontsPage() {
                   setSampleText(defaultSample);
                   setSearchQuery("");
                   setSelectedCategory("all");
+                  setDisplayCount(36);
                 }}
                 className="h-10 px-3.5 rounded-[10px] border border-border bg-card hover:bg-muted text-xs font-mono text-muted-foreground hover:text-foreground flex items-center gap-1.5 transition-colors"
               >
@@ -141,7 +150,10 @@ export default function FontsPage() {
               {categories.map((c) => (
                 <button
                   key={c.id}
-                  onClick={() => setSelectedCategory(c.id)}
+                  onClick={() => {
+                    setSelectedCategory(c.id);
+                    setDisplayCount(36);
+                  }}
                   className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${
                     selectedCategory === c.id
                       ? "bg-primary text-primary-foreground font-semibold"
@@ -159,8 +171,11 @@ export default function FontsPage() {
               <input
                 type="text"
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search font..."
+                onChange={(e) => {
+                  setSearchQuery(e.target.value);
+                  setDisplayCount(36);
+                }}
+                placeholder="Search font or author..."
                 className="w-full h-8 pl-8 pr-3 text-xs rounded-[8px] border border-border bg-muted/30 text-foreground placeholder:text-muted-foreground focus:outline-none focus:bg-card"
               />
             </div>
@@ -169,7 +184,7 @@ export default function FontsPage() {
 
         {/* 4. Vertical Font Specimen Rows */}
         <div className="divide-y divide-border rounded-[10px] border border-border bg-card overflow-hidden">
-          {filtered.map((font) => {
+          {visibleFonts.map((font) => {
             const fontDisplayFamily = `'${font.googleFontsFamily || font.name}', ${
               font.category === "serif"
                 ? "serif"
@@ -213,6 +228,21 @@ export default function FontsPage() {
                       </span>
                     )}
 
+                    {/* Direct Download Button */}
+                    {font.downloadUrl && (
+                      <a
+                        href={font.downloadUrl}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 font-mono text-xs bg-primary text-primary-foreground hover:opacity-90 px-2.5 py-1 rounded-[6px] transition-opacity"
+                        title={`Download ${font.name}`}
+                      >
+                        <Download className="h-3 w-3" />
+                        <span>Download</span>
+                      </a>
+                    )}
+
                     {/* Copy Liber CLI Command */}
                     <button
                       onClick={() =>
@@ -222,7 +252,7 @@ export default function FontsPage() {
                           `${font.slug}-liber`
                         )
                       }
-                      className="flex items-center gap-1.5 font-mono text-xs bg-muted border border-border hover:bg-primary hover:text-primary-foreground text-foreground px-2.5 py-1 rounded-[6px] transition-colors ml-1"
+                      className="flex items-center gap-1.5 font-mono text-xs bg-muted border border-border hover:bg-muted/80 text-foreground px-2.5 py-1 rounded-[6px] transition-colors ml-1"
                       title="Copy Liber CLI command"
                     >
                       <Terminal className="h-3 w-3" />
@@ -255,34 +285,71 @@ export default function FontsPage() {
                   </div>
                 </div>
 
-                {/* Specimen Viewport (contenteditable for live interaction) */}
+                {/* Specimen Viewport (authentic glyph preview or contenteditable live tester) */}
                 <div className="py-4 overflow-x-hidden min-h-[5.5rem] flex items-center">
-                  <p
-                    contentEditable
-                    suppressContentEditableWarning
-                    className="w-full text-foreground truncate outline-none select-all"
-                    style={{
-                      fontFamily: fontDisplayFamily,
-                      fontSize: "32px",
-                      lineHeight: 1.25,
-                    }}
-                  >
-                    {sampleText || defaultSample}
-                  </p>
+                  {font.previewImg && sampleText === defaultSample && !failedImages[font.slug] ? (
+                    /* eslint-disable-next-line @next/next/no-img-element */
+                    <img
+                      src={font.previewImg}
+                      alt={`${font.name} typography preview`}
+                      loading="lazy"
+                      onError={() =>
+                        setFailedImages((prev) => ({ ...prev, [font.slug]: true }))
+                      }
+                      className="h-10 sm:h-12 w-auto max-w-full object-contain dark:invert select-none pointer-events-none"
+                    />
+                  ) : (
+                    <p
+                      contentEditable
+                      suppressContentEditableWarning
+                      className="w-full text-foreground truncate outline-none select-all"
+                      style={{
+                        fontFamily: fontDisplayFamily,
+                        fontSize: "32px",
+                        lineHeight: 1.25,
+                      }}
+                    >
+                      {sampleText || defaultSample}
+                    </p>
+                  )}
                 </div>
 
                 {/* Specimen Footer Metadata */}
                 <div className="flex items-center gap-2 flex-wrap pt-3 border-t border-border/60 text-xs font-mono text-muted-foreground">
+                  {font.author && (
+                    <>
+                      <span>By {font.author}</span>
+                      <span>·</span>
+                    </>
+                  )}
                   <span>Weights: {font.weights.join(", ")}</span>
                   <span>·</span>
-                  <span>Formats: WOFF2, TTF</span>
+                  <span>Formats: TTF / OTF / WOFF2</span>
                   <span>·</span>
-                  <span>Open License ({font.license})</span>
+                  <span>License: {font.license}</span>
                 </div>
               </article>
             );
           })}
         </div>
+
+        {/* 5. Pagination / Load More */}
+        {filtered.length > displayCount && (
+          <div className="pt-6 flex flex-col items-center gap-2">
+            <button
+              onClick={() => setDisplayCount((prev) => prev + 36)}
+              className="px-6 py-2.5 rounded-[10px] border border-border bg-card hover:bg-muted text-xs font-mono text-foreground hover:text-primary transition-colors shadow-sm flex items-center gap-2"
+            >
+              <span>Load more fonts</span>
+              <span className="text-muted-foreground">
+                ({filtered.length - displayCount} remaining)
+              </span>
+            </button>
+            <span className="text-[11px] font-mono text-muted-foreground">
+              Showing {Math.min(displayCount, filtered.length)} of {filtered.length} fonts
+            </span>
+          </div>
+        )}
 
         {filtered.length === 0 && (
           <div className="py-16 text-center space-y-3 rounded-[10px] border border-border bg-card">
