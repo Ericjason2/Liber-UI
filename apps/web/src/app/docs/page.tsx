@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   Copy,
@@ -12,17 +12,35 @@ import {
   Type,
   BookOpen,
   Terminal,
-  Download,
   Laptop,
   CheckCircle2,
   FileCode,
+  Sparkles,
+  Zap,
 } from "lucide-react";
 import { useToast } from "@/context/ToastContext";
 
 type Manager = "pnpm" | "npm" | "yarn" | "bun";
 
+interface SidebarLink {
+  id: string;
+  label: string;
+}
+
+const SIDEBAR_LINKS: SidebarLink[] = [
+  { id: "introduction", label: "Introduction" },
+  { id: "quickstart", label: "Quick Start & CLI" },
+  { id: "cli-reference", label: "CLI Reference" },
+  { id: "fonts-guide", label: "Typography & Fonts" },
+  { id: "logos-guide", label: "Brand & Tech Logos" },
+  { id: "themes-guide", label: "Color Themes & WCAG" },
+  { id: "blocks-guide", label: "UI Blocks & Components" },
+  { id: "trademarks", label: "Trademark Policy" },
+];
+
 export default function DocsPage() {
   const [manager, setManager] = useState<Manager>("pnpm");
+  const [activeSection, setActiveSection] = useState<string>("introduction");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const { toast } = useToast();
 
@@ -46,57 +64,72 @@ export default function DocsPage() {
     }
   };
 
-  const sidebarLinks = [
-    { label: "Introduction", href: "#introduction" },
-    { label: "Quick Start & CLI", href: "#quickstart" },
-    { label: "Tech & Brand Logos", href: "#logos" },
-    { label: "Color Themes & WCAG", href: "#themes" },
-    { label: "Typography & Fonts", href: "#fonts" },
-    { label: "Blocks & Components", href: "#blocks" },
-    { label: "CLI Reference", href: "#cli-reference" },
-    { label: "Brand Trademark Policy", href: "#trademarks" },
-  ];
+  // Scrollspy: update active section as user scrolls
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.scrollY + 140;
+      for (let i = SIDEBAR_LINKS.length - 1; i >= 0; i--) {
+        const item = SIDEBAR_LINKS[i];
+        if (!item) continue;
+        const element = document.getElementById(item.id);
+        if (element && element.offsetTop <= scrollPos) {
+          setActiveSection(item.id);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (e: React.MouseEvent, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      const yOffset = -90;
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+      setActiveSection(id);
+    }
+  };
 
   return (
     <div className="max-w-[1280px] mx-auto px-4 sm:px-6 py-10 sm:py-16">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-        {/* Left Sidebar (3 cols, sticky) */}
-        <aside className="hidden md:block md:col-span-3 sticky top-20 space-y-4 pr-4 border-r border-border text-xs">
+        {/* Left Sidebar (3 cols, sticky with scrollspy) */}
+        <aside className="hidden md:block md:col-span-3 sticky top-24 space-y-4 pr-4 border-r border-border text-xs">
           <div className="flex items-center gap-2 font-mono text-[11px] font-semibold text-foreground uppercase tracking-wider">
             <BookOpen className="h-3.5 w-3.5 text-primary" />
-            <span>Documentation</span>
+            <span>Table of Contents</span>
           </div>
-          <nav className="space-y-1">
-            {sidebarLinks.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="block px-2.5 py-1.5 rounded-[6px] text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
 
-          <div className="pt-4 border-t border-border space-y-2">
-            <span className="font-mono text-[10px] text-muted-foreground uppercase tracking-wider">
-              Downloads
-            </span>
-            <a
-              href="/downloads/liber-svg-collection.zip"
-              download="liber-svg-collection.zip"
-              className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <Download className="h-3 w-3" />
-              <span>Full SVG Pack (.zip)</span>
-            </a>
-          </div>
+          <nav className="space-y-1">
+            {SIDEBAR_LINKS.map((item) => {
+              const isActive = activeSection === item.id;
+              return (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  onClick={(e) => scrollToSection(e, item.id)}
+                  className={`block px-3 py-2 rounded-[8px] text-xs font-mono transition-all ${
+                    isActive
+                      ? "bg-primary text-primary-foreground font-semibold shadow-sm"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                  }`}
+                >
+                  {item.label}
+                </a>
+              );
+            })}
+          </nav>
         </aside>
 
         {/* Center Article (9 cols) */}
-        <article className="md:col-span-9 space-y-12 max-w-[820px]">
+        <article className="md:col-span-9 space-y-14 max-w-[820px]">
           {/* 1. Introduction */}
-          <section className="space-y-4" id="introduction">
+          <section className="space-y-6 scroll-mt-24" id="introduction">
             <div className="flex items-center gap-2 font-mono text-xs text-muted-foreground tracking-tight">
               <Link href="/" className="hover:text-foreground transition-colors">
                 Catalog
@@ -110,7 +143,7 @@ export default function DocsPage() {
                 Welcome to Liber UI
               </h1>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Liber UI is a free, open-source asset and code catalog built for UI/UX designers, front-end engineers, and product creators. It provides clean vector logos, WCAG-compliant color themes, self-hosted open typographies, and responsive UI section blocks — with zero vendor lock-in and zero runtime overhead.
+                Liber UI is a free, open-source asset, typography, and code catalog built for UI/UX designers, front-end engineers, and product creators. It provides clean vector logos, WCAG-compliant color themes, over 7,300 self-hostable open typographies, and responsive UI section blocks — with zero vendor lock-in and zero runtime overhead.
               </p>
             </div>
 
@@ -138,18 +171,18 @@ export default function DocsPage() {
 
               <div className="p-4 rounded-[10px] border border-border bg-card space-y-1.5">
                 <div className="flex items-center gap-1.5 font-mono text-xs font-semibold text-foreground">
-                  <Download className="h-3.5 w-3.5 text-purple-500" />
-                  <span>3. Offline Download</span>
+                  <Zap className="h-3.5 w-3.5 text-purple-500" />
+                  <span>3. Zero Runtime Lock-in</span>
                 </div>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Export individual raw `.svg` files, high-resolution PNGs, or download the full 150+ logos zip archive for Figma and Illustrator.
+                  You own the code. All assets live right in your project files with zero third-party telemetry, tracking, or network calls.
                 </p>
               </div>
             </div>
           </section>
 
           {/* 2. Quickstart & Installation */}
-          <section className="space-y-4 pt-4 border-t border-border" id="quickstart">
+          <section className="space-y-4 pt-6 border-t border-border scroll-mt-24" id="quickstart">
             <div className="flex items-center gap-2">
               <Terminal className="h-5 w-5 text-primary" />
               <h2 className="text-2xl font-semibold tracking-tight text-foreground">
@@ -197,8 +230,161 @@ export default function DocsPage() {
             </div>
           </section>
 
-          {/* 3. Tech & Brand Logos Guide */}
-          <section className="space-y-4 pt-4 border-t border-border" id="logos">
+          {/* 3. CLI Command Reference */}
+          <section className="space-y-4 pt-6 border-t border-border scroll-mt-24" id="cli-reference">
+            <div className="flex items-center gap-2">
+              <FileCode className="h-5 w-5 text-primary" />
+              <h2 className="text-2xl font-semibold tracking-tight text-foreground">
+                CLI Command Reference (@liber-ui/cli)
+              </h2>
+            </div>
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              The <code className="font-mono text-primary">@liber-ui/cli</code> package allows quick terminal interaction with the Liber registry:
+            </p>
+
+            <div className="overflow-x-auto rounded-[10px] border border-border">
+              <table className="w-full text-xs text-left">
+                <thead className="bg-muted/50 border-b border-border font-mono text-[11px] text-foreground">
+                  <tr>
+                    <th className="py-2.5 px-4 font-semibold">Command</th>
+                    <th className="py-2.5 px-4 font-semibold">Description</th>
+                    <th className="py-2.5 px-4 font-semibold">Example</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border font-mono text-[11px]">
+                  <tr>
+                    <td className="py-2.5 px-4 text-primary font-semibold">liber add &lt;slug&gt;</td>
+                    <td className="py-2.5 px-4 font-sans text-muted-foreground">Installs a resource (logo, font, theme, or component) directly into your project.</td>
+                    <td className="py-2.5 px-4 text-foreground">liber add font-geist</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 px-4 text-primary font-semibold">liber search &lt;query&gt;</td>
+                    <td className="py-2.5 px-4 font-sans text-muted-foreground">Searches the catalog from the terminal.</td>
+                    <td className="py-2.5 px-4 text-foreground">liber search minecraft</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 px-4 text-primary font-semibold">liber view &lt;slug&gt;</td>
+                    <td className="py-2.5 px-4 font-sans text-muted-foreground">Inspects metadata and dependencies before adding.</td>
+                    <td className="py-2.5 px-4 text-foreground">liber view inter</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 px-4 text-primary font-semibold">liber init</td>
+                    <td className="py-2.5 px-4 font-sans text-muted-foreground">Creates a liber.json configuration file.</td>
+                    <td className="py-2.5 px-4 text-foreground">liber init</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 px-4 text-primary font-semibold">liber diff &lt;slug&gt;</td>
+                    <td className="py-2.5 px-4 font-sans text-muted-foreground">Checks for upstream updates to an installed resource.</td>
+                    <td className="py-2.5 px-4 text-foreground">liber diff react</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          {/* 4. Typography & Fonts System Guide */}
+          <section className="space-y-6 pt-6 border-t border-border scroll-mt-24" id="fonts-guide">
+            <div className="flex items-center gap-2">
+              <Type className="h-5 w-5 text-primary" />
+              <h2 className="text-2xl font-semibold tracking-tight text-foreground">
+                Typography & Font System
+              </h2>
+            </div>
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              Liber UI hosts a catalog of over 7,300 typographies classified alphabetically (A–Z) and by authentic themes (Basic, Fancy, Script, Techno, Gothic, Bitmap). Every font in the catalog is 100% free for commercial and personal use (SIL Open Font License, Apache 2.0, or Public Domain).
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+              <div className="p-4 rounded-[10px] border border-border bg-card space-y-2">
+                <span className="font-mono font-semibold text-foreground flex items-center gap-1.5">
+                  <Terminal className="h-3.5 w-3.5 text-primary" />
+                  <span>Method 1 · Liber CLI Installation</span>
+                </span>
+                <p className="text-muted-foreground leading-relaxed">
+                  Run <code className="text-primary font-mono">npx @liber-ui/cli add font-&lt;slug&gt;</code>. The CLI automatically writes the font style definition in <code className="font-mono text-foreground">styles/fonts/&lt;slug&gt;.css</code> and links dependencies.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-[10px] border border-border bg-card space-y-2">
+                <span className="font-mono font-semibold text-foreground flex items-center gap-1.5">
+                  <Sparkles className="h-3.5 w-3.5 text-primary" />
+                  <span>Method 2 · Direct Download (.zip)</span>
+                </span>
+                <p className="text-muted-foreground leading-relaxed">
+                  Click the direct &quot;Download&quot; button on any font card to retrieve the authentic <code className="font-mono text-foreground">.zip</code> archive containing the <code className="font-mono text-foreground">.ttf</code> or <code className="font-mono text-foreground">.otf</code> font files.
+                </p>
+              </div>
+            </div>
+
+            {/* Next.js Local Font Code Example */}
+            <div className="space-y-3">
+              <span className="font-mono text-xs font-semibold text-foreground">
+                How to Self-Host with Next.js (next/font/local):
+              </span>
+              <div className="rounded-[10px] border border-border bg-card p-4 font-mono text-xs relative group">
+                <pre className="text-foreground overflow-x-auto leading-relaxed">
+{`// app/layout.tsx
+import localFont from "next/font/local";
+
+const myFont = localFont({
+  src: "../public/fonts/minecraft/Minecraft-Regular.woff2",
+  variable: "--font-minecraft",
+  display: "swap",
+});
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" className={myFont.variable}>
+      <body className="font-sans">{children}</body>
+    </html>
+  );
+}`}
+                </pre>
+                <button
+                  onClick={() =>
+                    copyToClipboard(
+                      `import localFont from "next/font/local";\nconst myFont = localFont({\n  src: "../public/fonts/minecraft/Minecraft-Regular.woff2",\n  variable: "--font-minecraft",\n  display: "swap",\n});`,
+                      "next-font-snippet",
+                      "Next.js local font snippet copied"
+                    )
+                  }
+                  className="absolute top-3 right-3 p-1.5 rounded-[6px] bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {copiedKey === "next-font-snippet" ? (
+                    <Check className="h-3.5 w-3.5 text-emerald-500" />
+                  ) : (
+                    <Copy className="h-3.5 w-3.5" />
+                  )}
+                </button>
+              </div>
+            </div>
+
+            {/* CSS @font-face Snippet */}
+            <div className="space-y-3">
+              <span className="font-mono text-xs font-semibold text-foreground">
+                Standard CSS @font-face Definition:
+              </span>
+              <div className="rounded-[10px] border border-border bg-card p-4 font-mono text-xs relative group">
+                <pre className="text-foreground overflow-x-auto leading-relaxed">
+{`@font-face {
+  font-family: 'Minecraft';
+  src: url('/fonts/minecraft/Minecraft-Regular.woff2') format('woff2'),
+       url('/fonts/minecraft/Minecraft-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-minecraft: 'Minecraft', sans-serif;
+}`}
+                </pre>
+              </div>
+            </div>
+          </section>
+
+          {/* 5. Tech & Brand Logos Guide */}
+          <section className="space-y-4 pt-6 border-t border-border scroll-mt-24" id="logos-guide">
             <div className="flex items-center gap-2">
               <Layers className="h-5 w-5 text-primary" />
               <h2 className="text-2xl font-semibold tracking-tight text-foreground">
@@ -246,7 +432,6 @@ import { ReactColor, FigmaColor, GithubMono } from "@liber-ui/react";
 export function TechStack() {
   return (
     <div className="flex items-center gap-4">
-      {/* Set custom size, color, or pass standard SVG props */}
       <ReactColor size={28} />
       <FigmaColor size={28} />
       <GithubMono size={28} className="text-foreground hover:text-primary transition-colors" />
@@ -278,8 +463,8 @@ export function TechStack() {
             </div>
           </section>
 
-          {/* 4. Color Themes & WCAG AA */}
-          <section className="space-y-4 pt-4 border-t border-border" id="themes">
+          {/* 6. Color Themes & WCAG AA */}
+          <section className="space-y-4 pt-6 border-t border-border scroll-mt-24" id="themes-guide">
             <div className="flex items-center gap-2">
               <Palette className="h-5 w-5 text-primary" />
               <h2 className="text-2xl font-semibold tracking-tight text-foreground">
@@ -319,41 +504,8 @@ export function TechStack() {
             </div>
           </section>
 
-          {/* 5. Typography & Fonts System */}
-          <section className="space-y-4 pt-4 border-t border-border" id="fonts">
-            <div className="flex items-center gap-2">
-              <Type className="h-5 w-5 text-primary" />
-              <h2 className="text-2xl font-semibold tracking-tight text-foreground">
-                Typography & Font System
-              </h2>
-            </div>
-            <p className="text-xs text-muted-foreground leading-relaxed">
-              All 21 typographies in Liber are 100% open-license (SIL Open Font License or Apache 2.0). They are designed to be self-hosted locally within your project, eliminating third-party tracking, DNS lookups, and layout shift.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-              <div className="p-4 rounded-[8px] border border-border bg-card space-y-2">
-                <span className="font-mono font-semibold text-foreground">
-                  Option 1 · Next.js Local Font (Recommended)
-                </span>
-                <p className="text-muted-foreground leading-relaxed">
-                  Place <span className="font-mono text-foreground">.woff2</span> files in <span className="font-mono text-foreground">public/fonts/&lt;family&gt;/</span> and load via Next.js <code className="text-primary font-mono">next/font/local</code>.
-                </p>
-              </div>
-
-              <div className="p-4 rounded-[8px] border border-border bg-card space-y-2">
-                <span className="font-mono font-semibold text-foreground">
-                  Option 2 · NPM @fontsource
-                </span>
-                <p className="text-muted-foreground leading-relaxed">
-                  Install via npm (ex: <code className="font-mono text-primary">npm install @fontsource/inter</code>) and import the CSS in your root layout without hosting files manually.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* 6. Blocks & Components */}
-          <section className="space-y-4 pt-4 border-t border-border" id="blocks">
+          {/* 7. Blocks & Components */}
+          <section className="space-y-4 pt-6 border-t border-border scroll-mt-24" id="blocks-guide">
             <div className="flex items-center gap-2">
               <Laptop className="h-5 w-5 text-primary" />
               <h2 className="text-2xl font-semibold tracking-tight text-foreground">
@@ -375,60 +527,8 @@ export function TechStack() {
             </div>
           </section>
 
-          {/* 7. CLI Command Reference */}
-          <section className="space-y-4 pt-4 border-t border-border" id="cli-reference">
-            <div className="flex items-center gap-2">
-              <FileCode className="h-5 w-5 text-primary" />
-              <h2 className="text-2xl font-semibold tracking-tight text-foreground">
-                CLI Command Reference (@liber-ui/cli)
-              </h2>
-            </div>
-            <p className="text-xs text-muted-foreground leading-relaxed">
-              The <code className="font-mono text-primary">@liber-ui/cli</code> package allows quick terminal interaction with the Liber registry:
-            </p>
-
-            <div className="overflow-x-auto rounded-[10px] border border-border">
-              <table className="w-full text-xs text-left">
-                <thead className="bg-muted/50 border-b border-border font-mono text-[11px] text-foreground">
-                  <tr>
-                    <th className="py-2.5 px-4 font-semibold">Command</th>
-                    <th className="py-2.5 px-4 font-semibold">Description</th>
-                    <th className="py-2.5 px-4 font-semibold">Example</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-border font-mono text-[11px]">
-                  <tr>
-                    <td className="py-2.5 px-4 text-primary font-semibold">liber add &lt;slug&gt;</td>
-                    <td className="py-2.5 px-4 font-sans text-muted-foreground">Installs a resource directly into your project.</td>
-                    <td className="py-2.5 px-4 text-foreground">liber add react</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 px-4 text-primary font-semibold">liber search &lt;query&gt;</td>
-                    <td className="py-2.5 px-4 font-sans text-muted-foreground">Searches the catalog from the terminal.</td>
-                    <td className="py-2.5 px-4 text-foreground">liber search database</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 px-4 text-primary font-semibold">liber view &lt;slug&gt;</td>
-                    <td className="py-2.5 px-4 font-sans text-muted-foreground">Inspects metadata and dependencies before adding.</td>
-                    <td className="py-2.5 px-4 text-foreground">liber view docker</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 px-4 text-primary font-semibold">liber init</td>
-                    <td className="py-2.5 px-4 font-sans text-muted-foreground">Creates a liber.json configuration file.</td>
-                    <td className="py-2.5 px-4 text-foreground">liber init</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 px-4 text-primary font-semibold">liber diff &lt;slug&gt;</td>
-                    <td className="py-2.5 px-4 font-sans text-muted-foreground">Checks for upstream updates to an installed resource.</td>
-                    <td className="py-2.5 px-4 text-foreground">liber diff hero-centered</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-
           {/* 8. Brand Trademark Policy */}
-          <section className="space-y-4 pt-4 border-t border-border" id="trademarks">
+          <section className="space-y-4 pt-6 border-t border-border scroll-mt-24" id="trademarks">
             <div className="flex items-center gap-2">
               <Shield className="h-5 w-5 text-primary" />
               <h2 className="text-2xl font-semibold tracking-tight text-foreground">
@@ -459,10 +559,10 @@ export function TechStack() {
               ← Return Home
             </Link>
             <Link
-              href="/logos"
+              href="/fonts"
               className="text-foreground font-medium flex items-center gap-1 hover:underline"
             >
-              <span>Explore Logos Catalog</span>
+              <span>Explore Fonts Catalog</span>
               <ChevronRight className="h-3.5 w-3.5" />
             </Link>
           </div>
