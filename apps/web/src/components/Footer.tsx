@@ -59,15 +59,6 @@ export function Footer() {
                   Using @liber-ui/react
                 </Link>
               </li>
-              <li>
-                <a
-                  href="/downloads/liber-svg-collection.zip"
-                  download="liber-svg-collection.zip"
-                  className="hover:text-foreground transition-colors"
-                >
-                  Offline SVG Archive (.zip)
-                </a>
-              </li>
             </ul>
           </div>
 

@@ -134,14 +134,6 @@ export default function LogosPage() {
           </div>
 
           <div className="flex items-center gap-2.5 self-start sm:self-auto flex-wrap">
-            <a
-              href="/downloads/liber-svg-collection.zip"
-              download="liber-svg-collection.zip"
-              className="flex items-center gap-1.5 h-10 px-4 rounded-[10px] bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition-opacity"
-            >
-              <Download className="h-3.5 w-3.5" />
-              <span>Download All SVGs (.zip)</span>
-            </a>
             <div className="flex items-center gap-1.5 font-mono text-xs text-foreground bg-muted border border-border px-3.5 h-10 rounded-[10px]">
               <span className="font-medium">{filteredLogos.length} logos</span>
             </div>
