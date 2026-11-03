@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "playfair-display",
+  "type": "registry:font",
+  "title": "Playfair Display",
+  "description": "Transitional serif with high contrast and delicate, refined hairlines.",
+  "author": "Claus Eggers Sorensen",
+  "categories": [
+    "serif"
+  ],
+  "dependencies": [
+    "@fontsource-variable/playfair-display"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/playfair-display.css",
+      "content": "/* Self-hosted font definition for Playfair Display */\n@import \"@fontsource-variable/playfair-display\";\n:root {\n  --font-serif: 'Playfair Display', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Playfair Display",
+    "weights": [
+      400,
+      500,
+      600,
+      700
+    ],
+    "subsets": [
+      "latin"
+    ],
+    "variable": true,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource-variable/playfair-display"
+  }
+}

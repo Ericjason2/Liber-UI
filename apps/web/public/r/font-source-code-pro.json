@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "source-code-pro",
+  "type": "registry:font",
+  "title": "Source Code Pro",
+  "description": "Adobe's open monospaced companion to Source Sans specifically for coding.",
+  "author": "Paul D. Hunt",
+  "categories": [
+    "mono"
+  ],
+  "dependencies": [
+    "@fontsource-variable/source-code-pro"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/source-code-pro.css",
+      "content": "/* Self-hosted font definition for Source Code Pro */\n@import \"@fontsource-variable/source-code-pro\";\n:root {\n  --font-mono: 'Source Code Pro', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Source Code Pro",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "subsets": [
+      "latin"
+    ],
+    "variable": true,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource-variable/source-code-pro"
+  }
+}

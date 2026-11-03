@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "geist",
+  "type": "registry:font",
+  "title": "Geist",
+  "description": "Engineered by Vercel for code, typography, and technical UI.",
+  "author": "Vercel",
+  "categories": [
+    "sans"
+  ],
+  "dependencies": [
+    "@fontsource/geist-sans"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/geist.css",
+      "content": "/* Self-hosted font definition for Geist */\n@import \"@fontsource/geist-sans\";\n:root {\n  --font-sans: 'Geist', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Geist",
+    "weights": [
+      400,
+      500,
+      600,
+      700
+    ],
+    "subsets": [
+      "latin"
+    ],
+    "variable": true,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource/geist-sans"
+  }
+}

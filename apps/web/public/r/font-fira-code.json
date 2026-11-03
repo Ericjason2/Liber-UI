@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "fira-code",
+  "type": "registry:font",
+  "title": "Fira Code",
+  "description": "Monospaced font with programming ligatures for operators like => and ==.",
+  "author": "Nikita Prokopov",
+  "categories": [
+    "mono"
+  ],
+  "dependencies": [
+    "@fontsource-variable/fira-code"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/fira-code.css",
+      "content": "/* Self-hosted font definition for Fira Code */\n@import \"@fontsource-variable/fira-code\";\n:root {\n  --font-mono: 'Fira Code', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Fira Code",
+    "weights": [
+      400,
+      500,
+      600,
+      700
+    ],
+    "subsets": [
+      "latin"
+    ],
+    "variable": true,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource-variable/fira-code"
+  }
+}

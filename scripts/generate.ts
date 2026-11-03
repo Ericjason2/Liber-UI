@@ -125,6 +125,7 @@ try {
       const fontRegItem = createFontRegistryItem(fontMeta);
       registryItems.push(fontRegItem);
       await writeFile(join(APPS_WEB_PUBLIC, "r", `${entry.name}.json`), JSON.stringify(fontRegItem, null, 2) + "\n", "utf8");
+      await writeFile(join(APPS_WEB_PUBLIC, "r", `font-${entry.name}.json`), JSON.stringify(fontRegItem, null, 2) + "\n", "utf8");
     } catch {
       // ignore
     }

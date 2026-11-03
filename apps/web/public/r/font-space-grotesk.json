@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "space-grotesk",
+  "type": "registry:font",
+  "title": "Space Grotesk",
+  "description": "Proportional variant of Space Mono with idiosyncratic futuristic geometry.",
+  "author": "Florian Karsten",
+  "categories": [
+    "display"
+  ],
+  "dependencies": [
+    "@fontsource-variable/space-grotesk"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/space-grotesk.css",
+      "content": "/* Self-hosted font definition for Space Grotesk */\n@import \"@fontsource-variable/space-grotesk\";\n:root {\n  --font-display: 'Space Grotesk', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Space Grotesk",
+    "weights": [
+      400,
+      500,
+      600,
+      700
+    ],
+    "subsets": [
+      "latin"
+    ],
+    "variable": true,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource-variable/space-grotesk"
+  }
+}

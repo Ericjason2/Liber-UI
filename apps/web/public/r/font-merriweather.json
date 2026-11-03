@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "merriweather",
+  "type": "registry:font",
+  "title": "Merriweather",
+  "description": "Engineered specifically to be pleasant and highly legible for screen reading.",
+  "author": "Eben Sorkin",
+  "categories": [
+    "serif"
+  ],
+  "dependencies": [
+    "@fontsource/merriweather"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/merriweather.css",
+      "content": "/* Self-hosted font definition for Merriweather */\n@import \"@fontsource/merriweather\";\n:root {\n  --font-serif: 'Merriweather', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Merriweather",
+    "weights": [
+      300,
+      400,
+      700
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext"
+    ],
+    "variable": false,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource/merriweather"
+  }
+}

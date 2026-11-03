@@ -1,0 +1,38 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "plus-jakarta-sans",
+  "type": "registry:font",
+  "title": "Plus Jakarta Sans",
+  "description": "Modern neo-grotesque crafted specifically for tech branding and dashboards.",
+  "author": "Tokotype",
+  "categories": [
+    "sans"
+  ],
+  "dependencies": [
+    "@fontsource-variable/plus-jakarta-sans"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/plus-jakarta-sans.css",
+      "content": "/* Self-hosted font definition for Plus Jakarta Sans */\n@import \"@fontsource-variable/plus-jakarta-sans\";\n:root {\n  --font-sans: 'Plus Jakarta Sans', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Plus Jakarta Sans",
+    "weights": [
+      400,
+      500,
+      600,
+      700
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext"
+    ],
+    "variable": true,
+    "license": "OFL-1.1",
+    "fontsourcePackage": "@fontsource-variable/plus-jakarta-sans"
+  }
+}

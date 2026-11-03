@@ -1,4 +1,5 @@
 import catalogData from "../../../../packages/core/index.json";
+import scrapedFontsData from "../data/scraped-fonts.json";
 
 export interface LogoItem {
   slug: string;
@@ -67,12 +68,17 @@ export interface FontItem {
   kind: "font";
   name: string;
   description: string;
-  category: "sans" | "serif" | "mono" | "display";
-  license: "OFL-1.1" | "Apache-2.0";
+  category: "sans" | "serif" | "mono" | "display" | string;
+  theme?: string;
+  subtheme?: string;
+  license: "OFL-1.1" | "Apache-2.0" | "100% Free" | "Public Domain" | string;
   weights: number[];
   variable: boolean;
   sampleText: string;
   googleFontsFamily?: string;
+  author?: string;
+  downloadUrl?: string;
+  previewImg?: string;
 }
 
 export const OFFICIAL_LOGOS: LogoItem[] = (catalogData.items as unknown[]).filter(
@@ -1915,7 +1921,7 @@ export const SAMPLE_THEMES: ThemeItem[] = [
   },
 ];
 
-export const SAMPLE_FONTS: FontItem[] = [
+const BASE_FONTS: FontItem[] = [
   // --- Sans-Serif ---
   {
     slug: "geist",
@@ -2211,4 +2217,14 @@ export const SAMPLE_FONTS: FontItem[] = [
     sampleText: "UNCOMPROMISING ARCHITECTURAL RESTRAINT AND IMPACT",
     googleFontsFamily: "Bebas Neue",
   },
+];
+
+const baseSlugs = new Set(BASE_FONTS.map((f) => f.slug));
+const uniqueScrapedFonts = (scrapedFontsData as FontItem[]).filter(
+  (f) => !baseSlugs.has(f.slug)
+);
+
+export const SAMPLE_FONTS: FontItem[] = [
+  ...BASE_FONTS,
+  ...uniqueScrapedFonts,
 ];

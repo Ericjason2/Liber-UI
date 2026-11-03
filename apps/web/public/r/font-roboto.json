@@ -1,0 +1,38 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "roboto",
+  "type": "registry:font",
+  "title": "Roboto",
+  "description": "Google's signature neo-grotesque sans-serif with mechanical skeleton.",
+  "author": "Christian Robertson",
+  "categories": [
+    "sans"
+  ],
+  "dependencies": [
+    "@fontsource/roboto"
+  ],
+  "files": [
+    {
+      "path": "styles/fonts/roboto.css",
+      "content": "/* Self-hosted font definition for Roboto */\n@import \"@fontsource/roboto\";\n:root {\n  --font-sans: 'Roboto', sans-serif;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "font",
+    "family": "Roboto",
+    "weights": [
+      300,
+      400,
+      500,
+      700
+    ],
+    "subsets": [
+      "latin",
+      "latin-ext"
+    ],
+    "variable": false,
+    "license": "Apache-2.0",
+    "fontsourcePackage": "@fontsource/roboto"
+  }
+}
