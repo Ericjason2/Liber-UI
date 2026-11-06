@@ -90,7 +90,7 @@ export default function HomePage() {
         </h1>
 
         <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
-          Logos, blocks, components, themes and fonts. Copy the code or install it with one command.
+          Logos, animations, components, themes and fonts. Copy the code or install it with one command.
         </p>
 
         {/* Wide Search Bar */}
@@ -101,7 +101,7 @@ export default function HomePage() {
           >
             <div className="flex items-center gap-3">
               <Search className="h-4 w-4" />
-              <span>Search logos, blocks, themes, fonts...</span>
+              <span>Search logos, animations, themes, fonts...</span>
             </div>
             <kbd className="hidden sm:inline-block rounded-[6px] border border-border bg-surface-subtle px-2 py-0.5 text-xs font-mono">
               Ctrl K

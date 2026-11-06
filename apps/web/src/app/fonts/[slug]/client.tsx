@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   ArrowLeft,
@@ -11,9 +11,11 @@ import {
   Code2,
   Type,
   RotateCcw,
+  ArrowUpRight,
 } from "lucide-react";
 import type { FontItem } from "@/lib/catalog";
 import { useToast } from "@/context/ToastContext";
+import { getFontDisplayFamily, loadFontStylesheet } from "@/lib/fontFallbacks";
 
 interface FontDetailClientProps {
   font: FontItem;
@@ -35,13 +37,18 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
   const [activeTab, setActiveTab] = useState<"specimen" | "alphabet" | "install">("specimen");
   const { toast } = useToast();
 
-  const fontDisplayFamily = `'${font.googleFontsFamily || font.name}', ${
-    font.category === "serif"
-      ? "serif"
-      : font.category === "mono"
-      ? "monospace"
-      : "sans-serif"
-  }`;
+  const fontDisplayFamily = getFontDisplayFamily(font);
+  const charmapUrl = font.previewImg ? font.previewImg.replace('/preview/', '/charmap/') : null;
+
+  useEffect(() => {
+    if (font.googleFontsFamily) {
+      loadFontStylesheet(font.googleFontsFamily);
+    } else {
+      // Load fallback font style corresponding to category
+      const family = getFontDisplayFamily(font).split(",")[1]?.replace(/'/g, "").trim();
+      if (family) loadFontStylesheet(family);
+    }
+  }, [font]);
 
   const liberCmd = `npx @liber-ui/cli add font-${font.slug}`;
   const cssFontFaceSnippet = `@font-face {\n  font-family: '${font.name}';\n  src: url('/fonts/${font.slug}/${font.name}-Regular.woff2') format('woff2'),\n       url('/fonts/${font.slug}/${font.name}-Regular.ttf') format('truetype');\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n}\n\n:root {\n  --font-${font.slug}: '${font.name}', sans-serif;\n}`;
@@ -298,23 +305,38 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
       {/* 4. Tab: Character Map & Full Alphabet */}
       {activeTab === "alphabet" && (
         <div className="space-y-8">
-          {/* Authentic Preview Image if present */}
-          {font.previewImg && (
-            <div className="p-6 rounded-[12px] border border-border bg-card space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-mono text-muted-foreground">
-                  Authentic Character Set Rendering
-                </span>
-                <span className="text-[11px] font-mono text-muted-foreground">
-                  Glyph Map
-                </span>
+          {/* Authentic Character Map & Full Alphabet Sheet */}
+          {charmapUrl && (
+            <div className="p-6 sm:p-8 rounded-[12px] border border-border bg-card space-y-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-border pb-4">
+                <div>
+                  <h3 className="text-base font-semibold text-foreground">
+                    Authentic Character Map & Complete Alphabet
+                  </h3>
+                  <p className="text-xs text-muted-foreground">
+                    Handcrafted glyphs (Uppercase A-Z, Lowercase a-z, Numerals, Accents & Special Characters) from the font author.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <a
+                    href={charmapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-8 px-3 rounded-[8px] border border-border bg-muted/40 hover:bg-muted text-xs font-mono text-foreground flex items-center gap-1.5 transition-colors"
+                  >
+                    <span>Full Resolution</span>
+                    <ArrowUpRight className="h-3 w-3" />
+                  </a>
+                </div>
               </div>
-              <div className="py-4 flex items-center justify-center overflow-x-auto">
+
+              <div className="p-4 sm:p-8 rounded-[8px] bg-white dark:bg-neutral-900 border border-border/70 overflow-x-auto flex items-center justify-center">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={font.previewImg}
-                  alt={`${font.name} glyphs`}
-                  className="h-16 sm:h-20 w-auto max-w-full object-contain dark:invert select-none"
+                  src={charmapUrl}
+                  alt={`${font.name} complete character map`}
+                  className="w-full max-w-4xl h-auto object-contain dark:invert select-none"
+                  loading="lazy"
                 />
               </div>
             </div>

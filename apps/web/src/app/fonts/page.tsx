@@ -14,10 +14,11 @@ import {
 } from "lucide-react";
 import { SAMPLE_FONTS } from "@/lib/catalog";
 import { useToast } from "@/context/ToastContext";
+import { getFontDisplayFamily } from "@/lib/fontFallbacks";
 
-// Open-source stylesheet URL covering the curated open-license fonts for real glyph rendering in tester
+// Open-source stylesheet URL covering the curated open-license fonts and expressive thematic families
 const OPEN_FONTS_CATALOG_HREF =
-  "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;600&family=DM+Sans:wght@400;500;700&family=Fira+Code:wght@400;500;700&family=Geist+Mono:wght@400;500;600&family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Lato:wght@400;700&family=Lora:wght@400;600;700&family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700&family=Nunito:wght@400;600;700&family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;600;700&family=PT+Serif:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&family=Source+Code+Pro:wght@400;600;700&family=Space+Grotesk:wght@400;600;700&family=Syne:wght@500;700;800&display=swap";
+  "https://fonts.googleapis.com/css2?family=Audiowide&family=Bangers&family=Bebas+Neue&family=Caveat:wght@400;700&family=Cinzel:wght@400;600&family=Creepster&family=DM+Sans:wght@400;500;700&family=Fira+Code:wght@400;500;700&family=Geist+Mono:wght@400;500;600&family=Geist:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Lato:wght@400;700&family=MedievalSharp&family=Montserrat:wght@400;600;700&family=Nosifer&family=Orbitron:wght@500;700&family=Pacifico&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;600;700&family=Press+Start+2P&family=Righteous&family=Roboto:wght@400;500;700&family=Rye&family=Space+Grotesk:wght@400;600;700&family=Syne:wght@500;700;800&family=UnifrakturMaguntia&family=VT323&display=swap";
 
 const ALPHABET = [
   "All",
@@ -168,9 +169,6 @@ export default function FontsPage() {
             </Link>
             <span>/</span>
             <span className="text-foreground font-medium">Fonts & Assets</span>
-            <span className="ml-2 px-2 py-0.5 rounded-full text-[10px] bg-muted border border-border text-muted-foreground">
-              Alphabetical Typography Catalog · Free Use
-            </span>
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pb-6 border-b border-border">
@@ -225,11 +223,10 @@ export default function FontsPage() {
                   setSelectedLetter(char);
                   setDisplayCount(36);
                 }}
-                className={`min-w-[32px] h-8 px-2 rounded-[6px] text-xs font-mono transition-colors flex items-center justify-center ${
-                  selectedLetter === char
+                className={`min-w-[32px] h-8 px-2 rounded-[6px] text-xs font-mono transition-colors flex items-center justify-center ${selectedLetter === char
                     ? "bg-primary text-primary-foreground font-semibold"
                     : "border border-border bg-card text-muted-foreground hover:text-foreground hover:bg-muted"
-                }`}
+                  }`}
               >
                 {char}
               </button>
@@ -250,11 +247,10 @@ export default function FontsPage() {
                     setSelectedSubtheme("all");
                     setDisplayCount(36);
                   }}
-                  className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${
-                    selectedTheme === t.id
+                  className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${selectedTheme === t.id
                       ? "bg-primary text-primary-foreground font-semibold"
                       : "border border-border bg-card text-muted-foreground hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   <span>{t.label}</span>
                   <span className="font-mono text-[10px] opacity-70">
@@ -291,11 +287,10 @@ export default function FontsPage() {
                   setSelectedSubtheme("all");
                   setDisplayCount(36);
                 }}
-                className={`px-2.5 py-1 rounded-[6px] text-xs font-mono transition-colors ${
-                  selectedSubtheme === "all"
+                className={`px-2.5 py-1 rounded-[6px] text-xs font-mono transition-colors ${selectedSubtheme === "all"
                     ? "bg-foreground text-background font-medium"
                     : "border border-border bg-card text-muted-foreground hover:text-foreground"
-                }`}
+                  }`}
               >
                 All {selectedTheme}
               </button>
@@ -306,11 +301,10 @@ export default function FontsPage() {
                     setSelectedSubtheme(st);
                     setDisplayCount(36);
                   }}
-                  className={`px-2.5 py-1 rounded-[6px] text-xs font-mono whitespace-nowrap transition-colors ${
-                    selectedSubtheme === st
+                  className={`px-2.5 py-1 rounded-[6px] text-xs font-mono whitespace-nowrap transition-colors ${selectedSubtheme === st
                       ? "bg-foreground text-background font-medium"
                       : "border border-border bg-card text-muted-foreground hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   {st}
                 </button>
@@ -348,13 +342,7 @@ export default function FontsPage() {
         {/* 4. Minimalist Font Specimen List with Generous Spacing */}
         <div className="divide-y divide-border rounded-[12px] border border-border bg-card overflow-hidden">
           {visibleFonts.map((font) => {
-            const fontDisplayFamily = `'${font.googleFontsFamily || font.name}', ${
-              font.category === "serif"
-                ? "serif"
-                : font.category === "mono"
-                ? "monospace"
-                : "sans-serif"
-            }`;
+            const fontDisplayFamily = getFontDisplayFamily(font);
             const liberCmd = `npx @liber-ui/cli add font-${font.slug}`;
 
             return (
@@ -433,29 +421,51 @@ export default function FontsPage() {
                   href={`/fonts/${font.slug}`}
                   className="block py-4 sm:py-6 overflow-x-hidden min-h-[5.5rem] flex items-center cursor-pointer"
                 >
-                  {font.previewImg && sampleText === defaultSample && !failedImages[font.slug] ? (
-                    /* eslint-disable-next-line @next/next/no-img-element */
-                    <img
-                      src={font.previewImg}
-                      alt={`${font.name} typography preview`}
-                      loading="lazy"
-                      onError={() =>
-                        setFailedImages((prev) => ({ ...prev, [font.slug]: true }))
-                      }
-                      className="h-10 sm:h-12 w-auto max-w-full object-contain dark:invert select-none pointer-events-none"
-                    />
-                  ) : (
-                    <p
-                      className="w-full text-foreground truncate select-none hover:text-primary transition-colors"
-                      style={{
-                        fontFamily: fontDisplayFamily,
-                        fontSize: "34px",
-                        lineHeight: 1.25,
-                      }}
-                    >
-                      {sampleText || defaultSample}
-                    </p>
-                  )}
+                  <div className="space-y-3 w-full">
+                    {/* Authentic Specimen Preview from Dafont */}
+                    {font.previewImg && !failedImages[font.slug] && (
+                      /* eslint-disable-next-line @next/next/no-img-element */
+                      <img
+                        src={font.previewImg}
+                        alt={`${font.name} typography preview`}
+                        loading="lazy"
+                        onError={() =>
+                          setFailedImages((prev) => ({ ...prev, [font.slug]: true }))
+                        }
+                        className="h-10 sm:h-12 w-auto max-w-full object-contain dark:invert select-none pointer-events-none"
+                      />
+                    )}
+
+                    {/* Custom typed text preview in active typographic font style */}
+                    {sampleText !== defaultSample && sampleText.trim() && (
+                      <div className="pt-1 flex items-baseline gap-2.5">
+                        <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-wider shrink-0">
+                          Live:
+                        </span>
+                        <p
+                          className="text-foreground truncate select-none text-2xl sm:text-3xl"
+                          style={{
+                            fontFamily: fontDisplayFamily,
+                            lineHeight: 1.25,
+                          }}
+                        >
+                          {sampleText}
+                        </p>
+                      </div>
+                    )}
+
+                    {!font.previewImg && (
+                      <p
+                        className="w-full text-foreground truncate select-none text-2xl sm:text-3xl"
+                        style={{
+                          fontFamily: fontDisplayFamily,
+                          lineHeight: 1.25,
+                        }}
+                      >
+                        {sampleText || defaultSample}
+                      </p>
+                    )}
+                  </div>
                 </Link>
               </article>
             );

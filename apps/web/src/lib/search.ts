@@ -1,7 +1,6 @@
 import MiniSearch from "minisearch";
 import {
   OFFICIAL_LOGOS,
-  SAMPLE_BLOCKS,
   SAMPLE_COMPONENTS,
   SAMPLE_THEMES,
   SAMPLE_FONTS,
@@ -13,7 +12,7 @@ export interface SearchDoc {
   slug: string;
   name: string;
   description: string;
-  kind: "logo" | "block" | "component" | "theme" | "font" | "animation";
+  kind: "logo" | "component" | "theme" | "font" | "animation";
   category: string;
   tags: string[];
   aliases?: string[];
@@ -32,16 +31,6 @@ const rawDocs: SearchDoc[] = [
     aliases: l.aliases,
     url: `/logos/${l.slug}`,
   })),
-  ...SAMPLE_BLOCKS.map((b) => ({
-    id: `block-${b.slug}`,
-    slug: b.slug,
-    name: b.name,
-    description: b.description,
-    kind: "block" as const,
-    category: b.category,
-    tags: b.tags,
-    url: `/blocks#${b.slug}`,
-  })),
   ...SAMPLE_COMPONENTS.map((c) => ({
     id: `component-${c.slug}`,
     slug: c.slug,
@@ -58,8 +47,8 @@ const rawDocs: SearchDoc[] = [
     name: t.name,
     description: t.description,
     kind: "theme" as const,
-    category: "theme",
-    tags: ["theme", "palette", "colors"],
+    category: t.category || "theme",
+    tags: [...(t.tags || []), "theme", "palette", "colors"],
     url: `/themes#${t.slug}`,
   })),
   ...SAMPLE_FONTS.map((f) => ({
