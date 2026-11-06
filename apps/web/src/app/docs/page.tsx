@@ -12,7 +12,6 @@ import {
   Type,
   BookOpen,
   Terminal,
-  Laptop,
   CheckCircle2,
   FileCode,
   Sparkles,
@@ -34,7 +33,7 @@ const SIDEBAR_LINKS: SidebarLink[] = [
   { id: "fonts-guide", label: "Typography & Fonts" },
   { id: "logos-guide", label: "Brand & Tech Logos" },
   { id: "themes-guide", label: "Color Themes & WCAG" },
-  { id: "blocks-guide", label: "UI Blocks & Components" },
+  { id: "animations-guide", label: "CSS & Tailwind Animations" },
   { id: "trademarks", label: "Trademark Policy" },
 ];
 
@@ -504,26 +503,38 @@ export function TechStack() {
             </div>
           </section>
 
-          {/* 7. Blocks & Components */}
-          <section className="space-y-4 pt-6 border-t border-border scroll-mt-24" id="blocks-guide">
+          {/* 7. CSS & Tailwind Animations */}
+          <section className="space-y-4 pt-6 border-t border-border scroll-mt-24" id="animations-guide">
             <div className="flex items-center gap-2">
-              <Laptop className="h-5 w-5 text-primary" />
+              <Sparkles className="h-5 w-5 text-primary" />
               <h2 className="text-2xl font-semibold tracking-tight text-foreground">
-                UI Blocks & Components
+                CSS & Tailwind Animations
               </h2>
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed">
-              Section templates and micro-components crafted with Tailwind CSS and Radix UI primitives. Available categories include Hero sections, Bento features, Pricing tables, Testimonial walls, Headers, and Footers.
+              Liber UI replaces generic static blocks with lightweight, hardware-accelerated CSS and Tailwind keyframe animations. Every animation is designed for instant copy-pasting into your project — either as raw CSS <code className="text-foreground">@keyframes</code> or as ready-to-use Tailwind CSS utility classes and configuration snippets.
             </p>
 
-            <div className="p-4 rounded-[10px] border border-border bg-card text-xs space-y-2">
-              <div className="flex items-center gap-2 font-mono font-semibold text-foreground">
-                <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                <span>Pure Code, No Blackbox</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+              <div className="p-4 rounded-[10px] border border-border bg-card text-xs space-y-2">
+                <div className="flex items-center gap-2 font-mono font-semibold text-foreground">
+                  <CheckCircle2 className="h-4 w-4 text-emerald-500" />
+                  <span>Option 1: Pure CSS</span>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Copy self-contained <code className="text-foreground">@keyframes</code> declarations and class selectors directly into your global stylesheet. Zero dependencies, pure GPU acceleration.
+                </p>
               </div>
-              <p className="text-muted-foreground leading-relaxed">
-                When you install or copy a block, you get standard, clean React JSX code that lives in your project. You can customize colors, responsive breakpoints, typography, and layout freely.
-              </p>
+
+              <div className="p-4 rounded-[10px] border border-border bg-card text-xs space-y-2">
+                <div className="flex items-center gap-2 font-mono font-semibold text-foreground">
+                  <CheckCircle2 className="h-4 w-4 text-emerald-500" />
+                  <span>Option 2: Tailwind CSS</span>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Use built-in arbitrary utility classes like <code className="text-foreground">animate-[shimmer_2s_infinite]</code> or copy the modular <code className="text-foreground">tailwind.config.js</code> keyframes extension.
+                </p>
+              </div>
             </div>
           </section>
 
