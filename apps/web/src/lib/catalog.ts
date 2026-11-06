@@ -1,5 +1,6 @@
 import catalogData from "../../../../packages/core/index.json";
 import scrapedFontsData from "../data/scraped-fonts.json";
+import colorhuntThemesData from "../data/colorhunt-themes.json";
 
 export interface LogoItem {
   slug: string;
@@ -57,7 +58,24 @@ export interface ThemeItem {
   author: string;
   swatches: string[]; // 5 hex colors [color1, color2, color3, color4, color5]
   tokens: Record<string, string>;
-  category: "standard" | "chromatic" | "high-contrast" | "warm" | "cool" | "pastel" | "retro" | "nature" | "neon";
+  category:
+    | "standard"
+    | "chromatic"
+    | "high-contrast"
+    | "warm"
+    | "cool"
+    | "cold"
+    | "pastel"
+    | "retro"
+    | "vintage"
+    | "nature"
+    | "neon"
+    | "popular"
+    | "trendy"
+    | "gold"
+    | "dark"
+    | "light"
+    | string;
   contrastRatio: string;
   wcagLevel: "AAA" | "AA";
   tags?: string[];
@@ -346,7 +364,7 @@ export const SAMPLE_COMPONENTS: ComponentItem[] = [
   },
 ];
 
-export const SAMPLE_THEMES: ThemeItem[] = [
+const BASE_THEMES: ThemeItem[] = [
   {
     slug: "neutral",
     kind: "theme",
@@ -1919,6 +1937,21 @@ export const SAMPLE_THEMES: ThemeItem[] = [
       border: "#333333",
     },
   },
+];
+
+const baseThemeSlugs = new Set(BASE_THEMES.map((t) => t.slug));
+const seenThemeSlugs = new Set<string>(baseThemeSlugs);
+const uniqueColorHuntThemes: ThemeItem[] = [];
+for (const t of colorhuntThemesData as ThemeItem[]) {
+  if (!seenThemeSlugs.has(t.slug)) {
+    seenThemeSlugs.add(t.slug);
+    uniqueColorHuntThemes.push(t);
+  }
+}
+
+export const SAMPLE_THEMES: ThemeItem[] = [
+  ...BASE_THEMES,
+  ...uniqueColorHuntThemes,
 ];
 
 const BASE_FONTS: FontItem[] = [

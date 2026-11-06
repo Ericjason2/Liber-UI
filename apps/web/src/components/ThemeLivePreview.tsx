@@ -47,7 +47,7 @@ export function ThemeLivePreview() {
           href="/themes"
           className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-foreground hover:underline"
         >
-          <span>Explore all 12 themes & Studio</span>
+          <span>Explore all {SAMPLE_THEMES.length} palettes & themes</span>
           <ArrowRight className="h-3.5 w-3.5" />
         </Link>
       </div>
