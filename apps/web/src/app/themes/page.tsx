@@ -40,11 +40,22 @@ export default function ThemesPage() {
 
     return [
       { id: "all", label: "All Palettes", count: SAMPLE_THEMES.length },
-      { id: "warm", label: "Warm & Sunsets", count: counts["warm"] || 0 },
-      { id: "cool", label: "Cool & Oceans", count: counts["cool"] || 0 },
-      { id: "nature", label: "Nature & Botanical", count: counts["nature"] || 0 },
+      { id: "popular", label: "Popular", count: counts["popular"] || 0 },
+      { id: "trendy", label: "Trendy", count: counts["trendy"] || 0 },
       { id: "pastel", label: "Soft Pastels", count: counts["pastel"] || 0 },
-      { id: "neon", label: "Neon & Synth", count: counts["neon"] || 0 },
+      { id: "vintage", label: "Vintage & Muted", count: counts["vintage"] || 0 },
+      { id: "retro", label: "Retro & Synth", count: counts["retro"] || 0 },
+      { id: "neon", label: "Neon & Cyber", count: counts["neon"] || 0 },
+      { id: "warm", label: "Warm & Sunsets", count: counts["warm"] || 0 },
+      { id: "cold", label: "Cold & Ocean", count: (counts["cold"] || 0) + (counts["cool"] || 0) },
+      { id: "nature", label: "Nature & Botanical", count: counts["nature"] || 0 },
+      { id: "dark", label: "Dark & Nocturnal", count: counts["dark"] || 0 },
+      { id: "light", label: "Light & Clean", count: counts["light"] || 0 },
+      { id: "gold", label: "Gold & Luxury", count: counts["gold"] || 0 },
+      { id: "summer", label: "Summer", count: counts["summer"] || 0 },
+      { id: "fall", label: "Autumn / Fall", count: counts["fall"] || 0 },
+      { id: "winter", label: "Winter Frost", count: counts["winter"] || 0 },
+      { id: "spring", label: "Spring Bloom", count: counts["spring"] || 0 },
       { id: "standard", label: "Minimal Industrial", count: counts["standard"] || 0 },
       { id: "high-contrast", label: "High Contrast", count: counts["high-contrast"] || 0 },
     ].filter((c) => c.id === "all" || c.count > 0);
@@ -68,7 +79,9 @@ export default function ThemesPage() {
         t.swatches.some((s) => s.toLowerCase().includes(q)) ||
         (t.tags && t.tags.some((tag) => tag.toLowerCase().includes(q)));
       const matchesCategory =
-        selectedCategory === "all" || t.category === selectedCategory;
+        selectedCategory === "all" ||
+        t.category === selectedCategory ||
+        (selectedCategory === "cold" && t.category === "cool");
       return matchesSearch && matchesCategory;
     });
 
@@ -133,7 +146,7 @@ export default function ThemesPage() {
           <span>/</span>
           <span className="text-foreground font-medium">Themes</span>
           <span className="ml-2 px-2 py-0.5 rounded-full text-[10px] bg-muted border border-border text-muted-foreground">
-            5-Swatch Palette System
+            Curated Palette System
           </span>
         </div>
 
@@ -143,7 +156,7 @@ export default function ThemesPage() {
               Color Palettes & Themes
             </h1>
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-              Curated 5-swatch color schemes engineered with verified WCAG contrast standards.
+              Curated modern color schemes with verified WCAG contrast standards.
               Click any color stripe to copy its HEX code instantly, or export clean CSS variables and Tailwind tokens.
             </p>
           </div>
@@ -227,13 +240,9 @@ export default function ThemesPage() {
             .join("\n");
           const tailwindConfigSnippet = JSON.stringify(
             {
-              colors: {
-                [`${theme.slug}-1`]: theme.swatches[0],
-                [`${theme.slug}-2`]: theme.swatches[1],
-                [`${theme.slug}-3`]: theme.swatches[2],
-                [`${theme.slug}-4`]: theme.swatches[3],
-                [`${theme.slug}-5`]: theme.swatches[4],
-              },
+              colors: Object.fromEntries(
+                theme.swatches.map((hex, i) => [`${theme.slug}-${i + 1}`, hex])
+              ),
             },
             null,
             2

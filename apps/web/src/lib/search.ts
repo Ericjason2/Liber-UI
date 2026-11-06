@@ -19,7 +19,7 @@ export interface SearchDoc {
   url: string;
 }
 
-const docs: SearchDoc[] = [
+const rawDocs: SearchDoc[] = [
   ...OFFICIAL_LOGOS.map((l) => ({
     id: `logo-${l.slug}`,
     slug: l.slug,
@@ -72,6 +72,14 @@ const docs: SearchDoc[] = [
     url: `/fonts#${f.slug}`,
   })),
 ];
+
+const uniqueDocsMap = new Map<string, SearchDoc>();
+for (const doc of rawDocs) {
+  if (!uniqueDocsMap.has(doc.id)) {
+    uniqueDocsMap.set(doc.id, doc);
+  }
+}
+const docs: SearchDoc[] = Array.from(uniqueDocsMap.values());
 
 const miniSearch = new MiniSearch<SearchDoc>({
   fields: ["name", "aliases", "description", "tags", "category"],
