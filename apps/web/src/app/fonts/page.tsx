@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import {
   Download,
@@ -14,11 +14,7 @@ import {
 } from "lucide-react";
 import { SAMPLE_FONTS } from "@/lib/catalog";
 import { useToast } from "@/context/ToastContext";
-import { getFontDisplayFamily } from "@/lib/fontFallbacks";
-
-// Open-source stylesheet URL covering the curated open-license fonts and expressive thematic families
-const OPEN_FONTS_CATALOG_HREF =
-  "https://fonts.googleapis.com/css2?family=Audiowide&family=Bangers&family=Bebas+Neue&family=Caveat:wght@400;700&family=Cinzel:wght@400;600&family=Creepster&family=DM+Sans:wght@400;500;700&family=Fira+Code:wght@400;500;700&family=Geist+Mono:wght@400;500;600&family=Geist:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Lato:wght@400;700&family=MedievalSharp&family=Montserrat:wght@400;600;700&family=Nosifer&family=Orbitron:wght@500;700&family=Pacifico&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;600;700&family=Press+Start+2P&family=Righteous&family=Roboto:wght@400;500;700&family=Rye&family=Space+Grotesk:wght@400;600;700&family=Syne:wght@500;700;800&family=UnifrakturMaguntia&family=VT323&display=swap";
+import { getFontPreviewUrl } from "@/lib/fontPreviewUtils";
 
 const ALPHABET = [
   "All",
@@ -49,7 +45,15 @@ const THEME_SUBTHEMES: Record<string, string[]> = {
 export default function FontsPage() {
   const defaultSample = "The quick brown fox jumps over the lazy dog";
   const [sampleText, setSampleText] = useState(defaultSample);
+  const [debouncedSampleText, setDebouncedSampleText] = useState(defaultSample);
   const [searchQuery, setSearchQuery] = useState("");
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedSampleText(sampleText);
+    }, 250);
+    return () => clearTimeout(handler);
+  }, [sampleText]);
   const [selectedTheme, setSelectedTheme] = useState<string>("all");
   const [selectedSubtheme, setSelectedSubtheme] = useState<string>("all");
   const [selectedLetter, setSelectedLetter] = useState<string>("All");
@@ -157,9 +161,6 @@ export default function FontsPage() {
 
   return (
     <>
-      {/* Inject open web fonts stylesheet for live glyph rendering in specimen tester */}
-      <link rel="stylesheet" href={OPEN_FONTS_CATALOG_HREF} />
-
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 py-10 sm:py-16 space-y-10">
         {/* 1. Monospace Breadcrumb & Top Bar */}
         <div className="space-y-4">
@@ -342,8 +343,13 @@ export default function FontsPage() {
         {/* 4. Minimalist Font Specimen List with Generous Spacing */}
         <div className="divide-y divide-border rounded-[12px] border border-border bg-card overflow-hidden">
           {visibleFonts.map((font) => {
-            const fontDisplayFamily = getFontDisplayFamily(font);
             const liberCmd = `npx @liber-ui/cli add font-${font.slug}`;
+            const isCustomText = Boolean(
+              debouncedSampleText && debouncedSampleText !== defaultSample && debouncedSampleText.trim()
+            );
+            const previewUrl = isCustomText
+              ? getFontPreviewUrl(font, debouncedSampleText, 44)
+              : (font.previewImg || "");
 
             return (
               <article
@@ -421,51 +427,23 @@ export default function FontsPage() {
                   href={`/fonts/${font.slug}`}
                   className="block py-4 sm:py-6 overflow-x-hidden min-h-[5.5rem] flex items-center cursor-pointer"
                 >
-                  <div className="space-y-3 w-full">
-                    {/* Authentic Specimen Preview from Dafont */}
-                    {font.previewImg && !failedImages[font.slug] && (
-                      /* eslint-disable-next-line @next/next/no-img-element */
-                      <img
-                        src={font.previewImg}
-                        alt={`${font.name} typography preview`}
-                        loading="lazy"
-                        onError={() =>
-                          setFailedImages((prev) => ({ ...prev, [font.slug]: true }))
-                        }
-                        className="h-10 sm:h-12 w-auto max-w-full object-contain dark:invert select-none pointer-events-none"
-                      />
-                    )}
-
-                    {/* Custom typed text preview in active typographic font style */}
-                    {sampleText !== defaultSample && sampleText.trim() && (
-                      <div className="pt-1 flex items-baseline gap-2.5">
-                        <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-wider shrink-0">
-                          Live:
-                        </span>
-                        <p
-                          className="text-foreground truncate select-none text-2xl sm:text-3xl"
-                          style={{
-                            fontFamily: fontDisplayFamily,
-                            lineHeight: 1.25,
-                          }}
-                        >
-                          {sampleText}
-                        </p>
-                      </div>
-                    )}
-
-                    {!font.previewImg && (
-                      <p
-                        className="w-full text-foreground truncate select-none text-2xl sm:text-3xl"
-                        style={{
-                          fontFamily: fontDisplayFamily,
-                          lineHeight: 1.25,
-                        }}
-                      >
-                        {sampleText || defaultSample}
-                      </p>
-                    )}
-                  </div>
+                  {previewUrl && !failedImages[font.slug] ? (
+                    /* eslint-disable-next-line @next/next/no-img-element */
+                    <img
+                      key={`${font.slug}-${sampleText}`}
+                      src={previewUrl}
+                      alt={`${font.name} typography preview`}
+                      loading="lazy"
+                      onError={() =>
+                        setFailedImages((prev) => ({ ...prev, [font.slug]: true }))
+                      }
+                      className="h-10 sm:h-12 w-auto max-w-full object-contain dark:invert select-none pointer-events-none"
+                    />
+                  ) : (
+                    <p className="w-full text-foreground truncate select-none text-2xl sm:text-3xl font-sans">
+                      {sampleText || defaultSample}
+                    </p>
+                  )}
                 </Link>
               </article>
             );

@@ -1,18 +1,13 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useSyncExternalStore, type ReactNode } from "react";
-import { SAMPLE_THEMES, SAMPLE_FONTS } from "@/lib/catalog";
 
 type Theme = "light" | "dark";
 
-export interface GlobalCustomizerContextType {
+export interface ThemeContextType {
   theme: Theme;
   toggleTheme: () => void;
   setTheme: (t: Theme) => void;
-  activePalette: string;
-  setActivePalette: (slug: string) => void;
-  activeFont: string;
-  setActiveFont: (slug: string) => void;
 }
 
 function getSystemTheme(): Theme {
@@ -21,8 +16,6 @@ function getSystemTheme(): Theme {
 }
 
 let currentTheme: Theme = "light";
-let currentPalette = "neutral";
-let currentFont = "inter";
 const listeners = new Set<() => void>();
 
 function notify() {
@@ -36,49 +29,16 @@ function subscribe(callback: () => void) {
   };
 }
 
-function applyPaletteToDom(slug: string) {
-  if (typeof document === "undefined") return;
-  const found = SAMPLE_THEMES.find((t) => t.slug === slug);
-  if (!found || !found.tokens) return;
-  const root = document.documentElement;
-  if (found.tokens.primary) {
-    root.style.setProperty("--primary", found.tokens.primary);
-    root.style.setProperty("--ring", found.tokens.primary);
-  }
-  if (found.tokens.accent) {
-    root.style.setProperty("--accent", found.tokens.accent);
-  }
-  if (found.tokens.border) {
-    root.style.setProperty("--border", found.tokens.border);
-  }
-}
-
-function applyFontToDom(slug: string) {
-  if (typeof document === "undefined") return;
-  const fontObj = SAMPLE_FONTS.find((f) => f.slug === slug);
-  const root = document.documentElement;
-  if (fontObj) {
-    const familyStr = `"${fontObj.name}", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`;
-    root.style.setProperty("--font-sans", familyStr);
-  } else {
-    root.style.removeProperty("--font-sans");
-  }
-}
-
 function applyThemeToDom(t: Theme) {
   if (typeof document !== "undefined") {
     document.documentElement.classList.toggle("dark", t === "dark");
   }
 }
 
-const ThemeContext = createContext<GlobalCustomizerContextType>({
+const ThemeContext = createContext<ThemeContextType>({
   theme: "light",
   toggleTheme: () => {},
   setTheme: () => {},
-  activePalette: "neutral",
-  setActivePalette: () => {},
-  activeFont: "inter",
-  setActiveFont: () => {},
 });
 
 const emptySubscribe = () => () => {};
@@ -86,26 +46,19 @@ const emptySubscribe = () => () => {};
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
   const theme = useSyncExternalStore(subscribe, () => currentTheme, () => "light" as Theme);
-  const activePalette = useSyncExternalStore(subscribe, () => currentPalette, () => "neutral");
-  const activeFont = useSyncExternalStore(subscribe, () => currentFont, () => "inter");
 
   useEffect(() => {
+    // Purge legacy customizer keys to ensure the app stays locked to neutral & geist
+    try {
+      localStorage.removeItem("liber-palette");
+      localStorage.removeItem("liber-font");
+    } catch {
+      // Ignore in restricted environments
+    }
+
     const storedTheme = localStorage.getItem("liber-theme") as Theme | null;
     currentTheme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : getSystemTheme();
     applyThemeToDom(currentTheme);
-
-    const storedPalette = localStorage.getItem("liber-palette");
-    if (storedPalette) {
-      currentPalette = storedPalette;
-      applyPaletteToDom(storedPalette);
-    }
-
-    const storedFont = localStorage.getItem("liber-font");
-    if (storedFont) {
-      currentFont = storedFont;
-      applyFontToDom(storedFont);
-    }
-
     notify();
 
     const mql = window.matchMedia("(prefers-color-scheme: dark)");
@@ -131,30 +84,12 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     setTheme(currentTheme === "dark" ? "light" : "dark");
   };
 
-  const setActivePalette = (slug: string) => {
-    currentPalette = slug;
-    localStorage.setItem("liber-palette", slug);
-    applyPaletteToDom(slug);
-    notify();
-  };
-
-  const setActiveFont = (slug: string) => {
-    currentFont = slug;
-    localStorage.setItem("liber-font", slug);
-    applyFontToDom(slug);
-    notify();
-  };
-
   return (
     <ThemeContext.Provider
       value={{
         theme,
         toggleTheme,
         setTheme,
-        activePalette,
-        setActivePalette,
-        activeFont,
-        setActiveFont,
       }}
     >
       <div className={mounted ? "" : "invisible"}>{children}</div>
