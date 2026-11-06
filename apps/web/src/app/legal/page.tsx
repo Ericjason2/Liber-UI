@@ -46,7 +46,7 @@ export default function LegalPage() {
         <div className="space-y-3 text-xs text-muted-foreground leading-relaxed">
           <p>
             The software source code developed for Liber (including build scripts, React logo
-            components, UI blocks, components, and CSS theme definitions) is licensed under the
+            components, CSS keyframe animations, UI components, and theme definitions) is licensed under the
             <strong className="text-foreground font-semibold"> MIT License</strong>.
           </p>
           <div className="p-4 rounded-[10px] border border-border bg-surface-subtle font-mono text-[11px] text-foreground leading-relaxed">

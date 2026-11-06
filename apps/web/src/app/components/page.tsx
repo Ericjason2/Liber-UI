@@ -76,9 +76,6 @@ export default function ComponentsPage() {
           <Link href="/" className="hover:text-foreground transition-colors">Catalog</Link>
           <span>/</span>
           <span className="text-foreground font-medium">Components</span>
-          <span className="ml-2 px-2 py-0.5 rounded-full text-[10px] bg-muted border border-border text-muted-foreground">
-            Radix Primitives · Pure Tailwind CSS
-          </span>
         </div>
 
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-4 border-b border-border">
@@ -116,11 +113,10 @@ export default function ComponentsPage() {
               <button
                 key={c.id}
                 onClick={() => setSelectedCat(c.id)}
-                className={`px-3 py-2 rounded-[8px] text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${
-                  selectedCat === c.id
+                className={`px-3 py-2 rounded-[8px] text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${selectedCat === c.id
                     ? "bg-primary text-primary-foreground font-semibold"
                     : "border border-border bg-card text-muted-foreground hover:text-foreground"
-                }`}
+                  }`}
               >
                 <span>{c.label}</span>
                 <span className="font-mono text-[10px] opacity-70">({c.count})</span>
@@ -160,11 +156,10 @@ export default function ComponentsPage() {
                       onClick={() =>
                         setComponentModes((prev) => ({ ...prev, [item.slug]: "preview" }))
                       }
-                      className={`px-2 py-0.5 rounded-[4px] font-medium transition-colors ${
-                        currentMode === "preview"
+                      className={`px-2 py-0.5 rounded-[4px] font-medium transition-colors ${currentMode === "preview"
                           ? "bg-muted text-foreground font-semibold"
                           : "text-muted-foreground hover:text-foreground"
-                      }`}
+                        }`}
                     >
                       Preview
                     </button>
@@ -172,11 +167,10 @@ export default function ComponentsPage() {
                       onClick={() =>
                         setComponentModes((prev) => ({ ...prev, [item.slug]: "code" }))
                       }
-                      className={`px-2 py-0.5 rounded-[4px] font-medium transition-colors ${
-                        currentMode === "code"
+                      className={`px-2 py-0.5 rounded-[4px] font-medium transition-colors ${currentMode === "code"
                           ? "bg-muted text-foreground font-semibold"
                           : "text-muted-foreground hover:text-foreground"
-                      }`}
+                        }`}
                     >
                       Code
                     </button>
@@ -299,11 +293,10 @@ export default function ComponentsPage() {
                           <button
                             key={tab}
                             onClick={() => setActiveTab(tab)}
-                            className={`flex-1 py-1 rounded-[6px] capitalize font-medium transition-colors ${
-                              activeTab === tab
+                            className={`flex-1 py-1 rounded-[6px] capitalize font-medium transition-colors ${activeTab === tab
                                 ? "bg-card text-foreground font-semibold shadow-sm"
                                 : "text-muted-foreground hover:text-foreground"
-                            }`}
+                              }`}
                           >
                             {tab}
                           </button>
@@ -324,9 +317,8 @@ export default function ComponentsPage() {
                       >
                         <span>How are assets installed?</span>
                         <ChevronDown
-                          className={`h-4 w-4 text-muted-foreground transition-transform ${
-                            accordionOpen ? "rotate-180" : ""
-                          }`}
+                          className={`h-4 w-4 text-muted-foreground transition-transform ${accordionOpen ? "rotate-180" : ""
+                            }`}
                         />
                       </div>
                       {accordionOpen && (
@@ -367,16 +359,14 @@ export default function ComponentsPage() {
                       </span>
                       <button
                         onClick={() => setSwitchChecked(!switchChecked)}
-                        className={`w-11 h-6 rounded-full p-0.5 border transition-colors ${
-                          switchChecked ? "bg-primary border-primary" : "bg-muted border-border"
-                        }`}
+                        className={`w-11 h-6 rounded-full p-0.5 border transition-colors ${switchChecked ? "bg-primary border-primary" : "bg-muted border-border"
+                          }`}
                       >
                         <span
-                          className={`w-5 h-5 rounded-full block transition-transform ${
-                            switchChecked
+                          className={`w-5 h-5 rounded-full block transition-transform ${switchChecked
                               ? "bg-primary-foreground translate-x-5"
                               : "bg-muted-foreground/60 translate-x-0"
-                          }`}
+                            }`}
                         />
                       </button>
                     </div>

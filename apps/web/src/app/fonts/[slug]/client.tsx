@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   ArrowLeft,
@@ -9,11 +9,13 @@ import {
   Check,
   Terminal,
   Code2,
-  Type,
   RotateCcw,
+  ArrowUpRight,
+  Sparkles,
 } from "lucide-react";
 import type { FontItem } from "@/lib/catalog";
 import { useToast } from "@/context/ToastContext";
+import { getFontPreviewUrl, getFontCharmapUrl } from "@/lib/fontPreviewUtils";
 
 interface FontDetailClientProps {
   font: FontItem;
@@ -27,21 +29,38 @@ const SYMBOL_CHARS = "!@#$%^&*()_+-=[]{}|;:,.<>?/".split("");
 
 const PRESET_SIZES = [24, 32, 48, 64, 72, 96];
 
+const QUICK_SAMPLES = [
+  "The quick brown fox jumps over the lazy dog",
+  "Pack my box with five dozen liquor jugs",
+  "0123456789 · FREE TYPOGRAPHY",
+  "Liber UI · Modern Catalog",
+];
+
 export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) {
   const defaultSample = "The quick brown fox jumps over the lazy dog";
   const [sampleText, setSampleText] = useState(defaultSample);
+  const [debouncedText, setDebouncedText] = useState(defaultSample);
   const [fontSize, setFontSize] = useState<number>(48);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<"specimen" | "alphabet" | "install">("specimen");
+  const [imgLoaded, setImgLoaded] = useState(true);
   const { toast } = useToast();
 
-  const fontDisplayFamily = `'${font.googleFontsFamily || font.name}', ${
-    font.category === "serif"
-      ? "serif"
-      : font.category === "mono"
-      ? "monospace"
-      : "sans-serif"
-  }`;
+  const charmapUrl = getFontCharmapUrl(font);
+
+  // Debounce typed text by 250ms for smooth live updates without request spam
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedText(sampleText);
+    }, 250);
+    return () => clearTimeout(handler);
+  }, [sampleText]);
+
+  const activePreviewUrl = getFontPreviewUrl(
+    font,
+    debouncedText.trim() ? debouncedText : defaultSample,
+    fontSize
+  );
 
   const liberCmd = `npx @liber-ui/cli add font-${font.slug}`;
   const cssFontFaceSnippet = `@font-face {\n  font-family: '${font.name}';\n  src: url('/fonts/${font.slug}/${font.name}-Regular.woff2') format('woff2'),\n       url('/fonts/${font.slug}/${font.name}-Regular.ttf') format('truetype');\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n}\n\n:root {\n  --font-${font.slug}: '${font.name}', sans-serif;\n}`;
@@ -196,8 +215,11 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
                 <input
                   type="text"
                   value={sampleText}
-                  onChange={(e) => setSampleText(e.target.value)}
-                  placeholder="Type any custom text to preview..."
+                  onChange={(e) => {
+                    setSampleText(e.target.value);
+                    setImgLoaded(false);
+                  }}
+                  placeholder="Type any custom text to preview in this font..."
                   className="w-full h-11 pl-4 pr-24 rounded-[10px] border border-border bg-muted/40 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:bg-card focus:ring-2 focus:ring-ring transition-all"
                 />
                 <div className="absolute right-2.5 flex items-center gap-1.5">
@@ -206,8 +228,12 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
                   </span>
                   {sampleText && (
                     <button
-                      onClick={() => setSampleText("")}
+                      onClick={() => {
+                        setSampleText("");
+                        setImgLoaded(false);
+                      }}
                       className="w-6 h-6 flex items-center justify-center text-muted-foreground hover:text-foreground text-xs"
+                      title="Clear text"
                     >
                       ✕
                     </button>
@@ -219,23 +245,29 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
                 onClick={() => {
                   setSampleText(defaultSample);
                   setFontSize(48);
+                  setImgLoaded(false);
                 }}
                 className="h-11 px-3.5 rounded-[10px] border border-border bg-card hover:bg-muted text-xs font-mono text-muted-foreground hover:text-foreground flex items-center gap-1.5 transition-colors self-end sm:self-auto"
+                title="Reset to default pangram"
               >
                 <RotateCcw className="h-3.5 w-3.5" />
                 <span>Reset</span>
               </button>
             </div>
 
-            {/* Font Size Presets */}
-            <div className="flex items-center justify-between gap-4 pt-2 border-t border-border/60">
+            {/* Quick Presets & Font Size Deck */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 pt-3 border-t border-border/60">
+              {/* Preset Sizes */}
               <div className="flex items-center gap-2">
                 <span className="text-xs font-mono text-muted-foreground">Size:</span>
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-1 flex-wrap">
                   {PRESET_SIZES.map((size) => (
                     <button
                       key={size}
-                      onClick={() => setFontSize(size)}
+                      onClick={() => {
+                        setFontSize(size);
+                        setImgLoaded(false);
+                      }}
                       className={`px-2.5 py-1 rounded-[6px] text-xs font-mono transition-colors ${
                         fontSize === size
                           ? "bg-primary text-primary-foreground font-semibold"
@@ -248,10 +280,52 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
                 </div>
               </div>
 
-              <div className="hidden sm:flex items-center gap-2 text-xs font-mono text-muted-foreground">
-                <Type className="h-3.5 w-3.5" />
-                <span>Editable Viewport</span>
+              {/* Quick Sample Text Pills */}
+              <div className="flex items-center gap-1.5 flex-wrap">
+                <span className="text-[11px] font-mono text-muted-foreground mr-1">Presets:</span>
+                {QUICK_SAMPLES.map((qs, i) => (
+                  <button
+                    key={i}
+                    onClick={() => {
+                      setSampleText(qs);
+                      setImgLoaded(false);
+                    }}
+                    className="px-2 py-0.5 rounded-[6px] border border-border bg-muted/30 hover:bg-muted text-[11px] font-mono text-muted-foreground hover:text-foreground transition-colors truncate max-w-[140px] sm:max-w-[200px]"
+                    title={qs}
+                  >
+                    {qs}
+                  </button>
+                ))}
               </div>
+            </div>
+          </div>
+
+          {/* Authentic Specimen Viewport (rendered via authentic Dafont engine) */}
+          <div className="p-8 sm:p-12 rounded-[12px] border border-border bg-card min-h-[16rem] flex flex-col justify-center items-center text-center overflow-hidden relative">
+            <div className="w-full flex justify-between items-center text-[11px] font-mono text-muted-foreground pb-4 mb-4 border-b border-border/60">
+              <span className="inline-flex items-center gap-1.5">
+                <Sparkles className="h-3 w-3 text-primary" />
+                <span>Authentic Typeface Preview ({font.name})</span>
+              </span>
+              <span>{fontSize}px rendering</span>
+            </div>
+
+            <div className="py-6 w-full flex items-center justify-center overflow-x-auto min-h-[6rem]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                key={activePreviewUrl}
+                src={activePreviewUrl}
+                alt={sampleText || defaultSample}
+                onLoad={() => setImgLoaded(true)}
+                className={`max-w-full h-auto object-contain dark:invert select-none pointer-events-none transition-opacity duration-200 ${
+                  imgLoaded ? "opacity-100" : "opacity-40"
+                }`}
+              />
+            </div>
+
+            <div className="w-full pt-4 mt-4 border-t border-border/40 flex items-center justify-between text-[11px] font-mono text-muted-foreground">
+              <span>Dynamic preview rendered natively in {font.name}</span>
+              <span>Vector TrueType Engine</span>
             </div>
           </div>
 
@@ -260,175 +334,227 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
             <div className="p-6 rounded-[12px] border border-border bg-card/60 space-y-2">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-mono text-muted-foreground">
-                  Original Typeface Glyph Sheet
+                  Original Typeface Specimen Banner
                 </span>
                 <span className="text-[11px] font-mono text-muted-foreground">
-                  Vector Preview Strip
+                  Official Font Strip
                 </span>
               </div>
               <div className="py-4 flex items-center justify-center overflow-x-auto">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={font.previewImg}
-                  alt={`${font.name} original glyph sheet`}
+                  alt={`${font.name} original specimen strip`}
                   className="h-14 sm:h-16 w-auto max-w-full object-contain dark:invert select-none"
                 />
               </div>
             </div>
           )}
-
-          {/* Live Editable Specimen Viewport */}
-          <div className="p-8 sm:p-12 rounded-[12px] border border-border bg-card min-h-[16rem] flex flex-col justify-center overflow-hidden">
-            <p
-              contentEditable
-              suppressContentEditableWarning
-              className="w-full text-foreground break-words outline-none select-all"
-              style={{
-                fontFamily: fontDisplayFamily,
-                fontSize: `${fontSize}px`,
-                lineHeight: 1.25,
-              }}
-            >
-              {sampleText || defaultSample}
-            </p>
-          </div>
         </div>
       )}
 
       {/* 4. Tab: Character Map & Full Alphabet */}
       {activeTab === "alphabet" && (
         <div className="space-y-8">
-          {/* Authentic Preview Image if present */}
-          {font.previewImg && (
-            <div className="p-6 rounded-[12px] border border-border bg-card space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-mono text-muted-foreground">
-                  Authentic Character Set Rendering
-                </span>
-                <span className="text-[11px] font-mono text-muted-foreground">
-                  Glyph Map
-                </span>
+          {/* Authentic Character Map & Full Alphabet Sheet from author */}
+          {charmapUrl && (
+            <div className="p-6 sm:p-8 rounded-[12px] border border-border bg-card space-y-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-border pb-4">
+                <div>
+                  <h3 className="text-base font-semibold text-foreground">
+                    Authentic Complete Character Map & Glyphs
+                  </h3>
+                  <p className="text-xs text-muted-foreground">
+                    Handcrafted vector glyphs (Uppercase A-Z, Lowercase a-z, Numerals, Accents & Symbols) from the original typeface.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <a
+                    href={charmapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-8 px-3 rounded-[8px] border border-border bg-muted/40 hover:bg-muted text-xs font-mono text-foreground flex items-center gap-1.5 transition-colors"
+                  >
+                    <span>Full Resolution</span>
+                    <ArrowUpRight className="h-3 w-3" />
+                  </a>
+                </div>
               </div>
-              <div className="py-4 flex items-center justify-center overflow-x-auto">
+
+              <div className="p-4 sm:p-8 rounded-[8px] bg-card border border-border/70 overflow-x-auto flex items-center justify-center">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={font.previewImg}
-                  alt={`${font.name} glyphs`}
-                  className="h-16 sm:h-20 w-auto max-w-full object-contain dark:invert select-none"
+                  src={charmapUrl}
+                  alt={`${font.name} complete character map`}
+                  className="w-full max-w-4xl h-auto object-contain dark:invert select-none"
+                  loading="lazy"
                 />
               </div>
             </div>
           )}
 
-          {/* Uppercase Alphabet */}
-          <div className="space-y-3">
-            <div className="flex items-center justify-between">
-              <h2 className="text-sm font-semibold tracking-tight text-foreground font-mono">
-                Uppercase (A–Z)
-              </h2>
-              <span className="text-xs font-mono text-muted-foreground">26 glyphs</span>
+          {/* Authentic Rendered Alphabet Strips directly in this typeface */}
+          <div className="p-6 sm:p-8 rounded-[12px] border border-border bg-card space-y-6">
+            <h3 className="text-sm font-semibold tracking-tight text-foreground font-mono">
+              Live Alphabet Strips ({font.name})
+            </h3>
+
+            {/* Uppercase Strip */}
+            <div className="p-4 rounded-[10px] border border-border bg-muted/20 space-y-2">
+              <div className="flex items-center justify-between text-[11px] font-mono text-muted-foreground">
+                <span>Uppercase Alphabet (A–Z)</span>
+                <span>26 Glyphs</span>
+              </div>
+              <div className="py-2 overflow-x-auto flex items-center justify-start min-h-[3rem]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={getFontPreviewUrl(font, "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z", 40)}
+                  alt="Uppercase Alphabet"
+                  loading="lazy"
+                  className="h-10 sm:h-12 w-auto max-w-none object-contain dark:invert select-none pointer-events-none"
+                />
+              </div>
             </div>
-            <div className="grid grid-cols-6 sm:grid-cols-9 md:grid-cols-13 gap-2">
-              {UPPERCASE_CHARS.map((char) => (
-                <div
-                  key={char}
-                  className="aspect-square rounded-[8px] border border-border bg-card flex flex-col items-center justify-center hover:border-primary/50 transition-colors group cursor-default"
-                >
-                  <span
-                    className="text-2xl text-foreground select-all"
-                    style={{ fontFamily: fontDisplayFamily }}
-                  >
-                    {char}
-                  </span>
-                  <span className="text-[10px] font-mono text-muted-foreground opacity-60 group-hover:opacity-100">
-                    {char}
-                  </span>
-                </div>
-              ))}
+
+            {/* Lowercase Strip */}
+            <div className="p-4 rounded-[10px] border border-border bg-muted/20 space-y-2">
+              <div className="flex items-center justify-between text-[11px] font-mono text-muted-foreground">
+                <span>Lowercase Alphabet (a–z)</span>
+                <span>26 Glyphs</span>
+              </div>
+              <div className="py-2 overflow-x-auto flex items-center justify-start min-h-[3rem]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={getFontPreviewUrl(font, "a b c d e f g h i j k l m n o p q r s t u v w x y z", 40)}
+                  alt="Lowercase Alphabet"
+                  loading="lazy"
+                  className="h-10 sm:h-12 w-auto max-w-none object-contain dark:invert select-none pointer-events-none"
+                />
+              </div>
+            </div>
+
+            {/* Numerals Strip */}
+            <div className="p-4 rounded-[10px] border border-border bg-muted/20 space-y-2">
+              <div className="flex items-center justify-between text-[11px] font-mono text-muted-foreground">
+                <span>Numerals (0–9)</span>
+                <span>10 Glyphs</span>
+              </div>
+              <div className="py-2 overflow-x-auto flex items-center justify-start min-h-[3rem]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={getFontPreviewUrl(font, "0 1 2 3 4 5 6 7 8 9", 40)}
+                  alt="Numerals"
+                  loading="lazy"
+                  className="h-10 sm:h-12 w-auto max-w-none object-contain dark:invert select-none pointer-events-none"
+                />
+              </div>
+            </div>
+
+            {/* Punctuation & Symbols Strip */}
+            <div className="p-4 rounded-[10px] border border-border bg-muted/20 space-y-2">
+              <div className="flex items-center justify-between text-[11px] font-mono text-muted-foreground">
+                <span>Punctuation & Special Symbols</span>
+                <span>Standard Glyphs</span>
+              </div>
+              <div className="py-2 overflow-x-auto flex items-center justify-start min-h-[3rem]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={getFontPreviewUrl(font, "! ? @ # $ % & * ( ) - _ + = [ ] { } : ; , .", 36)}
+                  alt="Punctuation & Symbols"
+                  loading="lazy"
+                  className="h-9 sm:h-10 w-auto max-w-none object-contain dark:invert select-none pointer-events-none"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Lowercase Alphabet */}
-          <div className="space-y-3">
+          {/* Reference Codepoints Matrix */}
+          <div className="space-y-6">
             <div className="flex items-center justify-between">
-              <h2 className="text-sm font-semibold tracking-tight text-foreground font-mono">
-                Lowercase (a–z)
-              </h2>
-              <span className="text-xs font-mono text-muted-foreground">26 glyphs</span>
+              <h3 className="text-sm font-semibold tracking-tight text-foreground font-mono">
+                Unicode Codepoints Reference Matrix
+              </h3>
+              <span className="text-xs font-mono text-muted-foreground">Standard ASCII mapping</span>
             </div>
-            <div className="grid grid-cols-6 sm:grid-cols-9 md:grid-cols-13 gap-2">
-              {LOWERCASE_CHARS.map((char) => (
-                <div
-                  key={char}
-                  className="aspect-square rounded-[8px] border border-border bg-card flex flex-col items-center justify-center hover:border-primary/50 transition-colors group cursor-default"
-                >
-                  <span
-                    className="text-2xl text-foreground select-all"
-                    style={{ fontFamily: fontDisplayFamily }}
-                  >
-                    {char}
-                  </span>
-                  <span className="text-[10px] font-mono text-muted-foreground opacity-60 group-hover:opacity-100">
-                    {char}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
 
-          {/* Numbers */}
-          <div className="space-y-3">
-            <div className="flex items-center justify-between">
-              <h2 className="text-sm font-semibold tracking-tight text-foreground font-mono">
-                Numerals (0–9)
-              </h2>
-              <span className="text-xs font-mono text-muted-foreground">10 glyphs</span>
-            </div>
-            <div className="grid grid-cols-5 sm:grid-cols-10 gap-2">
-              {NUMBER_CHARS.map((char) => (
-                <div
-                  key={char}
-                  className="aspect-square rounded-[8px] border border-border bg-card flex flex-col items-center justify-center hover:border-primary/50 transition-colors group cursor-default"
-                >
-                  <span
-                    className="text-2xl text-foreground select-all"
-                    style={{ fontFamily: fontDisplayFamily }}
+            {/* Uppercase Grid */}
+            <div className="space-y-2">
+              <span className="text-xs font-mono text-muted-foreground">Uppercase (A-Z)</span>
+              <div className="grid grid-cols-6 sm:grid-cols-9 md:grid-cols-13 gap-2">
+                {UPPERCASE_CHARS.map((char) => (
+                  <div
+                    key={char}
+                    className="aspect-square rounded-[8px] border border-border bg-card flex flex-col items-center justify-center hover:border-primary/50 transition-colors group cursor-default"
                   >
-                    {char}
-                  </span>
-                  <span className="text-[10px] font-mono text-muted-foreground opacity-60 group-hover:opacity-100">
-                    {char}
-                  </span>
-                </div>
-              ))}
+                    <span className="text-xl font-bold text-foreground font-mono">
+                      {char}
+                    </span>
+                    <span className="text-[10px] font-mono text-muted-foreground opacity-60">
+                      U+{char.charCodeAt(0).toString(16).toUpperCase().padStart(4, "0")}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* Punctuation & Symbols */}
-          <div className="space-y-3">
-            <div className="flex items-center justify-between">
-              <h2 className="text-sm font-semibold tracking-tight text-foreground font-mono">
-                Punctuation & Special Symbols
-              </h2>
-              <span className="text-xs font-mono text-muted-foreground">{SYMBOL_CHARS.length} glyphs</span>
-            </div>
-            <div className="grid grid-cols-6 sm:grid-cols-9 md:grid-cols-14 gap-2">
-              {SYMBOL_CHARS.map((char) => (
-                <div
-                  key={char}
-                  className="aspect-square rounded-[8px] border border-border bg-card flex flex-col items-center justify-center hover:border-primary/50 transition-colors group cursor-default"
-                >
-                  <span
-                    className="text-xl text-foreground select-all"
-                    style={{ fontFamily: fontDisplayFamily }}
+            {/* Lowercase Grid */}
+            <div className="space-y-2">
+              <span className="text-xs font-mono text-muted-foreground">Lowercase (a-z)</span>
+              <div className="grid grid-cols-6 sm:grid-cols-9 md:grid-cols-13 gap-2">
+                {LOWERCASE_CHARS.map((char) => (
+                  <div
+                    key={char}
+                    className="aspect-square rounded-[8px] border border-border bg-card flex flex-col items-center justify-center hover:border-primary/50 transition-colors group cursor-default"
                   >
-                    {char}
-                  </span>
-                  <span className="text-[9px] font-mono text-muted-foreground opacity-50">
-                    {char.charCodeAt(0)}
-                  </span>
-                </div>
-              ))}
+                    <span className="text-xl font-bold text-foreground font-mono">
+                      {char}
+                    </span>
+                    <span className="text-[10px] font-mono text-muted-foreground opacity-60">
+                      U+{char.charCodeAt(0).toString(16).toUpperCase().padStart(4, "0")}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Numbers Grid */}
+            <div className="space-y-2">
+              <span className="text-xs font-mono text-muted-foreground">Numbers (0-9)</span>
+              <div className="grid grid-cols-5 sm:grid-cols-10 gap-2">
+                {NUMBER_CHARS.map((char) => (
+                  <div
+                    key={char}
+                    className="aspect-square rounded-[8px] border border-border bg-card flex flex-col items-center justify-center hover:border-primary/50 transition-colors group cursor-default"
+                  >
+                    <span className="text-xl font-bold text-foreground font-mono">
+                      {char}
+                    </span>
+                    <span className="text-[10px] font-mono text-muted-foreground opacity-60">
+                      U+{char.charCodeAt(0).toString(16).toUpperCase().padStart(4, "0")}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Symbols Grid */}
+            <div className="space-y-2">
+              <span className="text-xs font-mono text-muted-foreground">Symbols & Punctuation</span>
+              <div className="grid grid-cols-6 sm:grid-cols-9 md:grid-cols-14 gap-2">
+                {SYMBOL_CHARS.map((char) => (
+                  <div
+                    key={char}
+                    className="aspect-square rounded-[8px] border border-border bg-card flex flex-col items-center justify-center hover:border-primary/50 transition-colors group cursor-default"
+                  >
+                    <span className="text-lg font-bold text-foreground font-mono">
+                      {char}
+                    </span>
+                    <span className="text-[9px] font-mono text-muted-foreground opacity-60">
+                      {char.charCodeAt(0)}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -642,12 +768,7 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
                       className="h-8 w-auto max-w-full object-contain dark:invert select-none pointer-events-none"
                     />
                   ) : (
-                    <p
-                      className="text-xl text-foreground truncate select-none"
-                      style={{
-                        fontFamily: `'${rf.googleFontsFamily || rf.name}', sans-serif`,
-                      }}
-                    >
+                    <p className="text-xl text-foreground truncate select-none font-sans">
                       {rf.name}
                     </p>
                   )}

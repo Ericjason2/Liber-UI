@@ -24,6 +24,76 @@ function getContrastColor(hex: string): string {
   return yiq >= 140 ? "#0A0A0A" : "#FFFFFF";
 }
 
+function normalizeText(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+}
+
+const THEME_SYNONYMS: Record<string, string[]> = {
+  // Médécine / Santé / Medical / Health
+  medecine: ["medecine", "medicine", "medical", "sante", "health", "hospital", "hopital", "pharma", "pharmacie", "clinic", "clinique", "care", "soin", "doctor", "docteur", "urgences", "cardiac"],
+  medicine: ["medecine", "medicine", "medical", "sante", "health", "hospital", "pharma", "clinic", "care"],
+  sante: ["medecine", "medicine", "medical", "sante", "health", "hospital", "pharma", "clinic", "care", "wellness"],
+  health: ["medecine", "medicine", "medical", "sante", "health", "hospital", "pharma", "clinic", "care"],
+  medical: ["medecine", "medicine", "medical", "sante", "health", "hospital", "pharma", "clinic", "care"],
+  hopital: ["medecine", "medical", "sante", "hospital", "hopital", "care"],
+  hospital: ["medecine", "medical", "sante", "hospital", "care"],
+  pharma: ["medecine", "pharmacie", "pharmacy", "medical", "sante"],
+  pharmacie: ["medecine", "pharmacie", "pharmacy", "medical", "sante"],
+
+  // Nature / Botanical / Forest
+  nature: ["nature", "botanical", "botanique", "forest", "foret", "plant", "plantes", "vegetal", "bio", "organic", "organique", "earth", "terre", "green", "vert", "eucalyptus", "sage", "feuille", "arbres", "ecologie"],
+  foret: ["nature", "forest", "foret", "botanical", "wood", "bois", "green", "vert"],
+  forest: ["nature", "forest", "foret", "botanical", "wood", "green"],
+  botanique: ["nature", "botanical", "botanique", "plant", "green"],
+  botanical: ["nature", "botanical", "plant", "green"],
+  ecologie: ["nature", "organic", "green", "bio", "earth"],
+  plante: ["nature", "plant", "plantes", "botanical", "green"],
+  plantes: ["nature", "plant", "plantes", "botanical", "green"],
+
+  // Technologie / Tech / Cyber / Code
+  technologie: ["tech", "technologie", "technology", "cyber", "digital", "matrix", "code", "coding", "terminal", "ai", "ia", "futur", "future", "neon"],
+  technology: ["tech", "technologie", "technology", "cyber", "digital", "code", "neon"],
+  tech: ["tech", "technologie", "technology", "cyber", "digital", "code", "neon"],
+  cyber: ["cyber", "neon", "matrix", "tech", "futur", "digital"],
+  code: ["code", "terminal", "developer", "programming", "linear", "dracula", "tech"],
+
+  // Luxe / Gold / Elegance
+  luxe: ["luxe", "luxury", "gold", "or", "prestige", "elegant", "elegance", "premium", "rich"],
+  luxury: ["luxe", "luxury", "gold", "prestige", "elegant", "premium"],
+  gold: ["gold", "or", "amber", "luxury", "luxe", "yellow"],
+  or: ["gold", "or", "amber", "luxury", "luxe"],
+
+  // Mer / Ocean / Water
+  mer: ["mer", "ocean", "sea", "water", "eau", "marine", "plage", "beach", "aquatic", "aquatique", "blue", "bleu"],
+  ocean: ["mer", "ocean", "sea", "water", "marine", "blue", "bleu", "cold", "arctic"],
+  eau: ["water", "eau", "ocean", "sea", "mer", "blue", "cyan"],
+
+  // Chaud / Sunset / Soleil / Fire
+  chaud: ["warm", "chaud", "sunset", "soleil", "sun", "summer", "ete", "fire", "feu", "orange", "rouge", "red"],
+  sunset: ["sunset", "dusk", "crepuscule", "twilight", "warm", "sun", "soleil", "orange", "mauve"],
+  soleil: ["sun", "soleil", "sunset", "warm", "summer", "ete", "yellow", "orange"],
+  feu: ["fire", "feu", "flamme", "flame", "warm", "red", "rouge", "orange"],
+
+  // Froid / Hiver / Ice
+  froid: ["cold", "froid", "ice", "glace", "winter", "hiver", "snow", "neige", "frost", "arctic", "polaire"],
+  hiver: ["winter", "hiver", "frost", "ice", "snow", "neige", "cold"],
+  winter: ["winter", "hiver", "frost", "ice", "snow", "cold"],
+
+  // Sombre / Dark / Nuit
+  sombre: ["dark", "sombre", "night", "nuit", "black", "noir", "nocturne", "shadow"],
+  nuit: ["night", "nuit", "dark", "sombre", "black", "noir"],
+  noir: ["black", "noir", "dark", "sombre", "obsidian", "oled"],
+
+  // Clair / Light / Blanc / Minimal
+  clair: ["light", "clair", "white", "blanc", "clean", "minimal", "pure", "epure"],
+  blanc: ["white", "blanc", "light", "clair", "clean", "pure"],
+  minimal: ["minimal", "clean", "linen", "epure", "standard", "light"],
+};
+
 export default function ThemesPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -31,35 +101,6 @@ export default function ThemesPage() {
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [highlightedSlug, setHighlightedSlug] = useState<string | null>(null);
   const { toast } = useToast();
-
-  const categories = useMemo(() => {
-    const counts: Record<string, number> = {};
-    SAMPLE_THEMES.forEach((t) => {
-      counts[t.category] = (counts[t.category] || 0) + 1;
-    });
-
-    return [
-      { id: "all", label: "All Palettes", count: SAMPLE_THEMES.length },
-      { id: "popular", label: "Popular", count: counts["popular"] || 0 },
-      { id: "trendy", label: "Trendy", count: counts["trendy"] || 0 },
-      { id: "pastel", label: "Soft Pastels", count: counts["pastel"] || 0 },
-      { id: "vintage", label: "Vintage & Muted", count: counts["vintage"] || 0 },
-      { id: "retro", label: "Retro & Synth", count: counts["retro"] || 0 },
-      { id: "neon", label: "Neon & Cyber", count: counts["neon"] || 0 },
-      { id: "warm", label: "Warm & Sunsets", count: counts["warm"] || 0 },
-      { id: "cold", label: "Cold & Ocean", count: (counts["cold"] || 0) + (counts["cool"] || 0) },
-      { id: "nature", label: "Nature & Botanical", count: counts["nature"] || 0 },
-      { id: "dark", label: "Dark & Nocturnal", count: counts["dark"] || 0 },
-      { id: "light", label: "Light & Clean", count: counts["light"] || 0 },
-      { id: "gold", label: "Gold & Luxury", count: counts["gold"] || 0 },
-      { id: "summer", label: "Summer", count: counts["summer"] || 0 },
-      { id: "fall", label: "Autumn / Fall", count: counts["fall"] || 0 },
-      { id: "winter", label: "Winter Frost", count: counts["winter"] || 0 },
-      { id: "spring", label: "Spring Bloom", count: counts["spring"] || 0 },
-      { id: "standard", label: "Minimal Industrial", count: counts["standard"] || 0 },
-      { id: "high-contrast", label: "High Contrast", count: counts["high-contrast"] || 0 },
-    ].filter((c) => c.id === "all" || c.count > 0);
-  }, []);
 
   const copyToClipboard = (text: string, label: string, key: string) => {
     navigator.clipboard.writeText(text);
@@ -69,19 +110,51 @@ export default function ThemesPage() {
   };
 
   const filteredThemes = useMemo(() => {
+    const rawQ = searchQuery.trim();
+    if (!rawQ && selectedCategory === "all") {
+      const list = [...SAMPLE_THEMES];
+      if (sortBy === "name") {
+        return list.sort((a, b) => a.name.localeCompare(b.name));
+      }
+      return list;
+    }
+
+    const normQ = normalizeText(rawQ);
+    const searchTerms: string[] = [normQ];
+    if (THEME_SYNONYMS[normQ]) {
+      searchTerms.push(...THEME_SYNONYMS[normQ]);
+    }
+    // Also check single tokens if multi-word
+    normQ.split(/\s+/).forEach((tok) => {
+      if (tok && THEME_SYNONYMS[tok]) {
+        searchTerms.push(...THEME_SYNONYMS[tok]);
+      }
+    });
+
     const list = SAMPLE_THEMES.filter((t) => {
-      const q = searchQuery.toLowerCase().trim();
+      const tNameNorm = normalizeText(t.name);
+      const tDescNorm = normalizeText(t.description);
+      const tSlugNorm = normalizeText(t.slug);
+      const tCatNorm = normalizeText(t.category);
+      const tTagsNorm = (t.tags || []).map(normalizeText);
+
       const matchesSearch =
-        !q ||
-        t.name.toLowerCase().includes(q) ||
-        t.description.toLowerCase().includes(q) ||
-        t.slug.toLowerCase().includes(q) ||
-        t.swatches.some((s) => s.toLowerCase().includes(q)) ||
-        (t.tags && t.tags.some((tag) => tag.toLowerCase().includes(q)));
+        !normQ ||
+        searchTerms.some(
+          (term) =>
+            tNameNorm.includes(term) ||
+            tDescNorm.includes(term) ||
+            tSlugNorm.includes(term) ||
+            tCatNorm.includes(term) ||
+            tTagsNorm.some((tag) => tag.includes(term)) ||
+            t.swatches.some((s) => s.toLowerCase().includes(term))
+        );
+
       const matchesCategory =
         selectedCategory === "all" ||
         t.category === selectedCategory ||
         (selectedCategory === "cold" && t.category === "cool");
+
       return matchesSearch && matchesCategory;
     });
 
@@ -145,9 +218,6 @@ export default function ThemesPage() {
           </Link>
           <span>/</span>
           <span className="text-foreground font-medium">Themes</span>
-          <span className="ml-2 px-2 py-0.5 rounded-full text-[10px] bg-muted border border-border text-muted-foreground">
-            Curated Palette System
-          </span>
         </div>
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 border-b border-border">
@@ -186,7 +256,7 @@ export default function ThemesPage() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search by name, hex code (#264653), or mood (warm, ocean, neon, sage)..."
+              placeholder="Search theme (e.g. médécine, nature, tech, luxe, pastel, dark, sunset)..."
               className="w-full h-10 pl-10 pr-4 rounded-[10px] border border-border bg-card text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-all font-sans"
             />
           </div>
@@ -211,22 +281,38 @@ export default function ThemesPage() {
           </div>
         </div>
 
-        {/* Filter Pills */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-1 pt-1 scrollbar-none">
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${
-                selectedCategory === cat.id
-                  ? "bg-primary text-primary-foreground font-semibold"
-                  : "border border-border bg-card text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              <span>{cat.label}</span>
-              <span className="font-mono text-[10px] opacity-70">({cat.count})</span>
-            </button>
-          ))}
+        {/* Navigation Bar: Single 'All' pill + active search filter badge */}
+        <div className="flex items-center gap-2 flex-wrap">
+          <button
+            onClick={() => {
+              setSelectedCategory("all");
+              setSearchQuery("");
+            }}
+            className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors flex items-center gap-1.5 ${
+              selectedCategory === "all" && !searchQuery
+                ? "bg-primary text-primary-foreground font-semibold"
+                : "border border-border bg-card text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            <span>All</span>
+            <span className="font-mono text-[10px] opacity-70">({SAMPLE_THEMES.length})</span>
+          </button>
+
+          {searchQuery && (
+            <div className="flex items-center gap-2">
+              <span className="px-3 py-1 rounded-full text-xs font-mono bg-muted text-foreground border border-border flex items-center gap-1.5">
+                <span>Thème: &ldquo;{searchQuery}&rdquo;</span>
+                <span className="text-muted-foreground font-semibold">({filteredThemes.length})</span>
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="hover:text-primary transition-colors ml-0.5"
+                  title="Effacer la recherche"
+                >
+                  ✕
+                </button>
+              </span>
+            </div>
+          )}
         </div>
       </div>
 
@@ -252,11 +338,10 @@ export default function ThemesPage() {
             <article
               key={theme.slug}
               id={`palette-${theme.slug}`}
-              className={`rounded-[10px] border transition-all duration-200 bg-card p-4 space-y-4 flex flex-col justify-between ${
-                isHighlighted
+              className={`rounded-[10px] border transition-all duration-200 bg-card p-4 space-y-4 flex flex-col justify-between ${isHighlighted
                   ? "border-primary ring-2 ring-primary ring-offset-2"
                   : "border-border hover:border-neutral-400 dark:hover:border-neutral-600"
-              }`}
+                }`}
             >
               {/* Card Header: Title, Category Badge, Contrast Ratio */}
               <div className="flex items-center justify-between gap-2">
@@ -400,20 +485,24 @@ export default function ThemesPage() {
       </div>
 
       {filteredThemes.length === 0 && (
-        <div className="py-20 text-center space-y-3 rounded-[10px] border border-border bg-card">
-          <p className="text-sm text-foreground font-medium">No color palettes found.</p>
-          <p className="text-xs text-muted-foreground font-mono">
-            Try adjusting your search query or reset the category filter.
+        <div className="py-20 text-center space-y-3 rounded-[12px] border border-dashed border-border bg-card/60 p-8">
+          <p className="text-base text-foreground font-semibold">
+            Aucun résultat pour &ldquo;{searchQuery}&rdquo;
           </p>
-          <button
-            onClick={() => {
-              setSearchQuery("");
-              setSelectedCategory("all");
-            }}
-            className="px-4 py-2 text-xs rounded-[10px] bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
-          >
-            Reset Filters
-          </button>
+          <p className="text-xs text-muted-foreground font-sans max-w-md mx-auto">
+            Aucune palette de couleurs ne correspond à ce thème. Essayez un mot-clé comme <span className="font-mono text-foreground font-medium">médécine</span>, <span className="font-mono text-foreground font-medium">nature</span>, <span className="font-mono text-foreground font-medium">luxe</span>, <span className="font-mono text-foreground font-medium">tech</span>, <span className="font-mono text-foreground font-medium">pastel</span>, ou <span className="font-mono text-foreground font-medium">sunset</span>.
+          </p>
+          <div className="pt-2">
+            <button
+              onClick={() => {
+                setSearchQuery("");
+                setSelectedCategory("all");
+              }}
+              className="px-4 py-2 text-xs rounded-[10px] bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
+            >
+              Afficher toutes les palettes
+            </button>
+          </div>
         </div>
       )}
     </div>

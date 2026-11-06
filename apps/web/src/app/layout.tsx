@@ -8,12 +8,12 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Liber UI — The open code catalog for your web apps",
   description:
-    "A curated collection of readable, copy-pasteable tech logos, UI blocks, components, color themes, and typography definitions. No dependencies, no lock-in.",
-  keywords: ["developer tools", "logos", "shadcn", "ui blocks", "themes", "fonts", "svg"],
+    "A curated collection of readable, copy-pasteable tech logos, CSS animations, components, color themes, and typography definitions. No dependencies, no lock-in.",
+  keywords: ["developer tools", "logos", "shadcn", "css animations", "animista", "themes", "fonts", "svg"],
   authors: [{ name: "Liber contributors" }],
   openGraph: {
     title: "Liber UI — The open code catalog for developers",
-    description: "Browse, copy and install logos, blocks, themes, and fonts with one command.",
+    description: "Browse, copy and install logos, animations, themes, and fonts with one command.",
     url: "https://liber-ui-delta.vercel.app",
     siteName: "Liber",
     type: "website",

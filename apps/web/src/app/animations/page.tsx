@@ -35,12 +35,12 @@ export default function AnimationsPage() {
 
     return [
       { id: "all", label: "All Animations", count: SAMPLE_ANIMATIONS.length },
-      { id: "attention", label: "Attention & Micro", count: counts["attention"] || 0 },
-      { id: "entrances", label: "Entrances & Reveals", count: counts["entrances"] || 0 },
-      { id: "hover", label: "Hover & 3D Depth", count: counts["hover"] || 0 },
-      { id: "text", label: "Text & Typography", count: counts["text"] || 0 },
-      { id: "background", label: "Ambient & Marquee", count: counts["background"] || 0 },
-      { id: "loaders", label: "Loaders & Spinners", count: counts["loaders"] || 0 },
+      { id: "basic", label: "Basic", count: counts["basic"] || 0 },
+      { id: "entrances", label: "Entrances", count: counts["entrances"] || 0 },
+      { id: "exits", label: "Exits", count: counts["exits"] || 0 },
+      { id: "text", label: "Text", count: counts["text"] || 0 },
+      { id: "attention", label: "Attention", count: counts["attention"] || 0 },
+      { id: "background", label: "Background", count: counts["background"] || 0 },
     ].filter((c) => c.id === "all" || c.count > 0);
   }, []);
 
@@ -89,9 +89,6 @@ export default function AnimationsPage() {
           </Link>
           <span>/</span>
           <span className="text-foreground font-medium">Animations</span>
-          <span className="ml-2 px-2 py-0.5 rounded-full text-[10px] bg-muted border border-border text-muted-foreground">
-            CSS & Tailwind Motion
-          </span>
         </div>
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 border-b border-border">
@@ -116,11 +113,10 @@ export default function AnimationsPage() {
                 <button
                   key={s}
                   onClick={() => setSpeed(s)}
-                  className={`px-2.5 py-1 rounded-[6px] text-xs transition-colors ${
-                    speed === s
+                  className={`px-2.5 py-1 rounded-[6px] text-xs transition-colors ${speed === s
                       ? "bg-primary text-primary-foreground font-semibold"
                       : "text-muted-foreground hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   {s}
                 </button>
@@ -155,11 +151,10 @@ export default function AnimationsPage() {
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${
-                selectedCategory === cat.id
+              className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${selectedCategory === cat.id
                   ? "bg-primary text-primary-foreground font-semibold"
                   : "border border-border bg-card text-muted-foreground hover:text-foreground"
-              }`}
+                }`}
             >
               <span>{cat.label}</span>
               <span className="font-mono text-[10px] opacity-70">({cat.count})</span>
@@ -229,11 +224,10 @@ export default function AnimationsPage() {
                       onClick={() =>
                         setActiveTabs((prev) => ({ ...prev, [item.slug]: "css" }))
                       }
-                      className={`px-2 py-0.5 rounded-[4px] transition-colors ${
-                        currentTab === "css"
+                      className={`px-2 py-0.5 rounded-[4px] transition-colors ${currentTab === "css"
                           ? "bg-card text-foreground font-semibold shadow-xs"
                           : "text-muted-foreground hover:text-foreground"
-                      }`}
+                        }`}
                     >
                       Pure CSS
                     </button>
@@ -241,11 +235,10 @@ export default function AnimationsPage() {
                       onClick={() =>
                         setActiveTabs((prev) => ({ ...prev, [item.slug]: "tailwind" }))
                       }
-                      className={`px-2 py-0.5 rounded-[4px] transition-colors ${
-                        currentTab === "tailwind"
+                      className={`px-2 py-0.5 rounded-[4px] transition-colors ${currentTab === "tailwind"
                           ? "bg-card text-foreground font-semibold shadow-xs"
                           : "text-muted-foreground hover:text-foreground"
-                      }`}
+                        }`}
                     >
                       Tailwind
                     </button>
@@ -307,7 +300,7 @@ export default function AnimationsPage() {
   );
 }
 
-// Interactive Previews for each animation item
+// Interactive Previews for Animista animation items
 function InteractivePreview({
   slug,
   speedMultiplier,
@@ -315,259 +308,78 @@ function InteractivePreview({
   slug: string;
   speedMultiplier: number;
 }) {
-  const [clicked, setClicked] = useState(false);
+  const item = SAMPLE_ANIMATIONS.find((a) => a.slug === slug);
+  const [replayCount, setReplayCount] = useState(0);
 
-  switch (slug) {
-    case "shimmer-skeleton":
-      return (
-        <div className="w-full max-w-[240px] space-y-2.5">
-          <div
-            className="h-7 w-3/4 rounded-[6px] bg-muted relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite_ease-in-out] before:bg-gradient-to-r before:from-transparent before:via-white/20 dark:before:via-white/10 before:to-transparent"
-            style={{ animationDuration: `${2 * speedMultiplier}s` }}
-          />
-          <div
-            className="h-4 w-full rounded-[4px] bg-muted relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite_ease-in-out] before:bg-gradient-to-r before:from-transparent before:via-white/20 dark:before:via-white/10 before:to-transparent"
-            style={{ animationDuration: `${2 * speedMultiplier}s` }}
-          />
-          <div
-            className="h-4 w-1/2 rounded-[4px] bg-muted relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite_ease-in-out] before:bg-gradient-to-r before:from-transparent before:via-white/20 dark:before:via-white/10 before:to-transparent"
-            style={{ animationDuration: `${2 * speedMultiplier}s` }}
-          />
-        </div>
-      );
-
-    case "glowing-border-beam":
-      return (
-        <div className="relative rounded-[10px] p-[1.5px] overflow-hidden group cursor-pointer">
-          <div
-            className="absolute inset-[-150%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0_300deg,#3b82f6_360deg)]"
-            style={{ animationDuration: `${4 * speedMultiplier}s` }}
-          />
-          <div className="relative rounded-[9px] bg-card px-5 py-3 text-xs font-mono font-medium text-foreground border border-border">
-            <span>Laser Border Beam</span>
-          </div>
-        </div>
-      );
-
-    case "radar-beacon-pulse":
-      return (
-        <div className="flex items-center gap-3 px-4 py-2 rounded-full border border-border bg-card">
-          <span className="relative flex h-3 w-3">
-            <span
-              className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"
-              style={{ animationDuration: `${1.5 * speedMultiplier}s` }}
-            />
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500" />
-          </span>
-          <span className="text-xs font-mono font-medium text-foreground">Operational Status</span>
-        </div>
-      );
-
-    case "heartbeat-ripple":
-      return (
-        <div
-          className="h-12 w-12 rounded-full bg-rose-500 flex items-center justify-center text-white cursor-pointer shadow-lg animate-[heartbeat_2s_ease-in-out_infinite]"
-          style={{ animationDuration: `${2 * speedMultiplier}s` }}
-        >
-          <Zap className="h-5 w-5 fill-current" />
-        </div>
-      );
-
-    case "wobble-elastic":
-      return (
-        <div className="px-5 py-2.5 rounded-[8px] bg-primary text-primary-foreground font-mono text-xs font-semibold cursor-pointer hover:animate-[wobble_0.8s_ease-in-out] transition-transform">
-          <span>Hover to Wobble</span>
-        </div>
-      );
-
-    case "neon-flicker-glow":
-      return (
-        <div
-          className="text-2xl font-bold tracking-wider text-purple-400 font-mono animate-[neon-flicker_3s_infinite] select-none"
-          style={{ animationDuration: `${3 * speedMultiplier}s` }}
-        >
-          <span>CYBERPUNK</span>
-        </div>
-      );
-
-    case "blur-scale-reveal":
-      return (
-        <div
-          onClick={() => setClicked(!clicked)}
-          className="cursor-pointer"
-        >
-          <div
-            key={clicked ? "a" : "b"}
-            className="px-5 py-3 rounded-[10px] border border-border bg-card text-xs font-mono text-foreground font-medium animate-[blur-in_0.6s_cubic-bezier(0.16,1,0.3,1)_forwards] shadow-sm"
-            style={{ animationDuration: `${0.6 * speedMultiplier}s` }}
-          >
-            <span>Click to Re-reveal</span>
-          </div>
-        </div>
-      );
-
-    case "slide-fade-up":
-      return (
-        <div
-          onClick={() => setClicked(!clicked)}
-          className="cursor-pointer"
-        >
-          <div
-            key={clicked ? "a" : "b"}
-            className="px-5 py-3 rounded-[10px] border border-border bg-card text-xs font-mono text-foreground font-medium animate-[slide-up_0.5s_cubic-bezier(0.2,0.8,0.2,1)_forwards] shadow-sm"
-            style={{ animationDuration: `${0.5 * speedMultiplier}s` }}
-          >
-            <span>Spring Slide Up</span>
-          </div>
-        </div>
-      );
-
-    case "flip-3d-drop":
-      return (
-        <div
-          onClick={() => setClicked(!clicked)}
-          className="cursor-pointer"
-        >
-          <div
-            key={clicked ? "a" : "b"}
-            className="px-5 py-3 rounded-[10px] border border-border bg-card text-xs font-mono text-foreground font-medium animate-[drop-3d_0.55s_cubic-bezier(0.34,1.56,0.64,1)_forwards] shadow-sm"
-            style={{ animationDuration: `${0.55 * speedMultiplier}s` }}
-          >
-            <span>3D Tumble Drop</span>
-          </div>
-        </div>
-      );
-
-    case "magnetic-levitation":
-      return (
-        <div
-          className="px-5 py-3 rounded-[10px] border border-border bg-card text-xs font-mono text-foreground font-medium animate-[float_3.5s_ease-in-out_infinite] shadow-sm"
-          style={{ animationDuration: `${3.5 * speedMultiplier}s` }}
-        >
-          <span>Zero Gravity Float</span>
-        </div>
-      );
-
-    case "card-tilt-3d":
-      return (
-        <div className="group cursor-pointer [perspective:800px]">
-          <div className="px-5 py-4 rounded-[10px] border border-border bg-card text-xs font-mono text-foreground font-medium transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:[transform:rotateX(12deg)_rotateY(-12deg)_translateZ(16px)] group-hover:border-primary">
-            <span>Hover 3D Perspective</span>
-          </div>
-        </div>
-      );
-
-    case "elastic-tap-press":
-      return (
-        <button className="px-5 py-2.5 rounded-[8px] bg-primary text-primary-foreground font-mono text-xs font-semibold cursor-pointer transition-transform duration-200 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:scale-[1.04] active:scale-[0.93]">
-          <span>Press & Release</span>
-        </button>
-      );
-
-    case "spotlight-hover-glow":
-      return (
-        <div className="group relative overflow-hidden px-6 py-4 rounded-[10px] border border-border bg-card cursor-pointer before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.25),transparent_65%)] before:opacity-0 group-hover:before:opacity-100 before:transition-opacity before:duration-300">
-          <span className="relative z-10 text-xs font-mono font-medium text-foreground">
-            Hover for Spotlight
-          </span>
-        </div>
-      );
-
-    case "text-gradient-flow":
-      return (
-        <div
-          className="text-xl sm:text-2xl font-bold tracking-tight bg-gradient-to-r from-blue-500 via-pink-500 to-purple-500 bg-[length:300%_300%] bg-clip-text text-transparent animate-[text-flow_6s_ease_infinite]"
-          style={{ animationDuration: `${6 * speedMultiplier}s` }}
-        >
-          <span>Fluid Gradient Wave</span>
-        </div>
-      );
-
-    case "terminal-typewriter":
-      return (
-        <div className="px-3 py-2 rounded-[6px] bg-neutral-900 border border-neutral-800 text-neutral-200 font-mono text-xs max-w-[220px]">
-          <div
-            className="overflow-hidden whitespace-nowrap border-r-2 border-blue-400 animate-[typing_3s_steps(24,end)_infinite_alternate,blink_0.75s_step-end_infinite]"
-            style={{ animationDuration: `${3 * speedMultiplier}s, 0.75s` }}
-          >
-            <span>$ liber init app</span>
-          </div>
-        </div>
-      );
-
-    case "metallic-text-wipe":
-      return (
-        <div
-          className="text-xl font-bold font-mono tracking-wider bg-[linear-gradient(90deg,rgba(150,150,150,0.4)_0%,rgba(255,255,255,1)_50%,rgba(150,150,150,0.4)_100%)] bg-[length:200%_100%] bg-clip-text text-transparent animate-[text-shimmer_3s_linear_infinite]"
-          style={{ animationDuration: `${3 * speedMultiplier}s` }}
-        >
-          <span>CHROME SPECULAR</span>
-        </div>
-      );
-
-    case "infinite-marquee":
-      return (
-        <div className="w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
-          <div
-            className="flex w-max gap-4 animate-[marquee_12s_linear_infinite]"
-            style={{ animationDuration: `${12 * speedMultiplier}s` }}
-          >
-            {["React", "Next.js", "Tailwind", "TypeScript", "Vite", "React", "Next.js", "Tailwind"].map((tech, i) => (
-              <span
-                key={i}
-                className="px-2.5 py-1 rounded-[6px] bg-muted border border-border text-[11px] font-mono text-foreground font-medium"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </div>
-      );
-
-    case "aurora-gradient-mesh":
-      return (
-        <div className="relative h-28 w-28 flex items-center justify-center">
-          <div
-            className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500 to-pink-500 blur-2xl opacity-60 animate-[aurora-spin_10s_ease-in-out_infinite]"
-            style={{ animationDuration: `${10 * speedMultiplier}s` }}
-          />
-          <span className="relative z-10 text-xs font-mono font-semibold text-foreground">
-            Aurora
-          </span>
-        </div>
-      );
-
-    case "orbital-conic-spinner":
-      return (
-        <div
-          className="h-9 w-9 rounded-full animate-spin [background:conic-gradient(from_0deg,transparent_0%,#3b82f6_100%)] [mask:radial-gradient(farthest-side,transparent_calc(100%-3px),#fff_calc(100%-3px))]"
-          style={{ animationDuration: `${0.85 * speedMultiplier}s` }}
-        />
-      );
-
-    case "bouncing-triple-dots":
-      return (
-        <div className="flex items-center gap-1.5 p-3 rounded-[8px] bg-card border border-border text-primary">
-          <div
-            className="h-2 w-2 rounded-full bg-current animate-[dot-bounce_1.2s_infinite_ease-in-out]"
-            style={{ animationDuration: `${1.2 * speedMultiplier}s` }}
-          />
-          <div
-            className="h-2 w-2 rounded-full bg-current animate-[dot-bounce_1.2s_infinite_ease-in-out_0.2s]"
-            style={{ animationDuration: `${1.2 * speedMultiplier}s` }}
-          />
-          <div
-            className="h-2 w-2 rounded-full bg-current animate-[dot-bounce_1.2s_infinite_ease-in-out_0.4s]"
-            style={{ animationDuration: `${1.2 * speedMultiplier}s` }}
-          />
-        </div>
-      );
-
-    default:
-      return (
-        <div className="text-xs font-mono text-muted-foreground">
-          Animation Preview
-        </div>
-      );
+  if (!item) {
+    return <div className="text-xs font-mono text-muted-foreground">Animation Preview</div>;
   }
+
+  const triggerAnimation = () => {
+    setReplayCount((c) => c + 1);
+  };
+
+  // 1. Text Animations (Animista Text)
+  if (item.category === "text") {
+    return (
+      <div
+        onClick={triggerAnimation}
+        className="cursor-pointer select-none py-6 px-4 flex flex-col items-center justify-center text-center w-full"
+        title="Click to replay text animation"
+      >
+        <span
+          key={replayCount}
+          className={`text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground ${slug}`}
+          style={{ animationDuration: `calc(0.7s * ${speedMultiplier})` }}
+        >
+          ANIMISTA
+        </span>
+        <span className="text-[10px] font-mono text-muted-foreground mt-3 opacity-60">
+          Click to replay
+        </span>
+      </div>
+    );
+  }
+
+  // 2. Background Animations (Animista Background)
+  if (item.category === "background") {
+    return (
+      <div
+        onClick={triggerAnimation}
+        className="w-full h-28 rounded-[8px] overflow-hidden relative flex items-center justify-center cursor-pointer border border-border shadow-xs"
+        title="Click to restart background effect"
+      >
+        <div
+          key={replayCount}
+          className={`w-full h-full flex items-center justify-center ${slug}`}
+          style={{ animationDuration: `calc(6s * ${speedMultiplier})` }}
+        >
+          <span className="text-xs font-mono font-semibold text-white px-3 py-1 rounded-full bg-black/40 backdrop-blur-xs">
+            {item.name}
+          </span>
+        </div>
+      </div>
+    );
+  }
+
+  // 3. Attention, Basic, Entrances, Exits (Animista)
+  return (
+    <div
+      onClick={triggerAnimation}
+      className="cursor-pointer py-4 flex flex-col items-center justify-center w-full"
+      title="Click to trigger animation"
+    >
+      <div
+        key={replayCount}
+        className={`px-6 py-3 rounded-[10px] bg-primary text-primary-foreground font-mono text-xs font-semibold shadow-sm flex items-center gap-2 select-none ${slug}`}
+        style={{ animationDuration: `calc(0.6s * ${speedMultiplier})` }}
+      >
+        <Zap className="h-3.5 w-3.5 fill-current" />
+        <span>{item.name}</span>
+      </div>
+      <span className="text-[10px] font-mono text-muted-foreground mt-2.5 opacity-60">
+        Click to replay
+      </span>
+    </div>
+  );
 }

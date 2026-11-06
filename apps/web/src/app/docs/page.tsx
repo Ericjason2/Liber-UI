@@ -142,7 +142,7 @@ export default function DocsPage() {
                 Welcome to Liber UI
               </h1>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Liber UI is a free, open-source asset, typography, and code catalog built for UI/UX designers, front-end engineers, and product creators. It provides clean vector logos, WCAG-compliant color themes, over 7,300 self-hostable open typographies, and responsive UI section blocks — with zero vendor lock-in and zero runtime overhead.
+                Liber UI is a free, open-source asset, typography, and code catalog built for UI/UX designers, front-end engineers, and product creators. It provides clean vector logos, WCAG-compliant color themes, over 7,300 self-hostable open typographies, and interactive CSS & Tailwind animations — with zero vendor lock-in and zero runtime overhead.
               </p>
             </div>
 
@@ -512,7 +512,7 @@ export function TechStack() {
               </h2>
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed">
-              Liber UI replaces generic static blocks with lightweight, hardware-accelerated CSS and Tailwind keyframe animations. Every animation is designed for instant copy-pasting into your project — either as raw CSS <code className="text-foreground">@keyframes</code> or as ready-to-use Tailwind CSS utility classes and configuration snippets.
+              Liber UI provides an authentic collection of lightweight, hardware-accelerated CSS and Tailwind keyframe animations inspired by <a href="https://animista.net/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Animista</a>. Every animation is designed for instant copy-pasting into your project — either as raw CSS <code className="text-foreground">@keyframes</code> or as ready-to-use Tailwind CSS arbitrary classes and configuration snippets.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">

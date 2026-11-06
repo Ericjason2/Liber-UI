@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Search, CornerDownLeft, Sparkles, Box, Layout, Palette, Type } from "lucide-react";
+import { Search, CornerDownLeft, Sparkles, Box, Zap, Palette, Type } from "lucide-react";
 import { searchCatalog, type SearchDoc } from "@/lib/search";
 import { useToast } from "@/context/ToastContext";
 
@@ -72,14 +72,16 @@ export function CommandPalette({ open, onClose }: CommandPaletteProps) {
     switch (kind) {
       case "logo":
         return <Sparkles className="h-4 w-4 text-neutral-400" />;
-      case "block":
-        return <Layout className="h-4 w-4 text-neutral-400" />;
+      case "animation":
+        return <Zap className="h-4 w-4 text-neutral-400" />;
       case "component":
         return <Box className="h-4 w-4 text-neutral-400" />;
       case "theme":
         return <Palette className="h-4 w-4 text-neutral-400" />;
       case "font":
         return <Type className="h-4 w-4 text-neutral-400" />;
+      default:
+        return <Zap className="h-4 w-4 text-neutral-400" />;
     }
   };
 
@@ -102,7 +104,7 @@ export function CommandPalette({ open, onClose }: CommandPaletteProps) {
               setQuery(e.target.value);
               setSelectedIndex(0);
             }}
-            placeholder="Search logos, blocks, components, themes, fonts..."
+            placeholder="Search logos, animations, components, themes, fonts..."
             className="w-full bg-transparent text-sm text-foreground placeholder:text-muted-foreground focus:outline-none"
           />
           <kbd className="hidden sm:inline-block text-[10px] font-mono border border-border rounded-[6px] px-1.5 py-0.5 text-muted-foreground">
