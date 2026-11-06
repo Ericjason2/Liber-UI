@@ -5,6 +5,7 @@ import {
   SAMPLE_COMPONENTS,
   SAMPLE_THEMES,
   SAMPLE_FONTS,
+  SAMPLE_ANIMATIONS,
 } from "./catalog";
 
 export interface SearchDoc {
@@ -12,7 +13,7 @@ export interface SearchDoc {
   slug: string;
   name: string;
   description: string;
-  kind: "logo" | "block" | "component" | "theme" | "font";
+  kind: "logo" | "block" | "component" | "theme" | "font" | "animation";
   category: string;
   tags: string[];
   aliases?: string[];
@@ -70,6 +71,16 @@ const rawDocs: SearchDoc[] = [
     category: f.category,
     tags: ["font", "typography"],
     url: `/fonts#${f.slug}`,
+  })),
+  ...SAMPLE_ANIMATIONS.map((a) => ({
+    id: `anim-${a.slug}`,
+    slug: a.slug,
+    name: a.name,
+    description: a.description,
+    kind: "animation" as const,
+    category: a.category,
+    tags: [...a.tags, "animation", "css", "tailwind", "keyframes"],
+    url: `/animations#${a.slug}`,
   })),
 ];
 

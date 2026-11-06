@@ -69,7 +69,7 @@ export function Navbar() {
 
   const navLinks = [
     { href: "/logos", label: "Logos" },
-    { href: "/blocks", label: "Blocks" },
+    { href: "/animations", label: "Animations" },
     { href: "/components", label: "Components" },
     { href: "/themes", label: "Themes" },
     { href: "/fonts", label: "Fonts" },

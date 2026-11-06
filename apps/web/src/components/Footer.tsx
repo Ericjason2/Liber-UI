@@ -27,8 +27,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/blocks" className="hover:text-foreground transition-colors">
-                  UI Blocks & Sections
+                <Link href="/animations" className="hover:text-foreground transition-colors">
+                  CSS & Tailwind Animations
                 </Link>
               </li>
               <li>

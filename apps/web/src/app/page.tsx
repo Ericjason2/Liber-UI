@@ -5,13 +5,13 @@ import Link from "next/link";
 import {
   Search,
   Sparkles,
-  Layout,
   Box,
   Palette,
   Type,
   ArrowRight,
   Copy,
   Check,
+  Zap,
 } from "lucide-react";
 import { InstallStrip } from "@/components/InstallStrip";
 import { ThemeLivePreview } from "@/components/ThemeLivePreview";
@@ -19,7 +19,7 @@ import { CommandPalette } from "@/components/CommandPalette";
 import { useToast } from "@/context/ToastContext";
 import {
   OFFICIAL_LOGOS,
-  SAMPLE_BLOCKS,
+  SAMPLE_ANIMATIONS,
   SAMPLE_COMPONENTS,
   SAMPLE_THEMES,
   SAMPLE_FONTS,
@@ -46,11 +46,11 @@ export default function HomePage() {
       icon: Sparkles,
     },
     {
-      name: "Blocks",
-      desc: "Full page compositions and layouts.",
-      count: `${SAMPLE_BLOCKS.length} blocks`,
-      href: "/blocks",
-      icon: Layout,
+      name: "Animations",
+      desc: "Hardware-accelerated CSS & Tailwind keyframes.",
+      count: `${SAMPLE_ANIMATIONS.length} animations`,
+      href: "/animations",
+      icon: Zap,
     },
     {
       name: "Components",
@@ -76,7 +76,7 @@ export default function HomePage() {
   ];
 
   const featuredLogo = OFFICIAL_LOGOS[0];
-  const featuredBlock = SAMPLE_BLOCKS[0];
+  const featuredAnimation = SAMPLE_ANIMATIONS[0];
   const featuredTheme = SAMPLE_THEMES[0];
   const featuredFont = SAMPLE_FONTS[0];
 
@@ -248,43 +248,33 @@ export default function HomePage() {
             </div>
           )}
 
-          {/* Block Card */}
-          {featuredBlock && (
+          {/* Animation Card */}
+          {featuredAnimation && (
             <div className="p-4 rounded-[10px] border border-border bg-card space-y-4 flex flex-col justify-between">
-              <Link href={`/blocks#${featuredBlock.slug}`} className="space-y-3 group">
+              <Link href={`/animations#${featuredAnimation.slug}`} className="space-y-3 group">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-1.5">
-                    <div className="h-2 w-7 rounded bg-neutral-900 dark:bg-neutral-100" />
-                    <div className="h-2 w-5 rounded bg-neutral-300 dark:bg-neutral-700" />
-                    <div className="h-2 w-4 rounded bg-neutral-200 dark:bg-neutral-800" />
+                    <div className="h-2 w-7 rounded bg-blue-500 animate-pulse" />
+                    <div className="h-2 w-4 rounded bg-purple-500" />
                   </div>
                   <span className="text-[10px] font-mono border border-border rounded-full px-2 py-0.5 text-muted-foreground uppercase">
-                    Block
+                    Animation
                   </span>
                 </div>
                 <div>
                   <h4 className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
-                    {featuredBlock.name}
+                    {featuredAnimation.name}
                   </h4>
-                  <p className="text-xs text-muted-foreground line-clamp-1">{featuredBlock.description}</p>
+                  <p className="text-xs text-muted-foreground line-clamp-1">{featuredAnimation.description}</p>
                 </div>
               </Link>
-              <button
-                onClick={() =>
-                  handleCopyCmd(
-                    `npx @liber-ui/cli add ${featuredBlock.slug}`,
-                    featuredBlock.slug,
-                  )
-                }
+              <Link
+                href="/animations"
                 className="w-full flex items-center justify-between h-8 px-2.5 rounded-[6px] border border-border bg-surface-subtle text-xs font-mono text-muted-foreground hover:text-foreground transition-colors"
               >
-                <span className="truncate">add {featuredBlock.slug}</span>
-                {copiedSlug === featuredBlock.slug ? (
-                  <Check className="h-3 w-3 text-emerald-500" />
-                ) : (
-                  <Copy className="h-3 w-3" />
-                )}
-              </button>
+                <span className="truncate">Explore Animations</span>
+                <ArrowRight className="h-3 w-3" />
+              </Link>
             </div>
           )}
 
