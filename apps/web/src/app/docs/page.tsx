@@ -113,10 +113,10 @@ export default function DocsPage() {
                   key={item.id}
                   href={`#${item.id}`}
                   onClick={(e) => scrollToSection(e, item.id)}
-                  className={`block px-3 py-2 rounded-[8px] text-xs font-mono transition-all ${
+                  className={`block px-2 py-1.5 text-xs font-mono transition-all duration-200 origin-left ${
                     isActive
-                      ? "bg-primary text-primary-foreground font-semibold shadow-sm"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                      ? "scale-105 font-semibold text-foreground"
+                      : "text-muted-foreground hover:text-foreground hover:translate-x-0.5"
                   }`}
                 >
                   {item.label}
