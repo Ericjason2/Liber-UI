@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { inflateRawSync } from "node:zlib";
-import { SAMPLE_FONTS } from "@/lib/catalog-fonts";
+import { SAMPLE_FONTS } from "../lib/catalog-fonts";
 
 export function extractFontFromZipBuffer(
   zipBuffer: Buffer
@@ -126,6 +126,42 @@ export async function GET(
   }
 
   if (!font.downloadUrl) {
+    if (font.googleFontsFamily) {
+      try {
+        const cssRes = await fetch(
+          `https://fonts.googleapis.com/css2?family=${encodeURIComponent(font.googleFontsFamily)}`,
+          {
+            headers: {
+              // Classic desktop User-Agent ensures Google Fonts returns a direct .ttf URL
+              "User-Agent": "Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0",
+            },
+          }
+        );
+        if (cssRes.ok) {
+          const cssText = await cssRes.text();
+          const urlMatch = cssText.match(/url\((https:\/\/fonts\.gstatic\.com\/[^)]+)\)/);
+          if (urlMatch && urlMatch[1]) {
+            const ttfRes = await fetch(urlMatch[1]);
+            if (ttfRes.ok) {
+              const ttfBuffer = await ttfRes.arrayBuffer();
+              return new NextResponse(new Uint8Array(ttfBuffer), {
+                status: 200,
+                headers: {
+                  "Content-Type": "font/ttf",
+                  "Content-Disposition": `inline; filename="${font.slug}.ttf"`,
+                  "Access-Control-Allow-Origin": "*",
+                  "Access-Control-Allow-Methods": "GET, OPTIONS",
+                  "Cache-Control": "public, max-age=31536000, s-maxage=31536000, immutable",
+                },
+              });
+            }
+          }
+        }
+      } catch {
+        // Fall through to informative error
+      }
+    }
+
     return NextResponse.json(
       {
         error: `Font "${font.name}" uses Google Fonts stylesheet (/api/font-css/${font.slug}).`,
