@@ -1,17 +1,33 @@
-import { SAMPLE_FONTS } from "@/lib/catalog-fonts";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { FontDetailClient } from "./client";
+import { SAMPLE_FONTS } from "@/lib/catalog-fonts";
+import { FontDetailClient as FontDetailView } from "@/views/FontDetailView";
 
 export const dynamicParams = true;
 
 export function generateStaticParams() {
-  // Pre-render the top fonts for instant SSG load; others are rendered dynamically on demand
   return SAMPLE_FONTS.slice(0, 100).map((font) => ({
     slug: font.slug,
   }));
 }
 
-export default async function FontDetailPage({
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const font = SAMPLE_FONTS.find((f) => f.slug === slug);
+  if (!font) {
+    return { title: "Font Not Found — Liber UI" };
+  }
+  return {
+    title: `${font.name} Font Specimen, Charmap & @font-face — Liber UI`,
+    description: `Preview ${font.name} typeface live, inspect its full character map and glyphs, download the .zip or install via @liber-ui/cli.`,
+  };
+}
+
+export default async function FontDetailRoute({
   params,
 }: {
   params: Promise<{ slug: string }>;
@@ -31,5 +47,5 @@ export default async function FontDetailPage({
         f.category === font.category)
   ).slice(0, 6);
 
-  return <FontDetailClient font={font} relatedFonts={relatedFonts} />;
+  return <FontDetailView font={font} relatedFonts={relatedFonts} />;
 }
