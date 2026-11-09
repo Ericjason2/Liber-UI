@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo, useEffect, useCallback } from "react";
 import Link from "next/link";
 import {
   Download,
@@ -12,7 +12,7 @@ import {
   Copy,
   ArrowUpRight,
 } from "lucide-react";
-import { SAMPLE_FONTS } from "@/lib/catalog";
+import { BASE_FONTS, TOTAL_FONTS_COUNT, type FontItem } from "@/lib/catalog-fonts-base";
 import { useToast } from "@/context/ToastContext";
 import { getFontPreviewUrl } from "@/lib/fontPreviewUtils";
 
@@ -42,11 +42,34 @@ const THEME_SUBTHEMES: Record<string, string[]> = {
   Bitmap: ["Pixel"],
 };
 
+const INITIAL_SORTED_BASE = [...BASE_FONTS].sort((a, b) => a.name.localeCompare(b.name));
+
+interface FontsApiResponse {
+  fonts: FontItem[];
+  totalFiltered: number;
+  themeCounts: Record<string, number>;
+}
+
 export default function FontsPage() {
   const defaultSample = "The quick brown fox jumps over the lazy dog";
   const [sampleText, setSampleText] = useState(defaultSample);
   const [debouncedSampleText, setDebouncedSampleText] = useState(defaultSample);
   const [searchQuery, setSearchQuery] = useState("");
+  const [debouncedQuery, setDebouncedQuery] = useState("");
+  const [selectedTheme, setSelectedTheme] = useState<string>("all");
+  const [selectedSubtheme, setSelectedSubtheme] = useState<string>("all");
+  const [selectedLetter, setSelectedLetter] = useState<string>("All");
+  const [copiedKey, setCopiedKey] = useState<string | null>(null);
+  const [failedImages, setFailedImages] = useState<Record<string, boolean>>({});
+
+  const [fonts, setFonts] = useState<FontItem[]>(INITIAL_SORTED_BASE);
+  const [totalFiltered, setTotalFiltered] = useState<number>(TOTAL_FONTS_COUNT);
+  const [themeCounts, setThemeCounts] = useState<Record<string, number>>({
+    all: TOTAL_FONTS_COUNT,
+  });
+  const [isLoadingMore, setIsLoadingMore] = useState<boolean>(false);
+
+  const { toast } = useToast();
 
   useEffect(() => {
     const handler = setTimeout(() => {
@@ -54,99 +77,74 @@ export default function FontsPage() {
     }, 250);
     return () => clearTimeout(handler);
   }, [sampleText]);
-  const [selectedTheme, setSelectedTheme] = useState<string>("all");
-  const [selectedSubtheme, setSelectedSubtheme] = useState<string>("all");
-  const [selectedLetter, setSelectedLetter] = useState<string>("All");
-  const [copiedKey, setCopiedKey] = useState<string | null>(null);
-  const [displayCount, setDisplayCount] = useState<number>(36);
-  const [failedImages, setFailedImages] = useState<Record<string, boolean>>({});
-  const { toast } = useToast();
 
-  // 1. Sort fonts alphabetically by name
-  const sortedFonts = useMemo(() => {
-    return [...SAMPLE_FONTS].sort((a, b) => a.name.localeCompare(b.name));
-  }, []);
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedQuery(searchQuery);
+    }, 180);
+    return () => clearTimeout(handler);
+  }, [searchQuery]);
 
-  // 2. Count for each theme
-  const themeCounts = useMemo(() => {
-    const counts: Record<string, number> = { all: sortedFonts.length };
-    for (const theme of THEMES) {
-      if (theme.id === "all") continue;
-      const tLower = theme.id.toLowerCase();
-      counts[theme.id] = sortedFonts.filter((f) => {
-        const ft = (f.theme || "").toLowerCase();
-        if (tLower === "basic") {
-          return ft === "basic" || f.category === "sans" || f.category === "serif";
-        }
-        if (tLower === "bitmap") {
-          return ft === "bitmap" || f.category === "mono";
-        }
-        if (tLower === "fancy") {
-          return ft === "fancy" || f.category === "display";
-        }
-        return ft === tLower;
-      }).length;
-    }
-    return counts;
-  }, [sortedFonts]);
-
-  // 3. Filtered fonts by Search, Theme, Subtheme, and Letter
-  const filtered = useMemo(() => {
-    return sortedFonts.filter((font) => {
-      const q = searchQuery.toLowerCase().trim();
-      const fontTheme = (font.theme || (font.category === "mono" ? "Bitmap" : font.category === "display" ? "Fancy" : "Basic")).toLowerCase();
-      const fontSubtheme = (font.subtheme || "").toLowerCase();
-
-      // Search match
-      const matchesSearch =
-        !q ||
-        font.name.toLowerCase().includes(q) ||
-        font.slug.toLowerCase().includes(q) ||
-        fontTheme.includes(q) ||
-        fontSubtheme.includes(q) ||
-        (font.author && font.author.toLowerCase().includes(q));
-
-      if (!matchesSearch) return false;
-
-      // Letter match
-      if (selectedLetter !== "All") {
-        const firstChar = font.name.charAt(0).toUpperCase();
-        if (selectedLetter === "#") {
-          if (/[A-Z]/.test(firstChar)) return false;
-        } else if (firstChar !== selectedLetter) {
-          return false;
-        }
-      }
-
-      // Theme match
-      if (selectedTheme !== "all") {
-        const tLower = selectedTheme.toLowerCase();
-        let matchesTheme: boolean;
-        if (tLower === "basic") {
-          matchesTheme = fontTheme === "basic" || font.category === "sans" || font.category === "serif";
-        } else if (tLower === "bitmap") {
-          matchesTheme = fontTheme === "bitmap" || font.category === "mono";
-        } else if (tLower === "fancy") {
-          matchesTheme = fontTheme === "fancy" || font.category === "display";
-        } else {
-          matchesTheme = fontTheme === tLower || font.category === tLower;
-        }
-        if (!matchesTheme) return false;
-      }
-
-      // Subtheme match
-      if (selectedSubtheme !== "all") {
-        const stLower = selectedSubtheme.toLowerCase();
-        if (!fontSubtheme.includes(stLower)) return false;
-      }
-
-      return true;
+  // Fetch first page (36 items) whenever filters change
+  useEffect(() => {
+    const controller = new AbortController();
+    const params = new URLSearchParams({
+      q: debouncedQuery,
+      theme: selectedTheme,
+      subtheme: selectedSubtheme,
+      letter: selectedLetter,
+      limit: "36",
+      offset: "0",
     });
-  }, [sortedFonts, searchQuery, selectedTheme, selectedSubtheme, selectedLetter]);
 
-  const visibleFonts = useMemo(() => {
-    return filtered.slice(0, displayCount);
-  }, [filtered, displayCount]);
+    fetch(`/api/fonts?${params.toString()}`, { signal: controller.signal })
+      .then((res) => (res.ok ? (res.json() as Promise<FontsApiResponse>) : null))
+      .then((data) => {
+        if (data && !controller.signal.aborted) {
+          setFonts(data.fonts);
+          setTotalFiltered(data.totalFiltered);
+          setThemeCounts(data.themeCounts);
+        }
+      })
+      .catch(() => {
+        // Ignore abort errors
+      });
+
+    return () => controller.abort();
+  }, [debouncedQuery, selectedTheme, selectedSubtheme, selectedLetter]);
+
+  const handleLoadMore = useCallback(async () => {
+    if (isLoadingMore || fonts.length >= totalFiltered) return;
+    setIsLoadingMore(true);
+    try {
+      const params = new URLSearchParams({
+        q: debouncedQuery,
+        theme: selectedTheme,
+        subtheme: selectedSubtheme,
+        letter: selectedLetter,
+        limit: "36",
+        offset: String(fonts.length),
+      });
+      const res = await fetch(`/api/fonts?${params.toString()}`);
+      if (res.ok) {
+        const data = (await res.json()) as FontsApiResponse;
+        setFonts((prev) => [...prev, ...data.fonts]);
+        setTotalFiltered(data.totalFiltered);
+      }
+    } catch {
+      // Ignore network errors
+    } finally {
+      setIsLoadingMore(false);
+    }
+  }, [
+    isLoadingMore,
+    fonts.length,
+    totalFiltered,
+    debouncedQuery,
+    selectedTheme,
+    selectedSubtheme,
+    selectedLetter,
+  ]);
 
   const copyToClipboard = (text: string, label: string, key: string, e: React.MouseEvent) => {
     e.preventDefault();
@@ -157,7 +155,9 @@ export default function FontsPage() {
     setTimeout(() => setCopiedKey(null), 2000);
   };
 
-  const currentSubthemes = selectedTheme !== "all" ? THEME_SUBTHEMES[selectedTheme] || [] : [];
+  const currentSubthemes = useMemo(() => {
+    return selectedTheme !== "all" ? THEME_SUBTHEMES[selectedTheme] || [] : [];
+  }, [selectedTheme]);
 
   return (
     <>
@@ -188,10 +188,10 @@ export default function FontsPage() {
                 onClick={() => {
                   setSampleText(defaultSample);
                   setSearchQuery("");
+                  setDebouncedQuery("");
                   setSelectedTheme("all");
                   setSelectedSubtheme("all");
                   setSelectedLetter("All");
-                  setDisplayCount(36);
                 }}
                 className="h-10 px-3.5 rounded-[10px] border border-border bg-card hover:bg-muted text-xs font-mono text-muted-foreground hover:text-foreground flex items-center gap-1.5 transition-colors"
               >
@@ -200,7 +200,7 @@ export default function FontsPage() {
               </button>
               <div className="flex items-center gap-2 font-mono text-xs text-foreground bg-muted border border-border px-3.5 h-10 rounded-[10px]">
                 <Type className="h-3.5 w-3.5 text-primary" />
-                <span className="font-medium">{filtered.length} fonts</span>
+                <span className="font-medium">{totalFiltered} fonts</span>
               </div>
             </div>
           </div>
@@ -222,12 +222,12 @@ export default function FontsPage() {
                 key={char}
                 onClick={() => {
                   setSelectedLetter(char);
-                  setDisplayCount(36);
                 }}
-                className={`min-w-[32px] h-8 px-2 rounded-[6px] text-xs font-mono transition-colors flex items-center justify-center ${selectedLetter === char
+                className={`min-w-[32px] h-8 px-2 rounded-[6px] text-xs font-mono transition-colors flex items-center justify-center ${
+                  selectedLetter === char
                     ? "bg-primary text-primary-foreground font-semibold"
                     : "border border-border bg-card text-muted-foreground hover:text-foreground hover:bg-muted"
-                  }`}
+                }`}
               >
                 {char}
               </button>
@@ -246,17 +246,19 @@ export default function FontsPage() {
                   onClick={() => {
                     setSelectedTheme(t.id);
                     setSelectedSubtheme("all");
-                    setDisplayCount(36);
                   }}
-                  className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${selectedTheme === t.id
+                  className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${
+                    selectedTheme === t.id
                       ? "bg-primary text-primary-foreground font-semibold"
                       : "border border-border bg-card text-muted-foreground hover:text-foreground"
-                    }`}
+                  }`}
                 >
                   <span>{t.label}</span>
-                  <span className="font-mono text-[10px] opacity-70">
-                    ({themeCounts[t.id] ?? 0})
-                  </span>
+                  {themeCounts[t.id] !== undefined && (
+                    <span className="font-mono text-[10px] opacity-70">
+                      ({themeCounts[t.id]})
+                    </span>
+                  )}
                 </button>
               ))}
             </div>
@@ -269,7 +271,6 @@ export default function FontsPage() {
                 value={searchQuery}
                 onChange={(e) => {
                   setSearchQuery(e.target.value);
-                  setDisplayCount(36);
                 }}
                 placeholder="Search font or author..."
                 className="w-full h-8 pl-8 pr-3 text-xs rounded-[8px] border border-border bg-muted/30 text-foreground placeholder:text-muted-foreground focus:outline-none focus:bg-card"
@@ -286,12 +287,12 @@ export default function FontsPage() {
               <button
                 onClick={() => {
                   setSelectedSubtheme("all");
-                  setDisplayCount(36);
                 }}
-                className={`px-2.5 py-1 rounded-[6px] text-xs font-mono transition-colors ${selectedSubtheme === "all"
+                className={`px-2.5 py-1 rounded-[6px] text-xs font-mono transition-colors ${
+                  selectedSubtheme === "all"
                     ? "bg-foreground text-background font-medium"
                     : "border border-border bg-card text-muted-foreground hover:text-foreground"
-                  }`}
+                }`}
               >
                 All {selectedTheme}
               </button>
@@ -300,12 +301,12 @@ export default function FontsPage() {
                   key={st}
                   onClick={() => {
                     setSelectedSubtheme(st);
-                    setDisplayCount(36);
                   }}
-                  className={`px-2.5 py-1 rounded-[6px] text-xs font-mono whitespace-nowrap transition-colors ${selectedSubtheme === st
+                  className={`px-2.5 py-1 rounded-[6px] text-xs font-mono whitespace-nowrap transition-colors ${
+                    selectedSubtheme === st
                       ? "bg-foreground text-background font-medium"
                       : "border border-border bg-card text-muted-foreground hover:text-foreground"
-                    }`}
+                  }`}
                 >
                   {st}
                 </button>
@@ -342,7 +343,7 @@ export default function FontsPage() {
 
         {/* 4. Minimalist Font Specimen List with Generous Spacing */}
         <div className="divide-y divide-border rounded-[12px] border border-border bg-card overflow-hidden">
-          {visibleFonts.map((font) => {
+          {fonts.map((font) => {
             const liberCmd = `npx @liber-ui/cli add font-${font.slug}`;
             const isCustomText = Boolean(
               debouncedSampleText && debouncedSampleText !== defaultSample && debouncedSampleText.trim()
@@ -451,30 +452,32 @@ export default function FontsPage() {
         </div>
 
         {/* 5. Pagination / Load More */}
-        {filtered.length > displayCount && (
+        {totalFiltered > fonts.length && (
           <div className="pt-6 flex flex-col items-center gap-2">
             <button
-              onClick={() => setDisplayCount((prev) => prev + 36)}
-              className="px-6 py-2.5 rounded-[10px] border border-border bg-card hover:bg-muted text-xs font-mono text-foreground hover:text-primary transition-colors shadow-sm flex items-center gap-2"
+              onClick={handleLoadMore}
+              disabled={isLoadingMore}
+              className="px-6 py-2.5 rounded-[10px] border border-border bg-card hover:bg-muted text-xs font-mono text-foreground hover:text-primary transition-colors shadow-sm flex items-center gap-2 disabled:opacity-50"
             >
-              <span>Load more fonts</span>
+              <span>{isLoadingMore ? "Loading fonts..." : "Load more fonts"}</span>
               <span className="text-muted-foreground">
-                ({filtered.length - displayCount} remaining)
+                ({totalFiltered - fonts.length} remaining)
               </span>
             </button>
             <span className="text-[11px] font-mono text-muted-foreground">
-              Showing {Math.min(displayCount, filtered.length)} of {filtered.length} fonts
+              Showing {fonts.length} of {totalFiltered} fonts
             </span>
           </div>
         )}
 
         {/* Empty State */}
-        {filtered.length === 0 && (
+        {fonts.length === 0 && (
           <div className="py-16 text-center space-y-3 rounded-[12px] border border-border bg-card">
             <p className="text-sm text-foreground font-medium">No fonts match your criteria.</p>
             <button
               onClick={() => {
                 setSearchQuery("");
+                setDebouncedQuery("");
                 setSelectedTheme("all");
                 setSelectedSubtheme("all");
                 setSelectedLetter("All");

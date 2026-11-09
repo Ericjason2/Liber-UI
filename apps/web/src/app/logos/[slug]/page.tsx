@@ -1,4 +1,4 @@
-import { OFFICIAL_LOGOS } from "@/lib/catalog";
+import { OFFICIAL_LOGOS } from "@/lib/catalog-logos";
 import { notFound } from "next/navigation";
 import { LogoDetailClient } from "./client";
 

@@ -12,7 +12,7 @@ import {
   Sun,
   Moon,
 } from "lucide-react";
-import type { LogoItem } from "@/lib/catalog";
+import type { LogoItem } from "@/lib/catalog-logos";
 import { useToast } from "@/context/ToastContext";
 
 interface Props {

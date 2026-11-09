@@ -1,4 +1,4 @@
-import { SAMPLE_FONTS } from "@/lib/catalog";
+import { SAMPLE_FONTS } from "@/lib/catalog-fonts";
 import { notFound } from "next/navigation";
 import { FontDetailClient } from "./client";
 

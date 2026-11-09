@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { SAMPLE_COMPONENTS, type ComponentItem } from "@/lib/catalog";
+import { SAMPLE_COMPONENTS, type ComponentItem } from "@/lib/catalog-components";
 import {
   Copy,
   Check,

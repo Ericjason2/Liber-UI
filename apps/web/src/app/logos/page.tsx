@@ -11,7 +11,7 @@ import {
   Sparkles,
   ArrowUpRight,
 } from "lucide-react";
-import { OFFICIAL_LOGOS, type LogoItem } from "@/lib/catalog";
+import { OFFICIAL_LOGOS, type LogoItem } from "@/lib/catalog-logos";
 import { useToast } from "@/context/ToastContext";
 
 type VariantType = "color" | "mono" | "wordmark";

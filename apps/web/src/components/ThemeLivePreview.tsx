@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { SAMPLE_THEMES, type ThemeItem } from "@/lib/catalog";
+import { BASE_THEMES, TOTAL_THEMES_COUNT, type ThemeItem } from "@/lib/catalog-themes-base";
 import { Copy, Check, ArrowRight } from "lucide-react";
 import { useToast } from "@/context/ToastContext";
 
@@ -16,7 +16,7 @@ function getContrastColor(hex: string): string {
 }
 
 export function ThemeLivePreview() {
-  const [selected, setSelected] = useState<ThemeItem>(SAMPLE_THEMES[0] ?? ({} as ThemeItem));
+  const [selected, setSelected] = useState<ThemeItem>(BASE_THEMES[0] ?? ({} as ThemeItem));
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
 
@@ -47,14 +47,14 @@ export function ThemeLivePreview() {
           href="/themes"
           className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-foreground hover:underline"
         >
-          <span>Explore all {SAMPLE_THEMES.length} palettes & themes</span>
+          <span>Explore all {TOTAL_THEMES_COUNT} palettes & themes</span>
           <ArrowRight className="h-3.5 w-3.5" />
         </Link>
       </div>
 
       {/* Coolors Seamless Palette Strip Selector */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-        {SAMPLE_THEMES.slice(0, 6).map((theme) => {
+        {BASE_THEMES.slice(0, 6).map((theme) => {
           const isSelected = selected.slug === theme.slug;
           return (
             <button

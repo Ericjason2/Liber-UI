@@ -17,13 +17,11 @@ import { InstallStrip } from "@/components/InstallStrip";
 import { ThemeLivePreview } from "@/components/ThemeLivePreview";
 import { CommandPalette } from "@/components/CommandPalette";
 import { useToast } from "@/context/ToastContext";
-import {
-  OFFICIAL_LOGOS,
-  SAMPLE_ANIMATIONS,
-  SAMPLE_COMPONENTS,
-  SAMPLE_THEMES,
-  SAMPLE_FONTS,
-} from "@/lib/catalog";
+import { OFFICIAL_LOGOS } from "@/lib/catalog-logos";
+import { SAMPLE_ANIMATIONS } from "@/lib/catalog-animations";
+import { SAMPLE_COMPONENTS } from "@/lib/catalog-components";
+import { BASE_THEMES, TOTAL_THEMES_COUNT } from "@/lib/catalog-themes-base";
+import { BASE_FONTS, TOTAL_FONTS_COUNT } from "@/lib/catalog-fonts-base";
 
 export default function HomePage() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -62,14 +60,14 @@ export default function HomePage() {
     {
       name: "Themes",
       desc: "Semantic token palette configs.",
-      count: `${SAMPLE_THEMES.length} themes`,
+      count: `${TOTAL_THEMES_COUNT} themes`,
       href: "/themes",
       icon: Palette,
     },
     {
       name: "Fonts",
       desc: "Tested open-license typographies.",
-      count: `${SAMPLE_FONTS.length} fonts`,
+      count: `${TOTAL_FONTS_COUNT} fonts`,
       href: "/fonts",
       icon: Type,
     },
@@ -77,8 +75,8 @@ export default function HomePage() {
 
   const featuredLogo = OFFICIAL_LOGOS[0];
   const featuredAnimation = SAMPLE_ANIMATIONS[0];
-  const featuredTheme = SAMPLE_THEMES[0];
-  const featuredFont = SAMPLE_FONTS[0];
+  const featuredTheme = BASE_THEMES[0];
+  const featuredFont = BASE_FONTS[0];
 
   return (
     <div className="max-w-[1280px] mx-auto px-4 sm:px-6 py-16 sm:py-24 space-y-28 sm:space-y-36">

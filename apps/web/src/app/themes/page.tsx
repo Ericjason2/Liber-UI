@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import Link from "next/link";
-import { SAMPLE_THEMES, type ThemeItem } from "@/lib/catalog";
+import { SAMPLE_THEMES, type ThemeItem } from "@/lib/catalog-themes";
 import {
   Copy,
   Check,

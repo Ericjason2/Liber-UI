@@ -11,7 +11,7 @@ import {
   Play,
   Zap,
 } from "lucide-react";
-import { SAMPLE_ANIMATIONS } from "@/lib/catalog";
+import { SAMPLE_ANIMATIONS } from "@/lib/catalog-animations";
 import { useToast } from "@/context/ToastContext";
 
 type CodeTab = "css" | "tailwind";

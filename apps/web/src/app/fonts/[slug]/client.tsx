@@ -13,7 +13,7 @@ import {
   ArrowUpRight,
   Sparkles,
 } from "lucide-react";
-import type { FontItem } from "@/lib/catalog";
+import type { FontItem } from "@/lib/catalog-fonts-base";
 import { useToast } from "@/context/ToastContext";
 import { getFontPreviewUrl, getFontCharmapUrl } from "@/lib/fontPreviewUtils";
 

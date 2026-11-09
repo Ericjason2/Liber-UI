@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { OFFICIAL_LOGOS } from "@/lib/catalog";
+import { OFFICIAL_LOGOS } from "@/lib/catalog-logos";
 
 const BASE_URL = "https://liber-ui-delta.vercel.app";
 
