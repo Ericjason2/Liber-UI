@@ -114,10 +114,7 @@ export default function LogosPage() {
     e.preventDefault();
     e.stopPropagation();
 
-    const siteOrigin =
-      typeof window !== "undefined"
-        ? window.location.origin
-        : "https://liber-ui-delta.vercel.app";
+    const siteOrigin = window.location.origin;
     const vKey = logo.variants?.[variant] ? variant : "color";
     const cssSnippet = `@import url('${siteOrigin}/api/logo-css/${logo.slug}');\n\n/* HTML class: <span class="logo-${logo.slug}${vKey === "mono" ? "-mono" : ""}"></span> */\n/* Direct SVG URL: ${siteOrigin}/svg/${logo.slug}/${vKey}.svg */`;
 
