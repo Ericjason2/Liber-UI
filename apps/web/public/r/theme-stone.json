@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-stone",
+  "type": "registry:theme",
+  "title": "Stone",
+  "description": "Warm neutral slate with natural earthy tones.",
+  "author": "Liber Team",
+  "categories": [
+    "standard"
+  ],
+  "files": [
+    {
+      "path": "styles/themes/stone.css",
+      "content": "/* Liber UI Theme: Stone */\n:root {\n  --background: #FAF9F6;\n  --foreground: #292524;\n  --primary: #44403C;\n  --muted: #E7E5E4;\n  --accent: #78716C;\n  --color-1: #FAF9F6;\n  --color-2: #292524;\n  --color-3: #44403C;\n  --color-4: #E7E5E4;\n  --color-5: #78716C;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "theme",
+    "swatches": [
+      "#FAF9F6",
+      "#292524",
+      "#44403C",
+      "#E7E5E4",
+      "#78716C"
+    ]
+  }
+}

@@ -98,6 +98,7 @@ export default function ThemesPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [sortBy, setSortBy] = useState<"default" | "name">("default");
+  const [displayCount, setDisplayCount] = useState<number>(36);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [highlightedSlug, setHighlightedSlug] = useState<string | null>(null);
   const { toast } = useToast();
@@ -166,18 +167,53 @@ export default function ThemesPage() {
     });
   }, [searchQuery, selectedCategory, sortBy]);
 
+  const visibleThemes = useMemo(() => {
+    return filteredThemes.slice(0, displayCount);
+  }, [filteredThemes, displayCount]);
+
+  // If navigated with #palette-<slug>, ensure the target palette is rendered and highlighted
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const applyHashTarget = () => {
+      const hash = window.location.hash;
+      if (hash.startsWith("#palette-")) {
+        const slug = hash.replace("#palette-", "");
+        const idx = filteredThemes.findIndex((t) => t.slug === slug);
+        if (idx !== -1) {
+          setDisplayCount((prev) => (idx >= prev ? idx + 12 : prev));
+          setHighlightedSlug(slug);
+          setTimeout(() => {
+            const el = document.getElementById(`palette-${slug}`);
+            if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+          }, 50);
+        }
+      }
+    };
+    const timer = setTimeout(applyHashTarget, 0);
+    window.addEventListener("hashchange", applyHashTarget);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("hashchange", applyHashTarget);
+    };
+  }, [filteredThemes]);
+
   const handleRandomPalette = useCallback(() => {
     if (filteredThemes.length === 0) return;
     const randomIndex = Math.floor(Math.random() * filteredThemes.length);
     const chosen = filteredThemes[randomIndex];
     if (!chosen) return;
+    if (randomIndex >= displayCount) {
+      setDisplayCount(randomIndex + 12);
+    }
     setHighlightedSlug(chosen.slug);
     toast(`Highlighted: ${chosen.name}`);
-    const el = document.getElementById(`palette-${chosen.slug}`);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  }, [filteredThemes, toast]);
+    setTimeout(() => {
+      const el = document.getElementById(`palette-${chosen.slug}`);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }, 50);
+  }, [filteredThemes, displayCount, toast]);
 
   // Spacebar to pick a random palette (signature Coolors feature)
   useEffect(() => {
@@ -318,12 +354,10 @@ export default function ThemesPage() {
 
       {/* 3. Coolors-Style Popular Palettes Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredThemes.map((theme) => {
+        {visibleThemes.map((theme) => {
           const isHighlighted = highlightedSlug === theme.slug;
           const hexListString = theme.swatches.join(", ");
-          const cssVariablesString = theme.swatches
-            .map((hex, i) => `--color-${i + 1}: ${hex};`)
-            .join("\n");
+          const cssVariablesString = `:root {\n  --background: ${theme.tokens?.background || theme.swatches[0]};\n  --foreground: ${theme.tokens?.foreground || theme.swatches[1]};\n  --primary: ${theme.tokens?.primary || theme.swatches[2]};\n  --muted: ${theme.tokens?.muted || theme.swatches[3]};\n  --accent: ${theme.tokens?.accent || theme.swatches[4]};\n  --color-1: ${theme.swatches[0]};\n  --color-2: ${theme.swatches[1]};\n  --color-3: ${theme.swatches[2]};\n  --color-4: ${theme.swatches[3]};\n  --color-5: ${theme.swatches[4]};\n}`;
           const tailwindConfigSnippet = JSON.stringify(
             {
               colors: Object.fromEntries(
@@ -483,6 +517,24 @@ export default function ThemesPage() {
           );
         })}
       </div>
+
+      {/* 4. Pagination / Load More */}
+      {filteredThemes.length > displayCount && (
+        <div className="pt-4 flex flex-col items-center gap-2">
+          <button
+            onClick={() => setDisplayCount((prev) => prev + 36)}
+            className="px-6 py-2.5 rounded-[10px] border border-border bg-card hover:bg-muted text-xs font-mono text-foreground hover:text-primary transition-colors shadow-sm flex items-center gap-2"
+          >
+            <span>Load more palettes</span>
+            <span className="text-muted-foreground">
+              ({filteredThemes.length - displayCount} remaining)
+            </span>
+          </button>
+          <span className="text-[11px] font-mono text-muted-foreground">
+            Showing {Math.min(displayCount, filteredThemes.length)} of {filteredThemes.length} palettes
+          </span>
+        </div>
+      )}
 
       {filteredThemes.length === 0 && (
         <div className="py-20 text-center space-y-3 rounded-[12px] border border-dashed border-border bg-card/60 p-8">

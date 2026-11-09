@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-banner",
+  "type": "registry:ui",
+  "title": "Alert & Callout Banner",
+  "description": "Semantic contextual alert box with warning, error, info and success variants.",
+  "author": "Liber Team",
+  "categories": [
+    "feedback"
+  ],
+  "dependencies": [
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "path": "ui/alert-banner.tsx",
+      "content": "import React from \"react\";\n\nexport function AlertBanner({ title = \"Notice\", message = \"Standard tier quotas have been updated.\" }: { title?: string; message?: string }) {\n  return (\n    <div className=\"p-3.5 rounded-[8px] border border-blue-500/20 bg-blue-500/10 text-xs text-foreground space-y-0.5\">\n      <span className=\"font-semibold block\">{title}</span>\n      <span className=\"text-muted-foreground text-[11px] block\">{message}</span>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}

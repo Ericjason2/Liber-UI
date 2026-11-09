@@ -158,6 +158,7 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
                 dangerouslySetInnerHTML={{ __html: svgContent }}
               />
             ) : (
+              /* eslint-disable-next-line @next/next/no-img-element */
               <img
                 src={`/svg/${logo.slug}/${currentVariant}.svg`}
                 alt={`${logo.name} preview`}
@@ -199,6 +200,7 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
                     {vKey === "color" ? logo.variants.color.hex : ".svg"}
                   </div>
                 </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={`/svg/${logo.slug}/${vKey}.svg`}
                   alt=""
@@ -394,6 +396,7 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
                 className="p-4 rounded-xl border border-border bg-card hover:border-neutral-400 dark:hover:border-neutral-500 transition-all flex flex-col items-center justify-between text-center gap-3 aspect-square"
               >
                 <div className="flex-1 flex items-center justify-center">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={`/svg/${rel.slug}/color.svg`}
                     alt={rel.name}

@@ -21,6 +21,8 @@ export default function AnimationsPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [speed, setSpeed] = useState<PlaybackSpeed>("1x");
+  const [infiniteLoop, setInfiniteLoop] = useState<boolean>(false);
+  const [motionSafe, setMotionSafe] = useState<boolean>(true);
   const [activeTabs, setActiveTabs] = useState<Record<string, CodeTab>>({});
   const [expandedCodes, setExpandedCodes] = useState<Record<string, boolean>>({});
   const [replayKeys, setReplayKeys] = useState<Record<string, number>>({});
@@ -103,6 +105,33 @@ export default function AnimationsPage() {
           </div>
 
           <div className="flex items-center gap-3 self-start lg:self-auto flex-wrap">
+            {/* Infinite Loop Toggle */}
+            <button
+              onClick={() => setInfiniteLoop((prev) => !prev)}
+              className={`h-9 px-3 rounded-[10px] border text-xs font-mono transition-colors flex items-center gap-1.5 ${
+                infiniteLoop
+                  ? "bg-primary text-primary-foreground border-primary font-semibold"
+                  : "border-border bg-card text-muted-foreground hover:text-foreground"
+              }`}
+              title="Toggle continuous infinite loop on all animations"
+            >
+              <RotateCcw className="h-3.5 w-3.5" />
+              <span>{infiniteLoop ? "Loop: Infinite" : "Loop: Single"}</span>
+            </button>
+
+            {/* Accessibility Motion-Safe Toggle */}
+            <button
+              onClick={() => setMotionSafe((prev) => !prev)}
+              className={`h-9 px-3 rounded-[10px] border text-xs font-mono transition-colors flex items-center gap-1.5 ${
+                motionSafe
+                  ? "bg-primary text-primary-foreground border-primary font-semibold"
+                  : "border-border bg-card text-muted-foreground hover:text-foreground"
+              }`}
+              title="Include prefers-reduced-motion accessibility guard in copied code"
+            >
+              <span>{motionSafe ? "a11y: motion-safe" : "a11y: standard"}</span>
+            </button>
+
             {/* Speed Selector */}
             <div className="flex items-center gap-1 p-1 rounded-[10px] border border-border bg-card text-xs font-mono">
               <span className="px-2 text-muted-foreground flex items-center gap-1">
@@ -211,8 +240,9 @@ export default function AnimationsPage() {
               <div className="relative h-44 rounded-[10px] border border-border/80 bg-surface-subtle/50 flex items-center justify-center overflow-hidden p-4 select-none">
                 <InteractivePreview
                   slug={item.slug}
-                  key={`${item.slug}-${replayCount}`}
+                  key={`${item.slug}-${replayCount}-${infiniteLoop}`}
                   speedMultiplier={getSpeedMultiplier()}
+                  infiniteLoop={infiniteLoop}
                 />
               </div>
 
@@ -261,11 +291,24 @@ export default function AnimationsPage() {
 
                     <button
                       onClick={() => {
+                        const rawClass = infiniteLoop
+                          ? item.cssClasses.replace(/;\s*\}/, " infinite;\n}")
+                          : item.cssClasses;
+                        const finalCssClass = motionSafe
+                          ? `@media (prefers-reduced-motion: no-preference) {\n  ${rawClass.replace(/\n/g, "\n  ")}\n}`
+                          : rawClass;
+                        const baseTwClass = infiniteLoop
+                          ? item.tailwindClasses.replace(/_both\]$/, "_infinite_both]")
+                          : item.tailwindClasses;
+                        const finalTwClass = motionSafe
+                          ? `motion-safe:${baseTwClass}`
+                          : baseTwClass;
+
                         if (currentTab === "css") {
-                          const code = `${item.cssKeyframes}\n\n${item.cssClasses}`;
+                          const code = `${item.cssKeyframes}\n\n${finalCssClass}`;
                           copyToClipboard(code, `Copied ${item.name} CSS`, `${item.slug}-css`);
                         } else {
-                          const code = `// Tailwind Classes:\n${item.tailwindClasses}\n\n${item.tailwindConfig}`;
+                          const code = `// Tailwind Classes:\n${finalTwClass}\n\n${item.tailwindConfig}`;
                           copyToClipboard(code, `Copied ${item.name} Tailwind config`, `${item.slug}-tw`);
                         }
                       }}
@@ -286,8 +329,18 @@ export default function AnimationsPage() {
                   <div className="relative rounded-[8px] bg-neutral-950 p-3 text-[11px] font-mono text-neutral-300 overflow-x-auto max-h-48 border border-neutral-800">
                     <pre className="whitespace-pre">
                       {currentTab === "css"
-                        ? `${item.cssKeyframes}\n\n${item.cssClasses}`
-                        : `/* Tailwind Classes */\n${item.tailwindClasses}\n\n/* Tailwind Config */\n${item.tailwindConfig}`}
+                        ? `${item.cssKeyframes}\n\n${
+                            motionSafe
+                              ? `@media (prefers-reduced-motion: no-preference) {\n  ${(infiniteLoop ? item.cssClasses.replace(/;\s*\}/, " infinite;\n}") : item.cssClasses).replace(/\n/g, "\n  ")}\n}`
+                              : infiniteLoop
+                                ? item.cssClasses.replace(/;\s*\}/, " infinite;\n}")
+                                : item.cssClasses
+                          }`
+                        : `/* Tailwind Classes */\n${motionSafe ? "motion-safe:" : ""}${
+                            infiniteLoop
+                              ? item.tailwindClasses.replace(/_both\]$/, "_infinite_both]")
+                              : item.tailwindClasses
+                          }\n\n/* Tailwind Config */\n${item.tailwindConfig}`}
                     </pre>
                   </div>
                 )}
@@ -304,9 +357,11 @@ export default function AnimationsPage() {
 function InteractivePreview({
   slug,
   speedMultiplier,
+  infiniteLoop,
 }: {
   slug: string;
   speedMultiplier: number;
+  infiniteLoop: boolean;
 }) {
   const item = SAMPLE_ANIMATIONS.find((a) => a.slug === slug);
   const [replayCount, setReplayCount] = useState(0);
@@ -319,6 +374,8 @@ function InteractivePreview({
     setReplayCount((c) => c + 1);
   };
 
+  const iterationCount = infiniteLoop || item.trigger === "loop" ? "infinite" : undefined;
+
   // 1. Text Animations (Animista Text)
   if (item.category === "text") {
     return (
@@ -330,7 +387,10 @@ function InteractivePreview({
         <span
           key={replayCount}
           className={`text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground ${slug}`}
-          style={{ animationDuration: `calc(0.7s * ${speedMultiplier})` }}
+          style={{
+            animationDuration: `calc(0.7s * ${speedMultiplier})`,
+            animationIterationCount: iterationCount,
+          }}
         >
           ANIMISTA
         </span>
@@ -352,7 +412,10 @@ function InteractivePreview({
         <div
           key={replayCount}
           className={`w-full h-full flex items-center justify-center ${slug}`}
-          style={{ animationDuration: `calc(6s * ${speedMultiplier})` }}
+          style={{
+            animationDuration: `calc(6s * ${speedMultiplier})`,
+            animationIterationCount: iterationCount,
+          }}
         >
           <span className="text-xs font-mono font-semibold text-white px-3 py-1 rounded-full bg-black/40 backdrop-blur-xs">
             {item.name}
@@ -372,7 +435,10 @@ function InteractivePreview({
       <div
         key={replayCount}
         className={`px-6 py-3 rounded-[10px] bg-primary text-primary-foreground font-mono text-xs font-semibold shadow-sm flex items-center gap-2 select-none ${slug}`}
-        style={{ animationDuration: `calc(0.6s * ${speedMultiplier})` }}
+        style={{
+          animationDuration: `calc(0.6s * ${speedMultiplier})`,
+          animationIterationCount: iterationCount,
+        }}
       >
         <Zap className="h-3.5 w-3.5 fill-current" />
         <span>{item.name}</span>

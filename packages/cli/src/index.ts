@@ -10,6 +10,27 @@ export interface LiberConfig {
   registryUrl?: string;
 }
 
+export interface RegistryFileEntry {
+  path: string;
+  content: string;
+  type?: string;
+}
+
+export interface RegistryItemResponse {
+  name?: string;
+  type?: string;
+  title?: string;
+  description?: string;
+  author?: string;
+  categories?: string[];
+  dependencies?: string[];
+  files?: RegistryFileEntry[];
+  meta?: {
+    kind?: string;
+    [key: string]: unknown;
+  };
+}
+
 const DEFAULT_CONFIG: LiberConfig = {
   format: "react",
   variant: "color",
@@ -27,7 +48,7 @@ export async function runCli(argv: string[]) {
   }
 
   if (command === "--version" || command === "-v") {
-    console.log("Liber CLI v0.1.0");
+    console.log("@liber-ui/cli v0.1.1");
     return;
   }
 
@@ -55,14 +76,14 @@ export async function runCli(argv: string[]) {
 
 function printHelp() {
   console.log(`
-Liber CLI – Install logos, components, themes & fonts into your project
+Liber UI CLI – Install logos, components, animations, themes & fonts into your project
 
 Usage:
-  npx @liber/cli <command> [options]
+  npx @liber-ui/cli <command> [options]
 
 Commands:
   init                     Initialize liber.json configuration in current directory
-  add <resource...>        Install resources (e.g. "liber add react python")
+  add <resource...>        Install resources (e.g. "liber add react python button")
   search <query>           Search resources across the entire catalog
   view <resource>          Display details, variants and files before installing
   diff <resource>          Compare installed files with remote catalog
@@ -104,13 +125,16 @@ async function handleInit(args: string[]) {
   console.log(`Default output directory set to: ${DEFAULT_CONFIG.outDir}`);
 }
 
-async function fetchRegistryItem(name: string, baseUrl: string) {
+async function fetchRegistryItem(name: string, baseUrl: string): Promise<RegistryItemResponse> {
   const cleanBase = baseUrl.replace(/\/$/, "");
   const candidates = [name];
   if (name.startsWith("font-")) {
     candidates.push(name.replace(/^font-/, ""));
+  } else if (name.startsWith("theme-")) {
+    candidates.push(name.replace(/^theme-/, ""));
   } else {
     candidates.push(`font-${name}`);
+    candidates.push(`theme-${name}`);
   }
 
   let lastError: Error | null = null;
@@ -119,7 +143,7 @@ async function fetchRegistryItem(name: string, baseUrl: string) {
     try {
       const res = await fetch(url);
       if (res.ok) {
-        return await res.json();
+        return (await res.json()) as RegistryItemResponse;
       }
     } catch (err) {
       lastError = err as Error;
@@ -145,20 +169,74 @@ async function handleAdd(args: string[]) {
   const force = flags.has("--force");
   const config = await loadConfig();
 
-  // Parse custom --out
+  // Parse custom --out, --format, --variant
   let outDir = config.outDir || "src/components/ui/logos";
   const outIdx = args.indexOf("--out");
-  if (outIdx !== -1 && args[outIdx + 1]) {
-    outDir = args[outIdx + 1];
+  const outArg = outIdx !== -1 ? args[outIdx + 1] : undefined;
+  if (outArg) {
+    outDir = outArg;
   }
 
-  console.log(`Installing ${names.length} resource(s) into ./${outDir}...`);
+  let format: "react" | "svg" = config.format || "react";
+  const formatIdx = args.indexOf("--format");
+  const formatArg = formatIdx !== -1 ? args[formatIdx + 1] : undefined;
+  if (formatArg === "react" || formatArg === "svg") {
+    format = formatArg;
+  }
+
+  let variant: "color" | "mono" | "wordmark" = config.variant || "color";
+  const variantIdx = args.indexOf("--variant");
+  const variantArg = variantIdx !== -1 ? args[variantIdx + 1] : undefined;
+  if (variantArg === "color" || variantArg === "mono" || variantArg === "wordmark") {
+    variant = variantArg;
+  }
+
+  console.log(
+    `Installing ${names.length} resource(s) into ./${outDir} (format=${format}, variant=${variant})...`
+  );
 
   for (const name of names) {
     try {
       const registryUrl = config.registryUrl || DEFAULT_CONFIG.registryUrl || "";
       const item = await fetchRegistryItem(name, registryUrl);
       console.log(`\n-> Installing [${item.type || "ui"}] "${item.title || name}"...`);
+
+      if (format === "svg" && item.meta?.kind === "logo" && item.name) {
+        const registryOrigin = registryUrl.replace(/\/r\/?$/, "");
+        const svgUrl = `${registryOrigin}/svg/${item.name}/${variant}.svg`;
+        const svgFileName = `${item.name}-${variant}.svg`;
+        const destPath = resolve(join(outDir, svgFileName));
+
+        if (!destPath.startsWith(process.cwd())) {
+          throw new Error(`Access violation: target path ${destPath} is outside current workspace.`);
+        }
+
+        const svgRes = await fetch(svgUrl);
+        if (!svgRes.ok) {
+          throw new Error(`Could not fetch SVG variant "${variant}" from ${svgUrl}`);
+        }
+        const svgContent = await svgRes.text();
+
+        if (dryRun) {
+          console.log(`  [DRY-RUN] Would write: ${destPath} (${svgContent.length} bytes)`);
+          continue;
+        }
+
+        try {
+          await access(destPath);
+          if (!force) {
+            console.log(`  [SKIP] File exists: ${destPath}. Use --force to overwrite.`);
+            continue;
+          }
+        } catch {
+          // File does not exist
+        }
+
+        await mkdir(dirname(destPath), { recursive: true });
+        await writeFile(destPath, svgContent, "utf8");
+        console.log(`  [OK] Wrote SVG: ${destPath}`);
+        continue;
+      }
 
       if (!item.files || item.files.length === 0) {
         console.warn(`  [WARN] Resource "${name}" has no registered files.`);
@@ -218,7 +296,7 @@ async function handleSearch(args: string[]) {
   try {
     const res = await fetch(indexUrl);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const registry = await res.json();
+    const registry = (await res.json()) as { items?: RegistrySearchResult[] };
     const items = registry.items || [];
 
     interface RegistrySearchResult {
@@ -227,7 +305,7 @@ async function handleSearch(args: string[]) {
       description?: string;
       type?: string;
     }
-    const matches = (items as RegistrySearchResult[]).filter((item) => {
+    const matches = items.filter((item) => {
       const matchName = item.name?.toLowerCase().includes(query);
       const matchTitle = item.title?.toLowerCase().includes(query);
       const matchDesc = item.description?.toLowerCase().includes(query);
@@ -278,6 +356,28 @@ async function handleDiff(args: string[]) {
     console.log("Usage: liber diff <resource>");
     return;
   }
+  const config = await loadConfig();
+  const outDir = config.outDir || "src/components/ui/logos";
   console.log(`Checking diff for "${name}" against remote registry...`);
-  console.log("Local files are up to date.");
+
+  try {
+    const registryUrl = config.registryUrl || DEFAULT_CONFIG.registryUrl || "";
+    const item = await fetchRegistryItem(name, registryUrl);
+    for (const file of item.files || []) {
+      const fileName = file.path.split("/").pop() || `${name}.tsx`;
+      const localPath = resolve(join(outDir, fileName));
+      try {
+        const localContent = await readFile(localPath, "utf8");
+        if (localContent.trim() === (file.content || "").trim()) {
+          console.log(`  [OK] ${fileName} is identical to upstream.`);
+        } else {
+          console.log(`  [DIFF] ${fileName} differs from upstream (${localContent.length} bytes local vs ${file.content.length} bytes remote).`);
+        }
+      } catch {
+        console.log(`  [MISSING] ${fileName} is not installed locally in ./${outDir}.`);
+      }
+    }
+  } catch (err) {
+    console.error(`[ERR] Could not check diff for "${name}":`, (err as Error).message);
+  }
 }

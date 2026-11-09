@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-ocean",
+  "type": "registry:theme",
+  "title": "Ocean",
+  "description": "Deep maritime blue palette for dashboards.",
+  "author": "Liber Team",
+  "categories": [
+    "cool"
+  ],
+  "files": [
+    {
+      "path": "styles/themes/ocean.css",
+      "content": "/* Liber UI Theme: Ocean */\n:root {\n  --background: #F0F9FF;\n  --foreground: #0C4A6E;\n  --primary: #0284C7;\n  --muted: #E0F2FE;\n  --accent: #38BDF8;\n  --color-1: #F0F9FF;\n  --color-2: #0C4A6E;\n  --color-3: #0284C7;\n  --color-4: #E0F2FE;\n  --color-5: #38BDF8;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "theme",
+    "swatches": [
+      "#F0F9FF",
+      "#0C4A6E",
+      "#0284C7",
+      "#E0F2FE",
+      "#38BDF8"
+    ]
+  }
+}

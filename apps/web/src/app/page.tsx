@@ -212,6 +212,7 @@ export default function HomePage() {
               <Link href={`/logos/${featuredLogo.slug}`} className="space-y-3 group">
                 <div className="flex items-center justify-between">
                   <div className="h-9 w-9 rounded-[10px] border border-border bg-surface-subtle flex items-center justify-center p-1">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={`/svg/${featuredLogo.slug}/color.svg`}
                       alt={featuredLogo.name}
@@ -281,7 +282,7 @@ export default function HomePage() {
           {/* Theme Card */}
           {featuredTheme && (
             <div className="p-4 rounded-[10px] border border-border bg-card space-y-4 flex flex-col justify-between">
-              <Link href={`/themes#${featuredTheme.slug}`} className="space-y-3 group">
+              <Link href={`/themes#palette-${featuredTheme.slug}`} className="space-y-3 group">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-1">
                     {featuredTheme.swatches.slice(0, 4).map((c, i) => (
@@ -325,7 +326,7 @@ export default function HomePage() {
           {/* Font Card */}
           {featuredFont && (
             <div className="p-4 rounded-[10px] border border-border bg-card space-y-4 flex flex-col justify-between">
-              <Link href={`/fonts#${featuredFont.slug}`} className="space-y-3 group">
+              <Link href={`/fonts/${featuredFont.slug}`} className="space-y-3 group">
                 <div className="flex items-center justify-between">
                   <span className="text-lg font-mono font-medium">Aa</span>
                   <span className="text-[10px] font-mono border border-border rounded-full px-2 py-0.5 text-muted-foreground">

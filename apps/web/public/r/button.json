@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button",
+  "type": "registry:ui",
+  "title": "Button",
+  "description": "Primary, outline, secondary, ghost and destructive button primitives.",
+  "author": "Liber Team",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button.tsx",
+      "content": "import React from \"react\";\n\nexport function Button({ children, variant = \"primary\", className = \"\", ...props }: React.ButtonHTMLAttributes<HTMLButtonElement> & { variant?: \"primary\" | \"secondary\" | \"outline\" | \"ghost\" | \"destructive\" }) {\n  return <button className={`px-3.5 py-1.5 rounded-[8px] text-xs font-medium transition-colors ${className}`} {...props}>{children}</button>;\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}

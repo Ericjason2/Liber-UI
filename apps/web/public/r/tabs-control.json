@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs-control",
+  "type": "registry:ui",
+  "title": "Segmented Tabs Control",
+  "description": "Hairline geometric tab switcher with smooth active state indicators.",
+  "author": "Liber Team",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tabs-control.tsx",
+      "content": "import React, { useState } from \"react\";\n\nexport function TabsControl({ tabs = [\"overview\", \"analytics\", \"settings\"] }: { tabs?: string[] }) {\n  const [active, setActive] = useState(tabs[0]);\n  return (\n    <div className=\"flex items-center rounded-[8px] border border-border bg-muted/40 p-1 text-xs\">\n      {tabs.map((t) => (\n        <button key={t} onClick={() => setActive(t)} className={`flex-1 py-1 rounded-[6px] capitalize ${active === t ? \"bg-card text-foreground font-semibold shadow-sm\" : \"text-muted-foreground\"}`}>{t}</button>\n      ))}\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}

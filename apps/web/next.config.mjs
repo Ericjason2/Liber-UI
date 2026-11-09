@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ["@liber/core", "@liber/react"],
+  transpilePackages: ["@liber-ui/core", "@liber-ui/react", "@liber/core", "@liber/react"],
 };
 
 export default nextConfig;

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-pill",
+  "type": "registry:ui",
+  "title": "Badge & Status Pill",
+  "description": "Semantic status indicators for success, warning, destructive, and neutral states.",
+  "author": "Liber Team",
+  "categories": [
+    "feedback"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/badge-pill.tsx",
+      "content": "import React from \"react\";\n\nexport function BadgePill({ label = \"Operational\" }: { label?: string }) {\n  return (\n    <span className=\"inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 font-medium\">\n      <span className=\"w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse\" />\n      {label}\n    </span>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}

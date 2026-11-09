@@ -43,23 +43,23 @@ const rawDocs: SearchDoc[] = [
   })),
   ...SAMPLE_THEMES.map((t) => ({
     id: `theme-${t.slug}`,
-    slug: t.slug,
+    slug: `theme-${t.slug}`,
     name: t.name,
     description: t.description,
     kind: "theme" as const,
     category: t.category || "theme",
     tags: [...(t.tags || []), "theme", "palette", "colors"],
-    url: `/themes#${t.slug}`,
+    url: `/themes#palette-${t.slug}`,
   })),
   ...SAMPLE_FONTS.map((f) => ({
     id: `font-${f.slug}`,
-    slug: f.slug,
+    slug: `font-${f.slug}`,
     name: f.name,
     description: f.description,
     kind: "font" as const,
     category: f.category,
-    tags: ["font", "typography"],
-    url: `/fonts#${f.slug}`,
+    tags: ["font", "typography", ...(f.theme ? [f.theme] : []), ...(f.subtheme ? [f.subtheme] : [])],
+    url: `/fonts/${f.slug}`,
   })),
   ...SAMPLE_ANIMATIONS.map((a) => ({
     id: `anim-${a.slug}`,
@@ -73,29 +73,40 @@ const rawDocs: SearchDoc[] = [
   })),
 ];
 
-const uniqueDocsMap = new Map<string, SearchDoc>();
-for (const doc of rawDocs) {
-  if (!uniqueDocsMap.has(doc.id)) {
-    uniqueDocsMap.set(doc.id, doc);
+let miniSearchInstance: MiniSearch<SearchDoc> | null = null;
+let cachedDocs: SearchDoc[] | null = null;
+
+function getSearchEngine(): { engine: MiniSearch<SearchDoc>; docs: SearchDoc[] } {
+  if (miniSearchInstance && cachedDocs) {
+    return { engine: miniSearchInstance, docs: cachedDocs };
   }
+
+  const uniqueDocsMap = new Map<string, SearchDoc>();
+  for (const doc of rawDocs) {
+    if (!uniqueDocsMap.has(doc.id)) {
+      uniqueDocsMap.set(doc.id, doc);
+    }
+  }
+  cachedDocs = Array.from(uniqueDocsMap.values());
+
+  miniSearchInstance = new MiniSearch<SearchDoc>({
+    fields: ["name", "aliases", "description", "tags", "category"],
+    storeFields: ["id", "slug", "name", "description", "kind", "category", "url"],
+    searchOptions: {
+      fuzzy: 0.2,
+      prefix: true,
+      boost: { name: 2, aliases: 1.5 },
+    },
+  });
+
+  miniSearchInstance.addAll(cachedDocs);
+  return { engine: miniSearchInstance, docs: cachedDocs };
 }
-const docs: SearchDoc[] = Array.from(uniqueDocsMap.values());
-
-const miniSearch = new MiniSearch<SearchDoc>({
-  fields: ["name", "aliases", "description", "tags", "category"],
-  storeFields: ["id", "slug", "name", "description", "kind", "category", "url"],
-  searchOptions: {
-    fuzzy: 0.2,
-    prefix: true,
-    boost: { name: 2, aliases: 1.5 },
-  },
-});
-
-miniSearch.addAll(docs);
 
 export function searchCatalog(query: string, limit = 8): SearchDoc[] {
+  const { engine, docs } = getSearchEngine();
   if (!query.trim()) return docs.slice(0, limit);
-  const results = miniSearch.search(query);
+  const results = engine.search(query);
   return results.slice(0, limit).map((r) => ({
     id: r.id,
     slug: r.slug,

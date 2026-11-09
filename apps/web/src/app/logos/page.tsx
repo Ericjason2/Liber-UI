@@ -266,6 +266,7 @@ export default function LogosPage() {
                 <div className="flex items-start justify-between mb-3">
                   <div className="w-12 h-12 rounded-[10px] border border-border bg-muted/40 flex items-center justify-center p-2.5 group-hover:bg-card transition-colors">
                     {/* SVG preview */}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={`/svg/${logo.slug}/${currentVKey}.svg`}
                       alt={logo.name}

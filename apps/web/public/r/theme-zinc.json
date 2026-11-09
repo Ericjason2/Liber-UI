@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-zinc",
+  "type": "registry:theme",
+  "title": "Zinc",
+  "description": "Cool calibrated industrial gray.",
+  "author": "Liber Team",
+  "categories": [
+    "standard"
+  ],
+  "files": [
+    {
+      "path": "styles/themes/zinc.css",
+      "content": "/* Liber UI Theme: Zinc */\n:root {\n  --background: #FAFAFA;\n  --foreground: #09090B;\n  --primary: #27272A;\n  --muted: #F4F4F5;\n  --accent: #71717A;\n  --color-1: #FAFAFA;\n  --color-2: #09090B;\n  --color-3: #27272A;\n  --color-4: #F4F4F5;\n  --color-5: #71717A;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "theme",
+    "swatches": [
+      "#FAFAFA",
+      "#09090B",
+      "#27272A",
+      "#F4F4F5",
+      "#71717A"
+    ]
+  }
+}

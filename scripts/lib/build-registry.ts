@@ -88,6 +88,66 @@ export function createFontRegistryItem(font: FontMeta): RegistryItem {
   };
 }
 
+export function createComponentRegistryItem(comp: {
+  slug: string;
+  name: string;
+  description: string;
+  category: string;
+  dependencies?: string[];
+  code: string;
+}): RegistryItem {
+  return {
+    $schema: "https://ui.shadcn.com/schema/registry-item.json",
+    name: comp.slug,
+    type: "registry:ui",
+    title: comp.name,
+    description: comp.description,
+    author: "Liber Team",
+    categories: [comp.category],
+    dependencies: comp.dependencies || [],
+    files: [
+      {
+        path: `ui/${comp.slug}.tsx`,
+        content: comp.code,
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      kind: "component",
+    },
+  };
+}
+
+export function createThemeRegistryItem(theme: {
+  slug: string;
+  name: string;
+  description: string;
+  category: string;
+  swatches: string[];
+}): RegistryItem {
+  const cssContent = `/* Liber UI Theme: ${theme.name} */\n:root {\n  --background: ${theme.swatches[0]};\n  --foreground: ${theme.swatches[1]};\n  --primary: ${theme.swatches[2]};\n  --muted: ${theme.swatches[3]};\n  --accent: ${theme.swatches[4]};\n  --color-1: ${theme.swatches[0]};\n  --color-2: ${theme.swatches[1]};\n  --color-3: ${theme.swatches[2]};\n  --color-4: ${theme.swatches[3]};\n  --color-5: ${theme.swatches[4]};\n}\n`;
+  return {
+    $schema: "https://ui.shadcn.com/schema/registry-item.json",
+    name: `theme-${theme.slug}`,
+    type: "registry:theme",
+    title: theme.name,
+    description: theme.description,
+    author: "Liber Team",
+    categories: [theme.category],
+    files: [
+      {
+        path: `styles/themes/${theme.slug}.css`,
+        content: cssContent,
+        type: "registry:style",
+      },
+    ],
+    meta: {
+      kind: "theme",
+      swatches: theme.swatches,
+    },
+  };
+}
+
 export function createRootRegistry(items: RegistryItem[]): RootRegistry {
   return {
     $schema: "https://ui.shadcn.com/schema/registry.json",

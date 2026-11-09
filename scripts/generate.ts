@@ -4,7 +4,14 @@ import { fileURLToPath } from "node:url";
 import { validateAll } from "./lib/validate-resource.js";
 import { optimizeSvgString } from "./lib/optimize-svg.js";
 import { generateReactComponent, toPascalCase } from "./lib/build-react.js";
-import { createLogoRegistryItem, createFontRegistryItem, createRootRegistry, type RegistryItem } from "./lib/build-registry.js";
+import {
+  createLogoRegistryItem,
+  createFontRegistryItem,
+  createComponentRegistryItem,
+  createThemeRegistryItem,
+  createRootRegistry,
+  type RegistryItem,
+} from "./lib/build-registry.js";
 import type { LogoMeta, LogoVariant, ResourceMeta } from "./lib/schema.js";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -132,6 +139,112 @@ try {
   }
 } catch {
   // fonts dir not present
+}
+
+// Step 2c: Process Core UI Components & Popular Themes into Registry
+console.log("-> 2c. Writing Core UI component and theme registry items...");
+const CORE_COMPONENTS_REGISTRY = [
+  {
+    slug: "button",
+    name: "Button",
+    description: "Primary, outline, secondary, ghost and destructive button primitives.",
+    category: "buttons",
+    dependencies: [],
+    code: `import React from "react";\n\nexport function Button({ children, variant = "primary", className = "", ...props }: React.ButtonHTMLAttributes<HTMLButtonElement> & { variant?: "primary" | "secondary" | "outline" | "ghost" | "destructive" }) {\n  return <button className={\`px-3.5 py-1.5 rounded-[8px] text-xs font-medium transition-colors \${className}\`} {...props}>{children}</button>;\n}\n`,
+  },
+  {
+    slug: "input",
+    name: "Input & Search Field",
+    description: "Accessible text input field with icon adornment and 2px focus ring.",
+    category: "inputs",
+    dependencies: ["lucide-react"],
+    code: `import React from "react";\n\nexport function Input(props: React.InputHTMLAttributes<HTMLInputElement>) {\n  return <input className="w-full h-9 px-3 rounded-[8px] border border-border bg-card text-xs text-foreground focus:outline-none focus:ring-2 focus:ring-ring" {...props} />;\n}\n`,
+  },
+  {
+    slug: "stat-card",
+    name: "Stat Card",
+    description: "Clean numeric card with change indicator and trend graph slot.",
+    category: "data-display",
+    dependencies: [],
+    code: `import React from "react";\n\nexport function StatCard({ label = "Total Edge Traffic", value = "1,429,820", delta = "+24.8%" }: { label?: string; value?: string; delta?: string }) {\n  return (\n    <div className="p-4 rounded-[10px] border border-border bg-card space-y-2 shadow-sm">\n      <div className="flex items-center justify-between text-xs text-muted-foreground">\n        <span>{label}</span>\n        <span className="font-mono text-emerald-600 font-semibold bg-emerald-500/10 px-1.5 py-0.5 rounded-[4px]">{delta}</span>\n      </div>\n      <div className="text-2xl font-bold font-mono text-foreground">{value}</div>\n    </div>\n  );\n}\n`,
+  },
+  {
+    slug: "badge-pill",
+    name: "Badge & Status Pill",
+    description: "Semantic status indicators for success, warning, destructive, and neutral states.",
+    category: "feedback",
+    dependencies: [],
+    code: `import React from "react";\n\nexport function BadgePill({ label = "Operational" }: { label?: string }) {\n  return (\n    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 font-medium">\n      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />\n      {label}\n    </span>\n  );\n}\n`,
+  },
+  {
+    slug: "tabs-control",
+    name: "Segmented Tabs Control",
+    description: "Hairline geometric tab switcher with smooth active state indicators.",
+    category: "data-display",
+    dependencies: [],
+    code: `import React, { useState } from "react";\n\nexport function TabsControl({ tabs = ["overview", "analytics", "settings"] }: { tabs?: string[] }) {\n  const [active, setActive] = useState(tabs[0]);\n  return (\n    <div className="flex items-center rounded-[8px] border border-border bg-muted/40 p-1 text-xs">\n      {tabs.map((t) => (\n        <button key={t} onClick={() => setActive(t)} className={\`flex-1 py-1 rounded-[6px] capitalize \${active === t ? "bg-card text-foreground font-semibold shadow-sm" : "text-muted-foreground"}\`}>{t}</button>\n      ))}\n    </div>\n  );\n}\n`,
+  },
+  {
+    slug: "accordion-item",
+    name: "Accordion & Collapsible",
+    description: "Smooth expandable content panel for FAQ and technical documentation specs.",
+    category: "data-display",
+    dependencies: ["lucide-react"],
+    code: `import React, { useState } from "react";\n\nexport function AccordionItem({ title = "How are assets installed?", children = "Assets are copied directly into your codebase." }: { title?: string; children?: React.ReactNode }) {\n  const [open, setOpen] = useState(true);\n  return (\n    <div className="rounded-[8px] border border-border bg-card overflow-hidden">\n      <button onClick={() => setOpen(!open)} className="w-full px-4 py-3 flex items-center justify-between text-xs font-semibold text-foreground">{title}</button>\n      {open && <div className="px-4 pb-3 pt-1 text-xs text-muted-foreground border-t border-border/60">{children}</div>}\n    </div>\n  );\n}\n`,
+  },
+  {
+    slug: "avatar-stack",
+    name: "Avatar & User Stack",
+    description: "Overlapping team avatars with online presence beacons and fallback initials.",
+    category: "data-display",
+    dependencies: [],
+    code: `import React from "react";\n\nexport function AvatarStack({ initials = ["SC", "AD", "KM", "EL"] }: { initials?: string[] }) {\n  return (\n    <div className="flex -space-x-2">\n      {initials.map((init, i) => (\n        <div key={i} className="w-9 h-9 rounded-full border-2 border-card bg-muted text-foreground flex items-center justify-center font-mono text-xs font-semibold">{init}</div>\n      ))}\n    </div>\n  );\n}\n`,
+  },
+  {
+    slug: "toggle-switch",
+    name: "Switch & Toggle",
+    description: "Accessible animated toggle control with tactile spring transition and keyboard support.",
+    category: "inputs",
+    dependencies: [],
+    code: `import React, { useState } from "react";\n\nexport function ToggleSwitch() {\n  const [checked, setChecked] = useState(true);\n  return (\n    <button role="switch" aria-checked={checked} onClick={() => setChecked(!checked)} className={\`w-11 h-6 rounded-full p-0.5 border transition-colors \${checked ? "bg-primary border-primary" : "bg-muted border-border"}\`}>\n      <span className={\`w-5 h-5 rounded-full block transition-transform \${checked ? "bg-primary-foreground translate-x-5" : "bg-muted-foreground/60 translate-x-0"}\`} />\n    </button>\n  );\n}\n`,
+  },
+  {
+    slug: "alert-banner",
+    name: "Alert & Callout Banner",
+    description: "Semantic contextual alert box with warning, error, info and success variants.",
+    category: "feedback",
+    dependencies: ["lucide-react"],
+    code: `import React from "react";\n\nexport function AlertBanner({ title = "Notice", message = "Standard tier quotas have been updated." }: { title?: string; message?: string }) {\n  return (\n    <div className="p-3.5 rounded-[8px] border border-blue-500/20 bg-blue-500/10 text-xs text-foreground space-y-0.5">\n      <span className="font-semibold block">{title}</span>\n      <span className="text-muted-foreground text-[11px] block">{message}</span>\n    </div>\n  );\n}\n`,
+  },
+  {
+    slug: "progress-bar",
+    name: "Progress & Stepper Bar",
+    description: "Linear indicator with percentage readout, indeterminate pulse, and stage labels.",
+    category: "feedback",
+    dependencies: [],
+    code: `import React from "react";\n\nexport function ProgressBar({ value = 68 }: { value?: number }) {\n  return (\n    <div className="w-full space-y-1.5">\n      <div className="flex justify-between text-xs font-mono"><span>Progress</span><span>{value}%</span></div>\n      <div className="h-2 rounded-full bg-muted overflow-hidden"><div style={{ width: \`\${value}%\` }} className="h-full bg-primary rounded-full" /></div>\n    </div>\n  );\n}\n`,
+  },
+];
+
+for (const comp of CORE_COMPONENTS_REGISTRY) {
+  const compReg = createComponentRegistryItem(comp);
+  registryItems.push(compReg);
+  await writeFile(join(APPS_WEB_PUBLIC, "r", `${comp.slug}.json`), JSON.stringify(compReg, null, 2) + "\n", "utf8");
+}
+
+const CORE_THEMES_REGISTRY = [
+  { slug: "neutral", name: "Neutral", description: "Pure grayscale palette with deep contrast.", category: "standard", swatches: ["#FFFFFF", "#171717", "#262626", "#F5F5F5", "#2563EB"] },
+  { slug: "stone", name: "Stone", description: "Warm neutral slate with natural earthy tones.", category: "standard", swatches: ["#FAF9F6", "#292524", "#44403C", "#E7E5E4", "#78716C"] },
+  { slug: "zinc", name: "Zinc", description: "Cool calibrated industrial gray.", category: "standard", swatches: ["#FAFAFA", "#09090B", "#27272A", "#F4F4F5", "#71717A"] },
+  { slug: "slate", name: "Slate", description: "Blue-tinted architectural gray.", category: "standard", swatches: ["#F8FAFC", "#0F172A", "#1E293B", "#F1F5F9", "#3B82F6"] },
+  { slug: "ocean", name: "Ocean", description: "Deep maritime blue palette for dashboards.", category: "cool", swatches: ["#F0F9FF", "#0C4A6E", "#0284C7", "#E0F2FE", "#38BDF8"] },
+  { slug: "emerald", name: "Emerald", description: "Vibrant botanical green for fintech and nature apps.", category: "nature", swatches: ["#ECFDF5", "#064E3B", "#059669", "#D1FAE5", "#10B981"] },
+];
+
+for (const th of CORE_THEMES_REGISTRY) {
+  const thReg = createThemeRegistryItem(th);
+  registryItems.push(thReg);
+  await writeFile(join(APPS_WEB_PUBLIC, "r", `theme-${th.slug}.json`), JSON.stringify(thReg, null, 2) + "\n", "utf8");
 }
 
 // Step 3: Write Root Registry

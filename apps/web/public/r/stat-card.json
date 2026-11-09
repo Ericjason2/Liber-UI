@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "stat-card",
+  "type": "registry:ui",
+  "title": "Stat Card",
+  "description": "Clean numeric card with change indicator and trend graph slot.",
+  "author": "Liber Team",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/stat-card.tsx",
+      "content": "import React from \"react\";\n\nexport function StatCard({ label = \"Total Edge Traffic\", value = \"1,429,820\", delta = \"+24.8%\" }: { label?: string; value?: string; delta?: string }) {\n  return (\n    <div className=\"p-4 rounded-[10px] border border-border bg-card space-y-2 shadow-sm\">\n      <div className=\"flex items-center justify-between text-xs text-muted-foreground\">\n        <span>{label}</span>\n        <span className=\"font-mono text-emerald-600 font-semibold bg-emerald-500/10 px-1.5 py-0.5 rounded-[4px]\">{delta}</span>\n      </div>\n      <div className=\"text-2xl font-bold font-mono text-foreground\">{value}</div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}

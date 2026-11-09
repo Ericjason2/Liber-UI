@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-stack",
+  "type": "registry:ui",
+  "title": "Avatar & User Stack",
+  "description": "Overlapping team avatars with online presence beacons and fallback initials.",
+  "author": "Liber Team",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/avatar-stack.tsx",
+      "content": "import React from \"react\";\n\nexport function AvatarStack({ initials = [\"SC\", \"AD\", \"KM\", \"EL\"] }: { initials?: string[] }) {\n  return (\n    <div className=\"flex -space-x-2\">\n      {initials.map((init, i) => (\n        <div key={i} className=\"w-9 h-9 rounded-full border-2 border-card bg-muted text-foreground flex items-center justify-center font-mono text-xs font-semibold\">{init}</div>\n      ))}\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}

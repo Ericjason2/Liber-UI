@@ -1,8 +1,8 @@
-# @liber/cli
+# @liber-ui/cli
 
-> Official CLI for **Liber UI** – Install logos, components, color themes, and fonts directly into your React, Next.js, and Vite projects.
+> Official CLI for **Liber UI** – Install logos, components, animations, color themes, and fonts directly into your React, Next.js, and Vite projects.
 
-[![npm version](https://img.shields.io/npm/v/@liber/cli.svg)](https://www.npmjs.com/package/@liber/cli)
+[![npm version](https://img.shields.io/npm/v/@liber-ui/cli.svg)](https://www.npmjs.com/package/@liber-ui/cli)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -13,17 +13,17 @@ You don't need to install anything globally. Run directly with `npx`:
 
 ```bash
 # Initialize liber configuration in your project
-npx @liber/cli init
+npx @liber-ui/cli init
 
 # Add a logo or component directly to your project
-npx @liber/cli add docker
-npx @liber/cli add react github typescript
+npx @liber-ui/cli add docker
+npx @liber-ui/cli add react github typescript
 
 # Search for available resources
-npx @liber/cli search database
+npx @liber-ui/cli search database
 
 # Inspect a component before downloading
-npx @liber/cli view docker
+npx @liber-ui/cli view docker
 ```
 
 ---
@@ -32,11 +32,11 @@ npx @liber/cli view docker
 
 | Command | Description | Example |
 |---|---|---|
-| `init` | Initializes a `liber.json` config file | `npx @liber/cli init` |
-| `add <slug...>` | Downloads components and writes them to your project | `npx @liber/cli add docker --variant color` |
-| `search <term>` | Searches the catalog for logos and components | `npx @liber/cli search devops` |
-| `view <slug>` | Displays metadata and available variants for an item | `npx @liber/cli view postgresql` |
-| `diff <slug>` | Compares your local file with the upstream registry | `npx @liber/cli diff docker` |
+| `init` | Initializes a `liber.json` config file | `npx @liber-ui/cli init` |
+| `add <slug...>` | Downloads components and writes them to your project | `npx @liber-ui/cli add docker --variant color` |
+| `search <term>` | Searches the catalog for logos and components | `npx @liber-ui/cli search devops` |
+| `view <slug>` | Displays metadata and available variants for an item | `npx @liber-ui/cli view postgresql` |
+| `diff <slug>` | Compares your local file with the upstream registry | `npx @liber-ui/cli diff docker` |
 
 ### Options for `add`
 - `--format react|svg` : Component format (default: `react`)

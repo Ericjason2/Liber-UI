@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress-bar",
+  "type": "registry:ui",
+  "title": "Progress & Stepper Bar",
+  "description": "Linear indicator with percentage readout, indeterminate pulse, and stage labels.",
+  "author": "Liber Team",
+  "categories": [
+    "feedback"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/progress-bar.tsx",
+      "content": "import React from \"react\";\n\nexport function ProgressBar({ value = 68 }: { value?: number }) {\n  return (\n    <div className=\"w-full space-y-1.5\">\n      <div className=\"flex justify-between text-xs font-mono\"><span>Progress</span><span>{value}%</span></div>\n      <div className=\"h-2 rounded-full bg-muted overflow-hidden\"><div style={{ width: `${value}%` }} className=\"h-full bg-primary rounded-full\" /></div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}

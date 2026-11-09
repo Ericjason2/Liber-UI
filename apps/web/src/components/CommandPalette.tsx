@@ -1,9 +1,9 @@
 "use client";
-import React, { useState, useEffect, useRef, useMemo } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Search, CornerDownLeft, Sparkles, Box, Zap, Palette, Type } from "lucide-react";
-import { searchCatalog, type SearchDoc } from "@/lib/search";
+import type { SearchDoc } from "@/lib/search";
 import { useToast } from "@/context/ToastContext";
 
 interface CommandPaletteProps {
@@ -11,16 +11,125 @@ interface CommandPaletteProps {
   onClose: () => void;
 }
 
+const DEFAULT_QUICK_ITEMS: SearchDoc[] = [
+  {
+    id: "logo-react",
+    slug: "react",
+    name: "React",
+    description: "JavaScript library for building user interfaces.",
+    kind: "logo",
+    category: "frontend",
+    tags: ["react", "ui"],
+    url: "/logos/react",
+  },
+  {
+    id: "logo-nextjs",
+    slug: "nextjs",
+    name: "Next.js",
+    description: "The React Framework for the Web.",
+    kind: "logo",
+    category: "frontend",
+    tags: ["nextjs", "react"],
+    url: "/logos/nextjs",
+  },
+  {
+    id: "logo-typescript",
+    slug: "typescript",
+    name: "TypeScript",
+    description: "Typed superset of JavaScript that compiles to plain JavaScript.",
+    kind: "logo",
+    category: "languages",
+    tags: ["typescript", "ts"],
+    url: "/logos/typescript",
+  },
+  {
+    id: "logo-docker",
+    slug: "docker",
+    name: "Docker",
+    description: "Platform for developing, shipping, and running applications in containers.",
+    kind: "logo",
+    category: "devops",
+    tags: ["docker", "containers"],
+    url: "/logos/docker",
+  },
+  {
+    id: "anim-scale-up-center",
+    slug: "scale-up-center",
+    name: "Scale Up Center",
+    description: "Smooth focal expansion originating from the center.",
+    kind: "animation",
+    category: "basic",
+    tags: ["animation", "scale"],
+    url: "/animations#scale-up-center",
+  },
+  {
+    id: "component-button",
+    slug: "button",
+    name: "Button",
+    description: "Primary, outline, secondary, ghost and destructive button primitives.",
+    kind: "component",
+    category: "buttons",
+    tags: ["button", "ui"],
+    url: "/components#button",
+  },
+  {
+    id: "theme-neutral",
+    slug: "theme-neutral",
+    name: "Neutral",
+    description: "Pure grayscale palette with deep contrast for technical applications.",
+    kind: "theme",
+    category: "standard",
+    tags: ["theme", "palette"],
+    url: "/themes#palette-neutral",
+  },
+  {
+    id: "font-geist",
+    slug: "font-geist",
+    name: "Geist",
+    description: "Precision grotesque sans-serif crafted for developer interfaces.",
+    kind: "font",
+    category: "sans",
+    tags: ["font", "typography"],
+    url: "/fonts/geist",
+  },
+];
+
 export function CommandPalette({ open, onClose }: CommandPaletteProps) {
   const [query, setQuery] = useState("");
+  const [fetchedResults, setFetchedResults] = useState<SearchDoc[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
   const { toast } = useToast();
 
-  const results = useMemo(() => {
-    return searchCatalog(query, 8);
-  }, [query]);
+  const results = query.trim() ? fetchedResults : DEFAULT_QUICK_ITEMS;
+
+  useEffect(() => {
+    const trimmed = query.trim();
+    if (!open || !trimmed) return;
+
+    const controller = new AbortController();
+    const timer = setTimeout(() => {
+      fetch(`/api/search?q=${encodeURIComponent(trimmed)}&limit=8`, {
+        signal: controller.signal,
+      })
+        .then((res) => (res.ok ? res.json() : Promise.reject(new Error("Search error"))))
+        .then((data: { results?: SearchDoc[] }) => {
+          if (Array.isArray(data.results)) {
+            setFetchedResults(data.results);
+            setSelectedIndex(0);
+          }
+        })
+        .catch(() => {
+          // Ignore aborted requests
+        });
+    }, 120);
+
+    return () => {
+      clearTimeout(timer);
+      controller.abort();
+    };
+  }, [query, open]);
 
   useEffect(() => {
     if (open) {

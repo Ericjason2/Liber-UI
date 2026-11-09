@@ -58,11 +58,228 @@ export default function ComponentsPage() {
   const getComponentCode = (slug: string): string => {
     switch (slug) {
       case "button":
-        return `import { Button } from "@/components/ui/button";\n\nexport function ButtonDemo() {\n  return (\n    <div className="flex gap-2">\n      <Button variant="default">Primary</Button>\n      <Button variant="secondary">Secondary</Button>\n      <Button variant="outline">Outline</Button>\n      <Button variant="destructive">Destructive</Button>\n    </div>\n  );\n}`;
+        return `import React from "react";
+
+export function ButtonDemo() {
+  return (
+    <div className="flex flex-wrap items-center gap-3">
+      <button className="px-3.5 py-1.5 rounded-[8px] bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition-opacity shadow-sm">
+        Primary
+      </button>
+      <button className="px-3.5 py-1.5 rounded-[8px] bg-muted hover:bg-muted/80 text-foreground text-xs font-medium transition-colors border border-border">
+        Secondary
+      </button>
+      <button className="px-3.5 py-1.5 rounded-[8px] border border-border bg-card hover:bg-muted text-foreground text-xs font-medium transition-colors">
+        Outline
+      </button>
+      <button className="px-3.5 py-1.5 rounded-[8px] hover:bg-muted text-muted-foreground hover:text-foreground text-xs font-medium transition-colors">
+        Ghost
+      </button>
+      <button className="px-3.5 py-1.5 rounded-[8px] bg-red-600 hover:bg-red-700 text-white text-xs font-medium transition-colors">
+        Destructive
+      </button>
+    </div>
+  );
+}`;
       case "input":
-        return `import { Input } from "@/components/ui/input";\nimport { Search } from "lucide-react";\n\nexport function InputDemo() {\n  return (\n    <div className="relative">\n      <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />\n      <Input className="pl-9" placeholder="Search..." />\n    </div>\n  );\n}`;
+        return `import React, { useState } from "react";
+import { Search } from "lucide-react";
+
+export function InputDemo() {
+  const [value, setValue] = useState("");
+  return (
+    <div className="relative flex items-center max-w-sm">
+      <Search className="absolute left-3 h-3.5 w-3.5 text-muted-foreground" />
+      <input
+        type="text"
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        placeholder="Search documentation..."
+        className="w-full h-9 pl-9 pr-8 rounded-[8px] border border-border bg-card text-xs text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+      />
+    </div>
+  );
+}`;
+      case "stat-card":
+        return `import React from "react";
+
+export function StatCard() {
+  return (
+    <div className="w-full max-w-xs p-4 rounded-[10px] border border-border bg-card space-y-2 shadow-sm">
+      <div className="flex items-center justify-between text-xs text-muted-foreground">
+        <span>Total Edge Traffic</span>
+        <span className="font-mono text-emerald-600 dark:text-emerald-400 font-semibold bg-emerald-500/10 px-1.5 py-0.5 rounded-[4px]">
+          +24.8%
+        </span>
+      </div>
+      <div className="text-2xl font-bold font-mono text-foreground">1,429,820</div>
+      <div className="h-2 rounded-full bg-muted overflow-hidden flex">
+        <div className="w-3/4 bg-primary rounded-full" />
+      </div>
+      <div className="flex items-center justify-between text-[10px] text-muted-foreground font-mono">
+        <span>71% of quota</span>
+        <span>Next reset in 8d</span>
+      </div>
+    </div>
+  );
+}`;
+      case "badge-pill":
+        return `import React from "react";
+
+export function StatusBadges() {
+  return (
+    <div className="flex flex-wrap items-center gap-2">
+      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 font-medium">
+        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+        Operational
+      </span>
+      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 font-medium">
+        <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+        Degraded
+      </span>
+      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono bg-red-500/10 text-red-600 dark:text-red-400 border border-red-500/20 font-medium">
+        <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
+        Outage
+      </span>
+    </div>
+  );
+}`;
+      case "tabs-control":
+        return `import React, { useState } from "react";
+
+export function TabsControl() {
+  const [activeTab, setActiveTab] = useState("overview");
+  const tabs = ["overview", "analytics", "deployments", "settings"];
+
+  return (
+    <div className="flex items-center rounded-[8px] border border-border bg-muted/40 p-1 text-xs">
+      {tabs.map((tab) => (
+        <button
+          key={tab}
+          onClick={() => setActiveTab(tab)}
+          className={\`flex-1 py-1 rounded-[6px] capitalize font-medium transition-colors \${
+            activeTab === tab
+              ? "bg-card text-foreground font-semibold shadow-sm"
+              : "text-muted-foreground hover:text-foreground"
+          }\`}
+        >
+          {tab}
+        </button>
+      ))}
+    </div>
+  );
+}`;
+      case "accordion-item":
+        return `import React, { useState } from "react";
+import { ChevronDown } from "lucide-react";
+
+export function AccordionItem() {
+  const [open, setOpen] = useState(true);
+  return (
+    <div className="w-full max-w-sm rounded-[8px] border border-border bg-card overflow-hidden">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full px-4 py-3 flex items-center justify-between text-xs font-semibold text-foreground hover:bg-muted/40 transition-colors"
+      >
+        <span>How are assets installed?</span>
+        <ChevronDown className={\`h-4 w-4 text-muted-foreground transition-transform \${open ? "rotate-180" : ""}\`} />
+      </button>
+      {open && (
+        <div className="px-4 pb-3 pt-1 text-xs text-muted-foreground leading-relaxed border-t border-border/60">
+          Assets are copied directly into your codebase as TypeScript and Tailwind source files with zero runtime lock-in.
+        </div>
+      )}
+    </div>
+  );
+}`;
+      case "avatar-stack":
+        return `import React from "react";
+
+export function AvatarStack() {
+  const initials = ["SC", "AD", "KM", "EL"];
+  return (
+    <div className="flex items-center gap-3">
+      <div className="flex -space-x-2">
+        {initials.map((initial, i) => (
+          <div
+            key={i}
+            className="w-9 h-9 rounded-full border-2 border-card bg-muted text-foreground flex items-center justify-center font-mono text-xs font-semibold shadow-sm"
+          >
+            {initial}
+          </div>
+        ))}
+        <div className="w-9 h-9 rounded-full border-2 border-card bg-primary text-primary-foreground flex items-center justify-center font-mono text-[11px] font-bold shadow-sm">
+          +12
+        </div>
+      </div>
+      <span className="text-xs text-muted-foreground font-mono">Active contributors</span>
+    </div>
+  );
+}`;
       case "toggle-switch":
-        return `import { Switch } from "@/components/ui/switch";\n\nexport function SwitchDemo() {\n  const [checked, setChecked] = useState(true);\n  return <Switch checked={checked} onCheckedChange={setChecked} />;\n}`;
+        return `import React, { useState } from "react";
+
+export function SwitchDemo() {
+  const [checked, setChecked] = useState(true);
+  return (
+    <button
+      role="switch"
+      aria-checked={checked}
+      onClick={() => setChecked(!checked)}
+      className={\`w-11 h-6 rounded-full p-0.5 border transition-colors \${
+        checked ? "bg-primary border-primary" : "bg-muted border-border"
+      }\`}
+    >
+      <span
+        className={\`w-5 h-5 rounded-full block transition-transform \${
+          checked ? "bg-primary-foreground translate-x-5" : "bg-muted-foreground/60 translate-x-0"
+        }\`}
+      />
+    </button>
+  );
+}`;
+      case "alert-banner":
+        return `import React, { useState } from "react";
+import { Info } from "lucide-react";
+
+export function AlertBanner() {
+  const [visible, setVisible] = useState(true);
+  if (!visible) return null;
+
+  return (
+    <div className="p-3.5 rounded-[8px] border border-blue-500/20 bg-blue-500/10 text-xs text-foreground flex items-start justify-between gap-2.5">
+      <Info className="h-4 w-4 text-blue-500 shrink-0 mt-0.5" />
+      <div className="space-y-0.5 flex-1">
+        <span className="font-semibold block">Notice: API rate limits updated</span>
+        <span className="text-muted-foreground text-[11px] leading-relaxed block">
+          Standard tier quotas have been doubled to 20,000 requests/hour.
+        </span>
+      </div>
+      <button onClick={() => setVisible(false)} className="text-muted-foreground hover:text-foreground text-xs">
+        ✕
+      </button>
+    </div>
+  );
+}`;
+      case "progress-bar":
+        return `import React from "react";
+
+export function ProgressBar({ value = 68 }: { value?: number }) {
+  return (
+    <div className="w-full max-w-sm space-y-2">
+      <div className="flex items-center justify-between text-xs font-mono">
+        <span className="text-muted-foreground">Compilation Progress</span>
+        <span className="font-semibold text-foreground">{value}%</span>
+      </div>
+      <div className="h-2 rounded-full bg-muted overflow-hidden flex">
+        <div
+          style={{ width: \`\${Math.min(100, Math.max(0, value))}%\` }}
+          className="bg-primary rounded-full transition-all duration-300"
+        />
+      </div>
+    </div>
+  );
+}`;
       default:
         return `import React from "react";\n\nexport function ${slug.split("-").map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join("")}() {\n  return (\n    <div className="p-4 rounded-lg border bg-card">\n      {/* Accessible component implementation */}\n    </div>\n  );\n}`;
     }

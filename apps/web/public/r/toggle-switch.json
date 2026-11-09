@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-switch",
+  "type": "registry:ui",
+  "title": "Switch & Toggle",
+  "description": "Accessible animated toggle control with tactile spring transition and keyboard support.",
+  "author": "Liber Team",
+  "categories": [
+    "inputs"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/toggle-switch.tsx",
+      "content": "import React, { useState } from \"react\";\n\nexport function ToggleSwitch() {\n  const [checked, setChecked] = useState(true);\n  return (\n    <button role=\"switch\" aria-checked={checked} onClick={() => setChecked(!checked)} className={`w-11 h-6 rounded-full p-0.5 border transition-colors ${checked ? \"bg-primary border-primary\" : \"bg-muted border-border\"}`}>\n      <span className={`w-5 h-5 rounded-full block transition-transform ${checked ? \"bg-primary-foreground translate-x-5\" : \"bg-muted-foreground/60 translate-x-0\"}`} />\n    </button>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-neutral",
+  "type": "registry:theme",
+  "title": "Neutral",
+  "description": "Pure grayscale palette with deep contrast.",
+  "author": "Liber Team",
+  "categories": [
+    "standard"
+  ],
+  "files": [
+    {
+      "path": "styles/themes/neutral.css",
+      "content": "/* Liber UI Theme: Neutral */\n:root {\n  --background: #FFFFFF;\n  --foreground: #171717;\n  --primary: #262626;\n  --muted: #F5F5F5;\n  --accent: #2563EB;\n  --color-1: #FFFFFF;\n  --color-2: #171717;\n  --color-3: #262626;\n  --color-4: #F5F5F5;\n  --color-5: #2563EB;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "theme",
+    "swatches": [
+      "#FFFFFF",
+      "#171717",
+      "#262626",
+      "#F5F5F5",
+      "#2563EB"
+    ]
+  }
+}

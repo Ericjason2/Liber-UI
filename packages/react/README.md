@@ -1,9 +1,9 @@
-# @liber/react
+# @liber-ui/react
 
 > High-performance, tree-shakeable React logo and icon components for **Liber UI**.
 
-[![npm version](https://img.shields.io/npm/v/@liber/react.svg)](https://www.npmjs.com/package/@liber/react)
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/@liber/react)](https://bundlephobia.com/package/@liber/react)
+[![npm version](https://img.shields.io/npm/v/@liber-ui/react.svg)](https://www.npmjs.com/package/@liber-ui/react)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/@liber-ui/react)](https://bundlephobia.com/package/@liber-ui/react)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -21,13 +21,13 @@
 ##  Installation
 
 ```bash
-npm install @liber/react
+npm install @liber-ui/react
 # or
-pnpm add @liber/react
+pnpm add @liber-ui/react
 # or
-yarn add @liber/react
+yarn add @liber-ui/react
 # or
-bun add @liber/react
+bun add @liber-ui/react
 ```
 
 ---
@@ -37,7 +37,7 @@ bun add @liber/react
 ### Basic Usage
 
 ```tsx
-import { DockerColor, ReactColor, GithubMono, TypescriptColor } from "@liber/react";
+import { DockerColor, ReactColor, GithubMono, TypescriptColor } from "@liber-ui/react";
 
 export function TechStack() {
   return (

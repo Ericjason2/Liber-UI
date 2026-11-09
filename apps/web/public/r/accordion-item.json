@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "accordion-item",
+  "type": "registry:ui",
+  "title": "Accordion & Collapsible",
+  "description": "Smooth expandable content panel for FAQ and technical documentation specs.",
+  "author": "Liber Team",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "path": "ui/accordion-item.tsx",
+      "content": "import React, { useState } from \"react\";\n\nexport function AccordionItem({ title = \"How are assets installed?\", children = \"Assets are copied directly into your codebase.\" }: { title?: string; children?: React.ReactNode }) {\n  const [open, setOpen] = useState(true);\n  return (\n    <div className=\"rounded-[8px] border border-border bg-card overflow-hidden\">\n      <button onClick={() => setOpen(!open)} className=\"w-full px-4 py-3 flex items-center justify-between text-xs font-semibold text-foreground\">{title}</button>\n      {open && <div className=\"px-4 pb-3 pt-1 text-xs text-muted-foreground border-t border-border/60\">{children}</div>}\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}

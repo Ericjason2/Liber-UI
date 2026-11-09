@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-slate",
+  "type": "registry:theme",
+  "title": "Slate",
+  "description": "Blue-tinted architectural gray.",
+  "author": "Liber Team",
+  "categories": [
+    "standard"
+  ],
+  "files": [
+    {
+      "path": "styles/themes/slate.css",
+      "content": "/* Liber UI Theme: Slate */\n:root {\n  --background: #F8FAFC;\n  --foreground: #0F172A;\n  --primary: #1E293B;\n  --muted: #F1F5F9;\n  --accent: #3B82F6;\n  --color-1: #F8FAFC;\n  --color-2: #0F172A;\n  --color-3: #1E293B;\n  --color-4: #F1F5F9;\n  --color-5: #3B82F6;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "meta": {
+    "kind": "theme",
+    "swatches": [
+      "#F8FAFC",
+      "#0F172A",
+      "#1E293B",
+      "#F1F5F9",
+      "#3B82F6"
+    ]
+  }
+}
