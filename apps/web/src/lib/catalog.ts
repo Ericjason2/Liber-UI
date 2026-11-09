@@ -18,3 +18,4 @@ export {
   TOTAL_FONTS_COUNT,
   type FontItem,
 } from "./catalog-fonts";
+export { searchCatalog, type SearchDoc } from "./search";

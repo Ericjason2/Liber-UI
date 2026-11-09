@@ -11,6 +11,8 @@ import {
   Check,
   Copy,
   ArrowUpRight,
+  Code2,
+  Sparkles,
 } from "lucide-react";
 import { BASE_FONTS, TOTAL_FONTS_COUNT, type FontItem } from "@/lib/catalog-fonts-base";
 import { useToast } from "@/context/ToastContext";
@@ -345,6 +347,8 @@ export default function FontsPage() {
         <div className="divide-y divide-border rounded-[12px] border border-border bg-card overflow-hidden">
           {fonts.map((font) => {
             const liberCmd = `npx @liber-ui/cli add font-${font.slug}`;
+            const cssImportSnippet = `@import url('https://liber-ui-delta.vercel.app/api/font-css/${font.slug}');\n\n/* Usage: font-family: '${font.name}', sans-serif; or class="font-${font.slug}" */`;
+            const tailwindFontSnippet = `/* 1. In globals.css: @import url('https://liber-ui-delta.vercel.app/api/font-css/${font.slug}'); */\n/* 2. Use class="font-${font.slug}" or configure tailwind.config.js: */\nmodule.exports = {\n  theme: {\n    extend: {\n      fontFamily: {\n        '${font.slug}': ['var(--font-${font.slug})', '${font.category || "sans-serif"}'],\n      },\n    },\n  },\n};`;
             const isCustomText = Boolean(
               debouncedSampleText && debouncedSampleText !== defaultSample && debouncedSampleText.trim()
             );
@@ -375,7 +379,7 @@ export default function FontsPage() {
                     </span>
                   </div>
 
-                  {/* Actions: Download, CLI Command, View Details */}
+                  {/* Actions: Download, CSS, Tailwind, CLI Command, View Details */}
                   <div className="flex items-center gap-2 flex-wrap">
                     {font.downloadUrl && (
                       <a
@@ -391,6 +395,48 @@ export default function FontsPage() {
                         <span>Download</span>
                       </a>
                     )}
+
+                    <button
+                      onClick={(e) =>
+                        copyToClipboard(
+                          cssImportSnippet,
+                          `Copied CSS @import for ${font.name}`,
+                          `${font.slug}-css`,
+                          e
+                        )
+                      }
+                      className="h-8 px-2.5 rounded-[8px] border border-border bg-card hover:bg-muted font-mono text-xs text-foreground flex items-center gap-1.5 transition-colors"
+                      title="Copy CSS @import stylesheet"
+                    >
+                      <Code2 className="h-3 w-3 text-muted-foreground" />
+                      <span>CSS</span>
+                      {copiedKey === `${font.slug}-css` ? (
+                        <Check className="h-3 w-3 text-emerald-500" />
+                      ) : (
+                        <Copy className="h-3 w-3 opacity-60" />
+                      )}
+                    </button>
+
+                    <button
+                      onClick={(e) =>
+                        copyToClipboard(
+                          tailwindFontSnippet,
+                          `Copied Tailwind config for ${font.name}`,
+                          `${font.slug}-tw`,
+                          e
+                        )
+                      }
+                      className="h-8 px-2.5 rounded-[8px] border border-border bg-card hover:bg-muted font-mono text-xs text-foreground flex items-center gap-1.5 transition-colors"
+                      title="Copy Tailwind CSS font snippet"
+                    >
+                      <Sparkles className="h-3 w-3 text-muted-foreground" />
+                      <span>Tailwind</span>
+                      {copiedKey === `${font.slug}-tw` ? (
+                        <Check className="h-3 w-3 text-emerald-500" />
+                      ) : (
+                        <Copy className="h-3 w-3 opacity-60" />
+                      )}
+                    </button>
 
                     <button
                       onClick={(e) =>

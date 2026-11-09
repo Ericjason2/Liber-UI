@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { OFFICIAL_LOGOS, type LogoItem } from "@/lib/catalog-logos";
+import { OFFICIAL_LOGOS, type LogoItem } from "../lib/catalog-logos";
 
 function buildLogoCssRules(logo: LogoItem, origin: string): string {
   const colorUrl = `${origin}/svg/${logo.slug}/color.svg`;

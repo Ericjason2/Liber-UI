@@ -5,7 +5,7 @@ export interface ThreejsMonoProps extends SVGProps<SVGSVGElement> {
   size?: number | string;
   title?: string;
 }
-const ThreejsMono = ({ size = 24, ...props }: ThreejsMonoProps) => <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width={size ?? 24} height={size ?? 24} {...props}><title>{"threejs (monochrome)"}</title><g color="#000" fontFamily="sans-serif" fontWeight={400}><path d="M16.219 15.762a1.13 1.13 0 0 0-1.076 1.399l24.394 98.742a1.13 1.13 0 0 0 1.879.544l73.386-70.59a1.13 1.13 0 0 0-.47-1.899L16.55 15.806a1.1 1.1 0 0 0-.331-.044m1.584 2.754 94.024 27.07-70.566 67.877z" overflow="visible" style={{
+const ThreejsMono = ({ size = 24, ...props }: ThreejsMonoProps) => <svg role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width={size ?? 24} height={size ?? 24} {...props}><title>{"threejs (monochrome)"}</title><g color="#000" fontFamily="sans-serif" fontWeight={400}><path d="M16.219 15.762a1.13 1.13 0 0 0-1.076 1.399l24.394 98.742a1.13 1.13 0 0 0 1.879.544l73.386-70.59a1.13 1.13 0 0 0-.47-1.899L16.55 15.806a1.1 1.1 0 0 0-.331-.044m1.584 2.754 94.024 27.07-70.566 67.877z" overflow="visible" style={{
       lineHeight: "normal",
       fontVariantLigatures: "normal",
       fontVariantPosition: "normal",

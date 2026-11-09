@@ -79,6 +79,11 @@ export function optimizeSvgString(
 
   let optimized = result.data;
 
+  // Ensure mono SVGs always inherit currentColor even when source paths omit explicit fill attributes
+  if (variant === "mono" && !optimized.includes("currentColor")) {
+    optimized = optimized.replace(/<svg\b([^>]*)>/i, '<svg fill="currentColor"$1>');
+  }
+
   // Ensure role="img" and accessible title
   if (!optimized.includes('role="img"')) {
     optimized = optimized.replace(/<svg\b([^>]*)>/i, '<svg role="img"$1>');

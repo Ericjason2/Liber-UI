@@ -110,6 +110,20 @@ export default function LogosPage() {
     setTimeout(() => setCopiedKey(null), 2000);
   };
 
+  const handleCopyCss = (logo: LogoItem, e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const vKey = logo.variants?.[variant] ? variant : "color";
+    const cssSnippet = `@import url('https://liber-ui-delta.vercel.app/api/logo-css/${logo.slug}');\n\n/* HTML class: <span class="logo-${logo.slug}${vKey === "mono" ? "-mono" : ""}"></span> */\n/* Direct SVG URL: https://liber-ui-delta.vercel.app/svg/${logo.slug}/${vKey}.svg */`;
+
+    navigator.clipboard.writeText(cssSnippet);
+    const key = `${logo.slug}-css`;
+    setCopiedKey(key);
+    toast(`Copied CSS & CDN link for ${logo.name}`);
+    setTimeout(() => setCopiedKey(null), 2000);
+  };
+
   return (
     <div className="max-w-[1280px] mx-auto px-4 sm:px-6 py-10 sm:py-16 space-y-10">
       {/* 1. Breadcrumb & Header */}
@@ -255,6 +269,7 @@ export default function LogosPage() {
             const currentVKey = hasRequestedVariant ? variant : "color";
             const svgKey = `${logo.slug}-svg`;
             const jsxKey = `${logo.slug}-jsx`;
+            const cssKey = `${logo.slug}-css`;
 
             return (
               <div
@@ -323,6 +338,20 @@ export default function LogosPage() {
                       <Sparkles className="h-3.5 w-3.5 text-muted-foreground" />
                     )}
                     <span>{copiedKey === jsxKey ? "Copied" : "JSX"}</span>
+                  </button>
+
+                  <button
+                    onClick={(e) => handleCopyCss(logo, e)}
+                    className="flex-1 h-8 rounded-[6px] bg-muted hover:bg-muted/80 border border-border text-foreground font-mono text-xs transition-colors flex items-center justify-center gap-1"
+                    type="button"
+                    title="Copy CSS @import & CDN URL"
+                  >
+                    {copiedKey === cssKey ? (
+                      <Check className="h-3.5 w-3.5 text-emerald-500" />
+                    ) : (
+                      <Code2 className="h-3.5 w-3.5 text-muted-foreground" />
+                    )}
+                    <span>{copiedKey === cssKey ? "Copied" : "CSS"}</span>
                   </button>
 
                   <a

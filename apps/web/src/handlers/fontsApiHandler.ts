@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { SAMPLE_FONTS, type FontItem } from "@/lib/catalog-fonts";
+import { SAMPLE_FONTS, type FontItem } from "../lib/catalog-fonts";
 
 const THEME_IDS = ["Basic", "Fancy", "Script", "Techno", "Gothic", "Bitmap"];
 
@@ -41,14 +41,18 @@ function getSortedFontsAndCounts(): {
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const q = (searchParams.get("q") || "").toLowerCase().trim();
-  const selectedTheme = searchParams.get("theme") || "all";
+  const selectedTheme = searchParams.get("theme") || searchParams.get("category") || "all";
   const selectedSubtheme = searchParams.get("subtheme") || "all";
   const selectedLetter = searchParams.get("letter") || "All";
   const limitParam = parseInt(searchParams.get("limit") || "36", 10);
-  const offsetParam = parseInt(searchParams.get("offset") || "0", 10);
+  const offsetParam = searchParams.get("offset");
+  const pageParam = parseInt(searchParams.get("page") || "1", 10);
 
   const limit = Number.isNaN(limitParam) ? 36 : Math.min(Math.max(limitParam, 1), 200);
-  const offset = Number.isNaN(offsetParam) ? 0 : Math.max(offsetParam, 0);
+  const offset =
+    offsetParam !== null
+      ? Math.max(parseInt(offsetParam, 10) || 0, 0)
+      : Math.max(((Number.isNaN(pageParam) ? 1 : pageParam) - 1) * limit, 0);
 
   const { sortedFonts, themeCounts } = getSortedFontsAndCounts();
 
@@ -106,7 +110,9 @@ export async function GET(req: NextRequest) {
   return NextResponse.json(
     {
       fonts,
+      items: fonts,
       totalFiltered: filtered.length,
+      total: filtered.length,
       themeCounts,
     },
     {

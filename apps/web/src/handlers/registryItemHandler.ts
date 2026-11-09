@@ -5,7 +5,7 @@ import {
   SAMPLE_THEMES,
   SAMPLE_COMPONENTS,
   SAMPLE_ANIMATIONS,
-} from "@/lib/catalog";
+} from "../lib/catalog";
 
 export async function GET(
   _req: NextRequest,
@@ -161,10 +161,7 @@ export async function GET(
       files: [
         {
           path: `ui/${compMatch.slug}.tsx`,
-          content: `// Liber UI Component: ${compMatch.name}\nimport React from "react";\n\nexport function ${compMatch.slug
-            .split("-")
-            .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-            .join("")}() {\n  return <div className="p-4 rounded-[10px] border border-border bg-card">${compMatch.name}</div>;\n}\n`,
+          content: compMatch.code,
           type: "registry:ui",
         },
       ],

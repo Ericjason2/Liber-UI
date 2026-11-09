@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { searchCatalog } from "@/lib/search";
+import { searchCatalog } from "../lib/search";
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);

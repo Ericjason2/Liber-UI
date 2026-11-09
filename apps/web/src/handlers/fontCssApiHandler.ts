@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { SAMPLE_FONTS } from "@/lib/catalog-fonts";
+import { SAMPLE_FONTS } from "../lib/catalog-fonts";
 
 export async function GET(
   req: NextRequest,
