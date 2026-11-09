@@ -315,7 +315,14 @@ describe("End-User E2E Flows — Logos, Fonts (CSS/Tailwind/TTF), Themes, Animat
     });
   });
 
-  describe("6. Global Search (/api/search) — Cross-Catalog Navigation", () => {
+  describe("6. Global Search (/api/search) & Tailwind Style Configuration", () => {
+    it("scans src/views and src/context in tailwind.config.ts so all UI styles remain active", () => {
+      const tailwindConfigPath = resolve(ROOT_DIR, "apps/web/tailwind.config.ts");
+      const content = readFileSync(tailwindConfigPath, "utf8");
+      expect(content).toContain("./src/views/**/*.{js,ts,jsx,tsx,mdx}");
+      expect(content).toContain("./src/components/**/*.{js,ts,jsx,tsx,mdx}");
+    });
+
     it("returns accurate navigation URLs across logos, fonts, themes, animations, and components", async () => {
       const results = searchCatalog("react");
       expect(results.some((r) => r.kind === "logo" && r.url === "/logos/react")).toBe(true);
