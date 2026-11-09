@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import type { FontItem } from "@/lib/catalog-fonts-base";
 import { useToast } from "@/context/ToastContext";
+import { useSiteOrigin } from "@/hooks/useSiteOrigin";
 import { getFontPreviewUrl, getFontCharmapUrl } from "@/lib/fontPreviewUtils";
 
 interface FontDetailClientProps {
@@ -62,10 +63,7 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
     fontSize
   );
 
-  const siteOrigin =
-    typeof window !== "undefined"
-      ? window.location.origin
-      : "https://liber-ui-delta.vercel.app";
+  const siteOrigin = useSiteOrigin();
   const fontCssUrl = `${siteOrigin}/api/font-css/${font.slug}`;
   const fontFileUrl = `${siteOrigin}/api/font-file/${font.slug}.ttf`;
   const liberCmd = `npx @liber-ui/cli add font-${font.slug}`;

@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { BASE_FONTS, TOTAL_FONTS_COUNT, type FontItem } from "@/lib/catalog-fonts-base";
 import { useToast } from "@/context/ToastContext";
+import { useSiteOrigin } from "@/hooks/useSiteOrigin";
 import { getFontPreviewUrl } from "@/lib/fontPreviewUtils";
 
 const ALPHABET = [
@@ -72,6 +73,7 @@ export default function FontsPage() {
   const [isLoadingMore, setIsLoadingMore] = useState<boolean>(false);
 
   const { toast } = useToast();
+  const siteOrigin = useSiteOrigin();
 
   useEffect(() => {
     const handler = setTimeout(() => {
@@ -346,10 +348,6 @@ export default function FontsPage() {
         {/* 4. Minimalist Font Specimen List with Generous Spacing */}
         <div className="divide-y divide-border rounded-[12px] border border-border bg-card overflow-hidden">
           {fonts.map((font) => {
-            const siteOrigin =
-              typeof window !== "undefined"
-                ? window.location.origin
-                : "https://liber-ui-delta.vercel.app";
             const liberCmd = `npx @liber-ui/cli add font-${font.slug}`;
             const cssImportSnippet = `@import url('${siteOrigin}/api/font-css/${font.slug}');\n\n/* Usage: font-family: '${font.name}', sans-serif; or class="font-${font.slug}" */`;
             const tailwindFontSnippet = `/* 1. In globals.css: @import url('${siteOrigin}/api/font-css/${font.slug}'); */\n/* 2. Use class="font-${font.slug}" or configure tailwind.config.js: */\nmodule.exports = {\n  theme: {\n    extend: {\n      fontFamily: {\n        '${font.slug}': ['var(--font-${font.slug})', '${font.category || "sans-serif"}'],\n      },\n    },\n  },\n};`;

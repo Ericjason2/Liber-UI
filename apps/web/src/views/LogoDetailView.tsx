@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import type { LogoItem } from "@/lib/catalog-logos";
 import { useToast } from "@/context/ToastContext";
+import { useSiteOrigin } from "@/hooks/useSiteOrigin";
 
 interface Props {
   logo: LogoItem;
@@ -32,6 +33,7 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
   const [copiedType, setCopiedType] = useState<string | null>(null);
   const [pngSize, setPngSize] = useState<number>(256);
   const { toast } = useToast();
+  const siteOrigin = useSiteOrigin();
 
   const variantKeys = Object.keys(logo.variants) as ("color" | "mono" | "wordmark")[];
   const currentVariant = logo.variants[selectedVariant] ? selectedVariant : "color";
@@ -62,10 +64,6 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
       case "svg":
         return effectiveSvg;
       case "cdn": {
-        const siteOrigin =
-          typeof window !== "undefined"
-            ? window.location.origin
-            : "https://liber-ui-delta.vercel.app";
         const twBgClass = "bg-" + `[url('${siteOrigin}/svg/${logo.slug}/${currentVariant}.svg')]`;
         return [
           `/* 1. Direct SVG URL (HTML <img> or CSS background) */`,
