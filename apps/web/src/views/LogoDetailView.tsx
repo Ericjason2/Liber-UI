@@ -61,8 +61,23 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
         return `import { ${reactComponentName} } from "@liber-ui/react";\n\nexport function TechStack() {\n  return <${reactComponentName} size={32}${currentVariant === "mono" && monoColor !== "#000000" ? ` color="${monoColor}"` : ""} />;\n}`;
       case "svg":
         return effectiveSvg;
-      case "cdn":
-        return `/* 1. Direct SVG URL (HTML <img> / Tailwind bg-[url(...)]) */\nhttps://liber-ui-delta.vercel.app/svg/${logo.slug}/${currentVariant}.svg\n\n/* 2. CSS @import Stylesheet (.logo-${logo.slug} / .logo-${logo.slug}-mono) */\n@import url('https://liber-ui-delta.vercel.app/api/logo-css/${logo.slug}');\n\n/* 3. Tailwind CSS arbitrary class */\n<span className="inline-block w-8 h-8 bg-[url('https://liber-ui-delta.vercel.app/svg/${logo.slug}/${currentVariant}.svg')] bg-contain bg-center bg-no-repeat" />`;
+      case "cdn": {
+        const siteOrigin =
+          typeof window !== "undefined"
+            ? window.location.origin
+            : "https://liber-ui-delta.vercel.app";
+        const twBgClass = "bg-" + `[url('${siteOrigin}/svg/${logo.slug}/${currentVariant}.svg')]`;
+        return [
+          `/* 1. Direct SVG URL (HTML <img> or CSS background) */`,
+          `${siteOrigin}/svg/${logo.slug}/${currentVariant}.svg`,
+          ``,
+          `/* 2. CSS @import Stylesheet (.logo-${logo.slug} / .logo-${logo.slug}-mono) */`,
+          `@import url('${siteOrigin}/api/logo-css/${logo.slug}');`,
+          ``,
+          `/* 3. Tailwind CSS arbitrary class */`,
+          `<span className="inline-block w-8 h-8 ${twBgClass} bg-contain bg-center bg-no-repeat" />`,
+        ].join("\n");
+      }
       case "cli":
         return `npx @liber-ui/cli add ${logo.slug}`;
     }
@@ -298,6 +313,28 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
             <div className="p-3 bg-card overflow-x-auto max-h-48 text-xs font-mono leading-relaxed text-foreground whitespace-pre">
               {getCodeSnippet()}
             </div>
+            {activeTab === "cdn" && (
+              <div className="px-3 py-2 border-t border-border bg-surface-subtle flex flex-wrap items-center gap-3 text-[11px] font-mono">
+                <a
+                  href={`/api/logo-css/${logo.slug}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline inline-flex items-center gap-1"
+                >
+                  <span>Open CSS (/api/logo-css/{logo.slug})</span>
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+                <a
+                  href={`/svg/${logo.slug}/${currentVariant}.svg`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground hover:underline inline-flex items-center gap-1"
+                >
+                  <span>Open SVG (/svg/{logo.slug}/{currentVariant}.svg)</span>
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              </div>
+            )}
           </div>
 
           {/* Action Buttons */}

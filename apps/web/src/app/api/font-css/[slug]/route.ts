@@ -1,2 +1,2 @@
-export { GET } from "@/handlers/fontCssApiHandler";
+export { GET, OPTIONS } from "@/handlers/fontCssApiHandler";
 

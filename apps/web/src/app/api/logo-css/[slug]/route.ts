@@ -1,2 +1,2 @@
-export { GET } from "@/handlers/logoCssApiHandler";
+export { GET, OPTIONS } from "@/handlers/logoCssApiHandler";
 

@@ -62,9 +62,15 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
     fontSize
   );
 
+  const siteOrigin =
+    typeof window !== "undefined"
+      ? window.location.origin
+      : "https://liber-ui-delta.vercel.app";
+  const fontCssUrl = `${siteOrigin}/api/font-css/${font.slug}`;
+  const fontFileUrl = `${siteOrigin}/api/font-file/${font.slug}.ttf`;
   const liberCmd = `npx @liber-ui/cli add font-${font.slug}`;
-  const cssFontFaceSnippet = `/* Option A: Direct CSS @import (CDN - no download required) */\n@import url('https://liber-ui-delta.vercel.app/api/font-css/${font.slug}');\n\n/* Option B: Standard @font-face (Direct CDN .ttf or local files) */\n@font-face {\n  font-family: '${font.name}';\n  src: url('https://liber-ui-delta.vercel.app/api/font-file/${font.slug}.ttf') format('truetype'),\n       url('/fonts/${font.slug}/${font.name}-Regular.woff2') format('woff2');\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n}\n\n:root {\n  --font-${font.slug}: '${font.name}', sans-serif;\n}`;
-  const tailwindSnippet = `/* 1. In globals.css: @import url('https://liber-ui-delta.vercel.app/api/font-css/${font.slug}'); */\n/* 2. Use class="font-${font.slug}" or configure tailwind.config.js: */\nmodule.exports = {\n  theme: {\n    extend: {\n      fontFamily: {\n        '${font.slug}': ['var(--font-${font.slug})', '${font.category || "sans-serif"}'],\n      },\n    },\n  },\n};`;
+  const cssFontFaceSnippet = `/* Option A: Direct CSS @import (CDN - no download required) */\n@import url('${fontCssUrl}');\n\n/* Option B: Standard @font-face (Direct CDN .ttf or local files) */\n@font-face {\n  font-family: '${font.name}';\n  src: url('${fontFileUrl}') format('truetype'),\n       url('/fonts/${font.slug}/${font.name}-Regular.woff2') format('woff2');\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n}\n\n:root {\n  --font-${font.slug}: '${font.name}', sans-serif;\n}`;
+  const tailwindSnippet = `/* 1. In globals.css: @import url('${fontCssUrl}'); */\n/* 2. Use class="font-${font.slug}" or configure tailwind.config.js: */\nmodule.exports = {\n  theme: {\n    extend: {\n      fontFamily: {\n        '${font.slug}': ['var(--font-${font.slug})', '${font.category || "sans-serif"}'],\n      },\n    },\n  },\n};`;
   const nextFontLocalSnippet = `// app/layout.tsx\nimport localFont from 'next/font/local';\n\nconst font${font.name.replace(/[^a-zA-Z0-9]/g, "")} = localFont({\n  src: './fonts/${font.slug}/${font.name}-Regular.woff2',\n  variable: '--font-${font.slug}',\n  display: 'swap',\n});\n\nexport default function RootLayout({ children }: { children: React.ReactNode }) {\n  return (\n    <html lang="en" className={font${font.name.replace(/[^a-zA-Z0-9]/g, "")}.variable}>\n      <body>{children}</body>\n    </html>\n  );\n}`;
 
   const copyToClipboard = (text: string, label: string, key: string) => {
@@ -628,6 +634,26 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
             <pre className="p-4 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
               <code>{cssFontFaceSnippet}</code>
             </pre>
+            <div className="flex flex-wrap items-center gap-3 pt-1 text-xs font-mono">
+              <a
+                href={`/api/font-css/${font.slug}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-primary hover:underline"
+              >
+                <span>Open CSS Stylesheet (/api/font-css/{font.slug})</span>
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </a>
+              <a
+                href={`/api/font-file/${font.slug}.ttf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground hover:underline"
+              >
+                <span>Direct .ttf Binary (/api/font-file/{font.slug}.ttf)</span>
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </a>
+            </div>
           </div>
 
           {/* Next.js & Tailwind Configuration */}
