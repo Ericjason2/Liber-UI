@@ -293,25 +293,58 @@ export default function DocsPage() {
               Liber UI hosts a catalog of over 7,300 typographies classified alphabetically (A–Z) and by authentic themes (Basic, Fancy, Script, Techno, Gothic, Bitmap). Every font in the catalog is 100% free for commercial and personal use (SIL Open Font License, Apache 2.0, or Public Domain).
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-              <div className="p-4 rounded-[10px] border border-border bg-card space-y-2">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+              <div className="p-4 rounded-[10px] border border-primary/40 bg-card space-y-2">
                 <span className="font-mono font-semibold text-foreground flex items-center gap-1.5">
-                  <Terminal className="h-3.5 w-3.5 text-primary" />
-                  <span>Method 1 · Liber CLI Installation</span>
+                  <Sparkles className="h-3.5 w-3.5 text-primary" />
+                  <span>Method 1 · Direct CSS / Tailwind CDN Link</span>
                 </span>
                 <p className="text-muted-foreground leading-relaxed">
-                  Run <code className="text-primary font-mono">npx @liber-ui/cli add font-&lt;slug&gt;</code>. The CLI automatically writes the font style definition in <code className="font-mono text-foreground">styles/fonts/&lt;slug&gt;.css</code> and links dependencies.
+                  Import any font directly in CSS via <code className="text-primary font-mono">@import url(&apos;https://liber-ui-delta.vercel.app/api/font-css/&lt;slug&gt;&apos;);</code> and apply <code className="font-mono text-foreground">.font-&lt;slug&gt;</code> — zero download required.
                 </p>
               </div>
 
               <div className="p-4 rounded-[10px] border border-border bg-card space-y-2">
                 <span className="font-mono font-semibold text-foreground flex items-center gap-1.5">
-                  <Sparkles className="h-3.5 w-3.5 text-primary" />
-                  <span>Method 2 · Direct Download (.zip)</span>
+                  <Terminal className="h-3.5 w-3.5 text-primary" />
+                  <span>Method 2 · Liber CLI Installation</span>
                 </span>
                 <p className="text-muted-foreground leading-relaxed">
-                  Click the direct &quot;Download&quot; button on any font card to retrieve the authentic <code className="font-mono text-foreground">.zip</code> archive containing the <code className="font-mono text-foreground">.ttf</code> or <code className="font-mono text-foreground">.otf</code> font files.
+                  Run <code className="text-primary font-mono">npx @liber-ui/cli add font-&lt;slug&gt;</code>. The CLI automatically writes <code className="font-mono text-foreground">styles/fonts/&lt;slug&gt;.css</code> in your repository.
                 </p>
+              </div>
+
+              <div className="p-4 rounded-[10px] border border-border bg-card space-y-2">
+                <span className="font-mono font-semibold text-foreground flex items-center gap-1.5">
+                  <Copy className="h-3.5 w-3.5 text-primary" />
+                  <span>Method 3 · Direct Download (.zip)</span>
+                </span>
+                <p className="text-muted-foreground leading-relaxed">
+                  Click the &quot;Download&quot; button on any font card to retrieve the <code className="font-mono text-foreground">.zip</code> archive containing the <code className="font-mono text-foreground">.ttf</code> or <code className="font-mono text-foreground">.otf</code> files for local self-hosting.
+                </p>
+              </div>
+            </div>
+
+            {/* Direct CDN CSS & Tailwind Example */}
+            <div className="space-y-3">
+              <span className="font-mono text-xs font-semibold text-foreground">
+                Direct Usage in CSS or Tailwind CSS (via CDN Link — Like Google Fonts):
+              </span>
+              <div className="rounded-[10px] border border-border bg-card p-4 font-mono text-xs relative group">
+                <pre className="text-foreground overflow-x-auto leading-relaxed">
+{`/* 1. In your globals.css or style.css (or via <link rel="stylesheet"> in HTML): */
+@import url('https://liber-ui-delta.vercel.app/api/font-css/minecraft');
+
+/* 2. Use directly in HTML / JSX / Tailwind: */
+<h1 className="font-minecraft text-4xl">Retro Pixel Heading</h1>
+
+/* 3. Or reference the direct .ttf stream in your own @font-face: */
+@font-face {
+  font-family: 'Minecraft';
+  src: url('https://liber-ui-delta.vercel.app/api/font-file/minecraft.ttf') format('truetype');
+  font-display: swap;
+}`}
+                </pre>
               </div>
             </div>
 
@@ -417,36 +450,35 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
             </div>
 
-            {/* Code Examples: React & Raw SVG */}
+            {/* Code Examples: React, CDN, Tailwind & CSS */}
             <div className="space-y-3 pt-2">
               <span className="font-mono text-xs font-semibold text-foreground">
-                Usage Example in React / Next.js:
+                Usage Examples (CDN Link, Tailwind CSS, Pure CSS &amp; React):
               </span>
 
               <div className="rounded-[8px] border border-border bg-card p-4 font-mono text-xs relative group">
                 <pre className="text-foreground overflow-x-auto leading-relaxed">
-{`// Option A: Using the @liber-ui/react package (tree-shakeable, < 2 KB)
-import { ReactColor, FigmaColor, GithubMono } from "@liber-ui/react";
+{`// Option A: Direct SVG CDN Link in HTML / Vue / Svelte / Markdown
+<img src="https://liber-ui-delta.vercel.app/svg/react/color.svg" alt="React" width="28" height="28" />
 
-export function TechStack() {
-  return (
-    <div className="flex items-center gap-4">
-      <ReactColor size={28} />
-      <FigmaColor size={28} />
-      <GithubMono size={28} className="text-foreground hover:text-primary transition-colors" />
-    </div>
-  );
-}
+// Option B: Tailwind CSS arbitrary URL (Color or Monochrome CSS Mask)
+<span className="inline-block w-7 h-7 bg-[url('https://liber-ui-delta.vercel.app/svg/react/color.svg')] bg-contain bg-center bg-no-repeat" />
+<span className="inline-block w-7 h-7 bg-current text-sky-400 [mask-image:url('https://liber-ui-delta.vercel.app/svg/react/mono.svg')] [mask-size:contain] [mask-repeat:no-repeat]" />
 
-// Option B: Using raw static SVG files in HTML / Vue / Svelte
-<img src="/svg/react/color.svg" alt="React" width="28" height="28" />`}
+// Option C: Pure CSS Stylesheet (@import single logo or all 150+ logos like Devicon)
+@import url('https://liber-ui-delta.vercel.app/api/logo-css/all');
+<i class="logo-react"></i>
+<i class="logo-github-mono" style="color: #fff;"></i>
+
+// Option D: Using the @liber-ui/react package (tree-shakeable, < 2 KB)
+import { ReactColor, FigmaColor, GithubMono } from "@liber-ui/react";`}
                 </pre>
                 <button
                   onClick={() =>
                     copyToClipboard(
-                      `import { ReactColor, FigmaColor, GithubMono } from "@liber-ui/react";\n<ReactColor size={28} />`,
+                      `<img src="https://liber-ui-delta.vercel.app/svg/react/color.svg" alt="React" width="28" height="28" />`,
                       "react-logo-snippet",
-                      "Logo code snippet copied"
+                      "Logo CDN snippet copied"
                     )
                   }
                   className="absolute top-3 right-3 p-1.5 rounded-[6px] bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-colors"

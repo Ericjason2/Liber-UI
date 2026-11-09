@@ -10,6 +10,7 @@ import {
   Code2,
   Sparkles,
   ArrowUpRight,
+  Link2,
 } from "lucide-react";
 import { OFFICIAL_LOGOS, type LogoItem } from "@/lib/catalog-logos";
 import { useToast } from "@/context/ToastContext";
@@ -110,6 +111,36 @@ export default function LogosPage() {
     setTimeout(() => setCopiedKey(null), 2000);
   };
 
+  const handleCopyCdnUrl = (logo: LogoItem, e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const vKey = logo.variants?.[variant] ? variant : "color";
+    const origin =
+      typeof window !== "undefined"
+        ? window.location.origin
+        : "https://liber-ui-delta.vercel.app";
+    const cdnUrl = `${origin}/svg/${logo.slug}/${vKey}.svg`;
+
+    navigator.clipboard.writeText(cdnUrl);
+    const key = `${logo.slug}-cdn`;
+    setCopiedKey(key);
+    toast(`Copied CDN URL for ${logo.name}`);
+    setTimeout(() => setCopiedKey(null), 2000);
+  };
+
+  const handleCopyAllLogosCss = () => {
+    const origin =
+      typeof window !== "undefined"
+        ? window.location.origin
+        : "https://liber-ui-delta.vercel.app";
+    const snippet = `@import url('${origin}/api/logo-css/all');`;
+    navigator.clipboard.writeText(snippet);
+    setCopiedKey("all-logos-css");
+    toast("Copied @import CSS link for all logos");
+    setTimeout(() => setCopiedKey(null), 2000);
+  };
+
   return (
     <div className="max-w-[1280px] mx-auto px-4 sm:px-6 py-10 sm:py-16 space-y-10">
       {/* 1. Breadcrumb & Header */}
@@ -134,6 +165,19 @@ export default function LogosPage() {
           </div>
 
           <div className="flex items-center gap-2.5 self-start sm:self-auto flex-wrap">
+            <button
+              onClick={handleCopyAllLogosCss}
+              type="button"
+              className="flex items-center gap-1.5 font-mono text-xs text-foreground bg-card hover:bg-muted border border-border px-3.5 h-10 rounded-[10px] transition-colors"
+              title="Copy CSS @import stylesheet for all 150+ logos (.logo-react, .logo-github-mono, etc.)"
+            >
+              {copiedKey === "all-logos-css" ? (
+                <Check className="h-3.5 w-3.5 text-emerald-500" />
+              ) : (
+                <Link2 className="h-3.5 w-3.5 text-primary" />
+              )}
+              <span>{copiedKey === "all-logos-css" ? "Copied CSS @import" : "Copy All Logos CSS (@import)"}</span>
+            </button>
             <div className="flex items-center gap-1.5 font-mono text-xs text-foreground bg-muted border border-border px-3.5 h-10 rounded-[10px]">
               <span className="font-medium">{filteredLogos.length} logos</span>
             </div>
@@ -255,6 +299,7 @@ export default function LogosPage() {
             const currentVKey = hasRequestedVariant ? variant : "color";
             const svgKey = `${logo.slug}-svg`;
             const jsxKey = `${logo.slug}-jsx`;
+            const cdnKey = `${logo.slug}-cdn`;
 
             return (
               <div
@@ -295,8 +340,22 @@ export default function LogosPage() {
                   {logo.description}
                 </p>
 
-                {/* Card Action Buttons (Direct 1-click SVG, JSX, & Download) */}
+                {/* Card Action Buttons (Direct 1-click CDN URL, SVG, JSX, & Download) */}
                 <div className="flex items-center gap-1.5 mt-auto pt-2 border-t border-border">
+                  <button
+                    onClick={(e) => handleCopyCdnUrl(logo, e)}
+                    className="flex-1 h-8 rounded-[6px] bg-muted hover:bg-muted/80 border border-border text-foreground font-mono text-xs transition-colors flex items-center justify-center gap-1"
+                    type="button"
+                    title="Copy direct SVG CDN URL for HTML / Tailwind / CSS"
+                  >
+                    {copiedKey === cdnKey ? (
+                      <Check className="h-3.5 w-3.5 text-emerald-500" />
+                    ) : (
+                      <Link2 className="h-3.5 w-3.5 text-muted-foreground" />
+                    )}
+                    <span>{copiedKey === cdnKey ? "Copied" : "CDN"}</span>
+                  </button>
+
                   <button
                     onClick={(e) => handleCopySvg(logo, e)}
                     className="flex-1 h-8 rounded-[6px] bg-muted hover:bg-muted/80 border border-border text-foreground font-mono text-xs transition-colors flex items-center justify-center gap-1"

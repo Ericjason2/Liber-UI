@@ -248,16 +248,21 @@ Voici comment un utilisateur navigue, configure, télécharge et intègre chaque
 3. **Sélecteur de variante global** : Basculez entre **`Color`** (couleurs officielles), **`Monochrome`** (`currentColor` qui s'adapte au mode clair/sombre) et **`Wordmark`** (logo avec texte) pour prévisualiser toute la grille dans la variante choisie.
 4. **Index alphabétique (`A–Z`)** : Cliquez sur une lettre de `A` à `Z` (ou `#`) pour filtrer les logos commençant par cette lettre.
 5. **Actions rapides en 1 clic sur chaque carte** :
+   - Bouton **`CDN`** : Copie le lien direct du SVG hébergé (`https://liber-ui-delta.vercel.app/svg/<slug>/<variant>.svg`) pour l'utiliser directement dans `<img src="...">`, Tailwind CSS ou CSS sans rien télécharger.
    - Bouton **`SVG`** : Copie le code vectoriel `<svg>...</svg>` optimisé directement dans votre presse-papiers.
    - Bouton **`JSX`** : Copie le composant React (ex. `<ReactColor size={28} />`).
    - Bouton **`Télécharger (Icône flèche)`** : Télécharge le fichier `.svg` sur votre ordinateur.
+   - Bouton global **`Copy All Logos CSS (@import)`** (en haut de `/logos`) : Copie `@import url('https://liber-ui-delta.vercel.app/api/logo-css/all');` permettant d'utiliser n'importe quel logo via une simple classe CSS `<i class="logo-react"></i>` ou `<i class="logo-github-mono"></i>` (comme Devicon ou FontAwesome).
 
 #### B. Personnaliser et exporter sur la fiche détaillée `/logos/[slug]`
 En cliquant sur un logo (ex. `/logos/react` ou `/logos/docker`), vous accédez au studio d'inspection :
 1. **Fond d'aperçu Clair / Sombre** : Cliquez sur l'icône Soleil/Lune en haut à droite du cadre d'aperçu pour tester le contraste du logo sur fond blanc ou sur fond noir.
 2. **Curseur de taille (`Size`)** : Faites glisser le curseur de `16px` à `256px` pour vérifier la lisibilité du logo à différentes échelles.
 3. **Sélecteur de couleur (`Color`) en mode Monochrome** : Lorsque la variante `mono` est sélectionnée, un sélecteur de couleur HEX apparaît. Choisissez par exemple `#3B82F6` : l'aperçu, le code SVG copié et les fichiers téléchargés prendront automatiquement cette couleur !
-4. **Onglets de code (`REACT`, `SVG`, `CDN`, `CLI`)** :
+4. **Onglets de code (`CDN`, `TAILWIND`, `CSS`, `REACT`, `SVG`, `CLI`)** :
+   - **Onglet `CDN`** : Lien direct `<img>` et URL brute (`https://liber-ui-delta.vercel.app/svg/<slug>/<variant>.svg`).
+   - **Onglet `TAILWIND`** : Classes Tailwind arbitraires prêtes à coller (`bg-[url('https://.../color.svg')]` pour la version couleur, ou `[mask-image:url('https://.../mono.svg')] bg-current text-blue-500` pour la version monochrome colorable).
+   - **Onglet `CSS`** : Feuille de style CDN `@import url('https://liber-ui-delta.vercel.app/api/logo-css/<slug>');` + classes `.logo-<slug>` et `.logo-<slug>-mono`.
    - **Onglet `REACT`** :
      ```tsx
      import { ReactColor, GithubMono, DockerWordmark } from "@liber-ui/react";
@@ -273,8 +278,7 @@ En cliquant sur un logo (ex. `/logos/react` ou `/logos/docker`), vous accédez a
      }
      ```
    - **Onglet `SVG`** : Code SVG brut prêt à coller en HTML.
-   - **Onglet `CDN`** : URL directe du manifeste JSON du registry (`https://liber-ui-delta.vercel.app/r/<slug>.json`).
-   - **Onglet `CLI`** : `npx @liber-ui/cli add <slug>`.
+   - **Onglet `CLI`** : `npx @liber-ui/cli add <slug> --variant <variant>`.
 5. **Téléchargement PNG multi-résolutions** : Sélectionnez la résolution souhaitée dans le menu déroulant (**`64×64 px`**, **`128×128 px`**, **`256×256 px`** ou **`512×512 px`**) puis cliquez sur **`Download PNG`**.
 
 ---
@@ -394,27 +398,32 @@ En cliquant sur une police (ou sur **`View Glyphs →`**), vous ouvrez sa page d
    - Affiche la **planche complète des caractères (Character Map)** de l'auteur (majuscules, minuscules, chiffres, accents et symboles).
    - Affiche les **bandes d'alphabet rendues en direct** (`Uppercase A–Z`, `Lowercase a–z`, `Numerals 0–9`, `Punctuation & Special Symbols`).
    - Affiche la **matrice de référence Unicode** (`U+0041` à `U+007A`) pour vérifier chaque point de code ASCII.
-3. **Onglet 3 : `Installation & CSS Code` (4 méthodes au choix)** :
-   - **Méthode 1 – Installation automatique via Liber CLI** :
+3. **Onglet 3 : `Installation & CSS Code` (6 méthodes au choix, dont CDN direct façon Google Fonts)** :
+   - **Méthode 1 – Lien CSS `@import` direct (CDN — Zéro téléchargement)** :
+     ```css
+     @import url('https://liber-ui-delta.vercel.app/api/font-css/minecraft');
+     ```
+     Définit automatiquement `@font-face`, la variable `:root { --font-minecraft: ... }` et la classe utilitaire `.font-minecraft` !
+   - **Méthode 2 – Balise HTML `<link rel="stylesheet">` (CDN)** :
+     ```html
+     <link rel="stylesheet" href="https://liber-ui-delta.vercel.app/api/font-css/minecraft" />
+     <h1 class="font-minecraft">Hello World</h1>
+     ```
+   - **Méthode 3 – Utilisation directe dans Tailwind CSS** :
+     Importez le lien CDN dans `globals.css` puis utilisez directement `className="font-minecraft"` ou la classe arbitraire `className="font-['Minecraft']"`.
+   - **Méthode 4 – Règle `@font-face` avec fichier `.ttf` streamé en direct par le CDN** :
+     ```css
+     @font-face {
+       font-family: 'Minecraft';
+       src: url('https://liber-ui-delta.vercel.app/api/font-file/minecraft.ttf') format('truetype');
+       font-display: swap;
+     }
+     ```
+   - **Méthode 5 – Installation automatique via Liber CLI** :
      ```bash
-     npx @liber-ui/cli add font-geist
+     npx @liber-ui/cli add font-minecraft
      ```
-     *(Crée automatiquement le fichier de style CSS de la police dans votre projet).*
-   - **Méthode 2 – Téléchargement direct de l'archive `.zip`** :
-     Cliquez sur le bouton **`Download (.zip)`** en haut de la page pour récupérer les fichiers `.ttf` / `.otf` originaux.
-   - **Méthode 3 – Auto-hébergement dans Next.js (`next/font/local`)** :
-     Copiez l'extrait généré automatiquement pour votre fichier `app/layout.tsx` :
-     ```tsx
-     import localFont from 'next/font/local';
-
-     const myFont = localFont({
-       src: './fonts/ma-police/MaPolice-Regular.woff2',
-       variable: '--font-ma-police',
-       display: 'swap',
-     });
-     ```
-   - **Méthode 4 – CSS Standard `@font-face` & Configuration Tailwind** :
-     Copiez la règle `@font-face` et l'extension `fontFamily` pour `tailwind.config.js` en un clic.
+   - **Méthode 6 – Auto-hébergement dans Next.js (`next/font/local`) ou téléchargement `.zip`**.
 
 ---
 

@@ -20,10 +20,18 @@ export async function GET(
     : cleanSlug;
   const fontMatch = SAMPLE_FONTS.find((f) => f.slug.toLowerCase() === fontCandidateSlug);
   if (fontMatch && (cleanSlug.startsWith("font-") || !OFFICIAL_LOGOS.some((l) => l.slug === cleanSlug))) {
+    const fallbackStack =
+      fontMatch.category === "mono"
+        ? "monospace"
+        : fontMatch.category === "serif"
+          ? "serif"
+          : "sans-serif";
     const cssContent = `/* Liber UI Font Definition: ${fontMatch.name} (${fontMatch.license}) */
+/* Direct CDN Import: @import url('https://liber-ui-delta.vercel.app/api/font-css/${fontMatch.slug}'); */
 @font-face {
   font-family: '${fontMatch.name}';
   src: local('${fontMatch.name}'),
+       url('https://liber-ui-delta.vercel.app/api/font-file/${fontMatch.slug}.ttf') format('truetype'),
        url('/fonts/${fontMatch.slug}/${fontMatch.name.replace(/\s+/g, "-")}-Regular.woff2') format('woff2'),
        url('/fonts/${fontMatch.slug}/${fontMatch.name.replace(/\s+/g, "-")}-Regular.ttf') format('truetype');
   font-weight: ${fontMatch.weights?.[0] || 400};
@@ -32,7 +40,11 @@ export async function GET(
 }
 
 :root {
-  --font-${fontMatch.slug}: '${fontMatch.name}', ${fontMatch.category === "mono" ? "monospace" : fontMatch.category === "serif" ? "serif" : "sans-serif"};
+  --font-${fontMatch.slug}: '${fontMatch.name}', ${fallbackStack};
+}
+
+.font-${fontMatch.slug} {
+  font-family: '${fontMatch.name}', ${fallbackStack};
 }
 `;
     return NextResponse.json({
