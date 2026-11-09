@@ -20,14 +20,14 @@ interface Props {
   relatedLogos: LogoItem[];
 }
 
-type CodeTab = "cdn" | "tailwind" | "css" | "react" | "svg" | "cli";
+type CodeTab = "react" | "svg" | "cdn" | "cli";
 
 export function LogoDetailClient({ logo, relatedLogos }: Props) {
   const [selectedVariant, setSelectedVariant] = useState<"color" | "mono" | "wordmark">("color");
   const [previewSize, setPreviewSize] = useState(128);
   const [previewDarkBg, setPreviewDarkBg] = useState(false);
   const [monoColor, setMonoColor] = useState("#000000");
-  const [activeTab, setActiveTab] = useState<CodeTab>("cdn");
+  const [activeTab, setActiveTab] = useState<CodeTab>("react");
   const [svgContent, setSvgContent] = useState<string>("");
   const [copiedType, setCopiedType] = useState<string | null>(null);
   const [pngSize, setPngSize] = useState<number>(256);
@@ -56,27 +56,15 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
         ? svgContent.replace(/currentColor/g, monoColor)
         : svgContent;
 
-    const origin =
-      typeof window !== "undefined"
-        ? window.location.origin
-        : "https://liber-ui-delta.vercel.app";
-    const directSvgUrl = `${origin}/svg/${logo.slug}/${currentVariant}.svg`;
-    const colorSvgUrl = `${origin}/svg/${logo.slug}/color.svg`;
-    const monoSvgUrl = `${origin}/svg/${logo.slug}/mono.svg`;
-
     switch (activeTab) {
-      case "cdn":
-        return `<!-- Direct SVG CDN Link (HTML / Vue / Svelte / Markdown) -->\n<img src="${directSvgUrl}" alt="${logo.name}" width="32" height="32" />\n\n<!-- Raw URL -->\n${directSvgUrl}`;
-      case "tailwind":
-        return `<!-- 1. Color Logo via Tailwind CSS arbitrary URL -->\n<span class="inline-block w-8 h-8 bg-[url('${colorSvgUrl}')] bg-contain bg-center bg-no-repeat" aria-label="${logo.name}"></span>\n\n<!-- 2. Monochrome Logo (inherits text-* color via CSS mask) -->\n<span class="inline-block w-8 h-8 bg-current text-blue-500 [mask-image:url('${monoSvgUrl}')] [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center]" aria-label="${logo.name}"></span>`;
-      case "css":
-        return `/* 1. Import stylesheet in your CSS file (globals.css / style.css) */\n@import url('${origin}/api/logo-css/${logo.slug}');\n/* Or import all 150+ logos at once: @import url('${origin}/api/logo-css/all'); */\n\n/* 2. Use in HTML */\n<i class="logo-${logo.slug}"></i>\n<i class="logo-${logo.slug}-mono" style="color: ${monoColor !== "#000000" ? monoColor : "#3b82f6"};"></i>`;
       case "react":
         return `import { ${reactComponentName} } from "@liber-ui/react";\n\nexport function TechStack() {\n  return <${reactComponentName} size={32}${currentVariant === "mono" && monoColor !== "#000000" ? ` color="${monoColor}"` : ""} />;\n}`;
       case "svg":
         return effectiveSvg;
+      case "cdn":
+        return `/* 1. Direct SVG URL (HTML <img> / Tailwind bg-[url(...)]) */\nhttps://liber-ui-delta.vercel.app/svg/${logo.slug}/${currentVariant}.svg\n\n/* 2. CSS @import Stylesheet (.logo-${logo.slug} / .logo-${logo.slug}-mono) */\n@import url('https://liber-ui-delta.vercel.app/api/logo-css/${logo.slug}');\n\n/* 3. Tailwind CSS arbitrary class */\n<span className="inline-block w-8 h-8 bg-[url('https://liber-ui-delta.vercel.app/svg/${logo.slug}/${currentVariant}.svg')] bg-contain bg-center bg-no-repeat" />`;
       case "cli":
-        return `npx @liber-ui/cli add ${logo.slug} --variant ${currentVariant}`;
+        return `npx @liber-ui/cli add ${logo.slug}`;
     }
   };
 
@@ -277,13 +265,13 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
 
           {/* Code Tabbed View */}
           <div className="rounded-[10px] border border-border bg-card overflow-hidden">
-            <div className="flex items-center justify-between border-b border-border bg-surface-subtle px-2 overflow-x-auto scrollbar-none">
+            <div className="flex items-center justify-between border-b border-border bg-surface-subtle px-2">
               <div className="flex items-center">
-                {(["cdn", "tailwind", "css", "react", "svg", "cli"] as CodeTab[]).map((tab) => (
+                {(["react", "svg", "cdn", "cli"] as CodeTab[]).map((tab) => (
                   <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}
-                    className={`px-2.5 py-2 text-xs font-mono uppercase tracking-wider transition-colors border-b-2 whitespace-nowrap ${
+                    className={`px-3 py-2 text-xs font-mono uppercase tracking-wider transition-colors border-b-2 ${
                       activeTab === tab
                         ? "border-primary text-foreground font-semibold"
                         : "border-transparent text-muted-foreground hover:text-foreground"
@@ -296,7 +284,7 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
 
               <button
                 onClick={() => copyToClipboard(getCodeSnippet(), activeTab)}
-                className="flex items-center gap-1 text-[11px] font-mono text-muted-foreground hover:text-foreground shrink-0 pl-2"
+                className="flex items-center gap-1 text-[11px] font-mono text-muted-foreground hover:text-foreground"
               >
                 {copiedType === activeTab ? (
                   <Check className="h-3 w-3 text-emerald-500" />
@@ -307,7 +295,7 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
               </button>
             </div>
 
-            <div className="p-3 bg-card overflow-x-auto max-h-56 text-xs font-mono leading-relaxed text-foreground whitespace-pre">
+            <div className="p-3 bg-card overflow-x-auto max-h-48 text-xs font-mono leading-relaxed text-foreground whitespace-pre">
               {getCodeSnippet()}
             </div>
           </div>

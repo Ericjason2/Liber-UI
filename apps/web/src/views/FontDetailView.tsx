@@ -12,7 +12,6 @@ import {
   RotateCcw,
   ArrowUpRight,
   Sparkles,
-  Link2,
 } from "lucide-react";
 import type { FontItem } from "@/lib/catalog-fonts-base";
 import { useToast } from "@/context/ToastContext";
@@ -63,24 +62,9 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
     fontSize
   );
 
-  const origin =
-    typeof window !== "undefined"
-      ? window.location.origin
-      : "https://liber-ui-delta.vercel.app";
-  const cdnStylesheetUrl = `${origin}/api/font-css/${font.slug}`;
-  const cdnFontFileUrl = `${origin}/api/font-file/${font.slug}.ttf`;
-  const fallbackStack =
-    font.category === "mono"
-      ? "monospace"
-      : font.category === "serif"
-        ? "serif"
-        : "sans-serif";
-
   const liberCmd = `npx @liber-ui/cli add font-${font.slug}`;
-  const cssImportSnippet = `/* 1. Paste at the top of your globals.css or style.css */\n@import url('${cdnStylesheetUrl}');\n\n/* 2. Use the ready-made utility class or CSS variable */\n.my-heading {\n  font-family: var(--font-${font.slug});\n}\n/* Or in HTML / JSX: <h1 class="font-${font.slug}">Hello World</h1> */`;
-  const htmlLinkSnippet = `<!-- 1. Paste inside your HTML <head> -->\n<link rel="stylesheet" href="${cdnStylesheetUrl}" />\n\n<!-- 2. Apply the class anywhere -->\n<h1 class="font-${font.slug}">Hello World</h1>`;
-  const cssFontFaceSnippet = `@font-face {\n  font-family: '${font.name}';\n  src: local('${font.name}'),\n       url('${cdnFontFileUrl}') format('truetype');\n  font-weight: ${font.weights?.[0] || 400};\n  font-style: normal;\n  font-display: swap;\n}\n\n:root {\n  --font-${font.slug}: '${font.name}', ${fallbackStack};\n}\n\n.font-${font.slug} {\n  font-family: '${font.name}', ${fallbackStack};\n}`;
-  const tailwindSnippet = `/* 1. In your app/globals.css: */\n@import url('${cdnStylesheetUrl}');\n\n/* 2. Use directly in JSX / HTML with the generated class or arbitrary value: */\n<h1 className="font-${font.slug} text-4xl">${font.name}</h1>\n<p className="font-['${font.name.replace(/\s+/g, "_")}'] text-lg">Tailwind arbitrary font</p>\n\n/* 3. (Optional) Register in tailwind.config.js: */\nmodule.exports = {\n  theme: {\n    extend: {\n      fontFamily: {\n        '${font.slug}': ['var(--font-${font.slug})', '${fallbackStack}'],\n      },\n    },\n  },\n};`;
+  const cssFontFaceSnippet = `/* Option A: Direct CSS @import (CDN - no download required) */\n@import url('https://liber-ui-delta.vercel.app/api/font-css/${font.slug}');\n\n/* Option B: Standard @font-face (Direct CDN .ttf or local files) */\n@font-face {\n  font-family: '${font.name}';\n  src: url('https://liber-ui-delta.vercel.app/api/font-file/${font.slug}.ttf') format('truetype'),\n       url('/fonts/${font.slug}/${font.name}-Regular.woff2') format('woff2');\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n}\n\n:root {\n  --font-${font.slug}: '${font.name}', sans-serif;\n}`;
+  const tailwindSnippet = `/* 1. In globals.css: @import url('https://liber-ui-delta.vercel.app/api/font-css/${font.slug}'); */\n/* 2. Use class="font-${font.slug}" or configure tailwind.config.js: */\nmodule.exports = {\n  theme: {\n    extend: {\n      fontFamily: {\n        '${font.slug}': ['var(--font-${font.slug})', '${font.category || "sans-serif"}'],\n      },\n    },\n  },\n};`;
   const nextFontLocalSnippet = `// app/layout.tsx\nimport localFont from 'next/font/local';\n\nconst font${font.name.replace(/[^a-zA-Z0-9]/g, "")} = localFont({\n  src: './fonts/${font.slug}/${font.name}-Regular.woff2',\n  variable: '--font-${font.slug}',\n  display: 'swap',\n});\n\nexport default function RootLayout({ children }: { children: React.ReactNode }) {\n  return (\n    <html lang="en" className={font${font.name.replace(/[^a-zA-Z0-9]/g, "")}.variable}>\n      <body>{children}</body>\n    </html>\n  );\n}`;
 
   const copyToClipboard = (text: string, label: string, key: string) => {
@@ -133,31 +117,13 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
 
           {/* Action Buttons */}
           <div className="flex items-center gap-2.5 flex-wrap">
-            <button
-              onClick={() =>
-                copyToClipboard(
-                  `@import url('${cdnStylesheetUrl}');`,
-                  `Copied CSS @import CDN link for ${font.name}`,
-                  "hero-cdn"
-                )
-              }
-              className="h-10 px-4 rounded-[10px] bg-primary text-primary-foreground hover:opacity-90 font-mono text-xs font-medium flex items-center gap-2 transition-opacity shadow-sm"
-              title="Copy CSS @import link to use directly in CSS or Tailwind"
-            >
-              <Link2 className="h-4 w-4" />
-              <span>Copy CSS @import (CDN)</span>
-              {copiedKey === "hero-cdn" && (
-                <Check className="h-3.5 w-3.5 text-emerald-300" />
-              )}
-            </button>
-
             {font.downloadUrl && (
               <a
                 href={font.downloadUrl}
                 download
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 px-4 rounded-[10px] border border-border bg-card hover:bg-muted text-foreground font-mono text-xs font-medium flex items-center gap-2 transition-colors"
+                className="h-10 px-4 rounded-[10px] bg-primary text-primary-foreground hover:opacity-90 font-mono text-xs font-medium flex items-center gap-2 transition-opacity shadow-sm"
               >
                 <Download className="h-4 w-4" />
                 <span>Download (.zip)</span>
@@ -597,176 +563,79 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
       {/* 5. Tab: Installation & Developer Guide */}
       {activeTab === "install" && (
         <div className="space-y-8">
-          {/* CDN CSS @import & HTML <link> Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-[12px] border border-primary/40 bg-card space-y-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Link2 className="h-4 w-4 text-primary" />
-                  <h3 className="text-sm font-semibold text-foreground font-mono">
-                    1. Direct CSS @import (CDN Link)
-                  </h3>
-                </div>
-                <button
-                  onClick={() =>
-                    copyToClipboard(
-                      cssImportSnippet,
-                      `Copied CSS @import snippet for ${font.name}`,
-                      "install-cdn-css"
-                    )
-                  }
-                  className="h-8 px-2.5 rounded-[6px] border border-border bg-muted hover:bg-muted/80 text-xs font-mono text-foreground flex items-center gap-1.5 transition-colors"
-                >
-                  {copiedKey === "install-cdn-css" ? (
-                    <Check className="h-3 w-3 text-emerald-500" />
-                  ) : (
-                    <Copy className="h-3 w-3" />
-                  )}
-                  <span>Copy</span>
-                </button>
+          {/* CLI Section */}
+          <div className="p-6 rounded-[12px] border border-border bg-card space-y-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Terminal className="h-4 w-4 text-primary" />
+                <h3 className="text-sm font-semibold text-foreground font-mono">
+                  1. Automatic Installation via Liber CLI
+                </h3>
               </div>
-              <pre className="p-4 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
-                <code>{cssImportSnippet}</code>
-              </pre>
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                Works immediately in any CSS or Tailwind project (like Google Fonts) without downloading or extracting any files.
-              </p>
+              <button
+                onClick={() =>
+                  copyToClipboard(
+                    liberCmd,
+                    `Copied CLI command for ${font.name}`,
+                    "install-cli"
+                  )
+                }
+                className="h-8 px-2.5 rounded-[6px] border border-border bg-muted hover:bg-muted/80 text-xs font-mono text-foreground flex items-center gap-1.5 transition-colors"
+              >
+                {copiedKey === "install-cli" ? (
+                  <Check className="h-3 w-3 text-emerald-500" />
+                ) : (
+                  <Copy className="h-3 w-3" />
+                )}
+                <span>Copy</span>
+              </button>
             </div>
-
-            <div className="p-6 rounded-[12px] border border-border bg-card space-y-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Code2 className="h-4 w-4 text-primary" />
-                  <h3 className="text-sm font-semibold text-foreground font-mono">
-                    2. HTML &lt;link&gt; Stylesheet Tag
-                  </h3>
-                </div>
-                <button
-                  onClick={() =>
-                    copyToClipboard(
-                      htmlLinkSnippet,
-                      `Copied HTML <link> snippet for ${font.name}`,
-                      "install-cdn-html"
-                    )
-                  }
-                  className="h-8 px-2.5 rounded-[6px] border border-border bg-muted hover:bg-muted/80 text-xs font-mono text-foreground flex items-center gap-1.5 transition-colors"
-                >
-                  {copiedKey === "install-cdn-html" ? (
-                    <Check className="h-3 w-3 text-emerald-500" />
-                  ) : (
-                    <Copy className="h-3 w-3" />
-                  )}
-                  <span>Copy</span>
-                </button>
-              </div>
-              <pre className="p-4 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
-                <code>{htmlLinkSnippet}</code>
-              </pre>
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                Drop inside your <code className="font-mono text-foreground">&lt;head&gt;</code> tag and apply <code className="font-mono text-foreground">.font-{font.slug}</code> to any element.
-              </p>
-            </div>
+            <pre className="p-4 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
+              <code>{liberCmd}</code>
+            </pre>
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              This command automatically creates the font style definitions in your project’s styles directory and configures your project theme.
+            </p>
           </div>
 
-          {/* Tailwind CSS & @font-face Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-[12px] border border-border bg-card space-y-3">
-              <div className="flex items-center justify-between">
+          {/* CSS @font-face Section */}
+          <div className="p-6 rounded-[12px] border border-border bg-card space-y-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Code2 className="h-4 w-4 text-primary" />
                 <h3 className="text-sm font-semibold text-foreground font-mono">
-                  3. Tailwind CSS Usage (Classes & Config)
+                  2. Local CSS @font-face Definition
                 </h3>
-                <button
-                  onClick={() =>
-                    copyToClipboard(
-                      tailwindSnippet,
-                      `Copied Tailwind snippet`,
-                      "install-tw"
-                    )
-                  }
-                  className="h-7 px-2 rounded-[6px] border border-border bg-muted text-xs font-mono text-foreground flex items-center gap-1"
-                >
-                  {copiedKey === "install-tw" ? (
-                    <Check className="h-3 w-3 text-emerald-500" />
-                  ) : (
-                    <Copy className="h-3 w-3" />
-                  )}
-                  <span>Copy</span>
-                </button>
               </div>
-              <pre className="p-3 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
-                <code>{tailwindSnippet}</code>
-              </pre>
+              <button
+                onClick={() =>
+                  copyToClipboard(
+                    cssFontFaceSnippet,
+                    `Copied @font-face CSS snippet`,
+                    "install-css"
+                  )
+                }
+                className="h-8 px-2.5 rounded-[6px] border border-border bg-muted hover:bg-muted/80 text-xs font-mono text-foreground flex items-center gap-1.5 transition-colors"
+              >
+                {copiedKey === "install-css" ? (
+                  <Check className="h-3 w-3 text-emerald-500" />
+                ) : (
+                  <Copy className="h-3 w-3" />
+                )}
+                <span>Copy</span>
+              </button>
             </div>
-
-            <div className="p-6 rounded-[12px] border border-border bg-card space-y-3">
-              <div className="flex items-center justify-between">
-                <h3 className="text-sm font-semibold text-foreground font-mono">
-                  4. CSS @font-face (Direct CDN .ttf URL)
-                </h3>
-                <button
-                  onClick={() =>
-                    copyToClipboard(
-                      cssFontFaceSnippet,
-                      `Copied @font-face CSS snippet`,
-                      "install-css"
-                    )
-                  }
-                  className="h-7 px-2 rounded-[6px] border border-border bg-muted text-xs font-mono text-foreground flex items-center gap-1"
-                >
-                  {copiedKey === "install-css" ? (
-                    <Check className="h-3 w-3 text-emerald-500" />
-                  ) : (
-                    <Copy className="h-3 w-3" />
-                  )}
-                  <span>Copy</span>
-                </button>
-              </div>
-              <pre className="p-3 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
-                <code>{cssFontFaceSnippet}</code>
-              </pre>
-            </div>
+            <pre className="p-4 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
+              <code>{cssFontFaceSnippet}</code>
+            </pre>
           </div>
 
-          {/* CLI & Next.js Local Font Section */}
+          {/* Next.js & Tailwind Configuration */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-[12px] border border-border bg-card space-y-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Terminal className="h-4 w-4 text-primary" />
-                  <h3 className="text-sm font-semibold text-foreground font-mono">
-                    5. Automatic Installation via Liber CLI
-                  </h3>
-                </div>
-                <button
-                  onClick={() =>
-                    copyToClipboard(
-                      liberCmd,
-                      `Copied CLI command for ${font.name}`,
-                      "install-cli"
-                    )
-                  }
-                  className="h-8 px-2.5 rounded-[6px] border border-border bg-muted hover:bg-muted/80 text-xs font-mono text-foreground flex items-center gap-1.5 transition-colors"
-                >
-                  {copiedKey === "install-cli" ? (
-                    <Check className="h-3 w-3 text-emerald-500" />
-                  ) : (
-                    <Copy className="h-3 w-3" />
-                  )}
-                  <span>Copy</span>
-                </button>
-              </div>
-              <pre className="p-4 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
-                <code>{liberCmd}</code>
-              </pre>
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                Generates <code className="font-mono text-foreground">styles/fonts/{font.slug}.css</code> in your repository with the preconfigured CDN &amp; local <code className="font-mono text-foreground">@font-face</code> rules.
-              </p>
-            </div>
-
             <div className="p-6 rounded-[12px] border border-border bg-card space-y-3">
               <div className="flex items-center justify-between">
                 <h3 className="text-sm font-semibold text-foreground font-mono">
-                  6. Next.js next/font/local (Self-Hosted)
+                  Next.js next/font/local
                 </h3>
                 <button
                   onClick={() =>
@@ -788,6 +657,34 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
               </div>
               <pre className="p-3 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
                 <code>{nextFontLocalSnippet}</code>
+              </pre>
+            </div>
+
+            <div className="p-6 rounded-[12px] border border-border bg-card space-y-3">
+              <div className="flex items-center justify-between">
+                <h3 className="text-sm font-semibold text-foreground font-mono">
+                  Tailwind CSS Config
+                </h3>
+                <button
+                  onClick={() =>
+                    copyToClipboard(
+                      tailwindSnippet,
+                      `Copied Tailwind snippet`,
+                      "install-tw"
+                    )
+                  }
+                  className="h-7 px-2 rounded-[6px] border border-border bg-muted text-xs font-mono text-foreground flex items-center gap-1"
+                >
+                  {copiedKey === "install-tw" ? (
+                    <Check className="h-3 w-3 text-emerald-500" />
+                  ) : (
+                    <Copy className="h-3 w-3" />
+                  )}
+                  <span>Copy</span>
+                </button>
+              </div>
+              <pre className="p-3 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
+                <code>{tailwindSnippet}</code>
               </pre>
             </div>
           </div>

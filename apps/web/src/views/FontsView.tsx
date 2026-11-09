@@ -11,7 +11,6 @@ import {
   Check,
   Copy,
   ArrowUpRight,
-  Link2,
 } from "lucide-react";
 import { BASE_FONTS, TOTAL_FONTS_COUNT, type FontItem } from "@/lib/catalog-fonts-base";
 import { useToast } from "@/context/ToastContext";
@@ -346,11 +345,6 @@ export default function FontsPage() {
         <div className="divide-y divide-border rounded-[12px] border border-border bg-card overflow-hidden">
           {fonts.map((font) => {
             const liberCmd = `npx @liber-ui/cli add font-${font.slug}`;
-            const origin =
-              typeof window !== "undefined"
-                ? window.location.origin
-                : "https://liber-ui-delta.vercel.app";
-            const cssImportSnippet = `@import url('${origin}/api/font-css/${font.slug}');`;
             const isCustomText = Boolean(
               debouncedSampleText && debouncedSampleText !== defaultSample && debouncedSampleText.trim()
             );
@@ -381,29 +375,8 @@ export default function FontsPage() {
                     </span>
                   </div>
 
-                  {/* Actions: Download, CDN CSS @import, CLI Command, View Details */}
+                  {/* Actions: Download, CLI Command, View Details */}
                   <div className="flex items-center gap-2 flex-wrap">
-                    <button
-                      onClick={(e) =>
-                        copyToClipboard(
-                          cssImportSnippet,
-                          `Copied CSS @import CDN link for ${font.name}`,
-                          `${font.slug}-cdn`,
-                          e
-                        )
-                      }
-                      className="h-8 px-2.5 rounded-[8px] border border-primary/40 bg-primary/10 hover:bg-primary/20 font-mono text-xs text-foreground flex items-center gap-1.5 transition-colors"
-                      title="Copy CSS @import CDN link (use directly in CSS or Tailwind without downloading)"
-                    >
-                      <Link2 className="h-3.5 w-3.5 text-primary" />
-                      <span>Copy CSS / CDN</span>
-                      {copiedKey === `${font.slug}-cdn` ? (
-                        <Check className="h-3 w-3 text-emerald-500" />
-                      ) : (
-                        <Copy className="h-3 w-3 opacity-60" />
-                      )}
-                    </button>
-
                     {font.downloadUrl && (
                       <a
                         href={font.downloadUrl}
