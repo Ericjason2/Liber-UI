@@ -62,7 +62,7 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
       case "svg":
         return effectiveSvg;
       case "cdn":
-        return `https://liber-ui-delta.vercel.app/r/${logo.slug}.json`;
+        return `/* 1. Direct SVG URL (HTML <img> / Tailwind bg-[url(...)]) */\nhttps://liber-ui-delta.vercel.app/svg/${logo.slug}/${currentVariant}.svg\n\n/* 2. CSS @import Stylesheet (.logo-${logo.slug} / .logo-${logo.slug}-mono) */\n@import url('https://liber-ui-delta.vercel.app/api/logo-css/${logo.slug}');\n\n/* 3. Tailwind CSS arbitrary class */\n<span className="inline-block w-8 h-8 bg-[url('https://liber-ui-delta.vercel.app/svg/${logo.slug}/${currentVariant}.svg')] bg-contain bg-center bg-no-repeat" />`;
       case "cli":
         return `npx @liber-ui/cli add ${logo.slug}`;
     }

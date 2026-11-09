@@ -365,10 +365,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </span>
               <div className="rounded-[10px] border border-border bg-card p-4 font-mono text-xs relative group">
                 <pre className="text-foreground overflow-x-auto leading-relaxed">
-{`@font-face {
+{`/* Option A: Direct CDN @import (no download required) */
+@import url('https://liber-ui-delta.vercel.app/api/font-css/minecraft');
+
+/* Option B: Standard @font-face (CDN .ttf stream or local files) */
+@font-face {
   font-family: 'Minecraft';
-  src: url('/fonts/minecraft/Minecraft-Regular.woff2') format('woff2'),
-       url('/fonts/minecraft/Minecraft-Regular.ttf') format('truetype');
+  src: url('https://liber-ui-delta.vercel.app/api/font-file/minecraft.ttf') format('truetype'),
+       url('/fonts/minecraft/Minecraft-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -438,8 +442,10 @@ export function TechStack() {
   );
 }
 
-// Option B: Using raw static SVG files in HTML / Vue / Svelte
-<img src="/svg/react/color.svg" alt="React" width="28" height="28" />`}
+// Option B: Direct SVG CDN URL in HTML, CSS @import, or Tailwind CSS
+<img src="https://liber-ui-delta.vercel.app/svg/react/color.svg" alt="React" width="28" height="28" />
+<span className="inline-block w-7 h-7 bg-[url('https://liber-ui-delta.vercel.app/svg/react/color.svg')] bg-contain bg-center bg-no-repeat" />
+/* Or in CSS: @import url('https://liber-ui-delta.vercel.app/api/logo-css/all'); -> <i class="logo-react"></i> */`}
                 </pre>
                 <button
                   onClick={() =>
