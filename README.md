@@ -28,7 +28,7 @@
 
 ---
 
-## ⚡ What is Liber UI?
+##  What's Liber UI?
 
 **Liber UI** brings together everything you need to build interfaces into a unified, zero-lock-in platform with open source primitives and brand vectors. 
 
@@ -43,7 +43,7 @@ Whether you need official brand logos in React JSX, free web fonts streamed via 
 
 ---
 
-## 📦 Asset Catalog
+##  Asset Catalog
 
 ### 1. Brand & Tech Logos (`/logos`)
 - **150 official vector logos** across 5 categories: Frontend (26), Backend & Database (28), Cloud & DevOps (28), Programming Languages (25), and Tools & Design (43).
@@ -107,7 +107,7 @@ Whether you need official brand logos in React JSX, free web fonts streamed via 
 
 ---
 
-## 🚀 Quick Start & Integration Methods
+##  Quick Start & Integration Methods
 
 ### Method 1: The Official CLI (`@liber-ui/cli`)
 
@@ -222,7 +222,7 @@ export function TechStack() {
 
 ---
 
-## 🛠️ Repository Layout
+##  Repository Layout
 
 ```text
 liber/
@@ -254,7 +254,7 @@ liber/
 
 ---
 
-## 💻 Local Development
+##  Local Development
 
 ### Prerequisites
 - **Node.js** >= 20.0.0
@@ -295,37 +295,7 @@ npm run build
 
 ---
 
-## 🌐 Production Deployment
-
-Liber UI is optimized for zero-config deployment on **Vercel** with Next.js App Router and serverless edge routes.
-
-### Steps to Deploy with a Custom `.dev` Domain
-
-1. **Push to GitHub**:
-   Push your repository to GitHub (`main` or `develop` branch).
-
-2. **Import into Vercel**:
-   - Go to [vercel.com](https://vercel.com) and click **"Add New Project"**.
-   - Select your Liber UI repository.
-   - Framework Preset: **Next.js**.
-   - Root Directory: leave as `./` (or `apps/web` with Turborepo auto-detection).
-
-3. **Configure Environment Variables**:
-   In your Vercel Project Settings → Environment Variables:
-   - `NEXT_PUBLIC_SITE_URL`: `https://your-domain.dev` (e.g. `https://liber.dev`)
-
-4. **Connect your `.dev` Domain**:
-   - Go to **Project Settings → Domains**.
-   - Enter your domain (e.g. `liber.dev` or `liber-ui.dev`).
-   - Add the recommended DNS records at your domain registrar:
-     - **A Record**: `@` → `76.76.21.21`
-     - **CNAME Record**: `www` → `cname.vercel-dns.com`
-   > [!NOTE]
-   > `.dev` domains are on the Google HSTS preload list, meaning HTTPS is strictly required. Vercel automatically provisions and renews free SSL certificates (Let's Encrypt) within minutes of DNS propagation.
-
----
-
-## ⚖️ Trademark & License
+##  Trademark & License
 
 - **Code & Components**: Licensed under the [MIT License](./LICENSE).
 - **Logos & Brand Assets**: Logos are trademarks of their respective owners. They are provided solely for identification, reference, and nominative fair use (e.g. showcasing tech stacks in portfolio projects) and do not imply endorsement, affiliation, or sponsorship. For official guidelines, consult each brand's link provided on their detail page.
