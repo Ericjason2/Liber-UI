@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Search, Sun, Moon, Menu, X } from "lucide-react";
-import { GithubMono } from "@liber-ui/react";
+import { GithubMono } from "@liber-ui/logo";
 import { useTheme } from "@/context/ThemeContext";
 import { CommandPalette } from "./CommandPalette";
 

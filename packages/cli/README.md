@@ -73,7 +73,7 @@ Running `liber init` creates a configuration file in your project root:
 
 ## Monorepo Packages
 
-- [`@liber-ui/react`](https://www.npmjs.com/package/@liber-ui/react) : Pre-compiled tree-shakeable React components
+- [`@liber-ui/logo`](https://www.npmjs.com/package/@liber-ui/logo) : Pre-compiled tree-shakeable React logo components
 - [`@liber-ui/svg`](https://www.npmjs.com/package/@liber-ui/svg) : Raw optimized SVG assets
 - [`@liber-ui/core`](https://www.npmjs.com/package/@liber-ui/core) : Catalog metadata, Zod schemas, and types
 - [`@liber-ui/cli`](https://www.npmjs.com/package/@liber-ui/cli) : This CLI package

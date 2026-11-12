@@ -15,12 +15,12 @@
       "@/*": ["./src/*"],
       "@liber/core": ["../../packages/core/src/index.ts"],
       "@liber/core/*": ["../../packages/core/src/*"],
-      "@liber/react": ["../../packages/react/src/index.ts"],
-      "@liber/react/*": ["../../packages/react/src/*"],
+      "@liber/logo": ["../../packages/logo/src/index.ts"],
+      "@liber/logo/*": ["../../packages/logo/src/*"],
       "@liber-ui/core": ["../../packages/core/src/index.ts"],
       "@liber-ui/core/*": ["../../packages/core/src/*"],
-      "@liber-ui/react": ["../../packages/react/src/index.ts"],
-      "@liber-ui/react/*": ["../../packages/react/src/*"]
+      "@liber-ui/logo": ["../../packages/logo/src/index.ts"],
+      "@liber-ui/logo/*": ["../../packages/logo/src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

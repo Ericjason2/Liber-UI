@@ -20,7 +20,7 @@ export function InstallStrip() {
 
   const command =
     mode === "package"
-      ? getPackageInstallCommand(pm, "@liber-ui/react")
+      ? getPackageInstallCommand(pm, "@liber-ui/logo")
       : getCliCommand(pm, "add react");
 
   const handleCopy = () => {

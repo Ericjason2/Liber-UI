@@ -5,9 +5,9 @@ import { dirname, join } from "node:path";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const reactPkg = join(__dirname, "../../packages/react/src/index.ts");
+const reactPkg = join(__dirname, "../../packages/logo/src/index.ts");
 
-describe("Tree-shaking and bundle weight of @liber/react", () => {
+describe("Tree-shaking and bundle weight of @liber-ui/logo", () => {
   it("importing an isolated logo adds less than 2 KB minified (Phase 2 requirement)", async () => {
     // Testing isolated logo import
     const inputCode = `

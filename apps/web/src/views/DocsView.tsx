@@ -43,7 +43,7 @@ const SIDEBAR_LINKS: SidebarLink[] = [
 
 export default function DocsPage() {
   const [manager, setManager] = useState<PackageManager>("pnpm");
-  const [selectedPkg, setSelectedPkg] = useState<"@liber-ui/react" | "@liber-ui/svg" | "@liber-ui/core" | "@liber-ui/cli">("@liber-ui/react");
+  const [selectedPkg, setSelectedPkg] = useState<"@liber-ui/logo" | "@liber-ui/svg" | "@liber-ui/core" | "@liber-ui/cli">("@liber-ui/logo");
   const [activeSection, setActiveSection] = useState<string>("introduction");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const { toast } = useToast();
@@ -210,7 +210,7 @@ export default function DocsPage() {
                   ))}
                 </div>
                 <div className="flex flex-wrap items-center gap-1">
-                  {(["@liber-ui/react", "@liber-ui/svg", "@liber-ui/core", "@liber-ui/cli"] as const).map((pkg) => (
+                  {(["@liber-ui/logo", "@liber-ui/svg", "@liber-ui/core", "@liber-ui/cli"] as const).map((pkg) => (
                     <button
                       key={pkg}
                       type="button"
@@ -480,14 +480,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   Install &amp; Usage in React / Next.js:
                 </span>
                 <code className="px-2.5 py-1 rounded-[6px] border border-border bg-muted/50 font-mono text-[11px] text-foreground select-all">
-                  {getPkgCommand("@liber-ui/react")}
+                  {getPkgCommand("@liber-ui/logo")}
                 </code>
               </div>
 
               <div className="rounded-[8px] border border-border bg-card p-4 font-mono text-xs relative group">
                 <pre className="text-foreground overflow-x-auto leading-relaxed">
-{`// Option A: Using the @liber-ui/react package (tree-shakeable, < 2 KB)
-import { ReactColor, FigmaColor, GithubMono } from "@liber-ui/react";
+{`// Option A: Using the @liber-ui/logo package (tree-shakeable, < 2 KB)
+import { ReactColor, FigmaColor, GithubMono } from "@liber-ui/logo";
 
 export function TechStack() {
   return (
@@ -507,7 +507,7 @@ export function TechStack() {
                 <button
                   onClick={() =>
                     copyToClipboard(
-                      `import { ReactColor, FigmaColor, GithubMono } from "@liber-ui/react";\n<ReactColor size={28} />`,
+                      `import { ReactColor, FigmaColor, GithubMono } from "@liber-ui/logo";\n<ReactColor size={28} />`,
                       "react-logo-snippet",
                       "Logo code snippet copied"
                     )

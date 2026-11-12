@@ -215,7 +215,7 @@ export function HomeComponentsShowcase() {
                     Validation Feedback State
                   </span>
                   <div className="h-9 px-3 rounded-[10px] border border-emerald-500/70 bg-emerald-500/5 flex items-center justify-between text-xs text-foreground">
-                    <span className="truncate font-mono">@liber-ui/react · Ready</span>
+                    <span className="truncate font-mono">@liber-ui/logo · Ready</span>
                     <CheckCircle2 className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
                   </div>
                 </div>

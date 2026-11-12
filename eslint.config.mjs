@@ -16,7 +16,7 @@ export default tseslint.config(
       "**/coverage/**",
       "**/next-env.d.ts",
       "packages/core/generated/**",
-      "packages/react/src/**",
+      "packages/logo/src/**",
       "apps/web/public/**",
       "scripts/__fixtures__/**",
       "scripts/*.cjs",
