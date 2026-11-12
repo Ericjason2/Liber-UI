@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { ArrowUpRight, ChevronDown, Eye, Terminal } from "lucide-react";
 import { EditorialDivider, TiltedPill } from "./HomePrimitives";
+import { ScrollReveal, getRevealMotionProps, useInViewOnce } from "./ScrollReveal";
 import { OFFICIAL_LOGOS } from "@/lib/catalog-logos";
 import { TOTAL_THEMES_COUNT } from "@/lib/catalog-themes-base";
 import { TOTAL_FONTS_COUNT } from "@/lib/catalog-fonts-base";
@@ -15,28 +16,36 @@ import { SAMPLE_COMPONENTS } from "@/lib/catalog-components";
  * Each card houses an architectural live micro-preview of a real Liber UI asset family.
  */
 export function HomeBentoCatalog() {
+  const [gridRef, gridVisible] = useInViewOnce<HTMLDivElement>();
+  const cardMotion = (idx: number) => getRevealMotionProps(gridVisible, idx * 70, 650);
+
   return (
     <section className="space-y-12 sm:space-y-16">
-      <EditorialDivider left="Catalog Overview" center="Liber UI" index="01" />
+      <ScrollReveal variant="fade-up">
+        <div className="space-y-10 sm:space-y-12">
+          <EditorialDivider left="Catalog Overview" center="Liber UI" index="01" />
 
-      {/* Centered Header with Tilted Inline Accent Pill */}
-      <div className="text-center space-y-5 max-w-2xl mx-auto">
-        <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-foreground leading-tight">
-          What’s inside{" "}
-          <TiltedPill className="-rotate-3 mx-1 text-lg sm:text-2xl px-4 py-1 align-middle">
-            Liber
-          </TiltedPill>{" "}
-          UI ?
-        </h2>
-        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-          Five production-ready asset families engineered for clarity, accessibility, and instant
-          integration—no heavy wrappers or hidden runtime dependencies.
-        </p>
-      </div>
+          {/* Centered Header with Tilted Inline Accent Pill */}
+          <div className="text-center space-y-5 max-w-2xl mx-auto">
+            <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-foreground leading-tight">
+              What’s inside{" "}
+              <TiltedPill className="-rotate-3 mx-1 text-lg sm:text-2xl px-4 py-1 align-middle">
+                Liber
+              </TiltedPill>{" "}
+              UI ?
+            </h2>
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+              Five production-ready asset families engineered for clarity, accessibility, and instant
+              integration—no heavy wrappers or hidden runtime dependencies.
+            </p>
+          </div>
+        </div>
+      </ScrollReveal>
 
       {/* 3 x 2 Bento Card Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-8">
+      <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-8">
         {/* 1. Color Themes Card */}
+        <div {...cardMotion(0)}>
         <Link href="/themes" className="group block space-y-3">
           <div className="h-[220px] rounded-[22px] border border-border bg-card p-6 flex flex-col justify-between liber-showcase-frame group-hover:border-[#2563EB]/60 dark:group-hover:border-[#38BDF8]/60 transition-colors overflow-hidden">
             <div className="space-y-3 pt-1">
@@ -74,8 +83,10 @@ export function HomeBentoCatalog() {
             <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
         </Link>
+        </div>
 
         {/* 2. Fonts & Typography Card */}
+        <div {...cardMotion(1)}>
         <Link href="/fonts" className="group block space-y-3">
           <div className="h-[220px] rounded-[22px] border border-border bg-card p-6 flex flex-col justify-between liber-showcase-frame group-hover:border-[#2563EB]/60 dark:group-hover:border-[#38BDF8]/60 transition-colors overflow-hidden">
             <div className="text-center pt-1">
@@ -120,8 +131,10 @@ export function HomeBentoCatalog() {
             <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
         </Link>
+        </div>
 
         {/* 3. Logos & Vectors Card */}
+        <div {...cardMotion(2)}>
         <Link href="/logos" className="group block space-y-3">
           <div className="relative h-[220px] rounded-[22px] border border-border bg-card p-6 flex items-center justify-center liber-showcase-frame group-hover:border-[#2563EB]/60 dark:group-hover:border-[#38BDF8]/60 transition-colors overflow-hidden">
             {/* Blueprint Dot Grid */}
@@ -164,8 +177,10 @@ export function HomeBentoCatalog() {
             <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
         </Link>
+        </div>
 
         {/* 4. Animations Card */}
+        <div {...cardMotion(3)}>
         <Link href="/animations" className="group block space-y-3">
           <div className="h-[220px] rounded-[22px] border border-border bg-card p-6 flex items-center justify-center liber-showcase-frame group-hover:border-[#2563EB]/60 dark:group-hover:border-[#38BDF8]/60 transition-colors overflow-hidden">
             <div className="relative w-full max-w-[240px] space-y-2">
@@ -199,8 +214,10 @@ export function HomeBentoCatalog() {
             <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
         </Link>
+        </div>
 
         {/* 5. UI Components & Grid System Card */}
+        <div {...cardMotion(4)}>
         <Link href="/components" className="group block space-y-3">
           <div className="relative h-[220px] rounded-[22px] border border-border bg-card p-5 flex flex-col justify-between liber-showcase-frame group-hover:border-[#2563EB]/60 dark:group-hover:border-[#38BDF8]/60 transition-colors overflow-hidden">
             {/* Overlapping Desktop + Mobile column bars */}
@@ -240,8 +257,10 @@ export function HomeBentoCatalog() {
             <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
         </Link>
+        </div>
 
         {/* 6. CLI, CDN & Docs Card */}
+        <div {...cardMotion(5)}>
         <Link href="/docs" className="group block space-y-3">
           <div className="h-[220px] rounded-[22px] border border-border bg-card p-6 flex flex-col items-center justify-between liber-showcase-frame group-hover:border-[#2563EB]/60 dark:group-hover:border-[#38BDF8]/60 transition-colors overflow-hidden">
             <div className="pt-2">
@@ -276,6 +295,7 @@ export function HomeBentoCatalog() {
             <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
         </Link>
+        </div>
       </div>
     </section>
   );

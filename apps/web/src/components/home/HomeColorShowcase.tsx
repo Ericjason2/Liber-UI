@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { EditorialDivider } from "./HomePrimitives";
+import { ScrollReveal, getRevealMotionProps, useInViewOnce } from "./ScrollReveal";
 import { ThemeLivePreview } from "@/components/ThemeLivePreview";
 import { BASE_THEMES, TOTAL_THEMES_COUNT } from "@/lib/catalog-themes-base";
 import { useToast } from "@/context/ToastContext";
@@ -27,6 +28,8 @@ const TEXT_SCALE_RAMP = [
  */
 export function HomeColorShowcase() {
   const { toast } = useToast();
+  const [swatchesRef, swatchesVisible] = useInViewOnce<HTMLDivElement>();
+  const [rampRef, rampVisible] = useInViewOnce<HTMLDivElement>();
 
   const highlightSlugs = ["ocean", "sunset", "violet", "forest"];
   const featuredPalettes = highlightSlugs
@@ -40,24 +43,29 @@ export function HomeColorShowcase() {
 
   return (
     <section className="relative space-y-12 sm:space-y-14">
-      <EditorialDivider left="Color System" center="Liber UI" index="03" />
+      <ScrollReveal variant="fade-up">
+        <div className="space-y-10 sm:space-y-12">
+          <EditorialDivider left="Color System" center="Liber UI" index="03" />
 
-      {/* Centered Header with Circular & Badge */}
-      <div className="text-center space-y-5 max-w-2xl mx-auto">
-        <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-foreground leading-tight">
-          Color palettes{" "}
-          <span className="inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-[#2563EB] text-white dark:bg-[#38BDF8] dark:text-[#090D16] text-xl sm:text-2xl font-medium align-middle mx-1 liber-floating-widget">
-            &amp;
-          </span>{" "}
-          WCAG Tokens
-        </h2>
-        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-          {TOTAL_THEMES_COUNT} calibrated palettes verified against WCAG AA &amp; AAA contrast ratios.
-          Click any swatch to copy its HEX value or export ready-to-use CSS variables.
-        </p>
-      </div>
+          {/* Centered Header with Circular & Badge */}
+          <div className="text-center space-y-5 max-w-2xl mx-auto">
+            <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-foreground leading-tight">
+              Color palettes{" "}
+              <span className="inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-[#2563EB] text-white dark:bg-[#38BDF8] dark:text-[#090D16] text-xl sm:text-2xl font-medium align-middle mx-1 liber-floating-widget">
+                &amp;
+              </span>{" "}
+              WCAG Tokens
+            </h2>
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+              {TOTAL_THEMES_COUNT} calibrated palettes verified against WCAG AA &amp; AAA contrast ratios.
+              Click any swatch to copy its HEX value or export ready-to-use CSS variables.
+            </p>
+          </div>
+        </div>
+      </ScrollReveal>
 
       {/* Double-Framed Elevated Card with Subtle Ambient Glow */}
+      <ScrollReveal variant="scale-in" delay={80}>
       <div className="relative">
         <div
           aria-hidden="true"
@@ -85,11 +93,16 @@ export function HomeColorShowcase() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {featuredPalettes.map((palette) => {
+            <div ref={swatchesRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {featuredPalettes.map((palette, pIdx) => {
                 const primaryHex = palette.tokens.primary || palette.swatches[2] || "#2563EB";
+                const motion = getRevealMotionProps(swatchesVisible, pIdx * 80, 600);
                 return (
-                  <div key={palette.slug} className="space-y-2">
+                  <div
+                    key={palette.slug}
+                    style={motion.style}
+                    className={`space-y-2 ${motion.className}`}
+                  >
                     <div className="flex items-center justify-between text-xs px-0.5">
                       <span className="font-medium text-foreground">
                         {palette.name} <span className="text-muted-foreground font-mono">· {palette.wcagLevel}</span>
@@ -141,14 +154,17 @@ export function HomeColorShowcase() {
               <span className="text-[11px] font-mono text-muted-foreground">Click any stop to copy</span>
             </div>
 
-            <div className="rounded-[14px] border border-border overflow-hidden">
+            <div ref={rampRef} className="rounded-[14px] border border-border overflow-hidden">
               <div className="grid grid-cols-3 sm:grid-cols-9">
-                {TEXT_SCALE_RAMP.map((stop) => (
+                {TEXT_SCALE_RAMP.map((stop, sIdx) => {
+                  const motion = getRevealMotionProps(rampVisible, sIdx * 45, 500);
+                  return (
                   <button
                     key={stop.weight}
                     type="button"
                     onClick={() => copyHex(stop.hex)}
-                    className="group text-left focus:outline-none"
+                    style={motion.style}
+                    className={`group text-left focus:outline-none ${motion.className}`}
                   >
                     <div
                       className="h-12 sm:h-16 w-full transition-opacity group-hover:opacity-90"
@@ -159,7 +175,8 @@ export function HomeColorShowcase() {
                       <div className="text-[10px] font-mono text-muted-foreground">{stop.hex}</div>
                     </div>
                   </button>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -170,6 +187,7 @@ export function HomeColorShowcase() {
           </div>
         </div>
       </div>
+      </ScrollReveal>
     </section>
   );
 }
