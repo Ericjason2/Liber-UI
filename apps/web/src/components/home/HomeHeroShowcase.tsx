@@ -33,7 +33,7 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
   const heroLogos = OFFICIAL_LOGOS.slice(0, 6);
 
   return (
-    <section className="relative pt-6 sm:pt-12 pb-6">
+    <section className="relative pt-8 sm:pt-16 pb-10">
       {/* Subtle ambient background glow behind Hero */}
       <div
         aria-hidden="true"
@@ -41,7 +41,7 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
       />
 
       {/* Top Display Area with Floating Tilted Inspector Widgets */}
-      <div className="relative max-w-5xl mx-auto text-center space-y-7">
+      <div className="relative max-w-5xl mx-auto text-center space-y-9">
         {/* Top-Left Tilted Design Tool Dock (Desktop) */}
         <div className="hidden lg:block absolute -top-6 left-2 xl:-left-8 -rotate-6 z-20">
           <FloatingToolDock />
@@ -50,12 +50,6 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
         {/* Top-Right Tilted Color Fill Inspector (Desktop) */}
         <div className="hidden lg:block absolute -top-10 right-0 xl:-right-8 rotate-6 z-20">
           <FloatingFillInspector hex="2563EB" opacity="100%" />
-        </div>
-
-        {/* Micro Status Pill */}
-        <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/80 backdrop-blur-sm px-3.5 py-1 text-xs font-mono text-muted-foreground">
-          <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-          <span>Open-Source Asset Registry · Zero Lock-In</span>
         </div>
 
         {/* Massive Editorial Headline with Figma Selection Box */}
@@ -74,7 +68,7 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
         </p>
 
         {/* Wide Search Bar + Primary Pill CTAs */}
-        <div className="max-w-[660px] mx-auto space-y-4 pt-1">
+        <div className="max-w-[660px] mx-auto space-y-5 pt-2">
           <button
             type="button"
             onClick={onOpenSearch}
@@ -107,13 +101,13 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
         </div>
 
         {/* Interactive CLI Strip */}
-        <div className="pt-2">
+        <div className="pt-3">
           <InstallStrip />
         </div>
       </div>
 
       {/* Centered Hero Display Monitor Mockup with Overlapping Typography Inspector */}
-      <div className="relative max-w-[1040px] mx-auto mt-14 sm:mt-16">
+      <div className="relative max-w-[1040px] mx-auto mt-16 sm:mt-24">
         {/* Overlapping Tilted Typography Inspector Popover */}
         <div className="hidden md:block absolute -top-9 right-4 lg:-right-6 rotate-3 z-20">
           <FloatingTypographyInspector />
@@ -202,18 +196,16 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
                 <button
                   type="button"
                   onClick={() => setActiveBtn("primary-enabled")}
-                  className={`h-8 px-3 rounded-[8px] text-xs font-medium bg-[#2563EB] text-white dark:bg-[#38BDF8] dark:text-[#090D16] transition-all ${
-                    activeBtn === "primary-enabled" ? "ring-2 ring-ring ring-offset-2 ring-offset-background" : ""
-                  }`}
+                  className={`h-8 px-3 rounded-[8px] text-xs font-medium bg-[#2563EB] text-white dark:bg-[#38BDF8] dark:text-[#090D16] transition-all ${activeBtn === "primary-enabled" ? "ring-2 ring-ring ring-offset-2 ring-offset-background" : ""
+                    }`}
                 >
                   Button
                 </button>
                 <button
                   type="button"
                   onClick={() => setActiveBtn("primary-icon-left")}
-                  className={`h-8 px-3 rounded-[8px] text-xs font-medium bg-[#2563EB] text-white dark:bg-[#38BDF8] dark:text-[#090D16] inline-flex items-center justify-center gap-1.5 transition-all ${
-                    activeBtn === "primary-icon-left" ? "ring-2 ring-ring ring-offset-2 ring-offset-background" : ""
-                  }`}
+                  className={`h-8 px-3 rounded-[8px] text-xs font-medium bg-[#2563EB] text-white dark:bg-[#38BDF8] dark:text-[#090D16] inline-flex items-center justify-center gap-1.5 transition-all ${activeBtn === "primary-icon-left" ? "ring-2 ring-ring ring-offset-2 ring-offset-background" : ""
+                    }`}
                 >
                   <Sparkles className="h-3 w-3" />
                   <span>Action</span>
@@ -241,18 +233,16 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
                 <button
                   type="button"
                   onClick={() => setActiveBtn("sec-enabled")}
-                  className={`h-8 px-3 rounded-[8px] text-xs font-medium bg-primary text-primary-foreground transition-all ${
-                    activeBtn === "sec-enabled" ? "ring-2 ring-ring ring-offset-2 ring-offset-background" : ""
-                  }`}
+                  className={`h-8 px-3 rounded-[8px] text-xs font-medium bg-primary text-primary-foreground transition-all ${activeBtn === "sec-enabled" ? "ring-2 ring-ring ring-offset-2 ring-offset-background" : ""
+                    }`}
                 >
                   Button
                 </button>
                 <button
                   type="button"
                   onClick={() => setActiveBtn("sec-icon-left")}
-                  className={`h-8 px-3 rounded-[8px] text-xs font-medium border border-border bg-surface-subtle text-foreground inline-flex items-center justify-center gap-1.5 transition-all ${
-                    activeBtn === "sec-icon-left" ? "ring-2 ring-ring ring-offset-2 ring-offset-background" : ""
-                  }`}
+                  className={`h-8 px-3 rounded-[8px] text-xs font-medium border border-border bg-surface-subtle text-foreground inline-flex items-center justify-center gap-1.5 transition-all ${activeBtn === "sec-icon-left" ? "ring-2 ring-ring ring-offset-2 ring-offset-background" : ""
+                    }`}
                 >
                   <Sparkles className="h-3 w-3" />
                   <span>Copy TSX</span>

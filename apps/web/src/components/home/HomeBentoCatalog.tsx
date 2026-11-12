@@ -16,11 +16,11 @@ import { SAMPLE_COMPONENTS } from "@/lib/catalog-components";
  */
 export function HomeBentoCatalog() {
   return (
-    <section className="space-y-10 sm:space-y-12">
+    <section className="space-y-12 sm:space-y-16">
       <EditorialDivider left="Catalog Overview" center="Liber UI" index="01" />
 
       {/* Centered Header with Tilted Inline Accent Pill */}
-      <div className="text-center space-y-4 max-w-2xl mx-auto">
+      <div className="text-center space-y-5 max-w-2xl mx-auto">
         <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-foreground leading-tight">
           What’s inside{" "}
           <TiltedPill className="-rotate-3 mx-1 text-lg sm:text-2xl px-4 py-1 align-middle">
@@ -35,7 +35,7 @@ export function HomeBentoCatalog() {
       </div>
 
       {/* 3 x 2 Bento Card Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-8">
         {/* 1. Color Themes Card */}
         <Link href="/themes" className="group block space-y-3">
           <div className="h-[220px] rounded-[22px] border border-border bg-card p-6 flex flex-col justify-between liber-showcase-frame group-hover:border-[#2563EB]/60 dark:group-hover:border-[#38BDF8]/60 transition-colors overflow-hidden">
@@ -270,7 +270,7 @@ export function HomeBentoCatalog() {
                 CLI & Direct CDN
               </h3>
               <p className="text-xs font-mono text-muted-foreground">
-                shadcn Registry · CSS Imports
+                Open Registry · CSS Imports
               </p>
             </div>
             <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

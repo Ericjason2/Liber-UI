@@ -9,21 +9,30 @@
 
 ## Quick Start
 
-You don't need to install anything globally. Run directly with `npx`:
+You don't need to install anything globally. Run directly with `pnpm dlx`, `npx`, `yarn dlx`, or `bunx`:
 
 ```bash
-# Initialize liber configuration in your project
-npx @liber-ui/cli init
+# pnpm
+pnpm dlx @liber-ui/cli init
+pnpm dlx @liber-ui/cli add docker
 
-# Add a logo or component directly to your project
-npx @liber-ui/cli add docker
+# npm
 npx @liber-ui/cli add react github typescript
 
-# Search for available resources
-npx @liber-ui/cli search database
+# yarn
+yarn dlx @liber-ui/cli search database
 
-# Inspect a component before downloading
-npx @liber-ui/cli view docker
+# bun
+bunx @liber-ui/cli view docker
+```
+
+Or install it as a dev dependency:
+
+```bash
+pnpm add -D @liber-ui/cli
+npm install -D @liber-ui/cli
+yarn add -D @liber-ui/cli
+bun add -D @liber-ui/cli
 ```
 
 ---

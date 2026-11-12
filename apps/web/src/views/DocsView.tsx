@@ -18,8 +18,12 @@ import {
   Zap,
 } from "lucide-react";
 import { useToast } from "@/context/ToastContext";
-
-type Manager = "pnpm" | "npm" | "yarn" | "bun";
+import {
+  PACKAGE_MANAGERS,
+  getCliCommand,
+  getPackageInstallCommand,
+  type PackageManager,
+} from "@/lib/package-manager";
 
 interface SidebarLink {
   id: string;
@@ -28,7 +32,7 @@ interface SidebarLink {
 
 const SIDEBAR_LINKS: SidebarLink[] = [
   { id: "introduction", label: "Introduction" },
-  { id: "quickstart", label: "Quick Start & CLI" },
+  { id: "quickstart", label: "Packages & CLI Setup" },
   { id: "cli-reference", label: "CLI Reference" },
   { id: "fonts-guide", label: "Typography & Fonts" },
   { id: "logos-guide", label: "Brand & Tech Logos" },
@@ -38,7 +42,8 @@ const SIDEBAR_LINKS: SidebarLink[] = [
 ];
 
 export default function DocsPage() {
-  const [manager, setManager] = useState<Manager>("pnpm");
+  const [manager, setManager] = useState<PackageManager>("pnpm");
+  const [selectedPkg, setSelectedPkg] = useState<"@liber-ui/react" | "@liber-ui/svg" | "@liber-ui/core" | "@liber-ui/cli">("@liber-ui/react");
   const [activeSection, setActiveSection] = useState<string>("introduction");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const { toast } = useToast();
@@ -50,18 +55,8 @@ export default function DocsPage() {
     setTimeout(() => setCopiedKey(null), 2000);
   };
 
-  const getAddCommand = (slug = "react") => {
-    switch (manager) {
-      case "pnpm":
-        return `pnpm dlx @liber-ui/cli add ${slug}`;
-      case "npm":
-        return `npx @liber-ui/cli add ${slug}`;
-      case "yarn":
-        return `yarn dlx @liber-ui/cli add ${slug}`;
-      case "bun":
-        return `bunx @liber-ui/cli add ${slug}`;
-    }
-  };
+  const getAddCommand = (slug = "react") => getCliCommand(manager, `add ${slug}`);
+  const getPkgCommand = (pkg: string = selectedPkg) => getPackageInstallCommand(manager, pkg);
 
   // Scrollspy: update active section as user scrolls
   useEffect(() => {
@@ -161,10 +156,10 @@ export default function DocsPage() {
               <div className="p-4 rounded-[10px] border border-border bg-card space-y-1.5">
                 <div className="flex items-center gap-1.5 font-mono text-xs font-semibold text-foreground">
                   <Terminal className="h-3.5 w-3.5 text-emerald-500" />
-                  <span>2. CLI & Registry</span>
+                  <span>2. Packages &amp; CLI Registry</span>
                 </div>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Install any resource directly into your project repository using <code className="text-primary font-mono">@liber-ui/cli</code> or standard <code className="text-primary font-mono">shadcn add</code>.
+                  Install packages with <code className="text-primary font-mono">pnpm</code>, <code className="text-primary font-mono">npm</code>, <code className="text-primary font-mono">yarn</code>, or <code className="text-primary font-mono">bun</code>, or pull individual assets via <code className="text-primary font-mono">@liber-ui/cli</code>.
                 </p>
               </div>
 
@@ -181,23 +176,28 @@ export default function DocsPage() {
           </section>
 
           {/* 2. Quickstart & Installation */}
-          <section className="space-y-4 pt-6 border-t border-border scroll-mt-24" id="quickstart">
+          <section className="space-y-5 pt-6 border-t border-border scroll-mt-24" id="quickstart">
             <div className="flex items-center gap-2">
               <Terminal className="h-5 w-5 text-primary" />
               <h2 className="text-2xl font-semibold tracking-tight text-foreground">
-                Quick Start with CLI
+                Install Packages &amp; Run CLI
               </h2>
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed">
-              Use our official lightweight CLI to add resources directly into your project without cloning or manual file copying.
+              Download Liber UI packages with <strong className="text-foreground">pnpm</strong>,{" "}
+              <strong className="text-foreground">npm</strong>,{" "}
+              <strong className="text-foreground">yarn</strong>, or{" "}
+              <strong className="text-foreground">bun</strong>—or run <code className="text-primary font-mono">@liber-ui/cli</code> directly without cloning or manual copying.
             </p>
 
+            {/* Shared Package Manager Selector + Package Installation */}
             <div className="rounded-[10px] border border-border bg-card overflow-hidden text-xs">
-              <div className="flex items-center justify-between border-b border-border bg-muted/40 px-3 py-1.5">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border bg-muted/40 px-3 py-1.5">
                 <div className="flex items-center gap-1">
-                  {(["pnpm", "npm", "yarn", "bun"] as Manager[]).map((m) => (
+                  {PACKAGE_MANAGERS.map((m) => (
                     <button
                       key={m}
+                      type="button"
                       onClick={() => setManager(m)}
                       className={`px-2.5 py-1 font-mono text-[11px] rounded-[6px] transition-colors ${
                         manager === m
@@ -209,22 +209,74 @@ export default function DocsPage() {
                     </button>
                   ))}
                 </div>
-                <button
-                  onClick={() =>
-                    copyToClipboard(getAddCommand("react"), "quick-add-cmd", "CLI command copied")
-                  }
-                  className="flex items-center gap-1 font-mono text-[11px] text-muted-foreground hover:text-foreground"
-                >
-                  {copiedKey === "quick-add-cmd" ? (
-                    <Check className="h-3 w-3 text-emerald-500" />
-                  ) : (
-                    <Copy className="h-3 w-3" />
-                  )}
-                  <span>{copiedKey === "quick-add-cmd" ? "Copied" : "Copy"}</span>
-                </button>
+                <div className="flex flex-wrap items-center gap-1">
+                  {(["@liber-ui/react", "@liber-ui/svg", "@liber-ui/core", "@liber-ui/cli"] as const).map((pkg) => (
+                    <button
+                      key={pkg}
+                      type="button"
+                      onClick={() => setSelectedPkg(pkg)}
+                      className={`px-2 py-0.5 font-mono text-[11px] rounded-[6px] transition-colors ${
+                        selectedPkg === pkg
+                          ? "bg-primary/10 text-primary font-semibold"
+                          : "text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      {pkg}
+                    </button>
+                  ))}
+                </div>
               </div>
-              <div className="p-3.5 font-mono text-xs select-all text-foreground bg-card">
-                $ {getAddCommand("react")}
+
+              <div className="divide-y divide-border">
+                <div className="flex items-center justify-between gap-3 p-3.5 bg-card">
+                  <div className="space-y-1 min-w-0">
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground block">
+                      Install Package ({selectedPkg})
+                    </span>
+                    <div className="font-mono text-xs select-all text-foreground truncate">
+                      $ {getPkgCommand(selectedPkg)}
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      copyToClipboard(getPkgCommand(selectedPkg), "quick-pkg-cmd", "Install command copied")
+                    }
+                    className="flex items-center gap-1 font-mono text-[11px] text-muted-foreground hover:text-foreground shrink-0"
+                  >
+                    {copiedKey === "quick-pkg-cmd" ? (
+                      <Check className="h-3 w-3 text-emerald-500" />
+                    ) : (
+                      <Copy className="h-3 w-3" />
+                    )}
+                    <span>{copiedKey === "quick-pkg-cmd" ? "Copied" : "Copy"}</span>
+                  </button>
+                </div>
+
+                <div className="flex items-center justify-between gap-3 p-3.5 bg-surface-subtle/40">
+                  <div className="space-y-1 min-w-0">
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground block">
+                      Or run CLI directly (zero global install)
+                    </span>
+                    <div className="font-mono text-xs select-all text-foreground truncate">
+                      $ {getAddCommand("react")}
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      copyToClipboard(getAddCommand("react"), "quick-add-cmd", "CLI command copied")
+                    }
+                    className="flex items-center gap-1 font-mono text-[11px] text-muted-foreground hover:text-foreground shrink-0"
+                  >
+                    {copiedKey === "quick-add-cmd" ? (
+                      <Check className="h-3 w-3 text-emerald-500" />
+                    ) : (
+                      <Copy className="h-3 w-3" />
+                    )}
+                    <span>{copiedKey === "quick-add-cmd" ? "Copied" : "Copy"}</span>
+                  </button>
+                </div>
               </div>
             </div>
           </section>
@@ -300,7 +352,7 @@ export default function DocsPage() {
                   <span>Method 1 · Liber CLI Installation</span>
                 </span>
                 <p className="text-muted-foreground leading-relaxed">
-                  Run <code className="text-primary font-mono">npx @liber-ui/cli add font-&lt;slug&gt;</code>. The CLI automatically writes the font style definition in <code className="font-mono text-foreground">styles/fonts/&lt;slug&gt;.css</code> and links dependencies.
+                  Run <code className="text-primary font-mono">{getAddCommand("font-<slug>")}</code>. The CLI automatically writes the font style definition in <code className="font-mono text-foreground">styles/fonts/&lt;slug&gt;.css</code> and links dependencies.
                 </p>
               </div>
 
@@ -423,9 +475,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             {/* Code Examples: React & Raw SVG */}
             <div className="space-y-3 pt-2">
-              <span className="font-mono text-xs font-semibold text-foreground">
-                Usage Example in React / Next.js:
-              </span>
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <span className="font-mono text-xs font-semibold text-foreground">
+                  Install &amp; Usage in React / Next.js:
+                </span>
+                <code className="px-2.5 py-1 rounded-[6px] border border-border bg-muted/50 font-mono text-[11px] text-foreground select-all">
+                  {getPkgCommand("@liber-ui/react")}
+                </code>
+              </div>
 
               <div className="rounded-[8px] border border-border bg-card p-4 font-mono text-xs relative group">
                 <pre className="text-foreground overflow-x-auto leading-relaxed">

@@ -12,12 +12,18 @@ import {
   Info,
 } from "lucide-react";
 import { useToast } from "@/context/ToastContext";
+import {
+  PACKAGE_MANAGERS,
+  getCliCommand,
+  type PackageManager,
+} from "@/lib/package-manager";
 
 export default function ComponentsPage() {
   const [selectedCat, setSelectedCat] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [componentModes, setComponentModes] = useState<Record<string, "preview" | "code">>({});
+  const [pm, setPm] = useState<PackageManager>("pnpm");
 
   // Interactive specimen states
   const [inputValue, setInputValue] = useState("Search documentation...");
@@ -49,9 +55,9 @@ export default function ComponentsPage() {
   });
 
   const handleCopyCmd = (c: ComponentItem) => {
-    navigator.clipboard.writeText(`npx @liber-ui/cli add ${c.slug}`);
+    navigator.clipboard.writeText(getCliCommand(pm, `add ${c.slug}`));
     setCopiedKey(c.slug);
-    toast(`Copied ${c.name} command`);
+    toast(`Copied ${pm} command for ${c.name}`);
     setTimeout(() => setCopiedKey(null), 2000);
   };
 
@@ -301,12 +307,30 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
               Core UI Components
             </h1>
             <p className="text-sm text-muted-foreground max-w-2xl">
-              Micro-engineered accessible primitives with interactive states, dark mode compliance, and standard shadcn registry manifests.
+              Micro-engineered accessible primitives with interactive states, dark mode compliance, and direct @liber-ui/cli registry manifests.
             </p>
           </div>
 
-          <div className="flex items-center gap-2 font-mono text-xs text-foreground bg-muted border border-border px-3.5 h-10 rounded-[10px] self-start sm:self-auto">
-            <span>{filtered.length} Components Available</span>
+          <div className="flex flex-wrap items-center gap-2 self-start sm:self-auto">
+            <div className="flex items-center gap-1 rounded-[10px] border border-border bg-card p-1">
+              {PACKAGE_MANAGERS.map((m) => (
+                <button
+                  key={m}
+                  type="button"
+                  onClick={() => setPm(m)}
+                  className={`px-2 py-1 font-mono text-[11px] rounded-[6px] transition-colors ${
+                    pm === m
+                      ? "bg-muted text-foreground font-semibold"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {m}
+                </button>
+              ))}
+            </div>
+            <div className="flex items-center gap-2 font-mono text-xs text-foreground bg-muted border border-border px-3.5 h-10 rounded-[10px]">
+              <span>{filtered.length} Components Available</span>
+            </div>
           </div>
         </div>
       </div>

@@ -31,14 +31,14 @@
 
 ## ⚡ What is Liber UI?
 
-**Liber UI** brings together everything you need to build interfaces into a unified, zero-lock-in platform inspired by `shadcn/ui` and `lucide.dev`. 
+**Liber UI** brings together everything you need to build interfaces into a unified, zero-lock-in platform with open source primitives and brand vectors. 
 
-Whether you need official brand logos in React JSX, free web fonts streamed via CDN, WCAG-validated color palettes, copy-paste CSS animations, or accessible UI components, Liber UI lets you **copy the code in 1 click**, **link directly via CDN**, or **install directly into your codebase with our CLI**.
+Whether you need official brand logos in React JSX, free web fonts streamed via CDN, WCAG-validated color palettes, copy-paste CSS animations, or accessible UI components, Liber UI lets you **copy the code in 1 click**, **link directly via CDN**, or **install via pnpm, npm, yarn, bun, or our CLI**.
 
 ### Key Highlights
 - **1-Click Copy**: Instant SVG, JSX, CSS variables, or Tailwind class snippet.
 - **Direct CDN Streaming**: Zero-install URLs for SVGs, CSS stylesheets, and TTF binary fonts.
-- **CLI & shadcn Registry**: Install individual components into your own repository using `npx @liber-ui/cli add <slug>` or `npx shadcn add`.
+- **Packages & CLI**: Install npm packages (`@liber-ui/react`, `@liber-ui/svg`, `@liber-ui/core`) with `pnpm`, `npm`, `yarn`, or `bun`, or add individual assets with `@liber-ui/cli`.
 - **Accessibility-First**: Contrast checks (WCAG AA/AAA), `currentColor` dark mode reactivity, and `prefers-reduced-motion` motion safety.
 - **No Vendor Lock-in**: Raw source files live in your repo. You own your code.
 
@@ -112,33 +112,33 @@ Whether you need official brand logos in React JSX, free web fonts streamed via 
 
 ### Method 1: The Official CLI (`@liber-ui/cli`)
 
-Run directly with `npx` (no global installation required):
+Run directly with `pnpm dlx`, `npx`, `yarn dlx`, or `bunx` (no global installation required):
 
 ```bash
-# Initialize liber.json in your project
+# pnpm
+pnpm dlx @liber-ui/cli init
+pnpm dlx @liber-ui/cli add react
+
+# npm
 npx @liber-ui/cli init
-
-# Add a logo or component
-npx @liber-ui/cli add react
 npx @liber-ui/cli add button
-npx @liber-ui/cli add font-inter
 
-# Search the catalog from your terminal
-npx @liber-ui/cli search postgres
+# yarn
+yarn dlx @liber-ui/cli add font-inter
 
-# Inspect a component before installing
-npx @liber-ui/cli view docker
+# bun
+bunx @liber-ui/cli search postgres
 ```
 
 #### CLI Command Reference
 
 | Command | Description | Example |
 | :--- | :--- | :--- |
-| `init` | Creates `liber.json` configuration file | `npx @liber-ui/cli init` |
-| `add <slug...>` | Downloads and installs resources into your project | `npx @liber-ui/cli add react docker typescript` |
+| `init` | Creates `liber.json` configuration file | `pnpm dlx @liber-ui/cli init` |
+| `add <slug...>` | Downloads and installs resources into your project | `pnpm dlx @liber-ui/cli add react docker typescript` |
 | `search <query>` | Searches the registry by keyword or category | `npx @liber-ui/cli search tailwind` |
-| `view <slug>` | Displays metadata, files, and dependencies | `npx @liber-ui/cli view github` |
-| `diff <slug>` | Compares local installed files against registry | `npx @liber-ui/cli diff button` |
+| `view <slug>` | Displays metadata, files, and dependencies | `yarn dlx @liber-ui/cli view github` |
+| `diff <slug>` | Compares local installed files against registry | `bunx @liber-ui/cli diff button` |
 
 #### Advanced `add` Options
 - `--variant <color|mono|wordmark>`: Logo variant to install (default: `color`).
@@ -188,28 +188,23 @@ body {
 
 ---
 
-### Method 3: `shadcn/ui` Standard Registry
-
-Every Liber UI resource is published as a standard `shadcn` registry schema:
+### Method 3: Install via Package Managers (`pnpm`, `npm`, `yarn`, `bun`)
 
 ```bash
-npx shadcn@latest add https://liber-ui-delta.vercel.app/r/react.json
-npx shadcn@latest add https://liber-ui-delta.vercel.app/r/button.json
-```
+# pnpm
+pnpm add @liber-ui/react        # Tree-shaken React components (<2KB per icon)
+pnpm add @liber-ui/svg          # Raw SVGs for Vue, Svelte, Astro, HTML
+pnpm add @liber-ui/core         # Core TypeScript types and catalog index
+pnpm add -D @liber-ui/cli       # Official Liber CLI
 
----
+# npm
+npm install @liber-ui/react @liber-ui/svg @liber-ui/core
 
-### Method 4: npm Packages
+# yarn
+yarn add @liber-ui/react @liber-ui/svg @liber-ui/core
 
-```bash
-# React components with tree-shaking (<2KB per icon)
-npm install @liber-ui/react
-
-# Raw SVGs for Vue, Svelte, Astro, HTML
-npm install @liber-ui/svg
-
-# Core TypeScript types and catalog index
-npm install @liber-ui/core
+# bun
+bun add @liber-ui/react @liber-ui/svg @liber-ui/core
 ```
 
 ```tsx
