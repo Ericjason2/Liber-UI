@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { EditorialDivider, TiltedPill } from "./HomePrimitives";
+import { ScrollReveal, getRevealMotionProps, useInViewOnce } from "./ScrollReveal";
 import { BASE_FONTS, TOTAL_FONTS_COUNT } from "@/lib/catalog-fonts-base";
 
 const TYPE_SCALE_ROWS = [
@@ -21,6 +22,8 @@ const TYPE_SCALE_ROWS = [
  * and quick-access links into Liber UI's 7,382+ open-license font catalog.
  */
 export function HomeTypographyShowcase() {
+  const [rowsRef, rowsVisible] = useInViewOnce<HTMLDivElement>();
+  const [fontsRef, fontsVisible] = useInViewOnce<HTMLDivElement>();
   const featuredSlugs = ["geist", "inter", "jetbrains-mono", "playfair-display"];
   const featuredFonts = featuredSlugs
     .map((slug) => BASE_FONTS.find((f) => f.slug === slug))
@@ -28,47 +31,54 @@ export function HomeTypographyShowcase() {
 
   return (
     <section className="space-y-12 sm:space-y-14">
-      <EditorialDivider left="Typography" center="Liber UI" index="04" />
+      <ScrollReveal variant="fade-up">
+        <EditorialDivider left="Typography" center="Liber UI" index="04" />
+      </ScrollReveal>
 
       {/* Asymmetric Header with Giant Background "Aa" Watermark */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        <div className="relative py-4">
-          <span
-            aria-hidden="true"
-            className="pointer-events-none select-none absolute -top-6 left-2 text-[110px] sm:text-[140px] font-bold leading-none text-foreground/[0.04] dark:text-foreground/[0.05] tracking-tighter"
-          >
-            Aa
-          </span>
-          <div className="relative inline-flex items-center flex-wrap gap-3">
-            <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-foreground">
-              Typography
-            </h2>
-            <TiltedPill className="-rotate-3">
-              {TOTAL_FONTS_COUNT.toLocaleString()}+ Fonts
-            </TiltedPill>
+        <ScrollReveal variant="fade-left">
+          <div className="relative py-4">
+            <span
+              aria-hidden="true"
+              className="pointer-events-none select-none absolute -top-6 left-2 text-[110px] sm:text-[140px] font-bold leading-none text-foreground/[0.04] dark:text-foreground/[0.05] tracking-tighter"
+            >
+              Aa
+            </span>
+            <div className="relative inline-flex items-center flex-wrap gap-3">
+              <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-foreground">
+                Typography
+              </h2>
+              <TiltedPill className="-rotate-3">
+                {TOTAL_FONTS_COUNT.toLocaleString()}+ Fonts
+              </TiltedPill>
+            </div>
           </div>
-        </div>
+        </ScrollReveal>
 
-        <div className="space-y-2.5 max-w-lg lg:ml-auto">
-          <h3 className="text-base sm:text-lg font-semibold text-foreground">
-            About Geist &amp; Open-License Fonts
-          </h3>
-          <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-            Our interface pairs calibrated Geist &amp; Geist Mono scales with direct CSS CDN imports
-            and raw <code>.ttf</code> streaming across more than {TOTAL_FONTS_COUNT.toLocaleString()} free
-            typefaces (SIL OFL &amp; Apache 2.0).
-          </p>
-          <Link
-            href="/fonts"
-            className="inline-flex items-center gap-1.5 text-xs font-mono font-semibold text-[#2563EB] dark:text-[#38BDF8] hover:underline"
-          >
-            <span>Explore all {TOTAL_FONTS_COUNT.toLocaleString()} fonts</span>
-            <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        </div>
+        <ScrollReveal variant="fade-right" delay={100}>
+          <div className="space-y-2.5 max-w-lg lg:ml-auto">
+            <h3 className="text-base sm:text-lg font-semibold text-foreground">
+              About Geist &amp; Open-License Fonts
+            </h3>
+            <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+              Our interface pairs calibrated Geist &amp; Geist Mono scales with direct CSS CDN imports
+              and raw <code>.ttf</code> streaming across more than {TOTAL_FONTS_COUNT.toLocaleString()} free
+              typefaces (SIL OFL &amp; Apache 2.0).
+            </p>
+            <Link
+              href="/fonts"
+              className="inline-flex items-center gap-1.5 text-xs font-mono font-semibold text-[#2563EB] dark:text-[#38BDF8] hover:underline"
+            >
+              <span>Explore all {TOTAL_FONTS_COUNT.toLocaleString()} fonts</span>
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
 
       {/* Double-Framed Type Scale Card with Dashed Dividers */}
+      <ScrollReveal variant="scale-in" delay={80}>
       <div className="rounded-[24px] border border-border bg-card p-5 sm:p-10 liber-showcase-frame space-y-10">
         <div className="rounded-[16px] border border-border bg-surface-subtle/50 overflow-hidden">
           {/* Table Header */}
@@ -79,11 +89,14 @@ export function HomeTypographyShowcase() {
           </div>
 
           {/* Dashed Horizontal Rows */}
-          <div className="divide-y divide-dashed divide-border px-5 bg-card">
-            {TYPE_SCALE_ROWS.map((row) => (
+          <div ref={rowsRef} className="divide-y divide-dashed divide-border px-5 bg-card">
+            {TYPE_SCALE_ROWS.map((row, rIdx) => {
+              const motion = getRevealMotionProps(rowsVisible, rIdx * 65, 550, "fade-left");
+              return (
               <div
                 key={row.label}
-                className="grid grid-cols-12 items-center py-4 sm:py-5 gap-3"
+                style={motion.style}
+                className={`grid grid-cols-12 items-center py-4 sm:py-5 gap-3 ${motion.className}`}
               >
                 <div className={`col-span-7 sm:col-span-8 truncate text-foreground ${row.className}`}>
                   {row.sample}
@@ -95,7 +108,8 @@ export function HomeTypographyShowcase() {
                   {row.weight}
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
@@ -107,12 +121,12 @@ export function HomeTypographyShowcase() {
               A–Z Directory →
             </Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {featuredFonts.map((font) => (
+          <div ref={fontsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            {featuredFonts.map((font, fIdx) => (
+              <div key={font.slug} {...getRevealMotionProps(fontsVisible, fIdx * 75, 550)}>
               <Link
-                key={font.slug}
                 href={`/fonts/${font.slug}`}
-                className="group p-4 rounded-[14px] border border-border bg-surface-subtle/50 hover:bg-card hover:border-foreground/40 transition-all flex flex-col justify-between gap-3"
+                className="h-full group p-4 rounded-[14px] border border-border bg-surface-subtle/50 hover:bg-card hover:border-foreground/40 transition-all flex flex-col justify-between gap-3"
               >
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-semibold tracking-tight text-foreground">Aa</span>
@@ -127,10 +141,12 @@ export function HomeTypographyShowcase() {
                   <div className="text-xs text-muted-foreground line-clamp-1">{font.description}</div>
                 </div>
               </Link>
+              </div>
             ))}
           </div>
         </div>
       </div>
+      </ScrollReveal>
     </section>
   );
 }

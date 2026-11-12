@@ -14,6 +14,7 @@ import {
   Minus,
 } from "lucide-react";
 import { EditorialDivider, TiltedPill } from "./HomePrimitives";
+import { ScrollReveal, getRevealMotionProps, useInViewOnce } from "./ScrollReveal";
 import { OFFICIAL_LOGOS } from "@/lib/catalog-logos";
 import { SAMPLE_ANIMATIONS } from "@/lib/catalog-animations";
 import { SAMPLE_COMPONENTS } from "@/lib/catalog-components";
@@ -28,6 +29,7 @@ import { useToast } from "@/context/ToastContext";
  */
 export function HomeComponentsShowcase() {
   const { toast } = useToast();
+  const [recentRef, recentVisible] = useInViewOnce<HTMLDivElement>();
   const [switchActive, setSwitchActive] = useState(true);
   const [checkboxState, setCheckboxState] = useState<"unchecked" | "checked" | "indeterminate">("checked");
   const [radioValue, setRadioValue] = useState<"react" | "svg">("react");
@@ -51,24 +53,29 @@ export function HomeComponentsShowcase() {
     <section className="space-y-20 sm:space-y-28">
       {/* Part A: Interactive UI Design Components Studio */}
       <div className="space-y-12 sm:space-y-14">
-        <EditorialDivider left="UI Components" center="Liber UI" index="05" />
+        <ScrollReveal variant="fade-up">
+          <div className="space-y-10 sm:space-y-12">
+            <EditorialDivider left="UI Components" center="Liber UI" index="05" />
 
-        {/* Centered Headline with Inline Tilted Pill */}
-        <div className="text-center space-y-5 max-w-2xl mx-auto">
-          <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-foreground leading-tight">
-            UI Design{" "}
-            <TiltedPill className="-rotate-2 mx-1 text-lg sm:text-2xl px-4 py-1 align-middle">
-              Ready
-            </TiltedPill>{" "}
-            Components
-          </h2>
-          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            {SAMPLE_COMPONENTS.length} accessible TypeScript primitives built with clean Tailwind
-            utilities. Inspect states live or install straight into your repo via CLI.
-          </p>
-        </div>
+            {/* Centered Headline with Inline Tilted Pill */}
+            <div className="text-center space-y-5 max-w-2xl mx-auto">
+              <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-foreground leading-tight">
+                UI Design{" "}
+                <TiltedPill className="-rotate-2 mx-1 text-lg sm:text-2xl px-4 py-1 align-middle">
+                  Ready
+                </TiltedPill>{" "}
+                Components
+              </h2>
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                {SAMPLE_COMPONENTS.length} accessible TypeScript primitives built with clean Tailwind
+                utilities. Inspect states live or install straight into your repo via CLI.
+              </p>
+            </div>
+          </div>
+        </ScrollReveal>
 
         {/* Main Interactive Showcase Card */}
+        <ScrollReveal variant="scale-in" delay={90}>
         <div className="relative rounded-[24px] border border-border bg-card p-7 sm:p-12 space-y-10 liber-showcase-frame">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* Left Column (5 cols): Interactive Controls in Figma Dashed Component-Set Boxes */}
@@ -294,10 +301,12 @@ export function HomeComponentsShowcase() {
             </Link>
           </div>
         </div>
+        </ScrollReveal>
       </div>
 
       {/* Part B: Recently Added Strip (4 Real Asset Families) */}
       <div className="space-y-8">
+        <ScrollReveal variant="fade-up">
         <div className="flex items-center justify-between">
           <div>
             <h3 className="text-xl font-semibold tracking-tight text-foreground">Recently Added</h3>
@@ -313,10 +322,13 @@ export function HomeComponentsShowcase() {
             <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
+        </ScrollReveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {featuredLogo && (
-            <div className="p-4 rounded-[16px] border border-border bg-card space-y-4 flex flex-col justify-between">
+        <div ref={recentRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {featuredLogo && (() => {
+            const m = getRevealMotionProps(recentVisible, 0, 600);
+            return (
+            <div style={m.style} className={`p-4 rounded-[16px] border border-border bg-card space-y-4 flex flex-col justify-between ${m.className}`}>
               <Link href={`/logos/${featuredLogo.slug}`} className="space-y-3 group">
                 <div className="flex items-center justify-between">
                   <div className="h-9 w-9 rounded-[10px] border border-border bg-surface-subtle flex items-center justify-center p-1.5">
@@ -355,10 +367,13 @@ export function HomeComponentsShowcase() {
                 )}
               </button>
             </div>
-          )}
+            );
+          })()}
 
-          {featuredAnimation && (
-            <div className="p-4 rounded-[16px] border border-border bg-card space-y-4 flex flex-col justify-between">
+          {featuredAnimation && (() => {
+            const m = getRevealMotionProps(recentVisible, 75, 600);
+            return (
+            <div style={m.style} className={`p-4 rounded-[16px] border border-border bg-card space-y-4 flex flex-col justify-between ${m.className}`}>
               <Link href={`/animations#${featuredAnimation.slug}`} className="space-y-3 group">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-1.5 h-9">
@@ -386,10 +401,13 @@ export function HomeComponentsShowcase() {
                 <ArrowRight className="h-3 w-3" />
               </Link>
             </div>
-          )}
+            );
+          })()}
 
-          {featuredTheme && (
-            <div className="p-4 rounded-[16px] border border-border bg-card space-y-4 flex flex-col justify-between">
+          {featuredTheme && (() => {
+            const m = getRevealMotionProps(recentVisible, 150, 600);
+            return (
+            <div style={m.style} className={`p-4 rounded-[16px] border border-border bg-card space-y-4 flex flex-col justify-between ${m.className}`}>
               <Link href={`/themes#palette-${featuredTheme.slug}`} className="space-y-3 group">
                 <div className="flex items-center justify-between h-9">
                   <div className="flex items-center gap-1">
@@ -432,10 +450,13 @@ export function HomeComponentsShowcase() {
                 )}
               </button>
             </div>
-          )}
+            );
+          })()}
 
-          {featuredFont && (
-            <div className="p-4 rounded-[16px] border border-border bg-card space-y-4 flex flex-col justify-between">
+          {featuredFont && (() => {
+            const m = getRevealMotionProps(recentVisible, 225, 600);
+            return (
+            <div style={m.style} className={`p-4 rounded-[16px] border border-border bg-card space-y-4 flex flex-col justify-between ${m.className}`}>
               <Link href={`/fonts/${featuredFont.slug}`} className="space-y-3 group">
                 <div className="flex items-center justify-between h-9">
                   <span className="text-xl font-mono font-semibold text-foreground">Aa</span>
@@ -470,7 +491,8 @@ export function HomeComponentsShowcase() {
                 )}
               </button>
             </div>
-          )}
+            );
+          })()}
         </div>
       </div>
     </section>

@@ -4,19 +4,32 @@ import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { EditorialDivider, FloatingToolDock, FloatingFillInspector } from "./HomePrimitives";
+import { ScrollParallax, ScrollReveal, getRevealMotionProps, useInViewOnce } from "./ScrollReveal";
 
 /**
  * Module 6 — Value Proposition & Closing Bookend CTA inspired by Behance Module 12.
  * Reprises the floating tilted design-tool widgets flanking a bold typographic inline pill CTA.
  */
 export function HomeClosingCta() {
+  const [cardsRef, cardsVisible] = useInViewOnce<HTMLDivElement>();
+
+  const cardMotion = (idx: number) => {
+    const m = getRevealMotionProps(cardsVisible, idx * 90, 600);
+    return {
+      style: m.style,
+      className: `p-6 rounded-[18px] border border-border bg-card space-y-2 ${m.className}`,
+    };
+  };
+
   return (
     <section className="space-y-20 sm:space-y-28 pb-12">
-      <EditorialDivider left="Start Building" center="Liber UI" index="∞" />
+      <ScrollReveal variant="fade-up">
+        <EditorialDivider left="Start Building" center="Liber UI" index="∞" />
+      </ScrollReveal>
 
       {/* 3-Column Open Code Value Proposition */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-        <div className="p-6 rounded-[18px] border border-border bg-card space-y-2">
+      <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <div {...cardMotion(0)}>
           <div className="text-[11px] font-mono text-[#2563EB] dark:text-[#38BDF8]">01 · OWNERSHIP</div>
           <h3 className="text-sm sm:text-base font-semibold text-foreground">
             Open code: you own what you install
@@ -27,7 +40,7 @@ export function HomeClosingCta() {
           </p>
         </div>
 
-        <div className="p-6 rounded-[18px] border border-border bg-card space-y-2">
+        <div {...cardMotion(1)}>
           <div className="text-[11px] font-mono text-[#2563EB] dark:text-[#38BDF8]">02 · COMPOSABLE</div>
           <h3 className="text-sm sm:text-base font-semibold text-foreground">
             Composable primitives across stacks
@@ -38,7 +51,7 @@ export function HomeClosingCta() {
           </p>
         </div>
 
-        <div className="p-6 rounded-[18px] border border-border bg-card space-y-2">
+        <div {...cardMotion(2)}>
           <div className="text-[11px] font-mono text-[#2563EB] dark:text-[#38BDF8]">03 · THEMEABLE</div>
           <h3 className="text-sm sm:text-base font-semibold text-foreground">
             Semantic tokens, light and dark
@@ -51,16 +64,21 @@ export function HomeClosingCta() {
       </div>
 
       {/* Closing Bookend Statement with Inline Pill CTA & Floating Tool Widgets */}
+      <ScrollReveal variant="scale-in" delay={100}>
       <div className="relative max-w-4xl mx-auto py-10 sm:py-20 text-center">
         {/* Left Tilted Tool Dock */}
-        <div className="hidden lg:block absolute top-2 -left-10 -rotate-12 z-10">
-          <FloatingToolDock />
-        </div>
+        <ScrollParallax speed={-0.09} className="hidden lg:block absolute top-2 -left-10 z-10">
+          <div className="-rotate-12">
+            <FloatingToolDock />
+          </div>
+        </ScrollParallax>
 
         {/* Right Tilted Fill Popover */}
-        <div className="hidden lg:block absolute -top-4 -right-10 rotate-6 z-10">
-          <FloatingFillInspector hex="0F172A" opacity="100%" />
-        </div>
+        <ScrollParallax speed={0.08} className="hidden lg:block absolute -top-4 -right-10 z-10">
+          <div className="rotate-6">
+            <FloatingFillInspector hex="0F172A" opacity="100%" />
+          </div>
+        </ScrollParallax>
 
         <h2 className="text-3xl sm:text-5xl md:text-[54px] font-semibold tracking-[-0.03em] text-foreground leading-[1.15]">
           Ship your next
@@ -81,6 +99,7 @@ export function HomeClosingCta() {
           </span>
         </h2>
       </div>
+      </ScrollReveal>
     </section>
   );
 }

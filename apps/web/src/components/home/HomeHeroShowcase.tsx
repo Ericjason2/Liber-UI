@@ -10,6 +10,7 @@ import {
   FloatingFillInspector,
   FloatingTypographyInspector,
 } from "./HomePrimitives";
+import { ScrollParallax, ScrollReveal } from "./ScrollReveal";
 import { BASE_THEMES } from "@/lib/catalog-themes-base";
 import { OFFICIAL_LOGOS } from "@/lib/catalog-logos";
 import { TOTAL_THEMES_COUNT } from "@/lib/catalog-themes-base";
@@ -43,14 +44,18 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
       {/* Top Display Area with Floating Tilted Inspector Widgets */}
       <div className="relative max-w-5xl mx-auto text-center space-y-9">
         {/* Top-Left Tilted Design Tool Dock (Desktop) */}
-        <div className="hidden lg:block absolute -top-6 left-2 xl:-left-8 -rotate-6 z-20">
-          <FloatingToolDock />
-        </div>
+        <ScrollParallax speed={-0.09} className="hidden lg:block absolute -top-6 left-2 xl:-left-8 z-20">
+          <div className="-rotate-6">
+            <FloatingToolDock />
+          </div>
+        </ScrollParallax>
 
         {/* Top-Right Tilted Color Fill Inspector (Desktop) */}
-        <div className="hidden lg:block absolute -top-10 right-0 xl:-right-8 rotate-6 z-20">
-          <FloatingFillInspector hex="2563EB" opacity="100%" />
-        </div>
+        <ScrollParallax speed={0.08} className="hidden lg:block absolute -top-10 right-0 xl:-right-8 z-20">
+          <div className="rotate-6">
+            <FloatingFillInspector hex="2563EB" opacity="100%" />
+          </div>
+        </ScrollParallax>
 
         {/* Massive Editorial Headline with Figma Selection Box */}
         <h1 className="text-4xl sm:text-6xl lg:text-[72px] font-semibold tracking-[-0.03em] text-foreground leading-[1.08] max-w-4xl mx-auto">
@@ -109,12 +114,15 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
       {/* Centered Hero Display Monitor Mockup with Overlapping Typography Inspector */}
       <div className="relative max-w-[1040px] mx-auto mt-16 sm:mt-24">
         {/* Overlapping Tilted Typography Inspector Popover */}
-        <div className="hidden md:block absolute -top-9 right-4 lg:-right-6 rotate-3 z-20">
-          <FloatingTypographyInspector />
-        </div>
+        <ScrollParallax speed={-0.1} className="hidden md:block absolute -top-9 right-4 lg:-right-6 z-20">
+          <div className="rotate-3">
+            <FloatingTypographyInspector />
+          </div>
+        </ScrollParallax>
 
         {/* Monitor Outer Bezel */}
-        <div className="relative rounded-[22px] sm:rounded-[28px] border-[6px] sm:border-[10px] border-foreground dark:border-[#1E293B] bg-card overflow-hidden liber-showcase-frame">
+        <ScrollReveal variant="scale-in" delay={120}>
+          <div className="relative rounded-[22px] sm:rounded-[28px] border-[6px] sm:border-[10px] border-foreground dark:border-[#1E293B] bg-card overflow-hidden liber-showcase-frame">
           {/* Simulated Studio Viewport Inside Screen */}
           <div className="p-4 sm:p-8 space-y-7 bg-background">
             {/* Screen Top Micro Bar */}
@@ -304,6 +312,7 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
           <div className="w-28 h-12 bg-gradient-to-b from-neutral-300 via-neutral-200 to-neutral-300 dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 border-x border-border" />
           <div className="w-44 h-2 rounded-full bg-neutral-300 dark:bg-slate-700" />
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );
