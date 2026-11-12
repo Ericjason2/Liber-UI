@@ -10,7 +10,7 @@ import {
   FloatingFillInspector,
   FloatingTypographyInspector,
 } from "./HomePrimitives";
-import { ScrollParallax, ScrollReveal } from "./ScrollReveal";
+import { ScrollParallax } from "./ScrollReveal";
 import { BASE_THEMES } from "@/lib/catalog-themes-base";
 import { OFFICIAL_LOGOS } from "@/lib/catalog-logos";
 import { TOTAL_THEMES_COUNT } from "@/lib/catalog-themes-base";
@@ -45,20 +45,24 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
       <div className="relative max-w-5xl mx-auto text-center space-y-9">
         {/* Top-Left Tilted Design Tool Dock (Desktop) */}
         <ScrollParallax speed={-0.09} className="hidden lg:block absolute -top-6 left-2 xl:-left-8 z-20">
-          <div className="-rotate-6">
-            <FloatingToolDock />
+          <div className="liber-hero-reveal" style={{ animationDelay: "120ms" }}>
+            <div className="-rotate-6">
+              <FloatingToolDock />
+            </div>
           </div>
         </ScrollParallax>
 
         {/* Top-Right Tilted Color Fill Inspector (Desktop) */}
         <ScrollParallax speed={0.08} className="hidden lg:block absolute -top-10 right-0 xl:-right-8 z-20">
-          <div className="rotate-6">
-            <FloatingFillInspector hex="2563EB" opacity="100%" />
+          <div className="liber-hero-reveal" style={{ animationDelay: "140ms" }}>
+            <div className="rotate-6">
+              <FloatingFillInspector hex="2563EB" opacity="100%" />
+            </div>
           </div>
         </ScrollParallax>
 
         {/* Massive Editorial Headline with Figma Selection Box */}
-        <h1 className="text-4xl sm:text-6xl lg:text-[72px] font-semibold tracking-[-0.03em] text-foreground leading-[1.08] max-w-4xl mx-auto">
+        <h1 className="liber-hero-reveal text-4xl sm:text-6xl lg:text-[72px] font-semibold tracking-[-0.03em] text-foreground leading-[1.08] max-w-4xl mx-auto">
           Open code for{" "}
           <DashedSelectionBox>
             <span className="text-[#2563EB] dark:text-[#38BDF8]">polished</span>
@@ -66,14 +70,17 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
           interfaces.
         </h1>
 
-        <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+        <p
+          className="liber-hero-reveal text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed"
+          style={{ animationDelay: "45ms" }}
+        >
           {OFFICIAL_LOGOS.length}+ official tech logos, {TOTAL_FONTS_COUNT.toLocaleString()}+ free fonts,{" "}
           {TOTAL_THEMES_COUNT} WCAG palettes, {SAMPLE_ANIMATIONS.length} GPU animations &{" "}
           {SAMPLE_COMPONENTS.length} UI primitives. Copy directly or install with one command.
         </p>
 
         {/* Wide Search Bar + Primary Pill CTAs */}
-        <div className="max-w-[660px] mx-auto space-y-5 pt-2">
+        <div className="liber-hero-reveal max-w-[660px] mx-auto space-y-5 pt-2" style={{ animationDelay: "85ms" }}>
           <button
             type="button"
             onClick={onOpenSearch}
@@ -106,7 +113,7 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
         </div>
 
         {/* Interactive CLI Strip */}
-        <div className="pt-3">
+        <div className="liber-hero-reveal pt-3" style={{ animationDelay: "120ms" }}>
           <InstallStrip />
         </div>
       </div>
@@ -115,13 +122,15 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
       <div className="relative max-w-[1040px] mx-auto mt-16 sm:mt-24">
         {/* Overlapping Tilted Typography Inspector Popover */}
         <ScrollParallax speed={-0.1} className="hidden md:block absolute -top-9 right-4 lg:-right-6 z-20">
-          <div className="rotate-3">
-            <FloatingTypographyInspector />
+          <div className="liber-hero-reveal" style={{ animationDelay: "160ms" }}>
+            <div className="rotate-3">
+              <FloatingTypographyInspector />
+            </div>
           </div>
         </ScrollParallax>
 
         {/* Monitor Outer Bezel */}
-        <ScrollReveal variant="scale-in" delay={120}>
+        <div className="liber-hero-reveal-scale" style={{ animationDelay: "140ms" }}>
           <div className="relative rounded-[22px] sm:rounded-[28px] border-[6px] sm:border-[10px] border-foreground dark:border-[#1E293B] bg-card overflow-hidden liber-showcase-frame">
           {/* Simulated Studio Viewport Inside Screen */}
           <div className="p-4 sm:p-8 space-y-7 bg-background">
@@ -312,7 +321,7 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
           <div className="w-28 h-12 bg-gradient-to-b from-neutral-300 via-neutral-200 to-neutral-300 dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 border-x border-border" />
           <div className="w-44 h-2 rounded-full bg-neutral-300 dark:bg-slate-700" />
         </div>
-        </ScrollReveal>
+        </div>
       </div>
     </section>
   );

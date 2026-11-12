@@ -75,7 +75,7 @@ export function HomeComponentsShowcase() {
         </ScrollReveal>
 
         {/* Main Interactive Showcase Card */}
-        <ScrollReveal variant="scale-in" delay={90}>
+        <ScrollReveal variant="scale-in" delay={45}>
         <div className="relative rounded-[24px] border border-border bg-card p-7 sm:p-12 space-y-10 liber-showcase-frame">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* Left Column (5 cols): Interactive Controls in Figma Dashed Component-Set Boxes */}
@@ -326,7 +326,7 @@ export function HomeComponentsShowcase() {
 
         <div ref={recentRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {featuredLogo && (() => {
-            const m = getRevealMotionProps(recentVisible, 0, 600);
+            const m = getRevealMotionProps(recentVisible, 0, 360);
             return (
             <div style={m.style} className={`p-4 rounded-[16px] border border-border bg-card space-y-4 flex flex-col justify-between ${m.className}`}>
               <Link href={`/logos/${featuredLogo.slug}`} className="space-y-3 group">
@@ -371,7 +371,7 @@ export function HomeComponentsShowcase() {
           })()}
 
           {featuredAnimation && (() => {
-            const m = getRevealMotionProps(recentVisible, 75, 600);
+            const m = getRevealMotionProps(recentVisible, 45, 360);
             return (
             <div style={m.style} className={`p-4 rounded-[16px] border border-border bg-card space-y-4 flex flex-col justify-between ${m.className}`}>
               <Link href={`/animations#${featuredAnimation.slug}`} className="space-y-3 group">
@@ -405,7 +405,7 @@ export function HomeComponentsShowcase() {
           })()}
 
           {featuredTheme && (() => {
-            const m = getRevealMotionProps(recentVisible, 150, 600);
+            const m = getRevealMotionProps(recentVisible, 90, 360);
             return (
             <div style={m.style} className={`p-4 rounded-[16px] border border-border bg-card space-y-4 flex flex-col justify-between ${m.className}`}>
               <Link href={`/themes#palette-${featuredTheme.slug}`} className="space-y-3 group">
@@ -454,7 +454,7 @@ export function HomeComponentsShowcase() {
           })()}
 
           {featuredFont && (() => {
-            const m = getRevealMotionProps(recentVisible, 225, 600);
+            const m = getRevealMotionProps(recentVisible, 135, 360);
             return (
             <div style={m.style} className={`p-4 rounded-[16px] border border-border bg-card space-y-4 flex flex-col justify-between ${m.className}`}>
               <Link href={`/fonts/${featuredFont.slug}`} className="space-y-3 group">

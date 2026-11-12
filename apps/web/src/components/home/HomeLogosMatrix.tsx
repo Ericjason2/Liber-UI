@@ -37,7 +37,7 @@ export function HomeLogosMatrix() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal variant="fade-right" delay={100}>
+        <ScrollReveal variant="fade-right" delay={50}>
           <div className="max-w-md space-y-2">
             <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
               Sanitized SVGO vectors delivered in Color, Monochrome (<code>currentColor</code>), and
@@ -59,11 +59,11 @@ export function HomeLogosMatrix() {
         <div ref={gridRef} className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-3.5 sm:gap-4">
           {displayLogos.map((logo, idx) => {
             const isAccent = accentIndices.has(idx);
-            const waveDelay = (idx % 12) * 28 + Math.floor(idx / 12) * 55;
+            const waveDelay = (idx % 12) * 14 + Math.floor(idx / 12) * 28;
             return (
               <div
                 key={logo.slug}
-                {...getRevealMotionProps(gridVisible, waveDelay, 550, "scale-in")}
+                {...getRevealMotionProps(gridVisible, waveDelay, 340, "scale-in")}
               >
                 <Link
                   href={`/logos/${logo.slug}`}
@@ -105,7 +105,7 @@ export function HomeLogosMatrix() {
 
         {/* Soft Fade Overlay & Centered Pill Action */}
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-background via-background/85 to-transparent flex items-end justify-center pb-2">
-          <ScrollReveal variant="fade-up" delay={240}>
+          <ScrollReveal variant="fade-up" delay={120}>
             <Link
               href="/logos"
               className="pointer-events-auto h-10 px-5 rounded-full border border-border bg-card text-foreground text-xs font-mono font-medium hover:border-foreground/50 transition-colors inline-flex items-center gap-2 liber-floating-widget"
