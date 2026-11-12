@@ -23,7 +23,7 @@ import { GET as getSearchApi } from "../../apps/web/src/handlers/searchApiHandle
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = resolve(__dirname, "../..");
 const WEB_PUBLIC_DIR = resolve(ROOT_DIR, "apps/web/public");
-const REACT_INDEX_PATH = resolve(ROOT_DIR, "packages/react/src/index.ts");
+const REACT_INDEX_PATH = resolve(ROOT_DIR, "packages/logo/src/index.ts");
 
 /**
  * Helper to construct a minimal valid PKZIP buffer in memory for testing
@@ -107,7 +107,7 @@ describe("End-User E2E Flows — Logos, Fonts (CSS/Tailwind/TTF), Themes, Animat
       }
     });
 
-    it("exports React components (@liber-ui/react) for Color and Mono variants", () => {
+    it("exports React components (@liber-ui/logo) for Color and Mono variants", () => {
       expect(existsSync(REACT_INDEX_PATH)).toBe(true);
       const indexContent = readFileSync(REACT_INDEX_PATH, "utf8");
 

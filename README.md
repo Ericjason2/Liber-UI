@@ -21,7 +21,6 @@
   <a href="#-asset-catalog">Asset Catalog</a> •
   <a href="#-integration-methods">Integration Methods</a> •
   <a href="#-local-development">Local Development</a> •
-  <a href="#-production-deployment">Production Deployment</a> •
   <a href="#-trademark--license">Legal & License</a>
 </p>
 
@@ -38,7 +37,7 @@ Whether you need official brand logos in React JSX, free web fonts streamed via 
 ### Key Highlights
 - **1-Click Copy**: Instant SVG, JSX, CSS variables, or Tailwind class snippet.
 - **Direct CDN Streaming**: Zero-install URLs for SVGs, CSS stylesheets, and TTF binary fonts.
-- **Packages & CLI**: Install npm packages (`@liber-ui/react`, `@liber-ui/svg`, `@liber-ui/core`) with `pnpm`, `npm`, `yarn`, or `bun`, or add individual assets with `@liber-ui/cli`.
+- **Packages & CLI**: Install npm packages (`@liber-ui/logo`, `@liber-ui/svg`, `@liber-ui/core`) with `pnpm`, `npm`, `yarn`, or `bun`, or add individual assets with `@liber-ui/cli`.
 - **Accessibility-First**: Contrast checks (WCAG AA/AAA), `currentColor` dark mode reactivity, and `prefers-reduced-motion` motion safety.
 - **No Vendor Lock-in**: Raw source files live in your repo. You own your code.
 
@@ -53,7 +52,7 @@ Whether you need official brand logos in React JSX, free web fonts streamed via 
   - `Monochrome`: Clean monochrome paths reactive to dark mode via `currentColor`.
   - `Wordmark`: Complete brandmark with logotype typography.
 - **Multi-format Delivery**:
-  - React Component (`@liber-ui/react`): `<ReactColor size={32} />`, `<GithubMono size={32} />`.
+  - React Component (`@liber-ui/logo`): `<ReactColor size={32} />`, `<GithubMono size={32} />`.
   - Raw SVG code with SVGO security sanitation.
   - Multi-resolution PNG downloads (`64px`, `128px`, `256px`, `512px`) rendered via client-side HTML5 Canvas.
   - Direct CDN link: `/svg/<slug>/<variant>.svg`.
@@ -192,23 +191,23 @@ body {
 
 ```bash
 # pnpm
-pnpm add @liber-ui/react        # Tree-shaken React components (<2KB per icon)
+pnpm add @liber-ui/logo        # Tree-shaken React components (<2KB per icon)
 pnpm add @liber-ui/svg          # Raw SVGs for Vue, Svelte, Astro, HTML
 pnpm add @liber-ui/core         # Core TypeScript types and catalog index
 pnpm add -D @liber-ui/cli       # Official Liber CLI
 
 # npm
-npm install @liber-ui/react @liber-ui/svg @liber-ui/core
+npm install @liber-ui/logo @liber-ui/svg @liber-ui/core
 
 # yarn
-yarn add @liber-ui/react @liber-ui/svg @liber-ui/core
+yarn add @liber-ui/logo @liber-ui/svg @liber-ui/core
 
 # bun
-bun add @liber-ui/react @liber-ui/svg @liber-ui/core
+bun add @liber-ui/logo @liber-ui/svg @liber-ui/core
 ```
 
 ```tsx
-import { ReactColor, GithubMono, DockerWordmark } from "@liber-ui/react";
+import { ReactColor, GithubMono, DockerWordmark } from "@liber-ui/logo";
 
 export function TechStack() {
   return (
@@ -241,7 +240,7 @@ liber/
 ├── packages/
 │   ├── cli/                # @liber-ui/cli binary (init, add, search, view, diff)
 │   ├── core/               # @liber-ui/core (index.json, Zod schemas, TypeScript types)
-│   ├── react/              # @liber-ui/react (generated React icon components)
+│   ├── logo/               # @liber-ui/logo (generated React icon components)
 │   └── svg/                # @liber-ui/svg (raw optimized SVG distribution)
 ├── content/                # Source of truth (hand-curated content)
 │   ├── logos/<slug>/       # meta.json + color.svg + mono.svg + wordmark.svg

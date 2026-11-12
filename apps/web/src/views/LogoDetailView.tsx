@@ -67,7 +67,7 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
 
     switch (activeTab) {
       case "react":
-        return `import { ${reactComponentName} } from "@liber-ui/react";\n\nexport function TechStack() {\n  return <${reactComponentName} size={32}${currentVariant === "mono" && monoColor !== "#000000" ? ` color="${monoColor}"` : ""} />;\n}`;
+        return `import { ${reactComponentName} } from "@liber-ui/logo";\n\nexport function TechStack() {\n  return <${reactComponentName} size={32}${currentVariant === "mono" && monoColor !== "#000000" ? ` color="${monoColor}"` : ""} />;\n}`;
       case "svg":
         return effectiveSvg;
       case "cdn": {
@@ -338,7 +338,7 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
                 </div>
                 {activeTab === "react" && (
                   <code className="text-muted-foreground select-all">
-                    {getPackageInstallCommand(pm, "@liber-ui/react")}
+                    {getPackageInstallCommand(pm, "@liber-ui/logo")}
                   </code>
                 )}
               </div>
