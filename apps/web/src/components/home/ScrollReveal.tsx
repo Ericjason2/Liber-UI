@@ -9,8 +9,8 @@ export type RevealVariant = "fade-up" | "fade-left" | "fade-right" | "scale-in";
  * Marks visible immediately if reduced-motion is preferred or element starts inside/above the viewport.
  */
 export function useInViewOnce<T extends HTMLElement = HTMLDivElement>(
-  threshold = 0.06,
-  rootMargin = "0px 0px -40px 0px"
+  threshold = 0.04,
+  rootMargin = "0px 0px -20px 0px"
 ): [React.RefObject<T | null>, boolean] {
   const ref = useRef<T | null>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -63,7 +63,7 @@ const VARIANT_VISIBLE_CLASSES = "opacity-100 translate-x-0 translate-y-0 scale-1
 export function getRevealMotionProps(
   visible: boolean,
   delay = 0,
-  duration = 600,
+  duration = 380,
   variant: RevealVariant = "fade-up"
 ): { style: React.CSSProperties; className: string } {
   return {
@@ -72,7 +72,7 @@ export function getRevealMotionProps(
       transitionDelay: `${delay}ms`,
       transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)",
     },
-    className: `transition-[opacity,transform] will-change-[opacity,transform] motion-reduce:transition-none motion-reduce:opacity-100 motion-reduce:transform-none ${
+    className: `transition-[opacity,transform] motion-reduce:transition-none motion-reduce:opacity-100 motion-reduce:transform-none ${
       visible ? VARIANT_VISIBLE_CLASSES : VARIANT_HIDDEN_CLASSES[variant]
     }`,
   };
@@ -93,7 +93,7 @@ export function ScrollReveal({
   children,
   variant = "fade-up",
   delay = 0,
-  duration = 700,
+  duration = 400,
   className = "",
 }: ScrollRevealProps) {
   const [ref, isVisible] = useInViewOnce<HTMLDivElement>();

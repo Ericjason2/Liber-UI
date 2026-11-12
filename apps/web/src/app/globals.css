@@ -411,3 +411,43 @@
 .kenburns-top {
   animation: kenburns-top 5s ease-out infinite alternate both;
 }
+
+/* Immediate GPU compositor reveal for Hero on page load/reload (non-blocking) */
+@keyframes liber-reveal-up {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes liber-reveal-scale {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0) scale(0.975);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.liber-hero-reveal {
+  animation: liber-reveal-up 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.liber-hero-reveal-scale {
+  animation: liber-reveal-scale 400ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liber-hero-reveal,
+  .liber-hero-reveal-scale {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
