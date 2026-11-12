@@ -39,11 +39,11 @@ export function HomeColorShowcase() {
   };
 
   return (
-    <section className="relative space-y-10">
+    <section className="relative space-y-12 sm:space-y-14">
       <EditorialDivider left="Color System" center="Liber UI" index="03" />
 
       {/* Centered Header with Circular & Badge */}
-      <div className="text-center space-y-4 max-w-2xl mx-auto">
+      <div className="text-center space-y-5 max-w-2xl mx-auto">
         <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-foreground leading-tight">
           Color palettes{" "}
           <span className="inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-[#2563EB] text-white dark:bg-[#38BDF8] dark:text-[#090D16] text-xl sm:text-2xl font-medium align-middle mx-1 liber-floating-widget">
@@ -69,7 +69,7 @@ export function HomeColorShowcase() {
           className="mx-6 h-3 rounded-t-[20px] border-t border-x border-border bg-surface-subtle/80"
         />
 
-        <div className="relative rounded-[24px] border border-border bg-card p-6 sm:p-10 space-y-10 liber-showcase-frame">
+        <div className="relative rounded-[24px] border border-border bg-card p-7 sm:p-12 space-y-12 liber-showcase-frame">
           {/* Sub-section A: 4-col Curated Swatch Cards */}
           <div className="space-y-4">
             <div className="flex items-center justify-between">

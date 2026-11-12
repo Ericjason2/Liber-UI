@@ -15,6 +15,12 @@ import {
 import type { LogoItem } from "@/lib/catalog-logos";
 import { useToast } from "@/context/ToastContext";
 import { useSiteOrigin } from "@/hooks/useSiteOrigin";
+import {
+  PACKAGE_MANAGERS,
+  getCliCommand,
+  getPackageInstallCommand,
+  type PackageManager,
+} from "@/lib/package-manager";
 
 interface Props {
   logo: LogoItem;
@@ -29,6 +35,7 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
   const [previewDarkBg, setPreviewDarkBg] = useState(false);
   const [monoColor, setMonoColor] = useState("#000000");
   const [activeTab, setActiveTab] = useState<CodeTab>("react");
+  const [pm, setPm] = useState<PackageManager>("pnpm");
   const [svgContent, setSvgContent] = useState<string>("");
   const [copiedType, setCopiedType] = useState<string | null>(null);
   const [pngSize, setPngSize] = useState<number>(256);
@@ -77,7 +84,7 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
         ].join("\n");
       }
       case "cli":
-        return `npx @liber-ui/cli add ${logo.slug}`;
+        return getCliCommand(pm, `add ${logo.slug}`);
     }
   };
 
@@ -311,6 +318,31 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
             <div className="p-3 bg-card overflow-x-auto max-h-48 text-xs font-mono leading-relaxed text-foreground whitespace-pre">
               {getCodeSnippet()}
             </div>
+            {(activeTab === "react" || activeTab === "cli") && (
+              <div className="px-3 py-2 border-t border-border bg-surface-subtle flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono">
+                <div className="flex items-center gap-1">
+                  {PACKAGE_MANAGERS.map((m) => (
+                    <button
+                      key={m}
+                      type="button"
+                      onClick={() => setPm(m)}
+                      className={`px-2 py-0.5 rounded-[5px] transition-colors ${
+                        pm === m
+                          ? "bg-card text-foreground font-semibold border border-border shadow-sm"
+                          : "text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      {m}
+                    </button>
+                  ))}
+                </div>
+                {activeTab === "react" && (
+                  <code className="text-muted-foreground select-all">
+                    {getPackageInstallCommand(pm, "@liber-ui/react")}
+                  </code>
+                )}
+              </div>
+            )}
             {activeTab === "cdn" && (
               <div className="px-3 py-2 border-t border-border bg-surface-subtle flex flex-wrap items-center gap-3 text-[11px] font-mono">
                 <a

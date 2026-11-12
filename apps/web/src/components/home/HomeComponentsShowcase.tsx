@@ -48,13 +48,13 @@ export function HomeComponentsShowcase() {
   };
 
   return (
-    <section className="space-y-16 sm:space-y-20">
+    <section className="space-y-20 sm:space-y-28">
       {/* Part A: Interactive UI Design Components Studio */}
-      <div className="space-y-10">
+      <div className="space-y-12 sm:space-y-14">
         <EditorialDivider left="UI Components" center="Liber UI" index="05" />
 
         {/* Centered Headline with Inline Tilted Pill */}
-        <div className="text-center space-y-4 max-w-2xl mx-auto">
+        <div className="text-center space-y-5 max-w-2xl mx-auto">
           <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-foreground leading-tight">
             UI Design{" "}
             <TiltedPill className="-rotate-2 mx-1 text-lg sm:text-2xl px-4 py-1 align-middle">
@@ -69,7 +69,7 @@ export function HomeComponentsShowcase() {
         </div>
 
         {/* Main Interactive Showcase Card */}
-        <div className="relative rounded-[24px] border border-border bg-card p-6 sm:p-10 space-y-8 liber-showcase-frame">
+        <div className="relative rounded-[24px] border border-border bg-card p-7 sm:p-12 space-y-10 liber-showcase-frame">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* Left Column (5 cols): Interactive Controls in Figma Dashed Component-Set Boxes */}
             <div className="lg:col-span-5 space-y-5">
@@ -297,7 +297,7 @@ export function HomeComponentsShowcase() {
       </div>
 
       {/* Part B: Recently Added Strip (4 Real Asset Families) */}
-      <div className="space-y-6">
+      <div className="space-y-8">
         <div className="flex items-center justify-between">
           <div>
             <h3 className="text-xl font-semibold tracking-tight text-foreground">Recently Added</h3>

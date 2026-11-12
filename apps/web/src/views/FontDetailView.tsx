@@ -17,6 +17,11 @@ import type { FontItem } from "@/lib/catalog-fonts-base";
 import { useToast } from "@/context/ToastContext";
 import { useSiteOrigin } from "@/hooks/useSiteOrigin";
 import { getFontPreviewUrl, getFontCharmapUrl } from "@/lib/fontPreviewUtils";
+import {
+  PACKAGE_MANAGERS,
+  getCliCommand,
+  type PackageManager,
+} from "@/lib/package-manager";
 
 interface FontDetailClientProps {
   font: FontItem;
@@ -44,6 +49,7 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
   const [fontSize, setFontSize] = useState<number>(48);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<"specimen" | "alphabet" | "install">("specimen");
+  const [pm, setPm] = useState<PackageManager>("pnpm");
   const [imgLoaded, setImgLoaded] = useState(true);
   const { toast } = useToast();
 
@@ -66,7 +72,7 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
   const siteOrigin = useSiteOrigin();
   const fontCssUrl = `${siteOrigin}/api/font-css/${font.slug}`;
   const fontFileUrl = `${siteOrigin}/api/font-file/${font.slug}.ttf`;
-  const liberCmd = `npx @liber-ui/cli add font-${font.slug}`;
+  const liberCmd = getCliCommand(pm, `add font-${font.slug}`);
   const cssFontFaceSnippet = `/* Option A: Direct CSS @import (CDN - no download required) */\n@import url('${fontCssUrl}');\n\n/* Option B: Standard @font-face (Direct CDN .ttf or local files) */\n@font-face {\n  font-family: '${font.name}';\n  src: url('${fontFileUrl}') format('truetype'),\n       url('/fonts/${font.slug}/${font.name}-Regular.woff2') format('woff2');\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n}\n\n:root {\n  --font-${font.slug}: '${font.name}', sans-serif;\n}`;
   const tailwindSnippet = `/* 1. In globals.css: @import url('${fontCssUrl}'); */\n/* 2. Use class="font-${font.slug}" or configure tailwind.config.js: */\nmodule.exports = {\n  theme: {\n    extend: {\n      fontFamily: {\n        '${font.slug}': ['var(--font-${font.slug})', '${font.category || "sans-serif"}'],\n      },\n    },\n  },\n};`;
   const nextFontLocalSnippet = `// app/layout.tsx\nimport localFont from 'next/font/local';\n\nconst font${font.name.replace(/[^a-zA-Z0-9]/g, "")} = localFont({\n  src: './fonts/${font.slug}/${font.name}-Regular.woff2',\n  variable: '--font-${font.slug}',\n  display: 'swap',\n});\n\nexport default function RootLayout({ children }: { children: React.ReactNode }) {\n  return (\n    <html lang="en" className={font${font.name.replace(/[^a-zA-Z0-9]/g, "")}.variable}>\n      <body>{children}</body>\n    </html>\n  );\n}`;
@@ -569,30 +575,48 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
         <div className="space-y-8">
           {/* CLI Section */}
           <div className="p-6 rounded-[12px] border border-border bg-card space-y-4">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-wrap items-center justify-between gap-2">
               <div className="flex items-center gap-2">
                 <Terminal className="h-4 w-4 text-primary" />
                 <h3 className="text-sm font-semibold text-foreground font-mono">
                   1. Automatic Installation via Liber CLI
                 </h3>
               </div>
-              <button
-                onClick={() =>
-                  copyToClipboard(
-                    liberCmd,
-                    `Copied CLI command for ${font.name}`,
-                    "install-cli"
-                  )
-                }
-                className="h-8 px-2.5 rounded-[6px] border border-border bg-muted hover:bg-muted/80 text-xs font-mono text-foreground flex items-center gap-1.5 transition-colors"
-              >
-                {copiedKey === "install-cli" ? (
-                  <Check className="h-3 w-3 text-emerald-500" />
-                ) : (
-                  <Copy className="h-3 w-3" />
-                )}
-                <span>Copy</span>
-              </button>
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1 rounded-[6px] border border-border bg-surface-subtle p-0.5">
+                  {PACKAGE_MANAGERS.map((m) => (
+                    <button
+                      key={m}
+                      type="button"
+                      onClick={() => setPm(m)}
+                      className={`px-2 py-0.5 text-[11px] font-mono rounded-[4px] transition-colors ${
+                        pm === m
+                          ? "bg-card text-foreground font-semibold shadow-sm"
+                          : "text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      {m}
+                    </button>
+                  ))}
+                </div>
+                <button
+                  onClick={() =>
+                    copyToClipboard(
+                      liberCmd,
+                      `Copied CLI command for ${font.name}`,
+                      "install-cli"
+                    )
+                  }
+                  className="h-8 px-2.5 rounded-[6px] border border-border bg-muted hover:bg-muted/80 text-xs font-mono text-foreground flex items-center gap-1.5 transition-colors"
+                >
+                  {copiedKey === "install-cli" ? (
+                    <Check className="h-3 w-3 text-emerald-500" />
+                  ) : (
+                    <Copy className="h-3 w-3" />
+                  )}
+                  <span>Copy</span>
+                </button>
+              </div>
             </div>
             <pre className="p-4 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
               <code>{liberCmd}</code>

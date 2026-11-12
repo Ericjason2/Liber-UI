@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Liber UI — The open code catalog for your web apps",
   description:
     "A curated collection of readable, copy-pasteable tech logos, CSS animations, components, color themes, and typography definitions. No dependencies, no lock-in.",
-  keywords: ["developer tools", "logos", "shadcn", "css animations", "animista", "themes", "fonts", "svg"],
+  keywords: ["developer tools", "logos", "ui components", "css animations", "animista", "themes", "fonts", "svg"],
   authors: [{ name: "Liber contributors" }],
   openGraph: {
     title: "Liber UI — The open code catalog for developers",

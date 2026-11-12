@@ -11,7 +11,7 @@ import { EditorialDivider, FloatingToolDock, FloatingFillInspector } from "./Hom
  */
 export function HomeClosingCta() {
   return (
-    <section className="space-y-16 sm:space-y-24 pb-8">
+    <section className="space-y-20 sm:space-y-28 pb-12">
       <EditorialDivider left="Start Building" center="Liber UI" index="∞" />
 
       {/* 3-Column Open Code Value Proposition */}
@@ -51,7 +51,7 @@ export function HomeClosingCta() {
       </div>
 
       {/* Closing Bookend Statement with Inline Pill CTA & Floating Tool Widgets */}
-      <div className="relative max-w-4xl mx-auto py-8 sm:py-14 text-center">
+      <div className="relative max-w-4xl mx-auto py-10 sm:py-20 text-center">
         {/* Left Tilted Tool Dock */}
         <div className="hidden lg:block absolute top-2 -left-10 -rotate-12 z-10">
           <FloatingToolDock />

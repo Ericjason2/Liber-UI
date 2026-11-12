@@ -15,11 +15,11 @@ export function HomeLogosMatrix() {
   const accentIndices = new Set([2, 10, 17, 29, 34, 42]);
 
   return (
-    <section className="space-y-8 sm:space-y-10">
+    <section className="space-y-12 sm:space-y-14">
       <EditorialDivider left="Logos & Vectors" center="Liber UI" index="02" />
 
       {/* Asymmetric Header */}
-      <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+      <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
         <div className="space-y-2">
           <div className="relative inline-flex items-center flex-wrap gap-3">
             <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-foreground">
@@ -48,7 +48,7 @@ export function HomeLogosMatrix() {
 
       {/* 12 x 4 Responsive Squircle Matrix with Bottom Fade */}
       <div className="relative">
-        <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-3 sm:gap-3.5">
+        <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-3.5 sm:gap-4">
           {displayLogos.map((logo, idx) => {
             const isAccent = accentIndices.has(idx);
             return (

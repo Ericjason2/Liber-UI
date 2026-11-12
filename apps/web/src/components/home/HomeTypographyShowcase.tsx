@@ -27,11 +27,11 @@ export function HomeTypographyShowcase() {
     .filter((f): f is NonNullable<typeof f> => Boolean(f));
 
   return (
-    <section className="space-y-10">
+    <section className="space-y-12 sm:space-y-14">
       <EditorialDivider left="Typography" center="Liber UI" index="04" />
 
       {/* Asymmetric Header with Giant Background "Aa" Watermark */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div className="relative py-4">
           <span
             aria-hidden="true"
@@ -69,7 +69,7 @@ export function HomeTypographyShowcase() {
       </div>
 
       {/* Double-Framed Type Scale Card with Dashed Dividers */}
-      <div className="rounded-[24px] border border-border bg-card p-4 sm:p-8 liber-showcase-frame space-y-8">
+      <div className="rounded-[24px] border border-border bg-card p-5 sm:p-10 liber-showcase-frame space-y-10">
         <div className="rounded-[16px] border border-border bg-surface-subtle/50 overflow-hidden">
           {/* Table Header */}
           <div className="grid grid-cols-12 items-center px-5 py-3.5 border-b border-border bg-card text-xs font-mono font-medium text-muted-foreground">
