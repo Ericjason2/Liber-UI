@@ -412,22 +412,22 @@
   animation: kenburns-top 5s ease-out infinite alternate both;
 }
 
-/* Immediate GPU compositor reveal for Hero on page load/reload (non-blocking) */
+/* --- Homepage First-Paint & Scroll Reveal Keyframes (GPU-only, non-blocking) --- */
 @keyframes liber-reveal-up {
   0% {
     opacity: 0;
-    transform: translate3d(0, 14px, 0);
+    transform: translate3d(0, 28px, 0) scale(0.98);
   }
   100% {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) scale(1);
   }
 }
 
 @keyframes liber-reveal-scale {
   0% {
     opacity: 0;
-    transform: translate3d(0, 16px, 0) scale(0.975);
+    transform: translate3d(0, 32px, 0) scale(0.955);
   }
   100% {
     opacity: 1;
@@ -436,11 +436,13 @@
 }
 
 .liber-hero-reveal {
-  animation: liber-reveal-up 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: liber-reveal-up 1050ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  will-change: opacity, transform;
 }
 
 .liber-hero-reveal-scale {
-  animation: liber-reveal-scale 400ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: liber-reveal-scale 1150ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  will-change: opacity, transform;
 }
 
 @media (prefers-reduced-motion: reduce) {
