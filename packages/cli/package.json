@@ -18,11 +18,12 @@
   "keywords": [
     "liber",
     "cli",
-    "shadcn",
     "logos",
     "svg",
     "react",
-    "components"
+    "components",
+    "themes",
+    "fonts"
   ],
   "author": "Liber Team",
   "license": "MIT",
