@@ -5,6 +5,11 @@
   "license": "MIT",
   "type": "module",
   "files": [
-    "logos"
-  ]
+    "logos",
+    "README.md"
+  ],
+  "exports": {
+    "./logos/*": "./logos/*",
+    "./package.json": "./package.json"
+  }
 }
