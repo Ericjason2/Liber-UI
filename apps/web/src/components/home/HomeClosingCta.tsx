@@ -14,7 +14,7 @@ export function HomeClosingCta() {
   const [cardsRef, cardsVisible] = useInViewOnce<HTMLDivElement>();
 
   const cardMotion = (idx: number) => {
-    const m = getRevealMotionProps(cardsVisible, idx * 45, 360);
+    const m = getRevealMotionProps(cardsVisible, idx * 130, 950);
     return {
       style: m.style,
       className: `p-6 rounded-[18px] border border-border bg-card space-y-2 ${m.className}`,
@@ -64,7 +64,7 @@ export function HomeClosingCta() {
       </div>
 
       {/* Closing Bookend Statement with Inline Pill CTA & Floating Tool Widgets */}
-      <ScrollReveal variant="scale-in" delay={50}>
+      <ScrollReveal variant="scale-in" delay={100}>
       <div className="relative max-w-4xl mx-auto py-10 sm:py-20 text-center">
         {/* Left Tilted Tool Dock */}
         <ScrollParallax speed={-0.09} className="hidden lg:block absolute top-2 -left-10 z-10">

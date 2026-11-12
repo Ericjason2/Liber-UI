@@ -65,7 +65,7 @@ export function HomeColorShowcase() {
       </ScrollReveal>
 
       {/* Double-Framed Elevated Card with Subtle Ambient Glow */}
-      <ScrollReveal variant="scale-in" delay={40}>
+      <ScrollReveal variant="scale-in" delay={80}>
       <div className="relative">
         <div
           aria-hidden="true"
@@ -96,7 +96,7 @@ export function HomeColorShowcase() {
             <div ref={swatchesRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {featuredPalettes.map((palette, pIdx) => {
                 const primaryHex = palette.tokens.primary || palette.swatches[2] || "#2563EB";
-                const motion = getRevealMotionProps(swatchesVisible, pIdx * 45, 360);
+                const motion = getRevealMotionProps(swatchesVisible, pIdx * 120, 900);
                 return (
                   <div
                     key={palette.slug}
@@ -157,7 +157,7 @@ export function HomeColorShowcase() {
             <div ref={rampRef} className="rounded-[14px] border border-border overflow-hidden">
               <div className="grid grid-cols-3 sm:grid-cols-9">
                 {TEXT_SCALE_RAMP.map((stop, sIdx) => {
-                  const motion = getRevealMotionProps(rampVisible, sIdx * 24, 320);
+                  const motion = getRevealMotionProps(rampVisible, sIdx * 65, 800);
                   return (
                   <button
                     key={stop.weight}
