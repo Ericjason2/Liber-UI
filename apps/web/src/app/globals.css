@@ -436,12 +436,12 @@
 }
 
 .liber-hero-reveal {
-  animation: liber-reveal-up 1050ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: liber-reveal-up 1600ms cubic-bezier(0.16, 1, 0.3, 1) both;
   will-change: opacity, transform;
 }
 
 .liber-hero-reveal-scale {
-  animation: liber-reveal-scale 1150ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: liber-reveal-scale 1800ms cubic-bezier(0.16, 1, 0.3, 1) both;
   will-change: opacity, transform;
 }
 

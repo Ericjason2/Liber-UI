@@ -77,7 +77,7 @@ const VARIANT_VISIBLE_CLASSES = "opacity-100 translate-x-0 translate-y-0 scale-1
 export function getRevealMotionProps(
   visible: boolean,
   delay = 0,
-  duration = 950,
+  duration = 1450,
   variant: RevealVariant = "fade-up"
 ): { style: React.CSSProperties; className: string } {
   return {
@@ -107,7 +107,7 @@ export function ScrollReveal({
   children,
   variant = "fade-up",
   delay = 0,
-  duration = 1050,
+  duration = 1600,
   className = "",
 }: ScrollRevealProps) {
   const [ref, isVisible] = useInViewOnce<HTMLDivElement>();
@@ -185,57 +185,6 @@ export function ScrollParallax({
       className={`will-change-transform motion-reduce:!transform-none ${className}`}
     >
       {children}
-    </div>
-  );
-}
-
-/**
- * Top hairline reading progress indicator driven smoothly by page scroll.
- */
-export function HomeScrollProgress() {
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    let rafId = 0;
-
-    const update = () => {
-      rafId = 0;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if (docHeight <= 0) {
-        setProgress(0);
-        return;
-      }
-      const next = Math.max(0, Math.min(1, window.scrollY / docHeight));
-      setProgress(next);
-    };
-
-    const onScroll = () => {
-      if (!rafId) {
-        rafId = window.requestAnimationFrame(update);
-      }
-    };
-
-    update();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll, { passive: true });
-    return () => {
-      if (rafId) window.cancelAnimationFrame(rafId);
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
-    };
-  }, []);
-
-  return (
-    <div
-      aria-hidden="true"
-      className="fixed top-0 left-0 right-0 z-50 h-[2px] pointer-events-none bg-transparent"
-    >
-      <div
-        className="h-full w-full origin-left bg-[#2563EB] dark:bg-[#38BDF8] transition-transform duration-75 ease-out"
-        style={{ transform: `scaleX(${progress.toFixed(4)})` }}
-      />
     </div>
   );
 }

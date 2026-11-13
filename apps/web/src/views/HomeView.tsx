@@ -9,7 +9,6 @@ import { HomeColorShowcase } from "@/components/home/HomeColorShowcase";
 import { HomeTypographyShowcase } from "@/components/home/HomeTypographyShowcase";
 import { HomeComponentsShowcase } from "@/components/home/HomeComponentsShowcase";
 import { HomeClosingCta } from "@/components/home/HomeClosingCta";
-import { HomeScrollProgress } from "@/components/home/ScrollReveal";
 
 /**
  * Editorial Design-System showcase homepage.
@@ -18,19 +17,16 @@ export default function HomeView() {
   const [searchOpen, setSearchOpen] = useState(false);
 
   return (
-    <>
-      <HomeScrollProgress />
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 py-14 sm:py-24 space-y-32 sm:space-y-44 overflow-x-clip">
-        <HomeHeroShowcase onOpenSearch={() => setSearchOpen(true)} />
-        <HomeBentoCatalog />
-        <HomeLogosMatrix />
-        <HomeColorShowcase />
-        <HomeTypographyShowcase />
-        <HomeComponentsShowcase />
-        <HomeClosingCta />
+    <div className="max-w-[1280px] mx-auto px-4 sm:px-6 py-14 sm:py-24 space-y-32 sm:space-y-44 overflow-x-clip">
+      <HomeHeroShowcase onOpenSearch={() => setSearchOpen(true)} />
+      <HomeBentoCatalog />
+      <HomeLogosMatrix />
+      <HomeColorShowcase />
+      <HomeTypographyShowcase />
+      <HomeComponentsShowcase />
+      <HomeClosingCta />
 
-        <CommandPalette open={searchOpen} onClose={() => setSearchOpen(false)} />
-      </div>
-    </>
+      <CommandPalette open={searchOpen} onClose={() => setSearchOpen(false)} />
+    </div>
   );
 }
