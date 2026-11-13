@@ -93,12 +93,23 @@
     font-family: var(--font-mono);
   }
 
-  /* Hairline focus rings and crisp borders */
+  /* Accessible high-contrast focus rings for keyboard navigation (WCAG 2.1 AA) */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
   button:focus-visible,
   input:focus-visible,
-  a:focus-visible {
+  textarea:focus-visible,
+  select:focus-visible,
+  a:focus-visible,
+  summary:focus-visible,
+  [role="button"]:focus-visible,
+  [role="switch"]:focus-visible,
+  [tabindex]:focus-visible {
     outline: 2px solid var(--ring);
     outline-offset: 2px;
+    border-radius: min(var(--radius), 8px);
   }
 }
 
@@ -318,6 +329,40 @@
   100% { transform: scale(1.25) translateY(-15px); transform-origin: top; }
 }
 
+@keyframes bounce-top {
+  0% { transform: translateY(-45px); animation-timing-function: ease-in; opacity: 1; }
+  24% { opacity: 1; }
+  40% { transform: translateY(-24px); animation-timing-function: ease-in; }
+  65% { transform: translateY(-12px); animation-timing-function: ease-in; }
+  82% { transform: translateY(-6px); animation-timing-function: ease-in; }
+  93% { transform: translateY(-4px); animation-timing-function: ease-in; }
+  25%, 55%, 75%, 87% { transform: translateY(0); animation-timing-function: ease-out; }
+  100% { transform: translateY(0); animation-timing-function: ease-out; opacity: 1; }
+}
+
+@keyframes fade-in-fwd {
+  0% { transform: translateZ(-80px); opacity: 0; }
+  100% { transform: translateZ(0); opacity: 1; }
+}
+
+@keyframes fade-out-bck {
+  0% { transform: translateZ(0); opacity: 1; }
+  100% { transform: translateZ(-80px); opacity: 0; }
+}
+
+@keyframes slide-in-blurred-bottom {
+  0% { transform: translateY(600px) scaleY(2) scaleX(0.4); transform-origin: 50% 100%; filter: blur(30px); opacity: 0; }
+  100% { transform: translateY(0) scaleY(1) scaleX(1); transform-origin: 50% 50%; filter: blur(0); opacity: 1; }
+}
+
+@keyframes heartbeat {
+  from { transform: scale(1); transform-origin: center center; animation-timing-function: ease-out; }
+  10% { transform: scale(0.91); animation-timing-function: ease-in; }
+  17% { transform: scale(0.98); animation-timing-function: ease-out; }
+  33% { transform: scale(0.87); animation-timing-function: ease-in; }
+  45% { transform: scale(1); animation-timing-function: ease-out; }
+}
+
 /* --- Animista CSS Utility Classes --- */
 .scale-up-center {
   animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -410,6 +455,26 @@
 
 .kenburns-top {
   animation: kenburns-top 5s ease-out infinite alternate both;
+}
+
+.bounce-top {
+  animation: bounce-top 0.9s both;
+}
+
+.fade-in-fwd {
+  animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.fade-out-bck {
+  animation: fade-out-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-in-blurred-bottom {
+  animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 /* --- Homepage First-Paint & Scroll Reveal Keyframes (GPU-only, non-blocking) --- */

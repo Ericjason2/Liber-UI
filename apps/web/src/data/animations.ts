@@ -13,15 +13,15 @@ export interface AnimationItem {
 }
 
 export const ANIMATIONS_DATA: AnimationItem[] = [
-  // --- 1. BASIC ANIMATIONS (animista.net) ---
+  // --- 1. BASIC ANIMATIONS  ---
   {
     slug: "scale-up-center",
     kind: "animation",
     name: "Scale Up Center",
-    description: "Smooth focal expansion originating from the center (Animista Basic).",
+    description: "Smooth focal expansion originating from the center.",
     category: "basic",
     trigger: "click",
-    tags: ["scale", "zoom", "basic", "animista", "pop", "center"],
+    tags: ["scale", "zoom", "basic", "pop", "center"],
     cssKeyframes: `@keyframes scale-up-center {
   0% { transform: scale(0.5); }
   100% { transform: scale(1); }
@@ -51,10 +51,10 @@ module.exports = {
     slug: "scale-down-center",
     kind: "animation",
     name: "Scale Down Center",
-    description: "Sleek contraction into center point (Animista Basic).",
+    description: "Sleek contraction into center point.",
     category: "basic",
     trigger: "click",
-    tags: ["scale", "shrink", "basic", "animista", "center"],
+    tags: ["scale", "shrink", "basic", "center"],
     cssKeyframes: `@keyframes scale-down-center {
   0% { transform: scale(1); }
   100% { transform: scale(0.5); }
@@ -84,10 +84,10 @@ module.exports = {
     slug: "rotate-center",
     kind: "animation",
     name: "Rotate Center",
-    description: "Full 360-degree continuous or triggered clockwise rotation (Animista Basic).",
+    description: "Full 360-degree continuous or triggered clockwise rotation.",
     category: "basic",
     trigger: "click",
-    tags: ["rotate", "spin", "basic", "animista", "turn"],
+    tags: ["rotate", "spin", "basic", "turn"],
     cssKeyframes: `@keyframes rotate-center {
   0% { transform: rotate(0); }
   100% { transform: rotate(360deg); }
@@ -860,6 +860,224 @@ module.exports = {
       },
       animation: {
         'kenburns-top': 'kenburns-top 5s ease-out infinite alternate both',
+      },
+    },
+  },
+};`,
+  },
+  {
+    slug: "bounce-top",
+    kind: "animation",
+    name: "Bounce Top",
+    description: "Smooth elastic gravity bounce descending and settling from the top (Animista Attention).",
+    category: "attention",
+    trigger: "click",
+    tags: ["bounce", "attention", "elastic", "animista", "gravity", "settle"],
+    cssKeyframes: `@keyframes bounce-top {
+  0% { transform: translateY(-45px); animation-timing-function: ease-in; opacity: 1; }
+  24% { opacity: 1; }
+  40% { transform: translateY(-24px); animation-timing-function: ease-in; }
+  65% { transform: translateY(-12px); animation-timing-function: ease-in; }
+  82% { transform: translateY(-6px); animation-timing-function: ease-in; }
+  93% { transform: translateY(-4px); animation-timing-function: ease-in; }
+  25%, 55%, 75%, 87% { transform: translateY(0); animation-timing-function: ease-out; }
+  100% { transform: translateY(0); animation-timing-function: ease-out; opacity: 1; }
+}`,
+    cssClasses: `.bounce-top {
+  animation: bounce-top 0.9s both;
+}`,
+    tailwindClasses: `animate-[bounce-top_0.9s_both]`,
+    tailwindConfig: `// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        'bounce-top': {
+          '0%': { transform: 'translateY(-45px)', animationTimingFunction: 'ease-in', opacity: '1' },
+          '24%': { opacity: '1' },
+          '40%': { transform: 'translateY(-24px)', animationTimingFunction: 'ease-in' },
+          '65%': { transform: 'translateY(-12px)', animationTimingFunction: 'ease-in' },
+          '82%': { transform: 'translateY(-6px)', animationTimingFunction: 'ease-in' },
+          '93%': { transform: 'translateY(-4px)', animationTimingFunction: 'ease-in' },
+          '25%, 55%, 75%, 87%': { transform: 'translateY(0)', animationTimingFunction: 'ease-out' },
+          '100%': { transform: 'translateY(0)', animationTimingFunction: 'ease-out', opacity: '1' },
+        },
+      },
+      animation: {
+        'bounce-top': 'bounce-top 0.9s both',
+      },
+    },
+  },
+};`,
+  },
+  {
+    slug: "fade-in-fwd",
+    kind: "animation",
+    name: "Fade In Forward",
+    description: "Dynamic depth zoom transitioning along the Z-axis with smooth opacity fade (Animista Entrances).",
+    category: "entrances",
+    trigger: "click",
+    tags: ["fade", "zoom", "depth", "entrances", "animista", "perspective"],
+    cssKeyframes: `@keyframes fade-in-fwd {
+  0% { transform: translateZ(-80px); opacity: 0; }
+  100% { transform: translateZ(0); opacity: 1; }
+}`,
+    cssClasses: `.fade-in-fwd {
+  animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}`,
+    tailwindClasses: `animate-[fade-in-fwd_0.6s_cubic-bezier(0.39,0.575,0.565,1)_both]`,
+    tailwindConfig: `// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        'fade-in-fwd': {
+          '0%': { transform: 'translateZ(-80px)', opacity: '0' },
+          '100%': { transform: 'translateZ(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        'fade-in-fwd': 'fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both',
+      },
+    },
+  },
+};`,
+  },
+  {
+    slug: "fade-out-bck",
+    kind: "animation",
+    name: "Fade Out Backward",
+    description: "Receding depth push retreating backward into the viewport with gentle opacity fade (Animista Exits).",
+    category: "exits",
+    trigger: "click",
+    tags: ["fade", "exit", "depth", "animista", "shrink", "dismiss"],
+    cssKeyframes: `@keyframes fade-out-bck {
+  0% { transform: translateZ(0); opacity: 1; }
+  100% { transform: translateZ(-80px); opacity: 0; }
+}`,
+    cssClasses: `.fade-out-bck {
+  animation: fade-out-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}`,
+    tailwindClasses: `animate-[fade-out-bck_0.7s_cubic-bezier(0.25,0.46,0.45,0.94)_both]`,
+    tailwindConfig: `// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        'fade-out-bck': {
+          '0%': { transform: 'translateZ(0)', opacity: '1' },
+          '100%': { transform: 'translateZ(-80px)', opacity: '0' },
+        },
+      },
+      animation: {
+        'fade-out-bck': 'fade-out-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
+      },
+    },
+  },
+};`,
+  },
+  {
+    slug: "slit-in-vertical",
+    kind: "animation",
+    name: "Slit In Vertical",
+    description: "Architectural 3D door rotation snapping smoothly into place from 90° angle (Animista Entrances).",
+    category: "entrances",
+    trigger: "click",
+    tags: ["slit", "3d", "rotation", "entrances", "animista", "card"],
+    cssKeyframes: `@keyframes slit-in-vertical {
+  0% { transform: translateZ(-800px) rotateY(90deg); opacity: 0; }
+  54% { transform: translateZ(-160px) rotateY(87deg); opacity: 1; }
+  100% { transform: translateZ(0) rotateY(0); opacity: 1; }
+}`,
+    cssClasses: `.slit-in-vertical {
+  animation: slit-in-vertical 0.45s ease-out both;
+}`,
+    tailwindClasses: `animate-[slit-in-vertical_0.45s_ease-out_both]`,
+    tailwindConfig: `// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        'slit-in-vertical': {
+          '0%': { transform: 'translateZ(-800px) rotateY(90deg)', opacity: '0' },
+          '54%': { transform: 'translateZ(-160px) rotateY(87deg)', opacity: '1' },
+          '100%': { transform: 'translateZ(0) rotateY(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        'slit-in-vertical': 'slit-in-vertical 0.45s ease-out both',
+      },
+    },
+  },
+};`,
+  },
+  {
+    slug: "slide-in-blurred-bottom",
+    kind: "animation",
+    name: "Slide In Blurred Bottom",
+    description: "High-speed camera motion blur entrance rising from the bottom with rapid optical settling (Animista Entrances).",
+    category: "entrances",
+    trigger: "click",
+    tags: ["blur", "slide", "speed", "entrances", "animista", "motion"],
+    cssKeyframes: `@keyframes slide-in-blurred-bottom {
+  0% { transform: translateY(600px) scaleY(2) scaleX(0.4); transform-origin: 50% 100%; filter: blur(30px); opacity: 0; }
+  100% { transform: translateY(0) scaleY(1) scaleX(1); transform-origin: 50% 50%; filter: blur(0); opacity: 1; }
+}`,
+    cssClasses: `.slide-in-blurred-bottom {
+  animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}`,
+    tailwindClasses: `animate-[slide-in-blurred-bottom_0.6s_cubic-bezier(0.23,1,0.32,1)_both]`,
+    tailwindConfig: `// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        'slide-in-blurred-bottom': {
+          '0%': { transform: 'translateY(600px) scaleY(2) scaleX(0.4)', transformOrigin: '50% 100%', filter: 'blur(30px)', opacity: '0' },
+          '100%': { transform: 'translateY(0) scaleY(1) scaleX(1)', transformOrigin: '50% 50%', filter: 'blur(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        'slide-in-blurred-bottom': 'slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both',
+      },
+    },
+  },
+};`,
+  },
+  {
+    slug: "heartbeat",
+    kind: "animation",
+    name: "Heartbeat Pulse",
+    description: "Physiological dual systolic rhythm pulsation with natural biological decay (Animista Attention).",
+    category: "attention",
+    trigger: "loop",
+    tags: ["heartbeat", "pulse", "attention", "loop", "animista", "cardiac"],
+    cssKeyframes: `@keyframes heartbeat {
+  from { transform: scale(1); transform-origin: center center; animation-timing-function: ease-out; }
+  10% { transform: scale(0.91); animation-timing-function: ease-in; }
+  17% { transform: scale(0.98); animation-timing-function: ease-out; }
+  33% { transform: scale(0.87); animation-timing-function: ease-in; }
+  45% { transform: scale(1); animation-timing-function: ease-out; }
+}`,
+    cssClasses: `.heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}`,
+    tailwindClasses: `animate-[heartbeat_1.5s_ease-in-out_infinite_both]`,
+    tailwindConfig: `// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        'heartbeat': {
+          'from': { transform: 'scale(1)', transformOrigin: 'center center', animationTimingFunction: 'ease-out' },
+          '10%': { transform: 'scale(0.91)', animationTimingFunction: 'ease-in' },
+          '17%': { transform: 'scale(0.98)', animationTimingFunction: 'ease-out' },
+          '33%': { transform: 'scale(0.87)', animationTimingFunction: 'ease-in' },
+          '45%': { transform: 'scale(1)', animationTimingFunction: 'ease-out' },
+        },
+      },
+      animation: {
+        'heartbeat': 'heartbeat 1.5s ease-in-out infinite both',
       },
     },
   },

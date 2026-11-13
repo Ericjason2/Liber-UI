@@ -9,6 +9,7 @@ import {
   Terminal,
   Search,
   ChevronDown,
+  ChevronRight,
   Info,
 } from "lucide-react";
 import { useToast } from "@/context/ToastContext";
@@ -32,6 +33,10 @@ export default function ComponentsPage() {
   const [switchChecked, setSwitchChecked] = useState(true);
   const [showAlert, setShowAlert] = useState(true);
   const [progressVal, setProgressVal] = useState(68);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [toastOpen, setToastOpen] = useState(true);
+  const [tooltipOpen, setTooltipOpen] = useState(false);
 
   const { toast } = useToast();
 
@@ -286,8 +291,11 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
     </div>
   );
 }`;
-      default:
+      default: {
+        const found = SAMPLE_COMPONENTS.find((c) => c.slug === slug);
+        if (found?.code) return found.code;
         return `import React from "react";\n\nexport function ${slug.split("-").map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join("")}() {\n  return (\n    <div className="p-4 rounded-lg border bg-card">\n      {/* Accessible component implementation */}\n    </div>\n  );\n}`;
+      }
     }
   };
 
@@ -677,6 +685,204 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
                         </button>
                       </div>
                     </div>
+                  )}
+
+                  {/* 11. MODAL DIALOG */}
+                  {item.slug === "modal-dialog" && (
+                    <div className="flex flex-col items-center justify-center gap-3">
+                      <button
+                        onClick={() => setModalOpen(true)}
+                        className="px-3.5 py-1.5 rounded-[8px] bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition-opacity shadow-sm"
+                      >
+                        Open Live Modal
+                      </button>
+                      <span className="text-[10px] text-muted-foreground font-mono">
+                        Supports backdrop dismiss &amp; Escape key trap.
+                      </span>
+
+                      {modalOpen && (
+                        <div
+                          role="dialog"
+                          aria-modal="true"
+                          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-[fade-in_0.2s_ease-out]"
+                          onClick={() => setModalOpen(false)}
+                        >
+                          <div
+                            className="w-full max-w-md p-6 rounded-xl border border-border bg-card shadow-2xl space-y-4"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <div className="flex items-center justify-between border-b border-border pb-3">
+                              <h3 className="text-sm font-semibold text-foreground">Deploy to Edge Cluster</h3>
+                              <button
+                                onClick={() => setModalOpen(false)}
+                                className="text-muted-foreground hover:text-foreground text-xs p-1 rounded hover:bg-muted"
+                                aria-label="Fermer la modal"
+                              >
+                                ✕
+                              </button>
+                            </div>
+                            <p className="text-xs text-muted-foreground leading-relaxed">
+                              This action will trigger an immediate rollout across 24 edge regions. Traffic will switch seamlessly with zero downtime.
+                            </p>
+                            <div className="flex items-center justify-end gap-2 pt-2">
+                              <button
+                                onClick={() => setModalOpen(false)}
+                                className="px-3 py-1.5 rounded-[8px] border border-border text-xs text-foreground hover:bg-muted transition-colors"
+                              >
+                                Cancel
+                              </button>
+                              <button
+                                onClick={() => {
+                                  setModalOpen(false);
+                                  toast("Deployment initiated successfully");
+                                }}
+                                className="px-3.5 py-1.5 rounded-[8px] bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition-opacity"
+                              >
+                                Confirm Deployment
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {/* 12. DROPDOWN MENU */}
+                  {item.slug === "dropdown-menu" && (
+                    <div className="relative inline-block text-left">
+                      <button
+                        onClick={() => setDropdownOpen(!dropdownOpen)}
+                        aria-expanded={dropdownOpen}
+                        className="px-3.5 py-1.5 rounded-[8px] border border-border bg-card hover:bg-muted text-xs font-medium text-foreground flex items-center gap-2 shadow-sm transition-colors"
+                      >
+                        <span>Project Actions</span>
+                        <ChevronDown className={`h-3.5 w-3.5 text-muted-foreground transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
+                      </button>
+
+                      {dropdownOpen && (
+                        <div className="absolute left-0 mt-2 w-48 rounded-lg border border-border bg-card shadow-lg py-1 z-20 text-xs">
+                          <button
+                            onClick={() => {
+                              setDropdownOpen(false);
+                              toast("Cloned repository URL");
+                            }}
+                            className="w-full text-left px-3 py-1.5 text-foreground hover:bg-muted transition-colors"
+                          >
+                            Clone repository
+                          </button>
+                          <button
+                            onClick={() => {
+                              setDropdownOpen(false);
+                              toast("Configuring build webhooks");
+                            }}
+                            className="w-full text-left px-3 py-1.5 text-foreground hover:bg-muted transition-colors"
+                          >
+                            Webhook settings
+                          </button>
+                          <div className="h-px bg-border my-1" />
+                          <button
+                            onClick={() => {
+                              setDropdownOpen(false);
+                              toast("Archive created");
+                            }}
+                            className="w-full text-left px-3 py-1.5 text-red-600 dark:text-red-400 hover:bg-red-500/10 transition-colors"
+                          >
+                            Archive project
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {/* 13. TOOLTIP HINT */}
+                  {item.slug === "tooltip-hint" && (
+                    <div className="relative inline-block">
+                      <button
+                        onMouseEnter={() => setTooltipOpen(true)}
+                        onMouseLeave={() => setTooltipOpen(false)}
+                        onFocus={() => setTooltipOpen(true)}
+                        onBlur={() => setTooltipOpen(false)}
+                        className="px-3.5 py-1.5 rounded-[8px] border border-border bg-card text-xs text-foreground hover:bg-muted transition-colors focus:ring-2 focus:ring-ring focus:outline-none"
+                      >
+                        Hover or Focus Me
+                      </button>
+                      {tooltipOpen && (
+                        <div
+                          role="tooltip"
+                          className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2.5 py-1 bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 text-[11px] font-medium rounded shadow-md whitespace-nowrap z-30 pointer-events-none"
+                        >
+                          WCAG compliant hover tip
+                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-neutral-900 dark:border-t-neutral-100" />
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {/* 14. TOAST SNACKBAR */}
+                  {item.slug === "toast-snackbar" && (
+                    <div className="w-full max-w-sm">
+                      {toastOpen ? (
+                        <div
+                          role="status"
+                          className="flex items-center justify-between gap-3 p-3 rounded-lg border border-border bg-card shadow-md text-xs"
+                        >
+                          <div className="flex items-center gap-2">
+                            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                            <span className="text-foreground font-medium">Assets synced to node cache</span>
+                          </div>
+                          <button
+                            onClick={() => setToastOpen(false)}
+                            className="text-muted-foreground hover:text-foreground text-xs px-1"
+                            aria-label="Dismiss snackbar"
+                          >
+                            ✕
+                          </button>
+                        </div>
+                      ) : (
+                        <button
+                          onClick={() => setToastOpen(true)}
+                          className="px-3 py-1.5 rounded-[8px] border border-border text-xs text-muted-foreground hover:text-foreground transition-colors"
+                        >
+                          Trigger toast again
+                        </button>
+                      )}
+                    </div>
+                  )}
+
+                  {/* 15. SKELETON SHIMMER */}
+                  {item.slug === "skeleton-shimmer" && (
+                    <div className="w-full max-w-sm p-4 rounded-xl border border-border bg-card space-y-3">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-muted animate-pulse" />
+                        <div className="space-y-1.5 flex-1">
+                          <div className="h-3 w-3/5 rounded bg-muted animate-pulse" />
+                          <div className="h-2.5 w-2/5 rounded bg-muted animate-pulse" />
+                        </div>
+                      </div>
+                      <div className="space-y-2 pt-2">
+                        <div className="h-3 w-full rounded bg-muted animate-pulse" />
+                        <div className="h-3 w-4/5 rounded bg-muted animate-pulse" />
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 16. BREADCRUMB TRAIL */}
+                  {item.slug === "breadcrumb-trail" && (
+                    <nav aria-label="Fil d'Ariane" className="flex items-center text-xs text-muted-foreground">
+                      <ol className="inline-flex items-center space-x-1 md:space-x-2">
+                        <li className="inline-flex items-center">
+                          <span className="hover:text-foreground cursor-pointer transition-colors">Home</span>
+                        </li>
+                        <li className="inline-flex items-center">
+                          <ChevronRight className="h-3.5 w-3.5 text-muted-foreground/60" />
+                          <span className="hover:text-foreground cursor-pointer transition-colors ml-1">Documentation</span>
+                        </li>
+                        <li className="inline-flex items-center">
+                          <ChevronRight className="h-3.5 w-3.5 text-muted-foreground/60" />
+                          <span className="font-semibold text-foreground ml-1" aria-current="page">Components</span>
+                        </li>
+                      </ol>
+                    </nav>
                   )}
                 </div>
               ) : (
