@@ -50,7 +50,7 @@ export function Footer() {
 
           <div className="space-y-3">
             <div className="font-mono text-[11px] font-semibold text-foreground uppercase tracking-wider">
-              Développeurs &amp; CLI
+              Developers & CLI
             </div>
             <ul className="space-y-2">
               <li>
@@ -60,7 +60,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/docs#installation" className="hover:text-foreground transition-colors">
-                  Installation CLI
+                  CLI Installation
                 </Link>
               </li>
               <li>
@@ -73,7 +73,7 @@ export function Footer() {
 
           <div className="space-y-3">
             <div className="font-mono text-[11px] font-semibold text-foreground uppercase tracking-wider">
-              Légal &amp; Conformité
+              Legal & Brands
             </div>
             <ul className="space-y-2">
               <li>
