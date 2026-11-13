@@ -97,7 +97,7 @@ export function FloatingToolDock({ className = "" }: { className?: string }) {
 
   return (
     <div
-      className={`inline-flex items-center gap-1 p-1.5 rounded-[16px] border border-border bg-card/95 backdrop-blur-md liber-floating-widget ${className}`}
+      className={`inline-flex items-center gap-1 p-1.5 rounded-[16px] border border-border bg-card shadow-xl liber-floating-widget ${className}`}
     >
       {tools.map((tool) => {
         const Icon = tool.icon;
@@ -138,7 +138,7 @@ export function FloatingFillInspector({
 
   return (
     <div
-      className={`w-[210px] p-3 rounded-[16px] border border-border bg-card/95 backdrop-blur-md liber-floating-widget space-y-2.5 text-left ${className}`}
+      className={`w-[210px] p-3 rounded-[16px] border border-border bg-card shadow-xl liber-floating-widget space-y-2.5 text-left ${className}`}
     >
       {/* Gradient opacity bar */}
       <div className="relative h-6 rounded-[8px] overflow-hidden border border-border liber-checkerboard">
@@ -188,7 +188,7 @@ export function FloatingTypographyInspector({ className = "" }: { className?: st
 
   return (
     <div
-      className={`w-[224px] p-3.5 rounded-[16px] border border-border bg-card/95 backdrop-blur-md liber-floating-widget space-y-2.5 text-left ${className}`}
+      className={`w-[224px] p-3.5 rounded-[16px] border border-border bg-card shadow-xl liber-floating-widget space-y-2.5 text-left ${className}`}
     >
       <div className="text-[11px] font-medium text-foreground">Typography</div>
 
