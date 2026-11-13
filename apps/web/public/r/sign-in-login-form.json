@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sign-in-login-form",
+  "type": "registry:ui",
+  "title": "Sign in / Login Form",
+  "description": "Sign in / Login Form Tailwind CSS component from TailwindFlex.",
+  "author": "bunny",
+  "categories": [
+    "inputs"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/sign-in-login-form.tsx",
+      "content": "import React from \"react\";\n\nexport function SignInLoginForm() {\n  return (\n    <div className=\"container px-4 mx-auto\">\n  <div className=\"max-w-lg mx-auto\">\n    <div className=\"text-center mb-6\">\n      <h2 className=\"text-3xl md:text-4xl font-extrabold\">Sign in</h2>\n    </div>\n    <form action=\"\">\n      <div className=\"mb-6\">\n        <label className=\"block mb-2 font-extrabold\" for=\"\">Email</label>\n        <input className=\"inline-block w-full p-4 leading-6 text-lg font-extrabold placeholder-indigo-900 bg-white shadow border-2 border-indigo-900 rounded\" type=\"email\" placeholder=\"email\" />\n      </div>\n      <div className=\"mb-6\">\n        <label className=\"block mb-2 font-extrabold\" for=\"\">Password</label>\n        <input className=\"inline-block w-full p-4 leading-6 text-lg font-extrabold placeholder-indigo-900 bg-white shadow border-2 border-indigo-900 rounded\" type=\"password\" placeholder=\"**********\" />\n      </div>\n      <div className=\"flex flex-wrap -mx-4 mb-6 items-center justify-between\">\n        <div className=\"w-full lg:w-auto px-4 mb-4 lg:mb-0\">\n          <label for=\"\">\n              <input type=\"checkbox\" />\n              <span className=\"ml-1 font-extrabold\">Remember me</span>\n            </label>\n        </div>\n        <div className=\"w-full lg:w-auto px-4\"><a className=\"inline-block font-extrabold hover:underline\" href=\"#\">Forgot your\n            password?</a></div>\n      </div>\n      <button className=\"inline-block w-full py-4 px-6 mb-6 text-center text-lg leading-6 text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200\">Sign in</button>\n      <p className=\"text-center font-extrabold\">Don&rsquo;t have an account? <a className=\"text-red-500 hover:underline\"\n          href=\"#\">Sign up</a></p>\n    </form>\n  </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "input",
+      "form",
+      "login",
+      "login"
+    ]
+  }
+}

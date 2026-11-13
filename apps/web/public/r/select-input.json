@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "select-input",
+  "type": "registry:ui",
+  "title": "Select input",
+  "description": "Select input Tailwind CSS component from TailwindFlex.",
+  "author": "sophia-baker",
+  "categories": [
+    "inputs"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/select-input.tsx",
+      "content": "import React from \"react\";\n\nexport function SelectInput() {\n  return (\n    <select className=\"block w-sm text-sm font-medium transition duration-75 border border-gray-800 rounded-lg shadow-sm h-9 focus:border-blue-600 focus:ring-1 focus:ring-inset focus:ring-blue-600 bg-none\" >\r\n  <option value=\"week\">Last week</option>\r\n  <option value=\"month\">Last month</option>\r\n  <option value=\"year\">Last year</option>\r\n</select>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "select",
+      "input"
+    ]
+  }
+}

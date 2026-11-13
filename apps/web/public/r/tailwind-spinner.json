@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwind-spinner",
+  "type": "registry:ui",
+  "title": "Tailwind spinner",
+  "description": "loading spinner component",
+  "author": "arya",
+  "categories": [
+    "feedback"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tailwind-spinner.tsx",
+      "content": "import React from \"react\";\n\nexport function TailwindSpinner() {\n  return (\n    <div className=\"border-gray-300 h-20 w-20 animate-spin rounded-full border-8 border-t-blue-600\" />\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "loading"
+    ]
+  }
+}

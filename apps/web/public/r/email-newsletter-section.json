@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "email-newsletter-section",
+  "type": "registry:ui",
+  "title": "Email newsletter section",
+  "description": "Email newsletter section Tailwind CSS component from TailwindFlex.",
+  "author": "samuel33",
+  "categories": [
+    "inputs"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/email-newsletter-section.tsx",
+      "content": "import React from \"react\";\n\nexport function EmailNewsletterSection() {\n  return (\n    <div className=\"flex flex-wrap justify-center\">\n    <div className=\"grow-0 shrink-0 basis-auto w-full px-3\">\n        <div className=\"grid lg:grid-cols-2 items-center\">\n            <div className=\"mb-5 lg:mb-0\">\n                <p className=\"text-md\">Don't miss Tailwind updates:\n                </p>\n            </div>\n            <div className=\"md:mb-0\">\n                <div className=\"md:flex flex-row\">\n                    <input type=\"email\" id=\"email\"\n                                className=\"form-control block w-full px-3 py-1 mb-2 md:mb-0 md:mr-2 font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none\"\n                                placeholder=\"Enter your email\" />\n                    <button type=\"submit\"\n                                className=\"inline-block px-3 py-2 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out\">\n                                Subscribe </button>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "newsletter"
+    ]
+  }
+}

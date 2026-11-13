@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-count-down-timer",
+  "type": "registry:ui",
+  "title": "Simple count down timer",
+  "description": "Simple count down timer Tailwind CSS component from TailwindFlex.",
+  "author": "gopi",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-count-down-timer.tsx",
+      "content": "import React from \"react\";\n\nexport function SimpleCountDownTimer() {\n  return (\n    <div className=\"flex justify-center\">\r\n    <div className=\"bg-gray-50 rounded-lg shadow-lg px-8 py-6\">\r\n        <div className=\"flex flex-col gap-4 items-center justify-between\">\r\n            <h3 className=\"text-2xl font-bold text-gray-700\">Countdown Timer</h3>\r\n            <span id=\"countdown\" className=\"text-2xl font-semibold text-gray-700\"></span>\r\n        </div>\r\n\r\n        \r\n    </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "countdown-timer",
+      "other",
+      "widget"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "show-user-details",
+  "type": "registry:ui",
+  "title": "Show user details",
+  "description": "Show user details Tailwind CSS component from TailwindFlex.",
+  "author": "lucas-m",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/show-user-details.tsx",
+      "content": "import React from \"react\";\n\nexport function ShowUserDetails() {\n  return (\n    <div className=\"bg-white overflow-hidden shadow rounded-lg border\">\r\n    <div className=\"px-4 py-5 sm:px-6\">\r\n        <h3 className=\"text-lg leading-6 font-medium text-gray-900\">\r\n            User Profile\r\n        </h3>\r\n        <p className=\"mt-1 max-w-2xl text-sm text-gray-500\">\r\n            This is some information about the user.\r\n        </p>\r\n    </div>\r\n    <div className=\"border-t border-gray-200 px-4 py-5 sm:p-0\">\r\n        <dl className=\"sm:divide-y sm:divide-gray-200\">\r\n            <div className=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt className=\"text-sm font-medium text-gray-500\">\r\n                    Full name\r\n                </dt>\r\n                <dd className=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    John Doe\r\n                </dd>\r\n            </div>\r\n            <div className=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt className=\"text-sm font-medium text-gray-500\">\r\n                    Email address\r\n                </dt>\r\n                <dd className=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    johndoe@example.com\r\n                </dd>\r\n            </div>\r\n            <div className=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt className=\"text-sm font-medium text-gray-500\">\r\n                    Phone number\r\n                </dt>\r\n                <dd className=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    (123) 456-7890\r\n                </dd>\r\n            </div>\r\n            <div className=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt className=\"text-sm font-medium text-gray-500\">\r\n                    Address\r\n                </dt>\r\n                <dd className=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    123 Main St<br />\r\n                     Anytown, USA 12345\r\n                </dd>\r\n            </div>\r\n        </dl>\r\n    </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "profile",
+      "other"
+    ]
+  }
+}

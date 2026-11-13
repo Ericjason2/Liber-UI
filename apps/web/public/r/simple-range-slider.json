@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-range-slider",
+  "type": "registry:ui",
+  "title": "Simple range slider",
+  "description": "Simple range slider Tailwind CSS component from TailwindFlex.",
+  "author": "nour-haider",
+  "categories": [
+    "inputs"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-range-slider.tsx",
+      "content": "import React from \"react\";\n\nexport function SimpleRangeSlider() {\n  return (\n    <div className=\"mt-32 max-w-xl mx-auto\">\r\n    <label className=\"text-white\">Range</label>\r\n    <input id=\"range\" type=\"range\" className=\"block w-full py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none focus:ring\" />\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "range-slider",
+      "input"
+    ]
+  }
+}

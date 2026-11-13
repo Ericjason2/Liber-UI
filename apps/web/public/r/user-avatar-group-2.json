@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "user-avatar-group-2",
+  "type": "registry:ui",
+  "title": "User avatar group",
+  "description": "User avatar group Tailwind CSS component from TailwindFlex.",
+  "author": "jaxstone",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/user-avatar-group-2.tsx",
+      "content": "import React from \"react\";\n\nexport function UserAvatarGroup() {\n  return (\n    <div className=\"flex mr-2\">\n    <img className=\"border-2 border-white rounded-full h-16 w-16 -mr-6\" src=\"https://randomuser.me/api/portraits/men/32.jpg\" alt=\"\" />\n    <img className=\"border-2 border-white rounded-full h-16 w-16 -mr-6\" src=\"https://randomuser.me/api/portraits/women/31.jpg\" alt=\"\" />\n    <img className=\"border-2 border-white rounded-full h-16 w-16 -mr-6\" src=\"https://randomuser.me/api/portraits/men/33.jpg\" alt=\"\" />\n    <img className=\"border-2 border-white rounded-full h-16 w-16 -mr-6\" src=\"https://randomuser.me/api/portraits/women/32.jpg\" alt=\"\" />\n    <img className=\"border-2 border-white rounded-full h-16 w-16 -mr-6\" src=\"https://randomuser.me/api/portraits/men/44.jpg\" alt=\"\" />\n    <img className=\"border-2 border-white rounded-full h-16 w-16 -mr-6\" src=\"https://randomuser.me/api/portraits/women/42.jpg\" alt=\"\" />\n    <span className=\"flex items-center justify-center bg-white text-sm text-gray-800 font-semibold border-2 border-gray-200 rounded-full h-16 w-16\">+999</span>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "avatar"
+    ]
+  }
+}

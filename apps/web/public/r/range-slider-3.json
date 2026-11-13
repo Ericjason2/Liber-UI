@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "range-slider-3",
+  "type": "registry:ui",
+  "title": "Range Slider",
+  "description": "Also, shows the current value of the slider while it is being slid",
+  "author": "nikolai-petrovich",
+  "categories": [
+    "inputs"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/range-slider-3.tsx",
+      "content": "import React from \"react\";\n\nexport function RangeSlider() {\n  return (\n    <div className=\"bg-white rounded-lg shadow-lg p-6 w-full max-w-md\">\n  <h2 className=\"text-2xl font-bold mb-4\">Range Slider</h2>\n  <div className=\"mb-4\">\n    <label for=\"price-range\" className=\"block text-gray-700 font-bold mb-2\">Price Range</label>\n    <input type=\"range\" id=\"price-range\" className=\"w-full accent-indigo-600\" min=\"0\" max=\"1000\" value=\"500\" />\n  </div>\n  <div className=\"flex justify-between text-gray-500\">\n    <span id=\"minPrice\">$0</span>\n    <span id=\"maxPrice\">$1000</span>\n  </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "range-slider"
+    ]
+  }
+}

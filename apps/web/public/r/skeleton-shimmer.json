@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton-shimmer",
+  "type": "registry:ui",
+  "title": "Skeleton Shimmer Loader",
+  "description": "Wireframe placeholder elements with pulsing animation for async loading states.",
+  "author": "Liber Team",
+  "categories": [
+    "feedback"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/skeleton-shimmer.tsx",
+      "content": "import React from \"react\";\n\nexport function SkeletonShimmer() {\n  return (\n    <div className=\"w-full max-w-sm p-4 rounded-xl border border-border bg-card space-y-3\">\n      <div className=\"flex items-center gap-3\"><div className=\"w-10 h-10 rounded-full bg-muted animate-pulse\" /><div className=\"space-y-1.5 flex-1\"><div className=\"h-3 w-3/5 rounded bg-muted animate-pulse\" /><div className=\"h-2.5 w-2/5 rounded bg-muted animate-pulse\" /></div></div>\n      <div className=\"space-y-2 pt-2\"><div className=\"h-3 w-full rounded bg-muted animate-pulse\" /><div className=\"h-3 w-4/5 rounded bg-muted animate-pulse\" /></div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}

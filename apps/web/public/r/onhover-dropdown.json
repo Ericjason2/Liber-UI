@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "onhover-dropdown",
+  "type": "registry:ui",
+  "title": "Onhover Dropdown",
+  "description": "Open dropdown on hover",
+  "author": "akshay",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/onhover-dropdown.tsx",
+      "content": "import React from \"react\";\n\nexport function OnhoverDropdown() {\n  return (\n    <div className=\"dropdown inline-block relative\">\n    <button className=\"bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold py-2 px-4 rounded inline-flex items-center\">\n      <span className=\"mr-1\">Dropdown</span>\n      <svg className=\"fill-current h-4 w-4\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\"><path d=\"M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z\"/> </svg>\n    </button>\n    <ul className=\"dropdown-menu absolute hidden text-gray-700 dark:text-gray-300 pt-1\">\n      <li className=\"\"><a className=\"rounded-t bg-gray-200 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-700 py-2 px-4 block whitespace-no-wrap\"\n          href=\"#\">One</a></li>\n      <li className=\"\"><a className=\"bg-gray-200 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-700 py-2 px-4 block whitespace-no-wrap\" href=\"#\">Two</a></li>\n      <li className=\"\"><a className=\"rounded-b bg-gray-200 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-700 py-2 px-4 block whitespace-no-wrap\" href=\"#\">Three\n          is the magic number</a></li>\n    </ul>\n  </div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "dropdown",
+      "input"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "search-bar-with-filter-options",
+  "type": "registry:ui",
+  "title": "Search bar with filter options",
+  "description": "Search bar with filter options Tailwind CSS component from TailwindFlex.",
+  "author": "piet-vriend",
+  "categories": [
+    "inputs"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/search-bar-with-filter-options.tsx",
+      "content": "import React from \"react\";\n\nexport function SearchBarWithFilterOptions() {\n  return (\n    <form className=\"flex flex-col md:flex-row gap-3\">\r\n    <div className=\"flex\">\r\n        <input type=\"text\" placeholder=\"Search for the tool you like\"\r\n\t\t\tclassName=\"w-full md:w-80 px-3 h-10 rounded-l border-2 border-sky-500 focus:outline-none focus:border-sky-500\"\r\n\t\t\t />\r\n        <button type=\"submit\" className=\"bg-sky-500 text-white rounded-r px-2 md:px-3 py-0 md:py-1\">Search</button>\r\n    </div>\r\n    <select id=\"pricingType\" name=\"pricingType\"\r\n\t\tclassName=\"w-full h-10 border-2 border-sky-500 focus:outline-none focus:border-sky-500 text-sky-500 rounded px-2 md:px-3 py-0 md:py-1 tracking-wider\">\r\n\t\t<option value=\"All\" selected=\"\">All</option>\r\n\t\t<option value=\"Freemium\">Freemium</option>\r\n\t\t<option value=\"Free\">Free</option>\r\n\t\t<option value=\"Paid\">Paid</option>\r\n\t</select>\r\n</form>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "select",
+      "search-bar"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "timeline",
+  "type": "registry:ui",
+  "title": "Timeline",
+  "description": "Timeline for tracking status of the things",
+  "author": "akshay",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/timeline.tsx",
+      "content": "import React from \"react\";\n\nexport function Timeline() {\n  return (\n    <div className=\"p-4 mt-4\">\n  <h1 className=\"text-4xl text-center font-semibold mb-6\">Package status</h1>\n  <div className=\"container\">\n    <div className=\"flex flex-col md:grid grid-cols-12 text-gray-50\">\n      <div className=\"flex md:contents\">\n        <div className=\"col-start-2 col-end-4 mr-10 md:mx-auto relative\">\n          <div className=\"h-full w-6 flex items-center justify-center\">\n            <div className=\"h-full w-1 bg-green-500 pointer-events-none\"></div>\n          </div>\n          <div className=\"w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center\">\n            <i className=\"fas fa-check-circle text-white\"></i>\n          </div>\n        </div>\n        <div className=\"bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full\">\n          <h3 className=\"font-semibold text-lg mb-1\">Package Booked</h3>\n          <p className=\"leading-tight text-justify w-full\">\n            21 July 2021, 04:30 PM\n          </p>\n        </div>\n      </div>\n      <div className=\"flex md:contents\">\n        <div className=\"col-start-2 col-end-4 mr-10 md:mx-auto relative\">\n          <div className=\"h-full w-6 flex items-center justify-center\">\n            <div className=\"h-full w-1 bg-green-500 pointer-events-none\"></div>\n          </div>\n          <div className=\"w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center\">\n            <i className=\"fas fa-check-circle text-white\"></i>\n          </div>\n        </div>\n        <div className=\"bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full\">\n          <h3 className=\"font-semibold text-lg mb-1\">Out for Delivery</h3>\n          <p className=\"leading-tight text-justify\">\n            22 July 2021, 01:00 PM\n          </p>\n        </div>\n      </div>\n      <div className=\"flex md:contents\">\n        <div className=\"col-start-2 col-end-4 mr-10 md:mx-auto relative\">\n          <div className=\"h-full w-6 flex items-center justify-center\">\n            <div className=\"h-full w-1 bg-red-500 pointer-events-none\"></div>\n          </div>\n          <div className=\"w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-red-500 shadow text-center\">\n            <i className=\"fas fa-times-circle text-white\"></i>\n          </div>\n        </div>\n        <div className=\"bg-red-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full\">\n          <h3 className=\"font-semibold text-lg mb-1 text-gray-50\">Cancelled</h3>\n          <p className=\"leading-tight text-justify\">\n            Customer cancelled the order\n          </p>\n        </div>\n      </div>\n      <div className=\"flex md:contents\">\n        <div className=\"col-start-2 col-end-4 mr-10 md:mx-auto relative\">\n          <div className=\"h-full w-6 flex items-center justify-center\">\n            <div className=\"h-full w-1 bg-gray-300 pointer-events-none\"></div>\n          </div>\n          <div className=\"w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-gray-300 shadow text-center\">\n            <i className=\"fas fa-exclamation-circle text-gray-400\"></i>\n          </div>\n        </div>\n        <div className=\"bg-gray-300 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full\">\n          <h3 className=\"font-semibold text-lg mb-1 text-gray-400\">Delivered</h3>\n          <p className=\"leading-tight text-justify\">\n          </p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "timeline"
+    ]
+  }
+}

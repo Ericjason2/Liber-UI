@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "company-icons-chips",
+  "type": "registry:ui",
+  "title": "Company icons chips",
+  "description": "Company icons chips Tailwind CSS component from TailwindFlex.",
+  "author": "steven-kuhn",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/company-icons-chips.tsx",
+      "content": "import React from \"react\";\n\nexport function CompanyIconsChips() {\n  return (\n    <div className=\"lg:my-10 my-6 p-4\">\r\n    <div className=\"flex flex-wrap items-center\">\r\n\r\n\r\n        <button type=\"button\">\r\n            <span\r\n                className=\"bg-white inline-flex text-primary py-0.5 px-3 items-center justify-between text-xs capitalize border border-gray-400 rounded-full hover:bg-gray-gray1 mb-2 mr-2\">\r\n                <img\r\n                    alt=\" \" src=\"https://d26c7l40gvbbg2.cloudfront.net/tool_icons/laravel.svg\" decoding=\"async\"\r\n                    data-nimg=\"1\" className=\"object-cover w-4 h-4 mr-1\" loading=\"lazy\" style={{ color: \"transparent\" }}\r\n                    width=\"16\" height=\"16\" />\r\n                <span className=\"capitalize lg:inline leading-5\">Laravel</span></span>\r\n        </button>\r\n        <button type=\"button\">\r\n            <span\r\n                className=\"bg-white inline-flex text-primary py-0.5 px-3 items-center justify-between text-xs capitalize border border-gray-400 rounded-full hover:bg-gray-gray1 mb-2 mr-2\">\r\n                <img\r\n                    alt=\" \" src=\"https://d26c7l40gvbbg2.cloudfront.net/tool_icons/javascript.svg\"\r\n                    decoding=\"async\" data-nimg=\"1\" className=\"object-cover w-4 h-4 mr-1\" loading=\"lazy\" style={{ color: \"transparent\" }} width=\"16\" height=\"16\" />\r\n                <span className=\"capitalize lg:inline leading-5\">JavaScript</span></span>\r\n        </button>\r\n        <button type=\"button\">\r\n            <span\r\n                className=\"bg-white inline-flex text-primary py-0.5 px-3 items-center justify-between text-xs capitalize border border-gray-400 rounded-full hover:bg-gray-gray1 mb-2 mr-2\">\r\n                <img\r\n                    alt=\" \" src=\"https://d26c7l40gvbbg2.cloudfront.net/tool_icons/php.svg\" decoding=\"async\"\r\n                    data-nimg=\"1\" className=\"object-cover w-4 h-4 mr-1\" loading=\"lazy\" style={{ color: \"transparent\" }}\r\n                    width=\"16\" height=\"16\" />\r\n                <span className=\"capitalize lg:inline leading-5\">PHP</span></span>\r\n        </button>\r\n        <button type=\"button\">\r\n            <span\r\n                className=\"bg-white inline-flex text-primary py-0.5 px-3 items-center justify-between text-xs capitalize border border-gray-400 rounded-full hover:bg-gray-gray1 mb-2 mr-2\">\r\n                <img\r\n                    alt=\" \" src=\"https://d26c7l40gvbbg2.cloudfront.net/tool_icons/mysql.svg\" decoding=\"async\"\r\n                    data-nimg=\"1\" className=\"object-cover w-4 h-4 mr-1\" loading=\"lazy\" style={{ color: \"transparent\" }}\r\n                    width=\"16\" height=\"16\" />\r\n                <span className=\"capitalize lg:inline leading-5\">MySQL</span></span>\r\n        </button>\r\n        <button type=\"button\">\r\n            <span\r\n                className=\"bg-white inline-flex text-primary py-0.5 px-3 items-center justify-between text-xs capitalize border border-gray-400 rounded-full hover:bg-gray-gray1 mb-2 mr-2\">\r\n                <img\r\n                    alt=\" \" src=\"https://d26c7l40gvbbg2.cloudfront.net/tool_icons/tailwindcss.svg\"\r\n                    decoding=\"async\" data-nimg=\"1\" className=\"object-cover w-4 h-4 mr-1\" loading=\"lazy\" style={{ color: \"transparent\" }} width=\"16\" height=\"16\" />\r\n                <span className=\"capitalize lg:inline leading-5\">TailwindCSS</span></span>\r\n        </button>\r\n    </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "chip"
+    ]
+  }
+}

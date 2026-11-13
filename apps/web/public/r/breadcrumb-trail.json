@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "breadcrumb-trail",
+  "type": "registry:ui",
+  "title": "Breadcrumb Trail",
+  "description": "Semantic breadcrumb navigation with chevron delimiters and WCAG aria-current attributes.",
+  "author": "Liber Team",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/breadcrumb-trail.tsx",
+      "content": "import React from \"react\";\n\nexport function BreadcrumbTrail() {\n  const items = [{ label: \"Home\", href: \"#\" }, { label: \"Components\", href: \"#\" }, { label: \"Navigation\", href: \"#\", current: true }];\n  return (\n    <nav aria-label=\"Breadcrumb\" className=\"flex items-center text-xs text-muted-foreground\">\n      <ol className=\"inline-flex items-center space-x-1 md:space-x-2\">\n        {items.map((item, index) => (\n          <li key={item.label} className=\"inline-flex items-center\">\n            {index > 0 && <span className=\"mx-1 text-muted-foreground/60\">/</span>}\n            {item.current ? <span className=\"font-semibold text-foreground\" aria-current=\"page\">{item.label}</span> : <a href={item.href} className=\"hover:text-foreground transition-colors\">{item.label}</a>}\n          </li>\n        ))}\n      </ol>\n    </nav>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}

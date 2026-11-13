@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton-loader",
+  "type": "registry:ui",
+  "title": "Card placeholder",
+  "description": "Skeleton Loader for card.\nThis Tailwind component simulates a loading state for content cards. It includes a circular placeholder for an image or avatar and placeholder text for titles and descriptions.",
+  "author": "alok",
+  "categories": [
+    "feedback"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/skeleton-loader.tsx",
+      "content": "import React from \"react\";\n\nexport function CardPlaceholder() {\n  return (\n    <div className=\"py-4 rounded shadow-md w-60 sm:w-80 animate-pulse bg-gray-50\">\n    <div className=\"flex p-4 space-x-4 sm:px-8\">\n        <div className=\"flex-shrink-0 w-16 h-16 rounded-full bg-gray-300\"></div>\n        <div className=\"flex-1 py-2 space-y-4\">\n            <div className=\"w-full h-3 rounded bg-gray-300\"></div>\n            <div className=\"w-5/6 h-3 rounded bg-gray-300\"></div>\n        </div>\n    </div>\n    <div className=\"p-4 space-y-4 sm:px-8\">\n        <div className=\"w-full h-4 rounded bg-gray-300\"></div>\n        <div className=\"w-full h-4 rounded bg-gray-300\"></div>\n        <div className=\"w-3/4 h-4 rounded bg-gray-300\"></div>\n    </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "skeleton-loader"
+    ]
+  }
+}

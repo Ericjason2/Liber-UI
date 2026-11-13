@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toast-snackbar",
+  "type": "registry:ui",
+  "title": "Toast Snackbar",
+  "description": "Floating status card with action feedback, status iconography, and dismiss trigger.",
+  "author": "Liber Team",
+  "categories": [
+    "feedback"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/toast-snackbar.tsx",
+      "content": "import React, { useState } from \"react\";\n\nexport function ToastSnackbar() {\n  const [visible, setVisible] = useState(true);\n  return (\n    <div className=\"w-full max-w-sm\">\n      {visible ? (\n        <div role=\"status\" className=\"flex items-center justify-between gap-3 p-3 rounded-lg border border-border bg-card shadow-md text-xs\">\n          <div className=\"flex items-center gap-2\"><span className=\"w-2 h-2 rounded-full bg-emerald-500\" /><span className=\"text-foreground font-medium\">Changes saved successfully</span></div>\n          <button onClick={() => setVisible(false)} className=\"text-muted-foreground hover:text-foreground text-xs px-1\" aria-label=\"Dismiss toast\">✕</button>\n        </div>\n      ) : (\n        <button onClick={() => setVisible(true)} className=\"px-3 py-1.5 rounded-[8px] border border-border text-xs text-muted-foreground hover:text-foreground\">Trigger notification</button>\n      )}\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}

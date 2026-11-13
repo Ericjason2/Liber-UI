@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "stacked-list",
+  "type": "registry:ui",
+  "title": "Stacked list",
+  "description": "Stacked list Tailwind CSS component from TailwindFlex.",
+  "author": "odessa-young",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/stacked-list.tsx",
+      "content": "import React from \"react\";\n\nexport function StackedList() {\n  return (\n    <ul className=\"bg-white shadow overflow-hidden sm:rounded-md max-w-sm mx-auto mt-16\">\n    <li>\n        <div className=\"px-4 py-5 sm:px-6\">\n            <div className=\"flex items-center justify-between\">\n                <h3 className=\"text-lg leading-6 font-medium text-gray-900\">Item 1</h3>\n                <p className=\"mt-1 max-w-2xl text-sm text-gray-500\">Description for Item 1</p>\n            </div>\n            <div className=\"mt-4 flex items-center justify-between\">\n                <p className=\"text-sm font-medium text-gray-500\">Status: <span className=\"text-green-600\">Active</span></p>\n                <a href=\"#\" className=\"font-medium text-indigo-600 hover:text-indigo-500\">Edit</a>\n            </div>\n        </div>\n    </li>\n    <li className=\"border-t border-gray-200\">\n        <div className=\"px-4 py-5 sm:px-6\">\n            <div className=\"flex items-center justify-between\">\n                <h3 className=\"text-lg leading-6 font-medium text-gray-900\">Item 2</h3>\n                <p className=\"mt-1 max-w-2xl text-sm text-gray-500\">Description for Item 2</p>\n            </div>\n            <div className=\"mt-4 flex items-center justify-between\">\n                <p className=\"text-sm font-medium text-gray-500\">Status: <span className=\"text-red-600\">Inactive</span></p>\n                <a href=\"#\" className=\"font-medium text-indigo-600 hover:text-indigo-500\">Edit</a>\n            </div>\n        </div>\n    </li>\n    <li className=\"border-t border-gray-200\">\n        <div className=\"px-4 py-5 sm:px-6\">\n            <div className=\"flex items-center justify-between\">\n                <h3 className=\"text-lg leading-6 font-medium text-gray-900\">Item 3</h3>\n                <p className=\"mt-1 max-w-2xl text-sm text-gray-500\">Description for Item 3</p>\n            </div>\n            <div className=\"mt-4 flex items-center justify-between\">\n                <p className=\"text-sm font-medium text-gray-500\">Status: <span className=\"text-yellow-600\">Pending</span></p>\n                <a href=\"#\" className=\"font-medium text-indigo-600 hover:text-indigo-500\">Edit</a>\n            </div>\n        </div>\n    </li>\n</ul>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "list"
+    ]
+  }
+}

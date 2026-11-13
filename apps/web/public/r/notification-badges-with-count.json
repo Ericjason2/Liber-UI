@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "notification-badges-with-count",
+  "type": "registry:ui",
+  "title": "Notification badges with count",
+  "description": "Notification badges with count Tailwind CSS component from TailwindFlex.",
+  "author": "arya",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/notification-badges-with-count.tsx",
+      "content": "import React from \"react\";\n\nexport function NotificationBadgesWithCount() {\n  return (\n    <div className=\"flex space-x-5 space-y-5 flex-wrap justify-center items-baseline\">\r\n    <button className=\"relative bg-blue-700 hover:bg-blue-800 duration-300 py-2 px-4 text-blue-100 rounded\">Primary\r\n         <span className=\"absolute bg-blue-500 text-blue-100 px-2 py-1 text-xs font-bold rounded-full -top-3 -right-3\">99+</span>\r\n      </button>\r\n    <button className=\"relative bg-blue-700 hover:bg-blue-800 duration-300 py-2 px-4 text-blue-100 rounded\">Secondary\r\n         <span className=\"absolute bg-gray-600 text-gray-100 px-2 py-1 text-xs font-bold rounded-full -top-3 -right-3\">99+</span>\r\n      </button>\r\n    <button className=\"relative bg-blue-700 hover:bg-blue-800 duration-300 py-2 px-4 text-blue-100 rounded\">Success\r\n         <span className=\"absolute bg-green-700 text-green-100 px-2 py-1 text-xs font-bold rounded-full -top-3 -right-3\">99+</span>\r\n      </button>\r\n    <button className=\"relative bg-blue-700 hover:bg-blue-800 duration-300 py-2 px-4 text-blue-100 rounded\">Danger\r\n         <span className=\"absolute bg-red-600 text-red-100 px-2 py-1 text-xs font-bold rounded-full -top-3 -right-3\">99+</span>\r\n      </button>\r\n    <button className=\"relative bg-blue-700 hover:bg-blue-800 duration-300 py-2 px-4 text-blue-100 rounded\">Warning\r\n         <span className=\"absolute bg-yellow-500 text-yellow-900 px-2 py-1 text-xs font-bold rounded-full -top-3 -right-3\">99+</span>\r\n      </button>\r\n    <button className=\"relative bg-blue-700 hover:bg-blue-800 duration-300 py-2 px-4 text-blue-100 rounded\">Info\r\n         <span className=\"absolute bg-teal-300 text-teal-900 px-2 py-1 text-xs font-bold rounded-full -top-3 -right-3\">99+</span>\r\n      </button>\r\n    <button className=\"relative bg-blue-700 hover:bg-blue-800 duration-300 py-2 px-4 text-blue-100 rounded\">Light\r\n         <span className=\"absolute bg-gray-200 text-gray-900 px-2 py-1 text-xs font-bold rounded-full -top-3 -right-3\">99+</span>\r\n      </button>\r\n    <button className=\"relative bg-blue-700 hover:bg-blue-800 duration-300 py-2 px-4 text-blue-100 rounded\">Dark\r\n         <span className=\"absolute bg-gray-900 text-gray-100 px-2 py-1 text-xs font-bold rounded-full -top-3 -right-3\">99+</span>\r\n      </button>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "badge",
+      "notification"
+    ]
+  }
+}

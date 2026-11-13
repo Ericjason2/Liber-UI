@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "event-timeline",
+  "type": "registry:ui",
+  "title": "Event timeline",
+  "description": "Event timeline Tailwind CSS component from TailwindFlex.",
+  "author": "laurits",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/event-timeline.tsx",
+      "content": "import React from \"react\";\n\nexport function EventTimeline() {\n  return (\n    <div className=\"container mx-auto px-4 py-8\">\r\n    <div className=\"relative wrap overflow-hidden\">\r\n        <div className=\"border-2-2 absolute border-opacity-20 border-gray-700 h-full border left-1/2\"></div>\r\n        <div className=\"mb-8 flex justify-between items-center w-full right-timeline\">\r\n            <div className=\"order-1 w-5/12\"></div>\r\n            <div className=\"z-20 flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full\">\r\n                <h1 className=\"mx-auto font-semibold text-lg text-white\">1</h1>\r\n            </div>\r\n            <div className=\"order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4\">\r\n                <h3 className=\"mb-3 font-bold text-gray-800 text-xl\">Event Title</h3>\r\n                <p className=\"text-gray-700 leading-tight\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n                    Vestibulum in nisi commodo, aliquet velit ac, dapibus elit.</p>\r\n            </div>\r\n        </div>\r\n        <div className=\"mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline\">\r\n            <div className=\"order-1 w-5/12\"></div>\r\n            <div className=\"z-20 flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full\">\r\n                <h1 className=\"mx-auto font-semibold text-lg text-white\">2</h1>\r\n            </div>\r\n            <div className=\"order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4\">\r\n                <h3 className=\"mb-3 font-bold text-gray-800 text-xl\">Event Title</h3>\r\n                <p className=\"text-gray-700 leading-tight\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n                    Vestibulum in nisi commodo, aliquet velit ac, dapibus elit.</p>\r\n            </div>\r\n        </div>\r\n        <div className=\"mb-8 flex justify-between items-center w-full right-timeline\">\r\n            <div className=\"order-1 w-5/12\"></div>\r\n            <div className=\"z-20 flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full\">\r\n                <h1 className=\"mx-auto font-semibold text-lg text-white\">3</h1>\r\n            </div>\r\n            <div className=\"order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4\">\r\n                <h3 className=\"mb-3 font-bold text-gray-800 text-xl\">Event Title</h3>\r\n                <p className=\"text-gray-700 leading-tight\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n                    Vestibulum in nisi commodo, aliquet velit ac, dapibus elit.</p>\r\n            </div>\r\n        </div>\r\n    </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "timeline"
+    ]
+  }
+}

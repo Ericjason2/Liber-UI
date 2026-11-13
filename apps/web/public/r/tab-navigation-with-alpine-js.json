@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tab-navigation-with-alpine-js",
+  "type": "registry:ui",
+  "title": "Tab navigation with alpine JS",
+  "description": "Tab navigation with alpine JS Tailwind CSS component from TailwindFlex.",
+  "author": "mr-robot",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tab-navigation-with-alpine-js.tsx",
+      "content": "import React from \"react\";\n\nexport function TabNavigationWithAlpineJS() {\n  return (\n    <div x-data=\"{ \n            openTab: 1,\n            activeClasses: 'border-l border-t border-r rounded-t text-blue-700',\n            inactiveClasses: 'text-blue-500 hover:text-blue-700'\n        }\" className=\"p-6\">\n    <ul className=\"flex border-b\">\n        <li className=\"-mb-px mr-1\">\n            <a href=\"#\"\n                className=\"bg-white inline-block py-2 px-4 font-semibold\">\n                Active\n            </a>\n        </li>\n        <li className=\"mr-1\">\n            \n            <a href=\"#\"\n                className=\"bg-white inline-block py-2 px-4 font-semibold\">\n                Tab\n            </a>\n        </li>\n        <li className=\"mr-1\">\n            <a href=\"#\"\n                className=\"bg-white inline-block py-2 px-4 font-semibold\">\n                Tab\n            </a>\n        </li>\n    </ul>\n    <div className=\"w-full\">\n        <div>Tab #1</div>\n        <div>Tab #2</div>\n        <div>Tab #3</div>\n    </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "tabs",
+      "navigations"
+    ]
+  }
+}
