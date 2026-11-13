@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "beautiful-and-responsive-card-component",
+  "type": "registry:ui",
+  "title": "Beautiful and Responsive Card Component",
+  "description": "Beautiful and Responsive Card Component - Créé par @rajesh-maheshwari sur TailwindFlex.",
+  "author": "@rajesh-maheshwari (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/beautiful-and-responsive-card-component.tsx",
+      "content": "/**\n * Component: Beautiful and Responsive Card Component\n * Author: @rajesh-maheshwari (https://tailwindflex.com/@rajesh-maheshwari)\n * Source: https://tailwindflex.com/@rajesh-maheshwari/beautiful-and-responsive-card-component\n * Attribution: Créé par @rajesh-maheshwari sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BeautifulAndResponsiveCardComponent() {\n  return (\n    <div>\n    <body className=\"bg-gray-100 py-12 px-8\">\n    \n      \n      <div className=\"max-w-sm mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden transform transition-all \">\n    \n        \n        <div className=\"relative\">\n          \n          <div className=\"card-image h-72 bg-cover bg-center\"\n            style=\"background-image: url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');\">\n            \n            <div className=\"absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50\"></div>\n            <div className=\"absolute inset-0 p-6 flex flex-col justify-end\">\n              <h2 className=\"text-3xl font-bold text-white leading-tight\">Innovating Tomorrow</h2>\n              <p className=\"text-lg text-white opacity-80\">Shaping the future of technology with creativity.</p>\n            </div>\n          </div>\n        </div>\n    \n        \n        <div className=\"p-6 bg-white space-y-4\">\n          <h3 className=\"text-2xl font-semibold text-gray-800\">Design Beyond Imagination</h3>\n          <p className=\"text-gray-600 text-sm leading-relaxed\">\n            Our design philosophy revolves around simplicity and functionality. By blending creativity with cutting-edge\n            technology, we bring ideas to life that leave a lasting impact. Explore the future of design with us.\n          </p>\n    \n          \n          <div className=\"flex justify-between items-center\">\n            <button className=\"bg-green-800 text-white py-2 px-6 rounded-full text-sm font-medium shadow-md hover900 hover transition-all transform flex items-center\">\n              Learn More\n            </button>\n            <span className=\"text-sm text-gray-500\">Last updated: 2 mins ago</span>\n          </div>\n        </div>\n      </div>\n    \n    </body>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rajesh-maheshwari",
+    "authorUrl": "https://tailwindflex.com/@rajesh-maheshwari",
+    "sourceUrl": "https://tailwindflex.com/@rajesh-maheshwari/beautiful-and-responsive-card-component",
+    "mention": "Créé par @rajesh-maheshwari sur TailwindFlex",
+    "rawHtml": "<body class=\"bg-gray-100 py-12 px-8\">\n\n  <!--Card -->\n  <div class=\"max-w-sm mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden transform transition-all \">\n\n    <!-- Card Image Section  -->\n    <div class=\"relative\">\n      <!-- Image URL -->\n      <div class=\"card-image h-72 bg-cover bg-center\"\n        style=\"background-image: url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');\">\n        <!-- Gradient Overlay for better text visibility -->\n        <div class=\"absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50\"></div>\n        <div class=\"absolute inset-0 p-6 flex flex-col justify-end\">\n          <h2 class=\"text-3xl font-bold text-white leading-tight\">Innovating Tomorrow</h2>\n          <p class=\"text-lg text-white opacity-80\">Shaping the future of technology with creativity.</p>\n        </div>\n      </div>\n    </div>\n\n    <!-- Card Body Section -->\n    <div class=\"p-6 bg-white space-y-4\">\n      <h3 class=\"text-2xl font-semibold text-gray-800\">Design Beyond Imagination</h3>\n      <p class=\"text-gray-600 text-sm leading-relaxed\">\n        Our design philosophy revolves around simplicity and functionality. By blending creativity with cutting-edge\n        technology, we bring ideas to life that leave a lasting impact. Explore the future of design with us.\n      </p>\n\n      <!-- CTA Button -->\n      <div class=\"flex justify-between items-center\">\n        <button class=\"bg-green-800 text-white py-2 px-6 rounded-full text-sm font-medium shadow-md hover:bg-green-900 hover:shadow-xl transition-all transform flex items-center\">\n          Learn More\n        </button>\n        <span class=\"text-sm text-gray-500\">Last updated: 2 mins ago</span>\n      </div>\n    </div>\n  </div>\n\n</body>"
+  }
+}

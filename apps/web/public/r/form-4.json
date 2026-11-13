@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "form-4",
+  "type": "registry:ui",
+  "title": "form",
+  "description": "form - Créé par @rockstar sur TailwindFlex.",
+  "author": "@rockstar (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/form-4.tsx",
+      "content": "/**\n * Component: form\n * Author: @rockstar (https://tailwindflex.com/@rockstar)\n * Source: https://tailwindflex.com/@rockstar/form-4\n * Attribution: Créé par @rockstar sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Form4() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<form\\n    [formGroup]=\\\"form\\\"\\n    (ngSubmit)=\\\"submit()\\\"\\n    class=\\\"space-y-5\\\">\\n\\n    <div>\\n\\n        <label class=\\\"block mb-2 text-sm font-medium\\\">\\n\\n            Id\\n\\n        </label>\\n\\n        <input\\n\\n            type=\\\"text\\\"\\n\\n            formControlName=\\\"id\\\"\\n\\n            class=\\\"w-full rounded-lg border px-4 py-2\\\">\\n\\n\\n    </div>\\n\\n\\n    <div>\\n\\n        <label class=\\\"block mb-2 text-sm font-medium\\\">\\n\\n            Name\\n\\n        </label>\\n\\n        <textarea\\n\\n            rows=\\\"4\\\"\\n\\n            formControlName=\\\"Name\\\"\\n\\n            class=\\\"w-full rounded-lg border px-4 py-2\\\">\\n\\n        </textarea>\\n\\n\\n\\n    </div>\\n\\n\\n    <div class=\\\"flex justify-end gap-3\\\">\\n\\n        <button\\n\\n            type=\\\"button\\\"\\n\\n            (click)=\\\"close()\\\"\\n\\n            class=\\\"rounded-lg border px-5 py-2\\\">\\n\\n            Cancel\\n\\n        </button>\\n\\n        <button\\n\\n            type=\\\"submit\\\"\\n\\n            class=\\\"rounded-lg bg-sky-600 px-5 py-2 text-white\\\">\\n\\n \\n        </button>\\n\\n    </div>\\n\\n</form>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rockstar",
+    "authorUrl": "https://tailwindflex.com/@rockstar",
+    "sourceUrl": "https://tailwindflex.com/@rockstar/form-4",
+    "mention": "Créé par @rockstar sur TailwindFlex",
+    "rawHtml": "<form\n    [formGroup]=\"form\"\n    (ngSubmit)=\"submit()\"\n    class=\"space-y-5\">\n\n    <div>\n\n        <label class=\"block mb-2 text-sm font-medium\">\n\n            Id\n\n        </label>\n\n        <input\n\n            type=\"text\"\n\n            formControlName=\"id\"\n\n            class=\"w-full rounded-lg border px-4 py-2\">\n\n\n    </div>\n\n\n    <div>\n\n        <label class=\"block mb-2 text-sm font-medium\">\n\n            Name\n\n        </label>\n\n        <textarea\n\n            rows=\"4\"\n\n            formControlName=\"Name\"\n\n            class=\"w-full rounded-lg border px-4 py-2\">\n\n        </textarea>\n\n\n\n    </div>\n\n\n    <div class=\"flex justify-end gap-3\">\n\n        <button\n\n            type=\"button\"\n\n            (click)=\"close()\"\n\n            class=\"rounded-lg border px-5 py-2\">\n\n            Cancel\n\n        </button>\n\n        <button\n\n            type=\"submit\"\n\n            class=\"rounded-lg bg-sky-600 px-5 py-2 text-white\">\n\n \n        </button>\n\n    </div>\n\n</form>"
+  }
+}

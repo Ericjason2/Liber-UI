@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "department-card",
+  "type": "registry:ui",
+  "title": "Department Card",
+  "description": "Department Card - Créé par @ashok-kumar sur TailwindFlex.",
+  "author": "@ashok-kumar (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/department-card.tsx",
+      "content": "/**\n * Component: Department Card\n * Author: @ashok-kumar (https://tailwindflex.com/@ashok-kumar)\n * Source: https://tailwindflex.com/@ashok-kumar/department-card\n * Attribution: Créé par @ashok-kumar sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function DepartmentCard() {\n  return (\n    <div>\n    <div\n        className=\"mx-auto mt-20 w-64 h-64 border border-gray-100 rounded-xl overflow-hidden relative shadow-md shadow-blue-50 p-5 flex items-center justify-center flex-col gap-y-10\">\n        <div className=\" h-96 absolute -top-20 -right-52 -z-10 opacity-15\">\n            <img src=\"http://localhost:4200/assets/img/geometric.png\" className=\"w-full h-full\" />\n        </div>\n        <div className=\"w-20 h-20 border border-transparent bg-slate-100 p-4 rounded-full\">\n            <img src=\"https://cdn-icons-png.freepik.com/256/10251/10251019.png?uid=R136644566&ga=GA1.1.1454298748.1702022622&semt=ais_hybrid\" className=\"w-full h-full object-cover bg-center\" />\n        </div>\n        <div className=\"text-center\">\n            <label className=\"text-2xl font-bold tracking-wide text-black block \">Cardiology</label>\n            <label className=\"text-sm font-medium tracking-wide text-slate-500 block\">20+ Doctors</label>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ashok-kumar",
+    "authorUrl": "https://tailwindflex.com/@ashok-kumar",
+    "sourceUrl": "https://tailwindflex.com/@ashok-kumar/department-card",
+    "mention": "Créé par @ashok-kumar sur TailwindFlex",
+    "rawHtml": "<div\n    class=\"mx-auto mt-20 w-64 h-64 border border-gray-100 rounded-xl overflow-hidden relative shadow-md shadow-blue-50 p-5 flex items-center justify-center flex-col gap-y-10\">\n    <div class=\" h-96 absolute -top-20 -right-52 -z-10 opacity-15\">\n        <img src=\"http://localhost:4200/assets/img/geometric.png\" class=\"w-full h-full\">\n    </div>\n    <div class=\"w-20 h-20 border border-transparent bg-slate-100 p-4 rounded-full\">\n        <img src=\"https://cdn-icons-png.freepik.com/256/10251/10251019.png?uid=R136644566&ga=GA1.1.1454298748.1702022622&semt=ais_hybrid\" class=\"w-full h-full object-cover bg-center\">\n    </div>\n    <div class=\"text-center\">\n        <label class=\"text-2xl font-bold tracking-wide text-black block \">Cardiology</label>\n        <label class=\"text-sm font-medium tracking-wide text-slate-500 block\">20+ Doctors</label>\n    </div>\n</div>"
+  }
+}

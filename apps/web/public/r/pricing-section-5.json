@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-section-5",
+  "type": "registry:ui",
+  "title": "Pricing Section",
+  "description": "Pricing Section - Créé par @mdadul sur TailwindFlex.",
+  "author": "@mdadul (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pricing-section-5.tsx",
+      "content": "/**\n * Component: Pricing Section\n * Author: @mdadul (https://tailwindflex.com/@mdadul)\n * Source: https://tailwindflex.com/@mdadul/pricing-section-5\n * Attribution: Créé par @mdadul sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PricingSection5() {\n  return (\n    <div>\n    <div className=\"lg items-center justify-between p-6 md12 dark700\">\n        <div className=\"lg1/2 w-full\">\n            <p className=\"text-base leading-4 text-gray-600 dark200\">Choose your plan</p>\n            <h1 role=\"heading\" className=\"md5xl text-3xl font-bold leading-10 mt-3 text-gray-800 dark\">Our\n                pricing plan</h1>\n            <p role=\"contentinfo\" className=\"text-base leading-5 mt-5 text-gray-600 dark200\">We’re working on a suit\n                of tools to make managing complex systems easier, for everyone for free. we can’t wait to hear what you\n                think\n            </p>\n            <div className=\"w-56\">\n                <button className=\"bg-gray-100 dark800 shadow rounded-full flex items-center mt-10 rounded-full\">\n                    <div className=\"bg-gray-100 dark800 focus2 focus2 focus700 focus text-base leading-none text-gray-600 dark200 rounded-full py-4 px-6 mr-1\" id=\"monthly\">Monthly</div>\n                    <div className=\"bg-indigo-700 focus2 focus2 focus700 focus text-base leading-none text-white rounded-full py-4 px-6\" id=\"annually\">Annually</div>\n                </button>\n            </div>\n        </div>\n        <div className=\"xl1/2 lg7/12 relative w-full lg0 mt-12 md8\" role=\"list\">\n            <img src=\"https://i.ibb.co/0n6DSS3/bgimg.png\" className=\"absolute w-full -ml-12 mt-24\" alt=\"background circle images\" />\n            <div role=\"listitem\" className=\"bg-white dark800 cursor-pointer shadow rounded-lg p-8 relative z-30\">\n                <div className=\"md items-center justify-between\">\n                    <h2 className=\"text-2xl font-semibold leading-6 text-gray-800 dark\">Starter</h2>\n                    <p className=\"text-2xl font-semibold md0 mt-4 leading-6 text-gray-800 dark\">FREE</p>\n                </div>\n                <p className=\"md80 text-base leading-6 mt-4 text-gray-600 dark200\">Full access to all features and\n                    no credit card required\n                </p>\n            </div>\n            <div role=\"listitem\" className=\"bg-white dark800 cursor-pointer shadow rounded-lg mt-3 flex relative z-30\">\n                <div className=\"w-2.5 h-auto bg-indigo-700 rounded-tl-md rounded-bl-md\"></div>\n                <div className=\"w-full p-8\">\n                    <div className=\"md items-center justify-between\">\n                        <h2 className=\"text-2xl font-semibold leading-6 text-gray-800 dark\">Personal</h2>\n                        <p className=\"text-2xl md0 mt-4 font-semibold leading-6 text-gray-800 dark\">\n                            $18<span className=\"font-normal text-base\">/mo</span></p>\n                    </div>\n                    <p className=\"md80 text-base leading-6 mt-4 text-gray-600 dark200\">Unlimited products features\n                        and dedicated support channels\n                    </p>\n                </div>\n            </div>\n            <div role=\"listitem\" className=\"bg-white dark800 cursor-pointer shadow rounded-lg p-8 relative z-30 mt-7\">\n                <div className=\"md items-center justify-between\">\n                    <h2 className=\"text-2xl font-semibold leading-6 text-gray-800 dark\">Team</h2>\n                    <p className=\"text-2xl md0 mt-4 font-semibold leading-6 text-gray-800 dark\">\n                        $18<span className=\"font-normal text-base\">/mo</span>\n                    </p>\n                </div>\n                <p className=\"md80 text-base leading-6 mt-4 text-gray-600 dark200\">Unlimited products features and\n                    dedicated support channels\n                </p>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@mdadul",
+    "authorUrl": "https://tailwindflex.com/@mdadul",
+    "sourceUrl": "https://tailwindflex.com/@mdadul/pricing-section-5",
+    "mention": "Créé par @mdadul sur TailwindFlex",
+    "rawHtml": "<div class=\"lg:flex items-center justify-between p-6 md:p-12 dark:bg-gray-700\">\n    <div class=\"lg:w-1/2 w-full\">\n        <p class=\"text-base leading-4 text-gray-600 dark:text-gray-200\">Choose your plan</p>\n        <h1 role=\"heading\" class=\"md:text-5xl text-3xl font-bold leading-10 mt-3 text-gray-800 dark:text-white\">Our\n            pricing plan</h1>\n        <p role=\"contentinfo\" class=\"text-base leading-5 mt-5 text-gray-600 dark:text-gray-200\">We’re working on a suit\n            of tools to make managing complex systems easier, for everyone for free. we can’t wait to hear what you\n            think\n        </p>\n        <div class=\"w-56\">\n            <button onclick=\"toggleIt()\" class=\"bg-gray-100 dark:bg-gray-800 shadow rounded-full flex items-center mt-10 rounded-full\">\n                <div class=\"bg-gray-100 dark:bg-gray-800 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none text-base leading-none text-gray-600 dark:text-gray-200 rounded-full py-4 px-6 mr-1\" id=\"monthly\">Monthly</div>\n                <div class=\"bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none text-base leading-none text-white rounded-full py-4 px-6\" id=\"annually\">Annually</div>\n            </button>\n        </div>\n    </div>\n    <div class=\"xl:w-1/2 lg:w-7/12 relative w-full lg:mt-0 mt-12 md:px-8\" role=\"list\">\n        <img src=\"https://i.ibb.co/0n6DSS3/bgimg.png\" class=\"absolute w-full -ml-12 mt-24\" alt=\"background circle images\" />\n        <div role=\"listitem\" class=\"bg-white dark:bg-gray-800 cursor-pointer shadow rounded-lg p-8 relative z-30\">\n            <div class=\"md:flex items-center justify-between\">\n                <h2 class=\"text-2xl font-semibold leading-6 text-gray-800 dark:text-white\">Starter</h2>\n                <p class=\"text-2xl font-semibold md:mt-0 mt-4 leading-6 text-gray-800 dark:text-white\">FREE</p>\n            </div>\n            <p class=\"md:w-80 text-base leading-6 mt-4 text-gray-600 dark:text-gray-200\">Full access to all features and\n                no credit card required\n            </p>\n        </div>\n        <div role=\"listitem\" class=\"bg-white dark:bg-gray-800 cursor-pointer shadow rounded-lg mt-3 flex relative z-30\">\n            <div class=\"w-2.5 h-auto bg-indigo-700 rounded-tl-md rounded-bl-md\"></div>\n            <div class=\"w-full p-8\">\n                <div class=\"md:flex items-center justify-between\">\n                    <h2 class=\"text-2xl font-semibold leading-6 text-gray-800 dark:text-white\">Personal</h2>\n                    <p class=\"text-2xl md:mt-0 mt-4 font-semibold leading-6 text-gray-800 dark:text-white\">\n                        $18<span class=\"font-normal text-base\">/mo</span></p>\n                </div>\n                <p class=\"md:w-80 text-base leading-6 mt-4 text-gray-600 dark:text-gray-200\">Unlimited products features\n                    and dedicated support channels\n                </p>\n            </div>\n        </div>\n        <div role=\"listitem\" class=\"bg-white dark:bg-gray-800 cursor-pointer shadow rounded-lg p-8 relative z-30 mt-7\">\n            <div class=\"md:flex items-center justify-between\">\n                <h2 class=\"text-2xl font-semibold leading-6 text-gray-800 dark:text-white\">Team</h2>\n                <p class=\"text-2xl md:mt-0 mt-4 font-semibold leading-6 text-gray-800 dark:text-white\">\n                    $18<span class=\"font-normal text-base\">/mo</span>\n                </p>\n            </div>\n            <p class=\"md:w-80 text-base leading-6 mt-4 text-gray-600 dark:text-gray-200\">Unlimited products features and\n                dedicated support channels\n            </p>\n        </div>\n    </div>\n</div>"
+  }
+}

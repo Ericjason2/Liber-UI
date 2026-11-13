@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwind-css-banner-offer",
+  "type": "registry:ui",
+  "title": "Tailwind css banner offer",
+  "description": "Tailwind css banner offer - Créé par @saim-t8 sur TailwindFlex.",
+  "author": "@saim-t8 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tailwind-css-banner-offer.tsx",
+      "content": "/**\n * Component: Tailwind css banner offer\n * Author: @saim-t8 (https://tailwindflex.com/@saim-t8)\n * Source: https://tailwindflex.com/@saim-t8/tailwind-css-banner-offer\n * Attribution: Créé par @saim-t8 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TailwindCssBannerOffer() {\n  return (\n    <div>\n    <div className=\"relative bg-[#ffde59] dark border-4 border-black dark p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark[8px_8px_0px_0px_rgba(255,255,255,1)] transform hover[4px_4px_0px_0px_rgba(0,0,0,1)] dark[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all\">\n      <div className=\"absolute -top-3 -right-3 w-8 h-8 bg-[#ff5c5c] dark border-2 border-black dark\"></div>\n      <div className=\"flex items-center justify-between\">\n        <div className=\"flex items-center\">\n          <div className=\"w-12 h-12 bg-violet dark[#ff5c5c] border-2 border-black dark flex items-center justify-center mr-4\">\n            <span className=\"text-white dark font-black text-xl\">%</span>\n          </div>\n          <div>\n            <h3 className=\"text-xl font-black text-black dark uppercase tracking-tight\">LIMITED TIME OFFER</h3>\n            <p className=\"text-black dark300 font-bold text-sm\">Save 70% on all premium templates</p>\n          </div>\n        </div>\n        <a href=\"https://templateight.com/components/banner\" \n           target=\"_blank\"\n           className=\"bg-black dark text-[#ffde59] dark font-black px-6 py-3 border-2 border-black dark shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] dark[4px_4px_0px_0px_rgba(255,255,255,0.3)] hover[2px_2px_0px_0px_rgba(0,0,0,0.3)] dark[2px_2px_0px_0px_rgba(255,255,255,0.3)] transition-all uppercase tracking-wide inline-block\">\n          See More\n        </a>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "header",
+      "footer",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@saim-t8",
+    "authorUrl": "https://tailwindflex.com/@saim-t8",
+    "sourceUrl": "https://tailwindflex.com/@saim-t8/tailwind-css-banner-offer",
+    "mention": "Créé par @saim-t8 sur TailwindFlex",
+    "rawHtml": "<div class=\"relative bg-[#ffde59] dark:bg-black border-4 border-black dark:border-white p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] transform hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all\">\n  <div class=\"absolute -top-3 -right-3 w-8 h-8 bg-[#ff5c5c] dark:bg-violet border-2 border-black dark:border-white\"></div>\n  <div class=\"flex items-center justify-between\">\n    <div class=\"flex items-center\">\n      <div class=\"w-12 h-12 bg-violet dark:bg-[#ff5c5c] border-2 border-black dark:border-white flex items-center justify-center mr-4\">\n        <span class=\"text-white dark:text-black font-black text-xl\">%</span>\n      </div>\n      <div>\n        <h3 class=\"text-xl font-black text-black dark:text-white uppercase tracking-tight\">LIMITED TIME OFFER</h3>\n        <p class=\"text-black dark:text-gray-300 font-bold text-sm\">Save 70% on all premium templates</p>\n      </div>\n    </div>\n    <a href=\"https://templateight.com/components/banner\" \n       target=\"_blank\"\n       class=\"bg-black dark:bg-white text-[#ffde59] dark:text-black font-black px-6 py-3 border-2 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] dark:hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,0.3)] transition-all uppercase tracking-wide inline-block\">\n      See More\n    </a>\n  </div>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "info-card-11",
+  "type": "registry:ui",
+  "title": "Info card",
+  "description": "Info card - Créé par @laurits sur TailwindFlex.",
+  "author": "@laurits (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/info-card-11.tsx",
+      "content": "/**\n * Component: Info card\n * Author: @laurits (https://tailwindflex.com/@laurits)\n * Source: https://tailwindflex.com/@laurits/info-card-11\n * Attribution: Créé par @laurits sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InfoCard11() {\n  return (\n    <div>\n    <div className=\"sm2 py-14 px-11 rounded-lg max-w-lg\" style=\"background-color: #FFE8D2;\">\r\n        <h3 className=\"mb-4 text-black text-[22px] sm[40px] font-extrabold leading-none\">\r\n            <span>Inspiration </span>\r\n        </h3>\r\n        <div className=\"text-lg text-black leading-[1.8]\">\r\n            <p>See how other companies are using Reply, which use cases are there, and how it all works in practice.</p>\r\n        </div>\r\n        <ul className=\"mt-6 sm10\">\r\n            <li className=\"pt-2 pb-4 mb-2 last0 border-b border-black border-solid\">\r\n                <a className=\"flex items-center justify-between text-black hover text-lg sm font-medium\"\r\n                    href=\"#\">\r\n                    <span>Customer stories</span>\r\n                    <svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                        <path fillRule=\"evenodd\" clipRule=\"evenodd\"\r\n                            d=\"M4.00002 7.45035e-05L13 7.42506e-05C13.5523 7.45035e-05 14 0.44779 14 1.00007V10.0001C14 10.5524 13.5523 11.0001 13 11.0001C12.4477 11.0001 12 10.5524 12 10.0001V3.41429L1.70712 13.7072L0.292908 12.293L10.5858 2.00007L4.00002 2.00007C3.44773 2.00007 3.00002 1.55236 3.00002 1.00007C3.00002 0.44779 3.44773 7.41663e-05 4.00002 7.45035e-05Z\"\r\n                            fill=\"black\"></path>\r\n                    </svg>\r\n                </a>\r\n            </li>\r\n            <li className=\"pt-2 pb-4 mb-2 last0 border-b border-black border-solid\">\r\n                <a className=\"flex items-center justify-between text-black hover text-lg sm font-medium\"\r\n                    href=\"#\">\r\n                    <span>Cold email templates</span>\r\n                    <svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                        <path fillRule=\"evenodd\" clipRule=\"evenodd\"\r\n                            d=\"M4.00002 7.45035e-05L13 7.42506e-05C13.5523 7.45035e-05 14 0.44779 14 1.00007V10.0001C14 10.5524 13.5523 11.0001 13 11.0001C12.4477 11.0001 12 10.5524 12 10.0001V3.41429L1.70712 13.7072L0.292908 12.293L10.5858 2.00007L4.00002 2.00007C3.44773 2.00007 3.00002 1.55236 3.00002 1.00007C3.00002 0.44779 3.44773 7.41663e-05 4.00002 7.45035e-05Z\"\r\n                            fill=\"black\"></path>\r\n                    </svg>\r\n                </a>\r\n            </li>\r\n            <li className=\"pt-2 pb-4 mb-2 last0 border-b border-black border-solid\">\r\n                <a className=\"flex items-center justify-between text-black hover text-lg sm font-medium\"\r\n                    href=\"#\">\r\n                    <span>Subject line generator</span>\r\n                    <svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                        <path fillRule=\"evenodd\" clipRule=\"evenodd\"\r\n                            d=\"M4.00002 7.45035e-05L13 7.42506e-05C13.5523 7.45035e-05 14 0.44779 14 1.00007V10.0001C14 10.5524 13.5523 11.0001 13 11.0001C12.4477 11.0001 12 10.5524 12 10.0001V3.41429L1.70712 13.7072L0.292908 12.293L10.5858 2.00007L4.00002 2.00007C3.44773 2.00007 3.00002 1.55236 3.00002 1.00007C3.00002 0.44779 3.44773 7.41663e-05 4.00002 7.45035e-05Z\"\r\n                            fill=\"black\">\r\n                        </path>\r\n                    </svg>\r\n                </a>\r\n            </li>\r\n        </ul>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@laurits",
+    "authorUrl": "https://tailwindflex.com/@laurits",
+    "sourceUrl": "https://tailwindflex.com/@laurits/info-card-11",
+    "mention": "Créé par @laurits sur TailwindFlex",
+    "rawHtml": "<div class=\"sm:first:col-span-2 py-14 px-11 rounded-lg max-w-lg\" style=\"background-color: #FFE8D2;\">\r\n    <h3 class=\"mb-4 text-black text-[22px] sm:text-[40px] font-extrabold leading-none\">\r\n        <span>Inspiration </span>\r\n    </h3>\r\n    <div class=\"text-lg text-black leading-[1.8]\">\r\n        <p>See how other companies are using Reply, which use cases are there, and how it all works in practice.</p>\r\n    </div>\r\n    <ul class=\"mt-6 sm:mt-10\">\r\n        <li class=\"pt-2 pb-4 mb-2 last:mb-0 border-b border-black border-solid\">\r\n            <a class=\"flex items-center justify-between text-black hover:text-black text-lg sm:text-xl font-medium\"\r\n                href=\"#\">\r\n                <span>Customer stories</span>\r\n                <svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\"\r\n                        d=\"M4.00002 7.45035e-05L13 7.42506e-05C13.5523 7.45035e-05 14 0.44779 14 1.00007V10.0001C14 10.5524 13.5523 11.0001 13 11.0001C12.4477 11.0001 12 10.5524 12 10.0001V3.41429L1.70712 13.7072L0.292908 12.293L10.5858 2.00007L4.00002 2.00007C3.44773 2.00007 3.00002 1.55236 3.00002 1.00007C3.00002 0.44779 3.44773 7.41663e-05 4.00002 7.45035e-05Z\"\r\n                        fill=\"black\"></path>\r\n                </svg>\r\n            </a>\r\n        </li>\r\n        <li class=\"pt-2 pb-4 mb-2 last:mb-0 border-b border-black border-solid\">\r\n            <a class=\"flex items-center justify-between text-black hover:text-black text-lg sm:text-xl font-medium\"\r\n                href=\"#\">\r\n                <span>Cold email templates</span>\r\n                <svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\"\r\n                        d=\"M4.00002 7.45035e-05L13 7.42506e-05C13.5523 7.45035e-05 14 0.44779 14 1.00007V10.0001C14 10.5524 13.5523 11.0001 13 11.0001C12.4477 11.0001 12 10.5524 12 10.0001V3.41429L1.70712 13.7072L0.292908 12.293L10.5858 2.00007L4.00002 2.00007C3.44773 2.00007 3.00002 1.55236 3.00002 1.00007C3.00002 0.44779 3.44773 7.41663e-05 4.00002 7.45035e-05Z\"\r\n                        fill=\"black\"></path>\r\n                </svg>\r\n            </a>\r\n        </li>\r\n        <li class=\"pt-2 pb-4 mb-2 last:mb-0 border-b border-black border-solid\">\r\n            <a class=\"flex items-center justify-between text-black hover:text-black text-lg sm:text-xl font-medium\"\r\n                href=\"#\">\r\n                <span>Subject line generator</span>\r\n                <svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\"\r\n                        d=\"M4.00002 7.45035e-05L13 7.42506e-05C13.5523 7.45035e-05 14 0.44779 14 1.00007V10.0001C14 10.5524 13.5523 11.0001 13 11.0001C12.4477 11.0001 12 10.5524 12 10.0001V3.41429L1.70712 13.7072L0.292908 12.293L10.5858 2.00007L4.00002 2.00007C3.44773 2.00007 3.00002 1.55236 3.00002 1.00007C3.00002 0.44779 3.44773 7.41663e-05 4.00002 7.45035e-05Z\"\r\n                        fill=\"black\">\r\n                    </path>\r\n                </svg>\r\n            </a>\r\n        </li>\r\n    </ul>\r\n</div>"
+  }
+}

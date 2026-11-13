@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "profile-2",
+  "type": "registry:ui",
+  "title": "profile",
+  "description": "profile - Créé par @Gidyofficial sur TailwindFlex.",
+  "author": "@Gidyofficial (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/profile-2.tsx",
+      "content": "/**\n * Component: profile\n * Author: @Gidyofficial (https://tailwindflex.com/@Gidyofficial)\n * Source: https://tailwindflex.com/@Gidyofficial/profile-2\n * Attribution: Créé par @Gidyofficial sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Profile2() {\n  return (\n    <div>\n    <div className=\"max-w-sm mx-auto mt-40\">\n        <div className=\"p-3 flex items-center justify-between border-t cursor-pointer hover200\">\n            <div className=\"flex items-center\">\n                <img className=\"rounded-full h-10 w-10\" src=\"https://images.unsplash.com/photo-1547619292-870fe4aeadb8?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" />\n                <div className=\"ml-2 flex flex-col\">\n                    <div className=\"leading-snug text-sm text-gray-900 font-bold\">Gratien</div>\n                    <div className=\"leading-snug text-xs text-gray-600\">@Gratien</div>\n                </div>\n            </div>\n            <button className=\"h-8 px-3 text-md font-bold text-blue-400 border border-blue-400 rounded-full hover100\">Follow</button>\n        </div>\n        <div className=\"p-3 flex items-center justify-between border-t cursor-pointer hover200\">\n            <div className=\"flex items-center\">\n                <img className=\"rounded-full h-10 w-10\" src=\"https://images.unsplash.com/photo-1547619292-870fe4aeadb8?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" />\n                <div className=\"ml-2 flex flex-col\">\n                    <div className=\"leading-snug text-sm text-gray-900 font-bold\">GIDY</div>\n                    <div className=\"leading-snug text-xs text-gray-600\">@GIDY</div>\n                </div>\n            </div>\n            <button className=\"h-8 px-3 text-md font-bold text-blue-400 border border-blue-400 rounded-full hover100\">Follow</button>\n        </div>\n        <div className=\"p-3 flex items-center justify-between border-t cursor-pointer hover200\">\n            <div className=\"flex items-center\">\n                <img className=\"rounded-full h-10 w-10\" src=\"https://images.unsplash.com/photo-1547619292-870fe4aeadb8?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" />\n                <div className=\"ml-2 flex flex-col\">\n                    <div className=\"leading-snug text-sm text-gray-900 font-bold\">KABOSS</div>\n                    <div className=\"leading-snug text-xs text-gray-600\">@KABOSS</div>\n                </div>\n            </div>\n            <button className=\"h-8 px-3 text-md font-bold text-blue-400 border border-blue-400 rounded-full hover100\">Follow</button>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@Gidyofficial",
+    "authorUrl": "https://tailwindflex.com/@Gidyofficial",
+    "sourceUrl": "https://tailwindflex.com/@Gidyofficial/profile-2",
+    "mention": "Créé par @Gidyofficial sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-sm mx-auto mt-40\">\n    <div class=\"p-3 flex items-center justify-between border-t cursor-pointer hover:bg-gray-200\">\n        <div class=\"flex items-center\">\n            <img class=\"rounded-full h-10 w-10\" src=\"https://images.unsplash.com/photo-1547619292-870fe4aeadb8?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\">\n            <div class=\"ml-2 flex flex-col\">\n                <div class=\"leading-snug text-sm text-gray-900 font-bold\">Gratien</div>\n                <div class=\"leading-snug text-xs text-gray-600\">@Gratien</div>\n            </div>\n        </div>\n        <button class=\"h-8 px-3 text-md font-bold text-blue-400 border border-blue-400 rounded-full hover:bg-blue-100\">Follow</button>\n    </div>\n    <div class=\"p-3 flex items-center justify-between border-t cursor-pointer hover:bg-gray-200\">\n        <div class=\"flex items-center\">\n            <img class=\"rounded-full h-10 w-10\" src=\"https://images.unsplash.com/photo-1547619292-870fe4aeadb8?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\">\n            <div class=\"ml-2 flex flex-col\">\n                <div class=\"leading-snug text-sm text-gray-900 font-bold\">GIDY</div>\n                <div class=\"leading-snug text-xs text-gray-600\">@GIDY</div>\n            </div>\n        </div>\n        <button class=\"h-8 px-3 text-md font-bold text-blue-400 border border-blue-400 rounded-full hover:bg-blue-100\">Follow</button>\n    </div>\n    <div class=\"p-3 flex items-center justify-between border-t cursor-pointer hover:bg-gray-200\">\n        <div class=\"flex items-center\">\n            <img class=\"rounded-full h-10 w-10\" src=\"https://images.unsplash.com/photo-1547619292-870fe4aeadb8?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\">\n            <div class=\"ml-2 flex flex-col\">\n                <div class=\"leading-snug text-sm text-gray-900 font-bold\">KABOSS</div>\n                <div class=\"leading-snug text-xs text-gray-600\">@KABOSS</div>\n            </div>\n        </div>\n        <button class=\"h-8 px-3 text-md font-bold text-blue-400 border border-blue-400 rounded-full hover:bg-blue-100\">Follow</button>\n    </div>\n</div>"
+  }
+}

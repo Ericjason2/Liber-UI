@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-buttons-for-links",
+  "type": "registry:ui",
+  "title": "Simple buttons for links",
+  "description": "Simple buttons for links - Créé par @amit sur TailwindFlex.",
+  "author": "@amit (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-buttons-for-links.tsx",
+      "content": "/**\n * Component: Simple buttons for links\n * Author: @amit (https://tailwindflex.com/@amit)\n * Source: https://tailwindflex.com/@amit/simple-buttons-for-links\n * Attribution: Créé par @amit sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SimpleButtonsForLinks() {\n  return (\n    <div>\n    <nav className=\"\">\r\n        <ul className=\"flex flex-row items-center px-6 py-4 text-indigo-100 bg-indigo-900 rounded-lg\">\r\n            <li className=\"pr-8\">\r\n                <a href=\"/blog\" className=\"\">Blog\r\n                </a>\r\n            </li>\r\n            <li className=\"pr-8\">\r\n                <a href=\"\" target=\"_blank\">LinkedIn\r\n    \r\n                </a>\r\n            </li>\r\n            <li className=\"pr-8\">\r\n                <a href=\"\" target=\"_blank\">Twitter\r\n                </a>\r\n            </li>\r\n            <li className=\"text-red-200\">\r\n                <a href=\"\" className=\"ml-2\">Email\r\n                </a>\r\n            </li>\r\n        </ul>\r\n    </nav>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@amit",
+    "authorUrl": "https://tailwindflex.com/@amit",
+    "sourceUrl": "https://tailwindflex.com/@amit/simple-buttons-for-links",
+    "mention": "Créé par @amit sur TailwindFlex",
+    "rawHtml": "<nav class=\"\">\r\n    <ul class=\"flex flex-row items-center px-6 py-4 text-indigo-100 bg-indigo-900 rounded-lg\">\r\n        <li class=\"pr-8\">\r\n            <a href=\"/blog\" class=\"\">Blog\r\n            </a>\r\n        </li>\r\n        <li class=\"pr-8\">\r\n            <a href=\"\" target=\"_blank\">LinkedIn\r\n\r\n            </a>\r\n        </li>\r\n        <li class=\"pr-8\">\r\n            <a href=\"\" target=\"_blank\">Twitter\r\n            </a>\r\n        </li>\r\n        <li class=\"text-red-200\">\r\n            <a href=\"\" class=\"ml-2\">Email\r\n            </a>\r\n        </li>\r\n    </ul>\r\n</nav>"
+  }
+}

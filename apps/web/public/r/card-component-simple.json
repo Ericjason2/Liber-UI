@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-component-simple",
+  "type": "registry:ui",
+  "title": "Card Component Simple",
+  "description": "Card Component Simple - Créé par @Shariar-Hasan sur TailwindFlex.",
+  "author": "@Shariar-Hasan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-component-simple.tsx",
+      "content": "/**\n * Component: Card Component Simple\n * Author: @Shariar-Hasan (https://tailwindflex.com/@Shariar-Hasan)\n * Source: https://tailwindflex.com/@Shariar-Hasan/card-component-simple\n * Attribution: Créé par @Shariar-Hasan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardComponentSimple() {\n  return (\n    <div>\n    <div className=\"grid grid-cols-1 sm2 md3 gap-3 max-w-7xl mx-auto my-10\">\n      <div className=\"h-full\"\n        style=\"visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.5s cubic-bezier(0.5, 0, 0, 1) 0s;\">\n        <a href=\"/my-projects/test-porject-in-database\">\n          <div\n            className=\"max-h-[200px] border border-gray-600 rounded relative group overflow-hidden hover duration-200 hover e-pulse peer\">\n            <div className=\"\">\n              <img alt=\"Test Porject in database\" loading=\"lazy\" width=\"500\" height=\"500\" decoding=\"async\" data-nimg=\"1\" className=\"w-full duration-200\" \n              srcset=\"\" \n              src=\"https://picsum.photos/200\" style=\"color: transparent;\" />\n            </div>\n            <div  \n              className=\"absolute bg-gradient-to-b from-transparent to-black/100 w-full h-full px-1 py-2 top-0 left-0 flex  items-start justify-end flex-col group-hover100 group-hover opacity-0 invisible duration-200 overflow-y-auto scrollbar-none text-white\">\n              <h5 className=\"translate-y-28 group-hover0 duration-200 tracking-wide text-sm px-2 text-gray-200\">Test\n                Porject in database</h5>\n              <p className=\"translate-y-28 group-hover0 duration-200 text-gray-600 text-xs px-2 delay-100\">Last updated :\n                Feb 14th, 24</p>\n            </div>\n          </div>\n        </a>\n      </div>\n      <div className=\"h-full\"\n        style=\"visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0.05s, transform 0.5s cubic-bezier(0.5, 0, 0, 1) 0.05s;\">\n        <a href=\"/my-projects/shopno-dishari-web-site-desh-shera-1707845821077\">\n          <div\n            className=\"max-h-[200px] border border-gray-600 rounded relative group overflow-hidden hover duration-200 hover e-pulse peer\">\n            <div className=\"\"><img alt=\"Shopno Dishari Web Site desh shera\" loading=\"lazy\" width=\"500\" height=\"500\" decoding=\"async\" data-nimg=\"1\" className=\"w-full duration-200\" srcset=\"https://picsum.photos/200\" src=\"/_next/image?url=https%3A%2F%2Fpicsum.photos%2F400%2F250&amp;w=1080&amp;q=75\" style=\"color: transparent;\" />\n            </div>\n            <div\n              className=\"absolute bg-gradient-to-b from-transparent to-black/100 w-full h-full px-1 py-2 top-0 left-0 flex  items-start justify-end flex-col group-hover100 group-hover opacity-0 invisible duration-200 overflow-y-auto scrollbar-none text-white\">\n              <h5 className=\"translate-y-28 group-hover0 duration-200 tracking-wide text-sm px-2 text-gray-200\">\n                Shopno Dishari Web Site desh shera</h5>\n              <p className=\"translate-y-28 group-hover0 duration-200 text-gray-600 text-xs px-2 delay-100\">Last updated :\n                Feb 13th, 24</p>\n            </div>\n          </div>\n        </a>\n      </div>\n      <div className=\"h-full\"\n        style=\"visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0.1s, transform 0.5s cubic-bezier(0.5, 0, 0, 1) 0.1s;\">\n        <a href=\"/my-projects/shopno-dishari-web-site-desh-shera-1707682549723\">\n          <div\n            className=\"max-h-[200px] border border-gray-600 rounded relative group overflow-hidden hover duration-200 hover e-pulse peer\">\n            <div className=\"\"><img alt=\"Shopno Dishari Web Site desh shera\" loading=\"lazy\" width=\"500\" height=\"500\" decoding=\"async\" data-nimg=\"1\" className=\"w-full duration-200\" srcset=\"https://picsum.photos/200\" src=\"/_next/image?url=https%3A%2F%2Fpicsum.photos%2F400%2F250&amp;w=1080&amp;q=75\" style=\"color: transparent;\" />\n            </div>\n            <div\n              className=\"absolute bg-gradient-to-b from-transparent to-black/100 w-full h-full px-1 py-2 top-0 left-0 flex  items-start justify-end flex-col group-hover100 group-hover opacity-0 invisible duration-200 overflow-y-auto scrollbar-none text-white\">\n              <h5 className=\"translate-y-28 group-hover0 duration-200 tracking-wide text-sm px-2 text-gray-200\">\n                Shopno Dishari Web Site desh shera</h5>\n              <p className=\"translate-y-28 group-hover0 duration-200 text-gray-600 text-xs px-2 delay-100\">Last updated :\n                Feb 12th, 24</p>\n            </div>\n          </div>\n        </a>\n      </div>\n      \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@Shariar-Hasan",
+    "authorUrl": "https://tailwindflex.com/@Shariar-Hasan",
+    "sourceUrl": "https://tailwindflex.com/@Shariar-Hasan/card-component-simple",
+    "mention": "Créé par @Shariar-Hasan sur TailwindFlex",
+    "rawHtml": "<div class=\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 max-w-7xl mx-auto my-10\">\n  <div class=\"h-full\"\n    style=\"visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.5s cubic-bezier(0.5, 0, 0, 1) 0s;\">\n    <a href=\"/my-projects/test-porject-in-database\">\n      <div\n        class=\"max-h-[200px] border border-gray-600 rounded relative group overflow-hidden hover:border-brand duration-200 hover:animat e-pulse peer\">\n        <div class=\"\">\n          <img alt=\"Test Porject in database\" loading=\"lazy\" width=\"500\" height=\"500\" decoding=\"async\" data-nimg=\"1\" class=\"w-full duration-200\" \n          srcset=\"\" \n          src=\"https://picsum.photos/200\" style=\"color: transparent;\">\n        </div>\n        <div  \n          class=\"absolute bg-gradient-to-b from-transparent to-black/100 w-full h-full px-1 py-2 top-0 left-0 flex  items-start justify-end flex-col group-hover:opacity-100 group-hover:visible opacity-0 invisible duration-200 overflow-y-auto scrollbar-none text-white\">\n          <h5 class=\"translate-y-28 group-hover:translate-y-0 duration-200 tracking-wide text-sm px-2 text-gray-200\">Test\n            Porject in database</h5>\n          <p class=\"translate-y-28 group-hover:translate-y-0 duration-200 text-gray-600 text-xs px-2 delay-100\">Last updated :\n            Feb 14th, 24</p>\n        </div>\n      </div>\n    </a>\n  </div>\n  <div class=\"h-full\"\n    style=\"visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0.05s, transform 0.5s cubic-bezier(0.5, 0, 0, 1) 0.05s;\">\n    <a href=\"/my-projects/shopno-dishari-web-site-desh-shera-1707845821077\">\n      <div\n        class=\"max-h-[200px] border border-gray-600 rounded relative group overflow-hidden hover:border-brand duration-200 hover:animat e-pulse peer\">\n        <div class=\"\"><img alt=\"Shopno Dishari Web Site desh shera\" loading=\"lazy\" width=\"500\" height=\"500\" decoding=\"async\" data-nimg=\"1\" class=\"w-full duration-200\" srcset=\"https://picsum.photos/200\" src=\"/_next/image?url=https%3A%2F%2Fpicsum.photos%2F400%2F250&amp;w=1080&amp;q=75\" style=\"color: transparent;\">\n        </div>\n        <div\n          class=\"absolute bg-gradient-to-b from-transparent to-black/100 w-full h-full px-1 py-2 top-0 left-0 flex  items-start justify-end flex-col group-hover:opacity-100 group-hover:visible opacity-0 invisible duration-200 overflow-y-auto scrollbar-none text-white\">\n          <h5 class=\"translate-y-28 group-hover:translate-y-0 duration-200 tracking-wide text-sm px-2 text-gray-200\">\n            Shopno Dishari Web Site desh shera</h5>\n          <p class=\"translate-y-28 group-hover:translate-y-0 duration-200 text-gray-600 text-xs px-2 delay-100\">Last updated :\n            Feb 13th, 24</p>\n        </div>\n      </div>\n    </a>\n  </div>\n  <div class=\"h-full\"\n    style=\"visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0.1s, transform 0.5s cubic-bezier(0.5, 0, 0, 1) 0.1s;\">\n    <a href=\"/my-projects/shopno-dishari-web-site-desh-shera-1707682549723\">\n      <div\n        class=\"max-h-[200px] border border-gray-600 rounded relative group overflow-hidden hover:border-brand duration-200 hover:animat e-pulse peer\">\n        <div class=\"\"><img alt=\"Shopno Dishari Web Site desh shera\" loading=\"lazy\" width=\"500\" height=\"500\" decoding=\"async\" data-nimg=\"1\" class=\"w-full duration-200\" srcset=\"https://picsum.photos/200\" src=\"/_next/image?url=https%3A%2F%2Fpicsum.photos%2F400%2F250&amp;w=1080&amp;q=75\" style=\"color: transparent;\">\n        </div>\n        <div\n          class=\"absolute bg-gradient-to-b from-transparent to-black/100 w-full h-full px-1 py-2 top-0 left-0 flex  items-start justify-end flex-col group-hover:opacity-100 group-hover:visible opacity-0 invisible duration-200 overflow-y-auto scrollbar-none text-white\">\n          <h5 class=\"translate-y-28 group-hover:translate-y-0 duration-200 tracking-wide text-sm px-2 text-gray-200\">\n            Shopno Dishari Web Site desh shera</h5>\n          <p class=\"translate-y-28 group-hover:translate-y-0 duration-200 text-gray-600 text-xs px-2 delay-100\">Last updated :\n            Feb 12th, 24</p>\n        </div>\n      </div>\n    </a>\n  </div>\n  \n</div>"
+  }
+}

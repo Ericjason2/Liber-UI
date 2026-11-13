@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "no-distraction-search-field",
+  "type": "registry:ui",
+  "title": "No distraction search field",
+  "description": "No distraction search field - Créé par @ui-dev-amar sur TailwindFlex.",
+  "author": "@ui-dev-amar (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/no-distraction-search-field.tsx",
+      "content": "/**\n * Component: No distraction search field\n * Author: @ui-dev-amar (https://tailwindflex.com/@ui-dev-amar)\n * Source: https://tailwindflex.com/@ui-dev-amar/no-distraction-search-field\n * Attribution: Créé par @ui-dev-amar sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NoDistractionSearchField() {\n  return (\n    <div>\n    <div style=\"background(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1684487747385-442d674962f2) no-repeat center;background-size\"\r\n        className=\"py-52 px-1 md8 text-center relative text-white font-bold text-2xl md3xl overflow-auto\">\r\n        <h1 className=\"pb-4\">Search for product</h1>\r\n        <div className=\"w-11/12 md3/4 lg3xl m-auto\">\r\n            <div className=\"relative z-30 text-base text-black\"><input type=\"text\" value=\"\" placeholder=\"Keyword\" className=\"mt-2 shadow-md focus rounded-2xl py-3 px-6 block w-full\" />\r\n                <div\r\n                    className=\"text-left absolute top-10 rounded-t-none rounded-b-2xl shadow bg-white divide-y w-full max-h-40 overflow-auto\">\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ui-dev-amar",
+    "authorUrl": "https://tailwindflex.com/@ui-dev-amar",
+    "sourceUrl": "https://tailwindflex.com/@ui-dev-amar/no-distraction-search-field",
+    "mention": "Créé par @ui-dev-amar sur TailwindFlex",
+    "rawHtml": "<div style=\"background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1684487747385-442d674962f2) no-repeat center;background-size:cover\"\r\n    class=\"py-52 px-1 md:px-8 text-center relative text-white font-bold text-2xl md:text-3xl overflow-auto\">\r\n    <h1 class=\"pb-4\">Search for product</h1>\r\n    <div class=\"w-11/12 md:w-3/4 lg:max-w-3xl m-auto\">\r\n        <div class=\"relative z-30 text-base text-black\"><input type=\"text\" value=\"\" placeholder=\"Keyword\" class=\"mt-2 shadow-md focus:outline-none rounded-2xl py-3 px-6 block w-full\">\r\n            <div\r\n                class=\"text-left absolute top-10 rounded-t-none rounded-b-2xl shadow bg-white divide-y w-full max-h-40 overflow-auto\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "social-share",
+  "type": "registry:ui",
+  "title": "Social Share",
+  "description": "Social Share - Créé par @rajesh-maheshwari sur TailwindFlex.",
+  "author": "@rajesh-maheshwari (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/social-share.tsx",
+      "content": "/**\n * Component: Social Share\n * Author: @rajesh-maheshwari (https://tailwindflex.com/@rajesh-maheshwari)\n * Source: https://tailwindflex.com/@rajesh-maheshwari/social-share\n * Attribution: Créé par @rajesh-maheshwari sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SocialShare() {\n  return (\n    <div>\n    <section className=\"py-20 bg-gradient-to-b from-[#121212] to-purple-800 md20 lg20\">\n      <div className=\"container mx-auto px-4\">\n        <div className=\"text-center mb-12\">\n          <h2 className=\"text-3xl font-bold text-white mb-4 section-title\" data-aos=\"fade-down\">\n            Follow Our Journey\n          </h2>\n          <p className=\"text-gray-300 max-w-2xl mx-auto\" data-aos=\"fade-down\">\n            Discover our latest captures and behind-the-scenes moments on our\n            social media channels. Join our community of photography\n            enthusiasts!\n          </p>\n        </div>\n    \n        \n        <div className=\"flex flex-col sm justify-center items-center gap-6\" data-aos=\"fade-up\">\n          \n          <a\n            href=\"#\"\n            target=\"_blank\"\n            rel=\"noopener noreferrer\"\n            className=\"flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 px-8 rounded-full hover600 hover600 transition duration-900 ease-in-out shadow-lg hover\"\n          >\n            \n            <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"w-6 h-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n              <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M12 2a10 10 0 11-10 10 10 10 0 0110-10zm0 14a4 4 0 100-8 4 4 0 000 8zm4-8a4 4 0 10-8 0 4 4 0 008 0z\" />\n            </svg>\n            <span>Follow on Instagram</span>\n          </a>\n    \n          \n          <a\n            href=\"#\"\n            target=\"_blank\"\n            rel=\"noopener noreferrer\"\n            className=\"flex items-center justify-center gap-2 bg-gradient-to-r from-red-600 to-black text-white py-3 px-8 rounded-full hover hover600 transition duration-900 ease-in-out shadow-lg hover\"\n          >\n            \n            <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"w-6 h-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n              <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M10 12l-6 4V8l6 4zm8 0l-6 4V8l6 4z\" />\n            </svg>\n            <span>Subscribe on YouTube</span>\n          </a>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rajesh-maheshwari",
+    "authorUrl": "https://tailwindflex.com/@rajesh-maheshwari",
+    "sourceUrl": "https://tailwindflex.com/@rajesh-maheshwari/social-share",
+    "mention": "Créé par @rajesh-maheshwari sur TailwindFlex",
+    "rawHtml": "<section class=\"py-20 bg-gradient-to-b from-[#121212] to-purple-800 md:px-20 lg:px-20\">\n  <div class=\"container mx-auto px-4\">\n    <div class=\"text-center mb-12\">\n      <h2 class=\"text-3xl font-bold text-white mb-4 section-title\" data-aos=\"fade-down\">\n        Follow Our Journey\n      </h2>\n      <p class=\"text-gray-300 max-w-2xl mx-auto\" data-aos=\"fade-down\">\n        Discover our latest captures and behind-the-scenes moments on our\n        social media channels. Join our community of photography\n        enthusiasts!\n      </p>\n    </div>\n\n    <!-- Social Links Section -->\n    <div class=\"flex flex-col sm:flex-row justify-center items-center gap-6\" data-aos=\"fade-up\">\n      <!-- Instagram Link -->\n      <a\n        href=\"#\"\n        target=\"_blank\"\n        rel=\"noopener noreferrer\"\n        class=\"flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 px-8 rounded-full hover:from-pink-600 hover:to-purple-600 transition duration-900 ease-in-out shadow-lg hover:shadow-xl\"\n      >\n        <!-- Instagram Icon -->\n        <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-6 h-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 2a10 10 0 11-10 10 10 10 0 0110-10zm0 14a4 4 0 100-8 4 4 0 000 8zm4-8a4 4 0 10-8 0 4 4 0 008 0z\" />\n        </svg>\n        <span>Follow on Instagram</span>\n      </a>\n\n      <!-- YouTube Link -->\n      <a\n        href=\"#\"\n        target=\"_blank\"\n        rel=\"noopener noreferrer\"\n        class=\"flex items-center justify-center gap-2 bg-gradient-to-r from-red-600 to-black text-white py-3 px-8 rounded-full hover:from-black hover:to-red-600 transition duration-900 ease-in-out shadow-lg hover:shadow-xl\"\n      >\n        <!-- YouTube Icon -->\n        <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-6 h-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M10 12l-6 4V8l6 4zm8 0l-6 4V8l6 4z\" />\n        </svg>\n        <span>Subscribe on YouTube</span>\n      </a>\n    </div>\n  </div>\n</section>"
+  }
+}

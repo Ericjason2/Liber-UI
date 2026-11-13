@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "profile-card-7",
+  "type": "registry:ui",
+  "title": "Profile card",
+  "description": "Profile card - Créé par @tofayel-islam sur TailwindFlex.",
+  "author": "@tofayel-islam (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/profile-card-7.tsx",
+      "content": "/**\n * Component: Profile card\n * Author: @tofayel-islam (https://tailwindflex.com/@tofayel-islam)\n * Source: https://tailwindflex.com/@tofayel-islam/profile-card-7\n * Attribution: Créé par @tofayel-islam sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProfileCard7() {\n  return (\n    <div>\n    <div className=\"max-w-sm bg-white border border-gray-200 rounded-lg shadow dark800 dark700\">\n        <a href=\"#\">\n            <img className=\"rounded-t-lg\" src=\"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxwZXJzb258ZW58MHwwfHx8MTcxMDUxNjkwM3ww&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"\" />\n        </a>\n        <div className=\"p-5\">\n            <a href=\"#\">\n                <h5 className=\"mb-2 text-2xl font-bold tracking-tight text-gray-900 dark\">Noteworthy technology acquisitions 2021</h5>\n            </a>\n            <p className=\"mb-3 font-normal text-gray-700 dark400\">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>\n            <a href=\"#\" className=\"inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover800 focus4 focus focus300 dark600 dark700 dark800\">\n                Read more\n                 <svg className=\"rtl180 w-3.5 h-3.5 ms-2\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 14 10\">\n                    <path stroke=\"currentColor\" strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M1 5h12m0 0L9 1m4 4L9 9\"/>\n                </svg>\n            </a>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@tofayel-islam",
+    "authorUrl": "https://tailwindflex.com/@tofayel-islam",
+    "sourceUrl": "https://tailwindflex.com/@tofayel-islam/profile-card-7",
+    "mention": "Créé par @tofayel-islam sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700\">\n    <a href=\"#\">\n        <img class=\"rounded-t-lg\" src=\"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxwZXJzb258ZW58MHwwfHx8MTcxMDUxNjkwM3ww&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"\" />\n    </a>\n    <div class=\"p-5\">\n        <a href=\"#\">\n            <h5 class=\"mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white\">Noteworthy technology acquisitions 2021</h5>\n        </a>\n        <p class=\"mb-3 font-normal text-gray-700 dark:text-gray-400\">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>\n        <a href=\"#\" class=\"inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800\">\n            Read more\n             <svg class=\"rtl:rotate-180 w-3.5 h-3.5 ms-2\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 14 10\">\n                <path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M1 5h12m0 0L9 1m4 4L9 9\"/>\n            </svg>\n        </a>\n    </div>\n</div>"
+  }
+}

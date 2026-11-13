@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "navbar-2",
+  "type": "registry:ui",
+  "title": "Navbar",
+  "description": "Navbar - Créé par @Aman300 sur TailwindFlex.",
+  "author": "@Aman300 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/navbar-2.tsx",
+      "content": "/**\n * Component: Navbar\n * Author: @Aman300 (https://tailwindflex.com/@Aman300)\n * Source: https://tailwindflex.com/@Aman300/navbar-2\n * Attribution: Créé par @Aman300 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Navbar2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"grid xl:grid-cols-1 grid-cols-1\\\">\\n  <div class=\\\"p-5\\\">\\n    <div class=\\\"py-3 px-3 rounded-xl border w-full bg-green-900\\\">\\n      <div class=\\\"flex justify-between items-center\\\">\\n        <div class=\\\"flex justify-items-center items-center gap-2\\\">\\n          <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\" stroke-width=\\\"1.5\\\"\\n            stroke=\\\"currentColor\\\" class=\\\"w-6 h-6 text-white \\\">\\n            <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" d=\\\"M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12\\\" />\\n          </svg>\\n          <p class=\\\" font-semibold text-white\\\">LOGO</p>\\n          <div style=\\\"position: relative;\\\">\\n            <input class=\\\"rounded-3xl py-3 px-3 outline-none text-xs w-[350px] pr-10 hidden lg:block md:block\\\" placeholder=\\\"Search for Grocery, Stores, Vegetable, or Meat\\\">\\n            <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\" stroke-width=\\\"1.5\\\"\\n              stroke=\\\"currentColor\\\"\\n              class=\\\"w-5 h-5 text-green-900 absolute right-3 top-1/2 transform -translate-y-1/2 hidden lg:block md:block\\\">\\n              <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"\\n                d=\\\"m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z\\\" />\\n            </svg>\\n          </div>\\n\\n\\n        </div>\\n        <div class=\\\"flex justify-items-center items-center gap-2 \\\">\\n          <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"currentColor\\\"\\n            class=\\\"w-5 h-5 text-yellow-300 hidden lg:block md:block\\\">\\n            <path fill-rule=\\\"evenodd\\\"\\n              d=\\\"M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z\\\"\\n              clip-rule=\\\"evenodd\\\" />\\n          </svg>\\n\\n          <p class=\\\"text-sm text-white hidden lg:block md:block\\\">Order now and get it within\\n            <span class=\\\"text-yellow-300\\\">15 mint!</span></p>\\n          <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\" stroke-width=\\\"1.5\\\"\\n            stroke=\\\"currentColor\\\" class=\\\"w-8 h-8 text-white rounded-full ring-2 ring-white p-1 relative\\\">\\n            <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"\\n              d=\\\"M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z\\\" />\\n            <!-- <text x=\\\"13\\\" y=\\\"8\\\" class=\\\"text-xs text-yellow-300\\\">2</text> Adjust position as needed -->\\n          </svg>\\n\\n          <img class=\\\"inline-block w-8 h-8 rounded-full ring-2 ring-white\\\" src=\\\"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\\\" alt=\\\"\\\">\\n        </div>\\n      </div>\\n      </svg>\\n    </div>\\n  </div>\\n\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@Aman300",
+    "authorUrl": "https://tailwindflex.com/@Aman300",
+    "sourceUrl": "https://tailwindflex.com/@Aman300/navbar-2",
+    "mention": "Créé par @Aman300 sur TailwindFlex",
+    "rawHtml": "<div class=\"grid xl:grid-cols-1 grid-cols-1\">\n  <div class=\"p-5\">\n    <div class=\"py-3 px-3 rounded-xl border w-full bg-green-900\">\n      <div class=\"flex justify-between items-center\">\n        <div class=\"flex justify-items-center items-center gap-2\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\"\n            stroke=\"currentColor\" class=\"w-6 h-6 text-white \">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12\" />\n          </svg>\n          <p class=\" font-semibold text-white\">LOGO</p>\n          <div style=\"position: relative;\">\n            <input class=\"rounded-3xl py-3 px-3 outline-none text-xs w-[350px] pr-10 hidden lg:block md:block\" placeholder=\"Search for Grocery, Stores, Vegetable, or Meat\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\"\n              stroke=\"currentColor\"\n              class=\"w-5 h-5 text-green-900 absolute right-3 top-1/2 transform -translate-y-1/2 hidden lg:block md:block\">\n              <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                d=\"m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z\" />\n            </svg>\n          </div>\n\n\n        </div>\n        <div class=\"flex justify-items-center items-center gap-2 \">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"\n            class=\"w-5 h-5 text-yellow-300 hidden lg:block md:block\">\n            <path fill-rule=\"evenodd\"\n              d=\"M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z\"\n              clip-rule=\"evenodd\" />\n          </svg>\n\n          <p class=\"text-sm text-white hidden lg:block md:block\">Order now and get it within\n            <span class=\"text-yellow-300\">15 mint!</span></p>\n          <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\"\n            stroke=\"currentColor\" class=\"w-8 h-8 text-white rounded-full ring-2 ring-white p-1 relative\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n              d=\"M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z\" />\n            <!-- <text x=\"13\" y=\"8\" class=\"text-xs text-yellow-300\">2</text> Adjust position as needed -->\n          </svg>\n\n          <img class=\"inline-block w-8 h-8 rounded-full ring-2 ring-white\" src=\"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" alt=\"\">\n        </div>\n      </div>\n      </svg>\n    </div>\n  </div>\n\n</div>"
+  }
+}

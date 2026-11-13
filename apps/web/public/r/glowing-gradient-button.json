@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "glowing-gradient-button",
+  "type": "registry:ui",
+  "title": "Glowing gradient button",
+  "description": "Glowing gradient button - Créé par @entrptaher sur TailwindFlex.",
+  "author": "@entrptaher (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/glowing-gradient-button.tsx",
+      "content": "/**\n * Component: Glowing gradient button\n * Author: @entrptaher (https://tailwindflex.com/@entrptaher)\n * Source: https://tailwindflex.com/@entrptaher/glowing-gradient-button\n * Attribution: Créé par @entrptaher sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function GlowingGradientButton() {\n  return (\n    <div>\n    <div className=\"container max-w-full\">\r\n        <div className=\"h-screen bg-black flex flex-wrap content-center justify-evenly\">\r\n            <div className=\"relative inline-flex group\">\r\n                <div\r\n                    className=\"absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg group-hover100 group-hover1 group-hover200 animate-tilt\">\r\n                </div>\r\n                <a href=\"#\" title=\"Get quote now\"\r\n                    className=\"relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-purple-900 font-pj focus focus2 focus2 focus900\"\r\n                    role=\"button\"> Code Eating Ants\r\n                </a>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@entrptaher",
+    "authorUrl": "https://tailwindflex.com/@entrptaher",
+    "sourceUrl": "https://tailwindflex.com/@entrptaher/glowing-gradient-button",
+    "mention": "Créé par @entrptaher sur TailwindFlex",
+    "rawHtml": "<div class=\"container max-w-full\">\r\n    <div class=\"h-screen bg-black flex flex-wrap content-center justify-evenly\">\r\n        <div class=\"relative inline-flex group\">\r\n            <div\r\n                class=\"absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt\">\r\n            </div>\r\n            <a href=\"#\" title=\"Get quote now\"\r\n                class=\"relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-purple-900 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900\"\r\n                role=\"button\"> Code Eating Ants\r\n            </a>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

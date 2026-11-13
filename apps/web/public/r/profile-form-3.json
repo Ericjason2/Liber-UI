@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "profile-form-3",
+  "type": "registry:ui",
+  "title": "Profile Form",
+  "description": "Profile Form - Créé par @sammytg7 sur TailwindFlex.",
+  "author": "@sammytg7 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/profile-form-3.tsx",
+      "content": "/**\n * Component: Profile Form\n * Author: @sammytg7 (https://tailwindflex.com/@sammytg7)\n * Source: https://tailwindflex.com/@sammytg7/profile-form-3\n * Attribution: Créé par @sammytg7 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProfileForm3() {\n  return (\n    <div>\n    <div className=\"w-full h-screen flex items-center justify-center dark900\">\n        \n        <div\n            className=\"md[60%] sm[70%] xs[90%] mx-auto rounded-sm bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw5fHxjb3ZlcnxlbnwwfDB8fHwxNzExMTExMzEzfDA&ixlib=rb-4.0.3&q=80&w=1080')] bg-cover bg-center bg-no-repeat items-center\">\n            \n            <div\n                className=\"mx-auto flex justify-center w-[141px] h-[141px] rounded-full bg-[url('https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw3fHxwZW9wbGV8ZW58MHwwfHx8MTcxMTExMTM4N3ww&ixlib=rb-4.0.3&q=80&w=1080')] bg-cover bg-center bg-no-repeat\">\n    \n                <div className=\"bg-white rounded-full w-6 h-6 text-center ml-28 mt-4\">\n    \n                    <input type=\"file\" name=\"profile\" id=\"upload_profile\" hidden required />\n    \n                    <label htmlFor=\"upload_profile\" className=\"inline-flex items-center\">\n                                <svg data-slot=\"icon\" className=\"w-5 h-5 text-blue-700\" fill=\"none\" strokeWidth=\"1.5\"\n                                    stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"\n                                    aria-hidden=\"true\">\n                                    <path strokeLinecap=\"round\" strokeLinejoin=\"round\"\n                                        d=\"M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z\">\n                                    </path>\n                                    <path strokeLinecap=\"round\" strokeLinejoin=\"round\"\n                                        d=\"M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z\">\n                                    </path>\n                                </svg>\n                            </label>\n                </div>\n            </div>\n            <div className=\"flex justify-end\">\n                \n                <input type=\"file\" name=\"profile\" id=\"upload_cover\" hidden required />\n    \n                <div className=\"bg-white flex items-center gap-1 rounded-tl-md px-2 font-semibold\">\n                    <label htmlFor=\"upload_cover\" className=\"inline-flex gap-1 items-center cursor-pointer\">Cover\n                            \n                    <svg data-slot=\"icon\" className=\"w-5 h-5 text-blue-700\" fill=\"none\" strokeWidth=\"1.5\" stroke=\"currentColor\"\n                        viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\">\n                        <path strokeLinecap=\"round\" strokeLinejoin=\"round\"\n                            d=\"M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z\">\n                        </path>\n                        <path strokeLinecap=\"round\" strokeLinejoin=\"round\"\n                            d=\"M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z\">\n                        </path>\n                    </svg>\n                    </label>\n                </div>\n    \n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@sammytg7",
+    "authorUrl": "https://tailwindflex.com/@sammytg7",
+    "sourceUrl": "https://tailwindflex.com/@sammytg7/profile-form-3",
+    "mention": "Créé par @sammytg7 sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full h-screen flex items-center justify-center dark:bg-gray-900\">\n    <!-- Cover Image -->\n    <div\n        class=\"md:w-[60%] sm:w-[70%] xs:w-[90%] mx-auto rounded-sm bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw5fHxjb3ZlcnxlbnwwfDB8fHwxNzExMTExMzEzfDA&ixlib=rb-4.0.3&q=80&w=1080')] bg-cover bg-center bg-no-repeat items-center\">\n        <!-- Profile Image -->\n        <div\n            class=\"mx-auto flex justify-center w-[141px] h-[141px] rounded-full bg-[url('https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw3fHxwZW9wbGV8ZW58MHwwfHx8MTcxMTExMTM4N3ww&ixlib=rb-4.0.3&q=80&w=1080')] bg-cover bg-center bg-no-repeat\">\n\n            <div class=\"bg-white rounded-full w-6 h-6 text-center ml-28 mt-4\">\n\n                <input type=\"file\" name=\"profile\" id=\"upload_profile\" hidden required>\n\n                <label for=\"upload_profile\" class=\"inline-flex items-center\">\n                            <svg data-slot=\"icon\" class=\"w-5 h-5 text-blue-700\" fill=\"none\" stroke-width=\"1.5\"\n                                stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"\n                                aria-hidden=\"true\">\n                                <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                                    d=\"M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z\">\n                                </path>\n                                <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                                    d=\"M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z\">\n                                </path>\n                            </svg>\n                        </label>\n            </div>\n        </div>\n        <div class=\"flex justify-end\">\n            <!--  -->\n            <input type=\"file\" name=\"profile\" id=\"upload_cover\" hidden required>\n\n            <div class=\"bg-white flex items-center gap-1 rounded-tl-md px-2 font-semibold\">\n                <label for=\"upload_cover\" class=\"inline-flex gap-1 items-center cursor-pointer\">Cover\n                        \n                <svg data-slot=\"icon\" class=\"w-5 h-5 text-blue-700\" fill=\"none\" stroke-width=\"1.5\" stroke=\"currentColor\"\n                    viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                        d=\"M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z\">\n                    </path>\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                        d=\"M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z\">\n                    </path>\n                </svg>\n                </label>\n            </div>\n\n        </div>\n    </div>\n</div>"
+  }
+}

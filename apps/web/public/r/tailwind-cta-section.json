@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwind-cta-section",
+  "type": "registry:ui",
+  "title": "Tailwind CTA section",
+  "description": "Tailwind CTA section - Créé par @moriba1 sur TailwindFlex.",
+  "author": "@moriba1 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tailwind-cta-section.tsx",
+      "content": "/**\n * Component: Tailwind CTA section\n * Author: @moriba1 (https://tailwindflex.com/@moriba1)\n * Source: https://tailwindflex.com/@moriba1/tailwind-cta-section\n * Attribution: Créé par @moriba1 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TailwindCtaSection() {\n  return (\n    <div>\n    <div className=\"bg-gray-900 text-white py-20\">\r\n        <div className=\"max-w-6xl mx-auto px-4 sm6 lg8\">\r\n            <div className=\"flex flex-col gap-8 lg items-center\">\r\n                <div className=\"lg1/2\">\r\n                    <h1 className=\"text-4xl font-bold leading-tight mb-4\">Welcome to Tailwind CSS!</h1>\r\n                    <p className=\"text-xl mb-8\">Tailwind CSS is a utility-first CSS framework for rapidly building custom user\r\n                        interfaces.</p>\r\n                    <a href=\"#\"\r\n                        className=\"bg-white text-gray-900 py-3 px-6 rounded-lg shadow-lg hover transition duration-200\">Get\r\n                        started\r\n                    </a>\r\n                </div>\r\n                <div className=\"lg1/2 lg12\">\r\n                    <img src=\"https://cdn.pixabay.com/photo/2016/09/21/11/31/youtube-1684601_960_720.png\" alt=\"Tailwind CSS\" className=\"rounded-lg shadow-lg hover transition duration-200\" />\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@moriba1",
+    "authorUrl": "https://tailwindflex.com/@moriba1",
+    "sourceUrl": "https://tailwindflex.com/@moriba1/tailwind-cta-section",
+    "mention": "Créé par @moriba1 sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-900 text-white py-20\">\r\n    <div class=\"max-w-6xl mx-auto px-4 sm:px-6 lg:px-8\">\r\n        <div class=\"flex flex-col gap-8 lg:flex-row items-center\">\r\n            <div class=\"lg:w-1/2\">\r\n                <h1 class=\"text-4xl font-bold leading-tight mb-4\">Welcome to Tailwind CSS!</h1>\r\n                <p class=\"text-xl mb-8\">Tailwind CSS is a utility-first CSS framework for rapidly building custom user\r\n                    interfaces.</p>\r\n                <a href=\"#\"\r\n                    class=\"bg-white text-gray-900 py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition duration-200\">Get\r\n                    started\r\n                </a>\r\n            </div>\r\n            <div class=\"lg:w-1/2 lg:ml-12\">\r\n                <img src=\"https://cdn.pixabay.com/photo/2016/09/21/11/31/youtube-1684601_960_720.png\" alt=\"Tailwind CSS\" class=\"rounded-lg shadow-lg hover:shadow-xl transition duration-200\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

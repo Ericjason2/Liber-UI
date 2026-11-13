@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "product-page-4",
+  "type": "registry:ui",
+  "title": "Product Page",
+  "description": "Product Page - Créé par @muhamadrofii sur TailwindFlex.",
+  "author": "@muhamadrofii (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/product-page-4.tsx",
+      "content": "/**\n * Component: Product Page\n * Author: @muhamadrofii (https://tailwindflex.com/@muhamadrofii)\n * Source: https://tailwindflex.com/@muhamadrofii/product-page-4\n * Attribution: Créé par @muhamadrofii sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProductPage4() {\n  return (\n    <div>\n    <main className=\"dark800 bg-white relative overflow-hidden h-screen\">\n        <header className=\"h-24 sm32 flex items-center z-30 w-full\">\n            <div className=\"container mx-auto px-6 flex items-center justify-between\">\n                <div className=\"uppercase text-gray-800 dark font-black text-3xl\">\n                    Watch.ME\n                </div>\n                <div className=\"flex items-center\">\n                    <nav className=\"font-sen text-gray-800 dark uppercase text-lg lg items-center hidden\">\n                        <a href=\"#\" className=\"py-2 px-6 flex\">\n                            Home\n                        </a>\n                        <a href=\"#\" className=\"py-2 px-6 flex\">\n                            Watch\n                        </a>\n                        <a href=\"#\" className=\"py-2 px-6 flex\">\n                            Product\n                        </a>\n                        <a href=\"#\" className=\"py-2 px-6 flex\">\n                            Contact\n                        </a>\n                        <a href=\"#\" className=\"py-2 px-6 flex\">\n                            Carrer\n                        </a>\n                    </nav>\n                    <button className=\"lg flex flex-col ml-4\">\n                        <span className=\"w-6 h-1 bg-gray-800 dark mb-1\">\n                        </span>\n                        <span className=\"w-6 h-1 bg-gray-800 dark mb-1\">\n                        </span>\n                        <span className=\"w-6 h-1 bg-gray-800 dark mb-1\">\n                        </span>\n                    </button>\n                </div>\n            </div>\n        </header>\n        <div className=\"bg-white dark800 flex relative z-20 items-center overflow-hidden\">\n            <div className=\"container mx-auto px-6 flex relative py-16\">\n                <div className=\"sm2/3 lg2/5 flex flex-col relative z-20\">\n                    <span className=\"w-20 h-2 bg-gray-800 dark mb-12\">\n                    </span>\n                    <h1\n                        className=\"font-bebas-neue uppercase text-6xl sm8xl font-black flex flex-col leading-none dark text-gray-800\">\n                        Be on\n                        <span className=\"text-5xl sm7xl\">\n                            Time\n                        </span>\n                    </h1>\n                    <p className=\"text-sm sm text-gray-700 dark\">\n                        Dimension of reality that makes change possible and understandable. An indefinite and homogeneous\n                        environment in which natural events and human existence take place.\n                    </p>\n                    <div className=\"flex mt-8\">\n                        <a href=\"#\"\n                            className=\"uppercase py-2 px-4 rounded-lg bg-pink-500 border-2 border-transparent text-white text-md mr-4 hover400\">\n                            Get started\n                        </a>\n                        <a href=\"#\"\n                            className=\"uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-pink-500 text-pink-500 dark hover500 hover text-md\">\n                            Read more\n                        </a>\n                    </div>\n                </div>\n                <div className=\"hidden sm sm1/3 lg3/5 relative\">\n                    <img src=\"https://www.tailwind-kit.com/images/object/10.png\" className=\"max-w-xs md m-auto\"/>\n                </div>\n            </div>\n        </div>\n    </main>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@muhamadrofii",
+    "authorUrl": "https://tailwindflex.com/@muhamadrofii",
+    "sourceUrl": "https://tailwindflex.com/@muhamadrofii/product-page-4",
+    "mention": "Créé par @muhamadrofii sur TailwindFlex",
+    "rawHtml": "<main class=\"dark:bg-gray-800 bg-white relative overflow-hidden h-screen\">\n    <header class=\"h-24 sm:h-32 flex items-center z-30 w-full\">\n        <div class=\"container mx-auto px-6 flex items-center justify-between\">\n            <div class=\"uppercase text-gray-800 dark:text-white font-black text-3xl\">\n                Watch.ME\n            </div>\n            <div class=\"flex items-center\">\n                <nav class=\"font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden\">\n                    <a href=\"#\" class=\"py-2 px-6 flex\">\n                        Home\n                    </a>\n                    <a href=\"#\" class=\"py-2 px-6 flex\">\n                        Watch\n                    </a>\n                    <a href=\"#\" class=\"py-2 px-6 flex\">\n                        Product\n                    </a>\n                    <a href=\"#\" class=\"py-2 px-6 flex\">\n                        Contact\n                    </a>\n                    <a href=\"#\" class=\"py-2 px-6 flex\">\n                        Carrer\n                    </a>\n                </nav>\n                <button class=\"lg:hidden flex flex-col ml-4\">\n                    <span class=\"w-6 h-1 bg-gray-800 dark:bg-white mb-1\">\n                    </span>\n                    <span class=\"w-6 h-1 bg-gray-800 dark:bg-white mb-1\">\n                    </span>\n                    <span class=\"w-6 h-1 bg-gray-800 dark:bg-white mb-1\">\n                    </span>\n                </button>\n            </div>\n        </div>\n    </header>\n    <div class=\"bg-white dark:bg-gray-800 flex relative z-20 items-center overflow-hidden\">\n        <div class=\"container mx-auto px-6 flex relative py-16\">\n            <div class=\"sm:w-2/3 lg:w-2/5 flex flex-col relative z-20\">\n                <span class=\"w-20 h-2 bg-gray-800 dark:bg-white mb-12\">\n                </span>\n                <h1\n                    class=\"font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none dark:text-white text-gray-800\">\n                    Be on\n                    <span class=\"text-5xl sm:text-7xl\">\n                        Time\n                    </span>\n                </h1>\n                <p class=\"text-sm sm:text-base text-gray-700 dark:text-white\">\n                    Dimension of reality that makes change possible and understandable. An indefinite and homogeneous\n                    environment in which natural events and human existence take place.\n                </p>\n                <div class=\"flex mt-8\">\n                    <a href=\"#\"\n                        class=\"uppercase py-2 px-4 rounded-lg bg-pink-500 border-2 border-transparent text-white text-md mr-4 hover:bg-pink-400\">\n                        Get started\n                    </a>\n                    <a href=\"#\"\n                        class=\"uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-pink-500 text-pink-500 dark:text-white hover:bg-pink-500 hover:text-white text-md\">\n                        Read more\n                    </a>\n                </div>\n            </div>\n            <div class=\"hidden sm:block sm:w-1/3 lg:w-3/5 relative\">\n                <img src=\"https://www.tailwind-kit.com/images/object/10.png\" class=\"max-w-xs md:max-w-sm m-auto\"/>\n            </div>\n        </div>\n    </div>\n</main>"
+  }
+}

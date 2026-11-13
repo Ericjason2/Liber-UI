@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "buttons-examples",
+  "type": "registry:ui",
+  "title": "Buttons examples",
+  "description": "Buttons examples - Créé par @manuela-bianka sur TailwindFlex.",
+  "author": "@manuela-bianka (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/buttons-examples.tsx",
+      "content": "/**\n * Component: Buttons examples\n * Author: @manuela-bianka (https://tailwindflex.com/@manuela-bianka)\n * Source: https://tailwindflex.com/@manuela-bianka/buttons-examples\n * Attribution: Créé par @manuela-bianka sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonsExamples() {\n  return (\n    <div>\n    <div className=\"w-screen h-screen flex items-center justify-center bg-gray-100\">\r\n        <div className=\"w-full mx-auto py-16\">\r\n    \r\n            <div className=\"bg-white px-6 py-4 my-3 w-3/4 mx-auto shadow rounded-md flex items-center\">\r\n                <div className=\"w-full text-center mx-auto\">\r\n                    <button\r\n    \t\t\t\t\tclassName=\"border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover600 focus focus\">\r\n    \t\t\t\t\tPrimary\r\n    \t\t\t\t</button>\r\n                    <button\r\n    \t\t\t\t\tclassName=\"border border-green-500 bg-green-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover600 focus focus\">\r\n    \t\t\t\t\tSuccess\r\n    \t\t\t\t</button>\r\n                    <button\r\n    \t\t\t\t\tclassName=\"border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover600 focus focus\">\r\n    \t\t\t\t\tError\r\n    \t\t\t\t</button>\r\n                    <button\r\n    \t\t\t\t\tclassName=\"border border-yellow-500 bg-yellow-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover600 focus focus\">\r\n    \t\t\t\t\tWarning\r\n    \t\t\t\t</button>\r\n                    <button\r\n    \t\t\t\t\tclassName=\"border border-teal-500 bg-teal-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover600 focus focus\">\r\n    \t\t\t\t\tInfo\r\n    \t\t\t\t</button>\r\n                    <button\r\n    \t\t\t\t\tclassName=\"border border-gray-700 bg-gray-700 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover800 focus focus\">\r\n    \t\t\t\t\tDark\r\n    \t\t\t\t</button>\r\n                    <button\r\n    \t\t\t\t\tclassName=\"border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover300 focus focus\">\r\n    \t\t\t\t\tLight\r\n    \t\t\t\t</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@manuela-bianka",
+    "authorUrl": "https://tailwindflex.com/@manuela-bianka",
+    "sourceUrl": "https://tailwindflex.com/@manuela-bianka/buttons-examples",
+    "mention": "Créé par @manuela-bianka sur TailwindFlex",
+    "rawHtml": "<div class=\"w-screen h-screen flex items-center justify-center bg-gray-100\">\r\n    <div class=\"w-full mx-auto py-16\">\r\n\r\n        <div class=\"bg-white px-6 py-4 my-3 w-3/4 mx-auto shadow rounded-md flex items-center\">\r\n            <div class=\"w-full text-center mx-auto\">\r\n                <button\r\n\t\t\t\t\tclass=\"border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline\">\r\n\t\t\t\t\tPrimary\r\n\t\t\t\t</button>\r\n                <button\r\n\t\t\t\t\tclass=\"border border-green-500 bg-green-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-green-600 focus:outline-none focus:shadow-outline\">\r\n\t\t\t\t\tSuccess\r\n\t\t\t\t</button>\r\n                <button\r\n\t\t\t\t\tclass=\"border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline\">\r\n\t\t\t\t\tError\r\n\t\t\t\t</button>\r\n                <button\r\n\t\t\t\t\tclass=\"border border-yellow-500 bg-yellow-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-yellow-600 focus:outline-none focus:shadow-outline\">\r\n\t\t\t\t\tWarning\r\n\t\t\t\t</button>\r\n                <button\r\n\t\t\t\t\tclass=\"border border-teal-500 bg-teal-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-teal-600 focus:outline-none focus:shadow-outline\">\r\n\t\t\t\t\tInfo\r\n\t\t\t\t</button>\r\n                <button\r\n\t\t\t\t\tclass=\"border border-gray-700 bg-gray-700 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline\">\r\n\t\t\t\t\tDark\r\n\t\t\t\t</button>\r\n                <button\r\n\t\t\t\t\tclass=\"border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline\">\r\n\t\t\t\t\tLight\r\n\t\t\t\t</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

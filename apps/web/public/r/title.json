@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "title",
+  "type": "registry:ui",
+  "title": "Title",
+  "description": "Title - Créé par @morris-muriuki-muthigani sur TailwindFlex.",
+  "author": "@morris-muriuki-muthigani (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/title.tsx",
+      "content": "/**\n * Component: Title\n * Author: @morris-muriuki-muthigani (https://tailwindflex.com/@morris-muriuki-muthigani)\n * Source: https://tailwindflex.com/@morris-muriuki-muthigani/title\n * Attribution: Créé par @morris-muriuki-muthigani sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Title() {\n  return (\n    <div>\n    <div className=\"py-12 bg-white\">\n      <h1 className=\"text-center text-3xl font-semibold capitalize text-gray-900 lg4xl\">Get a quote</h1>\n      <div className=\"mx-auto mt-6 flex justify-center\">\n        <span className=\"inline-block h-1 w-1 rounded-full bg-red-700\"></span><span className=\"mx-1 inline-block h-1 w-3 rounded-full bg-red-700\"></span><span className=\"inline-block h-1 w-40 rounded-full bg-red-700\"></span><span className=\"mx-1 inline-block h-1 w-3 rounded-full bg-red-700\"></span><span className=\"inline-block h-1 w-1 rounded-full bg-red-700\"></span>\n      </div>\n      <h1 className=\"text-center text-2xl font-base capitalize text-gray-500 lg2xl mt-6\">\n        <span className=\"block xl\">Get Custom Pricing</span></h1>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@morris-muriuki-muthigani",
+    "authorUrl": "https://tailwindflex.com/@morris-muriuki-muthigani",
+    "sourceUrl": "https://tailwindflex.com/@morris-muriuki-muthigani/title",
+    "mention": "Créé par @morris-muriuki-muthigani sur TailwindFlex",
+    "rawHtml": "<div class=\"py-12 bg-white\">\n  <h1 class=\"text-center text-3xl font-semibold capitalize text-gray-900 lg:text-4xl\">Get a quote</h1>\n  <div class=\"mx-auto mt-6 flex justify-center\">\n    <span class=\"inline-block h-1 w-1 rounded-full bg-red-700\"></span><span class=\"mx-1 inline-block h-1 w-3 rounded-full bg-red-700\"></span><span class=\"inline-block h-1 w-40 rounded-full bg-red-700\"></span><span class=\"mx-1 inline-block h-1 w-3 rounded-full bg-red-700\"></span><span class=\"inline-block h-1 w-1 rounded-full bg-red-700\"></span>\n  </div>\n  <h1 class=\"text-center text-2xl font-base capitalize text-gray-500 lg:text-2xl mt-6\">\n    <span class=\"block xl:inline\">Get Custom Pricing</span></h1>\n</div>"
+  }
+}

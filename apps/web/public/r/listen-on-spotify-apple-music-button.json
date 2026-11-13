@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "listen-on-spotify-apple-music-button",
+  "type": "registry:ui",
+  "title": "Listen on Spotify/Apple Music Button",
+  "description": "Listen on Spotify/Apple Music Button - Créé par @patricio-garciars sur TailwindFlex.",
+  "author": "@patricio-garciars (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/listen-on-spotify-apple-music-button.tsx",
+      "content": "/**\n * Component: Listen on Spotify/Apple Music Button\n * Author: @patricio-garciars (https://tailwindflex.com/@patricio-garciars)\n * Source: https://tailwindflex.com/@patricio-garciars/listen-on-spotify-apple-music-button\n * Attribution: Créé par @patricio-garciars sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ListenOnSpotifyAppleMusicButton() {\n  return (\n    <div>\n    <div className=\"mt-8 flex flex-col md items-center justify-center\">\n    \t<a href=\"#\">\n    \t\t<button type=\"button\" className=\"text-white hover500 relative text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2 w-[13rem] md[15rem] overflow-hidden bg-black shadow-2xl transition-all before before0 before0 before0 before0 before before0 before before before500 hover hover0 hover rounded-lg\">\n    \t\t\t<span className=\"text-center inline-flex items-center z-10\">\n    \t\t\t\t<svg width=\"40px\" height=\"40px\" viewBox=\"0 0 48 48\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns>    \n    \t\t\t\t\t<title>Spotify-color</title>\n    \t\t\t\t\t<desc>Created with Sketch.</desc>\n    \t\t\t\t\t<defs>\n    \t\t\t\t\t</defs>\n    \t\t\t\t\t<g id=\"Icons\" stroke=\"none\" strokeWidth=\"1\" fill=\"none\" fillRule=\"evenodd\">\n    \t\t\t\t\t\t<g id=\"Color-\" transform=\"translate(-200.000000, -460.000000)\" fill=\"#00DA5A\">\n    \t\t\t\t\t\t\t<path d=\"M238.16,481.36 C230.48,476.8 217.64,476.32 210.32,478.6 C209.12,478.96 207.92,478.24 207.56,477.16 C207.2,475.96 207.92,474.76 209,474.4 C217.52,471.88 231.56,472.36 240.44,477.64 C241.52,478.24 241.88,479.68 241.28,480.76 C240.68,481.6 239.24,481.96 238.16,481.36 M237.92,488.08 C237.32,488.92 236.24,489.28 235.4,488.68 C228.92,484.72 219.08,483.52 211.52,485.92 C210.56,486.16 209.48,485.68 209.24,484.72 C209,483.76 209.48,482.68 210.44,482.44 C219.2,479.8 230,481.12 237.44,485.68 C238.16,486.04 238.52,487.24 237.92,488.08 M235.04,494.68 C234.56,495.4 233.72,495.64 233,495.16 C227.36,491.68 220.28,490.96 211.88,492.88 C211.04,493.12 210.32,492.52 210.08,491.8 C209.84,490.96 210.44,490.24 211.16,490 C220.28,487.96 228.2,488.8 234.44,492.64 C235.28,493 235.4,493.96 235.04,494.68 M224,460 C210.8,460 200,470.8 200,484 C200,497.2 210.8,508 224,508 C237.2,508 248,497.2 248,484 C248,470.8 237.32,460 224,460\" id=\"Spotify\">\n    \t\t\t\t\t\t\t</path>\n    \t\t\t\t\t\t</g>\n    \t\t\t\t\t</g>\n    \t\t\t\t</svg>\n    \t\t\t\t<p className=\"ps-4 text-left\">\n    \t\t\t\t\t<span className=\"text-sm font-light\">Escuchala en</span><br /><span className=\"text-lg\">Spotify</span>\n    \t\t\t\t</p>\n    \t\t\t</span>\n    \t\t</button>\n    \t</a>\n    \t<a href=\"#\">\t\t\t\t\t\t\t\n    \t\t<button className=\"text-white hover500 relative text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2 w-[13rem] md[15rem] overflow-hidden bg-black shadow-2xl transition-all before before0 before0 before0 before0 before before0 before before before500 hover hover0 hover rounded-lg\">\n    \t\t\t<span className=\"text-center inline-flex items-center z-10\">\n    \t\t\t\t<svg width=\"40px\" height=\"40px\" xmlns=\"http://www.w3.org/2000/svg\" aria-label=\"Apple Music\" role=\"img\" viewBox=\"0 0 512 512\">\n    \t\t\t\t\t<rect width=\"512\" height=\"512\" rx=\"15%\" fill=\"url(#g)\"/><linearGradient id=\"g\" x1=\".5\" y1=\".99\" x2=\".5\" y2=\".02\"><stop offset=\"0\" stopColor=\"#FA233B\"/><stop offset=\"1\" stopColor=\"#FB5C74\"/></linearGradient><path fill=\"#ffffff\" d=\"M199 359V199q0-9 10-11l138-28q11-2 12 10v122q0 15-45 20c-57 9-48 105 30 79 30-11 35-40 35-69V88s0-20-17-15l-170 35s-13 2-13 18v203q0 15-45 20c-57 9-48 105 30 79 30-11 35-40 35-69\"/>\n    \t\t\t\t</svg>\n    \t\t\t\t<p className=\"ps-4 text-left\">\n    \t\t\t\t\t<span className=\"text-sm font-light\">Escuchala en</span><br /><span className=\"text-lg\">Apple Music</span>\n    \t\t\t\t</p>\n    \t\t\t</span>\n    \t\t</button>\n    \t</a>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@patricio-garciars",
+    "authorUrl": "https://tailwindflex.com/@patricio-garciars",
+    "sourceUrl": "https://tailwindflex.com/@patricio-garciars/listen-on-spotify-apple-music-button",
+    "mention": "Créé par @patricio-garciars sur TailwindFlex",
+    "rawHtml": "<div class=\"mt-8 flex flex-col md:flex-row items-center justify-center\">\n\t<a href=\"#\">\n\t\t<button type=\"button\" class=\"text-white hover:before:bg-redborder-red-500 relative text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2 w-[13rem] md:w-[15rem] overflow-hidden bg-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:text-black hover:before:left-0 hover:before:w-full rounded-lg\">\n\t\t\t<span class=\"text-center inline-flex items-center z-10\">\n\t\t\t\t<svg width=\"40px\" height=\"40px\" viewBox=\"0 0 48 48\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">    \n\t\t\t\t\t<title>Spotify-color</title>\n\t\t\t\t\t<desc>Created with Sketch.</desc>\n\t\t\t\t\t<defs>\n\t\t\t\t\t</defs>\n\t\t\t\t\t<g id=\"Icons\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n\t\t\t\t\t\t<g id=\"Color-\" transform=\"translate(-200.000000, -460.000000)\" fill=\"#00DA5A\">\n\t\t\t\t\t\t\t<path d=\"M238.16,481.36 C230.48,476.8 217.64,476.32 210.32,478.6 C209.12,478.96 207.92,478.24 207.56,477.16 C207.2,475.96 207.92,474.76 209,474.4 C217.52,471.88 231.56,472.36 240.44,477.64 C241.52,478.24 241.88,479.68 241.28,480.76 C240.68,481.6 239.24,481.96 238.16,481.36 M237.92,488.08 C237.32,488.92 236.24,489.28 235.4,488.68 C228.92,484.72 219.08,483.52 211.52,485.92 C210.56,486.16 209.48,485.68 209.24,484.72 C209,483.76 209.48,482.68 210.44,482.44 C219.2,479.8 230,481.12 237.44,485.68 C238.16,486.04 238.52,487.24 237.92,488.08 M235.04,494.68 C234.56,495.4 233.72,495.64 233,495.16 C227.36,491.68 220.28,490.96 211.88,492.88 C211.04,493.12 210.32,492.52 210.08,491.8 C209.84,490.96 210.44,490.24 211.16,490 C220.28,487.96 228.2,488.8 234.44,492.64 C235.28,493 235.4,493.96 235.04,494.68 M224,460 C210.8,460 200,470.8 200,484 C200,497.2 210.8,508 224,508 C237.2,508 248,497.2 248,484 C248,470.8 237.32,460 224,460\" id=\"Spotify\">\n\t\t\t\t\t\t\t</path>\n\t\t\t\t\t\t</g>\n\t\t\t\t\t</g>\n\t\t\t\t</svg>\n\t\t\t\t<p class=\"ps-4 text-left\">\n\t\t\t\t\t<span class=\"text-sm font-light\">Escuchala en</span><br><span class=\"text-lg\">Spotify</span>\n\t\t\t\t</p>\n\t\t\t</span>\n\t\t</button>\n\t</a>\n\t<a href=\"#\">\t\t\t\t\t\t\t\n\t\t<button class=\"text-white hover:before:bg-redborder-red-500 relative text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2 w-[13rem] md:w-[15rem] overflow-hidden bg-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:text-black hover:before:left-0 hover:before:w-full rounded-lg\">\n\t\t\t<span class=\"text-center inline-flex items-center z-10\">\n\t\t\t\t<svg width=\"40px\" height=\"40px\" xmlns=\"http://www.w3.org/2000/svg\" aria-label=\"Apple Music\" role=\"img\" viewBox=\"0 0 512 512\">\n\t\t\t\t\t<rect width=\"512\" height=\"512\" rx=\"15%\" fill=\"url(#g)\"/><linearGradient id=\"g\" x1=\".5\" y1=\".99\" x2=\".5\" y2=\".02\"><stop offset=\"0\" stop-color=\"#FA233B\"/><stop offset=\"1\" stop-color=\"#FB5C74\"/></linearGradient><path fill=\"#ffffff\" d=\"M199 359V199q0-9 10-11l138-28q11-2 12 10v122q0 15-45 20c-57 9-48 105 30 79 30-11 35-40 35-69V88s0-20-17-15l-170 35s-13 2-13 18v203q0 15-45 20c-57 9-48 105 30 79 30-11 35-40 35-69\"/>\n\t\t\t\t</svg>\n\t\t\t\t<p class=\"ps-4 text-left\">\n\t\t\t\t\t<span class=\"text-sm font-light\">Escuchala en</span><br><span class=\"text-lg\">Apple Music</span>\n\t\t\t\t</p>\n\t\t\t</span>\n\t\t</button>\n\t</a>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "an-off-line-game-of-catching-afox",
+  "type": "registry:ui",
+  "title": "an  off line game of catching afox",
+  "description": "an  off line game of catching afox - Créé par @bonheur-developer1 sur TailwindFlex.",
+  "author": "@bonheur-developer1 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/an-off-line-game-of-catching-afox.tsx",
+      "content": "/**\n * Component: an  off line game of catching afox\n * Author: @bonheur-developer1 (https://tailwindflex.com/@bonheur-developer1)\n * Source: https://tailwindflex.com/@bonheur-developer1/an-off-line-game-of-catching-afox\n * Attribution: Créé par @bonheur-developer1 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AnOffLineGameOfCatchingAfox() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"/>\\n  <title>Catch the Fox Game</title>\\n  \\n  <style>\\n    .fox {\\n      position: absolute;\\n      font-size: 2rem;\\n      cursor: pointer;\\n      transition: transform 0.2s ease;\\n    }\\n    .fox:active {\\n      transform: scale(1.2);\\n    }\\n  </style>\\n</head>\\n<body class=\\\"bg-green-100 flex flex-col items-center justify-center min-h-screen text-center px-4\\\">\\n\\n  <h1 class=\\\"text-3xl font-bold mb-4 text-orange-600\\\">🦊 Catch the Fox!</h1>\\n  <p class=\\\"mb-2 text-lg\\\">Click the fox as many times as you can in <span id=\\\"time\\\" class=\\\"font-bold\\\">15</span> seconds!</p>\\n  <p class=\\\"mb-6 text-xl\\\">Score: <span id=\\\"score\\\" class=\\\"font-bold text-blue-600\\\">0</span></p>\\n\\n  <div id=\\\"gameArea\\\" class=\\\"relative w-[300px] h-[300px] bg-white rounded-lg shadow-lg overflow-hidden\\\">\\n    <div id=\\\"fox\\\" class=\\\"fox\\\">🦊</div>\\n  </div>\\n\\n  <button class=\\\"mt-6 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600\\\">\\n    Start Game\\n  </button>\\n\\n  \\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@bonheur-developer1",
+    "authorUrl": "https://tailwindflex.com/@bonheur-developer1",
+    "sourceUrl": "https://tailwindflex.com/@bonheur-developer1/an-off-line-game-of-catching-afox",
+    "mention": "Créé par @bonheur-developer1 sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n  <title>Catch the Fox Game</title>\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n  <style>\n    .fox {\n      position: absolute;\n      font-size: 2rem;\n      cursor: pointer;\n      transition: transform 0.2s ease;\n    }\n    .fox:active {\n      transform: scale(1.2);\n    }\n  </style>\n</head>\n<body class=\"bg-green-100 flex flex-col items-center justify-center min-h-screen text-center px-4\">\n\n  <h1 class=\"text-3xl font-bold mb-4 text-orange-600\">🦊 Catch the Fox!</h1>\n  <p class=\"mb-2 text-lg\">Click the fox as many times as you can in <span id=\"time\" class=\"font-bold\">15</span> seconds!</p>\n  <p class=\"mb-6 text-xl\">Score: <span id=\"score\" class=\"font-bold text-blue-600\">0</span></p>\n\n  <div id=\"gameArea\" class=\"relative w-[300px] h-[300px] bg-white rounded-lg shadow-lg overflow-hidden\">\n    <div id=\"fox\" class=\"fox\">🦊</div>\n  </div>\n\n  <button onclick=\"startGame()\" class=\"mt-6 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600\">\n    Start Game\n  </button>\n\n  <script>\n    const fox = document.getElementById('fox');\n    const scoreDisplay = document.getElementById('score');\n    const timeDisplay = document.getElementById('time');\n    const gameArea = document.getElementById('gameArea');\n\n    let score = 0;\n    let timeLeft = 15;\n    let gameInterval = null;\n    let moveInterval = null;\n\n    function randomPosition() {\n      const maxX = gameArea.clientWidth - 40;\n      const maxY = gameArea.clientHeight - 40;\n      const x = Math.floor(Math.random() * maxX);\n      const y = Math.floor(Math.random() * maxY);\n      fox.style.left = `${x}px`;\n      fox.style.top = `${y}px`;\n    }\n\n    function startGame() {\n      score = 0;\n      timeLeft = 15;\n      scoreDisplay.textContent = score;\n      timeDisplay.textContent = timeLeft;\n      randomPosition();\n\n      fox.onclick = () => {\n        score++;\n        scoreDisplay.textContent = score;\n        randomPosition();\n      };\n\n      gameInterval = setInterval(() => {\n        timeLeft--;\n        timeDisplay.textContent = timeLeft;\n        if (timeLeft <= 0) {\n          clearInterval(gameInterval);\n          clearInterval(moveInterval);\n          fox.style.display = 'none';\n          alert(`Time's up! You scored ${score} points.`);\n        }\n      }, 1000);\n\n      moveInterval = setInterval(randomPosition, 800);\n      fox.style.display = 'block';\n    }\n  </script>\n</body>\n</html>"
+  }
+}

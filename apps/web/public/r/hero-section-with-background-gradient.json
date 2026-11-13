@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-with-background-gradient",
+  "type": "registry:ui",
+  "title": "Hero section with background gradient",
+  "description": "Hero section with background gradient - Créé par @freja-jensen sur TailwindFlex.",
+  "author": "@freja-jensen (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-with-background-gradient.tsx",
+      "content": "/**\n * Component: Hero section with background gradient\n * Author: @freja-jensen (https://tailwindflex.com/@freja-jensen)\n * Source: https://tailwindflex.com/@freja-jensen/hero-section-with-background-gradient\n * Attribution: Créé par @freja-jensen sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSectionWithBackgroundGradient() {\n  return (\n    <div>\n    <section className=\"bg-gradient-to-br from-purple-500 to-pink-500 py-16 md32\">\n        <div className=\"container mx-auto px-4 md8 text-center\">\n            <h1 className=\"text-white font-bold text-4xl md6xl leading-tight mb-6\">Welcome to our <br />Colorful World</h1>\n            <p className=\"text-white text-lg md2xl mb-12\">Experience the magic of colors with our unique products and\n                services.</p>\n            <a href=\"#\"\n                className=\"bg-white text-purple-500 font-bold py-2 px-8 rounded-full hover500 hover transition duration-200\">Shop\n                Now</a>\n        </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@freja-jensen",
+    "authorUrl": "https://tailwindflex.com/@freja-jensen",
+    "sourceUrl": "https://tailwindflex.com/@freja-jensen/hero-section-with-background-gradient",
+    "mention": "Créé par @freja-jensen sur TailwindFlex",
+    "rawHtml": "<section class=\"bg-gradient-to-br from-purple-500 to-pink-500 py-16 md:py-32\">\n    <div class=\"container mx-auto px-4 md:px-8 text-center\">\n        <h1 class=\"text-white font-bold text-4xl md:text-6xl leading-tight mb-6\">Welcome to our <br>Colorful World</h1>\n        <p class=\"text-white text-lg md:text-2xl mb-12\">Experience the magic of colors with our unique products and\n            services.</p>\n        <a href=\"#\"\n            class=\"bg-white text-purple-500 font-bold py-2 px-8 rounded-full hover:bg-purple-500 hover:text-white transition duration-200\">Shop\n            Now</a>\n    </div>\n</section>"
+  }
+}

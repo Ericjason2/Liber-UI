@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-to-action-section-for-home-page",
+  "type": "registry:ui",
+  "title": "Call to Action section for home page",
+  "description": "Call to Action section for home page - Créé par @sophia-baker sur TailwindFlex.",
+  "author": "@sophia-baker (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-to-action-section-for-home-page.tsx",
+      "content": "/**\n * Component: Call to Action section for home page\n * Author: @sophia-baker (https://tailwindflex.com/@sophia-baker)\n * Source: https://tailwindflex.com/@sophia-baker/call-to-action-section-for-home-page\n * Attribution: Créé par @sophia-baker sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToActionSectionForHomePage() {\n  return (\n    <div>\n    <div className=\"max-w-5xl mx-auto mt-12 px-4 text-center\">\r\n        <div className=\"w-full max-w-3xl mx-auto\">\r\n            <h1 className=\"text-4xl font-bold mt-2 mb-6\">Helping you find your new home;<br />by simplifying the search.</h1>\r\n            <p className=\"px-4 leading-relaxed\">Propiti provides you with a quick, simple way to reach multiple estate\r\n                agents.<br />Allowing you to spend less time trawling through property portals,<br />giving you more time on the other things you enjoy.\r\n            </p>\r\n            <p className=\"mb-8 mt-4 px-4 leading-relaxed\">Oh, and the best bit...\r\n                <span className=\"text-pink-600 font-bold\">It's free!</span></p>\r\n            <div>\r\n                <a className=\"inline-block py-4 px-8 leading-none text-white bg-slate-800 hover600 rounded shadow text-sm font-bold\"\r\n                    href=\"/signup\">Sign-up for free</a>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sophia-baker",
+    "authorUrl": "https://tailwindflex.com/@sophia-baker",
+    "sourceUrl": "https://tailwindflex.com/@sophia-baker/call-to-action-section-for-home-page",
+    "mention": "Créé par @sophia-baker sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-5xl mx-auto mt-12 px-4 text-center\">\r\n    <div class=\"w-full max-w-3xl mx-auto\">\r\n        <h1 class=\"text-4xl font-bold mt-2 mb-6\">Helping you find your new home;<br>by simplifying the search.</h1>\r\n        <p class=\"px-4 leading-relaxed\">Propiti provides you with a quick, simple way to reach multiple estate\r\n            agents.<br>Allowing you to spend less time trawling through property portals,<br>giving you more time on the other things you enjoy.\r\n        </p>\r\n        <p class=\"mb-8 mt-4 px-4 leading-relaxed\">Oh, and the best bit...\r\n            <span class=\"text-pink-600 font-bold\">It's free!</span></p>\r\n        <div>\r\n            <a class=\"inline-block py-4 px-8 leading-none text-white bg-slate-800 hover:bg-pink-600 rounded shadow text-sm font-bold\"\r\n                href=\"/signup\">Sign-up for free</a>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "info-card",
+  "type": "registry:ui",
+  "title": "Info Card",
+  "description": "Info Card - Créé par @prem sur TailwindFlex.",
+  "author": "@prem (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/info-card.tsx",
+      "content": "/**\n * Component: Info Card\n * Author: @prem (https://tailwindflex.com/@prem)\n * Source: https://tailwindflex.com/@prem/info-card\n * Attribution: Créé par @prem sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InfoCard() {\n  return (\n    <div>\n    <div className=\"bg-white max-w-2xl shadow overflow-hidden sm\">\n        <div className=\"px-4 py-5 sm6\">\n            <h3 className=\"text-lg leading-6 font-medium text-gray-900\">\n                User database\n            </h3>\n            <p className=\"mt-1 max-w-2xl text-sm text-gray-500\">\n                Details and informations about user.\n            </p>\n        </div>\n        <div className=\"border-t border-gray-200\">\n            <dl>\n                <div className=\"bg-gray-50 px-4 py-5 sm sm3 sm4 sm6\">\n                    <dt className=\"text-sm font-medium text-gray-500\">\n                        Full name\n                    </dt>\n                    <dd className=\"mt-1 text-sm text-gray-900 sm0 sm2\">\n                        Mickael Poulaz\n                    </dd>\n                </div>\n                <div className=\"bg-white px-4 py-5 sm sm3 sm4 sm6\">\n                    <dt className=\"text-sm font-medium text-gray-500\">\n                        Best techno\n                    </dt>\n                    <dd className=\"mt-1 text-sm text-gray-900 sm0 sm2\">\n                        React JS\n                    </dd>\n                </div>\n                <div className=\"bg-gray-50 px-4 py-5 sm sm3 sm4 sm6\">\n                    <dt className=\"text-sm font-medium text-gray-500\">\n                        Email address\n                    </dt>\n                    <dd className=\"mt-1 text-sm text-gray-900 sm0 sm2\">\n                        m.poul.com\n                    </dd>\n                </div>\n                <div className=\"bg-white px-4 py-5 sm sm3 sm4 sm6\">\n                    <dt className=\"text-sm font-medium text-gray-500\">\n                        Salary\n                    </dt>\n                    <dd className=\"mt-1 text-sm text-gray-900 sm0 sm2\">\n                        $10,000\n                    </dd>\n                </div>\n                <div className=\"bg-gray-50 px-4 py-5 sm sm3 sm4 sm6\">\n                    <dt className=\"text-sm font-medium text-gray-500\">\n                        About\n                    </dt>\n                    <dd className=\"mt-1 text-sm text-gray-900 sm0 sm2\">\n                        To get social media testimonials like these, keep your customers engaged with your social media accounts by posting regularly yourself\n                    </dd>\n                </div>\n            </dl>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@prem",
+    "authorUrl": "https://tailwindflex.com/@prem",
+    "sourceUrl": "https://tailwindflex.com/@prem/info-card",
+    "mention": "Créé par @prem sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white max-w-2xl shadow overflow-hidden sm:rounded-lg\">\n    <div class=\"px-4 py-5 sm:px-6\">\n        <h3 class=\"text-lg leading-6 font-medium text-gray-900\">\n            User database\n        </h3>\n        <p class=\"mt-1 max-w-2xl text-sm text-gray-500\">\n            Details and informations about user.\n        </p>\n    </div>\n    <div class=\"border-t border-gray-200\">\n        <dl>\n            <div class=\"bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\n                <dt class=\"text-sm font-medium text-gray-500\">\n                    Full name\n                </dt>\n                <dd class=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\n                    Mickael Poulaz\n                </dd>\n            </div>\n            <div class=\"bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\n                <dt class=\"text-sm font-medium text-gray-500\">\n                    Best techno\n                </dt>\n                <dd class=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\n                    React JS\n                </dd>\n            </div>\n            <div class=\"bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\n                <dt class=\"text-sm font-medium text-gray-500\">\n                    Email address\n                </dt>\n                <dd class=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\n                    m.poul@example.com\n                </dd>\n            </div>\n            <div class=\"bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\n                <dt class=\"text-sm font-medium text-gray-500\">\n                    Salary\n                </dt>\n                <dd class=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\n                    $10,000\n                </dd>\n            </div>\n            <div class=\"bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\n                <dt class=\"text-sm font-medium text-gray-500\">\n                    About\n                </dt>\n                <dd class=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\n                    To get social media testimonials like these, keep your customers engaged with your social media accounts by posting regularly yourself\n                </dd>\n            </div>\n        </dl>\n    </div>\n</div>"
+  }
+}

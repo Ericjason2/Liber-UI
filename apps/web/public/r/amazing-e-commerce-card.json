@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "amazing-e-commerce-card",
+  "type": "registry:ui",
+  "title": "Amazing E-commerce card",
+  "description": "Amazing E-commerce card - Créé par @robert-chunga sur TailwindFlex.",
+  "author": "@robert-chunga (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/amazing-e-commerce-card.tsx",
+      "content": "/**\n * Component: Amazing E-commerce card\n * Author: @robert-chunga (https://tailwindflex.com/@robert-chunga)\n * Source: https://tailwindflex.com/@robert-chunga/amazing-e-commerce-card\n * Attribution: Créé par @robert-chunga sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AmazingECommerceCard() {\n  return (\n    <div>\n    <div className=\"bg-gray-200 w-screen p-8 sm16 dark900\">\n      <div className=\"p-4 mb-4 text-lg text-center leading-tight first-letter font-medium dark100\">\n        <h3>hover through the cards to see margic</h3>\n      </div>\n      <div className=\"mx-auto w-fit grid grid-cols-1 lg3 sm2 gap-6\">\n      \n      <div className=\"relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden\">\n        <img className=\"w-full h-full group-hover64 object-cover rounded-2xl transition-all delay-150 duration-300 ease\" src=\"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f014625e-1a1d-4944-8395-46a07841a794/JORDAN+SPIZIKE+LOW.png\" />\n        <div className=\"bg-gray-100 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover0 rounded-b-2xl transition-all delay-150 duration-300 ease dark700\">\n          <div className=\"p-6\">\n            <div className=\"capitalize flex items-center justify-between gap-4\">\n              <div>\n                <h2 className=\"text-red-600 text-lg font-bold\">jordan spizike low</h2>\n                <p className=\"dark100\">men's shoes</p>\n              </div>\n              <div>\n              <p className=\"text-3xl font-bold dark100\">$160</p>\n              </div>\n            </div>\n            <div className=\"block mt-4\">\n              <div className=\"absolute bottom-2 left-5\">\n                <button className=\"bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover100\">Add to cart</button>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n      \n      \n      <div className=\"relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden\">\n        <img className=\"w-full h-full group-hover64 object-cover rounded-2xl transition-all delay-150 duration-300 ease\" src=\"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/362cced6-125a-4354-a6e0-f56e747ce4d6/AIR+JORDAN+6+RETRO.png\" />\n        <div className=\"bg-gray-100 dark700 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover0 rounded-b-2xl transition-all delay-150 duration-300 ease\">\n          <div className=\"p-6\">\n            <div className=\"capitalize flex items-center justify-between gap-4\">\n              <div>\n                <h2 className=\"text-red-600 text-lg font-bold\">Air Jordan 6 Retro</h2>\n                <p className=\"dark100\">men's shoes</p>\n              </div>\n              <div>\n              <p className=\"text-3xl font-bold dark100\">$200</p>\n              </div>\n            </div>\n            <div className=\"block mt-4\">\n              <div className=\"absolute bottom-2 left-5\">\n                <button className=\"bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover100\">Add to cart</button>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n      \n      \n      <div className=\"relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden\">\n        <img className=\"w-full h-full group-hover64 object-cover rounded-2xl transition-all delay-150 duration-300 ease\" src=\"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/77c98012-1e1a-4d57-8a69-162af8874e58/JORDAN+MVP.png\" />\n        <div className=\"bg-gray-100 dark700 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover0 rounded-b-2xl transition-all delay-150 duration-300 ease\">\n          <div className=\"p-6\">\n            <div className=\"capitalize flex items-center justify-between gap-4\">\n              <div>\n                <h2 className=\"text-red-600 text-lg font-bold\">Jumpman MVP</h2>\n                <p className=\"dark100\">men's shoes</p>\n              </div>\n              <div>\n              <p className=\"text-3xl font-bold dark100\">$165</p>\n              </div>\n            </div>\n            <div className=\"block mt-4\">\n              <div className=\"absolute bottom-2 left-5\">\n                <button className=\"bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover100\">Add to cart</button>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n      \n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "grid",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@robert-chunga",
+    "authorUrl": "https://tailwindflex.com/@robert-chunga",
+    "sourceUrl": "https://tailwindflex.com/@robert-chunga/amazing-e-commerce-card",
+    "mention": "Créé par @robert-chunga sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-200 w-screen p-8 sm:p-16 dark:bg-gray-900\">\n  <div class=\"p-4 mb-4 text-lg text-center leading-tight first-letter:capitalize font-medium dark:text-gray-100\">\n    <h3>hover through the cards to see margic</h3>\n  </div>\n  <div class=\"mx-auto w-fit grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-6\">\n  <!-- card -->\n  <div class=\"relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden\">\n    <img class=\"w-full h-full group-hover:h-64 object-cover rounded-2xl transition-all delay-150 duration-300 ease\" src=\"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f014625e-1a1d-4944-8395-46a07841a794/JORDAN+SPIZIKE+LOW.png\" />\n    <div class=\"bg-gray-100 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover:mb-0 rounded-b-2xl transition-all delay-150 duration-300 ease dark:bg-gray-700\">\n      <div class=\"p-6\">\n        <div class=\"capitalize flex items-center justify-between gap-4\">\n          <div>\n            <h2 class=\"text-red-600 text-lg font-bold\">jordan spizike low</h2>\n            <p class=\"dark:text-gray-100\">men's shoes</p>\n          </div>\n          <div>\n          <p class=\"text-3xl font-bold dark:text-gray-100\">$160</p>\n          </div>\n        </div>\n        <div class=\"block mt-4\">\n          <div class=\"absolute bottom-2 left-5\">\n            <button class=\"bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100\">Add to cart</button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- end card -->\n  <!-- card -->\n  <div class=\"relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden\">\n    <img class=\"w-full h-full group-hover:h-64 object-cover rounded-2xl transition-all delay-150 duration-300 ease\" src=\"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/362cced6-125a-4354-a6e0-f56e747ce4d6/AIR+JORDAN+6+RETRO.png\" />\n    <div class=\"bg-gray-100 dark:bg-gray-700 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover:mb-0 rounded-b-2xl transition-all delay-150 duration-300 ease\">\n      <div class=\"p-6\">\n        <div class=\"capitalize flex items-center justify-between gap-4\">\n          <div>\n            <h2 class=\"text-red-600 text-lg font-bold\">Air Jordan 6 Retro</h2>\n            <p class=\"dark:text-gray-100\">men's shoes</p>\n          </div>\n          <div>\n          <p class=\"text-3xl font-bold dark:text-gray-100\">$200</p>\n          </div>\n        </div>\n        <div class=\"block mt-4\">\n          <div class=\"absolute bottom-2 left-5\">\n            <button class=\"bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100\">Add to cart</button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- end card -->\n  <!-- card -->\n  <div class=\"relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden\">\n    <img class=\"w-full h-full group-hover:h-64 object-cover rounded-2xl transition-all delay-150 duration-300 ease\" src=\"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/77c98012-1e1a-4d57-8a69-162af8874e58/JORDAN+MVP.png\" />\n    <div class=\"bg-gray-100 dark:bg-gray-700 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover:mb-0 rounded-b-2xl transition-all delay-150 duration-300 ease\">\n      <div class=\"p-6\">\n        <div class=\"capitalize flex items-center justify-between gap-4\">\n          <div>\n            <h2 class=\"text-red-600 text-lg font-bold\">Jumpman MVP</h2>\n            <p class=\"dark:text-gray-100\">men's shoes</p>\n          </div>\n          <div>\n          <p class=\"text-3xl font-bold dark:text-gray-100\">$165</p>\n          </div>\n        </div>\n        <div class=\"block mt-4\">\n          <div class=\"absolute bottom-2 left-5\">\n            <button class=\"bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100\">Add to cart</button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- end card -->\n  </div>\n</div>"
+  }
+}

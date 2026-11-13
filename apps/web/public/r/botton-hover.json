@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "botton-hover",
+  "type": "registry:ui",
+  "title": "Botton hover",
+  "description": "Botton hover - Créé par @andresandaar sur TailwindFlex.",
+  "author": "@andresandaar (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/botton-hover.tsx",
+      "content": "/**\n * Component: Botton hover\n * Author: @andresandaar (https://tailwindflex.com/@andresandaar)\n * Source: https://tailwindflex.com/@andresandaar/botton-hover\n * Attribution: Créé par @andresandaar sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BottonHover() {\n  return (\n    <div>\n    <button className=\"\n            group\n            p-5\n            cursor-pointer \n            relative  \n            text-xl \n            font-normal \n            border-0 \n            flex \n            items-center \n            justify-center\n            bg-transparent\n             text-red-500 \n             h-auto  \n             w-[170px]  \n             overflow-hidden   \n             transition-all\n             duration-100\">\n            <span className=\"\n            group-hover\n            absolute \n            left-0 \n            h-full \n            w-5 \n            border-y\n            border-l\n             border-red-500\n               transition-all\n             duration-500\">\n            </span>\n    \n            <p className=\"group-hover0 group-hover[-100%] absolute translate-x-0 transition-all\n             duration-200\">Hover me</p>\n    \n            <span className=\"group-hover0  group-hover100 absolute  translate- opacity-0  transition-all duration-200\">Thank\n                you!\n            </span>\n    \n            <span\n                className=\"group-hover absolute right-0 h-full w-5  border-y border-r  border-red-500 transition-all duration-500\">\n            </span>\n        </button>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@andresandaar",
+    "authorUrl": "https://tailwindflex.com/@andresandaar",
+    "sourceUrl": "https://tailwindflex.com/@andresandaar/botton-hover",
+    "mention": "Créé par @andresandaar sur TailwindFlex",
+    "rawHtml": "<button class=\"\n        group\n        p-5\n        cursor-pointer \n        relative  \n        text-xl \n        font-normal \n        border-0 \n        flex \n        items-center \n        justify-center\n        bg-transparent\n         text-red-500 \n         h-auto  \n         w-[170px]  \n         overflow-hidden   \n         transition-all\n         duration-100\">\n        <span class=\"\n        group-hover:w-full\n        absolute \n        left-0 \n        h-full \n        w-5 \n        border-y\n        border-l\n         border-red-500\n           transition-all\n         duration-500\">\n        </span>\n\n        <p class=\"group-hover:opacity-0 group-hover:translate-x-[-100%] absolute translate-x-0 transition-all\n         duration-200\">Hover me</p>\n\n        <span class=\"group-hover:translate-x-0  group-hover:opacity-100 absolute  translate-x-full opacity-0  transition-all duration-200\">Thank\n            you!\n        </span>\n\n        <span\n            class=\"group-hover:w-full absolute right-0 h-full w-5  border-y border-r  border-red-500 transition-all duration-500\">\n        </span>\n    </button>"
+  }
+}

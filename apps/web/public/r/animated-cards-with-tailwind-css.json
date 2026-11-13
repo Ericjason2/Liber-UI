@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animated-cards-with-tailwind-css",
+  "type": "registry:ui",
+  "title": "Animated cards with Tailwind CSS",
+  "description": "Animated cards with Tailwind CSS - Créé par @michael-andreuzza sur TailwindFlex.",
+  "author": "@michael-andreuzza (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/animated-cards-with-tailwind-css.tsx",
+      "content": "/**\n * Component: Animated cards with Tailwind CSS\n * Author: @michael-andreuzza (https://tailwindflex.com/@michael-andreuzza)\n * Source: https://tailwindflex.com/@michael-andreuzza/animated-cards-with-tailwind-css\n * Attribution: Créé par @michael-andreuzza sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AnimatedCardsWithTailwindCss() {\n  return (\n    <div>\n    <section className=\"bg-zinc-50 overflow-hidden\">\n     <div className=\"max-w-screen-xl 2xl3xl px-8 md12 mx-auto py-12 lg24 space-y-24 h-svh flex flex-col justify-center\">\n      <div className=\"flex flex-col sm mx-auto\">\n        <a href=\"#_\"> <img src=\"https://images.unsplash.com/photo-1530035415911-95194de4ebcc?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" className=\"rounded-xl  rotate-6 hover0 duration-500 hover12 h-full w-full object-cover hover150 transform origin-bottom\" alt=\"#_\" /> </a><a href=\"#_\"> <img src=\"https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&amp;w=2672&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D \" className=\"rounded-xl  -rotate-12 hover0 duration-500 hover12 h-full w-full object-cover hover150 transform origin-bottom\" alt=\"#_\" /> </a><a href=\"#_\"> <img src=\"https://images.unsplash.com/photo-1586996292898-71f4036c4e07?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" className=\"rounded-xl  rotate-6 hover0 duration-500 hover12 h-full w-full object-cover hover150 transform origin-bottom\" alt=\"#_\" /> </a><a href=\"#_\"> <img src=\"https://images.unsplash.com/photo-1522775417749-29284fb89f43?q=80&amp;w=2574&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" className=\"rounded-xl  -rotate-12 hover0 duration-500 hover12 h-full w-full object-cover hover150 transform origin-bottom\" alt=\"#_\" /> </a>\n       \n      </div> \n      <div className=\"pointer-events-none fixed inset-x-0 bottom-0 sm sm sm6 sm5 lg8\">\n       <div className=\"pointer-events-auto flex w-full max-w-md divide-x divide-neutral-200 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5\">\n        <div className=\"flex w-0 flex-1 items-center p-4\">\n         <div className=\"w-full\">\n          <p className=\"text-sm font-medium text-neutral-900\">Tutorial</p>\n          <p className=\"mt-1 text-sm text-neutral-500\">\n           How to create animated image cards with Tailwind CSS and Astrojs\n          </p>\n          <p className=\"mt-2 text-xs text-orange-500 underline\"> <a href=\"https://lexingtonthemes.com\">\n            by © Lexington Themes</a> </p>\n         </div>\n        </div>\n        <div className=\"flex\">\n         <div className=\"flex flex-col divide-y divide-neutral-200\">\n          <div className=\"flex h-0 flex-1\"> <a target=\"_blank\" href=\"https://lexingtonthemes.com/tutorials/how-to-create-animated-images-with-tailwind-css-and-astro-js/\" type=\"button\" className=\"flex w-full items-center justify-center rounded-none rounded-tr-lg border border-transparent px-4 py-3 text-sm font-medium text-orange-600 hover500 focus10 focus focus2 focus500\">Tutorial</a> </div>\n          <div className=\"flex h-0 flex-1\"> <a target=\"_blank\" href=\"https://github.com/UnwrappedDesign/lexington-tutorials/tree/main/src/pages/simplified-cards\" className=\"flex w-full items-center justify-center rounded-none rounded-br-lg border border-transparent px-4 py-3 text-sm font-medium text-neutral-700 hover500 focus focus2 focus500\">Get the code</a> </div>\n         </div>\n        </div>\n       </div>\n      </div> \n     </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@michael-andreuzza",
+    "authorUrl": "https://tailwindflex.com/@michael-andreuzza",
+    "sourceUrl": "https://tailwindflex.com/@michael-andreuzza/animated-cards-with-tailwind-css",
+    "mention": "Créé par @michael-andreuzza sur TailwindFlex",
+    "rawHtml": "<section class=\"bg-zinc-50 overflow-hidden\">\n <div class=\"max-w-screen-xl 2xl:max-w-screen-3xl px-8 md:px-12 mx-auto py-12 lg:py-24 space-y-24 h-svh flex flex-col justify-center\">\n  <div class=\"flex flex-col sm:flex-row mx-auto\">\n   <!--- Starts component --> <a href=\"#_\"> <img src=\"https://images.unsplash.com/photo-1530035415911-95194de4ebcc?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" class=\"rounded-xl  rotate-6 hover:rotate-0 duration-500 hover:-translate-y-12 h-full w-full object-cover hover:scale-150 transform origin-bottom\" alt=\"#_\"> </a><a href=\"#_\"> <img src=\"https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&amp;w=2672&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D \" class=\"rounded-xl  -rotate-12 hover:rotate-0 duration-500 hover:-translate-y-12 h-full w-full object-cover hover:scale-150 transform origin-bottom\" alt=\"#_\"> </a><a href=\"#_\"> <img src=\"https://images.unsplash.com/photo-1586996292898-71f4036c4e07?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" class=\"rounded-xl  rotate-6 hover:rotate-0 duration-500 hover:-translate-y-12 h-full w-full object-cover hover:scale-150 transform origin-bottom\" alt=\"#_\"> </a><a href=\"#_\"> <img src=\"https://images.unsplash.com/photo-1522775417749-29284fb89f43?q=80&amp;w=2574&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" class=\"rounded-xl  -rotate-12 hover:rotate-0 duration-500 hover:-translate-y-12 h-full w-full object-cover hover:scale-150 transform origin-bottom\" alt=\"#_\"> </a>\n   <!--- Ends component -->\n  </div> <!-- Starts links to tutorial -->\n  <div class=\"pointer-events-none fixed inset-x-0 bottom-0 sm:flex sm:justify-center sm:px-6 sm:pb-5 lg:px-8\">\n   <div class=\"pointer-events-auto flex w-full max-w-md divide-x divide-neutral-200 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5\">\n    <div class=\"flex w-0 flex-1 items-center p-4\">\n     <div class=\"w-full\">\n      <p class=\"text-sm font-medium text-neutral-900\">Tutorial</p>\n      <p class=\"mt-1 text-sm text-neutral-500\">\n       How to create animated image cards with Tailwind CSS and Astrojs\n      </p>\n      <p class=\"mt-2 text-xs text-orange-500 underline\"> <a href=\"https://lexingtonthemes.com\">\n        by © Lexington Themes</a> </p>\n     </div>\n    </div>\n    <div class=\"flex\">\n     <div class=\"flex flex-col divide-y divide-neutral-200\">\n      <div class=\"flex h-0 flex-1\"> <a target=\"_blank\" href=\"https://lexingtonthemes.com/tutorials/how-to-create-animated-images-with-tailwind-css-and-astro-js/\" type=\"button\" class=\"flex w-full items-center justify-center rounded-none rounded-tr-lg border border-transparent px-4 py-3 text-sm font-medium text-orange-600 hover:text-orange-500 focus:z-10 focus:outline-none focus:ring-2 focus:ring-orange-500\">Tutorial</a> </div>\n      <div class=\"flex h-0 flex-1\"> <a target=\"_blank\" href=\"https://github.com/UnwrappedDesign/lexington-tutorials/tree/main/src/pages/simplified-cards\" class=\"flex w-full items-center justify-center rounded-none rounded-br-lg border border-transparent px-4 py-3 text-sm font-medium text-neutral-700 hover:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-orange-500\">Get the code</a> </div>\n     </div>\n    </div>\n   </div>\n  </div> <!-- Ends links to tutorial -->\n </div>\n</section>"
+  }
+}

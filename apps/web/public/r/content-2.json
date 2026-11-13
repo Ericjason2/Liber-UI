@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "content-2",
+  "type": "registry:ui",
+  "title": "Content showing for Call to action",
+  "description": "Content showing for Call to action - Créé par @inbarajan sur TailwindFlex.",
+  "author": "@inbarajan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/content-2.tsx",
+      "content": "/**\n * Component: Content showing for Call to action\n * Author: @inbarajan (https://tailwindflex.com/@inbarajan)\n * Source: https://tailwindflex.com/@inbarajan/content-2\n * Attribution: Créé par @inbarajan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Content2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<section class='relative bg-[#D9D9D9] isolate min-h-screen flex justify-center items-center overflow-hidden'>\\r\\n  <div class=\\\"mx-auto max-w-full md:max-w-5xl px-3 py-3 md:px-6\\\">\\r\\n    <div class=\\\"grid md:grid-cols-2 place-items-center gap-10 grid-cols-1\\\">\\r\\n      <div class=\\\"w-full rounded-lg md:rounded-xl\\\">\\r\\n        <img src=\\\"https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxidXNpbmVzc3xlbnwwfDB8fHwxNzI1NTU4MDkyfDA&ixlib=rb-4.0.3&q=80&w=1080\\\" alt={'Photo by '@microsoft365' on Unsplash'} class={' object-fill object-center w-full h-full'} />\\r\\n      </div>\\r\\n      <div class=\\\"w-full px-3 py-3 space-y-5\\\">\\r\\n        <h1 class=\\\"text-black text-xl font-bold font-Poppins leading-6 tracking-wide\\\">Join Us in Shaping Tomorrow\\r\\n        </h1>\\r\\n        <p class='text-black font-Poppins leading-5 tracking-wider text-xs font-medium '>\\r\\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet totam et fuga consectetur molestiae\\r\\n          ipsum, temporibus voluptates dolore alias vitae nostrum commodi sed sit animi atque quod nobis odio. Lorem\\r\\n          ipsum dolor, sit amet consectetur adipisicing elit. Quam eos pariatur autem amet assumenda accusantium\\r\\n          voluptas. Minima iste, nulla magnam quos maiores dignissimos perferendis rerum qui aut autem laborum\\r\\n          cupiditate.\\r\\n        </p>\\r\\n        <div class=\\\"inline-block\\\">\\r\\n          <button class=\\\"bg-[#C96202] text-white active:translate-y-[6px] py-2.5 px-5 rounded-full text-xs font-medium tracking-wider font-Poppins transition duration-300 ease-in-out transform  hover:shadow-custom-white hover:shadow-gray-600\\\">Contact us</button>\\r\\n        </div>\\r\\n      </div>\\r\\n    </div>\\r\\n  </div>\\r\\n</section>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "grid",
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@inbarajan",
+    "authorUrl": "https://tailwindflex.com/@inbarajan",
+    "sourceUrl": "https://tailwindflex.com/@inbarajan/content-2",
+    "mention": "Créé par @inbarajan sur TailwindFlex",
+    "rawHtml": "<section class='relative bg-[#D9D9D9] isolate min-h-screen flex justify-center items-center overflow-hidden'>\r\n  <div class=\"mx-auto max-w-full md:max-w-5xl px-3 py-3 md:px-6\">\r\n    <div class=\"grid md:grid-cols-2 place-items-center gap-10 grid-cols-1\">\r\n      <div class=\"w-full rounded-lg md:rounded-xl\">\r\n        <img src=\"https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxidXNpbmVzc3xlbnwwfDB8fHwxNzI1NTU4MDkyfDA&ixlib=rb-4.0.3&q=80&w=1080\" alt={'Photo by '@microsoft365' on Unsplash'} class={' object-fill object-center w-full h-full'} />\r\n      </div>\r\n      <div class=\"w-full px-3 py-3 space-y-5\">\r\n        <h1 class=\"text-black text-xl font-bold font-Poppins leading-6 tracking-wide\">Join Us in Shaping Tomorrow\r\n        </h1>\r\n        <p class='text-black font-Poppins leading-5 tracking-wider text-xs font-medium '>\r\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet totam et fuga consectetur molestiae\r\n          ipsum, temporibus voluptates dolore alias vitae nostrum commodi sed sit animi atque quod nobis odio. Lorem\r\n          ipsum dolor, sit amet consectetur adipisicing elit. Quam eos pariatur autem amet assumenda accusantium\r\n          voluptas. Minima iste, nulla magnam quos maiores dignissimos perferendis rerum qui aut autem laborum\r\n          cupiditate.\r\n        </p>\r\n        <div class=\"inline-block\">\r\n          <button class=\"bg-[#C96202] text-white active:translate-y-[6px] py-2.5 px-5 rounded-full text-xs font-medium tracking-wider font-Poppins transition duration-300 ease-in-out transform  hover:shadow-custom-white hover:shadow-gray-600\">Contact us</button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>"
+  }
+}

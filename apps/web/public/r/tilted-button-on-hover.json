@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tilted-button-on-hover",
+  "type": "registry:ui",
+  "title": "Tilted button on hover.",
+  "description": "Tilted button on hover. - Créé par @andras-szehofner sur TailwindFlex.",
+  "author": "@andras-szehofner (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tilted-button-on-hover.tsx",
+      "content": "/**\n * Component: Tilted button on hover.\n * Author: @andras-szehofner (https://tailwindflex.com/@andras-szehofner)\n * Source: https://tailwindflex.com/@andras-szehofner/tilted-button-on-hover\n * Attribution: Créé par @andras-szehofner sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TiltedButtonOnHover() {\n  return (\n    <div>\n    <div className=\"bg-white dark800 flex justify-center items-center w-screen h-screen p-5\">\n      <button\n            className=\"inline-flex items-center justify-center px-8 py-4\n              text-lg font-bold text-white\n              bg-gradient-to-r from-teal-500 to-teal-700\n              dark500 dark700\n              rounded-lg\n              drop-shadow-md\n              transform-gpu\n              hover[1deg] hover105\n              hover1\n              transition-all duration-300\n              shadow-lg hover\"\n        >\n            <span className=\"uppercase\">\n              Hover to tilt!\n            </span>\n      </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@andras-szehofner",
+    "authorUrl": "https://tailwindflex.com/@andras-szehofner",
+    "sourceUrl": "https://tailwindflex.com/@andras-szehofner/tilted-button-on-hover",
+    "mention": "Créé par @andras-szehofner sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\">\n  <button\n        class=\"inline-flex items-center justify-center px-8 py-4\n          text-lg font-bold text-white\n          bg-gradient-to-r from-teal-500 to-teal-700\n          dark:from-teal-500 dark:to-teal-700\n          rounded-lg\n          drop-shadow-md\n          transform-gpu\n          hover:rotate-[1deg] hover:scale-105\n          hover:skew-x-1\n          transition-all duration-300\n          shadow-lg hover:shadow-xl\"\n    >\n        <span class=\"uppercase\">\n          Hover to tilt!\n        </span>\n  </button>\n</div>"
+  }
+}

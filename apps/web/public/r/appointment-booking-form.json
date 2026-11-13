@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "appointment-booking-form",
+  "type": "registry:ui",
+  "title": "Appointment booking form",
+  "description": "Appointment booking form - Créé par @leif99 sur TailwindFlex.",
+  "author": "@leif99 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/appointment-booking-form.tsx",
+      "content": "/**\n * Component: Appointment booking form\n * Author: @leif99 (https://tailwindflex.com/@leif99)\n * Source: https://tailwindflex.com/@leif99/appointment-booking-form\n * Attribution: Créé par @leif99 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AppointmentBookingForm() {\n  return (\n    <div>\n    <div className=\"max-w-md mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden\">\n        <div className=\"text-2xl py-4 px-6 bg-gray-900 text-white text-center font-bold uppercase\">\n            Book an Appointment\n        </div>\n        <form className=\"py-4 px-6\" action=\"\" method=\"POST\">\n            <div className=\"mb-4\">\n                <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"name\">\n                    Name\n                </label>\n                <input\n                    className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\"\n                    id=\"name\" type=\"text\" placeholder=\"Enter your name\" />\n            </div>\n            <div className=\"mb-4\">\n                <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"email\">\n                    Email\n                </label>\n                <input\n                    className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\"\n                    id=\"email\" type=\"email\" placeholder=\"Enter your email\" />\n            </div>\n            <div className=\"mb-4\">\n                <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"phone\">\n                    Phone Number\n                </label>\n                <input\n                    className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\"\n                    id=\"phone\" type=\"tel\" placeholder=\"Enter your phone number\" />\n            </div>\n            <div className=\"mb-4\">\n                <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"date\">\n                    Date\n                </label>\n                <input\n                    className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\"\n                    id=\"date\" type=\"date\" placeholder=\"Select a date\" />\n            </div>\n            <div className=\"mb-4\">\n                <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"time\">\n                    Time\n                </label>\n                <input\n                    className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\"\n                    id=\"time\" type=\"time\" placeholder=\"Select a time\" />\n            </div>\n            <div className=\"mb-4\">\n                <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"service\">\n                    Service\n                </label>\n                <select\n                    className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\"\n                    id=\"service\" name=\"service\">\n                    <option value=\"\">Select a service</option>\n                    <option value=\"haircut\">Haircut</option>\n                    <option value=\"coloring\">Coloring</option>\n                    <option value=\"styling\">Styling</option>\n                    <option value=\"facial\">Facial</option>\n                </select>\n            </div>\n            <div className=\"mb-4\">\n                <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"message\">\n                    Message\n                </label>\n                <textarea\n                    className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\"\n                    id=\"message\" rows=\"4\" placeholder=\"Enter any additional information\"></textarea>\n            </div>\n            <div className=\"flex items-center justify-center mb-4\">\n                <button\n                    className=\"bg-gray-900 text-white py-2 px-4 rounded hover800 focus focus\"\n                    type=\"submit\">\n                    Book Appointment\n                </button>\n            </div>\n    \n        </form>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@leif99",
+    "authorUrl": "https://tailwindflex.com/@leif99",
+    "sourceUrl": "https://tailwindflex.com/@leif99/appointment-booking-form",
+    "mention": "Créé par @leif99 sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-md mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden\">\n    <div class=\"text-2xl py-4 px-6 bg-gray-900 text-white text-center font-bold uppercase\">\n        Book an Appointment\n    </div>\n    <form class=\"py-4 px-6\" action=\"\" method=\"POST\">\n        <div class=\"mb-4\">\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"name\">\n                Name\n            </label>\n            <input\n                class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\n                id=\"name\" type=\"text\" placeholder=\"Enter your name\">\n        </div>\n        <div class=\"mb-4\">\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"email\">\n                Email\n            </label>\n            <input\n                class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\n                id=\"email\" type=\"email\" placeholder=\"Enter your email\">\n        </div>\n        <div class=\"mb-4\">\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"phone\">\n                Phone Number\n            </label>\n            <input\n                class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\n                id=\"phone\" type=\"tel\" placeholder=\"Enter your phone number\">\n        </div>\n        <div class=\"mb-4\">\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"date\">\n                Date\n            </label>\n            <input\n                class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\n                id=\"date\" type=\"date\" placeholder=\"Select a date\">\n        </div>\n        <div class=\"mb-4\">\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"time\">\n                Time\n            </label>\n            <input\n                class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\n                id=\"time\" type=\"time\" placeholder=\"Select a time\">\n        </div>\n        <div class=\"mb-4\">\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"service\">\n                Service\n            </label>\n            <select\n                class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\n                id=\"service\" name=\"service\">\n                <option value=\"\">Select a service</option>\n                <option value=\"haircut\">Haircut</option>\n                <option value=\"coloring\">Coloring</option>\n                <option value=\"styling\">Styling</option>\n                <option value=\"facial\">Facial</option>\n            </select>\n        </div>\n        <div class=\"mb-4\">\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"message\">\n                Message\n            </label>\n            <textarea\n                class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\n                id=\"message\" rows=\"4\" placeholder=\"Enter any additional information\"></textarea>\n        </div>\n        <div class=\"flex items-center justify-center mb-4\">\n            <button\n                class=\"bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-800 focus:outline-none focus:shadow-outline\"\n                type=\"submit\">\n                Book Appointment\n            </button>\n        </div>\n\n    </form>\n</div>"
+  }
+}

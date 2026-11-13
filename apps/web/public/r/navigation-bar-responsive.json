@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "navigation-bar-responsive",
+  "type": "registry:ui",
+  "title": "Navigation Bar Responsive",
+  "description": "Navigation Bar Responsive - Créé par @sai-bende sur TailwindFlex.",
+  "author": "@sai-bende (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/navigation-bar-responsive.tsx",
+      "content": "/**\n * Component: Navigation Bar Responsive\n * Author: @sai-bende (https://tailwindflex.com/@sai-bende)\n * Source: https://tailwindflex.com/@sai-bende/navigation-bar-responsive\n * Attribution: Créé par @sai-bende sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NavigationBarResponsive() {\n  return (\n    <div>\n    <nav className=\"bg-black p-4\">\n        <div className=\"container mx-auto flex flex-col lg justify-between items-center\">\n            <div className=\"text-white font-bold text-3xl mb-4 lg0 hover600 hover\">Porfolio\n            </div>\n    \n            <div className=\"lg\">\n                <button className=\"text-white focus\">\n                        <svg\n                            className=\"h-6 w-6\"\n                            fill=\"none\"\n                            stroke=\"currentColor\"\n                            viewBox=\"0 0 24 24\"\n                            xmlns=\"http://www.w3.org/2000/svg\"\n                        >\n                            <path\n                                strokeLinecap=\"round\"\n                                strokeLinejoin=\"round\"\n                                strokeWidth=\"2\"\n                                d=\"M4 6h16M4 12h16m-7 6h7\"\n                            ></path>\n                        </svg>\n                    </button>\n            </div>\n    \n            <div className=\"lg flex-col lg lg4 lg0 mt-4 flex flex-col items-center text-xl\">\n                <a href=\"/\" className=\"text-white  px-4 py-2 hover600 \">Home</a>\n                <a href=\"#Projects\" className=\"text-white  px-4 py-2  hover600\">Projects</a>\n                <a href=\"/\" className=\"text-white  px-4 py-2  hover600\">About</a>\n                <a href=\"/\" className=\"text-white  px-4 py-2  hover600\">Contact Me</a>\n            </div>\n        </div>\n    \n    </nav>\n    \n    \n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sai-bende",
+    "authorUrl": "https://tailwindflex.com/@sai-bende",
+    "sourceUrl": "https://tailwindflex.com/@sai-bende/navigation-bar-responsive",
+    "mention": "Créé par @sai-bende sur TailwindFlex",
+    "rawHtml": "<nav class=\"bg-black p-4\">\n    <div class=\"container mx-auto flex flex-col lg:flex-row justify-between items-center\">\n        <div class=\"text-white font-bold text-3xl mb-4 lg:mb-0 hover:text-orange-600 hover:cursor-pointer\">Porfolio\n        </div>\n\n        <div class=\"lg:hidden\">\n            <button class=\"text-white focus:outline-none\">\n                    <svg\n                        class=\"h-6 w-6\"\n                        fill=\"none\"\n                        stroke=\"currentColor\"\n                        viewBox=\"0 0 24 24\"\n                        xmlns=\"http://www.w3.org/2000/svg\"\n                    >\n                        <path\n                            strokeLinecap=\"round\"\n                            strokeLinejoin=\"round\"\n                            strokeWidth=\"2\"\n                            d=\"M4 6h16M4 12h16m-7 6h7\"\n                        ></path>\n                    </svg>\n                </button>\n        </div>\n\n        <div class=\"lg:flex flex-col lg:flex-row lg:space-x-4 lg:mt-0 mt-4 flex flex-col items-center text-xl\">\n            <a href=\"/\" class=\"text-white  px-4 py-2 hover:text-orange-600 \">Home</a>\n            <a href=\"#Projects\" class=\"text-white  px-4 py-2  hover:text-orange-600\">Projects</a>\n            <a href=\"/\" class=\"text-white  px-4 py-2  hover:text-orange-600\">About</a>\n            <a href=\"/\" class=\"text-white  px-4 py-2  hover:text-orange-600\">Contact Me</a>\n        </div>\n    </div>\n\n</nav>\n\n\n<!-- Use this component with react -->\n<!-- function App() {\n    const [isOpen, setIsOpen] = useState(false);\n\n    const toggleMenu = () => {\n        setIsOpen(!isOpen);\n    };\n\n    return (\n        <div>\n            {/* Navbar */}\n            <nav className=\"bg-black p-4\">\n                <div className=\"container mx-auto flex flex-col lg:flex-row justify-between items-center\">\n                    <div className=\"text-white font-bold text-3xl mb-4 lg:mb-0 hover:text-orange-600 hover:cursor-pointer\">Porfolio </div>\n\n                    {/* Hamburger menu for small screens */}\n                    <div className=\"lg:hidden\">\n                        <button onClick={toggleMenu} className=\"text-white focus:outline-none\">\n                            <svg\n                                className=\"h-6 w-6\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                viewBox=\"0 0 24 24\"\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                            >\n                                <path\n                                    strokeLinecap=\"round\"\n                                    strokeLinejoin=\"round\"\n                                    strokeWidth=\"2\"\n                                    d=\"M4 6h16M4 12h16m-7 6h7\"\n                                ></path>\n                            </svg>\n                        </button>\n                    </div>\n\n                    {/* Navigation links */}\n                    <div className={`lg:flex flex-col lg:flex-row ${isOpen ? 'block' : 'hidden'} lg:space-x-4 lg:mt-0 mt-4 flex flex-col items-center text-xl`}>\n                        <a href=\"/\" className=\"text-white  px-4 py-2 hover:text-orange-600 \">Home</a>\n                        <a href=\"#Projects\" className=\"text-white  px-4 py-2  hover:text-orange-600\">Projects</a>\n                        <a href=\"/\" className=\"text-white  px-4 py-2  hover:text-orange-600\">About</a>\n                        <a href=\"/\" className=\"text-white  px-4 py-2  hover:text-orange-600\">Contact Me</a>\n                    </div>\n                </div>\n                \n            </nav>\n\n\n        </div>\n    );\n}\n\nexport default App; -->"
+  }
+}

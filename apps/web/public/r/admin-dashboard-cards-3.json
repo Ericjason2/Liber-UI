@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "admin-dashboard-cards-3",
+  "type": "registry:ui",
+  "title": "Admin dashboard cards",
+  "description": "Admin dashboard cards - Créé par @farisubuntu sur TailwindFlex.",
+  "author": "@farisubuntu (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/admin-dashboard-cards-3.tsx",
+      "content": "/**\n * Component: Admin dashboard cards\n * Author: @farisubuntu (https://tailwindflex.com/@farisubuntu)\n * Source: https://tailwindflex.com/@farisubuntu/admin-dashboard-cards-3\n * Attribution: Créé par @farisubuntu sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AdminDashboardCards3() {\n  return (\n    <div>\n    <article className=\"flex bg-white transition hover\">\n      <div className=\"rotate-180 p-2 [writing-mode:_vertical-lr]\">\n        <time\n          datetime=\"2022-10-10\"\n          className=\"flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900\"\n        >\n          <span>2022</span>\n          <span className=\"w-px flex-1 bg-gray-900/10\"></span>\n          <span>Oct 10</span>\n        </time>\n      </div>\n    \n      <div className=\"hidden sm sm56\">\n        <img\n          alt=\"\"\n          src=\"https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80\"\n          className=\"aspect-square h-full w-full object-cover\"\n        />\n      </div>\n    \n      <div className=\"flex flex-1 flex-col justify-between\">\n        <div className=\"border-s border-gray-900/10 p-4 sm sm6\">\n          <a href=\"#\">\n            <h3 className=\"font-bold uppercase text-gray-900\">\n              Finding the right guitar for your style - 5 tips\n            </h3>\n          </a>\n    \n          <p className=\"mt-2 line-clamp-3 text-sm/relaxed text-gray-700\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus\n            pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis\n            quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius\n            atque dignissimos. Molestias explicabo corporis voluptatem?\n          </p>\n        </div>\n    \n        <div className=\"sm sm sm\">\n          <a\n            href=\"#\"\n            className=\"block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover400\"\n          >\n            Read Blog\n          </a>\n        </div>\n      </div>\n    </article>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@farisubuntu",
+    "authorUrl": "https://tailwindflex.com/@farisubuntu",
+    "sourceUrl": "https://tailwindflex.com/@farisubuntu/admin-dashboard-cards-3",
+    "mention": "Créé par @farisubuntu sur TailwindFlex",
+    "rawHtml": "<article class=\"flex bg-white transition hover:shadow-xl\">\n  <div class=\"rotate-180 p-2 [writing-mode:_vertical-lr]\">\n    <time\n      datetime=\"2022-10-10\"\n      class=\"flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900\"\n    >\n      <span>2022</span>\n      <span class=\"w-px flex-1 bg-gray-900/10\"></span>\n      <span>Oct 10</span>\n    </time>\n  </div>\n\n  <div class=\"hidden sm:block sm:basis-56\">\n    <img\n      alt=\"\"\n      src=\"https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80\"\n      class=\"aspect-square h-full w-full object-cover\"\n    />\n  </div>\n\n  <div class=\"flex flex-1 flex-col justify-between\">\n    <div class=\"border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6\">\n      <a href=\"#\">\n        <h3 class=\"font-bold uppercase text-gray-900\">\n          Finding the right guitar for your style - 5 tips\n        </h3>\n      </a>\n\n      <p class=\"mt-2 line-clamp-3 text-sm/relaxed text-gray-700\">\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus\n        pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis\n        quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius\n        atque dignissimos. Molestias explicabo corporis voluptatem?\n      </p>\n    </div>\n\n    <div class=\"sm:flex sm:items-end sm:justify-end\">\n      <a\n        href=\"#\"\n        class=\"block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400\"\n      >\n        Read Blog\n      </a>\n    </div>\n  </div>\n</article>"
+  }
+}

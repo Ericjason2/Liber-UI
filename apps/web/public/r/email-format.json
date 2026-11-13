@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "email-format",
+  "type": "registry:ui",
+  "title": "Email format",
+  "description": "Email format - Créé par @coderooz sur TailwindFlex.",
+  "author": "@coderooz (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/email-format.tsx",
+      "content": "/**\n * Component: Email format\n * Author: @coderooz (https://tailwindflex.com/@coderooz)\n * Source: https://tailwindflex.com/@coderooz/email-format\n * Attribution: Créé par @coderooz sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function EmailFormat() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n  <title>Welcome Email</title>\\n  <style>\\n    @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');\\n  </style>\\n</head>\\n<body class=\\\"bg-gray-900 text-white font-sans justify-center items-center\\\">\\n  <table class=\\\"w-[80%] h-full my-5\\\" cellspacing=\\\"0\\\" cellpadding=\\\"0\\\" style=\\\"margin: 0; padding: 0; width: 100%; height: 100%;\\\">\\n    <tr>\\n      <td align=\\\"center\\\" class=\\\"bg-gray-900\\\">\\n        <table class=\\\"max-w-2xl w-full bg-gray-800 shadow-lg rounded-lg overflow-hidden\\\" cellspacing=\\\"0\\\" cellpadding=\\\"0\\\">\\n          <tr>\\n            <td class=\\\"bg-blue-500 text-center py-4\\\">\\n              <h1 class=\\\"text-2xl font-bold text-white\\\">Welcome to Coderooz!</h1>\\n            </td>\\n          </tr>\\n          <tr>\\n            <td class=\\\"p-6\\\">\\n              <p class=\\\"text-lg font-medium mb-4\\\">Hi [User's Name],</p>\\n              <p class=\\\"text-gray-300 mb-6\\\">\\n                Thank you for reaching out! We’ve received your message and have created an account for you.\\n              </p>\\n              <p class=\\\"text-gray-300 mb-6\\\">\\n                You can log in to your account for further queries or to get started. Below are your login details:\\n              </p>\\n              \\n              <div class=\\\"bg-gray-700 p-4 rounded-lg mb-6\\\">\\n                <p><strong>Email:</strong> [User's Email]</p>\\n                <p><strong>Password:</strong> [Generated Password]</p>\\n              </div>\\n              <p class=\\\"text-gray-300 mb-4\\\">\\n                <strong>Important:</strong> For your security, please change your password after logging in. You can do this in the \\\"Account Settings\\\" section of your dashboard.\\n              </p>\\n              <div class=\\\"text-center\\\">\\n                <a href=\\\"https://www.coderooz.xyz/form\\\" \\n                   class=\\\"bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium\\\">\\n                  Log In Now\\n                </a>\\n              </div>\\n            </td>\\n          </tr>\\n          <tr>\\n            <td class=\\\"bg-gray-700 p-6 text-gray-400 text-center text-sm\\\">\\n              If you have any questions or need assistance, feel free to contact us at \\n              <a href=\\\"mailto:support@yourwebsite.com\\\" class=\\\"text-blue-400 underline\\\">support@yourwebsite.com</a>.\\n            </td>\\n          </tr>\\n          <tr>\\n            <td class=\\\"bg-gray-800 text-center py-4\\\">\\n              <p class=\\\"text-gray-500 text-xs\\\">© 2025 <a class=\\\"hover:underline\\\" href=\\\"https://www.coderooz.xyz\\\" title=\\\"Coderooz\\\" itemprop=\\\"ur\\\">Coderooz</a>. All rights reserved.</p>\\n            </td>\\n          </tr>\\n        </table>\\n      </td>\\n    </tr>\\n  </table>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@coderooz",
+    "authorUrl": "https://tailwindflex.com/@coderooz",
+    "sourceUrl": "https://tailwindflex.com/@coderooz/email-format",
+    "mention": "Créé par @coderooz sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Welcome Email</title>\n  <style>\n    @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');\n  </style>\n</head>\n<body class=\"bg-gray-900 text-white font-sans justify-center items-center\">\n  <table class=\"w-[80%] h-full my-5\" cellspacing=\"0\" cellpadding=\"0\" style=\"margin: 0; padding: 0; width: 100%; height: 100%;\">\n    <tr>\n      <td align=\"center\" class=\"bg-gray-900\">\n        <table class=\"max-w-2xl w-full bg-gray-800 shadow-lg rounded-lg overflow-hidden\" cellspacing=\"0\" cellpadding=\"0\">\n          <tr>\n            <td class=\"bg-blue-500 text-center py-4\">\n              <h1 class=\"text-2xl font-bold text-white\">Welcome to Coderooz!</h1>\n            </td>\n          </tr>\n          <tr>\n            <td class=\"p-6\">\n              <p class=\"text-lg font-medium mb-4\">Hi [User's Name],</p>\n              <p class=\"text-gray-300 mb-6\">\n                Thank you for reaching out! We’ve received your message and have created an account for you.\n              </p>\n              <p class=\"text-gray-300 mb-6\">\n                You can log in to your account for further queries or to get started. Below are your login details:\n              </p>\n              \n              <div class=\"bg-gray-700 p-4 rounded-lg mb-6\">\n                <p><strong>Email:</strong> [User's Email]</p>\n                <p><strong>Password:</strong> [Generated Password]</p>\n              </div>\n              <p class=\"text-gray-300 mb-4\">\n                <strong>Important:</strong> For your security, please change your password after logging in. You can do this in the \"Account Settings\" section of your dashboard.\n              </p>\n              <div class=\"text-center\">\n                <a href=\"https://www.coderooz.xyz/form\" \n                   class=\"bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium\">\n                  Log In Now\n                </a>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td class=\"bg-gray-700 p-6 text-gray-400 text-center text-sm\">\n              If you have any questions or need assistance, feel free to contact us at \n              <a href=\"mailto:support@yourwebsite.com\" class=\"text-blue-400 underline\">support@yourwebsite.com</a>.\n            </td>\n          </tr>\n          <tr>\n            <td class=\"bg-gray-800 text-center py-4\">\n              <p class=\"text-gray-500 text-xs\">© 2025 <a class=\"hover:underline\" href=\"https://www.coderooz.xyz\" title=\"Coderooz\" itemprop=\"ur\">Coderooz</a>. All rights reserved.</p>\n            </td>\n          </tr>\n        </table>\n      </td>\n    </tr>\n  </table>\n</body>\n</html>"
+  }
+}

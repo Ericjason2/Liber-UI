@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-form-9",
+  "type": "registry:ui",
+  "title": "Login form",
+  "description": "Login form - Créé par @Aman300 sur TailwindFlex.",
+  "author": "@Aman300 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/login-form-9.tsx",
+      "content": "/**\n * Component: Login form\n * Author: @Aman300 (https://tailwindflex.com/@Aman300)\n * Source: https://tailwindflex.com/@Aman300/login-form-9\n * Attribution: Créé par @Aman300 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LoginForm9() {\n  return (\n    <div>\n    <div className=\"flex justify-center items-center h-screen p-10 \">\n      <div className=\"grid md2 grid-cols-1  border rounded-3xl\">\n        <div className=\"flex justify-center items-center p-5\">\n          <form action=\"\">\n            <h1 className=\"text-center mb-10 font-bold text-4xl\">Login</h1>\n            <input type=\"text\" className=\" bg-gray-100 border outline-none rounded-md py-3 w-full px-4 mb-3\" placeholder=\"Email\" />\n            <input type=\"text\" className=\" bg-gray-100 border outline-none rounded-md py-3 w-full px-4 mb-3\" placeholder=\"Email\" />\n            <button type=\"submit\" className=\" bg-yellow-400 hover500 border outline-none rounded-md py-3 w-full px-4 font-semibold text-white\">submit</button>\n          </form>\n        </div>\n        <div className=\"\">\n          <img src=\"https://img.freepik.com/premium-vector/vector-abstract-seamless-pattern-with-stars-blue-background_117177-1008.jpg\" className=\"rounded-3xl\"  alt=\"\" />\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@Aman300",
+    "authorUrl": "https://tailwindflex.com/@Aman300",
+    "sourceUrl": "https://tailwindflex.com/@Aman300/login-form-9",
+    "mention": "Créé par @Aman300 sur TailwindFlex",
+    "rawHtml": "<div class=\"flex justify-center items-center h-screen p-10 \">\n  <div class=\"grid md:grid-cols-2 grid-cols-1  border rounded-3xl\">\n    <div class=\"flex justify-center items-center p-5\">\n      <form action=\"\">\n        <h1 class=\"text-center mb-10 font-bold text-4xl\">Login</h1>\n        <input type=\"text\" class=\" bg-gray-100 border outline-none rounded-md py-3 w-full px-4 mb-3\" placeholder=\"Email\">\n        <input type=\"text\" class=\" bg-gray-100 border outline-none rounded-md py-3 w-full px-4 mb-3\" placeholder=\"Email\">\n        <button type=\"submit\" class=\" bg-yellow-400 hover:bg-yellow-500 border outline-none rounded-md py-3 w-full px-4 font-semibold text-white\">submit</button>\n      </form>\n    </div>\n    <div class=\"\">\n      <img src=\"https://img.freepik.com/premium-vector/vector-abstract-seamless-pattern-with-stars-blue-background_117177-1008.jpg\" class=\"rounded-3xl\"  alt=\"\">\n    </div>\n  </div>\n</div>"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "products-show-items",
+  "type": "registry:ui",
+  "title": "products, show, items",
+  "description": "products, show, items - Créé par @Sugam24-Services sur TailwindFlex.",
+  "author": "@Sugam24-Services (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/products-show-items.tsx",
+      "content": "/**\n * Component: products, show, items\n * Author: @Sugam24-Services (https://tailwindflex.com/@Sugam24-Services)\n * Source: https://tailwindflex.com/@Sugam24-Services/products-show-items\n * Attribution: Créé par @Sugam24-Services sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProductsShowItems() {\n  return (\n    <div>\n    <div className=\"flex flex-col items-center space-y-4\">\n            <div className=\"w-full max-w-3xl\">\n                <img id=\"main-image\" src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide1.png\" className=\"w-full rounded-lg\" alt=\"Main Image\" />\n            </div>\n    \n            <div className=\"grid grid-cols-4 max-w-3xl gap-4\" id=\"thumbnail-container\">\n    \n                <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide1.png\" className=\"thumb rounded-lg md24 h-14 object-cover cursor-pointer hover80\" alt=\"Thumb 1\" \n                 />\n    \n                <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide2.png\" className=\"thumb rounded-lg md24 h-14 object-cover cursor-pointer hover80\" alt=\"Thumb 2\"\n                 />\n    \n                <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide3.png\" className=\"thumb rounded-lg md24 h-14 object-cover cursor-pointer hover80\" alt=\"Thumb 3\"\n                 />\n    \n                <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide4.png\" className=\"thumb rounded-lg md24 h-14 object-cover cursor-pointer hover80\" alt=\"Thumb 4\"\n                 />\n    \n            </div>\n        </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "grid",
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@Sugam24-Services",
+    "authorUrl": "https://tailwindflex.com/@Sugam24-Services",
+    "sourceUrl": "https://tailwindflex.com/@Sugam24-Services/products-show-items",
+    "mention": "Créé par @Sugam24-Services sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-col items-center space-y-4\">\n        <div class=\"w-full max-w-3xl\">\n            <img id=\"main-image\" src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide1.png\" class=\"w-full rounded-lg\" alt=\"Main Image\">\n        </div>\n\n        <div class=\"grid grid-cols-4 max-w-3xl gap-4\" id=\"thumbnail-container\">\n\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide1.png\" class=\"thumb rounded-lg md:h-24 h-14 object-cover cursor-pointer hover:opacity-80\" alt=\"Thumb 1\" \n            onclick=\"document.getElementById('main-image').src = 'https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide1.png';\" >\n\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide2.png\" class=\"thumb rounded-lg md:h-24 h-14 object-cover cursor-pointer hover:opacity-80\" alt=\"Thumb 2\"\n            onclick=\"document.getElementById('main-image').src = 'https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide2.png';\" >\n\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide3.png\" class=\"thumb rounded-lg md:h-24 h-14 object-cover cursor-pointer hover:opacity-80\" alt=\"Thumb 3\"\n            onclick=\"document.getElementById('main-image').src = 'https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide3.png';\" >\n\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide4.png\" class=\"thumb rounded-lg md:h-24 h-14 object-cover cursor-pointer hover:opacity-80\" alt=\"Thumb 4\"\n            onclick=\"document.getElementById('main-image').src = 'https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/gallery/slide4.png';\" >\n\n        </div>\n    </div>"
+  }
+}

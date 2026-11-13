@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-btn",
+  "type": "registry:ui",
+  "title": "Simple Btn",
+  "description": "Simple Btn - Créé par @abidullah-786 sur TailwindFlex.",
+  "author": "@abidullah-786 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-btn.tsx",
+      "content": "/**\n * Component: Simple Btn\n * Author: @abidullah-786 (https://tailwindflex.com/@abidullah-786)\n * Source: https://tailwindflex.com/@abidullah-786/simple-btn\n * Attribution: Créé par @abidullah-786 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SimpleBtn() {\n  return (\n    <div>\n    <button type=\"button\" className=\"text-nowrap inline-flex items-center justify-center rounded-md border-2 border-transparent bg-gray-900 bg-none px-12 py-3 text-center text-base font-bold text-white transition-all duration-200 ease-in-out focus hover800\">\n                                        Submit\n                                    </button>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abidullah-786",
+    "authorUrl": "https://tailwindflex.com/@abidullah-786",
+    "sourceUrl": "https://tailwindflex.com/@abidullah-786/simple-btn",
+    "mention": "Créé par @abidullah-786 sur TailwindFlex",
+    "rawHtml": "<button type=\"button\" class=\"text-nowrap inline-flex items-center justify-center rounded-md border-2 border-transparent bg-gray-900 bg-none px-12 py-3 text-center text-base font-bold text-white transition-all duration-200 ease-in-out focus:shadow hover:bg-gray-800\">\n                                    Submit\n                                </button>"
+  }
+}

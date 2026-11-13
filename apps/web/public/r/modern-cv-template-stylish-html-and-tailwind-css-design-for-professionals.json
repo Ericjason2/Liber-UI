@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "modern-cv-template-stylish-html-and-tailwind-css-design-for-professionals",
+  "type": "registry:ui",
+  "title": "Modern CV Template - Stylish HTML and Tailwind CSS Design for Professionals",
+  "description": "Modern CV Template - Stylish HTML and Tailwind CSS Design for Professionals - Créé par @hefacom sur TailwindFlex.",
+  "author": "@hefacom (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/modern-cv-template-stylish-html-and-tailwind-css-design-for-professionals.tsx",
+      "content": "/**\n * Component: Modern CV Template - Stylish HTML and Tailwind CSS Design for Professionals\n * Author: @hefacom (https://tailwindflex.com/@hefacom)\n * Source: https://tailwindflex.com/@hefacom/modern-cv-template-stylish-html-and-tailwind-css-design-for-professionals\n * Attribution: Créé par @hefacom sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ModernCvTemplateStylishHtmlAndTailwindCssDesignForProfessionals() {\n  return (\n    <div>\n    <body className=\"bg-gray-100 text-gray-800\">\n      <div className=\"max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-10\">\n        <header className=\"flex items-center mb-6\">\n          <img src=\"https://media.licdn.com/dms/image/D4D12AQHBgMttNT44bw/article-cover_image-shrink_720_1280/0/1673417990795?e=2147483647&v=beta&t=mRO_7zq02rlo8kfKq_mUTFEv9aC9Un7H9uj0xTD3-Z4\" alt=\"Profile Picture\" className=\"profile-pic mr-6\" />\n          <div>\n            <h1 className=\"text-3xl font-bold text-gray-900\">John Doe</h1>\n            <p className=\"text-lg text-gray-600\">Web Developer | UI/UX Designer</p>\n            <p className=\"text-gray-500 mt-2\">Email: john.doe.com | Phone: (123) 456-7890 | LinkedIn: linkedin.com/in/johndoe</p>\n          </div>\n        </header>\n    \n        <section>\n          <h2 className=\"section-title text-xl\">About Me</h2>\n          <p className=\"text-gray-700\">Passionate web developer with over 5 years of experience in building interactive and responsive websites. Adept at collaborating with designers and developers to create user-centered solutions. Excels in problem-solving and is committed to continuous learning and improvement.</p>\n        </section>\n    \n        <section className=\"mt-8\">\n          <h2 className=\"section-title text-xl\">Skills</h2>\n          <div className=\"space-y-4\">\n            <div>\n              <h3 className=\"font-semibold\">HTML & CSS</h3>\n              <div className=\"skill-bar\">\n                <div className=\"skill-fill\" style=\"width: 90%;\"></div>\n              </div>\n            </div>\n            <div>\n              <h3 className=\"font-semibold\">JavaScript</h3>\n              <div className=\"skill-bar\">\n                <div className=\"skill-fill\" style=\"width: 80%;\"></div>\n              </div>\n            </div>\n            <div>\n              <h3 className=\"font-semibold\">React</h3>\n              <div className=\"skill-bar\">\n                <div className=\"skill-fill\" style=\"width: 85%;\"></div>\n              </div>\n            </div>\n            <div>\n              <h3 className=\"font-semibold\">UI/UX Design</h3>\n              <div className=\"skill-bar\">\n                <div className=\"skill-fill\" style=\"width: 75%;\"></div>\n              </div>\n            </div>\n          </div>\n        </section>\n    \n        <section className=\"mt-8\">\n          <h2 className=\"section-title text-xl\">Experience</h2>\n          <div className=\"space-y-4\">\n            <div>\n              <h3 className=\"font-semibold\">Senior Web Developer at XYZ Corp</h3>\n              <p className=\"text-gray-600\">Jan 2020 - Present</p>\n              <ul className=\"list-disc ml-6 mt-2 text-gray-700\">\n                <li>Developed and maintained company websites and applications.</li>\n                <li>Collaborated with cross-functional teams to enhance user experience.</li>\n                <li>Implemented responsive designs and optimized performance.</li>\n              </ul>\n            </div>\n            <div>\n              <h3 className=\"font-semibold\">Front-End Developer at ABC Inc</h3>\n              <p className=\"text-gray-600\">Jun 2017 - Dec 2019</p>\n              <ul className=\"list-disc ml-6 mt-2 text-gray-700\">\n                <li>Built interactive user interfaces with HTML, CSS, and JavaScript.</li>\n                <li>Worked closely with designers to create visually appealing designs.</li>\n                <li>Ensured cross-browser compatibility and responsiveness.</li>\n              </ul>\n            </div>\n          </div>\n        </section>\n    \n        <section className=\"mt-8\">\n          <h2 className=\"section-title text-xl\">Education</h2>\n          <div>\n            <h3 className=\"font-semibold\">Bachelor of Science in Computer Science</h3>\n            <p className=\"text-gray-600\">University of Somewhere</p>\n            <p className=\"text-gray-500\">Graduated: May 2017</p>\n          </div>\n        </section>\n      </div>\n    </body>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@hefacom",
+    "authorUrl": "https://tailwindflex.com/@hefacom",
+    "sourceUrl": "https://tailwindflex.com/@hefacom/modern-cv-template-stylish-html-and-tailwind-css-design-for-professionals",
+    "mention": "Créé par @hefacom sur TailwindFlex",
+    "rawHtml": "<body class=\"bg-gray-100 text-gray-800\">\n  <div class=\"max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-10\">\n    <header class=\"flex items-center mb-6\">\n      <img src=\"https://media.licdn.com/dms/image/D4D12AQHBgMttNT44bw/article-cover_image-shrink_720_1280/0/1673417990795?e=2147483647&v=beta&t=mRO_7zq02rlo8kfKq_mUTFEv9aC9Un7H9uj0xTD3-Z4\" alt=\"Profile Picture\" class=\"profile-pic mr-6\">\n      <div>\n        <h1 class=\"text-3xl font-bold text-gray-900\">John Doe</h1>\n        <p class=\"text-lg text-gray-600\">Web Developer | UI/UX Designer</p>\n        <p class=\"text-gray-500 mt-2\">Email: john.doe@example.com | Phone: (123) 456-7890 | LinkedIn: linkedin.com/in/johndoe</p>\n      </div>\n    </header>\n\n    <section>\n      <h2 class=\"section-title text-xl\">About Me</h2>\n      <p class=\"text-gray-700\">Passionate web developer with over 5 years of experience in building interactive and responsive websites. Adept at collaborating with designers and developers to create user-centered solutions. Excels in problem-solving and is committed to continuous learning and improvement.</p>\n    </section>\n\n    <section class=\"mt-8\">\n      <h2 class=\"section-title text-xl\">Skills</h2>\n      <div class=\"space-y-4\">\n        <div>\n          <h3 class=\"font-semibold\">HTML & CSS</h3>\n          <div class=\"skill-bar\">\n            <div class=\"skill-fill\" style=\"width: 90%;\"></div>\n          </div>\n        </div>\n        <div>\n          <h3 class=\"font-semibold\">JavaScript</h3>\n          <div class=\"skill-bar\">\n            <div class=\"skill-fill\" style=\"width: 80%;\"></div>\n          </div>\n        </div>\n        <div>\n          <h3 class=\"font-semibold\">React</h3>\n          <div class=\"skill-bar\">\n            <div class=\"skill-fill\" style=\"width: 85%;\"></div>\n          </div>\n        </div>\n        <div>\n          <h3 class=\"font-semibold\">UI/UX Design</h3>\n          <div class=\"skill-bar\">\n            <div class=\"skill-fill\" style=\"width: 75%;\"></div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <section class=\"mt-8\">\n      <h2 class=\"section-title text-xl\">Experience</h2>\n      <div class=\"space-y-4\">\n        <div>\n          <h3 class=\"font-semibold\">Senior Web Developer at XYZ Corp</h3>\n          <p class=\"text-gray-600\">Jan 2020 - Present</p>\n          <ul class=\"list-disc ml-6 mt-2 text-gray-700\">\n            <li>Developed and maintained company websites and applications.</li>\n            <li>Collaborated with cross-functional teams to enhance user experience.</li>\n            <li>Implemented responsive designs and optimized performance.</li>\n          </ul>\n        </div>\n        <div>\n          <h3 class=\"font-semibold\">Front-End Developer at ABC Inc</h3>\n          <p class=\"text-gray-600\">Jun 2017 - Dec 2019</p>\n          <ul class=\"list-disc ml-6 mt-2 text-gray-700\">\n            <li>Built interactive user interfaces with HTML, CSS, and JavaScript.</li>\n            <li>Worked closely with designers to create visually appealing designs.</li>\n            <li>Ensured cross-browser compatibility and responsiveness.</li>\n          </ul>\n        </div>\n      </div>\n    </section>\n\n    <section class=\"mt-8\">\n      <h2 class=\"section-title text-xl\">Education</h2>\n      <div>\n        <h3 class=\"font-semibold\">Bachelor of Science in Computer Science</h3>\n        <p class=\"text-gray-600\">University of Somewhere</p>\n        <p class=\"text-gray-500\">Graduated: May 2017</p>\n      </div>\n    </section>\n  </div>\n</body>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "background-gradient-button-with-hover-effects",
+  "type": "registry:ui",
+  "title": "Background Gradient Button with Hover Effects",
+  "description": "Background Gradient Button with Hover Effects - Créé par @kavita-joshi sur TailwindFlex.",
+  "author": "@kavita-joshi (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/background-gradient-button-with-hover-effects.tsx",
+      "content": "/**\n * Component: Background Gradient Button with Hover Effects\n * Author: @kavita-joshi (https://tailwindflex.com/@kavita-joshi)\n * Source: https://tailwindflex.com/@kavita-joshi/background-gradient-button-with-hover-effects\n * Attribution: Créé par @kavita-joshi sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BackgroundGradientButtonWithHoverEffects() {\n  return (\n    <div>\n    <div className=\"relative inline-flex group\">\n      <div\n        className=\"absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover100 group-hover1 group-hover200\">\n      </div>\n      <a href=\"\" target=\"_blank\" title=\"\" role=\"button\"\n        className=\"relative inline-flex items-center justify-center px-5 py-2 text-base font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent focus focus2 focus2 focus900 hover600 rounded\">\n        Learn more\n      </a>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@kavita-joshi",
+    "authorUrl": "https://tailwindflex.com/@kavita-joshi",
+    "sourceUrl": "https://tailwindflex.com/@kavita-joshi/background-gradient-button-with-hover-effects",
+    "mention": "Créé par @kavita-joshi sur TailwindFlex",
+    "rawHtml": "<div class=\"relative inline-flex group\">\n  <div\n    class=\"absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200\">\n  </div>\n  <a href=\"\" target=\"_blank\" title=\"\" role=\"button\"\n    class=\"relative inline-flex items-center justify-center px-5 py-2 text-base font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-600 rounded\">\n    Learn more\n  </a>\n</div>"
+  }
+}

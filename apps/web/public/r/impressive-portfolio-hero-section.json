@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "impressive-portfolio-hero-section",
+  "type": "registry:ui",
+  "title": "Portfolio Hero Section 1",
+  "description": "Portfolio Hero Section 1 - Créé par @sammytg7 sur TailwindFlex.",
+  "author": "@sammytg7 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/impressive-portfolio-hero-section.tsx",
+      "content": "/**\n * Component: Portfolio Hero Section 1\n * Author: @sammytg7 (https://tailwindflex.com/@sammytg7)\n * Source: https://tailwindflex.com/@sammytg7/impressive-portfolio-hero-section\n * Attribution: Créé par @sammytg7 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ImpressivePortfolioHeroSection() {\n  return (\n    <div>\n    <div className=\"w-full h-full bg-gray-900 dark200\">\n        <header className=\"lg16 px-4 flex flex-wrap items-center py-4 shadow-lg\">\n            <div className=\"flex-1 flex justify-between items-center\">\n                <img className=\"sm[10rem] w-[7rem]\" src=\"https://techakim.com/sam/tg/7268/li/imgs/samlogo2.png\" alt=\"Logo\" />\n            </div>\n            <label htmlFor=\"menu-toggle\" className=\"cursor-pointer md block\">\n                <svg className=\"fill-current w-6 h-6 text-gray-200 dark800\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\">\n                <title>menu</title>\n                <path d=\"M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z\"></path>\n                </svg>\n                </label>\n            <input className=\"hidden\" type=\"checkbox\" id=\"menu-toggle\" />\n    \n            <div className=\"hidden md md md w-full\" id=\"menu\">\n                <nav>\n                    <ul className=\"md items-center justify-between text-base text-gray-100 dark600 pt-4 md0\">\n                        <li><a className=\"md4 py-3 px-0 block text-rose-500\" href=\"#\">Home</a></li>\n                        <li><a className=\"md4 py-3 px-0 block\" href=\"#\">About Me</a></li>\n                        <li><a className=\"md4 py-3 px-0 block\" href=\"#\">Education</a></li>\n                        <li><a className=\"md4 py-3 px-0 block\" href=\"#\">Experience</a></li>\n                        <li><a className=\"md4 py-3 px-0 block\" href=\"#\">Projects</a></li>\n                        <li><a className=\"md4 py-3 px-0 block md0 mb-2\" href=\"#\">Contact</a></li>\n                    </ul>\n                </nav>\n            </div>\n        </header>\n    \n        <div\n            className=\"h-full w-full mx-auto relative top-12 pb-20 xl16 px-8 flex md flex-col gap-4 justify-center items-center pb-10 pt-4\">\n            <div className=\"w-full relative\">\n                \n                <img className=\"relative z-10 rounded-full lg[70%] max-w-[60%] mx-auto outline outline-[.7rem] outline-offset-[.1rem] outline-rose-400/30\" src=\"https://techakim.com/sam/tg/7268/li/imgs/profile.jpg\" alt=\"My Image\" />\n            </div>\n            <div className=\"w-full flex flex-col justify-center gap-4 md text-center text-white dark800 md0 sm8 mt-4\">\n                <h1 className=\"md4xl sm3xl text-2xl font-semibold font-serif\">Hello, My name is Samuel Abera</h1>\n                <h3 className=\"capitalize text-rose-400\">i'm <span className=\"typing text-green-500 dark700\">fullstack developer</span></h3>\n                <p>Experienced full-stack developer with 4+ years of expertise in Laravel, NestJS, Nuxt.js, Next.js,\n                    Android, and some Flutter experience.</p>\n                <div className=\"sm4 mt-2\">\n                    <button className=\"px-6 py-1 bg-rose-500 text-white rounded-sm\">Get In Touch</button>\n                </div>\n            </div>\n        </div>\n    </div>\n    \n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sammytg7",
+    "authorUrl": "https://tailwindflex.com/@sammytg7",
+    "sourceUrl": "https://tailwindflex.com/@sammytg7/impressive-portfolio-hero-section",
+    "mention": "Créé par @sammytg7 sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full h-full bg-gray-900 dark:bg-gray-200\">\n    <header class=\"lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg\">\n        <div class=\"flex-1 flex justify-between items-center\">\n            <img class=\"sm:w-[10rem] w-[7rem]\" src=\"https://techakim.com/sam/tg/7268/li/imgs/samlogo2.png\" alt=\"Logo\" />\n        </div>\n        <label for=\"menu-toggle\" class=\"cursor-pointer md:hidden block\">\n            <svg class=\"fill-current w-6 h-6 text-gray-200 dark:text-gray-800\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\">\n            <title>menu</title>\n            <path d=\"M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z\"></path>\n            </svg>\n            </label>\n        <input class=\"hidden\" type=\"checkbox\" id=\"menu-toggle\" />\n\n        <div class=\"hidden md:flex md:items-center md:w-auto w-full\" id=\"menu\">\n            <nav>\n                <ul class=\"md:flex items-center justify-between text-base text-gray-100 dark:text-gray-600 pt-4 md:pt-0\">\n                    <li><a class=\"md:p-4 py-3 px-0 block text-rose-500\" href=\"#\">Home</a></li>\n                    <li><a class=\"md:p-4 py-3 px-0 block\" href=\"#\">About Me</a></li>\n                    <li><a class=\"md:p-4 py-3 px-0 block\" href=\"#\">Education</a></li>\n                    <li><a class=\"md:p-4 py-3 px-0 block\" href=\"#\">Experience</a></li>\n                    <li><a class=\"md:p-4 py-3 px-0 block\" href=\"#\">Projects</a></li>\n                    <li><a class=\"md:p-4 py-3 px-0 block md:mb-0 mb-2\" href=\"#\">Contact</a></li>\n                </ul>\n            </nav>\n        </div>\n    </header>\n\n    <div\n        class=\"h-full w-full mx-auto relative top-12 pb-20 xl:px-16 px-8 flex md:flex-row flex-col gap-4 justify-center items-center pb-10 pt-4\">\n        <div class=\"w-full relative\">\n            <!-- <img class=\"shadow-2xl shadow-rose-600 animate-[spin_12s_linear_infinite] absolute left-0 right-0 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto\" src=\"https://techakim.com/sam/tg/7268/li/imgs/profile.jpg\" alt=\"My Image\" /> -->\n            <img class=\"relative z-10 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto outline outline-[.7rem] outline-offset-[.1rem] outline-rose-400/30\" src=\"https://techakim.com/sam/tg/7268/li/imgs/profile.jpg\" alt=\"My Image\" />\n        </div>\n        <div class=\"w-full flex flex-col justify-center gap-4 md:text-left text-center text-white dark:text-gray-800 md:mt-0 sm:mt-8 mt-4\">\n            <h1 class=\"md:text-4xl sm:text-3xl text-2xl font-semibold font-serif\">Hello, My name is Samuel Abera</h1>\n            <h3 class=\"capitalize text-rose-400\">i'm <span class=\"typing text-green-500 dark:text-green-700\">fullstack developer</span></h3>\n            <p>Experienced full-stack developer with 4+ years of expertise in Laravel, NestJS, Nuxt.js, Next.js,\n                Android, and some Flutter experience.</p>\n            <div class=\"sm:mt-4 mt-2\">\n                <button class=\"px-6 py-1 bg-rose-500 text-white rounded-sm\">Get In Touch</button>\n            </div>\n        </div>\n    </div>\n</div>\n\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js\" referrerpolicy=\"no-referrer\"></script>\n<script>\n    var typed = new Typed('.typing', {\n    strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,', 'Mobile Apps Developer.'],\n    typeSpeed: 100,\n    BackSpeed: 60,\n    loop: true\n})\n</script>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "register-cta-section-animation",
+  "type": "registry:ui",
+  "title": "REGISTER - CTA - SECTION animation",
+  "description": "REGISTER - CTA - SECTION animation - Créé par @abdulbast sur TailwindFlex.",
+  "author": "@abdulbast (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/register-cta-section-animation.tsx",
+      "content": "/**\n * Component: REGISTER - CTA - SECTION animation\n * Author: @abdulbast (https://tailwindflex.com/@abdulbast)\n * Source: https://tailwindflex.com/@abdulbast/register-cta-section-animation\n * Attribution: Créé par @abdulbast sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function RegisterCtaSectionAnimation() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<section class=\\\"py-20 dark:bg-black h-[600px]\\\">\\n  <h2 class=\\\"mb-10 text-center text-4xl font-bold uppercase sm:text-5xl md:text-8xl dark:text-white\\\">REGISTER NOW</h2>\\n\\n  <div class=\\\"mx-auto max-w-7xl overflow-hidden rounded-[50px] p-8 sm:p-14 lg:p-20 dark:bg-[#1c1a1a]\\\">\\n    <h2 class=\\\"text-center text-xl leading-loose font-bold sm:text-start md:text-2xl dark:text-white\\\">Early Bird Pricing Ends In:</h2>\\n\\n    <div class=\\\"mx-auto mt-8 w-full sm:w-[700px] lg:w-[900px]\\\">\\n      <div class=\\\"mx-auto flex max-w-md justify-between\\\">\\n        <span class=\\\"min-w-[70px] text-center text-xs font-medium sm:text-sm dark:text-white\\\">DAYS</span>\\n        <span class=\\\"min-w-[70px] text-center text-xs font-medium sm:text-sm dark:text-white\\\">HOURS</span>\\n        <span class=\\\"min-w-[70px] text-center text-xs font-medium sm:text-sm dark:text-white\\\">MINUTES</span>\\n      </div>\\n\\n      <div class=\\\"countdown-timer relative h-[80px] overflow-hidden sm:h-[220px]\\\">\\n        <p class=\\\"text-center font-mono text-[50px] leading-[1.1] font-normal sm:text-[120px] md:text-[150px] lg:text-[200px] dark:text-white\\\">12:05:3<span class=\\\"animated-digit \\\"></span></p>\\n      </div>\\n    </div>\\n  </div>\\n</section>\\n\\n<style>\\n  .countdown-timer {\\n    animation: typingEffect 2s infinite alternate-reverse;\\n  }\\n\\n  @keyframes typingEffect {\\n    from {\\n      height: 0;\\n      opacity: 0;\\n    }\\n    to {\\n      height: 200px;\\n      opacity: 1;\\n    }\\n  }\\n\\n  .animated-digit::before {\\n    content: \\\"6\\\";\\n    animation: digitChange 12s infinite step-end;\\n  }\\n\\n  @keyframes digitChange {\\n    0%, 24.999% { content: \\\"6\\\"; }\\n    25%, 49.999% { content: \\\"7\\\"; }\\n    50%, 74.999% { content: \\\"8\\\"; }\\n    75%, 100% { content: \\\"9\\\"; }\\n  }\\n</style>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abdulbast",
+    "authorUrl": "https://tailwindflex.com/@abdulbast",
+    "sourceUrl": "https://tailwindflex.com/@abdulbast/register-cta-section-animation",
+    "mention": "Créé par @abdulbast sur TailwindFlex",
+    "rawHtml": "<section class=\"py-20 dark:bg-black h-[600px]\">\n  <h2 class=\"mb-10 text-center text-4xl font-bold uppercase sm:text-5xl md:text-8xl dark:text-white\">REGISTER NOW</h2>\n\n  <div class=\"mx-auto max-w-7xl overflow-hidden rounded-[50px] p-8 sm:p-14 lg:p-20 dark:bg-[#1c1a1a]\">\n    <h2 class=\"text-center text-xl leading-loose font-bold sm:text-start md:text-2xl dark:text-white\">Early Bird Pricing Ends In:</h2>\n\n    <div class=\"mx-auto mt-8 w-full sm:w-[700px] lg:w-[900px]\">\n      <div class=\"mx-auto flex max-w-md justify-between\">\n        <span class=\"min-w-[70px] text-center text-xs font-medium sm:text-sm dark:text-white\">DAYS</span>\n        <span class=\"min-w-[70px] text-center text-xs font-medium sm:text-sm dark:text-white\">HOURS</span>\n        <span class=\"min-w-[70px] text-center text-xs font-medium sm:text-sm dark:text-white\">MINUTES</span>\n      </div>\n\n      <div class=\"countdown-timer relative h-[80px] overflow-hidden sm:h-[220px]\">\n        <p class=\"text-center font-mono text-[50px] leading-[1.1] font-normal sm:text-[120px] md:text-[150px] lg:text-[200px] dark:text-white\">12:05:3<span class=\"animated-digit \"></span></p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .countdown-timer {\n    animation: typingEffect 2s infinite alternate-reverse;\n  }\n\n  @keyframes typingEffect {\n    from {\n      height: 0;\n      opacity: 0;\n    }\n    to {\n      height: 200px;\n      opacity: 1;\n    }\n  }\n\n  .animated-digit::before {\n    content: \"6\";\n    animation: digitChange 12s infinite step-end;\n  }\n\n  @keyframes digitChange {\n    0%, 24.999% { content: \"6\"; }\n    25%, 49.999% { content: \"7\"; }\n    50%, 74.999% { content: \"8\"; }\n    75%, 100% { content: \"9\"; }\n  }\n</style>"
+  }
+}

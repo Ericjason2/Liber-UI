@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-with-hover-animation",
+  "type": "registry:ui",
+  "title": "Button with hover animation",
+  "description": "Button with hover animation - Créé par @losiol sur TailwindFlex.",
+  "author": "@losiol (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button-with-hover-animation.tsx",
+      "content": "/**\n * Component: Button with hover animation\n * Author: @losiol (https://tailwindflex.com/@losiol)\n * Source: https://tailwindflex.com/@losiol/button-with-hover-animation\n * Attribution: Créé par @losiol sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonWithHoverAnimation() {\n  return (\n    <div>\n    <button className=\"inline-block px-7 py-1.5 overflow-hidden text-sm font-semibold transition-transform rounded-full group text text-green-700/70 bg-green-300/30 hover500/70 hover\">\n      <span before=\"Send message\" className=\"relative py-1.5 transition-transform inline-block before[attr(before)] before1.5 before before group-hover\">Send message</span>\n    </button>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@losiol",
+    "authorUrl": "https://tailwindflex.com/@losiol",
+    "sourceUrl": "https://tailwindflex.com/@losiol/button-with-hover-animation",
+    "mention": "Créé par @losiol sur TailwindFlex",
+    "rawHtml": "<button class=\"inline-block px-7 py-1.5 overflow-hidden text-sm font-semibold transition-transform rounded-full group text text-green-700/70 bg-green-300/30 hover:bg-green-500/70 hover:text-white\">\n  <span before=\"Send message\" class=\"relative py-1.5 transition-transform inline-block before:content-[attr(before)] before:py-1.5 before:absolute before:top-full group-hover:-translate-y-full\">Send message</span>\n</button>"
+  }
+}

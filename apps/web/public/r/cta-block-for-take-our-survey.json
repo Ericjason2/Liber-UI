@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cta-block-for-take-our-survey",
+  "type": "registry:ui",
+  "title": "CTA block for &quot;Take our survey&quot;",
+  "description": "CTA block for &quot;Take our survey&quot; - Créé par @prajwal sur TailwindFlex.",
+  "author": "@prajwal (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cta-block-for-take-our-survey.tsx",
+      "content": "/**\n * Component: CTA block for &quot;Take our survey&quot;\n * Author: @prajwal (https://tailwindflex.com/@prajwal)\n * Source: https://tailwindflex.com/@prajwal/cta-block-for-take-our-survey\n * Attribution: Créé par @prajwal sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CtaBlockForTakeOurSurvey() {\n  return (\n    <div>\n    <div className=\"w-full max-w-2xl my-4 mx-auto p-2\">\n    \n        <div className=\"border border-indigo-500 p-4 md6 rounded-lg text-center\">\n            <h2 className=\"text-2xl md3xl font-bold mb-4\">We need your help!</h2>\n    \n            <p className=\"text-lg mb-4 text-gray-700\">\n                We're developing a website for <strong>study materials for students</strong>.\n                <br />\n                We would love to hear your answers to some of the questions.\n            </p>\n    \n            <a href=\"#\"\n                className=\"font-bold inline-block bg-indigo-100 text-indigo-700 py-2 px-4 rounded-lg hover100 transition duration-300 ease-in-out\">\n                Take Survey\n            </a>\n    \n            <p className=\"text-sm py-2 text-gray-500\">\n                You will be rewarded for completing survey\n            </p>\n        </div>\n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@prajwal",
+    "authorUrl": "https://tailwindflex.com/@prajwal",
+    "sourceUrl": "https://tailwindflex.com/@prajwal/cta-block-for-take-our-survey",
+    "mention": "Créé par @prajwal sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full max-w-2xl my-4 mx-auto p-2\">\n\n    <div class=\"border border-indigo-500 p-4 md:p-6 rounded-lg text-center\">\n        <h2 class=\"text-2xl md:text-3xl font-bold mb-4\">We need your help!</h2>\n\n        <p class=\"text-lg mb-4 text-gray-700\">\n            We're developing a website for <strong>study materials for students</strong>.\n            <br>\n            We would love to hear your answers to some of the questions.\n        </p>\n\n        <a href=\"#\"\n            class=\"font-bold inline-block bg-indigo-100 text-indigo-700 py-2 px-4 rounded-lg hover:bg-indigo-100 transition duration-300 ease-in-out\">\n            Take Survey\n        </a>\n\n        <p class=\"text-sm py-2 text-gray-500\">\n            You will be rewarded for completing survey\n        </p>\n    </div>\n\n</div>"
+  }
+}

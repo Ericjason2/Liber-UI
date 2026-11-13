@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "logo-grid-2",
+  "type": "registry:ui",
+  "title": "Logo grid",
+  "description": "Logo grid - Créé par @ariaw sur TailwindFlex.",
+  "author": "@ariaw (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/logo-grid-2.tsx",
+      "content": "/**\n * Component: Logo grid\n * Author: @ariaw (https://tailwindflex.com/@ariaw)\n * Source: https://tailwindflex.com/@ariaw/logo-grid-2\n * Attribution: Créé par @ariaw sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LogoGrid2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\" dir=\\\"ltr\\\">\\n\\n<head>\\n  <meta charset=\\\"UTF-8\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n  <title>Logo grid</title>\\n  \\n  <link rel=\\\"preconnect\\\" href=\\\"https://fonts.googleapis.com\\\">\\n  <link rel=\\\"preconnect\\\" href=\\\"https://fonts.gstatic.com\\\" crossorigin>\\n  <link href=\\\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap\\\" rel=\\\"stylesheet\\\">\\n  <style>\\n    body {\\n      font-family: 'Inter', sans-serif;\\n    }\\n\\n    .logo-img {\\n      filter: grayscale(100%) brightness(70%);\\n      transition: all 0.3s ease;\\n    }\\n\\n    .logo-card:hover .logo-img {\\n      filter: grayscale(0%) brightness(100%);\\n      transform: scale(1.05);\\n    }\\n  </style>\\n</head>\\n\\n<body class=\\\"bg-[#f9f9f9]\\\">\\n\\n  <!-- Logo Grid Section -->\\n  <section class=\\\"py-12\\\">\\n    <div class=\\\"max-w-7xl mx-auto px-6\\\">\\n      <div class=\\\"text-center mb-16\\\">\\n        <p class=\\\"text-gray-500 text-sm mb-2 font-medium uppercase tracking-wider\\\">Trusted by industry leaders</p>\\n        <h2 class=\\\"text-3xl md:text-4xl font-bold text-gray-900 mb-4\\\">Our Partners</h2>\\n        <p class=\\\"text-gray-600 max-w-2xl mx-auto\\\">\\n          We collaborate with forward-thinking companies to create meaningful impact and drive growth.\\n        </p>\\n      </div>\\n\\n      <div class=\\\"grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8\\\">\\n        <!-- Logo Cards -->\\n        <div class=\\\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\\\">\\n          <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg\\\" alt=\\\"Stripe\\\" class=\\\"logo-img h-8\\\">\\n        </div>\\n        <div class=\\\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\\\">\\n          <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg\\\" alt=\\\"Slack\\\" class=\\\"logo-img h-8\\\">\\n        </div>\\n        <div class=\\\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\\\">\\n          <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/1/1c/YouTube_Music_2024.svg\\\" alt=\\\"Youtube Music\\\" class=\\\"logo-img h-10\\\">\\n        </div>\\n        <div class=\\\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\\\">\\n          <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/7/78/Soundcloud_logo.svg\\\" alt=\\\"SoundCloud\\\" class=\\\"logo-img h-8\\\">\\n        </div>\\n        <div class=\\\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\\\">\\n          <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/HubSpot_Logo.svg/1920px-HubSpot_Logo.svg.png\\\" alt=\\\"HubSpot\\\" class=\\\"logo-img h-7\\\">\\n        </div>\\n        <div class=\\\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\\\">\\n          <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/e/ec/Medium_logo_Monogram.svg\\\" alt=\\\"Medium\\\" class=\\\"logo-img h-8\\\">\\n        </div>\\n        <div class=\\\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\\\">\\n          <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/b/bd/2024_Spotify_Logo.svg\\\" alt=\\\"Spotify\\\" class=\\\"logo-img h-10\\\">\\n        </div>\\n        <div class=\\\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\\\">\\n          <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg\\\" alt=\\\"Airbnb\\\" class=\\\"logo-img h-7\\\">\\n        </div>\\n      </div>\\n    </div>\\n  </section>\\n\\n\\n</body>\\n\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "grid",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ariaw",
+    "authorUrl": "https://tailwindflex.com/@ariaw",
+    "sourceUrl": "https://tailwindflex.com/@ariaw/logo-grid-2",
+    "mention": "Créé par @ariaw sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Logo grid</title>\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap\" rel=\"stylesheet\">\n  <style>\n    body {\n      font-family: 'Inter', sans-serif;\n    }\n\n    .logo-img {\n      filter: grayscale(100%) brightness(70%);\n      transition: all 0.3s ease;\n    }\n\n    .logo-card:hover .logo-img {\n      filter: grayscale(0%) brightness(100%);\n      transform: scale(1.05);\n    }\n  </style>\n</head>\n\n<body class=\"bg-[#f9f9f9]\">\n\n  <!-- Logo Grid Section -->\n  <section class=\"py-12\">\n    <div class=\"max-w-7xl mx-auto px-6\">\n      <div class=\"text-center mb-16\">\n        <p class=\"text-gray-500 text-sm mb-2 font-medium uppercase tracking-wider\">Trusted by industry leaders</p>\n        <h2 class=\"text-3xl md:text-4xl font-bold text-gray-900 mb-4\">Our Partners</h2>\n        <p class=\"text-gray-600 max-w-2xl mx-auto\">\n          We collaborate with forward-thinking companies to create meaningful impact and drive growth.\n        </p>\n      </div>\n\n      <div class=\"grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8\">\n        <!-- Logo Cards -->\n        <div class=\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\">\n          <img src=\"https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg\" alt=\"Stripe\" class=\"logo-img h-8\">\n        </div>\n        <div class=\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\">\n          <img src=\"https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg\" alt=\"Slack\" class=\"logo-img h-8\">\n        </div>\n        <div class=\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\">\n          <img src=\"https://upload.wikimedia.org/wikipedia/commons/1/1c/YouTube_Music_2024.svg\" alt=\"Youtube Music\" class=\"logo-img h-10\">\n        </div>\n        <div class=\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\">\n          <img src=\"https://upload.wikimedia.org/wikipedia/commons/7/78/Soundcloud_logo.svg\" alt=\"SoundCloud\" class=\"logo-img h-8\">\n        </div>\n        <div class=\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\">\n          <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/HubSpot_Logo.svg/1920px-HubSpot_Logo.svg.png\" alt=\"HubSpot\" class=\"logo-img h-7\">\n        </div>\n        <div class=\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\">\n          <img src=\"https://upload.wikimedia.org/wikipedia/commons/e/ec/Medium_logo_Monogram.svg\" alt=\"Medium\" class=\"logo-img h-8\">\n        </div>\n        <div class=\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\">\n          <img src=\"https://upload.wikimedia.org/wikipedia/commons/b/bd/2024_Spotify_Logo.svg\" alt=\"Spotify\" class=\"logo-img h-10\">\n        </div>\n        <div class=\"logo-card bg-white rounded-2xl py-12 px-6 shadow-sm flex items-center justify-center\">\n          <img src=\"https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg\" alt=\"Airbnb\" class=\"logo-img h-7\">\n        </div>\n      </div>\n    </div>\n  </section>\n\n\n</body>\n\n</html>"
+  }
+}

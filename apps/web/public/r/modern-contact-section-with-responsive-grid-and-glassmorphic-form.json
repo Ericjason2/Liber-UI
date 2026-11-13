@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "modern-contact-section-with-responsive-grid-and-glassmorphic-form",
+  "type": "registry:ui",
+  "title": "Modern Contact Section with Responsive Grid and Glassmorphic Form",
+  "description": "Modern Contact Section with Responsive Grid and Glassmorphic Form - Créé par @umairarshad-dev sur TailwindFlex.",
+  "author": "@umairarshad-dev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/modern-contact-section-with-responsive-grid-and-glassmorphic-form.tsx",
+      "content": "/**\n * Component: Modern Contact Section with Responsive Grid and Glassmorphic Form\n * Author: @umairarshad-dev (https://tailwindflex.com/@umairarshad-dev)\n * Source: https://tailwindflex.com/@umairarshad-dev/modern-contact-section-with-responsive-grid-and-glassmorphic-form\n * Attribution: Créé par @umairarshad-dev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ModernContactSectionWithResponsiveGridAndGlassmorphicForm() {\n  return (\n    <div>\n    <section id=\"contact\" className=\"relative bg-gradient-to-b from-blue-50 to-white dark900 dark800 py-24\">\n      <div className=\"mx-auto max-w-7xl px-6 sm8 lg12\">\n        \n        <div className=\"text-center max-w-2xl mx-auto mb-20\">\n          <h2 className=\"text-4xl sm5xl font-extrabold text-gray-900 dark\">Let’s Connect</h2>\n          <p className=\"mt-4 text-lg text-gray-600 dark400\">\n            Have a project in mind, a question, or just want to say hi? Drop us a line.\n          </p>\n        </div>\n    \n        \n        <div className=\"grid md2 gap-12\">\n          \n          <div className=\"space-y-8\">\n            \n            <div className=\"flex items-start space-x-4\">\n              <div className=\"flex-shrink-0 w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl\">\n                📍\n              </div>\n              <div>\n                <h4 className=\"text-xl font-semibold text-gray-900 dark\">Our Office</h4>\n                <p className=\"text-gray-600 dark400\">Location<br />New York, NY 10001</p>\n              </div>\n            </div>\n    \n            <div className=\"flex items-start space-x-4\">\n              <div className=\"flex-shrink-0 w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl\">\n                📞\n              </div>\n              <div>\n                <h4 className=\"text-xl font-semibold text-gray-900 dark\">Say Hello</h4>\n                <p className=\"text-gray-600 dark400\">+92 334---------</p>\n                <p className=\"text-gray-600 dark400\">E-mail.com</p>\n              </div>\n            </div>\n    \n            <div className=\"flex items-start space-x-4\">\n              <div className=\"flex-shrink-0 w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl\">\n                ⏰\n              </div>\n              <div>\n                <h4 className=\"text-xl font-semibold text-gray-900 dark\">Working Hours</h4>\n                <p className=\"text-gray-600 dark400\">Mon–Fri: 09:00–6:00</p>\n                <p className=\"text-gray-600 dark400\">Sat: 08:00–12:00</p>\n              </div>\n            </div>\n          </div>\n    \n          \n          <div className=\"bg-white dark900/70 backdrop-blur-lg border border-slate-200 dark700 rounded-2xl p-8 shadow-xl\">\n            <h3 className=\"text-2xl font-bold text-gray-900 dark mb-6\">Send us a message</h3>\n            <form className=\"space-y-6\" id=\"contactForm\">\n              <div>\n                <label htmlFor=\"name\" className=\"block mb-2 text-sm font-medium text-gray-700 dark300\">Your Name</label>\n                <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"John Doe\"\n                  className=\"w-full rounded-lg border border-gray-300 dark600 bg-transparent px-4 py-2 text-gray-900 dark focus2 focus600 outline-none transition-all\" />\n              </div>\n              <div>\n                <label htmlFor=\"email\" className=\"block mb-2 text-sm font-medium text-gray-700 dark300\">Email Address</label>\n                <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"john.com\"\n                  className=\"w-full rounded-lg border border-gray-300 dark600 bg-transparent px-4 py-2 text-gray-900 dark focus2 focus600 outline-none transition-all\" />\n              </div>\n              <div>\n                <label htmlFor=\"message\" className=\"block mb-2 text-sm font-medium text-gray-700 dark300\">Message</label>\n                <textarea id=\"message\" name=\"message\" rows=\"5\" placeholder=\"Write your message...\"\n                  className=\"w-full rounded-lg border border-gray-300 dark600 bg-transparent px-4 py-2 text-gray-900 dark focus2 focus600 outline-none transition-all resize-none\"></textarea>\n              </div>\n              <div>\n                <button type=\"submit\"\n                  className=\"w-full bg-blue-700 hover800 transition-colors text-white py-3 rounded-lg font-semibold\">\n                  Send Message\n                </button>\n              </div>\n            </form>\n          </div>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@umairarshad-dev",
+    "authorUrl": "https://tailwindflex.com/@umairarshad-dev",
+    "sourceUrl": "https://tailwindflex.com/@umairarshad-dev/modern-contact-section-with-responsive-grid-and-glassmorphic-form",
+    "mention": "Créé par @umairarshad-dev sur TailwindFlex",
+    "rawHtml": "<section id=\"contact\" class=\"relative bg-gradient-to-b from-blue-50 to-white dark:from-slate-900 dark:to-slate-800 py-24\">\n  <div class=\"mx-auto max-w-7xl px-6 sm:px-8 lg:px-12\">\n    <!-- Section Header -->\n    <div class=\"text-center max-w-2xl mx-auto mb-20\">\n      <h2 class=\"text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white\">Let’s Connect</h2>\n      <p class=\"mt-4 text-lg text-gray-600 dark:text-slate-400\">\n        Have a project in mind, a question, or just want to say hi? Drop us a line.\n      </p>\n    </div>\n\n    <!-- Grid Layout -->\n    <div class=\"grid md:grid-cols-2 gap-12\">\n      <!-- Contact Info -->\n      <div class=\"space-y-8\">\n        <!-- Block -->\n        <div class=\"flex items-start space-x-4\">\n          <div class=\"flex-shrink-0 w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl\">\n            📍\n          </div>\n          <div>\n            <h4 class=\"text-xl font-semibold text-gray-900 dark:text-white\">Our Office</h4>\n            <p class=\"text-gray-600 dark:text-slate-400\">Location<br />New York, NY 10001</p>\n          </div>\n        </div>\n\n        <div class=\"flex items-start space-x-4\">\n          <div class=\"flex-shrink-0 w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl\">\n            📞\n          </div>\n          <div>\n            <h4 class=\"text-xl font-semibold text-gray-900 dark:text-white\">Say Hello</h4>\n            <p class=\"text-gray-600 dark:text-slate-400\">+92 334---------</p>\n            <p class=\"text-gray-600 dark:text-slate-400\">E-mail@example.com</p>\n          </div>\n        </div>\n\n        <div class=\"flex items-start space-x-4\">\n          <div class=\"flex-shrink-0 w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl\">\n            ⏰\n          </div>\n          <div>\n            <h4 class=\"text-xl font-semibold text-gray-900 dark:text-white\">Working Hours</h4>\n            <p class=\"text-gray-600 dark:text-slate-400\">Mon–Fri: 09:00–6:00</p>\n            <p class=\"text-gray-600 dark:text-slate-400\">Sat: 08:00–12:00</p>\n          </div>\n        </div>\n      </div>\n\n      <!-- Contact Form -->\n      <div class=\"bg-white dark:bg-slate-900/70 backdrop-blur-lg border border-slate-200 dark:border-slate-700 rounded-2xl p-8 shadow-xl\">\n        <h3 class=\"text-2xl font-bold text-gray-900 dark:text-white mb-6\">Send us a message</h3>\n        <form class=\"space-y-6\" id=\"contactForm\">\n          <div>\n            <label for=\"name\" class=\"block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300\">Your Name</label>\n            <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"John Doe\"\n              class=\"w-full rounded-lg border border-gray-300 dark:border-slate-600 bg-transparent px-4 py-2 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-600 outline-none transition-all\" />\n          </div>\n          <div>\n            <label for=\"email\" class=\"block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300\">Email Address</label>\n            <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"john@example.com\"\n              class=\"w-full rounded-lg border border-gray-300 dark:border-slate-600 bg-transparent px-4 py-2 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-600 outline-none transition-all\" />\n          </div>\n          <div>\n            <label for=\"message\" class=\"block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300\">Message</label>\n            <textarea id=\"message\" name=\"message\" rows=\"5\" placeholder=\"Write your message...\"\n              class=\"w-full rounded-lg border border-gray-300 dark:border-slate-600 bg-transparent px-4 py-2 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-600 outline-none transition-all resize-none\"></textarea>\n          </div>\n          <div>\n            <button type=\"submit\"\n              class=\"w-full bg-blue-700 hover:bg-blue-800 transition-colors text-white py-3 rounded-lg font-semibold\">\n              Send Message\n            </button>\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

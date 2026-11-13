@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "boimator-dashboard",
+  "type": "registry:ui",
+  "title": "Boimator  welcoming back",
+  "description": "Boimator  welcoming back - Créé par @bonheur-developer1 sur TailwindFlex.",
+  "author": "@bonheur-developer1 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/boimator-dashboard.tsx",
+      "content": "/**\n * Component: Boimator  welcoming back\n * Author: @bonheur-developer1 (https://tailwindflex.com/@bonheur-developer1)\n * Source: https://tailwindflex.com/@bonheur-developer1/boimator-dashboard\n * Attribution: Créé par @bonheur-developer1 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BoimatorDashboard() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\" >\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\" />\\n  \\n  <title>Greeting Card</title>\\n  <style>\\n    @keyframes fadeInUp {\\n      0% {\\n        opacity: 0;\\n        transform: translateY(20px);\\n      }\\n      100% {\\n        opacity: 1;\\n        transform: translateY(0);\\n      }\\n    }\\n    .fade-in-up {\\n      animation: fadeInUp 0.8s ease forwards;\\n    }\\n  </style>\\n</head>\\n<body class=\\\"bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen flex items-center justify-center p-4\\\">\\n\\n  <div class=\\\"max-w-md bg-white bg-opacity-90 rounded-3xl shadow-xl p-8 text-center fade-in-up\\\">\\n    <h1 class=\\\"text-4xl font-extrabold text-purple-700 mb-4\\\">Welcome Back!</h1>\\n    <p class=\\\"text-gray-700 text-lg mb-6\\\">Hope you’re having a fantastic day. Let’s make it even better with some amazing projects ahead!</p>\\n    <button\\n      class=\\\"bg-purple-700 hover:bg-purple-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition\\\"\\n     \\n    >\\n      Say Hello\\n    </button>\\n  </div>\\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@bonheur-developer1",
+    "authorUrl": "https://tailwindflex.com/@bonheur-developer1",
+    "sourceUrl": "https://tailwindflex.com/@bonheur-developer1/boimator-dashboard",
+    "mention": "Créé par @bonheur-developer1 sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\" >\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n  <title>Greeting Card</title>\n  <style>\n    @keyframes fadeInUp {\n      0% {\n        opacity: 0;\n        transform: translateY(20px);\n      }\n      100% {\n        opacity: 1;\n        transform: translateY(0);\n      }\n    }\n    .fade-in-up {\n      animation: fadeInUp 0.8s ease forwards;\n    }\n  </style>\n</head>\n<body class=\"bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen flex items-center justify-center p-4\">\n\n  <div class=\"max-w-md bg-white bg-opacity-90 rounded-3xl shadow-xl p-8 text-center fade-in-up\">\n    <h1 class=\"text-4xl font-extrabold text-purple-700 mb-4\">Welcome Back!</h1>\n    <p class=\"text-gray-700 text-lg mb-6\">Hope you’re having a fantastic day. Let’s make it even better with some amazing projects ahead!</p>\n    <button\n      class=\"bg-purple-700 hover:bg-purple-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition\"\n      onclick=\"alert('Have a great day! 😊')\"\n    >\n      Say Hello\n    </button>\n  </div>\n\n</body>\n</html>"
+  }
+}

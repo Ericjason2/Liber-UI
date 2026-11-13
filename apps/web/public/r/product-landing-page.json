@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "product-landing-page",
+  "type": "registry:ui",
+  "title": "Product Landing Page",
+  "description": "Product Landing Page - Créé par @noob_dev sur TailwindFlex.",
+  "author": "@noob_dev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/product-landing-page.tsx",
+      "content": "/**\n * Component: Product Landing Page\n * Author: @noob_dev (https://tailwindflex.com/@noob_dev)\n * Source: https://tailwindflex.com/@noob_dev/product-landing-page\n * Attribution: Créé par @noob_dev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProductLandingPage() {\n  return (\n    <div>\n    \n    \n    <div className=\"font-mono\">\n        \n        <div className=\"bg-blue-500 p-4 flex justify-between items-center\">\n            \n            <div className=\"flex items-center\">\n                <img src=\"https://cdn2.iconfinder.com/data/icons/xomo-basics/128/document-06-512.png\" width=\"50\" alt=\"LOGO\" className=\"mr-2\" />\n                <a href=\"#\" className=\"inline-block p-2 text-blue-200 mr-2 hover100\">Home</a>\n                <a href=\"#\" className=\"inline-block p-2 text-blue-200 hover100\">About</a>\n            </div>\n            \n            <div className=\"hidden md\">\n                <a href=\"#\" className=\"inline-block p-2 text-blue-200 hover100 mr-2\">Login</a>\n                <a href=\"#\"\n                    className=\"inline-block py-2\n                           px-4 text-yellow-700 bg-yellow-500 hover300 hover900 rounded transition ease-in duration-150\">Sign\n                    up</a>\n            </div>\n    \n        </div>\n        \n    \n        <div className=\"md justify-between p-10 bg-blue-100 text-blue-800\">\n    \n            \n            <div className=\"md1/2 mb-10 md0\">\n                <h3 className=\"text-3xl line-through mb-2\">Sadness?</h3>\n                <h3 className=\"text-3xl line-through mb-2\">Boredom?</h3>\n                <h3 className=\"text-3xl line-through mb-4\">No motivation?</h3>\n                <h2 className=\"text-5xl font-bold mb-8\">Travelling.</h2>\n                <p className=\"mb-10\">There is never a sad day travelling.</p>\n                <a href=\"#\"\n                    className=\"inline-block py-3 px-6 md bg-pink-200 hover100 hover800 rounded mr-2\">Read\n                    more</a><a href=\"#\"\n                    className=\"inline-block py-3 px-6 md bg-pink-200 hover100 hover800 rounded mr-2\">Subsribe</a>\n            </div>\n    \n            \n            <div className=\"md1/2\"><img src=\"https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80\" alt=\"Travel\" className=\"w-full rounded shadow-2xl h-auto max-h-full sm md lg xl\" />\n            </div>\n        </div>\n        \n        <div className=\"flex py-16 px-10 bg-blue-500 text-blue-200 text-center\">\n            <div className=\"mr-3 mb-4 text-center\">\n                <img src=\"https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1008&q=80\" alt=\"Travelling image\" className=\"w-full rounded border-solid border-2 border-blue-200\" />\n                <p>Places!!</p>\n            </div>\n            <div className=\"mr-3 mb-4 text-center\">\n                <img src=\"https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1008&q=80\" alt=\"Travelling image\" className=\"w-full rounded border-solid border-2 border-blue-200\" />\n                <p>Places!!</p>\n            </div>\n            <div className=\"mr-3 mb-4 text-center\">\n                <img src=\"https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1008&q=80\" alt=\"Travelling image\" className=\"w-full rounded border-solid border-2 border-blue-200\" />\n                <p>Places!!</p>\n            </div>\n            <div className=\"mr-3 mb-4 text-center\">\n                <img src=\"https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1008&q=80\" alt=\"Travelling image\" className=\"w-full rounded border-solid border-2 border-blue-200\" />\n                <p>Places!!</p>\n            </div>\n        </div>\n    \n        \n        <div className=\"p-10 bg-blue-900  text-blue-400 flex justify-between\">\n            <div className=\"md1/2\">\n                <h3 className=\"text-lg mb-2\">Join the newsletter!</h3>\n                <form action=\"\" className=\"flex\">\n                    <input type=\"email\" className=\"rounded w-full mr-2 py-3 px-4 outline-none focus100\" />\n                    <button className=\"bg-red-400 rounded px-4 hover600\">Join</button>\n                </form>\n            </div>\n            <div className=\"flex items-center\">Copyright &copy; Geet 2020</div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@noob_dev",
+    "authorUrl": "https://tailwindflex.com/@noob_dev",
+    "sourceUrl": "https://tailwindflex.com/@noob_dev/product-landing-page",
+    "mention": "Créé par @noob_dev sur TailwindFlex",
+    "rawHtml": "<!-- https://gist.github.com/geep007/b41f912cd693b34c1938b0a8efef439f -->\n\n<div class=\"font-mono\">\n    <!-- header -->\n    <div class=\"bg-blue-500 p-4 flex justify-between items-center\">\n        <!--   left side -->\n        <div class=\"flex items-center\">\n            <img src=\"https://cdn2.iconfinder.com/data/icons/xomo-basics/128/document-06-512.png\" width=\"50\" alt=\"LOGO\" class=\"mr-2\">\n            <a href=\"#\" class=\"inline-block p-2 text-blue-200 mr-2 hover:text-blue-100\">Home</a>\n            <a href=\"#\" class=\"inline-block p-2 text-blue-200 hover:text-blue-100\">About</a>\n        </div>\n        <!--   right side -->\n        <div class=\"hidden md:block\">\n            <a href=\"#\" class=\"inline-block p-2 text-blue-200 hover:text-blue-100 mr-2\">Login</a>\n            <a href=\"#\"\n                class=\"inline-block py-2\n                       px-4 text-yellow-700 bg-yellow-500 hover:bg-yellow-300 hover:text-yellow-900 rounded transition ease-in duration-150\">Sign\n                up</a>\n        </div>\n\n    </div>\n    <!-- hero -->\n\n    <div class=\"md:flex justify-between p-10 bg-blue-100 text-blue-800\">\n\n        <!--   right -->\n        <div class=\"md:w-1/2 mb-10 md:mb-0\">\n            <h3 class=\"text-3xl line-through mb-2\">Sadness?</h3>\n            <h3 class=\"text-3xl line-through mb-2\">Boredom?</h3>\n            <h3 class=\"text-3xl line-through mb-4\">No motivation?</h3>\n            <h2 class=\"text-5xl font-bold mb-8\">Travelling.</h2>\n            <p class=\"mb-10\">There is never a sad day travelling.</p>\n            <a href=\"#\"\n                class=\"inline-block py-3 px-6 md:text-lg bg-pink-200 hover:text-red-100 hover:bg-pink-800 rounded mr-2\">Read\n                more</a><a href=\"#\"\n                class=\"inline-block py-3 px-6 md:text-lg bg-pink-200 hover:text-red-100 hover:bg-pink-800 rounded mr-2\">Subsribe</a>\n        </div>\n\n        <!--   left -->\n        <div class=\"md:w-1/2\"><img src=\"https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80\" alt=\"Travel\" class=\"w-full rounded shadow-2xl h-auto max-h-full sm:max-h-screen md:max-h-full lg:max-h-screen xl:max-h-full\">\n        </div>\n    </div>\n    <!-- features -->\n    <div class=\"flex py-16 px-10 bg-blue-500 text-blue-200 text-center\">\n        <div class=\"mr-3 mb-4 text-center\">\n            <img src=\"https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1008&q=80\" alt=\"Travelling image\" class=\"w-full rounded border-solid border-2 border-blue-200\">\n            <p>Places!!</p>\n        </div>\n        <div class=\"mr-3 mb-4 text-center\">\n            <img src=\"https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1008&q=80\" alt=\"Travelling image\" class=\"w-full rounded border-solid border-2 border-blue-200\">\n            <p>Places!!</p>\n        </div>\n        <div class=\"mr-3 mb-4 text-center\">\n            <img src=\"https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1008&q=80\" alt=\"Travelling image\" class=\"w-full rounded border-solid border-2 border-blue-200\">\n            <p>Places!!</p>\n        </div>\n        <div class=\"mr-3 mb-4 text-center\">\n            <img src=\"https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1008&q=80\" alt=\"Travelling image\" class=\"w-full rounded border-solid border-2 border-blue-200\">\n            <p>Places!!</p>\n        </div>\n    </div>\n\n    <!-- footer+newsletter -->\n    <div class=\"p-10 bg-blue-900  text-blue-400 flex justify-between\">\n        <div class=\"md:w-1/2\">\n            <h3 class=\"text-lg mb-2\">Join the newsletter!</h3>\n            <form action=\"\" class=\"flex\">\n                <input type=\"email\" class=\"rounded w-full mr-2 py-3 px-4 outline-none focus:bg-blue-100\">\n                <button class=\"bg-red-400 rounded px-4 hover:bg-red-600\">Join</button>\n            </form>\n        </div>\n        <div class=\"flex items-center\">Copyright &copy; Geet 2020</div>\n    </div>\n</div>"
+  }
+}

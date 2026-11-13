@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "contact-us-section-2",
+  "type": "registry:ui",
+  "title": "Contact us section",
+  "description": "Contact us section - Créé par @geoffrey-callaghan sur TailwindFlex.",
+  "author": "@geoffrey-callaghan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/contact-us-section-2.tsx",
+      "content": "/**\n * Component: Contact us section\n * Author: @geoffrey-callaghan (https://tailwindflex.com/@geoffrey-callaghan)\n * Source: https://tailwindflex.com/@geoffrey-callaghan/contact-us-section-2\n * Attribution: Créé par @geoffrey-callaghan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ContactUsSection2() {\n  return (\n    <div>\n    <form action=\"https://fabform.io/f/{form-id}\" method=\"post\">\r\n    <div id=\"contact-us\" className=\"overflow-hidden bg-white py-16 px-4 dark900 sm6 lg8 lg24\">\r\n        <div className=\"relative mx-auto max-w-xl\">\r\n            <svg className=\"absolute left-full translate-x-1/2 transform\" width=\"404\" height=\"404\" fill=\"none\"\r\n                viewBox=\"0 0 404 404\" aria-hidden=\"true\">\r\n                <defs>\r\n                    <pattern id=\"85737c0e-0916-41d7-917f-596dc7edfa27\" x=\"0\" y=\"0\" width=\"20\" height=\"20\"\r\n                        patternUnits=\"userSpaceOnUse\">\r\n                        <rect x=\"0\" y=\"0\" width=\"4\" height=\"4\" className=\"text-gray-200 dark600\"\r\n                            fill=\"currentColor\"></rect>\r\n                    </pattern>\r\n                </defs>\r\n                <rect width=\"404\" height=\"404\" fill=\"url(#85737c0e-0916-41d7-917f-596dc7edfa27)\"></rect>\r\n            </svg>\r\n            <svg className=\"absolute right-full bottom-0 -translate-x-1/2 transform\" width=\"404\" height=\"404\" fill=\"none\"\r\n                viewBox=\"0 0 404 404\" aria-hidden=\"true\">\r\n                <defs>\r\n                    <pattern id=\"85737c0e-0916-41d7-917f-596dc7edfa27\" x=\"0\" y=\"0\" width=\"20\" height=\"20\"\r\n                        patternUnits=\"userSpaceOnUse\">\r\n                        <rect x=\"0\" y=\"0\" width=\"4\" height=\"4\" className=\"text-gray-200 dark800\"\r\n                            fill=\"currentColor\"></rect>\r\n                    </pattern>\r\n                </defs>\r\n                <rect width=\"404\" height=\"404\" fill=\"url(#85737c0e-0916-41d7-917f-596dc7edfa27)\"></rect>\r\n            </svg>\r\n            <div className=\"text-center\">\r\n                <h2 className=\"text-3xl font-extrabold tracking-tight text-gray-900 dark200 sm4xl\">Contact Us\r\n                </h2>\r\n                <p className=\"mt-4 text-lg leading-6 text-gray-500 dark400\">Please use the form below to contact us.\r\n                    Thank you!\r\n                </p>\r\n            </div>\r\n            <div className=\"mt-12\">\r\n                <form className=\"grid grid-cols-1 gap-y-6 sm2 sm8\">\r\n                    <div className=\"sm2\">\r\n                        <label htmlFor=\"name\" className=\"block text-sm font-medium text-gray-700 dark400\">Name</label>\r\n                        <div className=\"mt-1\"><input name=\"name\" type=\"text\" id=\"name\" autoComplete=\"organization\" required=\"\" className=\"border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus500 focus500 dark/5 dark700/50 dark\" />\r\n                        </div>\r\n                    </div>\r\n                    <div className=\"sm2\">\r\n                        <label htmlFor=\"email\" className=\"block text-sm font-medium text-gray-700 dark400\">Email</label>\r\n                        <div className=\"mt-1\"><input name=\"email\" id=\"email\" required=\"\" type=\"email\" autoComplete=\"email\" className=\"border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus500 focus500 dark/5 dark700/50 dark\" />\r\n                        </div>\r\n                    </div>\r\n                    <div className=\"sm2\">\r\n                        <label htmlFor=\"message\" className=\"block text-sm font-medium text-gray-700 dark400\">Message</label>\r\n                        <div className=\"mt-1\">\r\n                            <textarea required=\"\" name=\"message\" id=\"message\" rows=\"4\" className=\"border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus500 focus500 dark/5 dark700/50 dark\"></textarea>\r\n                        </div>\r\n                    </div>\r\n                    <div className=\"flex justify-end sm2\">\r\n                        <button type=\"submit\" className=\"inline-flex items-center rounded-md px-4 py-2 font-medium focus focus-visible focus-visible500 shadow-sm sm transition-colors duration-75 text-sky-500 border border-sky-500 hover50 active100 disabled100 dark900 dark800 dark800 disabled\">\r\n                            <span>Send Message</span>\r\n                        </button>\r\n                        \r\n                    </div>\r\n                </form>\r\n                 <a href=\"https://veilmail.io/e/FkKh7o\" className=\"font-medium text-blue-600 dark500 hover\">Or click here to reveal our protected email address</a>\r\n        \r\n            </div>\r\n        </div>\r\n    </div>\n    </form>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@geoffrey-callaghan",
+    "authorUrl": "https://tailwindflex.com/@geoffrey-callaghan",
+    "sourceUrl": "https://tailwindflex.com/@geoffrey-callaghan/contact-us-section-2",
+    "mention": "Créé par @geoffrey-callaghan sur TailwindFlex",
+    "rawHtml": "<form action=\"https://fabform.io/f/{form-id}\" method=\"post\">\r\n<div id=\"contact-us\" class=\"overflow-hidden bg-white py-16 px-4 dark:bg-slate-900 sm:px-6 lg:px-8 lg:py-24\">\r\n    <div class=\"relative mx-auto max-w-xl\">\r\n        <svg class=\"absolute left-full translate-x-1/2 transform\" width=\"404\" height=\"404\" fill=\"none\"\r\n            viewBox=\"0 0 404 404\" aria-hidden=\"true\">\r\n            <defs>\r\n                <pattern id=\"85737c0e-0916-41d7-917f-596dc7edfa27\" x=\"0\" y=\"0\" width=\"20\" height=\"20\"\r\n                    patternUnits=\"userSpaceOnUse\">\r\n                    <rect x=\"0\" y=\"0\" width=\"4\" height=\"4\" class=\"text-gray-200 dark:text-slate-600\"\r\n                        fill=\"currentColor\"></rect>\r\n                </pattern>\r\n            </defs>\r\n            <rect width=\"404\" height=\"404\" fill=\"url(#85737c0e-0916-41d7-917f-596dc7edfa27)\"></rect>\r\n        </svg>\r\n        <svg class=\"absolute right-full bottom-0 -translate-x-1/2 transform\" width=\"404\" height=\"404\" fill=\"none\"\r\n            viewBox=\"0 0 404 404\" aria-hidden=\"true\">\r\n            <defs>\r\n                <pattern id=\"85737c0e-0916-41d7-917f-596dc7edfa27\" x=\"0\" y=\"0\" width=\"20\" height=\"20\"\r\n                    patternUnits=\"userSpaceOnUse\">\r\n                    <rect x=\"0\" y=\"0\" width=\"4\" height=\"4\" class=\"text-gray-200 dark:text-slate-800\"\r\n                        fill=\"currentColor\"></rect>\r\n                </pattern>\r\n            </defs>\r\n            <rect width=\"404\" height=\"404\" fill=\"url(#85737c0e-0916-41d7-917f-596dc7edfa27)\"></rect>\r\n        </svg>\r\n        <div class=\"text-center\">\r\n            <h2 class=\"text-3xl font-extrabold tracking-tight text-gray-900 dark:text-slate-200 sm:text-4xl\">Contact Us\r\n            </h2>\r\n            <p class=\"mt-4 text-lg leading-6 text-gray-500 dark:text-slate-400\">Please use the form below to contact us.\r\n                Thank you!\r\n            </p>\r\n        </div>\r\n        <div class=\"mt-12\">\r\n            <form class=\"grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8\">\r\n                <div class=\"sm:col-span-2\">\r\n                    <label for=\"name\" class=\"block text-sm font-medium text-gray-700 dark:text-slate-400\">Name</label>\r\n                    <div class=\"mt-1\"><input name=\"name\" type=\"text\" id=\"name\" autocomplete=\"organization\" required=\"\" class=\"border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"sm:col-span-2\">\r\n                    <label for=\"email\" class=\"block text-sm font-medium text-gray-700 dark:text-slate-400\">Email</label>\r\n                    <div class=\"mt-1\"><input name=\"email\" id=\"email\" required=\"\" type=\"email\" autocomplete=\"email\" class=\"border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"sm:col-span-2\">\r\n                    <label for=\"message\" class=\"block text-sm font-medium text-gray-700 dark:text-slate-400\">Message</label>\r\n                    <div class=\"mt-1\">\r\n                        <textarea required=\"\" name=\"message\" id=\"message\" rows=\"4\" class=\"border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white\"></textarea>\r\n                    </div>\r\n                </div>\r\n                <div class=\"flex justify-end sm:col-span-2\">\r\n                    <button type=\"submit\" class=\"inline-flex items-center rounded-md px-4 py-2 font-medium focus:outline-none focus-visible:ring focus-visible:ring-sky-500 shadow-sm sm:text-sm transition-colors duration-75 text-sky-500 border border-sky-500 hover:bg-sky-50 active:bg-sky-100 disabled:bg-sky-100 dark:hover:bg-gray-900 dark:active:bg-gray-800 dark:disabled:bg-gray-800 disabled:cursor-not-allowed\">\r\n                        <span>Send Message</span>\r\n                    </button>\r\n                    \r\n                </div>\r\n            </form>\r\n             <a href=\"https://veilmail.io/e/FkKh7o\" class=\"font-medium text-blue-600 dark:text-blue-500 hover:underline\">Or click here to reveal our protected email address</a>\r\n    \r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

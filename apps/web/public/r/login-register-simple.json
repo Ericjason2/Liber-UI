@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-register-simple",
+  "type": "registry:ui",
+  "title": "Login-Register-Simple",
+  "description": "Login-Register-Simple - Créé par @david-chen sur TailwindFlex.",
+  "author": "@david-chen (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/login-register-simple.tsx",
+      "content": "/**\n * Component: Login-Register-Simple\n * Author: @david-chen (https://tailwindflex.com/@david-chen)\n * Source: https://tailwindflex.com/@david-chen/login-register-simple\n * Attribution: Créé par @david-chen sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LoginRegisterSimple() {\n  return (\n    <div>\n    <div className=\"w-screen min-h-screen flex items-center justify-center bg-gray-50 dark800 px-4 sm6 lg8\">\n        <div className=\"relative py-3 sm sm\">\n            <div className=\"min-h-96 px-8 py-6 mt-4 text-left bg-white dark900  rounded-xl shadow-lg\">\n                <div className=\"flex flex-col justify-center items-center h-full select-none\">\n                    <div className=\"flex flex-col items-center justify-center gap-2 mb-8\">\n                        <a href=\"https://amethgalarcio.web.app/\" target=\"_blank\">\n                            <img src=\"https://amethgalarcio.web.app/assets/logo-42fde28c.svg\" className=\"w-8\" />\n                        </a>\n                        <p className=\"m-0 text-[16px] font-semibold dark\">Login to your Account</p>\n                        <span className=\"m-0 text-xs max-w-[90%] text-center text-[#8B8E98]\">Get started with our app, just start section and enjoy experience.\n                        </span>\n                    </div>\n                    <div className=\"w-full flex flex-col gap-2\">\n                        <label className=\"font-semibold text-xs text-gray-400 \">Username</label>\n                        <input className=\"border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark500 dark900\" placeholder=\"Username\" />\n    \n                    </div>\n                </div>\n                <div className=\"w-full flex flex-col gap-2\">\n                    <label className=\"font-semibold text-xs text-gray-400 \">Password</label>\n                    <input type=\"password\" className=\"border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark500 dark900\" placeholder=\"••••••••\" />\n    \n                </div>\n                <div className=\"flex gap-2\">\n                    <button className=\"py-1 px-8 bg-blue-500 hover800 focus200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus focus2 focus2 rounded-lg cursor-pointer select-none\">Login</button>\n                    <button className=\"py-1 px-8 bg-blue-500 hover800 focus200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus focus2 focus2 rounded-lg cursor-pointer select-none\">Register</button>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@david-chen",
+    "authorUrl": "https://tailwindflex.com/@david-chen",
+    "sourceUrl": "https://tailwindflex.com/@david-chen/login-register-simple",
+    "mention": "Créé par @david-chen sur TailwindFlex",
+    "rawHtml": "<div class=\"w-screen min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-800 px-4 sm:px-6 lg:px-8\">\n    <div class=\"relative py-3 sm:max-w-xs sm:mx-auto\">\n        <div class=\"min-h-96 px-8 py-6 mt-4 text-left bg-white dark:bg-gray-900  rounded-xl shadow-lg\">\n            <div class=\"flex flex-col justify-center items-center h-full select-none\">\n                <div class=\"flex flex-col items-center justify-center gap-2 mb-8\">\n                    <a href=\"https://amethgalarcio.web.app/\" target=\"_blank\">\n                        <img src=\"https://amethgalarcio.web.app/assets/logo-42fde28c.svg\" class=\"w-8\" />\n                    </a>\n                    <p class=\"m-0 text-[16px] font-semibold dark:text-white\">Login to your Account</p>\n                    <span class=\"m-0 text-xs max-w-[90%] text-center text-[#8B8E98]\">Get started with our app, just start section and enjoy experience.\n                    </span>\n                </div>\n                <div class=\"w-full flex flex-col gap-2\">\n                    <label class=\"font-semibold text-xs text-gray-400 \">Username</label>\n                    <input class=\"border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark:border-gray-500 dark:bg-gray-900\" placeholder=\"Username\" />\n\n                </div>\n            </div>\n            <div class=\"w-full flex flex-col gap-2\">\n                <label class=\"font-semibold text-xs text-gray-400 \">Password</label>\n                <input type=\"password\" class=\"border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark:border-gray-500 dark:bg-gray-900\" placeholder=\"••••••••\" />\n\n            </div>\n            <div class=\"flex gap-2\">\n                <button class=\"py-1 px-8 bg-blue-500 hover:bg-blue-800 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg cursor-pointer select-none\">Login</button>\n                <button class=\"py-1 px-8 bg-blue-500 hover:bg-blue-800 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg cursor-pointer select-none\">Register</button>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

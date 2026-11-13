@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-15",
+  "type": "registry:ui",
+  "title": "Hero Section",
+  "description": "Hero Section - Créé par @sammytg7 sur TailwindFlex.",
+  "author": "@sammytg7 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-15.tsx",
+      "content": "/**\n * Component: Hero Section\n * Author: @sammytg7 (https://tailwindflex.com/@sammytg7)\n * Source: https://tailwindflex.com/@sammytg7/hero-section-15\n * Attribution: Créé par @sammytg7 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSection15() {\n  return (\n    <div>\n    <section className=\"w-full\">\n        <div className=\"w-full h-[520px] bg-[url('https://images.unsplash.com/photo-1449844908441-8829872d2607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxob21lfGVufDB8MHx8fDE3MTA0MDE1NDZ8MA&ixlib=rb-4.0.3&q=80&w=1080')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center \">\n        \n            <div>\n                <h1 className=\"text-white text-center xl5xl lg4xl md3xl sm2xl :text-xl font-semibold bg-gray-800 p-2 bg-opacity-40 rounded-sm\">Discover Your New Home</h1>\n            </div>\n            <div className=\"w-full mx-auto\">\n                <form>\n                    <div className=\"xl1/2 lg[60%] sm[70%] w-[90%] mx-auto flex gap-2 md6 mt-4 mx-4\">\n                        <input type=\"text\" className=\"border border-gray-400 w-full p-2 rounded-md text-xl pl-2\"\n                                placeholder=\"\" />\n                        <button type=\"submit\" className=\"px-[10px] bg-blue-500 text-lg text-white rounded-md font-semibold\">Search</button>\n                    </div>\n                </form>\n            </div>\n        </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "landing-page",
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sammytg7",
+    "authorUrl": "https://tailwindflex.com/@sammytg7",
+    "sourceUrl": "https://tailwindflex.com/@sammytg7/hero-section-15",
+    "mention": "Créé par @sammytg7 sur TailwindFlex",
+    "rawHtml": "<section class=\"w-full\">\n    <div class=\"w-full h-[520px] bg-[url('https://images.unsplash.com/photo-1449844908441-8829872d2607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxob21lfGVufDB8MHx8fDE3MTA0MDE1NDZ8MA&ixlib=rb-4.0.3&q=80&w=1080')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center \">\n    <!-- Photo by '@insolitus' on Unsplash -->\n        <div>\n            <h1 class=\"text-white text-center xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl :text-xl font-semibold bg-gray-800 p-2 bg-opacity-40 rounded-sm\">Discover Your New Home</h1>\n        </div>\n        <div class=\"w-full mx-auto\">\n            <form>\n                <div class=\"xl:w-1/2 lg:w-[60%] sm:w-[70%] w-[90%] mx-auto flex gap-2 md:mt-6 mt-4 mx-4\">\n                    <input type=\"text\" class=\"border border-gray-400 w-full p-2 rounded-md text-xl pl-2\"\n                            placeholder=\"\" />\n                    <button type=\"submit\" class=\"px-[10px] bg-blue-500 text-lg text-white rounded-md font-semibold\">Search</button>\n                </div>\n            </form>\n        </div>\n    </div>\n</section>"
+  }
+}

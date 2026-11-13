@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-14",
+  "type": "registry:ui",
+  "title": "hero section",
+  "description": "hero section - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-14.tsx",
+      "content": "/**\n * Component: hero section\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/hero-section-14\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSection14() {\n  return (\n    <div>\n    <div className=\"items-center w-10/12 grid-cols-2 mx-auto overflow- lg md14 lg24 xl14 lg3 xl5\" data-aos=\"fade-right\" data-aos-duration=\"800\">\n              <div className=\"pr-2 md14 py-14 md0\">\n                <h1 className=\"text-3xl font-semibold text-blue-900 xl5xl lg3xl\"><span className=\"block w-full\">Get a financial experience</span> for growing your business!</h1>\n                <p className=\"py-4 text-lg text-gray-500 2xl8 md6 2xl5\">\n                  Empowering you to make better financial decisions, We truly are professional money planners...\n                </p>\n                <div className=\"mt-4\">\n                  <a href=\"#contact\" className=\"px-5 py-3 text-lg tracking-wider text-white bg-blue-500 rounded-lg md8 hover600 group\"><span>Explore More</span> </a>\n                </div>\n              </div>\n      \n              <div className=\"pb-10 overflow-hidden md10 lg0 sm0\">\n                <img id=\"heroImg1\" className=\"transition-all duration-300 ease-in-out hover105 lg sm sm4/6 sm12 lg0\" src=\"https://bootstrapmade.com/demo/templates/FlexStart/assets/img/hero-img.png\" alt=\"Awesome hero page image\" width=\"500\" height=\"488\"/>\n              </div>\n            </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/hero-section-14",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<div class=\"items-center w-10/12 grid-cols-2 mx-auto overflow-x-hidden lg:grid md:py-14 lg:py-24 xl:py-14 lg:mt-3 xl:mt-5\" data-aos=\"fade-right\" data-aos-duration=\"800\">\n          <div class=\"pr-2 md:mb-14 py-14 md:py-0\">\n            <h1 class=\"text-3xl font-semibold text-blue-900 xl:text-5xl lg:text-3xl\"><span class=\"block w-full\">Get a financial experience</span> for growing your business!</h1>\n            <p class=\"py-4 text-lg text-gray-500 2xl:py-8 md:py-6 2xl:pr-5\">\n              Empowering you to make better financial decisions, We truly are professional money planners...\n            </p>\n            <div class=\"mt-4\">\n              <a href=\"#contact\" class=\"px-5 py-3 text-lg tracking-wider text-white bg-blue-500 rounded-lg md:px-8 hover:bg-blue-600 group\"><span>Explore More</span> </a>\n            </div>\n          </div>\n  \n          <div class=\"pb-10 overflow-hidden md:p-10 lg:p-0 sm:pb-0\">\n            <img id=\"heroImg1\" class=\"transition-all duration-300 ease-in-out hover:scale-105 lg:w-full sm:mx-auto sm:w-4/6 sm:pb-12 lg:pb-0\" src=\"https://bootstrapmade.com/demo/templates/FlexStart/assets/img/hero-img.png\" alt=\"Awesome hero page image\" width=\"500\" height=\"488\"/>\n          </div>\n        </div>"
+  }
+}

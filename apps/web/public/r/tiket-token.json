@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tiket-token",
+  "type": "registry:ui",
+  "title": "tiket token",
+  "description": "tiket token - Créé par @uwase-alliance sur TailwindFlex.",
+  "author": "@uwase-alliance (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tiket-token.tsx",
+      "content": "/**\n * Component: tiket token\n * Author: @uwase-alliance (https://tailwindflex.com/@uwase-alliance)\n * Source: https://tailwindflex.com/@uwase-alliance/tiket-token\n * Attribution: Créé par @uwase-alliance sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TiketToken() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n  <title>Inter Milan Match Ticket</title>\\n  \\n</head>\\n<body class=\\\"bg-gray-100 py-8\\\">\\n\\n  <div class=\\\"max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden\\\">\\n    <!-- Ticket Header -->\\n    <div class=\\\"bg-blue-900 text-white text-center py-4\\\">\\n      <h1 class=\\\"text-2xl font-semibold\\\">FC Internazionale</h1>\\n      <p class=\\\"text-sm\\\">Serie A Match</p>\\n    </div>\\n\\n    <!-- Ticket Body -->\\n    <div class=\\\"p-6\\\">\\n      <div class=\\\"flex justify-between text-sm text-gray-600 mb-4\\\">\\n        <div>\\n          <p class=\\\"font-semibold\\\">Match:</p>\\n          <p>Inter Milan vs Juventus</p>\\n        </div>\\n        <div>\\n          <p class=\\\"font-semibold\\\">Date:</p>\\n          <p>June 1, 2025</p>\\n        </div>\\n      </div>\\n\\n      <div class=\\\"flex justify-between text-sm text-gray-600 mb-4\\\">\\n        <div>\\n          <p class=\\\"font-semibold\\\">Kickoff:</p>\\n          <p>20:45 CEST</p>\\n        </div>\\n        <div>\\n          <p class=\\\"font-semibold\\\">Gate:</p>\\n          <p>Gate 7</p>\\n        </div>\\n      </div>\\n\\n      <div class=\\\"flex justify-between text-sm text-gray-600 mb-4\\\">\\n        <div>\\n          <p class=\\\"font-semibold\\\">Seat:</p>\\n          <p>Row 15, Seat 22</p>\\n        </div>\\n        <div>\\n          <p class=\\\"font-semibold\\\">Ticket No:</p>\\n          <p>FF346Y</p>\\n        </div>\\n      </div>\\n\\n      <!-- QR Code -->\\n      <div class=\\\"text-center mt-6\\\">\\n        <img src=\\\"https://via.placeholder.com/150x150.png?text=QR+Code\\\" alt=\\\"QR Code\\\" class=\\\"mx-auto mb-4\\\">\\n        <p class=\\\"text-xs text-gray-500\\\">Scan to enter</p>\\n      </div>\\n    </div>\\n\\n    <!-- Ticket Footer -->\\n    <div class=\\\"bg-blue-900 text-white text-center py-2\\\">\\n      <p class=\\\"text-sm\\\">Stadio Giuseppe Meazza</p>\\n    </div>\\n  </div>\\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@uwase-alliance",
+    "authorUrl": "https://tailwindflex.com/@uwase-alliance",
+    "sourceUrl": "https://tailwindflex.com/@uwase-alliance/tiket-token",
+    "mention": "Créé par @uwase-alliance sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Inter Milan Match Ticket</title>\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gray-100 py-8\">\n\n  <div class=\"max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden\">\n    <!-- Ticket Header -->\n    <div class=\"bg-blue-900 text-white text-center py-4\">\n      <h1 class=\"text-2xl font-semibold\">FC Internazionale</h1>\n      <p class=\"text-sm\">Serie A Match</p>\n    </div>\n\n    <!-- Ticket Body -->\n    <div class=\"p-6\">\n      <div class=\"flex justify-between text-sm text-gray-600 mb-4\">\n        <div>\n          <p class=\"font-semibold\">Match:</p>\n          <p>Inter Milan vs Juventus</p>\n        </div>\n        <div>\n          <p class=\"font-semibold\">Date:</p>\n          <p>June 1, 2025</p>\n        </div>\n      </div>\n\n      <div class=\"flex justify-between text-sm text-gray-600 mb-4\">\n        <div>\n          <p class=\"font-semibold\">Kickoff:</p>\n          <p>20:45 CEST</p>\n        </div>\n        <div>\n          <p class=\"font-semibold\">Gate:</p>\n          <p>Gate 7</p>\n        </div>\n      </div>\n\n      <div class=\"flex justify-between text-sm text-gray-600 mb-4\">\n        <div>\n          <p class=\"font-semibold\">Seat:</p>\n          <p>Row 15, Seat 22</p>\n        </div>\n        <div>\n          <p class=\"font-semibold\">Ticket No:</p>\n          <p>FF346Y</p>\n        </div>\n      </div>\n\n      <!-- QR Code -->\n      <div class=\"text-center mt-6\">\n        <img src=\"https://via.placeholder.com/150x150.png?text=QR+Code\" alt=\"QR Code\" class=\"mx-auto mb-4\">\n        <p class=\"text-xs text-gray-500\">Scan to enter</p>\n      </div>\n    </div>\n\n    <!-- Ticket Footer -->\n    <div class=\"bg-blue-900 text-white text-center py-2\">\n      <p class=\"text-sm\">Stadio Giuseppe Meazza</p>\n    </div>\n  </div>\n\n</body>\n</html>"
+  }
+}

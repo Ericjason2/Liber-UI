@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwind-image-card-with-text-above-it",
+  "type": "registry:ui",
+  "title": "Tailwind image card with text above it",
+  "description": "Tailwind image card with text above it - Créé par @ip-leroy sur TailwindFlex.",
+  "author": "@ip-leroy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tailwind-image-card-with-text-above-it.tsx",
+      "content": "/**\n * Component: Tailwind image card with text above it\n * Author: @ip-leroy (https://tailwindflex.com/@ip-leroy)\n * Source: https://tailwindflex.com/@ip-leroy/tailwind-image-card-with-text-above-it\n * Attribution: Créé par @ip-leroy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TailwindImageCardWithTextAboveIt() {\n  return (\n    <div>\n    <article className=\"relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24\">\r\n        <img src=\"https://images.unsplash.com/photo-1499856871958-5b9627545d1a\" alt=\"University of Southern California\" className=\"absolute inset-0 h-full w-full object-cover\" />\r\n        <div className=\"absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40\"></div>\r\n        <h3 className=\"z-10 mt-3 text-3xl font-bold text-white\">Paris</h3>\r\n        <div className=\"z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300\">City of love</div>\r\n    </article>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ip-leroy",
+    "authorUrl": "https://tailwindflex.com/@ip-leroy",
+    "sourceUrl": "https://tailwindflex.com/@ip-leroy/tailwind-image-card-with-text-above-it",
+    "mention": "Créé par @ip-leroy sur TailwindFlex",
+    "rawHtml": "<article class=\"relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24\">\r\n    <img src=\"https://images.unsplash.com/photo-1499856871958-5b9627545d1a\" alt=\"University of Southern California\" class=\"absolute inset-0 h-full w-full object-cover\">\r\n    <div class=\"absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40\"></div>\r\n    <h3 class=\"z-10 mt-3 text-3xl font-bold text-white\">Paris</h3>\r\n    <div class=\"z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300\">City of love</div>\r\n</article>"
+  }
+}

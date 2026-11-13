@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-feature-card",
+  "type": "registry:ui",
+  "title": "Responsive Feature Card",
+  "description": "Responsive Feature Card - Créé par @gopi sur TailwindFlex.",
+  "author": "@gopi (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-feature-card.tsx",
+      "content": "/**\n * Component: Responsive Feature Card\n * Author: @gopi (https://tailwindflex.com/@gopi)\n * Source: https://tailwindflex.com/@gopi/responsive-feature-card\n * Attribution: Créé par @gopi sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveFeatureCard() {\n  return (\n    <div>\n    <div className=\"grid grid-cols-1 sm2 lg3 xl4 gap-6 p-4 md12 w-full p-4\">\n    \t<div className=\"p-6 bg-gray-100\">\n    \t\t<p className=\"text-center text-4xl\">\n    \t\t\t😁\n    \t\t</p>\n    \n    \t\t<h2 className=\"font-semibold text-lg text-center text-gray-800 mt-2\">\n    \t\t\tYour Feature Here\n    \t\t</h2>\n    \n    \t\t<p className=\"mt-2 text-gray-800 text-center\">\n    \t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias excepturi fuga, laudantium molestias\n    \t\t\tnesciunt tempore.\n    \t\t</p>\n    \t</div>\n    \t<div className=\"p-6 bg-gray-100\">\n    \t\t<p className=\"text-center text-4xl\">\n    \t\t\t🤩\n    \t\t</p>\n    \n    \t\t<h2 className=\"font-semibold text-lg text-center text-gray-800 mt-2\">\n    \t\t\tYour Feature Here\n    \t\t</h2>\n    \n    \t\t<p className=\"mt-2 text-gray-800 text-center\">\n    \t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias excepturi fuga, laudantium molestias\n    \t\t\tnesciunt tempore.\n    \t\t</p>\n    \t</div>\n    \t<div className=\"p-6 bg-gray-100\">\n    \t\t<p className=\"text-center text-4xl\">\n    \t\t\t😎\n    \t\t</p>\n    \n    \t\t<h2 className=\"font-semibold text-lg text-center text-gray-800 mt-2\">\n    \t\t\tYour Feature Here\n    \t\t</h2>\n    \n    \t\t<p className=\"mt-2 text-gray-800 text-center\">\n    \t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias excepturi fuga, laudantium molestias\n    \t\t\tnesciunt tempore.\n    \t\t</p>\n    \t</div>\n    \t<div className=\"p-6 bg-gray-100\">\n    \t\t<p className=\"text-center text-4xl\">\n    \t\t\t🥰\n    \t\t</p>\n    \n    \t\t<h2 className=\"font-semibold text-lg text-center text-gray-800 mt-2\">\n    \t\t\tYour Feature Here\n    \t\t</h2>\n    \n    \t\t<p className=\"mt-2 text-gray-800 text-center\">\n    \t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias excepturi fuga, laudantium molestias\n    \t\t\tnesciunt tempore.\n    \t\t</p>\n    \t</div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "grid",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@gopi",
+    "authorUrl": "https://tailwindflex.com/@gopi",
+    "sourceUrl": "https://tailwindflex.com/@gopi/responsive-feature-card",
+    "mention": "Créé par @gopi sur TailwindFlex",
+    "rawHtml": "<div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4 md:p-12 w-full p-4\">\n\t<div class=\"p-6 bg-gray-100\">\n\t\t<p class=\"text-center text-4xl\">\n\t\t\t😁\n\t\t</p>\n\n\t\t<h2 class=\"font-semibold text-lg text-center text-gray-800 mt-2\">\n\t\t\tYour Feature Here\n\t\t</h2>\n\n\t\t<p class=\"mt-2 text-gray-800 text-center\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias excepturi fuga, laudantium molestias\n\t\t\tnesciunt tempore.\n\t\t</p>\n\t</div>\n\t<div class=\"p-6 bg-gray-100\">\n\t\t<p class=\"text-center text-4xl\">\n\t\t\t🤩\n\t\t</p>\n\n\t\t<h2 class=\"font-semibold text-lg text-center text-gray-800 mt-2\">\n\t\t\tYour Feature Here\n\t\t</h2>\n\n\t\t<p class=\"mt-2 text-gray-800 text-center\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias excepturi fuga, laudantium molestias\n\t\t\tnesciunt tempore.\n\t\t</p>\n\t</div>\n\t<div class=\"p-6 bg-gray-100\">\n\t\t<p class=\"text-center text-4xl\">\n\t\t\t😎\n\t\t</p>\n\n\t\t<h2 class=\"font-semibold text-lg text-center text-gray-800 mt-2\">\n\t\t\tYour Feature Here\n\t\t</h2>\n\n\t\t<p class=\"mt-2 text-gray-800 text-center\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias excepturi fuga, laudantium molestias\n\t\t\tnesciunt tempore.\n\t\t</p>\n\t</div>\n\t<div class=\"p-6 bg-gray-100\">\n\t\t<p class=\"text-center text-4xl\">\n\t\t\t🥰\n\t\t</p>\n\n\t\t<h2 class=\"font-semibold text-lg text-center text-gray-800 mt-2\">\n\t\t\tYour Feature Here\n\t\t</h2>\n\n\t\t<p class=\"mt-2 text-gray-800 text-center\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias excepturi fuga, laudantium molestias\n\t\t\tnesciunt tempore.\n\t\t</p>\n\t</div>\n</div>"
+  }
+}

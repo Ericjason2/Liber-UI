@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sign-up-form-with-dark-mode-support",
+  "type": "registry:ui",
+  "title": "Sign Up form with dark mode support",
+  "description": "Sign Up form with dark mode support - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/sign-up-form-with-dark-mode-support.tsx",
+      "content": "/**\n * Component: Sign Up form with dark mode support\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/sign-up-form-with-dark-mode-support\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SignUpFormWithDarkModeSupport() {\n  return (\n    <div>\n    <section className=\"flex flex-col items-center pt-6\">\n      <div\n        className=\"w-full bg-white rounded-lg shadow dark md0 sm xl0 dark800 dark700\">\n        <div className=\"p-6 space-y-4 md6 sm8\">\n          <h1 className=\"text-xl font-bold leading-tight tracking-tight text-gray-900 md2xl dark\">Create an\n            account\n          </h1>\n          <form className=\"space-y-4 md6\" method=\"POST\">\n            <div>\n              <label htmlFor=\"name\" className=\"block mb-2 text-sm font-medium text-gray-900 dark\">Your full name</label>\n              <input type=\"text\" name=\"name\" id=\"name\" className=\"bg-gray-50 border border-gray-300 text-gray-900 sm rounded-lg focus600 focus600 block w-full p-2.5 dark700 dark600 dark400 dark dark500 dark500\" placeholder=\"Emelia Erickson\" required=\"\" />\n            </div>\n            <div>\n              <label htmlFor=\"username\" className=\"block mb-2 text-sm font-medium text-gray-900 dark\">Username</label>\n              <input type=\"text\" name=\"username\" id=\"username\" className=\"bg-gray-50 border border-gray-300 text-gray-900 sm rounded-lg focus600 focus600 block w-full p-2.5 dark700 dark600 dark400 dark dark500 dark500\" placeholder=\"emelia_erickson24\" required=\"\" />\n            </div>\n            <div>\n              <label htmlFor=\"password\" className=\"block mb-2 text-sm font-medium text-gray-900 dark\">Password</label>\n              <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"••••••••\" className=\"bg-gray-50 border border-gray-300 text-gray-900 sm rounded-lg focus600 focus600 block w-full p-2.5 dark700 dark600 dark400 dark dark500 dark500\" required=\"\" />\n            </div>\n            <button type=\"submit\" className=\"w-full text-white bg-blue-600 hover700 focus4 focus focus300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark600 dark700 dark800\">Create an account</button>\n            <p className=\"text-sm font-light text-gray-500 dark400\">Already have an account? <a\n                className=\"font-medium text-blue-600 hover dark500\" href=\"/signin\">Sign in here</a>\n            </p>\n          </form>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/sign-up-form-with-dark-mode-support",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<section class=\"flex flex-col items-center pt-6\">\n  <div\n    class=\"w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700\">\n    <div class=\"p-6 space-y-4 md:space-y-6 sm:p-8\">\n      <h1 class=\"text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white\">Create an\n        account\n      </h1>\n      <form class=\"space-y-4 md:space-y-6\" method=\"POST\">\n        <div>\n          <label for=\"name\" class=\"block mb-2 text-sm font-medium text-gray-900 dark:text-white\">Your full name</label>\n          <input type=\"text\" name=\"name\" id=\"name\" class=\"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500\" placeholder=\"Emelia Erickson\" required=\"\">\n        </div>\n        <div>\n          <label for=\"username\" class=\"block mb-2 text-sm font-medium text-gray-900 dark:text-white\">Username</label>\n          <input type=\"text\" name=\"username\" id=\"username\" class=\"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500\" placeholder=\"emelia_erickson24\" required=\"\">\n        </div>\n        <div>\n          <label for=\"password\" class=\"block mb-2 text-sm font-medium text-gray-900 dark:text-white\">Password</label>\n          <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"••••••••\" class=\"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500\" required=\"\">\n        </div>\n        <button type=\"submit\" class=\"w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800\">Create an account</button>\n        <p class=\"text-sm font-light text-gray-500 dark:text-gray-400\">Already have an account? <a\n            class=\"font-medium text-blue-600 hover:underline dark:text-blue-500\" href=\"/signin\">Sign in here</a>\n        </p>\n      </form>\n    </div>\n  </div>\n</section>"
+  }
+}

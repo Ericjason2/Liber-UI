@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "info-cards",
+  "type": "registry:ui",
+  "title": "Info cards",
+  "description": "Info cards - Créé par @arya sur TailwindFlex.",
+  "author": "@arya (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/info-cards.tsx",
+      "content": "/**\n * Component: Info cards\n * Author: @arya (https://tailwindflex.com/@arya)\n * Source: https://tailwindflex.com/@arya/info-cards\n * Attribution: Créé par @arya sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InfoCards() {\n  return (\n    <div>\n    <ul className=\"flex flex-col md grid-cols-3 gap-5 text-redis-neutral-800 max-w-2xl mx-auto p-10 mt-10\">\n        <li\n            className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n            <span className=\"mb-1 text-teal-400 font-display text-5xl\">45K+</span>\n            Users\n        </li>\n        <li\n            className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n            <span className=\"mb-1 text-teal-400 font-display text-5xl\">78K+</span>\n            Downloads\n        </li>\n        <li\n            className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n            <span className=\"mb-1 text-teal-400 font-display text-5xl\">50+</span>\n            Products\n        </li>\n    </ul>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "grid",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@arya",
+    "authorUrl": "https://tailwindflex.com/@arya",
+    "sourceUrl": "https://tailwindflex.com/@arya/info-cards",
+    "mention": "Créé par @arya sur TailwindFlex",
+    "rawHtml": "<ul class=\"flex flex-col md:grid grid-cols-3 gap-5 text-redis-neutral-800 max-w-2xl mx-auto p-10 mt-10\">\n    <li\n        class=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n        <span class=\"mb-1 text-teal-400 font-display text-5xl\">45K+</span>\n        Users\n    </li>\n    <li\n        class=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n        <span class=\"mb-1 text-teal-400 font-display text-5xl\">78K+</span>\n        Downloads\n    </li>\n    <li\n        class=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n        <span class=\"mb-1 text-teal-400 font-display text-5xl\">50+</span>\n        Products\n    </li>\n</ul>"
+  }
+}

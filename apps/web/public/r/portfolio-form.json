@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "portfolio-form",
+  "type": "registry:ui",
+  "title": "Portfolio form",
+  "description": "Portfolio form - Créé par @joseph-melvin-kanu sur TailwindFlex.",
+  "author": "@joseph-melvin-kanu (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/portfolio-form.tsx",
+      "content": "/**\n * Component: Portfolio form\n * Author: @joseph-melvin-kanu (https://tailwindflex.com/@joseph-melvin-kanu)\n * Source: https://tailwindflex.com/@joseph-melvin-kanu/portfolio-form\n * Attribution: Créé par @joseph-melvin-kanu sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PortfolioForm() {\n  return (\n    <div>\n    \n    <div className=\"max-w-screen-xl mx-auto my-7 lg20\" id=\"contact\">\n      <form action=\"\" method=\"post\">\n        <div className=\"w-full p-8 my-4 mr-auto shadow-2xl md12 lg9/12 lg20 lg40 rounded-2xl\">\n          <div className=\"flex\">\n            <h1 className=\"text-5xl text-[#A85168] font-bold \">Hire Me</h1>\n          </div>\n          <div className=\"grid grid-cols-1 gap-5 mt-5 md2\">\n            <input className=\"w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus focus\" type=\"text\" placeholder=\"First Name\" name=\"firstName\" autoComplete=\"name\" />\n            <input className=\"w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus focus\" type=\"text\" placeholder=\"Last Name\" name=\"lastName\" autoComplete=\"family-name\" />\n            <input className=\"w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus focus\" type=\"email\" placeholder=\"Email\" name=\"email\" autoComplete=\"email\" />\n            <input className=\"w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus focus\" type=\"tel\" placeholder=\"Phone\" name=\"phone\" autoComplete=\"tel\" />\n          </div>\n          <div className=\"my-4\">\n            <textarea placeholder=\"Message\" className=\"w-full h-32 p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus focus\" name=\"message\" autoComplete=\"message\"></textarea>\n          </div>\n          <div className=\"w-1/2 my-2 lg1/4\">\n            <button type=\"submit\" className=\"w-full p-3 text-sm font-bold tracking-wide text-gray-100 uppercase bg-[#A12347] rounded rounded-xl hover700-lg focus focus\">\n                            Send Message\n                        </button>\n          </div>\n        </div>\n      </form>\n      <div className=\"w-full px-8 py-12 ml-auto bg-[#1B6485] lg96 lg2/6 rounded-2xl\">\n        <div className=\"flex flex-col text-white\">\n          <div className=\"flex w-2/3 my-4 lg1/2\">\n            <img className=\"pt-2 pr-2 h-7 w-7\" src=\"https://icons8.com/icon/OBmVbH2qOGwK/location\" alt=\"location\" />\n            <div>\n              <h2 className=\"text-2xl\">Office</h2>\n              <p className=\"text-gray-200\" style=\"white-space: nowrap;\">27B Grassfield, Lumely</p>\n            </div>\n          </div>\n          <div className=\"flex w-2/3 my-4 lg1/2\">\n            <img className=\"pt-2 pr-2 h-7 w-7 \" src=\"https://icons8.com/icon/letUS1DJO1ou/call\" alt=\"call us\" />\n            <div>\n              <h2 className=\"text-2xl\">Call</h2>\n              <p className=\"text-gray-200\" style=\"white-space: nowrap;\">Tel:+232-79-15-39-15</p>\n            </div>\n          </div>\n          <div className=\"flex w-2/3 my-4 lg1/2\">\n            <img className=\"pt-2 pr-2 h-7 w-7\" src=\"https://icons8.com/icon/LPcVDft9Isqt/email\" alt=\"Email us\" />\n            <div>\n              <h2 className=\"text-2xl\">Email</h2>\n              <p className=\"text-gray-200\" style=\"white-space: nowrap;\">Email.com</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@joseph-melvin-kanu",
+    "authorUrl": "https://tailwindflex.com/@joseph-melvin-kanu",
+    "sourceUrl": "https://tailwindflex.com/@joseph-melvin-kanu/portfolio-form",
+    "mention": "Créé par @joseph-melvin-kanu sur TailwindFlex",
+    "rawHtml": "<!--Contact-->\n<div class=\"max-w-screen-xl mx-auto my-7 lg:px-20\" id=\"contact\">\n  <form action=\"\" method=\"post\">\n    <div class=\"w-full p-8 my-4 mr-auto shadow-2xl md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 rounded-2xl\">\n      <div class=\"flex\">\n        <h1 class=\"text-5xl text-[#A85168] font-bold \">Hire Me</h1>\n      </div>\n      <div class=\"grid grid-cols-1 gap-5 mt-5 md:grid-cols-2\">\n        <input class=\"w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:border-outline\" type=\"text\" placeholder=\"First Name\" name=\"firstName\" autocomplete=\"name\" />\n        <input class=\"w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline\" type=\"text\" placeholder=\"Last Name\" name=\"lastName\" autocomplete=\"family-name\" />\n        <input class=\"w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline\" type=\"email\" placeholder=\"Email\" name=\"email\" autocomplete=\"email\" />\n        <input class=\"w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline\" type=\"tel\" placeholder=\"Phone\" name=\"phone\" autocomplete=\"tel\" />\n      </div>\n      <div class=\"my-4\">\n        <textarea placeholder=\"Message\" class=\"w-full h-32 p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline\" name=\"message\" autocomplete=\"message\"></textarea>\n      </div>\n      <div class=\"w-1/2 my-2 lg:w-1/4\">\n        <button type=\"submit\" class=\"w-full p-3 text-sm font-bold tracking-wide text-gray-100 uppercase bg-[#A12347] rounded rounded-xl hover:bg-blue-700-lg focus:outline-none focus:shadow-outline\">\n                        Send Message\n                    </button>\n      </div>\n    </div>\n  </form>\n  <div class=\"w-full px-8 py-12 ml-auto bg-[#1B6485] lg:-mt-96 lg:w-2/6 rounded-2xl\">\n    <div class=\"flex flex-col text-white\">\n      <div class=\"flex w-2/3 my-4 lg:w-1/2\">\n        <img class=\"pt-2 pr-2 h-7 w-7\" src=\"https://icons8.com/icon/OBmVbH2qOGwK/location\" alt=\"location\">\n        <div>\n          <h2 class=\"text-2xl\">Office</h2>\n          <p class=\"text-gray-200\" style=\"white-space: nowrap;\">27B Grassfield, Lumely</p>\n        </div>\n      </div>\n      <div class=\"flex w-2/3 my-4 lg:w-1/2\">\n        <img class=\"pt-2 pr-2 h-7 w-7 \" src=\"https://icons8.com/icon/letUS1DJO1ou/call\" alt=\"call us\">\n        <div>\n          <h2 class=\"text-2xl\">Call</h2>\n          <p class=\"text-gray-200\" style=\"white-space: nowrap;\">Tel:+232-79-15-39-15</p>\n        </div>\n      </div>\n      <div class=\"flex w-2/3 my-4 lg:w-1/2\">\n        <img class=\"pt-2 pr-2 h-7 w-7\" src=\"https://icons8.com/icon/LPcVDft9Isqt/email\" alt=\"Email us\">\n        <div>\n          <h2 class=\"text-2xl\">Email</h2>\n          <p class=\"text-gray-200\" style=\"white-space: nowrap;\">Email:kanujosephmelvin@gmail.com</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<!--End Contact-->"
+  }
+}

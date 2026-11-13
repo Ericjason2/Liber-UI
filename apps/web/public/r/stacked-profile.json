@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "stacked-profile",
+  "type": "registry:ui",
+  "title": "Stacked Profile",
+  "description": "Stacked Profile - Créé par @mitch1009 sur TailwindFlex.",
+  "author": "@mitch1009 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/stacked-profile.tsx",
+      "content": "/**\n * Component: Stacked Profile\n * Author: @mitch1009 (https://tailwindflex.com/@mitch1009)\n * Source: https://tailwindflex.com/@mitch1009/stacked-profile\n * Attribution: Créé par @mitch1009 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function StackedProfile() {\n  return (\n    <div>\n    <section>\n    <section>\n    <div className=\"border flex rouned-md min-h-16 rounded-md px-4 py-2\">\n     <span className=\"rounded-full  bg-red-400 h-16 w-16 p-2 flex justify-center items-center border\">MA</span>\n     <span className=\"rounded-full -ml-6 z-20 bg-green-400 h-16 w-16 p-2 flex justify-center items-center border\">GA</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-gray-200  h-16 w-16 p-2 flex justify-center items-center border\">CD</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-blue-700  h-16 w-16 p-2 flex justify-center items-center border\">CD</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-green-800  h-16 w-16  flex justify-center items-center border\">\n       <img className=\"w-full h-full rounded-full\" src=\"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHx1c2VyfGVufDB8MHx8fDE2OTk0NjA4OTV8MA&ixlib=rb-4.0.3&q=80&w=1080\"/>\n     </span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-blue-300  h-16 w-16 p-2 flex justify-center items-center border\">YU</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-purple-500  h-16 w-16 p-2 flex justify-center items-center border\">IO</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-blue-500  h-16 w-16 p-2 flex justify-center items-center border\">CD</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-yellow-500  h-16 w-16 p-2 flex justify-center items-center border\">IO</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-pink-500  h-16 w-16 flex justify-center items-center border\">\n        <img className=\"h-full w-full rounded-full\" src=\"https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHx1c2VyfGVufDB8MHx8fDE2OTk0NjA4OTV8MA&ixlib=rb-4.0.3&q=80&w=1080\"/>\n     </span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-indigo-500  h-16 w-16 p-2 flex justify-center items-center border\">AS</span>\n    </div>\n    </section>\n    <section className=\"my-6\">\n    \n    <div className=\"border flex rouned-md min-h-16 rounded-md px-4 py-2\">\n     <span className=\"rounded-full  bg-red-400 h-8 w-8 sm16 sm16 p-2 flex justify-center items-center border\">MA</span>\n     <span className=\"rounded-full -ml-6 z-20 bg-green-400 h-8 w-8 sm16 sm16 p-2 flex justify-center items-center border\">GA</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-gray-200  h-8 w-8 sm16 sm16 p-2 flex justify-center items-center border\">CD</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-blue-700  h-8 w-8 sm16 sm16 flex justify-center items-center border\">CD</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-green-800 h-8 w-8 sm16 sm16  flex justify-center items-center border\">\n       <img className=\"w-full h-full rounded-full\" src=\"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHx1c2VyfGVufDB8MHx8fDE2OTk0NjA4OTV8MA&ixlib=rb-4.0.3&q=80&w=1080\"/>\n     </span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-blue-300  h-8 w-8 sm16 sm16 flex justify-center items-center border\">YU</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-purple-500 h-8 w-8 sm16 sm16 flex justify-center items-center border\">IO</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-blue-500  h-8 w-8 sm16 sm16 flex justify-center items-center border\">CD</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-yellow-500  h-8 w-8 sm16 sm16 flex justify-center items-center border\">IO</span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-pink-500 h-8 w-8 sm16 sm16 justify-center items-center border\">\n        <img className=\"h-full w-full rounded-full\" src=\"https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHx1c2VyfGVufDB8MHx8fDE2OTk0NjA4OTV8MA&ixlib=rb-4.0.3&q=80&w=1080\"/>\n     </span>\n     <span className=\"rounded-full  -ml-6 z-20 bg-indigo-500  h-8 w-8 sm16 sm16 flex justify-center items-center border\">AS</span>\n     <span className=\"rounded-full text-white -ml-6 z-20 bg-green-500  h-8  sm2 px-2 py-0 sm14 sm6 flex justify-center items-center border\">+20 Other Supportters</span>\n    </div>\n    </section>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@mitch1009",
+    "authorUrl": "https://tailwindflex.com/@mitch1009",
+    "sourceUrl": "https://tailwindflex.com/@mitch1009/stacked-profile",
+    "mention": "Créé par @mitch1009 sur TailwindFlex",
+    "rawHtml": "<section>\n<section>\n<div class=\"border flex rouned-md min-h-16 rounded-md px-4 py-2\">\n <span class=\"rounded-full  bg-red-400 h-16 w-16 p-2 flex justify-center items-center border\">MA</span>\n <span class=\"rounded-full -ml-6 z-20 bg-green-400 h-16 w-16 p-2 flex justify-center items-center border\">GA</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-gray-200  h-16 w-16 p-2 flex justify-center items-center border\">CD</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-blue-700  h-16 w-16 p-2 flex justify-center items-center border\">CD</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-green-800  h-16 w-16  flex justify-center items-center border\">\n   <img class=\"w-full h-full rounded-full\" src=\"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHx1c2VyfGVufDB8MHx8fDE2OTk0NjA4OTV8MA&ixlib=rb-4.0.3&q=80&w=1080\"/>\n </span>\n <span class=\"rounded-full  -ml-6 z-20 bg-blue-300  h-16 w-16 p-2 flex justify-center items-center border\">YU</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-purple-500  h-16 w-16 p-2 flex justify-center items-center border\">IO</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-blue-500  h-16 w-16 p-2 flex justify-center items-center border\">CD</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-yellow-500  h-16 w-16 p-2 flex justify-center items-center border\">IO</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-pink-500  h-16 w-16 flex justify-center items-center border\">\n    <img class=\"h-full w-full rounded-full\" src=\"https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHx1c2VyfGVufDB8MHx8fDE2OTk0NjA4OTV8MA&ixlib=rb-4.0.3&q=80&w=1080\"/>\n </span>\n <span class=\"rounded-full  -ml-6 z-20 bg-indigo-500  h-16 w-16 p-2 flex justify-center items-center border\">AS</span>\n</div>\n</section>\n<section class=\"my-6\">\n<!-- With description text and truncated -->\n<div class=\"border flex rouned-md min-h-16 rounded-md px-4 py-2\">\n <span class=\"rounded-full  bg-red-400 h-8 w-8 sm:h-16 sm:w-16 p-2 flex justify-center items-center border\">MA</span>\n <span class=\"rounded-full -ml-6 z-20 bg-green-400 h-8 w-8 sm:h-16 sm:w-16 p-2 flex justify-center items-center border\">GA</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-gray-200  h-8 w-8 sm:h-16 sm:w-16 p-2 flex justify-center items-center border\">CD</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-blue-700  h-8 w-8 sm:h-16 sm:w-16 flex justify-center items-center border\">CD</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-green-800 h-8 w-8 sm:h-16 sm:w-16  flex justify-center items-center border\">\n   <img class=\"w-full h-full rounded-full\" src=\"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHx1c2VyfGVufDB8MHx8fDE2OTk0NjA4OTV8MA&ixlib=rb-4.0.3&q=80&w=1080\"/>\n </span>\n <span class=\"rounded-full  -ml-6 z-20 bg-blue-300  h-8 w-8 sm:h-16 sm:w-16 flex justify-center items-center border\">YU</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-purple-500 h-8 w-8 sm:h-16 sm:w-16 flex justify-center items-center border\">IO</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-blue-500  h-8 w-8 sm:h-16 sm:w-16 flex justify-center items-center border\">CD</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-yellow-500  h-8 w-8 sm:h-16 sm:w-16 flex justify-center items-center border\">IO</span>\n <span class=\"rounded-full  -ml-6 z-20 bg-pink-500 h-8 w-8 sm:h-16 sm:w-16 justify-center items-center border\">\n    <img class=\"h-full w-full rounded-full\" src=\"https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHx1c2VyfGVufDB8MHx8fDE2OTk0NjA4OTV8MA&ixlib=rb-4.0.3&q=80&w=1080\"/>\n </span>\n <span class=\"rounded-full  -ml-6 z-20 bg-indigo-500  h-8 w-8 sm:h-16 sm:w-16 flex justify-center items-center border\">AS</span>\n <span class=\"rounded-full text-white -ml-6 z-20 bg-green-500  h-8  sm:px-2 px-2 py-0 sm:h-14 sm:w6 flex justify-center items-center border\">+20 Other Supportters</span>\n</div>\n</section>\n</section>"
+  }
+}

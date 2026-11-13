@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "basic-pricing-card",
+  "type": "registry:ui",
+  "title": "Basic pricing card",
+  "description": "Basic pricing card - Créé par @sienna sur TailwindFlex.",
+  "author": "@sienna (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/basic-pricing-card.tsx",
+      "content": "/**\n * Component: Basic pricing card\n * Author: @sienna (https://tailwindflex.com/@sienna)\n * Source: https://tailwindflex.com/@sienna/basic-pricing-card\n * Attribution: Créé par @sienna sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BasicPricingCard() {\n  return (\n    <div>\n    <div className=\"relative py-6 md8 px-8 rounded-lg bg-gray-100 w-full md6/12 mt-6 md0\">\r\n        <div className=\"flex justify-between\">\r\n            <div className=\"w-full\">\r\n                <div className=\"text-blue-900 text-lg font-medium mb-2\">Lifetime</div>\r\n                <div className=\"text-dark-2 text-sm leading-tight\">Access forever</div>\r\n            </div>\r\n            <div className=\"text-dark-1 text-4xl leading-none text-right\">\r\n                $349<span className=\"ml-1 text-dark-2 text-base\">/once</span></div>\r\n        </div>\r\n        <div className=\"border-b border-light-2 w-full mt-6 mb-8\"></div>\r\n        <ul className=\"mb-10\">\r\n            <li className=\"flex items-center gap-1 text-blue-900 text-sm font-medium mb-4\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-6 w-6 shrink-0\" viewBox=\"0 0 24 24\">\r\n                    <path\r\n                        d=\"M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm5.676,8.237-6,5.5a1,1,0,0,1-1.383-.03l-3-3a1,1,0,1,1,1.414-1.414l2.323,2.323,5.294-4.853a1,1,0,1,1,1.352,1.474Z\" />\r\n                </svg>\r\n                <span>One payment, access forever\r\n                </span>\r\n            </li>\r\n            <li className=\"flex items-center gap-1 text-blue-900 text-sm font-medium mb-4\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-6 w-6 shrink-0\" viewBox=\"0 0 24 24\">\r\n                    <path\r\n                        d=\"M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm5.676,8.237-6,5.5a1,1,0,0,1-1.383-.03l-3-3a1,1,0,1,1,1.414-1.414l2.323,2.323,5.294-4.853a1,1,0,1,1,1.352,1.474Z\" />\r\n                </svg>\r\n                <span>All features and benefits\r\n                </span>\r\n            </li>\r\n        </ul>\r\n        <a className=\"inline-flex items-center justify-center bg-blue-400 text-white h-10 px-5 rounded-lg text-sm font-medium leading-none transition-all duration-200 whitespace-nowrap disabled50 disabled hover4 w-full\"\r\n            href=\"#\">\r\n            <span>Get started</span>\r\n        </a>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@sienna",
+    "authorUrl": "https://tailwindflex.com/@sienna",
+    "sourceUrl": "https://tailwindflex.com/@sienna/basic-pricing-card",
+    "mention": "Créé par @sienna sur TailwindFlex",
+    "rawHtml": "<div class=\"relative py-6 md:mr-8 px-8 rounded-lg bg-gray-100 w-full md:w-6/12 mt-6 md:mb-0\">\r\n    <div class=\"flex justify-between\">\r\n        <div class=\"w-full\">\r\n            <div class=\"text-blue-900 text-lg font-medium mb-2\">Lifetime</div>\r\n            <div class=\"text-dark-2 text-sm leading-tight\">Access forever</div>\r\n        </div>\r\n        <div class=\"text-dark-1 text-4xl leading-none text-right\">\r\n            $349<span class=\"ml-1 text-dark-2 text-base\">/once</span></div>\r\n    </div>\r\n    <div class=\"border-b border-light-2 w-full mt-6 mb-8\"></div>\r\n    <ul class=\"mb-10\">\r\n        <li class=\"flex items-center gap-1 text-blue-900 text-sm font-medium mb-4\">\r\n            <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 shrink-0\" viewBox=\"0 0 24 24\">\r\n                <path\r\n                    d=\"M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm5.676,8.237-6,5.5a1,1,0,0,1-1.383-.03l-3-3a1,1,0,1,1,1.414-1.414l2.323,2.323,5.294-4.853a1,1,0,1,1,1.352,1.474Z\" />\r\n            </svg>\r\n            <span>One payment, access forever\r\n            </span>\r\n        </li>\r\n        <li class=\"flex items-center gap-1 text-blue-900 text-sm font-medium mb-4\">\r\n            <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 shrink-0\" viewBox=\"0 0 24 24\">\r\n                <path\r\n                    d=\"M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm5.676,8.237-6,5.5a1,1,0,0,1-1.383-.03l-3-3a1,1,0,1,1,1.414-1.414l2.323,2.323,5.294-4.853a1,1,0,1,1,1.352,1.474Z\" />\r\n            </svg>\r\n            <span>All features and benefits\r\n            </span>\r\n        </li>\r\n    </ul>\r\n    <a class=\"inline-flex items-center justify-center bg-blue-400 text-white h-10 px-5 rounded-lg text-sm font-medium leading-none transition-all duration-200 whitespace-nowrap disabled:opacity-50 disabled:cursor-default hover:bg-blue-4 w-full\"\r\n        href=\"#\">\r\n        <span>Get started</span>\r\n    </a>\r\n</div>"
+  }
+}

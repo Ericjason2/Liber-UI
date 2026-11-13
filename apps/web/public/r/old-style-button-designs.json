@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "old-style-button-designs",
+  "type": "registry:ui",
+  "title": "Old style Button Designs",
+  "description": "Old style Button Designs - Créé par @amit sur TailwindFlex.",
+  "author": "@amit (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/old-style-button-designs.tsx",
+      "content": "/**\n * Component: Old style Button Designs\n * Author: @amit (https://tailwindflex.com/@amit)\n * Source: https://tailwindflex.com/@amit/old-style-button-designs\n * Attribution: Créé par @amit sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function OldStyleButtonDesigns() {\n  return (\n    <div>\n    <div className=\"\">\r\n        <span className=\"inline-block mr-2 mb-2\">\r\n            <a href=\"\" className=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-teal-500 hover600\">Buy on Booktopia\r\n            </a>\r\n        </span>\r\n        <span className=\"inline-block mr-2 mb-2\">\r\n            <a href=\"\" className=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-gray-400 hover500\">Buy on Amazon USA\r\n            </a>\r\n        </span>\r\n        <span className=\"inline-block mr-2 mb-2\">\r\n            <a href=\"\" className=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-red-400 hover500\">Buy on Amazon UK\r\n            </a>\r\n        </span>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@amit",
+    "authorUrl": "https://tailwindflex.com/@amit",
+    "sourceUrl": "https://tailwindflex.com/@amit/old-style-button-designs",
+    "mention": "Créé par @amit sur TailwindFlex",
+    "rawHtml": "<div class=\"\">\r\n    <span class=\"inline-block mr-2 mb-2\">\r\n        <a href=\"\" class=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-teal-500 hover:bg-teal-600\">Buy on Booktopia\r\n        </a>\r\n    </span>\r\n    <span class=\"inline-block mr-2 mb-2\">\r\n        <a href=\"\" class=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-gray-400 hover:bg-gray-500\">Buy on Amazon USA\r\n        </a>\r\n    </span>\r\n    <span class=\"inline-block mr-2 mb-2\">\r\n        <a href=\"\" class=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-red-400 hover:bg-red-500\">Buy on Amazon UK\r\n        </a>\r\n    </span>\r\n</div>"
+  }
+}

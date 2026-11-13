@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "contact-me-form-2",
+  "type": "registry:ui",
+  "title": "Contact me form",
+  "description": "Contact me form - Créé par @geoffrey-callaghan sur TailwindFlex.",
+  "author": "@geoffrey-callaghan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/contact-me-form-2.tsx",
+      "content": "/**\n * Component: Contact me form\n * Author: @geoffrey-callaghan (https://tailwindflex.com/@geoffrey-callaghan)\n * Source: https://tailwindflex.com/@geoffrey-callaghan/contact-me-form-2\n * Attribution: Créé par @geoffrey-callaghan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ContactMeForm2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\r\\n<html lang=\\\"en\\\">\\r\\n\\r\\n<head>\\r\\n    <meta charset=\\\"UTF-8\\\">\\r\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r\\n    <title>Blank Page</title>\\r\\n</head>\\r\\n\\r\\n<body>\\r\\n    <!-- Your form goes here -->\\r\\n    <form action=\\\"https://fabform.io/f/{form-id}\\\" method=\\\"post\\\">\\r\\n        <div class=\\\"h-screen bg-gray-800\\\">\\r\\n            <div class=\\\"pt-10 md:pt-20\\\">\\r\\n                <div class=\\\"p-4 md:p-8\\\">\\r\\n                    <h1 class=\\\"text-white text-center pb-8 font-light text-4xl md:text-5xl lg:text-6xl\\\">Contact Me</h1>\\r\\n                    <form class=\\\"flex flex-col items-center\\\">\\r\\n                        <div class=\\\"md:w-3/4 lg:w-2/3 xl:w-1/2\\\">\\r\\n                            <div class=\\\"flex flex-col md:flex-row\\\">\\r\\n                                <input id=\\\"name\\\" name=\\\"name\\\" type=\\\"text\\\"\\r\\n                                    class=\\\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md:w-1/2 md:mr-2 outline-none focus:ring-2 focus:ring-blue-600\\\"\\r\\n                                    placeholder=\\\"Name\\\">\\r\\n                                <input id=\\\"email\\\" name=\\\"name\\\" type=\\\"email\\\"\\r\\n                                    class=\\\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md:w-1/2 md:ml-2 outline-none focus:ring-2 focus:ring-blue-600\\\"\\r\\n                                    placeholder=\\\"Email\\\">\\r\\n                            </div>\\r\\n                            <input id=\\\"subject\\\" type=\\\"text\\\" placeholder=\\\"Subject\\\"\\r\\n                                class=\\\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600\\\">\\r\\n                            <textarea id=\\\"message\\\" name=message\\\" rows=\\\"5\\\" placeholder=\\\"Say Something\\\"\\r\\n                                class=\\\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600\\\"></textarea>\\r\\n                        </div>\\r\\n                        <button\\r\\n                            class=\\\"border-2 text-md mt-5 rounded-md py-2 px-4 bg-blue-600 hover:bg-blue-700 text-gray-100 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-600\\\">\\r\\n                            Send Message\\r\\n                        </button>\\r\\n                        <div class=\\\"mt-4\\\">\\r\\n                            <p class=\\\"text-white\\\">If you prefer not to use web forms, you can reveal our email address on <a href=\\\"https://veilmail.io/e/FkKh7o\\\"\\r\\n                                class=\\\"underline text-white\\\" target=\\\"_blank\\\">veilmail.io/e/FkKh7o</a>.\\r\\n                        </div>\\r\\n                    </form>\\r\\n                </div>\\r\\n            </div>\\r\\n        </div>\\r\\n    </form>\\r\\n\\r\\n    \\r\\n    <div class=\\\"text-white\\\"  style=\\\"position: fixed; bottom: 10px; right: 10px;\\\">\\r\\n        <a href=\\\"https://fabform.io\\\" target=\\\"_blank\\\">\\r\\n            Powered by FabForm.io</a\\r\\n        </a>\\r\\n        \\r\\n    </div>\\r\\n</body>\\r\\n\\r\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@geoffrey-callaghan",
+    "authorUrl": "https://tailwindflex.com/@geoffrey-callaghan",
+    "sourceUrl": "https://tailwindflex.com/@geoffrey-callaghan/contact-me-form-2",
+    "mention": "Créé par @geoffrey-callaghan sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Blank Page</title>\r\n</head>\r\n\r\n<body>\r\n    <!-- Your form goes here -->\r\n    <form action=\"https://fabform.io/f/{form-id}\" method=\"post\">\r\n        <div class=\"h-screen bg-gray-800\">\r\n            <div class=\"pt-10 md:pt-20\">\r\n                <div class=\"p-4 md:p-8\">\r\n                    <h1 class=\"text-white text-center pb-8 font-light text-4xl md:text-5xl lg:text-6xl\">Contact Me</h1>\r\n                    <form class=\"flex flex-col items-center\">\r\n                        <div class=\"md:w-3/4 lg:w-2/3 xl:w-1/2\">\r\n                            <div class=\"flex flex-col md:flex-row\">\r\n                                <input id=\"name\" name=\"name\" type=\"text\"\r\n                                    class=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md:w-1/2 md:mr-2 outline-none focus:ring-2 focus:ring-blue-600\"\r\n                                    placeholder=\"Name\">\r\n                                <input id=\"email\" name=\"name\" type=\"email\"\r\n                                    class=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md:w-1/2 md:ml-2 outline-none focus:ring-2 focus:ring-blue-600\"\r\n                                    placeholder=\"Email\">\r\n                            </div>\r\n                            <input id=\"subject\" type=\"text\" placeholder=\"Subject\"\r\n                                class=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600\">\r\n                            <textarea id=\"message\" name=message\" rows=\"5\" placeholder=\"Say Something\"\r\n                                class=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600\"></textarea>\r\n                        </div>\r\n                        <button\r\n                            class=\"border-2 text-md mt-5 rounded-md py-2 px-4 bg-blue-600 hover:bg-blue-700 text-gray-100 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-600\">\r\n                            Send Message\r\n                        </button>\r\n                        <div class=\"mt-4\">\r\n                            <p class=\"text-white\">If you prefer not to use web forms, you can reveal our email address on <a href=\"https://veilmail.io/e/FkKh7o\"\r\n                                class=\"underline text-white\" target=\"_blank\">veilmail.io/e/FkKh7o</a>.\r\n                        </div>\r\n                    </form>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </form>\r\n\r\n    \r\n    <div class=\"text-white\"  style=\"position: fixed; bottom: 10px; right: 10px;\">\r\n        <a href=\"https://fabform.io\" target=\"_blank\">\r\n            Powered by FabForm.io</a\r\n        </a>\r\n        \r\n    </div>\r\n</body>\r\n\r\n</html>"
+  }
+}

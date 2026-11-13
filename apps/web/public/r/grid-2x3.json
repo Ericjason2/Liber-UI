@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "grid-2x3",
+  "type": "registry:ui",
+  "title": "Grid (2x3)",
+  "description": "Grid (2x3) - Créé par @maximus sur TailwindFlex.",
+  "author": "@maximus (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/grid-2x3.tsx",
+      "content": "/**\n * Component: Grid (2x3)\n * Author: @maximus (https://tailwindflex.com/@maximus)\n * Source: https://tailwindflex.com/@maximus/grid-2x3\n * Attribution: Créé par @maximus sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Grid2x3() {\n  return (\n    <div>\n    <div className=\"container mx-auto\">\n        <div className=\"flex flex-col md gap-4\">\n            \n            <div className=\"w-full md1/2 bg-blue-100\">\n                \n                <div className=\"flex flex-col mb-4\">\n                    <div className=\"flex flex-col md\">\n                        \n                        <div className=\"w-full md1/2 p-2 bg-blue-200 mb-2 md0 md2\">\n                            <h3 className=\"font-bold\">Traditie & Cultuur</h3>\n                            <p>Dit is een korte tekst over Nederland. Het land staat bekend om zijn tulpen en windmolens.</p>\n                        </div>\n    \n                        \n                        <div className=\"w-full md1/2 p-2 bg-blue-300\">\n                            <h3 className=\"font-bold\">Hoofdstad Amsterdam</h3>\n                            <p>Amsterdam is de hoofdstad van Nederland. De grachten en fietspaden maken het een bijzondere plek.</p>\n                        </div>\n                    </div>\n                </div>\n    \n                \n                <div className=\"p-2 bg-blue-400\">\n                    <h3 className=\"font-bold\">Nederlandse Kazen</h3>\n                    <p>Nederlandse kaas is wereldberoemd. Gouda en Edam zijn twee van de meest bekende soorten die je kunt proberen.</p>\n                </div>\n            </div>\n    \n            \n            <div className=\"w-full md1/2 bg-green-100\">\n                \n                <div className=\"p-2 bg-green-400 mb-4\">\n                    <h3 className=\"font-bold\">Het Weer</h3>\n                    <p>Het Nederlandse klimaat is gematigd, met koele zomers en milde winters. Regen kan het hele jaar door vallen.</p>\n                </div>\n    \n                \n                <div className=\"flex flex-col\">\n                    <div className=\"flex flex-col md\">\n                        \n                        <div className=\"w-full md1/2 p-2 bg-green-200 mb-2 md0 md2\">\n                            <h3 className=\"font-bold\">Feestdagen</h3>\n                            <p>In Nederland viert men Koningsdag op 27 april. Het hele land kleurt oranje tijdens deze feestdag.</p>\n                        </div>\n    \n                        \n                        <div className=\"w-full md1/2 p-2 bg-green-300\">\n                            <h3 className=\"font-bold\">Nederlandse Taal</h3>\n                            <p>De Nederlandse taal wordt gesproken door ongeveer 24 miljoen mensen wereldwijd, voornamelijk in Nederland en België.</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "grid",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@maximus",
+    "authorUrl": "https://tailwindflex.com/@maximus",
+    "sourceUrl": "https://tailwindflex.com/@maximus/grid-2x3",
+    "mention": "Créé par @maximus sur TailwindFlex",
+    "rawHtml": "<div class=\"container mx-auto\">\n    <div class=\"flex flex-col md:flex-row gap-4\">\n        <!-- Left column (50% of screen) -->\n        <div class=\"w-full md:w-1/2 bg-blue-100\">\n            <!-- Top row with 2 columns -->\n            <div class=\"flex flex-col mb-4\">\n                <div class=\"flex flex-col md:flex-row\">\n                    <!-- Top-left section -->\n                    <div class=\"w-full md:w-1/2 p-2 bg-blue-200 mb-2 md:mb-0 md:mr-2\">\n                        <h3 class=\"font-bold\">Traditie & Cultuur</h3>\n                        <p>Dit is een korte tekst over Nederland. Het land staat bekend om zijn tulpen en windmolens.</p>\n                    </div>\n\n                    <!-- Top-right section -->\n                    <div class=\"w-full md:w-1/2 p-2 bg-blue-300\">\n                        <h3 class=\"font-bold\">Hoofdstad Amsterdam</h3>\n                        <p>Amsterdam is de hoofdstad van Nederland. De grachten en fietspaden maken het een bijzondere plek.</p>\n                    </div>\n                </div>\n            </div>\n\n            <!-- Bottom row (single column) -->\n            <div class=\"p-2 bg-blue-400\">\n                <h3 class=\"font-bold\">Nederlandse Kazen</h3>\n                <p>Nederlandse kaas is wereldberoemd. Gouda en Edam zijn twee van de meest bekende soorten die je kunt proberen.</p>\n            </div>\n        </div>\n\n        <!-- Right column (50% of screen) with reverse structure -->\n        <div class=\"w-full md:w-1/2 bg-green-100\">\n            <!-- Bottom row (single column) appears first in reverse -->\n            <div class=\"p-2 bg-green-400 mb-4\">\n                <h3 class=\"font-bold\">Het Weer</h3>\n                <p>Het Nederlandse klimaat is gematigd, met koele zomers en milde winters. Regen kan het hele jaar door vallen.</p>\n            </div>\n\n            <!-- Top row with 2 columns appears second in reverse -->\n            <div class=\"flex flex-col\">\n                <div class=\"flex flex-col md:flex-row\">\n                    <!-- Top-left section -->\n                    <div class=\"w-full md:w-1/2 p-2 bg-green-200 mb-2 md:mb-0 md:mr-2\">\n                        <h3 class=\"font-bold\">Feestdagen</h3>\n                        <p>In Nederland viert men Koningsdag op 27 april. Het hele land kleurt oranje tijdens deze feestdag.</p>\n                    </div>\n\n                    <!-- Top-right section -->\n                    <div class=\"w-full md:w-1/2 p-2 bg-green-300\">\n                        <h3 class=\"font-bold\">Nederlandse Taal</h3>\n                        <p>De Nederlandse taal wordt gesproken door ongeveer 24 miljoen mensen wereldwijd, voornamelijk in Nederland en België.</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

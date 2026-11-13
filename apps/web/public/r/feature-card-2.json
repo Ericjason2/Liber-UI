@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "feature-card-2",
+  "type": "registry:ui",
+  "title": "Feature Card",
+  "description": "Feature Card - Créé par @tofayel-islam sur TailwindFlex.",
+  "author": "@tofayel-islam (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/feature-card-2.tsx",
+      "content": "/**\n * Component: Feature Card\n * Author: @tofayel-islam (https://tailwindflex.com/@tofayel-islam)\n * Source: https://tailwindflex.com/@tofayel-islam/feature-card-2\n * Attribution: Créé par @tofayel-islam sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FeatureCard2() {\n  return (\n    <div>\n    <div className=\"flex justify-center items-center dark800 h-screen w-full\">\n        <div className=\"relative cursor-pointer dark\">\n            <span className=\"absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg dark200\"></span>\n            <div\n                className=\"relative p-6 bg-white dark800 border-2 border-indigo-500 dark300 rounded-lg hover105 transition duration-500\">\n                <div className=\"flex items-center\">\n                    \n                    <h3 className=\"my-2 ml-3 text-lg font-bold text-gray-800 dark\">Cool Feature</h3>\n                </div>\n                <p className=\"text-gray-600 dark300\">\n                    This is the short description of your feature.\n                </p>\n            </div>\n        </div>\n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@tofayel-islam",
+    "authorUrl": "https://tailwindflex.com/@tofayel-islam",
+    "sourceUrl": "https://tailwindflex.com/@tofayel-islam/feature-card-2",
+    "mention": "Créé par @tofayel-islam sur TailwindFlex",
+    "rawHtml": "<div class=\"flex justify-center items-center dark:bg-gray-800 h-screen w-full\">\n    <div class=\"relative cursor-pointer dark:text-white\">\n        <span class=\"absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg dark:bg-gray-200\"></span>\n        <div\n            class=\"relative p-6 bg-white dark:bg-gray-800 border-2 border-indigo-500 dark:border-gray-300 rounded-lg hover:scale-105 transition duration-500\">\n            <div class=\"flex items-center\">\n                \n                <h3 class=\"my-2 ml-3 text-lg font-bold text-gray-800 dark:text-white\">Cool Feature</h3>\n            </div>\n            <p class=\"text-gray-600 dark:text-gray-300\">\n                This is the short description of your feature.\n            </p>\n        </div>\n    </div>\n\n</div>"
+  }
+}

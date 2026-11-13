@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "my-personal-landing-page",
+  "type": "registry:ui",
+  "title": "My Personal Landing page",
+  "description": "My Personal Landing page - Créé par @iam-aydin sur TailwindFlex.",
+  "author": "@iam-aydin (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/my-personal-landing-page.tsx",
+      "content": "/**\n * Component: My Personal Landing page\n * Author: @iam-aydin (https://tailwindflex.com/@iam-aydin)\n * Source: https://tailwindflex.com/@iam-aydin/my-personal-landing-page\n * Attribution: Créé par @iam-aydin sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function MyPersonalLandingPage() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n <head>\\n    <title>NewsLetterLandingPage</title>\\n    <meta charset=\\\"UTF-8\\\" />\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n    <link href=\\\"./output.css\\\" rel=\\\"stylesheet\\\" />\\n    <link rel=\\\"preconnect\\\" href=\\\"https://fonts.googleapis.com\\\" />\\n    <link rel=\\\"preconnect\\\" href=\\\"https://fonts.gstatic.com\\\" crossorigin />\\n    <link\\n      href=\\\"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\\\"\\n      rel=\\\"stylesheet\\\"\\n    />\\n </head>\\n\\n <body class=\\\"font-poppins bg-black relative\\\">\\n  <div id=\\\"container\\\" class=\\\"p-20 w-auto flex px-24 justify-center relative\\\">\\n    \\n      <div id=\\\"container\\\" class=\\\"p-20 sm:p-16 md:p-20 lg:p-24 xl:p-20 w-auto flex flex-col md:flex-row px-4 sm:px-8 md:px-24 lg:px-24 xl:px-24 relative\\\">\\n          <div class=\\\"mr-10\\\">\\n             <img\\n               class=\\\"rounded-lg min-w-[100px] w-full h-auto md:w-auto md:h-auto\\\"\\n               src=\\\"https://ucarecdn.com/833d0fe1-c3b5-4843-b62c-fed9467aceeb/imageOfMyself.jpeg\\\"\\n               alt=\\\"image of myself\\\"\\n             />\\n          </div>\\n          <div class=\\\"w-full sm:w-[70%] md:w-[60%] lg:w-[50%]\\\">\\n      <h1 class=\\\"text-white font-bold text-3xl mt-6 mb-8\\\">\\n        Hey it's me, Aydin Vesali Moghaddam\\n      </h1>\\n\\n      <p class=\\\"text-white w-full sm:w-[35rem] md:w-[30rem] lg:w-[25rem] mb-10\\\">\\n        I'm Aydin, a 18-year-old high schooler with a passion for web\\n        development. My tech journey started with HTML, CSS, and JavaScript,\\n        and I was hooked by the thrill of crafting dynamic, interactive\\n        websites. As I grew, Node.js and ReactJS became my go-to tools for\\n        building scalable applications. Feel free\\n        to connect if you have questions, collaboration ideas, or just want to\\n        discuss the latest in web development!\\n      </p>\\n\\n      <div id=\\\"social\\\" class=\\\"flex flex-wrap justify-start items-center gap-4\\\">\\n        <a rel=\\\"noopener\\\" target=\\\"_blank\\\" href=\\\"https://github.com/iam-aydin\\\" class=\\\"bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white\\\">\\n            <img class=\\\"mr-2 hover:scale-105 transition duration-300 ease-in-out\\\" src=\\\"https://ucarecdn.com/1f465c47-4849-4935-91f4-29135d8607af/github2.svg\\\" width=\\\"20px\\\" height=\\\"20px\\\" alt=\\\"Github\\\" />\\n            <span>Visit my Github</span>\\n        </a>\\n        <a rel=\\\"noopener\\\" target=\\\"_blank\\\" href=\\\"https://www.linkedin.com/in/aydin-vesali-moghaddam-82a860275/\\\" class=\\\"bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white\\\">\\n            <img class=\\\"mr-2 hover:scale-105 transition duration-300 ease-in-out\\\" src=\\\"https://ucarecdn.com/95eebb9c-85cf-4d12-942f-3c40d7044dc6/linkedin.svg\\\" width=\\\"20px\\\" height=\\\"20px\\\" alt=\\\"LinkedIn\\\" />\\n            <span>Follow me on Linkedin</span>\\n        </a>\\n        <a rel=\\\"noopener\\\" target=\\\"_blank\\\" href=\\\"https://twitter.com/ichbinaydin\\\" class=\\\"bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white\\\">\\n            <img class=\\\"mr-2 hover:scale-105 transition duration-300 ease-in-out\\\" src=\\\"https://ucarecdn.com/82d7ca0a-c380-44c4-ba24-658723e2ab07/\\\" width=\\\"20px\\\" height=\\\"20px\\\" alt=\\\"Twitter\\\" />\\n            <span>Follow me on Twitter</span>\\n        </a>\\n    </div>\\n    \\n         \\n         \\n    </div>\\n  </div>\\n</body>\\n\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "landing-page",
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@iam-aydin",
+    "authorUrl": "https://tailwindflex.com/@iam-aydin",
+    "sourceUrl": "https://tailwindflex.com/@iam-aydin/my-personal-landing-page",
+    "mention": "Créé par @iam-aydin sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n <head>\n    <title>NewsLetterLandingPage</title>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link href=\"./output.css\" rel=\"stylesheet\" />\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />\n    <link\n      href=\"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\"\n      rel=\"stylesheet\"\n    />\n </head>\n\n <body class=\"font-poppins bg-black relative\">\n  <div id=\"container\" class=\"p-20 w-auto flex px-24 justify-center relative\">\n    \n      <div id=\"container\" class=\"p-20 sm:p-16 md:p-20 lg:p-24 xl:p-20 w-auto flex flex-col md:flex-row px-4 sm:px-8 md:px-24 lg:px-24 xl:px-24 relative\">\n          <div class=\"mr-10\">\n             <img\n               class=\"rounded-lg min-w-[100px] w-full h-auto md:w-auto md:h-auto\"\n               src=\"https://ucarecdn.com/833d0fe1-c3b5-4843-b62c-fed9467aceeb/imageOfMyself.jpeg\"\n               alt=\"image of myself\"\n             />\n          </div>\n          <div class=\"w-full sm:w-[70%] md:w-[60%] lg:w-[50%]\">\n      <h1 class=\"text-white font-bold text-3xl mt-6 mb-8\">\n        Hey it's me, Aydin Vesali Moghaddam\n      </h1>\n\n      <p class=\"text-white w-full sm:w-[35rem] md:w-[30rem] lg:w-[25rem] mb-10\">\n        I'm Aydin, a 18-year-old high schooler with a passion for web\n        development. My tech journey started with HTML, CSS, and JavaScript,\n        and I was hooked by the thrill of crafting dynamic, interactive\n        websites. As I grew, Node.js and ReactJS became my go-to tools for\n        building scalable applications. Feel free\n        to connect if you have questions, collaboration ideas, or just want to\n        discuss the latest in web development!\n      </p>\n\n      <div id=\"social\" class=\"flex flex-wrap justify-start items-center gap-4\">\n        <a rel=\"noopener\" target=\"_blank\" href=\"https://github.com/iam-aydin\" class=\"bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white\">\n            <img class=\"mr-2 hover:scale-105 transition duration-300 ease-in-out\" src=\"https://ucarecdn.com/1f465c47-4849-4935-91f4-29135d8607af/github2.svg\" width=\"20px\" height=\"20px\" alt=\"Github\" />\n            <span>Visit my Github</span>\n        </a>\n        <a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/in/aydin-vesali-moghaddam-82a860275/\" class=\"bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white\">\n            <img class=\"mr-2 hover:scale-105 transition duration-300 ease-in-out\" src=\"https://ucarecdn.com/95eebb9c-85cf-4d12-942f-3c40d7044dc6/linkedin.svg\" width=\"20px\" height=\"20px\" alt=\"LinkedIn\" />\n            <span>Follow me on Linkedin</span>\n        </a>\n        <a rel=\"noopener\" target=\"_blank\" href=\"https://twitter.com/ichbinaydin\" class=\"bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white\">\n            <img class=\"mr-2 hover:scale-105 transition duration-300 ease-in-out\" src=\"https://ucarecdn.com/82d7ca0a-c380-44c4-ba24-658723e2ab07/\" width=\"20px\" height=\"20px\" alt=\"Twitter\" />\n            <span>Follow me on Twitter</span>\n        </a>\n    </div>\n    \n         \n         \n    </div>\n  </div>\n</body>\n\n</html>"
+  }
+}

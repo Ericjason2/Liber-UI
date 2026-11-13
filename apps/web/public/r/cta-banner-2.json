@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cta-banner-2",
+  "type": "registry:ui",
+  "title": "CTA banner",
+  "description": "CTA banner - Créé par @lautaro sur TailwindFlex.",
+  "author": "@lautaro (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cta-banner-2.tsx",
+      "content": "/**\n * Component: CTA banner\n * Author: @lautaro (https://tailwindflex.com/@lautaro)\n * Source: https://tailwindflex.com/@lautaro/cta-banner-2\n * Attribution: Créé par @lautaro sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CtaBanner2() {\n  return (\n    <div>\n    <div className=\"p-4 max-w-xl rounded-lg border-l-4 border-teal-400 bg-gradient-to-r from-teal-100/50 to-white\">\n      <p className=\"text-xl font-semibold text-gray-800\">\n        Have a Custom Design in Mind?\n      </p>\n      <p className=\"mt-1 text-gray-700\">\n        Bring your idea to us, and we will work on it to create something special just for you.\n      </p>\n      <div className=\"mt-4\">\n        <a href=\"/\"\n          className=\"inline-block px-4 py-2 font-medium text-white transition duration-300 rounded-md bg-red-500 hover600\">\n          Submit Your Idea\n        </a>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@lautaro",
+    "authorUrl": "https://tailwindflex.com/@lautaro",
+    "sourceUrl": "https://tailwindflex.com/@lautaro/cta-banner-2",
+    "mention": "Créé par @lautaro sur TailwindFlex",
+    "rawHtml": "<div class=\"p-4 max-w-xl rounded-lg border-l-4 border-teal-400 bg-gradient-to-r from-teal-100/50 to-white\">\n  <p class=\"text-xl font-semibold text-gray-800\">\n    Have a Custom Design in Mind?\n  </p>\n  <p class=\"mt-1 text-gray-700\">\n    Bring your idea to us, and we will work on it to create something special just for you.\n  </p>\n  <div class=\"mt-4\">\n    <a href=\"/\"\n      class=\"inline-block px-4 py-2 font-medium text-white transition duration-300 rounded-md bg-red-500 hover:bg-red-600\">\n      Submit Your Idea\n    </a>\n  </div>\n</div>"
+  }
+}

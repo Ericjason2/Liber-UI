@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "file-upload-3",
+  "type": "registry:ui",
+  "title": "File Upload",
+  "description": "File Upload - Créé par @rajesh-maheshwari sur TailwindFlex.",
+  "author": "@rajesh-maheshwari (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/file-upload-3.tsx",
+      "content": "/**\n * Component: File Upload\n * Author: @rajesh-maheshwari (https://tailwindflex.com/@rajesh-maheshwari)\n * Source: https://tailwindflex.com/@rajesh-maheshwari/file-upload-3\n * Attribution: Créé par @rajesh-maheshwari sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FileUpload3() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n\\n<body class=\\\"bg-black flex items-center justify-center min-h-screen\\\">\\n\\n    <div class=\\\"bg-white p-8 rounded-xl shadow-xl max-w-md w-full\\\">\\n        <h2 class=\\\"text-2xl font-semibold text-gray-800 text-center mb-6\\\">Upload Your File</h2>\\n        \\n        <!-- File upload box -->\\n        <div class=\\\"flex flex-col items-center justify-center p-6 border-2 border-dashed border-gray-300 rounded-xl hover:border-blue-500 transition-all duration-300\\\">\\n            <!-- Icon for drag & drop -->\\n            <svg class=\\\"w-16 h-16 text-blue-500 mb-4 transition-all duration-300\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\" stroke=\\\"currentColor\\\">\\n                <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" stroke-width=\\\"2\\\" d=\\\"M12 4v16m8-8H4\\\" />\\n            </svg>\\n\\n            <!-- Hidden file input -->\\n            <input id=\\\"file-upload\\\" type=\\\"file\\\" class=\\\"hidden\\\" />\\n            \\n            <!-- Custom label for file upload -->\\n            <label for=\\\"file-upload\\\" class=\\\"text-gray-600 cursor-pointer text-center hover:text-blue-600 transition-all duration-300\\\">\\n                <span class=\\\"block text-xl font-medium\\\">Drag & Drop your file here</span>\\n                <span class=\\\"block text-sm text-gray-400\\\">Or click to browse</span>\\n            </label>\\n\\n            <!-- File name display -->\\n            <div id=\\\"file-name\\\" class=\\\"mt-3 text-gray-700 text-sm font-medium hidden\\\">No file selected</div>\\n        </div>\\n        \\n        <!-- Upload Button -->\\n        <button id=\\\"upload-btn\\\" class=\\\"w-full mt-6 py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-all duration-300\\\" disabled>Upload</button>\\n    </div>\\n\\n    \\n\\n</body>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "form",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rajesh-maheshwari",
+    "authorUrl": "https://tailwindflex.com/@rajesh-maheshwari",
+    "sourceUrl": "https://tailwindflex.com/@rajesh-maheshwari/file-upload-3",
+    "mention": "Créé par @rajesh-maheshwari sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<body class=\"bg-black flex items-center justify-center min-h-screen\">\n\n    <div class=\"bg-white p-8 rounded-xl shadow-xl max-w-md w-full\">\n        <h2 class=\"text-2xl font-semibold text-gray-800 text-center mb-6\">Upload Your File</h2>\n        \n        <!-- File upload box -->\n        <div class=\"flex flex-col items-center justify-center p-6 border-2 border-dashed border-gray-300 rounded-xl hover:border-blue-500 transition-all duration-300\">\n            <!-- Icon for drag & drop -->\n            <svg class=\"w-16 h-16 text-blue-500 mb-4 transition-all duration-300\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 4v16m8-8H4\" />\n            </svg>\n\n            <!-- Hidden file input -->\n            <input id=\"file-upload\" type=\"file\" class=\"hidden\" />\n            \n            <!-- Custom label for file upload -->\n            <label for=\"file-upload\" class=\"text-gray-600 cursor-pointer text-center hover:text-blue-600 transition-all duration-300\">\n                <span class=\"block text-xl font-medium\">Drag & Drop your file here</span>\n                <span class=\"block text-sm text-gray-400\">Or click to browse</span>\n            </label>\n\n            <!-- File name display -->\n            <div id=\"file-name\" class=\"mt-3 text-gray-700 text-sm font-medium hidden\">No file selected</div>\n        </div>\n        \n        <!-- Upload Button -->\n        <button id=\"upload-btn\" class=\"w-full mt-6 py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-all duration-300\" disabled>Upload</button>\n    </div>\n\n    <script>\n        const fileInput = document.getElementById('file-upload');\n        const fileNameDisplay = document.getElementById('file-name');\n        const uploadButton = document.getElementById('upload-btn');\n\n        // Display file name after selection\n        fileInput.addEventListener('change', () => {\n            if (fileInput.files.length > 0) {\n                fileNameDisplay.textContent = fileInput.files[0].name;\n                fileNameDisplay.classList.remove('hidden');\n                uploadButton.removeAttribute('disabled');\n            } else {\n                fileNameDisplay.textContent = 'No file selected';\n                fileNameDisplay.classList.add('hidden');\n                uploadButton.setAttribute('disabled', 'true');\n            }\n        });\n    </script>\n\n</body>"
+  }
+}

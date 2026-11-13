@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "form-5",
+  "type": "registry:ui",
+  "title": "form",
+  "description": "form - Créé par @aditya sur TailwindFlex.",
+  "author": "@aditya (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/form-5.tsx",
+      "content": "/**\n * Component: form\n * Author: @aditya (https://tailwindflex.com/@aditya)\n * Source: https://tailwindflex.com/@aditya/form-5\n * Attribution: Créé par @aditya sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Form5() {\n  return (\n    <div>\n    <div className=\"fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4\">\n        <div className=\"w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white rounded-2xl shadow-2xl\">\n          <div className=\"flex items-center justify-between px-6 py-5 border-b border-gray-200\">\n            <div>\n              <h2 className=\"text-xl font-semibold text-gray-800\">heading</h2>\n            </div>\n    \n            <button\n              type=\"button\"\n              className=\"flex items-center justify-center w-9 h-9 rounded-full text-gray-500 hover700 hover100 transition\"\n            >\n              ✕\n            </button>\n          </div>\n    \n          <div className=\"p-6 space-y-6\">\n            <div className=\"border-t border-gray-200\"></div>\n    \n            <div>\n              <h3 className=\"text-sm font-semibold text-gray-800 mb-4\">fields</h3>\n    \n              <div className=\"flex flex-col gap-4\">\n                <div className=\"bg-gray-50 rounded-xl p-4\">\n                  <p className=\"text-xs text-gray-500\">field1</p>\n    \n                  <p className=\"text-lg font-semibold text-gray-800 mt-1\">\n                    field1\n                  </p>\n                </div>\n    \n                <div className=\"bg-gray-50 rounded-xl p-4\">\n                  <p className=\"text-xs text-gray-500\">field2</p>\n    \n                  <p className=\"text-lg font-semibold text-gray-800 mt-1\">\n    field2              </p>\n                </div>\n    \n                <div className=\"bg-gray-50 rounded-xl p-4\">\n                  <p className=\"text-xs text-gray-500\">field3</p>\n    \n                  <p className=\"text-sm font-semibold text-gray-800 mt-2\">\n                    field3\n                  </p>\n                </div>\n    \n                <div className=\"bg-gray-50 rounded-xl p-4\">\n                  <p className=\"text-xs text-gray-500\">field4</p>\n                  field4\n                </div>\n              </div>\n            </div>\n    \n            <div className=\"border-t border-gray-200\"></div>\n    \n            <div className=\"flex flex-col-reverse sm sm gap-3 pt-2\">\n              <button\n                type=\"button\"\n                className=\"w-full sm px-5 py-2.5 border bg-blue-600 text-white rounded-xl font-medium hover700 transition\"\n              >\n                Close\n              </button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@aditya",
+    "authorUrl": "https://tailwindflex.com/@aditya",
+    "sourceUrl": "https://tailwindflex.com/@aditya/form-5",
+    "mention": "Créé par @aditya sur TailwindFlex",
+    "rawHtml": "<div class=\"fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4\">\n    <div class=\"w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white rounded-2xl shadow-2xl\">\n      <div class=\"flex items-center justify-between px-6 py-5 border-b border-gray-200\">\n        <div>\n          <h2 class=\"text-xl font-semibold text-gray-800\">heading</h2>\n        </div>\n\n        <button\n          type=\"button\"\n          class=\"flex items-center justify-center w-9 h-9 rounded-full text-gray-500 hover:text-gray-700 hover:bg-gray-100 transition\"\n        >\n          ✕\n        </button>\n      </div>\n\n      <div class=\"p-6 space-y-6\">\n        <div class=\"border-t border-gray-200\"></div>\n\n        <div>\n          <h3 class=\"text-sm font-semibold text-gray-800 mb-4\">fields</h3>\n\n          <div class=\"flex flex-col gap-4\">\n            <div class=\"bg-gray-50 rounded-xl p-4\">\n              <p class=\"text-xs text-gray-500\">field1</p>\n\n              <p class=\"text-lg font-semibold text-gray-800 mt-1\">\n                field1\n              </p>\n            </div>\n\n            <div class=\"bg-gray-50 rounded-xl p-4\">\n              <p class=\"text-xs text-gray-500\">field2</p>\n\n              <p class=\"text-lg font-semibold text-gray-800 mt-1\">\nfield2              </p>\n            </div>\n\n            <div class=\"bg-gray-50 rounded-xl p-4\">\n              <p class=\"text-xs text-gray-500\">field3</p>\n\n              <p class=\"text-sm font-semibold text-gray-800 mt-2\">\n                field3\n              </p>\n            </div>\n\n            <div class=\"bg-gray-50 rounded-xl p-4\">\n              <p class=\"text-xs text-gray-500\">field4</p>\n              field4\n            </div>\n          </div>\n        </div>\n\n        <div class=\"border-t border-gray-200\"></div>\n\n        <div class=\"flex flex-col-reverse sm:flex-row sm:justify-end gap-3 pt-2\">\n          <button\n            type=\"button\"\n            class=\"w-full sm:w-auto px-5 py-2.5 border bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 transition\"\n          >\n            Close\n          </button>\n        </div>\n      </div>\n    </div>\n  </div>"
+  }
+}

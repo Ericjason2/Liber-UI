@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "disabled-button-active-button",
+  "type": "registry:ui",
+  "title": "Disabled Button &amp; Active Button",
+  "description": "Disabled Button &amp; Active Button - Créé par @dipti sur TailwindFlex.",
+  "author": "@dipti (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/disabled-button-active-button.tsx",
+      "content": "/**\n * Component: Disabled Button &amp; Active Button\n * Author: @dipti (https://tailwindflex.com/@dipti)\n * Source: https://tailwindflex.com/@dipti/disabled-button-active-button\n * Attribution: Créé par @dipti sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function DisabledButtonActiveButton() {\n  return (\n    <div>\n    <div className=\"flex gap-2\">\n      \n      <button className=\"bg-gray-300 px-4 py-2 rounded-md cursor-not-allowed opacity-50\" disabled>\n        Disabled Button\n      </button>\n    \n      \n      <button className=\"bg-green-500 hover700 active800 px-4 py-2 rounded-md text-white\">\n        Active Button\n      </button>\n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@dipti",
+    "authorUrl": "https://tailwindflex.com/@dipti",
+    "sourceUrl": "https://tailwindflex.com/@dipti/disabled-button-active-button",
+    "mention": "Créé par @dipti sur TailwindFlex",
+    "rawHtml": "<div class=\"flex gap-2\">\n  <!-- HTML -->\n  <button class=\"bg-gray-300 px-4 py-2 rounded-md cursor-not-allowed opacity-50\" disabled>\n    Disabled Button\n  </button>\n\n  <!-- HTML -->\n  <button class=\"bg-green-500 hover:bg-green-700 active:bg-green-800 px-4 py-2 rounded-md text-white\">\n    Active Button\n  </button>\n\n</div>"
+  }
+}

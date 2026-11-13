@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-card-3",
+  "type": "registry:ui",
+  "title": "Pricing card",
+  "description": "Pricing card - Créé par @task_master sur TailwindFlex.",
+  "author": "@task_master (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pricing-card-3.tsx",
+      "content": "/**\n * Component: Pricing card\n * Author: @task_master (https://tailwindflex.com/@task_master)\n * Source: https://tailwindflex.com/@task_master/pricing-card-3\n * Attribution: Créé par @task_master sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PricingCard3() {\n  return (\n    <div>\n    <div className=\"m-4 flex flex-col justify-between p-5 bg-white border rounded shadow-sm\">\n        <div className=\"mb-6\">\n            <div className=\"flex items-center justify-between pb-6 mb-6 border-b\">\n                <div>\n                    <p className=\"text-sm font-bold tracking-wider uppercase\">Get started for</p>\n                    <p className=\"text-5xl font-extrabold\">Free</p>\n                </div>\n                <div className=\"flex items-center justify-center w-24 h-24 rounded-full bg-blue-gray-50\"><svg\n                        className=\"w-10 h-10 text-gray-600\" viewBox=\"0 0 24 24\" strokeLinecap=\"round\" strokeLidth=\"2\">\n                        <path\n                            d=\"M12,7L12,7 c-1.657,0-3-1.343-3-3v0c0-1.657,1.343-3,3-3h0c1.657,0,3,1.343,3,3v0C15,5.657,13.657,7,12,7z\"\n                            fill=\"none\" stroke=\"currentColor\"></path>\n                        <path d=\"M15,23H9v-5H7v-6 c0-1.105,0.895-2,2-2h6c1.105,0,2,0.895,2,2v6h-2V23z\" fill=\"none\"\n                            stroke=\"currentColor\"></path>\n                    </svg>\n                </div>\n            </div>\n            <div>\n                <p className=\"mb-2 font-bold tracking-wide\">Features</p>\n                <ul className=\"space-y-2\">\n                    <li className=\"flex items-center\">\n                        <div className=\"mr-2\"><svg className=\"w-4 h-4 text-purple-600\" viewBox=\"0 0 24 24\" strokeLinecap=\"round\"\n                                strokeLidth=\"2\">\n                                <polyline fill=\"none\" stroke=\"currentColor\" points=\"6,12 10,16 18,8\"></polyline>\n                                <circle cx=\"12\" cy=\"12\" fill=\"none\" r=\"11\" stroke=\"currentColor\"></circle>\n                            </svg></div>\n                        <p className=\"font-medium text-gray-800\">Unlimited Text, Image, Song and TV posts</p>\n                    </li>\n                    <li className=\"flex items-center\">\n                        <div className=\"mr-2\"><svg className=\"w-4 h-4 text-purple-600\" viewBox=\"0 0 24 24\" strokeLinecap=\"round\"\n                                strokeLidth=\"2\">\n                                <polyline fill=\"none\" stroke=\"currentColor\" points=\"6,12 10,16 18,8\"></polyline>\n                                <circle cx=\"12\" cy=\"12\" fill=\"none\" r=\"11\" stroke=\"currentColor\"></circle>\n                            </svg></div>\n                        <p className=\"font-medium text-gray-800\">1 Free Discussion Space per day</p>\n                    </li>\n                    <li className=\"flex items-center\">\n                        <div className=\"mr-2\"><svg className=\"w-4 h-4 text-purple-600\" viewBox=\"0 0 24 24\" strokeLinecap=\"round\"\n                                strokeLidth=\"2\">\n                                <polyline fill=\"none\" stroke=\"currentColor\" points=\"6,12 10,16 18,8\"></polyline>\n                                <circle cx=\"12\" cy=\"12\" fill=\"none\" r=\"11\" stroke=\"currentColor\"></circle>\n                            </svg></div>\n                        <p className=\"font-medium text-gray-800\">5 Circles with unlimited members</p>\n                    </li>\n                    <li className=\"flex items-center\">\n                        <div className=\"mr-2\"><svg className=\"w-4 h-4 text-purple-600\" viewBox=\"0 0 24 24\" strokeLinecap=\"round\"\n                                strokeLidth=\"2\">\n                                <polyline fill=\"none\" stroke=\"currentColor\" points=\"6,12 10,16 18,8\"></polyline>\n                                <circle cx=\"12\" cy=\"12\" fill=\"none\" r=\"11\" stroke=\"currentColor\"></circle>\n                            </svg></div>\n                        <p className=\"font-medium text-gray-800\">1 Free Page</p>\n                    </li>\n                </ul>\n            </div>\n        </div>\n        <div>\n            <a href=\"#\"\n                className=\"inline-flex items-center justify-center w-full h-12 px-6 mb-4 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover900 focus focus\">Start\n                for free\n            </a>\n            <p className=\"text-sm text-gray-600\">Forever free plan. Feature availablity subject to change.</p>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@task_master",
+    "authorUrl": "https://tailwindflex.com/@task_master",
+    "sourceUrl": "https://tailwindflex.com/@task_master/pricing-card-3",
+    "mention": "Créé par @task_master sur TailwindFlex",
+    "rawHtml": "<div class=\"m-4 flex flex-col justify-between p-5 bg-white border rounded shadow-sm\">\n    <div class=\"mb-6\">\n        <div class=\"flex items-center justify-between pb-6 mb-6 border-b\">\n            <div>\n                <p class=\"text-sm font-bold tracking-wider uppercase\">Get started for</p>\n                <p class=\"text-5xl font-extrabold\">Free</p>\n            </div>\n            <div class=\"flex items-center justify-center w-24 h-24 rounded-full bg-blue-gray-50\"><svg\n                    class=\"w-10 h-10 text-gray-600\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" strokeLidth=\"2\">\n                    <path\n                        d=\"M12,7L12,7 c-1.657,0-3-1.343-3-3v0c0-1.657,1.343-3,3-3h0c1.657,0,3,1.343,3,3v0C15,5.657,13.657,7,12,7z\"\n                        fill=\"none\" stroke=\"currentColor\"></path>\n                    <path d=\"M15,23H9v-5H7v-6 c0-1.105,0.895-2,2-2h6c1.105,0,2,0.895,2,2v6h-2V23z\" fill=\"none\"\n                        stroke=\"currentColor\"></path>\n                </svg>\n            </div>\n        </div>\n        <div>\n            <p class=\"mb-2 font-bold tracking-wide\">Features</p>\n            <ul class=\"space-y-2\">\n                <li class=\"flex items-center\">\n                    <div class=\"mr-2\"><svg class=\"w-4 h-4 text-purple-600\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\"\n                            strokeLidth=\"2\">\n                            <polyline fill=\"none\" stroke=\"currentColor\" points=\"6,12 10,16 18,8\"></polyline>\n                            <circle cx=\"12\" cy=\"12\" fill=\"none\" r=\"11\" stroke=\"currentColor\"></circle>\n                        </svg></div>\n                    <p class=\"font-medium text-gray-800\">Unlimited Text, Image, Song and TV posts</p>\n                </li>\n                <li class=\"flex items-center\">\n                    <div class=\"mr-2\"><svg class=\"w-4 h-4 text-purple-600\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\"\n                            strokeLidth=\"2\">\n                            <polyline fill=\"none\" stroke=\"currentColor\" points=\"6,12 10,16 18,8\"></polyline>\n                            <circle cx=\"12\" cy=\"12\" fill=\"none\" r=\"11\" stroke=\"currentColor\"></circle>\n                        </svg></div>\n                    <p class=\"font-medium text-gray-800\">1 Free Discussion Space per day</p>\n                </li>\n                <li class=\"flex items-center\">\n                    <div class=\"mr-2\"><svg class=\"w-4 h-4 text-purple-600\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\"\n                            strokeLidth=\"2\">\n                            <polyline fill=\"none\" stroke=\"currentColor\" points=\"6,12 10,16 18,8\"></polyline>\n                            <circle cx=\"12\" cy=\"12\" fill=\"none\" r=\"11\" stroke=\"currentColor\"></circle>\n                        </svg></div>\n                    <p class=\"font-medium text-gray-800\">5 Circles with unlimited members</p>\n                </li>\n                <li class=\"flex items-center\">\n                    <div class=\"mr-2\"><svg class=\"w-4 h-4 text-purple-600\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\"\n                            strokeLidth=\"2\">\n                            <polyline fill=\"none\" stroke=\"currentColor\" points=\"6,12 10,16 18,8\"></polyline>\n                            <circle cx=\"12\" cy=\"12\" fill=\"none\" r=\"11\" stroke=\"currentColor\"></circle>\n                        </svg></div>\n                    <p class=\"font-medium text-gray-800\">1 Free Page</p>\n                </li>\n            </ul>\n        </div>\n    </div>\n    <div>\n        <a href=\"#\"\n            class=\"inline-flex items-center justify-center w-full h-12 px-6 mb-4 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none\">Start\n            for free\n        </a>\n        <p class=\"text-sm text-gray-600\">Forever free plan. Feature availablity subject to change.</p>\n    </div>\n</div>"
+  }
+}

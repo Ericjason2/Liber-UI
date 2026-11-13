@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-with-svg-background",
+  "type": "registry:ui",
+  "title": "Hero with SVG background",
+  "description": "Hero with SVG background - Créé par @santiago sur TailwindFlex.",
+  "author": "@santiago (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-with-svg-background.tsx",
+      "content": "/**\n * Component: Hero with SVG background\n * Author: @santiago (https://tailwindflex.com/@santiago)\n * Source: https://tailwindflex.com/@santiago/hero-with-svg-background\n * Attribution: Créé par @santiago sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroWithSvgBackground() {\n  return (\n    <div>\n    <div className=\"relative isolate\">\n      <svg\n        className=\"absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image(100%_100%_at_top_right,white,transparent)]\"\n        aria-hidden=\"true\">\n        <defs>\n          <pattern id=\"0787a7c5-978c-4f66-83c7-11c213f99cb7\" width=\"200\" height=\"200\" x=\"50%\" y=\"-1\"\n            patternUnits=\"userSpaceOnUse\">\n            <path d=\"M.5 200V.5H200\" fill=\"none\"></path>\n          </pattern>\n        </defs>\n        <rect width=\"100%\" height=\"100%\" strokeWidth=\"0\" fill=\"url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)\"></rect>\n      </svg>\n      <div className=\"py-24 sm24 lg40\">\n        <div className=\"mx-auto max-w-7xl px-6 lg8\">\n          <div className=\"mx-auto max-w-2xl text-center\">\n            <h1 className=\"text-4xl font-bold tracking-tight text-gray-900 sm6xl\">Another TailwindCSS Product</h1>\n            <p className=\"mt-6 text-lg leading-8 text-gray-600\">Description of the product and its features.</p>\n            <div className=\"mt-10 flex items-center justify-center gap-x-6\">\n              <a href=\"/login/google\" tabIndex=\"0\"\n                className=\"inline-flex items-center justify-center rounded-md whitespace-nowrap ring-offset-background transition-colors focus-visible focus-visible2 focus-visible focus-visible2 disabled disabled50 bg-gray-900 text-white hover900/90 h-10 px-4 py-2\">\n                <svg className=\"mr-2 h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\" fill=\"none\">\n                  <path\n                    d=\"M30.0014 16.3109C30.0014 15.1598 29.9061 14.3198 29.6998 13.4487H16.2871V18.6442H24.1601C24.0014 19.9354 23.1442 21.8798 21.2394 23.1864L21.2127 23.3604L25.4536 26.58L25.7474 26.6087C28.4458 24.1665 30.0014 20.5731 30.0014 16.3109Z\"\n                    fill=\"#4285F4\" />\n                  <path\n                    d=\"M16.2863 29.9998C20.1434 29.9998 23.3814 28.7553 25.7466 26.6086L21.2386 23.1863C20.0323 24.0108 18.4132 24.5863 16.2863 24.5863C12.5086 24.5863 9.30225 22.1441 8.15929 18.7686L7.99176 18.7825L3.58208 22.127L3.52441 22.2841C5.87359 26.8574 10.699 29.9998 16.2863 29.9998Z\"\n                    fill=\"#34A853\" />\n                  <path\n                    d=\"M8.15964 18.769C7.85806 17.8979 7.68352 16.9645 7.68352 16.0001C7.68352 15.0356 7.85806 14.1023 8.14377 13.2312L8.13578 13.0456L3.67083 9.64746L3.52475 9.71556C2.55654 11.6134 2.00098 13.7445 2.00098 16.0001C2.00098 18.2556 2.55654 20.3867 3.52475 22.2845L8.15964 18.769Z\"\n                    fill=\"#FBBC05\" />\n                  <path\n                    d=\"M16.2864 7.4133C18.9689 7.4133 20.7784 8.54885 21.8102 9.4978L25.8419 5.64C23.3658 3.38445 20.1435 2 16.2864 2C10.699 2 5.8736 5.1422 3.52441 9.71549L8.14345 13.2311C9.30229 9.85555 12.5086 7.4133 16.2864 7.4133Z\"\n                    fill=\"#EB4335\" />\n                </svg>\n                Sign Up with Google\n              </a>\n            </div>\n          </div>\n          <div className=\"mt-16 flow-root sm24\">\n            <div className=\"-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg4 lg2xl lg4\">\n              <img src=\"https://images.unsplash.com/photo-1592323360850-e317605f0526?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8YXBwJTIwc2NyZWVuc2hvdHxlbnwwfDB8fHwxNzE0ODkzMzgyfDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"App screenshot\" width=\"2432\" height=\"1442\" className=\"rounded-md shadow-2xl ring-1 ring-gray-900/10\" />\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@santiago",
+    "authorUrl": "https://tailwindflex.com/@santiago",
+    "sourceUrl": "https://tailwindflex.com/@santiago/hero-with-svg-background",
+    "mention": "Créé par @santiago sur TailwindFlex",
+    "rawHtml": "<div class=\"relative isolate\">\n  <svg\n    class=\"absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]\"\n    aria-hidden=\"true\">\n    <defs>\n      <pattern id=\"0787a7c5-978c-4f66-83c7-11c213f99cb7\" width=\"200\" height=\"200\" x=\"50%\" y=\"-1\"\n        patternUnits=\"userSpaceOnUse\">\n        <path d=\"M.5 200V.5H200\" fill=\"none\"></path>\n      </pattern>\n    </defs>\n    <rect width=\"100%\" height=\"100%\" stroke-width=\"0\" fill=\"url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)\"></rect>\n  </svg>\n  <div class=\"py-24 sm:py-24 lg:pb-40\">\n    <div class=\"mx-auto max-w-7xl px-6 lg:px-8\">\n      <div class=\"mx-auto max-w-2xl text-center\">\n        <h1 class=\"text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl\">Another TailwindCSS Product</h1>\n        <p class=\"mt-6 text-lg leading-8 text-gray-600\">Description of the product and its features.</p>\n        <div class=\"mt-10 flex items-center justify-center gap-x-6\">\n          <a href=\"/login/google\" tabindex=\"0\"\n            class=\"inline-flex items-center justify-center rounded-md whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-white hover:bg-gray-900/90 h-10 px-4 py-2\">\n            <svg class=\"mr-2 h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\" fill=\"none\">\n              <path\n                d=\"M30.0014 16.3109C30.0014 15.1598 29.9061 14.3198 29.6998 13.4487H16.2871V18.6442H24.1601C24.0014 19.9354 23.1442 21.8798 21.2394 23.1864L21.2127 23.3604L25.4536 26.58L25.7474 26.6087C28.4458 24.1665 30.0014 20.5731 30.0014 16.3109Z\"\n                fill=\"#4285F4\" />\n              <path\n                d=\"M16.2863 29.9998C20.1434 29.9998 23.3814 28.7553 25.7466 26.6086L21.2386 23.1863C20.0323 24.0108 18.4132 24.5863 16.2863 24.5863C12.5086 24.5863 9.30225 22.1441 8.15929 18.7686L7.99176 18.7825L3.58208 22.127L3.52441 22.2841C5.87359 26.8574 10.699 29.9998 16.2863 29.9998Z\"\n                fill=\"#34A853\" />\n              <path\n                d=\"M8.15964 18.769C7.85806 17.8979 7.68352 16.9645 7.68352 16.0001C7.68352 15.0356 7.85806 14.1023 8.14377 13.2312L8.13578 13.0456L3.67083 9.64746L3.52475 9.71556C2.55654 11.6134 2.00098 13.7445 2.00098 16.0001C2.00098 18.2556 2.55654 20.3867 3.52475 22.2845L8.15964 18.769Z\"\n                fill=\"#FBBC05\" />\n              <path\n                d=\"M16.2864 7.4133C18.9689 7.4133 20.7784 8.54885 21.8102 9.4978L25.8419 5.64C23.3658 3.38445 20.1435 2 16.2864 2C10.699 2 5.8736 5.1422 3.52441 9.71549L8.14345 13.2311C9.30229 9.85555 12.5086 7.4133 16.2864 7.4133Z\"\n                fill=\"#EB4335\" />\n            </svg>\n            Sign Up with Google\n          </a>\n        </div>\n      </div>\n      <div class=\"mt-16 flow-root sm:mt-24\">\n        <div class=\"-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4\">\n          <img src=\"https://images.unsplash.com/photo-1592323360850-e317605f0526?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8YXBwJTIwc2NyZWVuc2hvdHxlbnwwfDB8fHwxNzE0ODkzMzgyfDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"App screenshot\" width=\"2432\" height=\"1442\" class=\"rounded-md shadow-2xl ring-1 ring-gray-900/10\">\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

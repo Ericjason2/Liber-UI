@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "coming-soon-section",
+  "type": "registry:ui",
+  "title": "Coming Soon Section",
+  "description": "Coming Soon Section - Créé par @noob_dev sur TailwindFlex.",
+  "author": "@noob_dev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/coming-soon-section.tsx",
+      "content": "/**\n * Component: Coming Soon Section\n * Author: @noob_dev (https://tailwindflex.com/@noob_dev)\n * Source: https://tailwindflex.com/@noob_dev/coming-soon-section\n * Attribution: Créé par @noob_dev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ComingSoonSection() {\n  return (\n    <div>\n    <div className=\"flex items-center justify-center h-screen bg-gray-200\">\n        <div className=\"container\">\n            <div className=\"bg-white rounded-lg shadow-lg p-5 md20 mx-2\">\n                <div className=\"text-center\">\n                    <h2\n                        className=\"text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm5xl sm md6xl\">\n                        Quick<span className=\"text-indigo-600\">Toolz</span>\n                    </h2>\n                    <h3 className='text-xl md3xl mt-10'>Coming Soon</h3>\n                    <p className=\"text-md md mt-10\"><a className=\"hover\" href=\"#\">Quicktoolz</a> is a website help\n                        you provide simple\n                        productivity tools for your daily need online for free.</p>\n                </div>\n                <div className=\"flex flex-wrap mt-10 justify-center\">\n                    <div className=\"m-3\">\n                        <a href=\"#\" title=\"Quicktoolz On Facebook\"\n                            className=\"md32 bg-white tracking-wide text-gray-800 font-bold rounded border-2 border-blue-600 hover600 hover600 hover shadow-md py-2 px-6 inline-flex items-center\">\n                            <span className=\"mx-auto\">Facebook</span>\n                        </a>\n                    </div>\n                    <div className=\"m-3\">\n                        <a href=\"#\" title=\"Quicktoolz On Twitter\"\n                            className=\"md32 bg-white tracking-wide text-gray-800 font-bold rounded border-2 border-blue-500 hover500 hover500 hover shadow-md py-2 px-6 inline-flex items-center\">\n                            <span className=\"mx-auto\">Twitter</span>\n                        </a>\n                    </div>\n                    <div className=\"m-3\">\n                        <a href=\"#\" title=\"Quicktoolz On Pinterest\"\n                            className=\"md32 bg-white tracking-wide text-gray-800 font-bold rounded border-2 border-red-600 hover600 hover600 hover shadow-md py-2 px-6 inline-flex items-center\">\n                            <span className=\"mx-auto\">Pintrest</span>\n                        </a>\n                    </div>\n                    <div className=\"m-3\">\n                        <a href=\"#\" title=\"Quicktoolz On Facebook\"\n                            className=\"md32 bg-white tracking-wide text-gray-800 font-bold rounded border-2 border-orange-500 hover500 hover500 hover shadow-md py-2 px-6 inline-flex items-center\">\n                            <span className=\"mx-auto\">Reddit</span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@noob_dev",
+    "authorUrl": "https://tailwindflex.com/@noob_dev",
+    "sourceUrl": "https://tailwindflex.com/@noob_dev/coming-soon-section",
+    "mention": "Créé par @noob_dev sur TailwindFlex",
+    "rawHtml": "<div class=\"flex items-center justify-center h-screen bg-gray-200\">\n    <div class=\"container\">\n        <div class=\"bg-white rounded-lg shadow-lg p-5 md:p-20 mx-2\">\n            <div class=\"text-center\">\n                <h2\n                    class=\"text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl\">\n                    Quick<span class=\"text-indigo-600\">Toolz</span>\n                </h2>\n                <h3 class='text-xl md:text-3xl mt-10'>Coming Soon</h3>\n                <p class=\"text-md md:text-xl mt-10\"><a class=\"hover:underline\" href=\"#\">Quicktoolz</a> is a website help\n                    you provide simple\n                    productivity tools for your daily need online for free.</p>\n            </div>\n            <div class=\"flex flex-wrap mt-10 justify-center\">\n                <div class=\"m-3\">\n                    <a href=\"#\" title=\"Quicktoolz On Facebook\"\n                        class=\"md:w-32 bg-white tracking-wide text-gray-800 font-bold rounded border-2 border-blue-600 hover:border-blue-600 hover:bg-blue-600 hover:text-white shadow-md py-2 px-6 inline-flex items-center\">\n                        <span class=\"mx-auto\">Facebook</span>\n                    </a>\n                </div>\n                <div class=\"m-3\">\n                    <a href=\"#\" title=\"Quicktoolz On Twitter\"\n                        class=\"md:w-32 bg-white tracking-wide text-gray-800 font-bold rounded border-2 border-blue-500 hover:border-blue-500 hover:bg-blue-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center\">\n                        <span class=\"mx-auto\">Twitter</span>\n                    </a>\n                </div>\n                <div class=\"m-3\">\n                    <a href=\"#\" title=\"Quicktoolz On Pinterest\"\n                        class=\"md:w-32 bg-white tracking-wide text-gray-800 font-bold rounded border-2 border-red-600 hover:border-red-600 hover:bg-red-600 hover:text-white shadow-md py-2 px-6 inline-flex items-center\">\n                        <span class=\"mx-auto\">Pintrest</span>\n                    </a>\n                </div>\n                <div class=\"m-3\">\n                    <a href=\"#\" title=\"Quicktoolz On Facebook\"\n                        class=\"md:w-32 bg-white tracking-wide text-gray-800 font-bold rounded border-2 border-orange-500 hover:border-orange-500 hover:bg-orange-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center\">\n                        <span class=\"mx-auto\">Reddit</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n<!-- https://gist.github.com/MrFluffycloud/20db5c6075fca09d4d05335442ef2b90 -->"
+  }
+}

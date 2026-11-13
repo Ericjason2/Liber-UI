@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "color-changing-gradient-button",
+  "type": "registry:ui",
+  "title": "Color Changing Gradient Button",
+  "description": "Color Changing Gradient Button - Créé par @equinox sur TailwindFlex.",
+  "author": "@equinox (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/color-changing-gradient-button.tsx",
+      "content": "/**\n * Component: Color Changing Gradient Button\n * Author: @equinox (https://tailwindflex.com/@equinox)\n * Source: https://tailwindflex.com/@equinox/color-changing-gradient-button\n * Attribution: Créé par @equinox sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ColorChangingGradientButton() {\n  return (\n    <div>\n    <div className=\"flex justify-center\">\n      <button className=\"rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 text-white hover500 hover500\">\n        Let's Go\n      </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@equinox",
+    "authorUrl": "https://tailwindflex.com/@equinox",
+    "sourceUrl": "https://tailwindflex.com/@equinox/color-changing-gradient-button",
+    "mention": "Créé par @equinox sur TailwindFlex",
+    "rawHtml": "<div class=\"flex justify-center\">\n  <button class=\"rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 text-white hover:from-pink-500 hover:to-yellow-500\">\n    Let's Go\n  </button>\n</div>"
+  }
+}

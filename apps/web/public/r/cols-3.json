@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cols-3",
+  "type": "registry:ui",
+  "title": "cols-3",
+  "description": "cols-3 - Créé par @maximus sur TailwindFlex.",
+  "author": "@maximus (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cols-3.tsx",
+      "content": "/**\n * Component: cols-3\n * Author: @maximus (https://tailwindflex.com/@maximus)\n * Source: https://tailwindflex.com/@maximus/cols-3\n * Attribution: Créé par @maximus sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Cols3() {\n  return (\n    <div>\n    <section className=\"bg-white\">\n    \t\t<div className=\"py-4 px-2 mx-auto max-w-screen-xl sm4 lg6\">\n    \t\t\t<div className=\"grid grid-cols-1 sm2 md5 gap-4\">\n    \t\t\t\t<div className=\"col-span-2 sm1 md2 bg-gray-50\">\n    \t\t\t\t\t\n    2\n    \t\t\t\t\t\n    \t\t\t\t</div>\n    \t\t\t\t<div className=\"col-span-2 sm1 md2 bg-stone-50\">\n    \n    2\t\t\n    \t\t\t\t\t\n    \t\t\t\t</div>\n    \t\t\t\t<div className=\"col-span-1 sm1 md1 bg-sky-50\">\n    \n    1\n    \n    \t\t\t\t</div>\n    \t\t\t</div>\n    \t\t</div>\n    \t</section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "grid",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@maximus",
+    "authorUrl": "https://tailwindflex.com/@maximus",
+    "sourceUrl": "https://tailwindflex.com/@maximus/cols-3",
+    "mention": "Créé par @maximus sur TailwindFlex",
+    "rawHtml": "<section class=\"bg-white\">\n\t\t<div class=\"py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6\">\n\t\t\t<div class=\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4\">\n\t\t\t\t<div class=\"col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50\">\n\t\t\t\t\t\n2\n\t\t\t\t\t\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50\">\n\n2\t\t\n\t\t\t\t\t\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-span-1 sm:col-span-1 md:col-span-1 bg-sky-50\">\n\n1\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</section>"
+  }
+}

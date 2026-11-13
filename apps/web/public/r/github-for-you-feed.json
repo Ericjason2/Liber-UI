@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "github-for-you-feed",
+  "type": "registry:ui",
+  "title": "GitHub For you Feed",
+  "description": "GitHub For you Feed - Créé par @sammytg7 sur TailwindFlex.",
+  "author": "@sammytg7 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/github-for-you-feed.tsx",
+      "content": "/**\n * Component: GitHub For you Feed\n * Author: @sammytg7 (https://tailwindflex.com/@sammytg7)\n * Source: https://tailwindflex.com/@sammytg7/github-for-you-feed\n * Attribution: Créé par @sammytg7 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function GithubForYouFeed() {\n  return (\n    <div>\n    <div className=\"h-screen w-full flex flex-col gap-4 justify-center bg-gray-200 dark900\">\n        \n        <div\n            className=\"lg[60%] md[70%] sm[80%] xs[90%] w-[94%] mx-auto bg-white dark800 flex flex-col gap-4 border border-gray-300 sm6 px-4 py-4 rounded-lg shadow-lg shadow-gray-400 dark700\">\n            \n            <div className=\"w-full flex justify-between\">\n                <div className=\"flex items-center gap-[1rem]\">\n                    <div className=\"relative\">\n                        <div\n                            className=\"w-[1.2rem] h-[1.2rem] flex items-center justify-center bg-blue-600 outline outline-2 outline-gray-200 rounded-full absolute bottom-0 -right-2\">\n                            <ion-icon className=\"text-sm text-white\" name=\"person\"></ion-icon>\n                        </div>\n                        <img className=\"w-[3rem] h-[3rem] object-cover rounded-full\" src=\"https://avatars.githubusercontent.com/u/80972003?s=400&u=4abe9028a5d2ea962729656808fe48e31a202751&v=4\" alt=\"Follower Image\" />\n                    </div>\n                    \n                    <div className=\"flex flex-col justify-center pt-4\">\n                        <div className=\"text-lg dark\">samuelabera7\n                            <span className=\"text-sm dark300\">followed</span>\n                        </div>\n                        <p className=\"text-sm dark300\">1 week ago</p>\n                    </div>\n                </div>\n    \n                <div>\n                    <h2 className=\"text-xl text-gray-700 dark300 font-extrabold cursor-pointer\">...</h2>\n                </div>\n            </div>\n    \n            \n            <div className=\"w-full px-4 py-4 bg-gray-200 dark700 rounded-md\">\n                <div className=\"w-full flex gap-2\">\n                    <img className=\"w-[2.8rem] h-[2.8rem] object-cover rounded-full\" src=\"https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxtYW58ZW58MHwwfHx8MTczMTY1NzgyMnww&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Img\" />\n    \n                    <div className=\"w-full flex flex-col\">\n                        <div className=\"w-full flex justify-between\">\n                            <h3 className=\"font-semibold dark\">somic24\n                                <span className=\"text-sm text-gray-600 dark300\">somictg</span>\n                            </h3>\n                            <button className=\"h-fit xs[.7rem] px-[.4rem] py-[.1rem] border border-gray-400 dark500 dark100 rounded-md hover200 dark600 cursor-pointer\">Follow</button>\n                        </div>\n                        <h5 className=\"text-gray-900 dark100\">Focus on AI !</h5>\n                        <div\n                            className=\"flex xs flex-col xs justify-center gap-2 text-sm dark300\">\n                            <p>111 repositories</p>\n                            <p>80.2k followers</p>\n                        </div>\n                    </div>\n    \n                </div>\n            </div>\n        </div>\n    </div>\n    \n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "profile",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@sammytg7",
+    "authorUrl": "https://tailwindflex.com/@sammytg7",
+    "sourceUrl": "https://tailwindflex.com/@sammytg7/github-for-you-feed",
+    "mention": "Créé par @sammytg7 sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen w-full flex flex-col gap-4 justify-center bg-gray-200 dark:bg-gray-900\">\n    <!-- Wraper -->\n    <div\n        class=\"lg:w-[60%] md:w-[70%] sm:w-[80%] xs:w-[90%] w-[94%] mx-auto bg-white dark:bg-gray-800 flex flex-col gap-4 border border-gray-300 sm:px-6 px-4 py-4 rounded-lg shadow-lg shadow-gray-400 dark:shadow-gray-700\">\n        <!-- Follower -->\n        <div class=\"w-full flex justify-between\">\n            <div class=\"flex items-center gap-[1rem]\">\n                <div class=\"relative\">\n                    <div\n                        class=\"w-[1.2rem] h-[1.2rem] flex items-center justify-center bg-blue-600 outline outline-2 outline-gray-200 rounded-full absolute bottom-0 -right-2\">\n                        <ion-icon class=\"text-sm text-white\" name=\"person\"></ion-icon>\n                    </div>\n                    <img class=\"w-[3rem] h-[3rem] object-cover rounded-full\" src=\"https://avatars.githubusercontent.com/u/80972003?s=400&u=4abe9028a5d2ea962729656808fe48e31a202751&v=4\" alt=\"Follower Image\" />\n                </div>\n                <!--  -->\n                <div class=\"flex flex-col justify-center pt-4\">\n                    <div class=\"text-lg dark:text-white\">samuelabera7\n                        <span class=\"text-sm dark:text-gray-300\">followed</span>\n                    </div>\n                    <p class=\"text-sm dark:text-gray-300\">1 week ago</p>\n                </div>\n            </div>\n\n            <div>\n                <h2 class=\"text-xl text-gray-700 dark:text-gray-300 font-extrabold cursor-pointer\">...</h2>\n            </div>\n        </div>\n\n        <!--  -->\n        <div class=\"w-full px-4 py-4 bg-gray-200 dark:bg-gray-700 rounded-md\">\n            <div class=\"w-full flex gap-2\">\n                <img class=\"w-[2.8rem] h-[2.8rem] object-cover rounded-full\" src=\"https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxtYW58ZW58MHwwfHx8MTczMTY1NzgyMnww&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Img\" />\n\n                <div class=\"w-full flex flex-col\">\n                    <div class=\"w-full flex justify-between\">\n                        <h3 class=\"font-semibold dark:text-white\">somic24\n                            <span class=\"text-sm text-gray-600 dark:text-gray-300\">somictg</span>\n                        </h3>\n                        <button class=\"h-fit xs:px-[.7rem] px-[.4rem] py-[.1rem] border border-gray-400 dark:border-gray-500 dark:text-gray-100 rounded-md hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer\">Follow</button>\n                    </div>\n                    <h5 class=\"text-gray-900 dark:text-gray-100\">Focus on AI !</h5>\n                    <div\n                        class=\"flex xs:flex-row flex-col xs:justify-start justify-center gap-2 text-sm dark:text-gray-300\">\n                        <p>111 repositories</p>\n                        <p>80.2k followers</p>\n                    </div>\n                </div>\n\n            </div>\n        </div>\n    </div>\n</div>\n\n<script type=\"module\" src=\"https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js\"></script>\n<script nomodule src=\"https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js\"></script>"
+  }
+}

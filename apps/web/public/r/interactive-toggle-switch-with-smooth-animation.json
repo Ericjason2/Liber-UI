@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "interactive-toggle-switch-with-smooth-animation",
+  "type": "registry:ui",
+  "title": "Interactive Toggle Switch with Smooth Animation",
+  "description": "Interactive Toggle Switch with Smooth Animation - Créé par @shariful-islam sur TailwindFlex.",
+  "author": "@shariful-islam (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/interactive-toggle-switch-with-smooth-animation.tsx",
+      "content": "/**\n * Component: Interactive Toggle Switch with Smooth Animation\n * Author: @shariful-islam (https://tailwindflex.com/@shariful-islam)\n * Source: https://tailwindflex.com/@shariful-islam/interactive-toggle-switch-with-smooth-animation\n * Attribution: Créé par @shariful-islam sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InteractiveToggleSwitchWithSmoothAnimation() {\n  return (\n    <div>\n    <div className=\"flex items-center justify-center h-screen\">\n      <div className=\"flex items-center\">\n        <input\n          type=\"checkbox\"\n          id=\"toggleSwitch\"\n          className=\"hidden\"\n         \n        />\n        <label\n          htmlFor=\"toggleSwitch\"\n          className=\"select-none relative inline-flex h-6 w-14 items-center rounded-full transition-colors duration-200 cursor-pointer bg-[#E6E6E6]\"\n        >\n          <span\n            id=\"toggleText\"\n            className=\"absolute w-full text-xs transition-transform duration-200 text-right pr-1.5 text-black\"\n          >\n            OFF\n          </span>\n          <span\n            id=\"toggleBall\"\n            className=\"inline-block w-[17px] h-[17px] transform rounded-full bg-white transition-transform duration-200 translate-x-1\"\n          ></span>\n        </label>\n      </div>\n    </div>\n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@shariful-islam",
+    "authorUrl": "https://tailwindflex.com/@shariful-islam",
+    "sourceUrl": "https://tailwindflex.com/@shariful-islam/interactive-toggle-switch-with-smooth-animation",
+    "mention": "Créé par @shariful-islam sur TailwindFlex",
+    "rawHtml": "<div class=\"flex items-center justify-center h-screen\">\n  <div class=\"flex items-center\">\n    <input\n      type=\"checkbox\"\n      id=\"toggleSwitch\"\n      class=\"hidden\"\n      onchange=\"toggleSwitch(this)\"\n    />\n    <label\n      for=\"toggleSwitch\"\n      class=\"select-none relative inline-flex h-6 w-14 items-center rounded-full transition-colors duration-200 cursor-pointer bg-[#E6E6E6]\"\n    >\n      <span\n        id=\"toggleText\"\n        class=\"absolute w-full text-xs transition-transform duration-200 text-right pr-1.5 text-black\"\n      >\n        OFF\n      </span>\n      <span\n        id=\"toggleBall\"\n        class=\"inline-block w-[17px] h-[17px] transform rounded-full bg-white transition-transform duration-200 translate-x-1\"\n      ></span>\n    </label>\n  </div>\n</div>\n\n<script>\n  function toggleSwitch(input) {\n    const label = input.nextElementSibling;\n    const text = label.querySelector(\"#toggleText\");\n    const ball = label.querySelector(\"#toggleBall\");\n\n    if (input.checked) {\n      label.classList.add(\"bg-[#0E947A]\");\n      label.classList.remove(\"bg-[#E6E6E6]\");\n      text.textContent = \"ON\";\n      text.classList.remove(\"text-black\", \"text-right\", \"pr-1.5\");\n      text.classList.add(\"text-white\", \"text-left\", \"pl-2\");\n      ball.style.transform = \"translateX(36px)\";\n    } else {\n      label.classList.add(\"bg-[#E6E6E6]\");\n      label.classList.remove(\"bg-[#0E947A]\");\n      text.textContent = \"OFF\";\n      text.classList.remove(\"text-white\", \"text-left\", \"pl-2\");\n      text.classList.add(\"text-black\", \"text-right\", \"pr-1.5\");\n      ball.style.transform = \"translateX(4px)\";\n    }\n  }\n</script>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "apply-coupon-code-form",
+  "type": "registry:ui",
+  "title": "Apply Coupon Code form",
+  "description": "Apply Coupon Code form - Créé par @lyra-ravensong sur TailwindFlex.",
+  "author": "@lyra-ravensong (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/apply-coupon-code-form.tsx",
+      "content": "/**\n * Component: Apply Coupon Code form\n * Author: @lyra-ravensong (https://tailwindflex.com/@lyra-ravensong)\n * Source: https://tailwindflex.com/@lyra-ravensong/apply-coupon-code-form\n * Attribution: Créé par @lyra-ravensong sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ApplyCouponCodeForm() {\n  return (\n    <div>\n    <div className=\"containermx-auto max-w-xl p-6\">\n        \n        <div className=\"bg-gray-100  p-6 rounded-lg shadow-lg\">\n    \n            <h1 className=\"text-2xl font-semibold mb-4\">Apply Coupon Code</h1>\n    \n            \n            <div className=\"mb-4\">\n                <label htmlFor=\"coupon\" className=\"block text-gray-700 font-semibold mb-2\">Coupon Code:</label>\n                <input type=\"text\" id=\"coupon\" name=\"coupon\" className=\"w-full px-4 py-2 border border-gray-300 rounded-lg focus focus500 focus500\" placeholder=\"Enter your coupon code\" />\n            </div>\n    \n            \n            <div className=\"text-center\">\n                <button className=\"bg-green-500 text-white px-4 py-2 rounded-lg hover600 focus focus focus500 focus500\">\n                        Apply Coupon\n                    </button>\n            </div>\n    \n            \n            <div className=\"mt-4 text-green-500\">\n                Coupon code applied successfully! You saved $10.\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@lyra-ravensong",
+    "authorUrl": "https://tailwindflex.com/@lyra-ravensong",
+    "sourceUrl": "https://tailwindflex.com/@lyra-ravensong/apply-coupon-code-form",
+    "mention": "Créé par @lyra-ravensong sur TailwindFlex",
+    "rawHtml": "<div class=\"containermx-auto max-w-xl p-6\">\n    <!-- Coupon Code Card Form -->\n    <div class=\"bg-gray-100  p-6 rounded-lg shadow-lg\">\n\n        <h1 class=\"text-2xl font-semibold mb-4\">Apply Coupon Code</h1>\n\n        <!-- Coupon Code Input -->\n        <div class=\"mb-4\">\n            <label for=\"coupon\" class=\"block text-gray-700 font-semibold mb-2\">Coupon Code:</label>\n            <input type=\"text\" id=\"coupon\" name=\"coupon\" class=\"w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-500 focus:border-blue-500\" placeholder=\"Enter your coupon code\">\n        </div>\n\n        <!-- Apply Button -->\n        <div class=\"text-center\">\n            <button class=\"bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500\">\n                    Apply Coupon\n                </button>\n        </div>\n\n        <!-- Coupon Code Result -->\n        <div class=\"mt-4 text-green-500\">\n            Coupon code applied successfully! You saved $10.\n        </div>\n    </div>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "3d-card-3",
+  "type": "registry:ui",
+  "title": "3D Card",
+  "description": "3D Card - Créé par @sufyan-jutt sur TailwindFlex.",
+  "author": "@sufyan-jutt (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/3d-card-3.tsx",
+      "content": "/**\n * Component: 3D Card\n * Author: @sufyan-jutt (https://tailwindflex.com/@sufyan-jutt)\n * Source: https://tailwindflex.com/@sufyan-jutt/3d-card-3\n * Attribution: Créé par @sufyan-jutt sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Comp3dCard3() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n  <title>3D Tilt Card - Tailwind</title>\\n  \\n  <style>\\n    /* Smooth perspective for 3D tilt */\\n    .card {\\n      perspective: 1000px;\\n    }\\n    .card-inner {\\n      transition: transform 0.3s ease;\\n      transform-style: preserve-3d;\\n    }\\n  </style>\\n</head>\\n<body class=\\\"bg-gray-100 flex justify-center items-center min-h-screen p-6\\\">\\n\\n  <div class=\\\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl\\\">\\n\\n    <!-- Card 1 -->\\n    <div class=\\\"card\\\">\\n      <div class=\\\"card-inner bg-white rounded-2xl shadow-2xl overflow-hidden cursor-pointer transform transition duration-500\\\">\\n        <img src=\\\"https://picsum.photos/400/250?random=1\\\" alt=\\\"Card Image\\\" class=\\\"w-full h-52 object-cover\\\">\\n        <div class=\\\"p-6 text-center\\\">\\n          <h2 class=\\\"text-xl font-bold text-gray-800 mb-2\\\">3D Card 1</h2>\\n          <p class=\\\"text-gray-500 mb-4\\\">Hover to tilt me and see the floating 3D effect with shadows. Looks epic on all devices!</p>\\n          <button class=\\\"px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold transition-transform duration-300 hover:scale-110 hover:from-purple-500 hover:to-pink-400\\\">\\n            Read More\\n          </button>\\n        </div>\\n      </div>\\n    </div>\\n\\n    <!-- Card 2 -->\\n    <div class=\\\"card\\\">\\n      <div class=\\\"card-inner bg-white rounded-2xl shadow-2xl overflow-hidden cursor-pointer transform transition duration-500\\\">\\n        <img src=\\\"https://picsum.photos/400/250?random=2\\\" alt=\\\"Card Image\\\" class=\\\"w-full h-52 object-cover\\\">\\n        <div class=\\\"p-6 text-center\\\">\\n          <h2 class=\\\"text-xl font-bold text-gray-800 mb-2\\\">3D Card 2</h2>\\n          <p class=\\\"text-gray-500 mb-4\\\">Scale, tilt, and float on hover. Perfect for a portfolio or modern UI section.</p>\\n          <button class=\\\"px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold transition-transform duration-300 hover:scale-110 hover:from-purple-500 hover:to-pink-400\\\">\\n            Read More\\n          </button>\\n        </div>\\n      </div>\\n    </div>\\n\\n    <!-- Card 3 -->\\n    <div class=\\\"card\\\">\\n      <div class=\\\"card-inner bg-white rounded-2xl shadow-2xl overflow-hidden cursor-pointer transform transition duration-500\\\">\\n        <img src=\\\"https://picsum.photos/400/250?random=3\\\" alt=\\\"Card Image\\\" class=\\\"w-full h-52 object-cover\\\">\\n        <div class=\\\"p-6 text-center\\\">\\n          <h2 class=\\\"text-xl font-bold text-gray-800 mb-2\\\">3D Card 3</h2>\\n          <p class=\\\"text-gray-500 mb-4\\\">Responsive, animated, and interactive 3D card. Duplicate as many as you want!</p>\\n          <button class=\\\"px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold transition-transform duration-300 hover:scale-110 hover:from-purple-500 hover:to-pink-400\\\">\\n            Read More\\n          </button>\\n        </div>\\n      </div>\\n    </div>\\n\\n  </div>\\n\\n  <!-- ===== JS for 3D tilt ===== -->\\n  \\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sufyan-jutt",
+    "authorUrl": "https://tailwindflex.com/@sufyan-jutt",
+    "sourceUrl": "https://tailwindflex.com/@sufyan-jutt/3d-card-3",
+    "mention": "Créé par @sufyan-jutt sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>3D Tilt Card - Tailwind</title>\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n  <style>\n    /* Smooth perspective for 3D tilt */\n    .card {\n      perspective: 1000px;\n    }\n    .card-inner {\n      transition: transform 0.3s ease;\n      transform-style: preserve-3d;\n    }\n  </style>\n</head>\n<body class=\"bg-gray-100 flex justify-center items-center min-h-screen p-6\">\n\n  <div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl\">\n\n    <!-- Card 1 -->\n    <div class=\"card\">\n      <div class=\"card-inner bg-white rounded-2xl shadow-2xl overflow-hidden cursor-pointer transform transition duration-500\">\n        <img src=\"https://picsum.photos/400/250?random=1\" alt=\"Card Image\" class=\"w-full h-52 object-cover\">\n        <div class=\"p-6 text-center\">\n          <h2 class=\"text-xl font-bold text-gray-800 mb-2\">3D Card 1</h2>\n          <p class=\"text-gray-500 mb-4\">Hover to tilt me and see the floating 3D effect with shadows. Looks epic on all devices!</p>\n          <button class=\"px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold transition-transform duration-300 hover:scale-110 hover:from-purple-500 hover:to-pink-400\">\n            Read More\n          </button>\n        </div>\n      </div>\n    </div>\n\n    <!-- Card 2 -->\n    <div class=\"card\">\n      <div class=\"card-inner bg-white rounded-2xl shadow-2xl overflow-hidden cursor-pointer transform transition duration-500\">\n        <img src=\"https://picsum.photos/400/250?random=2\" alt=\"Card Image\" class=\"w-full h-52 object-cover\">\n        <div class=\"p-6 text-center\">\n          <h2 class=\"text-xl font-bold text-gray-800 mb-2\">3D Card 2</h2>\n          <p class=\"text-gray-500 mb-4\">Scale, tilt, and float on hover. Perfect for a portfolio or modern UI section.</p>\n          <button class=\"px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold transition-transform duration-300 hover:scale-110 hover:from-purple-500 hover:to-pink-400\">\n            Read More\n          </button>\n        </div>\n      </div>\n    </div>\n\n    <!-- Card 3 -->\n    <div class=\"card\">\n      <div class=\"card-inner bg-white rounded-2xl shadow-2xl overflow-hidden cursor-pointer transform transition duration-500\">\n        <img src=\"https://picsum.photos/400/250?random=3\" alt=\"Card Image\" class=\"w-full h-52 object-cover\">\n        <div class=\"p-6 text-center\">\n          <h2 class=\"text-xl font-bold text-gray-800 mb-2\">3D Card 3</h2>\n          <p class=\"text-gray-500 mb-4\">Responsive, animated, and interactive 3D card. Duplicate as many as you want!</p>\n          <button class=\"px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold transition-transform duration-300 hover:scale-110 hover:from-purple-500 hover:to-pink-400\">\n            Read More\n          </button>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <!-- ===== JS for 3D tilt ===== -->\n  <script>\n    const cards = document.querySelectorAll('.card');\n    cards.forEach(card => {\n      const inner = card.querySelector('.card-inner');\n      card.addEventListener('mousemove', e => {\n        const rect = card.getBoundingClientRect();\n        const x = e.clientX - rect.left; // x position within card\n        const y = e.clientY - rect.top;  // y position within card\n        const centerX = rect.width / 2;\n        const centerY = rect.height / 2;\n        const rotateX = ((y - centerY) / centerY) * 10; // max 10deg\n        const rotateY = ((x - centerX) / centerX) * -10;\n        inner.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;\n      });\n      card.addEventListener('mouseleave', () => {\n        inner.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';\n      });\n    });\n  </script>\n\n</body>\n</html>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "github-star-button",
+  "type": "registry:ui",
+  "title": "Github star button",
+  "description": "Github star button - Créé par @simon-scheffer sur TailwindFlex.",
+  "author": "@simon-scheffer (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/github-star-button.tsx",
+      "content": "/**\n * Component: Github star button\n * Author: @simon-scheffer (https://tailwindflex.com/@simon-scheffer)\n * Source: https://tailwindflex.com/@simon-scheffer/github-star-button\n * Attribution: Créé par @simon-scheffer sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function GithubStarButton() {\n  return (\n    <div>\n    <div className=\"flex items-center w-[120px]\">\n        <button type=\"button\" className=\"flex items-center w-full px-4 py-2 text-base font-medium text-black bg-white border-t border-b border-l rounded-l-md hover100\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" className=\"w-4 h-4 mr-2\" fill=\"currentColor\" viewBox=\"0 0 1792 1792\">\n                <path d=\"M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z\">\n                </path>\n            </svg>\n            Star\n        </button>\n        <button type=\"button\" className=\"w-full px-4 py-2 text-base font-medium text-black bg-white border rounded-r-md hover100\">\n            654\n        </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@simon-scheffer",
+    "authorUrl": "https://tailwindflex.com/@simon-scheffer",
+    "sourceUrl": "https://tailwindflex.com/@simon-scheffer/github-star-button",
+    "mention": "Créé par @simon-scheffer sur TailwindFlex",
+    "rawHtml": "<div class=\"flex items-center w-[120px]\">\n    <button type=\"button\" class=\"flex items-center w-full px-4 py-2 text-base font-medium text-black bg-white border-t border-b border-l rounded-l-md hover:bg-gray-100\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" class=\"w-4 h-4 mr-2\" fill=\"currentColor\" viewBox=\"0 0 1792 1792\">\n            <path d=\"M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z\">\n            </path>\n        </svg>\n        Star\n    </button>\n    <button type=\"button\" class=\"w-full px-4 py-2 text-base font-medium text-black bg-white border rounded-r-md hover:bg-gray-100\">\n        654\n    </button>\n</div>"
+  }
+}

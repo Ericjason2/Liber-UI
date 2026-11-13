@@ -3,23 +3,53 @@
   "name": "fixed-navbar",
   "type": "registry:ui",
   "title": "Fixed navbar",
-  "description": "Fixed navbar Tailwind CSS component from TailwindFlex.",
-  "author": "oliver-hansen",
+  "description": "Fixed navbar - Créé par @oliver-hansen sur TailwindFlex.",
+  "author": "@oliver-hansen (TailwindFlex)",
   "categories": [
-    "data-display"
+    "buttons"
   ],
   "dependencies": [],
   "files": [
     {
       "path": "ui/fixed-navbar.tsx",
-      "content": "import React from \"react\";\n\nexport function FixedNavbar() {\n  return (\n    <header\r\n    className=\"fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg\">\r\n    <div className=\"px-4\">\r\n        <div className=\"flex items-center justify-between\">\r\n            <div className=\"flex shrink-0\">\r\n                <a aria-current=\"page\" className=\"flex items-center\" href=\"/\">\r\n                    <img className=\"h-7 w-auto\" src=\"https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg\" alt=\"\" />\r\n                    <p className=\"sr-only\">Website Title</p>\r\n                </a>\r\n            </div>\r\n            <div className=\"hidden md:flex md:items-center md:justify-center md:gap-5\">\r\n                <a aria-current=\"page\"\r\n                    className=\"inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900\"\r\n                    href=\"#\">How it works</a>\r\n                <a className=\"inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900\"\r\n                    href=\"#\">Pricing</a>\r\n            </div>\r\n            <div className=\"flex items-center justify-end gap-3\">\r\n                <a className=\"hidden items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex\"\r\n                    href=\"/login\">Sign in</a>\r\n                <a className=\"inline-flex items-center justify-center rounded-xl bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600\"\r\n                    href=\"/login\">Login</a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</header>\n  );\n}",
+      "content": "/**\n * Component: Fixed navbar\n * Author: @oliver-hansen (https://tailwindflex.com/@oliver-hansen)\n * Source: https://tailwindflex.com/@oliver-hansen/fixed-navbar\n * Attribution: Créé par @oliver-hansen sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FixedNavbar() {\n  return (\n    <div>\n    <header\r\n        className=\"fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md6 md3xl lg\">\r\n        <div className=\"px-4\">\r\n            <div className=\"flex items-center justify-between\">\r\n                <div className=\"flex shrink-0\">\r\n                    <a aria-current=\"page\" className=\"flex items-center\" href=\"/\">\r\n                        <img className=\"h-7 w-auto\" src=\"https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg\" alt=\"\" />\r\n                        <p className=\"sr-only\">Website Title</p>\r\n                    </a>\r\n                </div>\r\n                <div className=\"hidden md md md md5\">\r\n                    <a aria-current=\"page\"\r\n                        className=\"inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover100 hover900\"\r\n                        href=\"#\">How it works</a>\r\n                    <a className=\"inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover100 hover900\"\r\n                        href=\"#\">Pricing</a>\r\n                </div>\r\n                <div className=\"flex items-center justify-end gap-3\">\r\n                    <a className=\"hidden items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover50 sm\"\r\n                        href=\"/login\">Sign in</a>\r\n                    <a className=\"inline-flex items-center justify-center rounded-xl bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover500 focus-visible focus-visible2 focus-visible2 focus-visible600\"\r\n                        href=\"/login\">Login</a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </header>\n    </div>\n  );\n}\n",
       "type": "registry:ui"
     }
   ],
   "meta": {
     "kind": "component",
     "tags": [
-      "navbar"
-    ]
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@oliver-hansen",
+    "authorUrl": "https://tailwindflex.com/@oliver-hansen",
+    "sourceUrl": "https://tailwindflex.com/@oliver-hansen/fixed-navbar",
+    "mention": "Créé par @oliver-hansen sur TailwindFlex",
+    "rawHtml": "<header\r\n    class=\"fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg\">\r\n    <div class=\"px-4\">\r\n        <div class=\"flex items-center justify-between\">\r\n            <div class=\"flex shrink-0\">\r\n                <a aria-current=\"page\" class=\"flex items-center\" href=\"/\">\r\n                    <img class=\"h-7 w-auto\" src=\"https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg\" alt=\"\">\r\n                    <p class=\"sr-only\">Website Title</p>\r\n                </a>\r\n            </div>\r\n            <div class=\"hidden md:flex md:items-center md:justify-center md:gap-5\">\r\n                <a aria-current=\"page\"\r\n                    class=\"inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900\"\r\n                    href=\"#\">How it works</a>\r\n                <a class=\"inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900\"\r\n                    href=\"#\">Pricing</a>\r\n            </div>\r\n            <div class=\"flex items-center justify-end gap-3\">\r\n                <a class=\"hidden items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex\"\r\n                    href=\"/login\">Sign in</a>\r\n                <a class=\"inline-flex items-center justify-center rounded-xl bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600\"\r\n                    href=\"/login\">Login</a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</header>"
   }
 }

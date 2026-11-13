@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "event-notification-card",
+  "type": "registry:ui",
+  "title": "Event notification card",
+  "description": "Event notification card - Créé par @odessa-young sur TailwindFlex.",
+  "author": "@odessa-young (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/event-notification-card.tsx",
+      "content": "/**\n * Component: Event notification card\n * Author: @odessa-young (https://tailwindflex.com/@odessa-young)\n * Source: https://tailwindflex.com/@odessa-young/event-notification-card\n * Attribution: Créé par @odessa-young sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function EventNotificationCard() {\n  return (\n    <div>\n    <div className=\"bg-white rounded-3xl mx-4 md max-w-screen-md border-2 border-gray-800 mt-16\">\n        <div className=\"px-8 py-6 md10\">\n            <h1 className=\"text-4xl md5xl font-medium leading-tight text-gray-800 mb-6\">Let's go, it's Google I/O</h1>\n            <p className=\"text-base md font-normal leading-normal text-gray-800 mb-6\">Join us online on May 10, 2023</p>\n            <div className=\"flex justify-center\">\n                <a href=\"\" target=\"_blank\" rel=\"noopener\"\n                    className=\"bg-yellow-400 rounded-lg text-gray-800 font-medium text-base md py-3 px-8 md12 hover500 transition-all duration-150 ease-in-out\">Register\n                    now\n                </a>\n            </div>\n            <p className=\"text-base md font-normal leading-normal text-gray-800 mt-6\">Hi Young,</p>\n            <p className=\"text-sm md font-normal leading-normal text-gray-800 mt-2\">Google I/O 2023 is around the\n                corner! Tune in to watch the livestreamed keynotes at 10am PT, then dive into 100+ technical sessions,\n                codelabs, and more, on demand. Learn about...\n            </p>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@odessa-young",
+    "authorUrl": "https://tailwindflex.com/@odessa-young",
+    "sourceUrl": "https://tailwindflex.com/@odessa-young/event-notification-card",
+    "mention": "Créé par @odessa-young sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white rounded-3xl mx-4 md:mx-auto max-w-screen-md border-2 border-gray-800 mt-16\">\n    <div class=\"px-8 py-6 md:p-10\">\n        <h1 class=\"text-4xl md:text-5xl font-medium leading-tight text-gray-800 mb-6\">Let's go, it's Google I/O</h1>\n        <p class=\"text-base md:text-lg font-normal leading-normal text-gray-800 mb-6\">Join us online on May 10, 2023</p>\n        <div class=\"flex justify-center\">\n            <a href=\"\" target=\"_blank\" rel=\"noopener\"\n                class=\"bg-yellow-400 rounded-lg text-gray-800 font-medium text-base md:text-lg py-3 px-8 md:px-12 hover:bg-yellow-500 transition-all duration-150 ease-in-out\">Register\n                now\n            </a>\n        </div>\n        <p class=\"text-base md:text-lg font-normal leading-normal text-gray-800 mt-6\">Hi Young,</p>\n        <p class=\"text-sm md:text-base font-normal leading-normal text-gray-800 mt-2\">Google I/O 2023 is around the\n            corner! Tune in to watch the livestreamed keynotes at 10am PT, then dive into 100+ technical sessions,\n            codelabs, and more, on demand. Learn about...\n        </p>\n    </div>\n</div>"
+  }
+}

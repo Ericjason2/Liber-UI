@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "interactive-morphing-play-pause-button",
+  "type": "registry:ui",
+  "title": "Interactive &quot;Morphing&quot; Play/Pause Button",
+  "description": "Interactive &quot;Morphing&quot; Play/Pause Button - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/interactive-morphing-play-pause-button.tsx",
+      "content": "/**\n * Component: Interactive &quot;Morphing&quot; Play/Pause Button\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/interactive-morphing-play-pause-button\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InteractiveMorphingPlayPauseButton() {\n  return (\n    <div>\n    <button id=\"playPauseButton\" className=\"relative bg-blue-500 hover600 p-4 rounded-full transition-all duration-300 ease-in-out transform hover105 focus focus4 focus300\">\n        <svg id=\"playPauseIcon\" className=\"w-6 h-6 text-white pointer-events-none\" viewBox=\"0 0 24 24\" fill=\"currentColor\">\n            <path d=\"M8 5v14l11-7z\" />\n        </svg>\n    </button>\n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/interactive-morphing-play-pause-button",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<button id=\"playPauseButton\" class=\"relative bg-blue-500 hover:bg-blue-600 p-4 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300\">\n    <svg id=\"playPauseIcon\" class=\"w-6 h-6 text-white pointer-events-none\" viewBox=\"0 0 24 24\" fill=\"currentColor\">\n        <path d=\"M8 5v14l11-7z\" />\n    </svg>\n</button>\n\n<script>\n  const button = document.getElementById('playPauseButton');\n    const icon = document.getElementById('playPauseIcon');\n    let isPlaying = false;\n\n    button.addEventListener('click', () => {\n        isPlaying = !isPlaying;\n        if (isPlaying) {\n            icon.style.animation = 'playToPause 0.3s forwards';\n        } else {\n            icon.style.animation = 'pauseToPlay 0.3s forwards';\n        }\n    });\n</script>"
+  }
+}

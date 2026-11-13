@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-pege-tailwind",
+  "type": "registry:ui",
+  "title": "simple page tailwind",
+  "description": "simple page tailwind - Créé par @d3m37r4 sur TailwindFlex.",
+  "author": "@d3m37r4 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-pege-tailwind.tsx",
+      "content": "/**\n * Component: simple page tailwind\n * Author: @d3m37r4 (https://tailwindflex.com/@d3m37r4)\n * Source: https://tailwindflex.com/@d3m37r4/simple-pege-tailwind\n * Attribution: Créé par @d3m37r4 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SimplePegeTailwind() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"ru\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Counter Strike Server Cards</title>\\n    <link href=\\\"https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css\\\" rel=\\\"stylesheet\\\">\\n</head>\\n<body class=\\\"flex justify-center items-center h-screen\\\">\\n    <div class=\\\"w-2/3\\\">\\n        <!-- Card 1 -->\\n        <div class=\\\"bg-white shadow-lg rounded-lg p-4 mb-4 flex\\\">\\n            <img src=\\\"https://steamuserimages-a.akamaihd.net/ugc/938339513171723292/84874C0CBCEA963A99EA9656FF85C5AF0719E420/\\\" alt=\\\"Map 1\\\" class=\\\"w-32 h-32 object-cover rounded-t-lg mr-4\\\">\\n            <div>\\n                <div class=\\\"flex items-center mb-2\\\">\\n                    <div class=\\\"bg-green-500 w-8 h-8 flex items-center justify-center rounded-full mr-2\\\">\\n                        <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\" stroke-width=\\\"1.5\\\" stroke=\\\"currentColor\\\" class=\\\"w-6 h-6 text-white\\\">\\n                            <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" d=\\\"M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z\\\" />\\n                        </svg>\\n                    </div>\\n                    <h2 class=\\\"text-xl font-semibold\\\">Server 1</h2>\\n                </div>\\n                <p>Server IP: 123.456.789.1</p>\\n                <p>Players Online: 24/32</p>\\n            </div>\\n        </div>\\n        \\n        <!-- Card 2 -->\\n        <div class=\\\"bg-white shadow-lg rounded-lg p-4 mb-4 flex\\\">\\n            <img src=\\\"https://steamuserimages-a.akamaihd.net/ugc/938339513171730971/F265E84437CB35A797541C00EC20DF42A419129B/\\\" alt=\\\"Map 2\\\" class=\\\"w-32 h-32 object-cover rounded-t-lg mr-4\\\">\\n            <div>\\n                <div class=\\\"flex items-center mb-2\\\">\\n                    <div class=\\\"bg-green-500 w-8 h-8 flex items-center justify-center rounded-full mr-2\\\">\\n                        <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\" stroke-width=\\\"1.5\\\" stroke=\\\"currentColor\\\" class=\\\"w-6 h-6 text-white\\\">\\n                            <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" d=\\\"M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53 .53-.53-.53a.75.75 0 011.06 0z\\\" />\\n                        </svg>\\n                    </div>\\n                    <h2 class=\\\"text-xl font-semibold\\\">Server 2</h2>\\n                </div>\\n                <p>Server IP: 123.456.789.2</p>\\n                <p>Players Online: 18/32</p>\\n            </div>\\n        </div>\\n\\n        <!-- Card 3 -->\\n        <div class=\\\"bg-white shadow-lg rounded-lg p-4 flex\\\">\\n            <img src=\\\"https://steamuserimages-a.akamaihd.net/ugc/771724021898742152/3FAE420233A940A966B41CD934A52DFBE1ED9E08/\\\" alt=\\\"Map 3\\\" class=\\\"w-32 h-32 object-cover rounded-t-lg mr-4\\\">\\n            <div>\\n                <div class=\\\"flex items-center mb-2\\\">\\n                    <div class=\\\"bg-green-500 w-8 h-8 flex items-center justify-center rounded-full mr-2\\\">\\n                        <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\" stroke-width=\\\"1.5\\\" stroke=\\\"currentColor\\\" class=\\\"w-6 h-6 text-white\\\">\\n                            <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" d=\\\"M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53 .53-.53-.53a.75.75 0 011.06 0z\\\" />\\n                        </svg>\\n                    </div>\\n                    <h2 class=\\\"text-xl font-semibold\\\">Server 3</h2>\\n                </div>\\n                <p>Server IP: 123.456.789.3</p>\\n                <p>Players Online: 28/32</p>\\n            </div>\\n        </div>\\n    </div>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@d3m37r4",
+    "authorUrl": "https://tailwindflex.com/@d3m37r4",
+    "sourceUrl": "https://tailwindflex.com/@d3m37r4/simple-pege-tailwind",
+    "mention": "Créé par @d3m37r4 sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"ru\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Counter Strike Server Cards</title>\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css\" rel=\"stylesheet\">\n</head>\n<body class=\"flex justify-center items-center h-screen\">\n    <div class=\"w-2/3\">\n        <!-- Card 1 -->\n        <div class=\"bg-white shadow-lg rounded-lg p-4 mb-4 flex\">\n            <img src=\"https://steamuserimages-a.akamaihd.net/ugc/938339513171723292/84874C0CBCEA963A99EA9656FF85C5AF0719E420/\" alt=\"Map 1\" class=\"w-32 h-32 object-cover rounded-t-lg mr-4\">\n            <div>\n                <div class=\"flex items-center mb-2\">\n                    <div class=\"bg-green-500 w-8 h-8 flex items-center justify-center rounded-full mr-2\">\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"w-6 h-6 text-white\">\n                            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z\" />\n                        </svg>\n                    </div>\n                    <h2 class=\"text-xl font-semibold\">Server 1</h2>\n                </div>\n                <p>Server IP: 123.456.789.1</p>\n                <p>Players Online: 24/32</p>\n            </div>\n        </div>\n        \n        <!-- Card 2 -->\n        <div class=\"bg-white shadow-lg rounded-lg p-4 mb-4 flex\">\n            <img src=\"https://steamuserimages-a.akamaihd.net/ugc/938339513171730971/F265E84437CB35A797541C00EC20DF42A419129B/\" alt=\"Map 2\" class=\"w-32 h-32 object-cover rounded-t-lg mr-4\">\n            <div>\n                <div class=\"flex items-center mb-2\">\n                    <div class=\"bg-green-500 w-8 h-8 flex items-center justify-center rounded-full mr-2\">\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"w-6 h-6 text-white\">\n                            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53 .53-.53-.53a.75.75 0 011.06 0z\" />\n                        </svg>\n                    </div>\n                    <h2 class=\"text-xl font-semibold\">Server 2</h2>\n                </div>\n                <p>Server IP: 123.456.789.2</p>\n                <p>Players Online: 18/32</p>\n            </div>\n        </div>\n\n        <!-- Card 3 -->\n        <div class=\"bg-white shadow-lg rounded-lg p-4 flex\">\n            <img src=\"https://steamuserimages-a.akamaihd.net/ugc/771724021898742152/3FAE420233A940A966B41CD934A52DFBE1ED9E08/\" alt=\"Map 3\" class=\"w-32 h-32 object-cover rounded-t-lg mr-4\">\n            <div>\n                <div class=\"flex items-center mb-2\">\n                    <div class=\"bg-green-500 w-8 h-8 flex items-center justify-center rounded-full mr-2\">\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"w-6 h-6 text-white\">\n                            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53 .53-.53-.53a.75.75 0 011.06 0z\" />\n                        </svg>\n                    </div>\n                    <h2 class=\"text-xl font-semibold\">Server 3</h2>\n                </div>\n                <p>Server IP: 123.456.789.3</p>\n                <p>Players Online: 28/32</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  }
+}

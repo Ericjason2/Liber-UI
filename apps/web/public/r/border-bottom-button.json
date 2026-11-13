@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "border-bottom-button",
+  "type": "registry:ui",
+  "title": "Border bottom button",
+  "description": "Border bottom button - Créé par @santos78 sur TailwindFlex.",
+  "author": "@santos78 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/border-bottom-button.tsx",
+      "content": "/**\n * Component: Border bottom button\n * Author: @santos78 (https://tailwindflex.com/@santos78)\n * Source: https://tailwindflex.com/@santos78/border-bottom-button\n * Attribution: Créé par @santos78 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BorderBottomButton() {\n  return (\n    <div>\n    <div className=\"flex gap-4 flex-wrap justify-center\">\n        <button className=\"px-4 py-2 border-b-4 border-green-500 text-green-500 hover hover500 transition-all duration-200\">Button 1</button>\n        <button className=\"px-4 py-2 border-b-4 border border-red-500 text-red-500 hover hover500 transition-all duration-200\">Button 2</button>\n        <button className=\"bg-blue-500 hover700 text-white font-bold py-2 px-4 border-b-4 border-blue-700 rounded transform transition duration-200 ease-in-out hover1 hover110\">Button 3</button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@santos78",
+    "authorUrl": "https://tailwindflex.com/@santos78",
+    "sourceUrl": "https://tailwindflex.com/@santos78/border-bottom-button",
+    "mention": "Créé par @santos78 sur TailwindFlex",
+    "rawHtml": "<div class=\"flex gap-4 flex-wrap justify-center\">\n    <button class=\"px-4 py-2 border-b-4 border-green-500 text-green-500 hover:text-white hover:bg-green-500 transition-all duration-200\">Button 1</button>\n    <button class=\"px-4 py-2 border-b-4 border border-red-500 text-red-500 hover:text-white hover:bg-red-500 transition-all duration-200\">Button 2</button>\n    <button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border-b-4 border-blue-700 rounded transform transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-110\">Button 3</button>\n</div>"
+  }
+}

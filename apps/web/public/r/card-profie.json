@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-profie",
+  "type": "registry:ui",
+  "title": "card profie",
+  "description": "card profie - Créé par @Aman300 sur TailwindFlex.",
+  "author": "@Aman300 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-profie.tsx",
+      "content": "/**\n * Component: card profie\n * Author: @Aman300 (https://tailwindflex.com/@Aman300)\n * Source: https://tailwindflex.com/@Aman300/card-profie\n * Attribution: Créé par @Aman300 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardProfie() {\n  return (\n    <div>\n    <div>\n      <div className=\"flex justify-center items-center h-screen\">\n        <div className=\"w-1/2 shadow-xl rounded-2xl p-10 border\">\n          <div className=\"flex justify-around gap-11 items-center\">\n            <div>\n              <img src=\"https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMnx8cHJvZmlsZXxlbnwwfDB8fHwxNzA2NzQ5NjEyfDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"\" className=\"rounded-2xl\" />\n            </div>\n            <div>\n              <h1 className=\" font-extrabold text-3xl\">Hi, I'm Aman</h1>\n              <p className=\" font-semibold text-sm\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nam\n                asperiores harum? Sunt totam ut aliquam facere, autem quo deleniti ipsa beatae perspiciatis debitis optio\n                repudiandae voluptatum, molestias eos iusto?</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "profile",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@Aman300",
+    "authorUrl": "https://tailwindflex.com/@Aman300",
+    "sourceUrl": "https://tailwindflex.com/@Aman300/card-profie",
+    "mention": "Créé par @Aman300 sur TailwindFlex",
+    "rawHtml": "<div>\n  <div class=\"flex justify-center items-center h-screen\">\n    <div class=\"w-1/2 shadow-xl rounded-2xl p-10 border\">\n      <div class=\"flex justify-around gap-11 items-center\">\n        <div>\n          <img src=\"https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMnx8cHJvZmlsZXxlbnwwfDB8fHwxNzA2NzQ5NjEyfDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"\" class=\"rounded-2xl\">\n        </div>\n        <div>\n          <h1 class=\" font-extrabold text-3xl\">Hi, I'm Aman</h1>\n          <p class=\" font-semibold text-sm\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nam\n            asperiores harum? Sunt totam ut aliquam facere, autem quo deleniti ipsa beatae perspiciatis debitis optio\n            repudiandae voluptatum, molestias eos iusto?</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

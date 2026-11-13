@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "contact-form",
+  "type": "registry:ui",
+  "title": "Contact Form",
+  "description": "Contact Form - Créé par @sophia-baker sur TailwindFlex.",
+  "author": "@sophia-baker (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/contact-form.tsx",
+      "content": "/**\n * Component: Contact Form\n * Author: @sophia-baker (https://tailwindflex.com/@sophia-baker)\n * Source: https://tailwindflex.com/@sophia-baker/contact-form\n * Attribution: Créé par @sophia-baker sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ContactForm() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"p-8 mt-8 max-w-lg mx-auto\\\">\\r\\n    <h1 class=\\\"text-4xl text-gray-800 sm:text-4xl font-bold mb-4\\\">Contact Form</h1>\\r\\n    <form>\\r\\n        <div class=\\\"p-2 w-full\\\">\\r\\n            <div class=\\\"relative\\\">\\r\\n                <label for=\\\"name\\\" class=\\\"leading-7 py-4 text-lg text-gray-900\\\">Name</label>\\r\\n                <input type=\\\"text\\\" id=\\\"name\\\" name=\\\"name\\\" required=\\\"\\\"\\r\\n                    class=\\\" w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out \\\">\\r\\n            </div>\\r\\n        </div>\\r\\n        <div class=\\\"p-2 w-full\\\">\\r\\n            <div class=\\\"relative\\\">\\r\\n                <label for=\\\"email\\\" class=\\\"leading-7 py-4 text-lg text-gray-900\\\">Email</label>\\r\\n                <input type=\\\"email\\\" id=\\\"email\\\" name=\\\"email\\\" required=\\\"\\\"\\r\\n                    class=\\\" w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out\\\">\\r\\n            </div>\\r\\n        </div>\\r\\n        <div class=\\\"p-2 w-full\\\">\\r\\n            <div class=\\\"relative\\\">\\r\\n                <label for=\\\"message\\\" class=\\\"leading-7 py-4 text-lg text-gray-900\\\">Message</label>\\r\\n                <textarea id=\\\"message\\\" name=\\\"message\\\" required=\\\"\\\"\\r\\n                    class=\\\" w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-900 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out\\\"></textarea>\\r\\n            </div>\\r\\n        </div>\\r\\n        <div class=\\\"p-2 w-full\\\">\\r\\n            <div>\\r\\n                <button type=\\\"submit\\\"\\r\\n                    class=\\\"flex text-white bg-gray-900 border-0 py-3 px-6 focus:outline-none hover:bg-blue-900 rounded text-xl font-bold shadow-lg mx-0 flex-col text-center\\\">\\r\\n                    Send\\r\\n                </button>\\r\\n            </div>\\r\\n    </form>\\r\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sophia-baker",
+    "authorUrl": "https://tailwindflex.com/@sophia-baker",
+    "sourceUrl": "https://tailwindflex.com/@sophia-baker/contact-form",
+    "mention": "Créé par @sophia-baker sur TailwindFlex",
+    "rawHtml": "<div class=\"p-8 mt-8 max-w-lg mx-auto\">\r\n    <h1 class=\"text-4xl text-gray-800 sm:text-4xl font-bold mb-4\">Contact Form</h1>\r\n    <form>\r\n        <div class=\"p-2 w-full\">\r\n            <div class=\"relative\">\r\n                <label for=\"name\" class=\"leading-7 py-4 text-lg text-gray-900\">Name</label>\r\n                <input type=\"text\" id=\"name\" name=\"name\" required=\"\"\r\n                    class=\" w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out \">\r\n            </div>\r\n        </div>\r\n        <div class=\"p-2 w-full\">\r\n            <div class=\"relative\">\r\n                <label for=\"email\" class=\"leading-7 py-4 text-lg text-gray-900\">Email</label>\r\n                <input type=\"email\" id=\"email\" name=\"email\" required=\"\"\r\n                    class=\" w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out\">\r\n            </div>\r\n        </div>\r\n        <div class=\"p-2 w-full\">\r\n            <div class=\"relative\">\r\n                <label for=\"message\" class=\"leading-7 py-4 text-lg text-gray-900\">Message</label>\r\n                <textarea id=\"message\" name=\"message\" required=\"\"\r\n                    class=\" w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-900 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out\"></textarea>\r\n            </div>\r\n        </div>\r\n        <div class=\"p-2 w-full\">\r\n            <div>\r\n                <button type=\"submit\"\r\n                    class=\"flex text-white bg-gray-900 border-0 py-3 px-6 focus:outline-none hover:bg-blue-900 rounded text-xl font-bold shadow-lg mx-0 flex-col text-center\">\r\n                    Send\r\n                </button>\r\n            </div>\r\n    </form>\r\n</div>"
+  }
+}

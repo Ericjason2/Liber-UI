@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "feature-card-4",
+  "type": "registry:ui",
+  "title": "Feature Card",
+  "description": "Feature Card - Créé par @onyxwebdev sur TailwindFlex.",
+  "author": "@onyxwebdev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/feature-card-4.tsx",
+      "content": "/**\n * Component: Feature Card\n * Author: @onyxwebdev (https://tailwindflex.com/@onyxwebdev)\n * Source: https://tailwindflex.com/@onyxwebdev/feature-card-4\n * Attribution: Créé par @onyxwebdev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FeatureCard4() {\n  return (\n    <div>\n    <div className=\"w-[300px] bg-white border border-gray-200 rounded-lg p-6 flex flex-col justify-between\">\n        \n        <div className=\"text-blue-600 mb-4 bg-blue-200 mr-auto rounded-md\">\n          <svg className=\"p-2 h-10 w-10\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"m12 13.5l6-4l-6-4zm-6.3 8.375q-.825.125-1.487-.387T3.45 20.15L2.125 9.225q-.1-.825.4-1.475T3.85 7L5 6.85V15q0 1.65 1.175 2.825T9 19h9.3q-.15.6-.6 1.038t-1.1.512zM9 17q-.825 0-1.412-.587T7 15V4q0-.825.588-1.412T9 2h11q.825 0 1.413.588T22 4v11q0 .825-.587 1.413T20 17z\"/></svg>\n        </div>\n        \n        \n        <div className=\"text-2xl font-medium tracking-tight text-gray-900\">\n          Card Heading\n        </div>\n        \n        \n        <div className=\"text-sm text-gray-500 line-clamp-2 mt-2\">\n          This is a sample paragraph that describes the card content and provides more information.\n        </div>\n        \n        \n        <div className=\"h-[1px] w-full bg-gray-200 my-5\"></div>\n        \n        \n        <div className=\"inline-flex items-center text-black cursor-pointer text-xs bg-gray-100 px-2 py-1.5 rounded mr-auto\">\n          <span>Learn more</span>\n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\" className=\"ml-1\">\n            <path d=\"m9 18 6-6-6-6\"></path>\n          </svg>\n        </div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "landing-page",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@onyxwebdev",
+    "authorUrl": "https://tailwindflex.com/@onyxwebdev",
+    "sourceUrl": "https://tailwindflex.com/@onyxwebdev/feature-card-4",
+    "mention": "Créé par @onyxwebdev sur TailwindFlex",
+    "rawHtml": "<div class=\"w-[300px] bg-white border border-gray-200 rounded-lg p-6 flex flex-col justify-between\">\n    <!-- Icon -->\n    <div class=\"text-blue-600 mb-4 bg-blue-200 mr-auto rounded-md\">\n      <svg class=\"p-2 h-10 w-10\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"m12 13.5l6-4l-6-4zm-6.3 8.375q-.825.125-1.487-.387T3.45 20.15L2.125 9.225q-.1-.825.4-1.475T3.85 7L5 6.85V15q0 1.65 1.175 2.825T9 19h9.3q-.15.6-.6 1.038t-1.1.512zM9 17q-.825 0-1.412-.587T7 15V4q0-.825.588-1.412T9 2h11q.825 0 1.413.588T22 4v11q0 .825-.587 1.413T20 17z\"/></svg>\n    </div>\n    \n    <!-- Heading -->\n    <div class=\"text-2xl font-medium tracking-tight text-gray-900\">\n      Card Heading\n    </div>\n    \n    <!-- Paragraph -->\n    <div class=\"text-sm text-gray-500 line-clamp-2 mt-2\">\n      This is a sample paragraph that describes the card content and provides more information.\n    </div>\n    \n    <!-- Divider -->\n    <div class=\"h-[1px] w-full bg-gray-200 my-5\"></div>\n    \n    <!-- Button -->\n    <div class=\"inline-flex items-center text-black cursor-pointer text-xs bg-gray-100 px-2 py-1.5 rounded mr-auto\">\n      <span>Learn more</span>\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"ml-1\">\n        <path d=\"m9 18 6-6-6-6\"></path>\n      </svg>\n    </div>\n  </div>"
+  }
+}

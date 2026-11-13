@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwind-css-contact-form",
+  "type": "registry:ui",
+  "title": "Tailwind CSS Contact Form",
+  "description": "Tailwind CSS Contact Form - Créé par @readymadeui sur TailwindFlex.",
+  "author": "@readymadeui (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tailwind-css-contact-form.tsx",
+      "content": "/**\n * Component: Tailwind CSS Contact Form\n * Author: @readymadeui (https://tailwindflex.com/@readymadeui)\n * Source: https://tailwindflex.com/@readymadeui/tailwind-css-contact-form\n * Attribution: Créé par @readymadeui sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TailwindCssContactForm() {\n  return (\n    <div>\n    <div className=\"bg-gray-50 max-w-screen-xl mx-auto\">\n          <div className=\"grid lg3 justify-center items-center gap-y-12\">\n            <div className=\"lg2 p-8 w-full max-w-2xl mx-auto\">\n              <div>\n                <h2 className=\"text-3xl text-slate-900 font-bold\">Contact us</h2>\n                <p className=\"text-[15px] text-slate-600 leading-relaxed mt-4\">Have questions or need assistance? We're here to help! Reach out to our team for support, inquiries, or collaboration opportunities.</p>\n              </div>\n              <form className=\"mt-8\">\n                <div className=\"grid sm2 gap-4\">\n                  <div>\n                    <label className='text-sm text-slate-900 font-medium mb-2 block'>Name</label>\n                    <input type='text' placeholder='Enter Name'\n                      className=\"w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus900 text-sm outline-0 rounded-md\" />\n                  </div>\n                  <div>\n                    <label className='text-sm text-slate-900 font-medium mb-2 block'>Email</label>\n                    <input type='email' placeholder='Enter Email'\n                      className=\"w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus900 text-sm outline-0 rounded-md\" />\n                  </div>\n                  <div>\n                    <label className='text-sm text-slate-900 font-medium mb-2 block'>Phone No.</label>\n                    <input type='number' placeholder='Enter Phone No.'\n                      className=\"w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus900 text-sm outline-0 rounded-md\" />\n                  </div>\n                  <div>\n                    <label className='text-sm text-slate-900 font-medium mb-2 block'>Subject</label>\n                    <input type='text' placeholder='Enter Subject'\n                      className=\"w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus900 text-sm outline-0 rounded-md\" />\n                  </div>\n                  <div className=\"col-span-full\">\n                    <label className='text-sm text-slate-900 font-medium mb-2 block'>Message</label>\n                    <textarea placeholder='Enter Message' rows=\"6\"\n                      className=\"w-full px-4 text-slate-800 bg-white border border-gray-300 focus900 text-sm pt-3 outline-0 rounded-md\"></textarea>\n                  </div>\n                </div>\n                <button type='button'\n                  className=\"text-white bg-slate-900 font-medium hover800 tracking-wide text-sm px-4 py-3 w-full border-0 outline-0 rounded-md cursor-pointer mt-6\">Send message</button>\n              </form>\n            </div>\n    \n            <div className=\"relative lg\">\n              <img src=\"https://readymadeui.com/team-image.webp\" alt=\"app-img\"\n                className=\"w-full h-full object-cover object-top lg lg0 lg0 lg0\" />\n            </div>\n          </div>\n        </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@readymadeui",
+    "authorUrl": "https://tailwindflex.com/@readymadeui",
+    "sourceUrl": "https://tailwindflex.com/@readymadeui/tailwind-css-contact-form",
+    "mention": "Créé par @readymadeui sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-50 max-w-screen-xl mx-auto\">\n      <div class=\"grid lg:grid-cols-3 justify-center items-center gap-y-12\">\n        <div class=\"lg:col-span-2 p-8 w-full max-w-2xl mx-auto\">\n          <div>\n            <h2 class=\"text-3xl text-slate-900 font-bold\">Contact us</h2>\n            <p class=\"text-[15px] text-slate-600 leading-relaxed mt-4\">Have questions or need assistance? We're here to help! Reach out to our team for support, inquiries, or collaboration opportunities.</p>\n          </div>\n          <form class=\"mt-8\">\n            <div class=\"grid sm:grid-cols-2 gap-4\">\n              <div>\n                <label class='text-sm text-slate-900 font-medium mb-2 block'>Name</label>\n                <input type='text' placeholder='Enter Name'\n                  class=\"w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md\" />\n              </div>\n              <div>\n                <label class='text-sm text-slate-900 font-medium mb-2 block'>Email</label>\n                <input type='email' placeholder='Enter Email'\n                  class=\"w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md\" />\n              </div>\n              <div>\n                <label class='text-sm text-slate-900 font-medium mb-2 block'>Phone No.</label>\n                <input type='number' placeholder='Enter Phone No.'\n                  class=\"w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md\" />\n              </div>\n              <div>\n                <label class='text-sm text-slate-900 font-medium mb-2 block'>Subject</label>\n                <input type='text' placeholder='Enter Subject'\n                  class=\"w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md\" />\n              </div>\n              <div class=\"col-span-full\">\n                <label class='text-sm text-slate-900 font-medium mb-2 block'>Message</label>\n                <textarea placeholder='Enter Message' rows=\"6\"\n                  class=\"w-full px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm pt-3 outline-0 rounded-md\"></textarea>\n              </div>\n            </div>\n            <button type='button'\n              class=\"text-white bg-slate-900 font-medium hover:bg-slate-800 tracking-wide text-sm px-4 py-3 w-full border-0 outline-0 rounded-md cursor-pointer mt-6\">Send message</button>\n          </form>\n        </div>\n\n        <div class=\"relative lg:h-screen\">\n          <img src=\"https://readymadeui.com/team-image.webp\" alt=\"app-img\"\n            class=\"w-full h-full object-cover object-top lg:absolute lg:right-0 lg:top-0 lg:bottom-0\" />\n        </div>\n      </div>\n    </div>"
+  }
+}

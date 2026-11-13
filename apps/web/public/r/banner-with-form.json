@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "banner-with-form",
+  "type": "registry:ui",
+  "title": "Banner with Form",
+  "description": "Banner with Form - Créé par @aitrik-saha sur TailwindFlex.",
+  "author": "@aitrik-saha (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/banner-with-form.tsx",
+      "content": "/**\n * Component: Banner with Form\n * Author: @aitrik-saha (https://tailwindflex.com/@aitrik-saha)\n * Source: https://tailwindflex.com/@aitrik-saha/banner-with-form\n * Attribution: Créé par @aitrik-saha sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BannerWithForm() {\n  return (\n    <div>\n    <div className=\"relative\">\n      \n    <div className=\"bg-gradient-to-b from-red-500 to-red-800 h-64 flex flex-col items-center justify-center text-white px-4\">\n        <h1 className=\"text-center text-3xl font-extrabold mb-2 font-serif\">\n          Search according to your needs\n        </h1>\n        <p className=\"text-lg text-center\">\n          Discover the best opportunities and make your dream become reality.\n        </p>\n      </div>\n    \n      \n      <div className=\"px-4\">\n        \n        <div className=\"relative w-full sm sm10 sm0\">\n          <div className=\"bg-white border border-gray-300 shadow-2xl rounded-lg mx-auto max-w-full sm4xl p-4\">\n            <div className=\"flex flex-col sm gap-4 sm2 flex-wrap\">\n              <input\n                type=\"text\"\n                placeholder=\"Search...\"\n                className=\"flex-grow p-2 border border-gray-300 rounded-md focus focus2 focus600\"\n              />\n              <select className=\"p-2 border border-gray-300 rounded-md focus focus2 focus600\">\n                <option value=\"\">Category</option>\n                <option value=\"house\">House</option>\n                <option value=\"apartment\">Apartment</option>\n                <option value=\"condo\">Condo</option>\n              </select>\n              <input\n                type=\"number\"\n                placeholder=\"Min Price\"\n                className=\"p-2 border border-gray-300 rounded-md focus focus2 focus600\"\n              />\n              <input\n                type=\"number\"\n                placeholder=\"Max Price\"\n                className=\"p-2 border border-gray-300 rounded-md focus focus2 focus600\"\n              />\n              <button className=\"bg-red-600 text-white p-2 justify-center rounded-md hover700 w-full sm flex-shrink-0 mt-2 sm0\">\n                <svg\n                  xmlns=\"http://www.w3.org/2000/svg\"\n                  fill=\"none\"\n                  viewBox=\"0 0 24 24\"\n                  strokeWidth=\"1.5\"\n                  stroke=\"currentColor\"\n                  className=\"size-6\"\n                >\n                  <path\n                    strokeLinecap=\"round\"\n                    strokeLinejoin=\"round\"\n                    d=\"M21 21l-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607z\"\n                  />\n                </svg>\n              </button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    \n    \n    <div className=\"sm items-center sm10 max-w-screen-xl\">\n      <div className=\"sm1/2 p-10\">\n        <div className=\"image object-center text-center\">\n          <img className=\"rounded-lg\" src=\"https://images.unsplash.com/photo-1556745753-b2904692b3cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MXwxfHNlYXJjaHw4fHx3b3JrfGVufDB8MHx8fDE3MzczNzQwODR8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"About Our Company\" />\n        </div>\n      </div>\n      <div className=\"sm1/2 p-5\">\n        <div className=\"text\">\n          <h2 className=\"my-4 font-bold text-3xl sm4xl\">\n            About <span className=\"text-red-600\">Our Company</span>\n          </h2>\n          <p className=\"text-gray-700\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, commodi\n            doloremque, fugiat illum magni minus nisi nulla numquam obcaecati placeat\n            quia, repellat tempore voluptatum.\n          </p>\n        </div>\n    \n        \n        <button className=\"mt-4 bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium hover700 hover\">\n          Get Started\n        </button>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@aitrik-saha",
+    "authorUrl": "https://tailwindflex.com/@aitrik-saha",
+    "sourceUrl": "https://tailwindflex.com/@aitrik-saha/banner-with-form",
+    "mention": "Créé par @aitrik-saha sur TailwindFlex",
+    "rawHtml": "<div class=\"relative\">\n  <!-- Banner Section -->\n<div class=\"bg-gradient-to-b from-red-500 to-red-800 h-64 flex flex-col items-center justify-center text-white px-4\">\n    <h1 class=\"text-center text-3xl font-extrabold mb-2 font-serif\">\n      Search according to your needs\n    </h1>\n    <p class=\"text-lg text-center\">\n      Discover the best opportunities and make your dream become reality.\n    </p>\n  </div>\n\n  <!-- Search Bar Section -->\n  <div class=\"px-4\">\n    <!-- Adjust position for small devices -->\n    <div class=\"relative w-full sm:absolute sm:-bottom-10 sm:left-0\">\n      <div class=\"bg-white border border-gray-300 shadow-2xl rounded-lg mx-auto max-w-full sm:max-w-4xl p-4\">\n        <div class=\"flex flex-col sm:flex-row gap-4 sm:gap-2 flex-wrap\">\n          <input\n            type=\"text\"\n            placeholder=\"Search...\"\n            class=\"flex-grow p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600\"\n          />\n          <select class=\"p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600\">\n            <option value=\"\">Category</option>\n            <option value=\"house\">House</option>\n            <option value=\"apartment\">Apartment</option>\n            <option value=\"condo\">Condo</option>\n          </select>\n          <input\n            type=\"number\"\n            placeholder=\"Min Price\"\n            class=\"p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600\"\n          />\n          <input\n            type=\"number\"\n            placeholder=\"Max Price\"\n            class=\"p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600\"\n          />\n          <button class=\"bg-red-600 text-white p-2 justify-center rounded-md hover:bg-red-700 w-full sm:w-auto flex-shrink-0 mt-2 sm:mt-0\">\n            <svg\n              xmlns=\"http://www.w3.org/2000/svg\"\n              fill=\"none\"\n              viewBox=\"0 0 24 24\"\n              stroke-width=\"1.5\"\n              stroke=\"currentColor\"\n              class=\"size-6\"\n            >\n              <path\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n                d=\"M21 21l-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607z\"\n              />\n            </svg>\n          </button>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- About Us -->\n<div class=\"sm:flex items-center sm:mt-10 max-w-screen-xl\">\n  <div class=\"sm:w-1/2 p-10\">\n    <div class=\"image object-center text-center\">\n      <img class=\"rounded-lg\" src=\"https://images.unsplash.com/photo-1556745753-b2904692b3cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MXwxfHNlYXJjaHw4fHx3b3JrfGVufDB8MHx8fDE3MzczNzQwODR8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"About Our Company\" />\n    </div>\n  </div>\n  <div class=\"sm:w-1/2 p-5\">\n    <div class=\"text\">\n      <h2 class=\"my-4 font-bold text-3xl sm:text-4xl\">\n        About <span class=\"text-red-600\">Our Company</span>\n      </h2>\n      <p class=\"text-gray-700\">\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, commodi\n        doloremque, fugiat illum magni minus nisi nulla numquam obcaecati placeat\n        quia, repellat tempore voluptatum.\n      </p>\n    </div>\n\n    <!-- Get Started Button -->\n    <button class=\"mt-4 bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700 hover:text-white\">\n      Get Started\n    </button>\n  </div>\n</div>"
+  }
+}

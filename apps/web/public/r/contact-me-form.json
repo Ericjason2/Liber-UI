@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "contact-me-form",
+  "type": "registry:ui",
+  "title": "Contact me form",
+  "description": "Contact me form - Créé par @arya sur TailwindFlex.",
+  "author": "@arya (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/contact-me-form.tsx",
+      "content": "/**\n * Component: Contact me form\n * Author: @arya (https://tailwindflex.com/@arya)\n * Source: https://tailwindflex.com/@arya/contact-me-form\n * Attribution: Créé par @arya sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ContactMeForm() {\n  return (\n    <div>\n    <div className=\"h-screen bg-gray-800\">\r\n        <div className=\"pt-10 md20\">\r\n            <div className=\"p-4 md8\">\r\n                <h1 className=\"text-white text-center pb-8 font-light text-4xl md5xl lg6xl\">Contact Me</h1>\r\n                <form className=\"flex flex-col items-center\">\r\n                    <div className=\"md3/4 lg2/3 xl1/2\">\r\n                        <div className=\"flex flex-col md\">\r\n                            <input id=\"name\" type=\"text\"\r\n                                className=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md1/2 md2 outline-none focus2 focus600\"\r\n                                placeholder=\"Name\" />\r\n                            <input id=\"email\" type=\"email\"\r\n                                className=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md1/2 md2 outline-none focus2 focus600\"\r\n                                placeholder=\"Email\" />\r\n                        </div>\r\n                        <input id=\"subject\" type=\"text\" placeholder=\"Subject\"\r\n                            className=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus2 focus600\" />\r\n                        <textarea id=\"message\" rows=\"5\" placeholder=\"Say Something\"\r\n                            className=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus2 focus600\"></textarea>\r\n                    </div>\r\n                    <button\r\n                        className=\"border-2 text-md mt-5 rounded-md py-2 px-4 bg-blue-600 hover700 text-gray-100 transition duration-300 ease-in-out focus focus2 focus600\">\r\n                        Send Message\r\n                    </button>\r\n                </form>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@arya",
+    "authorUrl": "https://tailwindflex.com/@arya",
+    "sourceUrl": "https://tailwindflex.com/@arya/contact-me-form",
+    "mention": "Créé par @arya sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen bg-gray-800\">\r\n    <div class=\"pt-10 md:pt-20\">\r\n        <div class=\"p-4 md:p-8\">\r\n            <h1 class=\"text-white text-center pb-8 font-light text-4xl md:text-5xl lg:text-6xl\">Contact Me</h1>\r\n            <form class=\"flex flex-col items-center\">\r\n                <div class=\"md:w-3/4 lg:w-2/3 xl:w-1/2\">\r\n                    <div class=\"flex flex-col md:flex-row\">\r\n                        <input id=\"name\" type=\"text\"\r\n                            class=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md:w-1/2 md:mr-2 outline-none focus:ring-2 focus:ring-blue-600\"\r\n                            placeholder=\"Name\">\r\n                        <input id=\"email\" type=\"email\"\r\n                            class=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md:w-1/2 md:ml-2 outline-none focus:ring-2 focus:ring-blue-600\"\r\n                            placeholder=\"Email\">\r\n                    </div>\r\n                    <input id=\"subject\" type=\"text\" placeholder=\"Subject\"\r\n                        class=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600\">\r\n                    <textarea id=\"message\" rows=\"5\" placeholder=\"Say Something\"\r\n                        class=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600\"></textarea>\r\n                </div>\r\n                <button\r\n                    class=\"border-2 text-md mt-5 rounded-md py-2 px-4 bg-blue-600 hover:bg-blue-700 text-gray-100 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-600\">\r\n                    Send Message\r\n                </button>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

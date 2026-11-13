@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "heroimage",
+  "type": "registry:ui",
+  "title": "heroimage",
+  "description": "heroimage - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/heroimage.tsx",
+      "content": "/**\n * Component: heroimage\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/heroimage\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Heroimage() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n  <title>LogiTrans Solutions</title>\\n  <link rel=\\\"stylesheet\\\" href=\\\"style.css\\\" />\\n</head>\\n<body>\\n  <!-- Scroll Progress Bar -->\\n  <div id=\\\"progress-bar\\\"></div>\\n\\n  <!-- Header -->\\n  <header>\\n    <div class=\\\"logo\\\">\\n      <svg viewBox=\\\"0 0 100 100\\\" id=\\\"logo\\\">\\n        <circle cx=\\\"50\\\" cy=\\\"50\\\" r=\\\"40\\\" stroke=\\\"#4b2e2e\\\" stroke-width=\\\"5\\\" fill=\\\"white\\\" />\\n        <text x=\\\"50%\\\" y=\\\"55%\\\" dominant-baseline=\\\"middle\\\" text-anchor=\\\"middle\\\" fill=\\\"#4b2e2e\\\" font-size=\\\"20\\\">LT</text>\\n      </svg>\\n    </div>\\n    <nav id=\\\"navbar\\\">\\n      <ul>\\n        <li><a href=\\\"#hero\\\">Home</a></li>\\n        <li><a href=\\\"#services\\\">Services</a></li>\\n        <li><a href=\\\"#testimonials\\\">Clients</a></li>\\n        <li><a href=\\\"#footer\\\">Contact Us</a></li>\\n        <li><a href=\\\"#about\\\">About</a></li>\\n      </ul>\\n      <div id=\\\"hamburger\\\">&#9776;</div>\\n      \\n    </nav>\\n  </header>\\n\\n  <!-- Hero Section -->\\n  <section id=\\\"hero\\\">\\n    <h1>Efficient Logistics, Delivered</h1>\\n    <button class=\\\"hero-btn\\\">Explore Us / Hire Us</button>\\n  </section>\\n\\n  <!-- Services Section -->\\n  <section id=\\\"services\\\">\\n    <h2>Our Services</h2>\\n    <div class=\\\"service-cards\\\">\\n      <div class=\\\"card\\\">\\n        <img src=\\\"images/service1.jpeg\\\" alt=\\\"Freight Transport\\\">\\n        <h3>Freight Transport</h3>\\n        <p>Reliable ground and air freight services.</p>\\n      </div>\\n      <div class=\\\"card\\\">\\n        <img src=\\\"images/service2.jpeg\\\" alt=\\\"Warehousing\\\">\\n        <h3>Warehousing</h3>\\n        <p>Secure and scalable warehouse solutions.</p>\\n      </div>\\n      <div class=\\\"card\\\">\\n        <img src=\\\"images/service3.jpg\\\" alt=\\\"Inventory Management\\\">\\n        <h3>Inventory Management</h3>\\n        <p>Track, manage, and restock with ease.</p>\\n      </div>\\n      <div class=\\\"card\\\">\\n        <img src=\\\"images/service4.jpg\\\" alt=\\\"Customs Clearance\\\">\\n        <h3>Customs Clearance</h3>\\n        <p>Fast and reliable customs handling.</p>\\n      </div>\\n      \\n\\n    </div>\\n  </section>\\n\\n  <!-- Testimonials Section -->\\n  <!-- Testimonials Section -->\\n<section id=\\\"testimonials\\\">\\n  <h2>What Our Clients Say</h2>\\n  <div class=\\\"testimonial\\\">\\n    <img src=\\\"images/avatar.jpg\\\" alt=\\\"Client 1\\\" class=\\\"client-avatar\\\">\\n    <p>\\\"Great experience with LogiTrans! Highly reliable and professional.\\\"</p>\\n    <button class=\\\"read-more\\\">Read More</button>\\n  </div>\\n  <div class=\\\"testimonial\\\">\\n    <img src=\\\"images/avatar2.jpg\\\" alt=\\\"Client 2\\\" class=\\\"client-avatar\\\">\\n    <p>\\\"On-time delivery and excellent support team!\\\"</p>\\n    <button class=\\\"read-more\\\">Read More</button>\\n  </div>\\n</section>\\n\\n\\n  <!-- Modal -->\\n  <div id=\\\"modal\\\" class=\\\"modal\\\">\\n    <div class=\\\"modal-content\\\">\\n      <span class=\\\"close\\\">&times;</span>\\n      <p id=\\\"modal-text\\\"></p>\\n    </div>\\n  </div>\\n\\n  <!-- Footer Section -->\\n  <footer id=\\\"footer\\\">\\n    <div class=\\\"contact\\\">\\n      <h3>Contact Us</h3>\\n      <p>Email: contact@logitrans.com</p>\\n      <p>Phone: +123-456-7890</p>\\n    </div>\\n    <form id=\\\"newsletter-form\\\">\\n      <label for=\\\"email\\\">Subscribe to our newsletter:</label>\\n      <input type=\\\"email\\\" id=\\\"email\\\" placeholder=\\\"Enter your email\\\" required>\\n      <button type=\\\"submit\\\">Submit</button>\\n    </form>\\n  </footer>\\n\\n  \\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/heroimage",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>LogiTrans Solutions</title>\n  <link rel=\"stylesheet\" href=\"style.css\" />\n</head>\n<body>\n  <!-- Scroll Progress Bar -->\n  <div id=\"progress-bar\"></div>\n\n  <!-- Header -->\n  <header>\n    <div class=\"logo\">\n      <svg viewBox=\"0 0 100 100\" id=\"logo\">\n        <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"#4b2e2e\" stroke-width=\"5\" fill=\"white\" />\n        <text x=\"50%\" y=\"55%\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"#4b2e2e\" font-size=\"20\">LT</text>\n      </svg>\n    </div>\n    <nav id=\"navbar\">\n      <ul>\n        <li><a href=\"#hero\">Home</a></li>\n        <li><a href=\"#services\">Services</a></li>\n        <li><a href=\"#testimonials\">Clients</a></li>\n        <li><a href=\"#footer\">Contact Us</a></li>\n        <li><a href=\"#about\">About</a></li>\n      </ul>\n      <div id=\"hamburger\">&#9776;</div>\n      \n    </nav>\n  </header>\n\n  <!-- Hero Section -->\n  <section id=\"hero\">\n    <h1>Efficient Logistics, Delivered</h1>\n    <button class=\"hero-btn\">Explore Us / Hire Us</button>\n  </section>\n\n  <!-- Services Section -->\n  <section id=\"services\">\n    <h2>Our Services</h2>\n    <div class=\"service-cards\">\n      <div class=\"card\">\n        <img src=\"images/service1.jpeg\" alt=\"Freight Transport\">\n        <h3>Freight Transport</h3>\n        <p>Reliable ground and air freight services.</p>\n      </div>\n      <div class=\"card\">\n        <img src=\"images/service2.jpeg\" alt=\"Warehousing\">\n        <h3>Warehousing</h3>\n        <p>Secure and scalable warehouse solutions.</p>\n      </div>\n      <div class=\"card\">\n        <img src=\"images/service3.jpg\" alt=\"Inventory Management\">\n        <h3>Inventory Management</h3>\n        <p>Track, manage, and restock with ease.</p>\n      </div>\n      <div class=\"card\">\n        <img src=\"images/service4.jpg\" alt=\"Customs Clearance\">\n        <h3>Customs Clearance</h3>\n        <p>Fast and reliable customs handling.</p>\n      </div>\n      \n\n    </div>\n  </section>\n\n  <!-- Testimonials Section -->\n  <!-- Testimonials Section -->\n<section id=\"testimonials\">\n  <h2>What Our Clients Say</h2>\n  <div class=\"testimonial\">\n    <img src=\"images/avatar.jpg\" alt=\"Client 1\" class=\"client-avatar\">\n    <p>\"Great experience with LogiTrans! Highly reliable and professional.\"</p>\n    <button class=\"read-more\" onclick=\"openModal('Great experience with LogiTrans! Highly reliable and professional.')\">Read More</button>\n  </div>\n  <div class=\"testimonial\">\n    <img src=\"images/avatar2.jpg\" alt=\"Client 2\" class=\"client-avatar\">\n    <p>\"On-time delivery and excellent support team!\"</p>\n    <button class=\"read-more\" onclick=\"openModal('On-time delivery and excellent support team!')\">Read More</button>\n  </div>\n</section>\n\n\n  <!-- Modal -->\n  <div id=\"modal\" class=\"modal\">\n    <div class=\"modal-content\">\n      <span class=\"close\" onclick=\"closeModal()\">&times;</span>\n      <p id=\"modal-text\"></p>\n    </div>\n  </div>\n\n  <!-- Footer Section -->\n  <footer id=\"footer\">\n    <div class=\"contact\">\n      <h3>Contact Us</h3>\n      <p>Email: contact@logitrans.com</p>\n      <p>Phone: +123-456-7890</p>\n    </div>\n    <form id=\"newsletter-form\" onsubmit=\"return validateForm()\">\n      <label for=\"email\">Subscribe to our newsletter:</label>\n      <input type=\"email\" id=\"email\" placeholder=\"Enter your email\" required>\n      <button type=\"submit\">Submit</button>\n    </form>\n  </footer>\n\n  <script>\n    // Hamburger toggle\n    document.getElementById(\"hamburger\").onclick = () => {\n      document.getElementById(\"navbar\").classList.toggle(\"open\");\n    };\n\n    // Scroll progress bar\n    window.onscroll = () => {\n      let scrollTop = document.documentElement.scrollTop;\n      let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;\n      let scrolled = (scrollTop / scrollHeight) * 100;\n      document.getElementById(\"progress-bar\").style.width = scrolled + \"%\";\n    };\n\n    // Modal functionality\n    function openModal(text) {\n      document.getElementById(\"modal-text\").innerText = text;\n      document.getElementById(\"modal\").style.display = \"block\";\n    }\n    function closeModal() {\n      document.getElementById(\"modal\").style.display = \"none\";\n    }\n\n    // Newsletter form validation\n    function validateForm() {\n      const email = document.getElementById(\"email\").value;\n      const pattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n      if (!pattern.test(email)) {\n        alert(\"Please enter a valid email address.\");\n        return false;\n      }\n      alert(\"Subscribed successfully!\");\n      return true;\n    }\n\n    // SVG animation on load\n    window.onload = () => {\n      const logo = document.getElementById(\"logo\");\n      logo.style.transform = \"scale(1.1)\";\n      setTimeout(() => logo.style.transform = \"scale(1)\", 500);\n    };\n  </script>\n</body>\n</html>"
+  }
+}

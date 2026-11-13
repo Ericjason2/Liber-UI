@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "modern-responsive-footer-with-tailwind-css",
+  "type": "registry:ui",
+  "title": "Modern Responsive Footer with Tailwind CSS",
+  "description": "Modern Responsive Footer with Tailwind CSS - Créé par @ayyam sur TailwindFlex.",
+  "author": "@ayyam (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/modern-responsive-footer-with-tailwind-css.tsx",
+      "content": "/**\n * Component: Modern Responsive Footer with Tailwind CSS\n * Author: @ayyam (https://tailwindflex.com/@ayyam)\n * Source: https://tailwindflex.com/@ayyam/modern-responsive-footer-with-tailwind-css\n * Attribution: Créé par @ayyam sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ModernResponsiveFooterWithTailwindCss() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Responsive Footer</title>\\n    \\n</head>\\n<body class=\\\"bg-gray-100\\\">\\n    \\n    <footer class=\\\"bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-gray-300 py-10 mt-10\\\">\\n        <div class=\\\"container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0\\\">\\n            \\n            <!-- Brand Info -->\\n            <div class=\\\"text-center md:text-left w-full md:w-1/3 pr-10\\\">\\n                <h2 class=\\\"text-2xl font-bold text-white\\\">BrandName</h2>\\n                <p class=\\\"mt-2 text-gray-100\\\">Creating stunning web experiences with modern design principles.</p>\\n            </div>\\n            \\n            <!-- Useful Links -->\\n            <div class=\\\"w-full md:w-1/3 flex flex-col items-center md:items-start space-y-3\\\">\\n                <h3 class=\\\"text-lg font-semibold text-white\\\">Quick Links</h3>\\n                <a href=\\\"https://portfolio-ayyam.vercel.app/\\\" class=\\\"hover:text-white transition duration-300\\\">About Us</a>\\n                <a href=\\\"https://portfolio-ayyam.vercel.app/\\\" class=\\\"hover:text-white transition duration-300\\\">Services</a>\\n                <a href=\\\"https://portfolio-ayyam.vercel.app/\\\" class=\\\"hover:text-white transition duration-300\\\">Contact</a>\\n                <a href=\\\"https://portfolio-ayyam.vercel.app/\\\" class=\\\"hover:text-white transition duration-300\\\">Privacy Policy</a>\\n            </div>\\n            \\n            <!-- Social Media -->\\n            <div class=\\\"w-full md:w-1/3 flex justify-center md:justify-end space-x-4\\\">\\n                <a href=\\\"https://portfolio-ayyam.vercel.app/\\\" class=\\\"text-gray-400 hover:text-white transition duration-300 transform hover:scale-110\\\">\\n                    <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" class=\\\"w-6 h-6\\\" fill=\\\"currentColor\\\" viewBox=\\\"0 0 24 24\\\"><path d=\\\"M22 12a10 10 0 10-11 9.95V14.9h-3v-3h3v-2.2c0-3 1.8-4.6 4.4-4.6 1.3 0 2.6.2 2.6.2v3h-1.5c-1.5 0-2 .9-2 1.8V12h3.4l-.5 3H15v7.05A10 10 0 0022 12z\\\"/></svg>\\n                </a>\\n                <a href=\\\"https://portfolio-ayyam.vercel.app/\\\" class=\\\"text-gray-400 hover:text-white transition duration-300 transform hover:scale-110\\\">\\n                    <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" class=\\\"w-6 h-6\\\" fill=\\\"currentColor\\\" viewBox=\\\"0 0 24 24\\\"><path d=\\\"M20.4 4.6c-.8.4-1.7.6-2.6.8.9-.6 1.6-1.4 1.9-2.5-.9.5-1.8.9-2.8 1.1-.8-.9-2-1.4-3.2-1.4-2.4 0-4.3 2-4.3 4.4 0 .3 0 .7.1 1C7.1 7.8 4.2 6.2 2.2 3.8c-.4.6-.6 1.4-.6 2.2 0 1.5.7 2.8 1.8 3.6-.7 0-1.4-.2-2-.5v.1c0 2.1 1.5 3.8 3.4 4.2-.4.1-.7.2-1.1.2-.3 0-.5 0-.8-.1.5 1.6 2 2.8 3.7 2.8-1.4 1.1-3.1 1.7-5 1.7-.3 0-.6 0-.8-.1 1.8 1.2 3.9 1.9 6.2 1.9 7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2.1-2.2z\\\"/></svg>\\n                </a>\\n                <a href=\\\"https://portfolio-ayyam.vercel.app/\\\" class=\\\"text-gray-400 hover:text-white transition duration-300 transform hover:scale-110\\\">\\n                    <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" class=\\\"w-6 h-6\\\" fill=\\\"currentColor\\\" viewBox=\\\"0 0 24 24\\\"><path d=\\\"M12 2.2c-5.4 0-9.8 4.4-9.8 9.8 0 4.9 3.6 8.9 8.3 9.7V14.9H7.9V12h2.6V9.8c0-2.6 1.6-4 3.9-4 1.1 0 2 .1 2.3.1v2.7h-1.6c-1.3 0-1.6.6-1.6 1.5V12h3.2l-.5 2.9H13v6.8c4.7-.8 8.3-4.8 8.3-9.7 0-5.4-4.4-9.8-9.8-9.8z\\\"/></svg>\\n                </a>\\n            </div>\\n        </div>\\n\\n        <div class=\\\"text-center text-gray-100 text-sm mt-8\\\">\\n            &copy; 2024 BrandName. All rights reserved.\\n        </div>\\n    </footer>\\n    \\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ayyam",
+    "authorUrl": "https://tailwindflex.com/@ayyam",
+    "sourceUrl": "https://tailwindflex.com/@ayyam/modern-responsive-footer-with-tailwind-css",
+    "mention": "Créé par @ayyam sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Responsive Footer</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gray-100\">\n    \n    <footer class=\"bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-gray-300 py-10 mt-10\">\n        <div class=\"container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0\">\n            \n            <!-- Brand Info -->\n            <div class=\"text-center md:text-left w-full md:w-1/3 pr-10\">\n                <h2 class=\"text-2xl font-bold text-white\">BrandName</h2>\n                <p class=\"mt-2 text-gray-100\">Creating stunning web experiences with modern design principles.</p>\n            </div>\n            \n            <!-- Useful Links -->\n            <div class=\"w-full md:w-1/3 flex flex-col items-center md:items-start space-y-3\">\n                <h3 class=\"text-lg font-semibold text-white\">Quick Links</h3>\n                <a href=\"https://portfolio-ayyam.vercel.app/\" class=\"hover:text-white transition duration-300\">About Us</a>\n                <a href=\"https://portfolio-ayyam.vercel.app/\" class=\"hover:text-white transition duration-300\">Services</a>\n                <a href=\"https://portfolio-ayyam.vercel.app/\" class=\"hover:text-white transition duration-300\">Contact</a>\n                <a href=\"https://portfolio-ayyam.vercel.app/\" class=\"hover:text-white transition duration-300\">Privacy Policy</a>\n            </div>\n            \n            <!-- Social Media -->\n            <div class=\"w-full md:w-1/3 flex justify-center md:justify-end space-x-4\">\n                <a href=\"https://portfolio-ayyam.vercel.app/\" class=\"text-gray-400 hover:text-white transition duration-300 transform hover:scale-110\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-6 h-6\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M22 12a10 10 0 10-11 9.95V14.9h-3v-3h3v-2.2c0-3 1.8-4.6 4.4-4.6 1.3 0 2.6.2 2.6.2v3h-1.5c-1.5 0-2 .9-2 1.8V12h3.4l-.5 3H15v7.05A10 10 0 0022 12z\"/></svg>\n                </a>\n                <a href=\"https://portfolio-ayyam.vercel.app/\" class=\"text-gray-400 hover:text-white transition duration-300 transform hover:scale-110\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-6 h-6\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M20.4 4.6c-.8.4-1.7.6-2.6.8.9-.6 1.6-1.4 1.9-2.5-.9.5-1.8.9-2.8 1.1-.8-.9-2-1.4-3.2-1.4-2.4 0-4.3 2-4.3 4.4 0 .3 0 .7.1 1C7.1 7.8 4.2 6.2 2.2 3.8c-.4.6-.6 1.4-.6 2.2 0 1.5.7 2.8 1.8 3.6-.7 0-1.4-.2-2-.5v.1c0 2.1 1.5 3.8 3.4 4.2-.4.1-.7.2-1.1.2-.3 0-.5 0-.8-.1.5 1.6 2 2.8 3.7 2.8-1.4 1.1-3.1 1.7-5 1.7-.3 0-.6 0-.8-.1 1.8 1.2 3.9 1.9 6.2 1.9 7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2.1-2.2z\"/></svg>\n                </a>\n                <a href=\"https://portfolio-ayyam.vercel.app/\" class=\"text-gray-400 hover:text-white transition duration-300 transform hover:scale-110\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-6 h-6\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 2.2c-5.4 0-9.8 4.4-9.8 9.8 0 4.9 3.6 8.9 8.3 9.7V14.9H7.9V12h2.6V9.8c0-2.6 1.6-4 3.9-4 1.1 0 2 .1 2.3.1v2.7h-1.6c-1.3 0-1.6.6-1.6 1.5V12h3.2l-.5 2.9H13v6.8c4.7-.8 8.3-4.8 8.3-9.7 0-5.4-4.4-9.8-9.8-9.8z\"/></svg>\n                </a>\n            </div>\n        </div>\n\n        <div class=\"text-center text-gray-100 text-sm mt-8\">\n            &copy; 2024 BrandName. All rights reserved.\n        </div>\n    </footer>\n    \n</body>\n</html>"
+  }
+}

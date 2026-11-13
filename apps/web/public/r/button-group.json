@@ -3,8 +3,8 @@
   "name": "button-group",
   "type": "registry:ui",
   "title": "Button group",
-  "description": "Add active class to clicked button using JavaScript",
-  "author": "team-tailwindflex",
+  "description": "Button group - Créé par @team-tailwindflex sur TailwindFlex.",
+  "author": "@team-tailwindflex (TailwindFlex)",
   "categories": [
     "buttons"
   ],
@@ -12,15 +12,43 @@
   "files": [
     {
       "path": "ui/button-group.tsx",
-      "content": "import React from \"react\";\n\nexport function ButtonGroup() {\n  return (\n    <div className=\"flex justify-center m-r-auto bg-violet-600\" id=\"buttons_container\">\n    <button className=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover:text-slate-50\"\n       >\n        sm\n    </button>\n    <button className=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover:text-slate-50\"\n       >\n        md\n    </button>\n    <button className=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover:text-slate-50\"\n       >\n        lg\n    </button>\n    <button className=\"text-gray-200 px-6 py-2 text-xl font-mono hover:text-slate-50\"\n       >\n        xl\n    </button>\n</div>\n  );\n}",
+      "content": "/**\n * Component: Button group\n * Author: @team-tailwindflex (https://tailwindflex.com/@team-tailwindflex)\n * Source: https://tailwindflex.com/@team-tailwindflex/button-group\n * Attribution: Créé par @team-tailwindflex sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonGroup() {\n  return (\n    <div>\n    <div className=\"flex justify-center m-r-auto bg-violet-600\" id=\"buttons_container\">\n        <button className=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover50\"\n           >\n            sm\n        </button>\n        <button className=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover50\"\n           >\n            md\n        </button>\n        <button className=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover50\"\n           >\n            lg\n        </button>\n        <button className=\"text-gray-200 px-6 py-2 text-xl font-mono hover50\"\n           >\n            xl\n        </button>\n    </div>\n    \n    </div>\n  );\n}\n",
       "type": "registry:ui"
     }
   ],
   "meta": {
     "kind": "component",
     "tags": [
-      "toggle",
-      "button"
-    ]
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@team-tailwindflex",
+    "authorUrl": "https://tailwindflex.com/@team-tailwindflex",
+    "sourceUrl": "https://tailwindflex.com/@team-tailwindflex/button-group",
+    "mention": "Créé par @team-tailwindflex sur TailwindFlex",
+    "rawHtml": "<div class=\"flex justify-center m-r-auto bg-violet-600\" id=\"buttons_container\">\n    <button class=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover:text-slate-50\"\n        onclick=\"toggle(0)\">\n        sm\n    </button>\n    <button class=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover:text-slate-50\"\n        onclick=\"toggle(1)\">\n        md\n    </button>\n    <button class=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover:text-slate-50\"\n        onclick=\"toggle(2)\">\n        lg\n    </button>\n    <button class=\"text-gray-200 px-6 py-2 text-xl font-mono hover:text-slate-50\"\n        onclick=\"toggle(3)\">\n        xl\n    </button>\n</div>\n<script>\n    function toggle(index) {\n        var buttons = document.getElementById('buttons_container').children;\n        for (var i = 0; i < buttons.length; i++) {\n            buttons[i].classList.remove('text-white');\n            buttons[i].classList.remove('underline');\n        }\n        buttons[index].classList.add('text-white');\n        buttons[index].classList.add('underline');\n    }\n</script>"
   }
 }

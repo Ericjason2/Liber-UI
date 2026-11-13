@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-group-7",
+  "type": "registry:ui",
+  "title": "Button group",
+  "description": "Button group - Créé par @sophia-baker sur TailwindFlex.",
+  "author": "@sophia-baker (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button-group-7.tsx",
+      "content": "/**\n * Component: Button group\n * Author: @sophia-baker (https://tailwindflex.com/@sophia-baker)\n * Source: https://tailwindflex.com/@sophia-baker/button-group-7\n * Attribution: Créé par @sophia-baker sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonGroup7() {\n  return (\n    <div>\n    <div className=\"container mx-auto flex justify-center p-3\">\r\n        <a className=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-yellow py-2 px-2  hover300 focus bg-yellow\"\r\n            href=\"\">👪 Everyone\r\n        </a>\r\n        <a className=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-blue-300 py-2 px-2 ml-5 hover300 focus \"\r\n            href=\"\">👍 Following\r\n        </a>\r\n        <a className=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-purple-300 py-2 px-2 ml-5 hover300 focus \"\r\n            href=\"\">💰 For sale\r\n        </a>\r\n        <a className=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-emerald-300 py-2 px-2 ml-5 hover300 focus \"\r\n            href=\"\">🔥 Leaderboard\r\n        </a>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sophia-baker",
+    "authorUrl": "https://tailwindflex.com/@sophia-baker",
+    "sourceUrl": "https://tailwindflex.com/@sophia-baker/button-group-7",
+    "mention": "Créé par @sophia-baker sur TailwindFlex",
+    "rawHtml": "<div class=\"container mx-auto flex justify-center p-3\">\r\n    <a class=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-yellow py-2 px-2  hover:bg-yellow-300 focus:outline-none bg-yellow\"\r\n        href=\"\">👪 Everyone\r\n    </a>\r\n    <a class=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-blue-300 py-2 px-2 ml-5 hover:bg-blue-300 focus:outline-none \"\r\n        href=\"\">👍 Following\r\n    </a>\r\n    <a class=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-purple-300 py-2 px-2 ml-5 hover:bg-purple-300 focus:outline-none \"\r\n        href=\"\">💰 For sale\r\n    </a>\r\n    <a class=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-emerald-300 py-2 px-2 ml-5 hover:bg-emerald-300 focus:outline-none \"\r\n        href=\"\">🔥 Leaderboard\r\n    </a>\r\n</div>"
+  }
+}

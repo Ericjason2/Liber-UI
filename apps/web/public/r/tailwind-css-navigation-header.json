@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwind-css-navigation-header",
+  "type": "registry:ui",
+  "title": "Tailwind css navigation header",
+  "description": "Tailwind css navigation header - Créé par @abidullah-786 sur TailwindFlex.",
+  "author": "@abidullah-786 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tailwind-css-navigation-header.tsx",
+      "content": "/**\n * Component: Tailwind css navigation header\n * Author: @abidullah-786 (https://tailwindflex.com/@abidullah-786)\n * Source: https://tailwindflex.com/@abidullah-786/tailwind-css-navigation-header\n * Attribution: Créé par @abidullah-786 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TailwindCssNavigationHeader() {\n  return (\n    <div>\n    <div className=\"bg-white dark800 flex justify-center items-center w-screen h-screen p-5\">\n      <div className=\"border shadow-teal-300 shadow-md max-w-2xl p-6 rounded-lg dark700 dark300\">\n       <div className=\"w-full max-w-screen-xl px-10 mx-auto\">\n                <ul className=\"flex-col md flex md8 mt-4 md0 md md \">\n    \n                    <li>\n                        <button id=\"dropdownNavbarLink\" data-dropdown-toggle=\"dropdownNavbar\" className=\"text-gray-700 hover50 border-b border-gray-100 hover md0 pl-3 pr-4 py-2 md700 md0 font-medium flex items-center justify-between w-full md dark\">\n                            All Categories\n                            <svg className=\"w-4 h-4 ml-1\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path fillRule=\"evenodd\" d=\"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z\" clipRule=\"evenodd\"></path>\n                            </svg>\n                        </button>\n                        <div id=\"dropdownNavbar\" className=\"hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44 dark\">\n                            <ul className=\"py-1 dark\" aria-labelledby=\"dropdownLargeButton\">\n                                <li>\n                                    <a href=\"#\" className=\"text-sm hover100 text-gray-700 block px-4 py-2 dark\">Mobiles</a>\n                                </li>\n                                <li>\n                                    <a href=\"#\" className=\"text-sm hover100 text-gray-700 block px-4 py-2 dark\">Laptops & PCs</a>\n                                </li>\n                                <li>\n                                    <a href=\"#\" className=\"text-sm hover100 text-gray-700 block px-4 py-2 dark\">Cameras</a>\n                                </li>\n                            </ul>\n    \n                        </div>\n                    </li>\n                    <li>\n                        <a href=\"#\" className=\"text-gray-700 hover50 border-b border-gray-100 md md0 block pl-3 pr-4 py-2 md700 md0 dark dark700 dark700\">\n                            Mobile Phones\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\" className=\"text-gray-700 hover50 border-b border-gray-100 md md0 block pl-3 pr-4 py-2 md700 md0 dark dark700 dark700\">\n                            Laptop & PC\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\" className=\"text-gray-700 hover50 border-b border-gray-100 md md0 block pl-3 pr-4 py-2 md700 md0 dark dark700 dark700\">\n                            Cameras\n                        </a>\n                    </li>\n                </ul>\n            </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abidullah-786",
+    "authorUrl": "https://tailwindflex.com/@abidullah-786",
+    "sourceUrl": "https://tailwindflex.com/@abidullah-786/tailwind-css-navigation-header",
+    "mention": "Créé par @abidullah-786 sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\">\n  <div class=\"border shadow-teal-300 shadow-md max-w-2xl p-6 rounded-lg dark:bg-gray-700 dark:text-gray-300\">\n   <div class=\"w-full max-w-screen-xl px-10 mx-auto\">\n            <ul class=\"flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium \">\n\n                <li>\n                    <button id=\"dropdownNavbarLink\" data-dropdown-toggle=\"dropdownNavbar\" class=\"text-gray-700 hover:bg-gray-50 border-b border-gray-100 hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto dark:text-white\">\n                        All Categories\n                        <svg class=\"w-4 h-4 ml-1\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" d=\"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z\" clip-rule=\"evenodd\"></path>\n                        </svg>\n                    </button>\n                    <div id=\"dropdownNavbar\" class=\"hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44 dark:text-white\">\n                        <ul class=\"py-1 dark:text-white\" aria-labelledby=\"dropdownLargeButton\">\n                            <li>\n                                <a href=\"#\" class=\"text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 dark:text-white\">Mobiles</a>\n                            </li>\n                            <li>\n                                <a href=\"#\" class=\"text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 dark:text-white\">Laptops & PCs</a>\n                            </li>\n                            <li>\n                                <a href=\"#\" class=\"text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 dark:text-white\">Cameras</a>\n                            </li>\n                        </ul>\n\n                    </div>\n                </li>\n                <li>\n                    <a href=\"#\" class=\"text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-gray-700 dark:md:hover:text-blue-700\">\n                        Mobile Phones\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\" class=\"text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-gray-700 dark:md:hover:text-blue-700\">\n                        Laptop & PC\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\" class=\"text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-gray-700 dark:md:hover:text-blue-700\">\n                        Cameras\n                    </a>\n                </li>\n            </ul>\n        </div>\n  </div>\n</div>"
+  }
+}

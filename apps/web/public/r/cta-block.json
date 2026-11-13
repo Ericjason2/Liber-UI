@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cta-block",
+  "type": "registry:ui",
+  "title": "CTA block",
+  "description": "CTA block - Créé par @samuel33 sur TailwindFlex.",
+  "author": "@samuel33 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cta-block.tsx",
+      "content": "/**\n * Component: CTA block\n * Author: @samuel33 (https://tailwindflex.com/@samuel33)\n * Source: https://tailwindflex.com/@samuel33/cta-block\n * Attribution: Créé par @samuel33 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CtaBlock() {\n  return (\n    <div>\n    <section className=\"h-auto bg-black w-full pt-12 md20 border-b border-[#23232C] p-3\">\n        <div className=\"max-w-6xl mx-auto md tails-relative\">\n            <h2 className=\"jakarta text-white font-bold text-xl md0 px-10 md3xl\">And many more features ✨</h2>\n            <p className=\"text-gray-400 mt-2 md5 md0 px-10 md2xl\">Try out the app for yourself to see them all!\n            </p>\n            <a href=\"#\"\n                className=\"inline-flex mt-12 justify-center md8 items-center w-full px-8 py-5 md6 text-xl font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-700 hover500 hover700 sm0 md hover600 md\">\n                <svg className=\"w-5 h-5 mr-2 fill-current\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n                    <g fill=\"none\" stroke=\"none\">\n                        <path\n                            d=\"M6 12l5.485-5.485A12 12 0 0 1 19.971 3H21v1.029a12 12 0 0 1-3.515 8.486L12 18m-6-6l6 6m-6-6L3 9l.828-.828A4 4 0 0 1 6.657 7H11l-5 5zm6 6l3 3 .828-.828A4 4 0 0 0 17 17.343V13l-5 5zm-4.5-4.5l-2.379 2.379A7.242 7.242 0 0 0 3 21a7.243 7.243 0 0 0 5.121-2.121L10.5 16.5\"\n                            stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\"></path>\n                        <path d=\"M16.778 7.916a.5.5 0 1 1-.556-.832.5.5 0 0 1 .556.832z\" fill=\"#212121\"\n                            stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\"></path>\n                    </g>\n                </svg>\n                <span>Try the App for FREE</span>\n            </a>\n        </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@samuel33",
+    "authorUrl": "https://tailwindflex.com/@samuel33",
+    "sourceUrl": "https://tailwindflex.com/@samuel33/cta-block",
+    "mention": "Créé par @samuel33 sur TailwindFlex",
+    "rawHtml": "<section class=\"h-auto bg-black w-full pt-12 md:pb-20 border-b border-[#23232C] p-3\">\n    <div class=\"max-w-6xl mx-auto md:text-center tails-relative\">\n        <h2 class=\"jakarta text-white font-bold text-xl md:px-0 px-10 md:text-3xl\">And many more features ✨</h2>\n        <p class=\"text-gray-400 mt-2 md:mt-5 md:px-0 px-10 md:text-2xl\">Try out the app for yourself to see them all!\n        </p>\n        <a href=\"#\"\n            class=\"inline-flex mt-12 justify-center md:mt-8 items-center w-full px-8 py-5 md:mb-6 text-xl font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-500 hover:to-indigo-700 sm:mb-0 md:w-auto hover:bg-indigo-600 md:rounded-full\">\n            <svg class=\"w-5 h-5 mr-2 fill-current\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n                <g fill=\"none\" stroke=\"none\">\n                    <path\n                        d=\"M6 12l5.485-5.485A12 12 0 0 1 19.971 3H21v1.029a12 12 0 0 1-3.515 8.486L12 18m-6-6l6 6m-6-6L3 9l.828-.828A4 4 0 0 1 6.657 7H11l-5 5zm6 6l3 3 .828-.828A4 4 0 0 0 17 17.343V13l-5 5zm-4.5-4.5l-2.379 2.379A7.242 7.242 0 0 0 3 21a7.243 7.243 0 0 0 5.121-2.121L10.5 16.5\"\n                        stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                    <path d=\"M16.778 7.916a.5.5 0 1 1-.556-.832.5.5 0 0 1 .556.832z\" fill=\"#212121\"\n                        stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                </g>\n            </svg>\n            <span>Try the App for FREE</span>\n        </a>\n    </div>\n</section>"
+  }
+}

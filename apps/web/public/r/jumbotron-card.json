@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "jumbotron-card",
+  "type": "registry:ui",
+  "title": "Jumbotron card",
+  "description": "Jumbotron card - Créé par @sienna sur TailwindFlex.",
+  "author": "@sienna (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/jumbotron-card.tsx",
+      "content": "/**\n * Component: Jumbotron card\n * Author: @sienna (https://tailwindflex.com/@sienna)\n * Source: https://tailwindflex.com/@sienna/jumbotron-card\n * Attribution: Créé par @sienna sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function JumbotronCard() {\n  return (\n    <div>\n    <div className=\"w-full flex justify-center mt-16\">\n        <div className=\"bg-gray-800 relative rounded-2xl -mx-4 p-8 space-y-8 max-w-4xl text-center\">\n            <div className=\"space-y-4\">\n                <h2 className=\"text-white font-heading font-bold text-2xl\">\n                    Title of card\n                </h2>\n    \n                <p className=\"text-xl text-white\">\n                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\n                    deserunt mollit anim id est laborum.\n                </p>\n            </div>\n    \n            <a className=\"inline-flex items-center justify-center font-medium tracking-tight rounded-lg border transition hover105 hover1 focus focus2 focus2 focus h-11 px-4 text-lg text-white shadow focus border-transparent bg-yellow-500 hover400 focus600 focus600\"\n                href=\"#\">\n                <span>Check out our plugins →</span>\n            </a>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sienna",
+    "authorUrl": "https://tailwindflex.com/@sienna",
+    "sourceUrl": "https://tailwindflex.com/@sienna/jumbotron-card",
+    "mention": "Créé par @sienna sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full flex justify-center mt-16\">\n    <div class=\"bg-gray-800 relative rounded-2xl -mx-4 p-8 space-y-8 max-w-4xl text-center\">\n        <div class=\"space-y-4\">\n            <h2 class=\"text-white font-heading font-bold text-2xl\">\n                Title of card\n            </h2>\n\n            <p class=\"text-xl text-white\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\n                deserunt mollit anim id est laborum.\n            </p>\n        </div>\n\n        <a class=\"inline-flex items-center justify-center font-medium tracking-tight rounded-lg border transition hover:scale-105 hover:-rotate-1 focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset h-11 px-4 text-lg text-white shadow focus:ring-white border-transparent bg-yellow-500 hover:bg-yellow-400 focus:bg-yellow-600 focus:ring-offset-yellow-600\"\n            href=\"#\">\n            <span>Check out our plugins →</span>\n        </a>\n    </div>\n</div>"
+  }
+}

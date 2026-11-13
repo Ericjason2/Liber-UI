@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animated-text-rotator-smooth-css-text-transition-effects",
+  "type": "registry:ui",
+  "title": "Animated Text Rotator | Smooth Tailwindcss Text Transition Effects",
+  "description": "Animated Text Rotator | Smooth Tailwindcss Text Transition Effects - Créé par @homayunmmdy sur TailwindFlex.",
+  "author": "@homayunmmdy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/animated-text-rotator-smooth-css-text-transition-effects.tsx",
+      "content": "/**\n * Component: Animated Text Rotator | Smooth Tailwindcss Text Transition Effects\n * Author: @homayunmmdy (https://tailwindflex.com/@homayunmmdy)\n * Source: https://tailwindflex.com/@homayunmmdy/animated-text-rotator-smooth-css-text-transition-effects\n * Attribution: Créé par @homayunmmdy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AnimatedTextRotatorSmoothCssTextTransitionEffects() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<body \\n  class=\\\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\\\"\\n>\\n  <div class=\\\"text-rotate-container relative h-32 flex items-center justify-center w-full max-w-4xl\\\">\\n    <div class=\\\"text-item text-5xl font-bold text-black dark:text-white\\\">\\n      Welcome to Our Platform\\n    </div>\\n    <div class=\\\"text-item text-5xl font-bold text-blue-400\\\">\\n      Build Amazing Things\\n    </div>\\n    <div class=\\\"text-item text-5xl font-bold text-purple-400\\\">\\n      Transform Your Ideas\\n    </div>\\n    <div class=\\\"text-item text-5xl font-bold text-green-400\\\">\\n      Create Without Limits\\n    </div>\\n    <div class=\\\"text-item text-5xl font-bold text-orange-400\\\">\\n      Innovate Every Day\\n    </div>\\n  </div>\\n\\n\\n</body>\\n\\n<style>\\n@keyframes textRotate {\\n  0%, 5% {\\n    opacity: 0;\\n    transform: translateY(20px);\\n  }\\n  10%, 25% {\\n    opacity: 1;\\n    transform: translateY(0);\\n  }\\n  30%, 100% {\\n    opacity: 0;\\n    transform: translateY(-20px);\\n  }\\n}\\n\\n.text-item {\\n  animation: textRotate 20s infinite linear;\\n  position: absolute;\\n  width: 100%;\\n  text-align: center;\\n  opacity: 0;\\n}\\n\\n.text-item:nth-child(1) { animation-delay: 0s; }\\n.text-item:nth-child(2) { animation-delay: 4s; }\\n.text-item:nth-child(3) { animation-delay: 8s; }\\n.text-item:nth-child(4) { animation-delay: 12s; }\\n.text-item:nth-child(5) { animation-delay: 16s; }\\n\\n.text-rotate-container:hover .text-item {\\n  animation-play-state: paused;\\n}\\n</style>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@homayunmmdy",
+    "authorUrl": "https://tailwindflex.com/@homayunmmdy",
+    "sourceUrl": "https://tailwindflex.com/@homayunmmdy/animated-text-rotator-smooth-css-text-transition-effects",
+    "mention": "Créé par @homayunmmdy sur TailwindFlex",
+    "rawHtml": "<body \n  class=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\"\n>\n  <div class=\"text-rotate-container relative h-32 flex items-center justify-center w-full max-w-4xl\">\n    <div class=\"text-item text-5xl font-bold text-black dark:text-white\">\n      Welcome to Our Platform\n    </div>\n    <div class=\"text-item text-5xl font-bold text-blue-400\">\n      Build Amazing Things\n    </div>\n    <div class=\"text-item text-5xl font-bold text-purple-400\">\n      Transform Your Ideas\n    </div>\n    <div class=\"text-item text-5xl font-bold text-green-400\">\n      Create Without Limits\n    </div>\n    <div class=\"text-item text-5xl font-bold text-orange-400\">\n      Innovate Every Day\n    </div>\n  </div>\n\n\n</body>\n\n<style>\n@keyframes textRotate {\n  0%, 5% {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  10%, 25% {\n    opacity: 1;\n    transform: translateY(0);\n  }\n  30%, 100% {\n    opacity: 0;\n    transform: translateY(-20px);\n  }\n}\n\n.text-item {\n  animation: textRotate 20s infinite linear;\n  position: absolute;\n  width: 100%;\n  text-align: center;\n  opacity: 0;\n}\n\n.text-item:nth-child(1) { animation-delay: 0s; }\n.text-item:nth-child(2) { animation-delay: 4s; }\n.text-item:nth-child(3) { animation-delay: 8s; }\n.text-item:nth-child(4) { animation-delay: 12s; }\n.text-item:nth-child(5) { animation-delay: 16s; }\n\n.text-rotate-container:hover .text-item {\n  animation-play-state: paused;\n}\n</style>"
+  }
+}

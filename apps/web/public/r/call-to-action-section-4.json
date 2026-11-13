@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-to-action-section-4",
+  "type": "registry:ui",
+  "title": "Call to Action section",
+  "description": "Call to Action section - Créé par @curtis-bickler sur TailwindFlex.",
+  "author": "@curtis-bickler (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-to-action-section-4.tsx",
+      "content": "/**\n * Component: Call to Action section\n * Author: @curtis-bickler (https://tailwindflex.com/@curtis-bickler)\n * Source: https://tailwindflex.com/@curtis-bickler/call-to-action-section-4\n * Attribution: Créé par @curtis-bickler sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToActionSection4() {\n  return (\n    <div>\n    <div className=\"relative overflow-hidden border-b w-full dark700 dark900\">\n        <div className=\"px-6 py-8 sm6 sm20\">\n            <div className=\"max-w-2xl mx-auto text-center\">\n                <h2 className=\"text-base font-semibold text-yellow-400 dark300 tracking-wide uppercase\">Unlock Your Potential\n                Today</h2>\n              <p\n                className=\"mt-1 text-4xl font-extrabold text-gray-900 dark100 sm5xl sm lg6xl\">\n                Discover\n                <span className=\"px-2 py-1 relative inline-block\"><svg className=\"stroke-current bottom-0 absolute text-yellow-300 -translate-x-2\" viewBox=\"0 0 410 18\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6 6.4c16.8 16.8 380.8-11.2 397.6 5.602\" strokeWidth=\"12\" fill=\"none\" fillRule=\"evenodd\" strokeLinecap=\"round\"></path></svg><span className=\"relative\">Your True Potential</span></span>\n              </p>\n              <p className=\"max-w-3xl mt-5 mx-auto text-xl text-gray-500 dark300\">Take the leap and unleash your\n                capabilities. Experience\n                one week of unlimited access on us and witness the transformation.</p>\n              <a href=\"#\"\n                className=\"inline-block px-6 py-3 mt-8 bg-black dark500 text-white font-semibold rounded hover700 dark600\">\n                Get Involved\n              </a>\n              <a href=\"#\"\n                className=\"inline-block px-6 py-3 mt-8 bg-yellow-500 dark500 text-white font-semibold rounded hover700 dark600\">\n                Donate Today\n              </a>\n            </div>\n        </div>\n        <svg viewBox=\"0 0 1024 1024\"\n            className=\"absolute left-1/2 z-10 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image(closest-side,white,transparent)]\"\n            aria-hidden=\"true\">\n            <circle cx=\"512\" cy=\"512\" r=\"512\" fill=\"url(#827591b1-ce8c-4110-b064-7cb85a0b1217)\" fill-opacity=\"0.7\">\n            </circle>\n            <defs>\n                <radialGradient id=\"827591b1-ce8c-4110-b064-7cb85a0b1217\">\n                    <stop stopColor=\"#3b82f6\"></stop>\n                    <stop offset=\"1\" stopColor=\"#1d4ed8\"></stop>\n                </radialGradient>\n            </defs>\n        </svg>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@curtis-bickler",
+    "authorUrl": "https://tailwindflex.com/@curtis-bickler",
+    "sourceUrl": "https://tailwindflex.com/@curtis-bickler/call-to-action-section-4",
+    "mention": "Créé par @curtis-bickler sur TailwindFlex",
+    "rawHtml": "<div class=\"relative overflow-hidden border-b w-full dark:border-gray-700 dark:bg-gray-900\">\n    <div class=\"px-6 py-8 sm:px-6 sm:py-20\">\n        <div class=\"max-w-2xl mx-auto text-center\">\n            <h2 class=\"text-base font-semibold text-yellow-400 dark:text-pink-300 tracking-wide uppercase\">Unlock Your Potential\n            Today</h2>\n          <p\n            class=\"mt-1 text-4xl font-extrabold text-gray-900 dark:text-gray-100 sm:text-5xl sm:tracking-tight lg:text-6xl\">\n            Discover\n            <span class=\"px-2 py-1 relative inline-block\"><svg class=\"stroke-current bottom-0 absolute text-yellow-300 -translate-x-2\" viewBox=\"0 0 410 18\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6 6.4c16.8 16.8 380.8-11.2 397.6 5.602\" stroke-width=\"12\" fill=\"none\" fill-rule=\"evenodd\" stroke-linecap=\"round\"></path></svg><span class=\"relative\">Your True Potential</span></span>\n          </p>\n          <p class=\"max-w-3xl mt-5 mx-auto text-xl text-gray-500 dark:text-gray-300\">Take the leap and unleash your\n            capabilities. Experience\n            one week of unlimited access on us and witness the transformation.</p>\n          <a href=\"#\"\n            class=\"inline-block px-6 py-3 mt-8 bg-black dark:bg-yellow-500 text-white font-semibold rounded hover:bg-blue-700 dark:hover:bg-blue-600\">\n            Get Involved\n          </a>\n          <a href=\"#\"\n            class=\"inline-block px-6 py-3 mt-8 bg-yellow-500 dark:bg-yellow-500 text-white font-semibold rounded hover:bg-blue-700 dark:hover:bg-blue-600\">\n            Donate Today\n          </a>\n        </div>\n    </div>\n    <svg viewBox=\"0 0 1024 1024\"\n        class=\"absolute left-1/2 z-10 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]\"\n        aria-hidden=\"true\">\n        <circle cx=\"512\" cy=\"512\" r=\"512\" fill=\"url(#827591b1-ce8c-4110-b064-7cb85a0b1217)\" fill-opacity=\"0.7\">\n        </circle>\n        <defs>\n            <radialGradient id=\"827591b1-ce8c-4110-b064-7cb85a0b1217\">\n                <stop stop-color=\"#3b82f6\"></stop>\n                <stop offset=\"1\" stop-color=\"#1d4ed8\"></stop>\n            </radialGradient>\n        </defs>\n    </svg>\n</div>"
+  }
+}

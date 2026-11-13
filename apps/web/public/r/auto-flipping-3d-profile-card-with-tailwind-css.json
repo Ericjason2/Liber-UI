@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "auto-flipping-3d-profile-card-with-tailwind-css",
+  "type": "registry:ui",
+  "title": "Auto-Flipping 3D Profile Card with Tailwind CSS",
+  "description": "Auto-Flipping 3D Profile Card with Tailwind CSS - Créé par @irahoza-daniel sur TailwindFlex.",
+  "author": "@irahoza-daniel (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/auto-flipping-3d-profile-card-with-tailwind-css.tsx",
+      "content": "/**\n * Component: Auto-Flipping 3D Profile Card with Tailwind CSS\n * Author: @irahoza-daniel (https://tailwindflex.com/@irahoza-daniel)\n * Source: https://tailwindflex.com/@irahoza-daniel/auto-flipping-3d-profile-card-with-tailwind-css\n * Attribution: Créé par @irahoza-daniel sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AutoFlipping3dProfileCardWithTailwindCss() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n  <title>Auto Profile Flip Card</title>\\n  \\n  <style>\\n    .perspective {\\n      perspective: 1000px;\\n    }\\n    .preserve-3d {\\n      transform-style: preserve-3d;\\n    }\\n    .backface-hidden {\\n      backface-visibility: hidden;\\n    }\\n    .rotate-y-180 {\\n      transform: rotateY(180deg);\\n    }\\n    .flip-card-inner {\\n      transition: transform 0.8s;\\n      transform-style: preserve-3d;\\n    }\\n  </style>\\n</head>\\n<body class=\\\"bg-gray-200 flex items-center justify-center min-h-screen\\\">\\n\\n  <div class=\\\"w-80 h-96 perspective\\\">\\n    <div id=\\\"flipCard\\\" class=\\\"relative w-full h-full flip-card-inner\\\">\\n      \\n      <!-- Front (Profile Info) -->\\n      <div class=\\\"absolute w-full h-full backface-hidden bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-6\\\">\\n        <img src=\\\"https://randomuser.me/api/portraits/men/75.jpg\\\" alt=\\\"Profile\\\" class=\\\"w-24 h-24 rounded-full mb-4 border-4 border-blue-500\\\" />\\n        <h2 class=\\\"text-xl font-semibold text-gray-800\\\">John Doe</h2>\\n        <p class=\\\"text-gray-500\\\">Full Stack Developer</p>\\n      </div>\\n\\n      <!-- Back (Bio or Contact Info) -->\\n      <div class=\\\"absolute w-full h-full rotate-y-180 backface-hidden bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-6\\\">\\n        <h3 class=\\\"text-lg font-semibold text-gray-800 mb-2\\\">Contact Me</h3>\\n        <p class=\\\"text-gray-600 text-center mb-1\\\">📧 john.doe@example.com</p>\\n        <p class=\\\"text-gray-600 text-center mb-1\\\">📞 +123 456 7890</p>\\n        <p class=\\\"text-gray-600 text-center\\\">🌍 johndoe.dev</p>\\n      </div>\\n\\n    </div>\\n  </div>\\n\\n  \\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@irahoza-daniel",
+    "authorUrl": "https://tailwindflex.com/@irahoza-daniel",
+    "sourceUrl": "https://tailwindflex.com/@irahoza-daniel/auto-flipping-3d-profile-card-with-tailwind-css",
+    "mention": "Créé par @irahoza-daniel sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>Auto Profile Flip Card</title>\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n  <style>\n    .perspective {\n      perspective: 1000px;\n    }\n    .preserve-3d {\n      transform-style: preserve-3d;\n    }\n    .backface-hidden {\n      backface-visibility: hidden;\n    }\n    .rotate-y-180 {\n      transform: rotateY(180deg);\n    }\n    .flip-card-inner {\n      transition: transform 0.8s;\n      transform-style: preserve-3d;\n    }\n  </style>\n</head>\n<body class=\"bg-gray-200 flex items-center justify-center min-h-screen\">\n\n  <div class=\"w-80 h-96 perspective\">\n    <div id=\"flipCard\" class=\"relative w-full h-full flip-card-inner\">\n      \n      <!-- Front (Profile Info) -->\n      <div class=\"absolute w-full h-full backface-hidden bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-6\">\n        <img src=\"https://randomuser.me/api/portraits/men/75.jpg\" alt=\"Profile\" class=\"w-24 h-24 rounded-full mb-4 border-4 border-blue-500\" />\n        <h2 class=\"text-xl font-semibold text-gray-800\">John Doe</h2>\n        <p class=\"text-gray-500\">Full Stack Developer</p>\n      </div>\n\n      <!-- Back (Bio or Contact Info) -->\n      <div class=\"absolute w-full h-full rotate-y-180 backface-hidden bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-6\">\n        <h3 class=\"text-lg font-semibold text-gray-800 mb-2\">Contact Me</h3>\n        <p class=\"text-gray-600 text-center mb-1\">📧 john.doe@example.com</p>\n        <p class=\"text-gray-600 text-center mb-1\">📞 +123 456 7890</p>\n        <p class=\"text-gray-600 text-center\">🌍 johndoe.dev</p>\n      </div>\n\n    </div>\n  </div>\n\n  <script>\n    let flipped = false;\n    setInterval(() => {\n      const card = document.getElementById('flipCard');\n      flipped = !flipped;\n      card.style.transform = flipped ? 'rotateY(180deg)' : 'rotateY(0deg)';\n    }, 3000); // Flip every 3 seconds\n  </script>\n\n</body>\n</html>"
+  }
+}

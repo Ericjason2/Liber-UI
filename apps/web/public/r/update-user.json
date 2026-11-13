@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "update-user",
+  "type": "registry:ui",
+  "title": "update user",
+  "description": "update user - Créé par @seth-dridi sur TailwindFlex.",
+  "author": "@seth-dridi (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/update-user.tsx",
+      "content": "/**\n * Component: update user\n * Author: @seth-dridi (https://tailwindflex.com/@seth-dridi)\n * Source: https://tailwindflex.com/@seth-dridi/update-user\n * Attribution: Créé par @seth-dridi sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function UpdateUser() {\n  return (\n    <div>\n    <div className=\"container mx-auto p-4\">\n      \n      <h1 className=\"text-3xl font-bold text-[black] mb-6\">Update User</h1>\n    \n      <form className=\"grid grid-cols-1 gap-6\">\n        \n        <div className=\"p-2\">\n          <input type=\"text\" id=\"userName\" name=\"userName\" placeholder=\"Username\" className=\"block w-full rounded-md border-gray-300 shadow-sm focus[#8c0327] focus[#8c0327] focus50 p-2\" style=\"background-color: #f6f6f6;\" />\n        </div>\n    \n        \n    \n        \n        <div className=\"p-2 grid grid-cols-1 md2 gap-6\">\n          \n          <div>\n            <textarea id=\"bio\" name=\"bio\" rows=\"3\" placeholder=\"User Biography\" className=\"block w-full h-48 rounded-md border-gray-300 shadow-sm focus[#8c0327] focus[#8c0327] focus50 p-2\" style=\"background-color: #f6f6f6;\"></textarea>\n          </div>\n    \n          \n          <div>\n            <label htmlFor=\"avatar\" className=\"block w-full h-48 border-2 border-dashed border-gray-300 rounded-md cursor-pointer flex flex-col items-center justify-center bg-[#f6f6f6] hover50\">\n              <div className=\"text-center\">\n                <div className=\"mb-2\">\n                  <button type=\"button\" className=\"bg-[#8c0327] hover[#6b0220] text-white rounded-full py-2 px-4\">Select from the computer</button>\n                </div>\n                <p className=\"text-gray-500\">or drag photo here</p>\n                <p className=\"text-gray-500 text-sm mt-1\">PNG, JPG, SVG</p>\n              </div>\n            </label>\n            <input id=\"avatar\" name=\"avatar\" type=\"file\" accept=\"image/*\" className=\"sr-only\" />\n          </div>\n        </div>\n    \n        \n        <div className=\"p-2 grid grid-cols-1 md2 gap-6\">\n          \n          <div>\n            <input type=\"text\" id=\"firstName\" name=\"firstName\" placeholder=\"First name\" className=\"block w-full rounded-md border-gray-300 shadow-sm focus[#8c0327] focus[#8c0327] focus50 p-2\" style=\"background-color: #f6f6f6;\" />\n          </div>\n    \n          \n          <div>\n            <input type=\"text\" id=\"lastName\" name=\"lastName\" placeholder=\"Last name\" className=\"block w-full rounded-md border-gray-300 shadow-sm focus[#8c0327] focus[#8c0327] focus50 p-2\" style=\"background-color: #f6f6f6;\" />\n          </div>\n        </div>\n    \n        \n        <div className=\"p-2\">\n          <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"Email\" className=\"block w-full rounded-md border-gray-300 shadow-sm focus[#8c0327] focus[#8c0327] focus50 p-2\" style=\"background-color: #f6f6f6;\" />\n        </div>\n    \n        \n        <div className=\"p-2\">\n          <input type=\"password\" id=\"currentPassword\" name=\"currentPassword\" placeholder=\"Current password\" className=\"block w-full rounded-md border-gray-300 shadow-sm focus[#8c0327] focus[#8c0327] focus50 p-2\" style=\"background-color: #f6f6f6;\" />\n        </div>\n        \n        \n        <div className=\"p-2 grid grid-cols-1 md2 gap-6\">\n          \n          <div>\n            <input type=\"password\" id=\"newPassword\" name=\"newPassword\" placeholder=\"New password\" className=\"block w-full rounded-md border-gray-300 shadow-sm focus[#8c0327] focus[#8c0327] focus50 p-2\" style=\"background-color: #f6f6f6;\" />\n          </div>\n    \n          \n          <div>\n            <input type=\"password\" id=\"confirmPassword\" name=\"confirmPassword\" placeholder=\"Confirmation password\" className=\"block w-full rounded-md border-gray-300 shadow-sm focus[#8c0327] focus[#8c0327] focus50 p-2\" style=\"background-color: #f6f6f6;\" />\n          </div>\n        </div>\n        \n    \n        \n        <div className=\"col-span-full mt-6 p-2\">\n          <button type=\"submit\" className=\"block w-full bg-[#8c0327] hover[#6b0220] text-white font-bold py-3 px-4 rounded-full\">\n            Update user\n          </button>\n        </div>\n      </form>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@seth-dridi",
+    "authorUrl": "https://tailwindflex.com/@seth-dridi",
+    "sourceUrl": "https://tailwindflex.com/@seth-dridi/update-user",
+    "mention": "Créé par @seth-dridi sur TailwindFlex",
+    "rawHtml": "<div class=\"container mx-auto p-4\">\n  <!-- Page Title -->\n  <h1 class=\"text-3xl font-bold text-[black] mb-6\">Update User</h1>\n\n  <form class=\"grid grid-cols-1 gap-6\">\n    <!-- Username -->\n    <div class=\"p-2\">\n      <input type=\"text\" id=\"userName\" name=\"userName\" placeholder=\"Username\" class=\"block w-full rounded-md border-gray-300 shadow-sm focus:border-[#8c0327] focus:ring-[#8c0327] focus:ring-opacity-50 p-2\" style=\"background-color: #f6f6f6;\">\n    </div>\n\n    \n\n    <!-- bio and Image Upload -->\n    <div class=\"p-2 grid grid-cols-1 md:grid-cols-2 gap-6\">\n      <!-- Bio -->\n      <div>\n        <textarea id=\"bio\" name=\"bio\" rows=\"3\" placeholder=\"User Biography\" class=\"block w-full h-48 rounded-md border-gray-300 shadow-sm focus:border-[#8c0327] focus:ring-[#8c0327] focus:ring-opacity-50 p-2\" style=\"background-color: #f6f6f6;\"></textarea>\n      </div>\n\n      <!-- Image Upload -->\n      <div>\n        <label for=\"avatar\" class=\"block w-full h-48 border-2 border-dashed border-gray-300 rounded-md cursor-pointer flex flex-col items-center justify-center bg-[#f6f6f6] hover:bg-gray-50\">\n          <div class=\"text-center\">\n            <div class=\"mb-2\">\n              <button type=\"button\" class=\"bg-[#8c0327] hover:bg-[#6b0220] text-white rounded-full py-2 px-4\">Select from the computer</button>\n            </div>\n            <p class=\"text-gray-500\">or drag photo here</p>\n            <p class=\"text-gray-500 text-sm mt-1\">PNG, JPG, SVG</p>\n          </div>\n        </label>\n        <input id=\"avatar\" name=\"avatar\" type=\"file\" accept=\"image/*\" class=\"sr-only\">\n      </div>\n    </div>\n\n    <!-- User First name  and Last name -->\n    <div class=\"p-2 grid grid-cols-1 md:grid-cols-2 gap-6\">\n      <!-- User First Name -->\n      <div>\n        <input type=\"text\" id=\"firstName\" name=\"firstName\" placeholder=\"First name\" class=\"block w-full rounded-md border-gray-300 shadow-sm focus:border-[#8c0327] focus:ring-[#8c0327] focus:ring-opacity-50 p-2\" style=\"background-color: #f6f6f6;\">\n      </div>\n\n      <!-- User Last name -->\n      <div>\n        <input type=\"text\" id=\"lastName\" name=\"lastName\" placeholder=\"Last name\" class=\"block w-full rounded-md border-gray-300 shadow-sm focus:border-[#8c0327] focus:ring-[#8c0327] focus:ring-opacity-50 p-2\" style=\"background-color: #f6f6f6;\">\n      </div>\n    </div>\n\n    <!-- Email -->\n    <div class=\"p-2\">\n      <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"Email\" class=\"block w-full rounded-md border-gray-300 shadow-sm focus:border-[#8c0327] focus:ring-[#8c0327] focus:ring-opacity-50 p-2\" style=\"background-color: #f6f6f6;\">\n    </div>\n\n    <!-- Current password -->\n    <div class=\"p-2\">\n      <input type=\"password\" id=\"currentPassword\" name=\"currentPassword\" placeholder=\"Current password\" class=\"block w-full rounded-md border-gray-300 shadow-sm focus:border-[#8c0327] focus:ring-[#8c0327] focus:ring-opacity-50 p-2\" style=\"background-color: #f6f6f6;\">\n    </div>\n    \n    <!-- New password and Confirm password -->\n    <div class=\"p-2 grid grid-cols-1 md:grid-cols-2 gap-6\">\n      <!-- New password -->\n      <div>\n        <input type=\"password\" id=\"newPassword\" name=\"newPassword\" placeholder=\"New password\" class=\"block w-full rounded-md border-gray-300 shadow-sm focus:border-[#8c0327] focus:ring-[#8c0327] focus:ring-opacity-50 p-2\" style=\"background-color: #f6f6f6;\">\n      </div>\n\n      <!-- User Last name -->\n      <div>\n        <input type=\"password\" id=\"confirmPassword\" name=\"confirmPassword\" placeholder=\"Confirmation password\" class=\"block w-full rounded-md border-gray-300 shadow-sm focus:border-[#8c0327] focus:ring-[#8c0327] focus:ring-opacity-50 p-2\" style=\"background-color: #f6f6f6;\">\n      </div>\n    </div>\n    \n\n    <!-- Registration Button -->\n    <div class=\"col-span-full mt-6 p-2\">\n      <button type=\"submit\" class=\"block w-full bg-[#8c0327] hover:bg-[#6b0220] text-white font-bold py-3 px-4 rounded-full\">\n        Update user\n      </button>\n    </div>\n  </form>\n</div>"
+  }
+}

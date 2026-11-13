@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-3",
+  "type": "registry:ui",
+  "title": "Button",
+  "description": "Button - Créé par @akram6t sur TailwindFlex.",
+  "author": "@akram6t (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button-3.tsx",
+      "content": "/**\n * Component: Button\n * Author: @akram6t (https://tailwindflex.com/@akram6t)\n * Source: https://tailwindflex.com/@akram6t/button-3\n * Attribution: Créé par @akram6t sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Button3() {\n  return (\n    <div>\n    <button className=\"relative inline-block py-[15px] px-[30px] text-[#00fff2] text-2xl no-underline uppercase overflow-hidden transition-all duration-500 tracking-[4px] border-none bg-transparent cursor-pointer hover[#00fff2] hover[#050801] hover[0_0_5px_#00fff2,0_0_25px_#00fff2,0_0_50px_#00fff2,0_0_200px_#00fff2] hover\">\n            <span className=\"absolute block top-0 left-[-100%] w-full h-[2px] bg-gradient-to-r from-transparent to-[#00fff2] animate-btn-anim1\"></span>\n            <span className=\"absolute block top-[-100%] right-0 w-[2px] h-full bg-gradient-to-b from-transparent to-[#00fff2] animate-btn-anim2\"></span>\n            <span className=\"absolute block bottom-0 right-[-100%] w-full h-[2px] bg-gradient-to-l from-transparent to-[#00fff2] animate-btn-anim3\"></span>\n            <span className=\"absolute block bottom-[-100%] left-0 w-[2px] h-full bg-gradient-to-t from-transparent to-[#00fff2] animate-btn-anim4\"></span>\n            Neon Button\n        </button>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@akram6t",
+    "authorUrl": "https://tailwindflex.com/@akram6t",
+    "sourceUrl": "https://tailwindflex.com/@akram6t/button-3",
+    "mention": "Créé par @akram6t sur TailwindFlex",
+    "rawHtml": "<button class=\"relative inline-block py-[15px] px-[30px] text-[#00fff2] text-2xl no-underline uppercase overflow-hidden transition-all duration-500 tracking-[4px] border-none bg-transparent cursor-pointer hover:bg-[#00fff2] hover:text-[#050801] hover:shadow-[0_0_5px_#00fff2,0_0_25px_#00fff2,0_0_50px_#00fff2,0_0_200px_#00fff2] hover:neon-button-reflect\">\n        <span class=\"absolute block top-0 left-[-100%] w-full h-[2px] bg-gradient-to-r from-transparent to-[#00fff2] animate-btn-anim1\"></span>\n        <span class=\"absolute block top-[-100%] right-0 w-[2px] h-full bg-gradient-to-b from-transparent to-[#00fff2] animate-btn-anim2\"></span>\n        <span class=\"absolute block bottom-0 right-[-100%] w-full h-[2px] bg-gradient-to-l from-transparent to-[#00fff2] animate-btn-anim3\"></span>\n        <span class=\"absolute block bottom-[-100%] left-0 w-[2px] h-full bg-gradient-to-t from-transparent to-[#00fff2] animate-btn-anim4\"></span>\n        Neon Button\n    </button>"
+  }
+}

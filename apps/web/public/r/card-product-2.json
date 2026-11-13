@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-product-2",
+  "type": "registry:ui",
+  "title": "Card Product",
+  "description": "Card Product - Créé par @ronny-camacho sur TailwindFlex.",
+  "author": "@ronny-camacho (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-product-2.tsx",
+      "content": "/**\n * Component: Card Product\n * Author: @ronny-camacho (https://tailwindflex.com/@ronny-camacho)\n * Source: https://tailwindflex.com/@ronny-camacho/card-product-2\n * Attribution: Créé par @ronny-camacho sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardProduct2() {\n  return (\n    <div>\n    <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\" />\n    \n    <div id=\"grid-container\" className=\"grid grid-cols-1 sm2 lg3 xl4 gap-6 p-6 bg-gray-50 dark[#0f0f0f]\">\n      \n      <div className=\"group bg-white dark[#1a1a1a] rounded-3xl border border-gray-100 dark800 overflow-hidden hover2xl hover500/10 transition-all duration-500 flex flex-col h-full max-w-[300px] mx-auto w-full relative\">\n        \n        <div className=\"absolute top-4 left-4 z-40 bg-red-600 text-white text-[11px] font-black px-3 py-1 rounded-full shadow-xl letter tracking-wider\">\n          OFERTA\n        </div>\n    \n        <div className=\"relative h-72 w-full overflow-hidden bg-gray-50 dark[#111111]\">\n          <img src=\"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80\"\n               alt=\"Smartphone\"\n               className=\"w-full h-full object-cover group-hover110 transition-transform duration-1000 ease-in-out\" />\n          <div className=\"absolute inset-0 bg-black/0 group-hover/5 transition-colors duration-300\"></div>\n        </div>\n    \n        <div className=\"p-6 flex flex-col flex-grow\">\n          \n          <h3 className=\"font-bold text-gray-900 dark100 text-xl leading-tight mb-2 group-hover600 dark500 transition-colors\">\n            Redmi Note 13 Pro\n          </h3>\n    \n          <div className=\"flex items-center gap-1.5 mb-4\">\n            <div className=\"flex text-amber-400\">\n              <span className=\"material-icons !text-lg\">star</span>\n              <span className=\"material-icons !text-lg\">star</span>\n              <span className=\"material-icons !text-lg\">star</span>\n              <span className=\"material-icons !text-lg\">star</span>\n              <span className=\"material-icons !text-lg\">star_half</span>\n            </div>\n            <span className=\"text-xs text-gray-400 dark500 font-semibold\">(128 reseñas)</span>\n          </div>\n    \n          <p className=\"text-sm text-gray-500 dark400 leading-relaxed line-clamp-2 mb-6\">\n            Cámara de 200MP, pantalla AMOLED de 120Hz y la potencia que necesitas para tu día a día.\n          </p>\n    \n          <div className=\"mt-auto pt-5 border-t border-gray-100 dark800/50 flex justify-between items-end\">\n            <div className=\"flex flex-col\">\n              <span className=\"text-xs text-gray-400 dark500 line-through font-medium mb-1\">$350.00</span>\n              <div className=\"flex items-center gap-2\">\n                <span className=\"text-3xl font-black text-gray-900 dark tracking-tighter\">$299.99</span>\n                <span className=\"text-[11px] font-bold text-emerald-600 bg-emerald-50 dark500/10 dark400 px-2 py-0.5 rounded-lg\">\n                  -14%\n                </span>\n              </div>\n            </div>\n    \n            <button className=\"h-12 w-12 bg-orange-600 hover500 text-white rounded-2xl shadow-lg shadow-orange-600/30 transition-all active90 flex items-center justify-center group/btn\">\n              <span className=\"material-icons !text-2xl group-hover/btn12 transition-transform\">shopping_cart</span>\n            </button>\n          </div>\n        </div>\n      </div>\n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ronny-camacho",
+    "authorUrl": "https://tailwindflex.com/@ronny-camacho",
+    "sourceUrl": "https://tailwindflex.com/@ronny-camacho/card-product-2",
+    "mention": "Créé par @ronny-camacho sur TailwindFlex",
+    "rawHtml": "<link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n\n<div id=\"grid-container\" class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-6 bg-gray-50 dark:bg-[#0f0f0f]\">\n  \n  <div class=\"group bg-white dark:bg-[#1a1a1a] rounded-3xl border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 flex flex-col h-full max-w-[300px] mx-auto w-full relative\">\n    \n    <div class=\"absolute top-4 left-4 z-40 bg-red-600 text-white text-[11px] font-black px-3 py-1 rounded-full shadow-xl letter tracking-wider\">\n      OFERTA\n    </div>\n\n    <div class=\"relative h-72 w-full overflow-hidden bg-gray-50 dark:bg-[#111111]\">\n      <img src=\"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80\"\n           alt=\"Smartphone\"\n           class=\"w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out\">\n      <div class=\"absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300\"></div>\n    </div>\n\n    <div class=\"p-6 flex flex-col flex-grow\">\n      \n      <h3 class=\"font-bold text-gray-900 dark:text-gray-100 text-xl leading-tight mb-2 group-hover:text-orange-600 dark:group-hover:text-orange-500 transition-colors\">\n        Redmi Note 13 Pro\n      </h3>\n\n      <div class=\"flex items-center gap-1.5 mb-4\">\n        <div class=\"flex text-amber-400\">\n          <span class=\"material-icons !text-lg\">star</span>\n          <span class=\"material-icons !text-lg\">star</span>\n          <span class=\"material-icons !text-lg\">star</span>\n          <span class=\"material-icons !text-lg\">star</span>\n          <span class=\"material-icons !text-lg\">star_half</span>\n        </div>\n        <span class=\"text-xs text-gray-400 dark:text-gray-500 font-semibold\">(128 reseñas)</span>\n      </div>\n\n      <p class=\"text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-2 mb-6\">\n        Cámara de 200MP, pantalla AMOLED de 120Hz y la potencia que necesitas para tu día a día.\n      </p>\n\n      <div class=\"mt-auto pt-5 border-t border-gray-100 dark:border-gray-800/50 flex justify-between items-end\">\n        <div class=\"flex flex-col\">\n          <span class=\"text-xs text-gray-400 dark:text-gray-500 line-through font-medium mb-1\">$350.00</span>\n          <div class=\"flex items-center gap-2\">\n            <span class=\"text-3xl font-black text-gray-900 dark:text-white tracking-tighter\">$299.99</span>\n            <span class=\"text-[11px] font-bold text-emerald-600 bg-emerald-50 dark:bg-emerald-500/10 dark:text-emerald-400 px-2 py-0.5 rounded-lg\">\n              -14%\n            </span>\n          </div>\n        </div>\n\n        <button class=\"h-12 w-12 bg-orange-600 hover:bg-orange-500 text-white rounded-2xl shadow-lg shadow-orange-600/30 transition-all active:scale-90 flex items-center justify-center group/btn\">\n          <span class=\"material-icons !text-2xl group-hover/btn:rotate-12 transition-transform\">shopping_cart</span>\n        </button>\n      </div>\n    </div>\n  </div>\n\n</div>"
+  }
+}

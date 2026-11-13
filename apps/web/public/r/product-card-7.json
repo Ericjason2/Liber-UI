@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "product-card-7",
+  "type": "registry:ui",
+  "title": "Product card",
+  "description": "Product card - Créé par @anum-shahana sur TailwindFlex.",
+  "author": "@anum-shahana (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/product-card-7.tsx",
+      "content": "/**\n * Component: Product card\n * Author: @anum-shahana (https://tailwindflex.com/@anum-shahana)\n * Source: https://tailwindflex.com/@anum-shahana/product-card-7\n * Attribution: Créé par @anum-shahana sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProductCard7() {\n  return (\n    <div>\n    <div className=\"flex item center justify-center mt-20\">\n       \n           <div className=\"w-[221px] bg-white\">\n            \n            <img\n              src=\"https://images.unsplash.com/photo-1665473052568-e36bc84cca4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxM3x8amFtfGVufDB8MHx8fDE3MzM4OTY2MzR8MA&ixlib=rb-4.0.3&q=80&w=1080\"\n              alt=\"Product\"\n              className=\"w-full md[221px] h-40 md[110px] object-cover  mb-2\"\n            />\n             \n            <div className=\"flex items-center justify-between\">\n              <h2 className=\"text-lg md[14px] font-bold text-gray-800 \">\n                Jam\n              </h2>\n              <div className=\"flex items-center space-x-2\">\n                 \n                <div className=\"flex\">\n                  <span className=\"text-[#155528] text-base\">&#9733;</span>\n                  <span className=\"text-[#155528] text-base\">&#9733;</span>\n                  <span className=\"text-[#155528] text-base\">&#9733;</span>\n                  <span className=\"text-[#155528] text-base\">&#9733;</span>\n                  <span className=\"text-gray-400 text-base\">&#9734;</span>\n                </div>\n                 \n                <span className=\" text-[10px] text-[#19253C] font-bold\">\n                  4.5(278)\n                </span>\n              </div>\n            </div>\n             \n            <p className=\"text-sm md[14px]  \">Minimum Order Quantity (10)</p>\n            <div className=\"flex items-center justify-between\">\n              <p className=\"text-sm md[14px]  \">Stock: 180,000t</p>\n               \n              <button className=\"text-sm md[10px] w-[83px] h-[14px] py-1 rounded-lg text-center font-bold  flex items-center justify-center\">\n                USD 5\n              </button>\n            </div>\n          </div>\n          </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "pricing",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@anum-shahana",
+    "authorUrl": "https://tailwindflex.com/@anum-shahana",
+    "sourceUrl": "https://tailwindflex.com/@anum-shahana/product-card-7",
+    "mention": "Créé par @anum-shahana sur TailwindFlex",
+    "rawHtml": "<div class=\"flex item center justify-center mt-20\">\n   <!-- card  -->\n       <div class=\"w-[221px] bg-white\">\n        <!-- Image  -->\n        <img\n          src=\"https://images.unsplash.com/photo-1665473052568-e36bc84cca4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxM3x8amFtfGVufDB8MHx8fDE3MzM4OTY2MzR8MA&ixlib=rb-4.0.3&q=80&w=1080\"\n          alt=\"Product\"\n          class=\"w-full md:w-[221px] h-40 md:h-[110px] object-cover  mb-2\"\n        />\n         <!-- Product Title and ratings -->\n        <div class=\"flex items-center justify-between\">\n          <h2 class=\"text-lg md:text-[14px] font-bold text-gray-800 \">\n            Jam\n          </h2>\n          <div class=\"flex items-center space-x-2\">\n             <!-- Stars  -->\n            <div class=\"flex\">\n              <span class=\"text-[#155528] text-base\">&#9733;</span>\n              <span class=\"text-[#155528] text-base\">&#9733;</span>\n              <span class=\"text-[#155528] text-base\">&#9733;</span>\n              <span class=\"text-[#155528] text-base\">&#9733;</span>\n              <span class=\"text-gray-400 text-base\">&#9734;</span>\n            </div>\n             <!-- Rating  -->\n            <span class=\" text-[10px] text-[#19253C] font-bold\">\n              4.5(278)\n            </span>\n          </div>\n        </div>\n         <!-- product deatails  -->\n        <p class=\"text-sm md:text-[14px]  \">Minimum Order Quantity (10)</p>\n        <div class=\"flex items-center justify-between\">\n          <p class=\"text-sm md:text-[14px]  \">Stock: 180,000t</p>\n           <!-- Price button  -->\n          <button className=\"text-sm md:text-[10px] w-[83px] h-[14px] py-1 rounded-lg text-center font-bold  flex items-center justify-center\">\n            USD 5\n          </button>\n        </div>\n      </div>\n      </div>"
+  }
+}

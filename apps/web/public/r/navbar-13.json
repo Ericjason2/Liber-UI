@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "navbar-13",
+  "type": "registry:ui",
+  "title": "navbar",
+  "description": "navbar - Créé par @omer-fils-elenga sur TailwindFlex.",
+  "author": "@omer-fils-elenga (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/navbar-13.tsx",
+      "content": "/**\n * Component: navbar\n * Author: @omer-fils-elenga (https://tailwindflex.com/@omer-fils-elenga)\n * Source: https://tailwindflex.com/@omer-fils-elenga/navbar-13\n * Attribution: Créé par @omer-fils-elenga sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Navbar13() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<nav class=\\\"relative z-50 w-full max-w-7xl mx-auto mt-6 px-4\\\">\\n            <div class=\\\"bg-white rounded-full px-6 py-3 flex justify-between items-center shadow-lg\\\">\\n                <divhttps://omerlinks.netlify.app/\\\")\\\"  class=\\\"text-xl font-bold text-green-600  tracking-wide\\\">OmerLinks Nav</div>\\n                \\n                <div class=\\\"hidden md:flex gap-8 text-sm font-medium text-gray-600\\\"> \\n                    <a href=\\\"#\\\" class=\\\"hover:text-black\\\">Home  </a>\\n                    <a href=\\\"#\\\" class=\\\"hover:text-black\\\">About Us</a>\\n                    <a href=\\\"#\\\" class=\\\"hover:text-black\\\">Services</a>\\n                    <a href=\\\"#\\\" class=\\\"hover:text-black\\\">Blog</a>\\n                    <a href=\\\"#\\\" class=\\\"hover:text-black\\\">Pricing</a>\\n                    <a href=\\\"#\\\" class=\\\"hover:text-black\\\">Pages </a>\\n                </div>\\n\\n                <a href=\\\"https://omerlinks.netlify.app/\\\" class=\\\"flex items-center gap-2 text-sm font-semibold hover:opacity-70\\\">\\n                    Call me\\n                    <div class=\\\"bg-green-600 text-white rounded-full p-1 w-6 h-6 flex items-center justify-center\\\">\\n                        <svg width=\\\"10\\\" height=\\\"10\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><line x1=\\\"7\\\" y1=\\\"17\\\" x2=\\\"17\\\" y2=\\\"7\\\"></line><polyline points=\\\"7 7 17 7 17 17\\\"></polyline></svg>\\n                    </div>\\n                </a>\\n            </div>\\n        </nav>\\n\\n<style>\\n\\n    body{\\n        background: green;\\n        \\n    }\\n</style>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@omer-fils-elenga",
+    "authorUrl": "https://tailwindflex.com/@omer-fils-elenga",
+    "sourceUrl": "https://tailwindflex.com/@omer-fils-elenga/navbar-13",
+    "mention": "Créé par @omer-fils-elenga sur TailwindFlex",
+    "rawHtml": "<nav class=\"relative z-50 w-full max-w-7xl mx-auto mt-6 px-4\">\n            <div class=\"bg-white rounded-full px-6 py-3 flex justify-between items-center shadow-lg\">\n                <div onclick=\"alert(\"https://omerlinks.netlify.app/\")\"  class=\"text-xl font-bold text-green-600  tracking-wide\">OmerLinks Nav</div>\n                \n                <div class=\"hidden md:flex gap-8 text-sm font-medium text-gray-600\"> \n                    <a href=\"#\" class=\"hover:text-black\">Home  </a>\n                    <a href=\"#\" class=\"hover:text-black\">About Us</a>\n                    <a href=\"#\" class=\"hover:text-black\">Services</a>\n                    <a href=\"#\" class=\"hover:text-black\">Blog</a>\n                    <a href=\"#\" class=\"hover:text-black\">Pricing</a>\n                    <a href=\"#\" class=\"hover:text-black\">Pages </a>\n                </div>\n\n                <a href=\"https://omerlinks.netlify.app/\" class=\"flex items-center gap-2 text-sm font-semibold hover:opacity-70\">\n                    Call me\n                    <div class=\"bg-green-600 text-white rounded-full p-1 w-6 h-6 flex items-center justify-center\">\n                        <svg width=\"10\" height=\"10\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"7\" y1=\"17\" x2=\"17\" y2=\"7\"></line><polyline points=\"7 7 17 7 17 17\"></polyline></svg>\n                    </div>\n                </a>\n            </div>\n        </nav>\n\n<style>\n\n    body{\n        background: green;\n        \n    }\n</style>"
+  }
+}

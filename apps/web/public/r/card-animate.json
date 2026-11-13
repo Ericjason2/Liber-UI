@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-animate",
+  "type": "registry:ui",
+  "title": "Card animate",
+  "description": "Card animate - Créé par @raulanto sur TailwindFlex.",
+  "author": "@raulanto (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-animate.tsx",
+      "content": "/**\n * Component: Card animate\n * Author: @raulanto (https://tailwindflex.com/@raulanto)\n * Source: https://tailwindflex.com/@raulanto/card-animate\n * Attribution: Créé par @raulanto sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardAnimate() {\n  return (\n    <div>\n    <div className=\"relative p-8 overflow-hidden rounded-xl min-h-28 max-w-96 shadow h-fit w-full dark950 dark100 transition-all duration-200 border border-cool-300 dark700 group hover\">\n      \n      <div className=\"absolute inset-0 opacity-0 group-hover100 transition-opacity duration-300 -z-10 blur-xl\">\n        <div className=\"absolute w-20 h-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-full transform -translate-x-1/2 -translate-y-1/2 pointer-events-none mix-blend-soft-light transition-all duration-100\"\n         style=\"top: var(--mouse-y); left: var(--mouse-x);\"></div>\n      </div>\n    \n      \n      <h2 className=\"text-xl font-bold mb-2 relative\">Título de la tarjeta</h2>\n      <p className=\"text-gray-700 relative\">Este es el contenido de la tarjeta.</p>\n    </div>\n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "grid",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@raulanto",
+    "authorUrl": "https://tailwindflex.com/@raulanto",
+    "sourceUrl": "https://tailwindflex.com/@raulanto/card-animate",
+    "mention": "Créé par @raulanto sur TailwindFlex",
+    "rawHtml": "<div class=\"relative p-8 overflow-hidden rounded-xl min-h-28 max-w-96 shadow h-fit w-full dark:bg-cool-950 dark:text-cool-100 transition-all duration-200 border border-cool-300 dark:border-cool-700 group hover:shadow\">\n  <!-- Efecto de círculo degradado como fondo -->\n  <div class=\"absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl\">\n    <div class=\"absolute w-20 h-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-full transform -translate-x-1/2 -translate-y-1/2 pointer-events-none mix-blend-soft-light transition-all duration-100\"\n     style=\"top: var(--mouse-y); left: var(--mouse-x);\"></div>\n  </div>\n\n  <!-- Contenido de la tarjeta -->\n  <h2 class=\"text-xl font-bold mb-2 relative\">Título de la tarjeta</h2>\n  <p class=\"text-gray-700 relative\">Este es el contenido de la tarjeta.</p>\n</div>\n\n<script>\n  document.querySelector('.group').addEventListener('mousemove', (e) => {\n    const card = e.currentTarget;\n    const rect = card.getBoundingClientRect();\n    const x = e.clientX - rect.left;\n    const y = e.clientY - rect.top;\n    card.style.setProperty('--mouse-x', `${x}px`);\n    card.style.setProperty('--mouse-y', `${y}px`);\n  });\n</script>"
+  }
+}

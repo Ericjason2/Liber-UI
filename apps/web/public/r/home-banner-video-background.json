@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "home-banner-video-background",
+  "type": "registry:ui",
+  "title": "Home banner video background",
+  "description": "Home banner video background - Créé par @rameezrami sur TailwindFlex.",
+  "author": "@rameezrami (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/home-banner-video-background.tsx",
+      "content": "/**\n * Component: Home banner video background\n * Author: @rameezrami (https://tailwindflex.com/@rameezrami)\n * Source: https://tailwindflex.com/@rameezrami/home-banner-video-background\n * Attribution: Créé par @rameezrami sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HomeBannerVideoBackground() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!-- forked from: https://codepen.io/cuonoj/pen/JjPmMaB -->\\r\\nbayay banner test\\r\\n<section class=\\\"relative h-screen flex flex-col items-center justify-center text-center text-white \\\">\\r\\n    <div class=\\\"video-docker absolute top-0 left-0 w-full h-full overflow-hidden\\\">\\r\\n        <video class=\\\"min-w-full min-h-full absolute object-cover\\\"\\r\\n            src=\\\"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4\\\"\\r\\n            type=\\\"video/mp4\\\" autoplay muted loop></video>\\r\\n    </div>\\r\\n    <div class=\\\"video-content space-y-2 z-10\\\">\\r\\n        <h1 class=\\\"font-light text-6xl\\\">full Hero Video</h1>\\r\\n        <h3 class=\\\"font-light text-3xl\\\">with TailwindCSS</h3>\\r\\n    </div>\\r\\n</section>\\r\\n\\r\\n<style>\\r\\n    .video-docker video {\\r\\n        top: 50%;\\r\\n        left: 50%;\\r\\n        transform: translate(-50%, -50%);\\r\\n    }\\r\\n\\r\\n    .video-docker::after {\\r\\n        content: \\\"\\\";\\r\\n        position: absolute;\\r\\n        width: 100%;\\r\\n        height: 100%;\\r\\n        top: 0;\\r\\n        left: 0;\\r\\n        background: rgba(0, 0, 0, 0.6);\\r\\n        z-index: 1;\\r\\n    }\\r\\n</style>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rameezrami",
+    "authorUrl": "https://tailwindflex.com/@rameezrami",
+    "sourceUrl": "https://tailwindflex.com/@rameezrami/home-banner-video-background",
+    "mention": "Créé par @rameezrami sur TailwindFlex",
+    "rawHtml": "<!-- forked from: https://codepen.io/cuonoj/pen/JjPmMaB -->\r\nbayay banner test\r\n<section class=\"relative h-screen flex flex-col items-center justify-center text-center text-white \">\r\n    <div class=\"video-docker absolute top-0 left-0 w-full h-full overflow-hidden\">\r\n        <video class=\"min-w-full min-h-full absolute object-cover\"\r\n            src=\"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4\"\r\n            type=\"video/mp4\" autoplay muted loop></video>\r\n    </div>\r\n    <div class=\"video-content space-y-2 z-10\">\r\n        <h1 class=\"font-light text-6xl\">full Hero Video</h1>\r\n        <h3 class=\"font-light text-3xl\">with TailwindCSS</h3>\r\n    </div>\r\n</section>\r\n\r\n<style>\r\n    .video-docker video {\r\n        top: 50%;\r\n        left: 50%;\r\n        transform: translate(-50%, -50%);\r\n    }\r\n\r\n    .video-docker::after {\r\n        content: \"\";\r\n        position: absolute;\r\n        width: 100%;\r\n        height: 100%;\r\n        top: 0;\r\n        left: 0;\r\n        background: rgba(0, 0, 0, 0.6);\r\n        z-index: 1;\r\n    }\r\n</style>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-form",
+  "type": "registry:ui",
+  "title": "Simple Form",
+  "description": "Simple Form - Créé par @mr-robot sur TailwindFlex.",
+  "author": "@mr-robot (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-form.tsx",
+      "content": "/**\n * Component: Simple Form\n * Author: @mr-robot (https://tailwindflex.com/@mr-robot)\n * Source: https://tailwindflex.com/@mr-robot/simple-form\n * Attribution: Créé par @mr-robot sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SimpleForm() {\n  return (\n    <div>\n    <div className=\"bg-blue-200 min-h-screen flex items-center\">\r\n        <div className=\"w-full\">\r\n            <h2 className=\"text-center text-blue-400 font-bold text-2xl uppercase mb-10\">Fill out our form</h2>\r\n            <div className=\"bg-white p-10 rounded-lg shadow md3/4 mx-auto lg1/2\">\r\n                <form action=\"\">\r\n                    <div className=\"mb-5\">\r\n                        <label htmlFor=\"name\" className=\"block mb-2 font-bold text-gray-600\">Name</label>\r\n                        <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Put in your fullname.\" className=\"border border-gray-300 shadow p-3 w-full rounded mb-\" />\r\n                    </div>\r\n    \r\n                    <div className=\"mb-5\">\r\n                        <label htmlFor=\"twitter\" className=\"block mb-2 font-bold text-gray-600\">Twitter</label>\r\n                        <input type=\"text\" id=\"twitter\" name=\"twitter\" placeholder=\"Put in your fullname.\" className=\"border border-red-300 shadow p-3 w-full rounded mb-\" />\r\n                        <p className=\"text-sm text-red-400 mt-2\">Twitter username is required</p>\r\n                    </div>\r\n    \r\n                    <button className=\"block w-full bg-blue-500 text-white font-bold p-4 rounded-lg\">Submit</button>\r\n                </form>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mr-robot",
+    "authorUrl": "https://tailwindflex.com/@mr-robot",
+    "sourceUrl": "https://tailwindflex.com/@mr-robot/simple-form",
+    "mention": "Créé par @mr-robot sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-blue-200 min-h-screen flex items-center\">\r\n    <div class=\"w-full\">\r\n        <h2 class=\"text-center text-blue-400 font-bold text-2xl uppercase mb-10\">Fill out our form</h2>\r\n        <div class=\"bg-white p-10 rounded-lg shadow md:w-3/4 mx-auto lg:w-1/2\">\r\n            <form action=\"\">\r\n                <div class=\"mb-5\">\r\n                    <label for=\"name\" class=\"block mb-2 font-bold text-gray-600\">Name</label>\r\n                    <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Put in your fullname.\" class=\"border border-gray-300 shadow p-3 w-full rounded mb-\">\r\n                </div>\r\n\r\n                <div class=\"mb-5\">\r\n                    <label for=\"twitter\" class=\"block mb-2 font-bold text-gray-600\">Twitter</label>\r\n                    <input type=\"text\" id=\"twitter\" name=\"twitter\" placeholder=\"Put in your fullname.\" class=\"border border-red-300 shadow p-3 w-full rounded mb-\">\r\n                    <p class=\"text-sm text-red-400 mt-2\">Twitter username is required</p>\r\n                </div>\r\n\r\n                <button class=\"block w-full bg-blue-500 text-white font-bold p-4 rounded-lg\">Submit</button>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

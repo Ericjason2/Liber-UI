@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-2",
+  "type": "registry:ui",
+  "title": "Hero section",
+  "description": "Hero section - Créé par @mohit sur TailwindFlex.",
+  "author": "@mohit (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-2.tsx",
+      "content": "/**\n * Component: Hero section\n * Author: @mohit (https://tailwindflex.com/@mohit)\n * Source: https://tailwindflex.com/@mohit/hero-section-2\n * Attribution: Créé par @mohit sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSection2() {\n  return (\n    <div>\n    <section className=\"text-gray-600 body-font\">\n        <div className=\"container mx-auto flex px-5 py-24 md flex-col items-center\">\n            <div\n                className=\"lg md1/2 lg24 md16 flex flex-col md md mb-16 md0 items-center text-center\">\n                <h1 className=\"title-font sm4xl text-3xl mb-4 font-medium text-gray-900\">Before they sold out\n                    <br className=\"hidden lg\" />readymade gluten\n                </h1>\n                <p className=\"mb-8 leading-relaxed\">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant\n                    cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic\n                    tumeric truffaut hexagon try-hard chambray.</p>\n                <div className=\"flex justify-center\">\n                    <button className=\"inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus hover600 rounded text-lg\">Button</button>\n                    <button className=\"ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus hover200 rounded text-lg\">Button</button>\n                </div>\n            </div>\n            <div className=\"lg lg md1/2 w-5/6\">\n                <img className=\"object-cover object-center rounded\" alt=\"hero\" src=\"https://dummyimage.com/720x600\" />\n            </div>\n        </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mohit",
+    "authorUrl": "https://tailwindflex.com/@mohit",
+    "sourceUrl": "https://tailwindflex.com/@mohit/hero-section-2",
+    "mention": "Créé par @mohit sur TailwindFlex",
+    "rawHtml": "<section class=\"text-gray-600 body-font\">\n    <div class=\"container mx-auto flex px-5 py-24 md:flex-row flex-col items-center\">\n        <div\n            class=\"lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center\">\n            <h1 class=\"title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900\">Before they sold out\n                <br class=\"hidden lg:inline-block\">readymade gluten\n            </h1>\n            <p class=\"mb-8 leading-relaxed\">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant\n                cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic\n                tumeric truffaut hexagon try-hard chambray.</p>\n            <div class=\"flex justify-center\">\n                <button class=\"inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg\">Button</button>\n                <button class=\"ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg\">Button</button>\n            </div>\n        </div>\n        <div class=\"lg:max-w-lg lg:w-full md:w-1/2 w-5/6\">\n            <img class=\"object-cover object-center rounded\" alt=\"hero\" src=\"https://dummyimage.com/720x600\">\n        </div>\n    </div>\n</section>"
+  }
+}

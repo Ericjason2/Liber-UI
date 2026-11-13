@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "monkey-card",
+  "type": "registry:ui",
+  "title": "Monkey card",
+  "description": "Monkey card - Créé par @muhittin sur TailwindFlex.",
+  "author": "@muhittin (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/monkey-card.tsx",
+      "content": "/**\n * Component: Monkey card\n * Author: @muhittin (https://tailwindflex.com/@muhittin)\n * Source: https://tailwindflex.com/@muhittin/monkey-card\n * Attribution: Créé par @muhittin sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function MonkeyCard() {\n  return (\n    <div>\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Strait\" />\n    <div className=\"max-w-sm rounded overflow-hidden shadow-lg\" style=\"font-family: 'Strait', sans-serif;\">\n      <img className=\"w-full\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfJ5hSkM1pGC5I_gTNx-Bmpyb0QrwWm-TwiARKclttVPrZrIKfr0bTHyP0afaIHL7zks-AbODA7zAf9LYhKdKVM6s2YXB8jkFl-fWBTmse2y6O68grQjw6tOOMrtdsG1qkVOwRT05R5XVZIoRoJFsn_wUqkrABJwEGZN0Q0OZlLZxis2zkhOH2u1RI_dNd/s518/colobus.jpg\" alt=\"Sunset in the mountains\" />\n      <div className=\"px-6 py-4\">\n        <div className=\"font-bold text-xl mb-2\">Monkey</div>\n        <p className=\"text-gray-700 text-base\">\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.\n        </p>\n        <br />\n        <a target=\"_blank\" href=\"https://bootsnipp.com/muhittinbudak\" className=\"bg-blue-500 hover700 text-white font-bold py-2 px-4 border border-blue-700 rounded\">\n      Bootstrap 3 examples \n    </a>\n      </div>\n      <div className=\"px-6 pt-4 pb-2\">\n        <span className=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2\">#photography</span>\n        <span className=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2\">#travel</span>\n        <span className=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2\">#winter</span>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@muhittin",
+    "authorUrl": "https://tailwindflex.com/@muhittin",
+    "sourceUrl": "https://tailwindflex.com/@muhittin/monkey-card",
+    "mention": "Créé par @muhittin sur TailwindFlex",
+    "rawHtml": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Strait\">\n<div class=\"max-w-sm rounded overflow-hidden shadow-lg\" style=\"font-family: 'Strait', sans-serif;\">\n  <img class=\"w-full\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfJ5hSkM1pGC5I_gTNx-Bmpyb0QrwWm-TwiARKclttVPrZrIKfr0bTHyP0afaIHL7zks-AbODA7zAf9LYhKdKVM6s2YXB8jkFl-fWBTmse2y6O68grQjw6tOOMrtdsG1qkVOwRT05R5XVZIoRoJFsn_wUqkrABJwEGZN0Q0OZlLZxis2zkhOH2u1RI_dNd/s518/colobus.jpg\" alt=\"Sunset in the mountains\">\n  <div class=\"px-6 py-4\">\n    <div class=\"font-bold text-xl mb-2\">Monkey</div>\n    <p class=\"text-gray-700 text-base\">\n      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.\n    </p>\n    <br>\n    <a target=\"_blank\" href=\"https://bootsnipp.com/muhittinbudak\" class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded\">\n  Bootstrap 3 examples \n</a>\n  </div>\n  <div class=\"px-6 pt-4 pb-2\">\n    <span class=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2\">#photography</span>\n    <span class=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2\">#travel</span>\n    <span class=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2\">#winter</span>\n  </div>\n</div>"
+  }
+}

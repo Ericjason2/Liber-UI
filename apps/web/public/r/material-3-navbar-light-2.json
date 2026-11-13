@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "material-3-navbar-light-2",
+  "type": "registry:ui",
+  "title": "Material 3 NavBar [Light]",
+  "description": "Material 3 NavBar [Light] - Créé par @nickgirga sur TailwindFlex.",
+  "author": "@nickgirga (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/material-3-navbar-light-2.tsx",
+      "content": "/**\n * Component: Material 3 NavBar [Light]\n * Author: @nickgirga (https://tailwindflex.com/@nickgirga)\n * Source: https://tailwindflex.com/@nickgirga/material-3-navbar-light-2\n * Attribution: Créé par @nickgirga sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Material3NavbarLight2() {\n  return (\n    <div>\n    <head>\n        \n        <link href=\"https://fonts.googleapis.com/css2?family=Roboto@300;400;600;700&amp;display=swap\" rel=\"stylesheet\" />\n        \n        \n        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined,wght,FILL,GRAD@20..48,100..700,0..1,-50..200\" />\n    </head>\n    \n    <body data-theme=\"light\">\n        \n        <div className=\"flex flex-col items-center text-center my-32\">\n            <span id=\"fake-page-heading\" className=\"text-4xl\">Home Page</span>\n        </div>\n    \n        \n        <div className=\"navbar fixed bottom-0 z-1\">\n            \n            <div className=\"navbar-container\">\n    \n                \n                <button id=\"navbar-home\"\n                    className=\"navbar-item navbar-item-active\"\n                   >\n                    <div className=\"navbar-item-icon\">\n                        <span className=\"material-symbols-outlined !text-lg\">home</span>\n                    </div>\n                    Home\n                </button>\n                \n                \n                <button id=\"navbar-search\"\n                    className=\"navbar-item\"\n                   >\n                    <div className=\"navbar-item-icon\">\n                        <span className=\"material-symbols-outlined !text-lg\">search</span>\n                    </div>\n                    Search\n                </button>\n    \n                \n                <button id=\"navbar-library\"\n                    className=\"navbar-item\"\n                   >\n                    <div className=\"navbar-item-icon\">\n                        <span className=\"material-symbols-outlined !text-lg\">collections_bookmark</span>\n                    </div>\n                    Library\n                </button>\n    \n                \n                <button id=\"navbar-settings\"\n                    className=\"navbar-item\"\n                   >\n                    <div className=\"navbar-item-icon\">\n                        <span className=\"material-symbols-outlined !text-lg\">settings</span>\n                    </div>\n                    Settings\n                </button>\n    \n            </div>\n        </div>\n    </body>\n    \n    \n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@nickgirga",
+    "authorUrl": "https://tailwindflex.com/@nickgirga",
+    "sourceUrl": "https://tailwindflex.com/@nickgirga/material-3-navbar-light-2",
+    "mention": "Créé par @nickgirga sur TailwindFlex",
+    "rawHtml": "<head>\n    <!-- Roboto Font -->\n    <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&amp;display=swap\" rel=\"stylesheet\">\n    \n    <!-- Material Icons -->\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200\">\n</head>\n\n<body data-theme=\"light\">\n    <!-- Page Content (For demo purposes) -->\n    <div class=\"flex flex-col items-center text-center my-32\">\n        <span id=\"fake-page-heading\" class=\"text-4xl\">Home Page</span>\n    </div>\n\n    <!-- NavBar Background -->\n    <div class=\"navbar fixed bottom-0 z-1\">\n        <!-- NavBar Items Container -->\n        <div class=\"navbar-container\">\n\n            <!-- 'Home' NavBar Item -->\n            <button id=\"navbar-home\"\n                class=\"navbar-item navbar-item-active\"\n                onclick=\"window.fakePageChange('navbar-home','Home Page');\">\n                <div class=\"navbar-item-icon\">\n                    <span class=\"material-symbols-outlined !text-lg\">home</span>\n                </div>\n                Home\n            </button>\n            \n            <!-- 'Search' NavBar Item -->\n            <button id=\"navbar-search\"\n                class=\"navbar-item\"\n                onclick=\"window.fakePageChange('navbar-search','Search Page');\">\n                <div class=\"navbar-item-icon\">\n                    <span class=\"material-symbols-outlined !text-lg\">search</span>\n                </div>\n                Search\n            </button>\n\n            <!-- 'Library' NavBar Item -->\n            <button id=\"navbar-library\"\n                class=\"navbar-item\"\n                onclick=\"window.fakePageChange('navbar-library','Library Page');\">\n                <div class=\"navbar-item-icon\">\n                    <span class=\"material-symbols-outlined !text-lg\">collections_bookmark</span>\n                </div>\n                Library\n            </button>\n\n            <!-- 'Settings' NavBar Item -->\n            <button id=\"navbar-settings\"\n                class=\"navbar-item\"\n                onclick=\"window.fakePageChange('navbar-settings','Settings Page');\">\n                <div class=\"navbar-item-icon\">\n                    <span class=\"material-symbols-outlined !text-lg\">settings</span>\n                </div>\n                Settings\n            </button>\n\n        </div>\n    </div>\n</body>\n\n<!-- Below is For Demo Purposes -->\n<!-- Implement with framework of choice -->\n<script>\n    // Change the fake page (just a demo for the live preview)\n    window.fakePageChange = function(navbarItemId, fakePageHeadingText) {\n        // disable all navbar item indicators\n        const navbarItems = document.querySelectorAll('.navbar-item');\n        for (const item of navbarItems) {\n            if (item.classList.contains('navbar-item-active'))\n                item.classList.remove('navbar-item-active');\n        }\n\n        // enable specified navbar item\n        document.getElementById(navbarItemId).classList.add('navbar-item-active');\n\n        // change fake page heading\n        document.getElementById('fake-page-heading').innerHTML = fakePageHeadingText;\n    }\n</script>"
+  }
+}

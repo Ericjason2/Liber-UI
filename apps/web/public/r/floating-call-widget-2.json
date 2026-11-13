@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "floating-call-widget-2",
+  "type": "registry:ui",
+  "title": "Floating Call Widget",
+  "description": "Floating Call Widget - Créé par @sayista-yazdani sur TailwindFlex.",
+  "author": "@sayista-yazdani (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/floating-call-widget-2.tsx",
+      "content": "/**\n * Component: Floating Call Widget\n * Author: @sayista-yazdani (https://tailwindflex.com/@sayista-yazdani)\n * Source: https://tailwindflex.com/@sayista-yazdani/floating-call-widget-2\n * Attribution: Créé par @sayista-yazdani sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FloatingCallWidget2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!-- Floating Call Widget PHP Code base -->\\n<style>\\n  .custom-call-widget {\\n    position: fixed;\\n    right: 0;\\n    top: 50%;\\n    transform: translateY(-50%) translateX(calc(100% - 75px));\\n    z-index: 99999;\\n    transition: transform 0.3s ease-in-out;\\n    user-select: none;\\n    font-family: sans-serif;\\n  }\\n  .custom-call-btn {\\n    display: flex;\\n    align-items: center;\\n    background-color: #0f7137;\\n    color: #ffffff !important;\\n    border-top-left-radius: 24px;\\n    border-bottom-left-radius: 24px;\\n    padding: 8px 12px;\\n    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);\\n    text-decoration: none !important;\\n    border: 1px solid rgba(16, 185, 129, 0.2);\\n    border-right: none;\\n    white-space: nowrap;\\n  }\\n  .custom-call-btn:hover {\\n    background-color: #0c592b;\\n  }\\n  .call-icon-circle {\\n    width: 32px;\\n    height: 32px;\\n    border-radius: 50%;\\n    background-color: rgba(255, 255, 255, 0.2);\\n    display: flex;\\n    align-items: center;\\n    justify-content: center;\\n    margin-left: 6px;\\n  }\\n  .call-text-box {\\n    background-color: #ffffff;\\n    color: #0f7137;\\n    border-radius: 20px;\\n    padding: 6px 14px;\\n    font-weight: bold;\\n    font-size: 13px;\\n    margin-left: 10px;\\n    display: none;\\n    box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);\\n  }\\n  .arrow-symbol {\\n    font-size: 12px;\\n    font-weight: 900;\\n    color: rgba(255, 255, 255, 0.8);\\n  }\\n</style>\\n\\n<div id=\\\"callWidget\\\" \\n     class=\\\"custom-call-widget\\\"\\n     \\n    \\n    >\\n    \\n     <a href=\\\"tel:+916397674571\\\" class=\\\"custom-call-btn\\\">\\n        <div style=\\\"display: flex; align-items: center;\\\">\\n            <span id=\\\"arrowIcon\\\" class=\\\"arrow-symbol\\\">&lt;&lt;</span>\\n            <span class=\\\"call-icon-circle\\\">\\n                <svg stroke=\\\"currentColor\\\" fill=\\\"currentColor\\\" stroke-width=\\\"0\\\" viewBox=\\\"0 0 512 512\\\" style=\\\"width:16px; height:16px; transform: rotate(90deg);\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\">\\n                    <path d=\\\"M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z\\\"/>\\n                </svg>\\n            </span>\\n        </div>\\n\\n        <div id=\\\"widgetText\\\" class=\\\"call-text-box\\\">\\n             Need Help? I'm just a call away\\n        </div>\\n     </a>\\n</div>\\n\\n\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sayista-yazdani",
+    "authorUrl": "https://tailwindflex.com/@sayista-yazdani",
+    "sourceUrl": "https://tailwindflex.com/@sayista-yazdani/floating-call-widget-2",
+    "mention": "Créé par @sayista-yazdani sur TailwindFlex",
+    "rawHtml": "<!-- Floating Call Widget PHP Code base -->\n<style>\n  .custom-call-widget {\n    position: fixed;\n    right: 0;\n    top: 50%;\n    transform: translateY(-50%) translateX(calc(100% - 75px));\n    z-index: 99999;\n    transition: transform 0.3s ease-in-out;\n    user-select: none;\n    font-family: sans-serif;\n  }\n  .custom-call-btn {\n    display: flex;\n    align-items: center;\n    background-color: #0f7137;\n    color: #ffffff !important;\n    border-top-left-radius: 24px;\n    border-bottom-left-radius: 24px;\n    padding: 8px 12px;\n    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);\n    text-decoration: none !important;\n    border: 1px solid rgba(16, 185, 129, 0.2);\n    border-right: none;\n    white-space: nowrap;\n  }\n  .custom-call-btn:hover {\n    background-color: #0c592b;\n  }\n  .call-icon-circle {\n    width: 32px;\n    height: 32px;\n    border-radius: 50%;\n    background-color: rgba(255, 255, 255, 0.2);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-left: 6px;\n  }\n  .call-text-box {\n    background-color: #ffffff;\n    color: #0f7137;\n    border-radius: 20px;\n    padding: 6px 14px;\n    font-weight: bold;\n    font-size: 13px;\n    margin-left: 10px;\n    display: none;\n    box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);\n  }\n  .arrow-symbol {\n    font-size: 12px;\n    font-weight: 900;\n    color: rgba(255, 255, 255, 0.8);\n  }\n</style>\n\n<div id=\"callWidget\" \n     class=\"custom-call-widget\"\n     onmouseenter=\"expandWidget()\" \n     onmouseleave=\"collapseWidget()\"\n     onclick=\"toggleWidget()\">\n    \n     <a href=\"tel:+916397674571\" class=\"custom-call-btn\">\n        <div style=\"display: flex; align-items: center;\">\n            <span id=\"arrowIcon\" class=\"arrow-symbol\">&lt;&lt;</span>\n            <span class=\"call-icon-circle\">\n                <svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" viewBox=\"0 0 512 512\" style=\"width:16px; height:16px; transform: rotate(90deg);\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path d=\"M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z\"/>\n                </svg>\n            </span>\n        </div>\n\n        <div id=\"widgetText\" class=\"call-text-box\">\n             Need Help? I'm just a call away\n        </div>\n     </a>\n</div>\n\n<script>\n    function expandWidget() {\n        const widget = document.getElementById('callWidget');\n        const widgetText = document.getElementById('widgetText');\n        const arrowIcon = document.getElementById('arrowIcon');\n        if (widget && widgetText && arrowIcon) {\n            widget.style.transform = 'translateY(-50%) translateX(0)';\n            widgetText.style.display = 'block';\n            arrowIcon.innerHTML = '&gt;&gt;';\n        }\n    }\n\n    function collapseWidget() {\n        const widget = document.getElementById('callWidget');\n        const widgetText = document.getElementById('widgetText');\n        const arrowIcon = document.getElementById('arrowIcon');\n        if (widget && widgetText && arrowIcon) {\n            widget.style.transform = 'translateY(-50%) translateX(calc(100% - 75px))';\n            widgetText.style.display = 'none';\n            arrowIcon.innerHTML = '&lt;&lt;';\n        }\n    }\n\n    function toggleWidget() {\n        const widgetText = document.getElementById('widgetText');\n        if (widgetText && (widgetText.style.display === 'none' || widgetText.style.display === '')) {\n            expandWidget();\n        } else {\n            collapseWidget();\n        }\n    }\n\n    document.addEventListener(\"DOMContentLoaded\", () => {\n        expandWidget();\n        setTimeout(() => { collapseWidget(); }, 2000);\n    });\n</script>"
+  }
+}

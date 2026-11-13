@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwind-flex-component-responsive-testimonial-section-ui",
+  "type": "registry:ui",
+  "title": "Tailwind Flex Component: Responsive Testimonial Section UI",
+  "description": "Tailwind Flex Component: Responsive Testimonial Section UI - Créé par @umairarshad-dev sur TailwindFlex.",
+  "author": "@umairarshad-dev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tailwind-flex-component-responsive-testimonial-section-ui.tsx",
+      "content": "/**\n * Component: Tailwind Flex Component: Responsive Testimonial Section UI\n * Author: @umairarshad-dev (https://tailwindflex.com/@umairarshad-dev)\n * Source: https://tailwindflex.com/@umairarshad-dev/tailwind-flex-component-responsive-testimonial-section-ui\n * Attribution: Créé par @umairarshad-dev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TailwindFlexComponentResponsiveTestimonialSectionUi() {\n  return (\n    <div>\n    <section className=\"bg-gray-50 py-12 px-4 sm6 lg8\">\n      <div className=\"max-w-7xl mx-auto\">\n        <h2 className=\"text-3xl font-extrabold text-gray-900 text-center mb-10\">What People Are Saying</h2>\n    \n        <div className=\"flex flex-wrap gap-6 justify-center\">\n          \n          <div className=\"bg-white shadow-md rounded-2xl p-6 max-w-sm flex flex-col items-start hover transition\">\n            <div className=\"flex items-center mb-4\">\n              <img className=\"w-12 h-12 rounded-full border-2 border-indigo-500\" src=\"https://i.pravatar.cc/150?img=12\" alt=\"User avatar\" />\n              <div className=\"ml-4\">\n                <h4 className=\"text-lg font-semibold text-gray-900\">Sarah Williams</h4>\n                <p className=\"text-sm text-gray-500\">Product Designer</p>\n              </div>\n            </div>\n            <p className=\"text-gray-600 text-sm\">\"This UI was a game-changer for our product launch. Everything was smooth and pixel-perfect. Highly recommend!\"</p>\n          </div>\n    \n          \n          <div className=\"bg-white shadow-md rounded-2xl p-6 max-w-sm flex flex-col items-start hover transition\">\n            <div className=\"flex items-center mb-4\">\n              <img className=\"w-12 h-12 rounded-full border-2 border-indigo-500\" src=\"https://i.pravatar.cc/150?img=32\" alt=\"User avatar\" />\n              <div className=\"ml-4\">\n                <h4 className=\"text-lg font-semibold text-gray-900\">Michael </h4>\n                <p className=\"text-sm text-gray-500\">Startup Founder</p>\n              </div>\n            </div>\n            <p className=\"text-gray-600 text-sm\">\"Impressive responsiveness and design consistency. The attention to detail is what makes this shine!\"</p>\n          </div>\n    \n          \n          <div className=\"bg-white shadow-md rounded-2xl p-6 max-w-sm flex flex-col items-start hover transition\">\n            <div className=\"flex items-center mb-4\">\n              <img className=\"w-12 h-12 rounded-full border-2 border-indigo-500\" src=\"https://i.pravatar.cc/150?img=22\" alt=\"User avatar\" />\n              <div className=\"ml-4\">\n                <h4 className=\"text-lg font-semibold text-gray-900\">John</h4>\n                <p className=\"text-sm text-gray-500\">Frontend Developer</p>\n              </div>\n            </div>\n            <p className=\"text-gray-600 text-sm\">\"Clean layout, optimized for mobile, and extremely flexible with Tailwind. Loved using it!\"</p>\n          </div>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@umairarshad-dev",
+    "authorUrl": "https://tailwindflex.com/@umairarshad-dev",
+    "sourceUrl": "https://tailwindflex.com/@umairarshad-dev/tailwind-flex-component-responsive-testimonial-section-ui",
+    "mention": "Créé par @umairarshad-dev sur TailwindFlex",
+    "rawHtml": "<section class=\"bg-gray-50 py-12 px-4 sm:px-6 lg:px-8\">\n  <div class=\"max-w-7xl mx-auto\">\n    <h2 class=\"text-3xl font-extrabold text-gray-900 text-center mb-10\">What People Are Saying</h2>\n\n    <div class=\"flex flex-wrap gap-6 justify-center\">\n      <!-- Testimonial Card -->\n      <div class=\"bg-white shadow-md rounded-2xl p-6 max-w-sm flex flex-col items-start hover:shadow-xl transition\">\n        <div class=\"flex items-center mb-4\">\n          <img class=\"w-12 h-12 rounded-full border-2 border-indigo-500\" src=\"https://i.pravatar.cc/150?img=12\" alt=\"User avatar\">\n          <div class=\"ml-4\">\n            <h4 class=\"text-lg font-semibold text-gray-900\">Sarah Williams</h4>\n            <p class=\"text-sm text-gray-500\">Product Designer</p>\n          </div>\n        </div>\n        <p class=\"text-gray-600 text-sm\">\"This UI was a game-changer for our product launch. Everything was smooth and pixel-perfect. Highly recommend!\"</p>\n      </div>\n\n      <!-- Testimonial Card -->\n      <div class=\"bg-white shadow-md rounded-2xl p-6 max-w-sm flex flex-col items-start hover:shadow-xl transition\">\n        <div class=\"flex items-center mb-4\">\n          <img class=\"w-12 h-12 rounded-full border-2 border-indigo-500\" src=\"https://i.pravatar.cc/150?img=32\" alt=\"User avatar\">\n          <div class=\"ml-4\">\n            <h4 class=\"text-lg font-semibold text-gray-900\">Michael </h4>\n            <p class=\"text-sm text-gray-500\">Startup Founder</p>\n          </div>\n        </div>\n        <p class=\"text-gray-600 text-sm\">\"Impressive responsiveness and design consistency. The attention to detail is what makes this shine!\"</p>\n      </div>\n\n      <!-- Testimonial Card -->\n      <div class=\"bg-white shadow-md rounded-2xl p-6 max-w-sm flex flex-col items-start hover:shadow-xl transition\">\n        <div class=\"flex items-center mb-4\">\n          <img class=\"w-12 h-12 rounded-full border-2 border-indigo-500\" src=\"https://i.pravatar.cc/150?img=22\" alt=\"User avatar\">\n          <div class=\"ml-4\">\n            <h4 class=\"text-lg font-semibold text-gray-900\">John</h4>\n            <p class=\"text-sm text-gray-500\">Frontend Developer</p>\n          </div>\n        </div>\n        <p class=\"text-gray-600 text-sm\">\"Clean layout, optimized for mobile, and extremely flexible with Tailwind. Loved using it!\"</p>\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

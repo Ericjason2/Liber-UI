@@ -3,23 +3,52 @@
   "name": "call-to-action-section-2",
   "type": "registry:ui",
   "title": "Call to action section",
-  "description": "Call to action section Tailwind CSS component from TailwindFlex.",
-  "author": "odessa-young",
+  "description": "Call to action section - Créé par @odessa-young sur TailwindFlex.",
+  "author": "@odessa-young (TailwindFlex)",
   "categories": [
-    "data-display"
+    "buttons"
   ],
   "dependencies": [],
   "files": [
     {
       "path": "ui/call-to-action-section-2.tsx",
-      "content": "import React from \"react\";\n\nexport function CallToActionSection() {\n  return (\n    <div className=\"relative py-16\">\n\n    <div aria-hidden=\"true\"\n        className=\"absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20\">\n        <div className=\"blur-[106px] h-56 bg-gradient-to-br from-teal-500 to-purple-400 dark:from-blue-700\"></div>\n        <div className=\"blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600\"></div>\n    </div>\n\n    <div className=\"max-w-7xl mx-auto px-6 md:px-12 xl:px-6\">\n        <div className=\"relative\">\n            \n            <div className=\"flex items-center justify-center -space-x-2\">\n                <img loading=\"lazy\" width=\"400\" height=\"400\" src=\"https://randomuser.me/api/portraits/women/12.jpg\" alt=\"member photo\" className=\"h-8 w-8 rounded-full object-cover\" />\n                <img loading=\"lazy\" width=\"200\" height=\"200\" src=\"https://randomuser.me/api/portraits/women/45.jpg\" alt=\"member photo\" className=\"h-12 w-12 rounded-full object-cover\" />\n                <img loading=\"lazy\" width=\"200\" height=\"200\" src=\"https://randomuser.me/api/portraits/women/60.jpg\" alt=\"member photo\" className=\"z-10 h-16 w-16 rounded-full object-cover\" />\n                <img loading=\"lazy\" width=\"200\" height=\"200\" src=\"https://randomuser.me/api/portraits/women/4.jpg\" alt=\"member photo\" className=\"relative h-12 w-12 rounded-full object-cover\" />\n                <img loading=\"lazy\" width=\"200\" height=\"200\" src=\"https://randomuser.me/api/portraits/women/34.jpg\" alt=\"member photo\" className=\"h-8 w-8 rounded-full object-cover\" />\n            </div>\n\n            <div className=\"mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12\">\n                <h1 className=\"text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl\">Get Started now\n                </h1>\n                <p className=\"text-center text-xl text-gray-600 dark:text-gray-300\">\n                    Be part of millions people around the world using tailus in modern User Interfaces.\n                </p>\n                <div className=\"flex flex-wrap justify-center gap-6\">\n                    <a href=\"#\"\n                        className=\"relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-teal-500 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max\">\n                        <span className=\"relative text-base font-semibold text-white dark:text-dark\">Get Started</span>\n                    </a>\n                    <a href=\"#\"\n                        className=\"relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-teal-500/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max\">\n                        <span className=\"relative text-base font-semibold text-teal-500 dark:text-white\">More about</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n  );\n}",
+      "content": "/**\n * Component: Call to action section\n * Author: @odessa-young (https://tailwindflex.com/@odessa-young)\n * Source: https://tailwindflex.com/@odessa-young/call-to-action-section-2\n * Attribution: Créé par @odessa-young sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToActionSection2() {\n  return (\n    <div>\n    <div className=\"relative py-16\">\n    \n        <div aria-hidden=\"true\"\n            className=\"absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark20\">\n            <div className=\"blur-[106px] h-56 bg-gradient-to-br from-teal-500 to-purple-400 dark700\"></div>\n            <div className=\"blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark600\"></div>\n        </div>\n    \n        <div className=\"max-w-7xl mx-auto px-6 md12 xl6\">\n            <div className=\"relative\">\n                \n                <div className=\"flex items-center justify-center -space-x-2\">\n                    <img loading=\"lazy\" width=\"400\" height=\"400\" src=\"https://randomuser.me/api/portraits/women/12.jpg\" alt=\"member photo\" className=\"h-8 w-8 rounded-full object-cover\" />\n                    <img loading=\"lazy\" width=\"200\" height=\"200\" src=\"https://randomuser.me/api/portraits/women/45.jpg\" alt=\"member photo\" className=\"h-12 w-12 rounded-full object-cover\" />\n                    <img loading=\"lazy\" width=\"200\" height=\"200\" src=\"https://randomuser.me/api/portraits/women/60.jpg\" alt=\"member photo\" className=\"z-10 h-16 w-16 rounded-full object-cover\" />\n                    <img loading=\"lazy\" width=\"200\" height=\"200\" src=\"https://randomuser.me/api/portraits/women/4.jpg\" alt=\"member photo\" className=\"relative h-12 w-12 rounded-full object-cover\" />\n                    <img loading=\"lazy\" width=\"200\" height=\"200\" src=\"https://randomuser.me/api/portraits/women/34.jpg\" alt=\"member photo\" className=\"h-8 w-8 rounded-full object-cover\" />\n                </div>\n    \n                <div className=\"mt-6 m-auto space-y-6 md8/12 lg7/12\">\n                    <h1 className=\"text-center text-4xl font-bold text-gray-800 dark md5xl\">Get Started now\n                    </h1>\n                    <p className=\"text-center text-xl text-gray-600 dark300\">\n                        Be part of millions people around the world using tailus in modern User Interfaces.\n                    </p>\n                    <div className=\"flex flex-wrap justify-center gap-6\">\n                        <a href=\"#\"\n                            className=\"relative flex h-12 w-full items-center justify-center px-8 before before0 before before500 before before300 hover105 active75 active95 sm\">\n                            <span className=\"relative text-base font-semibold text-white dark\">Get Started</span>\n                        </a>\n                        <a href=\"#\"\n                            className=\"relative flex h-12 w-full items-center justify-center px-8 before before0 before before before before500/10 before before before300 hover105 active75 active95 dark700 dark800 sm\">\n                            <span className=\"relative text-base font-semibold text-teal-500 dark\">More about</span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    \n    </div>\n    </div>\n  );\n}\n",
       "type": "registry:ui"
     }
   ],
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action"
-    ]
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@odessa-young",
+    "authorUrl": "https://tailwindflex.com/@odessa-young",
+    "sourceUrl": "https://tailwindflex.com/@odessa-young/call-to-action-section-2",
+    "mention": "Créé par @odessa-young sur TailwindFlex",
+    "rawHtml": "<div class=\"relative py-16\">\n\n    <div aria-hidden=\"true\"\n        class=\"absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20\">\n        <div class=\"blur-[106px] h-56 bg-gradient-to-br from-teal-500 to-purple-400 dark:from-blue-700\"></div>\n        <div class=\"blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600\"></div>\n    </div>\n\n    <div class=\"max-w-7xl mx-auto px-6 md:px-12 xl:px-6\">\n        <div class=\"relative\">\n            \n            <div class=\"flex items-center justify-center -space-x-2\">\n                <img loading=\"lazy\" width=\"400\" height=\"400\" src=\"https://randomuser.me/api/portraits/women/12.jpg\" alt=\"member photo\" class=\"h-8 w-8 rounded-full object-cover\">\n                <img loading=\"lazy\" width=\"200\" height=\"200\" src=\"https://randomuser.me/api/portraits/women/45.jpg\" alt=\"member photo\" class=\"h-12 w-12 rounded-full object-cover\">\n                <img loading=\"lazy\" width=\"200\" height=\"200\" src=\"https://randomuser.me/api/portraits/women/60.jpg\" alt=\"member photo\" class=\"z-10 h-16 w-16 rounded-full object-cover\">\n                <img loading=\"lazy\" width=\"200\" height=\"200\" src=\"https://randomuser.me/api/portraits/women/4.jpg\" alt=\"member photo\" class=\"relative h-12 w-12 rounded-full object-cover\">\n                <img loading=\"lazy\" width=\"200\" height=\"200\" src=\"https://randomuser.me/api/portraits/women/34.jpg\" alt=\"member photo\" class=\"h-8 w-8 rounded-full object-cover\">\n            </div>\n\n            <div class=\"mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12\">\n                <h1 class=\"text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl\">Get Started now\n                </h1>\n                <p class=\"text-center text-xl text-gray-600 dark:text-gray-300\">\n                    Be part of millions people around the world using tailus in modern User Interfaces.\n                </p>\n                <div class=\"flex flex-wrap justify-center gap-6\">\n                    <a href=\"#\"\n                        class=\"relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-teal-500 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max\">\n                        <span class=\"relative text-base font-semibold text-white dark:text-dark\">Get Started</span>\n                    </a>\n                    <a href=\"#\"\n                        class=\"relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-teal-500/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max\">\n                        <span class=\"relative text-base font-semibold text-teal-500 dark:text-white\">More about</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</div>"
   }
 }

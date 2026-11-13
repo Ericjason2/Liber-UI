@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "latest-blog-card-components",
+  "type": "registry:ui",
+  "title": "Latest Blog Card Components",
+  "description": "Latest Blog Card Components - Créé par @alif-bima-pradana sur TailwindFlex.",
+  "author": "@alif-bima-pradana (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/latest-blog-card-components.tsx",
+      "content": "/**\n * Component: Latest Blog Card Components\n * Author: @alif-bima-pradana (https://tailwindflex.com/@alif-bima-pradana)\n * Source: https://tailwindflex.com/@alif-bima-pradana/latest-blog-card-components\n * Attribution: Créé par @alif-bima-pradana sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LatestBlogCardComponents() {\n  return (\n    <div>\n    <h1 className=\"text-3xl font-semibold text-center mx-auto pt-10\">Latest Blog</h1>\n    <p className=\"text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto\">\n        Stay ahead of the curve with fresh content on code, design, startups, and everything in between.\n    </p>\n    \n    <div className=\"flex flex-wrap items-center justify-center gap-8 pt-12\">\n        <div className=\"max-w-72 w-full hover0.5 transition duration-300\">\n            <img className=\"rounded-xl\" src=\"https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?w=1200&h=800&auto=format&fit=crop&q=60\" alt=\"\" />\n            <h3 className=\"text-base text-slate-900 font-medium mt-3\">Color Psychology in UI: How to Choose the Right Palette</h3>\n            <p className=\"text-xs text-indigo-600 font-medium mt-1\">UI/UX design</p>\n        </div>\n        <div className=\"max-w-72 w-full hover0.5 transition duration-300\">\n            <img className=\"rounded-xl\" src=\"https://images.unsplash.com/photo-1714974528646-ea024a3db7a7?w=1200&h=800&auto=format&fit=crop&q=60\" alt=\"\" />\n            <h3 className=\"text-base text-slate-900 font-medium mt-3\">Color Psychology in UI: How to Choose the Right Palette</h3>\n            <p className=\"text-xs text-indigo-600 font-medium mt-1\">UI/UX design</p>\n        </div>\n        <div className=\"max-w-72 w-full hover0.5 transition duration-300\">\n            <img className=\"rounded-xl\" src=\"https://images.unsplash.com/photo-1713947501966-34897f21162e?w=1200&h=800&auto=format&fit=crop&q=60\" alt=\"\" />\n            <h3 className=\"text-base text-slate-900 font-medium mt-3\">Color Psychology in UI: How to Choose the Right Palette</h3>\n            <p className=\"text-xs text-indigo-600 font-medium mt-1\">UI/UX design</p>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@alif-bima-pradana",
+    "authorUrl": "https://tailwindflex.com/@alif-bima-pradana",
+    "sourceUrl": "https://tailwindflex.com/@alif-bima-pradana/latest-blog-card-components",
+    "mention": "Créé par @alif-bima-pradana sur TailwindFlex",
+    "rawHtml": "<h1 class=\"text-3xl font-semibold text-center mx-auto pt-10\">Latest Blog</h1>\n<p class=\"text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto\">\n    Stay ahead of the curve with fresh content on code, design, startups, and everything in between.\n</p>\n\n<div class=\"flex flex-wrap items-center justify-center gap-8 pt-12\">\n    <div class=\"max-w-72 w-full hover:-translate-y-0.5 transition duration-300\">\n        <img class=\"rounded-xl\" src=\"https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?w=1200&h=800&auto=format&fit=crop&q=60\" alt=\"\">\n        <h3 class=\"text-base text-slate-900 font-medium mt-3\">Color Psychology in UI: How to Choose the Right Palette</h3>\n        <p class=\"text-xs text-indigo-600 font-medium mt-1\">UI/UX design</p>\n    </div>\n    <div class=\"max-w-72 w-full hover:-translate-y-0.5 transition duration-300\">\n        <img class=\"rounded-xl\" src=\"https://images.unsplash.com/photo-1714974528646-ea024a3db7a7?w=1200&h=800&auto=format&fit=crop&q=60\" alt=\"\">\n        <h3 class=\"text-base text-slate-900 font-medium mt-3\">Color Psychology in UI: How to Choose the Right Palette</h3>\n        <p class=\"text-xs text-indigo-600 font-medium mt-1\">UI/UX design</p>\n    </div>\n    <div class=\"max-w-72 w-full hover:-translate-y-0.5 transition duration-300\">\n        <img class=\"rounded-xl\" src=\"https://images.unsplash.com/photo-1713947501966-34897f21162e?w=1200&h=800&auto=format&fit=crop&q=60\" alt=\"\">\n        <h3 class=\"text-base text-slate-900 font-medium mt-3\">Color Psychology in UI: How to Choose the Right Palette</h3>\n        <p class=\"text-xs text-indigo-600 font-medium mt-1\">UI/UX design</p>\n    </div>\n</div>"
+  }
+}

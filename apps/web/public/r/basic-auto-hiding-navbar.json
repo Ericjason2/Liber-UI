@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "basic-auto-hiding-navbar",
+  "type": "registry:ui",
+  "title": "Basic Auto-Hiding Navbar",
+  "description": "Basic Auto-Hiding Navbar - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/basic-auto-hiding-navbar.tsx",
+      "content": "/**\n * Component: Basic Auto-Hiding Navbar\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/basic-auto-hiding-navbar\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BasicAutoHidingNavbar() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Auto-Hiding Navbar</title>\\n    \\n</head>\\n<body class=\\\"bg-gray-100\\\">\\n\\n    <!-- Navbar -->\\n    <nav id=\\\"navbar\\\" class=\\\"fixed w-full bg-white/80 backdrop-blur-md shadow-md transition-transform duration-300 transform-gpu z-50\\\">\\n        <div class=\\\"container mx-auto px-6 py-4 flex justify-between items-center\\\">\\n            <!-- Logo -->\\n            <a href=\\\"#\\\" class=\\\"text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors\\\">BrandName</a>\\n\\n            <!-- Navigation Links -->\\n            <ul class=\\\"hidden md:flex space-x-6 text-gray-700 font-medium\\\">\\n                <li><a href=\\\"#\\\" class=\\\"hover:text-blue-500 transition-colors\\\">Home</a></li>\\n                <li><a href=\\\"#\\\" class=\\\"hover:text-blue-500 transition-colors\\\">About</a></li>\\n                <li><a href=\\\"#\\\" class=\\\"hover:text-blue-500 transition-colors\\\">Services</a></li>\\n                <li><a href=\\\"#\\\" class=\\\"hover:text-blue-500 transition-colors\\\">Contact</a></li>\\n            </ul>\\n\\n            <!-- Mobile Menu Button -->\\n            <button id=\\\"menu-btn\\\" class=\\\"md:hidden flex items-center text-gray-700\\\">\\n                <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\" stroke-width=\\\"2\\\" stroke=\\\"currentColor\\\" class=\\\"w-6 h-6\\\">\\n                    <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" d=\\\"M4 6h16M4 12h16m-7 6h7\\\" />\\n                </svg>\\n            </button>\\n        </div>\\n\\n        <!-- Mobile Menu -->\\n        <div id=\\\"mobile-menu\\\" class=\\\"hidden bg-white md:hidden shadow-md\\\">\\n            <ul class=\\\"space-y-4 p-4 text-gray-700 font-medium\\\">\\n                <li><a href=\\\"#\\\" class=\\\"block hover:text-blue-500 transition-colors\\\">Home</a></li>\\n                <li><a href=\\\"#\\\" class=\\\"block hover:text-blue-500 transition-colors\\\">About</a></li>\\n                <li><a href=\\\"#\\\" class=\\\"block hover:text-blue-500 transition-colors\\\">Services</a></li>\\n                <li><a href=\\\"#\\\" class=\\\"block hover:text-blue-500 transition-colors\\\">Contact</a></li>\\n            </ul>\\n        </div>\\n    </nav>\\n\\n    <!-- Main Content -->\\n    <main class=\\\"pt-20 px-4\\\">\\n        <div class=\\\"container mx-auto max-w-4xl\\\">\\n            <h1 class=\\\"text-4xl font-bold mb-6 text-gray-900\\\">Main Content</h1>\\n            <p class=\\\"mb-4 text-gray-600\\\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia nisi nec tortor scelerisque, et gravida urna faucibus.</p>\\n            <div class=\\\"h-[1000px] bg-gray-200 rounded-lg shadow-md p-6\\\">\\n                <!-- Add more content here to test scroll -->\\n                <p class=\\\"text-gray-600\\\">More content here to enable scrolling and ensure visibility of the navbar behavior.</p>\\n            </div>\\n            <div class=\\\"h-[1000px] bg-gray-200 rounded-lg shadow-md p-6\\\">\\n                <!-- Add more content here to test scroll -->\\n                <p class=\\\"text-gray-600\\\">More content here to enable scrolling and ensure visibility of the navbar behavior.</p>\\n            </div>\\n        </div>\\n    </main>\\n\\n    \\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/basic-auto-hiding-navbar",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Auto-Hiding Navbar</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gray-100\">\n\n    <!-- Navbar -->\n    <nav id=\"navbar\" class=\"fixed w-full bg-white/80 backdrop-blur-md shadow-md transition-transform duration-300 transform-gpu z-50\">\n        <div class=\"container mx-auto px-6 py-4 flex justify-between items-center\">\n            <!-- Logo -->\n            <a href=\"#\" class=\"text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors\">BrandName</a>\n\n            <!-- Navigation Links -->\n            <ul class=\"hidden md:flex space-x-6 text-gray-700 font-medium\">\n                <li><a href=\"#\" class=\"hover:text-blue-500 transition-colors\">Home</a></li>\n                <li><a href=\"#\" class=\"hover:text-blue-500 transition-colors\">About</a></li>\n                <li><a href=\"#\" class=\"hover:text-blue-500 transition-colors\">Services</a></li>\n                <li><a href=\"#\" class=\"hover:text-blue-500 transition-colors\">Contact</a></li>\n            </ul>\n\n            <!-- Mobile Menu Button -->\n            <button id=\"menu-btn\" class=\"md:hidden flex items-center text-gray-700\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"2\" stroke=\"currentColor\" class=\"w-6 h-6\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M4 6h16M4 12h16m-7 6h7\" />\n                </svg>\n            </button>\n        </div>\n\n        <!-- Mobile Menu -->\n        <div id=\"mobile-menu\" class=\"hidden bg-white md:hidden shadow-md\">\n            <ul class=\"space-y-4 p-4 text-gray-700 font-medium\">\n                <li><a href=\"#\" class=\"block hover:text-blue-500 transition-colors\">Home</a></li>\n                <li><a href=\"#\" class=\"block hover:text-blue-500 transition-colors\">About</a></li>\n                <li><a href=\"#\" class=\"block hover:text-blue-500 transition-colors\">Services</a></li>\n                <li><a href=\"#\" class=\"block hover:text-blue-500 transition-colors\">Contact</a></li>\n            </ul>\n        </div>\n    </nav>\n\n    <!-- Main Content -->\n    <main class=\"pt-20 px-4\">\n        <div class=\"container mx-auto max-w-4xl\">\n            <h1 class=\"text-4xl font-bold mb-6 text-gray-900\">Main Content</h1>\n            <p class=\"mb-4 text-gray-600\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia nisi nec tortor scelerisque, et gravida urna faucibus.</p>\n            <div class=\"h-[1000px] bg-gray-200 rounded-lg shadow-md p-6\">\n                <!-- Add more content here to test scroll -->\n                <p class=\"text-gray-600\">More content here to enable scrolling and ensure visibility of the navbar behavior.</p>\n            </div>\n            <div class=\"h-[1000px] bg-gray-200 rounded-lg shadow-md p-6\">\n                <!-- Add more content here to test scroll -->\n                <p class=\"text-gray-600\">More content here to enable scrolling and ensure visibility of the navbar behavior.</p>\n            </div>\n        </div>\n    </main>\n\n    <script>\n        let prevScrollPos = window.pageYOffset;\n        const navbar = document.getElementById(\"navbar\");\n\n        // Auto-hide Navbar on scroll\n        window.onscroll = function () {\n            let currentScrollPos = window.pageYOffset;\n            if (prevScrollPos > currentScrollPos) {\n                navbar.style.transform = \"translateY(0)\";\n            } else {\n                navbar.style.transform = \"translateY(-100%)\";\n            }\n            prevScrollPos = currentScrollPos;\n        };\n\n        // Mobile Menu Toggle\n        const menuBtn = document.getElementById(\"menu-btn\");\n        const mobileMenu = document.getElementById(\"mobile-menu\");\n\n        menuBtn.addEventListener(\"click\", () => {\n            mobileMenu.classList.toggle(\"hidden\");\n        });\n    </script>\n\n</body>\n</html>"
+  }
+}

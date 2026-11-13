@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "food-order-card",
+  "type": "registry:ui",
+  "title": "Food Order Card",
+  "description": "Food Order Card - Créé par @rajesh-maheshwari sur TailwindFlex.",
+  "author": "@rajesh-maheshwari (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/food-order-card.tsx",
+      "content": "/**\n * Component: Food Order Card\n * Author: @rajesh-maheshwari (https://tailwindflex.com/@rajesh-maheshwari)\n * Source: https://tailwindflex.com/@rajesh-maheshwari/food-order-card\n * Attribution: Créé par @rajesh-maheshwari sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FoodOrderCard() {\n  return (\n    <div>\n    <div className=\"flex items-center justify-center min-h-screen bg-black\">\n    \n        <div className=\"bg-white rounded-xl shadow-lg overflow-hidden w-full max-w-sm transition hover2xl\">\n            \n            <div className=\"relative\">\n                <img src=\"https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2VyfGVufDB8fDB8fHww\" alt=\"Food Image\" className=\"w-full h-52 object-cover\" />\n                <span className=\"absolute top-2 left-2 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow\">\n                    ⭐ 4.8 (1.2K)\n                </span>\n            </div>\n    \n            \n            <div className=\"p-5\">\n                \n                <p className=\"text-sm text-gray-500 font-medium\">— The Gourmet Kitchen</p>\n    \n                \n                <h2 className=\"text-xl font-semibold text-gray-900 mt-1\">Classic Cheese Burger</h2>\n    \n                \n                <p className=\"text-gray-600 text-sm mt-2\">Juicy beef patty, melted cheddar, fresh lettuce, and our signature sauce.</p>\n    \n                \n                <div className=\"flex items-center justify-between mt-4\">\n                    <p className=\"text-md text-gray-900 font-semibold\">₹129/-</p>\n    \n                    <div className=\"flex items-center space-x-2\">\n                        <button className=\"bg-gray-200 hover300 text-gray-800 w-8 h-8 rounded-md flex items-center justify-center text-lg font-bold\">−</button>\n                        <span className=\"text-gray-800 font-medium\">1</span>\n                        <button className=\"bg-gray-200 hover300 text-gray-800 w-8 h-8 rounded-md flex items-center justify-center text-lg font-bold\">+</button>\n                    </div>\n                </div>\n    \n                \n                <button className=\"mt-5 w-full bg-yellow-500 hover600 text-white font-semibold py-2.5 rounded-lg shadow-md transition\">\n                    Place Order\n                </button>\n            </div>\n        </div>\n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rajesh-maheshwari",
+    "authorUrl": "https://tailwindflex.com/@rajesh-maheshwari",
+    "sourceUrl": "https://tailwindflex.com/@rajesh-maheshwari/food-order-card",
+    "mention": "Créé par @rajesh-maheshwari sur TailwindFlex",
+    "rawHtml": "<div class=\"flex items-center justify-center min-h-screen bg-black\">\n\n    <div class=\"bg-white rounded-xl shadow-lg overflow-hidden w-full max-w-sm transition hover:shadow-2xl\">\n        <!-- Food Image -->\n        <div class=\"relative\">\n            <img src=\"https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2VyfGVufDB8fDB8fHww\" alt=\"Food Image\" class=\"w-full h-52 object-cover\">\n            <span class=\"absolute top-2 left-2 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow\">\n                ⭐ 4.8 (1.2K)\n            </span>\n        </div>\n\n        <!-- Content -->\n        <div class=\"p-5\">\n            <!-- Restaurant Name -->\n            <p class=\"text-sm text-gray-500 font-medium\">— The Gourmet Kitchen</p>\n\n            <!-- Food Name -->\n            <h2 class=\"text-xl font-semibold text-gray-900 mt-1\">Classic Cheese Burger</h2>\n\n            <!-- Description -->\n            <p class=\"text-gray-600 text-sm mt-2\">Juicy beef patty, melted cheddar, fresh lettuce, and our signature sauce.</p>\n\n            <!-- Orders and Quantity -->\n            <div class=\"flex items-center justify-between mt-4\">\n                <p class=\"text-md text-gray-900 font-semibold\">₹129/-</p>\n\n                <div class=\"flex items-center space-x-2\">\n                    <button class=\"bg-gray-200 hover:bg-gray-300 text-gray-800 w-8 h-8 rounded-md flex items-center justify-center text-lg font-bold\">−</button>\n                    <span class=\"text-gray-800 font-medium\">1</span>\n                    <button class=\"bg-gray-200 hover:bg-gray-300 text-gray-800 w-8 h-8 rounded-md flex items-center justify-center text-lg font-bold\">+</button>\n                </div>\n            </div>\n\n            <!-- Order Button -->\n            <button class=\"mt-5 w-full bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2.5 rounded-lg shadow-md transition\">\n                Place Order\n            </button>\n        </div>\n    </div>\n\n</div>"
+  }
+}

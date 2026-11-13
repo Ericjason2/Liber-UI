@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "custom-upload-file-input",
+  "type": "registry:ui",
+  "title": "Upload file input field",
+  "description": "Upload file input field - Créé par @gopi sur TailwindFlex.",
+  "author": "@gopi (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/custom-upload-file-input.tsx",
+      "content": "/**\n * Component: Upload file input field\n * Author: @gopi (https://tailwindflex.com/@gopi)\n * Source: https://tailwindflex.com/@gopi/custom-upload-file-input\n * Attribution: Créé par @gopi sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CustomUploadFileInput() {\n  return (\n    <div>\n    <div className=\"rounded-md border border-indigo-500 bg-gray-50 p-4 shadow-md w-36\">\n        <label htmlFor=\"upload\" className=\"flex flex-col items-center gap-2 cursor-pointer\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-10 w-10 fill-white stroke-indigo-500\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" strokeWidth=\"2\">\n            <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z\" />\n          </svg>\n          <span className=\"text-gray-600 font-medium\">Upload file</span>\n        </label>\n        <input id=\"upload\" type=\"file\" className=\"hidden\" />\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@gopi",
+    "authorUrl": "https://tailwindflex.com/@gopi",
+    "sourceUrl": "https://tailwindflex.com/@gopi/custom-upload-file-input",
+    "mention": "Créé par @gopi sur TailwindFlex",
+    "rawHtml": "<div class=\"rounded-md border border-indigo-500 bg-gray-50 p-4 shadow-md w-36\">\n    <label for=\"upload\" class=\"flex flex-col items-center gap-2 cursor-pointer\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-10 w-10 fill-white stroke-indigo-500\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"2\">\n        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z\" />\n      </svg>\n      <span class=\"text-gray-600 font-medium\">Upload file</span>\n    </label>\n    <input id=\"upload\" type=\"file\" class=\"hidden\" />\n</div>"
+  }
+}

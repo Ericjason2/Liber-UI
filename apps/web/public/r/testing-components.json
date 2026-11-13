@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "testing-components",
+  "type": "registry:ui",
+  "title": "Testing Components",
+  "description": "Testing Components - Créé par @bhavya-j-shah sur TailwindFlex.",
+  "author": "@bhavya-j-shah (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/testing-components.tsx",
+      "content": "/**\n * Component: Testing Components\n * Author: @bhavya-j-shah (https://tailwindflex.com/@bhavya-j-shah)\n * Source: https://tailwindflex.com/@bhavya-j-shah/testing-components\n * Attribution: Créé par @bhavya-j-shah sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TestingComponents() {\n  return (\n    <div>\n    <div className=\"bg-white dark800 flex justify-center items-center w-screen h-screen p-5\">\n      <div className=\"border shadow-teal-300 shadow-md max-w-2xl p-6 rounded-lg dark700 dark300\">\n        <h1 className=\"text-4xl font-mono font-extrabold py-3\">Tailwind Playground</h1>\n        <ul className=\"list-disc text-lg px-6\">\n          <li>Everything here works just like it does when you're running Tailwind CSS locally.</li>\n          <li>The preview updates in real-time as you code.</li>\n          <li>Save and share your components with the community.</li>\n          <li>Save and share your components with the community.</li>\n        </ul>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@bhavya-j-shah",
+    "authorUrl": "https://tailwindflex.com/@bhavya-j-shah",
+    "sourceUrl": "https://tailwindflex.com/@bhavya-j-shah/testing-components",
+    "mention": "Créé par @bhavya-j-shah sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\">\n  <div class=\"border shadow-teal-300 shadow-md max-w-2xl p-6 rounded-lg dark:bg-gray-700 dark:text-gray-300\">\n    <h1 class=\"text-4xl font-mono font-extrabold py-3\">Tailwind Playground</h1>\n    <ul class=\"list-disc text-lg px-6\">\n      <li>Everything here works just like it does when you're running Tailwind CSS locally.</li>\n      <li>The preview updates in real-time as you code.</li>\n      <li>Save and share your components with the community.</li>\n      <li>Save and share your components with the community.</li>\n    </ul>\n  </div>\n</div>"
+  }
+}

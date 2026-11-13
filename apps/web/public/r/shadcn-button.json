@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shadcn-button",
+  "type": "registry:ui",
+  "title": "shadcn Button",
+  "description": "shadcn Button - Créé par @cristiancastt sur TailwindFlex.",
+  "author": "@cristiancastt (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/shadcn-button.tsx",
+      "content": "/**\n * Component: shadcn Button\n * Author: @cristiancastt (https://tailwindflex.com/@cristiancastt)\n * Source: https://tailwindflex.com/@cristiancastt/shadcn-button\n * Attribution: Créé par @cristiancastt sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ShadcnButton() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n\\n<body class=\\\"bg-gray-200 p-8\\\">\\n    <div class=\\\"flex justify-center\\\">\\n        <button class=\\\"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-4 py-2\\\">Hola</button>\\n    </div>\\n</body>\\n\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@cristiancastt",
+    "authorUrl": "https://tailwindflex.com/@cristiancastt",
+    "sourceUrl": "https://tailwindflex.com/@cristiancastt/shadcn-button",
+    "mention": "Créé par @cristiancastt sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<body class=\"bg-gray-200 p-8\">\n    <div class=\"flex justify-center\">\n        <button class=\"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-4 py-2\">Hola</button>\n    </div>\n</body>\n\n</html>"
+  }
+}

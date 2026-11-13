@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-form-3",
+  "type": "registry:ui",
+  "title": "Simple Form 3",
+  "description": "Simple Form 3 - Créé par @mr-robot sur TailwindFlex.",
+  "author": "@mr-robot (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-form-3.tsx",
+      "content": "/**\n * Component: Simple Form 3\n * Author: @mr-robot (https://tailwindflex.com/@mr-robot)\n * Source: https://tailwindflex.com/@mr-robot/simple-form-3\n * Attribution: Créé par @mr-robot sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SimpleForm3() {\n  return (\n    <div>\n    \r\n    \r\n    <div className=\"bg-purple-600 min-h-screen flex items-center text-lg\">\r\n        <form action=\"\" className=\"p-10 md2/3 lg1/2 mx-auto rounded\">\r\n            <div className=\"shadow\">\r\n                <div className=\"flex items-center bg-purple-400 rounded-t-lg border-purple-500 border-b\">\r\n                    <label htmlFor=\"name\" className=\"w-20 text-right mr-8 p-4 text-purple-200\">Name</label>\r\n                    <input type=\"text\" name=\"name\" id=\"name\" placeholder=\"Put in your name\" className=\"flex-1 p-4 pl-0 bg-transparent placeholder-purple-300  outline-none text-white overflow-ellipsis overflow-hidden\" />\r\n                </div>\r\n                <div className=\"flex items-center bg-purple-400  rounded-b-lg border-purple-500 mb-10\">\r\n                    <label htmlFor=\"twitter\" className=\"w-20 text-right p-4 mr-8 text-purple-200\">Twitter</label>\r\n                    <input type=\"text\" name=\"twitter\" id=\"twitter\" placeholder=\"Put in Twitter pseudonym\" className=\"flex-1 p-4 pl-0 bg-transparent placeholder-purple-300 outline-none text-white overflow-ellipsis overflow-hidden\" />\r\n                </div>\r\n            </div>\r\n            <button className=\"bg-pink-400 block w-full rounded py-4 text-white font-bold shadow\">Submit</button>\r\n    \r\n        </form>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mr-robot",
+    "authorUrl": "https://tailwindflex.com/@mr-robot",
+    "sourceUrl": "https://tailwindflex.com/@mr-robot/simple-form-3",
+    "mention": "Créé par @mr-robot sur TailwindFlex",
+    "rawHtml": "<!-- https://codepen.io/simonwpt-the-typescripter/embed/RwGrRXq -->\r\n\r\n<div class=\"bg-purple-600 min-h-screen flex items-center text-lg\">\r\n    <form action=\"\" class=\"p-10 md:w-2/3 lg:w-1/2 mx-auto rounded\">\r\n        <div class=\"shadow\">\r\n            <div class=\"flex items-center bg-purple-400 rounded-t-lg border-purple-500 border-b\">\r\n                <label for=\"name\" class=\"w-20 text-right mr-8 p-4 text-purple-200\">Name</label>\r\n                <input type=\"text\" name=\"name\" id=\"name\" placeholder=\"Put in your name\" class=\"flex-1 p-4 pl-0 bg-transparent placeholder-purple-300  outline-none text-white overflow-ellipsis overflow-hidden\">\r\n            </div>\r\n            <div class=\"flex items-center bg-purple-400  rounded-b-lg border-purple-500 mb-10\">\r\n                <label for=\"twitter\" class=\"w-20 text-right p-4 mr-8 text-purple-200\">Twitter</label>\r\n                <input type=\"text\" name=\"twitter\" id=\"twitter\" placeholder=\"Put in Twitter pseudonym\" class=\"flex-1 p-4 pl-0 bg-transparent placeholder-purple-300 outline-none text-white overflow-ellipsis overflow-hidden\">\r\n            </div>\r\n        </div>\r\n        <button class=\"bg-pink-400 block w-full rounded py-4 text-white font-bold shadow\">Submit</button>\r\n\r\n    </form>\r\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-card-15",
+  "type": "registry:ui",
+  "title": "Pricing card",
+  "description": "Pricing card - Créé par @kaunghtetx sur TailwindFlex.",
+  "author": "@kaunghtetx (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pricing-card-15.tsx",
+      "content": "/**\n * Component: Pricing card\n * Author: @kaunghtetx (https://tailwindflex.com/@kaunghtetx)\n * Source: https://tailwindflex.com/@kaunghtetx/pricing-card-15\n * Attribution: Créé par @kaunghtetx sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PricingCard15() {\n  return (\n    <div>\n    <div className=\"max-w-md mx-auto rounded-lg shadow-lg mt-5 dark700 dark100\">\n      <div className=\"px-6 py-4\">\n        <div className=\"flex flex-col w-24\">\n          <h2 className=\"font-bold text-xl dark100\">Basic Plan</h2>\n          <div className=\"border-2 border-blue-500 mb-3 text\"></div>\n        </div>\n        <div className=\"text-gray-500 dark200\">\n          <p>In this plan you will get</p>\n          <ul>\n            <li>item 10</li>\n            <li>item 2</li>\n            <li>item 3</li>\n          </ul>\n        </div>\n      </div>\n    \n      <div className=\"bg-gray-100 px-6 py-3 rounded-t-lg dark100\">\n        <h2 className=\"font-bold text-2xl mb-2\">$9.99/mo</h2>\n        <p className=\"text-gray-600 dark600\">Access to basic features</p>\n        <button className=\"bg-blue-600 px-4 py-2 mt-3 rounded font-semibold text-white hover700\">Subscribe</button>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@kaunghtetx",
+    "authorUrl": "https://tailwindflex.com/@kaunghtetx",
+    "sourceUrl": "https://tailwindflex.com/@kaunghtetx/pricing-card-15",
+    "mention": "Créé par @kaunghtetx sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-md mx-auto rounded-lg shadow-lg mt-5 dark:bg-gray-700 dark:shadow-blue-100\">\n  <div class=\"px-6 py-4\">\n    <div class=\"flex flex-col w-24\">\n      <h2 class=\"font-bold text-xl dark:text-gray-100\">Basic Plan</h2>\n      <div class=\"border-2 border-blue-500 mb-3 text\"></div>\n    </div>\n    <div class=\"text-gray-500 dark:text-gray-200\">\n      <p>In this plan you will get</p>\n      <ul>\n        <li>item 10</li>\n        <li>item 2</li>\n        <li>item 3</li>\n      </ul>\n    </div>\n  </div>\n\n  <div class=\"bg-gray-100 px-6 py-3 rounded-t-lg dark:bg-blue-100\">\n    <h2 class=\"font-bold text-2xl mb-2\">$9.99/mo</h2>\n    <p class=\"text-gray-600 dark:text-gray-600\">Access to basic features</p>\n    <button class=\"bg-blue-600 px-4 py-2 mt-3 rounded font-semibold text-white hover:bg-blue-700\">Subscribe</button>\n  </div>\n</div>"
+  }
+}

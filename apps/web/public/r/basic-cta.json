@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "basic-cta",
+  "type": "registry:ui",
+  "title": "Basic CTA",
+  "description": "Basic CTA - Créé par @dipti sur TailwindFlex.",
+  "author": "@dipti (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/basic-cta.tsx",
+      "content": "/**\n * Component: Basic CTA\n * Author: @dipti (https://tailwindflex.com/@dipti)\n * Source: https://tailwindflex.com/@dipti/basic-cta\n * Attribution: Créé par @dipti sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BasicCta() {\n  return (\n    <div>\n    <div className=\"px-4 py-12 mx-auto text-center sm6 lg16 lg8 dark600\">\n      <p className=\"text-3xl font-extrabold leading-normal tracking-tight text-gray-900 dark100 sm4xl\">\n        <span>Ready to try it?</span>\n        <br />\n        <span className=\"text-indigo-600 dark400\">Read the documentation.</span>\n      </p>\n      <div className=\"flex justify-center gap-4 mt-8 font-medium\">\n        <a href=\"#\"\n          className=\"px-5 py-3 text-base leading-6 text-white bg-indigo-600 dark800 rounded-md hover500 dark700 focus focus\">\n          Take a Test\n        </a>\n        <a href=\"#\"\n          className=\"px-5 py-3 text-base leading-6 text-indigo-700 dark300 bg-indigo-100 dark900 rounded-md hover600 dark400 hover50 dark800 focus focus focus300\">\n          Download PDF\n        </a>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@dipti",
+    "authorUrl": "https://tailwindflex.com/@dipti",
+    "sourceUrl": "https://tailwindflex.com/@dipti/basic-cta",
+    "mention": "Créé par @dipti sur TailwindFlex",
+    "rawHtml": "<div class=\"px-4 py-12 mx-auto text-center sm:px-6 lg:py-16 lg:px-8 dark:bg-gray-600\">\n  <p class=\"text-3xl font-extrabold leading-normal tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl\">\n    <span>Ready to try it?</span>\n    <br>\n    <span class=\"text-indigo-600 dark:text-indigo-400\">Read the documentation.</span>\n  </p>\n  <div class=\"flex justify-center gap-4 mt-8 font-medium\">\n    <a href=\"#\"\n      class=\"px-5 py-3 text-base leading-6 text-white bg-indigo-600 dark:bg-gray-800 rounded-md hover:bg-indigo-500 dark:hover:bg-gray-700 focus:outline-none focus:shadow-outline\">\n      Take a Test\n    </a>\n    <a href=\"#\"\n      class=\"px-5 py-3 text-base leading-6 text-indigo-700 dark:text-indigo-300 bg-indigo-100 dark:bg-gray-900 rounded-md hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 focus:outline-none focus:shadow-outline focus:border-indigo-300\">\n      Download PDF\n    </a>\n  </div>\n</div>"
+  }
+}

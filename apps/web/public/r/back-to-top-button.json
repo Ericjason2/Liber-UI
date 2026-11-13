@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "back-to-top-button",
+  "type": "registry:ui",
+  "title": "Back to top button",
+  "description": "Back to top button - Créé par @rafferty sur TailwindFlex.",
+  "author": "@rafferty (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/back-to-top-button.tsx",
+      "content": "/**\n * Component: Back to top button\n * Author: @rafferty (https://tailwindflex.com/@rafferty)\n * Source: https://tailwindflex.com/@rafferty/back-to-top-button\n * Attribution: Créé par @rafferty sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BackToTopButton() {\n  return (\n    <div>\n    <div className=\"fixed bottom-0 right-0 p-4\">\n      <button className=\"bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center\">\n        <svg className=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 10l7-7m0 0l7 7m-7-7v18\"></path>\n        </svg>\n      </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rafferty",
+    "authorUrl": "https://tailwindflex.com/@rafferty",
+    "sourceUrl": "https://tailwindflex.com/@rafferty/back-to-top-button",
+    "mention": "Créé par @rafferty sur TailwindFlex",
+    "rawHtml": "<div class=\"fixed bottom-0 right-0 p-4\">\n  <button class=\"bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center\" onclick=\"backToTop()\">\n    <svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 10l7-7m0 0l7 7m-7-7v18\"></path>\n    </svg>\n  </button>\n</div>"
+  }
+}

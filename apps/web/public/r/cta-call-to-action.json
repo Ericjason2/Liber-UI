@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cta-call-to-action",
+  "type": "registry:ui",
+  "title": "CTA Call To Action",
+  "description": "CTA Call To Action - Créé par @kuldeep541 sur TailwindFlex.",
+  "author": "@kuldeep541 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cta-call-to-action.tsx",
+      "content": "/**\n * Component: CTA Call To Action\n * Author: @kuldeep541 (https://tailwindflex.com/@kuldeep541)\n * Source: https://tailwindflex.com/@kuldeep541/cta-call-to-action\n * Attribution: Créé par @kuldeep541 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CtaCallToAction() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<style>\\n  .bg-gradient-to-r {\\n    background: linear-gradient(to right, rgba(156, 163, 175, 0.7), rgba(59, 130, 246, 0.5));\\n  }\\n</style>\\n\\n<!-- CTA Section -->\\n<section class=\\\"py-16\\\">\\n  <div class=\\\"container mx-auto px-4\\\">\\n    <div class=\\\"bg-gradient-to-r rounded-2xl p-8 md:p-12 flex flex-col items-center text-center\\\">\\n      <h2 class=\\\"text-3xl font-bold mb-4\\\">Ready to <span class=\\\"text-gray-900\\\">Create?</span></h2>\\n      <p class=\\\"text-xl max-w-2xl mx-auto mb-6\\\">\\n        Book your session today and experience the ultimate jamming space in Lucknow!\\n      </p>\\n      <div class=\\\"flex flex-col sm:flex-row gap-4 justify-center\\\">\\n        <a href=\\\"#\\\" class=\\\"bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 px-8 rounded-full transition-colors\\\">\\n          Book Your Session\\n        </a>\\n        <a href=\\\"tel:+917307022824\\\"\\n          class=\\\"bg-white hover:bg-gray-100 text-gray-900 font-bold py-4 px-8 rounded-full transition-colors flex items-center justify-center\\\">\\n          <!-- Phone Icon Placeholder -->\\n          <svg class=\\\"h-5 w-5 mr-2\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\"\\n            stroke=\\\"currentColor\\\">\\n            <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" stroke-width=\\\"2\\\"\\n              d=\\\"M3 4a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zM3 16a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zM10 3a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1V3zM10 9a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1V9zM10 15a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1v-2z\\\" />\\n          </svg>\\n          Call Us Now\\n        </a>\\n      </div>\\n    </div>\\n  </div>\\n</section>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@kuldeep541",
+    "authorUrl": "https://tailwindflex.com/@kuldeep541",
+    "sourceUrl": "https://tailwindflex.com/@kuldeep541/cta-call-to-action",
+    "mention": "Créé par @kuldeep541 sur TailwindFlex",
+    "rawHtml": "<style>\n  .bg-gradient-to-r {\n    background: linear-gradient(to right, rgba(156, 163, 175, 0.7), rgba(59, 130, 246, 0.5));\n  }\n</style>\n\n<!-- CTA Section -->\n<section class=\"py-16\">\n  <div class=\"container mx-auto px-4\">\n    <div class=\"bg-gradient-to-r rounded-2xl p-8 md:p-12 flex flex-col items-center text-center\">\n      <h2 class=\"text-3xl font-bold mb-4\">Ready to <span class=\"text-gray-900\">Create?</span></h2>\n      <p class=\"text-xl max-w-2xl mx-auto mb-6\">\n        Book your session today and experience the ultimate jamming space in Lucknow!\n      </p>\n      <div class=\"flex flex-col sm:flex-row gap-4 justify-center\">\n        <a href=\"#\" class=\"bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 px-8 rounded-full transition-colors\">\n          Book Your Session\n        </a>\n        <a href=\"tel:+917307022824\"\n          class=\"bg-white hover:bg-gray-100 text-gray-900 font-bold py-4 px-8 rounded-full transition-colors flex items-center justify-center\">\n          <!-- Phone Icon Placeholder -->\n          <svg class=\"h-5 w-5 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"\n            stroke=\"currentColor\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\n              d=\"M3 4a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zM3 16a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zM10 3a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1V3zM10 9a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1V9zM10 15a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1v-2z\" />\n          </svg>\n          Call Us Now\n        </a>\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

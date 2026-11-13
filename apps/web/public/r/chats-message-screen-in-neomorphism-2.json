@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "chats-message-screen-in-neomorphism-2",
+  "type": "registry:ui",
+  "title": "Chats Message Screen in neomorphism",
+  "description": "Chats Message Screen in neomorphism - Créé par @akram6t sur TailwindFlex.",
+  "author": "@akram6t (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/chats-message-screen-in-neomorphism-2.tsx",
+      "content": "/**\n * Component: Chats Message Screen in neomorphism\n * Author: @akram6t (https://tailwindflex.com/@akram6t)\n * Source: https://tailwindflex.com/@akram6t/chats-message-screen-in-neomorphism-2\n * Attribution: Créé par @akram6t sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ChatsMessageScreenInNeomorphism2() {\n  return (\n    <div>\n    <div className=\"w-full max-w-md bg-gray-100 dark800 rounded-2xl neo-shadow p-6 space-y-6\">\n            \n            <div className=\"flex items-center space-x-4\">\n                <div className=\"w-12 h-12 rounded-full neo-shadow flex items-center justify-center\">\n                    <span className=\"text-xl font-semibold text-gray-700 dark300\">JD</span>\n                </div>\n                <h1 className=\"text-2xl font-bold text-gray-800 dark200\">Chat with John Doe</h1>\n            </div>\n    \n            \n            <div className=\"h-96 overflow-y-auto neo-inset p-4 rounded-xl space-y-4\">\n                \n                <div className=\"flex items-start space-x-2\">\n                    <div className=\"w-8 h-8 rounded-full neo-shadow flex-shrink-0 flex items-center justify-center\">\n                        <span className=\"text-sm font-medium text-gray-700 dark300\">JD</span>\n                    </div>\n                    <div className=\"bg-white dark700 p-3 rounded-lg neo-shadow max-w-xs\">\n                        <p className=\"text-sm text-gray-700 dark300\">Hey there! How's it going?</p>\n                    </div>\n                </div>\n    \n                \n                <div className=\"flex items-start justify-end space-x-2\">\n                    <div className=\"bg-blue-500 p-3 rounded-lg neo-shadow max-w-xs\">\n                        <p className=\"text-sm text-white\">Hi John! I'm doing well, thanks for asking. How about you?</p>\n                    </div>\n                </div>\n            </div>\n    \n            \n            <div className=\"flex items-center space-x-4\">\n                <div className=\"flex-grow\">\n                    <input type=\"text\" placeholder=\"Type your message...\"\n                           className=\"w-full p-4 rounded-xl neo-inset bg-transparent text-gray-700 dark300 placeholder-gray-500 dark400 focus\" />\n                </div>\n                <button className=\"p-4 rounded-xl neo-shadow neo-button focus\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-6 w-6 text-blue-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                        <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M12 19l9 2-9-18-9 18 9-2zm0 0v-8\" />\n                    </svg>\n                </button>\n            </div>\n        </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@akram6t",
+    "authorUrl": "https://tailwindflex.com/@akram6t",
+    "sourceUrl": "https://tailwindflex.com/@akram6t/chats-message-screen-in-neomorphism-2",
+    "mention": "Créé par @akram6t sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full max-w-md bg-gray-100 dark:bg-gray-800 rounded-2xl neo-shadow p-6 space-y-6\">\n        <!-- Chat header -->\n        <div class=\"flex items-center space-x-4\">\n            <div class=\"w-12 h-12 rounded-full neo-shadow flex items-center justify-center\">\n                <span class=\"text-xl font-semibold text-gray-700 dark:text-gray-300\">JD</span>\n            </div>\n            <h1 class=\"text-2xl font-bold text-gray-800 dark:text-gray-200\">Chat with John Doe</h1>\n        </div>\n\n        <!-- Chat messages area -->\n        <div class=\"h-96 overflow-y-auto neo-inset p-4 rounded-xl space-y-4\">\n            <!-- Received message -->\n            <div class=\"flex items-start space-x-2\">\n                <div class=\"w-8 h-8 rounded-full neo-shadow flex-shrink-0 flex items-center justify-center\">\n                    <span class=\"text-sm font-medium text-gray-700 dark:text-gray-300\">JD</span>\n                </div>\n                <div class=\"bg-white dark:bg-gray-700 p-3 rounded-lg neo-shadow max-w-xs\">\n                    <p class=\"text-sm text-gray-700 dark:text-gray-300\">Hey there! How's it going?</p>\n                </div>\n            </div>\n\n            <!-- Sent message -->\n            <div class=\"flex items-start justify-end space-x-2\">\n                <div class=\"bg-blue-500 p-3 rounded-lg neo-shadow max-w-xs\">\n                    <p class=\"text-sm text-white\">Hi John! I'm doing well, thanks for asking. How about you?</p>\n                </div>\n            </div>\n        </div>\n\n        <!-- Message input area -->\n        <div class=\"flex items-center space-x-4\">\n            <div class=\"flex-grow\">\n                <input type=\"text\" placeholder=\"Type your message...\"\n                       class=\"w-full p-4 rounded-xl neo-inset bg-transparent text-gray-700 dark:text-gray-300 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none\">\n            </div>\n            <button class=\"p-4 rounded-xl neo-shadow neo-button focus:outline-none\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-blue-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 19l9 2-9-18-9 18 9-2zm0 0v-8\" />\n                </svg>\n            </button>\n        </div>\n    </div>"
+  }
+}

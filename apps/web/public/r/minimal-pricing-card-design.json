@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "minimal-pricing-card-design",
+  "type": "registry:ui",
+  "title": "Minimal pricing card design",
+  "description": "Minimal pricing card design - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/minimal-pricing-card-design.tsx",
+      "content": "/**\n * Component: Minimal pricing card design\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/minimal-pricing-card-design\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function MinimalPricingCardDesign() {\n  return (\n    <div>\n    <div className=\"bg-white rounded-lg overflow-hidden shadow-lg\">\n      <div className=\"px-6 py-8\">\n        <h2 className=\"text-3xl font-semibold text-gray-800 mb-2\">Pro Plan</h2>\n        <p className=\"text-gray-600 mb-4\">Perfect for professionals and teams</p>\n        <div className=\"text-3xl font-bold text-gray-800 mb-4\">$19<span className=\"text-lg font-normal text-gray-600\">/month</span></div>\n        <ul className=\"text-gray-600\">\n          <li className=\"flex items-center mb-2\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-5 w-5 mr-2 text-green-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n              <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path>\n            </svg>\n            Unlimited projects\n          </li>\n          <li className=\"flex items-center mb-2\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-5 w-5 mr-2 text-green-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n              <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path>\n            </svg>\n            24/7 support\n          </li>\n          <li className=\"flex items-center mb-2\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-5 w-5 mr-2 text-green-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n              <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path>\n            </svg>\n            Custom analytics\n          </li>\n          <li className=\"flex items-center\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-5 w-5 mr-2 text-green-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n              <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path>\n            </svg>\n            Secure data storage\n          </li>\n        </ul>\n        <button className=\"mt-6 bg-green-500 hover600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover105\">\n          Get Started\n        </button>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/minimal-pricing-card-design",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white rounded-lg overflow-hidden shadow-lg\">\n  <div class=\"px-6 py-8\">\n    <h2 class=\"text-3xl font-semibold text-gray-800 mb-2\">Pro Plan</h2>\n    <p class=\"text-gray-600 mb-4\">Perfect for professionals and teams</p>\n    <div class=\"text-3xl font-bold text-gray-800 mb-4\">$19<span class=\"text-lg font-normal text-gray-600\">/month</span></div>\n    <ul class=\"text-gray-600\">\n      <li class=\"flex items-center mb-2\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-5 w-5 mr-2 text-green-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n        </svg>\n        Unlimited projects\n      </li>\n      <li class=\"flex items-center mb-2\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-5 w-5 mr-2 text-green-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n        </svg>\n        24/7 support\n      </li>\n      <li class=\"flex items-center mb-2\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-5 w-5 mr-2 text-green-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n        </svg>\n        Custom analytics\n      </li>\n      <li class=\"flex items-center\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-5 w-5 mr-2 text-green-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n        </svg>\n        Secure data storage\n      </li>\n    </ul>\n    <button class=\"mt-6 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105\">\n      Get Started\n    </button>\n  </div>\n</div>"
+  }
+}

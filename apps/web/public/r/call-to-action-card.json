@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-to-action-card",
+  "type": "registry:ui",
+  "title": "Call-to-Action Card",
+  "description": "Call-to-Action Card - Créé par @santiago sur TailwindFlex.",
+  "author": "@santiago (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-to-action-card.tsx",
+      "content": "/**\n * Component: Call-to-Action Card\n * Author: @santiago (https://tailwindflex.com/@santiago)\n * Source: https://tailwindflex.com/@santiago/call-to-action-card\n * Attribution: Créé par @santiago sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToActionCard() {\n  return (\n    <div>\n    <div className=\"bg-white\">\n      <div className=\"mx-auto max-w-7xl py-24 sm6 sm32 lg8\">\n        <div className=\"relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm3xl sm16\">\n          <h2 className=\"mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm4xl\">Unlock the Power of AI\n          </h2>\n          <p className=\"mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300\">Sign up now to leverage the capabilities of our\n            AI platform. AIHub is currently in beta testing; don't hesitate to contact us for any inquiries.</p>\n          <div className=\"mt-10 flex items-center justify-center gap-x-6\">\n            <a href=\"#\"\n              className=\"rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover100 focus-visible focus-visible2 focus-visible2 focus-visible\">Get\n              started\n            </a>\n            <a href=\"mailto.com\"\n              className=\"text-sm font-semibold leading-6 text-white hover hover2\">\n              hello.com\n            </a>\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@santiago",
+    "authorUrl": "https://tailwindflex.com/@santiago",
+    "sourceUrl": "https://tailwindflex.com/@santiago/call-to-action-card",
+    "mention": "Créé par @santiago sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white\">\n  <div class=\"mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8\">\n    <div class=\"relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16\">\n      <h2 class=\"mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl\">Unlock the Power of AI\n      </h2>\n      <p class=\"mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300\">Sign up now to leverage the capabilities of our\n        AI platform. AIHub is currently in beta testing; don't hesitate to contact us for any inquiries.</p>\n      <div class=\"mt-10 flex items-center justify-center gap-x-6\">\n        <a href=\"#\"\n          class=\"rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white\">Get\n          started\n        </a>\n        <a href=\"mailto:hello@aihub.com\"\n          class=\"text-sm font-semibold leading-6 text-white hover:underline hover:underline-offset-2\">\n          hello@aihub.com\n        </a>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "credit-card-checkout",
+  "type": "registry:ui",
+  "title": "credit card checkout",
+  "description": "credit card checkout - Créé par @mwawuganga sur TailwindFlex.",
+  "author": "@mwawuganga (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/credit-card-checkout.tsx",
+      "content": "/**\n * Component: credit card checkout\n * Author: @mwawuganga (https://tailwindflex.com/@mwawuganga)\n * Source: https://tailwindflex.com/@mwawuganga/credit-card-checkout\n * Attribution: Créé par @mwawuganga sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CreditCardCheckout() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"container flex flex-col min-h-screen max-w-full\\\">\\n   <div class=\\\"bg-white text-white py-8 shadow-lg max-w-full\\\">\\n      <div class=\\\"container mx-auto px-4 items-center justify-between\\\">\\n        <div class=\\\"flex items-center\\\">\\n          Logo\\n          </div>\\n        </div>\\n   </div>\\n  <div class=\\\"max-w-md mx-auto md:max-w-xl p-6\\\">\\n   \\n    <div class=\\\"md:flex\\\">\\n      <div class=\\\"w-full px-6 py-8 md:p-8 bg-white shadow-lg\\\">\\n        <p class=\\\"mt-4 mb-6 text-gray-700\\\">Payment</p>\\n        <div class=\\\"\\\"></div>\\n        <form class=\\\"\\\">\\n          <div class=\\\"mb-6\\\">\\n            <label class=\\\"block text-gray-700 mb-2\\\">Card Number<label>\\n            <input type=\\\"text\\\" name=\\\"cardNumber\\\" class=\\\"w-full p-2 shadow-sm rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-indigo-200 focus:border-indigo-300 focus:ring-opacity-20\\\" placeholder=\\\"0000 00000 0000 0000\\\" />\\n          </div>\\n          \\n          <div class=\\\"flex mb-6 gap-4 w-full\\\">\\n            <div class=\\\"w-1/2\\\">\\n              <label class=\\\"text-gray-700\\\">Expiration Date<label>\\n              <input type=\\\"text\\\" name=\\\"expiryDate\\\" class=\\\"w-full p-2 shadow-sm rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-indigo-200 focus:border-indigo-300 focus:ring-opacity-20\\\" placeholder=\\\"MM/YY\\\" />\\n            </div>\\n\\n            <div class=\\\"w-1/2 mb-6\\\">\\n              <label class=\\\"text-gray-700\\\">CVV<label>\\n              <input type=\\\"text\\\" name=\\\"cvv\\\" class=\\\"w-full p-2 shadow-sm rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-indigo-200 focus:border-indigo-300 focus:ring-opacity-20\\\" placeholder=\\\"123\\\" />\\n            </div>\\n          </div>\\n\\n          <div>\\n            <button class=\\\"w-full bg-green-500 p-3 text-gray-100 font-bold\\\">Pay $500</button>\\n          </div>\\n        </form>\\n      </div>\\n    <div>\\n    </div>\\n<div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mwawuganga",
+    "authorUrl": "https://tailwindflex.com/@mwawuganga",
+    "sourceUrl": "https://tailwindflex.com/@mwawuganga/credit-card-checkout",
+    "mention": "Créé par @mwawuganga sur TailwindFlex",
+    "rawHtml": "<div class=\"container flex flex-col min-h-screen max-w-full\">\n   <div class=\"bg-white text-white py-8 shadow-lg max-w-full\">\n      <div class=\"container mx-auto px-4 items-center justify-between\">\n        <div class=\"flex items-center\">\n          Logo\n          </div>\n        </div>\n   </div>\n  <div class=\"max-w-md mx-auto md:max-w-xl p-6\">\n   \n    <div class=\"md:flex\">\n      <div class=\"w-full px-6 py-8 md:p-8 bg-white shadow-lg\">\n        <p class=\"mt-4 mb-6 text-gray-700\">Payment</p>\n        <div class=\"\"></div>\n        <form class=\"\">\n          <div class=\"mb-6\">\n            <label class=\"block text-gray-700 mb-2\">Card Number<label>\n            <input type=\"text\" name=\"cardNumber\" class=\"w-full p-2 shadow-sm rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-indigo-200 focus:border-indigo-300 focus:ring-opacity-20\" placeholder=\"0000 00000 0000 0000\" />\n          </div>\n          \n          <div class=\"flex mb-6 gap-4 w-full\">\n            <div class=\"w-1/2\">\n              <label class=\"text-gray-700\">Expiration Date<label>\n              <input type=\"text\" name=\"expiryDate\" class=\"w-full p-2 shadow-sm rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-indigo-200 focus:border-indigo-300 focus:ring-opacity-20\" placeholder=\"MM/YY\" />\n            </div>\n\n            <div class=\"w-1/2 mb-6\">\n              <label class=\"text-gray-700\">CVV<label>\n              <input type=\"text\" name=\"cvv\" class=\"w-full p-2 shadow-sm rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-indigo-200 focus:border-indigo-300 focus:ring-opacity-20\" placeholder=\"123\" />\n            </div>\n          </div>\n\n          <div>\n            <button class=\"w-full bg-green-500 p-3 text-gray-100 font-bold\">Pay $500</button>\n          </div>\n        </form>\n      </div>\n    <div>\n    </div>\n<div>"
+  }
+}

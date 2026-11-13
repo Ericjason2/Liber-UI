@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animaitve-card",
+  "type": "registry:ui",
+  "title": "Animaitve card",
+  "description": "Animaitve card - Créé par @sufyan-jutt sur TailwindFlex.",
+  "author": "@sufyan-jutt (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/animaitve-card.tsx",
+      "content": "/**\n * Component: Animaitve card\n * Author: @sufyan-jutt (https://tailwindflex.com/@sufyan-jutt)\n * Source: https://tailwindflex.com/@sufyan-jutt/animaitve-card\n * Attribution: Créé par @sufyan-jutt sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AnimaitveCard() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n  <title>Responsive Animated Card</title>\\n  <link href=\\\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap\\\" rel=\\\"stylesheet\\\">\\n  <style>\\n    /* ===== Global Styles ===== */\\n    * {\\n      margin: 0;\\n      padding: 0;\\n      box-sizing: border-box;\\n    }\\n\\n    body {\\n      font-family: 'Poppins', sans-serif;\\n      display: flex;\\n      justify-content: center;\\n      align-items: center;\\n      min-height: 100vh;\\n      background: #f5f7fa;\\n    }\\n\\n    /* ===== Card Container ===== */\\n    .card-container {\\n      display: grid;\\n      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\\n      gap: 2rem;\\n      width: 90%;\\n      max-width: 1200px;\\n    }\\n\\n    /* ===== Card Styles ===== */\\n    .card {\\n      background: #fff;\\n      border-radius: 20px;\\n      box-shadow: 0 10px 20px rgba(0,0,0,0.1);\\n      overflow: hidden;\\n      transition: transform 0.5s ease, box-shadow 0.5s ease;\\n      cursor: pointer;\\n      position: relative;\\n    }\\n\\n    .card:hover {\\n      transform: translateY(-10px) scale(1.05);\\n      box-shadow: 0 20px 40px rgba(0,0,0,0.2);\\n    }\\n\\n    /* ===== Card Image ===== */\\n    .card img {\\n      width: 100%;\\n      height: 200px;\\n      object-fit: cover;\\n      transition: transform 0.5s ease;\\n    }\\n\\n    .card:hover img {\\n      transform: scale(1.1);\\n    }\\n\\n    /* ===== Card Content ===== */\\n    .card-content {\\n      padding: 1.5rem;\\n      text-align: center;\\n    }\\n\\n    .card-content h2 {\\n      font-size: 1.5rem;\\n      margin-bottom: 0.5rem;\\n      color: #1e293b;\\n    }\\n\\n    .card-content p {\\n      font-size: 1rem;\\n      color: #64748b;\\n      line-height: 1.5;\\n    }\\n\\n    /* ===== Animated Button ===== */\\n    .card-content button {\\n      margin-top: 1rem;\\n      padding: 0.6rem 1.2rem;\\n      border: none;\\n      border-radius: 50px;\\n      background: linear-gradient(45deg, #1d4ed8, #3b82f6);\\n      color: white;\\n      font-weight: 600;\\n      cursor: pointer;\\n      transition: all 0.3s ease;\\n    }\\n\\n    .card-content button:hover {\\n      transform: scale(1.1);\\n      background: linear-gradient(45deg, #3b82f6, #60a5fa);\\n    }\\n\\n    /* ===== Responsive Text ===== */\\n    @media (max-width: 768px) {\\n      .card-content h2 {\\n        font-size: 1.3rem;\\n      }\\n\\n      .card-content p {\\n        font-size: 0.9rem;\\n      }\\n    }\\n\\n    @media (max-width: 480px) {\\n      .card img {\\n        height: 150px;\\n      }\\n\\n      .card-content h2 {\\n        font-size: 1.1rem;\\n      }\\n\\n      .card-content p {\\n        font-size: 0.8rem;\\n      }\\n    }\\n  </style>\\n</head>\\n<body>\\n\\n  <div class=\\\"card-container\\\">\\n    <div class=\\\"card\\\">\\n      <img src=\\\"https://picsum.photos/400/200?random=1\\\" alt=\\\"Card Image\\\">\\n      <div class=\\\"card-content\\\">\\n        <h2>Card Title 1</h2>\\n        <p>This is a beautiful responsive card with smooth hover animations. Perfect for portfolios or UI sections.</p>\\n        <button>Read More</button>\\n      </div>\\n    </div>\\n\\n    <div class=\\\"card\\\">\\n      <img src=\\\"https://picsum.photos/400/200?random=2\\\" alt=\\\"Card Image\\\">\\n      <div class=\\\"card-content\\\">\\n        <h2>Card Title 2</h2>\\n        <p>This card scales on hover, the image zooms, and the button animates. Looks amazing on mobile too.</p>\\n        <button>Read More</button>\\n      </div>\\n    </div>\\n\\n    <div class=\\\"card\\\">\\n      <img src=\\\"https://picsum.photos/400/200?random=3\\\" alt=\\\"Card Image\\\">\\n      <div class=\\\"card-content\\\">\\n        <h2>Card Title 3</h2>\\n        <p>Fully responsive, modern, and animated card. You can copy this structure for multiple cards.</p>\\n        <button>Read More</button>\\n      </div>\\n    </div>\\n  </div>\\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sufyan-jutt",
+    "authorUrl": "https://tailwindflex.com/@sufyan-jutt",
+    "sourceUrl": "https://tailwindflex.com/@sufyan-jutt/animaitve-card",
+    "mention": "Créé par @sufyan-jutt sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Responsive Animated Card</title>\n  <link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap\" rel=\"stylesheet\">\n  <style>\n    /* ===== Global Styles ===== */\n    * {\n      margin: 0;\n      padding: 0;\n      box-sizing: border-box;\n    }\n\n    body {\n      font-family: 'Poppins', sans-serif;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      min-height: 100vh;\n      background: #f5f7fa;\n    }\n\n    /* ===== Card Container ===== */\n    .card-container {\n      display: grid;\n      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n      gap: 2rem;\n      width: 90%;\n      max-width: 1200px;\n    }\n\n    /* ===== Card Styles ===== */\n    .card {\n      background: #fff;\n      border-radius: 20px;\n      box-shadow: 0 10px 20px rgba(0,0,0,0.1);\n      overflow: hidden;\n      transition: transform 0.5s ease, box-shadow 0.5s ease;\n      cursor: pointer;\n      position: relative;\n    }\n\n    .card:hover {\n      transform: translateY(-10px) scale(1.05);\n      box-shadow: 0 20px 40px rgba(0,0,0,0.2);\n    }\n\n    /* ===== Card Image ===== */\n    .card img {\n      width: 100%;\n      height: 200px;\n      object-fit: cover;\n      transition: transform 0.5s ease;\n    }\n\n    .card:hover img {\n      transform: scale(1.1);\n    }\n\n    /* ===== Card Content ===== */\n    .card-content {\n      padding: 1.5rem;\n      text-align: center;\n    }\n\n    .card-content h2 {\n      font-size: 1.5rem;\n      margin-bottom: 0.5rem;\n      color: #1e293b;\n    }\n\n    .card-content p {\n      font-size: 1rem;\n      color: #64748b;\n      line-height: 1.5;\n    }\n\n    /* ===== Animated Button ===== */\n    .card-content button {\n      margin-top: 1rem;\n      padding: 0.6rem 1.2rem;\n      border: none;\n      border-radius: 50px;\n      background: linear-gradient(45deg, #1d4ed8, #3b82f6);\n      color: white;\n      font-weight: 600;\n      cursor: pointer;\n      transition: all 0.3s ease;\n    }\n\n    .card-content button:hover {\n      transform: scale(1.1);\n      background: linear-gradient(45deg, #3b82f6, #60a5fa);\n    }\n\n    /* ===== Responsive Text ===== */\n    @media (max-width: 768px) {\n      .card-content h2 {\n        font-size: 1.3rem;\n      }\n\n      .card-content p {\n        font-size: 0.9rem;\n      }\n    }\n\n    @media (max-width: 480px) {\n      .card img {\n        height: 150px;\n      }\n\n      .card-content h2 {\n        font-size: 1.1rem;\n      }\n\n      .card-content p {\n        font-size: 0.8rem;\n      }\n    }\n  </style>\n</head>\n<body>\n\n  <div class=\"card-container\">\n    <div class=\"card\">\n      <img src=\"https://picsum.photos/400/200?random=1\" alt=\"Card Image\">\n      <div class=\"card-content\">\n        <h2>Card Title 1</h2>\n        <p>This is a beautiful responsive card with smooth hover animations. Perfect for portfolios or UI sections.</p>\n        <button>Read More</button>\n      </div>\n    </div>\n\n    <div class=\"card\">\n      <img src=\"https://picsum.photos/400/200?random=2\" alt=\"Card Image\">\n      <div class=\"card-content\">\n        <h2>Card Title 2</h2>\n        <p>This card scales on hover, the image zooms, and the button animates. Looks amazing on mobile too.</p>\n        <button>Read More</button>\n      </div>\n    </div>\n\n    <div class=\"card\">\n      <img src=\"https://picsum.photos/400/200?random=3\" alt=\"Card Image\">\n      <div class=\"card-content\">\n        <h2>Card Title 3</h2>\n        <p>Fully responsive, modern, and animated card. You can copy this structure for multiple cards.</p>\n        <button>Read More</button>\n      </div>\n    </div>\n  </div>\n\n</body>\n</html>"
+  }
+}

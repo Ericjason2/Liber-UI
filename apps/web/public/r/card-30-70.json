@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-30-70",
+  "type": "registry:ui",
+  "title": "Card 30/70",
+  "description": "Card 30/70 - Créé par @maximus sur TailwindFlex.",
+  "author": "@maximus (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-30-70.tsx",
+      "content": "/**\n * Component: Card 30/70\n * Author: @maximus (https://tailwindflex.com/@maximus)\n * Source: https://tailwindflex.com/@maximus/card-30-70\n * Attribution: Créé par @maximus sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Card3070() {\n  return (\n    <div>\n    <div className=\"max-w-4xl mx-auto my-8\">\n      \n      <div className=\"bg-gray-100 rounded-lg overflow-hidden\">\n        <div className=\"flex flex-col md\">\n          <div className=\"md3/10 w-full\">\n            <img src=\"https://www.matterhornparadise.ch/ZBAG/00-keyvisuals/02-winter/35156/image-thumb__35156__img-slider/290124_ski_sued-9@2x.webp\" alt=\"Placeholder image\" className=\"w-full h-full object-cover\" />\n          </div>\n          <div className=\"md7/10 w-full p-4 md8\">\n            <h2 className=\"text-2xl md4xl font-bold text-gray-800 mb-2 md4\">\n              <a href=\"#\" className=\"hover700\">Winterabenteuer in den Alpen</a>\n            </h2>\n            \n            <p className=\"text-sm md text-gray-700\">\n              Erleben Sie unvergessliche Winterlandschaften und aufregende Abfahrten in den besten Skigebieten. Genießen Sie die frische Bergluft, erobern Sie schneebedeckte Gipfel und spüren Sie den echten Nervenkitzel beim Skifahren und Snowboarden.\n            </p>\n          </div>\n        </div>\n      </div>\n      \n      \n      <div className=\"bg-gray-100 rounded-lg overflow-hidden mt-4 md8\">\n        <div className=\"flex flex-col md\">\n          <div className=\"md3/10 w-full\">\n            <img src=\"https://www.matterhornparadise.ch/ZBAG/05-skifahren/ski/01-nord/2019/image-thumb__2019__img-slider/ZBAG%20Ski%20Nord%20-49@2x.webp\" alt=\"Placeholder image\" className=\"w-full h-full object-cover\" />\n          </div>\n          <div className=\"md7/10 w-full p-4 md8\">\n            <h2 className=\"text-2xl md4xl font-bold text-gray-800 mb-2 md4\">\n              <a href=\"#\" className=\"hover700\">Skifahren: Freiheit der Bewegung</a>\n            </h2>\n            \n            <p className=\"text-sm md text-gray-700\">\n              Spüren Sie Geschwindigkeit, Freiheit und Adrenalin auf perfekt präparierten Pisten. Unabhängig von Ihrem Erfahrungslevel bieten die Alpen eine Vielzahl von Routen – von sanften Hängen für Anfänger bis hin zu extremen Abfahrten für Profis.\n            </p>\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "grid",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@maximus",
+    "authorUrl": "https://tailwindflex.com/@maximus",
+    "sourceUrl": "https://tailwindflex.com/@maximus/card-30-70",
+    "mention": "Créé par @maximus sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-4xl mx-auto my-8\">\n  <!-- Erster Block -->\n  <div class=\"bg-gray-100 rounded-lg overflow-hidden\">\n    <div class=\"flex flex-col md:flex-row\">\n      <div class=\"md:w-3/10 w-full\">\n        <img src=\"https://www.matterhornparadise.ch/ZBAG/00-keyvisuals/02-winter/35156/image-thumb__35156__img-slider/290124_ski_sued-9@2x.webp\" alt=\"Placeholder image\" class=\"w-full h-full object-cover\">\n      </div>\n      <div class=\"md:w-7/10 w-full p-4 md:p-8\">\n        <h2 class=\"text-2xl md:text-4xl font-bold text-gray-800 mb-2 md:mb-4\">\n          <a href=\"#\" class=\"hover:text-blue-700\">Winterabenteuer in den Alpen</a>\n        </h2>\n        \n        <p class=\"text-sm md:text-base text-gray-700\">\n          Erleben Sie unvergessliche Winterlandschaften und aufregende Abfahrten in den besten Skigebieten. Genießen Sie die frische Bergluft, erobern Sie schneebedeckte Gipfel und spüren Sie den echten Nervenkitzel beim Skifahren und Snowboarden.\n        </p>\n      </div>\n    </div>\n  </div>\n  \n  <!-- Zweiter Block -->\n  <div class=\"bg-gray-100 rounded-lg overflow-hidden mt-4 md:mt-8\">\n    <div class=\"flex flex-col md:flex-row\">\n      <div class=\"md:w-3/10 w-full\">\n        <img src=\"https://www.matterhornparadise.ch/ZBAG/05-skifahren/ski/01-nord/2019/image-thumb__2019__img-slider/ZBAG%20Ski%20Nord%20-49@2x.webp\" alt=\"Placeholder image\" class=\"w-full h-full object-cover\">\n      </div>\n      <div class=\"md:w-7/10 w-full p-4 md:p-8\">\n        <h2 class=\"text-2xl md:text-4xl font-bold text-gray-800 mb-2 md:mb-4\">\n          <a href=\"#\" class=\"hover:text-blue-700\">Skifahren: Freiheit der Bewegung</a>\n        </h2>\n        \n        <p class=\"text-sm md:text-base text-gray-700\">\n          Spüren Sie Geschwindigkeit, Freiheit und Adrenalin auf perfekt präparierten Pisten. Unabhängig von Ihrem Erfahrungslevel bieten die Alpen eine Vielzahl von Routen – von sanften Hängen für Anfänger bis hin zu extremen Abfahrten für Profis.\n        </p>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

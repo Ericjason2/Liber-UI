@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "article-post-preview-card",
+  "type": "registry:ui",
+  "title": "Article-Post Preview card",
+  "description": "Article-Post Preview card - Créé par @prashant sur TailwindFlex.",
+  "author": "@prashant (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/article-post-preview-card.tsx",
+      "content": "/**\n * Component: Article-Post Preview card\n * Author: @prashant (https://tailwindflex.com/@prashant)\n * Source: https://tailwindflex.com/@prashant/article-post-preview-card\n * Attribution: Créé par @prashant sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ArticlePostPreviewCard() {\n  return (\n    <div>\n    <div className=\"px-4 py-4 mx-5 font-normal bg-gray-300 rounded-lg\">\n        <div className=\"flex flex-col justify-between md\">\n            <h3 className=\"mb-2 text-2xl font-semibold leading-snug\">\n                Use TailwindCSS with Gatsby (with Emotion or styled-components)\n            </h3>\n            <div className=\"flex items-center mb-2 space-x-2\">\n                <p className=\"px-2 text-gray-200 bg-blue-600 rounded\">#gatsby</p>\n                <p className=\"px-2 text-gray-800 bg-teal-400 rounded\">#tailwindcss</p>\n                <p className=\"px-2 text-gray-200 bg-purple-600 rounded\">#css</p>\n            </div>\n        </div>\n        <p className=\"text-gray-700\">\n            Learn how to use TailwindCSS with Gatsby along with Emotion or\n            styled-components perfectly.\n        </p>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@prashant",
+    "authorUrl": "https://tailwindflex.com/@prashant",
+    "sourceUrl": "https://tailwindflex.com/@prashant/article-post-preview-card",
+    "mention": "Créé par @prashant sur TailwindFlex",
+    "rawHtml": "<div class=\"px-4 py-4 mx-5 font-normal bg-gray-300 rounded-lg\">\n    <div class=\"flex flex-col justify-between md:flex-row\">\n        <h3 class=\"mb-2 text-2xl font-semibold leading-snug\">\n            Use TailwindCSS with Gatsby (with Emotion or styled-components)\n        </h3>\n        <div class=\"flex items-center mb-2 space-x-2\">\n            <p class=\"px-2 text-gray-200 bg-blue-600 rounded\">#gatsby</p>\n            <p class=\"px-2 text-gray-800 bg-teal-400 rounded\">#tailwindcss</p>\n            <p class=\"px-2 text-gray-200 bg-purple-600 rounded\">#css</p>\n        </div>\n    </div>\n    <p class=\"text-gray-700\">\n        Learn how to use TailwindCSS with Gatsby along with Emotion or\n        styled-components perfectly.\n    </p>\n</div>"
+  }
+}

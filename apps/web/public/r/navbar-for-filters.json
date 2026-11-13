@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "navbar-for-filters",
+  "type": "registry:ui",
+  "title": "Simple Filters Navbar",
+  "description": "Simple Filters Navbar - Créé par @muneeb-ahmad sur TailwindFlex.",
+  "author": "@muneeb-ahmad (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/navbar-for-filters.tsx",
+      "content": "/**\n * Component: Simple Filters Navbar\n * Author: @muneeb-ahmad (https://tailwindflex.com/@muneeb-ahmad)\n * Source: https://tailwindflex.com/@muneeb-ahmad/navbar-for-filters\n * Attribution: Créé par @muneeb-ahmad sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NavbarForFilters() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"flex\\\">\\n  <div class=\\\"mx-1 hidden rounded-full border border-black bg-white px-5 py-2 text-center md:block\\\">Dates</div>\\n  <div class=\\\"mx-1 hidden rounded-full border border-black bg-white px-5 py-1 text-center md:block\\\">Group</div>\\n  <div class=\\\"divide mx-1 px-5 hidden divide-x divide-solid rounded-full border border-black bg-white py-1 text-center md:block \\\">Filter</div>\\n  \\n  <div class=\\\"bg-gradient-to-r via-white flex justify-center items-center\\\">\\n    <div\\n      class=\\\"shadow-[0px_0px_20px_20px_rgba(0,0,0,0.09)] z-10 -mr-4 hidden w-9 h-9 justify-center rounded-full border border-black bg-white text-center text-xl font-extrabold md:block\\\">\\n      <</div>\\n    </div>\\n    <div class=\\\"flex gap-2 grow flex-content overflow-hidden \\\">\\n\\n      <div class=\\\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\\\"> category 1</div>\\n      <div class=\\\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\\\"> category 2</div>\\n      <div class=\\\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\\\"> category 4</div>\\n      <div class=\\\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\\\"> category 3</div>\\n      <div class=\\\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\\\"> category 3</div>\\n      <div class=\\\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\\\"> category 3</div>\\n\\n    </div>\\n\\n\\n    <div\\n      class=\\\"z-10 -ml-4 hidden w-9 h-9 justify-center rounded-full border border-black bg-white text-center text-xl font-extrabold shadow-lg shadow-slate-200/10 md:block\\\">\\n      ></div>\\n  </div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@muneeb-ahmad",
+    "authorUrl": "https://tailwindflex.com/@muneeb-ahmad",
+    "sourceUrl": "https://tailwindflex.com/@muneeb-ahmad/navbar-for-filters",
+    "mention": "Créé par @muneeb-ahmad sur TailwindFlex",
+    "rawHtml": "<div class=\"flex\">\n  <div class=\"mx-1 hidden rounded-full border border-black bg-white px-5 py-2 text-center md:block\">Dates</div>\n  <div class=\"mx-1 hidden rounded-full border border-black bg-white px-5 py-1 text-center md:block\">Group</div>\n  <div class=\"divide mx-1 px-5 hidden divide-x divide-solid rounded-full border border-black bg-white py-1 text-center md:block \">Filter</div>\n  \n  <div class=\"bg-gradient-to-r via-white flex justify-center items-center\">\n    <div\n      class=\"shadow-[0px_0px_20px_20px_rgba(0,0,0,0.09)] z-10 -mr-4 hidden w-9 h-9 justify-center rounded-full border border-black bg-white text-center text-xl font-extrabold md:block\">\n      <</div>\n    </div>\n    <div class=\"flex gap-2 grow flex-content overflow-hidden \">\n\n      <div class=\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\"> category 1</div>\n      <div class=\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\"> category 2</div>\n      <div class=\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\"> category 4</div>\n      <div class=\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\"> category 3</div>\n      <div class=\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\"> category 3</div>\n      <div class=\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\"> category 3</div>\n\n    </div>\n\n\n    <div\n      class=\"z-10 -ml-4 hidden w-9 h-9 justify-center rounded-full border border-black bg-white text-center text-xl font-extrabold shadow-lg shadow-slate-200/10 md:block\">\n      ></div>\n  </div>"
+  }
+}

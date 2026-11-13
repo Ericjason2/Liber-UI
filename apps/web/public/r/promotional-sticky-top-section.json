@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "promotional-sticky-top-section",
+  "type": "registry:ui",
+  "title": "Promotional sticky top section",
+  "description": "Promotional sticky top section - Créé par @leon-bachmann sur TailwindFlex.",
+  "author": "@leon-bachmann (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/promotional-sticky-top-section.tsx",
+      "content": "/**\n * Component: Promotional sticky top section\n * Author: @leon-bachmann (https://tailwindflex.com/@leon-bachmann)\n * Source: https://tailwindflex.com/@leon-bachmann/promotional-sticky-top-section\n * Attribution: Créé par @leon-bachmann sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PromotionalStickyTopSection() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"fixed inset-x-0 top-0 z-50\\\">\\n    <div class=\\\"bg-teal-600\\\">\\n        <div class=\\\"mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8\\\">\\n            <div class=\\\"flex flex-col items-center justify-between lg:flex-row lg:justify-center\\\">\\n                <div class=\\\"flex flex-1 items-center lg:mr-3 lg:flex-none\\\">\\n                    <p class=\\\"ml-3 text-center font-medium text-white\\\">\\n                        <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\" stroke-width=\\\"2\\\"\\n                            stroke=\\\"currentColor\\\" aria-hidden=\\\"true\\\" class=\\\"mr-2 hidden h-6 w-6 lg:inline\\\">\\n                            <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"\\n                                d=\\\"M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z\\\">\\n                            </path>\\n                        </svg>To celebrate our\\n                        <<span class=\\\"font-semibold\\\">Big Version 3</span> release, use\\n                        <span class=\\\"font-black\\\">VERSION3</span> code to get <span class=\\\"font-black\\\">50% off</span>\\n                    </p>\\n                </div>\\n                <div class=\\\"mt-2 w-full flex-shrink-0 lg:mt-0 lg:w-auto\\\"><a\\n                        class=\\\"flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-teal-600 shadow-sm hover:bg-teal-50\\\"\\n                        href=\\\"#pricing\\\">Buy now\\n                    </a>\\n                </div>\\n            </div>\\n        </div>\\n    </div>\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@leon-bachmann",
+    "authorUrl": "https://tailwindflex.com/@leon-bachmann",
+    "sourceUrl": "https://tailwindflex.com/@leon-bachmann/promotional-sticky-top-section",
+    "mention": "Créé par @leon-bachmann sur TailwindFlex",
+    "rawHtml": "<div class=\"fixed inset-x-0 top-0 z-50\">\n    <div class=\"bg-teal-600\">\n        <div class=\"mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8\">\n            <div class=\"flex flex-col items-center justify-between lg:flex-row lg:justify-center\">\n                <div class=\"flex flex-1 items-center lg:mr-3 lg:flex-none\">\n                    <p class=\"ml-3 text-center font-medium text-white\">\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"2\"\n                            stroke=\"currentColor\" aria-hidden=\"true\" class=\"mr-2 hidden h-6 w-6 lg:inline\">\n                            <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                                d=\"M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z\">\n                            </path>\n                        </svg>To celebrate our\n                        <<span class=\"font-semibold\">Big Version 3</span> release, use\n                        <span class=\"font-black\">VERSION3</span> code to get <span class=\"font-black\">50% off</span>\n                    </p>\n                </div>\n                <div class=\"mt-2 w-full flex-shrink-0 lg:mt-0 lg:w-auto\"><a\n                        class=\"flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-teal-600 shadow-sm hover:bg-teal-50\"\n                        href=\"#pricing\">Buy now\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "extreme-signup-page",
+  "type": "registry:ui",
+  "title": "Extreme Signup Page",
+  "description": "Extreme Signup Page - Créé par @akram6t sur TailwindFlex.",
+  "author": "@akram6t (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/extreme-signup-page.tsx",
+      "content": "/**\n * Component: Extreme Signup Page\n * Author: @akram6t (https://tailwindflex.com/@akram6t)\n * Source: https://tailwindflex.com/@akram6t/extreme-signup-page\n * Attribution: Créé par @akram6t sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ExtremeSignupPage() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Extreme Signup</title>\\n    \\n    <link rel=\\\"stylesheet\\\" href=\\\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\\\">\\n    <style>\\n\\n    </style>\\n</head>\\n<body class=\\\"bg-animate min-h-screen flex items-center justify-center p-4\\\">\\n    <div class=\\\"bg-black bg-opacity-80 p-8 rounded-3xl shadow-2xl transform hover:scale-105 transition-all duration-500 max-w-md w-full\\\">\\n        <h1 class=\\\"text-4xl font-extrabold text-center mb-8 neon-text\\\">Extreme Signup</h1>\\n        <form class=\\\"space-y-6\\\">\\n            <div class=\\\"relative\\\">\\n                <input type=\\\"text\\\" placeholder=\\\"Username\\\" class=\\\"w-full bg-gray-800 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300\\\">\\n                <i class=\\\"fas fa-user absolute right-3 top-3 text-pink-500\\\"></i>\\n            </div>\\n            <div class=\\\"relative\\\">\\n                <input type=\\\"email\\\" placeholder=\\\"Email\\\" class=\\\"w-full bg-gray-800 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300\\\">\\n                <i class=\\\"fas fa-envelope absolute right-3 top-3 text-pink-500\\\"></i>\\n            </div>\\n            <div class=\\\"relative\\\">\\n                <input type=\\\"password\\\" placeholder=\\\"Password\\\" class=\\\"w-full bg-gray-800 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300\\\">\\n                <i class=\\\"fas fa-lock absolute right-3 top-3 text-pink-500\\\"></i>\\n            </div>\\n            <button type=\\\"submit\\\" class=\\\"w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold py-3 rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500\\\">\\n                Sign Up\\n            </button>\\n        </form>\\n        <div class=\\\"mt-8 text-center\\\">\\n            <p class=\\\"text-gray-400\\\">Or sign up with</p>\\n            <div class=\\\"flex justify-center space-x-4 mt-4\\\">\\n                <a href=\\\"#\\\" class=\\\"text-blue-500 hover:text-blue-600 transform hover:scale-125 transition-all duration-300\\\"><i class=\\\"fab fa-facebook-f text-2xl\\\"></i></a>\\n                <a href=\\\"#\\\" class=\\\"text-blue-400 hover:text-blue-500 transform hover:scale-125 transition-all duration-300\\\"><i class=\\\"fab fa-twitter text-2xl\\\"></i></a>\\n                <a href=\\\"#\\\" class=\\\"text-red-500 hover:text-red-600 transform hover:scale-125 transition-all duration-300\\\"><i class=\\\"fab fa-google text-2xl\\\"></i></a>\\n            </div>\\n        </div>\\n    </div>\\n    <div class=\\\"absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden\\\">\\n        <i class=\\\"fas fa-meteor text-yellow-500 text-4xl absolute animate-ping\\\" style=\\\"top: 10%; left: 5%;\\\"></i>\\n        <i class=\\\"fas fa-star text-blue-500 text-2xl absolute animate-pulse\\\" style=\\\"top: 20%; right: 10%;\\\"></i>\\n        <i class=\\\"fas fa-rocket text-red-500 text-5xl absolute float\\\" style=\\\"bottom: 15%; left: 15%;\\\"></i>\\n        <i class=\\\"fas fa-planet-ringed text-purple-500 text-6xl absolute rotate\\\" style=\\\"top: 40%; right: 20%;\\\"></i>\\n    </div>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@akram6t",
+    "authorUrl": "https://tailwindflex.com/@akram6t",
+    "sourceUrl": "https://tailwindflex.com/@akram6t/extreme-signup-page",
+    "mention": "Créé par @akram6t sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Extreme Signup</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\">\n    <style>\n\n    </style>\n</head>\n<body class=\"bg-animate min-h-screen flex items-center justify-center p-4\">\n    <div class=\"bg-black bg-opacity-80 p-8 rounded-3xl shadow-2xl transform hover:scale-105 transition-all duration-500 max-w-md w-full\">\n        <h1 class=\"text-4xl font-extrabold text-center mb-8 neon-text\">Extreme Signup</h1>\n        <form class=\"space-y-6\">\n            <div class=\"relative\">\n                <input type=\"text\" placeholder=\"Username\" class=\"w-full bg-gray-800 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300\">\n                <i class=\"fas fa-user absolute right-3 top-3 text-pink-500\"></i>\n            </div>\n            <div class=\"relative\">\n                <input type=\"email\" placeholder=\"Email\" class=\"w-full bg-gray-800 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300\">\n                <i class=\"fas fa-envelope absolute right-3 top-3 text-pink-500\"></i>\n            </div>\n            <div class=\"relative\">\n                <input type=\"password\" placeholder=\"Password\" class=\"w-full bg-gray-800 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300\">\n                <i class=\"fas fa-lock absolute right-3 top-3 text-pink-500\"></i>\n            </div>\n            <button type=\"submit\" class=\"w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold py-3 rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500\">\n                Sign Up\n            </button>\n        </form>\n        <div class=\"mt-8 text-center\">\n            <p class=\"text-gray-400\">Or sign up with</p>\n            <div class=\"flex justify-center space-x-4 mt-4\">\n                <a href=\"#\" class=\"text-blue-500 hover:text-blue-600 transform hover:scale-125 transition-all duration-300\"><i class=\"fab fa-facebook-f text-2xl\"></i></a>\n                <a href=\"#\" class=\"text-blue-400 hover:text-blue-500 transform hover:scale-125 transition-all duration-300\"><i class=\"fab fa-twitter text-2xl\"></i></a>\n                <a href=\"#\" class=\"text-red-500 hover:text-red-600 transform hover:scale-125 transition-all duration-300\"><i class=\"fab fa-google text-2xl\"></i></a>\n            </div>\n        </div>\n    </div>\n    <div class=\"absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden\">\n        <i class=\"fas fa-meteor text-yellow-500 text-4xl absolute animate-ping\" style=\"top: 10%; left: 5%;\"></i>\n        <i class=\"fas fa-star text-blue-500 text-2xl absolute animate-pulse\" style=\"top: 20%; right: 10%;\"></i>\n        <i class=\"fas fa-rocket text-red-500 text-5xl absolute float\" style=\"bottom: 15%; left: 15%;\"></i>\n        <i class=\"fas fa-planet-ringed text-purple-500 text-6xl absolute rotate\" style=\"top: 40%; right: 20%;\"></i>\n    </div>\n</body>\n</html>"
+  }
+}

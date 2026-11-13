@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sky-stars-sun-and-moon-illustrations",
+  "type": "registry:ui",
+  "title": "Stars: Sun and Moon Illustrations",
+  "description": "Stars: Sun and Moon Illustrations - Créé par @sammytg7 sur TailwindFlex.",
+  "author": "@sammytg7 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/sky-stars-sun-and-moon-illustrations.tsx",
+      "content": "/**\n * Component: Stars: Sun and Moon Illustrations\n * Author: @sammytg7 (https://tailwindflex.com/@sammytg7)\n * Source: https://tailwindflex.com/@sammytg7/sky-stars-sun-and-moon-illustrations\n * Attribution: Créé par @sammytg7 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SkyStarsSunAndMoonIllustrations() {\n  return (\n    <div>\n    <div\n        className=\"w-full h-screen bg-gradient-to-tl via-sky-700/50 from-sky-700/30 to-white dark dark dark600\">\n    \n        \n        <div\n            className=\"dark block w-[10rem] h-[10rem] rounded-full grid place-items-center absolute left-4 top-2  cursor-pointer [transition_400ms_ease] hover[1rem]\">\n    \n            <div className=\"w-[5rem] h-[5rem] brightness-150 absolute bg-yellow-200/60 blur z-50 rounded-full rotate-[68deg]\">\n            </div>\n            <div\n                className=\"w-[6rem] h-[6rem] brightness-150 absolute bg-white/60 blur-sm brightness-200 contrast-200 z-40 rounded-full rotate-[68deg]\">\n            </div>\n            <div\n                className=\"w-[7rem] h-[7rem] brightness-150 absolute bg-gray-100 brightness-200 contrast-200 blur-sm z-30 -lg rounded-full\">\n            </div>\n            <div className=\"w-[8rem] h-[8rem] absolute bg-yellow-300/10 brightness-200 contrast-200 blur-lg z-20 rounded-full shadow-2xl shadow-yellow-700/10\">\n            </div>\n            <div className=\"w-[9rem] h-[9rem] brightness-200 contrast-200 absolute bg-white blur-sm z-10 rounded-full shadow-3xl\">\n            </div>\n            <div\n                className=\"brightness-200 contrast-200 blur-sm [box-shadow:0_0px_30px_30px_#fff] rounded-full w-[10rem] h-[10rem]\">\n    \n            </div>\n        </div>\n    \n        \n        <div\n            className=\"hidden dark w-[10rem] h-[10rem] rounded-full shadow-2xl shadow-white grid place-items-center absolute right-2 top-2  cursor-pointer [transition_400ms_ease] hover2xl hover900 hover[1rem]\">\n    \n            <div\n                className=\"w-[6rem] h-[6rem] absolute bg-gradient-to-r from-black to-gray-900 blur-lg rounded-full animate-[spinIn_10s_linear_infinite]\">\n            </div>\n            <div\n                className=\"w-[7rem] h-[7rem] absolute bg-gradient-to-tr via-gray-900 from-black to-gray-900 blur-lg z-30 rounded-full\">\n            </div>\n            <div\n                className=\"w-[8rem] h-[8rem] absolute bg-gradient-to-tl via-black/90 from-white to-gray-100 z-20 blur-sm rounded-full\">\n            </div>\n            <div\n                className=\"w-[9rem] h-[9rem] absolute bg-gradient-to-tr via-gray-100 from-gray-50 to-white z-10 blur-lg rounded-full animate-[spinIn_80s_linear_infinite]\">\n            </div>\n            <p\n                className=\"bg-gradient-to-r from-white to-white shadow-2xl shadow-white brightness-200 contrast-200 rounded-full w-[10rem] h-[10rem]\">\n    \n            <div className=\"absolute -rotate-[360deg] text-white text-sm font-serif font-semibold\"></div>\n            </p>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sammytg7",
+    "authorUrl": "https://tailwindflex.com/@sammytg7",
+    "sourceUrl": "https://tailwindflex.com/@sammytg7/sky-stars-sun-and-moon-illustrations",
+    "mention": "Créé par @sammytg7 sur TailwindFlex",
+    "rawHtml": "<div\n    class=\"w-full h-screen bg-gradient-to-tl via-sky-700/50 from-sky-700/30 to-white dark:bg-gradient-to-tr dark:from-black dark:to-gray-600\">\n\n    <!-- SUN -->\n    <div\n        class=\"dark:hidden block w-[10rem] h-[10rem] rounded-full grid place-items-center absolute left-4 top-2  cursor-pointer [transition:all_400ms_ease] hover:-translate-y-[1rem]\">\n\n        <div class=\"w-[5rem] h-[5rem] brightness-150 absolute bg-yellow-200/60 blur z-50 rounded-full rotate-[68deg]\">\n        </div>\n        <div\n            class=\"w-[6rem] h-[6rem] brightness-150 absolute bg-white/60 blur-sm brightness-200 contrast-200 z-40 rounded-full rotate-[68deg]\">\n        </div>\n        <div\n            class=\"w-[7rem] h-[7rem] brightness-150 absolute bg-gray-100 brightness-200 contrast-200 blur-sm z-30 -lg rounded-full\">\n        </div>\n        <div class=\"w-[8rem] h-[8rem] absolute bg-yellow-300/10 brightness-200 contrast-200 blur-lg z-20 rounded-full shadow-2xl shadow-yellow-700/10\">\n        </div>\n        <div class=\"w-[9rem] h-[9rem] brightness-200 contrast-200 absolute bg-white blur-sm z-10 rounded-full shadow-3xl\">\n        </div>\n        <div\n            class=\"brightness-200 contrast-200 blur-sm [box-shadow:0_0px_30px_30px_#fff] rounded-full w-[10rem] h-[10rem]\">\n\n        </div>\n    </div>\n\n    <!-- Moon -->\n    <div\n        class=\"hidden dark:block w-[10rem] h-[10rem] rounded-full shadow-2xl shadow-white grid place-items-center absolute right-2 top-2  cursor-pointer [transition:all_400ms_ease] hover:shadow-2xl hover:shadow-gray-900 hover:-translate-y-[1rem]\">\n\n        <div\n            class=\"w-[6rem] h-[6rem] absolute bg-gradient-to-r from-black to-gray-900 blur-lg rounded-full animate-[spinIn_10s_linear_infinite]\">\n        </div>\n        <div\n            class=\"w-[7rem] h-[7rem] absolute bg-gradient-to-tr via-gray-900 from-black to-gray-900 blur-lg z-30 rounded-full\">\n        </div>\n        <div\n            class=\"w-[8rem] h-[8rem] absolute bg-gradient-to-tl via-black/90 from-white to-gray-100 z-20 blur-sm rounded-full\">\n        </div>\n        <div\n            class=\"w-[9rem] h-[9rem] absolute bg-gradient-to-tr via-gray-100 from-gray-50 to-white z-10 blur-lg rounded-full animate-[spinIn_80s_linear_infinite]\">\n        </div>\n        <p\n            class=\"bg-gradient-to-r from-white to-white shadow-2xl shadow-white brightness-200 contrast-200 rounded-full w-[10rem] h-[10rem]\">\n\n        <div class=\"absolute -rotate-[360deg] text-white text-sm font-serif font-semibold\"></div>\n        </p>\n    </div>\n</div>"
+  }
+}

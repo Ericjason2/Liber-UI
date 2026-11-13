@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-contact-section-using-tailwind-css",
+  "type": "registry:ui",
+  "title": "Responsive Contact Section Using Tailwind CSS",
+  "description": "Responsive Contact Section Using Tailwind CSS - Créé par @fathallah-anass sur TailwindFlex.",
+  "author": "@fathallah-anass (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-contact-section-using-tailwind-css.tsx",
+      "content": "/**\n * Component: Responsive Contact Section Using Tailwind CSS\n * Author: @fathallah-anass (https://tailwindflex.com/@fathallah-anass)\n * Source: https://tailwindflex.com/@fathallah-anass/responsive-contact-section-using-tailwind-css\n * Attribution: Créé par @fathallah-anass sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveContactSectionUsingTailwindCss() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<body class=\\\"antialiased bg-primary-200 p-3\\\">\\n    <div class=\\\"w-full  flex justify-center items-center\\\">\\n      <div\\n        class=\\\"flex flex-col md:flex-row space-y-6 md:space-y-0 md:items-stretch md:space-x-12 bg-cyan-700 w-full max-w-4xl p-8 sm:px-12 sm:py-10 rounded-xl shadow-lg text-white overflow-hidden\\\">\\n        <div class=\\\"md:py-4 flex-grow flex flex-col space-y-8 md:justify-between\\\">\\n          <div class=\\\"\\\">\\n            <h1 class=\\\"TitleDesgin font-bold text-4xl tracking-wide\\\">{{$t('contactForm.title')}}</h1>\\n            <p class=\\\"text-cyan-100 text-sm pt-2 text-white\\\">{{$t('contactForm.description')}}</p>\\n          </div>\\n          <div class=\\\"flex flex-col space-y-6\\\">\\n            <div class=\\\"inline-flex space-x-2 items-center\\\">\\n              <i class=\\\"bi bi-telephone-fill text-teal-300 text-xl\\\"></i>\\n              <span class=\\\"select-all\\\">+(123) 456 7890</span>\\n            </div>\\n            <div class=\\\"inline-flex space-x-2 items-center\\\">\\n              <i class=\\\"bi bi-envelope-at-fill text-teal-300 text-xl\\\"></i>\\n              <span class=\\\"select-all\\\">contact@xyzwebsite.com</span>\\n            </div>\\n            <div class=\\\"inline-flex space-x-2 items-center\\\">\\n              <i class=\\\"bi bi-geo-alt-fill text-teal-300 text-xl\\\"></i>\\n              <span class=\\\"select-all\\\">11, Street 342, Abcd Fgh</span>\\n            </div>\\n          </div>\\n          <div class=\\\"flex space-x-4 text-lg\\\">\\n            <a href=\\\"#\\\" class=\\\"hover:text-teal-300\\\"><i class=\\\"bi bi-facebook\\\"></i></a>\\n            <a href=\\\"#\\\" class=\\\"hover:text-teal-300\\\"><i class=\\\"bi bi-instagram\\\"></i></a>\\n            <a href=\\\"#\\\" class=\\\"hover:text-teal-300\\\"> <i class=\\\"bi bi-linkedin\\\"></i></a>\\n            <a href=\\\"#\\\" class=\\\"hover:text-teal-300\\\"> <i class=\\\"bi bi-youtube\\\"></i></a>\\n          </div>\\n        </div>\\n        <div class=\\\"relative z-10\\\">\\n          <div class=\\\"absolute -top-28 -right-28 z-0 bg-teal-400 w-40 h-40 rounded-full\\\"></div>\\n          <div class=\\\"absolute -bottom-16 -left-28 z-0 bg-teal-400 w-40 h-40 rounded-full\\\"></div>\\n          <div class=\\\"relative z-10 w-full md:w-80 h-full bg-white p-7 text-gray-600 rounded-xl shadow-lg\\\"\\n            style=\\\"min-height: 300px\\\">\\n            <form action=\\\"\\\" class=\\\"flex flex-col space-y-6\\\">\\n              <div>\\n                <label for=\\\"\\\" class=\\\"text-sm\\\">{{$t('contactForm.name')}}</label>\\n                <input type=\\\"text\\\" placeholder=\\\"Your name\\\"\\n                  class=\\\"ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300\\\" />\\n              </div>\\n              <div>\\n                <label for=\\\"\\\" class=\\\"text-sm\\\">{{$t('contactForm.email')}}</label>\\n                <input type=\\\"text\\\" placeholder=\\\"Email Address\\\"\\n                  class=\\\"ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300\\\" />\\n              </div>\\n              <div>\\n                <label for=\\\"\\\" class=\\\"text-sm\\\">{{$t('contactForm.message')}}</label>\\n                <textarea placeholder=\\\"Type your message here\\\"\\n                  class=\\\"ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300\\\"\\n                  rows=\\\"4\\\"></textarea>\\n              </div>\\n              <button\\n                class=\\\"startBtn inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm\\\">{{$t('contactForm.button')}}</button>\\n            </form>\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  </body>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@fathallah-anass",
+    "authorUrl": "https://tailwindflex.com/@fathallah-anass",
+    "sourceUrl": "https://tailwindflex.com/@fathallah-anass/responsive-contact-section-using-tailwind-css",
+    "mention": "Créé par @fathallah-anass sur TailwindFlex",
+    "rawHtml": "<body class=\"antialiased bg-primary-200 p-3\">\n    <div class=\"w-full  flex justify-center items-center\">\n      <div\n        class=\"flex flex-col md:flex-row space-y-6 md:space-y-0 md:items-stretch md:space-x-12 bg-cyan-700 w-full max-w-4xl p-8 sm:px-12 sm:py-10 rounded-xl shadow-lg text-white overflow-hidden\">\n        <div class=\"md:py-4 flex-grow flex flex-col space-y-8 md:justify-between\">\n          <div class=\"\">\n            <h1 class=\"TitleDesgin font-bold text-4xl tracking-wide\">{{$t('contactForm.title')}}</h1>\n            <p class=\"text-cyan-100 text-sm pt-2 text-white\">{{$t('contactForm.description')}}</p>\n          </div>\n          <div class=\"flex flex-col space-y-6\">\n            <div class=\"inline-flex space-x-2 items-center\">\n              <i class=\"bi bi-telephone-fill text-teal-300 text-xl\"></i>\n              <span class=\"select-all\">+(123) 456 7890</span>\n            </div>\n            <div class=\"inline-flex space-x-2 items-center\">\n              <i class=\"bi bi-envelope-at-fill text-teal-300 text-xl\"></i>\n              <span class=\"select-all\">contact@xyzwebsite.com</span>\n            </div>\n            <div class=\"inline-flex space-x-2 items-center\">\n              <i class=\"bi bi-geo-alt-fill text-teal-300 text-xl\"></i>\n              <span class=\"select-all\">11, Street 342, Abcd Fgh</span>\n            </div>\n          </div>\n          <div class=\"flex space-x-4 text-lg\">\n            <a href=\"#\" class=\"hover:text-teal-300\"><i class=\"bi bi-facebook\"></i></a>\n            <a href=\"#\" class=\"hover:text-teal-300\"><i class=\"bi bi-instagram\"></i></a>\n            <a href=\"#\" class=\"hover:text-teal-300\"> <i class=\"bi bi-linkedin\"></i></a>\n            <a href=\"#\" class=\"hover:text-teal-300\"> <i class=\"bi bi-youtube\"></i></a>\n          </div>\n        </div>\n        <div class=\"relative z-10\">\n          <div class=\"absolute -top-28 -right-28 z-0 bg-teal-400 w-40 h-40 rounded-full\"></div>\n          <div class=\"absolute -bottom-16 -left-28 z-0 bg-teal-400 w-40 h-40 rounded-full\"></div>\n          <div class=\"relative z-10 w-full md:w-80 h-full bg-white p-7 text-gray-600 rounded-xl shadow-lg\"\n            style=\"min-height: 300px\">\n            <form action=\"\" class=\"flex flex-col space-y-6\">\n              <div>\n                <label for=\"\" class=\"text-sm\">{{$t('contactForm.name')}}</label>\n                <input type=\"text\" placeholder=\"Your name\"\n                  class=\"ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300\" />\n              </div>\n              <div>\n                <label for=\"\" class=\"text-sm\">{{$t('contactForm.email')}}</label>\n                <input type=\"text\" placeholder=\"Email Address\"\n                  class=\"ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300\" />\n              </div>\n              <div>\n                <label for=\"\" class=\"text-sm\">{{$t('contactForm.message')}}</label>\n                <textarea placeholder=\"Type your message here\"\n                  class=\"ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300\"\n                  rows=\"4\"></textarea>\n              </div>\n              <button\n                class=\"startBtn inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm\">{{$t('contactForm.button')}}</button>\n            </form>\n          </div>\n        </div>\n      </div>\n    </div>\n  </body>"
+  }
+}

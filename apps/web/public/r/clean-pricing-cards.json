@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clean-pricing-cards",
+  "type": "registry:ui",
+  "title": "Clean pricing cards",
+  "description": "Clean pricing cards - Créé par @freja-jensen sur TailwindFlex.",
+  "author": "@freja-jensen (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/clean-pricing-cards.tsx",
+      "content": "/**\n * Component: Clean pricing cards\n * Author: @freja-jensen (https://tailwindflex.com/@freja-jensen)\n * Source: https://tailwindflex.com/@freja-jensen/clean-pricing-cards\n * Attribution: Créé par @freja-jensen sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CleanPricingCards() {\n  return (\n    <div>\n    <div className=\"max-w-screen-lg mx-auto px-4 mt-20\">\n        <div className=\"flex flex-col gap-4 md items-center justify-center\">\n            <div className=\"md1/3 p-6 rounded-lg border\">\n                <h2 className=\"text-lg font-bold mb-2\">Basic Plan</h2>\n                <p className=\"text-gray-700 mb-4\">Perfect for small teams or individuals</p>\n                <p className=\"text-4xl font-bold mb-4\">$10<span className=\"text-gray-500 text-lg\">/month</span></p>\n                <ul className=\"text-sm text-gray-700\">\n                    <li>10GB Storage</li>\n                    <li>50GB Bandwidth</li>\n                    <li>5 Email Accounts</li>\n                    <li>24/7 Support</li>\n                </ul>\n                <button className=\"mt-8 py-3 px-6 bg-blue-500 text-white font-bold rounded-full hover700 focus focus transition duration-200\">Get Started</button>\n            </div>\n            <div className=\"md1/3 p-6 rounded-lg border\">\n                <h2 className=\"text-lg font-bold mb-2\">Premium Plan</h2>\n                <p className=\"text-gray-700 mb-4\">Great for larger teams or businesses</p>\n                <p className=\"text-4xl font-bold mb-4\">$50<span className=\"text-gray-500 text-lg\">/month</span></p>\n                <ul className=\"text-sm text-gray-700\">\n                    <li>100GB Storage</li>\n                    <li>500GB Bandwidth</li>\n                    <li>20 Email Accounts</li>\n                    <li>24/7 Support</li>\n                </ul>\n                <button className=\"mt-8 py-3 px-6 bg-blue-500 text-white font-bold rounded-full hover700 focus focus transition duration-200\">Get Started</button>\n            </div>\n            <div className=\"md1/3 p-6 rounded-lg border\">\n                <h2 className=\"text-lg font-bold mb-2\">Enterprise Plan</h2>\n                <p className=\"text-gray-700 mb-4\">Custom plans for large organizations</p>\n                <p className=\"text-4xl font-bold mb-4\">$100<span className=\"text-gray-500 text-lg\">/month</span></p>\n                <ul className=\"text-sm text-gray-700\">\n                    <li>Unlimited Storage</li>\n                    <li>Unlimited Bandwidth</li>\n                    <li>50 Email Accounts</li>\n                    <li>24/7 Support</li>\n                </ul>\n                <button className=\"mt-8 py-3 px-6 bg-blue-500 text-white font-bold rounded-full hover700 focus focus transition duration-200\">Get Started</button>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@freja-jensen",
+    "authorUrl": "https://tailwindflex.com/@freja-jensen",
+    "sourceUrl": "https://tailwindflex.com/@freja-jensen/clean-pricing-cards",
+    "mention": "Créé par @freja-jensen sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-screen-lg mx-auto px-4 mt-20\">\n    <div class=\"flex flex-col gap-4 md:flex-row items-center justify-center\">\n        <div class=\"md:w-1/3 p-6 rounded-lg border\">\n            <h2 class=\"text-lg font-bold mb-2\">Basic Plan</h2>\n            <p class=\"text-gray-700 mb-4\">Perfect for small teams or individuals</p>\n            <p class=\"text-4xl font-bold mb-4\">$10<span class=\"text-gray-500 text-lg\">/month</span></p>\n            <ul class=\"text-sm text-gray-700\">\n                <li>10GB Storage</li>\n                <li>50GB Bandwidth</li>\n                <li>5 Email Accounts</li>\n                <li>24/7 Support</li>\n            </ul>\n            <button class=\"mt-8 py-3 px-6 bg-blue-500 text-white font-bold rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue transition duration-200\">Get Started</button>\n        </div>\n        <div class=\"md:w-1/3 p-6 rounded-lg border\">\n            <h2 class=\"text-lg font-bold mb-2\">Premium Plan</h2>\n            <p class=\"text-gray-700 mb-4\">Great for larger teams or businesses</p>\n            <p class=\"text-4xl font-bold mb-4\">$50<span class=\"text-gray-500 text-lg\">/month</span></p>\n            <ul class=\"text-sm text-gray-700\">\n                <li>100GB Storage</li>\n                <li>500GB Bandwidth</li>\n                <li>20 Email Accounts</li>\n                <li>24/7 Support</li>\n            </ul>\n            <button class=\"mt-8 py-3 px-6 bg-blue-500 text-white font-bold rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue transition duration-200\">Get Started</button>\n        </div>\n        <div class=\"md:w-1/3 p-6 rounded-lg border\">\n            <h2 class=\"text-lg font-bold mb-2\">Enterprise Plan</h2>\n            <p class=\"text-gray-700 mb-4\">Custom plans for large organizations</p>\n            <p class=\"text-4xl font-bold mb-4\">$100<span class=\"text-gray-500 text-lg\">/month</span></p>\n            <ul class=\"text-sm text-gray-700\">\n                <li>Unlimited Storage</li>\n                <li>Unlimited Bandwidth</li>\n                <li>50 Email Accounts</li>\n                <li>24/7 Support</li>\n            </ul>\n            <button class=\"mt-8 py-3 px-6 bg-blue-500 text-white font-bold rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue transition duration-200\">Get Started</button>\n        </div>\n    </div>\n</div>"
+  }
+}

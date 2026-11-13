@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-neon-purple-super",
+  "type": "registry:ui",
+  "title": "button-neon-purple-super",
+  "description": "button-neon-purple-super - Créé par @mohammad-rashel sur TailwindFlex.",
+  "author": "@mohammad-rashel (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button-neon-purple-super.tsx",
+      "content": "/**\n * Component: button-neon-purple-super\n * Author: @mohammad-rashel (https://tailwindflex.com/@mohammad-rashel)\n * Source: https://tailwindflex.com/@mohammad-rashel/button-neon-purple-super\n * Attribution: Créé par @mohammad-rashel sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonNeonPurpleSuper() {\n  return (\n    <div>\n    <button>\n      I love Islam\n    </button>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mohammad-rashel",
+    "authorUrl": "https://tailwindflex.com/@mohammad-rashel",
+    "sourceUrl": "https://tailwindflex.com/@mohammad-rashel/button-neon-purple-super",
+    "mention": "Créé par @mohammad-rashel sur TailwindFlex",
+    "rawHtml": "<button>\n  I love Islam\n</button>"
+  }
+}

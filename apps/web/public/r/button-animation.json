@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-animation",
+  "type": "registry:ui",
+  "title": "button animation",
+  "description": "button animation - Créé par @CrySoft sur TailwindFlex.",
+  "author": "@CrySoft (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button-animation.tsx",
+      "content": "/**\n * Component: button animation\n * Author: @CrySoft (https://tailwindflex.com/@CrySoft)\n * Source: https://tailwindflex.com/@CrySoft/button-animation\n * Attribution: Créé par @CrySoft sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonAnimation() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\\\">\\n   \\n\\n   <!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Animated Buttons</title>\\n    \\n</head>\\n<body class=\\\"bg-gray-100 flex justify-center items-center min-h-screen\\\">\\n\\n    <div class=\\\"grid grid-cols-3 gap-4\\\">\\n        <button class=\\\"transition-transform transform hover:scale-105 bg-blue-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-blue-600 duration-300\\\">Hover Me!</button>\\n        <button class=\\\"transition-all transform hover:rotate-12 bg-green-500 text-white py-2 px-6 rounded-full shadow-md hover:shadow-xl hover:bg-green-600 duration-300\\\">Rotate</button>\\n        <button class=\\\"transition-all transform hover:scale-110 hover:translate-x-2 bg-red-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-red-600 duration-300\\\">Move Right</button>\\n\\n        <button class=\\\"transition-all transform hover:scale-95 hover:translate-y-2 bg-yellow-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-yellow-600 duration-300\\\">Move Down</button>\\n        <button class=\\\"transition-all transform hover:scale-110 hover:translate-x-4 bg-purple-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-purple-600 duration-300\\\">Big Slide</button>\\n        <button class=\\\"transition-transform transform hover:scale-125 bg-pink-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-pink-600 duration-300\\\">Zoom In</button>\\n\\n        <button class=\\\"transition-all transform hover:skew-x-6 bg-teal-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-teal-600 duration-300\\\">Skew</button>\\n        <button class=\\\"transition-all transform hover:skew-y-6 bg-indigo-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-indigo-600 duration-300\\\">Tilt Y</button>\\n        <button class=\\\"transition-all transform hover:scale-110 hover:rotate-45 bg-orange-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-orange-600 duration-300\\\">Rotate & Zoom</button>\\n\\n        <button class=\\\"transition-all transform hover:scale-125 bg-gray-500 text-white py-2 px-6 rounded-full shadow-md hover:shadow-xl hover:bg-gray-600 duration-300\\\">Circle Zoom</button>\\n        <button class=\\\"transition-all transform hover:scale-105 hover:translate-y-4 bg-blue-700 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-blue-800 duration-300\\\">Bounce</button>\\n        <button class=\\\"transition-all transform hover:scale-95 hover:rotate-15 bg-lime-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-lime-600 duration-300\\\">Rotate Left</button>\\n\\n        <button class=\\\"transition-all transform hover:scale-120 hover:translate-x-8 bg-teal-600 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-teal-700 duration-300\\\">Slide Out</button>\\n        <button class=\\\"transition-all transform hover:scale-110 hover:translate-y-8 bg-red-600 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-red-700 duration-300\\\">Big Drop</button>\\n        <button class=\\\"transition-all transform hover:scale-110 hover:rotate-30 bg-purple-700 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-purple-800 duration-300\\\">Rotate & Move</button>\\n    </div>\\n\\n</body>\\n</html>\\n\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@CrySoft",
+    "authorUrl": "https://tailwindflex.com/@CrySoft",
+    "sourceUrl": "https://tailwindflex.com/@CrySoft/button-animation",
+    "mention": "Créé par @CrySoft sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\">\n   \n\n   <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Animated Buttons</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gray-100 flex justify-center items-center min-h-screen\">\n\n    <div class=\"grid grid-cols-3 gap-4\">\n        <button class=\"transition-transform transform hover:scale-105 bg-blue-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-blue-600 duration-300\">Hover Me!</button>\n        <button class=\"transition-all transform hover:rotate-12 bg-green-500 text-white py-2 px-6 rounded-full shadow-md hover:shadow-xl hover:bg-green-600 duration-300\">Rotate</button>\n        <button class=\"transition-all transform hover:scale-110 hover:translate-x-2 bg-red-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-red-600 duration-300\">Move Right</button>\n\n        <button class=\"transition-all transform hover:scale-95 hover:translate-y-2 bg-yellow-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-yellow-600 duration-300\">Move Down</button>\n        <button class=\"transition-all transform hover:scale-110 hover:translate-x-4 bg-purple-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-purple-600 duration-300\">Big Slide</button>\n        <button class=\"transition-transform transform hover:scale-125 bg-pink-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-pink-600 duration-300\">Zoom In</button>\n\n        <button class=\"transition-all transform hover:skew-x-6 bg-teal-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-teal-600 duration-300\">Skew</button>\n        <button class=\"transition-all transform hover:skew-y-6 bg-indigo-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-indigo-600 duration-300\">Tilt Y</button>\n        <button class=\"transition-all transform hover:scale-110 hover:rotate-45 bg-orange-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-orange-600 duration-300\">Rotate & Zoom</button>\n\n        <button class=\"transition-all transform hover:scale-125 bg-gray-500 text-white py-2 px-6 rounded-full shadow-md hover:shadow-xl hover:bg-gray-600 duration-300\">Circle Zoom</button>\n        <button class=\"transition-all transform hover:scale-105 hover:translate-y-4 bg-blue-700 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-blue-800 duration-300\">Bounce</button>\n        <button class=\"transition-all transform hover:scale-95 hover:rotate-15 bg-lime-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-lime-600 duration-300\">Rotate Left</button>\n\n        <button class=\"transition-all transform hover:scale-120 hover:translate-x-8 bg-teal-600 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-teal-700 duration-300\">Slide Out</button>\n        <button class=\"transition-all transform hover:scale-110 hover:translate-y-8 bg-red-600 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-red-700 duration-300\">Big Drop</button>\n        <button class=\"transition-all transform hover:scale-110 hover:rotate-30 bg-purple-700 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-purple-800 duration-300\">Rotate & Move</button>\n    </div>\n\n</body>\n</html>\n\n</div>"
+  }
+}

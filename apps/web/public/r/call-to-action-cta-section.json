@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-to-action-cta-section",
+  "type": "registry:ui",
+  "title": "Call to action (CTA) section",
+  "description": "Call to action (CTA) section - Créé par @bunny sur TailwindFlex.",
+  "author": "@bunny (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-to-action-cta-section.tsx",
+      "content": "/**\n * Component: Call to action (CTA) section\n * Author: @bunny (https://tailwindflex.com/@bunny)\n * Source: https://tailwindflex.com/@bunny/call-to-action-cta-section\n * Attribution: Créé par @bunny sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToActionCtaSection() {\n  return (\n    <div>\n    <section className=\"bg-blue-600 py-16 text-white\">\n            <div className=\"container mx-auto px-4 text-center\">\n                <h2 className=\"text-3xl md4xl font-bold mb-6\">Ready to Get Started?</h2>\n                <p className=\"text-lg md mb-8\">Sign up now and start using our awesome product.</p>\n                <a href=\"#\" className=\"px-6 py-3 bg-white text-blue-600 rounded-lg font-bold shadow-md hover50\">Sign Up\n                    Now</a>\n            </div>\n        </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@bunny",
+    "authorUrl": "https://tailwindflex.com/@bunny",
+    "sourceUrl": "https://tailwindflex.com/@bunny/call-to-action-cta-section",
+    "mention": "Créé par @bunny sur TailwindFlex",
+    "rawHtml": "<section class=\"bg-blue-600 py-16 text-white\">\n        <div class=\"container mx-auto px-4 text-center\">\n            <h2 class=\"text-3xl md:text-4xl font-bold mb-6\">Ready to Get Started?</h2>\n            <p class=\"text-lg md:text-xl mb-8\">Sign up now and start using our awesome product.</p>\n            <a href=\"#\" class=\"px-6 py-3 bg-white text-blue-600 rounded-lg font-bold shadow-md hover:bg-blue-50\">Sign Up\n                Now</a>\n        </div>\n    </section>"
+  }
+}

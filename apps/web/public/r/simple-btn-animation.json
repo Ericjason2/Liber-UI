@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-btn-animation",
+  "type": "registry:ui",
+  "title": "Simple Btn animation",
+  "description": "Simple Btn animation - Créé par @coderooz sur TailwindFlex.",
+  "author": "@coderooz (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-btn-animation.tsx",
+      "content": "/**\n * Component: Simple Btn animation\n * Author: @coderooz (https://tailwindflex.com/@coderooz)\n * Source: https://tailwindflex.com/@coderooz/simple-btn-animation\n * Attribution: Créé par @coderooz sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SimpleBtnAnimation() {\n  return (\n    <div>\n    <div className=\"flex justify-center items-center dark200 min-w-full min-h-full\">\n      <div className=\"group p-5\">\n    \n      <button className=\"border-2 dark500 dark800 dark shadow-md drop-shadow-lg shadow-gray-400 dark500 p-5 rounded-full group-hover500  group-hover group-hover group-hover2xl group-hover700 group-hover group-hover2 duration-500 group-hover6 group-hover3 ease-in-out\">\n          Click Me\n        </button>\n        <div className=\"hidden absolute bg-slate-700 text-wrap border-white border-2 rounded text-white px-2 py-1 line-height-2 translate-y-5 translate-x-10 group-hover duration-500 ease-in dark200 dark800\">\n          You have hovered on me!\n        </div>\n      </div>\n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@coderooz",
+    "authorUrl": "https://tailwindflex.com/@coderooz",
+    "sourceUrl": "https://tailwindflex.com/@coderooz/simple-btn-animation",
+    "mention": "Créé par @coderooz sur TailwindFlex",
+    "rawHtml": "<div class=\"flex justify-center items-center dark:bg-gray-200 min-w-full min-h-full\">\n  <div class=\"group p-5\">\n\n  <button class=\"border-2 dark:bg-purple-500 dark:text-blue-800 dark:font-bold shadow-md drop-shadow-lg shadow-gray-400 dark:shadow-gray-500 p-5 rounded-full group-hover:bg-blue-500  group-hover:text-white group-hover:border-none group-hover:shadow-2xl group-hover:shadow-purple-700 group-hover:font-bold group-hover:translate-y-2 duration-500 group-hover:skew-x-6 group-hover:skew-y-3 ease-in-out\">\n      Click Me\n    </button>\n    <div class=\"hidden absolute bg-slate-700 text-wrap border-white border-2 rounded text-white px-2 py-1 line-height-2 translate-y-5 translate-x-10 group-hover:block duration-500 ease-in dark:bg-gray-200 dark:text-gray-800\">\n      You have hovered on me!\n    </div>\n  </div>\n\n</div>"
+  }
+}

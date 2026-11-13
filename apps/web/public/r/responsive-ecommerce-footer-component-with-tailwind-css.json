@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-ecommerce-footer-component-with-tailwind-css",
+  "type": "registry:ui",
+  "title": "Responsive eCommerce Footer Component with Tailwind CSS",
+  "description": "Responsive eCommerce Footer Component with Tailwind CSS - Créé par @shariful-islam sur TailwindFlex.",
+  "author": "@shariful-islam (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-ecommerce-footer-component-with-tailwind-css.tsx",
+      "content": "/**\n * Component: Responsive eCommerce Footer Component with Tailwind CSS\n * Author: @shariful-islam (https://tailwindflex.com/@shariful-islam)\n * Source: https://tailwindflex.com/@shariful-islam/responsive-ecommerce-footer-component-with-tailwind-css\n * Attribution: Créé par @shariful-islam sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveEcommerceFooterComponentWithTailwindCss() {\n  return (\n    <div>\n    <div className=\"bg-white dark800 flex justify-center items-center w-screen h-screen\">\n    <footer className=\"bg-white text-gray-700 border-t border-gray-200\">\n      <div className=\"container mx-auto px-6 py-8\">\n        <div className=\"grid grid-cols-1 md4 gap-6\">\n          \n          <div>\n            <h2 className=\"text-xl font-semibold flex items-center space-x-2\">\n              <span className=\"text-blue-600 text-2xl\">ES</span> <span>BAZAR</span>\n            </h2>\n            <p className=\"mt-2 text-sm text-gray-600\">\n              Lorem ipsum dolor sit amet consectetur. Imperdiet aliquet faucibus malesuada vitae.\n            </p>\n            <p className=\"mt-2 text-sm text-gray-600\">\n              <span className=\"font-semibold\">(219) 555-0114</span>\n            </p>\n            \n            <div className=\"flex space-x-3 mt-3\">\n              <a href=\"#\" className=\"text-blue-600\"><i className=\"fab fa-facebook\"></i></a>\n              <a href=\"#\" className=\"text-red-600\"><i className=\"fab fa-reddit\"></i></a>\n              <a href=\"#\" className=\"text-green-500\"><i className=\"fab fa-whatsapp\"></i></a>\n              <a href=\"#\" className=\"text-pink-600\"><i className=\"fab fa-pinterest\"></i></a>\n            </div>\n          </div>\n          \n          \n          <div>\n            <h3 className=\"font-semibold mb-2\">My Account</h3>\n            <ul className=\"text-sm space-y-2\">\n              <li><a href=\"#\" className=\"hover600\">My Account</a></li>\n              <li><a href=\"#\" className=\"hover600\">Order History</a></li>\n              <li><a href=\"#\" className=\"hover600\">Shopping Cart</a></li>\n              <li><a href=\"#\" className=\"hover600\">Wishlist</a></li>\n            </ul>\n          </div>\n          \n          \n          <div>\n            <h3 className=\"font-semibold mb-2\">Helps</h3>\n            <ul className=\"text-sm space-y-2\">\n              <li><a href=\"#\" className=\"hover600\">Contact</a></li>\n              <li><a href=\"#\" className=\"hover600\">FAQs</a></li>\n              <li><a href=\"#\" className=\"hover600\">Terms & Condition</a></li>\n              <li><a href=\"#\" className=\"hover600\">Privacy Policy</a></li>\n            </ul>\n          </div>\n          \n          \n          <div>\n            <h3 className=\"font-semibold mb-2\">Categories</h3>\n            <ul className=\"text-sm space-y-2\">\n              <li><a href=\"#\" className=\"hover600\">Printers</a></li>\n              <li><a href=\"#\" className=\"hover600\">Cartridge</a></li>\n              <li><a href=\"#\" className=\"hover600\">Ink</a></li>\n            </ul>\n          </div>\n        </div>\n        \n        \n        <div className=\"flex flex-col md justify-between items-center mt-6\">\n          <div className=\"flex space-x-2\">\n            <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn9GcR-v52tLnvL3FEjfxjPvZWbvUMYvVUtAm9R6A&s\" alt=\"Google Play\" className=\"h-10\" />\n            <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn9GcSJgk5tpxJC_1CAnsXwo2VvBGyQGI-o5c1PJw&s\" alt=\"App Store\" className=\"h-10\" />\n          </div>\n          <div className=\"flex space-x-2 mt-4 md0\">\n            <img src=\"https://www.logo.wine/a/logo/Apple_Pay/Apple_Pay-White-Dark-Background-Logo.wine.svg\" alt=\"Apple Pay\" className=\"h-[30px] w-10 rounded-md\" />\n            <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn9GcSynWEtLag--sQ4XlfTwHh9_DAnfcglW7C3iw&s\" alt=\"Visa\" className=\"h-[30px] w-10 rounded-md\" />\n            <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn9GcT6mJsEDg1aR_JCFb3ohk2nCxjgSvkWnpmlKg&s\" alt=\"Mastercard\" className=\"h-[30px] w-10 rounded-md\" />\n            <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn9GcQveKfGcJ1tSEY8bLg52DxvVrFDJXmxXJgv1Q&s\" alt=\"discover\" className=\"h-[30px] w-10 rounded-md\" />\n            <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn9GcSDS0zyuJdI4e7E1VGaNDAVtRn3fGTzr0PBOA&s\" alt=\"Secure Payment\" className=\"h-[30px] w-10 rounded-md\" />\n          </div>\n        </div>\n        \n        \n        <div className=\"text-center text-sm text-gray-500 mt-6 border-t pt-4\">\n          ExpertSquad © 2025. All Rights Reserved.\n        </div>\n      </div>\n    </footer>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@shariful-islam",
+    "authorUrl": "https://tailwindflex.com/@shariful-islam",
+    "sourceUrl": "https://tailwindflex.com/@shariful-islam/responsive-ecommerce-footer-component-with-tailwind-css",
+    "mention": "Créé par @shariful-islam sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen\">\n<footer class=\"bg-white text-gray-700 border-t border-gray-200\">\n  <div class=\"container mx-auto px-6 py-8\">\n    <div class=\"grid grid-cols-1 md:grid-cols-4 gap-6\">\n      <!-- Logo & Description -->\n      <div>\n        <h2 class=\"text-xl font-semibold flex items-center space-x-2\">\n          <span class=\"text-blue-600 text-2xl\">ES</span> <span>BAZAR</span>\n        </h2>\n        <p class=\"mt-2 text-sm text-gray-600\">\n          Lorem ipsum dolor sit amet consectetur. Imperdiet aliquet faucibus malesuada vitae.\n        </p>\n        <p class=\"mt-2 text-sm text-gray-600\">\n          <span class=\"font-semibold\">(219) 555-0114</span>\n        </p>\n        <!-- Social Icons -->\n        <div class=\"flex space-x-3 mt-3\">\n          <a href=\"#\" class=\"text-blue-600\"><i class=\"fab fa-facebook\"></i></a>\n          <a href=\"#\" class=\"text-red-600\"><i class=\"fab fa-reddit\"></i></a>\n          <a href=\"#\" class=\"text-green-500\"><i class=\"fab fa-whatsapp\"></i></a>\n          <a href=\"#\" class=\"text-pink-600\"><i class=\"fab fa-pinterest\"></i></a>\n        </div>\n      </div>\n      \n      <!-- My Account -->\n      <div>\n        <h3 class=\"font-semibold mb-2\">My Account</h3>\n        <ul class=\"text-sm space-y-2\">\n          <li><a href=\"#\" class=\"hover:text-blue-600\">My Account</a></li>\n          <li><a href=\"#\" class=\"hover:text-blue-600\">Order History</a></li>\n          <li><a href=\"#\" class=\"hover:text-blue-600\">Shopping Cart</a></li>\n          <li><a href=\"#\" class=\"hover:text-blue-600\">Wishlist</a></li>\n        </ul>\n      </div>\n      \n      <!-- Help Section -->\n      <div>\n        <h3 class=\"font-semibold mb-2\">Helps</h3>\n        <ul class=\"text-sm space-y-2\">\n          <li><a href=\"#\" class=\"hover:text-blue-600\">Contact</a></li>\n          <li><a href=\"#\" class=\"hover:text-blue-600\">FAQs</a></li>\n          <li><a href=\"#\" class=\"hover:text-blue-600\">Terms & Condition</a></li>\n          <li><a href=\"#\" class=\"hover:text-blue-600\">Privacy Policy</a></li>\n        </ul>\n      </div>\n      \n      <!-- Categories -->\n      <div>\n        <h3 class=\"font-semibold mb-2\">Categories</h3>\n        <ul class=\"text-sm space-y-2\">\n          <li><a href=\"#\" class=\"hover:text-blue-600\">Printers</a></li>\n          <li><a href=\"#\" class=\"hover:text-blue-600\">Cartridge</a></li>\n          <li><a href=\"#\" class=\"hover:text-blue-600\">Ink</a></li>\n        </ul>\n      </div>\n    </div>\n    \n    <!-- Payment and App Download -->\n    <div class=\"flex flex-col md:flex-row justify-between items-center mt-6\">\n      <div class=\"flex space-x-2\">\n        <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-v52tLnvL3FEjfxjPvZWbvUMYvVUtAm9R6A&s\" alt=\"Google Play\" class=\"h-10\">\n        <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJgk5tpxJC_1CAnsXwo2VvBGyQGI-o5c1PJw&s\" alt=\"App Store\" class=\"h-10\">\n      </div>\n      <div class=\"flex space-x-2 mt-4 md:mt-0\">\n        <img src=\"https://www.logo.wine/a/logo/Apple_Pay/Apple_Pay-White-Dark-Background-Logo.wine.svg\" alt=\"Apple Pay\" class=\"h-[30px] w-10 rounded-md\">\n        <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSynWEtLag--sQ4XlfTwHh9_DAnfcglW7C3iw&s\" alt=\"Visa\" class=\"h-[30px] w-10 rounded-md\">\n        <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mJsEDg1aR_JCFb3ohk2nCxjgSvkWnpmlKg&s\" alt=\"Mastercard\" class=\"h-[30px] w-10 rounded-md\">\n        <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQveKfGcJ1tSEY8bLg52DxvVrFDJXmxXJgv1Q&s\" alt=\"discover\" class=\"h-[30px] w-10 rounded-md\">\n        <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDS0zyuJdI4e7E1VGaNDAVtRn3fGTzr0PBOA&s\" alt=\"Secure Payment\" class=\"h-[30px] w-10 rounded-md\">\n      </div>\n    </div>\n    \n    <!-- Copyright -->\n    <div class=\"text-center text-sm text-gray-500 mt-6 border-t pt-4\">\n      ExpertSquad © 2025. All Rights Reserved.\n    </div>\n  </div>\n</footer>\n</div>"
+  }
+}

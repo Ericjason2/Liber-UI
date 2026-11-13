@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "ripple-animation",
+  "type": "registry:ui",
+  "title": "Ripple Animation",
+  "description": "Ripple Animation - Créé par @sammytg7 sur TailwindFlex.",
+  "author": "@sammytg7 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/ripple-animation.tsx",
+      "content": "/**\n * Component: Ripple Animation\n * Author: @sammytg7 (https://tailwindflex.com/@sammytg7)\n * Source: https://tailwindflex.com/@sammytg7/ripple-animation\n * Attribution: Créé par @sammytg7 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function RippleAnimation() {\n  return (\n    <div>\n    <div className=\"w-full h-screen relative overflow-hidden py-20 bg-gray-200 dark\">\n      <div className=\"absolute w-full inset-0 flex items-center justify-center\">\n        <div\n          className=\"absolute animate-ripple rounded-full z-10 bg-cover bg-no-repeat bg-center bg-[url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxwZXJzb258ZW58MHwwfHx8MTc0MzMyNzEzNHww&ixlib=rb-4.0.3&q=80&w=1080')] outline outline-offset-2 outline-blue-300 dark600 shadow-xl border [--i:0] w-[180px] h-[180px] opacity-1 [animation-delay:0s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n        </div>\n        <div\n          className=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:1] w-[250px] h-[250px] opacity-[0.17] [animation-delay:0.06s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n        </div>\n        <div\n          className=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:2] w-[320px] h-[320px] opacity-[0.14] [animation-delay:0.12s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n        </div>\n        <div\n          className=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:3] w-[390px] h-[390px] opacity-[0.11000000000000001] [animation-delay:0.18s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n        </div>\n        <div\n          className=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:4] w-[460px] h-[460px] opacity-[0.08000000000000002] [animation-delay:0.24s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n        </div>\n        <div\n          className=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:5] width:530px;height:530px;opacity:0.05000000000000002;animation-delay:0.3s;border-style;border-width:1px;border-color(var(--foreground), 0.3);top:50%;left:50%;transform(-50%, -50%) scale(1)\">\n        </div>\n        <div\n          className=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:6] w-[600px] h-[600px] opacity-[0.020000000000000018] [animation-delay:0.36s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n        </div>\n        <div\n          className=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:7] w-[670px] h-[670px] opacity-[-0.009999999999999981] [animation-delay:0.42s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n        </div>\n        <div\n          className=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:8] w-[740px] h-[740px] opacity-[-0.03999999999999998] [animation-delay:0.48s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n        </div>\n        <div\n          className=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:9] w-[810px] h-[810px] opacity-[-0.07] [animation-delay:0.54s] border-dashed border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@sammytg7",
+    "authorUrl": "https://tailwindflex.com/@sammytg7",
+    "sourceUrl": "https://tailwindflex.com/@sammytg7/ripple-animation",
+    "mention": "Créé par @sammytg7 sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full h-screen relative overflow-hidden py-20 bg-gray-200 dark:bg-black\">\n  <div class=\"absolute w-full inset-0 flex items-center justify-center\">\n    <div\n      class=\"absolute animate-ripple rounded-full z-10 bg-cover bg-no-repeat bg-center bg-[url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxwZXJzb258ZW58MHwwfHx8MTc0MzMyNzEzNHww&ixlib=rb-4.0.3&q=80&w=1080')] outline outline-offset-2 outline-blue-300 dark:outline-gray-600 shadow-xl border [--i:0] w-[180px] h-[180px] opacity-1 [animation-delay:0s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:1] w-[250px] h-[250px] opacity-[0.17] [animation-delay:0.06s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:2] w-[320px] h-[320px] opacity-[0.14] [animation-delay:0.12s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:3] w-[390px] h-[390px] opacity-[0.11000000000000001] [animation-delay:0.18s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:4] w-[460px] h-[460px] opacity-[0.08000000000000002] [animation-delay:0.24s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:5] width:530px;height:530px;opacity:0.05000000000000002;animation-delay:0.3s;border-style:solid;border-width:1px;border-color:hsl(var(--foreground), 0.3);top:50%;left:50%;transform:translate(-50%, -50%) scale(1)\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:6] w-[600px] h-[600px] opacity-[0.020000000000000018] [animation-delay:0.36s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:7] w-[670px] h-[670px] opacity-[-0.009999999999999981] [animation-delay:0.42s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:8] w-[740px] h-[740px] opacity-[-0.03999999999999998] [animation-delay:0.48s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-blue-400 shadow-xl border [--i:9] w-[810px] h-[810px] opacity-[-0.07] [animation-delay:0.54s] border-dashed border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n  </div>\n</div>"
+  }
+}

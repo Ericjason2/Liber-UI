@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress-bar-with-tailwind-css-and-alpinejs-2",
+  "type": "registry:ui",
+  "title": "progress-bar with Tailwind CSS and Alpinejs",
+  "description": "progress-bar with Tailwind CSS and Alpinejs - Créé par @quemiaCaroline sur TailwindFlex.",
+  "author": "@quemiaCaroline (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/progress-bar-with-tailwind-css-and-alpinejs-2.tsx",
+      "content": "/**\n * Component: progress-bar with Tailwind CSS and Alpinejs\n * Author: @quemiaCaroline (https://tailwindflex.com/@quemiaCaroline)\n * Source: https://tailwindflex.com/@quemiaCaroline/progress-bar-with-tailwind-css-and-alpinejs-2\n * Attribution: Créé par @quemiaCaroline sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProgressBarWithTailwindCssAndAlpinejs2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"\\n<section class=\\\"bg-white\\\">\\n  <div\\n    class=\\\"w-full mx-auto max-w-xl flex flex-col lg:h-svh justify-center py-24 lg:py-96 relative p-8\\\"\\n  >\\n    <div\\n      class=\\\"prose text-gray-500 prose-sm prose-headings:font-normal prose-headings:text-xl\\\"\\n    >\\n      <div>\\n        <h1>Progress bar</h1>\\n        <p class=\\\"text-balance\\\">A progress that loads when the page loads.</p>\\n      </div>\\n    </div>\\n    <div class=\\\"mt-6 border-t pt-12\\\">\\n      <!-- Starts component -->\\n      <div\\n        x-data=\\\"{ progress: 0, interval: null }\\\"\\n        x-init=\\\"() => { interval = setInterval(() => { progress < 100 ? progress += 5 : clearInterval(interval); }, 100); }\\\"\\n        class=\\\"w-full\\\"\\n      >\\n        <div class=\\\"text-sm text-gray-500\\\" x-text=\\\"progress + '%'\\\">100%</div>\\n        <div class=\\\"relative h-1 mt-2 bg-gray-200 rounded-full\\\">\\n          <div\\n            x-bind:style=\\\"'width: ' + progress + '%;'\\\"\\n            class=\\\"absolute top-0 left-0 h-full bg-orange-500 rounded-full\\\"\\n            style=\\\"width: 100%\\\"\\n          ></div>\\n        </div>\\n      </div>\\n      <!-- Ends component -->\\n    </div>\\n  </div>\\n  <!-- Starts links to tutorial -->\\n  <div\\n    class=\\\"pointer-events-none fixed inset-x-0 bottom-0 sm:flex sm:justify-center p-2\\\"\\n  >\\n    <div\\n      class=\\\"pointer-events-auto flex w-full max-w-md divide-x divide-neutral-200 rounded-lg bg-white shadow-xl border\\\"\\n    >\\n      <div class=\\\"flex w-0 flex-1 items-center p-4\\\">\\n        <div class=\\\"w-full\\\">\\n          <p class=\\\"text-sm font-medium text-neutral-900\\\">Tutorial</p>\\n          <p class=\\\"mt-1 text-sm text-neutral-500\\\">\\n            How to create a progress-bar with Tailwind CSS and Alpinejs\\n          </p>\\n          <p class=\\\"mt-2 text-xs text-orange-500 underline\\\">\\n            <a href=\\\"https://lexingtonthemes.com\\\"> by © Lexington Themes</a>\\n          </p>\\n        </div>\\n      </div>\\n      <div class=\\\"flex\\\">\\n        <div class=\\\"flex flex-col divide-y divide-neutral-200\\\">\\n          <div class=\\\"flex h-0 flex-1\\\">\\n            <a\\n              href=\\\"https://lexingtonthemes.com/tutorials/how-to-create-a-progress-bar-with-tailwind-css-and-alpine-js/\\\"\\n              type=\\\"button\\\"\\n              class=\\\"flex w-full items-center justify-center rounded-none rounded-tr-lg border border-transparent px-4 py-3 text-sm font-medium text-orange-600 hover:text-orange-500 focus:z-10 focus:outline-none focus:ring-2 focus:ring-orange-500\\\"\\n              >Tutorial</a\\n            >\\n          </div>\\n          <div class=\\\"flex h-0 flex-1\\\">\\n            <a\\n              href=\\\"https://github.com/Lexington-Themes/lexington-tutorials/blob/main/src/pages/progress-bar/index.astro\\\"\\n              class=\\\"flex w-full items-center justify-center rounded-none rounded-br-lg border border-transparent px-4 py-3 text-sm font-medium text-neutral-700 hover:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-orange-500\\\"\\n              >Get the code</a\\n            >\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  </div>\\n  <!-- Ends links to tutorial -->\\n</section>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@quemiaCaroline",
+    "authorUrl": "https://tailwindflex.com/@quemiaCaroline",
+    "sourceUrl": "https://tailwindflex.com/@quemiaCaroline/progress-bar-with-tailwind-css-and-alpinejs-2",
+    "mention": "Créé par @quemiaCaroline sur TailwindFlex",
+    "rawHtml": "<script\n  defer\n  src=\"https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js\"\n></script>\n<section class=\"bg-white\">\n  <div\n    class=\"w-full mx-auto max-w-xl flex flex-col lg:h-svh justify-center py-24 lg:py-96 relative p-8\"\n  >\n    <div\n      class=\"prose text-gray-500 prose-sm prose-headings:font-normal prose-headings:text-xl\"\n    >\n      <div>\n        <h1>Progress bar</h1>\n        <p class=\"text-balance\">A progress that loads when the page loads.</p>\n      </div>\n    </div>\n    <div class=\"mt-6 border-t pt-12\">\n      <!-- Starts component -->\n      <div\n        x-data=\"{ progress: 0, interval: null }\"\n        x-init=\"() => { interval = setInterval(() => { progress < 100 ? progress += 5 : clearInterval(interval); }, 100); }\"\n        class=\"w-full\"\n      >\n        <div class=\"text-sm text-gray-500\" x-text=\"progress + '%'\">100%</div>\n        <div class=\"relative h-1 mt-2 bg-gray-200 rounded-full\">\n          <div\n            x-bind:style=\"'width: ' + progress + '%;'\"\n            class=\"absolute top-0 left-0 h-full bg-orange-500 rounded-full\"\n            style=\"width: 100%\"\n          ></div>\n        </div>\n      </div>\n      <!-- Ends component -->\n    </div>\n  </div>\n  <!-- Starts links to tutorial -->\n  <div\n    class=\"pointer-events-none fixed inset-x-0 bottom-0 sm:flex sm:justify-center p-2\"\n  >\n    <div\n      class=\"pointer-events-auto flex w-full max-w-md divide-x divide-neutral-200 rounded-lg bg-white shadow-xl border\"\n    >\n      <div class=\"flex w-0 flex-1 items-center p-4\">\n        <div class=\"w-full\">\n          <p class=\"text-sm font-medium text-neutral-900\">Tutorial</p>\n          <p class=\"mt-1 text-sm text-neutral-500\">\n            How to create a progress-bar with Tailwind CSS and Alpinejs\n          </p>\n          <p class=\"mt-2 text-xs text-orange-500 underline\">\n            <a href=\"https://lexingtonthemes.com\"> by © Lexington Themes</a>\n          </p>\n        </div>\n      </div>\n      <div class=\"flex\">\n        <div class=\"flex flex-col divide-y divide-neutral-200\">\n          <div class=\"flex h-0 flex-1\">\n            <a\n              href=\"https://lexingtonthemes.com/tutorials/how-to-create-a-progress-bar-with-tailwind-css-and-alpine-js/\"\n              type=\"button\"\n              class=\"flex w-full items-center justify-center rounded-none rounded-tr-lg border border-transparent px-4 py-3 text-sm font-medium text-orange-600 hover:text-orange-500 focus:z-10 focus:outline-none focus:ring-2 focus:ring-orange-500\"\n              >Tutorial</a\n            >\n          </div>\n          <div class=\"flex h-0 flex-1\">\n            <a\n              href=\"https://github.com/Lexington-Themes/lexington-tutorials/blob/main/src/pages/progress-bar/index.astro\"\n              class=\"flex w-full items-center justify-center rounded-none rounded-br-lg border border-transparent px-4 py-3 text-sm font-medium text-neutral-700 hover:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-orange-500\"\n              >Get the code</a\n            >\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- Ends links to tutorial -->\n</section>"
+  }
+}

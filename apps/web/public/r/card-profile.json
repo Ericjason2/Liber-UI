@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-profile",
+  "type": "registry:ui",
+  "title": "Card profile",
+  "description": "Card profile - Créé par @Aman300 sur TailwindFlex.",
+  "author": "@Aman300 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-profile.tsx",
+      "content": "/**\n * Component: Card profile\n * Author: @Aman300 (https://tailwindflex.com/@Aman300)\n * Source: https://tailwindflex.com/@Aman300/card-profile\n * Attribution: Créé par @Aman300 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardProfile() {\n  return (\n    <div>\n    <div className=\"flex h-screen items-center justify-center px-10\">\n      <div className=\"w-full sm1/2  bg-white shadow-xl rounded-3xl\">\n        <div className=\"mt-10 flex justify-center mb-5 \">\n          <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn9GcSKN2MjSr0slVb3jxwjrIuBaAaqo669IBIKxw&usqp=CAU\" className=\"rounded-full\" alt=\"\" />\n        </div>\n        <div className=\"flex justify-center px-5 \">\n          <div className=\"border-b-2 border-gray-500 w-full\"></div>\n        </div>\n        <div className=\"flex justify-center text-center p-5\">\n          <p>\"I'm Jane Hong, and I recently graduated with an advanced diploma from Smith secondary school. I'm seeking an\n            internship where I can apply my skills in content creation and increase my experience in digital marketing.\"</p>\n        </div>\n        <div className=\"flex justify-center gap-4 p-5\">\n          <button className=\"py-3 bg-indigo-500 font-semibold text-white w-1/4 rounded-xl hover600\">Follow</button>\n          <button className=\"py-3 bg-pink-500 font-semibold text-white w-1/4 rounded-xl hover600\">Subscribe</button>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "profile",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@Aman300",
+    "authorUrl": "https://tailwindflex.com/@Aman300",
+    "sourceUrl": "https://tailwindflex.com/@Aman300/card-profile",
+    "mention": "Créé par @Aman300 sur TailwindFlex",
+    "rawHtml": "<div class=\"flex h-screen items-center justify-center px-10\">\n  <div class=\"w-full sm:w-1/2  bg-white shadow-xl rounded-3xl\">\n    <div class=\"mt-10 flex justify-center mb-5 \">\n      <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKN2MjSr0slVb3jxwjrIuBaAaqo669IBIKxw&usqp=CAU\" class=\"rounded-full\" alt=\"\" />\n    </div>\n    <div class=\"flex justify-center px-5 \">\n      <div class=\"border-b-2 border-gray-500 w-full\"></div>\n    </div>\n    <div class=\"flex justify-center text-center p-5\">\n      <p>\"I'm Jane Hong, and I recently graduated with an advanced diploma from Smith secondary school. I'm seeking an\n        internship where I can apply my skills in content creation and increase my experience in digital marketing.\"</p>\n    </div>\n    <div class=\"flex justify-center gap-4 p-5\">\n      <button class=\"py-3 bg-indigo-500 font-semibold text-white w-1/4 rounded-xl hover:bg-indigo-600\">Follow</button>\n      <button class=\"py-3 bg-pink-500 font-semibold text-white w-1/4 rounded-xl hover:bg-pink-600\">Subscribe</button>\n    </div>\n  </div>\n</div>"
+  }
+}

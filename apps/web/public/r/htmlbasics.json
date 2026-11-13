@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "htmlbasics",
+  "type": "registry:ui",
+  "title": "htmlbasics",
+  "description": "htmlbasics - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/htmlbasics.tsx",
+      "content": "/**\n * Component: htmlbasics\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/htmlbasics\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Htmlbasics() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n  <title>ProLogiX | Smart Logistics</title>\\n  <link rel=\\\"stylesheet\\\" href=\\\"styles.css\\\" />\\n  <link href=\\\"https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap\\\" rel=\\\"stylesheet\\\" />\\n</head>\\n\\n<body>\\n  <header class=\\\"main-header\\\">\\n    <div class=\\\"logo\\\">Pro<span>LogiX</span></div>\\n    <nav class=\\\"navbar\\\">\\n      <ul>\\n        <li><a href=\\\"#home\\\">Home</a></li>\\n        <li><a href=\\\"#services\\\">Services</a></li>\\n        <li><a href=\\\"#clients\\\">Clients</a></li>\\n        <li><a href=\\\"#contact\\\">Contact</a></li>\\n      </ul>\\n    </nav>\\n  </header>\\n\\n  <section class=\\\"hero\\\" id=\\\"home\\\">\\n    <div class=\\\"hero-text\\\">\\n      <h1>Delivering Smarter Logistics Solutions</h1>\\n      <p>Seamless. Scalable. Secure.</p>\\n      <a href=\\\"#services\\\" class=\\\"btn primary-btn\\\">Explore Services</a>\\n    </div>\\n  </section>\\n\\n  <section class=\\\"services-section\\\" id=\\\"services\\\">\\n    <h2>Our Core Services</h2>\\n    <div class=\\\"services-grid\\\">\\n      <div class=\\\"service-card\\\">\\n        <img src=\\\"https://images.unsplash.com/photo-1581091012184-5c8d6d09f67d?auto=format&fit=crop&w=500&q=80\\\" alt=\\\"Freight\\\">\\n        <h3>Global Freight</h3>\\n        <p>Reliable air, land, and sea freight solutions to keep your cargo on the move worldwide.</p>\\n      </div>\\n      <div class=\\\"service-card\\\">\\n        <img src=\\\"https://images.unsplash.com/photo-1604145559206-e3d9c699fa36?auto=format&fit=crop&w=500&q=80\\\" alt=\\\"Warehouse\\\">\\n        <h3>Smart Warehousing</h3>\\n        <p>Secure, scalable storage options backed by automation and real-time tracking.</p>\\n      </div>\\n      <div class=\\\"service-card\\\">\\n        <img src=\\\"https://images.unsplash.com/photo-1579427427702-52bbba76f1f4?auto=format&fit=crop&w=500&q=80\\\" alt=\\\"Customs\\\">\\n        <h3>Customs Management</h3>\\n        <p>Clearances, documentation, and compliance handled efficiently across borders.</p>\\n      </div>\\n      <div class=\\\"service-card\\\">\\n        <img src=\\\"https://images.unsplash.com/photo-1620894291458-4823b420f1cf?auto=format&fit=crop&w=500&q=80\\\" alt=\\\"Tech\\\">\\n        <h3>Logistics Tech</h3>\\n        <p>Integrate AI, analytics, and apps to optimize your entire logistics pipeline.</p>\\n      </div>\\n    </div>\\n  </section>\\n\\n  <section class=\\\"clients-section\\\" id=\\\"clients\\\">\\n    <h2>Trusted by Global Leaders</h2>\\n    <div class=\\\"client-logos\\\">\\n      <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/200px-Apple_logo_black.svg.png\\\" alt=\\\"Apple\\\" />\\n      <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Google_2015_logo.svg/200px-Google_2015_logo.svg.png\\\" alt=\\\"Google\\\" />\\n      <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/200px-Microsoft_logo.svg.png\\\" alt=\\\"Microsoft\\\" />\\n      <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Amazon_logo.svg/200px-Amazon_logo.svg.png\\\" alt=\\\"Amazon\\\" />\\n    </div>\\n    <div class=\\\"testimonial-cards\\\">\\n      <div class=\\\"testimonial\\\">\\n        <p>“ProLogiX reduced our logistics overhead by 32%. Their team is world-class.”</p>\\n        <h4>– GlobalTech Inc.</h4>\\n      </div>\\n      <div class=\\\"testimonial\\\">\\n        <p>“They helped us scale warehousing and stay fully compliant across 12 countries.”</p>\\n        <h4>– NovaExports</h4>\\n      </div>\\n    </div>\\n  </section>\\n\\n  <footer class=\\\"footer\\\" id=\\\"contact\\\">\\n    <div class=\\\"footer-content\\\">\\n      <div>\\n        <h3>Contact</h3>\\n        <p>Email: connect@prologix.com</p>\\n        <p>Phone: +1-800-LOGIX</p>\\n      </div>\\n      <div>\\n        <h3>Subscribe</h3>\\n        <form id=\\\"newsletter-form\\\">\\n          <input type=\\\"email\\\" id=\\\"email\\\" placeholder=\\\"Enter your email\\\" required />\\n          <button type=\\\"submit\\\">Subscribe</button>\\n          <p class=\\\"error-message\\\"></p>\\n        </form>\\n      </div>\\n    </div>\\n    <p class=\\\"footer-note\\\">© 2025 ProLogiX. All rights reserved.</p>\\n  </footer>\\n\\n  \\n</body>\\n\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/htmlbasics",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>ProLogiX | Smart Logistics</title>\n  <link rel=\"stylesheet\" href=\"styles.css\" />\n  <link href=\"https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap\" rel=\"stylesheet\" />\n</head>\n\n<body>\n  <header class=\"main-header\">\n    <div class=\"logo\">Pro<span>LogiX</span></div>\n    <nav class=\"navbar\">\n      <ul>\n        <li><a href=\"#home\">Home</a></li>\n        <li><a href=\"#services\">Services</a></li>\n        <li><a href=\"#clients\">Clients</a></li>\n        <li><a href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <section class=\"hero\" id=\"home\">\n    <div class=\"hero-text\">\n      <h1>Delivering Smarter Logistics Solutions</h1>\n      <p>Seamless. Scalable. Secure.</p>\n      <a href=\"#services\" class=\"btn primary-btn\">Explore Services</a>\n    </div>\n  </section>\n\n  <section class=\"services-section\" id=\"services\">\n    <h2>Our Core Services</h2>\n    <div class=\"services-grid\">\n      <div class=\"service-card\">\n        <img src=\"https://images.unsplash.com/photo-1581091012184-5c8d6d09f67d?auto=format&fit=crop&w=500&q=80\" alt=\"Freight\">\n        <h3>Global Freight</h3>\n        <p>Reliable air, land, and sea freight solutions to keep your cargo on the move worldwide.</p>\n      </div>\n      <div class=\"service-card\">\n        <img src=\"https://images.unsplash.com/photo-1604145559206-e3d9c699fa36?auto=format&fit=crop&w=500&q=80\" alt=\"Warehouse\">\n        <h3>Smart Warehousing</h3>\n        <p>Secure, scalable storage options backed by automation and real-time tracking.</p>\n      </div>\n      <div class=\"service-card\">\n        <img src=\"https://images.unsplash.com/photo-1579427427702-52bbba76f1f4?auto=format&fit=crop&w=500&q=80\" alt=\"Customs\">\n        <h3>Customs Management</h3>\n        <p>Clearances, documentation, and compliance handled efficiently across borders.</p>\n      </div>\n      <div class=\"service-card\">\n        <img src=\"https://images.unsplash.com/photo-1620894291458-4823b420f1cf?auto=format&fit=crop&w=500&q=80\" alt=\"Tech\">\n        <h3>Logistics Tech</h3>\n        <p>Integrate AI, analytics, and apps to optimize your entire logistics pipeline.</p>\n      </div>\n    </div>\n  </section>\n\n  <section class=\"clients-section\" id=\"clients\">\n    <h2>Trusted by Global Leaders</h2>\n    <div class=\"client-logos\">\n      <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/200px-Apple_logo_black.svg.png\" alt=\"Apple\" />\n      <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Google_2015_logo.svg/200px-Google_2015_logo.svg.png\" alt=\"Google\" />\n      <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/200px-Microsoft_logo.svg.png\" alt=\"Microsoft\" />\n      <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Amazon_logo.svg/200px-Amazon_logo.svg.png\" alt=\"Amazon\" />\n    </div>\n    <div class=\"testimonial-cards\">\n      <div class=\"testimonial\">\n        <p>“ProLogiX reduced our logistics overhead by 32%. Their team is world-class.”</p>\n        <h4>– GlobalTech Inc.</h4>\n      </div>\n      <div class=\"testimonial\">\n        <p>“They helped us scale warehousing and stay fully compliant across 12 countries.”</p>\n        <h4>– NovaExports</h4>\n      </div>\n    </div>\n  </section>\n\n  <footer class=\"footer\" id=\"contact\">\n    <div class=\"footer-content\">\n      <div>\n        <h3>Contact</h3>\n        <p>Email: connect@prologix.com</p>\n        <p>Phone: +1-800-LOGIX</p>\n      </div>\n      <div>\n        <h3>Subscribe</h3>\n        <form id=\"newsletter-form\">\n          <input type=\"email\" id=\"email\" placeholder=\"Enter your email\" required />\n          <button type=\"submit\">Subscribe</button>\n          <p class=\"error-message\"></p>\n        </form>\n      </div>\n    </div>\n    <p class=\"footer-note\">© 2025 ProLogiX. All rights reserved.</p>\n  </footer>\n\n  <script>\n    const form = document.getElementById('newsletter-form');\n    const email = document.getElementById('email');\n    const errorMsg = document.querySelector('.error-message');\n\n    form.addEventListener('submit', function (e) {\n      const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n      if (!emailPattern.test(email.value)) {\n        e.preventDefault();\n        errorMsg.textContent = 'Please enter a valid email address.';\n      } else {\n        errorMsg.textContent = '';\n      }\n    });\n\n    window.addEventListener('scroll', () => {\n      document.querySelector('header').classList.toggle('scrolled', window.scrollY > 10);\n    });\n  </script>\n</body>\n\n</html>"
+  }
+}

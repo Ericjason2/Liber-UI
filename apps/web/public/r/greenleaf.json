@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "greenleaf",
+  "type": "registry:ui",
+  "title": "GreenLeaf",
+  "description": "GreenLeaf - Créé par @blvpeppa sur TailwindFlex.",
+  "author": "@blvpeppa (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/greenleaf.tsx",
+      "content": "/**\n * Component: GreenLeaf\n * Author: @blvpeppa (https://tailwindflex.com/@blvpeppa)\n * Source: https://tailwindflex.com/@blvpeppa/greenleaf\n * Attribution: Créé par @blvpeppa sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Greenleaf() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n  <head>\\n    <meta charset=\\\"UTF-8\\\" />\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n    <title>GreenLeaf Gardens</title>\\n    \\n  </head>\\n  <body class=\\\"text-gray-800 font-sans\\\">\\n\\n    <!-- Navbar -->\\n    <header class=\\\"absolute top-0 left-0 w-full z-20\\\">\\n      <div class=\\\"max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-white\\\">\\n        <div class=\\\"text-2xl font-bold\\\">GreenLeaf</div>\\n        <nav class=\\\"space-x-6 text-sm\\\">\\n          <a href=\\\"#\\\" class=\\\"hover:text-green-200\\\">Home</a>\\n          <a href=\\\"#\\\" class=\\\"hover:text-green-200\\\">Services</a>\\n          <a href=\\\"#\\\" class=\\\"hover:text-green-200\\\">Gallery</a>\\n          <a href=\\\"#\\\" class=\\\"hover:text-green-200\\\">Contact</a>\\n        </nav>\\n      </div>\\n    </header>\\n\\n    <!-- Hero Section with Background Image -->\\n    <section class=\\\"relative h-screen bg-cover bg-center\\\" style=\\\"background-image: url('https://images.unsplash.com/photo-1601654253194-260e0b6984f9?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');\\\">\\n      <!-- Overlay -->\\n      <div class=\\\"absolute inset-0 bg-black bg-opacity-60\\\"></div>\\n\\n      <!-- Content -->\\n      <div class=\\\"relative z-10 max-w-4xl mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white\\\">\\n        <h1 class=\\\"text-4xl md:text-6xl font-extrabold mb-4\\\">Transform Your Garden</h1>\\n        <p class=\\\"text-lg md:text-xl mb-8\\\">Expert gardening & landscaping services to turn your outdoor dreams into reality.</p>\\n        <a href=\\\"#\\\" class=\\\"bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded transition\\\">\\n          Get a Free Quote\\n        </a>\\n      </div>\\n    </section>\\n\\n    <!-- Footer -->\\n    <footer class=\\\"bg-green-900 text-white py-8\\\">\\n      <div class=\\\"max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8\\\">\\n        <div>\\n          <h4 class=\\\"font-bold mb-4\\\">GreenLeaf</h4>\\n          <p class=\\\"text-sm\\\">Your trusted gardening and landscaping partner.</p>\\n        </div>\\n        <div>\\n          <h4 class=\\\"font-bold mb-4\\\">Quick Links</h4>\\n          <ul class=\\\"text-sm space-y-2\\\">\\n            <li><a href=\\\"#\\\" class=\\\"hover:underline\\\">Home</a></li>\\n            <li><a href=\\\"#\\\" class=\\\"hover:underline\\\">Services</a></li>\\n            <li><a href=\\\"#\\\" class=\\\"hover:underline\\\">Gallery</a></li>\\n            <li><a href=\\\"#\\\" class=\\\"hover:underline\\\">Contact</a></li>\\n          </ul>\\n        </div>\\n        <div>\\n          <h4 class=\\\"font-bold mb-4\\\">Contact</h4>\\n          <p class=\\\"text-sm\\\">\\n            Email: hello@greenleaf.com<br />\\n            Phone: +250 789 123 456\\n          </p>\\n        </div>\\n      </div>\\n      <div class=\\\"text-center text-xs mt-6 text-green-200\\\">© 2025 GreenLeaf Gardens. All rights reserved.</div>\\n    </footer>\\n\\n  </body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@blvpeppa",
+    "authorUrl": "https://tailwindflex.com/@blvpeppa",
+    "sourceUrl": "https://tailwindflex.com/@blvpeppa/greenleaf",
+    "mention": "Créé par @blvpeppa sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>GreenLeaf Gardens</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n  </head>\n  <body class=\"text-gray-800 font-sans\">\n\n    <!-- Navbar -->\n    <header class=\"absolute top-0 left-0 w-full z-20\">\n      <div class=\"max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-white\">\n        <div class=\"text-2xl font-bold\">GreenLeaf</div>\n        <nav class=\"space-x-6 text-sm\">\n          <a href=\"#\" class=\"hover:text-green-200\">Home</a>\n          <a href=\"#\" class=\"hover:text-green-200\">Services</a>\n          <a href=\"#\" class=\"hover:text-green-200\">Gallery</a>\n          <a href=\"#\" class=\"hover:text-green-200\">Contact</a>\n        </nav>\n      </div>\n    </header>\n\n    <!-- Hero Section with Background Image -->\n    <section class=\"relative h-screen bg-cover bg-center\" style=\"background-image: url('https://images.unsplash.com/photo-1601654253194-260e0b6984f9?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');\">\n      <!-- Overlay -->\n      <div class=\"absolute inset-0 bg-black bg-opacity-60\"></div>\n\n      <!-- Content -->\n      <div class=\"relative z-10 max-w-4xl mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white\">\n        <h1 class=\"text-4xl md:text-6xl font-extrabold mb-4\">Transform Your Garden</h1>\n        <p class=\"text-lg md:text-xl mb-8\">Expert gardening & landscaping services to turn your outdoor dreams into reality.</p>\n        <a href=\"#\" class=\"bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded transition\">\n          Get a Free Quote\n        </a>\n      </div>\n    </section>\n\n    <!-- Footer -->\n    <footer class=\"bg-green-900 text-white py-8\">\n      <div class=\"max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8\">\n        <div>\n          <h4 class=\"font-bold mb-4\">GreenLeaf</h4>\n          <p class=\"text-sm\">Your trusted gardening and landscaping partner.</p>\n        </div>\n        <div>\n          <h4 class=\"font-bold mb-4\">Quick Links</h4>\n          <ul class=\"text-sm space-y-2\">\n            <li><a href=\"#\" class=\"hover:underline\">Home</a></li>\n            <li><a href=\"#\" class=\"hover:underline\">Services</a></li>\n            <li><a href=\"#\" class=\"hover:underline\">Gallery</a></li>\n            <li><a href=\"#\" class=\"hover:underline\">Contact</a></li>\n          </ul>\n        </div>\n        <div>\n          <h4 class=\"font-bold mb-4\">Contact</h4>\n          <p class=\"text-sm\">\n            Email: hello@greenleaf.com<br />\n            Phone: +250 789 123 456\n          </p>\n        </div>\n      </div>\n      <div class=\"text-center text-xs mt-6 text-green-200\">© 2025 GreenLeaf Gardens. All rights reserved.</div>\n    </footer>\n\n  </body>\n</html>"
+  }
+}

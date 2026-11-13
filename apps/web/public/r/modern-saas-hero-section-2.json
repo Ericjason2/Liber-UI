@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "modern-saas-hero-section-2",
+  "type": "registry:ui",
+  "title": "Modern SAAS HERO Section",
+  "description": "Modern SAAS HERO Section - Créé par @mdadul sur TailwindFlex.",
+  "author": "@mdadul (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/modern-saas-hero-section-2.tsx",
+      "content": "/**\n * Component: Modern SAAS HERO Section\n * Author: @mdadul (https://tailwindflex.com/@mdadul)\n * Source: https://tailwindflex.com/@mdadul/modern-saas-hero-section-2\n * Attribution: Créé par @mdadul sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ModernSaasHeroSection2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<section class=\\\"relative bg-gradient-to-r from-violet-50 to-orange-50\\\">\\n  <!-- BG Image -->\\n  <!-- <img src=\\\"https://plus.unsplash.com/premium_photo-1683121696175-d05600fefb85?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\\\" alt=\\\"\\\" class=\\\"absolute -z-10 inline-block h-full w-full object-cover opacity-75\\\" /> -->\\n  <!-- Container -->\\n  <div class=\\\"mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32\\\">\\n    <!-- Component -->\\n    <div class=\\\"grid grid-cols-1 items-center gap-8 sm:gap-20 lg:grid-cols-2\\\">\\n      <!-- Heading Content -->\\n      <div class=\\\"max-w-[720px]\\\">\\n        <h1 class=\\\"mb-3 pb-4 text-4xl font-bold text-green-700 md:text-6xl\\\">Fast, Reliable and Secure</h1>\\n        <p class=\\\"mb-6 max-w-[528px] text-xl md:mb-10\\\">Lorem ipsum dolor sit amet, consectetur adipiscing\\n          elit ut aliquam, purus sit amet luctus venenatis, lectus</p>\\n        <div class=\\\"flex items-center\\\">\\n          <a href=\\\"#\\\"\\n            class=\\\"] mr-5 inline-block rounded-full bg-[#c9fd02] px-6 py-4 text-center font-bold text-black transition hover:border-black hover:bg-white md:mr-6 lg:mr-8\\\">Let's\\n            Talk</a>\\n          <a href=\\\"#\\\"\\n            class=\\\"flex max-w-full flex-row rounded-full border border-solid border-[#636262] px-6 py-4 font-bold\\\">\\n            <p class=\\\"\\\">View Showreel</p>\\n          </a>\\n        </div>\\n      </div>\\n      <!-- Image Div -->\\n      <div>\\n        <img src=\\\"https://images.unsplash.com/photo-1696258686454-60082b2c33e2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D alt=\\\"\\\" class=\\\"mx-auto inline-block h-full w-full max-w-[640px] rounded-2xl object-cover\\\" />\\n      </div>\\n    </div>\\n  </div>\\n</section>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mdadul",
+    "authorUrl": "https://tailwindflex.com/@mdadul",
+    "sourceUrl": "https://tailwindflex.com/@mdadul/modern-saas-hero-section-2",
+    "mention": "Créé par @mdadul sur TailwindFlex",
+    "rawHtml": "<section class=\"relative bg-gradient-to-r from-violet-50 to-orange-50\">\n  <!-- BG Image -->\n  <!-- <img src=\"https://plus.unsplash.com/premium_photo-1683121696175-d05600fefb85?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" alt=\"\" class=\"absolute -z-10 inline-block h-full w-full object-cover opacity-75\" /> -->\n  <!-- Container -->\n  <div class=\"mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32\">\n    <!-- Component -->\n    <div class=\"grid grid-cols-1 items-center gap-8 sm:gap-20 lg:grid-cols-2\">\n      <!-- Heading Content -->\n      <div class=\"max-w-[720px]\">\n        <h1 class=\"mb-3 pb-4 text-4xl font-bold text-green-700 md:text-6xl\">Fast, Reliable and Secure</h1>\n        <p class=\"mb-6 max-w-[528px] text-xl md:mb-10\">Lorem ipsum dolor sit amet, consectetur adipiscing\n          elit ut aliquam, purus sit amet luctus venenatis, lectus</p>\n        <div class=\"flex items-center\">\n          <a href=\"#\"\n            class=\"] mr-5 inline-block rounded-full bg-[#c9fd02] px-6 py-4 text-center font-bold text-black transition hover:border-black hover:bg-white md:mr-6 lg:mr-8\">Let's\n            Talk</a>\n          <a href=\"#\"\n            class=\"flex max-w-full flex-row rounded-full border border-solid border-[#636262] px-6 py-4 font-bold\">\n            <p class=\"\">View Showreel</p>\n          </a>\n        </div>\n      </div>\n      <!-- Image Div -->\n      <div>\n        <img src=\"https://images.unsplash.com/photo-1696258686454-60082b2c33e2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D alt=\"\" class=\"mx-auto inline-block h-full w-full max-w-[640px] rounded-2xl object-cover\" />\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

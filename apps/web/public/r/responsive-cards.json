@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-cards",
+  "type": "registry:ui",
+  "title": "Responsive Cards",
+  "description": "Responsive Cards - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-cards.tsx",
+      "content": "/**\n * Component: Responsive Cards\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/responsive-cards\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveCards() {\n  return (\n    <div>\n    <div className=\"bg-slate-100 mx-auto  p-6 dark800\">\n      <div className=\"text-center text-2xl capitalize py-6 font-medium tracking-wider dark\">\n        <h2>we sell quality women handbags</h2>\n      </div>\n    <div className=\"w-fit gap-6 mx-auto grid grid-cols-1 lg3 sm2\">\n    \n    <div className=\"w-64 shadow-md dark700 hover105 duration-300 hover\">\n      <div className=\"p-4 \">\n        <img className=\"rounded-lg h-32 w-full\" src=\"https://images.unsplash.com/photo-1605733513597-a8f8341084e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxiYWd8ZW58MHwwfHx8MTcxODM4NDYwNHww&ixlib=rb-4.0.3&q=80&w=1080\"/>\n      </div>\n      <div className=\"p-4 capitalize text-2xl font-semibold dark\">\n        <h2>handbag</h2>\n      </div>\n      <div className=\"flex justify-between dark p-4 capitalize text-xl font-medium\">\n        <div>\n          <h3>price</h3>\n        </div>\n        <div>\n          <h3>mkw 3,000.00</h3>\n        </div>\n      </div>\n      <div className=\"p-2\">\n        <button className=\"uppercase text-white text-xl font-bold text-center rounded-lg bg-blue-500 p-2 w-full\">buy</button>\n      </div>\n    </div>\n    \n    \n    <div className=\"w-64 shadow-md dark700 hover105 duration-300 hover\">\n      <div className=\"p-4 \">\n        <img className=\"rounded-lg h-32 w-full\" src=\"https://images.unsplash.com/photo-1566150902887-9679ecc155ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMnx8YmFnfGVufDB8MHx8fDE3MTgzODQ2MDR8MA&ixlib=rb-4.0.3&q=80&w=1080\"/>\n      </div>\n      <div className=\"p-4 capitalize text-2xl font-semibold dark\">\n        <h2>handbag</h2>\n      </div>\n      <div className=\"flex justify-between dark p-4 capitalize text-xl font-medium\">\n        <div>\n          <h3>price</h3>\n        </div>\n        <div>\n          <h3>mkw 3,000.00</h3>\n        </div>\n      </div>\n      <div className=\"p-2\">\n        <button className=\"uppercase text-white text-xl font-bold text-center rounded-lg bg-blue-500 p-2 w-full\">buy</button>\n      </div>\n    </div>\n    \n    \n    <div className=\"w-64 shadow-md dark700 hover105 duration-300 hover\">\n      <div className=\"p-4 \">\n        <img className=\"rounded-lg h-32 w-full\" src=\"https://images.unsplash.com/photo-1548036328-c9fa89d128fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxiYWd8ZW58MHwwfHx8MTcxODM4NDYwNHww&ixlib=rb-4.0.3&q=80&w=1080\"/>\n      </div>\n      <div className=\"p-4 capitalize text-2xl font-semibold dark\">\n        <h2>handbag</h2>\n      </div>\n      <div className=\"flex justify-between dark p-4 capitalize text-xl font-medium\">\n        <div>\n          <h3>price</h3>\n        </div>\n        <div>\n          <h3>mkw 3,000.00</h3>\n        </div>\n      </div>\n      <div className=\"p-2\">\n        <button className=\"uppercase text-white text-xl font-bold text-center rounded-lg bg-blue-500 p-2 w-full\">buy</button>\n      </div>\n    </div>\n    \n    \n    <div className=\"w-64 shadow-md dark700 hover105 duration-300 hover\">\n      <div className=\"p-4 \">\n        <img className=\"rounded-lg h-32 w-full\" src=\"https://images.unsplash.com/photo-1559563458-527698bf5295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoYW5kYmFnfGVufDB8MHx8fDE3MTgzODk0OTF8MA&ixlib=rb-4.0.3&q=80&w=1080\"/>\n      </div>\n      <div className=\"p-4 capitalize text-2xl font-semibold dark\">\n        <h2>handbag</h2>\n      </div>\n      <div className=\"flex justify-between dark p-4 capitalize text-xl font-medium\">\n        <div>\n          <h3>price</h3>\n        </div>\n        <div>\n          <h3>mkw 3,000.00</h3>\n        </div>\n      </div>\n      <div className=\"p-2\">\n        <button className=\"uppercase text-white text-xl font-bold text-center rounded-lg bg-blue-500 p-2 w-full\">buy</button>\n      </div>\n    </div>\n    \n    </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/responsive-cards",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-slate-100 mx-auto  p-6 dark:bg-gray-800\">\n  <div class=\"text-center text-2xl capitalize py-6 font-medium tracking-wider dark:text-white\">\n    <h2>we sell quality women handbags</h2>\n  </div>\n<div class=\"w-fit gap-6 mx-auto grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2\">\n<!-- card item -->\n<div class=\"w-64 shadow-md dark:bg-gray-700 hover:scale-105 duration-300 hover:shadow-xl\">\n  <div class=\"p-4 \">\n    <img class=\"rounded-lg h-32 w-full\" src=\"https://images.unsplash.com/photo-1605733513597-a8f8341084e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxiYWd8ZW58MHwwfHx8MTcxODM4NDYwNHww&ixlib=rb-4.0.3&q=80&w=1080\"/>\n  </div>\n  <div class=\"p-4 capitalize text-2xl font-semibold dark:text-white\">\n    <h2>handbag</h2>\n  </div>\n  <div class=\"flex justify-between dark:text-white p-4 capitalize text-xl font-medium\">\n    <div>\n      <h3>price</h3>\n    </div>\n    <div>\n      <h3>mkw 3,000.00</h3>\n    </div>\n  </div>\n  <div class=\"p-2\">\n    <button class=\"uppercase text-white text-xl font-bold text-center rounded-lg bg-blue-500 p-2 w-full\">buy</button>\n  </div>\n</div>\n<!-- card item -->\n<!-- card item -->\n<div class=\"w-64 shadow-md dark:bg-gray-700 hover:scale-105 duration-300 hover:shadow-xl\">\n  <div class=\"p-4 \">\n    <img class=\"rounded-lg h-32 w-full\" src=\"https://images.unsplash.com/photo-1566150902887-9679ecc155ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMnx8YmFnfGVufDB8MHx8fDE3MTgzODQ2MDR8MA&ixlib=rb-4.0.3&q=80&w=1080\"/>\n  </div>\n  <div class=\"p-4 capitalize text-2xl font-semibold dark:text-white\">\n    <h2>handbag</h2>\n  </div>\n  <div class=\"flex justify-between dark:text-white p-4 capitalize text-xl font-medium\">\n    <div>\n      <h3>price</h3>\n    </div>\n    <div>\n      <h3>mkw 3,000.00</h3>\n    </div>\n  </div>\n  <div class=\"p-2\">\n    <button class=\"uppercase text-white text-xl font-bold text-center rounded-lg bg-blue-500 p-2 w-full\">buy</button>\n  </div>\n</div>\n<!-- card item -->\n<!-- card item -->\n<div class=\"w-64 shadow-md dark:bg-gray-700 hover:scale-105 duration-300 hover:shadow-xl\">\n  <div class=\"p-4 \">\n    <img class=\"rounded-lg h-32 w-full\" src=\"https://images.unsplash.com/photo-1548036328-c9fa89d128fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxiYWd8ZW58MHwwfHx8MTcxODM4NDYwNHww&ixlib=rb-4.0.3&q=80&w=1080\"/>\n  </div>\n  <div class=\"p-4 capitalize text-2xl font-semibold dark:text-white\">\n    <h2>handbag</h2>\n  </div>\n  <div class=\"flex justify-between dark:text-white p-4 capitalize text-xl font-medium\">\n    <div>\n      <h3>price</h3>\n    </div>\n    <div>\n      <h3>mkw 3,000.00</h3>\n    </div>\n  </div>\n  <div class=\"p-2\">\n    <button class=\"uppercase text-white text-xl font-bold text-center rounded-lg bg-blue-500 p-2 w-full\">buy</button>\n  </div>\n</div>\n<!-- card item -->\n<!-- card item -->\n<div class=\"w-64 shadow-md dark:bg-gray-700 hover:scale-105 duration-300 hover:shadow-xl\">\n  <div class=\"p-4 \">\n    <img class=\"rounded-lg h-32 w-full\" src=\"https://images.unsplash.com/photo-1559563458-527698bf5295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoYW5kYmFnfGVufDB8MHx8fDE3MTgzODk0OTF8MA&ixlib=rb-4.0.3&q=80&w=1080\"/>\n  </div>\n  <div class=\"p-4 capitalize text-2xl font-semibold dark:text-white\">\n    <h2>handbag</h2>\n  </div>\n  <div class=\"flex justify-between dark:text-white p-4 capitalize text-xl font-medium\">\n    <div>\n      <h3>price</h3>\n    </div>\n    <div>\n      <h3>mkw 3,000.00</h3>\n    </div>\n  </div>\n  <div class=\"p-2\">\n    <button class=\"uppercase text-white text-xl font-bold text-center rounded-lg bg-blue-500 p-2 w-full\">buy</button>\n  </div>\n</div>\n<!-- card item -->\n</div>\n</div>"
+  }
+}

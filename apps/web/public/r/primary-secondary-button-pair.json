@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "primary-secondary-button-pair",
+  "type": "registry:ui",
+  "title": "Primary secondary button pair",
+  "description": "Primary secondary button pair - Créé par @iris sur TailwindFlex.",
+  "author": "@iris (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/primary-secondary-button-pair.tsx",
+      "content": "/**\n * Component: Primary secondary button pair\n * Author: @iris (https://tailwindflex.com/@iris)\n * Source: https://tailwindflex.com/@iris/primary-secondary-button-pair\n * Attribution: Créé par @iris sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PrimarySecondaryButtonPair() {\n  return (\n    <div>\n    <div className=\"flex gap-2 my-4 w-fit xs4\">\r\n      <button className=\"w-full bg-gradient-to-b from-sky-300 to-sky-600 rounded-full shadow-md shadow-black/50 hover hover500 focus focus500 transition-all duration-100 active active800 active\" id=\"video-play-button\">\r\n        <div className=\"font-medium text-white bg-gradient-to-b from-sky-500 to-blue-600 rounded-full border-t border-t-sky-300 group-active group-active pb-1 pt-0.5 px-4 relative\">\r\n          <div className=\"flex items-center justify-center gap-1 text-lg transition\">\r\n            <svg viewBox=\"0 0 24 24\" data-icon=\"fe\" height=\"20\" width=\"20\" className=\"translate-y-px\">\r\n              <symbol id=\"ai\">\r\n                <path d=\"M6 5.912c0-.155.037-.307.107-.443c.23-.44.75-.599 1.163-.354l10.29 6.088c.14.083.255.206.332.355c.23.44.08.995-.332 1.239L7.27 18.885a.814.814 0 0 1-.415.115C6.383 19 6 18.592 6 18.089z\" fill=\"currentColor\"></path>\r\n              </symbol>\r\n              <use xlink></use>\r\n            </svg>\r\n            <span className=\"text-base py-0.5\">Demo video</span>\r\n          </div>\r\n        </div>\r\n      </button>\r\n      \r\n      <a href=\"/\" className=\"bg-gradient-to-b from-zinc-700 to-black rounded-full shadow-md shadow-black/50 hover hover500 transition-all duration-100 active active800 active inline-block w-fit\">\r\n        <div className=\"font-medium text-white bg-gradient-to-b from-zinc-800 to-zinc-900 rounded-full border-t border-t-zinc-700 group-active group-active pb-1 pt-0.5 px-4 relative\">\r\n          <div className=\"flex items-center gap-1 whitespace-nowrap transition\">\r\n            Preview\r\n            <svg viewBox=\"0 0 24 24\" data-icon=\"tabler\" height=\"16\" width=\"16\">\r\n              <symbol id=\"ai\">\r\n                <path d=\"M5 12h14m-6 6l6-6m-6-6l6 6\" fill=\"none\" stroke=\"currentColor\" strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\"></path>\r\n              </symbol>\r\n              <use xlink></use>\r\n            </svg>\r\n          </div>\r\n        </div>\r\n      </a>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@iris",
+    "authorUrl": "https://tailwindflex.com/@iris",
+    "sourceUrl": "https://tailwindflex.com/@iris/primary-secondary-button-pair",
+    "mention": "Créé par @iris sur TailwindFlex",
+    "rawHtml": "<div class=\"flex gap-2 my-4 w-fit xs:gap-4\">\r\n  <button class=\"w-full bg-gradient-to-b from-sky-300 to-sky-600 rounded-full shadow-md shadow-black/50 hover:outline hover:outline-sky-500 focus:outline focus:outline-sky-500 transition-all duration-100 active:from-black active:to-zinc-800 active:translate-y-px\" id=\"video-play-button\">\r\n    <div class=\"font-medium text-white bg-gradient-to-b from-sky-500 to-blue-600 rounded-full border-t border-t-sky-300 group-active:border-t-black group-active:shadow-inner pb-1 pt-0.5 px-4 relative\">\r\n      <div class=\"flex items-center justify-center gap-1 text-lg transition\">\r\n        <svg viewBox=\"0 0 24 24\" data-icon=\"fe:play\" height=\"20\" width=\"20\" class=\"translate-y-px\">\r\n          <symbol id=\"ai:fe:play\">\r\n            <path d=\"M6 5.912c0-.155.037-.307.107-.443c.23-.44.75-.599 1.163-.354l10.29 6.088c.14.083.255.206.332.355c.23.44.08.995-.332 1.239L7.27 18.885a.814.814 0 0 1-.415.115C6.383 19 6 18.592 6 18.089z\" fill=\"currentColor\"></path>\r\n          </symbol>\r\n          <use xlink:href=\"#ai:fe:play\"></use>\r\n        </svg>\r\n        <span class=\"text-base py-0.5\">Demo video</span>\r\n      </div>\r\n    </div>\r\n  </button>\r\n  \r\n  <a href=\"/\" class=\"bg-gradient-to-b from-zinc-700 to-black rounded-full shadow-md shadow-black/50 hover:outline hover:outline-sky-500 transition-all duration-100 active:from-black active:to-zinc-800 active:translate-y-px inline-block w-fit\">\r\n    <div class=\"font-medium text-white bg-gradient-to-b from-zinc-800 to-zinc-900 rounded-full border-t border-t-zinc-700 group-active:border-t-black group-active:shadow-inner pb-1 pt-0.5 px-4 relative\">\r\n      <div class=\"flex items-center gap-1 whitespace-nowrap transition\">\r\n        Preview\r\n        <svg viewBox=\"0 0 24 24\" data-icon=\"tabler:arrow-right\" height=\"16\" width=\"16\">\r\n          <symbol id=\"ai:tabler:arrow-right\">\r\n            <path d=\"M5 12h14m-6 6l6-6m-6-6l6 6\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"></path>\r\n          </symbol>\r\n          <use xlink:href=\"#ai:tabler:arrow-right\"></use>\r\n        </svg>\r\n      </div>\r\n    </div>\r\n  </a>\r\n</div>"
+  }
+}

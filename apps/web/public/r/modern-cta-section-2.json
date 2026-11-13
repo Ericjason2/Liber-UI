@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "modern-cta-section-2",
+  "type": "registry:ui",
+  "title": "Modern CTA section",
+  "description": "Modern CTA section - Créé par @pixel-perfect sur TailwindFlex.",
+  "author": "@pixel-perfect (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/modern-cta-section-2.tsx",
+      "content": "/**\n * Component: Modern CTA section\n * Author: @pixel-perfect (https://tailwindflex.com/@pixel-perfect)\n * Source: https://tailwindflex.com/@pixel-perfect/modern-cta-section-2\n * Attribution: Créé par @pixel-perfect sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ModernCtaSection2() {\n  return (\n    <div>\n    <div className=\"bg-slate-50 dark800 border-b my-20\">\n        <div className=\"py-8 px-6 sm6 sm20\">\n            <div className=\"mx-auto max-w-2xl text-center\">\n                <h2 className=\"text-center text-2xl font-semibold tracking-tight text-black dark sm4xl\">\n                    Start creating AI\n                    Arts today\n                </h2>\n                <p\n                    className=\"mx-auto mt-3 sm6 max-w-xl text-md sm sm text-gray-600 dark300\">\n                    Automate your\n                    workflow with our state of the art tools. Let Your Imagination Run Wild.\n                </p>\n                <div className=\"mt-6 sm10 flex items-center justify-center gap-x-6\">\n                    <a className=\"flex flex-row items-center justify-center min-w-[130px] px-4 rounded-full font-medium tracking-wide border disabled disabled50 transition ease-in-out duration-150 text-base bg-black dark text-white dark font-medium tracking-wide border-transparent py-1.5 h-[38px] text-sm py-6 px-8\"\n                        href=\"/#navbar\">\n                        Get Started Now\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@pixel-perfect",
+    "authorUrl": "https://tailwindflex.com/@pixel-perfect",
+    "sourceUrl": "https://tailwindflex.com/@pixel-perfect/modern-cta-section-2",
+    "mention": "Créé par @pixel-perfect sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-slate-50 dark:bg-gray-800 border-b my-20\">\n    <div class=\"py-8 px-6 sm:px-6 sm:py-20\">\n        <div class=\"mx-auto max-w-2xl text-center\">\n            <h2 class=\"text-center text-2xl font-semibold tracking-tight text-black dark:text-white sm:text-4xl\">\n                Start creating AI\n                Arts today\n            </h2>\n            <p\n                class=\"mx-auto mt-3 sm:mt-6 max-w-xl text-md sm:text-lg sm:leading-snug text-gray-600 dark:text-gray-300\">\n                Automate your\n                workflow with our state of the art tools. Let Your Imagination Run Wild.\n            </p>\n            <div class=\"mt-6 sm:mt-10 flex items-center justify-center gap-x-6\">\n                <a class=\"flex flex-row items-center justify-center min-w-[130px] px-4 rounded-full font-medium tracking-wide border disabled:cursor-not-allowed disabled:opacity-50 transition ease-in-out duration-150 text-base bg-black dark:bg-white text-white dark:text-black font-medium tracking-wide border-transparent py-1.5 h-[38px] text-sm py-6 px-8\"\n                    href=\"/#navbar\">\n                    Get Started Now\n                </a>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

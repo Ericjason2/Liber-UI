@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-working-process-section",
+  "type": "registry:ui",
+  "title": "Responsive Working Process Section",
+  "description": "Responsive Working Process Section - Créé par @abdulbast sur TailwindFlex.",
+  "author": "@abdulbast (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-working-process-section.tsx",
+      "content": "/**\n * Component: Responsive Working Process Section\n * Author: @abdulbast (https://tailwindflex.com/@abdulbast)\n * Source: https://tailwindflex.com/@abdulbast/responsive-working-process-section\n * Attribution: Créé par @abdulbast sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveWorkingProcessSection() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<section\\n  class=\\\"max-w-[1440px] mx-auto pb-10 pt-12 px-5 sm:px-8 font-['Space_Grotesk']\\\"\\n>\\n  <div\\n    class=\\\"mx-auto max-w-7xl flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start gap-4 md:gap-10 mb-8 md:mb-20\\\"\\n  >\\n    <h1 class=\\\"px-2 bg-[#b9ff66] rounded-lg text-black text-[40px] font-medium\\\">\\n      Our Working Process\\n    </h1>\\n    <p class=\\\"text-black text-lg font-normal\\\">\\n      Step-by-Step Guide to Achieving <br class=\\\"md:block hidden\\\" />\\n      Your Business Goals\\n    </p>\\n  </div>\\n  <div\\n    class=\\\"mx-auto max-w-7xl px-8 sm:px-16 py-6 sm:py-10 bg-[#b9ff66] rounded-[45px] shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] flex flex-col justify-start items-start gap-7 overflow-hidden\\\"\\n  >\\n    <header\\n      class=\\\"w-full inline-flex justify-between items-center overflow-hidden\\\"\\n    >\\n      <h2 class=\\\"flex items-center gap-4 sm:gap-6 text-black font-medium\\\">\\n        <span class=\\\"text-4xl sm:text-6xl\\\">01</span\\n        ><span class=\\\"text-2xl sm:text-3xl\\\">Consultation</span>\\n      </h2>\\n      <svg\\n        class=\\\"w-10 h-10 sm:w-14 sm:h-14\\\"\\n        viewBox=\\\"0 0 58 59\\\"\\n        fill=\\\"none\\\"\\n        xmlns=\\\"http://www.w3.org/2000/svg\\\"\\n      >\\n        <circle\\n          cx=\\\"29\\\"\\n          cy=\\\"29.5\\\"\\n          r=\\\"28.5\\\"\\n          fill=\\\"#F3F3F3\\\"\\n          stroke=\\\"#191A23\\\"\\n        ></circle>\\n        <path d=\\\"M20 32.14V26.5H37.76V32.14H20Z\\\" fill=\\\"black\\\"></path>\\n      </svg>\\n    </header>\\n    <div class=\\\"w-full border border-black\\\"></div>\\n    <p\\n      class=\\\"w-full min-h-14 justify-start text-black text-base sm:text-lg font-normal\\\"\\n    >\\n      During the initial consultation, we will discuss your business goals and\\n      objectives, target audience, and current marketing efforts. This will\\n      allow us to understand your needs and tailor our services to best fit your\\n      requirements.\\n    </p>\\n  </div>\\n  <div\\n    class=\\\"mx-auto mt-7 max-w-7xl px-8 sm:px-16 py-6 sm:py-10 bg-white rounded-[45px] shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] flex flex-col justify-start items-start gap-7 overflow-hidden\\\"\\n  >\\n    <header\\n      class=\\\"w-full inline-flex justify-between items-center overflow-hidden\\\"\\n    >\\n      <h2 class=\\\"flex items-center gap-4 sm:gap-6 text-black font-medium\\\">\\n        <span class=\\\"text-4xl sm:text-6xl\\\">02</span\\n        ><span class=\\\"text-2xl sm:text-3xl\\\">Implementation</span>\\n      </h2>\\n      <svg\\n        class=\\\"w-10 h-10 sm:w-14 sm:h-14\\\"\\n        viewBox=\\\"0 0 58 59\\\"\\n        fill=\\\"none\\\"\\n        xmlns=\\\"http://www.w3.org/2000/svg\\\"\\n      >\\n        <circle\\n          cx=\\\"29\\\"\\n          cy=\\\"29.5\\\"\\n          r=\\\"28.5\\\"\\n          fill=\\\"#F3F3F3\\\"\\n          stroke=\\\"#191A23\\\"\\n        ></circle>\\n        <path\\n          d=\\\"M25.6 41.58V31.86H16V26.22H25.6V16.5H31.48V26.22H41.08V31.86H31.48V41.58H25.6Z\\\"\\n          fill=\\\"#191A23\\\"\\n        ></path>\\n      </svg>\\n    </header>\\n  </div>\\n  <div\\n    class=\\\"mx-auto mt-7 max-w-7xl px-8 sm:px-16 py-6 sm:py-10 bg-white rounded-[45px] shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] flex flex-col justify-start items-start gap-7 overflow-hidden\\\"\\n  >\\n    <header\\n      class=\\\"w-full inline-flex justify-between items-center overflow-hidden\\\"\\n    >\\n      <h2 class=\\\"flex items-center gap-4 sm:gap-6 text-black font-medium\\\">\\n        <span class=\\\"text-4xl sm:text-6xl\\\">03</span\\n        ><span class=\\\"text-2xl sm:text-3xl\\\">Testing</span>\\n      </h2>\\n      <svg\\n        class=\\\"w-10 h-10 sm:w-14 sm:h-14\\\"\\n        viewBox=\\\"0 0 58 59\\\"\\n        fill=\\\"none\\\"\\n        xmlns=\\\"http://www.w3.org/2000/svg\\\"\\n      >\\n        <circle\\n          cx=\\\"29\\\"\\n          cy=\\\"29.5\\\"\\n          r=\\\"28.5\\\"\\n          fill=\\\"#F3F3F3\\\"\\n          stroke=\\\"#191A23\\\"\\n        ></circle>\\n        <path\\n          d=\\\"M25.6 41.58V31.86H16V26.22H25.6V16.5H31.48V26.22H41.08V31.86H31.48V41.58H25.6Z\\\"\\n          fill=\\\"#191A23\\\"\\n        ></path>\\n      </svg>\\n    </header>\\n  </div>\\n</section>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abdulbast",
+    "authorUrl": "https://tailwindflex.com/@abdulbast",
+    "sourceUrl": "https://tailwindflex.com/@abdulbast/responsive-working-process-section",
+    "mention": "Créé par @abdulbast sur TailwindFlex",
+    "rawHtml": "<section\n  class=\"max-w-[1440px] mx-auto pb-10 pt-12 px-5 sm:px-8 font-['Space_Grotesk']\"\n>\n  <div\n    class=\"mx-auto max-w-7xl flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start gap-4 md:gap-10 mb-8 md:mb-20\"\n  >\n    <h1 class=\"px-2 bg-[#b9ff66] rounded-lg text-black text-[40px] font-medium\">\n      Our Working Process\n    </h1>\n    <p class=\"text-black text-lg font-normal\">\n      Step-by-Step Guide to Achieving <br class=\"md:block hidden\" />\n      Your Business Goals\n    </p>\n  </div>\n  <div\n    class=\"mx-auto max-w-7xl px-8 sm:px-16 py-6 sm:py-10 bg-[#b9ff66] rounded-[45px] shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] flex flex-col justify-start items-start gap-7 overflow-hidden\"\n  >\n    <header\n      class=\"w-full inline-flex justify-between items-center overflow-hidden\"\n    >\n      <h2 class=\"flex items-center gap-4 sm:gap-6 text-black font-medium\">\n        <span class=\"text-4xl sm:text-6xl\">01</span\n        ><span class=\"text-2xl sm:text-3xl\">Consultation</span>\n      </h2>\n      <svg\n        class=\"w-10 h-10 sm:w-14 sm:h-14\"\n        viewBox=\"0 0 58 59\"\n        fill=\"none\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n      >\n        <circle\n          cx=\"29\"\n          cy=\"29.5\"\n          r=\"28.5\"\n          fill=\"#F3F3F3\"\n          stroke=\"#191A23\"\n        ></circle>\n        <path d=\"M20 32.14V26.5H37.76V32.14H20Z\" fill=\"black\"></path>\n      </svg>\n    </header>\n    <div class=\"w-full border border-black\"></div>\n    <p\n      class=\"w-full min-h-14 justify-start text-black text-base sm:text-lg font-normal\"\n    >\n      During the initial consultation, we will discuss your business goals and\n      objectives, target audience, and current marketing efforts. This will\n      allow us to understand your needs and tailor our services to best fit your\n      requirements.\n    </p>\n  </div>\n  <div\n    class=\"mx-auto mt-7 max-w-7xl px-8 sm:px-16 py-6 sm:py-10 bg-white rounded-[45px] shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] flex flex-col justify-start items-start gap-7 overflow-hidden\"\n  >\n    <header\n      class=\"w-full inline-flex justify-between items-center overflow-hidden\"\n    >\n      <h2 class=\"flex items-center gap-4 sm:gap-6 text-black font-medium\">\n        <span class=\"text-4xl sm:text-6xl\">02</span\n        ><span class=\"text-2xl sm:text-3xl\">Implementation</span>\n      </h2>\n      <svg\n        class=\"w-10 h-10 sm:w-14 sm:h-14\"\n        viewBox=\"0 0 58 59\"\n        fill=\"none\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n      >\n        <circle\n          cx=\"29\"\n          cy=\"29.5\"\n          r=\"28.5\"\n          fill=\"#F3F3F3\"\n          stroke=\"#191A23\"\n        ></circle>\n        <path\n          d=\"M25.6 41.58V31.86H16V26.22H25.6V16.5H31.48V26.22H41.08V31.86H31.48V41.58H25.6Z\"\n          fill=\"#191A23\"\n        ></path>\n      </svg>\n    </header>\n  </div>\n  <div\n    class=\"mx-auto mt-7 max-w-7xl px-8 sm:px-16 py-6 sm:py-10 bg-white rounded-[45px] shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] flex flex-col justify-start items-start gap-7 overflow-hidden\"\n  >\n    <header\n      class=\"w-full inline-flex justify-between items-center overflow-hidden\"\n    >\n      <h2 class=\"flex items-center gap-4 sm:gap-6 text-black font-medium\">\n        <span class=\"text-4xl sm:text-6xl\">03</span\n        ><span class=\"text-2xl sm:text-3xl\">Testing</span>\n      </h2>\n      <svg\n        class=\"w-10 h-10 sm:w-14 sm:h-14\"\n        viewBox=\"0 0 58 59\"\n        fill=\"none\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n      >\n        <circle\n          cx=\"29\"\n          cy=\"29.5\"\n          r=\"28.5\"\n          fill=\"#F3F3F3\"\n          stroke=\"#191A23\"\n        ></circle>\n        <path\n          d=\"M25.6 41.58V31.86H16V26.22H25.6V16.5H31.48V26.22H41.08V31.86H31.48V41.58H25.6Z\"\n          fill=\"#191A23\"\n        ></path>\n      </svg>\n    </header>\n  </div>\n</section>"
+  }
+}

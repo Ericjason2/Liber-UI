@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "plug-and-play-button-animated-gradient-background",
+  "type": "registry:ui",
+  "title": "Plug and Play Button - Animated gradient background",
+  "description": "Plug and Play Button - Animated gradient background - Créé par @onyxwebdev sur TailwindFlex.",
+  "author": "@onyxwebdev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/plug-and-play-button-animated-gradient-background.tsx",
+      "content": "/**\n * Component: Plug and Play Button - Animated gradient background\n * Author: @onyxwebdev (https://tailwindflex.com/@onyxwebdev)\n * Source: https://tailwindflex.com/@onyxwebdev/plug-and-play-button-animated-gradient-background\n * Attribution: Créé par @onyxwebdev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PlugAndPlayButtonAnimatedGradientBackground() {\n  return (\n    <div>\n    <div className=\"relative inline-block\">\r\n        <div className=\"absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[140%] overflow-hidden blur-[35px] opacity-60\">\r\n            <div className=\"absolute flex items-center justify-center animate-spin [animation_20s_linear_infinite]\">\r\n                <div className=\"h-48 w-60 bg-gradient-to-tr from-orange-500 via-red-500 to-yellow-600\">\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <button className=\"relative px-5 py-3 rounded-2xl text-zinc-300 bg-zinc-900 border border-1 border-zinc-500 flex items-center group\">\r\n            <div className=\"relative z-10 flex items-center font-semibold group-hover transition\">\r\n            View Product</div>\r\n        </button>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@onyxwebdev",
+    "authorUrl": "https://tailwindflex.com/@onyxwebdev",
+    "sourceUrl": "https://tailwindflex.com/@onyxwebdev/plug-and-play-button-animated-gradient-background",
+    "mention": "Créé par @onyxwebdev sur TailwindFlex",
+    "rawHtml": "<div class=\"relative inline-block\">\r\n    <div class=\"absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[140%] overflow-hidden blur-[35px] opacity-60\">\r\n        <div class=\"absolute flex items-center justify-center animate-spin [animation:spin_20s_linear_infinite]\">\r\n            <div class=\"h-48 w-60 bg-gradient-to-tr from-orange-500 via-red-500 to-yellow-600\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <button class=\"relative px-5 py-3 rounded-2xl text-zinc-300 bg-zinc-900 border border-1 border-zinc-500 flex items-center group\">\r\n        <div class=\"relative z-10 flex items-center font-semibold group-hover:text-white transition\">\r\n        View Product</div>\r\n    </button>\r\n</div>"
+  }
+}

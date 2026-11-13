@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "about-section",
+  "type": "registry:ui",
+  "title": "Responsive About Section with Tailwind CSS",
+  "description": "Responsive About Section with Tailwind CSS - Créé par @abdul-baset-bappy sur TailwindFlex.",
+  "author": "@abdul-baset-bappy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/about-section.tsx",
+      "content": "/**\n * Component: Responsive About Section with Tailwind CSS\n * Author: @abdul-baset-bappy (https://tailwindflex.com/@abdul-baset-bappy)\n * Source: https://tailwindflex.com/@abdul-baset-bappy/about-section\n * Attribution: Créé par @abdul-baset-bappy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AboutSection() {\n  return (\n    <div>\n    <section className=\"min-h-screen bg-primary text-white py-16 px-6 flex flex-col md items-center justify-between gap-8\">\n      \n      <div className=\"w-full md5/12 flex justify-center h-full md\">\n        <img src=\"https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D\" alt=\"About Me\" className=\"w-72 h-96 md80 lg96 object-cover rounded-lg shadow-lg\" />\n      </div>\n    \n      \n      <div className=\"w-full md7/12 text-center md relative\">\n        \n        <div className=\"absolute left-[40%] -top-6 md16  lg0 md6 rotate-0 md[-90deg] text-sm tracking-widest\">\n          <div className=\"flex items-center justify-center gap-2\">\n            <div className=\"w-16 h-[2px] bg-white\"></div>\n            <p>MORE ABOUT</p>\n          </div>\n        </div>\n    \n        \n        <h2 className=\"text-3xl md5xl font-bold leading-tight mb-4 pl-10\">\n          A Passionate <br /> Software Developer\n        </h2>\n    \n        \n        <p className=\"text-gray-300 mb-6 text-sm md leading-relaxed max-w-2xl mx-auto md0\">\n          I’m Abdul Baset, a passionate Software Developer with expertise in Vue.js, Laravel, & modern web technologies. I specialize in building user-friendly applications that solve real-world problems. With a deep understanding of frontend development, state management, and API integration, I can bring your ideas to life.\n        </p>\n    \n        \n        <div className=\"flex flex-col sm gap-4 justify-center md\">\n          <a href=\"#\" className=\"bg-tertiary text-white font-semibold py-2 px-4 rounded-lg hover/80 text-center\">\n            See Projects\n          </a>\n          <a href=\"#\" className=\"border border-tertiary text-white font-semibold py-2 px-4 rounded-lg hover/10 text-center\">\n            More Details\n          </a>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abdul-baset-bappy",
+    "authorUrl": "https://tailwindflex.com/@abdul-baset-bappy",
+    "sourceUrl": "https://tailwindflex.com/@abdul-baset-bappy/about-section",
+    "mention": "Créé par @abdul-baset-bappy sur TailwindFlex",
+    "rawHtml": "<section class=\"min-h-screen bg-primary text-white py-16 px-6 flex flex-col md:flex-row items-center justify-between gap-8\">\n  <!-- Left Side: Image -->\n  <div class=\"w-full md:w-5/12 flex justify-center h-full md:justify-end\">\n    <img src=\"https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D\" alt=\"About Me\" class=\"w-72 h-96 md:w-80 lg:w-96 object-cover rounded-lg shadow-lg\" />\n  </div>\n\n  <!-- Right Side: Text Content -->\n  <div class=\"w-full md:w-7/12 text-center md:text-left relative\">\n    <!-- Vertical Text -->\n    <div class=\"absolute left-[40%] -top-6 md:-left-16  lg:top-0 md:top-6 rotate-0 md:rotate-[-90deg] text-sm tracking-widest\">\n      <div class=\"flex items-center justify-center gap-2\">\n        <div class=\"w-16 h-[2px] bg-white\"></div>\n        <p>MORE ABOUT</p>\n      </div>\n    </div>\n\n    <!-- Main Heading -->\n    <h2 class=\"text-3xl md:text-5xl font-bold leading-tight mb-4 pl-10\">\n      A Passionate <br> Software Developer\n    </h2>\n\n    <!-- Description -->\n    <p class=\"text-gray-300 mb-6 text-sm md:text-base leading-relaxed max-w-2xl mx-auto md:mx-0\">\n      I’m Abdul Baset, a passionate Software Developer with expertise in Vue.js, Laravel, & modern web technologies. I specialize in building user-friendly applications that solve real-world problems. With a deep understanding of frontend development, state management, and API integration, I can bring your ideas to life.\n    </p>\n\n    <!-- Buttons -->\n    <div class=\"flex flex-col sm:flex-row gap-4 justify-center md:justify-start\">\n      <a href=\"#\" class=\"bg-tertiary text-white font-semibold py-2 px-4 rounded-lg hover:bg-tertiary/80 text-center\">\n        See Projects\n      </a>\n      <a href=\"#\" class=\"border border-tertiary text-white font-semibold py-2 px-4 rounded-lg hover:bg-tertiary/10 text-center\">\n        More Details\n      </a>\n    </div>\n  </div>\n</section>"
+  }
+}

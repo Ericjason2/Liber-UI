@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animated-profile-card",
+  "type": "registry:ui",
+  "title": "Animated Profile Card",
+  "description": "Animated Profile Card - Créé par @shivam-vishvakarma sur TailwindFlex.",
+  "author": "@shivam-vishvakarma (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/animated-profile-card.tsx",
+      "content": "/**\n * Component: Animated Profile Card\n * Author: @shivam-vishvakarma (https://tailwindflex.com/@shivam-vishvakarma)\n * Source: https://tailwindflex.com/@shivam-vishvakarma/animated-profile-card\n * Attribution: Créé par @shivam-vishvakarma sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AnimatedProfileCard() {\n  return (\n    <div>\n    <div className=\"flex flex-col items-center bg-purple-500 py-5 px-3 transition-all hover2xl hover2 cursor-pointer rounded-xl shadow-xl\">\n      <div className=\"relative size-24\">\n        <div className=\"absolute z-0 inset-0 scale-110\">\n          <svg className=\"w-full h-full\" viewbox=\"0 0 100 100\">\n            <defs>\n              <clipPath id=\"circleView\">\n                <circle cx=\"50\" cy=\"50\" r=\"35\" />\n              </clipPath>\n            </defs>\n            \n            <path fill=\"none\" className=\"stroke-white\" strokeLinecap=\"round\" strokeWidth=\"5\" stroke=\"current-color\" stroke-dasharray=\"150.72,251.2\"\n              d=\"M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80\">\n              \n              <animate attributeName=\"stroke-dasharray\" from=\"0,251.2\" to=\"150.72,251.2\" dur=\"5s\" />\n            </path>\n            <image width=\"100\" height=\"100\" xlink\n              clip-path=\"url(#circleView)\" />\n          </svg>\n        </div>\n      </div>\n      <h4 className=\"mx-2 mt-2 font-medium tracking-widest uppercase text-white\">\n        Shivam\n      </h4>\n      <p className=\"mx-2 text-xs tracking-wide text-white uppercase\">\n        Profile 60% Completed\n      </p>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@shivam-vishvakarma",
+    "authorUrl": "https://tailwindflex.com/@shivam-vishvakarma",
+    "sourceUrl": "https://tailwindflex.com/@shivam-vishvakarma/animated-profile-card",
+    "mention": "Créé par @shivam-vishvakarma sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-col items-center bg-purple-500 py-5 px-3 transition-all hover:shadow-2xl hover:-translate-y-2 cursor-pointer rounded-xl shadow-xl\">\n  <div class=\"relative size-24\">\n    <div class=\"absolute z-0 inset-0 scale-110\">\n      <svg class=\"w-full h-full\" viewbox=\"0 0 100 100\">\n        <defs>\n          <clipPath id=\"circleView\">\n            <circle cx=\"50\" cy=\"50\" r=\"35\" />\n          </clipPath>\n        </defs>\n        <!-- change stroke-dasharray value = profile completion% * 2.512  -->\n        <path fill=\"none\" class=\"stroke-white\" stroke-linecap=\"round\" stroke-width=\"5\" stroke=\"current-color\" stroke-dasharray=\"150.72,251.2\"\n          d=\"M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80\">\n          <!-- change to value = profile completion% * 2.512  -->\n          <animate attributeName=\"stroke-dasharray\" from=\"0,251.2\" to=\"150.72,251.2\" dur=\"5s\" />\n        </path>\n        <image width=\"100\" height=\"100\" xlink:href=\"https://cdn-icons-png.flaticon.com/512/10337/10337609.png\"\n          clip-path=\"url(#circleView)\" />\n      </svg>\n    </div>\n  </div>\n  <h4 class=\"mx-2 mt-2 font-medium tracking-widest uppercase text-white\">\n    Shivam\n  </h4>\n  <p class=\"mx-2 text-xs tracking-wide text-white uppercase\">\n    Profile 60% Completed\n  </p>\n</div>"
+  }
+}

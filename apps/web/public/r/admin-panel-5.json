@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "admin-panel-5",
+  "type": "registry:ui",
+  "title": "Admin Panel",
+  "description": "Admin Panel - Créé par @lekhraj-ghimire- sur TailwindFlex.",
+  "author": "@lekhraj-ghimire- (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/admin-panel-5.tsx",
+      "content": "/**\n * Component: Admin Panel\n * Author: @lekhraj-ghimire- (https://tailwindflex.com/@lekhraj-ghimire-)\n * Source: https://tailwindflex.com/@lekhraj-ghimire-/admin-panel-5\n * Attribution: Créé par @lekhraj-ghimire- sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AdminPanel5() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"flex min-h-screen bg-gray-100\\\">\\n  <!-- Sidebar -->\\n  <aside class=\\\"w-64 bg-white shadow-md\\\">\\n    <div class=\\\"p-6 font-bold text-purple-700 text-2xl\\\">AdminPanel</div>\\n    <nav class=\\\"mt-8\\\">\\n      <a href=\\\"#\\\" class=\\\"block py-3 px-6 text-gray-700 hover:bg-purple-100\\\">Dashboard</a>\\n      <a href=\\\"#\\\" class=\\\"block py-3 px-6 text-gray-700 hover:bg-purple-100\\\">Users</a>\\n      <a href=\\\"#\\\" class=\\\"block py-3 px-6 text-gray-700 hover:bg-purple-100\\\">Analytics</a>\\n      <a href=\\\"#\\\" class=\\\"block py-3 px-6 text-gray-700 hover:bg-purple-100\\\">Settings</a>\\n    </nav>\\n  </aside>\\n\\n  <!-- Main Content -->\\n  <div class=\\\"flex-1 flex flex-col\\\">\\n    <!-- Top Navbar -->\\n    <header class=\\\"bg-white shadow-md p-4 flex justify-between items-center\\\">\\n      <h1 class=\\\"text-xl font-bold text-purple-700\\\">Dashboard</h1>\\n      <div class=\\\"flex items-center gap-4\\\">\\n        <input type=\\\"text\\\" placeholder=\\\"Search...\\\" class=\\\"px-4 py-2 border rounded-lg\\\">\\n        <div class=\\\"w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white font-bold\\\">SR</div>\\n      </div>\\n    </header>\\n\\n    <!-- Content -->\\n    <main class=\\\"p-6 space-y-6\\\">\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@lekhraj-ghimire-",
+    "authorUrl": "https://tailwindflex.com/@lekhraj-ghimire-",
+    "sourceUrl": "https://tailwindflex.com/@lekhraj-ghimire-/admin-panel-5",
+    "mention": "Créé par @lekhraj-ghimire- sur TailwindFlex",
+    "rawHtml": "<div class=\"flex min-h-screen bg-gray-100\">\n  <!-- Sidebar -->\n  <aside class=\"w-64 bg-white shadow-md\">\n    <div class=\"p-6 font-bold text-purple-700 text-2xl\">AdminPanel</div>\n    <nav class=\"mt-8\">\n      <a href=\"#\" class=\"block py-3 px-6 text-gray-700 hover:bg-purple-100\">Dashboard</a>\n      <a href=\"#\" class=\"block py-3 px-6 text-gray-700 hover:bg-purple-100\">Users</a>\n      <a href=\"#\" class=\"block py-3 px-6 text-gray-700 hover:bg-purple-100\">Analytics</a>\n      <a href=\"#\" class=\"block py-3 px-6 text-gray-700 hover:bg-purple-100\">Settings</a>\n    </nav>\n  </aside>\n\n  <!-- Main Content -->\n  <div class=\"flex-1 flex flex-col\">\n    <!-- Top Navbar -->\n    <header class=\"bg-white shadow-md p-4 flex justify-between items-center\">\n      <h1 class=\"text-xl font-bold text-purple-700\">Dashboard</h1>\n      <div class=\"flex items-center gap-4\">\n        <input type=\"text\" placeholder=\"Search...\" class=\"px-4 py-2 border rounded-lg\">\n        <div class=\"w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white font-bold\">SR</div>\n      </div>\n    </header>\n\n    <!-- Content -->\n    <main class=\"p-6 space-y-6\">"
+  }
+}

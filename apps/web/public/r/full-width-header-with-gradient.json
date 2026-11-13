@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "full-width-header-with-gradient",
+  "type": "registry:ui",
+  "title": "Full width header with gradient",
+  "description": "Full width header with gradient - Créé par @team-tailwindflex sur TailwindFlex.",
+  "author": "@team-tailwindflex (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/full-width-header-with-gradient.tsx",
+      "content": "/**\n * Component: Full width header with gradient\n * Author: @team-tailwindflex (https://tailwindflex.com/@team-tailwindflex)\n * Source: https://tailwindflex.com/@team-tailwindflex/full-width-header-with-gradient\n * Attribution: Créé par @team-tailwindflex sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FullWidthHeaderWithGradient() {\n  return (\n    <div>\n    <div\n        className=\"bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-500 dark500 dark600 dark500 py-8 md16\">\n        <div className=\"flex flex-col gap-3\">\n    \n            <img src=\"https://tailwindflex.com/public/images/profile/1.png\" className=\"object-cover w-14 h-14 rounded-full m-auto\" alt=\"User image\" id=\"user_image\" />\n    \n            <p className=\"text-3xl font-bold text-center text-white\">\n                TailwindFlex\n            </p>\n    \n            <p className=\"text-center text-gray-200\">\n                Free tailwind CSS components library\n            </p>\n    \n            <div className=\"flex justify-center max-w-sm gap-2 mx-auto\">\n    \n                <a href=\"#\">\n                    <img src=\"https://tailwindflex.com/public/images/icons/github.svg\" className=\"object-cover w-6 h-6  m-auto\" title=\"github\" />\n                </a>\n    \n                <a href=\"#\">\n                    <img src=\"https://tailwindflex.com/public/images/icons/linkedin.png\" className=\"object-cover w-6 h-6  m-auto\" title=\"linkedin\" />\n                </a>\n    \n                <a href=\"#\">\n                    <img src=\"https://tailwindflex.com/public/images/icons/website.svg\" className=\"object-cover w-6 h-6  m-auto\" title=\"website\" />\n                </a>\n    \n                <a href=\"#\">\n                    <img src=\"https://tailwindflex.com/public/images/icons/instagram.svg\" className=\"object-cover w-6 h-6  m-auto\" title=\"instagram\" />\n                </a>\n    \n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@team-tailwindflex",
+    "authorUrl": "https://tailwindflex.com/@team-tailwindflex",
+    "sourceUrl": "https://tailwindflex.com/@team-tailwindflex/full-width-header-with-gradient",
+    "mention": "Créé par @team-tailwindflex sur TailwindFlex",
+    "rawHtml": "<div\n    class=\"bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-500 dark:from-gray-500 dark:via-gray-600 dark:to-gray-500 py-8 md:py-16\">\n    <div class=\"flex flex-col gap-3\">\n\n        <img src=\"https://tailwindflex.com/public/images/profile/1.png\" class=\"object-cover w-14 h-14 rounded-full m-auto\" alt=\"User image\" id=\"user_image\">\n\n        <p class=\"text-3xl font-bold text-center text-white\">\n            TailwindFlex\n        </p>\n\n        <p class=\"text-center text-gray-200\">\n            Free tailwind CSS components library\n        </p>\n\n        <div class=\"flex justify-center max-w-sm gap-2 mx-auto\">\n\n            <a href=\"#\">\n                <img src=\"https://tailwindflex.com/public/images/icons/github.svg\" class=\"object-cover w-6 h-6  m-auto\" title=\"github\">\n            </a>\n\n            <a href=\"#\">\n                <img src=\"https://tailwindflex.com/public/images/icons/linkedin.png\" class=\"object-cover w-6 h-6  m-auto\" title=\"linkedin\">\n            </a>\n\n            <a href=\"#\">\n                <img src=\"https://tailwindflex.com/public/images/icons/website.svg\" class=\"object-cover w-6 h-6  m-auto\" title=\"website\">\n            </a>\n\n            <a href=\"#\">\n                <img src=\"https://tailwindflex.com/public/images/icons/instagram.svg\" class=\"object-cover w-6 h-6  m-auto\" title=\"instagram\">\n            </a>\n\n        </div>\n    </div>\n</div>"
+  }
+}

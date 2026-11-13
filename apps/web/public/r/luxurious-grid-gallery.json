@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "luxurious-grid-gallery",
+  "type": "registry:ui",
+  "title": "Luxurious Grid Gallery",
+  "description": "Luxurious Grid Gallery - Créé par @ui-templates sur TailwindFlex.",
+  "author": "@ui-templates (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/luxurious-grid-gallery.tsx",
+      "content": "/**\n * Component: Luxurious Grid Gallery\n * Author: @ui-templates (https://tailwindflex.com/@ui-templates)\n * Source: https://tailwindflex.com/@ui-templates/luxurious-grid-gallery\n * Attribution: Créé par @ui-templates sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LuxuriousGridGallery() {\n  return (\n    <div>\n    <body className=\"bg-gray-100 p-6\">\n    \n      <div className=\"max-w-7xl mx-auto\">\n    \n        <h2 className=\"text-3xl font-bold mb-6 text-center\">Custom Grid Gallery</h2>\n    \n        <div className=\"grid grid-cols-1 sm6 gap-4\">\n    \n          \n          <div className=\"sm4 relative overflow-hidden rounded-lg shadow-lg cursor-pointer\">\n            <img src=\"https://images.unsplash.com/photo-1549294413-26f195200c16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080\"\n                 className=\"w-full h-64 sm object-cover transition-transform duration-300 hover105\" alt=\"Wide image\" />\n          </div>\n    \n          \n          <div className=\"sm2 sm2 relative overflow-hidden rounded-lg shadow-lg cursor-pointer\">\n            <img src=\"https://images.unsplash.com/photo-1489686995744-f47e995ffe61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080\"\n                 className=\"w-full h-64 sm object-cover transition-transform duration-300 hover105\" alt=\"Vertical image\" />\n          </div>\n    \n          \n          <div className=\"sm2 relative overflow-hidden rounded-lg shadow-lg cursor-pointer\">\n            <img src=\"https://images.unsplash.com/photo-1625513123245-fcb02d69ad12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080\"\n                 className=\"w-full h-64 sm object-cover transition-transform duration-300 hover105\" alt=\"Square image\" />\n          </div>\n    \n          \n          <div className=\"sm2 relative overflow-hidden rounded-lg shadow-lg cursor-pointer\">\n            <img src=\"https://images.unsplash.com/photo-1630587148265-761cbd139043?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080\"\n                 className=\"w-full h-64 sm object-cover transition-transform duration-300 hover105\" alt=\"Square image\" />\n          </div>\n    \n          \n          <div className=\"sm2 relative overflow-hidden rounded-lg shadow-lg cursor-pointer\">\n            <img src=\"https://images.unsplash.com/photo-1520473378652-85d9c4aee6cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080\"\n                 className=\"w-full h-64 sm object-cover transition-transform duration-300 hover105\" alt=\"Square image\" />\n          </div>\n    \n          \n          <div className=\"sm2 relative overflow-hidden rounded-lg shadow-lg cursor-pointer\">\n            <img src=\"https://images.unsplash.com/photo-1618215650148-e8e61eae521c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080\"\n                 className=\"w-full h-64 sm object-cover transition-transform duration-300 hover105\" alt=\"Square image\" />\n          </div>\n    \n        </div>\n    \n      </div>\n      \n    <a href=\"https://discord.gg/95CveWrbK8\"\n       target=\"_blank\"\n       rel=\"noopener\"\n       className=\"absolute bottom-4 right-4 flex items-center gap-2 text-white px-4 py-2 rounded-full shadow-lg hover500 transition-all duration-300 z-50 backdrop-blur-md\">\n      \n      <span className=\"text-sm font-medium\">Made by Chandrika</span>\n    \n      \n      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 245 240\" className=\"w-5 h-5 fill-white\">\n        <path d=\"M104.4 104.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zm36.2 0c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z\"/>\n        <path d=\"M189.5 20h-134C34.3 20 20 34.3 20 52.5v135c0 18.2 14.3 32.5 32.5 32.5h113.4l-5.3-18.3 12.8 11.8 12.1 11.1 21.6 19V52.5c-.1-18.2-14.4-32.5-32.6-32.5zM163 155s-4.6-5.5-8.4-10.3c16.7-4.7 23.1-15.1 23.1-15.1-5.2 3.4-10.1 5.8-14.5 7.4-6.3 2.7-12.4 4.4-18.3 5.4-12.1 2.3-23.2 1.7-32.8-.1-7.2-1.4-13.5-3.4-18.7-5.4-2.9-1.1-6-2.4-9.1-4.1-.4-.2-.8-.3-1.1-.5-.3-.1-.4-.2-.6-.3-2.7-1.5-4.1-2.5-4.1-2.5s6.1 10.2 22.2 15c-3.8 4.8-8.5 10.6-8.5 10.6-28.1-.9-38.8-19.4-38.8-19.4 0-41.1 18.4-74.5 18.4-74.5 18.4-13.8 35.9-13.4 35.9-13.4l1.3 1.6c-23 6.6-33.7 16.5-33.7 16.5s2.8-1.5 7.5-3.5c13.6-5.9 24.4-7.5 28.9-7.9.7-.1 1.3-.2 2-.2 7.1-.9 15.2-1.2 23.5-.2 11 1.3 22.8 4.5 34.9 11.1 0 0-10.1-9.6-31.9-16.2l1.8-2.1s17.5-.4 35.9 13.4c0 0 18.4 33.4 18.4 74.5 0 .1-10.8 18.6-38.9 19.5z\"/>\n      </svg>\n    </a>\n    \n    </body>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "grid",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ui-templates",
+    "authorUrl": "https://tailwindflex.com/@ui-templates",
+    "sourceUrl": "https://tailwindflex.com/@ui-templates/luxurious-grid-gallery",
+    "mention": "Créé par @ui-templates sur TailwindFlex",
+    "rawHtml": "<body class=\"bg-gray-100 p-6\">\n\n  <div class=\"max-w-7xl mx-auto\">\n\n    <h2 class=\"text-3xl font-bold mb-6 text-center\">Custom Grid Gallery</h2>\n\n    <div class=\"grid grid-cols-1 sm:grid-cols-6 gap-4\">\n\n      <!-- Wide image -->\n      <div class=\"sm:col-span-4 relative overflow-hidden rounded-lg shadow-lg cursor-pointer\">\n        <img src=\"https://images.unsplash.com/photo-1549294413-26f195200c16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080\"\n             class=\"w-full h-64 sm:h-full object-cover transition-transform duration-300 hover:scale-105\" alt=\"Wide image\">\n      </div>\n\n      <!-- Vertical image -->\n      <div class=\"sm:col-span-2 sm:row-span-2 relative overflow-hidden rounded-lg shadow-lg cursor-pointer\">\n        <img src=\"https://images.unsplash.com/photo-1489686995744-f47e995ffe61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080\"\n             class=\"w-full h-64 sm:h-full object-cover transition-transform duration-300 hover:scale-105\" alt=\"Vertical image\">\n      </div>\n\n      <!-- Square image -->\n      <div class=\"sm:col-span-2 relative overflow-hidden rounded-lg shadow-lg cursor-pointer\">\n        <img src=\"https://images.unsplash.com/photo-1625513123245-fcb02d69ad12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080\"\n             class=\"w-full h-64 sm:h-full object-cover transition-transform duration-300 hover:scale-105\" alt=\"Square image\">\n      </div>\n\n      <!-- Square image -->\n      <div class=\"sm:col-span-2 relative overflow-hidden rounded-lg shadow-lg cursor-pointer\">\n        <img src=\"https://images.unsplash.com/photo-1630587148265-761cbd139043?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080\"\n             class=\"w-full h-64 sm:h-full object-cover transition-transform duration-300 hover:scale-105\" alt=\"Square image\">\n      </div>\n\n      <!-- Square image -->\n      <div class=\"sm:col-span-2 relative overflow-hidden rounded-lg shadow-lg cursor-pointer\">\n        <img src=\"https://images.unsplash.com/photo-1520473378652-85d9c4aee6cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080\"\n             class=\"w-full h-64 sm:h-full object-cover transition-transform duration-300 hover:scale-105\" alt=\"Square image\">\n      </div>\n\n      <!-- Square image -->\n      <div class=\"sm:col-span-2 relative overflow-hidden rounded-lg shadow-lg cursor-pointer\">\n        <img src=\"https://images.unsplash.com/photo-1618215650148-e8e61eae521c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080\"\n             class=\"w-full h-64 sm:h-full object-cover transition-transform duration-300 hover:scale-105\" alt=\"Square image\">\n      </div>\n\n    </div>\n\n  </div>\n  <!-- Floating Discord Tag -->\n<a href=\"https://discord.gg/95CveWrbK8\"\n   target=\"_blank\"\n   rel=\"noopener\"\n   class=\"absolute bottom-4 right-4 flex items-center gap-2 text-white px-4 py-2 rounded-full shadow-lg hover:bg-indigo-500 transition-all duration-300 z-50 backdrop-blur-md\">\n  \n  <span class=\"text-sm font-medium\">Made by Chandrika</span>\n\n  <!-- Discord Logo -->\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 245 240\" class=\"w-5 h-5 fill-white\">\n    <path d=\"M104.4 104.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zm36.2 0c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z\"/>\n    <path d=\"M189.5 20h-134C34.3 20 20 34.3 20 52.5v135c0 18.2 14.3 32.5 32.5 32.5h113.4l-5.3-18.3 12.8 11.8 12.1 11.1 21.6 19V52.5c-.1-18.2-14.4-32.5-32.6-32.5zM163 155s-4.6-5.5-8.4-10.3c16.7-4.7 23.1-15.1 23.1-15.1-5.2 3.4-10.1 5.8-14.5 7.4-6.3 2.7-12.4 4.4-18.3 5.4-12.1 2.3-23.2 1.7-32.8-.1-7.2-1.4-13.5-3.4-18.7-5.4-2.9-1.1-6-2.4-9.1-4.1-.4-.2-.8-.3-1.1-.5-.3-.1-.4-.2-.6-.3-2.7-1.5-4.1-2.5-4.1-2.5s6.1 10.2 22.2 15c-3.8 4.8-8.5 10.6-8.5 10.6-28.1-.9-38.8-19.4-38.8-19.4 0-41.1 18.4-74.5 18.4-74.5 18.4-13.8 35.9-13.4 35.9-13.4l1.3 1.6c-23 6.6-33.7 16.5-33.7 16.5s2.8-1.5 7.5-3.5c13.6-5.9 24.4-7.5 28.9-7.9.7-.1 1.3-.2 2-.2 7.1-.9 15.2-1.2 23.5-.2 11 1.3 22.8 4.5 34.9 11.1 0 0-10.1-9.6-31.9-16.2l1.8-2.1s17.5-.4 35.9 13.4c0 0 18.4 33.4 18.4 74.5 0 .1-10.8 18.6-38.9 19.5z\"/>\n  </svg>\n</a>\n\n</body>"
+  }
+}

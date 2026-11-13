@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-to-action-with-background-image",
+  "type": "registry:ui",
+  "title": "Call to Action with Background image",
+  "description": "Call to Action with Background image - Créé par @mlpaz sur TailwindFlex.",
+  "author": "@mlpaz (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-to-action-with-background-image.tsx",
+      "content": "/**\n * Component: Call to Action with Background image\n * Author: @mlpaz (https://tailwindflex.com/@mlpaz)\n * Source: https://tailwindflex.com/@mlpaz/call-to-action-with-background-image\n * Attribution: Créé par @mlpaz sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToActionWithBackgroundImage() {\n  return (\n    <div>\n    \\\n      <div className=\"relative overflow-hidden rounded-2xl m-16\">\n         <div className=\"absolute inset-0\">\n        <img src=\"https://images.unsplash.com/photo-1637273045211-df6d2e06b26e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8dGlnZXJ8ZW58MHwwfHx8MTcyMDg4OTc2MHww&ixlib=rb-4.0.3&q=80&w=1925&h625\" alt=\"Background Image\" className=\"object-cover object-center w-full h-full\" />\n            </div>\n            <div className=\"relative px-16 py-8 sm8 lg16 lg14\">\n            <div className=\"md md md12 lg24\">\n                <div className=\"grid grid-cols-1 gap-y-3 sm2 gap-x-12 xl24\">\n                    <div>\n                        <ul className=\"space-y-3 text-base font-medium text-white\">\n                            <li className=\"flex items-center\">\n                                <svg className=\"w-5 h-5 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                                        <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path>\n                                </svg>Item 1\n                                 \n                            </li>\n                            <li className=\"flex items-center\">\n                                 <svg className=\"w-5 h-5 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                                        <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path>\n                                </svg>Item 2\n                            </li>\n                            <li className=\"flex items-center\">\n                                 <svg className=\"w-5 h-5 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                                        <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path>\n                                </svg>Item 3\n                            </li>\n                        </ul>\n                        </div>\n                        <div>\n                        <ul className=\"space-y-3 text-base font-medium text-white\">\n                            <li className=\"flex items-center\">\n                                <svg className=\"w-5 h-5 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                                        <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path>\n                                </svg>Item 1\n                                 \n                            </li>\n                            <li className=\"flex items-center\">\n                                 <svg className=\"w-5 h-5 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                                        <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path>\n                                </svg>Item 2\n                            </li>\n                            <li className=\"flex items-center\">\n                                 <svg className=\"w-5 h-5 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                                        <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path>\n                                </svg>Item 3\n                            </li>\n                        </ul>\n                     </div>               \n                </div>          \n                \n                <div className=\"mt-10 md0\">\n                    <a className=\"inline-flex items-center px-9 py-3.5 mt-5 text-base font-bold text-white transition-all duration-200 bg-orange-500 border border-transparent focus focus2 focus2 focus500 hover90 rounded-xl no-underline\"\n                        href=\"#\"> Subscribe Now!\n                    </a>\n                </div>\n            </div>\n            </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mlpaz",
+    "authorUrl": "https://tailwindflex.com/@mlpaz",
+    "sourceUrl": "https://tailwindflex.com/@mlpaz/call-to-action-with-background-image",
+    "mention": "Créé par @mlpaz sur TailwindFlex",
+    "rawHtml": "\\\n  <div class=\"relative overflow-hidden rounded-2xl m-16\">\n     <div class=\"absolute inset-0\">\n    <img src=\"https://images.unsplash.com/photo-1637273045211-df6d2e06b26e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8dGlnZXJ8ZW58MHwwfHx8MTcyMDg4OTc2MHww&ixlib=rb-4.0.3&q=80&w=1925&h625\" alt=\"Background Image\" class=\"object-cover object-center w-full h-full\" />\n        </div>\n        <div class=\"relative px-16 py-8 sm:px-8 lg:px-16 lg:py-14\">\n        <div class=\"md:flex md:items-center md:space-x-12 lg:space-x-24\">\n            <div class=\"grid grid-cols-1 gap-y-3 sm:grid-cols-2 gap-x-12 xl:gap-x-24\">\n                <div>\n                    <ul class=\"space-y-3 text-base font-medium text-white\">\n                        <li class=\"flex items-center\">\n                            <svg class=\"w-5 h-5 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n                            </svg>Item 1\n                             \n                        </li>\n                        <li class=\"flex items-center\">\n                             <svg class=\"w-5 h-5 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n                            </svg>Item 2\n                        </li>\n                        <li class=\"flex items-center\">\n                             <svg class=\"w-5 h-5 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n                            </svg>Item 3\n                        </li>\n                    </ul>\n                    </div>\n                    <div>\n                    <ul class=\"space-y-3 text-base font-medium text-white\">\n                        <li class=\"flex items-center\">\n                            <svg class=\"w-5 h-5 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n                            </svg>Item 1\n                             \n                        </li>\n                        <li class=\"flex items-center\">\n                             <svg class=\"w-5 h-5 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n                            </svg>Item 2\n                        </li>\n                        <li class=\"flex items-center\">\n                             <svg class=\"w-5 h-5 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n                            </svg>Item 3\n                        </li>\n                    </ul>\n                 </div>               \n            </div>          \n            \n            <div class=\"mt-10 md:mt-0\">\n                <a class=\"inline-flex items-center px-9 py-3.5 mt-5 text-base font-bold text-white transition-all duration-200 bg-orange-500 border border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-orange-500 hover:bg-opacity-90 rounded-xl no-underline\"\n                    href=\"#\"> Subscribe Now!\n                </a>\n            </div>\n        </div>\n        </div>"
+  }
+}

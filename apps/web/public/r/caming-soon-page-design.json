@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "caming-soon-page-design",
+  "type": "registry:ui",
+  "title": "Caming Soon page design",
+  "description": "Caming Soon page design - Créé par @yel-59 sur TailwindFlex.",
+  "author": "@yel-59 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/caming-soon-page-design.tsx",
+      "content": "/**\n * Component: Caming Soon page design\n * Author: @yel-59 (https://tailwindflex.com/@yel-59)\n * Source: https://tailwindflex.com/@yel-59/caming-soon-page-design\n * Attribution: Créé par @yel-59 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CamingSoonPageDesign() {\n  return (\n    <div>\n    <div\n        className=\"w-full h-screen bg-gradient-to-bl from-teal-400 to-blue-500 flex flex-col justify-center items-center text-white\">\n        <h1 className=\"text-5xl\">We are <b>Almost</b> there!</h1>\n        <p>Stay tuned for something amazing!!!</p>\n    \n        <div className=\"grid grid-cols-1 sm2 lg4 gap-10 mt-10 lg20\">\n    \n            <div className=\"bg-transparent border text-center\">\n                <p className=\"text-5xl px-10 py-5\">336</p>\n                <hr />\n                <p className=\"px-10 py-5\">days</p>\n            </div>\n    \n            <div className=\"bg-transparent border text-center\">\n                <p className=\"text-5xl px-10 py-5\">03</p>\n                <hr />\n                <p className=\"px-10 py-5\">hours</p>\n            </div>\n    \n            <div className=\"bg-transparent border text-center\">\n                <p className=\"text-5xl px-10 py-5\">35</p>\n                <hr />\n                <p className=\"px-10 py-5\">mins</p>\n            </div>\n            <div className=\"bg-transparent border text-center\">\n                <p className=\"text-5xl px-10 py-5\">01</p>\n                <hr />\n                <p className=\"px-10 py-5\">secs</p>\n            </div>\n        </div>\n        \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@yel-59",
+    "authorUrl": "https://tailwindflex.com/@yel-59",
+    "sourceUrl": "https://tailwindflex.com/@yel-59/caming-soon-page-design",
+    "mention": "Créé par @yel-59 sur TailwindFlex",
+    "rawHtml": "<div\n    class=\"w-full h-screen bg-gradient-to-bl from-teal-400 to-blue-500 flex flex-col justify-center items-center text-white\">\n    <h1 class=\"text-5xl\">We are <b>Almost</b> there!</h1>\n    <p>Stay tuned for something amazing!!!</p>\n\n    <div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-10 lg:mt-20\">\n\n        <div class=\"bg-transparent border text-center\">\n            <p class=\"text-5xl px-10 py-5\">336</p>\n            <hr>\n            <p class=\"px-10 py-5\">days</p>\n        </div>\n\n        <div class=\"bg-transparent border text-center\">\n            <p class=\"text-5xl px-10 py-5\">03</p>\n            <hr>\n            <p class=\"px-10 py-5\">hours</p>\n        </div>\n\n        <div class=\"bg-transparent border text-center\">\n            <p class=\"text-5xl px-10 py-5\">35</p>\n            <hr>\n            <p class=\"px-10 py-5\">mins</p>\n        </div>\n        <div class=\"bg-transparent border text-center\">\n            <p class=\"text-5xl px-10 py-5\">01</p>\n            <hr>\n            <p class=\"px-10 py-5\">secs</p>\n        </div>\n    </div>\n    \n</div>"
+  }
+}

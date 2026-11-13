@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "material-3-cards-light",
+  "type": "registry:ui",
+  "title": "Material 3 Cards [Light]",
+  "description": "Material 3 Cards [Light] - Créé par @nickgirga sur TailwindFlex.",
+  "author": "@nickgirga (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/material-3-cards-light.tsx",
+      "content": "/**\n * Component: Material 3 Cards [Light]\n * Author: @nickgirga (https://tailwindflex.com/@nickgirga)\n * Source: https://tailwindflex.com/@nickgirga/material-3-cards-light\n * Attribution: Créé par @nickgirga sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Material3CardsLight() {\n  return (\n    <div>\n    <head>\n        \n        <link href=\"https://fonts.googleapis.com/css2?family=Roboto@300;400;600;700&amp;display=swap\" rel=\"stylesheet\" />\n        \n        \n        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined,wght,FILL,GRAD@20..48,100..700,0..1,-50..200\" />\n    </head>\n    \n    <body data-theme=\"light\">\n        \n        \n        <div className=\"flex flex-col items-center gap-4 py-16 h-screen\">\n    \n            \n            <div className=\"card max-w-[64mm] w-full max-h-[32mm] h-full\">\n                <span className=\"text-2xl font-bold\">Filled Card</span>\n            </div>\n    \n            \n            <div className=\"card card-elevated max-w-[64mm] w-full max-h-[32mm] h-full\">\n                <span className=\"text-2xl font-bold\">Elevated Card</span>\n            </div>\n    \n            \n            <div className=\"card card-outlined max-w-[64mm] w-full max-h-[32mm] h-full\">\n                <span className=\"text-2xl font-bold\">Outlined Card</span>\n            </div>\n    \n        </div>\n    \n    </body>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@nickgirga",
+    "authorUrl": "https://tailwindflex.com/@nickgirga",
+    "sourceUrl": "https://tailwindflex.com/@nickgirga/material-3-cards-light",
+    "mention": "Créé par @nickgirga sur TailwindFlex",
+    "rawHtml": "<head>\n    <!-- Roboto Font -->\n    <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&amp;display=swap\" rel=\"stylesheet\">\n    \n    <!-- Material Icons -->\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200\">\n</head>\n\n<body data-theme=\"light\">\n    \n    <!-- Demo Container -->\n    <div class=\"flex flex-col items-center gap-4 py-16 h-screen\">\n\n        <!-- Filled (Default) Card -->\n        <div class=\"card max-w-[64mm] w-full max-h-[32mm] h-full\">\n            <span class=\"text-2xl font-bold\">Filled Card</span>\n        </div>\n\n        <!-- Elevated Card -->\n        <div class=\"card card-elevated max-w-[64mm] w-full max-h-[32mm] h-full\">\n            <span class=\"text-2xl font-bold\">Elevated Card</span>\n        </div>\n\n        <!-- Outlined Card -->\n        <div class=\"card card-outlined max-w-[64mm] w-full max-h-[32mm] h-full\">\n            <span class=\"text-2xl font-bold\">Outlined Card</span>\n        </div>\n\n    </div>\n\n</body>"
+  }
+}

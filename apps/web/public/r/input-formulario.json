@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-formulario",
+  "type": "registry:ui",
+  "title": "Input Formulario",
+  "description": "Input Formulario - Créé par @ameth1208 sur TailwindFlex.",
+  "author": "@ameth1208 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/input-formulario.tsx",
+      "content": "/**\n * Component: Input Formulario\n * Author: @ameth1208 (https://tailwindflex.com/@ameth1208)\n * Source: https://tailwindflex.com/@ameth1208/input-formulario\n * Attribution: Créé par @ameth1208 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InputFormulario() {\n  return (\n    <div>\n    <div className=\"w-screen h-screen flex flex-col justify-center items-center  dark900\">\n        <div className=\"relative py-3 sm sm\">\n            <div className=\" px-8 py-6 mt-4 text-left\">\n                \n                <div className=\"w-full flex flex-col gap-2 select-none\">\n                    <label className=\"font-semibold text-xs text-gray-400 \">Username</label>\n                    <input className=\"border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark500 dark900\" placeholder=\"Username\" />\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ameth1208",
+    "authorUrl": "https://tailwindflex.com/@ameth1208",
+    "sourceUrl": "https://tailwindflex.com/@ameth1208/input-formulario",
+    "mention": "Créé par @ameth1208 sur TailwindFlex",
+    "rawHtml": "<div class=\"w-screen h-screen flex flex-col justify-center items-center  dark:bg-gray-900\">\n    <div class=\"relative py-3 sm:max-w-xs sm:mx-auto\">\n        <div class=\" px-8 py-6 mt-4 text-left\">\n            <!-- Component Input -->\n            <div class=\"w-full flex flex-col gap-2 select-none\">\n                <label class=\"font-semibold text-xs text-gray-400 \">Username</label>\n                <input class=\"border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark:border-gray-500 dark:bg-gray-900\" placeholder=\"Username\" />\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

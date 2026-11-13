@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tag-input-with-tailwind-css-and-alpinejs",
+  "type": "registry:ui",
+  "title": "Tag input with Tailwind CSS and Alpinejs",
+  "description": "Tag input with Tailwind CSS and Alpinejs - Créé par @michael-andreuzza sur TailwindFlex.",
+  "author": "@michael-andreuzza (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tag-input-with-tailwind-css-and-alpinejs.tsx",
+      "content": "/**\n * Component: Tag input with Tailwind CSS and Alpinejs\n * Author: @michael-andreuzza (https://tailwindflex.com/@michael-andreuzza)\n * Source: https://tailwindflex.com/@michael-andreuzza/tag-input-with-tailwind-css-and-alpinejs\n * Attribution: Créé par @michael-andreuzza sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TagInputWithTailwindCssAndAlpinejs() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"\\n\\n<section class=\\\"bg-white\\\">\\n <div class=\\\"w-full mx-auto max-w-xl flex flex-col justify-center lg:h-svh py-24 lg:py-96 relative p-8\\\">\\n  <div class=\\\"prose text-gray-500 prose-sm prose-headings:font-normal prose-headings:text-xl mx-auto\\\">\\n   <div>\\n    <h1>Add you tags</h1>\\n    <p class=\\\"text-balance\\\">\\n     Test the input by adding tags and removing them. You can also add\\n     tags by pressing the Enter key.\\n    </p>\\n   </div>\\n  </div> <!-- Starts component -->\\n  <div class=\\\"w-full mx-auto mt-6 border-t pt-12\\\" x-data=\\\"{\\n        tags: [],\\n        addTag(tag) {\\n            if (tag.trim() !== '') {\\n                this.tags.push(tag.trim());\\n            }\\n        },\\n        removeTag(index) {\\n            this.tags.splice(index, 1);\\n        }\\n    }\\\">\\n   <!-- Tag Input -->\\n   <div class=\\\"w-full border rounded-xl px-3 items-center\\\" x-data=\\\"{ newTag: '', tags: [] }\\\">\\n    <!-- Input Field --> <input x-model=\\\"newTag\\\" @keydown.enter.prevent=\\\"\\n            if (newTag.trim() !== '') {\\n                tags.push(newTag.trim());\\n                newTag = '';\\n            }\\n        \\\" class=\\\"w-full border-gray-300 rounded-md focus:border-orange-500 focus:ring-orange-500 mt-1\\\" type=\\\"text\\\" placeholder=\\\"Add tags (press Enter to add)\\\"> <!-- Existing Tags -->\\n    <div class=\\\"mt-4 flex gap-2 flex-wrap\\\"> <template x-for=\\\"(tag, index) in tags\\\" :key=\\\"index\\\">\\n      <div class=\\\"inline-flex items-center gap-x-0.5 rounded-md bg-orange-50 px-2 py-1 text-xs font-medium text-orange-700 ring-1 ring-inset ring-orange-700/10\\\"> <span x-text=\\\"tag\\\"></span> <button @click=\\\"tags.splice(index, 1)\\\" class=\\\"ml-2\\\"> <svg class=\\\"h-4 w-4 text-red-500\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\" stroke=\\\"currentColor\\\">\\n         <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" stroke-width=\\\"2\\\" d=\\\"M6 18L18 6M6 6l12 12\\\"></path>\\n        </svg> </button> </div>\\n     </template> </div>\\n   </div>\\n  </div> <!-- Ends component -->\\n  <!-- Starts links to tutorial -->\\n  <div class=\\\"pointer-events-none fixed inset-x-0 bottom-0 sm:flex sm:justify-center p-2 \\\">\\n   <div class=\\\"pointer-events-auto flex w-full max-w-md divide-x divide-neutral-200 rounded-lg bg-white shadow-xl border\\\">\\n    <div class=\\\"flex w-0 flex-1 items-center p-4\\\">\\n     <div class=\\\"w-full\\\">\\n      <p class=\\\"text-sm font-medium text-neutral-900\\\">Tutorial</p>\\n      <p class=\\\"mt-1 text-sm text-neutral-500\\\">\\n       How to create a tag input with Tailwind CSS and Alpinejs\\n      </p>\\n      <p class=\\\"mt-2 text-xs text-orange-500 underline\\\"> <a href=\\\"https://lexingtonthemes.com\\\">\\n        by © Lexington Themes</a> </p>\\n     </div>\\n    </div>\\n    <div class=\\\"flex\\\">\\n     <div class=\\\"flex flex-col divide-y divide-neutral-200\\\">\\n      <div class=\\\"flex h-0 flex-1\\\"> <a href=\\\"https://lexingtonthemes.com/tutorials/how-to-create-a-tag-input-with-alpine-js-and-tailwind-css/\\\" type=\\\"button\\\" class=\\\"flex w-full items-center justify-center rounded-none rounded-tr-lg border border-transparent px-4 py-3 text-sm font-medium text-orange-600 hover:text-orange-500 focus:z-10 focus:outline-none focus:ring-2 focus:ring-orange-500\\\">Tutorial</a> </div>\\n      <div class=\\\"flex h-0 flex-1\\\"> <a href=\\\"https://github.com/Lexington-Themes/lexington-tutorials/blob/main/src/pages/tag-input/index.astro\\\" class=\\\"flex w-full items-center justify-center rounded-none rounded-br-lg border border-transparent px-4 py-3 text-sm font-medium text-neutral-700 hover:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-orange-500\\\">Get the code</a> </div>\\n     </div>\\n    </div>\\n   </div>\\n  </div> <!-- Ends links to tutorial -->\\n </div>\\n</section>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@michael-andreuzza",
+    "authorUrl": "https://tailwindflex.com/@michael-andreuzza",
+    "sourceUrl": "https://tailwindflex.com/@michael-andreuzza/tag-input-with-tailwind-css-and-alpinejs",
+    "mention": "Créé par @michael-andreuzza sur TailwindFlex",
+    "rawHtml": "<script defer src=\"https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js\"></script>\n\n<section class=\"bg-white\">\n <div class=\"w-full mx-auto max-w-xl flex flex-col justify-center lg:h-svh py-24 lg:py-96 relative p-8\">\n  <div class=\"prose text-gray-500 prose-sm prose-headings:font-normal prose-headings:text-xl mx-auto\">\n   <div>\n    <h1>Add you tags</h1>\n    <p class=\"text-balance\">\n     Test the input by adding tags and removing them. You can also add\n     tags by pressing the Enter key.\n    </p>\n   </div>\n  </div> <!-- Starts component -->\n  <div class=\"w-full mx-auto mt-6 border-t pt-12\" x-data=\"{\n        tags: [],\n        addTag(tag) {\n            if (tag.trim() !== '') {\n                this.tags.push(tag.trim());\n            }\n        },\n        removeTag(index) {\n            this.tags.splice(index, 1);\n        }\n    }\">\n   <!-- Tag Input -->\n   <div class=\"w-full border rounded-xl px-3 items-center\" x-data=\"{ newTag: '', tags: [] }\">\n    <!-- Input Field --> <input x-model=\"newTag\" @keydown.enter.prevent=\"\n            if (newTag.trim() !== '') {\n                tags.push(newTag.trim());\n                newTag = '';\n            }\n        \" class=\"w-full border-gray-300 rounded-md focus:border-orange-500 focus:ring-orange-500 mt-1\" type=\"text\" placeholder=\"Add tags (press Enter to add)\"> <!-- Existing Tags -->\n    <div class=\"mt-4 flex gap-2 flex-wrap\"> <template x-for=\"(tag, index) in tags\" :key=\"index\">\n      <div class=\"inline-flex items-center gap-x-0.5 rounded-md bg-orange-50 px-2 py-1 text-xs font-medium text-orange-700 ring-1 ring-inset ring-orange-700/10\"> <span x-text=\"tag\"></span> <button @click=\"tags.splice(index, 1)\" class=\"ml-2\"> <svg class=\"h-4 w-4 text-red-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n         <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M6 18L18 6M6 6l12 12\"></path>\n        </svg> </button> </div>\n     </template> </div>\n   </div>\n  </div> <!-- Ends component -->\n  <!-- Starts links to tutorial -->\n  <div class=\"pointer-events-none fixed inset-x-0 bottom-0 sm:flex sm:justify-center p-2 \">\n   <div class=\"pointer-events-auto flex w-full max-w-md divide-x divide-neutral-200 rounded-lg bg-white shadow-xl border\">\n    <div class=\"flex w-0 flex-1 items-center p-4\">\n     <div class=\"w-full\">\n      <p class=\"text-sm font-medium text-neutral-900\">Tutorial</p>\n      <p class=\"mt-1 text-sm text-neutral-500\">\n       How to create a tag input with Tailwind CSS and Alpinejs\n      </p>\n      <p class=\"mt-2 text-xs text-orange-500 underline\"> <a href=\"https://lexingtonthemes.com\">\n        by © Lexington Themes</a> </p>\n     </div>\n    </div>\n    <div class=\"flex\">\n     <div class=\"flex flex-col divide-y divide-neutral-200\">\n      <div class=\"flex h-0 flex-1\"> <a href=\"https://lexingtonthemes.com/tutorials/how-to-create-a-tag-input-with-alpine-js-and-tailwind-css/\" type=\"button\" class=\"flex w-full items-center justify-center rounded-none rounded-tr-lg border border-transparent px-4 py-3 text-sm font-medium text-orange-600 hover:text-orange-500 focus:z-10 focus:outline-none focus:ring-2 focus:ring-orange-500\">Tutorial</a> </div>\n      <div class=\"flex h-0 flex-1\"> <a href=\"https://github.com/Lexington-Themes/lexington-tutorials/blob/main/src/pages/tag-input/index.astro\" class=\"flex w-full items-center justify-center rounded-none rounded-br-lg border border-transparent px-4 py-3 text-sm font-medium text-neutral-700 hover:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-orange-500\">Get the code</a> </div>\n     </div>\n    </div>\n   </div>\n  </div> <!-- Ends links to tutorial -->\n </div>\n</section>"
+  }
+}

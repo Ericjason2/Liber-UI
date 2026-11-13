@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "nextjs-profile-card-tailwind",
+  "type": "registry:ui",
+  "title": "nextjs-profile-card-tailwind",
+  "description": "nextjs-profile-card-tailwind - Créé par @tailwind-free-snippets sur TailwindFlex.",
+  "author": "@tailwind-free-snippets (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/nextjs-profile-card-tailwind.tsx",
+      "content": "/**\n * Component: nextjs-profile-card-tailwind\n * Author: @tailwind-free-snippets (https://tailwindflex.com/@tailwind-free-snippets)\n * Source: https://tailwindflex.com/@tailwind-free-snippets/nextjs-profile-card-tailwind\n * Attribution: Créé par @tailwind-free-snippets sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NextjsProfileCardTailwind() {\n  return (\n    <div>\n    \n    <div className=\"flex bg-[#f0feff] justify-center items-center h-screen\">\n        <div className=\"max-w-[490px] rounded-lg w-[100%] overflow-hidden bg-white shadow-[0_0_1rem_rgba(0,0,0,0.2)] \">\n            <div className=\"card\">\n                <div className=\"grid grid-cols-5\">\n                    <div className=\"col-span-2 p-3\">\n                        <img src=\"https://svgshare.com/i/16D0.svg\" alt=\"demo\" />\n                    </div>\n                    <div className=\"col-span-3 p-3\">\n                        <div className=\"font-bold\">Darlene Robertson</div>\n                        <div className=\"mb-3\">Senior Journalist</div>\n                        <div\n                            className=\"card flex justify-between items-center text-gray-500 bg-gray-200 focus rounded-lg p-2\">\n                            <div className=\"text-center\">\n                                <p className=\"text-sm\">Articles</p>\n                                <p className=\"font-bold text-gray-800\">37</p>\n                            </div>\n                            <div className=\"text-center\">\n                                <p className=\"text-sm\">Followers</p>\n                                <p className=\"font-bold text-gray-800\">850</p>\n                            </div>\n                            <div className=\"text-center\">\n                                <p className=\"text-sm\">Rating</p>\n                                <p className=\"font-bold text-gray-800 flex gap-1\">\n                                    <img src=\"https://svgshare.com/i/16Fg.svg\" />\n                                        9.5\n                                </p>\n                            </div>\n                        </div>\n                        <div className=\"flex mt-3 gap-2\">\n                            <button className=\"bg-white text-gray-500 py-2 px-4 rounded-lg border-2 hover400 flex-1\">\n                                  Chat\n                                </button>\n                            <button className=\"bg-blue-500 text-white py-2 px-4 rounded-lg hover700 flex-1\">\n                                  Follow\n                                </button>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "profile",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@tailwind-free-snippets",
+    "authorUrl": "https://tailwindflex.com/@tailwind-free-snippets",
+    "sourceUrl": "https://tailwindflex.com/@tailwind-free-snippets/nextjs-profile-card-tailwind",
+    "mention": "Créé par @tailwind-free-snippets sur TailwindFlex",
+    "rawHtml": "<!--\n    Taken from\n    https://bbbootstrap.com/snippets/profile-card-tailwind-css-53535136\n-->\n<div class=\"flex bg-[#f0feff] justify-center items-center h-screen\">\n    <div class=\"max-w-[490px] rounded-lg w-[100%] overflow-hidden bg-white shadow-[0_0_1rem_rgba(0,0,0,0.2)] \">\n        <div class=\"card\">\n            <div class=\"grid grid-cols-5\">\n                <div class=\"col-span-2 p-3\">\n                    <img src=\"https://svgshare.com/i/16D0.svg\" alt=\"demo\" />\n                </div>\n                <div class=\"col-span-3 p-3\">\n                    <div class=\"font-bold\">Darlene Robertson</div>\n                    <div class=\"mb-3\">Senior Journalist</div>\n                    <div\n                        class=\"card flex justify-between items-center text-gray-500 bg-gray-200 focus:bg-white rounded-lg p-2\">\n                        <div class=\"text-center\">\n                            <p class=\"text-sm\">Articles</p>\n                            <p class=\"font-bold text-gray-800\">37</p>\n                        </div>\n                        <div class=\"text-center\">\n                            <p class=\"text-sm\">Followers</p>\n                            <p class=\"font-bold text-gray-800\">850</p>\n                        </div>\n                        <div class=\"text-center\">\n                            <p class=\"text-sm\">Rating</p>\n                            <p class=\"font-bold text-gray-800 flex gap-1\">\n                                <img src=\"https://svgshare.com/i/16Fg.svg\" />\n                                    9.5\n                            </p>\n                        </div>\n                    </div>\n                    <div class=\"flex mt-3 gap-2\">\n                        <button class=\"bg-white text-gray-500 py-2 px-4 rounded-lg border-2 hover:bg-gray-400 flex-1\">\n                              Chat\n                            </button>\n                        <button class=\"bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 flex-1\">\n                              Follow\n                            </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

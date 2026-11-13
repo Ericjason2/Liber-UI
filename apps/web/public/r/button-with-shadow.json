@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-with-shadow",
+  "type": "registry:ui",
+  "title": "Button with shadow",
+  "description": "Button with shadow - Créé par @laurits sur TailwindFlex.",
+  "author": "@laurits (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button-with-shadow.tsx",
+      "content": "/**\n * Component: Button with shadow\n * Author: @laurits (https://tailwindflex.com/@laurits)\n * Source: https://tailwindflex.com/@laurits/button-with-shadow\n * Attribution: Créé par @laurits sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonWithShadow() {\n  return (\n    <div>\n    <a className=\"mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover[1.02]\"\r\n        href=\"#\">\r\n        Sign up for free\r\n    </a>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@laurits",
+    "authorUrl": "https://tailwindflex.com/@laurits",
+    "sourceUrl": "https://tailwindflex.com/@laurits/button-with-shadow",
+    "mention": "Créé par @laurits sur TailwindFlex",
+    "rawHtml": "<a class=\"mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]\"\r\n    href=\"#\">\r\n    Sign up for free\r\n</a>"
+  }
+}

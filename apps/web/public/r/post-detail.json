@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "post-detail",
+  "type": "registry:ui",
+  "title": "Post Detail",
+  "description": "Post Detail - Créé par @coder32 sur TailwindFlex.",
+  "author": "@coder32 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/post-detail.tsx",
+      "content": "/**\n * Component: Post Detail\n * Author: @coder32 (https://tailwindflex.com/@coder32)\n * Source: https://tailwindflex.com/@coder32/post-detail\n * Attribution: Créé par @coder32 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PostDetail() {\n  return (\n    <div>\n    <div className=\"container mx-auto p-6\">\n      \n      <div className=\"bg-white shadow-lg rounded-lg overflow-hidden mb-6\">\n        <img className=\"w-full h-72 object-cover\" src=\"post-photo.jpg\" alt=\"Post Fotoğrafı\" />\n        <div className=\"p-6\">\n          <h1 className=\"text-3xl font-bold mb-4\">Post Başlığı</h1>\n          <p className=\"text-gray-600 text-lg mb-4\">Post summary... Lorem ipsum dolor sit amet.</p>\n          <div className=\"text-sm text-gray-500 flex justify-between items-center mb-4\">\n            <span>Tarih: 01/01/2024</span>\n            <span>Ülke: Türkiye</span>\n          </div>\n          <div className=\"flex items-center space-x-4 mb-6\">\n            <img className=\"w-10 h-10 rounded-full\" src=\"user-profile.jpg\" alt=\"User Profile\" />\n            <div>\n              <p className=\"font-medium text-gray-900\">Kullanıcı Adı</p>\n              <p className=\"text-sm text-gray-500\">Yorum: 5, Okunma: 123</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    \n      \n      <div className=\"bg-white shadow-lg rounded-lg p-6\">\n        <h2 className=\"text-2xl font-bold mb-4\">Yorumlar</h2>\n        \n        <div className=\"space-y-4 mb-6\">\n          \n          <div className=\"p-4 bg-gray-100 rounded-lg\">\n            <p className=\"text-gray-700\">Bu çalışma harika görünüyor!</p>\n            <div className=\"flex justify-between items-center text-sm text-gray-500 mt-2\">\n              <span>Yazan: Kullanıcı Adı</span>\n              <span>Tarih: 02/01/2024</span>\n            </div>\n          </div>\n          \n        </div>\n        \n        <form className=\"space-y-4\">\n          <textarea className=\"w-full p-4 text-gray-700 border border-gray-300 rounded-lg\" placeholder=\"Yorumunuzu yazın...\"></textarea>\n          <button type=\"submit\" className=\"px-4 py-2 bg-blue-500 text-white rounded-lg hover600\">Gönder</button>\n        </form>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@coder32",
+    "authorUrl": "https://tailwindflex.com/@coder32",
+    "sourceUrl": "https://tailwindflex.com/@coder32/post-detail",
+    "mention": "Créé par @coder32 sur TailwindFlex",
+    "rawHtml": "<div class=\"container mx-auto p-6\">\n  <!-- Post Bilgileri -->\n  <div class=\"bg-white shadow-lg rounded-lg overflow-hidden mb-6\">\n    <img class=\"w-full h-72 object-cover\" src=\"post-photo.jpg\" alt=\"Post Fotoğrafı\">\n    <div class=\"p-6\">\n      <h1 class=\"text-3xl font-bold mb-4\">Post Başlığı</h1>\n      <p class=\"text-gray-600 text-lg mb-4\">Post summary... Lorem ipsum dolor sit amet.</p>\n      <div class=\"text-sm text-gray-500 flex justify-between items-center mb-4\">\n        <span>Tarih: 01/01/2024</span>\n        <span>Ülke: Türkiye</span>\n      </div>\n      <div class=\"flex items-center space-x-4 mb-6\">\n        <img class=\"w-10 h-10 rounded-full\" src=\"user-profile.jpg\" alt=\"User Profile\">\n        <div>\n          <p class=\"font-medium text-gray-900\">Kullanıcı Adı</p>\n          <p class=\"text-sm text-gray-500\">Yorum: 5, Okunma: 123</p>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- Yorum Alanı -->\n  <div class=\"bg-white shadow-lg rounded-lg p-6\">\n    <h2 class=\"text-2xl font-bold mb-4\">Yorumlar</h2>\n    <!-- Yorumlar Listesi -->\n    <div class=\"space-y-4 mb-6\">\n      <!-- Tek Yorum -->\n      <div class=\"p-4 bg-gray-100 rounded-lg\">\n        <p class=\"text-gray-700\">Bu çalışma harika görünüyor!</p>\n        <div class=\"flex justify-between items-center text-sm text-gray-500 mt-2\">\n          <span>Yazan: Kullanıcı Adı</span>\n          <span>Tarih: 02/01/2024</span>\n        </div>\n      </div>\n      <!-- Başka Yorumlar buraya eklenir -->\n    </div>\n    <!-- Yorum Ekleme Formu -->\n    <form class=\"space-y-4\">\n      <textarea class=\"w-full p-4 text-gray-700 border border-gray-300 rounded-lg\" placeholder=\"Yorumunuzu yazın...\"></textarea>\n      <button type=\"submit\" class=\"px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600\">Gönder</button>\n    </form>\n  </div>\n</div>"
+  }
+}

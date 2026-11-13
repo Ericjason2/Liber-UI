@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cards-5",
+  "type": "registry:ui",
+  "title": "cards",
+  "description": "cards - Créé par @mostafa-mohamed-elgdawy sur TailwindFlex.",
+  "author": "@mostafa-mohamed-elgdawy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cards-5.tsx",
+      "content": "/**\n * Component: cards\n * Author: @mostafa-mohamed-elgdawy (https://tailwindflex.com/@mostafa-mohamed-elgdawy)\n * Source: https://tailwindflex.com/@mostafa-mohamed-elgdawy/cards-5\n * Attribution: Créé par @mostafa-mohamed-elgdawy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Cards5() {\n  return (\n    <div>\n    <article\n      className=\"relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24\">\n      <img src=\"https://images.unsplash.com/photo-1499856871958-5b9627545d1a\" alt=\"University of Southern California\" className=\"absolute inset-0 h-full w-full object-cover\" />\n      <div className=\"absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40\"></div>\n      <h3 className=\"z-10 mt-3 text-3xl font-bold text-white\">Paris !</h3>\n      <div className=\"z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300\">City of love</div>\n    </article>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "landing-page",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mostafa-mohamed-elgdawy",
+    "authorUrl": "https://tailwindflex.com/@mostafa-mohamed-elgdawy",
+    "sourceUrl": "https://tailwindflex.com/@mostafa-mohamed-elgdawy/cards-5",
+    "mention": "Créé par @mostafa-mohamed-elgdawy sur TailwindFlex",
+    "rawHtml": "<article\n  class=\"relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24\">\n  <img src=\"https://images.unsplash.com/photo-1499856871958-5b9627545d1a\" alt=\"University of Southern California\" class=\"absolute inset-0 h-full w-full object-cover\">\n  <div class=\"absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40\"></div>\n  <h3 class=\"z-10 mt-3 text-3xl font-bold text-white\">Paris !</h3>\n  <div class=\"z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300\">City of love</div>\n</article>"
+  }
+}

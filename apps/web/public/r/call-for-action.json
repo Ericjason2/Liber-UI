@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-for-action",
+  "type": "registry:ui",
+  "title": "Call for action",
+  "description": "Call for action - Créé par @sophia-baker sur TailwindFlex.",
+  "author": "@sophia-baker (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-for-action.tsx",
+      "content": "/**\n * Component: Call for action\n * Author: @sophia-baker (https://tailwindflex.com/@sophia-baker)\n * Source: https://tailwindflex.com/@sophia-baker/call-for-action\n * Attribution: Créé par @sophia-baker sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallForAction() {\n  return (\n    <div>\n    <div className=\"text-center\">\r\n        <h1 className=\"text-3xl font-extrabold tracking-normal text-gray-900 sm5xl md5xl md\">\r\n            <span className=\"block\">Focus on creative</span>\r\n        </h1>\r\n        <p\r\n            className=\"max-w-sm mx-auto mt-1 font-normal text-gray-500 text- sm5 sm md5 md sm2xl md2xl\">\r\n            Create ad previews with fewer steps so you can focus on what you do best.</p>\r\n        <div className=\"max-w-md mx-auto mt-3 sm sm md6\">\r\n            <div className=\"rounded-full shadow\">\r\n                <button type=\"button\" className=\"flex items-center justify-center w-full px-8 py-3 text-base font-normal text-white bg-teal-400 border border-transparent rounded-full text-md hover300 md4 md2xl md10\">Start for free</button>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sophia-baker",
+    "authorUrl": "https://tailwindflex.com/@sophia-baker",
+    "sourceUrl": "https://tailwindflex.com/@sophia-baker/call-for-action",
+    "mention": "Créé par @sophia-baker sur TailwindFlex",
+    "rawHtml": "<div class=\"text-center\">\r\n    <h1 class=\"text-3xl font-extrabold tracking-normal text-gray-900 sm:text-5xl md:text-5xl md:leading-none\">\r\n        <span class=\"block\">Focus on creative</span>\r\n    </h1>\r\n    <p\r\n        class=\"max-w-sm mx-auto mt-1 font-normal text-gray-500 text- sm:mt-5 sm:text-md md:mt-5 md:text-xl sm:max-w-2xl md:max-w-2xl\">\r\n        Create ad previews with fewer steps so you can focus on what you do best.</p>\r\n    <div class=\"max-w-md mx-auto mt-3 sm:flex sm:justify-center md:mt-6\">\r\n        <div class=\"rounded-full shadow\">\r\n            <button type=\"button\" class=\"flex items-center justify-center w-full px-8 py-3 text-base font-normal text-white bg-teal-400 border border-transparent rounded-full text-md hover:bg-teal-300 md:py-4 md:text-2xl md:px-10\">Start for free</button>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

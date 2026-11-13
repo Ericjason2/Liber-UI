@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-with-bouncing-animation",
+  "type": "registry:ui",
+  "title": "Button with Bouncing Animation",
+  "description": "Button with Bouncing Animation - Créé par @prashant sur TailwindFlex.",
+  "author": "@prashant (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button-with-bouncing-animation.tsx",
+      "content": "/**\n * Component: Button with Bouncing Animation\n * Author: @prashant (https://tailwindflex.com/@prashant)\n * Source: https://tailwindflex.com/@prashant/button-with-bouncing-animation\n * Attribution: Créé par @prashant sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonWithBouncingAnimation() {\n  return (\n    <div>\n    <a href=\"\"\n        className=\"animate-bounce focus hover inline-flex text-md font-medium bg-indigo-900 mt-3 px-4 py-2 rounded-lg tracking-wide text-white\">\n        <span className=\"ml-2\">Bouncing Button 🏀</span>\n    </a>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@prashant",
+    "authorUrl": "https://tailwindflex.com/@prashant",
+    "sourceUrl": "https://tailwindflex.com/@prashant/button-with-bouncing-animation",
+    "mention": "Créé par @prashant sur TailwindFlex",
+    "rawHtml": "<a href=\"\"\n    class=\"animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium bg-indigo-900 mt-3 px-4 py-2 rounded-lg tracking-wide text-white\">\n    <span class=\"ml-2\">Bouncing Button 🏀</span>\n</a>"
+  }
+}

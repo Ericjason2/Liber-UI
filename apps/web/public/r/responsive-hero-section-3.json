@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-hero-section-3",
+  "type": "registry:ui",
+  "title": "Responsive Hero Section",
+  "description": "Responsive Hero Section - Créé par @sudip-chaudhary sur TailwindFlex.",
+  "author": "@sudip-chaudhary (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-hero-section-3.tsx",
+      "content": "/**\n * Component: Responsive Hero Section\n * Author: @sudip-chaudhary (https://tailwindflex.com/@sudip-chaudhary)\n * Source: https://tailwindflex.com/@sudip-chaudhary/responsive-hero-section-3\n * Attribution: Créé par @sudip-chaudhary sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveHeroSection3() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n  <title>Hero Section</title>\\n  \\n</head>\\n<body class=\\\"bg-gray-100\\\">\\n\\n  <section class=\\\"min-h-screen flex items-center bg-white px-6 py-12\\\">\\n    <div class=\\\"flex flex-col-reverse md:flex-row items-center max-w-7xl mx-auto w-full\\\">\\n      \\n      <!-- Left Content -->\\n      <div class=\\\"w-full md:w-1/2 text-center md:text-left mt-10 md:mt-0 space-y-6\\\">\\n        <h1 class=\\\"text-4xl sm:text-5xl font-bold text-gray-900 leading-tight\\\">\\n          Hi, I’m <span class=\\\"text-blue-600\\\">Sudip Chaudhary</span>\\n        </h1>\\n        <p class=\\\"text-gray-600 text-base sm:text-lg\\\">\\n          A passionate frontend & backend developer creating smooth web experiences with modern design.\\n        </p>\\n        <div class=\\\"flex justify-center md:justify-start gap-4\\\">\\n          <button class=\\\"bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition\\\">\\n            Say Hello 👋\\n          </button>\\n          <a href=\\\"#projects\\\" class=\\\"border border-blue-600 text-blue-600 px-6 py-3 rounded-xl hover:bg-blue-50 transition\\\">\\n            View Projects\\n          </a>\\n        </div>\\n      </div>\\n\\n      <!-- Right Circular Image -->\\n      <div class=\\\"w-full md:w-1/2 flex justify-center\\\">\\n        <img src=\\\"https://images.unsplash.com/photo-1503235930437-8c6293ba41f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxlbG9uJTIwbXVzayUyMHBob3RvJTIwcHJvZmlsZXxlbnwwfDB8fHwxNzQ5MDQ5NTUzfDA&ixlib=rb-4.1.0&q=80&w=1080\\\" alt=\\\"Profile\\\" \\n             class=\\\"w-64 h-64 object-cover rounded-full border-4 border-blue-600 shadow-lg\\\" />\\n      </div>\\n    </div>\\n  </section>\\n\\n  <!-- JavaScript -->\\n  \\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sudip-chaudhary",
+    "authorUrl": "https://tailwindflex.com/@sudip-chaudhary",
+    "sourceUrl": "https://tailwindflex.com/@sudip-chaudhary/responsive-hero-section-3",
+    "mention": "Créé par @sudip-chaudhary sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>Hero Section</title>\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gray-100\">\n\n  <section class=\"min-h-screen flex items-center bg-white px-6 py-12\">\n    <div class=\"flex flex-col-reverse md:flex-row items-center max-w-7xl mx-auto w-full\">\n      \n      <!-- Left Content -->\n      <div class=\"w-full md:w-1/2 text-center md:text-left mt-10 md:mt-0 space-y-6\">\n        <h1 class=\"text-4xl sm:text-5xl font-bold text-gray-900 leading-tight\">\n          Hi, I’m <span class=\"text-blue-600\">Sudip Chaudhary</span>\n        </h1>\n        <p class=\"text-gray-600 text-base sm:text-lg\">\n          A passionate frontend & backend developer creating smooth web experiences with modern design.\n        </p>\n        <div class=\"flex justify-center md:justify-start gap-4\">\n          <button onclick=\"greetUser()\" class=\"bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition\">\n            Say Hello 👋\n          </button>\n          <a href=\"#projects\" class=\"border border-blue-600 text-blue-600 px-6 py-3 rounded-xl hover:bg-blue-50 transition\">\n            View Projects\n          </a>\n        </div>\n      </div>\n\n      <!-- Right Circular Image -->\n      <div class=\"w-full md:w-1/2 flex justify-center\">\n        <img src=\"https://images.unsplash.com/photo-1503235930437-8c6293ba41f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxlbG9uJTIwbXVzayUyMHBob3RvJTIwcHJvZmlsZXxlbnwwfDB8fHwxNzQ5MDQ5NTUzfDA&ixlib=rb-4.1.0&q=80&w=1080\" alt=\"Profile\" \n             class=\"w-64 h-64 object-cover rounded-full border-4 border-blue-600 shadow-lg\" />\n      </div>\n    </div>\n  </section>\n\n  <!-- JavaScript -->\n  <script>\n    function greetUser() {\n      alert(\"Hello! Thanks for visiting 😊\");\n      console.log(\"Sudip says hello from the hero section!\");\n    }\n  </script>\n\n</body>\n</html>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "astro-build-starter-template-with-tailwind",
+  "type": "registry:ui",
+  "title": "Astro build starter template with Tailwind",
+  "description": "Astro build starter template with Tailwind - Créé par @geoffrey-callaghan sur TailwindFlex.",
+  "author": "@geoffrey-callaghan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/astro-build-starter-template-with-tailwind.tsx",
+      "content": "/**\n * Component: Astro build starter template with Tailwind\n * Author: @geoffrey-callaghan (https://tailwindflex.com/@geoffrey-callaghan)\n * Source: https://tailwindflex.com/@geoffrey-callaghan/astro-build-starter-template-with-tailwind\n * Attribution: Créé par @geoffrey-callaghan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AstroBuildStarterTemplateWithTailwind() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"relative mt-6 flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md\\\">\\n  <div class=\\\"p-6\\\">\\n    <svg\\n      xmlns=\\\"http://www.w3.org/2000/svg\\\"\\n      viewBox=\\\"0 0 24 24\\\"\\n      fill=\\\"currentColor\\\"\\n      aria-hidden=\\\"true\\\"\\n      class=\\\"mb-4 h-12 w-12 text-pink-500\\\"\\n    >\\n      <path\\n        fill-rule=\\\"evenodd\\\"\\n        d=\\\"M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z\\\"\\n        clip-rule=\\\"evenodd\\\"\\n      ></path>\\n      <path d=\\\"M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z\\\"></path>\\n    </svg>\\n    <h5 class=\\\"mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased\\\">\\n      Astro build starter template with Tailwind\\n    </h5>\\n    <p class=\\\"block font-sans text-base font-light leading-relaxed text-inherit antialiased\\\">\\n      Jumpstart your next Astro build Project\\n    </p>\\n  </div>\\n  <div class=\\\"p-6 pt-0\\\">\\n    <a\\n      class=\\\"!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500\\\"\\n      href=\\\"#\\\"\\n    >\\n      <a href=\\\"https://astrolize.fabform.io\\\"\\n        class=\\\"flex select-none items-center gap-2 rounded-lg py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none\\\"\\n        type=\\\"button\\\"\\n        data-ripple-dark=\\\"true\\\"\\n      >\\n        Astro Starter Template\\n        <svg\\n          xmlns=\\\"http://www.w3.org/2000/svg\\\"\\n          fill=\\\"none\\\"\\n          viewBox=\\\"0 0 24 24\\\"\\n          stroke-width=\\\"2\\\"\\n          stroke=\\\"currentColor\\\"\\n          aria-hidden=\\\"true\\\"\\n          class=\\\"h-4 w-4\\\"\\n        >\\n          <path\\n            stroke-linecap=\\\"round\\\"\\n            stroke-linejoin=\\\"round\\\"\\n            d=\\\"M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3\\\"\\n          ></path>\\n        </svg>\\n      </button>\\n    </a>\\n  </div>\\n</div>\\n\\n\\n<!-- stylesheet -->\\n<link\\n  rel=\\\"stylesheet\\\"\\n  href=\\\"https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css\\\"\\n/>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@geoffrey-callaghan",
+    "authorUrl": "https://tailwindflex.com/@geoffrey-callaghan",
+    "sourceUrl": "https://tailwindflex.com/@geoffrey-callaghan/astro-build-starter-template-with-tailwind",
+    "mention": "Créé par @geoffrey-callaghan sur TailwindFlex",
+    "rawHtml": "<div class=\"relative mt-6 flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md\">\n  <div class=\"p-6\">\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      viewBox=\"0 0 24 24\"\n      fill=\"currentColor\"\n      aria-hidden=\"true\"\n      class=\"mb-4 h-12 w-12 text-pink-500\"\n    >\n      <path\n        fill-rule=\"evenodd\"\n        d=\"M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z\"\n        clip-rule=\"evenodd\"\n      ></path>\n      <path d=\"M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z\"></path>\n    </svg>\n    <h5 class=\"mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased\">\n      Astro build starter template with Tailwind\n    </h5>\n    <p class=\"block font-sans text-base font-light leading-relaxed text-inherit antialiased\">\n      Jumpstart your next Astro build Project\n    </p>\n  </div>\n  <div class=\"p-6 pt-0\">\n    <a\n      class=\"!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500\"\n      href=\"#\"\n    >\n      <a href=\"https://astrolize.fabform.io\"\n        class=\"flex select-none items-center gap-2 rounded-lg py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none\"\n        type=\"button\"\n        data-ripple-dark=\"true\"\n      >\n        Astro Starter Template\n        <svg\n          xmlns=\"http://www.w3.org/2000/svg\"\n          fill=\"none\"\n          viewBox=\"0 0 24 24\"\n          stroke-width=\"2\"\n          stroke=\"currentColor\"\n          aria-hidden=\"true\"\n          class=\"h-4 w-4\"\n        >\n          <path\n            stroke-linecap=\"round\"\n            stroke-linejoin=\"round\"\n            d=\"M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3\"\n          ></path>\n        </svg>\n      </button>\n    </a>\n  </div>\n</div>\n\n\n<!-- stylesheet -->\n<link\n  rel=\"stylesheet\"\n  href=\"https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css\"\n/>"
+  }
+}

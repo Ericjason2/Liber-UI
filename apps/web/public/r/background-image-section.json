@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "background-image-section",
+  "type": "registry:ui",
+  "title": "Background image section",
+  "description": "Background image section - Créé par @marcpster sur TailwindFlex.",
+  "author": "@marcpster (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/background-image-section.tsx",
+      "content": "/**\n * Component: Background image section\n * Author: @marcpster (https://tailwindflex.com/@marcpster)\n * Source: https://tailwindflex.com/@marcpster/background-image-section\n * Attribution: Créé par @marcpster sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BackgroundImageSection() {\n  return (\n    <div>\n    <div className=\"relative h-screen w-full\">\n        <img src=\"https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxjb2RlfGVufDB8MHx8fDE2OTQwOTg0MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Background Image\" className=\"object-cover object-center w-full h-full\" />\n        <img src=\"\" alt=\"Background Image\" className=\"absolute inset-0 w-full h-full object-cover filter blur-sm\" />\n        <div className=\"absolute inset-0 bg-black bg-opacity-50\"></div>\n        <div className=\"absolute inset-0 flex flex-col items-center justify-center\">\n            <h1 className=\"text-4xl text-white font-bold\">Hello, World!</h1>\n            <p className=\"text-xl text-white mt-4\">This is a text</p>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@marcpster",
+    "authorUrl": "https://tailwindflex.com/@marcpster",
+    "sourceUrl": "https://tailwindflex.com/@marcpster/background-image-section",
+    "mention": "Créé par @marcpster sur TailwindFlex",
+    "rawHtml": "<div class=\"relative h-screen w-full\">\n    <img src=\"https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxjb2RlfGVufDB8MHx8fDE2OTQwOTg0MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Background Image\" class=\"object-cover object-center w-full h-full\" />\n    <img src=\"\" alt=\"Background Image\" class=\"absolute inset-0 w-full h-full object-cover filter blur-sm\">\n    <div class=\"absolute inset-0 bg-black bg-opacity-50\"></div>\n    <div class=\"absolute inset-0 flex flex-col items-center justify-center\">\n        <h1 class=\"text-4xl text-white font-bold\">Hello, World!</h1>\n        <p class=\"text-xl text-white mt-4\">This is a text</p>\n    </div>\n</div>"
+  }
+}

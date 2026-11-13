@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "authentication-form-terminal-2",
+  "type": "registry:ui",
+  "title": "authentication form terminal",
+  "description": "authentication form terminal - Créé par @ardianhu sur TailwindFlex.",
+  "author": "@ardianhu (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/authentication-form-terminal-2.tsx",
+      "content": "/**\n * Component: authentication form terminal\n * Author: @ardianhu (https://tailwindflex.com/@ardianhu)\n * Source: https://tailwindflex.com/@ardianhu/authentication-form-terminal-2\n * Attribution: Créé par @ardianhu sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AuthenticationFormTerminal2() {\n  return (\n    <div>\n    <div className=\"terminal p-5 rounded-lg font-mono\">\n        <div className=\"terminal-header bg-zinc-700 text-white p-2 rounded-t-lg flex items-center\">\n            <span className=\"text-red-500 text-5xl leading-[0px] align-middle -mt-2\">•</span>\n            <span className=\"text-yellow-500 text-5xl leading-[0px] align-middle -mt-2 ml-1\">&bull;</span>\n            <span className=\"text-green-500 text-5xl leading-[0px] align-middle -mt-2 ml-1\">&bull;</span>\n            <span className=\"ml-4 align-baseline\">authentication --- bash - zsh </span>\n        </div>\n        <div id=\"output\" className=\"pl-4 pt-2 bg-gray-900 max-h-[500px] overflow-auto\">\n            <p className=\"text-gray-500\">You need to authenticate to continue!</p>\n            <p className=\"text-sky-300\">Enter 1 to login</p>\n            <p className=\"text-sky-300\">Enter 2 to register</p>\n        </div>\n        <div id=\"terminal-input-container\" className=\"input flex pl-4 bg-gray-900 pb-4 rounded-b-lg items-center\">\n            <span className=\"text-green-500\">➝</span>\n            <span className=\"text-sky-300 ml-2\">~</span>\n            <span id=\"placeholder\" className=\"ml-2 text-md text-gray-500\"></span>\n            <input type=\"text\" id=\"terminal-input\" className=\"bg-transparent border-none outline-none ring-0 focus0 text-amber-400 w-full\" />\n        </div>\n    </div>\n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ardianhu",
+    "authorUrl": "https://tailwindflex.com/@ardianhu",
+    "sourceUrl": "https://tailwindflex.com/@ardianhu/authentication-form-terminal-2",
+    "mention": "Créé par @ardianhu sur TailwindFlex",
+    "rawHtml": "<div class=\"terminal p-5 rounded-lg font-mono\">\n    <div class=\"terminal-header bg-zinc-700 text-white p-2 rounded-t-lg flex items-center\">\n        <span class=\"text-red-500 text-5xl leading-[0px] align-middle -mt-2\">•</span>\n        <span class=\"text-yellow-500 text-5xl leading-[0px] align-middle -mt-2 ml-1\">&bull;</span>\n        <span class=\"text-green-500 text-5xl leading-[0px] align-middle -mt-2 ml-1\">&bull;</span>\n        <span class=\"ml-4 align-baseline\">authentication --- bash - zsh </span>\n    </div>\n    <div id=\"output\" class=\"pl-4 pt-2 bg-gray-900 max-h-[500px] overflow-auto\">\n        <p class=\"text-gray-500\">You need to authenticate to continue!</p>\n        <p class=\"text-sky-300\">Enter 1 to login</p>\n        <p class=\"text-sky-300\">Enter 2 to register</p>\n    </div>\n    <div id=\"terminal-input-container\" class=\"input flex pl-4 bg-gray-900 pb-4 rounded-b-lg items-center\">\n        <span class=\"text-green-500\">➝</span>\n        <span class=\"text-sky-300 ml-2\">~</span>\n        <span id=\"placeholder\" class=\"ml-2 text-md text-gray-500\"></span>\n        <input type=\"text\" id=\"terminal-input\" class=\"bg-transparent border-none outline-none ring-0 focus:ring-0 text-amber-400 w-full\">\n    </div>\n</div>\n\n<script>\n    document.addEventListener('DOMContentLoaded', () => {\n        const output = document.getElementById('output');\n        const terminalInput = document.getElementById('terminal-input');\n        const placeholderSpan = document.getElementById('placeholder');\n        const terminalInputContainer = document.getElementById('terminal-input-container')\n        let mode = '';\n        let step = 0;\n        let credentials = {};\n        let isPassword = false\n        let isFinalStep = false\n\n        terminalInput.addEventListener('keydown', function(event) {\n            if (event.key === 'Enter') {\n                const input = terminalInput.value.trim();\n                if (isPassword) {\n                    output.innerHTML += `<div class=\"flex\"><span class=\"text-green-500\">➝</span><span class=\"bg-transparent border-none outline-none w-full text-amber-400 ml-2\">${'•'.repeat(input.length)}</span></div>`;\n                } else {\n                    output.innerHTML += `<div class=\"flex\"><span class=\"text-green-500\">➝</span><span class=\"bg-transparent border-none outline-none w-full text-amber-400 ml-2\">${input}</span></div>`;\n                }\n                if (isFinalStep) {\n                    terminalInputContainer.classList.add('hidden');\n                    output.classList.add('rounded-b-lg', 'pb-4')\n                }\n                terminalInput.value = '';\n                terminalInput.setAttribute('type', 'text')\n\n                if (!mode) {\n                    if (input === '1') {\n                        mode = 'login';\n                        output.innerHTML += `<p class=\"text-sky-300\">Login selected. Enter email</p>`;\n                        placeholderSpan.innerText = \"email:\";\n                    } else if (input === '2') {\n                        mode = 'register';\n                        output.innerHTML += `<p class=\"text-sky-300\">Register selected. Enter username</p>`;\n                        placeholderSpan.innerText = \"username:\";\n                    } else {\n                        output.innerHTML += `<p class=\"text-red-400\">Invalid input. Please press 1 to login or 2 to register.</p>`;\n                    }\n                } else if (mode === 'login') {\n                    handleLogin(input);\n                } else if (mode === 'register') {\n                    handleRegister(input);\n                }\n\n                output.scrollTop = output.scrollHeight;\n            } else if (event.ctrlKey && event.key === 'c') {\n                resetTerminal()\n            }\n        });\n\n        function handleLogin(input) {\n            if (step === 0) {\n                credentials.email = input;\n                output.innerHTML += `<p class=\"text-sky-300\">email saved. Enter password</p>`;\n                placeholderSpan.innerText = \"password:\";\n                terminalInput.setAttribute('type', 'password')\n                isPassword = true\n                isFinalStep = true\n                step++;\n            } else if (step === 1) {\n                credentials.password = input;\n                output.innerHTML += `<p class=\"text-sky-300\">Password saved</p>`;\n                displayFinalStep();\n            }\n        }\n\n        function handleRegister(input) {\n            if (step === 0) {\n                credentials.username = input;\n                output.innerHTML += `<p class=\"text-sky-300\">Username saved. Enter email</p>`;\n                placeholderSpan.innerText = \"email:\";\n                step++;\n            } else if (step === 1) {\n                credentials.email = input;\n                output.innerHTML += `<p class=\"text-sky-300\">Email saved. Enter password</p>`;\n                placeholderSpan.innerText = \"password:\";\n                terminalInput.setAttribute('type', 'password')\n                isPassword = true\n                isFinalStep = true\n                step++;\n            } else if (step === 2) {\n                credentials.password = input;\n                output.innerHTML += `<p class=\"text-sky-300\">Password saved</p>`;\n                displayFinalStep();\n            }\n        }\n\n        function displayFinalStep() {\n            const formattedCredentials = formatCredentials(credentials, mode);\n            output.innerHTML += `<p class=\"text-gray-500\">Credentials entered:</p><pre class=\"text-gray-500\">${formattedCredentials}</pre>`;\n            output.innerHTML += `\n                    <button class=\"bg-white text-black px-4 py-2 mt-2 rounded ml-2\" onclick=\"handleDiscard()\">Reset</button>\n                    <button id=\"continue-auth\" class=\"bg-indigo-500 text-white px-4 py-2 mt-2 rounded\" onclick=\"handleContinue()\">Continue</button>\n                `;\n            placeholderSpan.innerText = \"\"; // Reset placeholder\n        }\n\n        function formatCredentials(credentials, mode) {\n            let formatted = `email: <span class=\"text-amber-400\">${credentials.email}</span>\\n`;\n            if (mode === 'register') {\n                formatted += `username: <span class=\"text-amber-400\">${credentials.username}</span>\\n`;\n            }\n            formatted += `password: <span class=\"text-amber-400\">${'•'.repeat(credentials.password.length)}</span>`;\n            return formatted;\n        }\n\n        window.handleContinue = function() {\n            output.innerHTML += `<p>Credentials have been submitted.</p>`;\n            resetTerminal();\n        }\n\n        window.handleDiscard = function() {\n            output.innerHTML += `<p>Credentials have been discarded.</p>`;\n            resetTerminal();\n        }\n\n        function resetTerminal() {\n            mode = '';\n            step = 0;\n            credentials = {};\n            output.innerHTML = `<p class=\"text-gray-500\">You need to authenticate to continue!</p>\n            <p class=\"text-sky-300\">Enter 1 to login</p>\n            <p class=\"text-sky-300\">Enter 2 to register</p>`;\n            placeholderSpan.innerText = \"\"; // Reset placeholder\n            isFinalStep = false\n            isPassword = false\n            terminalInputContainer.classList.remove('hidden');\n            output.classList.remove('rounded-b-lg', 'pb-4')\n        }\n    });\n</script>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "author-card-2",
+  "type": "registry:ui",
+  "title": "User Profile contact form",
+  "description": "User Profile contact form - Créé par @geoffrey-callaghan sur TailwindFlex.",
+  "author": "@geoffrey-callaghan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/author-card-2.tsx",
+      "content": "/**\n * Component: User Profile contact form\n * Author: @geoffrey-callaghan (https://tailwindflex.com/@geoffrey-callaghan)\n * Source: https://tailwindflex.com/@geoffrey-callaghan/author-card-2\n * Attribution: Créé par @geoffrey-callaghan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AuthorCard2() {\n  return (\n    <div>\n    <div className=\"h-screen w-full flex items-center justify-center dark900\">\r\n    \r\n        \r\n        <div\r\n            className=\"relative w-full max-w-2xl my-8 md16 flex flex-col items-start space-y-4 sm sm0 sm6 px-4 py-8 border-2 border-dashed border-gray-400 dark400 shadow-lg rounded-lg\">\r\n    \r\n            <span className=\"absolute text-xs font-medium top-0 left-0 rounded-br-lg rounded-tl-lg px-2 py-1 bg-primary-100 dark900 dark300 border-gray-400 dark400 border-b-2 border-r-2 border-dashed \">\r\n                author\r\n            </span>\r\n    \r\n            <div className=\"w-full flex justify-center sm sm\">\r\n                <img className=\"object-cover w-20 h-20 mt-3 mr-3 rounded-full\" src=\"https://i.pinimg.com/564x/a5/17/09/a51709893a88477e167b86f6ab71b16f.jpg\" />\r\n            </div>\r\n    \r\n            <div className=\"w-full sm flex flex-col items-center sm\">\r\n    \r\n                <p className=\"font-display mb-2 text-2xl font-semibold dark200\" itemprop=\"author\">\r\n                    John Doe\r\n                </p>\r\n    \r\n                <div className=\"mb-4 md text-gray-400\">\r\n                    <p>John Doe is a versatile content writer with a strong background in web development.</p>\r\n                </div>\r\n    \r\n                <div className=\"flex gap-4\">\r\n    \r\n                \r\n     <a href=\"https://veilmail.io/mr-handsome\">Get my email here https://veilmail.io/mr-handsome</a>\r\n    \r\n                </div>\r\n            </div>\r\n    \r\n        </div>\r\n    \r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "profile",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@geoffrey-callaghan",
+    "authorUrl": "https://tailwindflex.com/@geoffrey-callaghan",
+    "sourceUrl": "https://tailwindflex.com/@geoffrey-callaghan/author-card-2",
+    "mention": "Créé par @geoffrey-callaghan sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen w-full flex items-center justify-center dark:bg-gray-900\">\r\n\r\n    <!-- Author card -->\r\n    <div\r\n        class=\"relative w-full max-w-2xl my-8 md:my-16 flex flex-col items-start space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6 px-4 py-8 border-2 border-dashed border-gray-400 dark:border-gray-400 shadow-lg rounded-lg\">\r\n\r\n        <span class=\"absolute text-xs font-medium top-0 left-0 rounded-br-lg rounded-tl-lg px-2 py-1 bg-primary-100 dark:bg-gray-900 dark:text-gray-300 border-gray-400 dark:border-gray-400 border-b-2 border-r-2 border-dashed \">\r\n            author\r\n        </span>\r\n\r\n        <div class=\"w-full flex justify-center sm:justify-start sm:w-auto\">\r\n            <img class=\"object-cover w-20 h-20 mt-3 mr-3 rounded-full\" src=\"https://i.pinimg.com/564x/a5/17/09/a51709893a88477e167b86f6ab71b16f.jpg\">\r\n        </div>\r\n\r\n        <div class=\"w-full sm:w-auto flex flex-col items-center sm:items-start\">\r\n\r\n            <p class=\"font-display mb-2 text-2xl font-semibold dark:text-gray-200\" itemprop=\"author\">\r\n                John Doe\r\n            </p>\r\n\r\n            <div class=\"mb-4 md:text-lg text-gray-400\">\r\n                <p>John Doe is a versatile content writer with a strong background in web development.</p>\r\n            </div>\r\n\r\n            <div class=\"flex gap-4\">\r\n\r\n            \r\n <a href=\"https://veilmail.io/mr-handsome\">Get my email here https://veilmail.io/mr-handsome</a>\r\n\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n</div>"
+  }
+}

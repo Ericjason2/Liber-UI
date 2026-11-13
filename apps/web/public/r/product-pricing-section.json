@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "product-pricing-section",
+  "type": "registry:ui",
+  "title": "Product Pricing Section",
+  "description": "Product Pricing Section - Créé par @cguy2000 sur TailwindFlex.",
+  "author": "@cguy2000 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/product-pricing-section.tsx",
+      "content": "/**\n * Component: Product Pricing Section\n * Author: @cguy2000 (https://tailwindflex.com/@cguy2000)\n * Source: https://tailwindflex.com/@cguy2000/product-pricing-section\n * Attribution: Créé par @cguy2000 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProductPricingSection() {\n  return (\n    <div>\n    <div className=\"bg-gray-700 px-4 py-16 min-h-screen\">\n      <div aria-hidden=\"true\" className=\"absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-20\">\n        <div className=\"blur-[106px] h-56 bg-gradient-to-br to-purple-400 from-blue-700\"></div>\n        <div className=\"blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-indigo-600\"></div>\n      </div>\n      <div className=\"max-w-7xl mx-auto px-6 md12 xl6\">\n        <div className=\"mb-10 space-y-4 px-6 md0\">\n          <h2 className=\"text-center text-2xl font-bold text-white sm3xl md4xl\">Pricing</h2>\n        </div>\n        <div className=\"flex flex-col sm justify-center gap-4\">\n          <div\n            className=\"flex flex-col items-center aspect-auto p-4 sm8 border rounded-3xl bg-gray-800 border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md\">\n            <h2 className=\"text-lg sm font-medium text-white mb-2\">Starter</h2>\n            <p className=\"text-lg sm text-center mb-8 mt-4 text-gray-400\">\n              <span className=\"text-3xl sm4xl font-bold text-white\">$19</span> / Month\n            </p>\n            <ul className=\"list-none list-inside mb-6 text-center text-gray-300\">\n              <li className=\"font-bold text-orange-600\">1 Website</li>\n              <li>Custom Domain</li>\n              <li>Basic SEO</li>\n              <li>Limited Support</li>\n            </ul>\n            <a target=\"_blank\" rel=\"noopener noreferrer\"\n              className=\"lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before before0 before before before before300 hover105 active75 active95 sm\"\n              href=\"https://example.com/starter-plan\"><span className=\"relative text-sm font-semibold text-black\">Get Started</span></a>\n          </div>\n          <div\n            className=\"flex flex-col items-center aspect-auto p-4 sm8 border rounded-3xl bg-gray-800 border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md\">\n            <h2 className=\"text-lg sm font-medium text-white mb-2\">Pro</h2>\n            <p className=\"text-lg sm text-center mb-8 mt-4 text-gray-400\">\n              <span className=\"text-3xl sm4xl font-bold text-white\">$49</span> / Month\n            </p>\n            <ul className=\"list-none list-inside mb-6 text-center text-gray-300\">\n              <li className=\"font-bold text-orange-600\">3 Websites</li>\n              <li>Custom Domain &amp; Subdomain</li>\n              <li>Advanced SEO</li>\n              <li>24/7 Support</li>\n            </ul>\n            <a target=\"_blank\" rel=\"noopener noreferrer\"\n              className=\"lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before before0 before before before before300 hover105 active75 active95 sm\"\n              href=\"https://example.com/pro-plan\"><span className=\"relative text-sm font-semibold text-black\">Get Started</span></a>\n          </div>\n          <div\n            className=\"flex flex-col items-center aspect-auto p-4 sm8 border rounded-3xl bg-gray-800 border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md\">\n            <h2 className=\"text-lg sm font-medium text-white mb-2\">Business</h2>\n            <p className=\"text-lg sm text-center mb-8 mt-4 text-gray-400\">\n              <span className=\"text-3xl sm4xl font-bold text-white\">$99</span> / Month\n            </p>\n            <ul className=\"list-none list-inside mb-6 text-center text-gray-300\">\n              <li className=\"font-bold text-orange-600\">Unlimited Websites</li>\n              <li>Custom Domain &amp; Subdomain</li>\n              <li>Enterprise SEO</li>\n              <li>Premium Support</li>\n            </ul>\n            <a target=\"_blank\" rel=\"noopener noreferrer\"\n              className=\"lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before before0 before before before before300 hover105 active75 active95 sm\"\n              href=\"https://example.com/business-plan\"><span className=\"relative text-sm font-semibold text-black\">Get Started</span></a>\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@cguy2000",
+    "authorUrl": "https://tailwindflex.com/@cguy2000",
+    "sourceUrl": "https://tailwindflex.com/@cguy2000/product-pricing-section",
+    "mention": "Créé par @cguy2000 sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-700 px-4 py-16 min-h-screen\">\n  <div aria-hidden=\"true\" class=\"absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-20\">\n    <div class=\"blur-[106px] h-56 bg-gradient-to-br to-purple-400 from-blue-700\"></div>\n    <div class=\"blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-indigo-600\"></div>\n  </div>\n  <div class=\"max-w-7xl mx-auto px-6 md:px-12 xl:px-6\">\n    <div class=\"mb-10 space-y-4 px-6 md:px-0\">\n      <h2 class=\"text-center text-2xl font-bold text-white sm:text-3xl md:text-4xl\">Pricing</h2>\n    </div>\n    <div class=\"flex flex-col sm:flex-row justify-center gap-4\">\n      <div\n        class=\"flex flex-col items-center aspect-auto p-4 sm:p-8 border rounded-3xl bg-gray-800 border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md\">\n        <h2 class=\"text-lg sm:text-xl font-medium text-white mb-2\">Starter</h2>\n        <p class=\"text-lg sm:text-xl text-center mb-8 mt-4 text-gray-400\">\n          <span class=\"text-3xl sm:text-4xl font-bold text-white\">$19</span> / Month\n        </p>\n        <ul class=\"list-none list-inside mb-6 text-center text-gray-300\">\n          <li class=\"font-bold text-orange-600\">1 Website</li>\n          <li>Custom Domain</li>\n          <li>Basic SEO</li>\n          <li>Limited Support</li>\n        </ul>\n        <a target=\"_blank\" rel=\"noopener noreferrer\"\n          class=\"lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max\"\n          href=\"https://example.com/starter-plan\"><span class=\"relative text-sm font-semibold text-black\">Get Started</span></a>\n      </div>\n      <div\n        class=\"flex flex-col items-center aspect-auto p-4 sm:p-8 border rounded-3xl bg-gray-800 border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md\">\n        <h2 class=\"text-lg sm:text-xl font-medium text-white mb-2\">Pro</h2>\n        <p class=\"text-lg sm:text-xl text-center mb-8 mt-4 text-gray-400\">\n          <span class=\"text-3xl sm:text-4xl font-bold text-white\">$49</span> / Month\n        </p>\n        <ul class=\"list-none list-inside mb-6 text-center text-gray-300\">\n          <li class=\"font-bold text-orange-600\">3 Websites</li>\n          <li>Custom Domain &amp; Subdomain</li>\n          <li>Advanced SEO</li>\n          <li>24/7 Support</li>\n        </ul>\n        <a target=\"_blank\" rel=\"noopener noreferrer\"\n          class=\"lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max\"\n          href=\"https://example.com/pro-plan\"><span class=\"relative text-sm font-semibold text-black\">Get Started</span></a>\n      </div>\n      <div\n        class=\"flex flex-col items-center aspect-auto p-4 sm:p-8 border rounded-3xl bg-gray-800 border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md\">\n        <h2 class=\"text-lg sm:text-xl font-medium text-white mb-2\">Business</h2>\n        <p class=\"text-lg sm:text-xl text-center mb-8 mt-4 text-gray-400\">\n          <span class=\"text-3xl sm:text-4xl font-bold text-white\">$99</span> / Month\n        </p>\n        <ul class=\"list-none list-inside mb-6 text-center text-gray-300\">\n          <li class=\"font-bold text-orange-600\">Unlimited Websites</li>\n          <li>Custom Domain &amp; Subdomain</li>\n          <li>Enterprise SEO</li>\n          <li>Premium Support</li>\n        </ul>\n        <a target=\"_blank\" rel=\"noopener noreferrer\"\n          class=\"lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max\"\n          href=\"https://example.com/business-plan\"><span class=\"relative text-sm font-semibold text-black\">Get Started</span></a>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "3d-card-2",
+  "type": "registry:ui",
+  "title": "3D card",
+  "description": "3D card - Créé par @bonheur-developer1 sur TailwindFlex.",
+  "author": "@bonheur-developer1 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/3d-card-2.tsx",
+      "content": "/**\n * Component: 3D card\n * Author: @bonheur-developer1 (https://tailwindflex.com/@bonheur-developer1)\n * Source: https://tailwindflex.com/@bonheur-developer1/3d-card-2\n * Attribution: Créé par @bonheur-developer1 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Comp3dCard2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n  <title>3D Flip Card with Tailwind</title>\\n  \\n  <style>\\n    .flip-card {\\n      perspective: 1000px;\\n    }\\n\\n    .flip-inner {\\n      transition: transform 0.8s;\\n      transform-style: preserve-3d;\\n    }\\n\\n    .flipped {\\n      transform: rotateY(180deg);\\n    }\\n\\n    .flip-front, .flip-back {\\n      backface-visibility: hidden;\\n      -webkit-backface-visibility: hidden;\\n    }\\n\\n    .flip-back {\\n      transform: rotateY(180deg);\\n    }\\n  </style>\\n</head>\\n<body class=\\\"bg-gradient-to-br from-purple-500 to-indigo-700 min-h-screen flex items-center justify-center\\\">\\n\\n  <div class=\\\"flip-card w-80 h-48\\\">\\n    <div class=\\\"flip-inner relative w-full h-full\\\">\\n      <!-- Front -->\\n      <div class=\\\"flip-front absolute w-full h-full bg-white text-black flex items-center justify-center rounded-xl shadow-xl text-xl font-bold\\\">\\n        Click Me (Front)\\n      </div>\\n      <!-- Back -->\\n      <div class=\\\"flip-back absolute w-full h-full bg-indigo-600 text-white flex items-center justify-center rounded-xl shadow-xl text-xl font-bold\\\">\\n        Hello! (Back)\\n      </div>\\n    </div>\\n  </div>\\n\\n  \\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@bonheur-developer1",
+    "authorUrl": "https://tailwindflex.com/@bonheur-developer1",
+    "sourceUrl": "https://tailwindflex.com/@bonheur-developer1/3d-card-2",
+    "mention": "Créé par @bonheur-developer1 sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>3D Flip Card with Tailwind</title>\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n  <style>\n    .flip-card {\n      perspective: 1000px;\n    }\n\n    .flip-inner {\n      transition: transform 0.8s;\n      transform-style: preserve-3d;\n    }\n\n    .flipped {\n      transform: rotateY(180deg);\n    }\n\n    .flip-front, .flip-back {\n      backface-visibility: hidden;\n      -webkit-backface-visibility: hidden;\n    }\n\n    .flip-back {\n      transform: rotateY(180deg);\n    }\n  </style>\n</head>\n<body class=\"bg-gradient-to-br from-purple-500 to-indigo-700 min-h-screen flex items-center justify-center\">\n\n  <div class=\"flip-card w-80 h-48\" onclick=\"flipCard(this)\">\n    <div class=\"flip-inner relative w-full h-full\">\n      <!-- Front -->\n      <div class=\"flip-front absolute w-full h-full bg-white text-black flex items-center justify-center rounded-xl shadow-xl text-xl font-bold\">\n        Click Me (Front)\n      </div>\n      <!-- Back -->\n      <div class=\"flip-back absolute w-full h-full bg-indigo-600 text-white flex items-center justify-center rounded-xl shadow-xl text-xl font-bold\">\n        Hello! (Back)\n      </div>\n    </div>\n  </div>\n\n  <script>\n    function flipCard(el) {\n      const inner = el.querySelector('.flip-inner');\n      inner.classList.toggle('flipped');\n    }\n  </script>\n\n</body>\n</html>"
+  }
+}

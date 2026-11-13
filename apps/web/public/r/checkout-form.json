@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkout-form",
+  "type": "registry:ui",
+  "title": "Checkout form",
+  "description": "Checkout form - Créé par @sienna sur TailwindFlex.",
+  "author": "@sienna (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/checkout-form.tsx",
+      "content": "/**\n * Component: Checkout form\n * Author: @sienna (https://tailwindflex.com/@sienna)\n * Source: https://tailwindflex.com/@sienna/checkout-form\n * Attribution: Créé par @sienna sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CheckoutForm() {\n  return (\n    <div>\n    <div className=\"container mx-auto p4-10\">\r\n        <div className=\"max-w-md mx-auto bg-white rounded-lg overflow-hidden md\">\r\n            <div className=\"md\">\r\n                <div className=\"w-full px-6 py-8 md8\">\r\n                    <h2 className=\"text-2xl font-bold text-gray-800\">Checkout</h2>\r\n                    <p className=\"mt-4 text-gray-600\">Please fill out the form below to complete your purchase.</p>\r\n                    <form className=\"mt-6\">\r\n                        <div className=\"mb-6\">\r\n                            <label className=\"block text-gray-800 font-bold mb-2\" htmlFor=\"name\">\r\n                                Name\r\n                            </label>\r\n                            <input className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\" id=\"name\" type=\"text\" placeholder=\"John Doe\" />\r\n                        </div>\r\n                        <div className=\"mb-6\">\r\n                            <label className=\"block text-gray-800 font-bold mb-2\" htmlFor=\"email\">\r\n                                Email\r\n                            </label>\r\n                            <input className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\" id=\"email\" type=\"email\" placeholder=\"johndoe.com\" />\r\n                        </div>\r\n                        <div className=\"mb-6\">\r\n                            <label className=\"block text-gray-800 font-bold mb-2\" htmlFor=\"card_number\">\r\n                                Card Number\r\n                            </label>\r\n                            <input className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\" id=\"card_number\" type=\"text\" placeholder=\"**** **** **** 1234\" />\r\n                        </div>\r\n                        <div className=\"mb-6\">\r\n                            <label className=\"block text-gray-800 font-bold mb-2\" htmlFor=\"expiration_date\">\r\n                                Expiration Date\r\n                            </label>\r\n                            <input className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\" id=\"expiration_date\" type=\"text\" placeholder=\"MM / YY\" />\r\n                        </div>\r\n                        <div className=\"mb-6\">\r\n                            <label className=\"block text-gray-800 font-bold mb-2\" htmlFor=\"cvv\">\r\n                                CVV\r\n                            </label>\r\n                            <input className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\" id=\"cvv\" type=\"text\" placeholder=\"***\" />\r\n                        </div>\r\n                        <button className=\"bg-indigo-500 hover700 text-white font-bold py-2 px-4 rounded focus focus\" type=\"button\">\r\n                            Submit\r\n                        </button>\r\n                    </form>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sienna",
+    "authorUrl": "https://tailwindflex.com/@sienna",
+    "sourceUrl": "https://tailwindflex.com/@sienna/checkout-form",
+    "mention": "Créé par @sienna sur TailwindFlex",
+    "rawHtml": "<div class=\"container mx-auto p4-10\">\r\n    <div class=\"max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-xl\">\r\n        <div class=\"md:flex\">\r\n            <div class=\"w-full px-6 py-8 md:p-8\">\r\n                <h2 class=\"text-2xl font-bold text-gray-800\">Checkout</h2>\r\n                <p class=\"mt-4 text-gray-600\">Please fill out the form below to complete your purchase.</p>\r\n                <form class=\"mt-6\">\r\n                    <div class=\"mb-6\">\r\n                        <label class=\"block text-gray-800 font-bold mb-2\" for=\"name\">\r\n                            Name\r\n                        </label>\r\n                        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"name\" type=\"text\" placeholder=\"John Doe\">\r\n                    </div>\r\n                    <div class=\"mb-6\">\r\n                        <label class=\"block text-gray-800 font-bold mb-2\" for=\"email\">\r\n                            Email\r\n                        </label>\r\n                        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"email\" type=\"email\" placeholder=\"johndoe@example.com\">\r\n                    </div>\r\n                    <div class=\"mb-6\">\r\n                        <label class=\"block text-gray-800 font-bold mb-2\" for=\"card_number\">\r\n                            Card Number\r\n                        </label>\r\n                        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"card_number\" type=\"text\" placeholder=\"**** **** **** 1234\">\r\n                    </div>\r\n                    <div class=\"mb-6\">\r\n                        <label class=\"block text-gray-800 font-bold mb-2\" for=\"expiration_date\">\r\n                            Expiration Date\r\n                        </label>\r\n                        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"expiration_date\" type=\"text\" placeholder=\"MM / YY\">\r\n                    </div>\r\n                    <div class=\"mb-6\">\r\n                        <label class=\"block text-gray-800 font-bold mb-2\" for=\"cvv\">\r\n                            CVV\r\n                        </label>\r\n                        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"cvv\" type=\"text\" placeholder=\"***\">\r\n                    </div>\r\n                    <button class=\"bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\" type=\"button\">\r\n                        Submit\r\n                    </button>\r\n                </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

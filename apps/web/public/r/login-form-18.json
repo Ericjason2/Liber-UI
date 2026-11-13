@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-form-18",
+  "type": "registry:ui",
+  "title": "login_form",
+  "description": "login_form - Créé par @nii-fanny sur TailwindFlex.",
+  "author": "@nii-fanny (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/login-form-18.tsx",
+      "content": "/**\n * Component: login_form\n * Author: @nii-fanny (https://tailwindflex.com/@nii-fanny)\n * Source: https://tailwindflex.com/@nii-fanny/login-form-18\n * Attribution: Créé par @nii-fanny sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LoginForm18() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Login Form</title>\\n    \\n</head>\\n<body class=\\\"bg-gray-100 min-h-screen flex items-center justify-center\\\">\\n    <div class=\\\"bg-white p-8 rounded-lg shadow-md w-full max-w-md\\\">\\n        <div class=\\\"text-center mb-8\\\">\\n            <h1 class=\\\"text-3xl font-bold text-gray-800\\\">Welcome Back</h1>\\n            <p class=\\\"text-gray-600 mt-2\\\">Please enter your credentials to login</p>\\n        </div>\\n        \\n        <form class=\\\"space-y-6\\\">\\n            <div>\\n                <label for=\\\"email\\\" class=\\\"block text-sm font-medium text-gray-700 mb-1\\\">Email Address</label>\\n                <input \\n                    type=\\\"email\\\" \\n                    id=\\\"email\\\" \\n                    class=\\\"w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent\\\"\\n                    placeholder=\\\"your@email.com\\\"\\n                    required\\n                >\\n            </div>\\n            \\n            <div>\\n                <label for=\\\"password\\\" class=\\\"block text-sm font-medium text-gray-700 mb-1\\\">Password</label>\\n                <input \\n                    type=\\\"password\\\" \\n                    id=\\\"password\\\" \\n                    class=\\\"w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent\\\"\\n                    placeholder=\\\"••••••••\\\"\\n                    required\\n                >\\n            </div>\\n            \\n            <div class=\\\"flex items-center justify-between\\\">\\n                <div class=\\\"flex items-center\\\">\\n                    <input \\n                        type=\\\"checkbox\\\" \\n                        id=\\\"remember\\\"\\n                        class=\\\"h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded\\\"\\n                    >\\n                    <label for=\\\"remember\\\" class=\\\"ml-2 block text-sm text-gray-700\\\">Remember me</label>\\n                </div>\\n                \\n                <a href=\\\"#\\\" class=\\\"text-sm text-blue-600 hover:text-blue-500\\\">Forgot password?</a>\\n            </div>\\n            \\n            <button\\n                type=\\\"submit\\\"\\n                class=\\\"w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-150\\\"\\n            >\\n                Sign In\\n            </button>\\n        </form>\\n        \\n        <div class=\\\"mt-6 text-center\\\">\\n            <p class=\\\"text-sm text-gray-600\\\">\\n                Don't have an account? \\n                <a href=\\\"#\\\" class=\\\"text-blue-600 hover:text-blue-500 font-medium\\\">Sign up</a>\\n            </p>\\n        </div>\\n    </div>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@nii-fanny",
+    "authorUrl": "https://tailwindflex.com/@nii-fanny",
+    "sourceUrl": "https://tailwindflex.com/@nii-fanny/login-form-18",
+    "mention": "Créé par @nii-fanny sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Login Form</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gray-100 min-h-screen flex items-center justify-center\">\n    <div class=\"bg-white p-8 rounded-lg shadow-md w-full max-w-md\">\n        <div class=\"text-center mb-8\">\n            <h1 class=\"text-3xl font-bold text-gray-800\">Welcome Back</h1>\n            <p class=\"text-gray-600 mt-2\">Please enter your credentials to login</p>\n        </div>\n        \n        <form class=\"space-y-6\">\n            <div>\n                <label for=\"email\" class=\"block text-sm font-medium text-gray-700 mb-1\">Email Address</label>\n                <input \n                    type=\"email\" \n                    id=\"email\" \n                    class=\"w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent\"\n                    placeholder=\"your@email.com\"\n                    required\n                >\n            </div>\n            \n            <div>\n                <label for=\"password\" class=\"block text-sm font-medium text-gray-700 mb-1\">Password</label>\n                <input \n                    type=\"password\" \n                    id=\"password\" \n                    class=\"w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent\"\n                    placeholder=\"••••••••\"\n                    required\n                >\n            </div>\n            \n            <div class=\"flex items-center justify-between\">\n                <div class=\"flex items-center\">\n                    <input \n                        type=\"checkbox\" \n                        id=\"remember\"\n                        class=\"h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded\"\n                    >\n                    <label for=\"remember\" class=\"ml-2 block text-sm text-gray-700\">Remember me</label>\n                </div>\n                \n                <a href=\"#\" class=\"text-sm text-blue-600 hover:text-blue-500\">Forgot password?</a>\n            </div>\n            \n            <button\n                type=\"submit\"\n                class=\"w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-150\"\n            >\n                Sign In\n            </button>\n        </form>\n        \n        <div class=\"mt-6 text-center\">\n            <p class=\"text-sm text-gray-600\">\n                Don't have an account? \n                <a href=\"#\" class=\"text-blue-600 hover:text-blue-500 font-medium\">Sign up</a>\n            </p>\n        </div>\n    </div>\n</body>\n</html>"
+  }
+}

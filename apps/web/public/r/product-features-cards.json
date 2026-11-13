@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "product-features-cards",
+  "type": "registry:ui",
+  "title": "Product features cards",
+  "description": "Product features cards - Créé par @henrik sur TailwindFlex.",
+  "author": "@henrik (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/product-features-cards.tsx",
+      "content": "/**\n * Component: Product features cards\n * Author: @henrik (https://tailwindflex.com/@henrik)\n * Source: https://tailwindflex.com/@henrik/product-features-cards\n * Attribution: Créé par @henrik sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProductFeaturesCards() {\n  return (\n    <div>\n    <div className=\"h-screen bg-gray-100 dark900 text-gray-800 dark\">\n        <div className=\"container mx-auto px-4 py-8\">\n            <h2 className=\"text-3xl font-semibold text-center text-gray-800 dark200 mb-8\">\n                Featured Resources\n            </h2>\n    \n            <div className=\"grid grid-cols-1 sm2 lg3 gap-8\">\n                <div className=\"bg-white dark800 shadow-lg rounded-lg overflow-hidden\">\n                    <img src=\"https://tailwindcss.com/_next/static/media/headlessui@75.c1d50bc1.jpg\"\n                        alt=\"Headless UI\" className=\"w-full h-64 object-cover\" />\n                    <div className=\"p-4 md6\">\n                        <h3 className=\"text-xl font-semibold text-indigo-500 dark300 mb-2\">Headless UI</h3>\n                        <p className=\"text-gray-700 dark300 mb-4 two-lines\">\n                            Completely unstyled, fully accessible UI\n                            components,\n                            designed to integrate beautifully with Tailwind CSS.\n                        </p>\n                        <a href=\"#\"\n                            className=\"inline-block bg-indigo-500 hover600 text-white px-4 py-2 rounded-full\">Learn\n                            More</a>\n                    </div>\n                </div>\n    \n                <div className=\"bg-white dark800 shadow-lg rounded-lg overflow-hidden\">\n                    <img src=\"https://tailwindcss.com/_next/static/media/heroicons@75.4a558f35.jpg\"\n                        alt=\"Heroicons\" className=\"w-full h-64 object-cover\" />\n                    <div className=\"p-4 md6\">\n                        <h3 className=\"text-xl font-semibold text-purple-500 dark300 mb-2\">Heroicons</h3>\n                        <p className=\"text-gray-700 dark300 mb-4 two-lines\">A set of 450+ free MIT-licensed SVG icons.\n                            Available\n                            as basic SVG icons and via first-party React and Vue libraries.</p>\n                        <a href=\"#\"\n                            className=\"inline-block bg-purple-500 hover600 text-white px-4 py-2 rounded-full\">Learn\n                            More</a>\n                    </div>\n                </div>\n    \n                <div className=\"bg-white dark800 shadow-lg rounded-lg overflow-hidden\">\n                    <img src=\"https://tailwindcss.com/_next/static/media/heropatterns@75.82a09697.jpg\"\n                        alt=\"Hero Patterns\" className=\"w-full h-64 object-cover\" />\n                    <div className=\"p-4 md6\">\n                        <h3 className=\"text-xl font-semibold text-cyan-500 dark300 mb-2\">Hero Patterns</h3>\n                        <p className=\"text-gray-700 dark300 mb-4 two-lines\">A collection of over 100 free MIT-licensed\n                            high-quality\n                            SVG patterns for you to use in your web projects.</p>\n                        <a href=\"#\"\n                            className=\"inline-block bg-cyan-500 hover600 text-white px-4 py-2 rounded-full\">Learn\n                            More</a>\n                    </div>\n                </div>\n    \n                \n    \n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "grid",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@henrik",
+    "authorUrl": "https://tailwindflex.com/@henrik",
+    "sourceUrl": "https://tailwindflex.com/@henrik/product-features-cards",
+    "mention": "Créé par @henrik sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white\">\n    <div class=\"container mx-auto px-4 py-8\">\n        <h2 class=\"text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8\">\n            Featured Resources\n        </h2>\n\n        <div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8\">\n            <div class=\"bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden\">\n                <img src=\"https://tailwindcss.com/_next/static/media/headlessui@75.c1d50bc1.jpg\"\n                    alt=\"Headless UI\" class=\"w-full h-64 object-cover\">\n                <div class=\"p-4 md:p-6\">\n                    <h3 class=\"text-xl font-semibold text-indigo-500 dark:text-indigo-300 mb-2\">Headless UI</h3>\n                    <p class=\"text-gray-700 dark:text-gray-300 mb-4 two-lines\">\n                        Completely unstyled, fully accessible UI\n                        components,\n                        designed to integrate beautifully with Tailwind CSS.\n                    </p>\n                    <a href=\"#\"\n                        class=\"inline-block bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-full\">Learn\n                        More</a>\n                </div>\n            </div>\n\n            <div class=\"bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden\">\n                <img src=\"https://tailwindcss.com/_next/static/media/heroicons@75.4a558f35.jpg\"\n                    alt=\"Heroicons\" class=\"w-full h-64 object-cover\">\n                <div class=\"p-4 md:p-6\">\n                    <h3 class=\"text-xl font-semibold text-purple-500 dark:text-purple-300 mb-2\">Heroicons</h3>\n                    <p class=\"text-gray-700 dark:text-gray-300 mb-4 two-lines\">A set of 450+ free MIT-licensed SVG icons.\n                        Available\n                        as basic SVG icons and via first-party React and Vue libraries.</p>\n                    <a href=\"#\"\n                        class=\"inline-block bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-full\">Learn\n                        More</a>\n                </div>\n            </div>\n\n            <div class=\"bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden\">\n                <img src=\"https://tailwindcss.com/_next/static/media/heropatterns@75.82a09697.jpg\"\n                    alt=\"Hero Patterns\" class=\"w-full h-64 object-cover\">\n                <div class=\"p-4 md:p-6\">\n                    <h3 class=\"text-xl font-semibold text-cyan-500 dark:text-cyan-300 mb-2\">Hero Patterns</h3>\n                    <p class=\"text-gray-700 dark:text-gray-300 mb-4 two-lines\">A collection of over 100 free MIT-licensed\n                        high-quality\n                        SVG patterns for you to use in your web projects.</p>\n                    <a href=\"#\"\n                        class=\"inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-full\">Learn\n                        More</a>\n                </div>\n            </div>\n\n            <!-- Add more items as needed, following the same structure -->\n\n        </div>\n    </div>\n</div>"
+  }
+}

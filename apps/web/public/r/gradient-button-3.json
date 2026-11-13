@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "gradient-button-3",
+  "type": "registry:ui",
+  "title": "gradient button",
+  "description": "gradient button - Créé par @akram6t sur TailwindFlex.",
+  "author": "@akram6t (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/gradient-button-3.tsx",
+      "content": "/**\n * Component: gradient button\n * Author: @akram6t (https://tailwindflex.com/@akram6t)\n * Source: https://tailwindflex.com/@akram6t/gradient-button-3\n * Attribution: Créé par @akram6t sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function GradientButton3() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Beautiful RGB Button</title>\\n    <link href=\\\"https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css\\\" rel=\\\"stylesheet\\\">\\n    <style>\\n        .rgb-button {\\n            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);\\n            background-size: 600% 600%;\\n            animation: gradient 5s ease infinite;\\n        }\\n\\n        @keyframes gradient {\\n            0% { background-position: 0% 50%; }\\n            50% { background-position: 100% 50%; }\\n            100% { background-position: 0% 50%; }\\n        }\\n    </style>\\n</head>\\n<body class=\\\"bg-gray-900 flex items-center justify-center min-h-screen\\\">\\n    <button class=\\\"rgb-button text-white font-bold py-4 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-110\\\">\\n        Click Me!\\n    </button>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@akram6t",
+    "authorUrl": "https://tailwindflex.com/@akram6t",
+    "sourceUrl": "https://tailwindflex.com/@akram6t/gradient-button-3",
+    "mention": "Créé par @akram6t sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Beautiful RGB Button</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css\" rel=\"stylesheet\">\n    <style>\n        .rgb-button {\n            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);\n            background-size: 600% 600%;\n            animation: gradient 5s ease infinite;\n        }\n\n        @keyframes gradient {\n            0% { background-position: 0% 50%; }\n            50% { background-position: 100% 50%; }\n            100% { background-position: 0% 50%; }\n        }\n    </style>\n</head>\n<body class=\"bg-gray-900 flex items-center justify-center min-h-screen\">\n    <button class=\"rgb-button text-white font-bold py-4 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-110\">\n        Click Me!\n    </button>\n</body>\n</html>"
+  }
+}

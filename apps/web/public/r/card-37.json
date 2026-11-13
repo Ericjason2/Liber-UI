@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-37",
+  "type": "registry:ui",
+  "title": "card",
+  "description": "card - Créé par @pablitodgb sur TailwindFlex.",
+  "author": "@pablitodgb (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-37.tsx",
+      "content": "/**\n * Component: card\n * Author: @pablitodgb (https://tailwindflex.com/@pablitodgb)\n * Source: https://tailwindflex.com/@pablitodgb/card-37\n * Attribution: Créé par @pablitodgb sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Card37() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"p-0 m-0 h-full w-full text-slate-600 bg-slate-200 flex justify-center items-center dark:text-slate-200 dark:bg-slate-600\\\">\\n  <div class=\\\"p-1 m-1 bg-slate-100 rounded-lg h-auto w-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 shadow shadow-lg shadow-slate-500/50 dark:shadow-cyan-500/50\\\">\\n    <div class=\\\"bg-slate-100 rounded-lg h-72 w-60 overflow-hidden shadow shadow-lg shadow-slate-500/50 dark:shadow-cyan-500/50\\\">\\n    <img class=\\\"h-full w-full object-cover transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 \\\" src=\\\"https://images.unsplash.com/photo-1631557673853-b5c9c45527ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxmbGFza3xlbnwwfDB8fHwxNzUwODM3MTM0fDA&ixlib=rb-4.1.0&q=80&w=1080\\\"/>\\n    <div class=\\\"h-fit w-full  p-1 relative -top-20 bg-white/30 backdrop-blur-sm rounded-lg\\\">\\n      <main class=\\\"w-fit text-slate-200 relative top-1\\\">\\n        <p class=\\\"text-md bg-transparent\\\">Lorem</P>\\n        <p class=\\\"text-xl font-semibold\\\">Lorem</P>\\n      </main>\\n      <main class=\\\"p-1 m-1 w-fit text-center text-slate-200 text-xl font-semibold rounded-lg obesity-10 relative -top-10 left-48\\\">90</main>\\n    </div>\\n    </div>\\n    <div class=\\\"bg-slate-100 rounded-lg h-72 w-60 overflow-hidden shadow shadow-lg shadow-slate-500/50 dark:shadow-cyan-500/50\\\">\\n    <img class=\\\"h-full w-full object-cover transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 \\\" src=\\\"https://images.unsplash.com/photo-1631557673853-b5c9c45527ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxmbGFza3xlbnwwfDB8fHwxNzUwODM3MTM0fDA&ixlib=rb-4.1.0&q=80&w=1080\\\"/>\\n    <div class=\\\"h-fit w-full  p-1 relative -top-20 bg-white/30 backdrop-blur-sm rounded-lg\\\">\\n      <main class=\\\"w-fit text-slate-200 relative top-1\\\">\\n        <p class=\\\"text-md bg-transparent\\\">Lorem</P>\\n        <p class=\\\"text-xl font-semibold\\\">Lorem</P>\\n      </main>\\n      <main class=\\\"p-1 m-1 w-fit text-center text-slate-200 text-xl font-semibold rounded-lg obesity-10 relative -top-10 left-48\\\">90</main>\\n    </div>\\n    </div>\\n    <div class=\\\"bg-slate-100 rounded-lg h-72 w-60 overflow-hidden shadow shadow-lg shadow-slate-500/50 dark:shadow-cyan-500/50\\\">\\n    <img class=\\\"h-full w-full object-cover transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 \\\" src=\\\"https://images.unsplash.com/photo-1631557673853-b5c9c45527ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxmbGFza3xlbnwwfDB8fHwxNzUwODM3MTM0fDA&ixlib=rb-4.1.0&q=80&w=1080\\\"/>\\n    <div class=\\\"h-fit w-full  p-1 relative -top-20 bg-white/30 backdrop-blur-sm rounded-lg\\\">\\n      <main class=\\\"w-fit text-slate-200 relative top-1\\\">\\n        <p class=\\\"text-md bg-transparent\\\">Lorem</P>\\n        <p class=\\\"text-xl font-semibold\\\">Lorem</P>\\n      </main>\\n      <main class=\\\"p-1 m-1 w-fit text-center text-slate-200 text-xl font-semibold rounded-lg obesity-10 relative -top-10 left-48\\\">90</main>\\n    </div>\\n    </div>\\n  </div>\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@pablitodgb",
+    "authorUrl": "https://tailwindflex.com/@pablitodgb",
+    "sourceUrl": "https://tailwindflex.com/@pablitodgb/card-37",
+    "mention": "Créé par @pablitodgb sur TailwindFlex",
+    "rawHtml": "<div class=\"p-0 m-0 h-full w-full text-slate-600 bg-slate-200 flex justify-center items-center dark:text-slate-200 dark:bg-slate-600\">\n  <div class=\"p-1 m-1 bg-slate-100 rounded-lg h-auto w-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 shadow shadow-lg shadow-slate-500/50 dark:shadow-cyan-500/50\">\n    <div class=\"bg-slate-100 rounded-lg h-72 w-60 overflow-hidden shadow shadow-lg shadow-slate-500/50 dark:shadow-cyan-500/50\">\n    <img class=\"h-full w-full object-cover transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 \" src=\"https://images.unsplash.com/photo-1631557673853-b5c9c45527ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxmbGFza3xlbnwwfDB8fHwxNzUwODM3MTM0fDA&ixlib=rb-4.1.0&q=80&w=1080\"/>\n    <div class=\"h-fit w-full  p-1 relative -top-20 bg-white/30 backdrop-blur-sm rounded-lg\">\n      <main class=\"w-fit text-slate-200 relative top-1\">\n        <p class=\"text-md bg-transparent\">Lorem</P>\n        <p class=\"text-xl font-semibold\">Lorem</P>\n      </main>\n      <main class=\"p-1 m-1 w-fit text-center text-slate-200 text-xl font-semibold rounded-lg obesity-10 relative -top-10 left-48\">90</main>\n    </div>\n    </div>\n    <div class=\"bg-slate-100 rounded-lg h-72 w-60 overflow-hidden shadow shadow-lg shadow-slate-500/50 dark:shadow-cyan-500/50\">\n    <img class=\"h-full w-full object-cover transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 \" src=\"https://images.unsplash.com/photo-1631557673853-b5c9c45527ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxmbGFza3xlbnwwfDB8fHwxNzUwODM3MTM0fDA&ixlib=rb-4.1.0&q=80&w=1080\"/>\n    <div class=\"h-fit w-full  p-1 relative -top-20 bg-white/30 backdrop-blur-sm rounded-lg\">\n      <main class=\"w-fit text-slate-200 relative top-1\">\n        <p class=\"text-md bg-transparent\">Lorem</P>\n        <p class=\"text-xl font-semibold\">Lorem</P>\n      </main>\n      <main class=\"p-1 m-1 w-fit text-center text-slate-200 text-xl font-semibold rounded-lg obesity-10 relative -top-10 left-48\">90</main>\n    </div>\n    </div>\n    <div class=\"bg-slate-100 rounded-lg h-72 w-60 overflow-hidden shadow shadow-lg shadow-slate-500/50 dark:shadow-cyan-500/50\">\n    <img class=\"h-full w-full object-cover transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 \" src=\"https://images.unsplash.com/photo-1631557673853-b5c9c45527ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxmbGFza3xlbnwwfDB8fHwxNzUwODM3MTM0fDA&ixlib=rb-4.1.0&q=80&w=1080\"/>\n    <div class=\"h-fit w-full  p-1 relative -top-20 bg-white/30 backdrop-blur-sm rounded-lg\">\n      <main class=\"w-fit text-slate-200 relative top-1\">\n        <p class=\"text-md bg-transparent\">Lorem</P>\n        <p class=\"text-xl font-semibold\">Lorem</P>\n      </main>\n      <main class=\"p-1 m-1 w-fit text-center text-slate-200 text-xl font-semibold rounded-lg obesity-10 relative -top-10 left-48\">90</main>\n    </div>\n    </div>\n  </div>\n</div>"
+  }
+}

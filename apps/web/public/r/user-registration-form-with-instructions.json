@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "user-registration-form-with-instructions",
+  "type": "registry:ui",
+  "title": "User registration form with Instructions",
+  "description": "User registration form with Instructions - Créé par @fagundo sur TailwindFlex.",
+  "author": "@fagundo (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/user-registration-form-with-instructions.tsx",
+      "content": "/**\n * Component: User registration form with Instructions\n * Author: @fagundo (https://tailwindflex.com/@fagundo)\n * Source: https://tailwindflex.com/@fagundo/user-registration-form-with-instructions\n * Attribution: Créé par @fagundo sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function UserRegistrationFormWithInstructions() {\n  return (\n    <div>\n    <div className=\"p-10\">\n        <h1 className=\"mb-8 font-extrabold text-4xl\">Register</h1>\n        <div className=\"grid grid-cols-1 md2 gap-8\">\n    \n            <form>\n                <div>\n                    <label className=\"block font-semibold\" htmlFor=\"name\">Name</label>\n                    <input className=\"w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full\" id=\"name\" type=\"text\" name=\"name\" required=\"required\" autoFocus=\"autofocus\" />\n                </div>\n    \n                <div className=\"mt-4\">\n                    <label className=\"block font-semibold\" htmlFor=\"email\">Email</label>\n                    <input className=\"w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full\" id=\"email\" type=\"email\" name=\"email\" required=\"required\" />\n                </div>\n    \n                <div className=\"mt-4\">\n                    <label className=\"block font-semibold\" htmlFor=\"password\">Password</label>\n                    <input className=\"w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full\" id=\"password\" type=\"password\" name=\"password\" required=\"required\" autoComplete=\"new-password\" />\n                </div>\n    \n                <div className=\"flex items-center justify-between mt-8\">\n                    <button type=\"submit\" className=\"flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover700 md4 md md10\">Register</button>\n                    <a className=\"font-semibold\">\n                        Already registered?\n                    </a>\n                </div>\n            </form>\n    \n            <aside className=\"\">\n                <div className=\"bg-gray-100 p-8 rounded\">\n                    <h2 className=\"font-bold text-2xl\">Instructions</h2>\n                    <ul className=\"list-disc mt-4 list-inside\">\n                        <li>All users must provide a valid email address and password to create an account.</li>\n                        <li>Users must not use offensive, vulgar, or otherwise inappropriate language in their username or profile information</li>\n                        <li>Users must not create multiple accounts for the same person.</li>\n                    </ul>\n                </div>\n            </aside>\n    \n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@fagundo",
+    "authorUrl": "https://tailwindflex.com/@fagundo",
+    "sourceUrl": "https://tailwindflex.com/@fagundo/user-registration-form-with-instructions",
+    "mention": "Créé par @fagundo sur TailwindFlex",
+    "rawHtml": "<div class=\"p-10\">\n    <h1 class=\"mb-8 font-extrabold text-4xl\">Register</h1>\n    <div class=\"grid grid-cols-1 md:grid-cols-2 gap-8\">\n\n        <form>\n            <div>\n                <label class=\"block font-semibold\" for=\"name\">Name</label>\n                <input class=\"w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full\" id=\"name\" type=\"text\" name=\"name\" required=\"required\" autofocus=\"autofocus\">\n            </div>\n\n            <div class=\"mt-4\">\n                <label class=\"block font-semibold\" for=\"email\">Email</label>\n                <input class=\"w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full\" id=\"email\" type=\"email\" name=\"email\" required=\"required\">\n            </div>\n\n            <div class=\"mt-4\">\n                <label class=\"block font-semibold\" for=\"password\">Password</label>\n                <input class=\"w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full\" id=\"password\" type=\"password\" name=\"password\" required=\"required\" autocomplete=\"new-password\">\n            </div>\n\n            <div class=\"flex items-center justify-between mt-8\">\n                <button type=\"submit\" class=\"flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10\">Register</button>\n                <a class=\"font-semibold\">\n                    Already registered?\n                </a>\n            </div>\n        </form>\n\n        <aside class=\"\">\n            <div class=\"bg-gray-100 p-8 rounded\">\n                <h2 class=\"font-bold text-2xl\">Instructions</h2>\n                <ul class=\"list-disc mt-4 list-inside\">\n                    <li>All users must provide a valid email address and password to create an account.</li>\n                    <li>Users must not use offensive, vulgar, or otherwise inappropriate language in their username or profile information</li>\n                    <li>Users must not create multiple accounts for the same person.</li>\n                </ul>\n            </div>\n        </aside>\n\n    </div>\n</div>"
+  }
+}

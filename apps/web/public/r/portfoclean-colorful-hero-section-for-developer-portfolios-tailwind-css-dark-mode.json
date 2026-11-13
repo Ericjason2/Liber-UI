@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "portfoclean-colorful-hero-section-for-developer-portfolios-tailwind-css-dark-mode",
+  "type": "registry:ui",
+  "title": "PortfoClean &amp; Colorful Hero Section for Developer Portfolios (Tailwind CSS + Dark Mode)",
+  "description": "PortfoClean &amp; Colorful Hero Section for Developer Portfolios (Tailwind CSS + Dark Mode) - Créé par @sai-bende sur TailwindFlex.",
+  "author": "@sai-bende (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/portfoclean-colorful-hero-section-for-developer-portfolios-tailwind-css-dark-mode.tsx",
+      "content": "/**\n * Component: PortfoClean &amp; Colorful Hero Section for Developer Portfolios (Tailwind CSS + Dark Mode)\n * Author: @sai-bende (https://tailwindflex.com/@sai-bende)\n * Source: https://tailwindflex.com/@sai-bende/portfoclean-colorful-hero-section-for-developer-portfolios-tailwind-css-dark-mode\n * Attribution: Créé par @sai-bende sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PortfocleanColorfulHeroSectionForDeveloperPortfoliosTailwindCssDarkMode() {\n  return (\n    <div>\n    \n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css\" />\n    \n    <section className=\"min-h-screen flex items-center justify-center bg-white dark900 px-6 py-20 transition-colors duration-300\">\n      <div className=\"max-w-7xl w-full flex flex-col-reverse lg items-center gap-12\">\n        \n        \n        <div className=\"flex-1 text-center lg animate-fade-in-up\">\n          \n          <h1 className=\"text-5xl sm6xl font-extrabold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-4\">\n            Hi, I'm Sai Bende\n          </h1>\n          <p className=\"text-lg sm text-gray-700 dark300 mb-6 max-w-xl\">\n            A passionate <span className=\"text-indigo-600 dark400 font-medium\">Full-Stack Developer</span> who loves building dynamic UIs and scalable backend systems with the MERN stack.\n          </p>\n    \n          \n          <div className=\"flex flex-col sm gap-4 justify-center lg\">\n            <a href=\"#projects\" className=\"px-6 py-3 text-white bg-gradient-to-r from-purple-600 to-pink-500 hover110 rounded-xl font-semibold transition-transform transform hover105 shadow-md\">\n              🚀 View Projects\n            </a>\n            <a href=\"/resume.pdf\" download className=\"px-6 py-3 border border-indigo-500 text-indigo-500 hover500 hover dark400 dark400 dark400 dark rounded-xl font-semibold transition-transform transform hover105\">\n              📄 Download Resume\n            </a>\n          </div>\n    \n          \n          <div className=\"flex gap-6 mt-6 justify-center lg text-gray-500 dark300 text-xl\">\n            <a href=\"https://github.com/SaiBende\" target=\"_blank\" className=\"hover500 transition\"><i className=\"fab fa-github\"></i></a>\n            <a href=\"https://linkedin.com/in/saibende\" target=\"_blank\" className=\"hover500 transition\"><i className=\"fab fa-linkedin\"></i></a>\n            <a href=\"mailto5703.com\" className=\"hover500 transition\"><i className=\"fas fa-envelope\"></i></a>\n          </div>\n        </div>\n    \n        \n        <div className=\"flex-1 flex justify-center animate-float\">\n          <img src=\"https://avatars.githubusercontent.com/u/93364713?v=4\" alt=\"Sai Bende\" className=\"w-64 h-64 rounded-full border-4 border-indigo-500 dark400 shadow-xl object-cover hover105 transition duration-500\" />\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sai-bende",
+    "authorUrl": "https://tailwindflex.com/@sai-bende",
+    "sourceUrl": "https://tailwindflex.com/@sai-bende/portfoclean-colorful-hero-section-for-developer-portfolios-tailwind-css-dark-mode",
+    "mention": "Créé par @sai-bende sur TailwindFlex",
+    "rawHtml": "<!-- Font Awesome -->\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css\" />\n\n<section class=\"min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 px-6 py-20 transition-colors duration-300\">\n  <div class=\"max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center gap-12\">\n    \n    <!-- Left Content -->\n    <div class=\"flex-1 text-center lg:text-left animate-fade-in-up\">\n      <!-- Gradient Text Heading -->\n      <h1 class=\"text-5xl sm:text-6xl font-extrabold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-4\">\n        Hi, I'm Sai Bende\n      </h1>\n      <p class=\"text-lg sm:text-xl text-gray-700 dark:text-gray-300 mb-6 max-w-xl\">\n        A passionate <span class=\"text-indigo-600 dark:text-indigo-400 font-medium\">Full-Stack Developer</span> who loves building dynamic UIs and scalable backend systems with the MERN stack.\n      </p>\n\n      <!-- CTA Buttons -->\n      <div class=\"flex flex-col sm:flex-row gap-4 justify-center lg:justify-start\">\n        <a href=\"#projects\" class=\"px-6 py-3 text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:brightness-110 rounded-xl font-semibold transition-transform transform hover:scale-105 shadow-md\">\n          🚀 View Projects\n        </a>\n        <a href=\"/resume.pdf\" download class=\"px-6 py-3 border border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-400 dark:hover:text-black rounded-xl font-semibold transition-transform transform hover:scale-105\">\n          📄 Download Resume\n        </a>\n      </div>\n\n      <!-- Social Icons -->\n      <div class=\"flex gap-6 mt-6 justify-center lg:justify-start text-gray-500 dark:text-gray-300 text-xl\">\n        <a href=\"https://github.com/SaiBende\" target=\"_blank\" class=\"hover:text-purple-500 transition\"><i class=\"fab fa-github\"></i></a>\n        <a href=\"https://linkedin.com/in/saibende\" target=\"_blank\" class=\"hover:text-purple-500 transition\"><i class=\"fab fa-linkedin\"></i></a>\n        <a href=\"mailto:bendesai5703@gmail.com\" class=\"hover:text-purple-500 transition\"><i class=\"fas fa-envelope\"></i></a>\n      </div>\n    </div>\n\n    <!-- Right Image -->\n    <div class=\"flex-1 flex justify-center animate-float\">\n      <img src=\"https://avatars.githubusercontent.com/u/93364713?v=4\" alt=\"Sai Bende\" class=\"w-64 h-64 rounded-full border-4 border-indigo-500 dark:border-indigo-400 shadow-xl object-cover hover:scale-105 transition duration-500\" />\n    </div>\n  </div>\n</section>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "demo-dev",
+  "type": "registry:ui",
+  "title": "demo dev",
+  "description": "demo dev - Créé par @guilidev sur TailwindFlex.",
+  "author": "@guilidev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/demo-dev.tsx",
+      "content": "/**\n * Component: demo dev\n * Author: @guilidev (https://tailwindflex.com/@guilidev)\n * Source: https://tailwindflex.com/@guilidev/demo-dev\n * Attribution: Créé par @guilidev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function DemoDev() {\n  return (\n    <div>\n    <div className=\"bg-white dark800 flex justify-center items-center w-screen h-screen p-5\">\n      <div className=\"border shadow-teal-300 shadow-md max-w-2xl p-6 rounded-lg dark700 dark300\">\n        <h1 className=\"text-4xl font-mono font-extrabold py-3\">Tailwind Playgroundd</h1>\n        <ul className=\"list-disc text-lg px-6\">\n          <li>Everything here works just like it does when you're running Tailwind locally.</li>\n          <li>Live updating as you code.</li>\n          <li>Save and share your component with community</li>\n        </ul>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@guilidev",
+    "authorUrl": "https://tailwindflex.com/@guilidev",
+    "sourceUrl": "https://tailwindflex.com/@guilidev/demo-dev",
+    "mention": "Créé par @guilidev sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\">\n  <div class=\"border shadow-teal-300 shadow-md max-w-2xl p-6 rounded-lg dark:bg-gray-700 dark:text-gray-300\">\n    <h1 class=\"text-4xl font-mono font-extrabold py-3\">Tailwind Playgroundd</h1>\n    <ul class=\"list-disc text-lg px-6\">\n      <li>Everything here works just like it does when you're running Tailwind locally.</li>\n      <li>Live updating as you code.</li>\n      <li>Save and share your component with community</li>\n    </ul>\n  </div>\n</div>"
+  }
+}

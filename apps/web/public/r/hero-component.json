@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-component",
+  "type": "registry:ui",
+  "title": "Hero component",
+  "description": "Hero component - Créé par @freja-jensen sur TailwindFlex.",
+  "author": "@freja-jensen (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-component.tsx",
+      "content": "/**\n * Component: Hero component\n * Author: @freja-jensen (https://tailwindflex.com/@freja-jensen)\n * Source: https://tailwindflex.com/@freja-jensen/hero-component\n * Attribution: Créé par @freja-jensen sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroComponent() {\n  return (\n    <div>\n    <div className=\"bg-gradient-to-r from-blue-500 to-green-500 flex flex-col h-screen\">\n        <nav className=\"bg-white py-6 px-8 flex justify-between items-center\">\n            <a href=\"#\" className=\"text-xl font-bold text-gray-800\">Brand Name</a>\n            <ul className=\"flex space-x-6\">\n                <li><a href=\"#\" className=\"text-gray-800\">Home</a></li>\n                <li><a href=\"#\" className=\"text-gray-800\">About</a></li>\n                <li><a href=\"#\" className=\"text-gray-800\">Services</a></li>\n                <li><a href=\"#\" className=\"text-gray-800\">Contact</a></li>\n            </ul>\n        </nav>\n        <header className=\"flex-grow flex flex-col justify-center items-center px-8\">\n            <h1 className=\"text-5xl font-bold text-white text-center mb-8\">Welcome to Brand Name</h1>\n            <p className=\"text-white text-lg text-center mb-12\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla\n                sagittis lobortis sapien, eu tincidunt metus semper eget. Sed at malesuada arcu. Pellentesque habitant morbi\n                tristique senectus et netus et malesuada fames ac turpis egestas.</p>\n            <a href=\"#\"\n                className=\"text-lg bg-yellow-500 hover600 text-white py-4 px-6 rounded-lg font-bold shadow-md =\">Get\n                started\n            </a>\n        </header>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@freja-jensen",
+    "authorUrl": "https://tailwindflex.com/@freja-jensen",
+    "sourceUrl": "https://tailwindflex.com/@freja-jensen/hero-component",
+    "mention": "Créé par @freja-jensen sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gradient-to-r from-blue-500 to-green-500 flex flex-col h-screen\">\n    <nav class=\"bg-white py-6 px-8 flex justify-between items-center\">\n        <a href=\"#\" class=\"text-xl font-bold text-gray-800\">Brand Name</a>\n        <ul class=\"flex space-x-6\">\n            <li><a href=\"#\" class=\"text-gray-800\">Home</a></li>\n            <li><a href=\"#\" class=\"text-gray-800\">About</a></li>\n            <li><a href=\"#\" class=\"text-gray-800\">Services</a></li>\n            <li><a href=\"#\" class=\"text-gray-800\">Contact</a></li>\n        </ul>\n    </nav>\n    <header class=\"flex-grow flex flex-col justify-center items-center px-8\">\n        <h1 class=\"text-5xl font-bold text-white text-center mb-8\">Welcome to Brand Name</h1>\n        <p class=\"text-white text-lg text-center mb-12\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla\n            sagittis lobortis sapien, eu tincidunt metus semper eget. Sed at malesuada arcu. Pellentesque habitant morbi\n            tristique senectus et netus et malesuada fames ac turpis egestas.</p>\n        <a href=\"#\"\n            class=\"text-lg bg-yellow-500 hover:bg-yellow-600 text-white py-4 px-6 rounded-lg font-bold shadow-md =\">Get\n            started\n        </a>\n    </header>\n</div>"
+  }
+}

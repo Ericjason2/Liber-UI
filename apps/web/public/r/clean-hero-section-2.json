@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clean-hero-section-2",
+  "type": "registry:ui",
+  "title": "Clean hero section",
+  "description": "Clean hero section - Créé par @laurits sur TailwindFlex.",
+  "author": "@laurits (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/clean-hero-section-2.tsx",
+      "content": "/**\n * Component: Clean hero section\n * Author: @laurits (https://tailwindflex.com/@laurits)\n * Source: https://tailwindflex.com/@laurits/clean-hero-section-2\n * Attribution: Créé par @laurits sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CleanHeroSection2() {\n  return (\n    <div>\n    <section className=\"pt-12 bg-gray-50 sm16\">\r\n        <div className=\"px-4 mx-auto max-w-7xl sm6 lg8\">\r\n            <div className=\"text-center\">\r\n                <p\r\n                    className=\"max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-gray-900 sm sm5xl lg6xl lg\">\r\n                    AI-Powered Customer Service Chatbot\r\n                </p>\r\n                <h1 className=\"max-w-2xl mx-auto px-6 text-lg text-gray-600 font-inter\">\r\n                    Our AI-powered customer service chatbot is an innovative tool that can assist customers 24/7 with their\r\n                    inquiries, providing fast and accurate responses.\r\n                </h1>\r\n                <div className=\"px-8 sm sm sm0 sm5 sm mt-9\">\r\n                    <a href=\"#\" title=\"\"\r\n                        className=\"mb-3 sm0 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent sm rounded-xl hover600 focus focus2 focus2 focus900\"\r\n                        role=\"button\">\r\n                        Create a bot\r\n                    </a>\r\n                    <a href=\"#\"\r\n                        className=\"inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-gray-900 hover transition-all duration-200 bg-gray-100 border-2 border-gray-900 sm rounded-xl hover600 focus focus2 focus2 focus900\"\r\n                        role=\"button\">Book a demo</a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div className=\"bg-white\">\r\n            <div className=\"relative mx-auto mt-4 md8\">\r\n                <div className=\"lg4xl lg\">\r\n                    <img className=\"px-4 md8\" src=\"https://images.unsplash.com/photo-1628277613967-6abca504d0ac\" />\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@laurits",
+    "authorUrl": "https://tailwindflex.com/@laurits",
+    "sourceUrl": "https://tailwindflex.com/@laurits/clean-hero-section-2",
+    "mention": "Créé par @laurits sur TailwindFlex",
+    "rawHtml": "<section class=\"pt-12 bg-gray-50 sm:pt-16\">\r\n    <div class=\"px-4 mx-auto max-w-7xl sm:px-6 lg:px-8\">\r\n        <div class=\"text-center\">\r\n            <p\r\n                class=\"max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight\">\r\n                AI-Powered Customer Service Chatbot\r\n            </p>\r\n            <h1 class=\"max-w-2xl mx-auto px-6 text-lg text-gray-600 font-inter\">\r\n                Our AI-powered customer service chatbot is an innovative tool that can assist customers 24/7 with their\r\n                inquiries, providing fast and accurate responses.\r\n            </h1>\r\n            <div class=\"px-8 sm:items-start sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9\">\r\n                <a href=\"#\" title=\"\"\r\n                    class=\"mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent sm:w-auto rounded-xl hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900\"\r\n                    role=\"button\">\r\n                    Create a bot\r\n                </a>\r\n                <a href=\"#\"\r\n                    class=\"inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-gray-900 hover:text-white transition-all duration-200 bg-gray-100 border-2 border-gray-900 sm:w-auto rounded-xl hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900\"\r\n                    role=\"button\">Book a demo</a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"bg-white\">\r\n        <div class=\"relative mx-auto mt-4 md:mt-8\">\r\n            <div class=\"lg:max-w-4xl lg:mx-auto\">\r\n                <img class=\"px-4 md:mpx-8\" src=\"https://images.unsplash.com/photo-1628277613967-6abca504d0ac\" />\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cards-6",
+  "type": "registry:ui",
+  "title": "Cards",
+  "description": "Cards - Créé par @irahoza-daniel sur TailwindFlex.",
+  "author": "@irahoza-daniel (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cards-6.tsx",
+      "content": "/**\n * Component: Cards\n * Author: @irahoza-daniel (https://tailwindflex.com/@irahoza-daniel)\n * Source: https://tailwindflex.com/@irahoza-daniel/cards-6\n * Attribution: Créé par @irahoza-daniel sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Cards6() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Profile Card</title>\\n    \\n</head>\\n<body class=\\\"bg-gray-100 min-h-screen flex items-center justify-center p-4\\\">\\n    <div class=\\\"max-w-md w-full bg-white rounded-xl  shadow-md overflow-hidden\\\">\\n        <!-- Header with background -->\\n        <div class=\\\"h-24 bg-gradient-to-r from-purple-500 to-pink-500\\\"></div>\\n        \\n        <!-- Profile content -->\\n        <div class=\\\"px-6 py-4\\\">\\n            <!-- Profile image centered between header and content -->\\n            <div class=\\\"flex justify-center -mt-16 mb-4\\\">\\n                <img class=\\\"w-24 h-24 rounded-full border-4 border-white object-cover shadow-lg\\\" \\n                     src=\\\"https://images.unsplash.com/photo-1580894908361-967195033215?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxM3x8ZGV2ZWxvcGVyfGVufDB8MHx8fDE3NDc4OTA1MjV8MA&ixlib=rb-4.1.0&q=80&w=1080\\\" \\n                     alt=\\\"Profile image\\\">\\n            </div>\\n            \\n            <!-- Name and title -->\\n            <div class=\\\"text-center mb-4\\\">\\n                <h2 class=\\\"text-xl font-bold text-gray-800\\\">Irahoza Daniel</h2>\\n                <p class=\\\"text-sm text-gray-600\\\">UX Designer & Frontend Developer</p>\\n            </div>\\n            \\n            <!-- Bio section -->\\n            <div class=\\\"mb-6\\\">\\n                <p class=\\\"text-gray-700 text-center\\\">\\n                    Passionate about creating beautiful, user-friendly interfaces. \\n                    With 5 years of experience in design and development, \\n                    I bridge the gap between aesthetics and functionality.\\n                </p>\\n            </div>\\n            \\n            <!-- Button -->\\n            <div class=\\\"flex justify-center\\\">\\n                <button class=\\\"bg-purple-500 hover:bg-purple-600 text-white font-medium py-2 px-6 rounded-full transition duration-300\\\">\\n                    Contact Me\\n                </button>\\n            </div>\\n            \\n            <!-- Stats (optional) -->\\n            <div class=\\\"flex justify-between mt-6 pt-6 border-t border-gray-200\\\">\\n                <div class=\\\"text-center\\\">\\n                    <span class=\\\"block font-bold text-gray-800\\\">124</span>\\n                    <span class=\\\"text-sm text-gray-600\\\">Projects</span>\\n                </div>\\n                <div class=\\\"text-center\\\">\\n                    <span class=\\\"block font-bold text-gray-800\\\">5.2k</span>\\n                    <span class=\\\"text-sm text-gray-600\\\">Followers</span>\\n                </div>\\n                <div class=\\\"text-center\\\">\\n                    <span class=\\\"block font-bold text-gray-800\\\">86</span>\\n                    <span class=\\\"text-sm text-gray-600\\\">Following</span>\\n                </div>\\n            </div>\\n        </div>\\n    </div>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@irahoza-daniel",
+    "authorUrl": "https://tailwindflex.com/@irahoza-daniel",
+    "sourceUrl": "https://tailwindflex.com/@irahoza-daniel/cards-6",
+    "mention": "Créé par @irahoza-daniel sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Profile Card</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gray-100 min-h-screen flex items-center justify-center p-4\">\n    <div class=\"max-w-md w-full bg-white rounded-xl  shadow-md overflow-hidden\">\n        <!-- Header with background -->\n        <div class=\"h-24 bg-gradient-to-r from-purple-500 to-pink-500\"></div>\n        \n        <!-- Profile content -->\n        <div class=\"px-6 py-4\">\n            <!-- Profile image centered between header and content -->\n            <div class=\"flex justify-center -mt-16 mb-4\">\n                <img class=\"w-24 h-24 rounded-full border-4 border-white object-cover shadow-lg\" \n                     src=\"https://images.unsplash.com/photo-1580894908361-967195033215?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxM3x8ZGV2ZWxvcGVyfGVufDB8MHx8fDE3NDc4OTA1MjV8MA&ixlib=rb-4.1.0&q=80&w=1080\" \n                     alt=\"Profile image\">\n            </div>\n            \n            <!-- Name and title -->\n            <div class=\"text-center mb-4\">\n                <h2 class=\"text-xl font-bold text-gray-800\">Irahoza Daniel</h2>\n                <p class=\"text-sm text-gray-600\">UX Designer & Frontend Developer</p>\n            </div>\n            \n            <!-- Bio section -->\n            <div class=\"mb-6\">\n                <p class=\"text-gray-700 text-center\">\n                    Passionate about creating beautiful, user-friendly interfaces. \n                    With 5 years of experience in design and development, \n                    I bridge the gap between aesthetics and functionality.\n                </p>\n            </div>\n            \n            <!-- Button -->\n            <div class=\"flex justify-center\">\n                <button class=\"bg-purple-500 hover:bg-purple-600 text-white font-medium py-2 px-6 rounded-full transition duration-300\">\n                    Contact Me\n                </button>\n            </div>\n            \n            <!-- Stats (optional) -->\n            <div class=\"flex justify-between mt-6 pt-6 border-t border-gray-200\">\n                <div class=\"text-center\">\n                    <span class=\"block font-bold text-gray-800\">124</span>\n                    <span class=\"text-sm text-gray-600\">Projects</span>\n                </div>\n                <div class=\"text-center\">\n                    <span class=\"block font-bold text-gray-800\">5.2k</span>\n                    <span class=\"text-sm text-gray-600\">Followers</span>\n                </div>\n                <div class=\"text-center\">\n                    <span class=\"block font-bold text-gray-800\">86</span>\n                    <span class=\"text-sm text-gray-600\">Following</span>\n                </div>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pop-up",
+  "type": "registry:ui",
+  "title": "Notification",
+  "description": "Notification - Créé par @olajide-olamide-laemmy sur TailwindFlex.",
+  "author": "@olajide-olamide-laemmy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pop-up.tsx",
+      "content": "/**\n * Component: Notification\n * Author: @olajide-olamide-laemmy (https://tailwindflex.com/@olajide-olamide-laemmy)\n * Source: https://tailwindflex.com/@olajide-olamide-laemmy/pop-up\n * Attribution: Créé par @olajide-olamide-laemmy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PopUp() {\n  return (\n    <div>\n    \n                <div className=\"max-w-xl border mt-5 mx-auto shadow-lg rounded-lg\">\n                  <div\n                  className=\"flex flex-col items-center py-12 gap-4 text-center px-6\"\n                >\n                  <div\n                    className=\"w-16 h-16 rounded-full bg-emerald-500 flex items-center justify-center shadow-[0_8px_24px_rgba(16,185,129,0.2)]\"\n                  >\n                 <span className=\" text-white\"> ✓ </span>\n                  </div>\n                  <div>\n                    <p className=\"font-black text-blue text-base\">Password Updated!</p>\n                    <p className=\"text-[13px] text-text mt-1 max-w-xs\">\n                      Your password has been changed successfully.\n                    </p>\n                  </div>\n                  <button className=\"inline-flex items-center justify-center w-40 px-5 py-3.5 rounded-2xl text-xs md font-medium uppercase tracking-widest text-white  cursor-pointer transition-all duration-300 ease-in-out border-0 outline-none bg-gradient-to-r from-[#3d7ebb] via-[#1e3a78] to-[#1e3a78] hover hover[#183062] hover[#3d7ebb] hover[#1e3a78] w-full px-6\" >\n                    Done\n                  </button>\n                </div>\n                </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@olajide-olamide-laemmy",
+    "authorUrl": "https://tailwindflex.com/@olajide-olamide-laemmy",
+    "sourceUrl": "https://tailwindflex.com/@olajide-olamide-laemmy/pop-up",
+    "mention": "Créé par @olajide-olamide-laemmy sur TailwindFlex",
+    "rawHtml": "<!-- Success state -->\n            <div class=\"max-w-xl border mt-5 mx-auto shadow-lg rounded-lg\">\n              <div\n              class=\"flex flex-col items-center py-12 gap-4 text-center px-6\"\n            >\n              <div\n                class=\"w-16 h-16 rounded-full bg-emerald-500 flex items-center justify-center shadow-[0_8px_24px_rgba(16,185,129,0.2)]\"\n              >\n             <span class=\" text-white\"> ✓ </span>\n              </div>\n              <div>\n                <p class=\"font-black text-blue text-base\">Password Updated!</p>\n                <p class=\"text-[13px] text-text mt-1 max-w-xs\">\n                  Your password has been changed successfully.\n                </p>\n              </div>\n              <button class=\"inline-flex items-center justify-center w-40 px-5 py-3.5 rounded-2xl text-xs md:text-sm font-medium uppercase tracking-widest text-white  cursor-pointer transition-all duration-300 ease-in-out border-0 outline-none bg-gradient-to-r from-[#3d7ebb] via-[#1e3a78] to-[#1e3a78] hover:bg-gradient-to-r hover:from-[#183062] hover:via-[#3d7ebb] hover:to-[#1e3a78] w-full px-6\" >\n                Done\n              </button>\n            </div>\n            </div>"
+  }
+}

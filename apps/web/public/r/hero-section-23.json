@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-23",
+  "type": "registry:ui",
+  "title": "hero section",
+  "description": "hero section - Créé par @saurav-singh sur TailwindFlex.",
+  "author": "@saurav-singh (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-23.tsx",
+      "content": "/**\n * Component: hero section\n * Author: @saurav-singh (https://tailwindflex.com/@saurav-singh)\n * Source: https://tailwindflex.com/@saurav-singh/hero-section-23\n * Attribution: Créé par @saurav-singh sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSection23() {\n  return (\n    <div>\n    <section className=\"px-6 py-20 md32 bg-white dark900\">\n        <div className=\"max-w-7xl mx-auto flex flex-col md items-center justify-between space-y-10 md0\">\n          \n          \n          <div className=\"md1/2\">\n            <h1 className=\"text-4xl md6xl font-bold mb-6 leading-tight\">\n              Step Into Style <br className=\"hidden md\" />\n              with <span className=\"text-orange-500\">Classic Sneakers</span>\n            </h1>\n            <p className=\"text-lg mb-8 text-gray-600 dark300\">\n              Discover comfort, quality, and elegance in every step. Perfect for every occasion.\n            </p>\n            <a href=\"#\" className=\"bg-orange-500 hover600 text-white font-semibold px-6 py-3 rounded-lg transition duration-200\">\n              Shop Now\n            </a>\n          </div>\n    \n          \n          <div className=\"md1/2\">\n            <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn9GcSzJOBc888horStIw5v_cpA6OOGG39NMeDgEg&s\" alt=\"Hero Image\" className=\"rounded-lg shadow-lg w-full\" />\n          </div>\n        </div>\n      </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@saurav-singh",
+    "authorUrl": "https://tailwindflex.com/@saurav-singh",
+    "sourceUrl": "https://tailwindflex.com/@saurav-singh/hero-section-23",
+    "mention": "Créé par @saurav-singh sur TailwindFlex",
+    "rawHtml": "<section class=\"px-6 py-20 md:py-32 bg-white dark:bg-gray-900\">\n    <div class=\"max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-10 md:space-y-0\">\n      \n      <!-- Text Content -->\n      <div class=\"md:w-1/2\">\n        <h1 class=\"text-4xl md:text-6xl font-bold mb-6 leading-tight\">\n          Step Into Style <br class=\"hidden md:block\" />\n          with <span class=\"text-orange-500\">Classic Sneakers</span>\n        </h1>\n        <p class=\"text-lg mb-8 text-gray-600 dark:text-gray-300\">\n          Discover comfort, quality, and elegance in every step. Perfect for every occasion.\n        </p>\n        <a href=\"#\" class=\"bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition duration-200\">\n          Shop Now\n        </a>\n      </div>\n\n      <!-- Hero Image -->\n      <div class=\"md:w-1/2\">\n        <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzJOBc888horStIw5v_cpA6OOGG39NMeDgEg&s\" alt=\"Hero Image\" class=\"rounded-lg shadow-lg w-full\" />\n      </div>\n    </div>\n  </section>"
+  }
+}

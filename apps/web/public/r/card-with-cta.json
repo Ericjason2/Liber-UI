@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-with-cta",
+  "type": "registry:ui",
+  "title": "Greeting Card with CTA",
+  "description": "Greeting Card with CTA - Créé par @amit sur TailwindFlex.",
+  "author": "@amit (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-with-cta.tsx",
+      "content": "/**\n * Component: Greeting Card with CTA\n * Author: @amit (https://tailwindflex.com/@amit)\n * Source: https://tailwindflex.com/@amit/card-with-cta\n * Attribution: Créé par @amit sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardWithCta() {\n  return (\n    <div>\n    <div className=\"px-4 md8 py-12 bg-gray-100 rounded-lg shadow-2xl max-w-xl\">\n    \n      <h1 className=\"text-lg mb-4\">\n        Hey Amit<span className=\"mx-2\" id=\"demo\"></span><span className=\"text-xl\">😄</span>,\n        <br />\n        <span className=\"text-4xl font-semibold\">Have you booked your</span>\n        <span className=\"text-4xl font-semibold text-blue-700\">Seat?</span>\n      </h1>\n    \n      <div className=\"flex flex-col justify-center w-full text-center mt-8 gap-6 sm text-lg font-semibold\">\n        <a href=\"https://tailwindflex.com/@amit\"\n          className=\"py-4 w-full sm40 border border-blue-700 rounded-lg hover2xl hover700 shadow-lg\">\n          Yes\n        </a>\n        <a href=\"https://tailwindflex.com\"\n          className=\"bg-blue-600 w-full sm40 py-4 rounded-lg text-white hover700 shadow-lg\">\n          Book Now\n        </a>\n      </div>\n    \n    </div>\n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "call-to-action",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@amit",
+    "authorUrl": "https://tailwindflex.com/@amit",
+    "sourceUrl": "https://tailwindflex.com/@amit/card-with-cta",
+    "mention": "Créé par @amit sur TailwindFlex",
+    "rawHtml": "<div class=\"px-4 md:px-8 py-12 bg-gray-100 rounded-lg shadow-2xl max-w-xl\">\n\n  <h1 class=\"text-lg mb-4\">\n    Hey Amit<span class=\"mx-2\" id=\"demo\"></span><span class=\"text-xl\">😄</span>,\n    <br>\n    <span class=\"text-4xl font-semibold\">Have you booked your</span>\n    <span class=\"text-4xl font-semibold text-blue-700\">Seat?</span>\n  </h1>\n\n  <div class=\"flex flex-col justify-center w-full text-center mt-8 gap-6 sm:flex-row text-lg font-semibold\">\n    <a href=\"https://tailwindflex.com/@amit\"\n      class=\"py-4 w-full sm:w-40 border border-blue-700 rounded-lg hover:shadow-2xl hover:text-blue-700 shadow-lg\">\n      Yes\n    </a>\n    <a href=\"https://tailwindflex.com\"\n      class=\"bg-blue-600 w-full sm:w-40 py-4 rounded-lg text-white hover:bg-blue-700 shadow-lg\">\n      Book Now\n    </a>\n  </div>\n\n</div>\n\n<script>\n  const time = new Date().getHours();\n    let greeting;\n    if (time < 10) {\n      greeting = \"Good morning\";\n    } else if (time < 20) {\n      greeting = \"Good day\";\n    } else {\n      greeting = \"Good evening\";\n    }\n    document.getElementById(\"demo\").innerHTML = greeting;\n</script>"
+  }
+}

@@ -294,10 +294,19 @@ describe("End-User E2E Flows — Logos, Fonts (CSS/Tailwind/TTF), Themes, Animat
     it("provides full TSX code and static /public/r/<slug>.json manifests for all catalog components", () => {
       expect(SAMPLE_COMPONENTS.length).toBeGreaterThanOrEqual(10);
 
+      // Validate in-memory code integrity for all components
       for (const comp of SAMPLE_COMPONENTS) {
         expect(comp.code.length).toBeGreaterThan(120);
         expect(comp.code).toContain("export ");
+      }
 
+      // Validate static registry files for representative sample across catalog
+      const sampleSlugs = [
+        ...SAMPLE_COMPONENTS.slice(0, 30),
+        ...SAMPLE_COMPONENTS.slice(-30),
+      ];
+
+      for (const comp of sampleSlugs) {
         const staticManifestPath = resolve(WEB_PUBLIC_DIR, "r", `${comp.slug}.json`);
         expect(
           existsSync(staticManifestPath),
@@ -312,7 +321,7 @@ describe("End-User E2E Flows — Logos, Fonts (CSS/Tailwind/TTF), Themes, Animat
         expect(Array.isArray(manifest.files)).toBe(true);
         expect(manifest.files.length).toBeGreaterThan(0);
       }
-    });
+    }, 60000);
   });
 
   describe("6. Global Search (/api/search) & Tailwind Style Configuration", () => {

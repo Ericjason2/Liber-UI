@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkout-form-2",
+  "type": "registry:ui",
+  "title": "Checkout form",
+  "description": "Checkout form - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/checkout-form-2.tsx",
+      "content": "/**\n * Component: Checkout form\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/checkout-form-2\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CheckoutForm2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"bg-gray-100 dark:bg-gray-900\\\">\\n    <div class=\\\"w-full max-w-3xl mx-auto p-8\\\">\\n        <div class=\\\"bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md border dark:border-gray-700\\\">\\n            <h1 class=\\\"text-2xl font-bold text-gray-800 dark:text-white mb-4\\\">Checkout</h1>\\n\\n            <!-- Shipping Address -->\\n            <div class=\\\"mb-6\\\">\\n                <h2 class=\\\"text-xl font-semibold text-gray-700 dark:text-white mb-2\\\">Shipping Address</h2>\\n                <div class=\\\"grid grid-cols-2 gap-4\\\">\\n                    <div>\\n                        <label for=\\\"first_name\\\" class=\\\"block text-gray-700 dark:text-white mb-1\\\">First Name</label>\\n                        <input type=\\\"text\\\" id=\\\"first_name\\\" class=\\\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\\\">\\n                    </div>\\n                    <div>\\n                        <label for \\\"last_name\\\" class=\\\"block text-gray-700 dark:text-white mb-1\\\">Last Name</label>\\n                        <input type=\\\"text\\\" id=\\\"last_name\\\" class=\\\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\\\">\\n                    </div>\\n                </div>\\n\\n                <div class=\\\"mt-4\\\">\\n                    <label for=\\\"address\\\" class=\\\"block text-gray-700 dark:text-white mb-1\\\">Address</label>\\n                    <input type=\\\"text\\\" id=\\\"address\\\" class=\\\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\\\">\\n                </div>\\n\\n                <div class=\\\"mt-4\\\">\\n                    <label for=\\\"city\\\" class=\\\"block text-gray-700 dark:text-white mb-1\\\">City</label>\\n                    <input type=\\\"text\\\" id=\\\"city\\\" class=\\\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\\\">\\n                </div>\\n\\n                <div class=\\\"grid grid-cols-2 gap-4 mt-4\\\">\\n                    <div>\\n                        <label for=\\\"state\\\" class=\\\"block text-gray-700 dark:text-white mb-1\\\">State</label>\\n                        <input type=\\\"text\\\" id=\\\"state\\\" class=\\\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\\\">\\n                    </div>\\n                    <div>\\n                        <label for=\\\"zip\\\" class=\\\"block text-gray-700 dark:text-white mb-1\\\">ZIP Code</label>\\n                        <input type=\\\"text\\\" id=\\\"zip\\\" class=\\\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\\\">\\n                    </div>\\n                </div>\\n            </div>\\n\\n            <!-- Payment Information -->\\n            <div>\\n                <h2 class=\\\"text-xl font-semibold text-gray-700 dark:text-white mb-2\\\">Payment Information</h2>\\n                <div class=\\\"mt-4\\\">\\n                    <label for=\\\"card_number\\\" class=\\\"block text-gray-700 dark:text-white mb-1\\\">Card Number</label>\\n                    <input type=\\\"text\\\" id=\\\"card_number\\\" class=\\\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\\\">\\n                </div>\\n\\n                <div class=\\\"grid grid-cols-2 gap-4 mt-4\\\">\\n                    <div>\\n                        <label for=\\\"exp_date\\\" class=\\\"block text-gray-700 dark:text-white mb-1\\\">Expiration Date</label>\\n                        <input type=\\\"text\\\" id=\\\"exp_date\\\" class=\\\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\\\">\\n                    </div>\\n                    <div>\\n                        <label for=\\\"cvv\\\" class=\\\"block text-gray-700 dark:text-white mb-1\\\">CVV</label>\\n                        <input type=\\\"text\\\" id=\\\"cvv\\\" class=\\\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\\\">\\n                    </div>\\n                </div>\\n            </div>\\n\\n            <div class=\\\"mt-8 flex justify-end\\\">\\n                <button class=\\\"bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-700 dark:bg-teal-600 dark:text-white dark:hover:bg-teal-900\\\">Place Order</button>\\n            </div>\\n        </div>\\n    </div>\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/checkout-form-2",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-100 dark:bg-gray-900\">\n    <div class=\"w-full max-w-3xl mx-auto p-8\">\n        <div class=\"bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md border dark:border-gray-700\">\n            <h1 class=\"text-2xl font-bold text-gray-800 dark:text-white mb-4\">Checkout</h1>\n\n            <!-- Shipping Address -->\n            <div class=\"mb-6\">\n                <h2 class=\"text-xl font-semibold text-gray-700 dark:text-white mb-2\">Shipping Address</h2>\n                <div class=\"grid grid-cols-2 gap-4\">\n                    <div>\n                        <label for=\"first_name\" class=\"block text-gray-700 dark:text-white mb-1\">First Name</label>\n                        <input type=\"text\" id=\"first_name\" class=\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\">\n                    </div>\n                    <div>\n                        <label for \"last_name\" class=\"block text-gray-700 dark:text-white mb-1\">Last Name</label>\n                        <input type=\"text\" id=\"last_name\" class=\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\">\n                    </div>\n                </div>\n\n                <div class=\"mt-4\">\n                    <label for=\"address\" class=\"block text-gray-700 dark:text-white mb-1\">Address</label>\n                    <input type=\"text\" id=\"address\" class=\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\">\n                </div>\n\n                <div class=\"mt-4\">\n                    <label for=\"city\" class=\"block text-gray-700 dark:text-white mb-1\">City</label>\n                    <input type=\"text\" id=\"city\" class=\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\">\n                </div>\n\n                <div class=\"grid grid-cols-2 gap-4 mt-4\">\n                    <div>\n                        <label for=\"state\" class=\"block text-gray-700 dark:text-white mb-1\">State</label>\n                        <input type=\"text\" id=\"state\" class=\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\">\n                    </div>\n                    <div>\n                        <label for=\"zip\" class=\"block text-gray-700 dark:text-white mb-1\">ZIP Code</label>\n                        <input type=\"text\" id=\"zip\" class=\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\">\n                    </div>\n                </div>\n            </div>\n\n            <!-- Payment Information -->\n            <div>\n                <h2 class=\"text-xl font-semibold text-gray-700 dark:text-white mb-2\">Payment Information</h2>\n                <div class=\"mt-4\">\n                    <label for=\"card_number\" class=\"block text-gray-700 dark:text-white mb-1\">Card Number</label>\n                    <input type=\"text\" id=\"card_number\" class=\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\">\n                </div>\n\n                <div class=\"grid grid-cols-2 gap-4 mt-4\">\n                    <div>\n                        <label for=\"exp_date\" class=\"block text-gray-700 dark:text-white mb-1\">Expiration Date</label>\n                        <input type=\"text\" id=\"exp_date\" class=\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\">\n                    </div>\n                    <div>\n                        <label for=\"cvv\" class=\"block text-gray-700 dark:text-white mb-1\">CVV</label>\n                        <input type=\"text\" id=\"cvv\" class=\"w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none\">\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"mt-8 flex justify-end\">\n                <button class=\"bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-700 dark:bg-teal-600 dark:text-white dark:hover:bg-teal-900\">Place Order</button>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

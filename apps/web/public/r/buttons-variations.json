@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "buttons-variations",
+  "type": "registry:ui",
+  "title": "Buttons variations",
+  "description": "Buttons variations - Créé par @rp-ketan sur TailwindFlex.",
+  "author": "@rp-ketan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/buttons-variations.tsx",
+      "content": "/**\n * Component: Buttons variations\n * Author: @rp-ketan (https://tailwindflex.com/@rp-ketan)\n * Source: https://tailwindflex.com/@rp-ketan/buttons-variations\n * Attribution: Créé par @rp-ketan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonsVariations() {\n  return (\n    <div>\n    <div className=\"flex flex-col gap-4\">\n        <p className=\"font-bold\">Rounded Buttons:</p>\n    \n        <div className=\"flex space-x-4\">\n            <button className=\"bg-blue-500 hover700 text-white font-bold py-2 px-4 rounded\">\n                Button 1\n            </button>\n            <button className=\"bg-red-500 hover700 text-white font-bold py-2 px-4 rounded\">\n                Button 2\n            </button>\n            <button className=\"bg-green-500 hover700 text-white font-bold py-2 px-4 rounded\">\n                Button 3\n            </button>\n        </div>\n    \n    \n        <p className=\"font-bold\">Outline Buttons</p>\n        <div className=\"flex space-x-4\">\n    \n            <button className=\"border border-blue-500 text-blue-500 font-bold py-2 px-4 rounded\">\n                Button\n            </button>\n    \n            <button className=\"border border-red-500 text-red-500 font-bold py-2 px-4 rounded\">\n                Button\n            </button>\n    \n            <button className=\"border border-green-500 text-green-500 font-bold py-2 px-4 rounded\">\n                Button\n            </button>\n        </div>\n    \n    \n        <p className=\"font-bold\">Gradient Buttons:</p>\n        <div className=\"flex space-x-4\">\n    \n            <button className=\"bg-gradient-to-r from-red-400 to-yellow-500 text-white font-bold py-2 px-4 rounded\">\n                Button\n            </button>\n    \n            <button className=\"bg-gradient-to-r from-blue-400 to-indigo-500 text-white font-bold py-2 px-4 rounded\">\n                Button\n            </button>\n    \n            <button className=\"bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold py-2 px-4 rounded\">\n                Button\n            </button>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rp-ketan",
+    "authorUrl": "https://tailwindflex.com/@rp-ketan",
+    "sourceUrl": "https://tailwindflex.com/@rp-ketan/buttons-variations",
+    "mention": "Créé par @rp-ketan sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-col gap-4\">\n    <p class=\"font-bold\">Rounded Buttons:</p>\n\n    <div class=\"flex space-x-4\">\n        <button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\">\n            Button 1\n        </button>\n        <button class=\"bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded\">\n            Button 2\n        </button>\n        <button class=\"bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded\">\n            Button 3\n        </button>\n    </div>\n\n\n    <p class=\"font-bold\">Outline Buttons</p>\n    <div class=\"flex space-x-4\">\n\n        <button class=\"border border-blue-500 text-blue-500 font-bold py-2 px-4 rounded\">\n            Button\n        </button>\n\n        <button class=\"border border-red-500 text-red-500 font-bold py-2 px-4 rounded\">\n            Button\n        </button>\n\n        <button class=\"border border-green-500 text-green-500 font-bold py-2 px-4 rounded\">\n            Button\n        </button>\n    </div>\n\n\n    <p class=\"font-bold\">Gradient Buttons:</p>\n    <div class=\"flex space-x-4\">\n\n        <button class=\"bg-gradient-to-r from-red-400 to-yellow-500 text-white font-bold py-2 px-4 rounded\">\n            Button\n        </button>\n\n        <button class=\"bg-gradient-to-r from-blue-400 to-indigo-500 text-white font-bold py-2 px-4 rounded\">\n            Button\n        </button>\n\n        <button class=\"bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold py-2 px-4 rounded\">\n            Button\n        </button>\n    </div>\n</div>"
+  }
+}

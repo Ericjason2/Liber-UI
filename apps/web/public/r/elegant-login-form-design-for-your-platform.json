@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "elegant-login-form-design-for-your-platform",
+  "type": "registry:ui",
+  "title": "Elegant Login Form Design for Your Platform",
+  "description": "Elegant Login Form Design for Your Platform - Créé par @shariful-islam sur TailwindFlex.",
+  "author": "@shariful-islam (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/elegant-login-form-design-for-your-platform.tsx",
+      "content": "/**\n * Component: Elegant Login Form Design for Your Platform\n * Author: @shariful-islam (https://tailwindflex.com/@shariful-islam)\n * Source: https://tailwindflex.com/@shariful-islam/elegant-login-form-design-for-your-platform\n * Attribution: Créé par @shariful-islam sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ElegantLoginFormDesignForYourPlatform() {\n  return (\n    <div>\n    <div className=\"flex items-center justify-center min-h-screen bg-gray-100\">\r\n      <div className=\"w-full max-w-sm bg-white rounded-lg shadow-lg p-6 relative\">\r\n        <div className=\"flex justify-center\">\r\n          <Image alt=\"logo\"\r\n           src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn9GcTjsScWYmyfPv3XdkNdEFVJ1wlDKMOgcSWUcg&s\" className=\"h-12  mb-4\" />\r\n        </div>\r\n        <h2 className=\"text-center text-gray-700 text-lg font-medium mb-2\">\r\n          Best online ecommerce website for you\r\n        </h2>\r\n        <div className=\"flex justify-center items-center relative mb-6\">\r\n          <span className=\"absolute inset-x-0 top-0 h-1 bg-blue-500\" style=\"clip-path: polygon(50% 0%, 0% 100%, 100% 100%);\"></span>\r\n          <h3 className=\"text-center bg-white px-4 text-gray-500 font-medium\">Log in</h3>\r\n        </div>\r\n    \r\n        <form>\r\n          <div className=\"mb-4\">\r\n            <label className=\"block text-sm text-gray-600 mb-1\" htmlFor=\"email\">Email or Phone</label>\r\n            <input \r\n              type=\"text\" \r\n              id=\"email\" \r\n              className=\"w-full border border-gray-300 rounded px-3 py-2 text-gray-700 focus focus focus200\"\r\n              placeholder=\"Email or Phone\"\r\n            />\r\n          </div>\r\n          <div className=\"mb-4 relative\">\r\n            <label className=\"block text-sm text-gray-600 mb-1\" htmlFor=\"password\">Password</label>\r\n            <input \r\n              type=\"password\" \r\n              id=\"password\" \r\n              className=\"w-full border border-gray-300 rounded px-3 py-2 text-gray-700 focus focus focus200\"\r\n              placeholder=\"Type your password\"\r\n            />\r\n            <button \r\n              type=\"button\" \r\n              className=\"absolute top-8 right-3 flex items-center text-gray-500\">\r\n              <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth=\"1.5\" stroke=\"currentColor\" className=\"w-5 h-5\">\r\n                <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M3.98 8.53A10.967 10.967 0 0112 6c2.64 0 5.064.947 6.983 2.53M21 12.04a10.967 10.967 0 01-2.535 6.984M8.475 19.527A10.967 10.967 0 0112 18a10.967 10.967 0 013.525-.527M9 12l2.5 2.5L15 9\" />\r\n              </svg>\r\n            </button>\r\n          </div>\r\n    \r\n          <div className=\"flex items-center justify-between mb-4\">\r\n            <a href=\"#\" className=\"text-sm text-blue-500 hover\">Forgot Password</a>\r\n          </div>\r\n    \r\n          <button \r\n            type=\"submit\" \r\n            className=\"w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 rounded-lg hover600 hover700 focus focus focus300\">\r\n            Log in\r\n          </button>\r\n    \r\n          <div className=\"flex items-center mt-4\">\r\n            <input type=\"checkbox\" id=\"remember\" className=\"mr-2 border-gray-300 rounded text-blue-500 focus200\" />\r\n            <label htmlFor=\"remember\" className=\"text-sm text-gray-600\">Remember me for 30 days</label>\r\n          </div>\r\n    \r\n          <p className=\"text-center text-sm text-gray-600 mt-4\">\r\n            Don’t have your account? <a href=\"#\" className=\"text-blue-500 hover\">Sign Up</a>\r\n          </p>\r\n        </form>\r\n      </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@shariful-islam",
+    "authorUrl": "https://tailwindflex.com/@shariful-islam",
+    "sourceUrl": "https://tailwindflex.com/@shariful-islam/elegant-login-form-design-for-your-platform",
+    "mention": "Créé par @shariful-islam sur TailwindFlex",
+    "rawHtml": "<div class=\"flex items-center justify-center min-h-screen bg-gray-100\">\r\n  <div class=\"w-full max-w-sm bg-white rounded-lg shadow-lg p-6 relative\">\r\n    <div class=\"flex justify-center\">\r\n      <Image alt=\"logo\"\r\n       src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsScWYmyfPv3XdkNdEFVJ1wlDKMOgcSWUcg&s\" class=\"h-12  mb-4\" />\r\n    </div>\r\n    <h2 class=\"text-center text-gray-700 text-lg font-medium mb-2\">\r\n      Best online ecommerce website for you\r\n    </h2>\r\n    <div class=\"flex justify-center items-center relative mb-6\">\r\n      <span class=\"absolute inset-x-0 top-0 h-1 bg-blue-500\" style=\"clip-path: polygon(50% 0%, 0% 100%, 100% 100%);\"></span>\r\n      <h3 class=\"text-center bg-white px-4 text-gray-500 font-medium\">Log in</h3>\r\n    </div>\r\n\r\n    <form>\r\n      <div class=\"mb-4\">\r\n        <label class=\"block text-sm text-gray-600 mb-1\" for=\"email\">Email or Phone</label>\r\n        <input \r\n          type=\"text\" \r\n          id=\"email\" \r\n          class=\"w-full border border-gray-300 rounded px-3 py-2 text-gray-700 focus:outline-none focus:ring focus:ring-blue-200\"\r\n          placeholder=\"Email or Phone\"\r\n        />\r\n      </div>\r\n      <div class=\"mb-4 relative\">\r\n        <label class=\"block text-sm text-gray-600 mb-1\" for=\"password\">Password</label>\r\n        <input \r\n          type=\"password\" \r\n          id=\"password\" \r\n          class=\"w-full border border-gray-300 rounded px-3 py-2 text-gray-700 focus:outline-none focus:ring focus:ring-blue-200\"\r\n          placeholder=\"Type your password\"\r\n        />\r\n        <button \r\n          type=\"button\" \r\n          class=\"absolute top-8 right-3 flex items-center text-gray-500\">\r\n          <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"w-5 h-5\">\r\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M3.98 8.53A10.967 10.967 0 0112 6c2.64 0 5.064.947 6.983 2.53M21 12.04a10.967 10.967 0 01-2.535 6.984M8.475 19.527A10.967 10.967 0 0112 18a10.967 10.967 0 013.525-.527M9 12l2.5 2.5L15 9\" />\r\n          </svg>\r\n        </button>\r\n      </div>\r\n\r\n      <div class=\"flex items-center justify-between mb-4\">\r\n        <a href=\"#\" class=\"text-sm text-blue-500 hover:underline\">Forgot Password</a>\r\n      </div>\r\n\r\n      <button \r\n        type=\"submit\" \r\n        class=\"w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 rounded-lg hover:from-blue-600 hover:to-blue-700 focus:outline-none focus:ring focus:ring-blue-300\">\r\n        Log in\r\n      </button>\r\n\r\n      <div class=\"flex items-center mt-4\">\r\n        <input type=\"checkbox\" id=\"remember\" class=\"mr-2 border-gray-300 rounded text-blue-500 focus:ring-blue-200\" />\r\n        <label for=\"remember\" class=\"text-sm text-gray-600\">Remember me for 30 days</label>\r\n      </div>\r\n\r\n      <p class=\"text-center text-sm text-gray-600 mt-4\">\r\n        Don’t have your account? <a href=\"#\" class=\"text-blue-500 hover:underline\">Sign Up</a>\r\n      </p>\r\n    </form>\r\n  </div>\r\n</div>"
+  }
+}

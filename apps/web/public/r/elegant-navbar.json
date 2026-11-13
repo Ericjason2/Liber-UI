@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "elegant-navbar",
+  "type": "registry:ui",
+  "title": "Elegant NavBar",
+  "description": "Elegant NavBar - Créé par @nickgirga sur TailwindFlex.",
+  "author": "@nickgirga (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/elegant-navbar.tsx",
+      "content": "/**\n * Component: Elegant NavBar\n * Author: @nickgirga (https://tailwindflex.com/@nickgirga)\n * Source: https://tailwindflex.com/@nickgirga/elegant-navbar\n * Attribution: Créé par @nickgirga sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ElegantNavbar() {\n  return (\n    <div>\n    \n    \n    \n    \n    \n    <div className=\"navbar fixed z-1\">\n      \n      \n      <div className=\"navbar-start-box\">\n        \n        <button className=\"btn btn-navbar p-2\">\n          <svg\n            width=\"24px\"\n            height=\"24px\"\n            strokeWidth=\"1.5\"\n            viewBox=\"0 0 24 24\"\n            fill=\"none\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n            color=\"currentColor\"\n            data-darkreader-inline-color=\"currentColor\"\n            style=\"--darkreader-inline-color: currentColor;\">\n            <path\n              d=\"M3 5H21\"\n              stroke=\"currentColor\"\n              strokeWidth=\"1.5\"\n              strokeLinecap=\"round\"\n              strokeLinejoin=\"round\"\n              data-darkreader-inline-stroke=\"currentColor\"\n              style=\"--darkreader-inline-stroke: currentColor;\">\n            </path>\n            <path\n              d=\"M3 12H21\"\n              stroke=\"currentColor\"\n              strokeWidth=\"1.5\"\n              strokeLinecap=\"round\"\n              strokeLinejoin=\"round\"\n              data-darkreader-inline-stroke=\"currentColor\"\n              style=\"--darkreader-inline-stroke: currentColor;\">\n            </path>\n            <path\n              d=\"M3 19H21\"\n              stroke=\"currentColor\"\n              strokeWidth=\"1.5\"\n              strokeLinecap=\"round\"\n              strokeLinejoin=\"round\"\n              data-darkreader-inline-stroke=\"currentColor\"\n              style=\"--darkreader-inline-stroke: currentColor;\">\n            </path>\n          </svg>\n        </button>\n      </div>\n    \n      \n      <div className=\"navbar-center-box\">\n        \n        <button className=\"btn btn-navbar font-bold text-xl\">\n          My App\n        </button>\n      </div>\n    \n      \n      <div className=\"navbar-end-box\">\n        \n        <button className=\"btn btn-navbar p-2\">\n          <svg\n            width=\"24px\"\n            height=\"24px\"\n            strokeWidth=\"1.5\"\n            viewBox=\"0 0 24 24\"\n            fill=\"none\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n            color=\"currentColor\"\n            data-darkreader-inline-color=\"currentColor\"\n            style=\"--darkreader-inline-color: currentColor;\">\n            <path\n              d=\"M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z\"\n              stroke=\"currentColor\"\n              strokeWidth=\"1.5\"\n              strokeLinecap=\"round\"\n              strokeLinejoin=\"round\"\n              data-darkreader-inline-stroke=\"currentColor\"\n              style=\"--darkreader-inline-stroke: currentColor;\">\n            </path>\n            <path\n              d=\"M19.6224 10.3954L18.5247 7.7448L20 6L18 4L16.2647 5.48295L13.5578 4.36974L12.9353 2H10.981L10.3491 4.40113L7.70441 5.51596L6 4L4 6L5.45337 7.78885L4.3725 10.4463L2 11V13L4.40111 13.6555L5.51575 16.2997L4 18L6 20L7.79116 18.5403L10.397 19.6123L11 22H13L13.6045 19.6132L16.2551 18.5155C16.6969 18.8313 18 20 18 20L20 18L18.5159 16.2494L19.6139 13.598L21.9999 12.9772L22 11L19.6224 10.3954Z\"\n              stroke=\"currentColor\"\n              strokeWidth=\"1.5\"\n              strokeLinecap=\"round\"\n              strokeLinejoin=\"round\"\n              data-darkreader-inline-stroke=\"currentColor\"\n              style=\"--darkreader-inline-stroke: currentColor;\">\n            </path>\n          </svg>\n        </button>\n      </div>\n    \n    </div>\n    \n    \n    <div className=\"flex flex-col items-center text-center gap-8 md8 lg32 mx-4 my-16 mt-32\">\n    \n      \n      <div className=\"flex flex-col items-center gap-2\">\n        <h1 className=\"text-3xl font-bold\">Elegant NavBar</h1>\n        <h2 className=\"text-xl opacity-50\">Ready-to-use Tailwind components. Pure CSS.</h2>\n      </div>\n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@nickgirga",
+    "authorUrl": "https://tailwindflex.com/@nickgirga",
+    "sourceUrl": "https://tailwindflex.com/@nickgirga/elegant-navbar",
+    "mention": "Créé par @nickgirga sur TailwindFlex",
+    "rawHtml": "<!-- Icons from https://iconoir.com/ -->\n\n<!--\n  It can be a bit hard to see which important classes \n  are in use, so here they are and their purposes:\n\n    - 'navbar'            : the main NavBar container\n    - 'navbar-start-box'  : container pinned to NavBar start (left)\n    - 'navbar-center-box' : container centered in NavBar\n    - 'navbar-end-box'    : container pinned to NavBar end (right)\n    - 'btn'               : a button (from @nickgirga/elegant-buttons)\n    - 'btn-navbar'        : modifies `btn` to use NavBar-appropriate colors\n\n-->\n\n<!-- NavBar Container -->\n<div class=\"navbar fixed z-1\">\n  \n  <!-- Start Container -->\n  <div class=\"navbar-start-box\">\n    <!-- Menu Button -->\n    <button class=\"btn btn-navbar p-2\">\n      <svg\n        width=\"24px\"\n        height=\"24px\"\n        stroke-width=\"1.5\"\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n        color=\"currentColor\"\n        data-darkreader-inline-color=\"currentColor\"\n        style=\"--darkreader-inline-color: currentColor;\">\n        <path\n          d=\"M3 5H21\"\n          stroke=\"currentColor\"\n          stroke-width=\"1.5\"\n          stroke-linecap=\"round\"\n          stroke-linejoin=\"round\"\n          data-darkreader-inline-stroke=\"currentColor\"\n          style=\"--darkreader-inline-stroke: currentColor;\">\n        </path>\n        <path\n          d=\"M3 12H21\"\n          stroke=\"currentColor\"\n          stroke-width=\"1.5\"\n          stroke-linecap=\"round\"\n          stroke-linejoin=\"round\"\n          data-darkreader-inline-stroke=\"currentColor\"\n          style=\"--darkreader-inline-stroke: currentColor;\">\n        </path>\n        <path\n          d=\"M3 19H21\"\n          stroke=\"currentColor\"\n          stroke-width=\"1.5\"\n          stroke-linecap=\"round\"\n          stroke-linejoin=\"round\"\n          data-darkreader-inline-stroke=\"currentColor\"\n          style=\"--darkreader-inline-stroke: currentColor;\">\n        </path>\n      </svg>\n    </button>\n  </div>\n\n  <!-- Center Container -->\n  <div class=\"navbar-center-box\">\n    <!-- Title Button -->\n    <button class=\"btn btn-navbar font-bold text-xl\">\n      My App\n    </button>\n  </div>\n\n  <!-- End Container -->\n  <div class=\"navbar-end-box\">\n    <!-- Settings Button -->\n    <button class=\"btn btn-navbar p-2\">\n      <svg\n        width=\"24px\"\n        height=\"24px\"\n        stroke-width=\"1.5\"\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n        color=\"currentColor\"\n        data-darkreader-inline-color=\"currentColor\"\n        style=\"--darkreader-inline-color: currentColor;\">\n        <path\n          d=\"M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z\"\n          stroke=\"currentColor\"\n          stroke-width=\"1.5\"\n          stroke-linecap=\"round\"\n          stroke-linejoin=\"round\"\n          data-darkreader-inline-stroke=\"currentColor\"\n          style=\"--darkreader-inline-stroke: currentColor;\">\n        </path>\n        <path\n          d=\"M19.6224 10.3954L18.5247 7.7448L20 6L18 4L16.2647 5.48295L13.5578 4.36974L12.9353 2H10.981L10.3491 4.40113L7.70441 5.51596L6 4L4 6L5.45337 7.78885L4.3725 10.4463L2 11V13L4.40111 13.6555L5.51575 16.2997L4 18L6 20L7.79116 18.5403L10.397 19.6123L11 22H13L13.6045 19.6132L16.2551 18.5155C16.6969 18.8313 18 20 18 20L20 18L18.5159 16.2494L19.6139 13.598L21.9999 12.9772L22 11L19.6224 10.3954Z\"\n          stroke=\"currentColor\"\n          stroke-width=\"1.5\"\n          stroke-linecap=\"round\"\n          stroke-linejoin=\"round\"\n          data-darkreader-inline-stroke=\"currentColor\"\n          style=\"--darkreader-inline-stroke: currentColor;\">\n        </path>\n      </svg>\n    </button>\n  </div>\n\n</div>\n\n<!-- Example Page Content -->\n<div class=\"flex flex-col items-center text-center gap-8 md:mx-8 lg:mx-32 mx-4 my-16 mt-32\">\n\n  <!-- Heading -->\n  <div class=\"flex flex-col items-center gap-2\">\n    <h1 class=\"text-3xl font-bold\">Elegant NavBar</h1>\n    <h2 class=\"text-xl opacity-50\">Ready-to-use Tailwind components. Pure CSS.</h2>\n  </div>\n\n</div>"
+  }
+}

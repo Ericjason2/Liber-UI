@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "credit-card-form-2",
+  "type": "registry:ui",
+  "title": "Credit card form 2",
+  "description": "Credit card form 2 - Créé par @oliver-hansen sur TailwindFlex.",
+  "author": "@oliver-hansen (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/credit-card-form-2.tsx",
+      "content": "/**\n * Component: Credit card form 2\n * Author: @oliver-hansen (https://tailwindflex.com/@oliver-hansen)\n * Source: https://tailwindflex.com/@oliver-hansen/credit-card-form-2\n * Attribution: Créé par @oliver-hansen sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CreditCardForm2() {\n  return (\n    <div>\n    <div className=\"max-w-md mx-auto bg-gray-100 shadow-md rounded-md overflow-hidden mt-16\">\r\n        <div className=\"bg-blue-600 text-white p-4 flex justify-between\">\r\n            <div className=\"font-bold text-lg\">Credit Card</div>\r\n            <div className=\"text-lg\"><i className=\"fab fa-cc-visa\"></i></div>\r\n        </div>\r\n        <div className=\"p-6\">\r\n            <div className=\"mb-4\">\r\n                <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"card_number\">\r\n                    Card Number\r\n                </label>\r\n                <input\r\n                    className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\"\r\n                    id=\"card_number\" type=\"text\" placeholder=\"xxxx xxxx xxxx xxxx\" />\r\n            </div>\r\n            <div className=\"mb-4 flex justify-between\">\r\n                <div>\r\n                    <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"expiration_date\">\r\n                        Expiration Date\r\n                    </label>\r\n                    <input\r\n                        className=\"shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus focus\"\r\n                        id=\"expiration_date\" type=\"text\" placeholder=\"MM/YY\" />\r\n                </div>\r\n                <div>\r\n                    <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"cvv\">\r\n                        CVV\r\n                    </label>\r\n                    <input\r\n                        className=\"shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus focus\"\r\n                        id=\"cvv\" type=\"text\" placeholder=\"XXX\" />\r\n                </div>\r\n            </div>\r\n            <div className=\"mb-4\">\r\n                <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"name_on_card\">\r\n                    Name on Card\r\n                </label>\r\n                <input\r\n                    className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\"\r\n                    id=\"name_on_card\" type=\"text\" placeholder=\"John Doe\" />\r\n            </div>\r\n            <button\r\n                className=\"bg-blue-600 text-white py-2 px-4 rounded font-bold hover700 focus focus\">Save\r\n                Card\r\n            </button>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@oliver-hansen",
+    "authorUrl": "https://tailwindflex.com/@oliver-hansen",
+    "sourceUrl": "https://tailwindflex.com/@oliver-hansen/credit-card-form-2",
+    "mention": "Créé par @oliver-hansen sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-md mx-auto bg-gray-100 shadow-md rounded-md overflow-hidden mt-16\">\r\n    <div class=\"bg-blue-600 text-white p-4 flex justify-between\">\r\n        <div class=\"font-bold text-lg\">Credit Card</div>\r\n        <div class=\"text-lg\"><i class=\"fab fa-cc-visa\"></i></div>\r\n    </div>\r\n    <div class=\"p-6\">\r\n        <div class=\"mb-4\">\r\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"card_number\">\r\n                Card Number\r\n            </label>\r\n            <input\r\n                class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\r\n                id=\"card_number\" type=\"text\" placeholder=\"xxxx xxxx xxxx xxxx\">\r\n        </div>\r\n        <div class=\"mb-4 flex justify-between\">\r\n            <div>\r\n                <label class=\"block text-gray-700 font-bold mb-2\" for=\"expiration_date\">\r\n                    Expiration Date\r\n                </label>\r\n                <input\r\n                    class=\"shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\r\n                    id=\"expiration_date\" type=\"text\" placeholder=\"MM/YY\">\r\n            </div>\r\n            <div>\r\n                <label class=\"block text-gray-700 font-bold mb-2\" for=\"cvv\">\r\n                    CVV\r\n                </label>\r\n                <input\r\n                    class=\"shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\r\n                    id=\"cvv\" type=\"text\" placeholder=\"XXX\">\r\n            </div>\r\n        </div>\r\n        <div class=\"mb-4\">\r\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"name_on_card\">\r\n                Name on Card\r\n            </label>\r\n            <input\r\n                class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\r\n                id=\"name_on_card\" type=\"text\" placeholder=\"John Doe\">\r\n        </div>\r\n        <button\r\n            class=\"bg-blue-600 text-white py-2 px-4 rounded font-bold hover:bg-blue-700 focus:outline-none focus:shadow-outline\">Save\r\n            Card\r\n        </button>\r\n    </div>\r\n</div>"
+  }
+}

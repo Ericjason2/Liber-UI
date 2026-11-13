@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-tailwind-css-listing-cards",
+  "type": "registry:ui",
+  "title": "Responsive Tailwind CSS Listing Cards",
+  "description": "Responsive Tailwind CSS Listing Cards - Créé par @abhirajk sur TailwindFlex.",
+  "author": "@abhirajk (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-tailwind-css-listing-cards.tsx",
+      "content": "/**\n * Component: Responsive Tailwind CSS Listing Cards\n * Author: @abhirajk (https://tailwindflex.com/@abhirajk)\n * Source: https://tailwindflex.com/@abhirajk/responsive-tailwind-css-listing-cards\n * Attribution: Créé par @abhirajk sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveTailwindCssListingCards() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n  <title>Responsive Listing Cards</title>\\n  \\n</head>\\n<body class=\\\"bg-gray-100 p-5\\\">\\n  <div class=\\\"max-w-7xl mx-auto\\\">\\n    <!-- Header Section -->\\n    <h1 class=\\\"text-2xl font-bold text-gray-800 mb-5 text-center\\\">Responsive Listing Cards</h1>\\n\\n    <!-- Cards Container -->\\n    <div class=\\\"flex flex-wrap justify-center gap-6\\\">\\n      <!-- Card 1 -->\\n      <div class=\\\"bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col\\\">\\n        <img src=\\\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722165/AbhirajK/Abhirajk.webp\\\" alt=\\\"Card Image 1\\\" class=\\\"w-full h-48 object-cover\\\">\\n        <div class=\\\"p-4\\\">\\n          <h2 class=\\\"text-lg font-semibold text-gray-800\\\">Card Title 1</h2>\\n          <p class=\\\"text-gray-600 mt-2\\\">This is a sample description for card 1. Tailored for responsive designs using Tailwind CSS.</p>\\n        </div>\\n      </div>\\n\\n      <!-- Card 2 -->\\n      <div class=\\\"bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col\\\">\\n        <img src=\\\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722163/AbhirajK/Abhirajk%20mykare.webp\\\" alt=\\\"Card Image 2\\\" class=\\\"w-full h-48 object-cover\\\">\\n        <div class=\\\"p-4\\\">\\n          <h2 class=\\\"text-lg font-semibold text-gray-800\\\">Card Title 2</h2>\\n          <p class=\\\"text-gray-600 mt-2\\\">This is a sample description for card 2. The card adjusts well across different screen sizes.</p>\\n        </div>\\n      </div>\\n\\n      <!-- Card 3 -->\\n      <div class=\\\"bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col\\\">\\n        <img src=\\\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722161/AbhirajK/Abhirajk2.webp\\\" alt=\\\"Card Image 3\\\" class=\\\"w-full h-48 object-cover\\\">\\n        <div class=\\\"p-4\\\">\\n          <h2 class=\\\"text-lg font-semibold text-gray-800\\\">Card Title 3</h2>\\n          <p class=\\\"text-gray-600 mt-2\\\">This is a sample description for card 3. Styled using Tailwind CSS for an elegant look.</p>\\n        </div>\\n      </div>\\n\\n      <!-- Card 4 -->\\n      <div class=\\\"bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col\\\">\\n        <img src=\\\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722161/AbhirajK/Abhirajk3.webp\\\" alt=\\\"Card Image 4\\\" class=\\\"w-full h-48 object-cover\\\">\\n        <div class=\\\"p-4\\\">\\n          <h2 class=\\\"text-lg font-semibold text-gray-800\\\">Card Title 4</h2>\\n          <p class=\\\"text-gray-600 mt-2\\\">This is a sample description for card 4. Flexbox ensures the layout remains clean and organized.</p>\\n        </div>\\n      </div>\\n\\n      <!-- Card 5 -->\\n      <div class=\\\"bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col\\\">\\n        <img src=\\\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722160/AbhirajK/Abhirajk4.webp\\\" alt=\\\"Card Image 5\\\" class=\\\"w-full h-48 object-cover\\\">\\n        <div class=\\\"p-4\\\">\\n          <h2 class=\\\"text-lg font-semibold text-gray-800\\\">Card Title 5</h2>\\n          <p class=\\\"text-gray-600 mt-2\\\">This is a sample description for card 5. Mobile-first design approach for better responsiveness.</p>\\n        </div>\\n      </div>\\n\\n      <!-- Card 6 -->\\n      <div class=\\\"bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col\\\">\\n        <img src=\\\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722159/AbhirajK/Abhirajk5.webp\\\" alt=\\\"Card Image 6\\\" class=\\\"w-full h-48 object-cover\\\">\\n        <div class=\\\"p-4\\\">\\n          <h2 class=\\\"text-lg font-semibold text-gray-800\\\">Card Title 6</h2>\\n          <p class=\\\"text-gray-600 mt-2\\\">This is a sample description for card 6. Built with hardcoded HTML and Tailwind CSS classes.</p>\\n        </div>\\n      </div>\\n    </div>\\n  </div>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "grid",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abhirajk",
+    "authorUrl": "https://tailwindflex.com/@abhirajk",
+    "sourceUrl": "https://tailwindflex.com/@abhirajk/responsive-tailwind-css-listing-cards",
+    "mention": "Créé par @abhirajk sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Responsive Listing Cards</title>\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gray-100 p-5\">\n  <div class=\"max-w-7xl mx-auto\">\n    <!-- Header Section -->\n    <h1 class=\"text-2xl font-bold text-gray-800 mb-5 text-center\">Responsive Listing Cards</h1>\n\n    <!-- Cards Container -->\n    <div class=\"flex flex-wrap justify-center gap-6\">\n      <!-- Card 1 -->\n      <div class=\"bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col\">\n        <img src=\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722165/AbhirajK/Abhirajk.webp\" alt=\"Card Image 1\" class=\"w-full h-48 object-cover\">\n        <div class=\"p-4\">\n          <h2 class=\"text-lg font-semibold text-gray-800\">Card Title 1</h2>\n          <p class=\"text-gray-600 mt-2\">This is a sample description for card 1. Tailored for responsive designs using Tailwind CSS.</p>\n        </div>\n      </div>\n\n      <!-- Card 2 -->\n      <div class=\"bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col\">\n        <img src=\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722163/AbhirajK/Abhirajk%20mykare.webp\" alt=\"Card Image 2\" class=\"w-full h-48 object-cover\">\n        <div class=\"p-4\">\n          <h2 class=\"text-lg font-semibold text-gray-800\">Card Title 2</h2>\n          <p class=\"text-gray-600 mt-2\">This is a sample description for card 2. The card adjusts well across different screen sizes.</p>\n        </div>\n      </div>\n\n      <!-- Card 3 -->\n      <div class=\"bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col\">\n        <img src=\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722161/AbhirajK/Abhirajk2.webp\" alt=\"Card Image 3\" class=\"w-full h-48 object-cover\">\n        <div class=\"p-4\">\n          <h2 class=\"text-lg font-semibold text-gray-800\">Card Title 3</h2>\n          <p class=\"text-gray-600 mt-2\">This is a sample description for card 3. Styled using Tailwind CSS for an elegant look.</p>\n        </div>\n      </div>\n\n      <!-- Card 4 -->\n      <div class=\"bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col\">\n        <img src=\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722161/AbhirajK/Abhirajk3.webp\" alt=\"Card Image 4\" class=\"w-full h-48 object-cover\">\n        <div class=\"p-4\">\n          <h2 class=\"text-lg font-semibold text-gray-800\">Card Title 4</h2>\n          <p class=\"text-gray-600 mt-2\">This is a sample description for card 4. Flexbox ensures the layout remains clean and organized.</p>\n        </div>\n      </div>\n\n      <!-- Card 5 -->\n      <div class=\"bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col\">\n        <img src=\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722160/AbhirajK/Abhirajk4.webp\" alt=\"Card Image 5\" class=\"w-full h-48 object-cover\">\n        <div class=\"p-4\">\n          <h2 class=\"text-lg font-semibold text-gray-800\">Card Title 5</h2>\n          <p class=\"text-gray-600 mt-2\">This is a sample description for card 5. Mobile-first design approach for better responsiveness.</p>\n        </div>\n      </div>\n\n      <!-- Card 6 -->\n      <div class=\"bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col\">\n        <img src=\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722159/AbhirajK/Abhirajk5.webp\" alt=\"Card Image 6\" class=\"w-full h-48 object-cover\">\n        <div class=\"p-4\">\n          <h2 class=\"text-lg font-semibold text-gray-800\">Card Title 6</h2>\n          <p class=\"text-gray-600 mt-2\">This is a sample description for card 6. Built with hardcoded HTML and Tailwind CSS classes.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</body>\n</html>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "fancy-blog-post-card",
+  "type": "registry:ui",
+  "title": "Fancy blog post card",
+  "description": "Fancy blog post card - Créé par @mr-robot sur TailwindFlex.",
+  "author": "@mr-robot (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/fancy-blog-post-card.tsx",
+      "content": "/**\n * Component: Fancy blog post card\n * Author: @mr-robot (https://tailwindflex.com/@mr-robot)\n * Source: https://tailwindflex.com/@mr-robot/fancy-blog-post-card\n * Attribution: Créé par @mr-robot sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FancyBlogPostCard() {\n  return (\n    <div>\n    <div className=\"max-w-screen-xl mx-auto p-5 sm10 md16\">\r\n    \r\n        <div className=\"rounded overflow-hidden flex flex-col max-w-xl mx-auto\">\r\n    \r\n            <a href=\"#\">\r\n                <img className=\"w-full\" src=\"https://images.pexels.com/photos/5120892/pexels-photo-5120892.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=625.0&amp;sharp=10&amp;w=1000\" alt=\"Sunset in the mountains\" />\r\n            </a>\r\n            <div className=\"relative -mt-16 px-10 pt-5 pb-16 bg-white m-10\">\r\n                <a href=\"#\"\r\n                    className=\"font-semibold text-lg inline-block hover600 transition duration-500 ease-in-out inline-block mb-2\">The\r\n                    Best Activewear from the Nordstrom Anniversary Sale</a>\r\n                <p className=\"text-gray-500 text-sm\">\r\n                    Today, I’m covering one of my favorite parts of the Nordstrom Anniversary Sale: the activewear!\r\n                </p>\r\n                <p className=\"mt-5 text-gray-600 text-xs\">\r\n                    By\r\n                    <a href=\"#\" className=\"text-xs text-indigo-600 transition duration-500 ease-in-out\">\r\n                        Mehdi Ahmadi\r\n                    </a> | in <a href=\"#\" className=\"text-xs text-indigo-600 transition duration-500 ease-in-out\">\r\n                        Cooking\r\n                    </a>, <a href=\"#\" className=\"text-xs text-indigo-600 transition duration-500 ease-in-out\">\r\n                        Recipe\r\n                    </a>\r\n                </p>\r\n            </div>\r\n    \r\n        </div>\r\n    \r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mr-robot",
+    "authorUrl": "https://tailwindflex.com/@mr-robot",
+    "sourceUrl": "https://tailwindflex.com/@mr-robot/fancy-blog-post-card",
+    "mention": "Créé par @mr-robot sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16\">\r\n\r\n    <div class=\"rounded overflow-hidden flex flex-col max-w-xl mx-auto\">\r\n\r\n        <a href=\"#\">\r\n            <img class=\"w-full\" src=\"https://images.pexels.com/photos/5120892/pexels-photo-5120892.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=625.0&amp;sharp=10&amp;w=1000\" alt=\"Sunset in the mountains\">\r\n        </a>\r\n        <div class=\"relative -mt-16 px-10 pt-5 pb-16 bg-white m-10\">\r\n            <a href=\"#\"\r\n                class=\"font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2\">The\r\n                Best Activewear from the Nordstrom Anniversary Sale</a>\r\n            <p class=\"text-gray-500 text-sm\">\r\n                Today, I’m covering one of my favorite parts of the Nordstrom Anniversary Sale: the activewear!\r\n            </p>\r\n            <p class=\"mt-5 text-gray-600 text-xs\">\r\n                By\r\n                <a href=\"#\" class=\"text-xs text-indigo-600 transition duration-500 ease-in-out\">\r\n                    Mehdi Ahmadi\r\n                </a> | in <a href=\"#\" class=\"text-xs text-indigo-600 transition duration-500 ease-in-out\">\r\n                    Cooking\r\n                </a>, <a href=\"#\" class=\"text-xs text-indigo-600 transition duration-500 ease-in-out\">\r\n                    Recipe\r\n                </a>\r\n            </p>\r\n        </div>\r\n\r\n    </div>\r\n\r\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-block-with-image",
+  "type": "registry:ui",
+  "title": "Hero block with image",
+  "description": "Hero block with image - Créé par @simon-scheffer sur TailwindFlex.",
+  "author": "@simon-scheffer (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-block-with-image.tsx",
+      "content": "/**\n * Component: Hero block with image\n * Author: @simon-scheffer (https://tailwindflex.com/@simon-scheffer)\n * Source: https://tailwindflex.com/@simon-scheffer/hero-block-with-image\n * Attribution: Créé par @simon-scheffer sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroBlockWithImage() {\n  return (\n    <div>\n    <div className=\"flex pt-12 px-6 md20  items-center justify-center bg-hero md overflow-hidden\">\n        <div className=\"flex flex-col  gap-6 md items-center max-w-8xl\">\n            <div className=\"w-full md1/2 lg32\">\n                <h2 className=\"text-4xl lg5xl text-center md text-blue-900 leading-tight font-medium\">There’s a\n                    better way to talk with your customers.</h2>\n                <h3\n                    className=\"mt-6 md10 text-md lg text-center md text-gray-700 font-light tracking-wider leading-relaxed\">\n                    Help Scout is designed with your customers in mind. Provide email and live chat with a personal touch,\n                    and deliver help content right where your customers need it, all in one place, all for one low price.\n                </h3>\n                <div className=\"mt-10 flex flex-col sm justify-center md\">\n                    <button className=\"w-full sm40 px-4 py-3 rounded font-semibold text-md bg-blue-500 text-white border-2 border-blue-500\">Get started</button>\n                    <button className=\"w-full mt-4 sm0 sm4 sm40 px-4 py-3 rounded font-semibold text-md bg-white text-blue-500 border-2 border-gray-500\">Watch a Demo</button>\n                </div>\n            </div>\n            <div className=\"w-full md1/2 flex justify-center md\">\n                <img src=\"https://loremflickr.com/g/600/600/girl\" />\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@simon-scheffer",
+    "authorUrl": "https://tailwindflex.com/@simon-scheffer",
+    "sourceUrl": "https://tailwindflex.com/@simon-scheffer/hero-block-with-image",
+    "mention": "Créé par @simon-scheffer sur TailwindFlex",
+    "rawHtml": "<div class=\"flex pt-12 px-6 md:px-20  items-center justify-center bg-hero md:h-screen overflow-hidden\">\n    <div class=\"flex flex-col  gap-6 md:flex-row items-center max-w-8xl\">\n        <div class=\"w-full md:w-1/2 lg:pr-32\">\n            <h2 class=\"text-4xl lg:text-5xl text-center md:text-left text-blue-900 leading-tight font-medium\">There’s a\n                better way to talk with your customers.</h2>\n            <h3\n                class=\"mt-6 md:mt-10 text-md lg:text-xl text-center md:text-left text-gray-700 font-light tracking-wider leading-relaxed\">\n                Help Scout is designed with your customers in mind. Provide email and live chat with a personal touch,\n                and deliver help content right where your customers need it, all in one place, all for one low price.\n            </h3>\n            <div class=\"mt-10 flex flex-col sm:flex-row justify-center md:justify-start\">\n                <button class=\"w-full sm:w-40 px-4 py-3 rounded font-semibold text-md bg-blue-500 text-white border-2 border-blue-500\">Get started</button>\n                <button class=\"w-full mt-4 sm:mt-0 sm:ml-4 sm:w-40 px-4 py-3 rounded font-semibold text-md bg-white text-blue-500 border-2 border-gray-500\">Watch a Demo</button>\n            </div>\n        </div>\n        <div class=\"w-full md:w-1/2 flex justify-center md:justify-end\">\n            <img src=\"https://loremflickr.com/g/600/600/girl\">\n        </div>\n    </div>\n</div>"
+  }
+}

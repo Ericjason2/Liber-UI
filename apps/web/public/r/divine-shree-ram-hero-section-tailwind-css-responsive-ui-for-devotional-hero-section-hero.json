@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "divine-shree-ram-hero-section-tailwind-css-responsive-ui-for-devotional-hero-section-hero",
+  "type": "registry:ui",
+  "title": "Divine Shree Ram Hero Section | Tailwind CSS Responsive UI for Devotional |Hero section |Hero",
+  "description": "Divine Shree Ram Hero Section | Tailwind CSS Responsive UI for Devotional |Hero section |Hero - Créé par @rajesh-pandey sur TailwindFlex.",
+  "author": "@rajesh-pandey (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/divine-shree-ram-hero-section-tailwind-css-responsive-ui-for-devotional-hero-section-hero.tsx",
+      "content": "/**\n * Component: Divine Shree Ram Hero Section | Tailwind CSS Responsive UI for Devotional |Hero section |Hero\n * Author: @rajesh-pandey (https://tailwindflex.com/@rajesh-pandey)\n * Source: https://tailwindflex.com/@rajesh-pandey/divine-shree-ram-hero-section-tailwind-css-responsive-ui-for-devotional-hero-section-hero\n * Attribution: Créé par @rajesh-pandey sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function DivineShreeRamHeroSectionTailwindCssResponsiveUiForDevotionalHeroSectionHero() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"relative w-screen h-screen overflow-hidden bg-gradient-to-br from-yellow-100 via-amber-200 to-orange-100 dark:from-gray-900 dark:via-gray-800 dark:to-black flex items-center justify-center px-6\\\">\\n  <!-- Background aura -->\\n  <div class=\\\"absolute inset-0 bg-[url('https://i.ibb.co/9rZ2hRZ/ramji.png')] bg-contain bg-no-repeat bg-center opacity-10 lg:opacity-20\\\"></div>\\n\\n  <!-- Content Container -->\\n  <div class=\\\"relative z-10 text-center max-w-3xl space-y-6\\\">\\n    <h1 class=\\\"text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight font-serif text-yellow-900 dark:text-yellow-200 drop-shadow-xl animate-fade-in-up\\\">\\n      जय श्री राम 🚩\\n    </h1>\\n\\n    <p class=\\\"text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-medium animate-fade-in-up delay-200\\\">\\n      Embark on a divine journey of dharma, courage, and compassion. Inspired by the life of Lord Ram — the embodiment of virtue.\\n    </p>\\n\\n    <div class=\\\"flex justify-center gap-4 pt-4 animate-fade-in-up delay-300\\\">\\n      <a href=\\\"#learn-more\\\" class=\\\"bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300\\\">\\n        Learn About Ramayana\\n      </a>\\n      <a href=\\\"#mantra\\\" class=\\\"bg-white dark:bg-gray-700 dark:text-yellow-300 border border-yellow-400 hover:bg-yellow-100 text-yellow-700 font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300\\\">\\n        Chant the Mantra\\n      </a>\\n    </div>\\n  </div>\\n\\n  <!-- Custom animation -->\\n  <style>\\n    @keyframes fade-in-up {\\n      0% {\\n        opacity: 0;\\n        transform: translateY(30px);\\n      }\\n      100% {\\n        opacity: 1;\\n        transform: translateY(0);\\n      }\\n    }\\n    .animate-fade-in-up {\\n      animation: fade-in-up 1s ease forwards;\\n    }\\n    .delay-200 {\\n      animation-delay: 0.2s;\\n    }\\n    .delay-300 {\\n      animation-delay: 0.4s;\\n    }\\n  </style>\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rajesh-pandey",
+    "authorUrl": "https://tailwindflex.com/@rajesh-pandey",
+    "sourceUrl": "https://tailwindflex.com/@rajesh-pandey/divine-shree-ram-hero-section-tailwind-css-responsive-ui-for-devotional-hero-section-hero",
+    "mention": "Créé par @rajesh-pandey sur TailwindFlex",
+    "rawHtml": "<div class=\"relative w-screen h-screen overflow-hidden bg-gradient-to-br from-yellow-100 via-amber-200 to-orange-100 dark:from-gray-900 dark:via-gray-800 dark:to-black flex items-center justify-center px-6\">\n  <!-- Background aura -->\n  <div class=\"absolute inset-0 bg-[url('https://i.ibb.co/9rZ2hRZ/ramji.png')] bg-contain bg-no-repeat bg-center opacity-10 lg:opacity-20\"></div>\n\n  <!-- Content Container -->\n  <div class=\"relative z-10 text-center max-w-3xl space-y-6\">\n    <h1 class=\"text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight font-serif text-yellow-900 dark:text-yellow-200 drop-shadow-xl animate-fade-in-up\">\n      जय श्री राम 🚩\n    </h1>\n\n    <p class=\"text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-medium animate-fade-in-up delay-200\">\n      Embark on a divine journey of dharma, courage, and compassion. Inspired by the life of Lord Ram — the embodiment of virtue.\n    </p>\n\n    <div class=\"flex justify-center gap-4 pt-4 animate-fade-in-up delay-300\">\n      <a href=\"#learn-more\" class=\"bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300\">\n        Learn About Ramayana\n      </a>\n      <a href=\"#mantra\" class=\"bg-white dark:bg-gray-700 dark:text-yellow-300 border border-yellow-400 hover:bg-yellow-100 text-yellow-700 font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300\">\n        Chant the Mantra\n      </a>\n    </div>\n  </div>\n\n  <!-- Custom animation -->\n  <style>\n    @keyframes fade-in-up {\n      0% {\n        opacity: 0;\n        transform: translateY(30px);\n      }\n      100% {\n        opacity: 1;\n        transform: translateY(0);\n      }\n    }\n    .animate-fade-in-up {\n      animation: fade-in-up 1s ease forwards;\n    }\n    .delay-200 {\n      animation-delay: 0.2s;\n    }\n    .delay-300 {\n      animation-delay: 0.4s;\n    }\n  </style>\n</div>"
+  }
+}

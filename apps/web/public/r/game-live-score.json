@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "game-live-score",
+  "type": "registry:ui",
+  "title": "Game Live Score",
+  "description": "Game Live Score - Créé par @diavox-jerome-soriano sur TailwindFlex.",
+  "author": "@diavox-jerome-soriano (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/game-live-score.tsx",
+      "content": "/**\n * Component: Game Live Score\n * Author: @diavox-jerome-soriano (https://tailwindflex.com/@diavox-jerome-soriano)\n * Source: https://tailwindflex.com/@diavox-jerome-soriano/game-live-score\n * Attribution: Créé par @diavox-jerome-soriano sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function GameLiveScore() {\n  return (\n    <div>\n    <div className=\"bg-gray-900 text-white w-full max-w-md mx-auto p-4 rounded-lg text-center mt-4\">\n        <div className=\"text-gray-400 text-sm uppercase\">FT</div>\n        <div className=\"flex items-center justify-center space-x-4 mt-2\">\n            <div className=\"flex flex-col items-center\">\n                <img src=\"https://placeit-img-1-p.cdn.aws.placeit.net/uploads/stage/stage_image/54875/optimized_large_thumb_stage.jpg\" alt=\"Charlotte Hornets\" className=\"h-12 w-12 border rounded-lg border-gray-600\" />\n                <span className=\"text-sm mt-1\">Cyber Militia</span>\n            </div>\n            <div className=\"text-2xl font-bold\">125 - 118</div>\n            <div className=\"flex flex-col items-center\">\n                <img src=\"https://placeit-img-1-p.cdn.aws.placeit.net/uploads/stage/stage_image/61995/optimized_large_thumb_stage.jpg\" alt=\"Chicago Bulls\" className=\"h-12 w-12 border rounded-lg border-gray-600\" />\n                <span className=\"text-sm mt-1\">Game Player</span>\n            </div>\n        </div>\n        <div className=\"text-gray-400 text-sm mt-2\">51-60</div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@diavox-jerome-soriano",
+    "authorUrl": "https://tailwindflex.com/@diavox-jerome-soriano",
+    "sourceUrl": "https://tailwindflex.com/@diavox-jerome-soriano/game-live-score",
+    "mention": "Créé par @diavox-jerome-soriano sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-900 text-white w-full max-w-md mx-auto p-4 rounded-lg text-center mt-4\">\n    <div class=\"text-gray-400 text-sm uppercase\">FT</div>\n    <div class=\"flex items-center justify-center space-x-4 mt-2\">\n        <div class=\"flex flex-col items-center\">\n            <img src=\"https://placeit-img-1-p.cdn.aws.placeit.net/uploads/stage/stage_image/54875/optimized_large_thumb_stage.jpg\" alt=\"Charlotte Hornets\" class=\"h-12 w-12 border rounded-lg border-gray-600\">\n            <span class=\"text-sm mt-1\">Cyber Militia</span>\n        </div>\n        <div class=\"text-2xl font-bold\">125 - 118</div>\n        <div class=\"flex flex-col items-center\">\n            <img src=\"https://placeit-img-1-p.cdn.aws.placeit.net/uploads/stage/stage_image/61995/optimized_large_thumb_stage.jpg\" alt=\"Chicago Bulls\" class=\"h-12 w-12 border rounded-lg border-gray-600\">\n            <span class=\"text-sm mt-1\">Game Player</span>\n        </div>\n    </div>\n    <div class=\"text-gray-400 text-sm mt-2\">51-60</div>\n</div>"
+  }
+}

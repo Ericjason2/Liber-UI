@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "products-layout",
+  "type": "registry:ui",
+  "title": "Products Layout",
+  "description": "Products Layout - Créé par @developerkwame sur TailwindFlex.",
+  "author": "@developerkwame (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/products-layout.tsx",
+      "content": "/**\n * Component: Products Layout\n * Author: @developerkwame (https://tailwindflex.com/@developerkwame)\n * Source: https://tailwindflex.com/@developerkwame/products-layout\n * Attribution: Créé par @developerkwame sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProductsLayout() {\n  return (\n    <div>\n    <div className=\"max-w-[1200px] mx-auto px-6 py-12\">\n      \n      <div className=\"flex items-center justify-between mb-8\">\n        <h2 className=\"text-2xl font-bold tracking-wide\">APPAREL</h2>\n        <a href=\"#\"\n           className=\"inline-block bg-white border border-gray-200 rounded-full px-5 py-2 font-semibold shadow-sm text-[#074BA1] hover50 transition-colors duration-200\">\n           View all Apparel\n        </a>\n      </div>\n    \n      \n      <div className=\"grid gap-10 grid-cols-1 sm2 lg3\">\n        \n        \n        <article className=\"relative bg-[#D6E1E5] rounded-2xl p-10 min-h-[480px] flex flex-col items-center transition-transform duration-300 ease-out hover2 hover group\">\n          <span className=\"absolute top-4 right-4 bg-black text-white rounded-full px-3 py-1 text-xs font-semibold\">Promo available</span>\n          <img className=\"w-3/4 max-w-[300px] object-contain mt-4 transform transition-transform duration-300 group-hover105\"\n               src=\"https://via.placeholder.com/420x560.png?text=Pants\"\n               alt=\"Bulked Up Vibes Wide-Leg Pants\"\n               loading=\"lazy\" />\n          <div className=\"mt-auto text-center\">\n            <div className=\"mt-6 font-semibold text-sm\">Bulked Up Vibes Wide-Leg Pants</div>\n            <div className=\"text-sm mt-2\">$48.00</div>\n          </div>\n        </article>\n    \n        \n        <article className=\"relative bg-[#D6E1E5] rounded-2xl p-10 min-h-[480px] flex flex-col items-center transition-transform duration-300 ease-out hover2 hover group\">\n          <span className=\"absolute top-4 right-4 bg-black text-white rounded-full px-3 py-1 text-xs font-semibold\">Promo available</span>\n          <img className=\"w-3/4 max-w-[300px] object-contain mt-4 transform transition-transform duration-300 group-hover105\"\n               src=\"https://via.placeholder.com/420x560.png?text=Jersey\"\n               alt=\"The Best Part Basketball Jersey\"\n               loading=\"lazy\" />\n          <div className=\"mt-auto text-center\">\n            <div className=\"mt-6 font-semibold text-sm\">The Best Part Basketball Jersey</div>\n            <div className=\"text-sm mt-2\">$32.00</div>\n          </div>\n        </article>\n    \n        \n        <article className=\"relative bg-[#D6E1E5] rounded-2xl p-10 min-h-[480px] flex flex-col items-center transition-transform duration-300 ease-out hover2 hover group\">\n          <span className=\"absolute top-4 right-4 bg-black text-white rounded-full px-3 py-1 text-xs font-semibold\">Promo available</span>\n          <img className=\"w-3/4 max-w-[300px] object-contain mt-4 transform transition-transform duration-300 group-hover105\"\n               src=\"https://via.placeholder.com/420x560.png?text=Leggings\"\n               alt=\"Brainy Brain Capri Leggings\"\n               loading=\"lazy\" />\n          <div className=\"mt-auto text-center\">\n            <div className=\"mt-6 font-semibold text-sm\">Brainy Brain Capri Leggings</div>\n            <div className=\"text-sm mt-2\">$42.00</div>\n          </div>\n        </article>\n    \n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@developerkwame",
+    "authorUrl": "https://tailwindflex.com/@developerkwame",
+    "sourceUrl": "https://tailwindflex.com/@developerkwame/products-layout",
+    "mention": "Créé par @developerkwame sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-[1200px] mx-auto px-6 py-12\">\n  <!-- Header -->\n  <div class=\"flex items-center justify-between mb-8\">\n    <h2 class=\"text-2xl font-bold tracking-wide\">APPAREL</h2>\n    <a href=\"#\"\n       class=\"inline-block bg-white border border-gray-200 rounded-full px-5 py-2 font-semibold shadow-sm text-[#074BA1] hover:bg-gray-50 transition-colors duration-200\">\n       View all Apparel\n    </a>\n  </div>\n\n  <!-- Grid -->\n  <div class=\"grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3\">\n    \n    <!-- Product Card -->\n    <article class=\"relative bg-[#D6E1E5] rounded-2xl p-10 min-h-[480px] flex flex-col items-center transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-xl group\">\n      <span class=\"absolute top-4 right-4 bg-black text-white rounded-full px-3 py-1 text-xs font-semibold\">Promo available</span>\n      <img class=\"w-3/4 max-w-[300px] object-contain mt-4 transform transition-transform duration-300 group-hover:scale-105\"\n           src=\"https://via.placeholder.com/420x560.png?text=Pants\"\n           alt=\"Bulked Up Vibes Wide-Leg Pants\"\n           loading=\"lazy\">\n      <div class=\"mt-auto text-center\">\n        <div class=\"mt-6 font-semibold text-sm\">Bulked Up Vibes Wide-Leg Pants</div>\n        <div class=\"text-sm mt-2\">$48.00</div>\n      </div>\n    </article>\n\n    <!-- Product Card -->\n    <article class=\"relative bg-[#D6E1E5] rounded-2xl p-10 min-h-[480px] flex flex-col items-center transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-xl group\">\n      <span class=\"absolute top-4 right-4 bg-black text-white rounded-full px-3 py-1 text-xs font-semibold\">Promo available</span>\n      <img class=\"w-3/4 max-w-[300px] object-contain mt-4 transform transition-transform duration-300 group-hover:scale-105\"\n           src=\"https://via.placeholder.com/420x560.png?text=Jersey\"\n           alt=\"The Best Part Basketball Jersey\"\n           loading=\"lazy\">\n      <div class=\"mt-auto text-center\">\n        <div class=\"mt-6 font-semibold text-sm\">The Best Part Basketball Jersey</div>\n        <div class=\"text-sm mt-2\">$32.00</div>\n      </div>\n    </article>\n\n    <!-- Product Card -->\n    <article class=\"relative bg-[#D6E1E5] rounded-2xl p-10 min-h-[480px] flex flex-col items-center transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-xl group\">\n      <span class=\"absolute top-4 right-4 bg-black text-white rounded-full px-3 py-1 text-xs font-semibold\">Promo available</span>\n      <img class=\"w-3/4 max-w-[300px] object-contain mt-4 transform transition-transform duration-300 group-hover:scale-105\"\n           src=\"https://via.placeholder.com/420x560.png?text=Leggings\"\n           alt=\"Brainy Brain Capri Leggings\"\n           loading=\"lazy\">\n      <div class=\"mt-auto text-center\">\n        <div class=\"mt-6 font-semibold text-sm\">Brainy Brain Capri Leggings</div>\n        <div class=\"text-sm mt-2\">$42.00</div>\n      </div>\n    </article>\n\n  </div>\n</div>"
+  }
+}

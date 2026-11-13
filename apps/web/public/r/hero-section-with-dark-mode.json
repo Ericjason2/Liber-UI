@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-with-dark-mode",
+  "type": "registry:ui",
+  "title": "Hero Section with Dark Mode",
+  "description": "Hero Section with Dark Mode - Créé par @rathanak-phan sur TailwindFlex.",
+  "author": "@rathanak-phan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-with-dark-mode.tsx",
+      "content": "/**\n * Component: Hero Section with Dark Mode\n * Author: @rathanak-phan (https://tailwindflex.com/@rathanak-phan)\n * Source: https://tailwindflex.com/@rathanak-phan/hero-section-with-dark-mode\n * Attribution: Créé par @rathanak-phan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSectionWithDarkMode() {\n  return (\n    <div>\n    \n    <section className=\"pt-24 md32 lg40 bg-white dark900 text-gray-900 dark transition-colors duration-300\">\n      <div className=\"max-w-7xl mx-auto px-5 sm10 lg20 flex flex-col-reverse md items-center gap-10\">\n        \n        \n        <div className=\"w-full md1/2 space-y-6\">\n          <h1 className=\"text-4xl md5xl lg6xl font-bold leading-tight\">\n            Welcome to <span className=\"text-green-700 dark400\">LoGo</span> Store\n          </h1>\n          <p className=\"text-lg md text-gray-700 dark300\">\n            Discover top-quality products and enjoy a smooth, secure shopping experience.\n          </p>\n          <div className=\"flex flex-wrap gap-4\">\n            <a href=\"/shop\" className=\"bg-blue-600 hover700 text-white px-6 py-3 rounded-md text-lg font-medium shadow-md transition\">\n              Shop Now\n            </a>\n            <a href=\"/about\" className=\"border border-blue-600 dark400 text-blue-600 dark400 hover100 dark800 px-6 py-3 rounded-md text-lg font-medium transition\">\n              Learn More\n            </a>\n          </div>\n        </div>\n    \n        \n        <div className=\"w-full md1/2\">\n          <img \n            src=\"https://images.unsplash.com/photo-1585386959984-a4155228c2ce?auto=format&fit=crop&w=800&q=80\" \n            alt=\"Happy woman shopping online\" \n            className=\"w-full rounded-lg shadow-lg object-cover\"\n          />\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rathanak-phan",
+    "authorUrl": "https://tailwindflex.com/@rathanak-phan",
+    "sourceUrl": "https://tailwindflex.com/@rathanak-phan/hero-section-with-dark-mode",
+    "mention": "Créé par @rathanak-phan sur TailwindFlex",
+    "rawHtml": "<!-- Hero Section -->\n<section class=\"pt-24 md:pt-32 lg:pt-40 bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300\">\n  <div class=\"max-w-7xl mx-auto px-5 sm:px-10 lg:px-20 flex flex-col-reverse md:flex-row items-center gap-10\">\n    \n    <!-- Text Content -->\n    <div class=\"w-full md:w-1/2 space-y-6\">\n      <h1 class=\"text-4xl md:text-5xl lg:text-6xl font-bold leading-tight\">\n        Welcome to <span class=\"text-green-700 dark:text-green-400\">LoGo</span> Store\n      </h1>\n      <p class=\"text-lg md:text-xl text-gray-700 dark:text-gray-300\">\n        Discover top-quality products and enjoy a smooth, secure shopping experience.\n      </p>\n      <div class=\"flex flex-wrap gap-4\">\n        <a href=\"/shop\" class=\"bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg font-medium shadow-md transition\">\n          Shop Now\n        </a>\n        <a href=\"/about\" class=\"border border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-800 px-6 py-3 rounded-md text-lg font-medium transition\">\n          Learn More\n        </a>\n      </div>\n    </div>\n\n    <!-- Image / Illustration -->\n    <div class=\"w-full md:w-1/2\">\n      <img \n        src=\"https://images.unsplash.com/photo-1585386959984-a4155228c2ce?auto=format&fit=crop&w=800&q=80\" \n        alt=\"Happy woman shopping online\" \n        class=\"w-full rounded-lg shadow-lg object-cover\"\n      />\n    </div>\n  </div>\n</section>"
+  }
+}

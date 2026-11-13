@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card2",
+  "type": "registry:ui",
+  "title": "card2",
+  "description": "card2 - Créé par @pablitodgb sur TailwindFlex.",
+  "author": "@pablitodgb (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card2.tsx",
+      "content": "/**\n * Component: card2\n * Author: @pablitodgb (https://tailwindflex.com/@pablitodgb)\n * Source: https://tailwindflex.com/@pablitodgb/card2\n * Attribution: Créé par @pablitodgb sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Card2() {\n  return (\n    <div>\n    \n    \n    <div className=\"h-screen w-screen box-content bg-slate-300 text-slate-600 flex justify-center dark600 dark200\">\n      <div className=\"p-1 my-auto min-h-fit h-fit max-h-screen w-full max-w-screen grid grid-cols-1 sm3 gap-4 rounded-lg bg-slate-500\">\n        \n        <div className=\"p-1 m-1 rounded-lg text-center min-h-20 h-fit max-w-sm bg-slate-400\">\n          <main className=\"text-3xl relative -top-5 shadow shadow-lg shadow-cyan-500/50\">😊</main>\n          <section className=\"space-y-2\">\n            <p className=\"font-semibold text-xl\">TREE AND SHRUB PRUNING</p>\n            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet modi accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>\n          </section>\n        </div>\n    \n        <div className=\"p-1 m-1 rounded-lg text-center min-h-20 h-fit max-w-sm bg-slate-400\">\n          <main className=\"text-3xl relative -top-5\">😁</main>\n          <section className=\"space-y-2\">\n            <p className=\"font-semibold text-xl\">TREE AND SHRUB PRUNING</p>\n            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet modi accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>\n          </section>\n        </div>\n    \n        <div className=\"p-1 m-1 rounded-lg text-center min-h-20 h-fit max-w-sm bg-slate-400\">\n          <main className=\"text-3xl relative -top-5\">🤣</main>\n          <section className=\"space-y-2\">\n            <p className=\"font-semibold text-xl\">TREE AND SHRUB PRUNING</p>\n            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet modi accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>\n          </section>\n        </div>\n    \n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@pablitodgb",
+    "authorUrl": "https://tailwindflex.com/@pablitodgb",
+    "sourceUrl": "https://tailwindflex.com/@pablitodgb/card2",
+    "mention": "Créé par @pablitodgb sur TailwindFlex",
+    "rawHtml": "<!-- <div class=\"h-screen w-screen box-content bg-slate-300 text-slate-600 flex justify-center dark:bg-slate-600 dark:text-slate-200\">\n  <div class=\"p-1 my-auto min-h-fit h-fit max-h-screen w-full max-w-screen grid grid-cols-1 sm:grid-cols-3 gap-4 rounded-lg bg-slate-500\">\n    <div class=\"p-1 m-1 rounded-lg text-center min-w-xs min-h-20 h-fit max-w-sm sm:w-1/3 bg-slate-400\">\n      <main class=\"text-3xl relative -top-5\">😊</main>\n      <section class=\"space-y-2\">\n      <p class=\"font-semibold text-xl\">TREE AND SHRUB PRUNING</p>\n      <p class=\"\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet modi accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>\n      </section>\n    </div>\n    <div class=\" p-1 m-1 rounded-lg text-center min-w-xs min-h-20 h-fit max-w-sm  sm:w-1/3 bg-slate-400\">\n      <main class=\"text-3xl relative -top-5\">😁</main>\n      <section class=\"space-y-2 gap-\">\n      <p class=\"font-semibold text-xl\">TREE AND SHRUB PRUNING</p>\n      <p class=\"\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet modi accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>\n      </section>\n    </div>\n    <div class=\" p-1 m-1 rounded-lg text-center min-w-xs min-h-20 h-fit max-w-sm sm:w-1/3 bg-slate-400\">\n      <main class=\"text-3xl relative -top-5\">🤣</main>\n      <section class=\"space-y-2 gap-\">\n      <p class=\"font-semibold text-xl\">TREE AND SHRUB PRUNING</p>\n      <p class=\"\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet modi accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>\n      </section>\n    </div>\n  </div>\n</div> -->\n\n<div class=\"h-screen w-screen box-content bg-slate-300 text-slate-600 flex justify-center dark:bg-slate-600 dark:text-slate-200\">\n  <div class=\"p-1 my-auto min-h-fit h-fit max-h-screen w-full max-w-screen grid grid-cols-1 sm:grid-cols-3 gap-4 rounded-lg bg-slate-500\">\n    \n    <div class=\"p-1 m-1 rounded-lg text-center min-h-20 h-fit max-w-sm bg-slate-400\">\n      <main class=\"text-3xl relative -top-5 shadow shadow-lg shadow-cyan-500/50\">😊</main>\n      <section class=\"space-y-2\">\n        <p class=\"font-semibold text-xl\">TREE AND SHRUB PRUNING</p>\n        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet modi accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>\n      </section>\n    </div>\n\n    <div class=\"p-1 m-1 rounded-lg text-center min-h-20 h-fit max-w-sm bg-slate-400\">\n      <main class=\"text-3xl relative -top-5\">😁</main>\n      <section class=\"space-y-2\">\n        <p class=\"font-semibold text-xl\">TREE AND SHRUB PRUNING</p>\n        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet modi accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>\n      </section>\n    </div>\n\n    <div class=\"p-1 m-1 rounded-lg text-center min-h-20 h-fit max-w-sm bg-slate-400\">\n      <main class=\"text-3xl relative -top-5\">🤣</main>\n      <section class=\"space-y-2\">\n        <p class=\"font-semibold text-xl\">TREE AND SHRUB PRUNING</p>\n        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet modi accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>\n      </section>\n    </div>\n\n  </div>\n</div>"
+  }
+}

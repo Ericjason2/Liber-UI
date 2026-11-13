@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "watch-card",
+  "type": "registry:ui",
+  "title": "Watch Card",
+  "description": "Watch Card - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/watch-card.tsx",
+      "content": "/**\n * Component: Watch Card\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/watch-card\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function WatchCard() {\n  return (\n    <div>\n    <section>\n      <div className=\"mx-auto max-w-screen-xl px-4 py-8 sm6 sm12 lg8\">\n        <div className=\"grid grid-cols-1 gap-4 lg3 lg\">\n          <div className=\"grid place-content-center rounded bg-gray-100 p-6 sm8\">\n            <div className=\"mx-auto max-w-md text-center lg\">\n              <header>\n                <h2 className=\"text-xl font-bold text-gray-900 sm3xl\">Watches</h2>\n    \n                <p className=\"mt-4 text-gray-500\">\n                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rerum quam amet\n                  provident nulla error!\n                </p>\n              </header>\n    \n              <a\n                href=\"#\"\n                className=\"mt-8 inline-block rounded border border-gray-900 bg-gray-900 px-12 py-3 text-sm font-medium text-white transition hover focus focus\"\n              >\n                Shop All\n              </a>\n            </div>\n          </div>\n    \n          <div className=\"lg2 lg8\">\n            <ul className=\"grid grid-cols-2 gap-4\">\n              <li>\n                <a href=\"#\" className=\"group block\">\n                  <img\n                    src=\"https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1598&q=80\"\n                    alt=\"\"\n                    className=\"aspect-square w-full rounded object-cover\"\n                  />\n    \n                  <div className=\"mt-3\">\n                    <h3\n                      className=\"font-medium text-gray-900 group-hover group-hover4\"\n                    >\n                      Simple Watch\n                    </h3>\n    \n                    <p className=\"mt-1 text-sm text-gray-700\">$150</p>\n                  </div>\n                </a>\n              </li>\n    \n              <li>\n                <a href=\"#\" className=\"group block\">\n                  <img\n                    src=\"https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1598&q=80\"\n                    alt=\"\"\n                    className=\"aspect-square w-full rounded object-cover\"\n                  />\n    \n                  <div className=\"mt-3\">\n                    <h3\n                      className=\"font-medium text-gray-900 group-hover group-hover4\"\n                    >\n                      Simple Watch\n                    </h3>\n    \n                    <p className=\"mt-1 text-sm text-gray-700\">$150</p>\n                  </div>\n                </a>\n              </li>\n            </ul>\n          </div>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/watch-card",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<section>\n  <div class=\"mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8\">\n    <div class=\"grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch\">\n      <div class=\"grid place-content-center rounded bg-gray-100 p-6 sm:p-8\">\n        <div class=\"mx-auto max-w-md text-center lg:text-left\">\n          <header>\n            <h2 class=\"text-xl font-bold text-gray-900 sm:text-3xl\">Watches</h2>\n\n            <p class=\"mt-4 text-gray-500\">\n              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rerum quam amet\n              provident nulla error!\n            </p>\n          </header>\n\n          <a\n            href=\"#\"\n            class=\"mt-8 inline-block rounded border border-gray-900 bg-gray-900 px-12 py-3 text-sm font-medium text-white transition hover:shadow focus:outline-none focus:ring\"\n          >\n            Shop All\n          </a>\n        </div>\n      </div>\n\n      <div class=\"lg:col-span-2 lg:py-8\">\n        <ul class=\"grid grid-cols-2 gap-4\">\n          <li>\n            <a href=\"#\" class=\"group block\">\n              <img\n                src=\"https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1598&q=80\"\n                alt=\"\"\n                class=\"aspect-square w-full rounded object-cover\"\n              />\n\n              <div class=\"mt-3\">\n                <h3\n                  class=\"font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4\"\n                >\n                  Simple Watch\n                </h3>\n\n                <p class=\"mt-1 text-sm text-gray-700\">$150</p>\n              </div>\n            </a>\n          </li>\n\n          <li>\n            <a href=\"#\" class=\"group block\">\n              <img\n                src=\"https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1598&q=80\"\n                alt=\"\"\n                class=\"aspect-square w-full rounded object-cover\"\n              />\n\n              <div class=\"mt-3\">\n                <h3\n                  class=\"font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4\"\n                >\n                  Simple Watch\n                </h3>\n\n                <p class=\"mt-1 text-sm text-gray-700\">$150</p>\n              </div>\n            </a>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

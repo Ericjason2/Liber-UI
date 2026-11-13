@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "welcome-banner-for-developers-portfolio",
+  "type": "registry:ui",
+  "title": "Welcome banner for developers portfolio",
+  "description": "Welcome banner for developers portfolio - Créé par @vikram sur TailwindFlex.",
+  "author": "@vikram (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/welcome-banner-for-developers-portfolio.tsx",
+      "content": "/**\n * Component: Welcome banner for developers portfolio\n * Author: @vikram (https://tailwindflex.com/@vikram)\n * Source: https://tailwindflex.com/@vikram/welcome-banner-for-developers-portfolio\n * Attribution: Créé par @vikram sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function WelcomeBannerForDevelopersPortfolio() {\n  return (\n    <div>\n    <section className=\"py-8 z-10 font-serif\">\n      <div className=\"flex flex-col md items-center max-w-6xl px-6 py-8 mx-auto\">\n        <div className=\"w-full md1/2 py-8\">\n          <h1 className=\"text-purple-900 text-7xl font-semibold leading-none tracking-tighter\">\n            Welcome to <br /><span className=\"text-blue-500\">My Portfolio, <br /></span> I am Web Developer.\n          </h1>\n        </div>\n        <div className=\"w-full md1/2 py-8\">\n          <img src=\"https://www.svgrepo.com/show/493509/person-who-invests.svg\" className=\"g-image\" />\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@vikram",
+    "authorUrl": "https://tailwindflex.com/@vikram",
+    "sourceUrl": "https://tailwindflex.com/@vikram/welcome-banner-for-developers-portfolio",
+    "mention": "Créé par @vikram sur TailwindFlex",
+    "rawHtml": "<section class=\"py-8 z-10 font-serif\">\n  <div class=\"flex flex-col md:flex-row items-center max-w-6xl px-6 py-8 mx-auto\">\n    <div class=\"w-full md:w-1/2 py-8\">\n      <h1 class=\"text-purple-900 text-7xl font-semibold leading-none tracking-tighter\">\n        Welcome to <br><span class=\"text-blue-500\">My Portfolio, <br></span> I am Web Developer.\n      </h1>\n    </div>\n    <div class=\"w-full md:w-1/2 py-8\">\n      <img src=\"https://www.svgrepo.com/show/493509/person-who-invests.svg\" class=\"g-image\">\n    </div>\n  </div>\n</section>"
+  }
+}

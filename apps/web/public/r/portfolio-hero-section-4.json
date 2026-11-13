@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "portfolio-hero-section-4",
+  "type": "registry:ui",
+  "title": "Portfolio Hero Section 4",
+  "description": "Portfolio Hero Section 4 - Créé par @sammytg7 sur TailwindFlex.",
+  "author": "@sammytg7 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/portfolio-hero-section-4.tsx",
+      "content": "/**\n * Component: Portfolio Hero Section 4\n * Author: @sammytg7 (https://tailwindflex.com/@sammytg7)\n * Source: https://tailwindflex.com/@sammytg7/portfolio-hero-section-4\n * Attribution: Créé par @sammytg7 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PortfolioHeroSection4() {\n  return (\n    <div>\n    <div className=\"w-full h-screen bg-black overflow-\">\n    \n      <div\n        className=\"w-full mx-auto relative bg-[url('https://grenadarevo.com/wp-content/uploads/2018/12/alekzan-powell-507928-unsplash.jpg')] bg-cover bg-no-repeat sm py-20\">\n        <div className=\"absolute md24 md32 sm[7rem] -right-[1rem] top-0 opacity-30 w-[15%] h-[20%] gradiant rounded-full blur-3xl\"></div>\n        <div className=\"absolute md[45%] sm[42%] -left-[40%] opacity-10 w-[50%] h-full my-auto bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-3xl\"></div>\n    \n        <div className=\"w-[80%] mx-auto h-full flex justify-between items-center\">\n          <div className=\"h-full xl[50%] md[60%] sm[70%] w-full text-white flex flex-col gap-2 justify-center\">\n            <h1 className=\"xl7xl lg6xl md5xl text-4xl font-semibold\">Hi there, I am</h1>\n            <h1 className=\"xl7xl lg6xl md5xl text-4xl font-semibold bg-text\">Samuel Abera!</h1>\n            \n            <p className=\"lg3xl sm text-lg lg6 my-2\">I am Experienced full-stack developer with 4+ years of\n              expertise in Laravel, NestJS, Nuxt.js, Next.js, Android, and some Flutter experience.</p>\n    \n            \n            <div className=\"flex sm flex-col gap-4 lg4 mt-2\">\n              <button className=\"md8 px-4 md4 py-2 md text-lg font-semibold rounded-md gradiant cursor-pointer\">Click For Hire Me</button>\n              <button className=\"md8 px-4 md4 py-2 md text-lg font-semibold outline outline-2  rounded-md cursor\">About Me</button>\n            </div>\n          </div>\n          <div></div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@sammytg7",
+    "authorUrl": "https://tailwindflex.com/@sammytg7",
+    "sourceUrl": "https://tailwindflex.com/@sammytg7/portfolio-hero-section-4",
+    "mention": "Créé par @sammytg7 sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full h-screen bg-black overflow-x-hidden\">\n\n  <div\n    class=\"w-full mx-auto relative bg-[url('https://grenadarevo.com/wp-content/uploads/2018/12/alekzan-powell-507928-unsplash.jpg')] bg-cover bg-no-repeat sm:aspect-video py-20\">\n    <div class=\"absolute md:-top-24 md:-right-32 sm:-right-[7rem] -right-[1rem] top-0 opacity-30 w-[15%] h-[20%] gradiant rounded-full blur-3xl\"></div>\n    <div class=\"absolute md:-left-[45%] sm:-left-[42%] -left-[40%] opacity-10 w-[50%] h-full my-auto bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-3xl\"></div>\n\n    <div class=\"w-[80%] mx-auto h-full flex justify-between items-center\">\n      <div class=\"h-full xl:w-[50%] md:w-[60%] sm:w-[70%] w-full text-white flex flex-col gap-2 justify-center\">\n        <h1 class=\"xl:text-7xl lg:text-6xl md:text-5xl text-4xl font-semibold\">Hi there, I am</h1>\n        <h1 class=\"xl:text-7xl lg:text-6xl md:text-5xl text-4xl font-semibold bg-text\">Samuel Abera!</h1>\n        <!--  -->\n        <p class=\"lg:text-3xl sm:text-xl text-lg lg:my-6 my-2\">I am Experienced full-stack developer with 4+ years of\n          expertise in Laravel, NestJS, Nuxt.js, Next.js, Android, and some Flutter experience.</p>\n\n        <!-- Buttons -->\n        <div class=\"flex sm:flex-row flex-col gap-4 lg:mt-4 mt-2\">\n          <button class=\"md:px-8 px-4 md:py-4 py-2 md:text-xl text-lg font-semibold rounded-md gradiant cursor-pointer\">Click For Hire Me</button>\n          <button class=\"md:px-8 px-4 md:py-4 py-2 md:text-xl text-lg font-semibold outline outline-2  rounded-md cursor\">About Me</button>\n        </div>\n      </div>\n      <div></div>\n    </div>\n  </div>\n</div>"
+  }
+}

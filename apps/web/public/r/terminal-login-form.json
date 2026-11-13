@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "terminal-login-form",
+  "type": "registry:ui",
+  "title": "Terminal Login Form",
+  "description": "Terminal Login Form - Créé par @jugendra-gangwar sur TailwindFlex.",
+  "author": "@jugendra-gangwar (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/terminal-login-form.tsx",
+      "content": "/**\n * Component: Terminal Login Form\n * Author: @jugendra-gangwar (https://tailwindflex.com/@jugendra-gangwar)\n * Source: https://tailwindflex.com/@jugendra-gangwar/terminal-login-form\n * Attribution: Créé par @jugendra-gangwar sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TerminalLoginForm() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n<meta charset=\\\"UTF-8\\\">\\n<meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n<title>Sign in - Terminal</title>\\n\\n<link rel=\\\"preconnect\\\" href=\\\"https://fonts.googleapis.com\\\">\\n<link rel=\\\"preconnect\\\" href=\\\"https://fonts.gstatic.com\\\" crossorigin>\\n<link href=\\\"https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap\\\" rel=\\\"stylesheet\\\">\\n</head>\\n<body class=\\\"min-h-screen antialiased bg-neutral-950 text-emerald-400\\\" style=\\\"font-family:'JetBrains Mono',monospace\\\">\\n<main class=\\\"min-h-screen flex items-center justify-center p-4 sm:p-6\\\">\\n\\n<section class=\\\"w-full max-w-md bg-black border border-emerald-500/40 rounded-2xl p-6 shadow-[0_0_40px_rgba(16,185,129,0.15)]\\\">\\n  <div class=\\\"flex items-center justify-between pb-3 border-b border-emerald-950 text-xs text-emerald-600\\\">\\n    <div class=\\\"flex gap-1.5\\\" aria-hidden=\\\"true\\\"><span class=\\\"h-3 w-3 rounded-full bg-emerald-950 border border-emerald-700\\\"></span><span class=\\\"h-3 w-3 rounded-full bg-emerald-950 border border-emerald-700\\\"></span><span class=\\\"h-3 w-3 rounded-full bg-emerald-950 border border-emerald-700\\\"></span></div>\\n    <span>ssh auth-session</span>\\n  </div>\\n  <div class=\\\"py-5\\\">\\n    <h1 class=\\\"text-base font-bold text-emerald-300\\\">Authenticate to continue<span class=\\\"animate-pulse\\\">_</span></h1>\\n    <p class=\\\"text-xs text-emerald-700 mt-1\\\">Secure endpoint on port 443</p>\\n  </div>\\n  <form data-form class=\\\"space-y-4\\\" novalidate>\\n    <div>\\n      <label for=\\\"user\\\" class=\\\"text-xs text-emerald-500 block mb-1.5\\\">$ username</label>\\n      <input id=\\\"user\\\" type=\\\"text\\\" required autocomplete=\\\"username\\\" placeholder=\\\"dev_node\\\" class=\\\"w-full bg-emerald-950/40 border border-emerald-500/30 rounded-lg px-3 py-3 text-sm text-emerald-200 placeholder-emerald-800 transition focus:outline-none focus:border-emerald-400 focus:ring-4 focus:ring-emerald-400/15\\\">\\n    </div>\\n    <div>\\n  <div class=\\\"flex items-center justify-between mb-1.5\\\">\\n    <label for=\\\"pw\\\" class=\\\"text-xs text-emerald-500\\\">$ password</label>\\n  </div>\\n  <div class=\\\"relative\\\">\\n    <input id=\\\"pw\\\" type=\\\"password\\\" required minlength=\\\"6\\\" autocomplete=\\\"current-password\\\" placeholder=\\\"••••••••\\\" class=\\\"w-full bg-emerald-950/40 border border-emerald-500/30 rounded-lg px-3 py-3 text-sm text-emerald-200 placeholder-emerald-800 transition focus:outline-none focus:border-emerald-400 focus:ring-4 focus:ring-emerald-400/15 pr-16\\\">\\n    <button type=\\\"button\\\" data-toggle=\\\"pw\\\" aria-pressed=\\\"false\\\" class=\\\"absolute right-3 top-1/2 -translate-y-1/2 text-xs font-semibold text-emerald-500 hover:text-emerald-300 focus-visible:outline-none focus-visible:underline\\\">Show</button>\\n  </div>\\n</div>\\n    <button type=\\\"submit\\\" data-loading=\\\"authenticating...\\\" class=\\\"w-full bg-emerald-500 hover:bg-emerald-400 text-black font-bold text-sm py-3 rounded-lg transition shadow-[0_0_18px_rgba(16,185,129,0.4)] active:scale-[0.99] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-emerald-300/40\\\">Run login</button>\\n  </form>\\n  <div class=\\\"mt-5 pt-4 border-t border-emerald-950 flex justify-between text-xs text-emerald-600\\\">\\n    <a href=\\\"#\\\" class=\\\"hover:text-emerald-300\\\">Recover access</a><a href=\\\"#\\\" class=\\\"hover:text-emerald-300\\\">Use SSH key</a>\\n  </div>\\n</section>\\n</main>\\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@jugendra-gangwar",
+    "authorUrl": "https://tailwindflex.com/@jugendra-gangwar",
+    "sourceUrl": "https://tailwindflex.com/@jugendra-gangwar/terminal-login-form",
+    "mention": "Créé par @jugendra-gangwar sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>Sign in - Terminal</title>\n<script src=\"https://cdn.tailwindcss.com/3.4.17\"></script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap\" rel=\"stylesheet\">\n</head>\n<body class=\"min-h-screen antialiased bg-neutral-950 text-emerald-400\" style=\"font-family:'JetBrains Mono',monospace\">\n<main class=\"min-h-screen flex items-center justify-center p-4 sm:p-6\">\n\n<section class=\"w-full max-w-md bg-black border border-emerald-500/40 rounded-2xl p-6 shadow-[0_0_40px_rgba(16,185,129,0.15)]\">\n  <div class=\"flex items-center justify-between pb-3 border-b border-emerald-950 text-xs text-emerald-600\">\n    <div class=\"flex gap-1.5\" aria-hidden=\"true\"><span class=\"h-3 w-3 rounded-full bg-emerald-950 border border-emerald-700\"></span><span class=\"h-3 w-3 rounded-full bg-emerald-950 border border-emerald-700\"></span><span class=\"h-3 w-3 rounded-full bg-emerald-950 border border-emerald-700\"></span></div>\n    <span>ssh auth-session</span>\n  </div>\n  <div class=\"py-5\">\n    <h1 class=\"text-base font-bold text-emerald-300\">Authenticate to continue<span class=\"animate-pulse\">_</span></h1>\n    <p class=\"text-xs text-emerald-700 mt-1\">Secure endpoint on port 443</p>\n  </div>\n  <form data-form class=\"space-y-4\" novalidate>\n    <div>\n      <label for=\"user\" class=\"text-xs text-emerald-500 block mb-1.5\">$ username</label>\n      <input id=\"user\" type=\"text\" required autocomplete=\"username\" placeholder=\"dev_node\" class=\"w-full bg-emerald-950/40 border border-emerald-500/30 rounded-lg px-3 py-3 text-sm text-emerald-200 placeholder-emerald-800 transition focus:outline-none focus:border-emerald-400 focus:ring-4 focus:ring-emerald-400/15\">\n    </div>\n    <div>\n  <div class=\"flex items-center justify-between mb-1.5\">\n    <label for=\"pw\" class=\"text-xs text-emerald-500\">$ password</label>\n  </div>\n  <div class=\"relative\">\n    <input id=\"pw\" type=\"password\" required minlength=\"6\" autocomplete=\"current-password\" placeholder=\"••••••••\" class=\"w-full bg-emerald-950/40 border border-emerald-500/30 rounded-lg px-3 py-3 text-sm text-emerald-200 placeholder-emerald-800 transition focus:outline-none focus:border-emerald-400 focus:ring-4 focus:ring-emerald-400/15 pr-16\">\n    <button type=\"button\" data-toggle=\"pw\" aria-pressed=\"false\" class=\"absolute right-3 top-1/2 -translate-y-1/2 text-xs font-semibold text-emerald-500 hover:text-emerald-300 focus-visible:outline-none focus-visible:underline\">Show</button>\n  </div>\n</div>\n    <button type=\"submit\" data-loading=\"authenticating...\" class=\"w-full bg-emerald-500 hover:bg-emerald-400 text-black font-bold text-sm py-3 rounded-lg transition shadow-[0_0_18px_rgba(16,185,129,0.4)] active:scale-[0.99] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-emerald-300/40\">Run login</button>\n  </form>\n  <div class=\"mt-5 pt-4 border-t border-emerald-950 flex justify-between text-xs text-emerald-600\">\n    <a href=\"#\" class=\"hover:text-emerald-300\">Recover access</a><a href=\"#\" class=\"hover:text-emerald-300\">Use SSH key</a>\n  </div>\n</section>\n</main>\n<script>\nconst SPIN='<svg class=\"animate-spin h-4 w-4 inline-block mr-2 -mt-0.5\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><circle class=\"opacity-25\" cx=\"12\" cy=\"12\" r=\"10\" stroke=\"currentColor\" stroke-width=\"4\"/><path class=\"opacity-75\" fill=\"currentColor\" d=\"M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z\"/></svg>';\ndocument.querySelectorAll('[data-toggle]').forEach(b=>b.addEventListener('click',()=>{\n  const i=document.getElementById(b.dataset.toggle),show=i.type==='password';\n  i.type=show?'text':'password';b.textContent=show?'Hide':'Show';b.setAttribute('aria-pressed',show);\n}));\ndocument.querySelectorAll('form[data-form]').forEach(f=>f.addEventListener('submit',e=>{\n  e.preventDefault();\n  if(!f.checkValidity()){f.reportValidity();return;}\n  const b=f.querySelector('[type=submit]'),old=b.innerHTML;\n  b.disabled=true;b.classList.add('opacity-80','cursor-wait');b.innerHTML=SPIN+(b.dataset.loading||'Please wait...');\n  setTimeout(()=>{b.disabled=false;b.classList.remove('opacity-80','cursor-wait');b.innerHTML=old;},1600);\n}));\n</script>\n</body>\n</html>"
+  }
+}

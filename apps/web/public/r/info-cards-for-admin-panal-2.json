@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "info-cards-for-admin-panal-2",
+  "type": "registry:ui",
+  "title": "Info cards for admin panal",
+  "description": "Info cards for admin panal - Créé par @sophia-baker sur TailwindFlex.",
+  "author": "@sophia-baker (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/info-cards-for-admin-panal-2.tsx",
+      "content": "/**\n * Component: Info cards for admin panal\n * Author: @sophia-baker (https://tailwindflex.com/@sophia-baker)\n * Source: https://tailwindflex.com/@sophia-baker/info-cards-for-admin-panal-2\n * Attribution: Créé par @sophia-baker sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InfoCardsForAdminPanal2() {\n  return (\n    <div>\n    <div className=\"mt-4 w-full grid grid-cols-1 md2 xl3 gap-4 p-20\">\n        <div className=\"bg-white shadow rounded-lg p-4 sm6 xl8 \">\n            <div className=\"flex items-center\">\n                <div className=\"flex-shrink-0\">\n                    <span className=\"text-2xl sm3xl leading-none font-bold text-gray-900\">2,340</span>\n                    <h3 className=\"text-base font-normal text-gray-500\">New products this week</h3>\n                </div>\n                <div className=\"ml-5 w-0 flex items-center justify-end flex-1 text-green-500 text-base font-bold\">\n                    14.6%\n                    <svg className=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <path fillRule=\"evenodd\"\n                            d=\"M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z\"\n                            clipRule=\"evenodd\"></path>\n                    </svg>\n                </div>\n            </div>\n        </div>\n        <div className=\"bg-white shadow rounded-lg p-4 sm6 xl8 \">\n            <div className=\"flex items-center\">\n                <div className=\"flex-shrink-0\">\n                    <span className=\"text-2xl sm3xl leading-none font-bold text-gray-900\">5,355</span>\n                    <h3 className=\"text-base font-normal text-gray-500\">Visitors this week</h3>\n                </div>\n                <div className=\"ml-5 w-0 flex items-center justify-end flex-1 text-green-500 text-base font-bold\">\n                    32.9%\n                    <svg className=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <path fillRule=\"evenodd\"\n                            d=\"M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z\"\n                            clipRule=\"evenodd\"></path>\n                    </svg>\n                </div>\n            </div>\n        </div>\n        <div className=\"bg-white shadow rounded-lg p-4 sm6 xl8 \">\n            <div className=\"flex items-center\">\n                <div className=\"flex-shrink-0\">\n                    <span className=\"text-2xl sm3xl leading-none font-bold text-gray-900\">385</span>\n                    <h3 className=\"text-base font-normal text-gray-500\">User signups this week</h3>\n                </div>\n                <div className=\"ml-5 w-0 flex items-center justify-end flex-1 text-red-500 text-base font-bold\">\n                    -2.7%\n                    <svg className=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <path fillRule=\"evenodd\"\n                            d=\"M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z\"\n                            clipRule=\"evenodd\"></path>\n                    </svg>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sophia-baker",
+    "authorUrl": "https://tailwindflex.com/@sophia-baker",
+    "sourceUrl": "https://tailwindflex.com/@sophia-baker/info-cards-for-admin-panal-2",
+    "mention": "Créé par @sophia-baker sur TailwindFlex",
+    "rawHtml": "<div class=\"mt-4 w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-20\">\n    <div class=\"bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 \">\n        <div class=\"flex items-center\">\n            <div class=\"flex-shrink-0\">\n                <span class=\"text-2xl sm:text-3xl leading-none font-bold text-gray-900\">2,340</span>\n                <h3 class=\"text-base font-normal text-gray-500\">New products this week</h3>\n            </div>\n            <div class=\"ml-5 w-0 flex items-center justify-end flex-1 text-green-500 text-base font-bold\">\n                14.6%\n                <svg class=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path fill-rule=\"evenodd\"\n                        d=\"M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z\"\n                        clip-rule=\"evenodd\"></path>\n                </svg>\n            </div>\n        </div>\n    </div>\n    <div class=\"bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 \">\n        <div class=\"flex items-center\">\n            <div class=\"flex-shrink-0\">\n                <span class=\"text-2xl sm:text-3xl leading-none font-bold text-gray-900\">5,355</span>\n                <h3 class=\"text-base font-normal text-gray-500\">Visitors this week</h3>\n            </div>\n            <div class=\"ml-5 w-0 flex items-center justify-end flex-1 text-green-500 text-base font-bold\">\n                32.9%\n                <svg class=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path fill-rule=\"evenodd\"\n                        d=\"M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z\"\n                        clip-rule=\"evenodd\"></path>\n                </svg>\n            </div>\n        </div>\n    </div>\n    <div class=\"bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 \">\n        <div class=\"flex items-center\">\n            <div class=\"flex-shrink-0\">\n                <span class=\"text-2xl sm:text-3xl leading-none font-bold text-gray-900\">385</span>\n                <h3 class=\"text-base font-normal text-gray-500\">User signups this week</h3>\n            </div>\n            <div class=\"ml-5 w-0 flex items-center justify-end flex-1 text-red-500 text-base font-bold\">\n                -2.7%\n                <svg class=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path fill-rule=\"evenodd\"\n                        d=\"M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z\"\n                        clip-rule=\"evenodd\"></path>\n                </svg>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animated-gradient-button-component",
+  "type": "registry:ui",
+  "title": "Animated Gradient Button Component",
+  "description": "Animated Gradient Button Component - Créé par @homayunmmdy sur TailwindFlex.",
+  "author": "@homayunmmdy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/animated-gradient-button-component.tsx",
+      "content": "/**\n * Component: Animated Gradient Button Component\n * Author: @homayunmmdy (https://tailwindflex.com/@homayunmmdy)\n * Source: https://tailwindflex.com/@homayunmmdy/animated-gradient-button-component\n * Attribution: Créé par @homayunmmdy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AnimatedGradientButtonComponent() {\n  return (\n    <div>\n    <div className=\"bg-gradient-to-br from-blue-100 to-purple-200 dark900 dark700 flex justify-center items-center w-screen h-screen p-5\">\n    \n    <button\n      className=\"cursor-pointer p-3 group relative isolation-auto z-10 mx-auto flex items-center justify-center gap-2 overflow-hidden rounded-full border-2 border-white/30 dark/20 px-3 py-1 text-lg shadow-2xl backdrop-blur-xl bg-white/20 dark/20 before before before10 before before before before500/80 dark400/80 before before700 text-gray-800 dark100 hover dark hover0 hover hover150 hover700 lg transition-all duration-300 hover/10 dark/10\"\n    >\n      <svg\n        stroke=\"currentColor\"\n        fill=\"currentColor\"\n        strokeWidth=\"0\"\n        viewBox=\"0 0 512 512\"\n        className=\"rotate-45 justify-end rounded-full p-1 duration-300 ease-linear group-hover90 group-hover\"\n        height=\"40\"\n        width=\"40\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n      >\n        <path\n          d=\"M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48zm80.09 224L272 208.42V358h-32V208.42L175.91 272l-22.54-22.7L256 147.46 358.63 249.3z\"\n        ></path>\n      </svg>\n      Admin Demo\n    </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@homayunmmdy",
+    "authorUrl": "https://tailwindflex.com/@homayunmmdy",
+    "sourceUrl": "https://tailwindflex.com/@homayunmmdy/animated-gradient-button-component",
+    "mention": "Créé par @homayunmmdy sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gradient-to-br from-blue-100 to-purple-200 dark:from-gray-900 dark:to-gray-700 flex justify-center items-center w-screen h-screen p-5\">\n\n<button\n  class=\"cursor-pointer p-3 group relative isolation-auto z-10 mx-auto flex items-center justify-center gap-2 overflow-hidden rounded-full border-2 border-white/30 dark:border-white/20 px-3 py-1 text-lg shadow-2xl backdrop-blur-xl bg-white/20 dark:bg-black/20 before:absolute before:-left-full before:-z-10 before:aspect-square before:w-full before:rounded-full before:bg-indigo-500/80 dark:before:bg-indigo-400/80 before:transition-all before:duration-700 text-gray-800 dark:text-gray-100 hover:text-white dark:hover:text-white hover:before:left-0 hover:before:w-full hover:before:scale-150 hover:before:duration-700 lg:font-semibold transition-all duration-300 hover:bg-white/10 dark:hover:bg-black/10\"\n>\n  <svg\n    stroke=\"currentColor\"\n    fill=\"currentColor\"\n    stroke-width=\"0\"\n    viewBox=\"0 0 512 512\"\n    class=\"rotate-45 justify-end rounded-full p-1 duration-300 ease-linear group-hover:rotate-90 group-hover:border-none\"\n    height=\"40\"\n    width=\"40\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <path\n      d=\"M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48zm80.09 224L272 208.42V358h-32V208.42L175.91 272l-22.54-22.7L256 147.46 358.63 249.3z\"\n    ></path>\n  </svg>\n  Admin Demo\n</button>\n</div>"
+  }
+}

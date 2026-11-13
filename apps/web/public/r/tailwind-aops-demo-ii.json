@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwind-aops-demo-ii",
+  "type": "registry:ui",
+  "title": "Tailwind AoPS Demo II",
+  "description": "Tailwind AoPS Demo II - Créé par @rlemon-aops sur TailwindFlex.",
+  "author": "@rlemon-aops (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tailwind-aops-demo-ii.tsx",
+      "content": "/**\n * Component: Tailwind AoPS Demo II\n * Author: @rlemon-aops (https://tailwindflex.com/@rlemon-aops)\n * Source: https://tailwindflex.com/@rlemon-aops/tailwind-aops-demo-ii\n * Attribution: Créé par @rlemon-aops sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TailwindAopsDemoIi() {\n  return (\n    <div>\n    <div>\n        \n        <img src=\"https://s3.amazonaws.com/production.mediajoint.prx.org/public/piece_images/740477/ep109_800x800_small.jpg\" />\n        \n        <p>Richard Rusczyk</p>\n        <p>the Art of Problem Solving, CEO</p>\n        <p>Richard is one of the co-authors of the Art of\n            Problem Solving classic textbooks: the Art of\n            Problem Solving's Intermediate Algebra and\n            Prealgebra as well as the author of the Art\n            of Problem Solving's Introduction to Algebra,\n            Introduction to Geometry, and Precalculus.\n        </p>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rlemon-aops",
+    "authorUrl": "https://tailwindflex.com/@rlemon-aops",
+    "sourceUrl": "https://tailwindflex.com/@rlemon-aops/tailwind-aops-demo-ii",
+    "mention": "Créé par @rlemon-aops sur TailwindFlex",
+    "rawHtml": "<div>\n    <!-- Googled RR photo -->\n    <img src=\"https://s3.amazonaws.com/production.mediajoint.prx.org/public/piece_images/740477/ep109_800x800_small.jpg\" />\n    <!-- Given copy -->\n    <p>Richard Rusczyk</p>\n    <p>the Art of Problem Solving, CEO</p>\n    <p>Richard is one of the co-authors of the Art of\n        Problem Solving classic textbooks: the Art of\n        Problem Solving's Intermediate Algebra and\n        Prealgebra as well as the author of the Art\n        of Problem Solving's Introduction to Algebra,\n        Introduction to Geometry, and Precalculus.\n    </p>\n</div>"
+  }
+}

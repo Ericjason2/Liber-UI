@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "ripple-button-2",
+  "type": "registry:ui",
+  "title": "Ripple Button",
+  "description": "Ripple Button - Créé par @sachin-senal sur TailwindFlex.",
+  "author": "@sachin-senal (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/ripple-button-2.tsx",
+      "content": "/**\n * Component: Ripple Button\n * Author: @sachin-senal (https://tailwindflex.com/@sachin-senal)\n * Source: https://tailwindflex.com/@sachin-senal/ripple-button-2\n * Attribution: Créé par @sachin-senal sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function RippleButton2() {\n  return (\n    <div>\n    \n    \n    <div className=\"relative w-screen h-screen flex items-center justify-center bg-gray-800\">\n      <button type=\"button\" id=\"bt\"\n            className=\"rounded px-5 py-3 min-w-max  overflow-hidden shadow relative bg-indigo-500 text-white hover90\">\n            Button text\n        </button>\n    </div>\n    \n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sachin-senal",
+    "authorUrl": "https://tailwindflex.com/@sachin-senal",
+    "sourceUrl": "https://tailwindflex.com/@sachin-senal/ripple-button-2",
+    "mention": "Créé par @sachin-senal sur TailwindFlex",
+    "rawHtml": "<!-- credit: Jan Vítů https://codepen.io/vituja1/pen/oNWzNwq -->\n\n<div class=\"relative w-screen h-screen flex items-center justify-center bg-gray-800\">\n  <button type=\"button\" id=\"bt\"\n        class=\"rounded px-5 py-3 min-w-max  overflow-hidden shadow relative bg-indigo-500 text-white hover:bg-opacity-90\">\n        Button text\n    </button>\n</div>\n\n\n<script>\n  function rippleEffect(event) {\n        const btn = event.currentTarget;\n\n        const circle = document.createElement(\"span\");\n        const diameter = Math.max(btn.clientWidth, btn.clientHeight);\n        const radius = diameter / 2;\n\n        circle.style.width = circle.style.height = `${diameter}px`;\n        circle.style.left = `${event.clientX - (btn.offsetLeft + radius)}px`;\n        circle.style.top = `${event.clientY - (btn.offsetTop + radius)}px`;\n        circle.classList.add(\"ripple\");\n\n        const ripple = btn.getElementsByClassName(\"ripple\")[0];\n\n        if (ripple) {\n            ripple.remove();\n        }\n\n        btn.appendChild(circle);\n    }\n\n    const btn = document.getElementById(\"bt\");\n    btn.addEventListener(\"click\", rippleEffect);\n</script>"
+  }
+}

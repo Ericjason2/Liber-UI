@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-example-simply-beautiful",
+  "type": "registry:ui",
+  "title": "Hero example simply beautiful",
+  "description": "Hero example simply beautiful - Créé par @lucas-m sur TailwindFlex.",
+  "author": "@lucas-m (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-example-simply-beautiful.tsx",
+      "content": "/**\n * Component: Hero example simply beautiful\n * Author: @lucas-m (https://tailwindflex.com/@lucas-m)\n * Source: https://tailwindflex.com/@lucas-m/hero-example-simply-beautiful\n * Attribution: Créé par @lucas-m sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroExampleSimplyBeautiful() {\n  return (\n    <div>\n    <section\r\n        className=\"relative overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pb-12 pt-20 sm16 sm32 lg24 xl32 xl40\">\r\n        <div className=\"relative z-10\">\r\n            <div\r\n                className=\"absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image(50%_45%_at_50%_55%,white,transparent)]\">\r\n                <svg className=\"h-[60rem] w-[100rem] flex-none stroke-blue-600 opacity-20\" aria-hidden=\"true\">\r\n                    <defs>\r\n                        <pattern id=\"e9033f3e-f665-41a6-84ef-756f6778e6fe\" width=\"200\" height=\"200\" x=\"50%\" y=\"50%\"\r\n                            patternUnits=\"userSpaceOnUse\" patternTransform=\"translate(-100 0)\">\r\n                            <path d=\"M.5 200V.5H200\" fill=\"none\"></path>\r\n                        </pattern>\r\n                    </defs>\r\n                    <svg x=\"50%\" y=\"50%\" className=\"overflow-visible fill-blue-50\">\r\n                        <path d=\"M-300 0h201v201h-201Z M300 200h201v201h-201Z\" strokeWidth=\"0\"></path>\r\n                    </svg>\r\n                    <rect width=\"100%\" height=\"100%\" strokeWidth=\"0\" fill=\"url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)\">\r\n                    </rect>\r\n                </svg>\r\n            </div>\r\n        </div>\r\n        <div className=\"relative z-20 mx-auto max-w-7xl px-6 lg8\">\r\n            <div className=\"mx-auto max-w-2xl text-center\">\r\n                <h1 className=\"text-4xl font-bold tracking-tight text-gray-900 sm6xl\">\r\n                    Refreshingly Sustainable:\r\n                    <span className=\"text-blue-600\">Boxed Water\r\n               </span>\r\n                </h1>\r\n                <h2 className=\"mt-6 text-lg leading-8 text-gray-600\">\r\n                    Choose a more eco-friendly way to hydrate with our 100% recyclable cartons.\r\n                </h2>\r\n                <div className=\"mt-10 flex items-center justify-center gap-x-6\">\r\n                    <a className=\"isomorphic-link isomorphic-link--internal inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover500 focus-visible focus-visible2 focus-visible2 focus-visible600\"\r\n                        href=\"/login\">Shop Now\r\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-4 w-4\" viewBox=\"0 0 20 20\" fill=\"currentColor\">\r\n                            <path fillRule=\"evenodd\"\r\n                                d=\"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z\"\r\n                                clipRule=\"evenodd\"></path>\r\n                        </svg>\r\n                    </a>\r\n                </div>\r\n            </div>\r\n            <div className=\"relative mx-auto mt-10 max-w-lg\">\r\n                <img className=\"w-full rounded-2xl border border-gray-100 shadow\" src=\"https://images.unsplash.com/photo-1587502536575-6dfba0a6e017\" alt=\"\" />\r\n            </div>\r\n        </div>\r\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@lucas-m",
+    "authorUrl": "https://tailwindflex.com/@lucas-m",
+    "sourceUrl": "https://tailwindflex.com/@lucas-m/hero-example-simply-beautiful",
+    "mention": "Créé par @lucas-m sur TailwindFlex",
+    "rawHtml": "<section\r\n    class=\"relative overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pb-12 pt-20 sm:pb-16 sm:pt-32 lg:pb-24 xl:pb-32 xl:pt-40\">\r\n    <div class=\"relative z-10\">\r\n        <div\r\n            class=\"absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]\">\r\n            <svg class=\"h-[60rem] w-[100rem] flex-none stroke-blue-600 opacity-20\" aria-hidden=\"true\">\r\n                <defs>\r\n                    <pattern id=\"e9033f3e-f665-41a6-84ef-756f6778e6fe\" width=\"200\" height=\"200\" x=\"50%\" y=\"50%\"\r\n                        patternUnits=\"userSpaceOnUse\" patternTransform=\"translate(-100 0)\">\r\n                        <path d=\"M.5 200V.5H200\" fill=\"none\"></path>\r\n                    </pattern>\r\n                </defs>\r\n                <svg x=\"50%\" y=\"50%\" class=\"overflow-visible fill-blue-50\">\r\n                    <path d=\"M-300 0h201v201h-201Z M300 200h201v201h-201Z\" stroke-width=\"0\"></path>\r\n                </svg>\r\n                <rect width=\"100%\" height=\"100%\" stroke-width=\"0\" fill=\"url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)\">\r\n                </rect>\r\n            </svg>\r\n        </div>\r\n    </div>\r\n    <div class=\"relative z-20 mx-auto max-w-7xl px-6 lg:px-8\">\r\n        <div class=\"mx-auto max-w-2xl text-center\">\r\n            <h1 class=\"text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl\">\r\n                Refreshingly Sustainable:\r\n                <span class=\"text-blue-600\">Boxed Water\r\n           </span>\r\n            </h1>\r\n            <h2 class=\"mt-6 text-lg leading-8 text-gray-600\">\r\n                Choose a more eco-friendly way to hydrate with our 100% recyclable cartons.\r\n            </h2>\r\n            <div class=\"mt-10 flex items-center justify-center gap-x-6\">\r\n                <a class=\"isomorphic-link isomorphic-link--internal inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600\"\r\n                    href=\"/login\">Shop Now\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-4 w-4\" viewBox=\"0 0 20 20\" fill=\"currentColor\">\r\n                        <path fill-rule=\"evenodd\"\r\n                            d=\"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z\"\r\n                            clip-rule=\"evenodd\"></path>\r\n                    </svg>\r\n                </a>\r\n            </div>\r\n        </div>\r\n        <div class=\"relative mx-auto mt-10 max-w-lg\">\r\n            <img class=\"w-full rounded-2xl border border-gray-100 shadow\" src=\"https://images.unsplash.com/photo-1587502536575-6dfba0a6e017\" alt=\"\">\r\n        </div>\r\n    </div>\r\n</section>"
+  }
+}

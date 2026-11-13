@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "video-player",
+  "type": "registry:ui",
+  "title": "Video Player",
+  "description": "Video Player - Créé par @kuldeep541 sur TailwindFlex.",
+  "author": "@kuldeep541 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/video-player.tsx",
+      "content": "/**\n * Component: Video Player\n * Author: @kuldeep541 (https://tailwindflex.com/@kuldeep541)\n * Source: https://tailwindflex.com/@kuldeep541/video-player\n * Attribution: Créé par @kuldeep541 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function VideoPlayer() {\n  return (\n    <div>\n    <section className=\"relative bg-[#1e4b4e] text-white overflow-hidden section-padding\">\n      \n      <div className=\"absolute inset-0 opacity-10 pointer-events-none\">\n        <svg width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n          <defs>\n            <pattern id=\"dotGrid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\">\n              <circle cx=\"10\" cy=\"10\" r=\"1\" fill=\"white\" />\n            </pattern>\n          </defs>\n          <rect width=\"100%\" height=\"100%\" fill=\"url(#dotGrid)\" />\n        </svg>\n      </div>\n    \n      \n      <div className=\"container mx-auto px-4 relative z-10 mb-28\">\n        \n        <div className=\"text-center max-w-3xl mx-auto mb-16\">\n          <h2 className=\"text-3xl md4xl font-bold mb-6 font-serif\">\n            See Our <span className=\"text-[#c69f6c]\">Talents</span> in Action\n          </h2>\n          <p className=\"text-lg text-gray-300\">\n            Watch our showcase video to experience the passion and skill of our students and instructors across all performing arts disciplines.\n          </p>\n        </div>\n    \n        \n        <div className=\"max-w-4xl mx-auto\">\n          <div className=\"relative rounded-xl overflow-hidden shadow-2xl\" id=\"video-container\">\n            \n            <div id=\"thumbnail\" className=\"relative\">\n              <img\n                src=\"https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80\"\n                alt=\"Video thumbnail\"\n                className=\"w-full aspect-video object-cover\"\n              />\n              <div className=\"absolute inset-0 bg-black/30 flex items-center justify-center cursor-pointer\" id=\"play-button\">\n                \n                <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-8 w-8 text-[#b03536]\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n                  <path d=\"M4 4l12 6-12 6V4z\" />\n                </svg>\n              </div>\n            </div>\n            \n            <div id=\"video\" className=\"hidden aspect-video relative \">\n              \n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n    \n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@kuldeep541",
+    "authorUrl": "https://tailwindflex.com/@kuldeep541",
+    "sourceUrl": "https://tailwindflex.com/@kuldeep541/video-player",
+    "mention": "Créé par @kuldeep541 sur TailwindFlex",
+    "rawHtml": "<section class=\"relative bg-[#1e4b4e] text-white overflow-hidden section-padding\">\n  <!-- SVG Background Pattern -->\n  <div class=\"absolute inset-0 opacity-10 pointer-events-none\">\n    <svg width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <pattern id=\"dotGrid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\">\n          <circle cx=\"10\" cy=\"10\" r=\"1\" fill=\"white\" />\n        </pattern>\n      </defs>\n      <rect width=\"100%\" height=\"100%\" fill=\"url(#dotGrid)\" />\n    </svg>\n  </div>\n\n  <!-- Main Content Container -->\n  <div class=\"container mx-auto px-4 relative z-10 mb-28\">\n    <!-- Heading & Description -->\n    <div class=\"text-center max-w-3xl mx-auto mb-16\">\n      <h2 class=\"text-3xl md:text-4xl font-bold mb-6 font-serif\">\n        See Our <span class=\"text-[#c69f6c]\">Talents</span> in Action\n      </h2>\n      <p class=\"text-lg text-gray-300\">\n        Watch our showcase video to experience the passion and skill of our students and instructors across all performing arts disciplines.\n      </p>\n    </div>\n\n    <!-- Video Section -->\n    <div class=\"max-w-4xl mx-auto\">\n      <div class=\"relative rounded-xl overflow-hidden shadow-2xl\" id=\"video-container\">\n        <!-- Thumbnail View -->\n        <div id=\"thumbnail\" class=\"relative\">\n          <img\n            src=\"https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80\"\n            alt=\"Video thumbnail\"\n            class=\"w-full aspect-video object-cover\"\n          />\n          <div class=\"absolute inset-0 bg-black/30 flex items-center justify-center cursor-pointer\" id=\"play-button\">\n            <!-- Play Button SVG -->\n            <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-8 w-8 text-[#b03536]\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n              <path d=\"M4 4l12 6-12 6V4z\" />\n            </svg>\n          </div>\n        </div>\n        <!-- Video Embed -->\n        <div id=\"video\" class=\"hidden aspect-video relative \">\n          <iframe\n            class=\"absolute inset-0 w-full h-full\"\n            src=\"https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1\"\n            title=\"The Artist Barefoot Showcase\"\n            frameborder=\"0\"\n            allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n            allowfullscreen\n          ></iframe>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<!-- Optional: Add JavaScript for toggle functionality -->\n<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    const playButton = document.getElementById('play-button');\n    const thumbnail = document.getElementById('thumbnail');\n    const videoContainer = document.getElementById('video');\n\n    playButton.addEventListener('click', () => {\n      thumbnail.classList.add('hidden');\n      videoContainer.classList.remove('hidden');\n    });\n  });\n</script>"
+  }
+}

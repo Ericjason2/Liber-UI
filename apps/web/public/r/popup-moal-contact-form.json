@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "popup-moal-contact-form",
+  "type": "registry:ui",
+  "title": "popup modal contact form",
+  "description": "popup modal contact form - Créé par @ti-to sur TailwindFlex.",
+  "author": "@ti-to (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/popup-moal-contact-form.tsx",
+      "content": "/**\n * Component: popup modal contact form\n * Author: @ti-to (https://tailwindflex.com/@ti-to)\n * Source: https://tailwindflex.com/@ti-to/popup-moal-contact-form\n * Attribution: Créé par @ti-to sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PopupMoalContactForm() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!-- This form uses the form backend\\r\\nservice FabForm.io --->\\r\\n\\r\\n<!DOCTYPE html>\\r\\n<html lang=\\\"en\\\">\\r\\n<head>\\r\\n    <meta charset=\\\"UTF-8\\\">\\r\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r\\n    <link href=\\\"https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css\\\" rel=\\\"stylesheet\\\">\\r\\n    <title>Contact Form</title>\\r\\n</head>\\r\\n<body class=\\\"bg-gray-100\\\">\\r\\n\\r\\n<div class=\\\"flex justify-center items-center h-screen\\\">\\r\\n    <!-- Trigger Button -->\\r\\n    <button id=\\\"openContactForm\\\" class=\\\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\\\">\\r\\n        Open Contact Form\\r\\n    </button>\\r\\n\\r\\n    <!-- Modal -->\\r\\n    <div id=\\\"contactFormModal\\\" class=\\\"fixed z-10 inset-0 overflow-y-auto hidden\\\">\\r\\n        <div class=\\\"flex items-center justify-center min-h-screen\\\">\\r\\n            <div class=\\\"bg-white w-1/2 p-6 rounded shadow-md\\\">\\r\\n                <div class=\\\"flex justify-end\\\">\\r\\n                    <!-- Close Button -->\\r\\n                    <button id=\\\"closeContactForm\\\" class=\\\"text-gray-700 hover:text-red-500\\\">\\r\\n                        <svg class=\\\"w-6 h-6\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" viewBox=\\\"0 0 24 24\\\"\\r\\n                             xmlns=\\\"http://www.w3.org/2000/svg\\\">\\r\\n                            <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" stroke-width=\\\"2\\\"\\r\\n                                  d=\\\"M6 18L18 6M6 6l12 12\\\"></path>\\r\\n                        </svg>\\r\\n                    </button>\\r\\n                </div>\\r\\n                <h2 class=\\\"text-2xl font-bold mb-4\\\">Contact Us</h2>\\r\\n\\r\\n            <form action=\\\"https://fabform.io/f/{form-id}\\\" method=\\\"post\\\">\\r\\n                    <div class=\\\"mb-4\\\">\\r\\n                        <label for=\\\"name\\\" class=\\\"block text-gray-700 text-sm font-bold mb-2\\\">Name</label>\\r\\n                        <input type=\\\"text\\\" id=\\\"name\\\" name=\\\"name\\\"\\r\\n                               class=\\\"w-full p-2 border rounded-md focus:outline-none focus:border-blue-500\\\">\\r\\n                    </div>\\r\\n                    <div class=\\\"mb-4\\\">\\r\\n                        <label for=\\\"email\\\" class=\\\"block text-gray-700 text-sm font-bold mb-2\\\">Email</label>\\r\\n                        <input type=\\\"email\\\" id=\\\"email\\\" name=\\\"email\\\"\\r\\n                               class=\\\"w-full p-2 border rounded-md focus:outline-none focus:border-blue-500\\\">\\r\\n                    </div>\\r\\n                    <div class=\\\"mb-4\\\">\\r\\n                        <label for=\\\"message\\\" class=\\\"block text-gray-700 text-sm font-bold mb-2\\\">Message</label>\\r\\n                        <textarea id=\\\"message\\\" name=\\\"message\\\"\\r\\n                                  class=\\\"w-full p-2 border rounded-md focus:outline-none focus:border-blue-500\\\"></textarea>\\r\\n                    </div>\\r\\n                    <button type=\\\"submit\\\"\\r\\n                            class=\\\"bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700\\\">\\r\\n                        Send Message\\r\\n                    </button>\\r\\n                </form>\\r\\n            </div>\\r\\n        </div>\\r\\n    </div>\\r\\n</div>\\r\\n\\r\\n\\r\\n\\r\\n</body>\\r\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ti-to",
+    "authorUrl": "https://tailwindflex.com/@ti-to",
+    "sourceUrl": "https://tailwindflex.com/@ti-to/popup-moal-contact-form",
+    "mention": "Créé par @ti-to sur TailwindFlex",
+    "rawHtml": "<!-- This form uses the form backend\r\nservice FabForm.io --->\r\n\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <link href=\"https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css\" rel=\"stylesheet\">\r\n    <title>Contact Form</title>\r\n</head>\r\n<body class=\"bg-gray-100\">\r\n\r\n<div class=\"flex justify-center items-center h-screen\">\r\n    <!-- Trigger Button -->\r\n    <button id=\"openContactForm\" class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\">\r\n        Open Contact Form\r\n    </button>\r\n\r\n    <!-- Modal -->\r\n    <div id=\"contactFormModal\" class=\"fixed z-10 inset-0 overflow-y-auto hidden\">\r\n        <div class=\"flex items-center justify-center min-h-screen\">\r\n            <div class=\"bg-white w-1/2 p-6 rounded shadow-md\">\r\n                <div class=\"flex justify-end\">\r\n                    <!-- Close Button -->\r\n                    <button id=\"closeContactForm\" class=\"text-gray-700 hover:text-red-500\">\r\n                        <svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"\r\n                             xmlns=\"http://www.w3.org/2000/svg\">\r\n                            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\r\n                                  d=\"M6 18L18 6M6 6l12 12\"></path>\r\n                        </svg>\r\n                    </button>\r\n                </div>\r\n                <h2 class=\"text-2xl font-bold mb-4\">Contact Us</h2>\r\n\r\n            <form action=\"https://fabform.io/f/{form-id}\" method=\"post\">\r\n                    <div class=\"mb-4\">\r\n                        <label for=\"name\" class=\"block text-gray-700 text-sm font-bold mb-2\">Name</label>\r\n                        <input type=\"text\" id=\"name\" name=\"name\"\r\n                               class=\"w-full p-2 border rounded-md focus:outline-none focus:border-blue-500\">\r\n                    </div>\r\n                    <div class=\"mb-4\">\r\n                        <label for=\"email\" class=\"block text-gray-700 text-sm font-bold mb-2\">Email</label>\r\n                        <input type=\"email\" id=\"email\" name=\"email\"\r\n                               class=\"w-full p-2 border rounded-md focus:outline-none focus:border-blue-500\">\r\n                    </div>\r\n                    <div class=\"mb-4\">\r\n                        <label for=\"message\" class=\"block text-gray-700 text-sm font-bold mb-2\">Message</label>\r\n                        <textarea id=\"message\" name=\"message\"\r\n                                  class=\"w-full p-2 border rounded-md focus:outline-none focus:border-blue-500\"></textarea>\r\n                    </div>\r\n                    <button type=\"submit\"\r\n                            class=\"bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700\">\r\n                        Send Message\r\n                    </button>\r\n                </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<script>\r\n\r\n    // JavaScript to toggle the modal\r\n    const openContactFormButton = document.getElementById('openContactForm');\r\n    const closeContactFormButton = document.getElementById('closeContactForm');\r\n    const contactFormModal = document.getElementById('contactFormModal');\r\n\r\n    openContactFormButton.addEventListener('click', () => {\r\n        contactFormModal.classList.remove('hidden');\r\n    });\r\n\r\n    closeContactFormButton.addEventListener('click', () => {\r\n        contactFormModal.classList.add('hidden');\r\n    });\r\n\r\n\r\n    </script>\r\n\r\n\r\n</body>\r\n</html>"
+  }
+}

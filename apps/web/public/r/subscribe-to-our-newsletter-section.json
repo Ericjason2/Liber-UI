@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "subscribe-to-our-newsletter-section",
+  "type": "registry:ui",
+  "title": "Subscribe to our newsletter section",
+  "description": "Subscribe to our newsletter section - Créé par @conan-hilton sur TailwindFlex.",
+  "author": "@conan-hilton (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/subscribe-to-our-newsletter-section.tsx",
+      "content": "/**\n * Component: Subscribe to our newsletter section\n * Author: @conan-hilton (https://tailwindflex.com/@conan-hilton)\n * Source: https://tailwindflex.com/@conan-hilton/subscribe-to-our-newsletter-section\n * Attribution: Créé par @conan-hilton sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SubscribeToOurNewsletterSection() {\n  return (\n    <div>\n    <div className=\"relative bg-violet-600\">\n        <div className=\"absolute inset-x-0 bottom-0\">\n            <svg viewBox=\"0 0 224 12\" fill=\"currentColor\" className=\"w-full -mb-1 text-white\" preserveAspectRatio=\"none\">\n                <path\n                    d=\"M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z\">\n                </path>\n            </svg>\n        </div>\n        <div className=\"px-4 py-16 mx-auto sm md lg md24 lg8 lg20\">\n            <div className=\"relative max-w-2xl sm sm md2xl sm\">\n                <h2 className=\"mb-6 font-sans text-3xl text-center font-bold tracking-tight text-white sm4xl sm\">\n                  Subscribe to our newsletter\n                </h2>\n                <p className=\"mb-6 text-base text-indigo-200 md\">\n                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam\n                    rem aperiam, eaque ipsa quae. explicabo. Sed ut perspiciatis unde omnis.\n                </p>\n                <form className=\"flex flex-col items-center w-full mb-4 md md16\">\n                    <input\n              placeholder=\"Email\"\n              required=\"\"\n              type=\"text\"\n              className=\"flex-grow w-full h-12 px-4 mb-3 text-white transition duration-200 border-2 border-transparent rounded appearance-none md2 md0 bg-deep-purple-900 focus700 focus focus\"\n            />\n                    <a href=\"/\"\n                        className=\"inline-flex items-center justify-center w-full h-12 px-6 font-semibold tracking-wide text-gray-200 transition duration-200 rounded shadow-md md hover900 bg-teal-accent-400 hover700 focus focus\">\n                        Subscribe\n                    </a>\n                </form>\n                <p className=\"max-w-md mb-10 text-xs tracking-wide text-indigo-100 sm sm md16\">\n                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.\n                </p>\n                <a href=\"/\" aria-label=\"Scroll down\"\n                    className=\"flex items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover400 hover400 hover hover110\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 12 12\" fill=\"currentColor\">\n                        <path\n                            d=\"M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z\">\n                        </path>\n                    </svg>\n                </a>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@conan-hilton",
+    "authorUrl": "https://tailwindflex.com/@conan-hilton",
+    "sourceUrl": "https://tailwindflex.com/@conan-hilton/subscribe-to-our-newsletter-section",
+    "mention": "Créé par @conan-hilton sur TailwindFlex",
+    "rawHtml": "<div class=\"relative bg-violet-600\">\n    <div class=\"absolute inset-x-0 bottom-0\">\n        <svg viewBox=\"0 0 224 12\" fill=\"currentColor\" class=\"w-full -mb-1 text-white\" preserveAspectRatio=\"none\">\n            <path\n                d=\"M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z\">\n            </path>\n        </svg>\n    </div>\n    <div class=\"px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20\">\n        <div class=\"relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl sm:text-center\">\n            <h2 class=\"mb-6 font-sans text-3xl text-center font-bold tracking-tight text-white sm:text-4xl sm:leading-none\">\n              Subscribe to our newsletter\n            </h2>\n            <p class=\"mb-6 text-base text-indigo-200 md:text-lg\">\n                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam\n                rem aperiam, eaque ipsa quae. explicabo. Sed ut perspiciatis unde omnis.\n            </p>\n            <form class=\"flex flex-col items-center w-full mb-4 md:flex-row md:px-16\">\n                <input\n          placeholder=\"Email\"\n          required=\"\"\n          type=\"text\"\n          class=\"flex-grow w-full h-12 px-4 mb-3 text-white transition duration-200 border-2 border-transparent rounded appearance-none md:mr-2 md:mb-0 bg-deep-purple-900 focus:border-teal-accent-700 focus:outline-none focus:shadow-outline\"\n        />\n                <a href=\"/\"\n                    class=\"inline-flex items-center justify-center w-full h-12 px-6 font-semibold tracking-wide text-gray-200 transition duration-200 rounded shadow-md md:w-auto hover:text-deep-purple-900 bg-teal-accent-400 hover:bg-teal-accent-700 focus:shadow-outline focus:outline-none\">\n                    Subscribe\n                </a>\n            </form>\n            <p class=\"max-w-md mb-10 text-xs tracking-wide text-indigo-100 sm:text-sm sm:mx-auto md:mb-16\">\n                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.\n            </p>\n            <a href=\"/\" aria-label=\"Scroll down\"\n                class=\"flex items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 12 12\" fill=\"currentColor\">\n                    <path\n                        d=\"M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z\">\n                    </path>\n                </svg>\n            </a>\n        </div>\n    </div>\n</div>"
+  }
+}

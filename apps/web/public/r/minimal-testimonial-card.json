@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "minimal-testimonial-card",
+  "type": "registry:ui",
+  "title": "Minimal Testimonial Card",
+  "description": "Minimal Testimonial Card - Créé par @amit sur TailwindFlex.",
+  "author": "@amit (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/minimal-testimonial-card.tsx",
+      "content": "/**\n * Component: Minimal Testimonial Card\n * Author: @amit (https://tailwindflex.com/@amit)\n * Source: https://tailwindflex.com/@amit/minimal-testimonial-card\n * Attribution: Créé par @amit sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function MinimalTestimonialCard() {\n  return (\n    <div>\n    <blockquote className=\"relative w-full bg-white p-5 border border-gray-200 break-inside-avoid-column m-10\">\r\n        <h2 className=\"text-sm\">“Laravel takes the pain out of building modern, scalable web apps.“</h2>\r\n        <div className=\"mt-5 flex items-start gap-4\">\r\n            <img src=\"https://www.svgrepo.com/show/491978/gas-costs.svg\" className=\"w-10 h-10 object-cover object-center\" alt=\"Aaron Francis\" />\r\n            <div className=\"text-xs\">\r\n                <cite className=\"not-italic\">Aaron Francis</cite>\r\n                <p className=\"text-gray-700\">Creator of <a href=\"\" target=\"_blank\" className=\"text-red-500\">XYZ</a></p>\r\n            </div>\r\n        </div>\r\n    </blockquote>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@amit",
+    "authorUrl": "https://tailwindflex.com/@amit",
+    "sourceUrl": "https://tailwindflex.com/@amit/minimal-testimonial-card",
+    "mention": "Créé par @amit sur TailwindFlex",
+    "rawHtml": "<blockquote class=\"relative w-full bg-white p-5 border border-gray-200 break-inside-avoid-column m-10\">\r\n    <h2 class=\"text-sm\">“Laravel takes the pain out of building modern, scalable web apps.“</h2>\r\n    <div class=\"mt-5 flex items-start gap-4\">\r\n        <img src=\"https://www.svgrepo.com/show/491978/gas-costs.svg\" class=\"w-10 h-10 object-cover object-center\" alt=\"Aaron Francis\">\r\n        <div class=\"text-xs\">\r\n            <cite class=\"not-italic\">Aaron Francis</cite>\r\n            <p class=\"text-gray-700\">Creator of <a href=\"\" target=\"_blank\" class=\"text-red-500\">XYZ</a></p>\r\n        </div>\r\n    </div>\r\n</blockquote>"
+  }
+}

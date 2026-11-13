@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "facebook-login-page",
+  "type": "registry:ui",
+  "title": "Facebook Login page",
+  "description": "Facebook Login page - Créé par @rehman-arshad sur TailwindFlex.",
+  "author": "@rehman-arshad (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/facebook-login-page.tsx",
+      "content": "/**\n * Component: Facebook Login page\n * Author: @rehman-arshad (https://tailwindflex.com/@rehman-arshad)\n * Source: https://tailwindflex.com/@rehman-arshad/facebook-login-page\n * Attribution: Créé par @rehman-arshad sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FacebookLoginPage() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"container\\\">\\n        <div class=\\\"login-box\\\">\\n            <h1 class=\\\"logo\\\">facebook</h1>\\n            <h2>Log in to Facebook</h2>\\n            <form action=\\\"login.php\\\" method=\\\"post\\\">\\n                <div class=\\\"input-container\\\">\\n                    <input type=\\\"text\\\" name=\\\"email\\\" placeholder=\\\"Email address or phone number\\\" required>\\n                </div>\\n                <div class=\\\"input-container\\\">\\n                    <input type=\\\"password\\\" name=\\\"password\\\" placeholder=\\\"Password\\\" required>\\n                </div>\\n                <button type=\\\"submit\\\">Log in</button>\\n            </form>\\n            <div class=\\\"footer-links\\\">\\n                <a href=\\\"#\\\">Forgotten account?</a> · <a href=\\\"#\\\">Sign up for Facebook</a>\\n            </div>\\n            <?php if ($success): ?>\\n                <p class=\\\"success\\\"><?php echo $success; ?></p>\\n            <?php endif; ?>\\n        </div>\\n    </div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rehman-arshad",
+    "authorUrl": "https://tailwindflex.com/@rehman-arshad",
+    "sourceUrl": "https://tailwindflex.com/@rehman-arshad/facebook-login-page",
+    "mention": "Créé par @rehman-arshad sur TailwindFlex",
+    "rawHtml": "<div class=\"container\">\n        <div class=\"login-box\">\n            <h1 class=\"logo\">facebook</h1>\n            <h2>Log in to Facebook</h2>\n            <form action=\"login.php\" method=\"post\">\n                <div class=\"input-container\">\n                    <input type=\"text\" name=\"email\" placeholder=\"Email address or phone number\" required>\n                </div>\n                <div class=\"input-container\">\n                    <input type=\"password\" name=\"password\" placeholder=\"Password\" required>\n                </div>\n                <button type=\"submit\">Log in</button>\n            </form>\n            <div class=\"footer-links\">\n                <a href=\"#\">Forgotten account?</a> · <a href=\"#\">Sign up for Facebook</a>\n            </div>\n            <?php if ($success): ?>\n                <p class=\"success\"><?php echo $success; ?></p>\n            <?php endif; ?>\n        </div>\n    </div>"
+  }
+}

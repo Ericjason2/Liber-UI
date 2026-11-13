@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-13",
+  "type": "registry:ui",
+  "title": "Card",
+  "description": "Card - Créé par @cristiancastt sur TailwindFlex.",
+  "author": "@cristiancastt (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-13.tsx",
+      "content": "/**\n * Component: Card\n * Author: @cristiancastt (https://tailwindflex.com/@cristiancastt)\n * Source: https://tailwindflex.com/@cristiancastt/card-13\n * Attribution: Créé par @cristiancastt sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Card13() {\n  return (\n    <div>\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Lato@400;700&display=swap\" />\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined,wght,FILL,GRAD@24,400,0,0\" />\n    \n    <section className=\"flex justify-center items-center min-h-screen bg-white font-lato\">\n      <div className=\"py-20 md8 w-[90%] max-w-[76.5rem] mx-auto text-[#111]\">\n        <h2 className=\"capitalize tracking-[0.025em] text-[clamp(2rem,1.8125rem+0.75vw,2.6rem)]\">leading companies<br />have trusted us</h2>\n        \n        <div className=\"container mt-10 grid gap-8 grid-cols-[repeat(auto-fit,minmax(16rem,1fr))]\">\n          <div className=\"card\">\n            <div className=\"card-inner relative w-full h-[18.75rem] bg-white rounded-2xl overflow-hidden\">\n              <div className=\"box w-full h-full bg-white rounded-2xl overflow-hidden\">\n                <div className=\"imgBox absolute inset-0\">\n                  <img className=\"w-full h-full object-cover\" src=\"https://img.freepik.com/free-photo/lake-with-lots-green-trees-reflected-water-chisinau-moldova_1268-16592.jpg?t=st=1730201653~exp=1730205253~hmac=235d8c2d9698a5f50dda6a870703d3c4d3a9c360f97c4a688f1abe2bfb509152&w=1380\" alt=\"Trust & Co.\" />\n                </div>\n                <div className=\"icon absolute bottom-[-0.375rem] right-[-0.375rem] w-24 h-24 bg-[#d3b19a] rounded-tl-full flex justify-center items-center transition-transform hover110\">\n                  <a href=\"#\" className=\"iconBox w-full h-full flex justify-center items-center text-white text-2xl rounded-full\">\n                    <span className=\"material-symbols-outlined\">arrow_outward</span>\n                  </a>\n                </div>\n              </div>\n            </div>\n            <div className=\"content py-4 px-2.5\">\n              <h3 className=\"capitalize text-[clamp(1.5rem,1.3909rem+0.4364vw,1.8rem)]\">trust & co.</h3>\n              <p className=\"my-4 text-[#565656]\">Fill out the form and the algorithm will offer the right team of experts</p>\n              <ul className=\"flex flex-wrap gap-2\">\n                <li className=\"uppercase font-bold text-xs text-[#282828] bg-[#d3b19a] px-2 py-1 rounded\">branding</li>\n                <li className=\"uppercase font-bold text-xs text-[#282828] bg-[#70b3b1] px-2 py-1 rounded\">packaging</li>\n              </ul>\n            </div>\n          </div>\n          \n          \n          \n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@cristiancastt",
+    "authorUrl": "https://tailwindflex.com/@cristiancastt",
+    "sourceUrl": "https://tailwindflex.com/@cristiancastt/card-13",
+    "mention": "Créé par @cristiancastt sur TailwindFlex",
+    "rawHtml": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap\" />\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0\" />\n\n<section class=\"flex justify-center items-center min-h-screen bg-white font-lato\">\n  <div class=\"py-20 md:py-8 w-[90%] max-w-[76.5rem] mx-auto text-[#111]\">\n    <h2 class=\"capitalize tracking-[0.025em] text-[clamp(2rem,1.8125rem+0.75vw,2.6rem)]\">leading companies<br />have trusted us</h2>\n    \n    <div class=\"container mt-10 grid gap-8 grid-cols-[repeat(auto-fit,minmax(16rem,1fr))]\">\n      <div class=\"card\">\n        <div class=\"card-inner relative w-full h-[18.75rem] bg-white rounded-2xl overflow-hidden\">\n          <div class=\"box w-full h-full bg-white rounded-2xl overflow-hidden\">\n            <div class=\"imgBox absolute inset-0\">\n              <img class=\"w-full h-full object-cover\" src=\"https://img.freepik.com/free-photo/lake-with-lots-green-trees-reflected-water-chisinau-moldova_1268-16592.jpg?t=st=1730201653~exp=1730205253~hmac=235d8c2d9698a5f50dda6a870703d3c4d3a9c360f97c4a688f1abe2bfb509152&w=1380\" alt=\"Trust & Co.\" />\n            </div>\n            <div class=\"icon absolute bottom-[-0.375rem] right-[-0.375rem] w-24 h-24 bg-[#d3b19a] rounded-tl-full flex justify-center items-center transition-transform hover:scale-110\">\n              <a href=\"#\" class=\"iconBox w-full h-full flex justify-center items-center text-white text-2xl rounded-full\">\n                <span class=\"material-symbols-outlined\">arrow_outward</span>\n              </a>\n            </div>\n          </div>\n        </div>\n        <div class=\"content py-4 px-2.5\">\n          <h3 class=\"capitalize text-[clamp(1.5rem,1.3909rem+0.4364vw,1.8rem)]\">trust & co.</h3>\n          <p class=\"my-4 text-[#565656]\">Fill out the form and the algorithm will offer the right team of experts</p>\n          <ul class=\"flex flex-wrap gap-2\">\n            <li class=\"uppercase font-bold text-xs text-[#282828] bg-[#d3b19a] px-2 py-1 rounded\">branding</li>\n            <li class=\"uppercase font-bold text-xs text-[#282828] bg-[#70b3b1] px-2 py-1 rounded\">packaging</li>\n          </ul>\n        </div>\n      </div>\n      \n      <!-- Repeat similar card structures for Tonic and Shower Gel as needed -->\n      \n    </div>\n  </div>\n</section>"
+  }
+}

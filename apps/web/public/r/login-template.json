@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-template",
+  "type": "registry:ui",
+  "title": "Login template",
+  "description": "Login template - Créé par @gabriel-urbano sur TailwindFlex.",
+  "author": "@gabriel-urbano (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/login-template.tsx",
+      "content": "/**\n * Component: Login template\n * Author: @gabriel-urbano (https://tailwindflex.com/@gabriel-urbano)\n * Source: https://tailwindflex.com/@gabriel-urbano/login-template\n * Attribution: Créé par @gabriel-urbano sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LoginTemplate() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <!-- Header -->\\n    <meta charSet=\\\"utf-8\\\"/>\\n    <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\">\\n    <meta name=\\\"description\\\" content=\\\"My Express JS website\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\">\\n</head>\\n<body class=\\\"bg-gray-100 h-screen flex items-center justify-center\\\">\\n    <!-- component -->\\n    <div class=\\\"h-screen bg-gradient-to-br from-blue-600 to-cyan-300 flex justify-center items-center w-full\\\">\\n        \\n        <form method='POST' action='#'>\\n            <div class=\\\"bg-white px-10 py-8 rounded-xl w-screen shadow-xl max-w-sm\\\">\\n                <div class=\\\"space-y-4\\\">\\n                    <h1 class=\\\"text-center text-2xl font-semibold text-gray-600\\\">Login</h1>\\n                    <hr>\\n                <div class=\\\"flex items-center border-2 py-2 px-3 rounded-md mb-4\\\">\\n                    <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" class=\\\"h-5 w-5 text-gray-400\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\" stroke=\\\"currentColor\\\">\\n                        <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" stroke-width=\\\"2\\\" d=\\\"M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207\\\" />\\n                    </svg>\\n                    <input class=\\\"pl-2 outline-none border-none w-full\\\" type=\\\"email\\\" name=\\\"email\\\" value=\\\"\\\" placeholder=\\\"Email\\\" required/>\\n\\n                </div>\\n                <div class=\\\"flex items-center border-2 py-2 px-3 rounded-md\\\">\\n                    <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" class=\\\"h-5 w-5 text-gray-400\\\" viewBox=\\\"0 0 20 20\\\" fill=\\\"currentColor\\\">\\n                    <path fill-rule=\\\"evenodd\\\" d=\\\"M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z\\\" clip-rule=\\\"evenodd\\\" />\\n                    </svg>\\n                    <input class=\\\"pl-2 outline-none border-none w-full\\\" type=\\\"password\\\" name=\\\"password\\\" id=\\\"\\\" placeholder=\\\"Password\\\" required/>\\n                    \\n                </div>\\n                </div>\\n                <!-- Remember Me checkbox -->\\n                <div class=\\\"flex justify-center items-center mt-4\\\">\\n                    <p class=\\\"inline-flex items-center text-gray-700 font-medium text-xs text-center\\\">\\n                        <input type=\\\"checkbox\\\" id=\\\"rememberMeCheckbox\\\" name=\\\"rememberMe\\\" class=\\\"mr-2\\\">\\n                        <span class=\\\"text-xs font-semibold\\\">Remember me?</span>\\n                    </p>\\n                </div>\\n\\n                <button type=\\\"submit\\\" value=\\\"login\\\" id=\\\"login\\\" class=\\\"mt-6 w-full shadow-xl bg-gradient-to-tr from-blue-600 to-red-400 hover:to-red-700 text-indigo-100 py-2 rounded-md text-lg tracking-wide transition duration-1000\\\">Login</button>\\n                <hr>\\n                <div class=\\\"flex justify-center items-center mt-4\\\">\\n                    <p class=\\\"inline-flex items-center text-gray-700 font-medium text-xs text-center\\\">\\n                        <span class=\\\"ml-2\\\">You don't have an account?<a href=\\\"#\\\" class=\\\"text-xs ml-2 text-blue-500 font-semibold\\\">Register now &rarr;</a>\\n                        </span>\\n                    </p>\\n                </div>\\n            </div>\\n            <div class=\\\"pt-6 text-base font-semibold leading-7\\\">\\n                <p class=\\\"font-sans text-red-500 text-md hover:text-red-800\\\">\\n                <a href=\\\"/\\\" class=\\\"absolute\\\">&larr; Home</a>\\n                </p>\\n            </div>\\n        </form>\\n    </div>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@gabriel-urbano",
+    "authorUrl": "https://tailwindflex.com/@gabriel-urbano",
+    "sourceUrl": "https://tailwindflex.com/@gabriel-urbano/login-template",
+    "mention": "Créé par @gabriel-urbano sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <!-- Header -->\n    <meta charSet=\"utf-8\"/>\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"description\" content=\"My Express JS website\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n</head>\n<body class=\"bg-gray-100 h-screen flex items-center justify-center\">\n    <!-- component -->\n    <div class=\"h-screen bg-gradient-to-br from-blue-600 to-cyan-300 flex justify-center items-center w-full\">\n        \n        <form method='POST' action='#'>\n            <div class=\"bg-white px-10 py-8 rounded-xl w-screen shadow-xl max-w-sm\">\n                <div class=\"space-y-4\">\n                    <h1 class=\"text-center text-2xl font-semibold text-gray-600\">Login</h1>\n                    <hr>\n                <div class=\"flex items-center border-2 py-2 px-3 rounded-md mb-4\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-5 w-5 text-gray-400\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207\" />\n                    </svg>\n                    <input class=\"pl-2 outline-none border-none w-full\" type=\"email\" name=\"email\" value=\"\" placeholder=\"Email\" required/>\n\n                </div>\n                <div class=\"flex items-center border-2 py-2 px-3 rounded-md\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-5 w-5 text-gray-400\" viewBox=\"0 0 20 20\" fill=\"currentColor\">\n                    <path fill-rule=\"evenodd\" d=\"M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z\" clip-rule=\"evenodd\" />\n                    </svg>\n                    <input class=\"pl-2 outline-none border-none w-full\" type=\"password\" name=\"password\" id=\"\" placeholder=\"Password\" required/>\n                    \n                </div>\n                </div>\n                <!-- Remember Me checkbox -->\n                <div class=\"flex justify-center items-center mt-4\">\n                    <p class=\"inline-flex items-center text-gray-700 font-medium text-xs text-center\">\n                        <input type=\"checkbox\" id=\"rememberMeCheckbox\" name=\"rememberMe\" class=\"mr-2\">\n                        <span class=\"text-xs font-semibold\">Remember me?</span>\n                    </p>\n                </div>\n\n                <button type=\"submit\" value=\"login\" id=\"login\" class=\"mt-6 w-full shadow-xl bg-gradient-to-tr from-blue-600 to-red-400 hover:to-red-700 text-indigo-100 py-2 rounded-md text-lg tracking-wide transition duration-1000\">Login</button>\n                <hr>\n                <div class=\"flex justify-center items-center mt-4\">\n                    <p class=\"inline-flex items-center text-gray-700 font-medium text-xs text-center\">\n                        <span class=\"ml-2\">You don't have an account?<a href=\"#\" class=\"text-xs ml-2 text-blue-500 font-semibold\">Register now &rarr;</a>\n                        </span>\n                    </p>\n                </div>\n            </div>\n            <div class=\"pt-6 text-base font-semibold leading-7\">\n                <p class=\"font-sans text-red-500 text-md hover:text-red-800\">\n                <a href=\"/\" class=\"absolute\">&larr; Home</a>\n                </p>\n            </div>\n        </form>\n    </div>\n</body>\n</html>"
+  }
+}

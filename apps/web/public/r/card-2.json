@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-2",
+  "type": "registry:ui",
+  "title": "Card",
+  "description": "Card - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-2.tsx",
+      "content": "/**\n * Component: Card\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/card-2\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Card2() {\n  return (\n    <div>\n    Example:\n    <div className=\"bg-gray-100\">\n      <div className=\"mx-auto max-w-7xl py-12 sm6 lg8\">\n        <div className=\"mx-auto max-w-3xl\">\n    \n          <div className=\"bg-white shadow sm\">\n            <div className=\"px-4 py-5 sm6\">\n              <h3 className=\"text-lg font-medium leading-6 text-gray-900\">Little bit of carding, little bit of cards</h3>\n              <div className=\"mt-2 max-w-xl text-sm text-gray-500\">\n                <p>Share. Care. Its all just emptiness.\n                  Commodo dragon, I jam in my jammies.</p>\n                  <p>Kiss my french caramel</p>\n                  <p>ↈ sig  ·  pik - feel · susceptible - saunter </p>\n              </div>\n              <div className=\"mt-3 text-sm\">\n                <a href=\"https://pebble.social\" className=\"font-medium text-indigo-600 hover500\">\n                  Learn more about Pebble\n                  <span aria-hidden=\"true\"> →</span>\n                </a>\n              </div>\n            </div>\n          </div>\n    \n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/card-2",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "Example:\n<div class=\"bg-gray-100\">\n  <div class=\"mx-auto max-w-7xl py-12 sm:px-6 lg:px-8\">\n    <div class=\"mx-auto max-w-3xl\">\n\n      <div class=\"bg-white shadow sm:rounded-lg\">\n        <div class=\"px-4 py-5 sm:p-6\">\n          <h3 class=\"text-lg font-medium leading-6 text-gray-900\">Little bit of carding, little bit of cards</h3>\n          <div class=\"mt-2 max-w-xl text-sm text-gray-500\">\n            <p>Share. Care. Its all just emptiness.\n              Commodo dragon, I jam in my jammies.</p>\n              <p>Kiss my french caramel</p>\n              <p>ↈ sig  ·  pik - feel · susceptible - saunter </p>\n          </div>\n          <div class=\"mt-3 text-sm\">\n            <a href=\"https://pebble.social\" class=\"font-medium text-indigo-600 hover:text-indigo-500\">\n              Learn more about Pebble\n              <span aria-hidden=\"true\"> →</span>\n            </a>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>"
+  }
+}

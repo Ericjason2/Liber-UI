@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "website-mockup",
+  "type": "registry:ui",
+  "title": "Website Mockup",
+  "description": "Website Mockup - Créé par @onyxwebdev sur TailwindFlex.",
+  "author": "@onyxwebdev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/website-mockup.tsx",
+      "content": "/**\n * Component: Website Mockup\n * Author: @onyxwebdev (https://tailwindflex.com/@onyxwebdev)\n * Source: https://tailwindflex.com/@onyxwebdev/website-mockup\n * Attribution: Créé par @onyxwebdev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function WebsiteMockup() {\n  return (\n    <div>\n    <div className=\"w-[600px] h-[600px] max-w-4xl mx-auto bg-zinc-800 rounded-xl shadow-2xl overflow-hidden border-2 border-zinc-500 glow-effect\">\n        \n        <div className=\"bg-zinc-900 px-6 py-3 flex items-center justify-between\">\n            <div className=\"flex space-x-4\">\n                <div className=\"w-3 h-3 rounded-full bg-green-500\"></div>\n                <div className=\"w-3 h-3 rounded-full bg-red-600\"></div>\n                <div className=\"w-3 h-3 rounded-full bg-purple-700\"></div>\n            </div>\n            <div className=\"flex space-x-2\">\n                <div className=\"w-6 h-1 bg-zinc-600 rounded\"></div>\n                <div className=\"w-6 h-1 bg-zinc-600 rounded\"></div>\n                <div className=\"w-6 h-1 bg-zinc-600 rounded\"></div>\n            </div>\n        </div>\n        \n        \n        <div className=\"flex bg-zinc-800 border-b border-zinc-600\">\n            <div className=\"flex-1 px-6 py-3 bg-zinc-700 rounded-t-lg\">\n                <div className=\"w-20 h-2 bg-zinc-400 rounded\"></div>\n            </div>\n            <div className=\"flex-1\"></div>\n        </div>\n        \n        \n        <div className=\"flex items-center bg-zinc-700 px-6 py-3 border-b border-zinc-600\">\n            <div className=\"w-4 h-4 rounded-full bg-zinc-500 mr-3\"></div>\n            <div className=\"flex-grow h-8 bg-zinc-800 rounded-full px-4 flex items-center\">\n                <div className=\"w-3/4 h-2 bg-zinc-400 rounded\"></div>\n            </div>\n        </div>\n        \n        \n        <div className=\"h-96 bg-zinc-800 p-8 flex flex-col items-center justify-center\">\n          \n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@onyxwebdev",
+    "authorUrl": "https://tailwindflex.com/@onyxwebdev",
+    "sourceUrl": "https://tailwindflex.com/@onyxwebdev/website-mockup",
+    "mention": "Créé par @onyxwebdev sur TailwindFlex",
+    "rawHtml": "<div class=\"w-[600px] h-[600px] max-w-4xl mx-auto bg-zinc-800 rounded-xl shadow-2xl overflow-hidden border-2 border-zinc-500 glow-effect\">\n    <!-- Top bar with abstract buttons -->\n    <div class=\"bg-zinc-900 px-6 py-3 flex items-center justify-between\">\n        <div class=\"flex space-x-4\">\n            <div class=\"w-3 h-3 rounded-full bg-green-500\"></div>\n            <div class=\"w-3 h-3 rounded-full bg-red-600\"></div>\n            <div class=\"w-3 h-3 rounded-full bg-purple-700\"></div>\n        </div>\n        <div class=\"flex space-x-2\">\n            <div class=\"w-6 h-1 bg-zinc-600 rounded\"></div>\n            <div class=\"w-6 h-1 bg-zinc-600 rounded\"></div>\n            <div class=\"w-6 h-1 bg-zinc-600 rounded\"></div>\n        </div>\n    </div>\n    \n    <!-- Stylized tab bar -->\n    <div class=\"flex bg-zinc-800 border-b border-zinc-600\">\n        <div class=\"flex-1 px-6 py-3 bg-zinc-700 rounded-t-lg\">\n            <div class=\"w-20 h-2 bg-zinc-400 rounded\"></div>\n        </div>\n        <div class=\"flex-1\"></div>\n    </div>\n    \n    <!-- Futuristic address bar -->\n    <div class=\"flex items-center bg-zinc-700 px-6 py-3 border-b border-zinc-600\">\n        <div class=\"w-4 h-4 rounded-full bg-zinc-500 mr-3\"></div>\n        <div class=\"flex-grow h-8 bg-zinc-800 rounded-full px-4 flex items-center\">\n            <div class=\"w-3/4 h-2 bg-zinc-400 rounded\"></div>\n        </div>\n    </div>\n    \n    <!-- Your content goes in here -->\n    <div class=\"h-96 bg-zinc-800 p-8 flex flex-col items-center justify-center\">\n      \n    </div>\n</div>"
+  }
+}

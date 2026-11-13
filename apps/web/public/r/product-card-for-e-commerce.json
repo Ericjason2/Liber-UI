@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "product-card-for-e-commerce",
+  "type": "registry:ui",
+  "title": "Product card for e-commerce",
+  "description": "Product card for e-commerce - Créé par @maximus sur TailwindFlex.",
+  "author": "@maximus (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/product-card-for-e-commerce.tsx",
+      "content": "/**\n * Component: Product card for e-commerce\n * Author: @maximus (https://tailwindflex.com/@maximus)\n * Source: https://tailwindflex.com/@maximus/product-card-for-e-commerce\n * Attribution: Créé par @maximus sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProductCardForECommerce() {\n  return (\n    <div>\n    <div className=\"grid gap-2 grid-cols-2 sm2 lg lg4\">\n      <div className=\"flex flex-col justify-between p-4 bg-white border border-stone-300 rounded-lg min-h-full relative\">\n        <span className=\"absolute top-0 left-0 mt-4 ml-4\">\n    \t\t\t<img className=\"w-5 h-5\" src=\"http://lqrs.com/site/templates/images/flags/ireland.svg\" />\n    \t\t</span>\n        <span className=\"absolute top-12 left-0 ml-4\"></span>\n        <span className=\"absolute top-0 right-0 mt-3 mr-4\">\n    \t\t\t<span className=\"bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded\">750ml</span>\n        </span>\n        <a href=\"https://lqrs.com/brands/bushmills/\">\n          <img className=\"p-8 rounded-t-lg\" src=\"http://lqrs.uk/site/assets/files/1508/bushmills_black_bush_irish_whiskey.0x300.jpeg\" alt=\"Bushmills Black Bush Irish Whiskey\" />\n        </a>\n        <div className=\"flex-grow mb-5\">\n          <a href=\"https://lqrs.com/brands/bushmills/\">\n            <h5 className=\"text-sm sm leading-5 sm6 font-medium text-stone-900\">Bushmills Black Bush Irish\n              Whiskey</h5>\n          </a>\n        </div>\n        <div className=\"flex items-center justify-between\">\n          <span className=\"text-2xl font-bold text-stone-900\">£38.50</span>\n        </div>\n      </div>\n      <div className=\"flex flex-col justify-between p-4 bg-white border border-stone-300 rounded-lg min-h-full relative\">\n        <span className=\"absolute top-0 left-0 mt-4 ml-4\">\n    \t\t\t<img className=\"w-5 h-5\" src=\"http://lqrs.com/site/templates/images/flags/ireland.svg\" />\n    \t\t</span>\n        <span className=\"absolute top-12 left-0 ml-4\"></span>\n        <span className=\"absolute top-0 right-0 mt-3 mr-4\">\n    \t\t\t<span className=\"bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded\">750ml</span>\n        </span>\n        <a href=\"https://lqrs.com/brands/bushmills/\">\n          <img className=\"p-8 rounded-t-lg\" src=\"http://lqrs.uk/site/assets/files/1508/bushmills_black_bush_irish_whiskey.0x300.jpeg\" alt=\"Bushmills Black Bush Irish Whiskey\" />\n        </a>\n        <div className=\"flex-grow mb-5\">\n          <a href=\"https://lqrs.com/brands/bushmills/\">\n            <h5 className=\"text-sm sm leading-5 sm6 font-medium text-stone-900\">Bushmills Black Bush Irish\n              Whiskey</h5>\n          </a>\n        </div>\n        <div className=\"flex items-center justify-between\">\n          <span className=\"text-2xl font-bold text-stone-900\">£38.50</span>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@maximus",
+    "authorUrl": "https://tailwindflex.com/@maximus",
+    "sourceUrl": "https://tailwindflex.com/@maximus/product-card-for-e-commerce",
+    "mention": "Créé par @maximus sur TailwindFlex",
+    "rawHtml": "<div class=\"grid gap-2 grid-cols-2 sm:grid-cols-2 lg:gap-r lg:grid-cols-4\">\n  <div class=\"flex flex-col justify-between p-4 bg-white border border-stone-300 rounded-lg min-h-full relative\">\n    <span class=\"absolute top-0 left-0 mt-4 ml-4\">\n\t\t\t<img class=\"w-5 h-5\" src=\"http://lqrs.com/site/templates/images/flags/ireland.svg\">\n\t\t</span>\n    <span class=\"absolute top-12 left-0 ml-4\"></span>\n    <span class=\"absolute top-0 right-0 mt-3 mr-4\">\n\t\t\t<span class=\"bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded\">750ml</span>\n    </span>\n    <a href=\"https://lqrs.com/brands/bushmills/\">\n      <img class=\"p-8 rounded-t-lg\" src=\"http://lqrs.uk/site/assets/files/1508/bushmills_black_bush_irish_whiskey.0x300.jpeg\" alt=\"Bushmills Black Bush Irish Whiskey\">\n    </a>\n    <div class=\"flex-grow mb-5\">\n      <a href=\"https://lqrs.com/brands/bushmills/\">\n        <h5 class=\"text-sm sm:text-lg leading-5 sm:leading-6 font-medium text-stone-900\">Bushmills Black Bush Irish\n          Whiskey</h5>\n      </a>\n    </div>\n    <div class=\"flex items-center justify-between\">\n      <span class=\"text-2xl font-bold text-stone-900\">£38.50</span>\n    </div>\n  </div>\n  <div class=\"flex flex-col justify-between p-4 bg-white border border-stone-300 rounded-lg min-h-full relative\">\n    <span class=\"absolute top-0 left-0 mt-4 ml-4\">\n\t\t\t<img class=\"w-5 h-5\" src=\"http://lqrs.com/site/templates/images/flags/ireland.svg\">\n\t\t</span>\n    <span class=\"absolute top-12 left-0 ml-4\"></span>\n    <span class=\"absolute top-0 right-0 mt-3 mr-4\">\n\t\t\t<span class=\"bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded\">750ml</span>\n    </span>\n    <a href=\"https://lqrs.com/brands/bushmills/\">\n      <img class=\"p-8 rounded-t-lg\" src=\"http://lqrs.uk/site/assets/files/1508/bushmills_black_bush_irish_whiskey.0x300.jpeg\" alt=\"Bushmills Black Bush Irish Whiskey\">\n    </a>\n    <div class=\"flex-grow mb-5\">\n      <a href=\"https://lqrs.com/brands/bushmills/\">\n        <h5 class=\"text-sm sm:text-lg leading-5 sm:leading-6 font-medium text-stone-900\">Bushmills Black Bush Irish\n          Whiskey</h5>\n      </a>\n    </div>\n    <div class=\"flex items-center justify-between\">\n      <span class=\"text-2xl font-bold text-stone-900\">£38.50</span>\n    </div>\n  </div>\n</div>"
+  }
+}

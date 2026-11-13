@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "extra-large-hero",
+  "type": "registry:ui",
+  "title": "Extra large hero",
+  "description": "Extra large hero - Créé par @gbenga-adegoke sur TailwindFlex.",
+  "author": "@gbenga-adegoke (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/extra-large-hero.tsx",
+      "content": "/**\n * Component: Extra large hero\n * Author: @gbenga-adegoke (https://tailwindflex.com/@gbenga-adegoke)\n * Source: https://tailwindflex.com/@gbenga-adegoke/extra-large-hero\n * Attribution: Créé par @gbenga-adegoke sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ExtraLargeHero() {\n  return (\n    <div>\n    <div className=\"bg-gray-100 font-sans\">\r\n        <div className=\"container mx-auto px-4 py-8\">\r\n            <nav className=\"flex justify-between items-center\">\r\n                <a href=\"#\" className=\"font-bold text-xl text-indigo-600\">My Site</a>\r\n                <div>\r\n                    <a href=\"#\" className=\"text-gray-600 hover900 mx-4\">Home</a>\r\n                    <a href=\"#\" className=\"text-gray-600 hover900 mx-4\">About</a>\r\n                    <a href=\"#\" className=\"text-gray-600 hover900 mx-4\">Contact</a>\r\n                    <a href=\"#\" className=\"text-gray-600 hover900 mx-4\">Blog</a>\r\n                </div>\r\n            </nav>\r\n            <div className=\"flex flex-col justify-center items-center my-16\">\r\n                <h1 className=\"text-5xl font-bold text-gray-800 leading-tight\">Welcome to My Site</h1>\r\n                <p className=\"text-2xl text-gray-600 mt-4\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\r\n                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n                <button className=\"bg-indigo-600 hover700 text-white text-xl mt-8 py-4 px-8 rounded-lg\">Get Started</button>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@gbenga-adegoke",
+    "authorUrl": "https://tailwindflex.com/@gbenga-adegoke",
+    "sourceUrl": "https://tailwindflex.com/@gbenga-adegoke/extra-large-hero",
+    "mention": "Créé par @gbenga-adegoke sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-100 font-sans\">\r\n    <div class=\"container mx-auto px-4 py-8\">\r\n        <nav class=\"flex justify-between items-center\">\r\n            <a href=\"#\" class=\"font-bold text-xl text-indigo-600\">My Site</a>\r\n            <div>\r\n                <a href=\"#\" class=\"text-gray-600 hover:text-gray-900 mx-4\">Home</a>\r\n                <a href=\"#\" class=\"text-gray-600 hover:text-gray-900 mx-4\">About</a>\r\n                <a href=\"#\" class=\"text-gray-600 hover:text-gray-900 mx-4\">Contact</a>\r\n                <a href=\"#\" class=\"text-gray-600 hover:text-gray-900 mx-4\">Blog</a>\r\n            </div>\r\n        </nav>\r\n        <div class=\"flex flex-col justify-center items-center my-16\">\r\n            <h1 class=\"text-5xl font-bold text-gray-800 leading-tight\">Welcome to My Site</h1>\r\n            <p class=\"text-2xl text-gray-600 mt-4\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\r\n                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n            <button class=\"bg-indigo-600 hover:bg-indigo-700 text-white text-xl mt-8 py-4 px-8 rounded-lg\">Get Started</button>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "get-started-membership-section-responsive-darkmode",
+  "type": "registry:ui",
+  "title": "Get Started ,Membership section - responsive - darkMode",
+  "description": "Get Started ,Membership section - responsive - darkMode - Créé par @abdulbast sur TailwindFlex.",
+  "author": "@abdulbast (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/get-started-membership-section-responsive-darkmode.tsx",
+      "content": "/**\n * Component: Get Started ,Membership section - responsive - darkMode\n * Author: @abdulbast (https://tailwindflex.com/@abdulbast)\n * Source: https://tailwindflex.com/@abdulbast/get-started-membership-section-responsive-darkmode\n * Attribution: Créé par @abdulbast sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function GetStartedMembershipSectionResponsiveDarkmode() {\n  return (\n    <div>\n    <section className=\" w-full bg-white dark[#0A2025] py-9 px-8\">\n      <div className=\"mx-auto max-w-[1440px] \">\n        <h2 className=\"py-2.5 text-[#0a2025] dark text-2xl font-bold font-['Roboto']\">Keni Membership</h2>\n        <div\n          className=\"bg-[#3E9D26] text-center lg lg[url('https://iili.io/33CU9ZQ.png')] bg-[length:550px] bg-[position(100%-50px)_center] bg-no-repeat rounded-xl mt-10 p-10\">\n          <h3 className=\"text-white text-5xl font-bold font-['Roboto']\">BECOME A MEMBER</h3>\n          <span className=\"text-white mt-3 text-xl font-normal font-['Roboto']\">Sign up for free. Join the community.</span>\n          <div className=\" justify-center lg items-center mt-10 gap-5 flex\">\n            <button className=\"px-8 hover py-2.5 bg-white rounded-xl justify-center items-center gap-2.5 flex text-[#3e9d26] text-sm font-semibold font-['Roboto']\">Join Us</button><button className=\"px-8 py-2.5 hover bg-white rounded-xl justify-center items-center gap-2.5 flex text-[#3e9d26] text-sm font-semibold font-['Roboto']\">Sign In</button>\n          </div>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "call-to-action",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abdulbast",
+    "authorUrl": "https://tailwindflex.com/@abdulbast",
+    "sourceUrl": "https://tailwindflex.com/@abdulbast/get-started-membership-section-responsive-darkmode",
+    "mention": "Créé par @abdulbast sur TailwindFlex",
+    "rawHtml": "<section class=\" w-full bg-white dark:bg-[#0A2025] py-9 px-8\">\n  <div class=\"mx-auto max-w-[1440px] \">\n    <h2 class=\"py-2.5 text-[#0a2025] dark:text-white text-2xl font-bold font-['Roboto']\">Keni Membership</h2>\n    <div\n      class=\"bg-[#3E9D26] text-center lg:text-left lg:bg-[url('https://iili.io/33CU9ZQ.png')] bg-[length:550px] bg-[position:calc(100%-50px)_center] bg-no-repeat rounded-xl mt-10 p-10\">\n      <h3 class=\"text-white text-5xl font-bold font-['Roboto']\">BECOME A MEMBER</h3>\n      <span class=\"text-white mt-3 text-xl font-normal font-['Roboto']\">Sign up for free. Join the community.</span>\n      <div class=\" justify-center lg:justify-start items-center mt-10 gap-5 flex\">\n        <button class=\"px-8 hover:cursor-pointer py-2.5 bg-white rounded-xl justify-center items-center gap-2.5 flex text-[#3e9d26] text-sm font-semibold font-['Roboto']\">Join Us</button><button class=\"px-8 py-2.5 hover:cursor-pointer bg-white rounded-xl justify-center items-center gap-2.5 flex text-[#3e9d26] text-sm font-semibold font-['Roboto']\">Sign In</button>\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

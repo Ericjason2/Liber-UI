@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "neon-button-purple",
+  "type": "registry:ui",
+  "title": "neon-button-purple",
+  "description": "neon-button-purple - Créé par @mohammad-rashel sur TailwindFlex.",
+  "author": "@mohammad-rashel (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/neon-button-purple.tsx",
+      "content": "/**\n * Component: neon-button-purple\n * Author: @mohammad-rashel (https://tailwindflex.com/@mohammad-rashel)\n * Source: https://tailwindflex.com/@mohammad-rashel/neon-button-purple\n * Attribution: Créé par @mohammad-rashel sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NeonButtonPurple() {\n  return (\n    <div>\n    <button className=\"neon-button\">\n      click me\n    </button>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mohammad-rashel",
+    "authorUrl": "https://tailwindflex.com/@mohammad-rashel",
+    "sourceUrl": "https://tailwindflex.com/@mohammad-rashel/neon-button-purple",
+    "mention": "Créé par @mohammad-rashel sur TailwindFlex",
+    "rawHtml": "<button class=\"neon-button\">\n  click me\n</button>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "minimal-profile-card",
+  "type": "registry:ui",
+  "title": "Minimal Profile card",
+  "description": "Minimal Profile card - Créé par @abhi sur TailwindFlex.",
+  "author": "@abhi (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/minimal-profile-card.tsx",
+      "content": "/**\n * Component: Minimal Profile card\n * Author: @abhi (https://tailwindflex.com/@abhi)\n * Source: https://tailwindflex.com/@abhi/minimal-profile-card\n * Attribution: Créé par @abhi sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function MinimalProfileCard() {\n  return (\n    <div>\n    <div\n        className=\"py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm4 sm sm sm0 sm6\">\n        <img className=\"block mx-auto h-24 rounded-full sm0 sm0\" src=\"https://tailwindcss.com/img/erin-lindford.jpg\" alt=\"Woman's Face\" />\n        <div className=\"text-center space-y-2 sm\">\n            <div className=\"space-y-0.5\">\n                <p className=\"text-lg text-black font-semibold\">\n                    Erin Lindford\n                </p>\n                <p className=\"text-slate-500 font-medium\">\n                    Product Engineer\n                </p>\n            </div>\n            <button className=\"px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover hover600 hover focus focus2 focus600 focus2\">Message</button>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "profile",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@abhi",
+    "authorUrl": "https://tailwindflex.com/@abhi",
+    "sourceUrl": "https://tailwindflex.com/@abhi/minimal-profile-card",
+    "mention": "Créé par @abhi sur TailwindFlex",
+    "rawHtml": "<div\n    class=\"py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6\">\n    <img class=\"block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0\" src=\"https://tailwindcss.com/img/erin-lindford.jpg\" alt=\"Woman's Face\">\n    <div class=\"text-center space-y-2 sm:text-left\">\n        <div class=\"space-y-0.5\">\n            <p class=\"text-lg text-black font-semibold\">\n                Erin Lindford\n            </p>\n            <p class=\"text-slate-500 font-medium\">\n                Product Engineer\n            </p>\n        </div>\n        <button class=\"px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2\">Message</button>\n    </div>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-in-react-js",
+  "type": "registry:ui",
+  "title": "Hero section in react js",
+  "description": "Hero section in react js - Créé par @sai-bende sur TailwindFlex.",
+  "author": "@sai-bende (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-in-react-js.tsx",
+      "content": "/**\n * Component: Hero section in react js\n * Author: @sai-bende (https://tailwindflex.com/@sai-bende)\n * Source: https://tailwindflex.com/@sai-bende/hero-section-in-react-js\n * Attribution: Créé par @sai-bende sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSectionInReactJs() {\n  return (\n    <div>\n    <section className=\"px-10 pt-32  bg-black\">\n    \n        <div className=\"grid lg2 items-center justify-items-center gap-5\">\n            <div className=\"order-1 lg1 shadow-2xl \">\n                <img className=\"h-80 w-80 object-cover lg[500px] lg[500px] \" src=\"https://images.unsplash.com/photo-1581382575275-97901c2635b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxtYW58ZW58MHwxfHx8MTcxMzA4OTE0OHww&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"\" />\n            </div>\n            <div className=\"order-2 lg2  flex flex-col justify-center lg text-center sm \">\n                <p className=\"mt-2 text-3xl md sm text-white\">Hi There</p>\n                <p className=\"text-4xl font-bold md7xl  text-white \">I'm\n                    <span className=\"text-orange-600\">Sai Bende</span>.\n                </p>\n                <p className=\"text-3xl  md6xl text-white\">I am a {' '} <span>\n                                <Typewriter\n                                    words={['Full Stack Dev.', 'Software Dev.', 'Web Designer.', 'Programmer.']}\n                                    loop={5}\n                                    cursor\n                                    cursorStyle='|'\n                                    typeSpeed={50}\n                                    deleteSpeed={50}\n                                    delaySpeed={1000}\n    \n                                />\n                            </span></p>\n                <p className=\"mt-2 lg3xl md sm  text-white \">Designer and Developer devoted to\n                    crafting beautiful web experiences\n                    focused on simplicity and purpose.</p>\n                <div className='flex'>\n                    <button className=\"text-lg md2xl bg-orange-600 text-white py-2 m-2 px-5 mt-10 hover800 rounded-full\"><a href='#ContactMe'>Contact Me</a></button>\n                    <button className=\"text-lg md2xl bg-orange-600 text-white py-2 m-2 px-5 mt-10 hover800 rounded-full \" > 🎉</button>\n                </div>\n    \n                <SocialMedia />\n            </div>\n    \n        </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sai-bende",
+    "authorUrl": "https://tailwindflex.com/@sai-bende",
+    "sourceUrl": "https://tailwindflex.com/@sai-bende/hero-section-in-react-js",
+    "mention": "Créé par @sai-bende sur TailwindFlex",
+    "rawHtml": "<section class=\"px-10 pt-32  bg-black\">\n\n    <div class=\"grid lg:grid-cols-2 items-center justify-items-center gap-5\">\n        <div class=\"order-1 lg:order-1 shadow-2xl \">\n            <img class=\"h-80 w-80 object-cover lg:w-[500px] lg:h-[500px] \" src=\"https://images.unsplash.com/photo-1581382575275-97901c2635b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxtYW58ZW58MHwxfHx8MTcxMzA4OTE0OHww&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"\" />\n        </div>\n        <div class=\"order-2 lg:order-2  flex flex-col justify-center lg:items-start text-center sm:text-left \">\n            <p class=\"mt-2 text-3xl md:text-lg sm:text-sm text-white\">Hi There</p>\n            <p class=\"text-4xl font-bold md:text-7xl  text-white \">I'm\n                <span class=\"text-orange-600\">Sai Bende</span>.\n            </p>\n            <p class=\"text-3xl  md:text-6xl text-white\">I am a {' '} <span>\n                            <Typewriter\n                                words={['Full Stack Dev.', 'Software Dev.', 'Web Designer.', 'Programmer.']}\n                                loop={5}\n                                cursor\n                                cursorStyle='|'\n                                typeSpeed={50}\n                                deleteSpeed={50}\n                                delaySpeed={1000}\n\n                            />\n                        </span></p>\n            <p class=\"mt-2 lg:text-3xl md:text-lg sm:text-sm  text-white \">Designer and Developer devoted to\n                crafting beautiful web experiences\n                focused on simplicity and purpose.</p>\n            <div class='flex'>\n                <button class=\"text-lg md:text-2xl bg-orange-600 text-white py-2 m-2 px-5 mt-10 hover:bg-zinc-800 rounded-full\"><a href='#ContactMe'>Contact Me</a></button>\n                <button class=\"text-lg md:text-2xl bg-orange-600 text-white py-2 m-2 px-5 mt-10 hover:bg-zinc-800 rounded-full \" onClick={handleClick} > 🎉</button>\n            </div>\n\n            <SocialMedia />\n        </div>\n\n    </div>\n</section>"
+  }
+}

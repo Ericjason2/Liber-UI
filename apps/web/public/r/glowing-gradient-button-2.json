@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "glowing-gradient-button-2",
+  "type": "registry:ui",
+  "title": "Glowing gradient button",
+  "description": "Glowing gradient button - Créé par @liger sur TailwindFlex.",
+  "author": "@liger (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/glowing-gradient-button-2.tsx",
+      "content": "/**\n * Component: Glowing gradient button\n * Author: @liger (https://tailwindflex.com/@liger)\n * Source: https://tailwindflex.com/@liger/glowing-gradient-button-2\n * Attribution: Créé par @liger sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function GlowingGradientButton2() {\n  return (\n    <div>\n    <div className=\"h-screen w-screen dark bg-white bg-white flex justify-center items-center\">\r\n    \r\n        <div className=\"relative inline-flex group w-96\">\r\n            <div\r\n                className=\"absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-sky-300 to-rose-300 via-violet-300 rounded-xl blur-lg group-hover100 group-hover1 group-hover200 animate-pulse\">\r\n            </div>\r\n            <input\r\n                placeholder=\"Ask anything\"\r\n                className=\"relative w-full inline-flex items-center justify-center px-4 py-4 text-lg  text-[#001155] transition-all duration-200 bg-white font-pj rounded-xl focus outline-none focus2 focus2 focus[#001155]/opacity-70\"\r\n    />\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@liger",
+    "authorUrl": "https://tailwindflex.com/@liger",
+    "sourceUrl": "https://tailwindflex.com/@liger/glowing-gradient-button-2",
+    "mention": "Créé par @liger sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen w-screen dark:bg-black bg-white bg-white flex justify-center items-center\">\r\n\r\n    <div class=\"relative inline-flex group w-96\">\r\n        <div\r\n            class=\"absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-sky-300 to-rose-300 via-violet-300 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-pulse\">\r\n        </div>\r\n        <input\r\n            placeholder=\"Ask anything\"\r\n            class=\"relative w-full inline-flex items-center justify-center px-4 py-4 text-lg  text-[#001155] transition-all duration-200 bg-white font-pj rounded-xl focus:outline-none outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#001155]/opacity-70\"\r\n/>\r\n    </div>\r\n</div>"
+  }
+}

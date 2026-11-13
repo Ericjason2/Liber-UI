@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "payment-form-alpine-js",
+  "type": "registry:ui",
+  "title": "Payment form (Alpine JS)",
+  "description": "Payment form (Alpine JS) - Créé par @mr-robot sur TailwindFlex.",
+  "author": "@mr-robot (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/payment-form-alpine-js.tsx",
+      "content": "/**\n * Component: Payment form (Alpine JS)\n * Author: @mr-robot (https://tailwindflex.com/@mr-robot)\n * Source: https://tailwindflex.com/@mr-robot/payment-form-alpine-js\n * Attribution: Créé par @mr-robot sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PaymentFormAlpineJs() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!-- https://gist.github.com/goodreds/a037bfd1ca46641666b647afad06df6e -->\\n\\n\\n\\n\\n<form id=\\\"payment-form\\\" method=\\\"POST\\\" action=\\\"/\\\" class=\\\"max-w-lg mx-auto my-8 p-4 bg-white shadow\\\"\\n    x-data=\\\"{ selected: 'opt1' }\\\">\\n\\n    <!-- Email and password inputs -->\\n\\n    <div class=\\\"flex flex-col sm:flex-row items-start sm:items-center\\\">\\n        <label class=\\\"w-full sm:w-1/3 block sm:flex sm:flex-row sm:flex-col sm:mr-2 mb-2 sm:mb-0 text-left sm:text-right\\\">\\n            Plan <a href=\\\"#\\\" class=\\\"text-blue-500 underline\\\">see features</a>\\n        </label>\\n\\n        <div class=\\\"w-full sm:w-2/3 flex flex-col sm:ml-2 mb-4 p-4 bg-gray-200 rounded\\\">\\n            <label for=\\\"plan-free\\\" class=\\\"my-1 mt-0\\\">\\n                <input x-on:click=\\\"selected = 'opt1'\\\" id=\\\"plan-free\\\" type=\\\"radio\\\" name=\\\"plan\\\" value=\\\"standard-free\\\" checked>\\n                Free\\n            </label>\\n\\n            <label for=\\\"plan-monthly\\\" class=\\\"my-1\\\">\\n                <input x-on:click=\\\"selected = 'opt2'\\\" id=\\\"plan-monthly\\\" type=\\\"radio\\\" name=\\\"plan\\\" value=\\\"premium-monthly\\\">\\n                Monthly - <strong>$10</strong> / month\\n            </label>\\n\\n            <label for=\\\"plan-yearly\\\" class=\\\"my-1 mb-0\\\">\\n                <input x-on:click=\\\"selected = 'opt3'\\\" id=\\\"plan-yearly\\\" type=\\\"radio\\\" name=\\\"plan\\\" value=\\\"premium-yearly\\\">\\n                Yearly - <strong>$95</strong> / year <span class=\\\"text-green-500\\\">- save <strong>$25</strong> per year</span>\\n            </label>\\n        </div>\\n    </div>\\n\\n    <div x-show=\\\"selected !== 'opt1'\\\" x-cloak class=\\\"flex flex-col sm:flex-row items-center mb-4\\\">\\n        <label x-show=\\\"selected !== 'opt1'\\\" x-cloak for=\\\"card-element\\\" class=\\\"w-full sm:w-1/3 sm:mr-2 mb-2 sm:mb-0 sm:text-right\\\">\\n            Credit or debit card\\n        </label>\\n        <div x-show=\\\"selected !== 'opt1'\\\" x-cloak id=\\\"card-element\\\" class=\\\"w-full sm:w-2/3 sm:ml-2\\\">\\n            <!-- A Stripe Element will be inserted here. -->\\n            <input id=\\\"card-element\\\" name=\\\"card-element\\\" placeholder=\\\"Card number\\\" class=\\\"w-full p-2 rounded shadow-inner border\\\">\\n        </div>\\n    </div>\\n\\n    <div x-show=\\\"selected !== 'opt1'\\\" x-cloak>\\n        <!-- Stripe: used to display form errors. -->\\n    </div>\\n\\n    <div class=\\\"mt-2 text-right\\\">\\n        <button\\n            id=\\\"card-button\\\"\\n            name=\\\"submitPayment\\\"\\n            type=\\\"submit\\\"\\n            data-secret=\\\"{{ $intent->client_secret }}\\\"\\n            x-text=\\\"selected === 'opt1' ? 'Sign up for free' : (selected === 'opt2' ? 'Sign up monthly for $10' : (selected === 'opt3' ? 'Sign up yearly for $$95' : 'Sign up for free'))\\\"\\n            class=\\\"py-2 px-4 bg-green-500 hover:bg-green-600 text-green-100 rounded-lg\\\"\\n        >\\n            Sign up for free\\n        </button>\\n    </div>\\n</form>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mr-robot",
+    "authorUrl": "https://tailwindflex.com/@mr-robot",
+    "sourceUrl": "https://tailwindflex.com/@mr-robot/payment-form-alpine-js",
+    "mention": "Créé par @mr-robot sur TailwindFlex",
+    "rawHtml": "<!-- https://gist.github.com/goodreds/a037bfd1ca46641666b647afad06df6e -->\n\n<script src=\"https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.1.5/dist/alpine.js\"></script>\n\n\n<form id=\"payment-form\" method=\"POST\" action=\"/\" class=\"max-w-lg mx-auto my-8 p-4 bg-white shadow\"\n    x-data=\"{ selected: 'opt1' }\">\n\n    <!-- Email and password inputs -->\n\n    <div class=\"flex flex-col sm:flex-row items-start sm:items-center\">\n        <label class=\"w-full sm:w-1/3 block sm:flex sm:flex-row sm:flex-col sm:mr-2 mb-2 sm:mb-0 text-left sm:text-right\">\n            Plan <a href=\"#\" class=\"text-blue-500 underline\">see features</a>\n        </label>\n\n        <div class=\"w-full sm:w-2/3 flex flex-col sm:ml-2 mb-4 p-4 bg-gray-200 rounded\">\n            <label for=\"plan-free\" class=\"my-1 mt-0\">\n                <input x-on:click=\"selected = 'opt1'\" id=\"plan-free\" type=\"radio\" name=\"plan\" value=\"standard-free\" checked>\n                Free\n            </label>\n\n            <label for=\"plan-monthly\" class=\"my-1\">\n                <input x-on:click=\"selected = 'opt2'\" id=\"plan-monthly\" type=\"radio\" name=\"plan\" value=\"premium-monthly\">\n                Monthly - <strong>$10</strong> / month\n            </label>\n\n            <label for=\"plan-yearly\" class=\"my-1 mb-0\">\n                <input x-on:click=\"selected = 'opt3'\" id=\"plan-yearly\" type=\"radio\" name=\"plan\" value=\"premium-yearly\">\n                Yearly - <strong>$95</strong> / year <span class=\"text-green-500\">- save <strong>$25</strong> per year</span>\n            </label>\n        </div>\n    </div>\n\n    <div x-show=\"selected !== 'opt1'\" x-cloak class=\"flex flex-col sm:flex-row items-center mb-4\">\n        <label x-show=\"selected !== 'opt1'\" x-cloak for=\"card-element\" class=\"w-full sm:w-1/3 sm:mr-2 mb-2 sm:mb-0 sm:text-right\">\n            Credit or debit card\n        </label>\n        <div x-show=\"selected !== 'opt1'\" x-cloak id=\"card-element\" class=\"w-full sm:w-2/3 sm:ml-2\">\n            <!-- A Stripe Element will be inserted here. -->\n            <input id=\"card-element\" name=\"card-element\" placeholder=\"Card number\" class=\"w-full p-2 rounded shadow-inner border\">\n        </div>\n    </div>\n\n    <div x-show=\"selected !== 'opt1'\" x-cloak>\n        <!-- Stripe: used to display form errors. -->\n    </div>\n\n    <div class=\"mt-2 text-right\">\n        <button\n            id=\"card-button\"\n            name=\"submitPayment\"\n            type=\"submit\"\n            data-secret=\"{{ $intent->client_secret }}\"\n            x-text=\"selected === 'opt1' ? 'Sign up for free' : (selected === 'opt2' ? 'Sign up monthly for $10' : (selected === 'opt3' ? 'Sign up yearly for $$95' : 'Sign up for free'))\"\n            class=\"py-2 px-4 bg-green-500 hover:bg-green-600 text-green-100 rounded-lg\"\n        >\n            Sign up for free\n        </button>\n    </div>\n</form>"
+  }
+}

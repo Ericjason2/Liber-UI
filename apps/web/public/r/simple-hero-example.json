@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-hero-example",
+  "type": "registry:ui",
+  "title": "Simple hero example",
+  "description": "Simple hero example - Créé par @task_master sur TailwindFlex.",
+  "author": "@task_master (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-hero-example.tsx",
+      "content": "/**\n * Component: Simple hero example\n * Author: @task_master (https://tailwindflex.com/@task_master)\n * Source: https://tailwindflex.com/@task_master/simple-hero-example\n * Attribution: Créé par @task_master sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SimpleHeroExample() {\n  return (\n    <div>\n    <div className=\"container mx-auto flex px-5 py-24 md flex-col items-center\">\n        <div\n            className=\"lg md1/2 lg24 md16 flex flex-col md md mb-16 md0 items-center text-center\">\n            <h1 className=\"title-font sm4xl text-3xl mb-4 font-medium text-gray-900\">Welcome to simple blog\n            </h1>\n            <p className=\"mb-8 leading-relaxed\">Here's where I put my thoughts</p>\n            <div className=\"flex justify-center\">\n                <a href=\"\"\n                    className=\"inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus hover600 rounded text-lg\">Read</a>\n                <a href=\"\"\n                    className=\"ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus hover200 rounded text-lg\">About\n                    me</a>\n            </div>\n        </div>\n        <div className=\"lg lg md1/2 w-5/6\">\n            <img className=\"object-cover object-center rounded\" alt=\"hero\" src=\"https://www.svgrepo.com/show/358718/logo-windows.svg\" />\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@task_master",
+    "authorUrl": "https://tailwindflex.com/@task_master",
+    "sourceUrl": "https://tailwindflex.com/@task_master/simple-hero-example",
+    "mention": "Créé par @task_master sur TailwindFlex",
+    "rawHtml": "<div class=\"container mx-auto flex px-5 py-24 md:flex-row flex-col items-center\">\n    <div\n        class=\"lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center\">\n        <h1 class=\"title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900\">Welcome to simple blog\n        </h1>\n        <p class=\"mb-8 leading-relaxed\">Here's where I put my thoughts</p>\n        <div class=\"flex justify-center\">\n            <a href=\"\"\n                class=\"inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg\">Read</a>\n            <a href=\"\"\n                class=\"ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg\">About\n                me</a>\n        </div>\n    </div>\n    <div class=\"lg:max-w-lg lg:w-full md:w-1/2 w-5/6\">\n        <img class=\"object-cover object-center rounded\" alt=\"hero\" src=\"https://www.svgrepo.com/show/358718/logo-windows.svg\">\n    </div>\n</div>"
+  }
+}

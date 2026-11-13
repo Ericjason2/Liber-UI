@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-plan-selector-2",
+  "type": "registry:ui",
+  "title": "Pricing Plan Selector",
+  "description": "Pricing Plan Selector - Créé par @mehmet-kaplan sur TailwindFlex.",
+  "author": "@mehmet-kaplan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pricing-plan-selector-2.tsx",
+      "content": "/**\n * Component: Pricing Plan Selector\n * Author: @mehmet-kaplan (https://tailwindflex.com/@mehmet-kaplan)\n * Source: https://tailwindflex.com/@mehmet-kaplan/pricing-plan-selector-2\n * Attribution: Créé par @mehmet-kaplan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PricingPlanSelector2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"flex min-h-screen items-center justify-center bg-slate-200 dark:bg-gray-800\\\">\\n  <div class=\\\"mx-auto max-w-6xl px-12\\\">\\n    <div class=\\\"flex flex-wrap justify-center gap-3\\\">\\n\\n      <label class=\\\"cursor-pointer\\\">\\n        <input type=\\\"radio\\\" class=\\\"peer sr-only\\\" name=\\\"pricing\\\" />\\n        <div class=\\\"w-72 max-w-xl rounded-md bg-white dark:bg-gray-900 p-5 text-gray-600 dark:text-gray-300 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2\\\">\\n            <div class=\\\"flex items-center justify-between\\\">\\n              <p><span class=\\\"text-lg font-bold\\\">%3</span> iskonto</p>\\n              <div class=\\\"text-sm font-bold\\\">₺68.609,00</div>\\n            </div>\\n        </div>\\n      </label>\\n\\n      <label class=\\\"cursor-pointer\\\">\\n        <input type=\\\"radio\\\" class=\\\"peer sr-only\\\" name=\\\"pricing\\\" />\\n        <div class=\\\"w-72 max-w-xl rounded-md bg-white dark:bg-gray-900 p-5 text-gray-600 dark:text-gray-300 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2\\\">\\n            <div class=\\\"flex items-center justify-between\\\">\\n              <p><span class=\\\"text-lg font-bold\\\">%5</span> iskonto</p>\\n              <div class=\\\"text-sm font-bold\\\">₺68.609,00</div>\\n            </div>\\n        </div>\\n      </label>\\n\\n      <label class=\\\"cursor-pointer\\\">\\n        <input type=\\\"radio\\\" class=\\\"peer sr-only\\\" name=\\\"pricing\\\" />\\n        <div class=\\\"w-72 max-w-xl rounded-md bg-white dark:bg-gray-900 p-5 text-gray-600 dark:text-gray-300 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2\\\">\\n            <div class=\\\"flex items-center justify-between\\\">\\n              <p><span class=\\\"text-lg font-bold\\\">%10</span> iskonto</p>\\n              <div class=\\\"text-sm font-bold\\\">₺68.609,00</div>\\n            </div>\\n        </div>\\n      </label>\\n\\n<button id=\\\"apply-discount\\\" class=\\\"mt-4 px-4 py-2 bg-green-500 text-white rounded\\\">İskonto Uygula ve Devam Et</button>\\n    </div>\\n\\n    </div>\\n  </div>\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@mehmet-kaplan",
+    "authorUrl": "https://tailwindflex.com/@mehmet-kaplan",
+    "sourceUrl": "https://tailwindflex.com/@mehmet-kaplan/pricing-plan-selector-2",
+    "mention": "Créé par @mehmet-kaplan sur TailwindFlex",
+    "rawHtml": "<div class=\"flex min-h-screen items-center justify-center bg-slate-200 dark:bg-gray-800\">\n  <div class=\"mx-auto max-w-6xl px-12\">\n    <div class=\"flex flex-wrap justify-center gap-3\">\n\n      <label class=\"cursor-pointer\">\n        <input type=\"radio\" class=\"peer sr-only\" name=\"pricing\" />\n        <div class=\"w-72 max-w-xl rounded-md bg-white dark:bg-gray-900 p-5 text-gray-600 dark:text-gray-300 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2\">\n            <div class=\"flex items-center justify-between\">\n              <p><span class=\"text-lg font-bold\">%3</span> iskonto</p>\n              <div class=\"text-sm font-bold\">₺68.609,00</div>\n            </div>\n        </div>\n      </label>\n\n      <label class=\"cursor-pointer\">\n        <input type=\"radio\" class=\"peer sr-only\" name=\"pricing\" />\n        <div class=\"w-72 max-w-xl rounded-md bg-white dark:bg-gray-900 p-5 text-gray-600 dark:text-gray-300 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2\">\n            <div class=\"flex items-center justify-between\">\n              <p><span class=\"text-lg font-bold\">%5</span> iskonto</p>\n              <div class=\"text-sm font-bold\">₺68.609,00</div>\n            </div>\n        </div>\n      </label>\n\n      <label class=\"cursor-pointer\">\n        <input type=\"radio\" class=\"peer sr-only\" name=\"pricing\" />\n        <div class=\"w-72 max-w-xl rounded-md bg-white dark:bg-gray-900 p-5 text-gray-600 dark:text-gray-300 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2\">\n            <div class=\"flex items-center justify-between\">\n              <p><span class=\"text-lg font-bold\">%10</span> iskonto</p>\n              <div class=\"text-sm font-bold\">₺68.609,00</div>\n            </div>\n        </div>\n      </label>\n\n<button id=\"apply-discount\" class=\"mt-4 px-4 py-2 bg-green-500 text-white rounded\">İskonto Uygula ve Devam Et</button>\n    </div>\n\n    </div>\n  </div>\n</div>"
+  }
+}

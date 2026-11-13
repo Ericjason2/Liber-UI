@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "bubblegum-button",
+  "type": "registry:ui",
+  "title": "Bubblegum Button",
+  "description": "Bubblegum Button - Créé par @bansheetech sur TailwindFlex.",
+  "author": "@bansheetech (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/bubblegum-button.tsx",
+      "content": "/**\n * Component: Bubblegum Button\n * Author: @bansheetech (https://tailwindflex.com/@bansheetech)\n * Source: https://tailwindflex.com/@bansheetech/bubblegum-button\n * Attribution: Créé par @bansheetech sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BubblegumButton() {\n  return (\n    <div>\n    <div className=\"flex mt-10 max-w-xs rounded-full bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5 shadow-lg mx-auto rgb-button will-change-transform\">\n      <a href=\"#get-homedock\" className=\"flex-1 font-normal text-md bg-white/90 px-6 py-3 hover105 rounded-full hover2 transition duration-500 items-center flex justify-center hover will-change\">\n        <button className=\"flex items-center will-change\">\n          <svg className=\"mr-1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">\n            <rect width=\"24\" height=\"24\" fill=\"none\" />\n            <path fill=\"currentColor\" d=\"M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z\" />\n          </svg>\n          <span className=\"will-change-transform\">Learn more</span>\n        </button>\n      </a>\n    </div>\n    \n    <div className=\"flex justify-center\">\n      <div className=\"items-center mt-10 px-6 py-1 text-xs bg-gray-300 rounded-full inline-flex transition duration-300 hover800 hover hover1\">\n        <a target=\"_blank\" href=\"https://www.homedock.cloud\">View it live</a>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@bansheetech",
+    "authorUrl": "https://tailwindflex.com/@bansheetech",
+    "sourceUrl": "https://tailwindflex.com/@bansheetech/bubblegum-button",
+    "mention": "Créé par @bansheetech sur TailwindFlex",
+    "rawHtml": "<div class=\"flex mt-10 max-w-xs rounded-full bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5 shadow-lg mx-auto rgb-button will-change-transform\">\n  <a href=\"#get-homedock\" class=\"flex-1 font-normal text-md bg-white/90 px-6 py-3 hover:scale-105 rounded-full hover:-translate-y-2 transition duration-500 items-center flex justify-center hover:shadow-md will-change\">\n    <button class=\"flex items-center will-change\">\n      <svg class=\"mr-1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">\n        <rect width=\"24\" height=\"24\" fill=\"none\" />\n        <path fill=\"currentColor\" d=\"M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z\" />\n      </svg>\n      <span class=\"will-change-transform\">Learn more</span>\n    </button>\n  </a>\n</div>\n\n<div class=\"flex justify-center\">\n  <div class=\"items-center mt-10 px-6 py-1 text-xs bg-gray-300 rounded-full inline-flex transition duration-300 hover:bg-gray-800 hover:text-white hover:-translate-y-1\">\n    <a target=\"_blank\" href=\"https://www.homedock.cloud\">View it live</a>\n  </div>\n</div>"
+  }
+}

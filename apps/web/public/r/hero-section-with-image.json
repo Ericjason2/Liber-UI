@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-with-image",
+  "type": "registry:ui",
+  "title": "Hero section with image",
+  "description": "Hero section with image - Créé par @sophia-baker sur TailwindFlex.",
+  "author": "@sophia-baker (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-with-image.tsx",
+      "content": "/**\n * Component: Hero section with image\n * Author: @sophia-baker (https://tailwindflex.com/@sophia-baker)\n * Source: https://tailwindflex.com/@sophia-baker/hero-section-with-image\n * Attribution: Créé par @sophia-baker sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSectionWithImage() {\n  return (\n    <div>\n    <section className=\"text-gray-600 body-font bg-white dark900\">\r\n        <div className=\"container mx-auto flex md24 md10 md flex-col items-center\">\r\n            <div\r\n                className=\"lg mt-5 md0   md1.5/2 lg24 md16 flex flex-col md md mb-16 md0 items-center text-center\">\r\n                <h1\r\n                    className=\"text-2xl font-extrabold leading-9 tracking-tight mb-3 text-gray-900 dark100 sm4xl sm10 md5xl md\">\r\n                    Title of Project\r\n                </h1>\r\n                <p className=\"mb-8 md0  pl-2 pr-2 leading-relaxed dark300\">\r\n                    Short description here, Short description here Short description here Short description here Short\r\n                    description here Short description here.\r\n                </p>\r\n                <div className=\"flex justify-center\">\r\n                    <a href=\"#\"\r\n                        className=\"inline-flex text-white bg-emerald-600 border-0 py-2 px-6 focus hover600 rounded text-lg\">Start\r\n                        Exploring\r\n                    </a>\r\n                    <a href=\"#\"\r\n                        className=\"ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus hover200 rounded text-lg\">Read\r\n                        articles</a>\r\n                </div>\r\n            </div>\r\n            <div className=\"lg lg mb-5 md0 md1/2 w-3/6\">\r\n                <img className=\"object-cover object-center rounded\" alt=\"hero\" src=\"https://www.svgrepo.com/show/490900/hot-air-balloon.svg\" />\r\n            </div>\r\n        </div>\r\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sophia-baker",
+    "authorUrl": "https://tailwindflex.com/@sophia-baker",
+    "sourceUrl": "https://tailwindflex.com/@sophia-baker/hero-section-with-image",
+    "mention": "Créé par @sophia-baker sur TailwindFlex",
+    "rawHtml": "<section class=\"text-gray-600 body-font bg-white dark:bg-slate-900\">\r\n    <div class=\"container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center\">\r\n        <div\r\n            class=\"lg:flex-grow mt-5 md:mt-0   md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center\">\r\n            <h1\r\n                class=\"text-2xl font-extrabold leading-9 tracking-tight mb-3 text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal\">\r\n                Title of Project\r\n            </h1>\r\n            <p class=\"mb-8 md:pl-0  pl-2 pr-2 leading-relaxed dark:text-gray-300\">\r\n                Short description here, Short description here Short description here Short description here Short\r\n                description here Short description here.\r\n            </p>\r\n            <div class=\"flex justify-center\">\r\n                <a href=\"#\"\r\n                    class=\"inline-flex text-white bg-emerald-600 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 rounded text-lg\">Start\r\n                    Exploring\r\n                </a>\r\n                <a href=\"#\"\r\n                    class=\"ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg\">Read\r\n                    articles</a>\r\n            </div>\r\n        </div>\r\n        <div class=\"lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6\">\r\n            <img class=\"object-cover object-center rounded\" alt=\"hero\" src=\"https://www.svgrepo.com/show/490900/hot-air-balloon.svg\">\r\n        </div>\r\n    </div>\r\n</section>"
+  }
+}

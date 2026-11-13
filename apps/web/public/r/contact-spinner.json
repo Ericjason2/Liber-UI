@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "contact-spinner",
+  "type": "registry:ui",
+  "title": "Contact Spinner",
+  "description": "Contact Spinner - Créé par @sammytg7 sur TailwindFlex.",
+  "author": "@sammytg7 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/contact-spinner.tsx",
+      "content": "/**\n * Component: Contact Spinner\n * Author: @sammytg7 (https://tailwindflex.com/@sammytg7)\n * Source: https://tailwindflex.com/@sammytg7/contact-spinner\n * Attribution: Créé par @sammytg7 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ContactSpinner() {\n  return (\n    <div>\n    \n    <link rel=\"stylesheet\" href=\"https://unicons.iconscout.com/release/v4.0.0/css/line.css\" />\n    \n    <div className=\"w-full flex h-screen bg-gray-900 dark\">\n        <a href=\"mailto87.com\" id=\"contact_btn\"\n            className=\"w-[10rem] h-[10rem] rounded-full text-[#000e17] grid place-items-center absolute lg[50%] sm[40%] xs[30%] top-[5%] bg-[linear-gradient(-30deg,_#e5a55d,_#ff7b02,_#e5a55d)] cursor-pointer [transition_400ms_ease] hover2xl hover900 hover[1rem] hover[#000e17]\">\n            <i className=\"uil uil-arrow-up-right absolute text-[3.5rem]\"></i>\n            <p\n                className=\"text-[#000e17] font-semibold w-[10rem] h-[10rem] flex justify-center animate-spinText\">\n                CONTACT - SEND ME AN EMAIL\n            </p>\n        </a>\n    \n        \n    \n        <a href=\"mailto87.com\" id=\"contact_btn\"\n            className=\"w-[10rem] h-[10rem] rounded-full text-gray-400 grid place-items-center absolute lg[50%] sm[40%] xs[30%] bottom-[35%] cursor-pointer [transition_400ms_ease] hover2xl hover900 hover[1rem] hover300\">\n            <i className=\"uil uil-arrow-up-right absolute text-[3.5rem]\"></i>\n            <p\n                className=\"text-white dark900 font-semibold w-[10rem] h-[10rem] flex justify-center animate-spinText\">\n                CONTACT - SEND ME AN EMAIL\n            </p>\n        </a>\n    \n        <a href=\"mailto87.com\" id=\"contact_btn\"\n            className=\"w-[10rem] h-[10rem] rounded-full text-[#000e17] grid place-items-center absolute lg[50%] sm[40%] xs[30%] bottom-[5%] bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer [transition_400ms_ease] hover2xl hover900 hover[1rem] hover[#000e17]\">\n            <i className=\"uil uil-arrow-up-right absolute text-[3.5rem]\"></i>\n            <p\n                className=\"text-[#000e17] font-semibold w-[10rem] h-[10rem] flex justify-center animate-spinText\">\n                CONTACT - SEND ME AN EMAIL\n            </p>\n        </a>\n    </div>\n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sammytg7",
+    "authorUrl": "https://tailwindflex.com/@sammytg7",
+    "sourceUrl": "https://tailwindflex.com/@sammytg7/contact-spinner",
+    "mention": "Créé par @sammytg7 sur TailwindFlex",
+    "rawHtml": "<!-- =============ICONSCOUT CDN============ -->\n<link rel=\"stylesheet\" href=\"https://unicons.iconscout.com/release/v4.0.0/css/line.css\">\n\n<div class=\"w-full flex h-screen bg-gray-900 dark:bg-white\">\n    <a href=\"mailto:samuelabera87@gmail.com\" id=\"contact_btn\"\n        class=\"w-[10rem] h-[10rem] rounded-full text-[#000e17] grid place-items-center absolute lg:right-[50%] sm:right-[40%] xs:right-[30%] top-[5%] bg-[linear-gradient(-30deg,_#e5a55d,_#ff7b02,_#e5a55d)] cursor-pointer [transition:all_400ms_ease] hover:shadow-2xl hover:shadow-gray-900 hover:-translate-y-[1rem] hover:text-[#000e17]\">\n        <i class=\"uil uil-arrow-up-right absolute text-[3.5rem]\"></i>\n        <p\n            class=\"text-[#000e17] font-semibold w-[10rem] h-[10rem] flex justify-center animate-spinText\">\n            CONTACT - SEND ME AN EMAIL\n        </p>\n    </a>\n\n    <!--  -->\n\n    <a href=\"mailto:samuelabera87@gmail.com\" id=\"contact_btn\"\n        class=\"w-[10rem] h-[10rem] rounded-full text-gray-400 grid place-items-center absolute lg:right-[50%] sm:right-[40%] xs:right-[30%] bottom-[35%] cursor-pointer [transition:all_400ms_ease] hover:shadow-2xl hover:shadow-gray-900 hover:-translate-y-[1rem] hover:text-gray-300\">\n        <i class=\"uil uil-arrow-up-right absolute text-[3.5rem]\"></i>\n        <p\n            class=\"text-white dark:text-gray-900 font-semibold w-[10rem] h-[10rem] flex justify-center animate-spinText\">\n            CONTACT - SEND ME AN EMAIL\n        </p>\n    </a>\n\n    <a href=\"mailto:samuelabera87@gmail.com\" id=\"contact_btn\"\n        class=\"w-[10rem] h-[10rem] rounded-full text-[#000e17] grid place-items-center absolute lg:right-[50%] sm:right-[40%] xs:right-[30%] bottom-[5%] bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer [transition:all_400ms_ease] hover:shadow-2xl hover:shadow-gray-900 hover:-translate-y-[1rem] hover:text-[#000e17]\">\n        <i class=\"uil uil-arrow-up-right absolute text-[3.5rem]\"></i>\n        <p\n            class=\"text-[#000e17] font-semibold w-[10rem] h-[10rem] flex justify-center animate-spinText\">\n            CONTACT - SEND ME AN EMAIL\n        </p>\n    </a>\n</div>\n\n<script>\n    const btnContact = document.querySelectorAll('#contact_btn');\n\nbtnContact.forEach(btnText => {\n    let text = btnText.querySelector('p');\n\n    text.innerHTML = text.innerHTML.split('').map((character, index) => `<span class=\"absolute origin-[0.3rem_5rem]\" style=\"transform: rotate(${index * 12}deg)\">${character}</span>`).join('');\n});\n</script>"
+  }
+}

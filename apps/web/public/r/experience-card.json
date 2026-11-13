@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "experience-card",
+  "type": "registry:ui",
+  "title": "Experience Card",
+  "description": "Experience Card - Créé par @khalid sur TailwindFlex.",
+  "author": "@khalid (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/experience-card.tsx",
+      "content": "/**\n * Component: Experience Card\n * Author: @khalid (https://tailwindflex.com/@khalid)\n * Source: https://tailwindflex.com/@khalid/experience-card\n * Attribution: Créé par @khalid sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ExperienceCard() {\n  return (\n    <div>\n    <div className=\"bg-white flex justify-center items-center w-screen h-screen p-5\">\n        <div className='flex flex-col items-center justify-between bg-white dark800 shadow-md shadow-gray-300 text-gray-800 dark200 border border-gray-200 dark600 w-full md8/12 mx-auto h-auto rounded-xl transition-all ease-in-out duration-500 mb-4 py-2 px-2 md4'>\n            <div className='w-full flex items-center justify-between'>\n                <div className='flex items-center justify-center px-2 md6'>\n                    <img className='w-16 hidden rounded-full ring-2 ring-green-600 shadow-lg shadow-green-600 m-2 md' src='https://img.freepik.com/free-vector/illustration-user-avatar-icon_53876-5907.jpg?size=626&ext=jpg' alt=\"\" />\n                    <div className='text-left '>\n                        <h4 className='text-lg md2xl lg3xl ease-in-out duration-1000 uppercase'><span className='text-red-500'>Code</span>101</h4>\n                        <h4 className='text-sm md font-medium dark200'>Software Engineer</h4>\n                    </div>\n                </div>\n                <div className='text-sm md text-right p-2 gap-4 ease-in-out duration-500'>\n                    <p className='text-sm md text-gray-800 dark200'>July 2022 - Present </p>\n                    <p className='text-sm md text-gray-800 dark200'>Techtopia, Digital Realm</p>\n                </div>\n            </div>\n            <div className='text-left p-2'>\n                <p className='text-sm lg text-gray-600 dark400 pb-4'>I am a Software Engineer currently employed at Code101, where I work as a full-stack developer as part of the Web Application Development team. Together, we utilize ReactJS and NodeJS to create software solutions that provide users with a seamless and enjoyable experience.</p>\n                <h4 className='text-base text-green-400 font-semibold'>Key Responsibilities</h4>\n                <ul className='text-sm list-disc ml-6'>\n                    <li>Develop and maintain the NodeJS server and backend of the Web Application team's software solutions.</li>\n                    <li>Collaborate with the full-stack developer to contribute to the application's frontend development.</li>\n                    <li>Write reusable, flexible, and high-quality code to ensure the reliability and longevity of our products.</li>\n                </ul>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "profile",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@khalid",
+    "authorUrl": "https://tailwindflex.com/@khalid",
+    "sourceUrl": "https://tailwindflex.com/@khalid/experience-card",
+    "mention": "Créé par @khalid sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white flex justify-center items-center w-screen h-screen p-5\">\n    <div class='flex flex-col items-center justify-between bg-white dark:bg-gray-800 shadow-md shadow-gray-300 text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-600 w-full md:w-8/12 mx-auto h-auto rounded-xl transition-all ease-in-out duration-500 mb-4 py-2 px-2 md:px-4'>\n        <div class='w-full flex items-center justify-between'>\n            <div class='flex items-center justify-center px-2 md:px-6'>\n                <img class='w-16 hidden rounded-full ring-2 ring-green-600 shadow-lg shadow-green-600 m-2 md:block' src='https://img.freepik.com/free-vector/illustration-user-avatar-icon_53876-5907.jpg?size=626&ext=jpg' alt=\"\" />\n                <div class='text-left '>\n                    <h4 class='text-lg md:text-2xl lg:text-3xl ease-in-out duration-1000 uppercase'><span class='text-red-500'>Code</span>101</h4>\n                    <h4 class='text-sm md:text-base font-medium dark:text-gray-200'>Software Engineer</h4>\n                </div>\n            </div>\n            <div class='text-sm md:text-base text-right p-2 gap-4 ease-in-out duration-500'>\n                <p class='text-sm md:text-base text-gray-800 dark:text-gray-200'>July 2022 - Present </p>\n                <p class='text-sm md:text-base text-gray-800 dark:text-gray-200'>Techtopia, Digital Realm</p>\n            </div>\n        </div>\n        <div class='text-left p-2'>\n            <p class='text-sm lg:text-base text-gray-600 dark:text-gray-400 pb-4'>I am a Software Engineer currently employed at Code101, where I work as a full-stack developer as part of the Web Application Development team. Together, we utilize ReactJS and NodeJS to create software solutions that provide users with a seamless and enjoyable experience.</p>\n            <h4 class='text-base text-green-400 font-semibold'>Key Responsibilities</h4>\n            <ul class='text-sm list-disc ml-6'>\n                <li>Develop and maintain the NodeJS server and backend of the Web Application team's software solutions.</li>\n                <li>Collaborate with the full-stack developer to contribute to the application's frontend development.</li>\n                <li>Write reusable, flexible, and high-quality code to ensure the reliability and longevity of our products.</li>\n            </ul>\n        </div>\n    </div>\n</div>"
+  }
+}

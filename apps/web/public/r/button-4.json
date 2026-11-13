@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-4",
+  "type": "registry:ui",
+  "title": "button",
+  "description": "button - Créé par @raulanto sur TailwindFlex.",
+  "author": "@raulanto (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button-4.tsx",
+      "content": "/**\n * Component: button\n * Author: @raulanto (https://tailwindflex.com/@raulanto)\n * Source: https://tailwindflex.com/@raulanto/button-4\n * Attribution: Créé par @raulanto sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Button4() {\n  return (\n    <div>\n    <div className=\"flex flex-wrap gap-4 p-8 bg-seasalt\">\n    \n      <button className=\"bg-aerospace-orange hover text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300\">\n        Botón Primario\n      </button>\n    \n      <button className=\"bg-federal-blue hover text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300\">\n        Botón Oscuro\n      </button>\n    \n      <button className=\"border-2 border-aero text-aero hover hover font-bold py-2 px-4 rounded-md transition-all duration-300\">\n        Botón Contorno\n      </button>\n    \n      <button className=\"bg-transparent text-eerie-black hover/10 font-bold py-2 px-4 rounded-md transition-all duration-300\">\n        Botón Sutil\n      </button>\n    \n      <button className=\"bg-aerospace-orange text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300 hover hover hover/40\">\n        Animación Sombra\n      </button>\n    \n      <button className=\"bg-federal-blue text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300 transform hover105 hover\">\n        Animación Escala\n      </button>\n    \n      <button className=\"bg-aero text-federal-blue font-bold py-2 px-4 rounded-md transition-all duration-300 focus4 focus/50 focus\">\n        Animación Anillo (Click)\n      </button>\n    \n      <button className=\"bg-flame hover text-seasalt font-bold w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 transform hover12\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth=\"2\" stroke=\"currentColor\" className=\"w-6 h-6\">\n          <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"m4.5 12.75 6 6 9-13.5\" />\n        </svg>\n      </button>\n    \n    \n        <button className=\"border-2 border-flame text-flame hover hover font-bold py-2 px-4 rounded-md transition-all duration-300\">\n        Botón Contorno\n      </button>\n    <button\n        className=\"px-4 py-2 border flex gap-2 border-federal-blue rounded-lg text-federal-blue hover hover transition duration-150\">\n        <span className=\"pt-0.5\">    Botón Contorno</span>\n    </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@raulanto",
+    "authorUrl": "https://tailwindflex.com/@raulanto",
+    "sourceUrl": "https://tailwindflex.com/@raulanto/button-4",
+    "mention": "Créé par @raulanto sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-wrap gap-4 p-8 bg-seasalt\">\n\n  <button class=\"bg-aerospace-orange hover:bg-flame text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300\">\n    Botón Primario\n  </button>\n\n  <button class=\"bg-federal-blue hover:bg-eerie-black text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300\">\n    Botón Oscuro\n  </button>\n\n  <button class=\"border-2 border-aero text-aero hover:bg-aero hover:text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300\">\n    Botón Contorno\n  </button>\n\n  <button class=\"bg-transparent text-eerie-black hover:bg-eerie-black/10 font-bold py-2 px-4 rounded-md transition-all duration-300\">\n    Botón Sutil\n  </button>\n\n  <button class=\"bg-aerospace-orange text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300 hover:bg-flame hover:shadow-lg hover:shadow-aerospace-orange/40\">\n    Animación Sombra\n  </button>\n\n  <button class=\"bg-federal-blue text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300 transform hover:scale-105 hover:bg-eerie-black\">\n    Animación Escala\n  </button>\n\n  <button class=\"bg-aero text-federal-blue font-bold py-2 px-4 rounded-md transition-all duration-300 focus:ring-4 focus:ring-aero/50 focus:outline-none\">\n    Animación Anillo (Click)\n  </button>\n\n  <button class=\"bg-flame hover:bg-aerospace-orange text-seasalt font-bold w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 transform hover:rotate-12\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"2\" stroke=\"currentColor\" class=\"w-6 h-6\">\n      <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4.5 12.75 6 6 9-13.5\" />\n    </svg>\n  </button>\n\n\n    <button class=\"border-2 border-flame text-flame hover:bg-flame hover:text-white font-bold py-2 px-4 rounded-md transition-all duration-300\">\n    Botón Contorno\n  </button>\n<button\n    class=\"px-4 py-2 border flex gap-2 border-federal-blue rounded-lg text-federal-blue hover:border-federal-bluehover:text-federal-blue hover:shadow transition duration-150\">\n    <span class=\"pt-0.5\">    Botón Contorno</span>\n</button>\n</div>"
+  }
+}

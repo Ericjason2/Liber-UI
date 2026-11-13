@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "popup-modal-contact-form",
+  "type": "registry:ui",
+  "title": "popup modal contact form",
+  "description": "popup modal contact form - Créé par @ti-to sur TailwindFlex.",
+  "author": "@ti-to (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/popup-modal-contact-form.tsx",
+      "content": "/**\n * Component: popup modal contact form\n * Author: @ti-to (https://tailwindflex.com/@ti-to)\n * Source: https://tailwindflex.com/@ti-to/popup-modal-contact-form\n * Attribution: Créé par @ti-to sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PopupModalContactForm() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!---\\r\\n\\r\\nThis form uses the Form Backend Service FabForm.io \\r\\n\\r\\n--->\\r\\n\\r\\n\\r\\n<!DOCTYPE html>\\r\\n<html lang=\\\"en\\\">\\r\\n<head>\\r\\n    <meta charset=\\\"UTF-8\\\">\\r\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r\\n    <link href=\\\"https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css\\\" rel=\\\"stylesheet\\\">\\r\\n    <link href=\\\"https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css\\\" rel=\\\"stylesheet\\\">\\r\\n    <style>\\r\\n        body {\\r\\n            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\\r\\n            background-color: #f4f4f4;\\r\\n            margin: 0;\\r\\n            padding: 0;\\r\\n            display: flex;\\r\\n            align-items: center;\\r\\n            justify-content: center;\\r\\n            min-height: 100vh;\\r\\n        }\\r\\n\\r\\n        #contact-form {\\r\\n            display: none;\\r\\n        }\\r\\n\\r\\n        #powered-by {\\r\\n            position: fixed;\\r\\n            bottom: 10px;\\r\\n            right: 10px;\\r\\n            color: #666;\\r\\n            font-size: 12px;\\r\\n            z-index: 1000;\\r\\n        }\\r\\n\\r\\n        #open-popup-btn {\\r\\n            position: fixed;\\r\\n            bottom: 20px;\\r\\n            right: 20px;\\r\\n            background-color: #3498db;\\r\\n            color: #fff;\\r\\n            border: none;\\r\\n            border-radius: 50%;\\r\\n            padding: 20px;\\r\\n            cursor: pointer;\\r\\n            display: flex;\\r\\n            align-items: center;\\r\\n            justify-content: center;\\r\\n            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\\r\\n        }\\r\\n\\r\\n        #open-popup-btn i {\\r\\n            font-size: 24px;\\r\\n        }\\r\\n    </style>\\r\\n</head>\\r\\n<body class=\\\"font-sans\\\">\\r\\n\\r\\n<div id=\\\"contact-form\\\" class=\\\"fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded shadow-lg\\\">\\r\\n    <button id=\\\"close-btn\\\" class=\\\"text-gray-700 hover:text-red-600 font-bold text-xl absolute top-2 right-2\\\">X</button>\\r\\n    <h2 class=\\\"text-2xl font-semibold mb-4\\\">Contact Us</h2>\\r\\n<form action=\\\"https://fabform.io/f/{form-id}\\\" method=\\\"post\\\" class=\\\"space-y-4\\\">\\r\\n        <div>\\r\\n            <label for=\\\"name\\\" class=\\\"block text-sm font-medium text-gray-600\\\">Name:</label>\\r\\n            <input type=\\\"text\\\" id=\\\"name\\\" name=\\\"name\\\" required\\r\\n                   class=\\\"mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500\\\">\\r\\n        </div>\\r\\n\\r\\n        <div>\\r\\n            <label for=\\\"email\\\" class=\\\"block text-sm font-medium text-gray-600\\\">Email:</label>\\r\\n            <input type=\\\"email\\\" id=\\\"email\\\" name=\\\"email\\\" required\\r\\n                   class=\\\"mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500\\\">\\r\\n        </div>\\r\\n\\r\\n        <div>\\r\\n            <label for=\\\"message\\\" class=\\\"block text-sm font-medium text-gray-600\\\">Message:</label>\\r\\n            <textarea id=\\\"message\\\" name=\\\"message\\\" rows=\\\"4\\\" required\\r\\n                      class=\\\"mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500\\\"></textarea>\\r\\n        </div>\\r\\n\\r\\n        <button type=\\\"submit\\\" class=\\\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\\\">\\r\\n            Submit\\r\\n        </button>\\r\\n    </form>\\r\\n  <a href=\\\"https://fabform.io\\\" target=\\\"_blank\\\" id=\\\"powered-by\\\" class=\\\"text-gray-700 hover:text-blue-500\\\">\\r\\n    Powered By FabForm.io\\r\\n</a>\\r\\n</div>\\r\\n\\r\\n\\r\\n\\r\\n<button id=\\\"open-popup-btn\\\">\\r\\n    <i id=\\\"popup-icon\\\" class=\\\"fas fa-comment\\\"></i>\\r\\n</button>\\r\\n\\r\\n\\r\\n\\r\\n</body>\\r\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ti-to",
+    "authorUrl": "https://tailwindflex.com/@ti-to",
+    "sourceUrl": "https://tailwindflex.com/@ti-to/popup-modal-contact-form",
+    "mention": "Créé par @ti-to sur TailwindFlex",
+    "rawHtml": "<!---\r\n\r\nThis form uses the Form Backend Service FabForm.io \r\n\r\n--->\r\n\r\n\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <link href=\"https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css\" rel=\"stylesheet\">\r\n    <link href=\"https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css\" rel=\"stylesheet\">\r\n    <style>\r\n        body {\r\n            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n            background-color: #f4f4f4;\r\n            margin: 0;\r\n            padding: 0;\r\n            display: flex;\r\n            align-items: center;\r\n            justify-content: center;\r\n            min-height: 100vh;\r\n        }\r\n\r\n        #contact-form {\r\n            display: none;\r\n        }\r\n\r\n        #powered-by {\r\n            position: fixed;\r\n            bottom: 10px;\r\n            right: 10px;\r\n            color: #666;\r\n            font-size: 12px;\r\n            z-index: 1000;\r\n        }\r\n\r\n        #open-popup-btn {\r\n            position: fixed;\r\n            bottom: 20px;\r\n            right: 20px;\r\n            background-color: #3498db;\r\n            color: #fff;\r\n            border: none;\r\n            border-radius: 50%;\r\n            padding: 20px;\r\n            cursor: pointer;\r\n            display: flex;\r\n            align-items: center;\r\n            justify-content: center;\r\n            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n        }\r\n\r\n        #open-popup-btn i {\r\n            font-size: 24px;\r\n        }\r\n    </style>\r\n</head>\r\n<body class=\"font-sans\">\r\n\r\n<div id=\"contact-form\" class=\"fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded shadow-lg\">\r\n    <button id=\"close-btn\" class=\"text-gray-700 hover:text-red-600 font-bold text-xl absolute top-2 right-2\" onclick=\"closeForm()\">X</button>\r\n    <h2 class=\"text-2xl font-semibold mb-4\">Contact Us</h2>\r\n<form action=\"https://fabform.io/f/{form-id}\" method=\"post\" class=\"space-y-4\">\r\n        <div>\r\n            <label for=\"name\" class=\"block text-sm font-medium text-gray-600\">Name:</label>\r\n            <input type=\"text\" id=\"name\" name=\"name\" required\r\n                   class=\"mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500\">\r\n        </div>\r\n\r\n        <div>\r\n            <label for=\"email\" class=\"block text-sm font-medium text-gray-600\">Email:</label>\r\n            <input type=\"email\" id=\"email\" name=\"email\" required\r\n                   class=\"mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500\">\r\n        </div>\r\n\r\n        <div>\r\n            <label for=\"message\" class=\"block text-sm font-medium text-gray-600\">Message:</label>\r\n            <textarea id=\"message\" name=\"message\" rows=\"4\" required\r\n                      class=\"mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500\"></textarea>\r\n        </div>\r\n\r\n        <button type=\"submit\" class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\">\r\n            Submit\r\n        </button>\r\n    </form>\r\n  <a href=\"https://fabform.io\" target=\"_blank\" id=\"powered-by\" class=\"text-gray-700 hover:text-blue-500\">\r\n    Powered By FabForm.io\r\n</a>\r\n</div>\r\n\r\n\r\n\r\n<button id=\"open-popup-btn\">\r\n    <i id=\"popup-icon\" class=\"fas fa-comment\"></i>\r\n</button>\r\n\r\n<script>\r\n    const openPopupBtn = document.getElementById('open-popup-btn');\r\n    const contactForm = document.getElementById('contact-form');\r\n    const popupIcon = document.getElementById('popup-icon');\r\n\r\n    openPopupBtn.addEventListener('click', function () {\r\n        if (contactForm.style.display === 'block') {\r\n            contactForm.style.display = 'none';\r\n            popupIcon.classList.remove('fa-comment');\r\n            popupIcon.classList.add('fa-comment-alt');\r\n        } else {\r\n            contactForm.style.display = 'block';\r\n            popupIcon.classList.remove('fa-comment-alt');\r\n            popupIcon.classList.add('fa-comment');\r\n        }\r\n    });\r\n\r\n    function closeForm() {\r\n        contactForm.style.display = 'none';\r\n        popupIcon.classList.remove('fa-comment');\r\n        popupIcon.classList.add('fa-comment-alt');\r\n    }\r\n\r\n    contactForm.addEventListener('click', function (e) {\r\n        if (e.target === this) {\r\n            closeForm();\r\n        }\r\n    });\r\n</script>\r\n\r\n</body>\r\n</html>"
+  }
+}

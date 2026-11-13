@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-to-action-13",
+  "type": "registry:ui",
+  "title": "Call to Action",
+  "description": "Call to Action - Créé par @kuldeep541 sur TailwindFlex.",
+  "author": "@kuldeep541 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-to-action-13.tsx",
+      "content": "/**\n * Component: Call to Action\n * Author: @kuldeep541 (https://tailwindflex.com/@kuldeep541)\n * Source: https://tailwindflex.com/@kuldeep541/call-to-action-13\n * Attribution: Créé par @kuldeep541 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToAction13() {\n  return (\n    <div>\n    <section className=\"relative py-28 px-4 sm6 lg8 bg-black overflow-hidden\">\n      \n      <div className=\"absolute inset-0 flex items-center justify-center opacity-5\">\n        <p className=\"text-[12rem] md[25rem] font-mono font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-900 to-cyan-900 select-none\">404</p>\n      </div>\n      \n      \n      <div className=\"absolute top-20 left-10 w-40 h-40 rounded-full bg-purple-800 opacity-20 blur-3xl\"></div>\n      <div className=\"absolute bottom-20 right-10 w-60 h-60 bg-cyan-600 opacity-10 blur-3xl\"></div>\n      <div className=\"absolute top-1/2 right-1/4 w-32 h-32 rotate-45 bg-white opacity-5\"></div>\n    \n      <div className=\"relative max-w-6xl mx-auto text-center\">\n        \n        <h1 className=\"text-5xl md8xl font-extrabold mb-8\">\n          <span className=\"text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400\">\n            NO  NEED UI EXPERT?\n          </span>\n          <span className=\"block text-4xl md6xl text-white mt-4\">CREATE IT ANYWAY.</span>\n        </h1>\n        \n        \n        <div className=\"relative my-12 h-1.5 bg-gradient-to-r from-transparent via-purple-500 to-transparent mx-auto w-1/2\"></div>\n        \n        \n        <div className=\"inline-block px-6 py-4 bg-gray-900 border border-gray-800 rounded-lg shadow-lg\">\n          <p className=\"text-xl text-gray-300 font-mono\">\n            <span className=\"text-cyan-400\">$</span> \n            <span className=\"text-purple-400\">call Me </span> \n            <span className=\"text-white\">Kuldeep</span>\n          </p>\n        </div>\n        \n        \n        <div className=\"mt-12\">\n          <a href=\"kuldeepprajapati.netlify.app\" className=\"px-10 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-bold rounded-lg hover hover500/30 transition-all duration-300 hover105\">\n            Contact Us\n          </a>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@kuldeep541",
+    "authorUrl": "https://tailwindflex.com/@kuldeep541",
+    "sourceUrl": "https://tailwindflex.com/@kuldeep541/call-to-action-13",
+    "mention": "Créé par @kuldeep541 sur TailwindFlex",
+    "rawHtml": "<section class=\"relative py-28 px-4 sm:px-6 lg:px-8 bg-black overflow-hidden\">\n  <!-- Glitch effect background text -->\n  <div class=\"absolute inset-0 flex items-center justify-center opacity-5\">\n    <p class=\"text-[12rem] md:text-[25rem] font-mono font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-900 to-cyan-900 select-none\">404</p>\n  </div>\n  \n  <!-- Floating geometric shapes -->\n  <div class=\"absolute top-20 left-10 w-40 h-40 rounded-full bg-purple-800 opacity-20 blur-3xl\"></div>\n  <div class=\"absolute bottom-20 right-10 w-60 h-60 bg-cyan-600 opacity-10 blur-3xl\"></div>\n  <div class=\"absolute top-1/2 right-1/4 w-32 h-32 rotate-45 bg-white opacity-5\"></div>\n\n  <div class=\"relative max-w-6xl mx-auto text-center\">\n    <!-- Glitch-styled main heading -->\n    <h1 class=\"text-5xl md:text-8xl font-extrabold mb-8\">\n      <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400\">\n        NO  NEED UI EXPERT?\n      </span>\n      <span class=\"block text-4xl md:text-6xl text-white mt-4\">CREATE IT ANYWAY.</span>\n    </h1>\n    \n    <!-- Pixel-inspired divider -->\n    <div class=\"relative my-12 h-1.5 bg-gradient-to-r from-transparent via-purple-500 to-transparent mx-auto w-1/2\"></div>\n    \n    <!-- Supporting text with terminal-like UI -->\n    <div class=\"inline-block px-6 py-4 bg-gray-900 border border-gray-800 rounded-lg shadow-lg\">\n      <p class=\"text-xl text-gray-300 font-mono\">\n        <span class=\"text-cyan-400\">$</span> \n        <span class=\"text-purple-400\">call Me </span> \n        <span class=\"text-white\">Kuldeep</span>\n      </p>\n    </div>\n    \n    <!-- Glowing CTA button -->\n    <div class=\"mt-12\">\n      <a href=\"kuldeepprajapati.netlify.app\" class=\"px-10 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-bold rounded-lg hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105\">\n        Contact Us\n      </a>\n    </div>\n  </div>\n</section>"
+  }
+}

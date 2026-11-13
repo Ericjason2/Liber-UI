@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "exapnd-and-collaps-button-for-large-content",
+  "type": "registry:ui",
+  "title": "Exapnd and collapse button for large content",
+  "description": "Exapnd and collapse button for large content - Créé par @komal-j sur TailwindFlex.",
+  "author": "@komal-j (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/exapnd-and-collaps-button-for-large-content.tsx",
+      "content": "/**\n * Component: Exapnd and collapse button for large content\n * Author: @komal-j (https://tailwindflex.com/@komal-j)\n * Source: https://tailwindflex.com/@komal-j/exapnd-and-collaps-button-for-large-content\n * Attribution: Créé par @komal-j sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ExapndAndCollapsButtonForLargeContent() {\n  return (\n    <div>\n    <div className=\"max-w-md mx-auto bg-white border rounded-lg overflow-hidden mt-12\">\r\n        <div className=\"p-4\">\r\n            <h2 className=\"text-xl font-bold text-gray-900\">Luxurious Car Seat Cover</h2>\r\n            <img src=\"https://images.unsplash.com/photo-1606200639236-00a51094e662?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw3fHxjYXIlMjBzZWF0fGVufDB8MHx8fDE3MjExOTU5NzR8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Luxurious Car Seat Cover\" className=\"w-full h-48 object-cover my-2 rounded\" />\r\n    \r\n            <p id=\"c_description\"\r\n                className=\"mt-2 text-lg text-gray-800 break-words text-medium line-clamp-2 transition-all duration-300 ease-in-out\">\r\n                Transform your driving experience with our luxurious car seat cover. Designed with premium quality\r\n                materials,\r\n                this cover provides superior comfort and durability. The breathable fabric ensures maximum airflow, keeping\r\n                you\r\n                cool during long drives. The stylish design enhances the interior of any car, while the easy-to-clean\r\n                surface\r\n                makes maintenance a breeze. Perfect for all seasons, this car seat cover is an essential upgrade for any\r\n                vehicle.\r\n                With a universal fit, it easily installs in minutes. Enjoy the ultimate in driving comfort and style with\r\n                our\r\n                luxurious car seat cover.\r\n            </p>\r\n            <button id=\"toggle-btn\" className=\"mt-2 text-blue-600 rounded-lg hover700 focus\">\r\n                Load more\r\n            </button>\r\n        </div>\r\n    </div>\r\n    \r\n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@komal-j",
+    "authorUrl": "https://tailwindflex.com/@komal-j",
+    "sourceUrl": "https://tailwindflex.com/@komal-j/exapnd-and-collaps-button-for-large-content",
+    "mention": "Créé par @komal-j sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-md mx-auto bg-white border rounded-lg overflow-hidden mt-12\">\r\n    <div class=\"p-4\">\r\n        <h2 class=\"text-xl font-bold text-gray-900\">Luxurious Car Seat Cover</h2>\r\n        <img src=\"https://images.unsplash.com/photo-1606200639236-00a51094e662?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw3fHxjYXIlMjBzZWF0fGVufDB8MHx8fDE3MjExOTU5NzR8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Luxurious Car Seat Cover\" class=\"w-full h-48 object-cover my-2 rounded\">\r\n\r\n        <p id=\"c_description\"\r\n            class=\"mt-2 text-lg text-gray-800 break-words text-medium line-clamp-2 transition-all duration-300 ease-in-out\">\r\n            Transform your driving experience with our luxurious car seat cover. Designed with premium quality\r\n            materials,\r\n            this cover provides superior comfort and durability. The breathable fabric ensures maximum airflow, keeping\r\n            you\r\n            cool during long drives. The stylish design enhances the interior of any car, while the easy-to-clean\r\n            surface\r\n            makes maintenance a breeze. Perfect for all seasons, this car seat cover is an essential upgrade for any\r\n            vehicle.\r\n            With a universal fit, it easily installs in minutes. Enjoy the ultimate in driving comfort and style with\r\n            our\r\n            luxurious car seat cover.\r\n        </p>\r\n        <button id=\"toggle-btn\" class=\"mt-2 text-blue-600 rounded-lg hover:text-blue-700 focus:outline-none\">\r\n            Load more\r\n        </button>\r\n    </div>\r\n</div>\r\n\r\n<script>\r\n    document.addEventListener('DOMContentLoaded', () => {\r\n        const description = document.getElementById('c_description');\r\n\r\n        if (!description) {\r\n            return;\r\n        }\r\n\r\n        const toggleBtn = document.getElementById('toggle-btn');\r\n        let isExpanded = false;\r\n\r\n        // Check if content is overflowing\r\n        if (description.scrollHeight > description.clientHeight) {\r\n            toggleBtn.classList.remove('hidden');\r\n        }\r\n\r\n        toggleBtn.addEventListener('click', () => {\r\n            isExpanded = !isExpanded;\r\n            if (!isExpanded) {\r\n                description.scrollIntoView({ behavior: 'smooth' });\r\n            }\r\n            description.classList.toggle('line-clamp-2');\r\n            toggleBtn.textContent = isExpanded ? 'Collapse' : 'Load more';\r\n        });\r\n    });\r\n</script>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-form-6",
+  "type": "registry:ui",
+  "title": "Simple login form",
+  "description": "Simple login form - Créé par @freja-jensen sur TailwindFlex.",
+  "author": "@freja-jensen (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/login-form-6.tsx",
+      "content": "/**\n * Component: Simple login form\n * Author: @freja-jensen (https://tailwindflex.com/@freja-jensen)\n * Source: https://tailwindflex.com/@freja-jensen/login-form-6\n * Attribution: Créé par @freja-jensen sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LoginForm6() {\n  return (\n    <div>\n    <div className=\"max-w-md mx-auto mt-24\">\n        <form className=\"p-4\">\n            <div className=\"mb-4\">\n                <label htmlFor=\"email\" className=\"block text-gray-700 font-bold mb-2\">Email</label>\n                <input type=\"email\" id=\"email\" name=\"email\" className=\"w-full py-2 px-3 border border-gray-400 rounded-md shadow-sm focus focus500\" placeholder=\"Enter your email address\" />\n            </div>\n            <div className=\"mb-4\">\n                <label htmlFor=\"password\" className=\"block text-gray-700 font-bold mb-2\">Password</label>\n                <input type=\"password\" id=\"password\" name=\"password\" className=\"w-full py-2 px-3 border border-gray-400 rounded-md shadow-sm focus focus500\" placeholder=\"Enter your password\" />\n            </div>\n            <div className=\"flex items-center justify-between\">\n                <a href=\"#\"\n                    className=\"text-gray-500 hover500 focus focus transition duration-150 ease-in-out\">Forgot\n                    Password?</a>\n                <button type=\"submit\" className=\"bg-blue-500 text-white py-2 px-4 rounded-md shadow-sm hover700 focus focus active800 transition duration-150 ease-in-out\">Submit</button>\n            </div>\n        </form>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@freja-jensen",
+    "authorUrl": "https://tailwindflex.com/@freja-jensen",
+    "sourceUrl": "https://tailwindflex.com/@freja-jensen/login-form-6",
+    "mention": "Créé par @freja-jensen sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-md mx-auto mt-24\">\n    <form class=\"p-4\">\n        <div class=\"mb-4\">\n            <label for=\"email\" class=\"block text-gray-700 font-bold mb-2\">Email</label>\n            <input type=\"email\" id=\"email\" name=\"email\" class=\"w-full py-2 px-3 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:border-blue-500\" placeholder=\"Enter your email address\">\n        </div>\n        <div class=\"mb-4\">\n            <label for=\"password\" class=\"block text-gray-700 font-bold mb-2\">Password</label>\n            <input type=\"password\" id=\"password\" name=\"password\" class=\"w-full py-2 px-3 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:border-blue-500\" placeholder=\"Enter your password\">\n        </div>\n        <div class=\"flex items-center justify-between\">\n            <a href=\"#\"\n                class=\"text-gray-500 hover:text-blue-500 focus:outline-none focus:underline transition duration-150 ease-in-out\">Forgot\n                Password?</a>\n            <button type=\"submit\" class=\"bg-blue-500 text-white py-2 px-4 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800 transition duration-150 ease-in-out\">Submit</button>\n        </div>\n    </form>\n</div>"
+  }
+}

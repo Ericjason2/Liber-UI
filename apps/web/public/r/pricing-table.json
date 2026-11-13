@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-table",
+  "type": "registry:ui",
+  "title": "Pricing Table",
+  "description": "Pricing Table - Créé par @akshay sur TailwindFlex.",
+  "author": "@akshay (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pricing-table.tsx",
+      "content": "/**\n * Component: Pricing Table\n * Author: @akshay (https://tailwindflex.com/@akshay)\n * Source: https://tailwindflex.com/@akshay/pricing-table\n * Attribution: Créé par @akshay sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PricingTable() {\n  return (\n    <div>\n    <div className=\"flex items-center justify-center bg-gray-200 antialiased py-16 h-screen\">\n    \n      <div className=\"w-full sm1/2 lg1/4 p-3\">\n      \n      <div className=\"w-full bg-white shadow-xl rounded-lg overflow-hidden\">\n        <header className=\"text-center leading-tight pt-10 pb-6\">\n          <h2 className=\"uppercase tracking-wide text-sm font-bold text-gray-700\">Private Instruction</h2>\n          <div className=\"text-5xl text-gray-900 font-bold tracking-tight\">\n            <span className=\"inline-block align-top pt-2 text-lg\">$</span>\n            <span className=\"-ml-2\">45</span>\n          </div>\n          <p className=\"text-gray-500\">starting at</p>\n        </header>\n        <div className=\"flex flex-col p-6 border-t border-gray-300 bg-gray-100\">\n          <div className=\"flex-1 inline-flex items-center mb-3\">\n            <div className=\"bg-green-300 mr-3 p-1 rounded-full\">\n              <svg className=\"h-3 w-3 text-green-800 fill-current\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns>\n                <polygon points=\"0 11 2 9 7 14 18 3 20 5 7 18\"></polygon>\n              </svg>\n            </div>\n            <p className=\"text-xs\">One-on-One Instruction</p>\n          </div>\n          <div className=\"flex-1 inline-flex items-center mb-3\">\n            <div className=\"bg-green-300 mr-3 p-1 rounded-full\">\n              <svg className=\"h-3 w-3 text-green-800 fill-current\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns>\n                <polygon points=\"0 11 2 9 7 14 18 3 20 5 7 18\"></polygon>\n              </svg>\n            </div>\n            <p className=\"text-xs\">Lesson Packages</p>\n          </div>\n          <div className=\"flex-1 inline-flex items-center mb-3\">\n            <div className=\"bg-green-300 mr-3 p-1 rounded-full\">\n              <svg className=\"h-3 w-3 text-green-800 fill-current\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns>\n                <polygon points=\"0 11 2 9 7 14 18 3 20 5 7 18\"></polygon>\n              </svg>\n            </div>\n            <p className=\"text-xs\">Flexible Scheduling</p>\n          </div>\n          <div className=\"flex-1 inline-flex items-center mb-3\">\n            <div className=\"bg-green-300 mr-3 p-1 rounded-full\">\n              <svg className=\"h-3 w-3 text-green-800 fill-current\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns>\n                <polygon points=\"0 11 2 9 7 14 18 3 20 5 7 18\"></polygon>\n              </svg>\n            </div>\n            <p className=\"text-xs\">Dang this much!</p>\n          </div>\n          <div className=\"flex-1 inline-flex items-center\">\n            <div className=\"bg-green-300 mr-3 p-1 rounded-full\">\n              <svg className=\"h-3 w-3 text-green-800 fill-current\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns>\n                <polygon points=\"0 11 2 9 7 14 18 3 20 5 7 18\"></polygon>\n              </svg>\n            </div>\n            <p className=\"text-xs\">Something else cool</p>\n          </div>\n        </div>\n      </div>\n        \n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "pricing",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@akshay",
+    "authorUrl": "https://tailwindflex.com/@akshay",
+    "sourceUrl": "https://tailwindflex.com/@akshay/pricing-table",
+    "mention": "Créé par @akshay sur TailwindFlex",
+    "rawHtml": "<div class=\"flex items-center justify-center bg-gray-200 antialiased py-16 h-screen\">\n\n  <div class=\"w-full sm:w-1/2 lg:w-1/4 p-3\">\n  \n  <div class=\"w-full bg-white shadow-xl rounded-lg overflow-hidden\">\n    <header class=\"text-center leading-tight pt-10 pb-6\">\n      <h2 class=\"uppercase tracking-wide text-sm font-bold text-gray-700\">Private Instruction</h2>\n      <div class=\"text-5xl text-gray-900 font-bold tracking-tight\">\n        <span class=\"inline-block align-top pt-2 text-lg\">$</span>\n        <span class=\"-ml-2\">45</span>\n      </div>\n      <p class=\"text-gray-500\">starting at</p>\n    </header>\n    <div class=\"flex flex-col p-6 border-t border-gray-300 bg-gray-100\">\n      <div class=\"flex-1 inline-flex items-center mb-3\">\n        <div class=\"bg-green-300 mr-3 p-1 rounded-full\">\n          <svg class=\"h-3 w-3 text-green-800 fill-current\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n            <polygon points=\"0 11 2 9 7 14 18 3 20 5 7 18\"></polygon>\n          </svg>\n        </div>\n        <p class=\"text-xs\">One-on-One Instruction</p>\n      </div>\n      <div class=\"flex-1 inline-flex items-center mb-3\">\n        <div class=\"bg-green-300 mr-3 p-1 rounded-full\">\n          <svg class=\"h-3 w-3 text-green-800 fill-current\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n            <polygon points=\"0 11 2 9 7 14 18 3 20 5 7 18\"></polygon>\n          </svg>\n        </div>\n        <p class=\"text-xs\">Lesson Packages</p>\n      </div>\n      <div class=\"flex-1 inline-flex items-center mb-3\">\n        <div class=\"bg-green-300 mr-3 p-1 rounded-full\">\n          <svg class=\"h-3 w-3 text-green-800 fill-current\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n            <polygon points=\"0 11 2 9 7 14 18 3 20 5 7 18\"></polygon>\n          </svg>\n        </div>\n        <p class=\"text-xs\">Flexible Scheduling</p>\n      </div>\n      <div class=\"flex-1 inline-flex items-center mb-3\">\n        <div class=\"bg-green-300 mr-3 p-1 rounded-full\">\n          <svg class=\"h-3 w-3 text-green-800 fill-current\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n            <polygon points=\"0 11 2 9 7 14 18 3 20 5 7 18\"></polygon>\n          </svg>\n        </div>\n        <p class=\"text-xs\">Dang this much!</p>\n      </div>\n      <div class=\"flex-1 inline-flex items-center\">\n        <div class=\"bg-green-300 mr-3 p-1 rounded-full\">\n          <svg class=\"h-3 w-3 text-green-800 fill-current\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n            <polygon points=\"0 11 2 9 7 14 18 3 20 5 7 18\"></polygon>\n          </svg>\n        </div>\n        <p class=\"text-xs\">Something else cool</p>\n      </div>\n    </div>\n  </div>\n    \n  </div>\n</div>"
+  }
+}

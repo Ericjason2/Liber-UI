@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "landing-full-page-header",
+  "type": "registry:ui",
+  "title": "Full-page header for landing pages",
+  "description": "Full-page header for landing pages - Créé par @junclarkaizen-pagu sur TailwindFlex.",
+  "author": "@junclarkaizen-pagu (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/landing-full-page-header.tsx",
+      "content": "/**\n * Component: Full-page header for landing pages\n * Author: @junclarkaizen-pagu (https://tailwindflex.com/@junclarkaizen-pagu)\n * Source: https://tailwindflex.com/@junclarkaizen-pagu/landing-full-page-header\n * Attribution: Créé par @junclarkaizen-pagu sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LandingFullPageHeader() {\n  return (\n    <div>\n    <section className=\"text-gray-600 body-font h-screen flex bg-gray-900 bg-svg-constellation-gray-100 relative\">\n      <div className=\"container mx-auto flex px-5 py-12 items-center justify-center flex-col\">\n        <div className=\"lg2/3 w-full animate-fade-in-down\">\n          \n          <h1 className=\"md6xl text-3xl mb-2 font-bold text-white tracking-tight leading-tight\">\n            Hello, I'm John.\n          </h1>\n          \n          <h1 className=\"md6xl text-3xl mb-4 font-bold text-white tracking-tight leading-tight\">\n            I’m here to assist <span className=\"border-b-4 border-green-400 -mb-20\"></span>with your questions.\n          </h1>\n          \n          <p className=\"mt-8 mb-16 md leading-normal text-white tracking-tight text-xl\">\n            I am a Web developer. I'm here to provide information and answer your queries to the best of my abilities.</p>\n          \n          <a className=\"uppercase rounded-sm bg-red-400 font-bold text-white px-8 py-4 mx-auto mr-4 hidden md\"\n            href=\"#contact-form\">Contact Me</a>\n          <a className=\"uppercase rounded-sm bg-green-400 font-bold text-white px-8 py-4 mx-auto hidden md\"\n            href=\"#about-me\">About Me</a>\n        </div>\n      </div>\n      <a href=\"#about-me\" className=\"absolute block mx-auto text-xl md96 bottom-0 left-1/2 -ml-10 mt-80\">\n        <svg width=\"80\" height=\"80\" viewBox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path fillRule=\"evenodd\" clipRule=\"evenodd\"\n            d=\"M21.1716 29.1716C22.7337 27.6095 25.2663 27.6095 26.8284 29.1716L40 42.3431L53.1716 29.1716C54.7337 27.6095 57.2663 27.6095 58.8284 29.1716C60.3905 30.7337 60.3905 33.2663 58.8284 34.8284L42.8284 50.8284C41.2663 52.3905 38.7337 52.3905 37.1716 50.8284L21.1716 34.8284C19.6095 33.2663 19.6095 30.7337 21.1716 29.1716Z\"\n            fill=\"#FFFFFF\"></path>\n        </svg>\n      </a>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@junclarkaizen-pagu",
+    "authorUrl": "https://tailwindflex.com/@junclarkaizen-pagu",
+    "sourceUrl": "https://tailwindflex.com/@junclarkaizen-pagu/landing-full-page-header",
+    "mention": "Créé par @junclarkaizen-pagu sur TailwindFlex",
+    "rawHtml": "<section class=\"text-gray-600 body-font h-screen flex bg-gray-900 bg-svg-constellation-gray-100 relative\">\n  <div class=\"container mx-auto flex px-5 py-12 items-center justify-center flex-col\">\n    <div class=\"lg:w-2/3 w-full animate-fade-in-down\">\n      <!-- Change the heading text -->\n      <h1 class=\"md:text-6xl text-3xl mb-2 font-bold text-white tracking-tight leading-tight\">\n        Hello, I'm John.\n      </h1>\n      <!-- Change the subheading text -->\n      <h1 class=\"md:text-6xl text-3xl mb-4 font-bold text-white tracking-tight leading-tight\">\n        I’m here to assist <span class=\"border-b-4 border-green-400 -mb-20\"></span>with your questions.\n      </h1>\n      <!-- Change the paragraph text -->\n      <p class=\"mt-8 mb-16 md:leading-relaxed leading-normal text-white tracking-tight text-xl\">\n        I am a Web developer. I'm here to provide information and answer your queries to the best of my abilities.</p>\n      <!-- Update the button texts and links -->\n      <a class=\"uppercase rounded-sm bg-red-400 font-bold text-white px-8 py-4 mx-auto mr-4 hidden md:inline\"\n        href=\"#contact-form\">Contact Me</a>\n      <a class=\"uppercase rounded-sm bg-green-400 font-bold text-white px-8 py-4 mx-auto hidden md:inline\"\n        href=\"#about-me\">About Me</a>\n    </div>\n  </div>\n  <a href=\"#about-me\" class=\"absolute block mx-auto text-xl md:mt-96 bottom-0 left-1/2 -ml-10 mt-80\">\n    <svg width=\"80\" height=\"80\" viewBox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\"\n        d=\"M21.1716 29.1716C22.7337 27.6095 25.2663 27.6095 26.8284 29.1716L40 42.3431L53.1716 29.1716C54.7337 27.6095 57.2663 27.6095 58.8284 29.1716C60.3905 30.7337 60.3905 33.2663 58.8284 34.8284L42.8284 50.8284C41.2663 52.3905 38.7337 52.3905 37.1716 50.8284L21.1716 34.8284C19.6095 33.2663 19.6095 30.7337 21.1716 29.1716Z\"\n        fill=\"#FFFFFF\"></path>\n    </svg>\n  </a>\n</section>"
+  }
+}
