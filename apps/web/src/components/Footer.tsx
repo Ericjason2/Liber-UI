@@ -1,39 +1,48 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import { Cookie } from "lucide-react";
 
 export function Footer() {
+  const handleOpenCookieManager = () => {
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new CustomEvent("liber:open-cookie-settings"));
+    }
+  };
+
   return (
     <footer className="w-full border-t border-border bg-card/30 text-xs text-muted-foreground mt-auto">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 py-10 sm:py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-border/60">
           <div className="space-y-3">
             <div className="font-mono text-[11px] font-semibold text-foreground uppercase tracking-wider">
-              Resources
+              Ressources
             </div>
             <ul className="space-y-2">
               <li>
                 <Link href="/logos" className="hover:text-foreground transition-colors">
-                  Tech & Brand Logos
+                  Logos Tech &amp; Marques
                 </Link>
               </li>
               <li>
                 <Link href="/themes" className="hover:text-foreground transition-colors">
-                  Color Palettes & Themes
+                  Palettes &amp; Thèmes
                 </Link>
               </li>
               <li>
                 <Link href="/fonts" className="hover:text-foreground transition-colors">
-                  Fonts & Typography
+                  Typographies &amp; Polices
                 </Link>
               </li>
               <li>
                 <Link href="/animations" className="hover:text-foreground transition-colors">
-                  CSS & Tailwind Animations
+                  Animations CSS &amp; Tailwind
                 </Link>
               </li>
               <li>
                 <Link href="/components" className="hover:text-foreground transition-colors">
-                  Components
+                  Composants Open-Source
                 </Link>
               </li>
             </ul>
@@ -56,7 +65,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/docs#logos-guide" className="hover:text-foreground transition-colors">
-                  Using @liber-ui/logo
+                  Guide @liber-ui/logo
                 </Link>
               </li>
             </ul>
@@ -68,24 +77,34 @@ export function Footer() {
             </div>
             <ul className="space-y-2">
               <li>
-                <Link href="/legal" className="hover:text-foreground transition-colors">
-                  Trademark Guidelines
+                <Link href="/legal/mentions-legales" className="hover:text-foreground transition-colors">
+                  Mentions légales
                 </Link>
               </li>
               <li>
-                <Link href="/legal#takedown" className="hover:text-foreground transition-colors">
-                  7-Day Takedown Procedure
+                <Link href="/legal/terms" className="hover:text-foreground transition-colors">
+                  Conditions générales (CGU)
                 </Link>
               </li>
               <li>
-                <a
-                  href="https://github.com/Ericjason2/Liber-UI/blob/main/LICENSE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-foreground transition-colors"
+                <Link href="/legal/cookies" className="hover:text-foreground transition-colors">
+                  Politique des cookies
+                </Link>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  onClick={handleOpenCookieManager}
+                  className="hover:text-foreground transition-colors inline-flex items-center gap-1.5 text-left"
                 >
-                  MIT License
-                </a>
+                  <Cookie className="h-3 w-3 text-primary" />
+                  <span>Gérer les cookies</span>
+                </button>
+              </li>
+              <li>
+                <Link href="/legal" className="hover:text-foreground transition-colors">
+                  Marques &amp; Procédure Takedown
+                </Link>
               </li>
             </ul>
           </div>
@@ -95,7 +114,7 @@ export function Footer() {
               Liber UI
             </div>
             <p className="text-xs leading-relaxed text-muted-foreground">
-              Open source asset catalog for designers, developers, and product creators. Free copy-paste, zero runtime lock-in.
+              Catalogue de ressources open-source pour designers et développeurs. Primitives gratuites prêtes à l&apos;emploi, zéro dépendance imposée.
             </p>
             <div className="pt-1">
               <a
@@ -112,11 +131,27 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-muted-foreground">
-          <p>
-            Logos are trademarks of their respective owners. Usage must respect brand guidelines.
-          </p>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+            <span>© 2026 Liber UI. Code sous licence MIT.</span>
+            <Link href="/legal/mentions-legales" className="hover:text-foreground underline transition-colors">
+              Mentions légales
+            </Link>
+            <Link href="/legal/terms" className="hover:text-foreground underline transition-colors">
+              CGU
+            </Link>
+            <Link href="/legal/cookies" className="hover:text-foreground underline transition-colors">
+              Cookies
+            </Link>
+            <button
+              type="button"
+              onClick={handleOpenCookieManager}
+              className="hover:text-foreground underline transition-colors"
+            >
+              Préférences cookies
+            </button>
+          </div>
           <p className="font-mono opacity-80">
-            © 2026 Liber UI. Copy, paste, own your code.
+            Copiez, personnalisez, maîtrisez votre code.
           </p>
         </div>
       </div>

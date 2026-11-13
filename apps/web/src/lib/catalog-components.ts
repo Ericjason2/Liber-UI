@@ -473,5 +473,309 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
   );
 }`,
   },
+  {
+    slug: "modal-dialog",
+    kind: "component",
+    name: "Modal Dialog",
+    description: "Accessible dialog overlay with backdrop dismiss, keyboard trap, and action triggers (Flowbite UI).",
+    category: "feedback",
+    tags: ["modal", "dialog", "overlay", "accessible", "flowbite"],
+    license: "MIT",
+    author: "flowbite",
+    registryDependencies: ["button"],
+    dependencies: ["lucide-react"],
+    code: `import React, { useState, useEffect } from "react";
+
+export function ModalDialog() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+    if (isOpen) {
+      document.addEventListener("keydown", handleKeyDown);
+    }
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen]);
+
+  return (
+    <>
+      <button
+        onClick={() => setIsOpen(true)}
+        className="px-3.5 py-1.5 rounded-[8px] bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition-opacity"
+      >
+        Open Modal
+      </button>
+
+      {isOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+          onClick={() => setIsOpen(false)}
+        >
+          <div
+            className="w-full max-w-md p-6 rounded-xl border border-border bg-card shadow-2xl space-y-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between border-b border-border pb-3">
+              <h3 className="text-sm font-semibold text-foreground">Confirm Action</h3>
+              <button
+                onClick={() => setIsOpen(false)}
+                className="text-muted-foreground hover:text-foreground text-xs p-1"
+                aria-label="Fermer"
+              >
+                ✕
+              </button>
+            </div>
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              Are you sure you want to proceed with this operation? This change is reversible from your workspace settings.
+            </p>
+            <div className="flex items-center justify-end gap-2 pt-2">
+              <button
+                onClick={() => setIsOpen(false)}
+                className="px-3 py-1.5 rounded-[8px] border border-border text-xs text-foreground hover:bg-muted"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={() => setIsOpen(false)}
+                className="px-3 py-1.5 rounded-[8px] bg-primary text-primary-foreground text-xs font-medium hover:opacity-90"
+              >
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}`,
+  },
+  {
+    slug: "dropdown-menu",
+    kind: "component",
+    name: "Dropdown Menu",
+    description: "Floating action popover with outside click detection and keyboard item navigation (Preline UI).",
+    category: "buttons",
+    tags: ["dropdown", "menu", "popover", "preline", "accessible"],
+    license: "MIT",
+    author: "preline",
+    registryDependencies: ["button"],
+    dependencies: [],
+    code: `import React, { useState, useRef, useEffect } from "react";
+
+export function DropdownMenu() {
+  const [isOpen, setIsOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  return (
+    <div className="relative inline-block text-left" ref={ref}>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+        className="px-3.5 py-1.5 rounded-[8px] border border-border bg-card hover:bg-muted text-xs font-medium text-foreground flex items-center gap-2"
+      >
+        <span>Options</span>
+        <span className="text-[10px]">▼</span>
+      </button>
+      {isOpen && (
+        <div className="absolute left-0 mt-2 w-48 rounded-lg border border-border bg-card shadow-lg py-1 z-20 text-xs">
+          <button
+            onClick={() => setIsOpen(false)}
+            className="w-full text-left px-3 py-1.5 text-foreground hover:bg-muted transition-colors"
+          >
+            Edit project
+          </button>
+          <button
+            onClick={() => setIsOpen(false)}
+            className="w-full text-left px-3 py-1.5 text-foreground hover:bg-muted transition-colors"
+          >
+            Duplicate
+          </button>
+          <div className="h-px bg-border my-1" />
+          <button
+            onClick={() => setIsOpen(false)}
+            className="w-full text-left px-3 py-1.5 text-red-600 hover:bg-red-500/10 transition-colors"
+          >
+            Delete
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}`,
+  },
+  {
+    slug: "tooltip-hint",
+    kind: "component",
+    name: "Tooltip Hint",
+    description: "Subtle informational callout with pointer indicator on hover and focus (Flowbite UI).",
+    category: "data-display",
+    tags: ["tooltip", "hint", "hover", "flowbite", "accessible"],
+    license: "MIT",
+    author: "flowbite",
+    registryDependencies: [],
+    dependencies: [],
+    code: `import React, { useState } from "react";
+
+export function TooltipHint() {
+  const [visible, setVisible] = useState(false);
+
+  return (
+    <div className="relative inline-block">
+      <button
+        onMouseEnter={() => setVisible(true)}
+        onMouseLeave={() => setVisible(false)}
+        onFocus={() => setVisible(true)}
+        onBlur={() => setVisible(false)}
+        className="px-3 py-1.5 rounded-[8px] border border-border bg-card text-xs text-foreground hover:bg-muted"
+      >
+        Hover over me
+      </button>
+      {visible && (
+        <div
+          role="tooltip"
+          className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2.5 py-1 bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 text-[11px] font-medium rounded shadow-md whitespace-nowrap z-30 pointer-events-none"
+        >
+          Quick helpful tip
+          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-neutral-900 dark:border-t-neutral-100" />
+        </div>
+      )}
+    </div>
+  );
+}`,
+  },
+  {
+    slug: "toast-snackbar",
+    kind: "component",
+    name: "Toast Snackbar",
+    description: "Floating status card with action feedback, status iconography, and dismiss trigger (Preline UI).",
+    category: "feedback",
+    tags: ["toast", "snackbar", "notification", "preline", "feedback"],
+    license: "MIT",
+    author: "preline",
+    registryDependencies: [],
+    dependencies: [],
+    code: `import React, { useState } from "react";
+
+export function ToastSnackbar() {
+  const [visible, setVisible] = useState(true);
+
+  return (
+    <div className="w-full max-w-sm">
+      {visible ? (
+        <div
+          role="status"
+          className="flex items-center justify-between gap-3 p-3 rounded-lg border border-border bg-card shadow-md text-xs"
+        >
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-500" />
+            <span className="text-foreground font-medium">Changes saved successfully</span>
+          </div>
+          <button
+            onClick={() => setVisible(false)}
+            className="text-muted-foreground hover:text-foreground text-xs px-1"
+            aria-label="Dismiss toast"
+          >
+            ✕
+          </button>
+        </div>
+      ) : (
+        <button
+          onClick={() => setVisible(true)}
+          className="px-3 py-1.5 rounded-[8px] border border-border text-xs text-muted-foreground hover:text-foreground"
+        >
+          Trigger notification
+        </button>
+      )}
+    </div>
+  );
+}`,
+  },
+  {
+    slug: "skeleton-shimmer",
+    kind: "component",
+    name: "Skeleton Shimmer Loader",
+    description: "Wireframe placeholder elements with pulsing animation for async loading states (Flowbite UI).",
+    category: "feedback",
+    tags: ["skeleton", "loader", "shimmer", "flowbite", "placeholder"],
+    license: "MIT",
+    author: "flowbite",
+    registryDependencies: [],
+    dependencies: [],
+    code: `import React from "react";
+
+export function SkeletonShimmer() {
+  return (
+    <div className="w-full max-w-sm p-4 rounded-xl border border-border bg-card space-y-3">
+      <div className="flex items-center gap-3">
+        <div className="w-10 h-10 rounded-full bg-muted animate-pulse" />
+        <div className="space-y-1.5 flex-1">
+          <div className="h-3 w-3/5 rounded bg-muted animate-pulse" />
+          <div className="h-2.5 w-2/5 rounded bg-muted animate-pulse" />
+        </div>
+      </div>
+      <div className="space-y-2 pt-2">
+        <div className="h-3 w-full rounded bg-muted animate-pulse" />
+        <div className="h-3 w-4/5 rounded bg-muted animate-pulse" />
+      </div>
+    </div>
+  );
+}`,
+  },
+  {
+    slug: "breadcrumb-trail",
+    kind: "component",
+    name: "Breadcrumb Trail",
+    description: "Semantic breadcrumb navigation with chevron delimiters and WCAG aria-current attributes (Flowbite UI).",
+    category: "data-display",
+    tags: ["breadcrumb", "navigation", "trail", "flowbite", "accessible"],
+    license: "MIT",
+    author: "flowbite",
+    registryDependencies: [],
+    dependencies: [],
+    code: `import React from "react";
+
+export function BreadcrumbTrail() {
+  const items = [
+    { label: "Home", href: "#" },
+    { label: "Components", href: "#" },
+    { label: "Navigation", href: "#", current: true },
+  ];
+
+  return (
+    <nav aria-label="Breadcrumb" className="flex items-center text-xs text-muted-foreground">
+      <ol className="inline-flex items-center space-x-1 md:space-x-2">
+        {items.map((item, index) => (
+          <li key={item.label} className="inline-flex items-center">
+            {index > 0 && <span className="mx-1 text-muted-foreground/60">/</span>}
+            {item.current ? (
+              <span className="font-semibold text-foreground" aria-current="page">
+                {item.label}
+              </span>
+            ) : (
+              <a href={item.href} className="hover:text-foreground transition-colors">
+                {item.label}
+              </a>
+            )}
+          </li>
+        ))}
+      </ol>
+    </nav>
+  );
+}`,
+  },
 ];
 
