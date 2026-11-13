@@ -17,7 +17,7 @@ import { SAMPLE_COMPONENTS } from "@/lib/catalog-components";
  */
 export function HomeBentoCatalog() {
   const [gridRef, gridVisible] = useInViewOnce<HTMLDivElement>();
-  const cardMotion = (idx: number) => getRevealMotionProps(gridVisible, idx * 110, 950);
+  const cardMotion = (idx: number) => getRevealMotionProps(gridVisible, idx * 160, 1450);
 
   return (
     <section className="space-y-12 sm:space-y-16">

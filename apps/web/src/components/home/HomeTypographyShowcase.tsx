@@ -56,7 +56,7 @@ export function HomeTypographyShowcase() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal variant="fade-right" delay={100}>
+        <ScrollReveal variant="fade-right" delay={180}>
           <div className="space-y-2.5 max-w-lg lg:ml-auto">
             <h3 className="text-base sm:text-lg font-semibold text-foreground">
               About Geist &amp; Open-License Fonts
@@ -78,7 +78,7 @@ export function HomeTypographyShowcase() {
       </div>
 
       {/* Double-Framed Type Scale Card with Dashed Dividers */}
-      <ScrollReveal variant="scale-in" delay={80}>
+      <ScrollReveal variant="scale-in" delay={150}>
       <div className="rounded-[24px] border border-border bg-card p-5 sm:p-10 liber-showcase-frame space-y-10">
         <div className="rounded-[16px] border border-border bg-surface-subtle/50 overflow-hidden">
           {/* Table Header */}
@@ -91,7 +91,7 @@ export function HomeTypographyShowcase() {
           {/* Dashed Horizontal Rows */}
           <div ref={rowsRef} className="divide-y divide-dashed divide-border px-5 bg-card">
             {TYPE_SCALE_ROWS.map((row, rIdx) => {
-              const motion = getRevealMotionProps(rowsVisible, rIdx * 95, 850, "fade-left");
+              const motion = getRevealMotionProps(rowsVisible, rIdx * 140, 1300, "fade-left");
               return (
               <div
                 key={row.label}
@@ -123,7 +123,7 @@ export function HomeTypographyShowcase() {
           </div>
           <div ref={fontsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {featuredFonts.map((font, fIdx) => (
-              <div key={font.slug} {...getRevealMotionProps(fontsVisible, fIdx * 110, 900)}>
+              <div key={font.slug} {...getRevealMotionProps(fontsVisible, fIdx * 170, 1400)}>
               <Link
                 href={`/fonts/${font.slug}`}
                 className="h-full group p-4 rounded-[14px] border border-border bg-surface-subtle/50 hover:bg-card hover:border-foreground/40 transition-all flex flex-col justify-between gap-3"

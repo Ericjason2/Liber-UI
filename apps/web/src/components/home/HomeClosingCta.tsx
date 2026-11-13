@@ -14,7 +14,7 @@ export function HomeClosingCta() {
   const [cardsRef, cardsVisible] = useInViewOnce<HTMLDivElement>();
 
   const cardMotion = (idx: number) => {
-    const m = getRevealMotionProps(cardsVisible, idx * 130, 950);
+    const m = getRevealMotionProps(cardsVisible, idx * 190, 1450);
     return {
       style: m.style,
       className: `p-6 rounded-[18px] border border-border bg-card space-y-2 ${m.className}`,
@@ -64,23 +64,23 @@ export function HomeClosingCta() {
       </div>
 
       {/* Closing Bookend Statement with Inline Pill CTA & Floating Tool Widgets */}
-      <ScrollReveal variant="scale-in" delay={100}>
+      <ScrollReveal variant="scale-in" delay={180}>
       <div className="relative max-w-4xl mx-auto py-10 sm:py-20 text-center">
         {/* Left Tilted Tool Dock */}
-        <ScrollParallax speed={-0.09} className="hidden lg:block absolute top-2 -left-10 z-10">
+        <ScrollParallax speed={-0.09} className="hidden lg:block absolute top-2 -left-10 z-30">
           <div className="-rotate-12">
             <FloatingToolDock />
           </div>
         </ScrollParallax>
 
         {/* Right Tilted Fill Popover */}
-        <ScrollParallax speed={0.08} className="hidden lg:block absolute -top-4 -right-10 z-10">
+        <ScrollParallax speed={0.08} className="hidden lg:block absolute -top-4 -right-10 z-30">
           <div className="rotate-6">
             <FloatingFillInspector hex="0F172A" opacity="100%" />
           </div>
         </ScrollParallax>
 
-        <h2 className="text-3xl sm:text-5xl md:text-[54px] font-semibold tracking-[-0.03em] text-foreground leading-[1.15]">
+        <h2 className="relative z-0 text-3xl sm:text-5xl md:text-[54px] font-semibold tracking-[-0.03em] text-foreground leading-[1.15]">
           Ship your next
           <br />
           interface{" "}
