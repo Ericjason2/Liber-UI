@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tooltip-hint",
+  "type": "registry:ui",
+  "title": "Tooltip Hint",
+  "description": "Subtle informational callout with pointer indicator on hover and focus.",
+  "author": "Liber Team",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tooltip-hint.tsx",
+      "content": "import React, { useState } from \"react\";\n\nexport function TooltipHint() {\n  const [visible, setVisible] = useState(false);\n  return (\n    <div className=\"relative inline-block\">\n      <button onMouseEnter={() => setVisible(true)} onMouseLeave={() => setVisible(false)} onFocus={() => setVisible(true)} onBlur={() => setVisible(false)} className=\"px-3 py-1.5 rounded-[8px] border border-border bg-card text-xs text-foreground hover:bg-muted\">Hover over me</button>\n      {visible && (\n        <div role=\"tooltip\" className=\"absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2.5 py-1 bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 text-[11px] font-medium rounded shadow-md whitespace-nowrap z-30 pointer-events-none\">\n          Quick helpful tip\n          <div className=\"absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-neutral-900 dark:border-t-neutral-100\" />\n        </div>\n      )}\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}

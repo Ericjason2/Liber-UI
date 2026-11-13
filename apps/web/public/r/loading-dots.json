@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "loading-dots",
+  "type": "registry:ui",
+  "title": "Loading dots",
+  "description": "Black Loading dots",
+  "author": "anonymous",
+  "categories": [
+    "feedback"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/loading-dots.tsx",
+      "content": "import React from \"react\";\n\nexport function LoadingDots() {\n  return (\n    <div className=\"flex space-x-2 justify-center items-center bg-white h-screen dark:invert\">\n \t<span className=\"sr-only\">Loading...</span>\n  \t<div className=\"h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]\"></div>\n\t<div className=\"h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.15s]\"></div>\n\t<div className=\"h-8 w-8 bg-black rounded-full animate-bounce\"></div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "loading",
+      "animation"
+    ]
+  }
+}

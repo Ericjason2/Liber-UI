@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "users-ranking-list",
+  "type": "registry:ui",
+  "title": "Users ranking list",
+  "description": "Users ranking list Tailwind CSS component from TailwindFlex.",
+  "author": "leif99",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/users-ranking-list.tsx",
+      "content": "import React from \"react\";\n\nexport function UsersRankingList() {\n  return (\n    <div className=\"bg-white shadow-md rounded-md overflow-hidden max-w-lg mx-auto mt-16\">\n    <div className=\"bg-gray-100 py-2 px-4\">\n        <h2 className=\"text-xl font-semibold text-gray-800\">Top Users</h2>\n    </div>\n    <ul className=\"divide-y divide-gray-200\">\n        <li className=\"flex items-center py-4 px-6\">\n            <span className=\"text-gray-700 text-lg font-medium mr-4\">1.</span>\n            <img className=\"w-12 h-12 rounded-full object-cover mr-4\" src=\"https://randomuser.me/api/portraits/women/72.jpg\"\n                alt=\"User avatar\" />\n            <div className=\"flex-1\">\n                <h3 className=\"text-lg font-medium text-gray-800\">Emily Jones</h3>\n                <p className=\"text-gray-600 text-base\">1234 points</p>\n            </div>\n        </li>\n        <li className=\"flex items-center py-4 px-6\">\n            <span className=\"text-gray-700 text-lg font-medium mr-4\">2.</span>\n            <img className=\"w-12 h-12 rounded-full object-cover mr-4\" src=\"https://randomuser.me/api/portraits/men/40.jpg\"\n                alt=\"User avatar\" />\n            <div className=\"flex-1\">\n                <h3 className=\"text-lg font-medium text-gray-800\">David Lee</h3>\n                <p className=\"text-gray-600 text-base\">987 points</p>\n            </div>\n        </li>\n        <li className=\"flex items-center py-4 px-6\">\n            <span className=\"text-gray-700 text-lg font-medium mr-4\">3.</span>\n            <img className=\"w-12 h-12 rounded-full object-cover mr-4\" src=\"https://randomuser.me/api/portraits/women/54.jpg\"\n                alt=\"User avatar\" />\n            <div className=\"flex-1\">\n                <h3 className=\"text-lg font-medium text-gray-800\">Sophia Williams</h3>\n                <p className=\"text-gray-600 text-base\">876 points</p>\n            </div>\n        </li>\n        <li className=\"flex items-center py-4 px-6\">\n            <span className=\"text-gray-700 text-lg font-medium mr-4\">4.</span>\n            <img className=\"w-12 h-12 rounded-full object-cover mr-4\" src=\"https://randomuser.me/api/portraits/men/83.jpg\"\n                alt=\"User avatar\" />\n            <div className=\"flex-1\">\n                <h3 className=\"text-lg font-medium text-gray-800\">Michael Chen</h3>\n                <p className=\"text-gray-600 text-base\">765 points</p>\n            </div>\n        </li>\n        <li className=\"flex items-center py-4 px-6\">\n            <span className=\"text-gray-700 text-lg font-medium mr-4\">5.</span>\n            <img className=\"w-12 h-12 rounded-full object-cover mr-4\" src=\"https://randomuser.me/api/portraits/women/17.jpg\"\n                alt=\"User avatar\" />\n            <div className=\"flex-1\">\n                <h3 className=\"text-lg font-medium text-gray-800\">Mia Davis</h3>\n                <p className=\"text-gray-600 text-base\">654 points</p>\n            </div>\n        </li>\n    </ul>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "list"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "minimal-server-error-page-template",
+  "type": "registry:ui",
+  "title": "Minimal server error page template",
+  "description": "Minimal server error page template Tailwind CSS component from TailwindFlex.",
+  "author": "santos78",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/minimal-server-error-page-template.tsx",
+      "content": "import React from \"react\";\n\nexport function MinimalServerErrorPageTemplate() {\n  return (\n    <div className=\"bg-gray-100 px-2 text-center\">\r\n    <div className=\"h-screen flex flex-col justify-center items-center\">\r\n        <h1 className=\"text-8xl font-extrabold text-red-500\">500</h1>\r\n        <p className=\"text-4xl font-medium text-gray-800\">Internal Server Error</p>\r\n        <p className=\"text-xl text-gray-800 mt-4\">We apologize for the inconvenience. Please try again later.</p>\r\n    </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "error-page",
+      "404-page"
+    ]
+  }
+}

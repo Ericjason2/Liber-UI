@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "404-error-page",
+  "type": "registry:ui",
+  "title": "404 Error Page",
+  "description": "Minimal 404 for your project",
+  "author": "team-tailwindflex",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/404-error-page.tsx",
+      "content": "import React from \"react\";\n\nexport function Component404ErrorPage() {\n  return (\n    <section className=\"flex items-center h-screen p-16 bg-gray-50 dark:bg-gray-700\">\n    <div className=\"container flex flex-col items-center \">\n        <div className=\"flex flex-col gap-6 max-w-md text-center\">\n            <h2 className=\"font-extrabold text-9xl text-gray-600 dark:text-gray-100\">\n                <span className=\"sr-only\">Error</span>404\n            </h2>\n            <p className=\"text-2xl md:text-3xl dark:text-gray-300\">Sorry, we couldn't find this page.</p>\n            <a href=\"#\" className=\"px-8 py-4 text-xl font-semibold rounded bg-purple-600 text-gray-50 hover:text-gray-200\">Back to home</a>\n        </div>\n    </div>\n</section>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "error-page",
+      "404-page"
+    ]
+  }
+}

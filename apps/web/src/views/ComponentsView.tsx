@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { SAMPLE_COMPONENTS, type ComponentItem } from "@/lib/catalog-components";
 import {
@@ -10,6 +10,7 @@ import {
   Search,
   ChevronDown,
   ChevronRight,
+  Code2,
   Info,
 } from "lucide-react";
 import { useToast } from "@/context/ToastContext";
@@ -19,9 +20,32 @@ import {
   type PackageManager,
 } from "@/lib/package-manager";
 
+const BASE_SLUGS = [
+  "button",
+  "input",
+  "stat-card",
+  "badge-pill",
+  "tabs-control",
+  "accordion-item",
+  "avatar-stack",
+  "toggle-switch",
+  "alert-banner",
+  "progress-bar",
+  "modal-dialog",
+  "dropdown-menu",
+  "tooltip-hint",
+  "toast-snackbar",
+  "skeleton-shimmer",
+  "breadcrumb-trail",
+];
+
+const PAGE_SIZE = 12;
+
 export default function ComponentsPage() {
   const [selectedCat, setSelectedCat] = useState<string>("all");
+  const [selectedTag, setSelectedTag] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
+  const [currentPage, setCurrentPage] = useState<number>(1);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [componentModes, setComponentModes] = useState<Record<string, "preview" | "code">>({});
   const [pm, setPm] = useState<PackageManager>("pnpm");
@@ -40,24 +64,49 @@ export default function ComponentsPage() {
 
   const { toast } = useToast();
 
-  const categories = [
-    { id: "all", label: "All Components", count: SAMPLE_COMPONENTS.length },
-    { id: "buttons", label: "Buttons", count: SAMPLE_COMPONENTS.filter((c) => c.category === "buttons").length },
-    { id: "inputs", label: "Inputs & Form", count: SAMPLE_COMPONENTS.filter((c) => c.category === "inputs").length },
-    { id: "data-display", label: "Data Display", count: SAMPLE_COMPONENTS.filter((c) => c.category === "data-display").length },
-    { id: "feedback", label: "Feedback & Status", count: SAMPLE_COMPONENTS.filter((c) => c.category === "feedback").length },
-  ].filter((c) => c.id === "all" || c.count > 0);
+  // Compute all available tags with frequency
+  const availableTags = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const comp of SAMPLE_COMPONENTS) {
+      for (const t of comp.tags || []) {
+        map.set(t, (map.get(t) || 0) + 1);
+      }
+    }
+    return Array.from(map.entries())
+      .map(([tag, count]) => ({ tag, count }))
+      .sort((a, b) => b.count - a.count);
+  }, []);
 
-  const filtered = SAMPLE_COMPONENTS.filter((item) => {
+  const categories = useMemo(() => {
+    return [
+      { id: "all", label: "All Components", count: SAMPLE_COMPONENTS.length },
+      { id: "buttons", label: "Buttons", count: SAMPLE_COMPONENTS.filter((c) => c.category === "buttons").length },
+      { id: "inputs", label: "Inputs & Form", count: SAMPLE_COMPONENTS.filter((c) => c.category === "inputs").length },
+      { id: "data-display", label: "Data Display", count: SAMPLE_COMPONENTS.filter((c) => c.category === "data-display").length },
+      { id: "feedback", label: "Feedback & Status", count: SAMPLE_COMPONENTS.filter((c) => c.category === "feedback").length },
+    ].filter((c) => c.id === "all" || c.count > 0);
+  }, []);
+
+  const filtered = useMemo(() => {
     const q = searchQuery.toLowerCase().trim();
-    const matchesSearch =
-      !q ||
-      item.name.toLowerCase().includes(q) ||
-      item.description.toLowerCase().includes(q) ||
-      item.slug.toLowerCase().includes(q);
-    const matchesCat = selectedCat === "all" || item.category === selectedCat;
-    return matchesSearch && matchesCat;
-  });
+    return SAMPLE_COMPONENTS.filter((item) => {
+      const matchesSearch =
+        !q ||
+        item.name.toLowerCase().includes(q) ||
+        item.description.toLowerCase().includes(q) ||
+        item.slug.toLowerCase().includes(q) ||
+        item.tags.some((t) => t.toLowerCase().includes(q));
+      const matchesCat = selectedCat === "all" || item.category === selectedCat;
+      const matchesTag = selectedTag === "all" || item.tags.includes(selectedTag);
+      return matchesSearch && matchesCat && matchesTag;
+    });
+  }, [searchQuery, selectedCat, selectedTag]);
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const paginatedItems = useMemo(() => {
+    const start = (currentPage - 1) * PAGE_SIZE;
+    return filtered.slice(start, start + PAGE_SIZE);
+  }, [filtered, currentPage]);
 
   const handleCopyCmd = (c: ComponentItem) => {
     navigator.clipboard.writeText(getCliCommand(pm, `add ${c.slug}`));
@@ -344,15 +393,18 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
       </div>
 
       {/* 2. Interactive Control Bar: Search & Category Chips */}
-      <div className="space-y-4">
+      <div className="space-y-3">
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
           <div className="relative flex-1">
             <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <input
               type="text"
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Filter components (button, input, badge, tabs, switch, avatar)..."
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                setCurrentPage(1);
+              }}
+              placeholder="Search components by tag, name, or slug (e.g. #modal, #button, #navbar, #pricing)..."
               className="w-full h-10 pl-10 pr-4 rounded-[10px] border border-border bg-card text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-all font-sans"
             />
           </div>
@@ -361,7 +413,10 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
             {categories.map((c) => (
               <button
                 key={c.id}
-                onClick={() => setSelectedCat(c.id)}
+                onClick={() => {
+                  setSelectedCat(c.id);
+                  setCurrentPage(1);
+                }}
                 className={`px-3 py-2 rounded-[8px] text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${selectedCat === c.id
                     ? "bg-primary text-primary-foreground font-semibold"
                     : "border border-border bg-card text-muted-foreground hover:text-foreground"
@@ -373,11 +428,47 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
             ))}
           </div>
         </div>
+
+        {/* Tag Cloud Pills Bar (Scraped from TailwindFlex tags) */}
+        <div className="flex items-center gap-1.5 overflow-x-auto py-1.5 scrollbar-none">
+          <button
+            type="button"
+            onClick={() => {
+              setSelectedTag("all");
+              setCurrentPage(1);
+            }}
+            className={`px-2.5 py-1 rounded-full text-[11px] font-mono transition-colors whitespace-nowrap flex items-center gap-1 ${
+              selectedTag === "all"
+                ? "bg-foreground text-background font-semibold shadow-sm"
+                : "bg-muted/60 text-muted-foreground hover:bg-muted"
+            }`}
+          >
+            <span>All Tags</span>
+          </button>
+          {availableTags.slice(0, 30).map(({ tag, count }) => (
+            <button
+              key={tag}
+              type="button"
+              onClick={() => {
+                setSelectedTag(selectedTag === tag ? "all" : tag);
+                setCurrentPage(1);
+              }}
+              className={`px-2.5 py-1 rounded-full text-[11px] font-mono transition-colors whitespace-nowrap flex items-center gap-1 ${
+                selectedTag === tag
+                  ? "bg-foreground text-background font-semibold shadow-sm"
+                  : "bg-muted/60 text-muted-foreground hover:bg-muted hover:text-foreground"
+              }`}
+            >
+              <span>#{tag}</span>
+              <span className="text-[9px] opacity-70">({count})</span>
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* 3. Interactive Component Showcase Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {filtered.map((item) => {
+        {paginatedItems.map((item) => {
           const currentMode = componentModes[item.slug] || "preview";
           const isCopied = copiedKey === item.slug;
 
@@ -884,6 +975,54 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
                       </ol>
                     </nav>
                   )}
+
+                  {/* TailwindFlex scraped components */}
+                  {!BASE_SLUGS.includes(item.slug) && (
+                    <div className="w-full h-full flex flex-col items-center justify-center p-8 text-center space-y-4">
+                      <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shadow-sm">
+                        <Code2 className="h-6 w-6" />
+                      </div>
+                      <div className="space-y-1.5 max-w-md">
+                        <span className="text-sm font-semibold text-foreground block">
+                          {item.name}
+                        </span>
+                        <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">
+                          {item.description}
+                        </p>
+                      </div>
+                      <div className="flex flex-wrap items-center justify-center gap-1.5 pt-1">
+                        {item.tags.slice(0, 5).map((t) => (
+                          <button
+                            key={t}
+                            type="button"
+                            onClick={() => {
+                              setSelectedTag(t);
+                              setCurrentPage(1);
+                            }}
+                            className="px-2.5 py-0.5 rounded-full text-[10px] font-mono bg-muted/80 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors cursor-pointer"
+                          >
+                            #{t}
+                          </button>
+                        ))}
+                      </div>
+                      <div className="pt-2 flex flex-wrap items-center justify-center gap-2">
+                        <button
+                          type="button"
+                          onClick={() => setComponentModes((prev) => ({ ...prev, [item.slug]: "code" }))}
+                          className="px-3.5 py-1.5 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground transition-colors shadow-sm"
+                        >
+                          Afficher le code TSX
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => handleCopyCmd(item)}
+                          className="px-3.5 py-1.5 rounded-lg bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition-opacity shadow-sm"
+                        >
+                          Copier liber add
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
               ) : (
                 /* Code View */
@@ -907,11 +1046,28 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
               )}
 
               {/* Card Footer: Metadata & Install Action */}
-              <div className="p-4 border-t border-border flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
-                <p className="text-muted-foreground line-clamp-1">{item.description}</p>
+              <div className="p-4 border-t border-border flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs">
+                <div className="space-y-1 flex-1 min-w-0">
+                  <p className="text-muted-foreground line-clamp-1">{item.description}</p>
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    {item.tags.slice(0, 4).map((t) => (
+                      <button
+                        key={t}
+                        type="button"
+                        onClick={() => {
+                          setSelectedTag(t);
+                          setCurrentPage(1);
+                        }}
+                        className="text-[10px] font-mono text-muted-foreground/80 hover:text-foreground underline transition-colors"
+                      >
+                        #{t}
+                      </button>
+                    ))}
+                  </div>
+                </div>
                 <button
                   onClick={() => handleCopyCmd(item)}
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-[6px] bg-muted hover:bg-muted/80 text-foreground font-mono text-xs whitespace-nowrap transition-colors"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-[6px] bg-muted hover:bg-muted/80 text-foreground font-mono text-xs whitespace-nowrap transition-colors shrink-0"
                 >
                   <Terminal className="h-3 w-3 text-muted-foreground" />
                   <span>liber add {item.slug}</span>
@@ -922,6 +1078,75 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
           );
         })}
       </div>
+
+      {/* 4. Pagination Controls (Instant sub-50ms render, smooth 60fps) */}
+      {totalPages > 1 && (
+        <div className="pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="text-xs text-muted-foreground font-mono">
+            Affichage de {((currentPage - 1) * PAGE_SIZE) + 1} à {Math.min(currentPage * PAGE_SIZE, filtered.length)} sur {filtered.length} composants disponibles
+          </div>
+
+          <div className="flex items-center gap-1.5">
+            <button
+              type="button"
+              disabled={currentPage === 1}
+              onClick={() => {
+                setCurrentPage((p) => Math.max(1, p - 1));
+                window.scrollTo({ top: 300, behavior: "smooth" });
+              }}
+              className="px-3 py-1.5 rounded-lg border border-border text-xs font-medium text-foreground hover:bg-muted disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+            >
+              Précédent
+            </button>
+
+            <div className="flex items-center gap-1">
+              {Array.from({ length: totalPages }).map((_, idx) => {
+                const pageNum = idx + 1;
+                // Only show around current page
+                if (
+                  pageNum === 1 ||
+                  pageNum === totalPages ||
+                  Math.abs(pageNum - currentPage) <= 2
+                ) {
+                  return (
+                    <button
+                      key={pageNum}
+                      type="button"
+                      onClick={() => {
+                        setCurrentPage(pageNum);
+                        window.scrollTo({ top: 300, behavior: "smooth" });
+                      }}
+                      className={`w-8 h-8 rounded-lg text-xs font-mono transition-colors ${
+                        currentPage === pageNum
+                          ? "bg-primary text-primary-foreground font-semibold"
+                          : "border border-border text-muted-foreground hover:text-foreground hover:bg-muted"
+                      }`}
+                    >
+                      {pageNum}
+                    </button>
+                  );
+                }
+                if (Math.abs(pageNum - currentPage) === 3) {
+                  return <span key={pageNum} className="px-1 text-xs text-muted-foreground">...</span>;
+                }
+                return null;
+              })}
+            </div>
+
+            <button
+              type="button"
+              disabled={currentPage === totalPages}
+              onClick={() => {
+                setCurrentPage((p) => Math.min(totalPages, p + 1));
+                window.scrollTo({ top: 300, behavior: "smooth" });
+              }}
+              className="px-3 py-1.5 rounded-lg border border-border text-xs font-medium text-foreground hover:bg-muted disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+            >
+              Suivant
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

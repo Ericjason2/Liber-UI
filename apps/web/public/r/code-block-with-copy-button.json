@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "code-block-with-copy-button",
+  "type": "registry:ui",
+  "title": "Code Block with Copy Button",
+  "description": "this example uses clipboard.js to copy the code",
+  "author": "alok",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/code-block-with-copy-button.tsx",
+      "content": "import React from \"react\";\n\nexport function CodeBlockWithCopyButton() {\n  return (\n    <div className=\"relative max-w-2xl mx-auto mt-24\">\r\n    <div className=\"bg-gray-900 text-white p-4 rounded-md\">\r\n        <div className=\"flex justify-between items-center mb-2\">\r\n            <span className=\"text-gray-400\">Code:</span>\r\n            <button className=\"code bg-gray-800 hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md\" data-clipboard-target=\"#code\">\r\n        Copy\r\n      </button>\r\n        </div>\r\n        <div className=\"overflow-x-auto\">\r\n            <pre id=\"code\" className=\"text-gray-300\">\r\n        <code>\r\n<div className=\"flex justify-center items-center bg-blue-500 text-white p-4\">\r\n  <h1 className=\"text-2xl\">Hello, Tailwind CSS!</h1>\r\n</div></code>\r\n\r\n</pre>\r\n        </div>\r\n    </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "code-block",
+      "widget"
+    ]
+  }
+}

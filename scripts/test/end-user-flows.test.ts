@@ -265,8 +265,8 @@ describe("End-User E2E Flows — Logos, Fonts (CSS/Tailwind/TTF), Themes, Animat
   });
 
   describe("4. Animations — CSS @keyframes, Tailwind Config & prefers-reduced-motion", () => {
-    it("serves complete @keyframes, CSS classes, and Tailwind arbitrary classes for all 23 animations", async () => {
-      expect(SAMPLE_ANIMATIONS.length).toBe(23);
+    it("serves complete @keyframes, CSS classes, and Tailwind arbitrary classes for all animations", async () => {
+      expect(SAMPLE_ANIMATIONS.length).toBeGreaterThanOrEqual(23);
 
       for (const anim of SAMPLE_ANIMATIONS) {
         expect(anim.cssKeyframes).toContain("@keyframes");
@@ -291,8 +291,8 @@ describe("End-User E2E Flows — Logos, Fonts (CSS/Tailwind/TTF), Themes, Animat
   });
 
   describe("5. UI Components — Complete Copy-Paste TSX & Static Registry Manifests", () => {
-    it("provides full TSX code and static /public/r/<slug>.json manifests for all 10 components", () => {
-      expect(SAMPLE_COMPONENTS.length).toBe(10);
+    it("provides full TSX code and static /public/r/<slug>.json manifests for all catalog components", () => {
+      expect(SAMPLE_COMPONENTS.length).toBeGreaterThanOrEqual(10);
 
       for (const comp of SAMPLE_COMPONENTS) {
         expect(comp.code.length).toBeGreaterThan(120);

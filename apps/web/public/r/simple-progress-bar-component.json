@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-progress-bar-component",
+  "type": "registry:ui",
+  "title": "Simple progress bar component",
+  "description": "Simple progress bar component Tailwind CSS component from TailwindFlex.",
+  "author": "prajwal",
+  "categories": [
+    "feedback"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-progress-bar-component.tsx",
+      "content": "import React from \"react\";\n\nexport function SimpleProgressBarComponent() {\n  return (\n    <div className=\"relative p-4 mt-24 max-w-sm mx-auto\">\n  <div className=\"flex mb-2 items-center justify-between\">\n    <div>\n      <span className=\"text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-teal-600 bg-teal-200\">\n        In Progress\n      </span>\n    </div>\n    <div className=\"text-right\">\n      <span className=\"text-xs font-semibold inline-block text-teal-600\">\n        70%\n      </span>\n    </div>\n  </div>\n  <div className=\"flex rounded-full h-2 bg-gray-200\">\n    <div style={{ width: \"70%\" }} className=\"rounded-full bg-teal-500\"></div>\n  </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "progress-bar"
+    ]
+  }
+}

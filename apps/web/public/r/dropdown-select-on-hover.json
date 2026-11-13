@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-select-on-hover",
+  "type": "registry:ui",
+  "title": "Dropdown select on hover",
+  "description": "this example does not uses javascript",
+  "author": "alok",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/dropdown-select-on-hover.tsx",
+      "content": "import React from \"react\";\n\nexport function DropdownSelectOnHover() {\n  return (\n    <div className=\"group relative cursor-pointer py-2\">\r\n\r\n        <div className=\"flex items-center justify-between space-x-5 bg-white px-4\">\r\n            <a className=\"menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4\">\r\n                Choose Day\r\n            </a>\r\n            <span>\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth=\"1.5\"\r\n                    stroke=\"currentColor\" className=\"h-6 w-6\">\r\n                    <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M19.5 8.25l-7.5 7.5-7.5-7.5\" />\r\n                </svg>\r\n            </span>\r\n        </div>\r\n\r\n        <div\r\n            className=\"invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible\">\r\n\r\n            <a className=\"my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2\">\r\n                Sunday\r\n            </a>\r\n\r\n            <a className=\"my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2\">\r\n                Monday\r\n            </a>\r\n\r\n            <a className=\"my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2\">\r\n                Tuesday\r\n            </a>\r\n\r\n            <a className=\"my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2\">\r\n                Wednesday\r\n            </a>\r\n\r\n            <a className=\"my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2\">\r\n                Thursday\r\n            </a>\r\n\r\n            <a className=\"my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2\">\r\n                Friday\r\n            </a>\r\n\r\n            <a className=\"my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2\">\r\n                Saturday\r\n            </a>\r\n\r\n        </div>\r\n    </div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "dropdown",
+      "select"
+    ]
+  }
+}

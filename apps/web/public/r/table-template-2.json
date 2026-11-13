@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "table-template-2",
+  "type": "registry:ui",
+  "title": "Table template",
+  "description": "Table template Tailwind CSS component from TailwindFlex.",
+  "author": "oliver-hansen",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/table-template-2.tsx",
+      "content": "import React from \"react\";\n\nexport function TableTemplate() {\n  return (\n    <div className=\"shadow-lg rounded-lg overflow-hidden mx-4 md:mx-10\">\n    <table className=\"w-full table-fixed\">\n        <thead>\n            <tr className=\"bg-gray-100\">\n                <th className=\"w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase\">Name</th>\n                <th className=\"w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase\">Email</th>\n                <th className=\"w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase\">Phone</th>\n                <th className=\"w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase\">Status</th>\n            </tr>\n        </thead>\n        <tbody className=\"bg-white\">\n            <tr>\n                <td className=\"py-4 px-6 border-b border-gray-200\">John Doe</td>\n                <td className=\"py-4 px-6 border-b border-gray-200 truncate\">johndoe@gmail.com</td>\n                <td className=\"py-4 px-6 border-b border-gray-200\">555-555-5555</td>\n                <td className=\"py-4 px-6 border-b border-gray-200\">\n                    <span className=\"bg-green-500 text-white py-1 px-2 rounded-full text-xs\">Active</span>\n                </td>\n            </tr>\n            <tr>\n                <td className=\"py-4 px-6 border-b border-gray-200\">Jane Doe</td>\n                <td className=\"py-4 px-6 border-b border-gray-200 truncate\">janedoe@gmail.com</td>\n                <td className=\"py-4 px-6 border-b border-gray-200\">555-555-5555</td>\n                <td className=\"py-4 px-6 border-b border-gray-200\">\n                    <span className=\"bg-red-500 text-white py-1 px-2 rounded-full text-xs\">Inactive</span>\n                </td>\n            </tr>\n            <tr>\n                <td className=\"py-4 px-6 border-b border-gray-200\">Jane Doe</td>\n                <td className=\"py-4 px-6 border-b border-gray-200 truncate\">janedoe@gmail.com</td>\n                <td className=\"py-4 px-6 border-b border-gray-200\">555-555-5555</td>\n                <td className=\"py-4 px-6 border-b border-gray-200\">\n                    <span className=\"bg-red-500 text-white py-1 px-2 rounded-full text-xs\">Inactive</span>\n                </td>\n            </tr>\n            <tr>\n                <td className=\"py-4 px-6 border-b border-gray-200\">Jane Doe</td>\n                <td className=\"py-4 px-6 border-b border-gray-200 truncate\">janedoe@gmail.com</td>\n                <td className=\"py-4 px-6 border-b border-gray-200\">555-555-5555</td>\n                <td className=\"py-4 px-6 border-b border-gray-200\">\n                    <span className=\"bg-red-500 text-white py-1 px-2 rounded-full text-xs\">Inactive</span>\n                </td>\n            </tr>\n            \n        </tbody>\n    </table>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "table"
+    ]
+  }
+}

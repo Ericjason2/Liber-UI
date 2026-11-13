@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton-loading-card-horizontal",
+  "type": "registry:ui",
+  "title": "Skeleton loading card horizontal",
+  "description": "Skeleton loading card horizontal Tailwind CSS component from TailwindFlex.",
+  "author": "ahmed-malik",
+  "categories": [
+    "feedback"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/skeleton-loading-card-horizontal.tsx",
+      "content": "import React from \"react\";\n\nexport function SkeletonLoadingCardHorizontal() {\n  return (\n    <div className=\"p-4 bg-white rounded shadow w-[400px]\">\r\n    <div className=\"animate-pulse flex space-x-4\">\r\n        <div className=\"rounded-full bg-gray-300 h-12 w-12\"></div>\r\n        <div className=\"flex-1 space-y-4 py-1\">\r\n            <div className=\"h-4 bg-gray-300 rounded w-3/4\"></div>\r\n            <div className=\"space-y-2\">\r\n                <div className=\"h-4 bg-gray-300 rounded\"></div>\r\n                <div className=\"h-4 bg-gray-300 rounded w-5/6\"></div>\r\n            </div>\r\n        </div>\r\n    </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "skeleton-loader"
+    ]
+  }
+}

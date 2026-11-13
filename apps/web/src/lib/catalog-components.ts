@@ -1,3 +1,5 @@
+import { TAILWINDFLEX_COMPONENTS } from "../data/tailwindflex-components";
+
 export interface BlockItem {
   slug: string;
   kind: "block";
@@ -161,7 +163,7 @@ export const SAMPLE_BLOCKS: BlockItem[] = [
   },
 ];
 
-export const SAMPLE_COMPONENTS: ComponentItem[] = [
+const BASE_COMPONENTS: ComponentItem[] = [
   {
     slug: "button",
     kind: "component",
@@ -777,5 +779,12 @@ export function BreadcrumbTrail() {
   );
 }`,
   },
+];
+
+export const SAMPLE_COMPONENTS: ComponentItem[] = [
+  ...BASE_COMPONENTS,
+  ...TAILWINDFLEX_COMPONENTS.filter(
+    (tf) => !BASE_COMPONENTS.some((base) => base.slug === tf.slug)
+  ),
 ];
 

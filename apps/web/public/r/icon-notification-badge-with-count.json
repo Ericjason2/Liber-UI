@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-notification-badge-with-count",
+  "type": "registry:ui",
+  "title": "Icon Notification Badge with Count",
+  "description": "Icon Notification Badge with Count Tailwind CSS component from TailwindFlex.",
+  "author": "arya",
+  "categories": [
+    "data-display"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/icon-notification-badge-with-count.tsx",
+      "content": "import React from \"react\";\n\nexport function IconNotificationBadgeWithCount() {\n  return (\n    <button className=\"py-4 px-1 relative border-2 border-transparent text-gray-800 rounded-full hover:text-gray-400 focus:outline-none focus:text-gray-500 transition duration-150 ease-in-out\" aria-label=\"Cart\">\r\n  <svg className=\"h-6 w-6\" fill=\"none\" strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\r\n    <path d=\"M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z\"></path>\r\n  </svg>\r\n  <span className=\"absolute inset-0 object-right-top -mr-6\">\r\n    <div className=\"inline-flex items-center px-1.5 py-0.5 border-2 border-white rounded-full text-xs font-semibold leading-4 bg-red-500 text-white\">\r\n      6\r\n    </div>\r\n  </span>\r\n</button>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "badge",
+      "notification",
+      "notification"
+    ]
+  }
+}

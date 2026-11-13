@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "search-bar",
+  "type": "registry:ui",
+  "title": "Search bar",
+  "description": "Search bar Tailwind CSS component from TailwindFlex.",
+  "author": "arya",
+  "categories": [
+    "inputs"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/search-bar.tsx",
+      "content": "import React from \"react\";\n\nexport function SearchBar() {\n  return (\n    <div className=\"bg-gray-200\">\r\n    <div className=\"container h-screen flex justify-center items-center px-4 sm:px-6 lg:px-8\">\r\n        <div className=\"relative\">\r\n\r\n            <input type=\"text\" className=\"h-14 w-96 pr-8 pl-5 rounded z-0 focus:shadow focus:outline-none\" placeholder=\"Search anything...\" />\r\n\r\n            <div className=\"absolute top-4 right-3\">\r\n                <i className=\"fa fa-search text-gray-400 z-20 hover:text-gray-500\"></i>\r\n            </div>\r\n\r\n        </div>\r\n    </div>\n</div>\n  );\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "search-bar"
+    ]
+  }
+}

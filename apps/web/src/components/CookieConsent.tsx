@@ -124,9 +124,6 @@ export function CookieConsent() {
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold text-foreground flex items-center gap-1.5">
                   Respect de votre vie privée
-                  <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-mono font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                    RGPD
-                  </span>
                 </h3>
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   Nous utilisons des cookies essentiels au fonctionnement du site et, avec votre accord, des traceurs de mesure d&apos;audience anonymes pour améliorer votre expérience.

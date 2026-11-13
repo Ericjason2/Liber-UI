@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu",
+  "type": "registry:ui",
+  "title": "Dropdown Menu",
+  "description": "Floating action popover with outside click detection and keyboard item navigation.",
+  "author": "Liber Team",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/dropdown-menu.tsx",
+      "content": "import React, { useState, useRef, useEffect } from \"react\";\n\nexport function DropdownMenu() {\n  const [isOpen, setIsOpen] = useState(false);\n  const ref = useRef<HTMLDivElement>(null);\n  useEffect(() => {\n    function handleClickOutside(e: MouseEvent) {\n      if (ref.current && !ref.current.contains(e.target as Node)) setIsOpen(false);\n    }\n    document.addEventListener(\"mousedown\", handleClickOutside);\n    return () => document.removeEventListener(\"mousedown\", handleClickOutside);\n  }, []);\n  return (\n    <div className=\"relative inline-block text-left\" ref={ref}>\n      <button onClick={() => setIsOpen(!isOpen)} aria-expanded={isOpen} className=\"px-3.5 py-1.5 rounded-[8px] border border-border bg-card text-xs font-medium text-foreground flex items-center gap-2\"><span>Options</span><span className=\"text-[10px]\">▼</span></button>\n      {isOpen && (\n        <div className=\"absolute left-0 mt-2 w-48 rounded-lg border border-border bg-card shadow-lg py-1 z-20 text-xs\">\n          <button onClick={() => setIsOpen(false)} className=\"w-full text-left px-3 py-1.5 text-foreground hover:bg-muted\">Edit project</button>\n          <button onClick={() => setIsOpen(false)} className=\"w-full text-left px-3 py-1.5 text-foreground hover:bg-muted\">Duplicate</button>\n          <div className=\"h-px bg-border my-1\" />\n          <button onClick={() => setIsOpen(false)} className=\"w-full text-left px-3 py-1.5 text-red-600 hover:bg-red-500/10\">Delete</button>\n        </div>\n      )}\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component"
+  }
+}
