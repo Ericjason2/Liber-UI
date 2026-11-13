@@ -7,7 +7,7 @@ import { EditorialDivider, FloatingToolDock, FloatingFillInspector } from "./Hom
 import { ScrollParallax, ScrollReveal, getRevealMotionProps, useInViewOnce } from "./ScrollReveal";
 
 /**
- * Module 6 — Value Proposition & Closing Bookend CTA inspired by Behance Module 12.
+ * Module 6 — Value Proposition & Closing Bookend CTA.
  * Reprises the floating tilted design-tool widgets flanking a bold typographic inline pill CTA.
  */
 export function HomeClosingCta() {
@@ -65,40 +65,40 @@ export function HomeClosingCta() {
 
       {/* Closing Bookend Statement with Inline Pill CTA & Floating Tool Widgets */}
       <ScrollReveal variant="scale-in" delay={180}>
-      <div className="relative max-w-4xl mx-auto py-10 sm:py-20 text-center">
-        {/* Left Tilted Tool Dock */}
-        <ScrollParallax speed={-0.09} className="hidden lg:block absolute top-2 -left-10 z-30">
-          <div className="-rotate-12">
-            <FloatingToolDock />
-          </div>
-        </ScrollParallax>
+        <div className="relative max-w-4xl mx-auto py-10 sm:py-20 text-center">
+          <h2 className="relative z-0 text-3xl sm:text-5xl md:text-[54px] font-semibold tracking-[-0.03em] text-foreground leading-[1.15]">
+            Ship your next
+            <br />
+            interface{" "}
+            <span className="text-[#2563EB] dark:text-[#38BDF8]">faster with</span>
+            <br />
+            <span className="inline-flex flex-wrap items-center justify-center gap-3 mt-1">
+              <span>Liber</span>
+              <Link
+                href="/logos"
+                className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#2563EB] text-white dark:bg-[#38BDF8] dark:text-[#090D16] text-base sm:text-xl font-medium tracking-normal liber-floating-widget hover:opacity-90 transition-opacity align-middle"
+              >
+                <span>Browse Catalog</span>
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
+              </Link>
+              <span>UI</span>
+            </span>
+          </h2>
 
-        {/* Right Tilted Fill Popover */}
-        <ScrollParallax speed={0.08} className="hidden lg:block absolute -top-4 -right-10 z-30">
-          <div className="rotate-6">
-            <FloatingFillInspector hex="0F172A" opacity="100%" />
-          </div>
-        </ScrollParallax>
+          {/* Left Tilted Tool Dock - Layered in foreground over H2 */}
+          <ScrollParallax speed={-0.09} className="hidden lg:block absolute top-2 -left-10 z-30 pointer-events-auto">
+            <div className="-rotate-12">
+              <FloatingToolDock />
+            </div>
+          </ScrollParallax>
 
-        <h2 className="relative z-0 text-3xl sm:text-5xl md:text-[54px] font-semibold tracking-[-0.03em] text-foreground leading-[1.15]">
-          Ship your next
-          <br />
-          interface{" "}
-          <span className="text-[#2563EB] dark:text-[#38BDF8]">faster with</span>
-          <br />
-          <span className="inline-flex flex-wrap items-center justify-center gap-3 mt-1">
-            <span>Liber</span>
-            <Link
-              href="/logos"
-              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#2563EB] text-white dark:bg-[#38BDF8] dark:text-[#090D16] text-base sm:text-xl font-medium tracking-normal liber-floating-widget hover:opacity-90 transition-opacity align-middle"
-            >
-              <span>Browse Catalog</span>
-              <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
-            </Link>
-            <span>UI</span>
-          </span>
-        </h2>
-      </div>
+          {/* Right Tilted Fill Popover - Layered in foreground over H2 */}
+          <ScrollParallax speed={0.08} className="hidden lg:block absolute -top-4 -right-10 z-30 pointer-events-auto">
+            <div className="rotate-6">
+              <FloatingFillInspector hex="0F172A" opacity="100%" />
+            </div>
+          </ScrollParallax>
+        </div>
       </ScrollReveal>
     </section>
   );
