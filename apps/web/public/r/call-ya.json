@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-ya",
+  "type": "registry:ui",
+  "title": "Call ya",
+  "description": "Call ya - Créé par @matti sur TailwindFlex.",
+  "author": "@matti (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-ya.tsx",
+      "content": "/**\n * Component: Call ya\n * Author: @matti (https://tailwindflex.com/@matti)\n * Source: https://tailwindflex.com/@matti/call-ya\n * Attribution: Créé par @matti sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallYa() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!--\\n  Background-Image-Copyright\\n  https://unsplash.com/@trapnation\\n-->\\n<section class=\\\"relative z-0 dark:bg-gray-800 before:absolute before:w-full before:h-full before:inset-0 before:bg-black/50 before:z-10 overflow-hidden md:!overflow-visible bg-fixed\\\"\\nstyle=\\\"background-image: url('https://images.unsplash.com/photo-1493514789931-586cb221d7a7?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-position: center; background-repeat: no-repeat; background-size: cover center;\\\">\\n  <div class=\\\"relative z-20 w-full py-3 md:py-12\\\">\\n    <div class=\\\"relative z-30 flex flex-col w-full sm:w-4/5 lg:w-4/5 mx-auto\\\">\\n      <div class=\\\"w-full border border-gray-50/50 my-12 py-8 sm:px-6 md:px-12 text-white flex flex-col text-center\\\">\\n        <h1 class=\\\"text-2xl md:text-3xl font-light text-gray-50 uppercase dark:text-gray-200 dark:bg-opacity-50\\\">\\n          Installation, Maintenance or Inspection?\\n        </h1>\\n        <a href=\\\"#\\\">\\n          <p class=\\\"text-xl md:text-3xl font-semibold mt-2 mb-2 text-emerald-600\\\">\\n            0800 1234 232\\n          </p>\\n        </a>\\n        <div class=\\\"absolute bottom-6 left-[45%] md:left-[49%] rounded-full w-12 h-12 bg-white cursor-pointer flex pl-1.5 items-center\\\">\\n          <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 24 24\\\" stroke-width=\\\"1.5\\\" class=\\\"text-emerald-600 h-8 w-8\\\"><defs><style>.cls-6376396cc3a86d32eae6f10f-1{fill:none;stroke:currentColor;stroke-miterlimit:10;}</style></defs><path class=\\\"cls-6376396cc3a86d32eae6f10f-1\\\" d=\\\"M13.43,7.9a2.68,2.68,0,0,1,2.67,2.67\\\"></path><path class=\\\"cls-6376396cc3a86d32eae6f10f-1\\\" d=\\\"M13.43,4.7a5.87,5.87,0,0,1,5.87,5.87\\\"></path><path class=\\\"cls-6376396cc3a86d32eae6f10f-1\\\" d=\\\"M13.43,1.5a9.07,9.07,0,0,1,9.07,9.07\\\"></path><path class=\\\"cls-6376396cc3a86d32eae6f10f-1\\\" d=\\\"M18.75,21.38c-2.43,2.42-8,.79-12.46-3.67S.2,7.68,2.62,5.25L5.28,2.59l5.13,5.13L8.49,9.66a2.07,2.07,0,0,0,0,2.92l2.93,2.93a2.07,2.07,0,0,0,2.92,0l1.94-1.92,5.13,5.13Z\\\"></path></svg>\\n        </div>\\n      </div>\\n    </div>\\n  </div>\\n</section>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@matti",
+    "authorUrl": "https://tailwindflex.com/@matti",
+    "sourceUrl": "https://tailwindflex.com/@matti/call-ya",
+    "mention": "Créé par @matti sur TailwindFlex",
+    "rawHtml": "<!--\n  Background-Image-Copyright\n  https://unsplash.com/@trapnation\n-->\n<section class=\"relative z-0 dark:bg-gray-800 before:absolute before:w-full before:h-full before:inset-0 before:bg-black/50 before:z-10 overflow-hidden md:!overflow-visible bg-fixed\"\nstyle=\"background-image: url('https://images.unsplash.com/photo-1493514789931-586cb221d7a7?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-position: center; background-repeat: no-repeat; background-size: cover center;\">\n  <div class=\"relative z-20 w-full py-3 md:py-12\">\n    <div class=\"relative z-30 flex flex-col w-full sm:w-4/5 lg:w-4/5 mx-auto\">\n      <div class=\"w-full border border-gray-50/50 my-12 py-8 sm:px-6 md:px-12 text-white flex flex-col text-center\">\n        <h1 class=\"text-2xl md:text-3xl font-light text-gray-50 uppercase dark:text-gray-200 dark:bg-opacity-50\">\n          Installation, Maintenance or Inspection?\n        </h1>\n        <a href=\"#\">\n          <p class=\"text-xl md:text-3xl font-semibold mt-2 mb-2 text-emerald-600\">\n            0800 1234 232\n          </p>\n        </a>\n        <div class=\"absolute bottom-6 left-[45%] md:left-[49%] rounded-full w-12 h-12 bg-white cursor-pointer flex pl-1.5 items-center\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" class=\"text-emerald-600 h-8 w-8\"><defs><style>.cls-6376396cc3a86d32eae6f10f-1{fill:none;stroke:currentColor;stroke-miterlimit:10;}</style></defs><path class=\"cls-6376396cc3a86d32eae6f10f-1\" d=\"M13.43,7.9a2.68,2.68,0,0,1,2.67,2.67\"></path><path class=\"cls-6376396cc3a86d32eae6f10f-1\" d=\"M13.43,4.7a5.87,5.87,0,0,1,5.87,5.87\"></path><path class=\"cls-6376396cc3a86d32eae6f10f-1\" d=\"M13.43,1.5a9.07,9.07,0,0,1,9.07,9.07\"></path><path class=\"cls-6376396cc3a86d32eae6f10f-1\" d=\"M18.75,21.38c-2.43,2.42-8,.79-12.46-3.67S.2,7.68,2.62,5.25L5.28,2.59l5.13,5.13L8.49,9.66a2.07,2.07,0,0,0,0,2.92l2.93,2.93a2.07,2.07,0,0,0,2.92,0l1.94-1.92,5.13,5.13Z\"></path></svg>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

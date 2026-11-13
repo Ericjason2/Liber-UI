@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-31",
+  "type": "registry:ui",
+  "title": "Card",
+  "description": "Card - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-31.tsx",
+      "content": "/**\n * Component: Card\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/card-31\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Card31() {\n  return (\n    <div>\n    <div className=\"w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark800 dark700\">\n        <a href=\"#\">\n          <span\n            className=\"text-3xl font-bold text-gray-900 dark\"\n            text=\"500€\"\n          ></span>\n            <img className=\"p-8 rounded-t-lg\" src=\"https://flowbite.com/docs/images/products/apple-watch.png\" alt=\"product image\" />\n        </a>\n        <div className=\"px-5 pb-5\">\n            <a href=\"#\">\n                <h5 className=\"text-xl font-semibold tracking-tight text-gray-900 dark\">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>\n            </a>\n            <div className=\"flex items-center mt-2.5 mb-5\">\n                <div className=\"flex items-center space-x-1 rtl\">\n                    <svg className=\"w-4 h-4 text-yellow-300\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 22 20\">\n                        <path d=\"M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z\"/>\n                    </svg>\n                    <svg className=\"w-4 h-4 text-yellow-300\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 22 20\">\n                        <path d=\"M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z\"/>\n                    </svg>\n                    <svg className=\"w-4 h-4 text-yellow-300\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 22 20\">\n                        <path d=\"M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z\"/>\n                    </svg>\n                    <svg className=\"w-4 h-4 text-yellow-300\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 22 20\">\n                        <path d=\"M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z\"/>\n                    </svg>\n                    <svg className=\"w-4 h-4 text-gray-200 dark600\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 22 20\">\n                        <path d=\"M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z\"/>\n                    </svg>\n                </div>\n                <span className=\"bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm dark200 dark800 ms-3\">5.0</span>\n            </div>\n            <div className=\"flex items-center justify-between\">\n                <span className=\"text-3xl font-bold text-gray-900 dark\">$599</span>\n                <button className=\"button\">\n      <span className=\"label\">+ Add to card</span>\n      <span className=\"gradient-container\">\n        <span className=\"gradient\"></span>\n      </span>\n    </button>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/card-31",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700\">\n    <a href=\"#\">\n      <span\n        class=\"text-3xl font-bold text-gray-900 dark:text-white\"\n        text=\"500€\"\n      ></span>\n        <img class=\"p-8 rounded-t-lg\" src=\"https://flowbite.com/docs/images/products/apple-watch.png\" alt=\"product image\" />\n    </a>\n    <div class=\"px-5 pb-5\">\n        <a href=\"#\">\n            <h5 class=\"text-xl font-semibold tracking-tight text-gray-900 dark:text-white\">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>\n        </a>\n        <div class=\"flex items-center mt-2.5 mb-5\">\n            <div class=\"flex items-center space-x-1 rtl:space-x-reverse\">\n                <svg class=\"w-4 h-4 text-yellow-300\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 22 20\">\n                    <path d=\"M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z\"/>\n                </svg>\n                <svg class=\"w-4 h-4 text-yellow-300\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 22 20\">\n                    <path d=\"M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z\"/>\n                </svg>\n                <svg class=\"w-4 h-4 text-yellow-300\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 22 20\">\n                    <path d=\"M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z\"/>\n                </svg>\n                <svg class=\"w-4 h-4 text-yellow-300\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 22 20\">\n                    <path d=\"M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z\"/>\n                </svg>\n                <svg class=\"w-4 h-4 text-gray-200 dark:text-gray-600\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 22 20\">\n                    <path d=\"M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z\"/>\n                </svg>\n            </div>\n            <span class=\"bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-3\">5.0</span>\n        </div>\n        <div class=\"flex items-center justify-between\">\n            <span class=\"text-3xl font-bold text-gray-900 dark:text-white\">$599</span>\n            <button class=\"button\">\n  <span class=\"label\">+ Add to card</span>\n  <span class=\"gradient-container\">\n    <span class=\"gradient\"></span>\n  </span>\n</button>\n        </div>\n    </div>\n</div>"
+  }
+}

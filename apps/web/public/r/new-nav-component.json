@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "new-nav-component",
+  "type": "registry:ui",
+  "title": "New Nav Component",
+  "description": "New Nav Component - Créé par @amit-pr sur TailwindFlex.",
+  "author": "@amit-pr (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/new-nav-component.tsx",
+      "content": "/**\n * Component: New Nav Component\n * Author: @amit-pr (https://tailwindflex.com/@amit-pr)\n * Source: https://tailwindflex.com/@amit-pr/new-nav-component\n * Attribution: Créé par @amit-pr sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NewNavComponent() {\n  return (\n    <div>\n    <nav className=\"bg-red-100 py-4 px-2 flex justify-between\">\n      <div>\n        <button className=\"bg-white rounded shadow-md px-2 py-1\">\n          Login\n        </button>\n        <button className=\"bg-white rounded shadow-md px-2 py-1\">\n          Register\n        </button>\n      </div>\n    \n      <h1 className=\"text-3xl\">\n        Logo\n      </h1>\n      \n      <ul className=\"list-style-none flex pl-4\">  \n        <li className=\"bg-gray-600 px-2 py-1 mx-2 rounded shadow-sm\">\n          <a href=\"#\" className=\"text-blue-100 hover100 transition-all duration-150\">Home</a>\n        </li>\n        <li className=\"bg-gray-600 px-2 py-1 mx-2 rounded shadow-sm\">\n          <a href=\"#\" className=\"text-blue-100 hover100 transition-all duration-150\">About</a>\n        </li>\n        <li className=\"bg-gray-600 px-2 py-1 mx-2 rounded shadow-sm\">\n          <a href=\"#\" className=\"text-blue-100 hover100 transition-all duration-150\">Contact</a>\n        </li>\n      </ul>\n    </nav>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@amit-pr",
+    "authorUrl": "https://tailwindflex.com/@amit-pr",
+    "sourceUrl": "https://tailwindflex.com/@amit-pr/new-nav-component",
+    "mention": "Créé par @amit-pr sur TailwindFlex",
+    "rawHtml": "<nav class=\"bg-red-100 py-4 px-2 flex justify-between\">\n  <div>\n    <button class=\"bg-white rounded shadow-md px-2 py-1\">\n      Login\n    </button>\n    <button class=\"bg-white rounded shadow-md px-2 py-1\">\n      Register\n    </button>\n  </div>\n\n  <h1 class=\"text-3xl\">\n    Logo\n  </h1>\n  \n  <ul class=\"list-style-none flex pl-4\">  \n    <li class=\"bg-gray-600 px-2 py-1 mx-2 rounded shadow-sm\">\n      <a href=\"#\" class=\"text-blue-100 hover:text-blue-100 transition-all duration-150\">Home</a>\n    </li>\n    <li class=\"bg-gray-600 px-2 py-1 mx-2 rounded shadow-sm\">\n      <a href=\"#\" class=\"text-blue-100 hover:text-blue-100 transition-all duration-150\">About</a>\n    </li>\n    <li class=\"bg-gray-600 px-2 py-1 mx-2 rounded shadow-sm\">\n      <a href=\"#\" class=\"text-blue-100 hover:text-blue-100 transition-all duration-150\">Contact</a>\n    </li>\n  </ul>\n</nav>"
+  }
+}

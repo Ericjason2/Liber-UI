@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "form-package",
+  "type": "registry:ui",
+  "title": "Form package",
+  "description": "Form package - Créé par @arealguru sur TailwindFlex.",
+  "author": "@arealguru (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/form-package.tsx",
+      "content": "/**\n * Component: Form package\n * Author: @arealguru (https://tailwindflex.com/@arealguru)\n * Source: https://tailwindflex.com/@arealguru/form-package\n * Attribution: Créé par @arealguru sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FormPackage() {\n  return (\n    <div>\n    <div className=\"border-blue-600 rounded-2xl border  max-w-sm mx-auto\"\n        style=\"box-shadow: rgba(45, 50, 130, 0.15) 0px 12px 16px -4px, rgba(45, 50, 130, 0.15) 0px 4px 6px -2px;\">\n        <div className=\"pt-6 px-6\">\n          <div className=\"flex itmes-center\">\n              <span className=\"pr-2\">\n                <input id=\"default-checkbox\" type=\"checkbox\" value=\"\" className=\"h-full text-blue-600 bg-gray-100 border-gray-300 rounded focus500 dark600 dark800 focus2 dark700 dark600\" />\n              </span>\n              <h2 className=\"text-xl font-semibold text-gray-600\">Package 1</h2>\n          </div>\n        </div>      \n        <div className=\"px-6 pt-5 pb-8\">\n            <h3 className=\"text-sm font-medium text-gray-900\">What's included</h3>\n            <ul role=\"list\" className=\"mt-4 space-y-4\">\n                <li className=\"flex space-x-3\">\n                    <div className=\"flex justify-center items-center rounded-full bg-green-100 h-5 w-5\"><svg\n                            xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"\n                            className=\"h-3 w-3 flex-shrink-0 text-green-500\">\n                            <path fillRule=\"evenodd\"\n                                d=\"M20.707 5.293a1 1 0 010 1.414l-11 11a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 15.586 19.293 5.293a1 1 0 011.414 0z\"\n                                clipRule=\"evenodd\"></path>\n                        </svg>\n                    </div>\n                    <span className=\"text-sm text-gray-500\">5 workspaces</span>\n                </li>\n                <li className=\"flex space-x-3\">\n                    <div className=\"flex justify-center items-center rounded-full bg-green-100 h-5 w-5\"><svg\n                            xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"\n                            className=\"h-3 w-3 flex-shrink-0 text-green-500\">\n                            <path fillRule=\"evenodd\"\n                                d=\"M20.707 5.293a1 1 0 010 1.414l-11 11a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 15.586 19.293 5.293a1 1 0 011.414 0z\"\n                                clipRule=\"evenodd\"></path>\n                        </svg>\n                    </div>\n                    <span className=\"text-sm text-gray-500\">Unlimited testimonials</span>\n                </li>\n            </ul>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@arealguru",
+    "authorUrl": "https://tailwindflex.com/@arealguru",
+    "sourceUrl": "https://tailwindflex.com/@arealguru/form-package",
+    "mention": "Créé par @arealguru sur TailwindFlex",
+    "rawHtml": "<div class=\"border-blue-600 rounded-2xl border  max-w-sm mx-auto\"\n    style=\"box-shadow: rgba(45, 50, 130, 0.15) 0px 12px 16px -4px, rgba(45, 50, 130, 0.15) 0px 4px 6px -2px;\">\n    <div class=\"pt-6 px-6\">\n      <div class=\"flex itmes-center\">\n          <span class=\"pr-2\">\n            <input id=\"default-checkbox\" type=\"checkbox\" value=\"\" class=\"h-full text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600\">\n          </span>\n          <h2 class=\"text-xl font-semibold text-gray-600\">Package 1</h2>\n      </div>\n    </div>      \n    <div class=\"px-6 pt-5 pb-8\">\n        <h3 class=\"text-sm font-medium text-gray-900\">What's included</h3>\n        <ul role=\"list\" class=\"mt-4 space-y-4\">\n            <li class=\"flex space-x-3\">\n                <div class=\"flex justify-center items-center rounded-full bg-green-100 h-5 w-5\"><svg\n                        xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"\n                        class=\"h-3 w-3 flex-shrink-0 text-green-500\">\n                        <path fill-rule=\"evenodd\"\n                            d=\"M20.707 5.293a1 1 0 010 1.414l-11 11a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 15.586 19.293 5.293a1 1 0 011.414 0z\"\n                            clip-rule=\"evenodd\"></path>\n                    </svg>\n                </div>\n                <span class=\"text-sm text-gray-500\">5 workspaces</span>\n            </li>\n            <li class=\"flex space-x-3\">\n                <div class=\"flex justify-center items-center rounded-full bg-green-100 h-5 w-5\"><svg\n                        xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"\n                        class=\"h-3 w-3 flex-shrink-0 text-green-500\">\n                        <path fill-rule=\"evenodd\"\n                            d=\"M20.707 5.293a1 1 0 010 1.414l-11 11a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 15.586 19.293 5.293a1 1 0 011.414 0z\"\n                            clip-rule=\"evenodd\"></path>\n                    </svg>\n                </div>\n                <span class=\"text-sm text-gray-500\">Unlimited testimonials</span>\n            </li>\n        </ul>\n    </div>\n</div>"
+  }
+}

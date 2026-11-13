@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-grid-layout-3",
+  "type": "registry:ui",
+  "title": "Responsive grid layout",
+  "description": "Responsive grid layout - Créé par @datnt19213 sur TailwindFlex.",
+  "author": "@datnt19213 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-grid-layout-3.tsx",
+      "content": "/**\n * Component: Responsive grid layout\n * Author: @datnt19213 (https://tailwindflex.com/@datnt19213)\n * Source: https://tailwindflex.com/@datnt19213/responsive-grid-layout-3\n * Attribution: Créé par @datnt19213 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveGridLayout3() {\n  return (\n    <div>\n    <div className=\"mt-16 grid grid-cols-1 sm2 md3 lg4 xl5 2xl6 gap-4 p-4\">\r\n        <div className=\"bg-gray-100 p-4\">Item 1</div>\r\n        <div className=\"bg-gray-100 p-4\">Item 2</div>\r\n        <div className=\"bg-gray-100 p-4\">Item 3</div>\r\n        <div className=\"bg-gray-100 p-4\">Item 4</div>\r\n        <div className=\"bg-gray-100 p-4\">Item 5</div>\r\n        <div className=\"bg-gray-100 p-4\">Item 6</div>\r\n        <div className=\"bg-gray-100 p-4\">Item 7</div>\r\n        <div className=\"bg-gray-100 p-4\">Item 8</div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "grid",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@datnt19213",
+    "authorUrl": "https://tailwindflex.com/@datnt19213",
+    "sourceUrl": "https://tailwindflex.com/@datnt19213/responsive-grid-layout-3",
+    "mention": "Créé par @datnt19213 sur TailwindFlex",
+    "rawHtml": "<div class=\"mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 p-4\">\r\n    <div class=\"bg-gray-100 p-4\">Item 1</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 2</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 3</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 4</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 5</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 6</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 7</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 8</div>\r\n</div>"
+  }
+}

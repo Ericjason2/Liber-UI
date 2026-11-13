@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "coming-soon-page",
+  "type": "registry:ui",
+  "title": "Coming Soon Page",
+  "description": "Coming Soon Page - Créé par @conan-hilton sur TailwindFlex.",
+  "author": "@conan-hilton (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/coming-soon-page.tsx",
+      "content": "/**\n * Component: Coming Soon Page\n * Author: @conan-hilton (https://tailwindflex.com/@conan-hilton)\n * Source: https://tailwindflex.com/@conan-hilton/coming-soon-page\n * Attribution: Créé par @conan-hilton sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ComingSoonPage() {\n  return (\n    <div>\n    <div className=\"flex flex-col h-screen bg-center bg-cover bg-no-repeat bg-gray-100\">\n        <div\n            className=\"grid place-items-center w-4/5 mx-auto p-10 my-20 sm bg-white-600 border-4 border-indigo-600 bg-opacity-70 rounded-xl shadow-2xl space-y-5 text-center cursor-pointer\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"\n                className=\"h-24 w-24 text-indigo-600\" viewBox=\"0 0 16 16\">\n                <path\n                    d=\"M4.968 9.75a.5.5 0 1 0-.866.5A4.498 4.498 0 0 0 8 12.5a4.5 4.5 0 0 0 3.898-2.25.5.5 0 1 0-.866-.5A3.498 3.498 0 0 1 8 11.5a3.498 3.498 0 0 1-3.032-1.75zM7 5.116V5a1 1 0 0 0-1-1H3.28a1 1 0 0 0-.97 1.243l.311 1.242A2 2 0 0 0 4.561 8H5a2 2 0 0 0 1.994-1.839A2.99 2.99 0 0 1 8 6c.393 0 .74.064 1.006.161A2 2 0 0 0 11 8h.438a2 2 0 0 0 1.94-1.515l.311-1.242A1 1 0 0 0 12.72 4H10a1 1 0 0 0-1 1v.116A4.22 4.22 0 0 0 8 5c-.35 0-.69.04-1 .116z\">\n                </path>\n                <path d=\"M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-1 0A7 7 0 1 0 1 8a7 7 0 0 0 14 0z\"></path>\n            </svg>\n            <h1 className=\"text-4xl font-bold uppercase text-indigo-600 transition duration-500\">Coming Soon</h1>\n            <h2 className=\"text-xl text-gray-700 transition duration-500\">\n                We are almost there to introduce our new website to the world, in the meantime, you can follow us on social\n                networks to get the latest updates.\n            </h2>\n            <div className=\"grid grid-cols-2 md4 gap-4\">\n                <a href=\"https://www.facebook.com/\" title=\"Quicktoolz On Facebook\"\n                    className=\"md32 tracking-wide font-bold rounded border-2 border-indigo-500 hover hover600 hover600 shadow-md py-2 px-6 inline-flex items-center transition duration-500\">\n                    <span className=\"mx-auto\">Facebook</span>\n                </a>\n                <a href=\"https://twitter.com\" title=\"Quicktoolz On Twitter\"\n                    className=\"md32 tracking-wide font-bold rounded border-2 border-indigo-500 hover hover500 hover500 shadow-md py-2 px-6 inline-flex items-center transition duration-500\">\n                    <span className=\"mx-auto\">Twitter</span>\n                </a>\n                <a href=\"https://pinterest.com/\" title=\"Quicktoolz On Pinterest\"\n                    className=\"md32 tracking-wide font-bold rounded border-2 border-indigo-500 hover hover600 hover600 shadow-md py-2 px-6 inline-flex items-center transition duration-500\">\n                    <span className=\"mx-auto\">Pintrest</span>\n                </a>\n                <a href=\"https://www.reddit.com/\" title=\"Quicktoolz On Facebook\"\n                    className=\"md32 tracking-wide font-bold rounded border-2 border-indigo-500 hover hover600 hover600 shadow-md py-2 px-6 inline-flex items-center transition duration-500\">\n                    <span className=\"mx-auto\">Reddit</span>\n                </a>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@conan-hilton",
+    "authorUrl": "https://tailwindflex.com/@conan-hilton",
+    "sourceUrl": "https://tailwindflex.com/@conan-hilton/coming-soon-page",
+    "mention": "Créé par @conan-hilton sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-col h-screen bg-center bg-cover bg-no-repeat bg-gray-100\">\n    <div\n        class=\"grid place-items-center w-4/5 mx-auto p-10 my-20 sm:my-auto bg-white-600 border-4 border-indigo-600 bg-opacity-70 rounded-xl shadow-2xl space-y-5 text-center cursor-pointer\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"\n            class=\"h-24 w-24 text-indigo-600\" viewBox=\"0 0 16 16\">\n            <path\n                d=\"M4.968 9.75a.5.5 0 1 0-.866.5A4.498 4.498 0 0 0 8 12.5a4.5 4.5 0 0 0 3.898-2.25.5.5 0 1 0-.866-.5A3.498 3.498 0 0 1 8 11.5a3.498 3.498 0 0 1-3.032-1.75zM7 5.116V5a1 1 0 0 0-1-1H3.28a1 1 0 0 0-.97 1.243l.311 1.242A2 2 0 0 0 4.561 8H5a2 2 0 0 0 1.994-1.839A2.99 2.99 0 0 1 8 6c.393 0 .74.064 1.006.161A2 2 0 0 0 11 8h.438a2 2 0 0 0 1.94-1.515l.311-1.242A1 1 0 0 0 12.72 4H10a1 1 0 0 0-1 1v.116A4.22 4.22 0 0 0 8 5c-.35 0-.69.04-1 .116z\">\n            </path>\n            <path d=\"M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-1 0A7 7 0 1 0 1 8a7 7 0 0 0 14 0z\"></path>\n        </svg>\n        <h1 class=\"text-4xl font-bold uppercase text-indigo-600 transition duration-500\">Coming Soon</h1>\n        <h2 class=\"text-xl text-gray-700 transition duration-500\">\n            We are almost there to introduce our new website to the world, in the meantime, you can follow us on social\n            networks to get the latest updates.\n        </h2>\n        <div class=\"grid grid-cols-2 md:grid-cols-4 gap-4\">\n            <a href=\"https://www.facebook.com/\" title=\"Quicktoolz On Facebook\"\n                class=\"md:w-32 tracking-wide font-bold rounded border-2 border-indigo-500 hover:text-white hover:border-blue-600 hover:bg-blue-600 shadow-md py-2 px-6 inline-flex items-center transition duration-500\">\n                <span class=\"mx-auto\">Facebook</span>\n            </a>\n            <a href=\"https://twitter.com\" title=\"Quicktoolz On Twitter\"\n                class=\"md:w-32 tracking-wide font-bold rounded border-2 border-indigo-500 hover:text-white hover:border-blue-500 hover:bg-blue-500 shadow-md py-2 px-6 inline-flex items-center transition duration-500\">\n                <span class=\"mx-auto\">Twitter</span>\n            </a>\n            <a href=\"https://pinterest.com/\" title=\"Quicktoolz On Pinterest\"\n                class=\"md:w-32 tracking-wide font-bold rounded border-2 border-indigo-500 hover:text-white hover:border-red-600 hover:bg-red-600 shadow-md py-2 px-6 inline-flex items-center transition duration-500\">\n                <span class=\"mx-auto\">Pintrest</span>\n            </a>\n            <a href=\"https://www.reddit.com/\" title=\"Quicktoolz On Facebook\"\n                class=\"md:w-32 tracking-wide font-bold rounded border-2 border-indigo-500 hover:text-white hover:border-yellow-600 hover:bg-yellow-600 shadow-md py-2 px-6 inline-flex items-center transition duration-500\">\n                <span class=\"mx-auto\">Reddit</span>\n            </a>\n        </div>\n    </div>\n</div>"
+  }
+}

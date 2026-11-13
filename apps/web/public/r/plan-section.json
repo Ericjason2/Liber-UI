@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "plan-section",
+  "type": "registry:ui",
+  "title": "PLAN SECTION",
+  "description": "PLAN SECTION - Créé par @abdulbast sur TailwindFlex.",
+  "author": "@abdulbast (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/plan-section.tsx",
+      "content": "/**\n * Component: PLAN SECTION\n * Author: @abdulbast (https://tailwindflex.com/@abdulbast)\n * Source: https://tailwindflex.com/@abdulbast/plan-section\n * Attribution: Créé par @abdulbast sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PlanSection() {\n  return (\n    <div>\n    <section className=\"dark py-20\">\n      <h2 className=\" justify-start dark text-5xl font-bold  capitalize\">Ticket Options</h2>\n      <div className=\"mt-12 max-w-3xl lg5xl xl[1240px] mx-auto flex flex-col md items-center gap-5\">\n        <div\n          className=\"flex flex-col justify-between px-6 lg[35px] xl[50px] py-7 lg[50px] xl[70px] w-full sm96 h-[380px] lg[450px] xl[500px] bg-[#0147ff] rounded-[50px]\">\n          <div>\n            <h3 className=\"text-white dark text-2xl md lg2xl font-bold  uppercase leading-loose\">EARLY\n              BIRD PASS</h3>\n            <p className=\"text-white dark text-xl md lg font-normal  \">Limited time offer!</p>\n          </div>\n          <div>\n            <p className=\"text-white dark text-5xl font-bold  uppercase\">€299</p>\n            <button className=\" flex items-center justify-center gap-5 mt-10 w-full py-3 lg6  bg-[#dedee0] rounded-[100px]  text-[#1c1a1a] text-2xl md lg2xl font-medium \">Get your ticket<svg width=\"17\" height=\"17\" viewBox=\"0 0 17 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fillRule=\"evenodd\" clipRule=\"evenodd\" d=\"M4.89715 1.12408C4.89715 0.503267 5.41394 0 6.05142 0H15.8457C16.4832 0 17 0.503267 17 1.12408V10.6622C17 11.283 16.4832 11.7863 15.8457 11.7863C15.2082 11.7863 14.6915 11.283 14.6915 10.6622V3.83784L1.97046 16.2261C1.51969 16.6651 0.788848 16.6651 0.338078 16.2261C-0.112693 15.7871 -0.112693 15.0754 0.338078 14.6364L13.0591 2.24816H6.05142C5.41394 2.24816 4.89715 1.74489 4.89715 1.12408Z\" className=\" fill-black\"></path></svg></button>\n          </div>\n        </div>\n        <div\n          className=\"flex flex-col justify-between px-6 lg[35px] xl[50px] py-7 lg[50px] xl[70px] w-full sm96 h-[380px] lg[450px] xl[500px] border dark border-black dark[#000] rounded-[50px]\">\n          <div>\n            <h3 className=\" dark text-2xl md lg2xl font-bold  uppercase leading-loose\">STANDARD PASS\n            </h3>\n            <p className=\" dark text-xl md lg font-normal  \">Access to all sessions &amp; workshops\n            </p>\n          </div>\n          <div>\n            <p className=\" dark text-5xl font-bold  uppercase\">€399</p>\n            <button className=\" flex items-center justify-center gap-5 mt-10 w-full py-3 lg6  bg-[#dedee0] rounded-[100px]  text-[#1c1a1a] text-2xl md lg2xl font-medium \">Get your ticket<svg width=\"17\" height=\"17\" viewBox=\"0 0 17 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fillRule=\"evenodd\" clipRule=\"evenodd\" d=\"M4.89715 1.12408C4.89715 0.503267 5.41394 0 6.05142 0H15.8457C16.4832 0 17 0.503267 17 1.12408V10.6622C17 11.283 16.4832 11.7863 15.8457 11.7863C15.2082 11.7863 14.6915 11.283 14.6915 10.6622V3.83784L1.97046 16.2261C1.51969 16.6651 0.788848 16.6651 0.338078 16.2261C-0.112693 15.7871 -0.112693 15.0754 0.338078 14.6364L13.0591 2.24816H6.05142C5.41394 2.24816 4.89715 1.74489 4.89715 1.12408Z\" className=\" fill-black\"></path></svg></button>\n          </div>\n        </div>\n        <div\n          className=\"flex flex-col justify-between px-6 lg[35px] xl[50px] py-7 lg[50px] xl[70px] w-full sm96 h-[380px] lg[450px] xl[500px] border dark border-black dark[#000] rounded-[50px]\">\n          <div>\n            <h3 className=\" dark text-2xl md lg2xl font-bold  uppercase leading-loose\">VIP EXPERIENCE\n            </h3>\n            <p className=\" dark text-xl md lg font-normal  \">Includes exclusive speaker meetups &amp;\n              front-row seating</p>\n          </div>\n          <div>\n            <p className=\" dark text-5xl font-bold  uppercase\">€699</p>\n            <button className=\" flex items-center justify-center gap-5 mt-10 w-full py-3 lg6  bg-[#dedee0] rounded-[100px]  text-[#1c1a1a] text-2xl md lg2xl font-medium \">Get your ticket<svg width=\"17\" height=\"17\" viewBox=\"0 0 17 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fillRule=\"evenodd\" clipRule=\"evenodd\" d=\"M4.89715 1.12408C4.89715 0.503267 5.41394 0 6.05142 0H15.8457C16.4832 0 17 0.503267 17 1.12408V10.6622C17 11.283 16.4832 11.7863 15.8457 11.7863C15.2082 11.7863 14.6915 11.283 14.6915 10.6622V3.83784L1.97046 16.2261C1.51969 16.6651 0.788848 16.6651 0.338078 16.2261C-0.112693 15.7871 -0.112693 15.0754 0.338078 14.6364L13.0591 2.24816H6.05142C5.41394 2.24816 4.89715 1.74489 4.89715 1.12408Z\" className=\" fill-black\"></path></svg></button>\n          </div>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "pricing",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@abdulbast",
+    "authorUrl": "https://tailwindflex.com/@abdulbast",
+    "sourceUrl": "https://tailwindflex.com/@abdulbast/plan-section",
+    "mention": "Créé par @abdulbast sur TailwindFlex",
+    "rawHtml": "<section class=\"dark:bg-black py-20\">\n  <h2 class=\" justify-start dark:text-white text-5xl font-bold  capitalize\">Ticket Options</h2>\n  <div class=\"mt-12 max-w-3xl lg:max-w-5xl xl:max-w-[1240px] mx-auto flex flex-col md:flex-row items-center gap-5\">\n    <div\n      class=\"flex flex-col justify-between px-6 lg:px-[35px] xl:px-[50px] py-7 lg:py-[50px] xl:py-[70px] w-full sm:w-96 h-[380px] lg:h-[450px] xl:h-[500px] bg-[#0147ff] rounded-[50px]\">\n      <div>\n        <h3 class=\"text-white dark:text-white text-2xl md:text-xl lg:text-2xl font-bold  uppercase leading-loose\">EARLY\n          BIRD PASS</h3>\n        <p class=\"text-white dark:text-white text-xl md:text-lg lg:text-xl font-normal  \">Limited time offer!</p>\n      </div>\n      <div>\n        <p class=\"text-white dark:text-white text-5xl font-bold  uppercase\">€299</p>\n        <button class=\" flex items-center justify-center gap-5 mt-10 w-full py-3 lg:py-6  bg-[#dedee0] rounded-[100px]  text-[#1c1a1a] text-2xl md:text-lg lg:text-2xl font-medium \">Get your ticket<svg width=\"17\" height=\"17\" viewBox=\"0 0 17 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4.89715 1.12408C4.89715 0.503267 5.41394 0 6.05142 0H15.8457C16.4832 0 17 0.503267 17 1.12408V10.6622C17 11.283 16.4832 11.7863 15.8457 11.7863C15.2082 11.7863 14.6915 11.283 14.6915 10.6622V3.83784L1.97046 16.2261C1.51969 16.6651 0.788848 16.6651 0.338078 16.2261C-0.112693 15.7871 -0.112693 15.0754 0.338078 14.6364L13.0591 2.24816H6.05142C5.41394 2.24816 4.89715 1.74489 4.89715 1.12408Z\" class=\" fill-black\"></path></svg></button>\n      </div>\n    </div>\n    <div\n      class=\"flex flex-col justify-between px-6 lg:px-[35px] xl:px-[50px] py-7 lg:py-[50px] xl:py-[70px] w-full sm:w-96 h-[380px] lg:h-[450px] xl:h-[500px] border dark:border-white border-black dark:bg-[#000] rounded-[50px]\">\n      <div>\n        <h3 class=\" dark:text-white text-2xl md:text-xl lg:text-2xl font-bold  uppercase leading-loose\">STANDARD PASS\n        </h3>\n        <p class=\" dark:text-white text-xl md:text-lg lg:text-xl font-normal  \">Access to all sessions &amp; workshops\n        </p>\n      </div>\n      <div>\n        <p class=\" dark:text-white text-5xl font-bold  uppercase\">€399</p>\n        <button class=\" flex items-center justify-center gap-5 mt-10 w-full py-3 lg:py-6  bg-[#dedee0] rounded-[100px]  text-[#1c1a1a] text-2xl md:text-lg lg:text-2xl font-medium \">Get your ticket<svg width=\"17\" height=\"17\" viewBox=\"0 0 17 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4.89715 1.12408C4.89715 0.503267 5.41394 0 6.05142 0H15.8457C16.4832 0 17 0.503267 17 1.12408V10.6622C17 11.283 16.4832 11.7863 15.8457 11.7863C15.2082 11.7863 14.6915 11.283 14.6915 10.6622V3.83784L1.97046 16.2261C1.51969 16.6651 0.788848 16.6651 0.338078 16.2261C-0.112693 15.7871 -0.112693 15.0754 0.338078 14.6364L13.0591 2.24816H6.05142C5.41394 2.24816 4.89715 1.74489 4.89715 1.12408Z\" class=\" fill-black\"></path></svg></button>\n      </div>\n    </div>\n    <div\n      class=\"flex flex-col justify-between px-6 lg:px-[35px] xl:px-[50px] py-7 lg:py-[50px] xl:py-[70px] w-full sm:w-96 h-[380px] lg:h-[450px] xl:h-[500px] border dark:border-white border-black dark:bg-[#000] rounded-[50px]\">\n      <div>\n        <h3 class=\" dark:text-white text-2xl md:text-xl lg:text-2xl font-bold  uppercase leading-loose\">VIP EXPERIENCE\n        </h3>\n        <p class=\" dark:text-white text-xl md:text-lg lg:text-xl font-normal  \">Includes exclusive speaker meetups &amp;\n          front-row seating</p>\n      </div>\n      <div>\n        <p class=\" dark:text-white text-5xl font-bold  uppercase\">€699</p>\n        <button class=\" flex items-center justify-center gap-5 mt-10 w-full py-3 lg:py-6  bg-[#dedee0] rounded-[100px]  text-[#1c1a1a] text-2xl md:text-lg lg:text-2xl font-medium \">Get your ticket<svg width=\"17\" height=\"17\" viewBox=\"0 0 17 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4.89715 1.12408C4.89715 0.503267 5.41394 0 6.05142 0H15.8457C16.4832 0 17 0.503267 17 1.12408V10.6622C17 11.283 16.4832 11.7863 15.8457 11.7863C15.2082 11.7863 14.6915 11.283 14.6915 10.6622V3.83784L1.97046 16.2261C1.51969 16.6651 0.788848 16.6651 0.338078 16.2261C-0.112693 15.7871 -0.112693 15.0754 0.338078 14.6364L13.0591 2.24816H6.05142C5.41394 2.24816 4.89715 1.74489 4.89715 1.12408Z\" class=\" fill-black\"></path></svg></button>\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

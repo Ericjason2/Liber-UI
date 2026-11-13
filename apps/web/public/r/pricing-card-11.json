@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-card-11",
+  "type": "registry:ui",
+  "title": "Pricing card",
+  "description": "Pricing card - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pricing-card-11.tsx",
+      "content": "/**\n * Component: Pricing card\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/pricing-card-11\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PricingCard11() {\n  return (\n    <div>\n    \n    <div className=\"relative h-96 max-w-sm mx-auto mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl\">\n        <img src=\"https://assets.revolut.com/media/plans-tiles/Cards-Tiles-Standard.png\" alt=\"\" className=\"absolute w-full h-full inset-0 object-cover\" />\n        <div\n            className=\"absolute inset-0 w-full h-full rounded-3xl bg-black bg-opacity-0 transition duration-500 backdrop-filter group-hover20 group-hover\">\n        </div>\n        <div className=\"absolute inset-x-5 text-white\">\n            <h2 className=\"text-4xl font-semibold mb-2\">Standart</h2>\n            <p className=\"text-sm font-medium uppercase tracking-wider mb-6\">Free</p>\n            <p className=\"hidden group-hover\">Whether you're looking to save money spending abroad or sticking to\n                your\n                budget with our built-in budgeting, get more from your money with our Standard account.</p>\n        </div>\n        <button className=\"absolute inset-x-5 bottom-8 py-3 rounded-2xl font-semibold bg-white shadow-lg hidden transition duration-200 hover300 group-hover\">Learn more</button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "pricing",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/pricing-card-11",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<!-- original author https://twitter.com/semdzh -->\n<div class=\"relative h-96 max-w-sm mx-auto mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl\">\n    <img src=\"https://assets.revolut.com/media/plans-tiles/Cards-Tiles-Standard.png\" alt=\"\" class=\"absolute w-full h-full inset-0 object-cover\">\n    <div\n        class=\"absolute inset-0 w-full h-full rounded-3xl bg-black bg-opacity-0 transition duration-500 backdrop-filter group-hover:bg-opacity-20 group-hover:backdrop-blur\">\n    </div>\n    <div class=\"absolute inset-x-5 text-white\">\n        <h2 class=\"text-4xl font-semibold mb-2\">Standart</h2>\n        <p class=\"text-sm font-medium uppercase tracking-wider mb-6\">Free</p>\n        <p class=\"hidden group-hover:block\">Whether you're looking to save money spending abroad or sticking to\n            your\n            budget with our built-in budgeting, get more from your money with our Standard account.</p>\n    </div>\n    <button class=\"absolute inset-x-5 bottom-8 py-3 rounded-2xl font-semibold bg-white shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block\">Learn more</button>\n</div>"
+  }
+}

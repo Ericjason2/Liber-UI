@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "horizontal-post-card-with-image",
+  "type": "registry:ui",
+  "title": "Horizontal card with image",
+  "description": "Horizontal card with image - Créé par @amit sur TailwindFlex.",
+  "author": "@amit (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/horizontal-post-card-with-image.tsx",
+      "content": "/**\n * Component: Horizontal card with image\n * Author: @amit (https://tailwindflex.com/@amit)\n * Source: https://tailwindflex.com/@amit/horizontal-post-card-with-image\n * Attribution: Créé par @amit sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HorizontalPostCardWithImage() {\n  return (\n    <div>\n    <div className=\"max-w-2xl mx-auto mt-24\">\n        <div className=\"flex gap-3 bg-white border border-gray-300 rounded-xl overflow-hidden items-center justify-start\">\n    \n            <div className=\"relative w-32 h-32 flex-shrink-0\">\n                <img className=\"absolute left-0 top-0 w-full h-full object-cover object-center transition duration-50\" loading=\"lazy\" src=\"https://via.placeholder.com/150\" />\n            </div>\n    \n            <div className=\"flex flex-col gap-2 py-2\">\n    \n                <p className=\"text-xl font-bold\">Post title</p>\n    \n                <p className=\"text-gray-500\">\n                    Description of your post/article,\n                    Description of your post/article,\n                </p>\n    \n                <span className=\"flex items-center justify-start text-gray-500\">\n                    <svg className=\"w-4 h-4 mr-1 mt-1\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <path fillRule=\"evenodd\" d=\"M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z\" clipRule=\"evenodd\"></path>\n                    </svg>\n                    <a href=\"amitpachange.com\" target=\"_blank\">amitpachange.com</a>\n                </span>\n    \n            </div>\n    \n        </div>\n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@amit",
+    "authorUrl": "https://tailwindflex.com/@amit",
+    "sourceUrl": "https://tailwindflex.com/@amit/horizontal-post-card-with-image",
+    "mention": "Créé par @amit sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-2xl mx-auto mt-24\">\n    <div class=\"flex gap-3 bg-white border border-gray-300 rounded-xl overflow-hidden items-center justify-start\">\n\n        <div class=\"relative w-32 h-32 flex-shrink-0\">\n            <img class=\"absolute left-0 top-0 w-full h-full object-cover object-center transition duration-50\" loading=\"lazy\" src=\"https://via.placeholder.com/150\">\n        </div>\n\n        <div class=\"flex flex-col gap-2 py-2\">\n\n            <p class=\"text-xl font-bold\">Post title</p>\n\n            <p class=\"text-gray-500\">\n                Description of your post/article,\n                Description of your post/article,\n            </p>\n\n            <span class=\"flex items-center justify-start text-gray-500\">\n                <svg class=\"w-4 h-4 mr-1 mt-1\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path fill-rule=\"evenodd\" d=\"M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z\" clip-rule=\"evenodd\"></path>\n                </svg>\n                <a href=\"amitpachange.com\" target=\"_blank\">amitpachange.com</a>\n            </span>\n\n        </div>\n\n    </div>\n\n</div>"
+  }
+}

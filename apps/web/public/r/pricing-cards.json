@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-cards",
+  "type": "registry:ui",
+  "title": "Pricing cards",
+  "description": "Pricing cards - Créé par @noob_dev sur TailwindFlex.",
+  "author": "@noob_dev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pricing-cards.tsx",
+      "content": "/**\n * Component: Pricing cards\n * Author: @noob_dev (https://tailwindflex.com/@noob_dev)\n * Source: https://tailwindflex.com/@noob_dev/pricing-cards\n * Attribution: Créé par @noob_dev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PricingCards() {\n  return (\n    <div>\n    \n    \n    <div className=\"container m-auto\">\n        <div className=\"flex flex-wrap items-center justify-center w-full text-center\">\n            \n            <div className=\"w-full p-4 md1/2 lg1/3\">\n                <div className=\"flex flex-col rounded border-2 border-blue-700 bg-blue-700\">\n                    <div className=\"py-5 text-blue-700 bg-white\">\n                        <h3>Basic</h3>\n                        <p className=\"text-5xl font-bold\">\n                            $19.<span className=\"text-3xl\">95</span>\n                        </p>\n                        <p className=\"text-xs uppercase\">Per Month</p>\n                    </div>\n                    <div className=\"py-5 bg-blue-700 text-white rounded-b\">\n                        <p>Feature of the plan</p>\n                        <p>Another feature plan feature</p>\n                        <p>Yet another plan feature</p>\n                        <button className=\"px-5 py-2 mt-5 uppercase rounded bg-white text-blue-700 font-semibold hover900 hover\">\n                    Get Started\n                  </button>\n                    </div>\n                </div>\n            </div>\n            \n            <div className=\"w-full p-4 md1/2 lg1/3\">\n                <div className=\"flex flex-col rounded\">\n                    <div className=\"py-7 bg-blue-700 text-white rounded-t\">\n                        <p className=\"uppercase text-yellow-300 font-extrabold\">\n                            Most Popular\n                        </p>\n                        <h3>Standard</h3>\n                        <p className=\"text-5xl font-bold\">\n                            $49.<span className=\"text-3xl\">95</span>\n                        </p>\n                        <p className=\"text-xs uppercase\">Per Month</p>\n                    </div>\n                    <div>\n                        <div className=\"pt-1 pb-7 bg-blue-700 text-white rounded-b\">\n                            <p>Feature of the plan</p>\n                            <p>Another feature plan feature</p>\n                            <p>Yet another plan feature</p>\n                            <button className=\"px-5 py-2 mt-5 uppercase rounded bg-yellow-300 text-blue-700 font-semibold hover900 hover\">\n                      Get Started\n                    </button>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            \n            <div className=\"w-full p-4 md1/2 lg1/3\">\n                <div className=\"flex flex-col rounded border-2 border-blue-700 bg-blue-700\">\n                    <div className=\"py-5 text-blue-700 bg-white\">\n                        <h3>Advanced</h3>\n                        <p className=\"text-5xl font-bold\">\n                            $99.<span className=\"text-3xl\">95</span>\n                        </p>\n                        <p className=\"text-xs uppercase\">Per Month</p>\n                    </div>\n                    <div className=\"py-5 bg-blue-700 text-white rounded-b\">\n                        <p>Feature of the plan</p>\n                        <p>Another feature plan feature</p>\n                        <p>Yet another plan feature</p>\n                        <button className=\"px-5 py-2 mt-5 uppercase rounded bg-white text-blue-700 font-semibold hover900 hover\">\n                    Get Started\n                  </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@noob_dev",
+    "authorUrl": "https://tailwindflex.com/@noob_dev",
+    "sourceUrl": "https://tailwindflex.com/@noob_dev/pricing-cards",
+    "mention": "Créé par @noob_dev sur TailwindFlex",
+    "rawHtml": "<!-- source:https://gist.github.com/w3collective/7e7c89635fd932e5dae470b3516c1a99 -->\n\n<div class=\"container m-auto\">\n    <div class=\"flex flex-wrap items-center justify-center w-full text-center\">\n        <!-- basic plan -->\n        <div class=\"w-full p-4 md:w-1/2 lg:w-1/3\">\n            <div class=\"flex flex-col rounded border-2 border-blue-700 bg-blue-700\">\n                <div class=\"py-5 text-blue-700 bg-white\">\n                    <h3>Basic</h3>\n                    <p class=\"text-5xl font-bold\">\n                        $19.<span class=\"text-3xl\">95</span>\n                    </p>\n                    <p class=\"text-xs uppercase\">Per Month</p>\n                </div>\n                <div class=\"py-5 bg-blue-700 text-white rounded-b\">\n                    <p>Feature of the plan</p>\n                    <p>Another feature plan feature</p>\n                    <p>Yet another plan feature</p>\n                    <button class=\"px-5 py-2 mt-5 uppercase rounded bg-white text-blue-700 font-semibold hover:bg-blue-900 hover:text-white\">\n                Get Started\n              </button>\n                </div>\n            </div>\n        </div>\n        <!-- standard plan -->\n        <div class=\"w-full p-4 md:w-1/2 lg:w-1/3\">\n            <div class=\"flex flex-col rounded\">\n                <div class=\"py-7 bg-blue-700 text-white rounded-t\">\n                    <p class=\"uppercase text-yellow-300 font-extrabold\">\n                        Most Popular\n                    </p>\n                    <h3>Standard</h3>\n                    <p class=\"text-5xl font-bold\">\n                        $49.<span class=\"text-3xl\">95</span>\n                    </p>\n                    <p class=\"text-xs uppercase\">Per Month</p>\n                </div>\n                <div>\n                    <div class=\"pt-1 pb-7 bg-blue-700 text-white rounded-b\">\n                        <p>Feature of the plan</p>\n                        <p>Another feature plan feature</p>\n                        <p>Yet another plan feature</p>\n                        <button class=\"px-5 py-2 mt-5 uppercase rounded bg-yellow-300 text-blue-700 font-semibold hover:bg-blue-900 hover:text-white\">\n                  Get Started\n                </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- advanced plan -->\n        <div class=\"w-full p-4 md:w-1/2 lg:w-1/3\">\n            <div class=\"flex flex-col rounded border-2 border-blue-700 bg-blue-700\">\n                <div class=\"py-5 text-blue-700 bg-white\">\n                    <h3>Advanced</h3>\n                    <p class=\"text-5xl font-bold\">\n                        $99.<span class=\"text-3xl\">95</span>\n                    </p>\n                    <p class=\"text-xs uppercase\">Per Month</p>\n                </div>\n                <div class=\"py-5 bg-blue-700 text-white rounded-b\">\n                    <p>Feature of the plan</p>\n                    <p>Another feature plan feature</p>\n                    <p>Yet another plan feature</p>\n                    <button class=\"px-5 py-2 mt-5 uppercase rounded bg-white text-blue-700 font-semibold hover:bg-blue-900 hover:text-white\">\n                Get Started\n              </button>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-with-thumbnail",
+  "type": "registry:ui",
+  "title": "Card with Thumbnail",
+  "description": "Card with Thumbnail - Créé par @mr-robot sur TailwindFlex.",
+  "author": "@mr-robot (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-with-thumbnail.tsx",
+      "content": "/**\n * Component: Card with Thumbnail\n * Author: @mr-robot (https://tailwindflex.com/@mr-robot)\n * Source: https://tailwindflex.com/@mr-robot/card-with-thumbnail\n * Attribution: Créé par @mr-robot sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardWithThumbnail() {\n  return (\n    <div>\n    <div className=\"max-w-sm mb-6 md0 col-span-12 sm6 lg4 border p-4 rounded-lg shadow-lg\">\r\n        <a href=\"#\">\r\n            <img srcset=\"https://laravelnews.imgix.net/images/laravel9-1646792144.jpg?ixlib=php-3.3.1 1x,https://laravelnews.imgix.net/images/laravel9-1646792144.jpg?dpr=2&amp;ixlib=php-3.3.1 2x\" src=\"https://laravelnews.imgix.net/images/laravel9-1646792144.jpg?ixlib=php-3.3.1\" className=\"w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover\" alt=\"laravel9-1646792144.jpg\" />\r\n            <div className=\"flex items-center mb-3\">\r\n                <span className=\"inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-red-500\" >\r\n                   News\r\n                </span>\r\n                <p className=\"font-mono text-xs font-normal opacity-75 text-black\">September 28th, 2022</p>\r\n            </div>\r\n            <p className=\"font-display max-w-sm text-2xl font-bold leading-tight\">\r\n                <span className=\"link-underline link-underline-black text-black\">\r\n                  Laravel 9.32 Released\r\n                </span>\r\n            </p>\r\n        </a>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mr-robot",
+    "authorUrl": "https://tailwindflex.com/@mr-robot",
+    "sourceUrl": "https://tailwindflex.com/@mr-robot/card-with-thumbnail",
+    "mention": "Créé par @mr-robot sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-sm mb-6 md:md-0 col-span-12 sm:col-span-6 lg:col-span-4 border p-4 rounded-lg shadow-lg\">\r\n    <a href=\"#\">\r\n        <img srcset=\"https://laravelnews.imgix.net/images/laravel9-1646792144.jpg?ixlib=php-3.3.1 1x,https://laravelnews.imgix.net/images/laravel9-1646792144.jpg?dpr=2&amp;ixlib=php-3.3.1 2x\" src=\"https://laravelnews.imgix.net/images/laravel9-1646792144.jpg?ixlib=php-3.3.1\" class=\"w-full mb-4 rounded-lg shadow-none transition transition-shadow duration-500 ease-in-out group-hover:shadow-lg\" alt=\"laravel9-1646792144.jpg\">\r\n        <div class=\"flex items-center mb-3\">\r\n            <span class=\"inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-red-500\" >\r\n               News\r\n            </span>\r\n            <p class=\"font-mono text-xs font-normal opacity-75 text-black\">September 28th, 2022</p>\r\n        </div>\r\n        <p class=\"font-display max-w-sm text-2xl font-bold leading-tight\">\r\n            <span class=\"link-underline link-underline-black text-black\">\r\n              Laravel 9.32 Released\r\n            </span>\r\n        </p>\r\n    </a>\r\n</div>"
+  }
+}

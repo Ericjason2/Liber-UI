@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "profile-card-9",
+  "type": "registry:ui",
+  "title": "Profile Card",
+  "description": "Profile Card - Créé par @anubhavranjan sur TailwindFlex.",
+  "author": "@anubhavranjan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/profile-card-9.tsx",
+      "content": "/**\n * Component: Profile Card\n * Author: @anubhavranjan (https://tailwindflex.com/@anubhavranjan)\n * Source: https://tailwindflex.com/@anubhavranjan/profile-card-9\n * Attribution: Créé par @anubhavranjan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProfileCard9() {\n  return (\n    <div>\n    <div className=\"h-screen dark700 bg-gray-200 pt-12\">\n        <div className=\"max-w-sm mx-auto bg-white dark900 rounded-lg overflow-hidden shadow-lg\">\n            <div className=\"px-4 py-6\">\n                <div className=\"text-center my-4\">\n                    <img className=\"h-32 w-32 rounded-full border-4 border-white dark800 mx-auto my-4\"\n                            src=\"https://randomuser.me/api/portraits/men/29.jpg\" alt=\"\" />\n                    <div className=\"py-2\">\n                        <h3 className=\"font-bold text-2xl text-gray-800 dark\">Ronald Potter</h3>\n                        <h6 className=\"text-gray-300 dark mb-1\">@RonaldPotter</h6>\n                        <div className=\"inline-flex text-gray-700 dark300 items-center\">\n                            <svg className=\"h-5 w-5 text-gray-400 dark600 mr-1\" fill=\"currentColor\"\n                                xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\">\n                                <path className=\"\"\n                                    d=\"M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z\" />\n                            </svg>\n                            Glendale, BF\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "profile",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@anubhavranjan",
+    "authorUrl": "https://tailwindflex.com/@anubhavranjan",
+    "sourceUrl": "https://tailwindflex.com/@anubhavranjan/profile-card-9",
+    "mention": "Créé par @anubhavranjan sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen dark:bg-gray-700 bg-gray-200 pt-12\">\n    <div class=\"max-w-sm mx-auto bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg\">\n        <div class=\"px-4 py-6\">\n            <div class=\"text-center my-4\">\n                <img class=\"h-32 w-32 rounded-full border-4 border-white dark:border-gray-800 mx-auto my-4\"\n                        src=\"https://randomuser.me/api/portraits/men/29.jpg\" alt=\"\">\n                <div class=\"py-2\">\n                    <h3 class=\"font-bold text-2xl text-gray-800 dark:text-white\">Ronald Potter</h3>\n                    <h6 class=\"text-gray-300 dark:text-white mb-1\">@RonaldPotter</h6>\n                    <div class=\"inline-flex text-gray-700 dark:text-gray-300 items-center\">\n                        <svg class=\"h-5 w-5 text-gray-400 dark:text-gray-600 mr-1\" fill=\"currentColor\"\n                            xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\">\n                            <path class=\"\"\n                                d=\"M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z\" />\n                        </svg>\n                        Glendale, BF\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

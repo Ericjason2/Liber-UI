@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-card-with-toggle",
+  "type": "registry:ui",
+  "title": "Pricing Card with Toggle",
+  "description": "Pricing Card with Toggle - Créé par @paul-intay sur TailwindFlex.",
+  "author": "@paul-intay (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pricing-card-with-toggle.tsx",
+      "content": "/**\n * Component: Pricing Card with Toggle\n * Author: @paul-intay (https://tailwindflex.com/@paul-intay)\n * Source: https://tailwindflex.com/@paul-intay/pricing-card-with-toggle\n * Attribution: Créé par @paul-intay sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PricingCardWithToggle() {\n  return (\n    <div>\n    <div className=\"py-12\">\n      <div className=\"max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md2xl\">\n        <div className=\"md\">\n          <div className=\"md0\">\n            <img className=\"h-48 w-full object-cover md md48\" src=\"https://images.unsplash.com/photo-1515705576963-95cad62945b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80\" alt=\"Man looking at item at a store\" />\n          </div>\n          <div className=\"p-8\">\n            <div className=\"uppercase tracking-wide text-sm text-indigo-500 font-semibold\">Basic Plan</div>\n            <a href=\"#\" className=\"block mt-1 text-lg leading-tight font-medium text-black hover\">Best for small\n              teams</a>\n            <p className=\"mt-2 text-slate-500\">Includes all the core features, up to 5 users, and email support.</p>\n    \n            \n            <div className=\"mt-6 flex items-center\">\n              <span className=\"text-slate-600 mr-3\">Monthly</span>\n              <label htmlFor=\"toggle\" className=\"flex items-center cursor-pointer\">\n                <div className=\"relative\">\n                  <input type=\"checkbox\" id=\"toggle\" className=\"sr-only peer\" />\n                  <div className=\"block bg-slate-300 w-14 h-8 rounded-full transition-all duration-300 peer-checked500\"></div>\n                  <div className=\"dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition-all duration-300 peer-checked6\"></div>\n                </div>\n              </label>\n              <span className=\"text-slate-600 ml-3\">Yearly</span>\n            </div>\n    \n            \n            <div className=\"mt-4 monthly-price\">\n              <span className=\"text-3xl font-bold text-slate-900\">$29</span>\n              <span className=\"text-slate-500\">/mo</span>\n            </div>\n    \n            \n            <div className=\"mt-4 yearly-price hidden\">\n              <span className=\"text-3xl font-bold text-slate-900\">$290</span>\n              <span className=\"text-slate-500\">/yr</span>\n            </div>\n    \n            <button className=\"mt-8 w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover600 transition-colors duration-200\">\n              Choose Plan\n            </button>\n          </div>\n        </div>\n      </div>\n    </div>\n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@paul-intay",
+    "authorUrl": "https://tailwindflex.com/@paul-intay",
+    "sourceUrl": "https://tailwindflex.com/@paul-intay/pricing-card-with-toggle",
+    "mention": "Créé par @paul-intay sur TailwindFlex",
+    "rawHtml": "<div class=\"py-12\">\n  <div class=\"max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl\">\n    <div class=\"md:flex\">\n      <div class=\"md:shrink-0\">\n        <img class=\"h-48 w-full object-cover md:h-full md:w-48\" src=\"https://images.unsplash.com/photo-1515705576963-95cad62945b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80\" alt=\"Man looking at item at a store\">\n      </div>\n      <div class=\"p-8\">\n        <div class=\"uppercase tracking-wide text-sm text-indigo-500 font-semibold\">Basic Plan</div>\n        <a href=\"#\" class=\"block mt-1 text-lg leading-tight font-medium text-black hover:underline\">Best for small\n          teams</a>\n        <p class=\"mt-2 text-slate-500\">Includes all the core features, up to 5 users, and email support.</p>\n\n        <!-- Toggle -->\n        <div class=\"mt-6 flex items-center\">\n          <span class=\"text-slate-600 mr-3\">Monthly</span>\n          <label for=\"toggle\" class=\"flex items-center cursor-pointer\">\n            <div class=\"relative\">\n              <input type=\"checkbox\" id=\"toggle\" class=\"sr-only peer\" />\n              <div class=\"block bg-slate-300 w-14 h-8 rounded-full transition-all duration-300 peer-checked:bg-indigo-500\"></div>\n              <div class=\"dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition-all duration-300 peer-checked:translate-x-6\"></div>\n            </div>\n          </label>\n          <span class=\"text-slate-600 ml-3\">Yearly</span>\n        </div>\n\n        <!-- Pricing (Monthly) -->\n        <div class=\"mt-4 monthly-price\">\n          <span class=\"text-3xl font-bold text-slate-900\">$29</span>\n          <span class=\"text-slate-500\">/mo</span>\n        </div>\n\n        <!-- Pricing (Yearly) - Initially hidden -->\n        <div class=\"mt-4 yearly-price hidden\">\n          <span class=\"text-3xl font-bold text-slate-900\">$290</span>\n          <span class=\"text-slate-500\">/yr</span>\n        </div>\n\n        <button class=\"mt-8 w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition-colors duration-200\">\n          Choose Plan\n        </button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<script>\n  const toggle = document.getElementById('toggle');\n  const monthlyPrice = document.querySelector('.monthly-price');\n  const yearlyPrice = document.querySelector('.yearly-price');\n\n  toggle.addEventListener('change', () => {\n    monthlyPrice.classList.toggle('hidden');\n    yearlyPrice.classList.toggle('hidden');\n  });\n</script>"
+  }
+}

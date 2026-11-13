@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clean-cta",
+  "type": "registry:ui",
+  "title": "Clean CTA",
+  "description": "Clean CTA - Créé par @kofi-osei sur TailwindFlex.",
+  "author": "@kofi-osei (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/clean-cta.tsx",
+      "content": "/**\n * Component: Clean CTA\n * Author: @kofi-osei (https://tailwindflex.com/@kofi-osei)\n * Source: https://tailwindflex.com/@kofi-osei/clean-cta\n * Attribution: Créé par @kofi-osei sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CleanCta() {\n  return (\n    <div>\n    <div className=\"bg-red-500 py-12\">\n        <div className=\"max-w-5xl mx-auto px-4 sm6 lg8\">\n            <h2 className=\"text-4xl font-extrabold tracking-tight text-white sm5xl lg6xl\">\n                Are you panicking yet?\n            </h2>\n            <p className=\"mt-6 text-xl text-white max-w-3xl\">\n                Don't worry, we're here to help. Contact us now to get the support and guidance you need to get through this\n                crisis.\n            </p>\n            <div className=\"mt-10\">\n                <a href=\"#\"\n                    className=\"inline-block bg-white py-3 px-8 border border-transparent rounded-md text-base font-medium text-red-500 hover100 hover600\">\n                    Contact Us\n                </a>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@kofi-osei",
+    "authorUrl": "https://tailwindflex.com/@kofi-osei",
+    "sourceUrl": "https://tailwindflex.com/@kofi-osei/clean-cta",
+    "mention": "Créé par @kofi-osei sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-red-500 py-12\">\n    <div class=\"max-w-5xl mx-auto px-4 sm:px-6 lg:px-8\">\n        <h2 class=\"text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl\">\n            Are you panicking yet?\n        </h2>\n        <p class=\"mt-6 text-xl text-white max-w-3xl\">\n            Don't worry, we're here to help. Contact us now to get the support and guidance you need to get through this\n            crisis.\n        </p>\n        <div class=\"mt-10\">\n            <a href=\"#\"\n                class=\"inline-block bg-white py-3 px-8 border border-transparent rounded-md text-base font-medium text-red-500 hover:bg-gray-100 hover:text-red-600\">\n                Contact Us\n            </a>\n        </div>\n    </div>\n</div>"
+  }
+}

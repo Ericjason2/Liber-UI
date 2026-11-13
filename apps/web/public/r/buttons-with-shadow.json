@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "buttons-with-shadow",
+  "type": "registry:ui",
+  "title": "Buttons with shadow",
+  "description": "Buttons with shadow - Créé par @leon-bachmann sur TailwindFlex.",
+  "author": "@leon-bachmann (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/buttons-with-shadow.tsx",
+      "content": "/**\n * Component: Buttons with shadow\n * Author: @leon-bachmann (https://tailwindflex.com/@leon-bachmann)\n * Source: https://tailwindflex.com/@leon-bachmann/buttons-with-shadow\n * Attribution: Créé par @leon-bachmann sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonsWithShadow() {\n  return (\n    <div>\n    <div className=\"flex flex-col items-center justify-center gap-5 mt-6 md\"><a\n            className=\"inline-block w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm bg-gradient-to-r from-blue-600 to-blue-500 hover dark900 shadow-blue-200 hover2xl hover400 hover \"\n            href=\"\">Browse All Examples\n        </a>\n        <a className=\"inline-block w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all bg-gray-700 dark dark800 rounded-md shadow-xl sm hover900 hover shadow-neutral-300 dark700 hover2xl hover400 hover\"\n            href=\"\">Seach Examples\n        </a>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@leon-bachmann",
+    "authorUrl": "https://tailwindflex.com/@leon-bachmann",
+    "sourceUrl": "https://tailwindflex.com/@leon-bachmann/buttons-with-shadow",
+    "mention": "Créé par @leon-bachmann sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-col items-center justify-center gap-5 mt-6 md:flex-row\"><a\n        class=\"inline-block w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:bg-gradient-to-b dark:shadow-blue-900 shadow-blue-200 hover:shadow-2xl hover:shadow-blue-400 hover:-tranneutral-y-px \"\n        href=\"\">Browse All Examples\n    </a>\n    <a class=\"inline-block w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all bg-gray-700 dark:bg-white dark:text-gray-800 rounded-md shadow-xl sm:w-auto hover:bg-gray-900 hover:text-white shadow-neutral-300 dark:shadow-neutral-700 hover:shadow-2xl hover:shadow-neutral-400 hover:-tranneutral-y-px\"\n        href=\"\">Seach Examples\n    </a>\n</div>"
+  }
+}

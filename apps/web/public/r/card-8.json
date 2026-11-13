@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-8",
+  "type": "registry:ui",
+  "title": "Card",
+  "description": "Card - Créé par @Aman300 sur TailwindFlex.",
+  "author": "@Aman300 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-8.tsx",
+      "content": "/**\n * Component: Card\n * Author: @Aman300 (https://tailwindflex.com/@Aman300)\n * Source: https://tailwindflex.com/@Aman300/card-8\n * Attribution: Créé par @Aman300 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Card8() {\n  return (\n    <div>\n    <div className=\"overflow-hidden relative w-56 h-64 bg-sky-600 rounded-2xl text-gray-50 flex flex-col justify-end items-center gap-2\">\n      <svg y=\"0\" xmlns=\"http://www.w3.org/2000/svg\" x=\"0\" width=\"100\" viewBox=\"0 0 100 100\" preserveAspectRatio=\"xMidYMid meet\" height=\"100\" className=\"absolute opacity-30 -rotate-12 -bottom-12 -right-12 w-40 h-40 stroke-current\">\n        <path strokeWidth=\"8\" strokeLinejoin=\"round\" strokeLinecap=\"round\" fill=\"none\" d=\"M65.8,46.1V30.3a15.8,15.8,0,1,0-31.6,0V46.1M22.4,38.2H77.6l4,47.3H18.4Z\" className=\"svg-stroke-primary\">\n        </path>\n      </svg>\n      <div className=\"flex flex-col items-center\">\n        <p className=\"text-xl font-extrabold\">Discount</p>\n        <p className=\"relative text-xs inline-block after after[''] after2 after1/2 after200 after12 after0.5   before before[''] before14 before1/2 before200 before12 before0.5\">Up to</p>\n      </div>\n      <span className=\"font-extrabold text-7xl -skew-x-12 -skew-y-12 -mt-1 mb-5\">70%</span>\n      <button className=\"z-10 duration-500 font-bold px-4 py-2 bg-gray-50 text-sky-500 hover500 hover50\">Shop now</button>\n      <p className=\"text-xs mb-1\">*Variable prices</p>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "pricing",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@Aman300",
+    "authorUrl": "https://tailwindflex.com/@Aman300",
+    "sourceUrl": "https://tailwindflex.com/@Aman300/card-8",
+    "mention": "Créé par @Aman300 sur TailwindFlex",
+    "rawHtml": "<div class=\"overflow-hidden relative w-56 h-64 bg-sky-600 rounded-2xl text-gray-50 flex flex-col justify-end items-center gap-2\">\n  <svg y=\"0\" xmlns=\"http://www.w3.org/2000/svg\" x=\"0\" width=\"100\" viewBox=\"0 0 100 100\" preserveAspectRatio=\"xMidYMid meet\" height=\"100\" class=\"absolute opacity-30 -rotate-12 -bottom-12 -right-12 w-40 h-40 stroke-current\">\n    <path stroke-width=\"8\" stroke-linejoin=\"round\" stroke-linecap=\"round\" fill=\"none\" d=\"M65.8,46.1V30.3a15.8,15.8,0,1,0-31.6,0V46.1M22.4,38.2H77.6l4,47.3H18.4Z\" class=\"svg-stroke-primary\">\n    </path>\n  </svg>\n  <div class=\"flex flex-col items-center\">\n    <p class=\"text-xl font-extrabold\">Discount</p>\n    <p class=\"relative text-xs inline-block after:absolute after:content-[''] after:ml-2 after:top-1/2 after:bg-gray-200 after:w-12 after:h-0.5   before:absolute before:content-[''] before:-ml-14 before:top-1/2 before:bg-gray-200 before:w-12 before:h-0.5\">Up to</p>\n  </div>\n  <span class=\"font-extrabold text-7xl -skew-x-12 -skew-y-12 -mt-1 mb-5\">70%</span>\n  <button class=\"z-10 duration-500 font-bold px-4 py-2 bg-gray-50 text-sky-500 hover:bg-sky-500 hover:text-gray-50\">Shop now</button>\n  <p class=\"text-xs mb-1\">*Variable prices</p>\n</div>"
+  }
+}

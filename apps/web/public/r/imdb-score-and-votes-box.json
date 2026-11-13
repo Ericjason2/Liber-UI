@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "imdb-score-and-votes-box",
+  "type": "registry:ui",
+  "title": "IMDB score and votes box",
+  "description": "IMDB score and votes box - Créé par @dxgx82 sur TailwindFlex.",
+  "author": "@dxgx82 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/imdb-score-and-votes-box.tsx",
+      "content": "/**\n * Component: IMDB score and votes box\n * Author: @dxgx82 (https://tailwindflex.com/@dxgx82)\n * Source: https://tailwindflex.com/@dxgx82/imdb-score-and-votes-box\n * Attribution: Créé par @dxgx82 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ImdbScoreAndVotesBox() {\n  return (\n    <div>\n    <div className=\"flex flex-col items-center\">\n    <div className=\"imdb-box w-20\">\n      <div className=\"flex flex-col border rounded-md p-1 bg-yellow-400 w-full\">\n          <div className=\"imdb-score text-3xl text-center font-bold\">4.7</div>\n          <div className=\"imdb-title text-center\">IMDb</div>\n          <div className=\"imdb-voted text-xs\">45.7K votes</div>\n      </div>\n    </div>\n    <div className=\"text-xs text-gray-400 mt-5\">\n    Used in project <a className=\"font-bold\" href=\"https://tvfilmai.lt\" target=\"_blank\">tvfilmai.lt</a>\n    </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "button",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@dxgx82",
+    "authorUrl": "https://tailwindflex.com/@dxgx82",
+    "sourceUrl": "https://tailwindflex.com/@dxgx82/imdb-score-and-votes-box",
+    "mention": "Créé par @dxgx82 sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-col items-center\">\n<div class=\"imdb-box w-20\">\n  <div class=\"flex flex-col border rounded-md p-1 bg-yellow-400 w-full\">\n      <div class=\"imdb-score text-3xl text-center font-bold\">4.7</div>\n      <div class=\"imdb-title text-center\">IMDb</div>\n      <div class=\"imdb-voted text-xs\">45.7K votes</div>\n  </div>\n</div>\n<div class=\"text-xs text-gray-400 mt-5\">\nUsed in project <a class=\"font-bold\" href=\"https://tvfilmai.lt\" target=\"_blank\">tvfilmai.lt</a>\n</div>\n</div>"
+  }
+}

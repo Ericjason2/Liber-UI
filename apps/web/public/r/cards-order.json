@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cards-order",
+  "type": "registry:ui",
+  "title": "cards order",
+  "description": "cards order - Créé par @uwase-alliance sur TailwindFlex.",
+  "author": "@uwase-alliance (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cards-order.tsx",
+      "content": "/**\n * Component: cards order\n * Author: @uwase-alliance (https://tailwindflex.com/@uwase-alliance)\n * Source: https://tailwindflex.com/@uwase-alliance/cards-order\n * Attribution: Créé par @uwase-alliance sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardsOrder() {\n  return (\n    <div>\n    <div className=\"flex flex-wrap gap-6 justify-center mt-8\">\n      \n      <div className=\"border-4 border-[#00FF00] bg-white p-6 rounded-lg shadow-md w-64\">\n        <h3 className=\"font-bold text-xl mb-2 text-gray-800\">Green Border</h3>\n        <p className=\"text-gray-600\">Subtle white background with bold green border.</p>\n      </div>\n    \n      \n      <div className=\"bg-gradient-to-br from-blue-500 to-[#0000FF] text-white p-6 rounded-lg shadow-lg w-64\">\n        <h3 className=\"font-bold text-xl mb-2\">Blue Gradient</h3>\n        <p className=\"opacity-90\">Smooth fade to blue-100.</p>\n      </div>\n    \n      \n      <div className=\"bg-white border border-gray-300 p-6 rounded-lg shadow-sm w-64\">\n        <h3 className=\"font-bold text-xl mb-2 text-[#808080]\">Gray Text</h3>\n        <p className=\"text-gray-600\">Uses gray-100 for headings.</p>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@uwase-alliance",
+    "authorUrl": "https://tailwindflex.com/@uwase-alliance",
+    "sourceUrl": "https://tailwindflex.com/@uwase-alliance/cards-order",
+    "mention": "Créé par @uwase-alliance sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-wrap gap-6 justify-center mt-8\">\n  <!-- Green Border Card -->\n  <div class=\"border-4 border-[#00FF00] bg-white p-6 rounded-lg shadow-md w-64\">\n    <h3 class=\"font-bold text-xl mb-2 text-gray-800\">Green Border</h3>\n    <p class=\"text-gray-600\">Subtle white background with bold green border.</p>\n  </div>\n\n  <!-- Blue Gradient Card -->\n  <div class=\"bg-gradient-to-br from-blue-500 to-[#0000FF] text-white p-6 rounded-lg shadow-lg w-64\">\n    <h3 class=\"font-bold text-xl mb-2\">Blue Gradient</h3>\n    <p class=\"opacity-90\">Smooth fade to blue-100.</p>\n  </div>\n\n  <!-- Gray Text Card -->\n  <div class=\"bg-white border border-gray-300 p-6 rounded-lg shadow-sm w-64\">\n    <h3 class=\"font-bold text-xl mb-2 text-[#808080]\">Gray Text</h3>\n    <p class=\"text-gray-600\">Uses gray-100 for headings.</p>\n  </div>\n</div>"
+  }
+}

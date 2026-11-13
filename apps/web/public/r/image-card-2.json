@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "image-card-2",
+  "type": "registry:ui",
+  "title": "Image Card",
+  "description": "Image Card - Créé par @nickgirga sur TailwindFlex.",
+  "author": "@nickgirga (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/image-card-2.tsx",
+      "content": "/**\n * Component: Image Card\n * Author: @nickgirga (https://tailwindflex.com/@nickgirga)\n * Source: https://tailwindflex.com/@nickgirga/image-card-2\n * Attribution: Créé par @nickgirga sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ImageCard2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!-- Card -->\\n<a class=\\\"group max-w-xl relative overflow-hidden rounded-[20px] m-4\\\"\\n  href=\\\"https://unsplash.com/photos/aerial-view-of-green-trees-and-blue-sea-during-daytime-x-HCoTDGgZw\\\"\\n  target=\\\"_blank\\\"\\n  rel=\\\"noreferrer noopener\\\">\\n  <!-- Card Image -->\\n  <img class=\\\"ease-in-out duration-500 scale-[100%] group-hover:scale-[110%]\\\"\\n    src=\\\"https://images.unsplash.com/photo-1587974136998-4fcc253b6183?q=80&w=1710&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\\\"\\n    alt=\\\"Example Image\\\" />\\n  <!-- Card Info Shade -->\\n  <div class=\\\"w-full h-full absolute bottom-0 left-0 right-0 top-0 rounded-[20px] bg-black/25 ease-in-out duration-300 opacity-0 group-hover:opacity-100\\\">\\n    <!-- Title -->\\n    <h1 class=\\\"text-2xl sm:text-4xl font-bold text-white absolute bottom-[42px] sm:bottom-[48px] left-[24px]\\\">\\n      Title\\n    </h1>\\n    <!-- Description -->\\n    <h2 class=\\\"text-md sm:text-xl font-bold text-white absolute bottom-[24px] left-[24px] opacity-75\\\">\\n      Description\\n    </h2>\\n  </div>\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "button",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@nickgirga",
+    "authorUrl": "https://tailwindflex.com/@nickgirga",
+    "sourceUrl": "https://tailwindflex.com/@nickgirga/image-card-2",
+    "mention": "Créé par @nickgirga sur TailwindFlex",
+    "rawHtml": "<!-- Card -->\n<a class=\"group max-w-xl relative overflow-hidden rounded-[20px] m-4\"\n  href=\"https://unsplash.com/photos/aerial-view-of-green-trees-and-blue-sea-during-daytime-x-HCoTDGgZw\"\n  target=\"_blank\"\n  rel=\"noreferrer noopener\">\n  <!-- Card Image -->\n  <img class=\"ease-in-out duration-500 scale-[100%] group-hover:scale-[110%]\"\n    src=\"https://images.unsplash.com/photo-1587974136998-4fcc253b6183?q=80&w=1710&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n    alt=\"Example Image\" />\n  <!-- Card Info Shade -->\n  <div class=\"w-full h-full absolute bottom-0 left-0 right-0 top-0 rounded-[20px] bg-black/25 ease-in-out duration-300 opacity-0 group-hover:opacity-100\">\n    <!-- Title -->\n    <h1 class=\"text-2xl sm:text-4xl font-bold text-white absolute bottom-[42px] sm:bottom-[48px] left-[24px]\">\n      Title\n    </h1>\n    <!-- Description -->\n    <h2 class=\"text-md sm:text-xl font-bold text-white absolute bottom-[24px] left-[24px] opacity-75\">\n      Description\n    </h2>\n  </div>\n</div>"
+  }
+}

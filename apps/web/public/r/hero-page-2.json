@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-page-2",
+  "type": "registry:ui",
+  "title": "Hero_Page",
+  "description": "Hero_Page - Créé par @rupesh sur TailwindFlex.",
+  "author": "@rupesh (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-page-2.tsx",
+      "content": "/**\n * Component: Hero_Page\n * Author: @rupesh (https://tailwindflex.com/@rupesh)\n * Source: https://tailwindflex.com/@rupesh/hero-page-2\n * Attribution: Créé par @rupesh sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroPage2() {\n  return (\n    <div>\n    <section className=\"bg-white dark transition-colors duration-300\">\n      <div className=\"overflow-hidden py-10 2xl16 xl8\">\n        <div className=\"max-w-c-1390 mx-auto px-4 lg8\">\n          <div className=\"grid grid-cols-1 lg12 gap-14 lg32 items-center\">\n            \n            <div className=\"w-full lg6 xl5\">\n              <div className=\"text-sm font-medium bg-purple-600/10 p-2 px-4 rounded-full inline-block text-purple-600 dark/10 dark\">\n                Lorem, ipsum.\n              </div>\n    \n              <h1 className=\"py-8 text-5xl font-bold text-center lg text-purple-600 text-primary font-manrope leading-[70px]\">\n                Lorem, ipsum dolor.\n                <span className=\"text-black dark\">\n                  Lorem ipsum dolor sit amet consectetur.\n                </span>\n              </h1>\n    \n              <p className=\"text-lg text-gray-700 dark300 text-center lg\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem\n                quae delectus maxime saepe deleniti, doloribus adipisci\n                deserunt, dolor iste aut dolore eos, veritatis omnis ipsa alias\n                quo quia esse necessitatibus!\n              </p>\n            </div>\n    \n            \n            <div className=\"w-full lg6 xl7\">\n              <div className=\"w-full sm lg[60.8125rem] xl16\">\n                <img\n                  src=\"https://www.dropbox.com/scl/fi/fks0wousb5k8r3lnuf8gg/hero-10.jpg?rlkey=9k4mwab8hj3w0cexbpiiup2pp&st=tngw1wln&raw=1\"\n                  alt=\"Hero image\"\n                  className=\"md3xl object-cover\"\n                  style=\"width: 1000px; height: 700px;\"\n                />\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rupesh",
+    "authorUrl": "https://tailwindflex.com/@rupesh",
+    "sourceUrl": "https://tailwindflex.com/@rupesh/hero-page-2",
+    "mention": "Créé par @rupesh sur TailwindFlex",
+    "rawHtml": "<section class=\"bg-white dark:bg-black transition-colors duration-300\">\n  <div class=\"overflow-hidden py-10 2xl:py-16 xl:py-8\">\n    <div class=\"max-w-c-1390 mx-auto px-4 lg:px-8\">\n      <div class=\"grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-32 items-center\">\n        <!-- Left Column -->\n        <div class=\"w-full lg:col-span-6 xl:col-span-5\">\n          <div class=\"text-sm font-medium bg-purple-600/10 p-2 px-4 rounded-full inline-block text-purple-600 dark:bg-white/10 dark:text-white\">\n            Lorem, ipsum.\n          </div>\n\n          <h1 class=\"py-8 text-5xl font-bold text-center lg:text-left text-purple-600 text-primary font-manrope leading-[70px]\">\n            Lorem, ipsum dolor.\n            <span class=\"text-black dark:text-white\">\n              Lorem ipsum dolor sit amet consectetur.\n            </span>\n          </h1>\n\n          <p class=\"text-lg text-gray-700 dark:text-gray-300 text-center lg:text-left\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem\n            quae delectus maxime saepe deleniti, doloribus adipisci\n            deserunt, dolor iste aut dolore eos, veritatis omnis ipsa alias\n            quo quia esse necessitatibus!\n          </p>\n        </div>\n\n        <!-- Right Column -->\n        <div class=\"w-full lg:col-span-6 xl:col-span-7\">\n          <div class=\"w-full sm:w-auto lg:w-[60.8125rem] xl:ml-16\">\n            <img\n              src=\"https://www.dropbox.com/scl/fi/fks0wousb5k8r3lnuf8gg/hero-10.jpg?rlkey=9k4mwab8hj3w0cexbpiiup2pp&st=tngw1wln&raw=1\"\n              alt=\"Hero image\"\n              class=\"md:rounded-l-3xl object-cover\"\n              style=\"width: 1000px; height: 700px;\"\n            />\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

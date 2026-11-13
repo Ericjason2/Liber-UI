@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-22",
+  "type": "registry:ui",
+  "title": "Hero Section",
+  "description": "Hero Section - Créé par @amine-ghanim sur TailwindFlex.",
+  "author": "@amine-ghanim (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-22.tsx",
+      "content": "/**\n * Component: Hero Section\n * Author: @amine-ghanim (https://tailwindflex.com/@amine-ghanim)\n * Source: https://tailwindflex.com/@amine-ghanim/hero-section-22\n * Attribution: Créé par @amine-ghanim sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSection22() {\n  return (\n    <div>\n    <div className=\"flex flex-col h-screen\">\n      \n      <div className=\"text-[17px] px-[180px] py-[24px] bg-white flex justify-between items-center\">\n        \n        <div>\n          <h1 className=\"text-[36px] font-semibold\">\n            Jewelry <span className=\"text-[#C8815F]\">.</span>\n          </h1>\n        </div>\n        \n        <div>\n          <ul className=\"flex gap-[32px]\">\n            <li className=\"cursor-pointer\">Home</li>\n            <li className=\"cursor-pointer\">Shop</li>\n            <li className=\"cursor-pointer\">Products</li>\n            <li className=\"cursor-pointer\">Pages</li>\n            <li className=\"cursor-pointer\">Blog</li>\n            <li className=\"cursor-pointer\">Elements</li>\n          </ul>\n        </div>\n        \n        <div className=\"flex gap-[24px]\">\n          <i className=\"fas fa-search text-[24px] cursor-pointer\"></i>\n          <i className=\"fas fa-user text-[24px] cursor-pointer\"></i>\n          <i className=\"far fa-heart text-[24px] cursor-pointer\"></i>\n          <i className=\"fas fa-shopping-bag text-[24px] cursor-pointer\"></i>\n        </div>\n    \n      </div>\n    \n      \n      <div className=\" flex-1\">\n        <div\n          className=\" h-full bg-[url('https://res.cloudinary.com/dkt1t22qc/image/upload/v1742496031/Prestataires_Documents/dygqcsf4puzswq30yssx.png')] bg-cover bg-center bg-no-repeat flex items-center text-white pl-[137px]\">\n          <div className=\"flex flex-col\">\n            <div className=\"text-[34px] leading-8\">Every piece of</div>\n            <div className=\"text-[56px] font-medium mb-4\">Jewelry tells a story</div>\n            <p className=\"w-[397px] mb-[40px]\">\n              “A gentleman knows his appearance is very important that shows his\n              characteristic.” - Unknown\n            </p>\n            <div className=\"flex gap-[16px]\">\n              <a href=\"https://youtu.be/9tdewlwamFw?si=hSfImLajCynDL-2r\"> <button className=\"rounded-[4px] p-[12px] bg-white font-medium text-black\">\n                    Shop Now\n                </button></a>\n              <button className=\"rounded-[4px] p-[12px] border-2 border-white text-white font-medium\">\n                    New Items\n                </button>\n            </div>\n          </div>\n        </div>\n        <div className=\"mt-4\">\n          \n        </div>\n      </div>\n    \n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@amine-ghanim",
+    "authorUrl": "https://tailwindflex.com/@amine-ghanim",
+    "sourceUrl": "https://tailwindflex.com/@amine-ghanim/hero-section-22",
+    "mention": "Créé par @amine-ghanim sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-col h-screen\">\n  <!-- Navbar -->\n  <div class=\"text-[17px] px-[180px] py-[24px] bg-white flex justify-between items-center\">\n    <!-- Logo -->\n    <div>\n      <h1 class=\"text-[36px] font-semibold\">\n        Jewelry <span class=\"text-[#C8815F]\">.</span>\n      </h1>\n    </div>\n    <!-- Navigation -->\n    <div>\n      <ul class=\"flex gap-[32px]\">\n        <li class=\"cursor-pointer\">Home</li>\n        <li class=\"cursor-pointer\">Shop</li>\n        <li class=\"cursor-pointer\">Products</li>\n        <li class=\"cursor-pointer\">Pages</li>\n        <li class=\"cursor-pointer\">Blog</li>\n        <li class=\"cursor-pointer\">Elements</li>\n      </ul>\n    </div>\n    <!-- Icons -->\n    <div class=\"flex gap-[24px]\">\n      <i class=\"fas fa-search text-[24px] cursor-pointer\"></i>\n      <i class=\"fas fa-user text-[24px] cursor-pointer\"></i>\n      <i class=\"far fa-heart text-[24px] cursor-pointer\"></i>\n      <i class=\"fas fa-shopping-bag text-[24px] cursor-pointer\"></i>\n    </div>\n\n  </div>\n\n  <!-- Hero Section -->\n  <div class=\" flex-1\">\n    <div\n      class=\" h-full bg-[url('https://res.cloudinary.com/dkt1t22qc/image/upload/v1742496031/Prestataires_Documents/dygqcsf4puzswq30yssx.png')] bg-cover bg-center bg-no-repeat flex items-center text-white pl-[137px]\">\n      <div class=\"flex flex-col\">\n        <div class=\"text-[34px] leading-8\">Every piece of</div>\n        <div class=\"text-[56px] font-medium mb-4\">Jewelry tells a story</div>\n        <p class=\"w-[397px] mb-[40px]\">\n          “A gentleman knows his appearance is very important that shows his\n          characteristic.” - Unknown\n        </p>\n        <div class=\"flex gap-[16px]\">\n          <a href=\"https://youtu.be/9tdewlwamFw?si=hSfImLajCynDL-2r\"> <button class=\"rounded-[4px] p-[12px] bg-white font-medium text-black\">\n                Shop Now\n            </button></a>\n          <button class=\"rounded-[4px] p-[12px] border-2 border-white text-white font-medium\">\n                New Items\n            </button>\n        </div>\n      </div>\n    </div>\n    <div class=\"mt-4\">\n      <script type=\"text/javascript\" src=\"https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js\"\n        data-name=\"bmc-button\" data-slug=\"amine_gha10\" data-color=\"#FFDD00\" data-emoji=\"\" data-font=\"Bree\"\n        data-text=\"Buy me a coffee\" data-outline-color=\"#000000\" data-font-color=\"#000000\" data-coffee-color=\"#ffffff\">\n      </script>\n    </div>\n  </div>\n\n\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-with-hover-to-button-shadow",
+  "type": "registry:ui",
+  "title": "Button with hover to button shadow",
+  "description": "Button with hover to button shadow - Créé par @zayedhossain120 sur TailwindFlex.",
+  "author": "@zayedhossain120 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button-with-hover-to-button-shadow.tsx",
+      "content": "/**\n * Component: Button with hover to button shadow\n * Author: @zayedhossain120 (https://tailwindflex.com/@zayedhossain120)\n * Source: https://tailwindflex.com/@zayedhossain120/button-with-hover-to-button-shadow\n * Attribution: Créé par @zayedhossain120 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonWithHoverToButtonShadow() {\n  return (\n    <div>\n    <div className=\"h-screen w-full bg-[#262626] flex items-center justify-center\">\n      <button className=\"h-fit cursor-pointer py-2.5 px-4 rounded-full text-orange-500 border border-orange-500 hover\">\n        Zayed Hossain\n      </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@zayedhossain120",
+    "authorUrl": "https://tailwindflex.com/@zayedhossain120",
+    "sourceUrl": "https://tailwindflex.com/@zayedhossain120/button-with-hover-to-button-shadow",
+    "mention": "Créé par @zayedhossain120 sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen w-full bg-[#262626] flex items-center justify-center\">\n  <button class=\"h-fit cursor-pointer py-2.5 px-4 rounded-full text-orange-500 border border-orange-500 hover:shadow-button-shadow\">\n    Zayed Hossain\n  </button>\n</div>"
+  }
+}

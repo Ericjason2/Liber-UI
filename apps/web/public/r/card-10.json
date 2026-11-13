@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-10",
+  "type": "registry:ui",
+  "title": "card",
+  "description": "card - Créé par @makecomponents sur TailwindFlex.",
+  "author": "@makecomponents (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-10.tsx",
+      "content": "/**\n * Component: card\n * Author: @makecomponents (https://tailwindflex.com/@makecomponents)\n * Source: https://tailwindflex.com/@makecomponents/card-10\n * Attribution: Créé par @makecomponents sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Card10() {\n  return (\n    <div>\n    <div className=\"container mx-auto py-48\">\n            <div className=\"grid lge4 lg4 md2 mdsm2 sm1 lg6 lge6 md16 mdsm16 sm16 lg2 lge2 md2 mdsm2 sm2\">\n      \n              <div className=\"group relative\">\n                <div className=\"-top-12 left-[34%] absolute\">\n                    <img \n               src=\"https://makecomponents.com/Image/teams/Team001/person1.webp\"\n                className=\"rounded-full transition delay-200 group-hover[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]\"\n                 alt=\"Michael Thompson\" /> </div>\n                <div className=\"group-hover[#001f2e] transition delay-200 bg-[#bde9ff] pt-16 px-4 pb-4\">\n                  <h2 className=\" group-hover transition delay-200 text-[#001f2e] text-center text-2xl font-semibold\">\n                    David Nguyen\n                  </h2>\n                  <p className=\"group-hover transition delay-200 pb-10 text-[#001f2e] pt-4 leading-6 text-center text-base\">\n                    Lorem ipsum is placeholder text commonly used in the graphic,\n                    print, and publishing industries for previewing layouts and visual\n                    mockups\n                  </p>\n                </div>\n              </div>\n      \n              <div className=\"group relative\">\n                <div className=\"-top-12 left-[34%] absolute\">\n                  <img \n               src=\"https://makecomponents.com/Image/teams/Team001/person2.webp\"\n                className=\"rounded-full transition delay-200 group-hover[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]\"\n                 alt=\"Michael Thompson\" />\n                </div>\n                <div className=\"group-hover[#001f2e] transition delay-200 bg-[#bde9ff] pt-16 px-4 pb-4\">\n                  <h2 className=\" group-hover transition delay-200 text-[#001f2e] text-center text-2xl font-semibold\">\n                    Michael Thompson\n                  </h2>\n                  <p className=\"group-hover transition delay-200 pb-10 text-[#001f2e] pt-4 leading-6 text-center text-base\">\n                    Lorem ipsum is placeholder text commonly used in the graphic,\n                    print, and publishing industries for previewing layouts and visual\n                    mockups\n                  </p>\n                </div>\n              </div>\n      \n              <div className=\"group relative\">\n                <div className=\"-top-12 left-[34%] absolute\">\n                  <img   src=\"https://makecomponents.com/Image/teams/Team001/person3.webp\" className=\"rounded-full transition delay-200 group-hover[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]\" alt=\"Emily Parker\"/>\n                </div>\n                <div className=\"group-hover[#001f2e] transition delay-200 bg-[#bde9ff] pt-16 px-4 pb-4\">\n                  <h2 className=\" group-hover transition delay-200 text-[#001f2e] text-center text-2xl font-semibold\">\n                    Emily Parker\n                  </h2>\n                  <p className=\"group-hover transition delay-200 pb-10 text-[#001f2e] pt-4 leading-6 text-center text-base\">\n                    Lorem ipsum is placeholder text commonly used in the graphic,\n                    print, and publishing industries for previewing layouts and visual\n                    mockups\n                  </p>\n                </div>\n              </div>\n      \n              <div className=\"group relative\">\n                <div className=\"-top-12 left-[34%] absolute\">\n                  <img   src=\"https://makecomponents.com/Image/teams/Team001/person4.webp\"\n                  alt=\" James Anderson\" className=\"rounded-full transition delay-200 group-hover[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]\"/>\n                </div>\n                <div className=\"group-hover[#001f2e] transition delay-200 bg-[#bde9ff] pt-16 px-4 pb-4\">\n                  <h2 className=\" group-hover transition delay-200 text-[#001f2e] text-center text-2xl font-semibold\">\n                    James Anderson\n                  </h2>\n                  <p className=\"group-hover transition delay-200 pb-10 text-[#001f2e] pt-4 leading-6 text-center text-base\">\n                    Lorem ipsum is placeholder text commonly used in the graphic,\n                    print, and publishing industries for previewing layouts and visual\n                    mockups\n                  </p>\n                </div>\n              </div>\n      \n            </div>\n          </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@makecomponents",
+    "authorUrl": "https://tailwindflex.com/@makecomponents",
+    "sourceUrl": "https://tailwindflex.com/@makecomponents/card-10",
+    "mention": "Créé par @makecomponents sur TailwindFlex",
+    "rawHtml": "<div class=\"container mx-auto py-48\">\n        <div class=\"grid lge:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 lg:gap-6 lge:gap-6 md:gap-16 mdsm:gap-16 sm:gap-16 lg:px-2 lge:px-2 md:px-2 mdsm:px-2 sm:px-2\">\n  \n          <div class=\"group relative\">\n            <div class=\"-top-12 left-[34%] absolute\">\n                <img \n           src=\"https://makecomponents.com/Image/teams/Team001/person1.webp\"\n            class=\"rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]\"\n             alt=\"Michael Thompson\" /> </div>\n            <div class=\"group-hover:bg-[#001f2e] transition delay-200 bg-[#bde9ff] pt-16 px-4 pb-4\">\n              <h2 class=\" group-hover:text-white transition delay-200 text-[#001f2e] text-center text-2xl font-semibold\">\n                David Nguyen\n              </h2>\n              <p class=\"group-hover:text-white transition delay-200 pb-10 text-[#001f2e] pt-4 leading-6 text-center text-base\">\n                Lorem ipsum is placeholder text commonly used in the graphic,\n                print, and publishing industries for previewing layouts and visual\n                mockups\n              </p>\n            </div>\n          </div>\n  \n          <div class=\"group relative\">\n            <div class=\"-top-12 left-[34%] absolute\">\n              <img \n           src=\"https://makecomponents.com/Image/teams/Team001/person2.webp\"\n            class=\"rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]\"\n             alt=\"Michael Thompson\" />\n            </div>\n            <div class=\"group-hover:bg-[#001f2e] transition delay-200 bg-[#bde9ff] pt-16 px-4 pb-4\">\n              <h2 class=\" group-hover:text-white transition delay-200 text-[#001f2e] text-center text-2xl font-semibold\">\n                Michael Thompson\n              </h2>\n              <p class=\"group-hover:text-white transition delay-200 pb-10 text-[#001f2e] pt-4 leading-6 text-center text-base\">\n                Lorem ipsum is placeholder text commonly used in the graphic,\n                print, and publishing industries for previewing layouts and visual\n                mockups\n              </p>\n            </div>\n          </div>\n  \n          <div class=\"group relative\">\n            <div class=\"-top-12 left-[34%] absolute\">\n              <img   src=\"https://makecomponents.com/Image/teams/Team001/person3.webp\" class=\"rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]\" alt=\"Emily Parker\"/>\n            </div>\n            <div class=\"group-hover:bg-[#001f2e] transition delay-200 bg-[#bde9ff] pt-16 px-4 pb-4\">\n              <h2 class=\" group-hover:text-white transition delay-200 text-[#001f2e] text-center text-2xl font-semibold\">\n                Emily Parker\n              </h2>\n              <p class=\"group-hover:text-white transition delay-200 pb-10 text-[#001f2e] pt-4 leading-6 text-center text-base\">\n                Lorem ipsum is placeholder text commonly used in the graphic,\n                print, and publishing industries for previewing layouts and visual\n                mockups\n              </p>\n            </div>\n          </div>\n  \n          <div class=\"group relative\">\n            <div class=\"-top-12 left-[34%] absolute\">\n              <img   src=\"https://makecomponents.com/Image/teams/Team001/person4.webp\"\n              alt=\" James Anderson\" class=\"rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]\"/>\n            </div>\n            <div class=\"group-hover:bg-[#001f2e] transition delay-200 bg-[#bde9ff] pt-16 px-4 pb-4\">\n              <h2 class=\" group-hover:text-white transition delay-200 text-[#001f2e] text-center text-2xl font-semibold\">\n                James Anderson\n              </h2>\n              <p class=\"group-hover:text-white transition delay-200 pb-10 text-[#001f2e] pt-4 leading-6 text-center text-base\">\n                Lorem ipsum is placeholder text commonly used in the graphic,\n                print, and publishing industries for previewing layouts and visual\n                mockups\n              </p>\n            </div>\n          </div>\n  \n        </div>\n      </div>"
+  }
+}

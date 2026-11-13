@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "border-gradient",
+  "type": "registry:ui",
+  "title": "Border gradient",
+  "description": "Border gradient - Créé par @samuel33 sur TailwindFlex.",
+  "author": "@samuel33 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/border-gradient.tsx",
+      "content": "/**\n * Component: Border gradient\n * Author: @samuel33 (https://tailwindflex.com/@samuel33)\n * Source: https://tailwindflex.com/@samuel33/border-gradient\n * Attribution: Créé par @samuel33 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BorderGradient() {\n  return (\n    <div>\n    <div className=\"relative mx-auto max-w-md rounded-lg bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5 shadow-lg\">\r\n        <div className=\"bg-white p-7 rounded-md\">\r\n            <h1 className=\"font-bold text-xl mb-2\">Border gradient example</h1>\r\n            <p>Create beautfiul cards with gradient borders with Tailwind CSS.</p>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@samuel33",
+    "authorUrl": "https://tailwindflex.com/@samuel33",
+    "sourceUrl": "https://tailwindflex.com/@samuel33/border-gradient",
+    "mention": "Créé par @samuel33 sur TailwindFlex",
+    "rawHtml": "<div class=\"relative mx-auto max-w-md rounded-lg bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5 shadow-lg\">\r\n    <div class=\"bg-white p-7 rounded-md\">\r\n        <h1 class=\"font-bold text-xl mb-2\">Border gradient example</h1>\r\n        <p>Create beautfiul cards with gradient borders with Tailwind CSS.</p>\r\n    </div>\r\n</div>"
+  }
+}

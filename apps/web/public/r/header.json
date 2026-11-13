@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "header",
+  "type": "registry:ui",
+  "title": "header",
+  "description": "header - Créé par @aleksandr-bel sur TailwindFlex.",
+  "author": "@aleksandr-bel (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/header.tsx",
+      "content": "/**\n * Component: header\n * Author: @aleksandr-bel (https://tailwindflex.com/@aleksandr-bel)\n * Source: https://tailwindflex.com/@aleksandr-bel/header\n * Attribution: Créé par @aleksandr-bel sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Header() {\n  return (\n    <div>\n    <nav className=\"flex items-center justify-between bg-[#020d4b]\">\n      <h2 className=\"text-2xl font-bold text-gray-200\">Home</h2>\n      <div className=\"auth flex items-center\">\n        <button className=\"mr-4 rounded border border-gray-300 bg-transparent p-2 text-gray-200 hover100 hover700\">Sign in</button>\n        <button className=\"rounded bg-gray-900 px-3 py-2 text-gray-200 hover800 hover100\">Sign up for free</button>\n      </div>\n    </nav>\n    \n    <header className=\"h-48 border-t-2 bg-cover md\" style=\"background-image: url('https://www.autoscout24.de/assets/as24-home/images/brandboxes/de-DE/brand_campaign/size_xl.png.webp');\">\n      <div className=\"max-w-[60rem] mx-auto px-6 py-2\">\n        <div className=\"mt-20\">\n          <div className=\"items-center justify-between md\">\n            <div className=\"mr-auto hidden w-full md md1/2\" style=\"text-shadow: 0 20px 50px hsla(0,0%,0%,8);\">\n              <h1 className=\"text-4xl font-bold tracking-wide text-white\">Brand</h1>\n              <h2 className=\"text-2xl font-bold tracking-wide text-white\">Welcome <span className=\"text-gray-800\"> Aboard</span></h2>\n              <p className=\"text-gray-300\">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>\n              <span className=\"text-white\">Create New Account?<a className=\"ml-2 text-lg font-bold text-gray-900\" target=\"_blank\">Sign Up</a></span>\n            </div>\n            <div className=\"mt-6 w-full md\">\n              <div className=\"card mb-6 rounded-lg bg-white px-4 py-4 shadow-md\">\n                <form action=\"#\">\n                  <div className=\"flex items-center justify-center\">\n                    <h2 className=\"text-2xl font-bold tracking-wide\">Welcome back</h2>\n                  </div>\n                  <h2 className=\"mb-2 text-center text-xl font-semibold text-gray-800\">Sign In</h2>\n                  <input type=\"text\" className=\"mb-6 w-full rounded border border-gray-400 bg-gray-200 px-4 py-1 text-gray-700 placeholder-gray-700 focus focus\" placeholder=\"Email Address\" />\n                  <input type=\"password\" className=\"mb-4 w-full rounded border border-gray-400 bg-gray-200 px-4 py-1 text-gray-700 placeholder-gray-700 focus focus\" placeholder=\"Password\" />\n                  <div className=\"flex items-center justify-between\">\n                    <a className=\"text-gray-600\" target=\"_blank\">Forget Password?</a>\n                    <button className=\"rounded bg-gray-800 px-2 py-1 text-gray-200\">Sign In</button>\n                  </div>\n                </form>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </header>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@aleksandr-bel",
+    "authorUrl": "https://tailwindflex.com/@aleksandr-bel",
+    "sourceUrl": "https://tailwindflex.com/@aleksandr-bel/header",
+    "mention": "Créé par @aleksandr-bel sur TailwindFlex",
+    "rawHtml": "<nav class=\"flex items-center justify-between bg-[#020d4b]\">\n  <h2 class=\"text-2xl font-bold text-gray-200\">Home</h2>\n  <div class=\"auth flex items-center\">\n    <button class=\"mr-4 rounded border border-gray-300 bg-transparent p-2 text-gray-200 hover:bg-gray-100 hover:text-gray-700\">Sign in</button>\n    <button class=\"rounded bg-gray-900 px-3 py-2 text-gray-200 hover:bg-gray-800 hover:text-gray-100\">Sign up for free</button>\n  </div>\n</nav>\n\n<header class=\"h-48 border-t-2 bg-cover md:h-auto\" style=\"background-image: url('https://www.autoscout24.de/assets/as24-home/images/brandboxes/de-DE/brand_campaign/size_xl.png.webp');\">\n  <div class=\"max-w-[60rem] mx-auto px-6 py-2\">\n    <div class=\"mt-20\">\n      <div class=\"items-center justify-between md:flex\">\n        <div class=\"mr-auto hidden w-full md:block md:w-1/2\" style=\"text-shadow: 0 20px 50px hsla(0,0%,0%,8);\">\n          <h1 class=\"text-4xl font-bold tracking-wide text-white\">Brand</h1>\n          <h2 class=\"text-2xl font-bold tracking-wide text-white\">Welcome <span class=\"text-gray-800\"> Aboard</span></h2>\n          <p class=\"text-gray-300\">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>\n          <span class=\"text-white\">Create New Account?<a class=\"ml-2 text-lg font-bold text-gray-900\" target=\"_blank\">Sign Up</a></span>\n        </div>\n        <div class=\"mt-6 w-full md:max-w-md\">\n          <div class=\"card mb-6 rounded-lg bg-white px-4 py-4 shadow-md\">\n            <form action=\"#\">\n              <div class=\"flex items-center justify-center\">\n                <h2 class=\"text-2xl font-bold tracking-wide\">Welcome back</h2>\n              </div>\n              <h2 class=\"mb-2 text-center text-xl font-semibold text-gray-800\">Sign In</h2>\n              <input type=\"text\" class=\"mb-6 w-full rounded border border-gray-400 bg-gray-200 px-4 py-1 text-gray-700 placeholder-gray-700 focus:bg-white focus:outline-none\" placeholder=\"Email Address\" />\n              <input type=\"password\" class=\"mb-4 w-full rounded border border-gray-400 bg-gray-200 px-4 py-1 text-gray-700 placeholder-gray-700 focus:bg-white focus:outline-none\" placeholder=\"Password\" />\n              <div class=\"flex items-center justify-between\">\n                <a class=\"text-gray-600\" target=\"_blank\">Forget Password?</a>\n                <button class=\"rounded bg-gray-800 px-2 py-1 text-gray-200\">Sign In</button>\n              </div>\n            </form>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</header>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-to-action-9",
+  "type": "registry:ui",
+  "title": "Call to action",
+  "description": "Call to action - Créé par @simon-scheffer sur TailwindFlex.",
+  "author": "@simon-scheffer (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-to-action-9.tsx",
+      "content": "/**\n * Component: Call to action\n * Author: @simon-scheffer (https://tailwindflex.com/@simon-scheffer)\n * Source: https://tailwindflex.com/@simon-scheffer/call-to-action-9\n * Attribution: Créé par @simon-scheffer sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToAction9() {\n  return (\n    <div>\n    <section className=\"mt-12 lg24\">\n        <div className=\"bg-teal-500 text-white -skew-y-1\">\n            <div className=\"container mx-auto skew-y-1\">\n                <div className=\"flex flex-col items-center py-10 text-center lg20\">\n                    <div className=\"w-full px-4 lg1/2 lg0\">\n                        <div className=\"mb-8\">\n                            <h2 className=\"text-3xl lg4xl font-bold mb-3\">\n                                Looking for a solution?\n                            </h2>\n                            <p className=\"text-lg lg opacity-80\">\n                                Search the forum for the answer to your question\n                            </p>\n                        </div>\n    \n                        <div className=\"mb-10\">\n                            <div className=\"relative\">\n                                <div className=\"absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none\">\n                                    <svg className=\"w-4 h-4 text-gray-900\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\"\n                                        viewBox=\"0 0 24 24\" strokeWidth=\"1.5\" stroke=\"currentColor\" aria-hidden=\"true\">\n                                        <path strokeLinecap=\"round\" strokeLinejoin=\"round\"\n                                            d=\"M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z\">\n                                        </path>\n                                    </svg>\n                                </div>\n    \n                                <form action=\"#\" method=\"GET\">\n                                    <input type=\"search\" name=\"search\" placeholder=\"Search here for threads\" className=\"p-4 pl-10 text-gray-600 rounded w-full border-gray-100\" />\n                                </form>\n                            </div>\n                        </div>\n    \n                        <div className=\"text-lg\">\n                            <p>\n                                Can't find what you're looking for?<br className=\"sm\" />\n                                <a href=\"#\" className=\"border-b border-white pb-1\">\n                                    Create a new thread\n                                </a>\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@simon-scheffer",
+    "authorUrl": "https://tailwindflex.com/@simon-scheffer",
+    "sourceUrl": "https://tailwindflex.com/@simon-scheffer/call-to-action-9",
+    "mention": "Créé par @simon-scheffer sur TailwindFlex",
+    "rawHtml": "<section class=\"mt-12 lg:mt-24\">\n    <div class=\"bg-teal-500 text-white -skew-y-1\">\n        <div class=\"container mx-auto skew-y-1\">\n            <div class=\"flex flex-col items-center py-10 text-center lg:py-20\">\n                <div class=\"w-full px-4 lg:w-1/2 lg:px-0\">\n                    <div class=\"mb-8\">\n                        <h2 class=\"text-3xl lg:text-4xl font-bold mb-3\">\n                            Looking for a solution?\n                        </h2>\n                        <p class=\"text-lg lg:text-xl opacity-80\">\n                            Search the forum for the answer to your question\n                        </p>\n                    </div>\n\n                    <div class=\"mb-10\">\n                        <div class=\"relative\">\n                            <div class=\"absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none\">\n                                <svg class=\"w-4 h-4 text-gray-900\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\"\n                                    viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" aria-hidden=\"true\">\n                                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                                        d=\"M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z\">\n                                    </path>\n                                </svg>\n                            </div>\n\n                            <form action=\"#\" method=\"GET\">\n                                <input type=\"search\" name=\"search\" placeholder=\"Search here for threads\" class=\"p-4 pl-10 text-gray-600 rounded w-full border-gray-100\">\n                            </form>\n                        </div>\n                    </div>\n\n                    <div class=\"text-lg\">\n                        <p>\n                            Can't find what you're looking for?<br class=\"sm:hidden\">\n                            <a href=\"#\" class=\"border-b border-white pb-1\">\n                                Create a new thread\n                            </a>\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>"
+  }
+}

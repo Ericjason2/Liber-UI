@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "navbar",
+  "type": "registry:ui",
+  "title": "Navbar",
+  "description": "Navbar - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/navbar.tsx",
+      "content": "/**\n * Component: Navbar\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/navbar\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Navbar() {\n  return (\n    <div>\n    <div className=\"top-0 py-1 lg2 w-full bg-transparent lg z-50 dark900\">\n        <nav className=\"z-10 sticky top-0 left-0 right-0 max-w-4xl xl5xl mx-auto px-5 py-2.5 lg lg4\">\n            <div className=\"flex items-center justify-between\">\n                <button>\n                    <div className=\"flex items-center space-x-2\">\n                        <h2 className=\"text-black dark font-bold text-2xl\">Company</h2>\n                    </div>\n                </button>\n                <div className=\"hidden lg\">\n                    <ul className=\"flex space-x-10 text-base font-bold text-black/60 dark\">\n                        <li\n                            className=\"hover hover4 hover transition-all duration-100 ease-linear\">\n                            <a href=\"#\">Home</a>\n                        </li>\n                        <li\n                            className=\"hover hover4 hover transition-all duration-100 ease-linear\">\n                            <a href=\"#\">Our services</a>\n                        </li>\n                        <li\n                            className=\"hover hover4 hover transition-all duration-100 ease-linear\">\n                            <a href=\"#\">About</a>\n                        </li>\n                        <li\n                            className=\"hover hover4 hover transition-all duration-100 ease-linear\">\n                            <a href=\"#\">Contact</a>\n                        </li>\n                    </ul>\n                </div>\n                <div className=\"hidden lg lg gap-x-2\">\n                    <button className=\"flex items-center text-black dark justify-center px-6 py-2.5 font-semibold\">Sign up</button>\n                    <button className=\"flex items-center justify-center rounded-md bg-[#4A3BFF] text-white px-6 py-2.5 font-semibold hover hover transition duration-200\">Login</button>\n                </div>\n                <div className=\"flex items-center justify-center lg\">\n                    <button className=\"focus text-slate-200 dark\"><svg stroke=\"currentColor\" fill=\"currentColor\" strokeWidth=\"0\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" className=\"text-2xl text-slate-800 dark focus active110 active500\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path fillRule=\"evenodd\" d=\"M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z\" clipRule=\"evenodd\"></path></svg></button>\n                </div>\n            </div>\n        </nav>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/navbar",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<div class=\"top-0 py-1 lg:py-2 w-full bg-transparent lg:relative z-50 dark:bg-gray-900\">\n    <nav class=\"z-10 sticky top-0 left-0 right-0 max-w-4xl xl:max-w-5xl mx-auto px-5 py-2.5 lg:border-none lg:py-4\">\n        <div class=\"flex items-center justify-between\">\n            <button>\n                <div class=\"flex items-center space-x-2\">\n                    <h2 class=\"text-black dark:text-white font-bold text-2xl\">Company</h2>\n                </div>\n            </button>\n            <div class=\"hidden lg:block\">\n                <ul class=\"flex space-x-10 text-base font-bold text-black/60 dark:text-white\">\n                    <li\n                        class=\"hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear\">\n                        <a href=\"#\">Home</a>\n                    </li>\n                    <li\n                        class=\"hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear\">\n                        <a href=\"#\">Our services</a>\n                    </li>\n                    <li\n                        class=\"hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear\">\n                        <a href=\"#\">About</a>\n                    </li>\n                    <li\n                        class=\"hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear\">\n                        <a href=\"#\">Contact</a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"hidden lg:flex lg:items-center gap-x-2\">\n                <button class=\"flex items-center text-black dark:text-white justify-center px-6 py-2.5 font-semibold\">Sign up</button>\n                <button class=\"flex items-center justify-center rounded-md bg-[#4A3BFF] text-white px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200\">Login</button>\n            </div>\n            <div class=\"flex items-center justify-center lg:hidden\">\n                <button class=\"focus:outline-none text-slate-200 dark:text-white\"><svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" class=\"text-2xl text-slate-800 dark:text-white focus:outline-none active:scale-110 active:text-red-500\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" d=\"M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z\" clip-rule=\"evenodd\"></path></svg></button>\n            </div>\n        </div>\n    </nav>\n</div>"
+  }
+}

@@ -3,16 +3,16 @@
   "name": "show-user-details",
   "type": "registry:ui",
   "title": "Show user details",
-  "description": "Show user details Tailwind CSS component from TailwindFlex.",
-  "author": "lucas-m",
+  "description": "Show user details - Créé par @lucas-m sur TailwindFlex.",
+  "author": "@lucas-m (TailwindFlex)",
   "categories": [
-    "data-display"
+    "buttons"
   ],
   "dependencies": [],
   "files": [
     {
       "path": "ui/show-user-details.tsx",
-      "content": "import React from \"react\";\n\nexport function ShowUserDetails() {\n  return (\n    <div className=\"bg-white overflow-hidden shadow rounded-lg border\">\r\n    <div className=\"px-4 py-5 sm:px-6\">\r\n        <h3 className=\"text-lg leading-6 font-medium text-gray-900\">\r\n            User Profile\r\n        </h3>\r\n        <p className=\"mt-1 max-w-2xl text-sm text-gray-500\">\r\n            This is some information about the user.\r\n        </p>\r\n    </div>\r\n    <div className=\"border-t border-gray-200 px-4 py-5 sm:p-0\">\r\n        <dl className=\"sm:divide-y sm:divide-gray-200\">\r\n            <div className=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt className=\"text-sm font-medium text-gray-500\">\r\n                    Full name\r\n                </dt>\r\n                <dd className=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    John Doe\r\n                </dd>\r\n            </div>\r\n            <div className=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt className=\"text-sm font-medium text-gray-500\">\r\n                    Email address\r\n                </dt>\r\n                <dd className=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    johndoe@example.com\r\n                </dd>\r\n            </div>\r\n            <div className=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt className=\"text-sm font-medium text-gray-500\">\r\n                    Phone number\r\n                </dt>\r\n                <dd className=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    (123) 456-7890\r\n                </dd>\r\n            </div>\r\n            <div className=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt className=\"text-sm font-medium text-gray-500\">\r\n                    Address\r\n                </dt>\r\n                <dd className=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    123 Main St<br />\r\n                     Anytown, USA 12345\r\n                </dd>\r\n            </div>\r\n        </dl>\r\n    </div>\n</div>\n  );\n}",
+      "content": "/**\n * Component: Show user details\n * Author: @lucas-m (https://tailwindflex.com/@lucas-m)\n * Source: https://tailwindflex.com/@lucas-m/show-user-details\n * Attribution: Créé par @lucas-m sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ShowUserDetails() {\n  return (\n    <div>\n    <div className=\"bg-white overflow-hidden shadow rounded-lg border\">\r\n        <div className=\"px-4 py-5 sm6\">\r\n            <h3 className=\"text-lg leading-6 font-medium text-gray-900\">\r\n                User Profile\r\n            </h3>\r\n            <p className=\"mt-1 max-w-2xl text-sm text-gray-500\">\r\n                This is some information about the user.\r\n            </p>\r\n        </div>\r\n        <div className=\"border-t border-gray-200 px-4 py-5 sm0\">\r\n            <dl className=\"sm sm200\">\r\n                <div className=\"py-3 sm5 sm sm3 sm4 sm6\">\r\n                    <dt className=\"text-sm font-medium text-gray-500\">\r\n                        Full name\r\n                    </dt>\r\n                    <dd className=\"mt-1 text-sm text-gray-900 sm0 sm2\">\r\n                        John Doe\r\n                    </dd>\r\n                </div>\r\n                <div className=\"py-3 sm5 sm sm3 sm4 sm6\">\r\n                    <dt className=\"text-sm font-medium text-gray-500\">\r\n                        Email address\r\n                    </dt>\r\n                    <dd className=\"mt-1 text-sm text-gray-900 sm0 sm2\">\r\n                        johndoe.com\r\n                    </dd>\r\n                </div>\r\n                <div className=\"py-3 sm5 sm sm3 sm4 sm6\">\r\n                    <dt className=\"text-sm font-medium text-gray-500\">\r\n                        Phone number\r\n                    </dt>\r\n                    <dd className=\"mt-1 text-sm text-gray-900 sm0 sm2\">\r\n                        (123) 456-7890\r\n                    </dd>\r\n                </div>\r\n                <div className=\"py-3 sm5 sm sm3 sm4 sm6\">\r\n                    <dt className=\"text-sm font-medium text-gray-500\">\r\n                        Address\r\n                    </dt>\r\n                    <dd className=\"mt-1 text-sm text-gray-900 sm0 sm2\">\r\n                        123 Main St<br />\r\n                         Anytown, USA 12345\r\n                    </dd>\r\n                </div>\r\n            </dl>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
       "type": "registry:ui"
     }
   ],
@@ -20,7 +20,35 @@
     "kind": "component",
     "tags": [
       "profile",
-      "other"
-    ]
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@lucas-m",
+    "authorUrl": "https://tailwindflex.com/@lucas-m",
+    "sourceUrl": "https://tailwindflex.com/@lucas-m/show-user-details",
+    "mention": "Créé par @lucas-m sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white overflow-hidden shadow rounded-lg border\">\r\n    <div class=\"px-4 py-5 sm:px-6\">\r\n        <h3 class=\"text-lg leading-6 font-medium text-gray-900\">\r\n            User Profile\r\n        </h3>\r\n        <p class=\"mt-1 max-w-2xl text-sm text-gray-500\">\r\n            This is some information about the user.\r\n        </p>\r\n    </div>\r\n    <div class=\"border-t border-gray-200 px-4 py-5 sm:p-0\">\r\n        <dl class=\"sm:divide-y sm:divide-gray-200\">\r\n            <div class=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt class=\"text-sm font-medium text-gray-500\">\r\n                    Full name\r\n                </dt>\r\n                <dd class=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    John Doe\r\n                </dd>\r\n            </div>\r\n            <div class=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt class=\"text-sm font-medium text-gray-500\">\r\n                    Email address\r\n                </dt>\r\n                <dd class=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    johndoe@example.com\r\n                </dd>\r\n            </div>\r\n            <div class=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt class=\"text-sm font-medium text-gray-500\">\r\n                    Phone number\r\n                </dt>\r\n                <dd class=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    (123) 456-7890\r\n                </dd>\r\n            </div>\r\n            <div class=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt class=\"text-sm font-medium text-gray-500\">\r\n                    Address\r\n                </dt>\r\n                <dd class=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    123 Main St<br>\r\n                     Anytown, USA 12345\r\n                </dd>\r\n            </div>\r\n        </dl>\r\n    </div>\r\n</div>"
   }
 }

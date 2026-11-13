@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "product-card-e-commerce",
+  "type": "registry:ui",
+  "title": "Product Card for eCommerce",
+  "description": "Product Card for eCommerce - Créé par @andres-abarzua sur TailwindFlex.",
+  "author": "@andres-abarzua (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/product-card-e-commerce.tsx",
+      "content": "/**\n * Component: Product Card for eCommerce\n * Author: @andres-abarzua (https://tailwindflex.com/@andres-abarzua)\n * Source: https://tailwindflex.com/@andres-abarzua/product-card-e-commerce\n * Attribution: Créé par @andres-abarzua sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProductCardECommerce() {\n  return (\n    <div>\n    <div className=\"relative flex flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md max-w-xs m-4\">\n      <a href=\"#\" className=\"relative mx-3 mt-3 flex h-40 overflow-hidden rounded-xl\">\n        <img \n          src=\"https://administracion.dlds.cl/1762/1762.jpg\"\n          alt=\"Bong de vidrio 25cm\"\n          loading=\"lazy\"\n          className=\"object-contain w-full h-full\"\n        />\n      </a>\n      <div className=\"flex flex-col flex-grow mt-2 px-3 pb-3\">\n        <a href=\"/p/1/bong-vidrio-25cm\" className=\"block relative group\">\n          <h5 className=\"text-xs tracking-tight text-slate-900 font-bold flex items-center\">\n            Bubbler Kush - Bonglab\n            <span className=\"ml-1\"></span>\n          </h5>\n        </a>\n        <div className=\"mt-auto\">\n    \n          <div className=\"flex flex-col items-start\">\n            <span className=\"text-xl font-bold text-red-600\">\n              $24.900 Neto\n            </span>\n            <div className=\"flex items-center\">\n              <span className=\"text-lg text-gray-500 line-through\">\n                $29.900 Neto\n              </span>\n              <span className=\"bg-[#0CAA91] text-white text-xs font-bold px-2 py-0.5 rounded ml-1\">-17%</span>\n            </div>\n          </div>\n          <div className=\"flex justify-between items-center mt-3\">\n            <div className=\"flex items-center space-x-2\">\n              <button\n                className=\"bg-gray-200 px-2 py-1 rounded hover300 focus\"\n                disabled\n              >-</button>\n              <input\n                type=\"number\"\n                min=\"1\"\n                value=\"1\"\n                className=\"w-14 text-center border rounded focus\"\n                readonly\n              />\n              <button\n                className=\"bg-gray-200 px-2 py-1 rounded hover300 focus\"\n                disabled\n              >+</button>\n            </div>\n            <button\n              className=\"bg-[#0CAA91] text-white p-3 rounded-full flex items-center justify-center shadow-lg transform transition-transform duration-300 hover105 hover[#078c6d] focus\"\n              style=\"width: 50px; height: 50px;\"\n            >\n              <img src=\"https://www.freeiconspng.com/uploads/cart-icon-16.png\" alt=\"Carrito\" className=\"w-6 h-6\" />\n            </button>\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@andres-abarzua",
+    "authorUrl": "https://tailwindflex.com/@andres-abarzua",
+    "sourceUrl": "https://tailwindflex.com/@andres-abarzua/product-card-e-commerce",
+    "mention": "Créé par @andres-abarzua sur TailwindFlex",
+    "rawHtml": "<div class=\"relative flex flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md max-w-xs m-4\">\n  <a href=\"#\" class=\"relative mx-3 mt-3 flex h-40 overflow-hidden rounded-xl\">\n    <img \n      src=\"https://administracion.dlds.cl/1762/1762.jpg\"\n      alt=\"Bong de vidrio 25cm\"\n      loading=\"lazy\"\n      class=\"object-contain w-full h-full\"\n    />\n  </a>\n  <div class=\"flex flex-col flex-grow mt-2 px-3 pb-3\">\n    <a href=\"/p/1/bong-vidrio-25cm\" class=\"block relative group\">\n      <h5 class=\"text-xs tracking-tight text-slate-900 font-bold flex items-center\">\n        Bubbler Kush - Bonglab\n        <span class=\"ml-1\"></span>\n      </h5>\n    </a>\n    <div class=\"mt-auto\">\n\n      <div class=\"flex flex-col items-start\">\n        <span class=\"text-xl font-bold text-red-600\">\n          $24.900 Neto\n        </span>\n        <div class=\"flex items-center\">\n          <span class=\"text-lg text-gray-500 line-through\">\n            $29.900 Neto\n          </span>\n          <span class=\"bg-[#0CAA91] text-white text-xs font-bold px-2 py-0.5 rounded ml-1\">-17%</span>\n        </div>\n      </div>\n      <div class=\"flex justify-between items-center mt-3\">\n        <div class=\"flex items-center space-x-2\">\n          <button\n            class=\"bg-gray-200 px-2 py-1 rounded hover:bg-gray-300 focus:outline-none\"\n            disabled\n          >-</button>\n          <input\n            type=\"number\"\n            min=\"1\"\n            value=\"1\"\n            class=\"w-14 text-center border rounded focus:outline-none\"\n            readonly\n          />\n          <button\n            class=\"bg-gray-200 px-2 py-1 rounded hover:bg-gray-300 focus:outline-none\"\n            disabled\n          >+</button>\n        </div>\n        <button\n          class=\"bg-[#0CAA91] text-white p-3 rounded-full flex items-center justify-center shadow-lg transform transition-transform duration-300 hover:scale-105 hover:bg-[#078c6d] focus:outline-none\"\n          style=\"width: 50px; height: 50px;\"\n        >\n          <img src=\"https://www.freeiconspng.com/uploads/cart-icon-16.png\" alt=\"Carrito\" class=\"w-6 h-6\">\n        </button>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

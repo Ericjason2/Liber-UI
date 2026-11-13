@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "minimal-card",
+  "type": "registry:ui",
+  "title": "Minimal Card",
+  "description": "Minimal Card - Créé par @sameer sur TailwindFlex.",
+  "author": "@sameer (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/minimal-card.tsx",
+      "content": "/**\n * Component: Minimal Card\n * Author: @sameer (https://tailwindflex.com/@sameer)\n * Source: https://tailwindflex.com/@sameer/minimal-card\n * Attribution: Créé par @sameer sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function MinimalCard() {\n  return (\n    <div>\n    <div className=\"bg-white flex justify-center items-center w-screen h-screen p-5\">\n      <div className=\"shadow-md max-w-2xl p-3 rounded-lg dark600 dark200 mx-auto\">\n        <div className=\"bg-green-200 h-40 rounded-lg flex justify-center items-center text-gray-700\">Image</div>\n        <h1 className=\"text-xl sm2xl font-semibold p-3\">Card Heading</h1>\n        <p className=\"text-sm sm md font-medium px-3\">This is a small description of card</p>\n        <button className=\"bg-sky-300 font-medium p-2 text-gray-700 rounded w-full mt-3\">Button</button>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sameer",
+    "authorUrl": "https://tailwindflex.com/@sameer",
+    "sourceUrl": "https://tailwindflex.com/@sameer/minimal-card",
+    "mention": "Créé par @sameer sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white flex justify-center items-center w-screen h-screen p-5\">\n  <div class=\"shadow-md max-w-2xl p-3 rounded-lg dark:bg-gray-600 dark:text-gray-200 mx-auto\">\n    <div class=\"bg-green-200 h-40 rounded-lg flex justify-center items-center text-gray-700\">Image</div>\n    <h1 class=\"text-xl sm:text-2xl font-semibold p-3\">Card Heading</h1>\n    <p class=\"text-sm sm:text-md md:text-lg font-medium px-3\">This is a small description of card</p>\n    <button class=\"bg-sky-300 font-medium p-2 text-gray-700 rounded w-full mt-3\">Button</button>\n  </div>\n</div>"
+  }
+}

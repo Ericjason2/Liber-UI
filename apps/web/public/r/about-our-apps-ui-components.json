@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "about-our-apps-ui-components",
+  "type": "registry:ui",
+  "title": "About our apps UI Components",
+  "description": "About our apps UI Components - Créé par @alif-bima-pradana sur TailwindFlex.",
+  "author": "@alif-bima-pradana (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/about-our-apps-ui-components.tsx",
+      "content": "/**\n * Component: About our apps UI Components\n * Author: @alif-bima-pradana (https://tailwindflex.com/@alif-bima-pradana)\n * Source: https://tailwindflex.com/@alif-bima-pradana/about-our-apps-ui-components\n * Attribution: Créé par @alif-bima-pradana sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AboutOurAppsUiComponents() {\n  return (\n    <div>\n    <h1 className=\"text-3xl font-semibold text-center mx-auto mt-32\">About our apps</h1>\n    <p className=\"text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto\">\n        A visual collection of our most recent works - each piece crafted with intention, emotion and style.\n    </p>\n    <div className=\"relative max-w-5xl mx-auto grid grid-cols-1 md2 lg3 gap-20 px-8 md0 pt-16\">\n        <div className=\"size-[520px] -top-80 left-1/2 -translate-x-1/2 rounded-full absolute blur-[300px] -z-10 bg-[#FBFFE1]\"></div>\n        <div>\n            <div className=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n                <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/flashEmoji.png\" alt=\"\" />\n            </div>\n            <div className=\"mt-5 space-y-2\">\n                <h3 className=\"text-base font-medium text-slate-600\">Lightning-Fast Performance</h3>\n                <p className=\"text-sm text-slate-500\">Built with speed — minimal load times and optimized.</p>\n            </div>\n        </div>\n        <div>\n            <div className=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n                <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/colorsEmoji.png\" alt=\"\" />\n            </div>\n            <div className=\"mt-5 space-y-2\">\n                <h3 className=\"text-base font-medium text-slate-600\">Beautifully Designed Components</h3>\n                <p className=\"text-sm text-slate-500\">Modern, pixel-perfect UI components ready for any project.</p>\n            </div>\n        </div>\n        <div>\n            <div className=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n                <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/puzzelEmoji.png\" alt=\"\" />\n            </div>\n            <div className=\"mt-5 space-y-2\">\n                <h3 className=\"text-base font-medium text-slate-600\">Plug-and-Play Integration</h3>\n                <p className=\"text-sm text-slate-500\">Simple setup with support for React, Next.js and Tailwind css.</p>\n            </div>\n        </div>\n        <div>\n            <div className=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n                <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/bookEmoji.png\" alt=\"\" />\n            </div>\n            <div className=\"mt-5 space-y-2\">\n                <h3 className=\"text-base font-medium text-slate-600\">Clear & Comprehensive</h3>\n                <p className=\"text-sm text-slate-500\">Get started fast with usage examples, live previews and code.</p>\n            </div>\n        </div>\n        <div>\n            <div className=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n                <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/boxEmoji.png\" alt=\"\" />\n            </div>\n            <div className=\"mt-5 space-y-2\">\n                <h3 className=\"text-base font-medium text-slate-600\">Fully Customizable</h3>\n                <p className=\"text-sm text-slate-500\">Easily adapt styles, colors and layout to match your brand or product.</p>\n            </div>\n        </div>\n        <div>\n            <div className=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n                <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/brainEmoji.png\" alt=\"\" />\n            </div>\n            <div className=\"mt-5 space-y-2\">\n                <h3 className=\"text-base font-medium text-slate-600\">Accessibility First</h3>\n                <p className=\"text-sm text-slate-500\">Built with WCAG standards in mind to ensure inclusive user experiences.</p>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "grid",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@alif-bima-pradana",
+    "authorUrl": "https://tailwindflex.com/@alif-bima-pradana",
+    "sourceUrl": "https://tailwindflex.com/@alif-bima-pradana/about-our-apps-ui-components",
+    "mention": "Créé par @alif-bima-pradana sur TailwindFlex",
+    "rawHtml": "<h1 class=\"text-3xl font-semibold text-center mx-auto mt-32\">About our apps</h1>\n<p class=\"text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto\">\n    A visual collection of our most recent works - each piece crafted with intention, emotion and style.\n</p>\n<div class=\"relative max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 px-8 md:px-0 pt-16\">\n    <div class=\"size-[520px] -top-80 left-1/2 -translate-x-1/2 rounded-full absolute blur-[300px] -z-10 bg-[#FBFFE1]\"></div>\n    <div>\n        <div class=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/flashEmoji.png\" alt=\"\">\n        </div>\n        <div class=\"mt-5 space-y-2\">\n            <h3 class=\"text-base font-medium text-slate-600\">Lightning-Fast Performance</h3>\n            <p class=\"text-sm text-slate-500\">Built with speed — minimal load times and optimized.</p>\n        </div>\n    </div>\n    <div>\n        <div class=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/colorsEmoji.png\" alt=\"\">\n        </div>\n        <div class=\"mt-5 space-y-2\">\n            <h3 class=\"text-base font-medium text-slate-600\">Beautifully Designed Components</h3>\n            <p class=\"text-sm text-slate-500\">Modern, pixel-perfect UI components ready for any project.</p>\n        </div>\n    </div>\n    <div>\n        <div class=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/puzzelEmoji.png\" alt=\"\">\n        </div>\n        <div class=\"mt-5 space-y-2\">\n            <h3 class=\"text-base font-medium text-slate-600\">Plug-and-Play Integration</h3>\n            <p class=\"text-sm text-slate-500\">Simple setup with support for React, Next.js and Tailwind css.</p>\n        </div>\n    </div>\n    <div>\n        <div class=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/bookEmoji.png\" alt=\"\">\n        </div>\n        <div class=\"mt-5 space-y-2\">\n            <h3 class=\"text-base font-medium text-slate-600\">Clear & Comprehensive</h3>\n            <p class=\"text-sm text-slate-500\">Get started fast with usage examples, live previews and code.</p>\n        </div>\n    </div>\n    <div>\n        <div class=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/boxEmoji.png\" alt=\"\">\n        </div>\n        <div class=\"mt-5 space-y-2\">\n            <h3 class=\"text-base font-medium text-slate-600\">Fully Customizable</h3>\n            <p class=\"text-sm text-slate-500\">Easily adapt styles, colors and layout to match your brand or product.</p>\n        </div>\n    </div>\n    <div>\n        <div class=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/brainEmoji.png\" alt=\"\">\n        </div>\n        <div class=\"mt-5 space-y-2\">\n            <h3 class=\"text-base font-medium text-slate-600\">Accessibility First</h3>\n            <p class=\"text-sm text-slate-500\">Built with WCAG standards in mind to ensure inclusive user experiences.</p>\n        </div>\n    </div>\n</div>"
+  }
+}

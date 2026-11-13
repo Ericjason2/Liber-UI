@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-contact-us-section-3",
+  "type": "registry:ui",
+  "title": "Responsive contact us section",
+  "description": "Responsive contact us section - Créé par @geoffrey-callaghan sur TailwindFlex.",
+  "author": "@geoffrey-callaghan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-contact-us-section-3.tsx",
+      "content": "/**\n * Component: Responsive contact us section\n * Author: @geoffrey-callaghan (https://tailwindflex.com/@geoffrey-callaghan)\n * Source: https://tailwindflex.com/@geoffrey-callaghan/responsive-contact-us-section-3\n * Attribution: Créé par @geoffrey-callaghan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveContactUsSection3() {\n  return (\n    <div>\n    <section className=\"bg-white dark900\">\n      <div className=\"py-8 lg16 px-4 mx-auto max-w-screen-md\">\n          <h2 className=\"mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark\">Contact Us</h2>\n          <p className=\"mb-8 lg16 font-light text-center text-gray-500 dark400 sm\">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>\n        \n            <form className=\"space-y-8\" action=\"https://fabform.io/f/{form-id}\" method=\"post\">\n              <div>\n                  <label htmlFor=\"email\" className=\"block mb-2 text-sm font-medium text-gray-900 dark300\">Your email</label>\n                  <input type=\"email\" id=\"email\" className=\"shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus500 focus500 block w-full p-2.5 dark700 dark600 dark400 dark dark500 dark500 dark\" placeholder=\"name.com\" required />\n              </div>\n              <div>\n                  <label htmlFor=\"subject\" className=\"block mb-2 text-sm font-medium text-gray-900 dark300\">Subject</label>\n                  <input type=\"text\" id=\"subject\" className=\"block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus500 focus500 dark700 dark600 dark400 dark dark500 dark500 dark\" placeholder=\"Let us know how we can help you\" required />\n              </div>\n              <div className=\"sm2\">\n                  <label htmlFor=\"message\" className=\"block mb-2 text-sm font-medium text-gray-900 dark400\">Your message</label>\n                  <textarea id=\"message\" rows=\"6\" className=\"block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus500 focus500 dark700 dark600 dark400 dark dark500 dark500\" placeholder=\"Leave a comment...\"></textarea>\n              </div>\n              <button type=\"submit\" className=\"py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm hover800 focus4 focus focus300 dark600 dark700 dark800\">Send message</button>\n          <p>If you don't like using forms you can email us.  Get our email address here <a className=\"font-medium text-blue-600 dark500 hover\" href=\"https://veilmail.io/e/FkKh7o\">https://veilmail.io/e/FkKh7o</a></p>\n          </form>\n            <p className=\"leading-relaxed text-xl text-gray-900 mt-8\">\n                    We use VeilMail.io to <a className=\"font-medium text-blue-600 dark500 hover\" href=\"https://veilmail.io\">hide email address from spammers</a>\n                </p>\n      </div>\n      \n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@geoffrey-callaghan",
+    "authorUrl": "https://tailwindflex.com/@geoffrey-callaghan",
+    "sourceUrl": "https://tailwindflex.com/@geoffrey-callaghan/responsive-contact-us-section-3",
+    "mention": "Créé par @geoffrey-callaghan sur TailwindFlex",
+    "rawHtml": "<section class=\"bg-white dark:bg-gray-900\">\n  <div class=\"py-8 lg:py-16 px-4 mx-auto max-w-screen-md\">\n      <h2 class=\"mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white\">Contact Us</h2>\n      <p class=\"mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl\">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>\n    \n        <form class=\"space-y-8\" action=\"https://fabform.io/f/{form-id}\" method=\"post\">\n          <div>\n              <label for=\"email\" class=\"block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300\">Your email</label>\n              <input type=\"email\" id=\"email\" class=\"shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light\" placeholder=\"name@flowbite.com\" required>\n          </div>\n          <div>\n              <label for=\"subject\" class=\"block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300\">Subject</label>\n              <input type=\"text\" id=\"subject\" class=\"block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light\" placeholder=\"Let us know how we can help you\" required>\n          </div>\n          <div class=\"sm:col-span-2\">\n              <label for=\"message\" class=\"block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400\">Your message</label>\n              <textarea id=\"message\" rows=\"6\" class=\"block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500\" placeholder=\"Leave a comment...\"></textarea>\n          </div>\n          <button type=\"submit\" class=\"py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800\">Send message</button>\n      <p>If you don't like using forms you can email us.  Get our email address here <a class=\"font-medium text-blue-600 dark:text-blue-500 hover:underline\" href=\"https://veilmail.io/e/FkKh7o\">https://veilmail.io/e/FkKh7o</a></p>\n      </form>\n        <p class=\"leading-relaxed text-xl text-gray-900 mt-8\">\n                We use VeilMail.io to <a class=\"font-medium text-blue-600 dark:text-blue-500 hover:underline\" href=\"https://veilmail.io\">hide email address from spammers</a>\n            </p>\n  </div>\n  \n</section>"
+  }
+}

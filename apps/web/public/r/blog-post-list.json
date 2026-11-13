@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "blog-post-list",
+  "type": "registry:ui",
+  "title": "Blog Post List",
+  "description": "Blog Post List - Créé par @carlos sur TailwindFlex.",
+  "author": "@carlos (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/blog-post-list.tsx",
+      "content": "/**\n * Component: Blog Post List\n * Author: @carlos (https://tailwindflex.com/@carlos)\n * Source: https://tailwindflex.com/@carlos/blog-post-list\n * Attribution: Créé par @carlos sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BlogPostList() {\n  return (\n    <div>\n    <section className=\"bg-white dark900\">\n      \n      <div className=\"text-center py-10\">\n        <h1 className=\"text-4xl font-bold text-black dark mb-4\">Discover New Adventures</h1>\n        <p className=\"text-lg text-gray-600 dark400\">Explore, discover, and find inspiration through these exciting journeys.</p>\n      </div>\n    \n      \n      <div className=\"px-8 py-10 mx-auto lg sm md sm12 md16 lg20 sm16\">\n        <div className=\"grid gap-x-8 gap-y-12 sm16 md2 lg3\">\n          <div className=\"relative\">\n            <a href=\"#_\" className=\"block overflow-hidden group rounded-xl shadow-lg\">\n              <img src=\"https://images.unsplash.com/photo-1511497584788-876760111969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxmb3Jlc3R8ZW58MHwwfHx8MTcyNjkxODYzNHww&ixlib=rb-4.0.3&q=80&w=1080\" className=\"object-cover w-full h-56 transition-all duration-300 ease-out sm64 group-hover110\" alt=\"Adventure\" />\n            </a>\n            <div className=\"relative mt-5\">\n              <p className=\"uppercase font-semibold text-xs mb-2.5 text-purple-600\">September 10th 2023</p>\n              <a href=\"#\" className=\"block mb-3 hover\">\n                <h2 className=\"text-2xl font-bold leading-5 text-black dark transition-colors duration-200 hover700 dark400\">\n                  Journey to the Mountains\n                </h2>\n              </a>\n              <p className=\"mb-4 text-gray-700 dark300\">Escape the hustle and explore the serene beauty of the mountains. Discover the peace and adventure that awaits.</p>\n              <a href=\"#_\" className=\"font-medium underline text-purple-600 dark400\">Read More</a>\n            </div>\n          </div>\n    \n          <div className=\"relative\">\n            <a href=\"#_\" className=\"block overflow-hidden group rounded-xl shadow-lg\">\n              <img src=\"https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80\" className=\"object-cover w-full h-56 transition-all duration-300 ease-out sm64 group-hover110\" alt=\"Ocean\" />\n            </a>\n            <div className=\"relative mt-5\">\n              <p className=\"uppercase font-semibold text-xs mb-2.5 text-purple-600\">September 15th 2023</p>\n              <a href=\"#\" className=\"block mb-3 hover\">\n                <h2 className=\"text-2xl font-bold leading-5 text-black dark transition-colors duration-200 hover700 dark400\">\n                  Explore the Deep Oceans\n                </h2>\n              </a>\n              <p className=\"mb-4 text-gray-700 dark300\">Dive into the deep oceans and explore the beauty and mystery of the underwater world. A truly unforgettable experience.</p>\n              <a href=\"#_\" className=\"font-medium underline text-purple-600 dark400\">Read More</a>\n            </div>\n          </div>\n    \n          <div className=\"relative\">\n            <a href=\"#_\" className=\"block overflow-hidden group rounded-xl shadow-lg\">\n              <img src=\"https://images.unsplash.com/photo-1629112250823-3f091e001783?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxEZXNlcnQlMjBTYWZhcml8ZW58MHwwfHx8MTcyNjkxODcwOHww&ixlib=rb-4.0.3&q=80&w=1080\" className=\"object-cover w-full h-56 transition-all duration-300 ease-out sm64 group-hover110\" alt=\"Desert Adventure\" />\n            </a>\n            <div className=\"relative mt-5\">\n              <p className=\"uppercase font-semibold text-xs mb-2.5 text-purple-600\">October 5th 2023</p>\n              <a href=\"#\" className=\"block mb-3 hover\">\n                <h2 className=\"text-2xl font-bold leading-5 text-black dark transition-colors duration-200 hover700 dark400\">\n                  Desert Safari\n                </h2>\n              </a>\n              <p className=\"mb-4 text-gray-700 dark300\">Venture into the heart of the desert and experience the thrill of a safari amidst the dunes.</p>\n              <a href=\"#_\" className=\"font-medium underline text-purple-600 dark400\">Read More</a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "grid",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@carlos",
+    "authorUrl": "https://tailwindflex.com/@carlos",
+    "sourceUrl": "https://tailwindflex.com/@carlos/blog-post-list",
+    "mention": "Créé par @carlos sur TailwindFlex",
+    "rawHtml": "<section class=\"bg-white dark:bg-gray-900\">\n  <!-- Title Section -->\n  <div class=\"text-center py-10\">\n    <h1 class=\"text-4xl font-bold text-black dark:text-white mb-4\">Discover New Adventures</h1>\n    <p class=\"text-lg text-gray-600 dark:text-gray-400\">Explore, discover, and find inspiration through these exciting journeys.</p>\n  </div>\n\n  <!-- Content Section -->\n  <div class=\"px-8 py-10 mx-auto lg:max-w-screen-xl sm:max-w-xl md:max-w-full sm:px-12 md:px-16 lg:py-20 sm:py-16\">\n    <div class=\"grid gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-2 lg:grid-cols-3\">\n      <div class=\"relative\">\n        <a href=\"#_\" class=\"block overflow-hidden group rounded-xl shadow-lg\">\n          <img src=\"https://images.unsplash.com/photo-1511497584788-876760111969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxmb3Jlc3R8ZW58MHwwfHx8MTcyNjkxODYzNHww&ixlib=rb-4.0.3&q=80&w=1080\" class=\"object-cover w-full h-56 transition-all duration-300 ease-out sm:h-64 group-hover:scale-110\" alt=\"Adventure\">\n        </a>\n        <div class=\"relative mt-5\">\n          <p class=\"uppercase font-semibold text-xs mb-2.5 text-purple-600\">September 10th 2023</p>\n          <a href=\"#\" class=\"block mb-3 hover:underline\">\n            <h2 class=\"text-2xl font-bold leading-5 text-black dark:text-white transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-400\">\n              Journey to the Mountains\n            </h2>\n          </a>\n          <p class=\"mb-4 text-gray-700 dark:text-gray-300\">Escape the hustle and explore the serene beauty of the mountains. Discover the peace and adventure that awaits.</p>\n          <a href=\"#_\" class=\"font-medium underline text-purple-600 dark:text-purple-400\">Read More</a>\n        </div>\n      </div>\n\n      <div class=\"relative\">\n        <a href=\"#_\" class=\"block overflow-hidden group rounded-xl shadow-lg\">\n          <img src=\"https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80\" class=\"object-cover w-full h-56 transition-all duration-300 ease-out sm:h-64 group-hover:scale-110\" alt=\"Ocean\">\n        </a>\n        <div class=\"relative mt-5\">\n          <p class=\"uppercase font-semibold text-xs mb-2.5 text-purple-600\">September 15th 2023</p>\n          <a href=\"#\" class=\"block mb-3 hover:underline\">\n            <h2 class=\"text-2xl font-bold leading-5 text-black dark:text-white transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-400\">\n              Explore the Deep Oceans\n            </h2>\n          </a>\n          <p class=\"mb-4 text-gray-700 dark:text-gray-300\">Dive into the deep oceans and explore the beauty and mystery of the underwater world. A truly unforgettable experience.</p>\n          <a href=\"#_\" class=\"font-medium underline text-purple-600 dark:text-purple-400\">Read More</a>\n        </div>\n      </div>\n\n      <div class=\"relative\">\n        <a href=\"#_\" class=\"block overflow-hidden group rounded-xl shadow-lg\">\n          <img src=\"https://images.unsplash.com/photo-1629112250823-3f091e001783?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxEZXNlcnQlMjBTYWZhcml8ZW58MHwwfHx8MTcyNjkxODcwOHww&ixlib=rb-4.0.3&q=80&w=1080\" class=\"object-cover w-full h-56 transition-all duration-300 ease-out sm:h-64 group-hover:scale-110\" alt=\"Desert Adventure\">\n        </a>\n        <div class=\"relative mt-5\">\n          <p class=\"uppercase font-semibold text-xs mb-2.5 text-purple-600\">October 5th 2023</p>\n          <a href=\"#\" class=\"block mb-3 hover:underline\">\n            <h2 class=\"text-2xl font-bold leading-5 text-black dark:text-white transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-400\">\n              Desert Safari\n            </h2>\n          </a>\n          <p class=\"mb-4 text-gray-700 dark:text-gray-300\">Venture into the heart of the desert and experience the thrill of a safari amidst the dunes.</p>\n          <a href=\"#_\" class=\"font-medium underline text-purple-600 dark:text-purple-400\">Read More</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

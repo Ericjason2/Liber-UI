@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-15",
+  "type": "registry:ui",
+  "title": "Card",
+  "description": "Card - Créé par @deepaksharma sur TailwindFlex.",
+  "author": "@deepaksharma (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-15.tsx",
+      "content": "/**\n * Component: Card\n * Author: @deepaksharma (https://tailwindflex.com/@deepaksharma)\n * Source: https://tailwindflex.com/@deepaksharma/card-15\n * Attribution: Créé par @deepaksharma sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Card15() {\n  return (\n    <div>\n    <div className=\"max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden\">\n      \n      <img\n        className=\"w-full h-48 object-cover\"\n        src=\"https://via.placeholder.com/400x200\"\n        alt=\"Sample\"\n      />\n      \n      <div className=\"p-6\">\n        <h2 className=\"text-xl font-bold text-gray-800\">Card Title</h2>\n        <p className=\"mt-2 text-gray-600\">\n          This is a sample card component built with Tailwind CSS. You can easily customize it!\n        </p>\n        <button className=\"mt-4 px-4 py-2 bg-blue-600 text-white rounded hover700\">\n          Learn More\n        </button>\n      </div>\n    \n      \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@deepaksharma",
+    "authorUrl": "https://tailwindflex.com/@deepaksharma",
+    "sourceUrl": "https://tailwindflex.com/@deepaksharma/card-15",
+    "mention": "Créé par @deepaksharma sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden\">\n  <!-- Card Image -->\n  <img\n    class=\"w-full h-48 object-cover\"\n    src=\"https://via.placeholder.com/400x200\"\n    alt=\"Sample\"\n  />\n  <!-- Card Content -->\n  <div class=\"p-6\">\n    <h2 class=\"text-xl font-bold text-gray-800\">Card Title</h2>\n    <p class=\"mt-2 text-gray-600\">\n      This is a sample card component built with Tailwind CSS. You can easily customize it!\n    </p>\n    <button class=\"mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700\">\n      Learn More\n    </button>\n  </div>\n\n  \n</div>"
+  }
+}

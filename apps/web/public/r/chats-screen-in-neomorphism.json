@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "chats-screen-in-neomorphism",
+  "type": "registry:ui",
+  "title": "Chats Screen in neomorphism",
+  "description": "Chats Screen in neomorphism - Créé par @akram6t sur TailwindFlex.",
+  "author": "@akram6t (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/chats-screen-in-neomorphism.tsx",
+      "content": "/**\n * Component: Chats Screen in neomorphism\n * Author: @akram6t (https://tailwindflex.com/@akram6t)\n * Source: https://tailwindflex.com/@akram6t/chats-screen-in-neomorphism\n * Attribution: Créé par @akram6t sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ChatsScreenInNeomorphism() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Neomorphic Chat Screen</title>\\n    \\n    <style>\\n        .neo-shadow {\\n            box-shadow: 5px 5px 10px #d1d9e6, -5px -5px 10px #ffffff;\\n        }\\n        .neo-inset {\\n            box-shadow: inset 5px 5px 10px #d1d9e6, inset -5px -5px 10px #ffffff;\\n        }\\n    </style>\\n</head>\\n<body class=\\\"bg-gray-100 p-6\\\">\\n    <div class=\\\"max-w-md mx-auto bg-gray-100 rounded-xl neo-shadow p-6\\\">\\n        <h1 class=\\\"text-2xl font-bold mb-4\\\">Chats</h1>\\n        \\n        <div class=\\\"space-y-4\\\">\\n            <!-- Chat item -->\\n            <div class=\\\"flex items-center space-x-4 p-4 rounded-lg neo-shadow\\\">\\n                <div class=\\\"w-12 h-12 rounded-full neo-inset flex items-center justify-center\\\">\\n                    <span class=\\\"text-xl\\\">👤</span>\\n                </div>\\n                <div>\\n                    <h2 class=\\\"font-semibold\\\">John Doe</h2>\\n                    <p class=\\\"text-sm text-gray-600\\\">Hello, how are you?</p>\\n                </div>\\n            </div>\\n            \\n            <!-- Another chat item -->\\n            <div class=\\\"flex items-center space-x-4 p-4 rounded-lg neo-shadow\\\">\\n                <div class=\\\"w-12 h-12 rounded-full neo-inset flex items-center justify-center\\\">\\n                    <span class=\\\"text-xl\\\">👤</span>\\n                </div>\\n                <div>\\n                    <h2 class=\\\"font-semibold\\\">Jane Smith</h2>\\n                    <p class=\\\"text-sm text-gray-600\\\">Are we meeting today?</p>\\n                </div>\\n            </div>\\n        </div>\\n        \\n        <!-- New chat button -->\\n        <button class=\\\"mt-6 w-full py-2 rounded-lg neo-shadow hover:neo-inset transition-all duration-300 focus:outline-none\\\">\\n            New Chat\\n        </button>\\n    </div>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@akram6t",
+    "authorUrl": "https://tailwindflex.com/@akram6t",
+    "sourceUrl": "https://tailwindflex.com/@akram6t/chats-screen-in-neomorphism",
+    "mention": "Créé par @akram6t sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Neomorphic Chat Screen</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n    <style>\n        .neo-shadow {\n            box-shadow: 5px 5px 10px #d1d9e6, -5px -5px 10px #ffffff;\n        }\n        .neo-inset {\n            box-shadow: inset 5px 5px 10px #d1d9e6, inset -5px -5px 10px #ffffff;\n        }\n    </style>\n</head>\n<body class=\"bg-gray-100 p-6\">\n    <div class=\"max-w-md mx-auto bg-gray-100 rounded-xl neo-shadow p-6\">\n        <h1 class=\"text-2xl font-bold mb-4\">Chats</h1>\n        \n        <div class=\"space-y-4\">\n            <!-- Chat item -->\n            <div class=\"flex items-center space-x-4 p-4 rounded-lg neo-shadow\">\n                <div class=\"w-12 h-12 rounded-full neo-inset flex items-center justify-center\">\n                    <span class=\"text-xl\">👤</span>\n                </div>\n                <div>\n                    <h2 class=\"font-semibold\">John Doe</h2>\n                    <p class=\"text-sm text-gray-600\">Hello, how are you?</p>\n                </div>\n            </div>\n            \n            <!-- Another chat item -->\n            <div class=\"flex items-center space-x-4 p-4 rounded-lg neo-shadow\">\n                <div class=\"w-12 h-12 rounded-full neo-inset flex items-center justify-center\">\n                    <span class=\"text-xl\">👤</span>\n                </div>\n                <div>\n                    <h2 class=\"font-semibold\">Jane Smith</h2>\n                    <p class=\"text-sm text-gray-600\">Are we meeting today?</p>\n                </div>\n            </div>\n        </div>\n        \n        <!-- New chat button -->\n        <button class=\"mt-6 w-full py-2 rounded-lg neo-shadow hover:neo-inset transition-all duration-300 focus:outline-none\">\n            New Chat\n        </button>\n    </div>\n</body>\n</html>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "elegant-cards",
+  "type": "registry:ui",
+  "title": "Elegant Cards",
+  "description": "Elegant Cards - Créé par @nickgirga sur TailwindFlex.",
+  "author": "@nickgirga (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/elegant-cards.tsx",
+      "content": "/**\n * Component: Elegant Cards\n * Author: @nickgirga (https://tailwindflex.com/@nickgirga)\n * Source: https://tailwindflex.com/@nickgirga/elegant-cards\n * Attribution: Créé par @nickgirga sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ElegantCards() {\n  return (\n    <div>\n    \n    <div className=\"flex flex-col items-center gap-8 my-8\">\n    \n      \n      <div className=\"card\">\n        <h1 className=\"relative text-xl font-bold ml-8 mt-4 mb-2\">Favorite Food</h1>\n        <h2 className=\"relative text-base mx-6\">A criminal amount of ground beef and rice 💪🏽</h2>\n      </div>\n    \n      \n      <div className=\"card h-[52mm]\">\n        <h1 className=\"relative text-xl font-bold ml-8 mt-4 mb-2\">Premium Tier</h1>\n        <h2 className=\"relative text-base mx-6\">Remove ads, unlock all features, instant support, and more.</h2>\n        <div className=\"flex flex-row gap-2 justify-self-end m-4\">\n          <button className=\"btn hover[var(--color-base)] active[var(--color-base-darker)]\">More Info</button>\n          <button className=\"btn btn-primary\">Pay</button>\n        </div>\n      </div>\n    \n      \n      <a className=\"card h-[76mm]\"\n        href=\"https://unsplash.com/photos/aerial-view-of-village-on-mountain-cliff-during-orange-sunset-cYrMQA7a3Wc\"\n        target=\"_blank\"\n        rel=\"noreferrer noopener\">\n        <img className=\"rounded-2xl\"\n          src=\"https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n          alt=\"Italy\"\n        />\n        <h1 className=\"relative text-xl font-bold mt-4 mb-2 ml-8\">Italy</h1>\n        <h2 className=\"relative text-base mx-6\">A very pretty picture that was taken in Italy.</h2>\n      </a>\n    \n      \n      <a className=\"group card h-[42mm] relative\"\n        href=\"https://unsplash.com/photos/green-trees-covered-island-cB4Uqoc9D9k\"\n        target=\"_blank\"\n        rel=\"noreferrer noopener\">\n        <img className=\"rounded-2xl sm[110%] transition duration-800\"\n          src=\"https://images.unsplash.com/photo-1504019347908-b45f9b0b8dd5?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n          alt=\"Spain\"\n        />\n        <div className=\"w-full h-full absolute bottom-0 left-0 right-0 top-0 rounded-[20px] bg-black/25 transition duration-800 opacity-100 sm0 sm100\">\n          <h1 className=\"text-2xl font-bold text-white absolute mt-[24mm] mx-[24px]\">\n            Spain\n          </h1>\n          <h2 className=\"text-md font-bold text-white absolute mt-[32mm] mx-[24px] opacity-75\">\n            Beautiful water in Spain\n          </h2>\n        </div>\n      </a>\n    \n      \n      <div className=\"card h-[75mm]\">\n        <video controls autoplay muted className=\"w-full rounded-2xl\">\n          <source src=\"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4\" type=\"video/mp4\" />\n          Your web browser does not natively support video playback.\n        </video>\n        <h1 className=\"relative text-xl font-bold mt-4 mb-2 ml-8\">Big Buck Bunny</h1>\n        <h2 className=\"relative text-base mx-6\">That bunny is very upset with that squirrel for hurting those butterflies.</h2>\n      </div>\n    \n      \n      <a className=\"group card h-[89mm]\"\n        href=\"https://unsplash.com/photos/round-white-watch-with-white-band-2cFZ_FB08UM\"\n        target=\"_blank\"\n        rel=\"noreferrer noopener\">\n        <div className=\"flex rounded-2xl h-[42mm] overflow-hidden\">\n          <img className=\"w-full sm[120%] transition duration-800\"\n            src=\"https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1699&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n            alt=\"Smartwatch\"\n          />\n        </div>\n        <h1 className=\"relative text-xl font-bold mt-4 mb-2 ml-8\">Smartwatch</h1>\n        <h2 className=\"relative text-base mx-6\">It's got the time and notifications and stuff I guess.</h2>\n        <div className=\"flex flex-row gap-2 ml-4 mt-4\">\n          <span className=\"badge badge-primary\">Hardware</span>\n          <span className=\"badge badge-secondary\">Watch</span>\n          <span className=\"badge bg-[var(--color-base)]\">Fake</span>\n        </div>\n      </a>\n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@nickgirga",
+    "authorUrl": "https://tailwindflex.com/@nickgirga",
+    "sourceUrl": "https://tailwindflex.com/@nickgirga/elegant-cards",
+    "mention": "Créé par @nickgirga sur TailwindFlex",
+    "rawHtml": "<!-- Main Container -->\n<div class=\"flex flex-col items-center gap-8 my-8\">\n\n  <!-- Text card -->\n  <div class=\"card\">\n    <h1 class=\"relative text-xl font-bold ml-8 mt-4 mb-2\">Favorite Food</h1>\n    <h2 class=\"relative text-base mx-6\">A criminal amount of ground beef and rice 💪🏽</h2>\n  </div>\n\n  <!-- Button card -->\n  <div class=\"card h-[52mm]\">\n    <h1 class=\"relative text-xl font-bold ml-8 mt-4 mb-2\">Premium Tier</h1>\n    <h2 class=\"relative text-base mx-6\">Remove ads, unlock all features, instant support, and more.</h2>\n    <div class=\"flex flex-row gap-2 justify-self-end m-4\">\n      <button class=\"btn hover:bg-[var(--color-base)] active:bg-[var(--color-base-darker)]\">More Info</button>\n      <button class=\"btn btn-primary\">Pay</button>\n    </div>\n  </div>\n\n  <!-- (Basic) Image card -->\n  <a class=\"card h-[76mm]\"\n    href=\"https://unsplash.com/photos/aerial-view-of-village-on-mountain-cliff-during-orange-sunset-cYrMQA7a3Wc\"\n    target=\"_blank\"\n    rel=\"noreferrer noopener\">\n    <img class=\"rounded-2xl\"\n      src=\"https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n      alt=\"Italy\"\n    />\n    <h1 class=\"relative text-xl font-bold mt-4 mb-2 ml-8\">Italy</h1>\n    <h2 class=\"relative text-base mx-6\">A very pretty picture that was taken in Italy.</h2>\n  </a>\n\n  <!-- Immersive image card -->\n  <a class=\"group card h-[42mm] relative\"\n    href=\"https://unsplash.com/photos/green-trees-covered-island-cB4Uqoc9D9k\"\n    target=\"_blank\"\n    rel=\"noreferrer noopener\">\n    <img class=\"rounded-2xl sm:group-hover:scale-[110%] transition duration-800\"\n      src=\"https://images.unsplash.com/photo-1504019347908-b45f9b0b8dd5?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n      alt=\"Spain\"\n    />\n    <div class=\"w-full h-full absolute bottom-0 left-0 right-0 top-0 rounded-[20px] bg-black/25 transition duration-800 opacity-100 sm:opacity-0 sm:group-hover:opacity-100\">\n      <h1 class=\"text-2xl font-bold text-white absolute mt-[24mm] mx-[24px]\">\n        Spain\n      </h1>\n      <h2 class=\"text-md font-bold text-white absolute mt-[32mm] mx-[24px] opacity-75\">\n        Beautiful water in Spain\n      </h2>\n    </div>\n  </a>\n\n  <!-- Video card -->\n  <div class=\"card h-[75mm]\">\n    <video controls autoplay muted class=\"w-full rounded-2xl\">\n      <source src=\"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4\" type=\"video/mp4\">\n      Your web browser does not natively support video playback.\n    </video>\n    <h1 class=\"relative text-xl font-bold mt-4 mb-2 ml-8\">Big Buck Bunny</h1>\n    <h2 class=\"relative text-base mx-6\">That bunny is very upset with that squirrel for hurting those butterflies.</h2>\n  </div>\n\n  <!-- Product card -->\n  <a class=\"group card h-[89mm]\"\n    href=\"https://unsplash.com/photos/round-white-watch-with-white-band-2cFZ_FB08UM\"\n    target=\"_blank\"\n    rel=\"noreferrer noopener\">\n    <div class=\"flex rounded-2xl h-[42mm] overflow-hidden\">\n      <img class=\"w-full sm:group-hover:scale-[120%] transition duration-800\"\n        src=\"https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1699&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n        alt=\"Smartwatch\"\n      />\n    </div>\n    <h1 class=\"relative text-xl font-bold mt-4 mb-2 ml-8\">Smartwatch</h1>\n    <h2 class=\"relative text-base mx-6\">It's got the time and notifications and stuff I guess.</h2>\n    <div class=\"flex flex-row gap-2 ml-4 mt-4\">\n      <span class=\"badge badge-primary\">Hardware</span>\n      <span class=\"badge badge-secondary\">Watch</span>\n      <span class=\"badge bg-[var(--color-base)]\">Fake</span>\n    </div>\n  </a>\n\n</div>"
+  }
+}

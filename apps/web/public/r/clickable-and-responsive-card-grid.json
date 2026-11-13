@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clickable-and-responsive-card-grid",
+  "type": "registry:ui",
+  "title": "Clickable and Responsive Card Grid",
+  "description": "Clickable and Responsive Card Grid - Créé par @r-thapa sur TailwindFlex.",
+  "author": "@r-thapa (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/clickable-and-responsive-card-grid.tsx",
+      "content": "/**\n * Component: Clickable and Responsive Card Grid\n * Author: @r-thapa (https://tailwindflex.com/@r-thapa)\n * Source: https://tailwindflex.com/@r-thapa/clickable-and-responsive-card-grid\n * Attribution: Créé par @r-thapa sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ClickableAndResponsiveCardGrid() {\n  return (\n    <div>\n    <div className=\"bg-gray-100 p-4 sm8 md16 mt-20\">\n      <div className=\"container mx-auto\">\n        <div className=\"grid grid-cols-1 sm2 gap-4\">\n    \n          <a href=\"/frontend-performance\"\n            className=\"relative flex h-full flex-col rounded-md border border-gray-200 bg-white p-2.5 hover400 sm sm5\">\n            <span className=\"text-md mb-0 font-semibold text-gray-900 hover sm1.5 sm\">\n              Frontend Performance\n            </span>\n            <span className=\"text-sm leading-normal text-gray-400 sm\">\n              Detailed list of best practices to improve your frontend performance\n            </span>\n          </a>\n          <a href=\"/api-security\"\n            className=\"relative flex h-full flex-col rounded-md border border-gray-200 bg-white p-2.5 hover400 sm sm5\">\n            <span className=\"text-md mb-0 font-semibold text-gray-900 hover sm1.5 sm\">\n              API Security\n            </span>\n            <span className=\"text-sm leading-normal text-gray-400 sm\">\n              Detailed list of best practices to make your APIs secure\n            </span>\n          </a>\n          <a href=\"/code-review\"\n            className=\"relative flex h-full flex-col rounded-md border border-gray-200 bg-white p-2.5 hover400 sm sm5\">\n            <span className=\"text-md mb-0 font-semibold text-gray-900 hover sm1.5 sm\">\n              Code Reviews\n            </span>\n            <span className=\"text-sm leading-normal text-gray-400 sm\">\n              Detailed list of best practices for effective code reviews and quality\n            </span>\n          </a>\n          <a href=\"/aws\"\n            className=\"relative flex h-full flex-col rounded-md border border-gray-200 bg-white p-2.5 hover400 sm sm5\">\n            <span className=\"text-md mb-0 font-semibold text-gray-900 hover sm1.5 sm\">\n              AWS\n            </span>\n            <span className=\"text-sm leading-normal text-gray-400 sm\">\n              Detailed list of best practices for Amazon Web Services (AWS)\n            </span>\n          </a>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "grid",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@r-thapa",
+    "authorUrl": "https://tailwindflex.com/@r-thapa",
+    "sourceUrl": "https://tailwindflex.com/@r-thapa/clickable-and-responsive-card-grid",
+    "mention": "Créé par @r-thapa sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-100 p-4 sm:p-8 md:p-16 mt-20\">\n  <div class=\"container mx-auto\">\n    <div class=\"grid grid-cols-1 sm:grid-cols-2 gap-4\">\n\n      <a href=\"/frontend-performance\"\n        class=\"relative flex h-full flex-col rounded-md border border-gray-200 bg-white p-2.5 hover:border-gray-400 sm:rounded-lg sm:p-5\">\n        <span class=\"text-md mb-0 font-semibold text-gray-900 hover:text-black sm:mb-1.5 sm:text-xl\">\n          Frontend Performance\n        </span>\n        <span class=\"text-sm leading-normal text-gray-400 sm:block\">\n          Detailed list of best practices to improve your frontend performance\n        </span>\n      </a>\n      <a href=\"/api-security\"\n        class=\"relative flex h-full flex-col rounded-md border border-gray-200 bg-white p-2.5 hover:border-gray-400 sm:rounded-lg sm:p-5\">\n        <span class=\"text-md mb-0 font-semibold text-gray-900 hover:text-black sm:mb-1.5 sm:text-xl\">\n          API Security\n        </span>\n        <span class=\"text-sm leading-normal text-gray-400 sm:block\">\n          Detailed list of best practices to make your APIs secure\n        </span>\n      </a>\n      <a href=\"/code-review\"\n        class=\"relative flex h-full flex-col rounded-md border border-gray-200 bg-white p-2.5 hover:border-gray-400 sm:rounded-lg sm:p-5\">\n        <span class=\"text-md mb-0 font-semibold text-gray-900 hover:text-black sm:mb-1.5 sm:text-xl\">\n          Code Reviews\n        </span>\n        <span class=\"text-sm leading-normal text-gray-400 sm:block\">\n          Detailed list of best practices for effective code reviews and quality\n        </span>\n      </a>\n      <a href=\"/aws\"\n        class=\"relative flex h-full flex-col rounded-md border border-gray-200 bg-white p-2.5 hover:border-gray-400 sm:rounded-lg sm:p-5\">\n        <span class=\"text-md mb-0 font-semibold text-gray-900 hover:text-black sm:mb-1.5 sm:text-xl\">\n          AWS\n        </span>\n        <span class=\"text-sm leading-normal text-gray-400 sm:block\">\n          Detailed list of best practices for Amazon Web Services (AWS)\n        </span>\n      </a>\n    </div>\n  </div>\n</div>"
+  }
+}

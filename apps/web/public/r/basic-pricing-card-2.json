@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "basic-pricing-card-2",
+  "type": "registry:ui",
+  "title": "Basic pricing card",
+  "description": "Basic pricing card - Créé par @sienna sur TailwindFlex.",
+  "author": "@sienna (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/basic-pricing-card-2.tsx",
+      "content": "/**\n * Component: Basic pricing card\n * Author: @sienna (https://tailwindflex.com/@sienna)\n * Source: https://tailwindflex.com/@sienna/basic-pricing-card-2\n * Attribution: Créé par @sienna sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BasicPricingCard2() {\n  return (\n    <div>\n    <div className=\"max-w-sm mx-auto rounded overflow-hidden shadow-lg\">\r\n      <div className=\"px-6 py-4 bg-white\">\r\n        <div className=\"font-bold text-xl mb-2\">Basic</div>\r\n        <p className=\"text-gray-700 text-base\">\r\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\r\n        </p>\r\n      </div>\r\n      <div className=\"px-6 py-4 bg-gray-100\">\r\n        <div className=\"font-bold text-xl mb-2\">$9.99/mo</div>\r\n        <p className=\"text-gray-700 text-base\">\r\n          Access to all features\r\n        </p>\r\n        <div className=\"mt-4\">\r\n          <a href=\"#\" className=\"bg-blue-500 hover700 text-white font-bold py-2 px-4 rounded\">\r\n            Subscribe\r\n          </a>\r\n        </div>\r\n      </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@sienna",
+    "authorUrl": "https://tailwindflex.com/@sienna",
+    "sourceUrl": "https://tailwindflex.com/@sienna/basic-pricing-card-2",
+    "mention": "Créé par @sienna sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-sm mx-auto rounded overflow-hidden shadow-lg\">\r\n  <div class=\"px-6 py-4 bg-white\">\r\n    <div class=\"font-bold text-xl mb-2\">Basic</div>\r\n    <p class=\"text-gray-700 text-base\">\r\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\r\n    </p>\r\n  </div>\r\n  <div class=\"px-6 py-4 bg-gray-100\">\r\n    <div class=\"font-bold text-xl mb-2\">$9.99/mo</div>\r\n    <p class=\"text-gray-700 text-base\">\r\n      Access to all features\r\n    </p>\r\n    <div class=\"mt-4\">\r\n      <a href=\"#\" class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\">\r\n        Subscribe\r\n      </a>\r\n    </div>\r\n  </div>\r\n</div>"
+  }
+}

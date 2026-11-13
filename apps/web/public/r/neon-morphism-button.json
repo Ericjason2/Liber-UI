@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "neon-morphism-button",
+  "type": "registry:ui",
+  "title": "Neon Morphism button",
+  "description": "Neon Morphism button - Créé par @akram6t sur TailwindFlex.",
+  "author": "@akram6t (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/neon-morphism-button.tsx",
+      "content": "/**\n * Component: Neon Morphism button\n * Author: @akram6t (https://tailwindflex.com/@akram6t)\n * Source: https://tailwindflex.com/@akram6t/neon-morphism-button\n * Attribution: Créé par @akram6t sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NeonMorphismButton() {\n  return (\n    <div>\n    \n        <button className=\"neon bg-black text-[#ff00de] font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out hover focus\">\n            Neon button\n        </button>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@akram6t",
+    "authorUrl": "https://tailwindflex.com/@akram6t",
+    "sourceUrl": "https://tailwindflex.com/@akram6t/neon-morphism-button",
+    "mention": "Créé par @akram6t sur TailwindFlex",
+    "rawHtml": "<!-- Neon Button -->\n    <button class=\"neon bg-black text-[#ff00de] font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:text-white focus:outline-none\">\n        Neon button\n    </button>"
+  }
+}

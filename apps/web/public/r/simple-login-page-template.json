@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-login-page-template",
+  "type": "registry:ui",
+  "title": "Simple login page template",
+  "description": "Simple login page template - Créé par @freja-jensen sur TailwindFlex.",
+  "author": "@freja-jensen (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-login-page-template.tsx",
+      "content": "/**\n * Component: Simple login page template\n * Author: @freja-jensen (https://tailwindflex.com/@freja-jensen)\n * Source: https://tailwindflex.com/@freja-jensen/simple-login-page-template\n * Attribution: Créé par @freja-jensen sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SimpleLoginPageTemplate() {\n  return (\n    <div>\n    <div className=\"h-screen bg-gray-200 py-20 p-4 md20 lg32\">\n        <div className=\"max-w-sm bg-white rounded-lg overflow-hidden shadow-lg mx-auto\">\n            <div className=\"p-6\">\n                <h2 className=\"text-2xl font-bold text-gray-800 mb-2\">Welcome Back!</h2>\n                <p className=\"text-gray-700 mb-6\">Please sign in to your account</p>\n                <form>\n                    <div className=\"mb-4\">\n                        <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"username\">\n                Username\n              </label>\n                        <input className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\" id=\"username\" type=\"text\" placeholder=\"Username\" />\n                    </div>\n                    <div className=\"mb-6\">\n                        <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"password\">\n                Password\n              </label>\n                        <input className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\" id=\"password\" type=\"password\" placeholder=\"Password\" />\n                    </div>\n                    <div className=\"flex items-center justify-between\">\n                        <button className=\"bg-blue-500 hover700 text-white font-bold py-2 px-4 rounded focus focus\" type=\"button\">\n                Sign In\n              </button>\n                        <a className=\"inline-block align-baseline font-bold text-sm text-blue-500 hover800\" href=\"#\">\n                            Forgot Password?\n                        </a>\n                    </div>\n                </form>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@freja-jensen",
+    "authorUrl": "https://tailwindflex.com/@freja-jensen",
+    "sourceUrl": "https://tailwindflex.com/@freja-jensen/simple-login-page-template",
+    "mention": "Créé par @freja-jensen sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen bg-gray-200 py-20 p-4 md:p-20 lg:p-32\">\n    <div class=\"max-w-sm bg-white rounded-lg overflow-hidden shadow-lg mx-auto\">\n        <div class=\"p-6\">\n            <h2 class=\"text-2xl font-bold text-gray-800 mb-2\">Welcome Back!</h2>\n            <p class=\"text-gray-700 mb-6\">Please sign in to your account</p>\n            <form>\n                <div class=\"mb-4\">\n                    <label class=\"block text-gray-700 font-bold mb-2\" for=\"username\">\n            Username\n          </label>\n                    <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"username\" type=\"text\" placeholder=\"Username\">\n                </div>\n                <div class=\"mb-6\">\n                    <label class=\"block text-gray-700 font-bold mb-2\" for=\"password\">\n            Password\n          </label>\n                    <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"password\" type=\"password\" placeholder=\"Password\">\n                </div>\n                <div class=\"flex items-center justify-between\">\n                    <button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\" type=\"button\">\n            Sign In\n          </button>\n                    <a class=\"inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800\" href=\"#\">\n                        Forgot Password?\n                    </a>\n                </div>\n            </form>\n        </div>\n    </div>\n</div>"
+  }
+}

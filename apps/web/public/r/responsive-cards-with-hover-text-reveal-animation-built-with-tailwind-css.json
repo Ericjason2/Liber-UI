@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-cards-with-hover-text-reveal-animation-built-with-tailwind-css",
+  "type": "registry:ui",
+  "title": "Responsive Cards with Hover Text Reveal Animation - Built with Tailwind CSS",
+  "description": "Responsive Cards with Hover Text Reveal Animation - Built with Tailwind CSS - Créé par @abdul-baset-bappy sur TailwindFlex.",
+  "author": "@abdul-baset-bappy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-cards-with-hover-text-reveal-animation-built-with-tailwind-css.tsx",
+      "content": "/**\n * Component: Responsive Cards with Hover Text Reveal Animation - Built with Tailwind CSS\n * Author: @abdul-baset-bappy (https://tailwindflex.com/@abdul-baset-bappy)\n * Source: https://tailwindflex.com/@abdul-baset-bappy/responsive-cards-with-hover-text-reveal-animation-built-with-tailwind-css\n * Attribution: Créé par @abdul-baset-bappy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveCardsWithHoverTextRevealAnimationBuiltWithTailwindCss() {\n  return (\n    <div>\n    <div className=\"flex items-center justify-center flex-col sm gap-4 p-4 min-h-screen bg-slate-1000 dark900 \">\n      <a href=\"#\" className=\"group relative block bg-black rounded-lg overflow-hidden\">\n      <img\n        alt=\"\"\n        src=\"https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500\"\n        className=\"absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover50\"\n      />\n    \n      <div className=\"relative p-4 sm6 lg8\">\n        <p className=\"text-sm font-medium tracking-widest text-pink-500 uppercase\">Developer</p>\n    \n        <p className=\"text-xl font-bold text-white sm2xl\">Abdul Baset</p>\n    \n        <div className=\"mt-32 sm48 lg64\">\n          <div\n            className=\"translate-y-8 transform opacity-0 transition-all group-hover0 group-hover100\"\n          >\n            <p className=\"text-sm text-white\">\n              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores\n              quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?\n            </p>\n          </div>\n        </div>\n      </div>\n    </a>\n      <a href=\"#\" className=\"group relative block bg-black rounded-lg overflow-hidden\">\n      <img\n        alt=\"\"\n        src=\"https://images.pexels.com/photos/14653174/pexels-photo-14653174.jpeg\"\n        className=\"absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover50\"\n      />\n    \n      <div className=\"relative p-4 sm6 lg8\">\n        <p className=\"text-sm font-medium tracking-widest text-pink-500 uppercase\">Developer</p>\n    \n        <p className=\"text-xl font-bold text-white sm2xl\">Tony Wayne</p>\n    \n        <div className=\"mt-32 sm48 lg64\">\n          <div\n            className=\"translate-y-8 transform opacity-0 transition-all group-hover0 group-hover100\"\n          >\n            <p className=\"text-sm text-white\">\n              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores\n              quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?\n            </p>\n          </div>\n        </div>\n      </div>\n    </a>\n      <a href=\"#\" className=\"group relative block bg-black rounded-lg overflow-hidden\">\n      <img\n        alt=\"\"\n        src=\"https://images.unsplash.com/photo-1511367461989-f85a21fda167?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D\"\n        className=\"absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover50\"\n      />\n    \n      <div className=\"relative p-4 sm6 lg8\">\n        <p className=\"text-sm font-medium tracking-widest text-pink-500 uppercase\">Developer</p>\n    \n        <p className=\"text-xl font-bold text-white sm2xl\">Billu Mao</p>\n    \n        <div className=\"mt-32 sm48 lg64\">\n          <div\n            className=\"translate-y-8 transform opacity-0 transition-all group-hover0 group-hover100\"\n          >\n            <p className=\"text-sm text-white\">\n              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores\n              quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?\n            </p>\n          </div>\n        </div>\n      </div>\n    </a>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abdul-baset-bappy",
+    "authorUrl": "https://tailwindflex.com/@abdul-baset-bappy",
+    "sourceUrl": "https://tailwindflex.com/@abdul-baset-bappy/responsive-cards-with-hover-text-reveal-animation-built-with-tailwind-css",
+    "mention": "Créé par @abdul-baset-bappy sur TailwindFlex",
+    "rawHtml": "<div class=\"flex items-center justify-center flex-col sm:flex-row gap-4 p-4 min-h-screen bg-slate-1000 dark:bg-slate-900 \">\n  <a href=\"#\" class=\"group relative block bg-black rounded-lg overflow-hidden\">\n  <img\n    alt=\"\"\n    src=\"https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500\"\n    class=\"absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover:opacity-50\"\n  />\n\n  <div class=\"relative p-4 sm:p-6 lg:p-8\">\n    <p class=\"text-sm font-medium tracking-widest text-pink-500 uppercase\">Developer</p>\n\n    <p class=\"text-xl font-bold text-white sm:text-2xl\">Abdul Baset</p>\n\n    <div class=\"mt-32 sm:mt-48 lg:mt-64\">\n      <div\n        class=\"translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100\"\n      >\n        <p class=\"text-sm text-white\">\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores\n          quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?\n        </p>\n      </div>\n    </div>\n  </div>\n</a>\n  <a href=\"#\" class=\"group relative block bg-black rounded-lg overflow-hidden\">\n  <img\n    alt=\"\"\n    src=\"https://images.pexels.com/photos/14653174/pexels-photo-14653174.jpeg\"\n    class=\"absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover:opacity-50\"\n  />\n\n  <div class=\"relative p-4 sm:p-6 lg:p-8\">\n    <p class=\"text-sm font-medium tracking-widest text-pink-500 uppercase\">Developer</p>\n\n    <p class=\"text-xl font-bold text-white sm:text-2xl\">Tony Wayne</p>\n\n    <div class=\"mt-32 sm:mt-48 lg:mt-64\">\n      <div\n        class=\"translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100\"\n      >\n        <p class=\"text-sm text-white\">\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores\n          quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?\n        </p>\n      </div>\n    </div>\n  </div>\n</a>\n  <a href=\"#\" class=\"group relative block bg-black rounded-lg overflow-hidden\">\n  <img\n    alt=\"\"\n    src=\"https://images.unsplash.com/photo-1511367461989-f85a21fda167?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D\"\n    class=\"absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover:opacity-50\"\n  />\n\n  <div class=\"relative p-4 sm:p-6 lg:p-8\">\n    <p class=\"text-sm font-medium tracking-widest text-pink-500 uppercase\">Developer</p>\n\n    <p class=\"text-xl font-bold text-white sm:text-2xl\">Billu Mao</p>\n\n    <div class=\"mt-32 sm:mt-48 lg:mt-64\">\n      <div\n        class=\"translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100\"\n      >\n        <p class=\"text-sm text-white\">\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores\n          quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?\n        </p>\n      </div>\n    </div>\n  </div>\n</a>\n</div>"
+  }
+}

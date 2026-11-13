@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "feedback-form",
+  "type": "registry:ui",
+  "title": "Feedback form",
+  "description": "Feedback form - Créé par @arya sur TailwindFlex.",
+  "author": "@arya (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/feedback-form.tsx",
+      "content": "/**\n * Component: Feedback form\n * Author: @arya (https://tailwindflex.com/@arya)\n * Source: https://tailwindflex.com/@arya/feedback-form\n * Attribution: Créé par @arya sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FeedbackForm() {\n  return (\n    <div>\n    <div className=\"max-w-xl mx-auto mt-16 flex w-full flex-col border rounded-lg bg-white p-8\">\n        <h2 className=\"title-font mb-1 text-lg font-medium text-gray-900\">Feedback</h2>\n        <p className=\"mb-5 leading-relaxed text-gray-600\">If you had any issues or you liked our product, please share\n            with us!\n        </p>\n        <div className=\"mb-4\">\n            <label htmlFor=\"email\" className=\"text-sm leading-7 text-gray-600\">Email</label>\n            <input type=\"email\" id=\"email\" name=\"email\" className=\"w-full rounded border border-gray-300 bg-white py-1 px-3 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus500 focus2 focus200\" />\n        </div>\n        <div className=\"mb-4\">\n            <label htmlFor=\"message\" className=\"text-sm leading-7 text-gray-600\">Message</label>\n            <textarea id=\"message\" name=\"message\" className=\"h-32 w-full resize-none rounded border border-gray-300 bg-white py-1 px-3 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus500 focus2 focus200\"></textarea>\n        </div>\n        <button className=\"rounded border-0 bg-indigo-500 py-2 px-6 text-lg text-white hover600 focus\">Send</button>\n        <p className=\"mt-3 text-xs text-gray-500\">Feel free to connect with us on social media platforms.</p>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@arya",
+    "authorUrl": "https://tailwindflex.com/@arya",
+    "sourceUrl": "https://tailwindflex.com/@arya/feedback-form",
+    "mention": "Créé par @arya sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-xl mx-auto mt-16 flex w-full flex-col border rounded-lg bg-white p-8\">\n    <h2 class=\"title-font mb-1 text-lg font-medium text-gray-900\">Feedback</h2>\n    <p class=\"mb-5 leading-relaxed text-gray-600\">If you had any issues or you liked our product, please share\n        with us!\n    </p>\n    <div class=\"mb-4\">\n        <label for=\"email\" class=\"text-sm leading-7 text-gray-600\">Email</label>\n        <input type=\"email\" id=\"email\" name=\"email\" class=\"w-full rounded border border-gray-300 bg-white py-1 px-3 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200\" />\n    </div>\n    <div class=\"mb-4\">\n        <label for=\"message\" class=\"text-sm leading-7 text-gray-600\">Message</label>\n        <textarea id=\"message\" name=\"message\" class=\"h-32 w-full resize-none rounded border border-gray-300 bg-white py-1 px-3 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200\"></textarea>\n    </div>\n    <button class=\"rounded border-0 bg-indigo-500 py-2 px-6 text-lg text-white hover:bg-indigo-600 focus:outline-none\">Send</button>\n    <p class=\"mt-3 text-xs text-gray-500\">Feel free to connect with us on social media platforms.</p>\n</div>"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "navbar-with-two-cta-buttons",
+  "type": "registry:ui",
+  "title": "Navbar with two CTA buttons",
+  "description": "Navbar with two CTA buttons - Créé par @perky98 sur TailwindFlex.",
+  "author": "@perky98 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/navbar-with-two-cta-buttons.tsx",
+      "content": "/**\n * Component: Navbar with two CTA buttons\n * Author: @perky98 (https://tailwindflex.com/@perky98)\n * Source: https://tailwindflex.com/@perky98/navbar-with-two-cta-buttons\n * Attribution: Créé par @perky98 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NavbarWithTwoCtaButtons() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<nav x-data=\\\"{ open: false }\\\" class=\\\"px-5 pt-5 flex  justify-between md:justify-around items-center relative shadow pb-4  bg-gray-800 text-white\\\">\\n\\n      <img class=\\\"w-10\\\" src=\\\"https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Reddit_Logo_Icon.svg/220px-Reddit_Logo_Icon.svg.png\\\" alt=\\\"Logo\\\" />\\n\\n      <button @click=\\\"open = !open\\\" class=\\\"md:hidden focus:outline-none text-white\\\">\\n        <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\" stroke-width=\\\"2\\\" stroke=\\\"currentColor\\\" class=\\\"w-8 h-8\\\">\\n          <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" d=\\\"M4 6h16M4 12h16m-7 6h7\\\" />\\n        </svg>\\n      </button>\\n\\n      <div class=\\\"hidden md:flex space-x-6\\\">\\n        <a class=\\\"hover:text-bluegreen hover:underline\\\" href=\\\"/\\\">Home</a>\\n        <a class=\\\"hover:text-bluegreen hover:underline\\\" href=\\\"/services\\\">Services</a>\\n        <a class=\\\"hover:text-bluegreen hover:underline\\\" href=\\\"/project\\\">Project</a>\\n        <a class=\\\"hover:text-bluegreen hover:underline\\\" href=\\\"/about-us\\\">About us</a>\\n      </div>\\n\\n      <div class=\\\"hidden md:flex space-x-4\\\">\\n        <a class=\\\"rounded-xl p-3 bg-bluegreen hover:bg-white hover:text-bluegreen\\\" href=\\\"/started\\\">Get Started</a>\\n        <a class=\\\"rounded-xl p-3 border-2 border-white hover:bg-white hover:text-black\\\" href=\\\"/talk\\\">Let's talk</a>\\n      </div>\\n\\n      <div x-cloak x-show=\\\"open\\\" x-transition class=\\\"absolute top-full left-0 w-full bg-gray-800 lg:hidden flex flex-col items-center py-5 space-y-4 \\\">\\n        <a class=\\\"hover:text-bluegreen hover:underline\\\" href=\\\"/\\\">Home</a>\\n        <a class=\\\"hover:text-bluegreen hover:underline\\\" href=\\\"/services\\\">Services</a>\\n        <a class=\\\"hover:text-bluegreen hover:underline\\\" href=\\\"/project\\\">Project</a>\\n        <a class=\\\"hover:text-bluegreen hover:underline\\\" href=\\\"/about-us\\\">About us</a>\\n        <a class=\\\"rounded-xl p-3 bg-bluegreen hover:bg-white hover:text-bluegreen\\\" href=\\\"/started\\\">Get Started</a>\\n        <a class=\\\"rounded-xl p-3 border-2 border-white hover:bg-white hover:text-black\\\" href=\\\"/talk\\\">Let's talk</a>\\n      </div>\\n    </nav>\\n\\n    \" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@perky98",
+    "authorUrl": "https://tailwindflex.com/@perky98",
+    "sourceUrl": "https://tailwindflex.com/@perky98/navbar-with-two-cta-buttons",
+    "mention": "Créé par @perky98 sur TailwindFlex",
+    "rawHtml": "<nav x-data=\"{ open: false }\" class=\"px-5 pt-5 flex  justify-between md:justify-around items-center relative shadow pb-4  bg-gray-800 text-white\">\n\n      <img class=\"w-10\" src=\"https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Reddit_Logo_Icon.svg/220px-Reddit_Logo_Icon.svg.png\" alt=\"Logo\" />\n\n      <button @click=\"open = !open\" class=\"md:hidden focus:outline-none text-white\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"2\" stroke=\"currentColor\" class=\"w-8 h-8\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M4 6h16M4 12h16m-7 6h7\" />\n        </svg>\n      </button>\n\n      <div class=\"hidden md:flex space-x-6\">\n        <a class=\"hover:text-bluegreen hover:underline\" href=\"/\">Home</a>\n        <a class=\"hover:text-bluegreen hover:underline\" href=\"/services\">Services</a>\n        <a class=\"hover:text-bluegreen hover:underline\" href=\"/project\">Project</a>\n        <a class=\"hover:text-bluegreen hover:underline\" href=\"/about-us\">About us</a>\n      </div>\n\n      <div class=\"hidden md:flex space-x-4\">\n        <a class=\"rounded-xl p-3 bg-bluegreen hover:bg-white hover:text-bluegreen\" href=\"/started\">Get Started</a>\n        <a class=\"rounded-xl p-3 border-2 border-white hover:bg-white hover:text-black\" href=\"/talk\">Let's talk</a>\n      </div>\n\n      <div x-cloak x-show=\"open\" x-transition class=\"absolute top-full left-0 w-full bg-gray-800 lg:hidden flex flex-col items-center py-5 space-y-4 \">\n        <a class=\"hover:text-bluegreen hover:underline\" href=\"/\">Home</a>\n        <a class=\"hover:text-bluegreen hover:underline\" href=\"/services\">Services</a>\n        <a class=\"hover:text-bluegreen hover:underline\" href=\"/project\">Project</a>\n        <a class=\"hover:text-bluegreen hover:underline\" href=\"/about-us\">About us</a>\n        <a class=\"rounded-xl p-3 bg-bluegreen hover:bg-white hover:text-bluegreen\" href=\"/started\">Get Started</a>\n        <a class=\"rounded-xl p-3 border-2 border-white hover:bg-white hover:text-black\" href=\"/talk\">Let's talk</a>\n      </div>\n    </nav>\n\n    <script defer src=\"https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js\"></script>"
+  }
+}

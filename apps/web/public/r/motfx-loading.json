@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "motfx-loading",
+  "type": "registry:ui",
+  "title": "Motfx loading",
+  "description": "Motfx loading - Créé par @nyambat-byamba sur TailwindFlex.",
+  "author": "@nyambat-byamba (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/motfx-loading.tsx",
+      "content": "/**\n * Component: Motfx loading\n * Author: @nyambat-byamba (https://tailwindflex.com/@nyambat-byamba)\n * Source: https://tailwindflex.com/@nyambat-byamba/motfx-loading\n * Attribution: Créé par @nyambat-byamba sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function MotfxLoading() {\n  return (\n    <div>\n    <div className=\"relative flex justify-center items-center\">\n        <div className=\"absolute animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-orange-500\"></div>\n        <img src=\"https://dev-portal.motforex.com/_next/image?url=https://cdn.motforex.com/motforex/logo/logo.webp&w=48&q=75\"  className=\"rounded-full h-20 w-20\" />\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@nyambat-byamba",
+    "authorUrl": "https://tailwindflex.com/@nyambat-byamba",
+    "sourceUrl": "https://tailwindflex.com/@nyambat-byamba/motfx-loading",
+    "mention": "Créé par @nyambat-byamba sur TailwindFlex",
+    "rawHtml": "<div class=\"relative flex justify-center items-center\">\n    <div class=\"absolute animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-orange-500\"></div>\n    <img src=\"https://dev-portal.motforex.com/_next/image?url=https://cdn.motforex.com/motforex/logo/logo.webp&w=48&q=75\"  class=\"rounded-full h-20 w-20\">\n</div>"
+  }
+}

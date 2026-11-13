@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-hover-effect",
+  "type": "registry:ui",
+  "title": "Hover effect card with background image",
+  "description": "Hover effect card with background image - Créé par @walid-ahmad sur TailwindFlex.",
+  "author": "@walid-ahmad (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-hover-effect.tsx",
+      "content": "/**\n * Component: Hover effect card with background image\n * Author: @walid-ahmad (https://tailwindflex.com/@walid-ahmad)\n * Source: https://tailwindflex.com/@walid-ahmad/card-hover-effect\n * Attribution: Créé par @walid-ahmad sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardHoverEffect() {\n  return (\n    <div>\n    <div className=\"relative overflow-hidden group h-[500px] bg-primary card-hidden\">\n                        <img src=\"https://images.unsplash.com/photo-1595239244990-b609da3d95f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxkYXRhJTNBaW1hZ2UlMkZibXAlM0JiYXNlNjQlMkNRazMyQkFBQUFBQUFBRFlBQUFBb0FBQUFDQUFBQUFnQUFBQUJBQmdBQUFBQUFNQUFBQUFUQ3dBQUV3c0FBQUFBQUFBQUFBQUFvWnRhbnBaTm9aTTR0S05KeTd0dzBjV0Z1clYlMkZpcEJqcDZSMW41dGtsSTQlMkZvWmxLdkxWNXlNT1R0TFNLaFl0Z3I2Mk1vYUY1aUl0Tmk1RlRxN0NJdnNLa3I3T1dnSVpkdGJPYXBhYUhobzVnaEpKbnBMS1l1Y1N5ckxTZ2ZvVmZ0N1dkcXF1T2s1bDBrcDklMkZyTHFudk1pN3JiYW1nSWRtdDdPWHNLMlBwYWFGckxHV3ZzYTB4YzYlMkZzYm1vaG8xdXRiQ1BzNiUyQk50YkdSd0wlMkJsenRDOHp0TEJ0cnlwaTVKMXRLJTJCTHRhJTJCTXVyV1Z5TVdxMU5TJTJGMGRUQnVMMm9qcFIzfGVufDB8MHx8fDE3MjM0MDU0MTR8MA&ixlib=rb-4.0.3&q=80&w=1080\"\n                            className=\"h-full transition-all delay-300 duration-400 ease-in w-full absolute group-hover105 object-center\" />\n                        <div className=\"absolute p-8 z-50 gap-4 flex flex-col justify-end bg-opacity-45 h-full w-full bottom-0\">\n                            <span className=\"text-[20px] sm[24px] text-white md[28px] font-canela\">\n                                Hover Card to see Magic\n                            </span>\n                            <p className=\"group-hover text-white text-[14px] hidden\">\n                                \n                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio accusantium dolores, in cumque labore non assumenda necessitatibus vel at voluptates deleniti minus nesciunt nobis repellendus dolorum blanditiis ex magni impedit?\n    \n                            </p>\n                            <a href=\"contactus.html\" className=\"flex items-center gap-2\">\n                                \n                                <div\n                                    className=\"flex group-hover justify-center items-center rounded-full bg-primary min-h-10 min-w-10 max-h-10 max-w-10\">\n                                    <img src=\"https://images.unsplash.com/photo-1595239244990-b609da3d95f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxkYXRhJTNBaW1hZ2UlMkZibXAlM0JiYXNlNjQlMkNRazMyQkFBQUFBQUFBRFlBQUFBb0FBQUFDQUFBQUFnQUFBQUJBQmdBQUFBQUFNQUFBQUFUQ3dBQUV3c0FBQUFBQUFBQUFBQUFvWnRhbnBaTm9aTTR0S05KeTd0dzBjV0Z1clYlMkZpcEJqcDZSMW41dGtsSTQlMkZvWmxLdkxWNXlNT1R0TFNLaFl0Z3I2Mk1vYUY1aUl0Tmk1RlRxN0NJdnNLa3I3T1dnSVpkdGJPYXBhYUhobzVnaEpKbnBMS1l1Y1N5ckxTZ2ZvVmZ0N1dkcXF1T2s1bDBrcDklMkZyTHFudk1pN3JiYW1nSWRtdDdPWHNLMlBwYWFGckxHV3ZzYTB4YzYlMkZzYm1vaG8xdXRiQ1BzNiUyQk50YkdSd0wlMkJsenRDOHp0TEJ0cnlwaTVKMXRLJTJCTHRhJTJCTXVyV1Z5TVdxMU5TJTJGMGRUQnVMMm9qcFIzfGVufDB8MHx8fDE3MjM0MDU0MTR8MA&ixlib=rb-4.0.3&q=80&w=1080\" className=\"w-[28px] h-8  rounded-full overflow-hidden\" alt=\"\" />\n                                </div>\n                                <h2 className=\"font-bold text-[16px] text-white\">Contact Us\n                                </h2>\n                            </a>\n                        </div>\n                        <div\n                            className=\"absolute transition-all duration-400 ease-in bg-gradient-to-b from-transparent to-black min-h-[650px] text-white bottom-0 group-hover0 group-hover[900px] w-full z-30\">\n                        </div>\n                    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@walid-ahmad",
+    "authorUrl": "https://tailwindflex.com/@walid-ahmad",
+    "sourceUrl": "https://tailwindflex.com/@walid-ahmad/card-hover-effect",
+    "mention": "Créé par @walid-ahmad sur TailwindFlex",
+    "rawHtml": "<div class=\"relative overflow-hidden group h-[500px] bg-primary card-hidden\">\n                    <img src=\"https://images.unsplash.com/photo-1595239244990-b609da3d95f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxkYXRhJTNBaW1hZ2UlMkZibXAlM0JiYXNlNjQlMkNRazMyQkFBQUFBQUFBRFlBQUFBb0FBQUFDQUFBQUFnQUFBQUJBQmdBQUFBQUFNQUFBQUFUQ3dBQUV3c0FBQUFBQUFBQUFBQUFvWnRhbnBaTm9aTTR0S05KeTd0dzBjV0Z1clYlMkZpcEJqcDZSMW41dGtsSTQlMkZvWmxLdkxWNXlNT1R0TFNLaFl0Z3I2Mk1vYUY1aUl0Tmk1RlRxN0NJdnNLa3I3T1dnSVpkdGJPYXBhYUhobzVnaEpKbnBMS1l1Y1N5ckxTZ2ZvVmZ0N1dkcXF1T2s1bDBrcDklMkZyTHFudk1pN3JiYW1nSWRtdDdPWHNLMlBwYWFGckxHV3ZzYTB4YzYlMkZzYm1vaG8xdXRiQ1BzNiUyQk50YkdSd0wlMkJsenRDOHp0TEJ0cnlwaTVKMXRLJTJCTHRhJTJCTXVyV1Z5TVdxMU5TJTJGMGRUQnVMMm9qcFIzfGVufDB8MHx8fDE3MjM0MDU0MTR8MA&ixlib=rb-4.0.3&q=80&w=1080\"\n                        class=\"h-full transition-all delay-300 duration-400 ease-in w-full absolute group-hover:scale-105 object-center\">\n                    <div class=\"absolute p-8 z-50 gap-4 flex flex-col justify-end bg-opacity-45 h-full w-full bottom-0\">\n                        <span class=\"text-[20px] sm:text-[24px] text-white md:text-[28px] font-canela\">\n                            Hover Card to see Magic\n                        </span>\n                        <p class=\"group-hover:block text-white text-[14px] hidden\">\n                            \n                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio accusantium dolores, in cumque labore non assumenda necessitatibus vel at voluptates deleniti minus nesciunt nobis repellendus dolorum blanditiis ex magni impedit?\n\n                        </p>\n                        <a href=\"contactus.html\" class=\"flex items-center gap-2\">\n                            <!-- You can replace the image -->\n                            <div\n                                class=\"flex group-hover:bg-secondary justify-center items-center rounded-full bg-primary min-h-10 min-w-10 max-h-10 max-w-10\">\n                                <img src=\"https://images.unsplash.com/photo-1595239244990-b609da3d95f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxkYXRhJTNBaW1hZ2UlMkZibXAlM0JiYXNlNjQlMkNRazMyQkFBQUFBQUFBRFlBQUFBb0FBQUFDQUFBQUFnQUFBQUJBQmdBQUFBQUFNQUFBQUFUQ3dBQUV3c0FBQUFBQUFBQUFBQUFvWnRhbnBaTm9aTTR0S05KeTd0dzBjV0Z1clYlMkZpcEJqcDZSMW41dGtsSTQlMkZvWmxLdkxWNXlNT1R0TFNLaFl0Z3I2Mk1vYUY1aUl0Tmk1RlRxN0NJdnNLa3I3T1dnSVpkdGJPYXBhYUhobzVnaEpKbnBMS1l1Y1N5ckxTZ2ZvVmZ0N1dkcXF1T2s1bDBrcDklMkZyTHFudk1pN3JiYW1nSWRtdDdPWHNLMlBwYWFGckxHV3ZzYTB4YzYlMkZzYm1vaG8xdXRiQ1BzNiUyQk50YkdSd0wlMkJsenRDOHp0TEJ0cnlwaTVKMXRLJTJCTHRhJTJCTXVyV1Z5TVdxMU5TJTJGMGRUQnVMMm9qcFIzfGVufDB8MHx8fDE3MjM0MDU0MTR8MA&ixlib=rb-4.0.3&q=80&w=1080\" class=\"w-[28px] h-8  rounded-full overflow-hidden\" alt=\"\" />\n                            </div>\n                            <h2 class=\"font-bold text-[16px] text-white\">Contact Us\n                            </h2>\n                        </a>\n                    </div>\n                    <div\n                        class=\"absolute transition-all duration-400 ease-in bg-gradient-to-b from-transparent to-black min-h-[650px] text-white bottom-0 group-hover:bottom-0 group-hover:min-h-[900px] w-full z-30\">\n                    </div>\n                </div>"
+  }
+}

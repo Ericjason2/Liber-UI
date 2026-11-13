@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "about-me-card",
+  "type": "registry:ui",
+  "title": "About Me Card",
+  "description": "About Me Card - Créé par @ti-to sur TailwindFlex.",
+  "author": "@ti-to (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/about-me-card.tsx",
+      "content": "/**\n * Component: About Me Card\n * Author: @ti-to (https://tailwindflex.com/@ti-to)\n * Source: https://tailwindflex.com/@ti-to/about-me-card\n * Attribution: Créé par @ti-to sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AboutMeCard() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"h-screen w-full flex items-center justify-center dark:bg-gray-900\\\">\\r\\n\\r\\n    <div\\r\\n        class=\\\"relative w-full max-w-2xl my-8 md:my-16 flex flex-col items-start space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6 px-4 py-8 border-2 border-dashed border-gray-400 dark:border-gray-400 shadow-lg rounded-lg\\\">\\r\\n\\r\\n        <span class=\\\"absolute text-xs font-medium top-0 left-0 rounded-br-lg rounded-tl-lg px-2 py-1 bg-primary-100 dark:bg-gray-900 dark:text-gray-300 border-gray-400 dark:border-gray-400 border-b-2 border-r-2 border-dashed \\\">\\r\\n            About Me\\r\\n        </span>\\r\\n\\r\\n        <div class=\\\"w-full flex justify-center sm:justify-start sm:w-auto\\\">\\r\\n            <img class=\\\"object-cover w-20 h-20 mt-3 mr-3 rounded-full\\\" src=\\\"https://i.ibb.co/xCvndYT/Screenshot-from-2024-01-05-12-39-14.png\\\">\\r\\n        </div>\\r\\n        <a <div class=\\\"w-full sm:w-auto flex flex-col items-center sm:items-start\\\">\\r\\n\\r\\n            <p class=\\\"font-display mb-2 text-2xl font-semibold dark:text-gray-200\\\" itemprop=\\\"author\\\">\\r\\n                Phileas Fogg\\r\\n            </p>\\r\\n\\r\\n            <div class=\\\"mb-4 md:text-lg text-gray-400\\\">\\r\\n                <p>Phileas is a rascal, scoundrel and raconteur </p>\\r\\n            </div>\\r\\n\\r\\n            <div class=\\\"flex gap-4\\\">\\r\\n\\r\\n                <a title=\\\"VeilMail.io Email Address\\\" href=\\\"https://veilmail.io/e/FkKh7o\\\" target=\\\"_blank\\\"\\r\\n                    rel=\\\"noopener noreferrer\\\">\\r\\n\\r\\n\\r\\n                    <a title=\\\"VeilMail.io Email Address\\\" href=\\\"https://veilmail.io/e/FkKh7o\\\" target=\\\"_blank\\\"\\r\\n                        rel=\\\"noopener noreferrer\\\">\\r\\n                        <svg class=\\\"h-6 w-6 dark:text-gray-300\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"none\\\"\\r\\n                            viewBox=\\\"0 0 24 24\\\" stroke-width=\\\"1.5\\\" stroke=\\\"currentColor\\\">\\r\\n                            <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"\\r\\n                                d=\\\"M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418\\\">\\r\\n                            </path>\\r\\n\\r\\n                        </svg>\\r\\n                    </a>\\r\\n            </div>\\r\\n    </div>\\r\\n</div>\\r\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ti-to",
+    "authorUrl": "https://tailwindflex.com/@ti-to",
+    "sourceUrl": "https://tailwindflex.com/@ti-to/about-me-card",
+    "mention": "Créé par @ti-to sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen w-full flex items-center justify-center dark:bg-gray-900\">\r\n\r\n    <div\r\n        class=\"relative w-full max-w-2xl my-8 md:my-16 flex flex-col items-start space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6 px-4 py-8 border-2 border-dashed border-gray-400 dark:border-gray-400 shadow-lg rounded-lg\">\r\n\r\n        <span class=\"absolute text-xs font-medium top-0 left-0 rounded-br-lg rounded-tl-lg px-2 py-1 bg-primary-100 dark:bg-gray-900 dark:text-gray-300 border-gray-400 dark:border-gray-400 border-b-2 border-r-2 border-dashed \">\r\n            About Me\r\n        </span>\r\n\r\n        <div class=\"w-full flex justify-center sm:justify-start sm:w-auto\">\r\n            <img class=\"object-cover w-20 h-20 mt-3 mr-3 rounded-full\" src=\"https://i.ibb.co/xCvndYT/Screenshot-from-2024-01-05-12-39-14.png\">\r\n        </div>\r\n        <a <div class=\"w-full sm:w-auto flex flex-col items-center sm:items-start\">\r\n\r\n            <p class=\"font-display mb-2 text-2xl font-semibold dark:text-gray-200\" itemprop=\"author\">\r\n                Phileas Fogg\r\n            </p>\r\n\r\n            <div class=\"mb-4 md:text-lg text-gray-400\">\r\n                <p>Phileas is a rascal, scoundrel and raconteur </p>\r\n            </div>\r\n\r\n            <div class=\"flex gap-4\">\r\n\r\n                <a title=\"VeilMail.io Email Address\" href=\"https://veilmail.io/e/FkKh7o\" target=\"_blank\"\r\n                    rel=\"noopener noreferrer\">\r\n\r\n\r\n                    <a title=\"VeilMail.io Email Address\" href=\"https://veilmail.io/e/FkKh7o\" target=\"_blank\"\r\n                        rel=\"noopener noreferrer\">\r\n                        <svg class=\"h-6 w-6 dark:text-gray-300\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\"\r\n                            viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\">\r\n                            <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\r\n                                d=\"M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418\">\r\n                            </path>\r\n\r\n                        </svg>\r\n                    </a>\r\n            </div>\r\n    </div>\r\n</div>\r\n</div>"
+  }
+}

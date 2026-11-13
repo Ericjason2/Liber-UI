@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-banner-3",
+  "type": "registry:ui",
+  "title": "Hero Banner",
+  "description": "Hero Banner - Créé par @cosimo-fazio sur TailwindFlex.",
+  "author": "@cosimo-fazio (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-banner-3.tsx",
+      "content": "/**\n * Component: Hero Banner\n * Author: @cosimo-fazio (https://tailwindflex.com/@cosimo-fazio)\n * Source: https://tailwindflex.com/@cosimo-fazio/hero-banner-3\n * Attribution: Créé par @cosimo-fazio sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroBanner3() {\n  return (\n    <div>\n    <div className=\"relative isolate overflow-hidden bg-gray-900\">\n      <svg\n        className=\"absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image(100%_100%_at_top_right,white,transparent)]\"\n        aria-hidden=\"true\">\n        <defs>\n          <pattern id=\"983e3e4c-de6d-4c3f-8d64-b9761d1534cc\" width=\"200\" height=\"200\" x=\"100%\" y=\"-1\"\n            patternUnits=\"userSpaceOnUse\">\n            <path d=\"M.5 200V.5H200\" fill=\"none\"></path>\n          </pattern>\n        </defs>\n        <svg x=\"50%\" y=\"-1\" className=\"overflow-visible fill-gray-800/20\">\n          <path d=\"M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z\"\n            strokeWidth=\"0\"></path>\n        </svg>\n        <rect width=\"100%\" height=\"100%\" strokeWidth=\"0\" fill=\"url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)\"></rect>\n      </svg>\n      <div\n        className=\"absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm[calc(50%-18rem)] lg48 lg[calc(50%-30rem)] xl[calc(50%-24rem)]\"\n        aria-hidden=\"true\">\n        <div className=\"aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20\"\n          style=\"clip-path(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)\">\n        </div>\n      </div>\n      <div className=\"mt-[-50px] flex h-screen items-center justify-center\">\n        <div className=\"max-w-full flex-shrink-0 px-4 text-center lg0 lg3xl lg8\">\n          <h1 className=\"mt-10 text-5xl font-bold tracking-tight text-white sm6xl\">\n            revolutionize\n            <span className=\"text-sky-500\">your workflow</span> with\n            <span className=\"text-sky-500\">Zynx</span>\n          </h1>\n          <p className=\"mt-6 text-lg leading-8 text-gray-300\">Elevate Your Productivity With Zynx, Your Personalized Workflow\n            Assistant</p>\n          <div className=\"mt-5 flex items-center justify-center gap-x-6\">\n            <a href=\"/register\"\n              className=\"rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover400 focus-visible focus-visible2 focus-visible2 focus-visible400\"\n              rel=\"noreferrer\">Try Now →</a>\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@cosimo-fazio",
+    "authorUrl": "https://tailwindflex.com/@cosimo-fazio",
+    "sourceUrl": "https://tailwindflex.com/@cosimo-fazio/hero-banner-3",
+    "mention": "Créé par @cosimo-fazio sur TailwindFlex",
+    "rawHtml": "<div class=\"relative isolate overflow-hidden bg-gray-900\">\n  <svg\n    class=\"absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]\"\n    aria-hidden=\"true\">\n    <defs>\n      <pattern id=\"983e3e4c-de6d-4c3f-8d64-b9761d1534cc\" width=\"200\" height=\"200\" x=\"100%\" y=\"-1\"\n        patternUnits=\"userSpaceOnUse\">\n        <path d=\"M.5 200V.5H200\" fill=\"none\"></path>\n      </pattern>\n    </defs>\n    <svg x=\"50%\" y=\"-1\" class=\"overflow-visible fill-gray-800/20\">\n      <path d=\"M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z\"\n        stroke-width=\"0\"></path>\n    </svg>\n    <rect width=\"100%\" height=\"100%\" stroke-width=\"0\" fill=\"url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)\"></rect>\n  </svg>\n  <div\n    class=\"absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]\"\n    aria-hidden=\"true\">\n    <div class=\"aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20\"\n      style=\"clip-path:polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)\">\n    </div>\n  </div>\n  <div class=\"mt-[-50px] flex h-screen items-center justify-center\">\n    <div class=\"max-w-full flex-shrink-0 px-4 text-center lg:mx-0 lg:max-w-3xl lg:pt-8\">\n      <h1 class=\"mt-10 text-5xl font-bold tracking-tight text-white sm:text-6xl\">\n        revolutionize\n        <span class=\"text-sky-500\">your workflow</span> with\n        <span class=\"text-sky-500\">Zynx</span>\n      </h1>\n      <p class=\"mt-6 text-lg leading-8 text-gray-300\">Elevate Your Productivity With Zynx, Your Personalized Workflow\n        Assistant</p>\n      <div class=\"mt-5 flex items-center justify-center gap-x-6\">\n        <a href=\"/register\"\n          class=\"rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400\"\n          rel=\"noreferrer\">Try Now →</a>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

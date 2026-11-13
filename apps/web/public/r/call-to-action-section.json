@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-to-action-section",
+  "type": "registry:ui",
+  "title": "Call to action section",
+  "description": "Call to action section - Créé par @leon-bachmann sur TailwindFlex.",
+  "author": "@leon-bachmann (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-to-action-section.tsx",
+      "content": "/**\n * Component: Call to action section\n * Author: @leon-bachmann (https://tailwindflex.com/@leon-bachmann)\n * Source: https://tailwindflex.com/@leon-bachmann/call-to-action-section\n * Attribution: Créé par @leon-bachmann sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToActionSection() {\n  return (\n    <div>\n    <div className=\"bg-gray-100 dark800 mt-20\">\n        <div className=\"z-20 w-full px-4 py-12 mx-auto text-center sm6 lg16 lg8\">\n            <h2 className=\"text-black dark sm4xl\">\n                <span className=\"text-base font-semibold leading-6 text-indigo-500 uppercase\">\n                    IT ONLY TAKES A FEW EASY STEPS\n                </span>\n                <span className=\"block mt-2 text-2xl font-extrabold leading-8 text-gray-900 dark sm3xl sm9\">\n                    Create your first API in minutes\n                </span>\n            </h2>\n    \n            <div className=\"lg0 lg0\">\n                <div className=\"inline-flex mt-12 rounded-md shadow\">\n                    <a href=\"\"\n                        className=\"w-full px-6 py-4 text-base font-semibold text-center text-white transition duration-200 ease-in bg-indigo-600 rounded-lg shadow-md hover700 focus500 focus200 focus focus2 focus2 \">\n                        Get Started Now - It's free\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@leon-bachmann",
+    "authorUrl": "https://tailwindflex.com/@leon-bachmann",
+    "sourceUrl": "https://tailwindflex.com/@leon-bachmann/call-to-action-section",
+    "mention": "Créé par @leon-bachmann sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-100 dark:bg-gray-800 mt-20\">\n    <div class=\"z-20 w-full px-4 py-12 mx-auto text-center sm:px-6 lg:py-16 lg:px-8\">\n        <h2 class=\"text-black dark:text-white sm:text-4xl\">\n            <span class=\"text-base font-semibold leading-6 text-indigo-500 uppercase\">\n                IT ONLY TAKES A FEW EASY STEPS\n            </span>\n            <span class=\"block mt-2 text-2xl font-extrabold leading-8 text-gray-900 dark:text-white sm:text-3xl sm:leading-9\">\n                Create your first API in minutes\n            </span>\n        </h2>\n\n        <div class=\"lg:mt-0 lg:flex-shrink-0\">\n            <div class=\"inline-flex mt-12 rounded-md shadow\">\n                <a href=\"\"\n                    class=\"w-full px-6 py-4 text-base font-semibold text-center text-white transition duration-200 ease-in bg-indigo-600 rounded-lg shadow-md hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 \">\n                    Get Started Now - It's free\n                </a>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

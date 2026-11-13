@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-pair",
+  "type": "registry:ui",
+  "title": "Button pair",
+  "description": "Button pair - Créé par @piet-vriend sur TailwindFlex.",
+  "author": "@piet-vriend (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button-pair.tsx",
+      "content": "/**\n * Component: Button pair\n * Author: @piet-vriend (https://tailwindflex.com/@piet-vriend)\n * Source: https://tailwindflex.com/@piet-vriend/button-pair\n * Attribution: Créé par @piet-vriend sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonPair() {\n  return (\n    <div>\n    <div className=\"flex flex-row items-center justify-start gap-4\">\r\n        <button className=\"rounded-2xl bg-red-600 px-4 py-2 font-bold leading-none text-white\">Logout</button>\r\n        <button className=\"font-bold text-red-600\">Delete Account</button>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@piet-vriend",
+    "authorUrl": "https://tailwindflex.com/@piet-vriend",
+    "sourceUrl": "https://tailwindflex.com/@piet-vriend/button-pair",
+    "mention": "Créé par @piet-vriend sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-row items-center justify-start gap-4\">\r\n    <button class=\"rounded-2xl bg-red-600 px-4 py-2 font-bold leading-none text-white\">Logout</button>\r\n    <button class=\"font-bold text-red-600\">Delete Account</button>\r\n</div>"
+  }
+}

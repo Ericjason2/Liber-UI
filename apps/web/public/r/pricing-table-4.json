@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-table-4",
+  "type": "registry:ui",
+  "title": "Pricing table",
+  "description": "Pricing table - Créé par @samuel33 sur TailwindFlex.",
+  "author": "@samuel33 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pricing-table-4.tsx",
+      "content": "/**\n * Component: Pricing table\n * Author: @samuel33 (https://tailwindflex.com/@samuel33)\n * Source: https://tailwindflex.com/@samuel33/pricing-table-4\n * Attribution: Créé par @samuel33 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PricingTable4() {\n  return (\n    <div>\n    <div className=\"w-full p-6 rounded-lg shadow-xl sm1/2 bg-gradient-to-br from-blue-600 to-purple-600 sm8\">\n        <div className=\"flex flex-col items-start justify-between gap-4 mb-6 lg\">\n            <div>\n                <h3 className=\"text-2xl font-semibold text-white jakarta sm4xl\">Pro Plan</h3>\n            </div>\n            <span className=\"order-first inline-block px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-black rounded-full lg bg-opacity-20\">Go Pro</span>\n        </div>\n        <div className=\"mb-4 space-x-2\">\n            <span className=\"text-4xl font-bold text-white\">$15/mo</span>\n            <span className=\"text-2xl text-indigo-100 line-through\">$39/mo</span>\n        </div>\n        <ul className=\"mb-6 space-y-2 text-indigo-100\">\n            <li className=\"flex items-center gap-1.5\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"flex-shrink-0 w-5 h-5\" viewBox=\"0 0 20 20\"\n                    fill=\"currentColor\">\n                    <path fillRule=\"evenodd\"\n                        d=\"M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z\"\n                        clipRule=\"evenodd\"></path>\n                </svg>\n                <span className=\"\">Unlimited Projects</span>\n            </li>\n            <li className=\"flex items-center gap-1.5\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"flex-shrink-0 w-5 h-5\" viewBox=\"0 0 20 20\"\n                    fill=\"currentColor\">\n                    <path fillRule=\"evenodd\"\n                        d=\"M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z\"\n                        clipRule=\"evenodd\"></path>\n                </svg>\n                <span className=\"\">Unlimited API calls</span>\n            </li>\n            <li className=\"flex items-center gap-1.5\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"flex-shrink-0 w-5 h-5\" viewBox=\"0 0 20 20\"\n                    fill=\"currentColor\">\n                    <path fillRule=\"evenodd\"\n                        d=\"M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z\"\n                        clipRule=\"evenodd\" className=\"\"></path>\n                </svg>\n                <span className=\"\">Advanced Project Settings</span>\n            </li>\n            <li className=\"flex items-center gap-1.5\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"flex-shrink-0 w-5 h-5\" viewBox=\"0 0 20 20\"\n                    fill=\"currentColor\">\n                    <path fillRule=\"evenodd\"\n                        d=\"M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z\"\n                        clipRule=\"evenodd\"></path>\n                </svg>\n                <span className=\"\">Priority Support</span>\n            </li>\n        </ul>\n        <a href=\"#\"\n            className=\"block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-white rounded-lg outline-none bg-opacity-20 hover30 md\">Get\n            Started for Free\n        </a>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@samuel33",
+    "authorUrl": "https://tailwindflex.com/@samuel33",
+    "sourceUrl": "https://tailwindflex.com/@samuel33/pricing-table-4",
+    "mention": "Créé par @samuel33 sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full p-6 rounded-lg shadow-xl sm:w-1/2 bg-gradient-to-br from-blue-600 to-purple-600 sm:p-8\">\n    <div class=\"flex flex-col items-start justify-between gap-4 mb-6 lg:flex-row\">\n        <div>\n            <h3 class=\"text-2xl font-semibold text-white jakarta sm:text-4xl\">Pro Plan</h3>\n        </div>\n        <span class=\"order-first inline-block px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-black rounded-full lg:order-none bg-opacity-20\">Go Pro</span>\n    </div>\n    <div class=\"mb-4 space-x-2\">\n        <span class=\"text-4xl font-bold text-white\">$15/mo</span>\n        <span class=\"text-2xl text-indigo-100 line-through\">$39/mo</span>\n    </div>\n    <ul class=\"mb-6 space-y-2 text-indigo-100\">\n        <li class=\"flex items-center gap-1.5\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5\" viewBox=\"0 0 20 20\"\n                fill=\"currentColor\">\n                <path fill-rule=\"evenodd\"\n                    d=\"M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z\"\n                    clip-rule=\"evenodd\"></path>\n            </svg>\n            <span class=\"\">Unlimited Projects</span>\n        </li>\n        <li class=\"flex items-center gap-1.5\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5\" viewBox=\"0 0 20 20\"\n                fill=\"currentColor\">\n                <path fill-rule=\"evenodd\"\n                    d=\"M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z\"\n                    clip-rule=\"evenodd\"></path>\n            </svg>\n            <span class=\"\">Unlimited API calls</span>\n        </li>\n        <li class=\"flex items-center gap-1.5\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5\" viewBox=\"0 0 20 20\"\n                fill=\"currentColor\">\n                <path fill-rule=\"evenodd\"\n                    d=\"M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z\"\n                    clip-rule=\"evenodd\" class=\"\"></path>\n            </svg>\n            <span class=\"\">Advanced Project Settings</span>\n        </li>\n        <li class=\"flex items-center gap-1.5\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5\" viewBox=\"0 0 20 20\"\n                fill=\"currentColor\">\n                <path fill-rule=\"evenodd\"\n                    d=\"M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z\"\n                    clip-rule=\"evenodd\"></path>\n            </svg>\n            <span class=\"\">Priority Support</span>\n        </li>\n    </ul>\n    <a href=\"#\"\n        class=\"block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-white rounded-lg outline-none bg-opacity-20 hover:bg-opacity-30 md:text-base\">Get\n        Started for Free\n    </a>\n</div>"
+  }
+}

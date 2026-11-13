@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "component",
+  "type": "registry:ui",
+  "title": "component",
+  "description": "component - Créé par @pablitodgb sur TailwindFlex.",
+  "author": "@pablitodgb (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/component.tsx",
+      "content": "/**\n * Component: component\n * Author: @pablitodgb (https://tailwindflex.com/@pablitodgb)\n * Source: https://tailwindflex.com/@pablitodgb/component\n * Attribution: Créé par @pablitodgb sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Component() {\n  return (\n    <div>\n    <div className=\"h-screen w-screen text-slate-600 bg-slate-100 dark100 dark600 flex justify-center items-center\">\n      <div className=\"min-h-xs h-full max-h-[20rem] min-w-xs w-full max-w-sm rounded-xl bg-local relative bg-cover border border-1 border-slate-100 shadow-xl shadow-slate-500/50 dark500/50 dark300 -translate-6 bg-[url(https://images.unsplash.com/photo-1619995745882-f4128ac82ad6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxM3x8aW1hZ2V8ZW58MHwwfHx8MTc1MDUxOTY4MHww&ixlib=rb-4.1.0&q=80&w=1080)]\">\n        <div className=\"absolute bottom-7 left-2\">\n          <p className=\"text-2xl font-bold text-slate-200 dark500 hover decoration-wavy dark400 truncate\">Forest🕸️</p>\n          <p className=\"text-xl font-semibold text-slate-300 dark500\">Spider</p>\n        </div>\n      </div>\n    </div>\n    \n    <div\n        className=\"w-40 h-20 flex justify-center items-center text-sky-200 border-2 rounded-lg border-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]\"\n    >\n        Neon container\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@pablitodgb",
+    "authorUrl": "https://tailwindflex.com/@pablitodgb",
+    "sourceUrl": "https://tailwindflex.com/@pablitodgb/component",
+    "mention": "Créé par @pablitodgb sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen w-screen text-slate-600 bg-slate-100 dark:text-slate-100 dark:bg-slate-600 flex justify-center items-center\">\n  <div class=\"min-h-xs h-full max-h-[20rem] min-w-xs w-full max-w-sm rounded-xl bg-local relative bg-cover border border-1 border-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-cyan-500/50 dark:border-cyan-300 -translate-6 bg-[url(https://images.unsplash.com/photo-1619995745882-f4128ac82ad6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxM3x8aW1hZ2V8ZW58MHwwfHx8MTc1MDUxOTY4MHww&ixlib=rb-4.1.0&q=80&w=1080)]\">\n    <div class=\"absolute bottom-7 left-2\">\n      <p class=\"text-2xl font-bold text-slate-200 dark:text-cyan-500 hover:underline decoration-wavy dark:decoration-cyan-400 truncate\">Forest🕸️</p>\n      <p class=\"text-xl font-semibold text-slate-300 dark:text-cyan-500\">Spider</p>\n    </div>\n  </div>\n</div>\n\n<div\n    class=\"w-40 h-20 flex justify-center items-center text-sky-200 border-2 rounded-lg border-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]\"\n>\n    Neon container\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "offer-card",
+  "type": "registry:ui",
+  "title": "offer card",
+  "description": "offer card - Créé par @abdulbast sur TailwindFlex.",
+  "author": "@abdulbast (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/offer-card.tsx",
+      "content": "/**\n * Component: offer card\n * Author: @abdulbast (https://tailwindflex.com/@abdulbast)\n * Source: https://tailwindflex.com/@abdulbast/offer-card\n * Attribution: Créé par @abdulbast sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function OfferCard() {\n  return (\n    <div>\n    <section className=\"pt-12\">\n      <div className=\"bg-[#C2EFD4] mx-auto w-[1400px] relative flex justify-around items-center\">\n        <div className=\"absolute left-10 bottom-0 w-[156px] h-[110px] grid grid-cols-4  \">\n          <div className=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n          <div className=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n          <div className=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n          <div className=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n          <div className=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n          <div className=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n          <div className=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n          <div className=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n          <div className=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n          <div className=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n          <div className=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n          <div className=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n        </div><img src=\"https://iili.io/3Bvpo4R.png\" alt=\"\" />\n        <div className=\"w-[589px] h-[447px] rounded-[3px]\">\n          <h2 className=\"  text-[#224f34] text-[46px] font-bold font-['Roboto_Slab']\">Exclusive offer</h2>\n          <p className=\"w-[589px] text-[#224f34] text-[22px] font-medium font-['Poppins'] leading-9\">Unlock the ultimate style\n            upgrade with our exclusive offer Enjoy savings of up to 40% off on our latest New Arrivals</p>\n          <div className=\"flex gap-9 my-10 font-['Poppins'] \">\n            <div\n              className=\"w-[100px] h-[100px] text-center py-4 bg-white rounded-[3px] shadow-[0px_7px_30px_0px_rgba(0,0,0,0.05)]\">\n              <span className=\" block text-[#224f34] text-[32px] font-semibold\">06</span><span className=\" block text-[#224f34] text-base font-medium\">Days</span>\n            </div>\n            <div\n              className=\"w-[100px] h-[100px] text-center py-4 bg-white rounded-[3px] shadow-[0px_7px_30px_0px_rgba(0,0,0,0.05)]\">\n              <span className=\" block text-[#224f34] text-[32px] font-semibold\">18</span><span className=\" block text-[#224f34] text-base font-medium\">Hours</span>\n            </div>\n            <div\n              className=\"w-[100px] h-[100px] text-center py-4 bg-white rounded-[3px] shadow-[0px_7px_30px_0px_rgba(0,0,0,0.05)]\">\n              <span className=\" block text-[#224f34] text-[32px] font-semibold\">48</span><span className=\" block text-[#224f34] text-base font-medium\">min</span>\n            </div>\n          </div>\n          <button className=\" px-16 py-5   bg-[#224f34] rounded-[3px] shadow-[0px_7px_30px_0px_rgba(0,0,0,0.05)]   text-white text-xl font-medium font-['Poppins'] uppercase\">BUY NOW</button>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abdulbast",
+    "authorUrl": "https://tailwindflex.com/@abdulbast",
+    "sourceUrl": "https://tailwindflex.com/@abdulbast/offer-card",
+    "mention": "Créé par @abdulbast sur TailwindFlex",
+    "rawHtml": "<section class=\"pt-12\">\n  <div class=\"bg-[#C2EFD4] mx-auto w-[1400px] relative flex justify-around items-center\">\n    <div class=\"absolute left-10 bottom-0 w-[156px] h-[110px] grid grid-cols-4  \">\n      <div class=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n      <div class=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n      <div class=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n      <div class=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n      <div class=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n      <div class=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n      <div class=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n      <div class=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n      <div class=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n      <div class=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n      <div class=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n      <div class=\"w-2 h-2  bg-[#328b55] rounded-full\"></div>\n    </div><img src=\"https://iili.io/3Bvpo4R.png\" alt=\"\">\n    <div class=\"w-[589px] h-[447px] rounded-[3px]\">\n      <h2 class=\"  text-[#224f34] text-[46px] font-bold font-['Roboto_Slab']\">Exclusive offer</h2>\n      <p class=\"w-[589px] text-[#224f34] text-[22px] font-medium font-['Poppins'] leading-9\">Unlock the ultimate style\n        upgrade with our exclusive offer Enjoy savings of up to 40% off on our latest New Arrivals</p>\n      <div class=\"flex gap-9 my-10 font-['Poppins'] \">\n        <div\n          class=\"w-[100px] h-[100px] text-center py-4 bg-white rounded-[3px] shadow-[0px_7px_30px_0px_rgba(0,0,0,0.05)]\">\n          <span class=\" block text-[#224f34] text-[32px] font-semibold\">06</span><span class=\" block text-[#224f34] text-base font-medium\">Days</span>\n        </div>\n        <div\n          class=\"w-[100px] h-[100px] text-center py-4 bg-white rounded-[3px] shadow-[0px_7px_30px_0px_rgba(0,0,0,0.05)]\">\n          <span class=\" block text-[#224f34] text-[32px] font-semibold\">18</span><span class=\" block text-[#224f34] text-base font-medium\">Hours</span>\n        </div>\n        <div\n          class=\"w-[100px] h-[100px] text-center py-4 bg-white rounded-[3px] shadow-[0px_7px_30px_0px_rgba(0,0,0,0.05)]\">\n          <span class=\" block text-[#224f34] text-[32px] font-semibold\">48</span><span class=\" block text-[#224f34] text-base font-medium\">min</span>\n        </div>\n      </div>\n      <button class=\" px-16 py-5   bg-[#224f34] rounded-[3px] shadow-[0px_7px_30px_0px_rgba(0,0,0,0.05)]   text-white text-xl font-medium font-['Poppins'] uppercase\">BUY NOW</button>\n    </div>\n  </div>\n</section>"
+  }
+}

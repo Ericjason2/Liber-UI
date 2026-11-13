@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cta-card-with-gradient-border",
+  "type": "registry:ui",
+  "title": "CTA card with gradient border",
+  "description": "CTA card with gradient border - Créé par @sameer-sultana sur TailwindFlex.",
+  "author": "@sameer-sultana (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cta-card-with-gradient-border.tsx",
+      "content": "/**\n * Component: CTA card with gradient border\n * Author: @sameer-sultana (https://tailwindflex.com/@sameer-sultana)\n * Source: https://tailwindflex.com/@sameer-sultana/cta-card-with-gradient-border\n * Attribution: Créé par @sameer-sultana sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CtaCardWithGradientBorder() {\n  return (\n    <div>\n    <div className=\"relative mx-auto max-w-5xl mt-20\">\r\n        <div className=\"rounded-xl p-1\"\r\n            style=\"background-image: linear-gradient(to right bottom, rgb(79, 70, 229) 0%, rgb(165, 56, 164) 50%, rgb(220, 38, 38) 100%);\">\r\n            <div className=\"rounded-lg bg-black/80 backdrop-blur\">\r\n                <div className=\"flex w-full flex-wrap items-center justify-between gap-4 px-8 py-10 sm16 lg\">\r\n                    <div className=\"lg\">\r\n                        <h2\r\n                            className=\"block w-full pb-2 bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm4xl\">\r\n                            Enhancing Productivity with Artificial Intelligence \r\n                            </h2>\r\n                        <p className=\"my-4 bg-transparent font-medium leading-relaxed tracking-wide text-gray-400\">\r\n                            Natural Language Processing (NLP): The SmartAI Assistant understands and interprets natural\r\n                            language commands, allowing users to communicate with it effortlessly.\r\n                        </p>\r\n                    </div>\r\n                    <div className=\"flex flex-wrap items-center justify-center gap-6 \">\r\n                        <button className=\"bg-violet-600 text-white button-text flex items-center justify-center whitespace-nowrap rounded-md transition-all duration-300 px-8 py-3 text-xs sm\">Get Started</button>\r\n                        <button className=\"flex items-center justify-center whitespace-nowrap rounded-md border border-zinc-700 bg-zinc-900 text-center text-white backdrop-blur transition-all hover800 px-8 py-3 text-xs sm\">Learn More</button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sameer-sultana",
+    "authorUrl": "https://tailwindflex.com/@sameer-sultana",
+    "sourceUrl": "https://tailwindflex.com/@sameer-sultana/cta-card-with-gradient-border",
+    "mention": "Créé par @sameer-sultana sur TailwindFlex",
+    "rawHtml": "<div class=\"relative mx-auto max-w-5xl mt-20\">\r\n    <div class=\"rounded-xl p-1\"\r\n        style=\"background-image: linear-gradient(to right bottom, rgb(79, 70, 229) 0%, rgb(165, 56, 164) 50%, rgb(220, 38, 38) 100%);\">\r\n        <div class=\"rounded-lg bg-black/80 backdrop-blur\">\r\n            <div class=\"flex w-full flex-wrap items-center justify-between gap-4 px-8 py-10 sm:px-16 lg:flex-nowrap\">\r\n                <div class=\"lg:max-w-xl\">\r\n                    <h2\r\n                        class=\"block w-full pb-2 bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl\">\r\n                        Enhancing Productivity with Artificial Intelligence \r\n                        </h2>\r\n                    <p class=\"my-4 bg-transparent font-medium leading-relaxed tracking-wide text-gray-400\">\r\n                        Natural Language Processing (NLP): The SmartAI Assistant understands and interprets natural\r\n                        language commands, allowing users to communicate with it effortlessly.\r\n                    </p>\r\n                </div>\r\n                <div class=\"flex flex-wrap items-center justify-center gap-6 \">\r\n                    <button class=\"bg-violet-600 text-white button-text flex items-center justify-center whitespace-nowrap rounded-md transition-all duration-300 px-8 py-3 text-xs sm:text-sm\">Get Started</button>\r\n                    <button class=\"flex items-center justify-center whitespace-nowrap rounded-md border border-zinc-700 bg-zinc-900 text-center text-white backdrop-blur transition-all hover:bg-zinc-800 px-8 py-3 text-xs sm:text-sm\">Learn More</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

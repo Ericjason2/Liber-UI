@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cta-responsive",
+  "type": "registry:ui",
+  "title": "CTA Responsive",
+  "description": "CTA Responsive - Créé par @kuldeep541 sur TailwindFlex.",
+  "author": "@kuldeep541 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cta-responsive.tsx",
+      "content": "/**\n * Component: CTA Responsive\n * Author: @kuldeep541 (https://tailwindflex.com/@kuldeep541)\n * Source: https://tailwindflex.com/@kuldeep541/cta-responsive\n * Attribution: Créé par @kuldeep541 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CtaResponsive() {\n  return (\n    <div>\n    \n    <section className=\"bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-[40px] py-12 px-4 md8\">\n      <div className=\"max-w-7xl mx-auto text-center text-white space-y-6 md8\">\n        <h2 className=\"text-3xl md4xl font-extrabold leading-tight\">\n          Ready to Elevate Your Business?\n        </h2>\n        <p className=\"text-lg md opacity-90\">\n          Join thousands of satisfied customers. Get started today and transform your future!\n        </p>\n        <a\n          href=\"#\"\n          className=\"inline-block bg-white text-purple-600 font-semibold uppercase px-8 py-3 rounded-full shadow-lg hover100 transition duration-300\"\n        >\n          Get Started Now\n        </a>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@kuldeep541",
+    "authorUrl": "https://tailwindflex.com/@kuldeep541",
+    "sourceUrl": "https://tailwindflex.com/@kuldeep541/cta-responsive",
+    "mention": "Créé par @kuldeep541 sur TailwindFlex",
+    "rawHtml": "<!-- CTA Section -->\n<section class=\"bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-[40px] py-12 px-4 md:px-8\">\n  <div class=\"max-w-7xl mx-auto text-center text-white space-y-6 md:space-y-8\">\n    <h2 class=\"text-3xl md:text-4xl font-extrabold leading-tight\">\n      Ready to Elevate Your Business?\n    </h2>\n    <p class=\"text-lg md:text-xl opacity-90\">\n      Join thousands of satisfied customers. Get started today and transform your future!\n    </p>\n    <a\n      href=\"#\"\n      class=\"inline-block bg-white text-purple-600 font-semibold uppercase px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-300\"\n    >\n      Get Started Now\n    </a>\n  </div>\n</section>"
+  }
+}

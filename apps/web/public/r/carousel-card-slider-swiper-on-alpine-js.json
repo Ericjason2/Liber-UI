@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "carousel-card-slider-swiper-on-alpine-js",
+  "type": "registry:ui",
+  "title": "Carousel Card Slider Swiper on Alpine.JS",
+  "description": "Carousel Card Slider Swiper on Alpine.JS - Créé par @maximus sur TailwindFlex.",
+  "author": "@maximus (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/carousel-card-slider-swiper-on-alpine-js.tsx",
+      "content": "/**\n * Component: Carousel Card Slider Swiper on Alpine.JS\n * Author: @maximus (https://tailwindflex.com/@maximus)\n * Source: https://tailwindflex.com/@maximus/carousel-card-slider-swiper-on-alpine-js\n * Attribution: Créé par @maximus sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CarouselCardSliderSwiperOnAlpineJs() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"\\n\\n<div x-data=\\\"swipeCards()\\\" x-init=\\\"\\n\\t\\t\\tlet isDown = false;\\n\\t\\t\\tlet startX;\\n\\t\\t\\tlet scrollLeft;\\n\\t\\t\\t$el.addEventListener('mousedown', (e) => {\\n\\t\\t\\tisDown = true;\\n\\t\\t\\tstartX = e.pageX - $el.offsetLeft;\\n\\t\\t\\tscrollLeft = $el.scrollLeft;\\n\\t\\t\\t});\\n\\t\\t\\t$el.addEventListener('mouseleave', () => {\\n\\t\\t\\tisDown = false;\\n\\t\\t\\t});\\n\\t\\t\\t$el.addEventListener('mouseup', () => {\\n\\t\\t\\tisDown = false;\\n\\t\\t\\t});\\n\\t\\t\\t$el.addEventListener('mousemove', (e) => {\\n\\t\\t\\tif (!isDown) return;\\n\\t\\t\\te.preventDefault();\\n\\t\\t\\tconst x = e.pageX - $el.offsetLeft;\\n\\t\\t\\tconst walk = (x - startX) * 1;\\n\\t\\t\\t$el.scrollLeft = scrollLeft - walk;\\n\\t\\t\\t});\\n\\t\\t\\t\\\" class=\\\"overflow-x-scroll scrollbar-hide mb-4 relative px-0.5\\\" style=\\\"overflow-y: hidden;\\\">\\n\\t<div class=\\\"flex snap-x snap-mandatory gap-4\\\" style=\\\"width: max-content;\\\">\\n\\t\\t<template x-for=\\\"card in cards\\\" :key=\\\"card.id\\\">\\n\\t\\t\\t<div class=\\\"flex-none w-64 snap-center\\\">\\n\\t\\t\\t\\t<div class=\\\"bg-white border-1 border border-gray-200 rounded-lg overflow-hidden mb-4\\\">\\n\\t\\t\\t\\t\\t<img :src=\\\"card.image\\\" alt=\\\"\\\" class=\\\"w-full h-40 object-cover\\\">\\n\\t\\t\\t\\t\\t<div class=\\\"p-4\\\">\\n\\t\\t\\t\\t\\t\\t<h3 class=\\\"text-lg leading-6 font-bold text-gray-900\\\" x-text=\\\"card.title\\\"></h3>\\n\\t\\t\\t\\t\\t\\t<p class=\\\"text-gray-600 mt-2 text-sm\\\" x-text=\\\"card.description\\\"></p>\\n\\t\\t\\t\\t\\t\\t<div class=\\\"flex justify-between items-center mt-4\\\">\\n\\t\\t\\t\\t\\t\\t\\t<span class=\\\"text-2xl font-extrabold text-gray-900\\\" x-text=\\\"'$' + card.price.toFixed(2)\\\"></span>\\n\\t\\t\\t\\t\\t\\t\\t<a :href=\\\"card.link\\\"\\n\\t\\t\\t\\t\\t\\t\\t\\tclass=\\\"text-white bg-fuchsia-950 hover:bg-fuchsia-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center\\\"><svg\\n\\t\\t\\t\\t\\t\\t\\t\\t\\txmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\"\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tstroke-width=\\\"1.5\\\" stroke=\\\"currentColor\\\" class=\\\"w-5 h-5\\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\td=\\\"M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z\\\" />\\n\\t\\t\\t\\t\\t\\t\\t\\t</svg></a>\\n\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t</div>\\n\\t\\t\\t</div>\\n\\t\\t</template>\\n\\t</div>\\n</div>\\n\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@maximus",
+    "authorUrl": "https://tailwindflex.com/@maximus",
+    "sourceUrl": "https://tailwindflex.com/@maximus/carousel-card-slider-swiper-on-alpine-js",
+    "mention": "Créé par @maximus sur TailwindFlex",
+    "rawHtml": "<script src=\"https://cdn.jsdelivr.net/npm/tailwindcss-cdn@3.4.1/tailwindcss.js\"></script>\n<script src=\"//unpkg.com/alpinejs\" defer></script>\n<div x-data=\"swipeCards()\" x-init=\"\n\t\t\tlet isDown = false;\n\t\t\tlet startX;\n\t\t\tlet scrollLeft;\n\t\t\t$el.addEventListener('mousedown', (e) => {\n\t\t\tisDown = true;\n\t\t\tstartX = e.pageX - $el.offsetLeft;\n\t\t\tscrollLeft = $el.scrollLeft;\n\t\t\t});\n\t\t\t$el.addEventListener('mouseleave', () => {\n\t\t\tisDown = false;\n\t\t\t});\n\t\t\t$el.addEventListener('mouseup', () => {\n\t\t\tisDown = false;\n\t\t\t});\n\t\t\t$el.addEventListener('mousemove', (e) => {\n\t\t\tif (!isDown) return;\n\t\t\te.preventDefault();\n\t\t\tconst x = e.pageX - $el.offsetLeft;\n\t\t\tconst walk = (x - startX) * 1;\n\t\t\t$el.scrollLeft = scrollLeft - walk;\n\t\t\t});\n\t\t\t\" class=\"overflow-x-scroll scrollbar-hide mb-4 relative px-0.5\" style=\"overflow-y: hidden;\">\n\t<div class=\"flex snap-x snap-mandatory gap-4\" style=\"width: max-content;\">\n\t\t<template x-for=\"card in cards\" :key=\"card.id\">\n\t\t\t<div class=\"flex-none w-64 snap-center\">\n\t\t\t\t<div class=\"bg-white border-1 border border-gray-200 rounded-lg overflow-hidden mb-4\">\n\t\t\t\t\t<img :src=\"card.image\" alt=\"\" class=\"w-full h-40 object-cover\">\n\t\t\t\t\t<div class=\"p-4\">\n\t\t\t\t\t\t<h3 class=\"text-lg leading-6 font-bold text-gray-900\" x-text=\"card.title\"></h3>\n\t\t\t\t\t\t<p class=\"text-gray-600 mt-2 text-sm\" x-text=\"card.description\"></p>\n\t\t\t\t\t\t<div class=\"flex justify-between items-center mt-4\">\n\t\t\t\t\t\t\t<span class=\"text-2xl font-extrabold text-gray-900\" x-text=\"'$' + card.price.toFixed(2)\"></span>\n\t\t\t\t\t\t\t<a :href=\"card.link\"\n\t\t\t\t\t\t\t\tclass=\"text-white bg-fuchsia-950 hover:bg-fuchsia-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center\"><svg\n\t\t\t\t\t\t\t\t\txmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"\n\t\t\t\t\t\t\t\t\tstroke-width=\"1.5\" stroke=\"currentColor\" class=\"w-5 h-5\">\n\t\t\t\t\t\t\t\t\t<path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n\t\t\t\t\t\t\t\t\t\td=\"M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z\" />\n\t\t\t\t\t\t\t\t</svg></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</template>\n\t</div>\n</div>\n<script>\n\tfunction swipeCards() {\n\t\t\t  return {\n\t\t\t    cards: [\n\t\t\t      {\n\t\t\t        id: 1,\n\t\t\t        image: `https://loremflickr.com/300/200/${encodeURIComponent('grape')}`,\n\t\t\t        title: 'Cocktail',\n\t\t\t        description: 'Tropical mix of flavors, perfect for parties.',\n\t\t\t        price: 8.99,\n\t\t\t        link: 'https://lqrs.com'\n\t\t\t      },\n\t\t\t      {\n\t\t\t        id: 2,\n\t\t\t        image: `https://loremflickr.com/300/200/${encodeURIComponent('apple')}`,\n\t\t\t        title: 'Smoothie',\n\t\t\t        description: 'Refreshing blend of fruits and yogurt.',\n\t\t\t        price: 5.49,\n\t\t\t        link: 'https://lqrs.com'\n\t\t\t      },\n\t\t\t      {\n\t\t\t        id: 3,\n\t\t\t        image: `https://loremflickr.com/300/200/${encodeURIComponent('banana')}`,\n\t\t\t        title: 'Iced Coffee',\n\t\t\t        description: 'Cold brewed coffee with a hint of vanilla.',\n\t\t\t        price: 4.99,\n\t\t\t        link: 'https://lqrs.com'\n\t\t\t      },\n\t\t\t      {\n\t\t\t        id: 4,\n\t\t\t        image: `https://loremflickr.com/300/200/${encodeURIComponent('berry')}`,\n\t\t\t        title: 'Mojito',\n\t\t\t        description: 'Classic Cuban cocktail with mint and lime.',\n\t\t\t        price: 7.99,\n\t\t\t        link: 'https://lqrs.com'\n\t\t\t      },\n\t\t\t      {\n\t\t\t        id: 5,\n\t\t\t        image: `https://loremflickr.com/300/200/${encodeURIComponent('orange')}`,\n\t\t\t        title: 'Matcha Latte',\n\t\t\t        description: 'Creamy green tea latte, rich in antioxidants.',\n\t\t\t        price: 6.49,\n\t\t\t        link: 'https://lqrs.com'\n\t\t\t      },\n\t\t\t      {\n\t\t\t        id: 6,\n\t\t\t        image: `https://loremflickr.com/300/200/${encodeURIComponent('peach')}`,\n\t\t\t        title: 'Fruit Punch',\n\t\t\t        description: 'Sweet and tangy punch, bursting with fruity flavors.',\n\t\t\t        price: 3.99,\n\t\t\t        link: 'https://lqrs.com'\n\t\t\t      },\n\t\t\t      {\n\t\t\t        id: 7,\n\t\t\t        image: `https://loremflickr.com/300/200/${encodeURIComponent('cherry')}`,\n\t\t\t        title: 'Bubble Tea',\n\t\t\t        description: 'Chewy tapioca pearls in a sweet milk tea base.',\n\t\t\t        price: 4.99,\n\t\t\t        link: 'https://lqrs.com'\n\t\t\t      }\n\t\t\t    ],\n\t\t\t    addToCart(product) {\n\t\t\t      // Implement your add to cart logic here\n\t\t\t      console.log('Adding to cart:', product);\n\t\t\t    }\n\t\t\t  };\n\t\t\t}\n</script>"
+  }
+}

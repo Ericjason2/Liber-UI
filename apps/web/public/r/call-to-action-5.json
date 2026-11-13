@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-to-action-5",
+  "type": "registry:ui",
+  "title": "Call to action",
+  "description": "Call to action - Créé par @leon-bachmann sur TailwindFlex.",
+  "author": "@leon-bachmann (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-to-action-5.tsx",
+      "content": "/**\n * Component: Call to action\n * Author: @leon-bachmann (https://tailwindflex.com/@leon-bachmann)\n * Source: https://tailwindflex.com/@leon-bachmann/call-to-action-5\n * Attribution: Créé par @leon-bachmann sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToAction5() {\n  return (\n    <div>\n    <div className=\"bg-gray-800 mt-10\">\n        <div className=\"max-w-screen-xl mx-auto text-center py-12 px-4 sm6 lg16 lg8\">\n            <h2 className=\"text-3xl leading-9 font-extrabold tracking-tight text-white sm4xl sm10\">\n                Ready to get started?\n                <br />\n               Create a portfolio for free!\n            </h2>\n            <div className=\"mt-8 flex justify-center\">\n                <div className=\"inline-flex rounded-md shadow\">\n                    <a href=\"#\"\n                        className=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover500 focus focus transition duration-150 ease-in-out\">\n                        Get started\n                    </a>\n                </div>\n    \n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@leon-bachmann",
+    "authorUrl": "https://tailwindflex.com/@leon-bachmann",
+    "sourceUrl": "https://tailwindflex.com/@leon-bachmann/call-to-action-5",
+    "mention": "Créé par @leon-bachmann sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-800 mt-10\">\n    <div class=\"max-w-screen-xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8\">\n        <h2 class=\"text-3xl leading-9 font-extrabold tracking-tight text-white sm:text-4xl sm:leading-10\">\n            Ready to get started?\n            <br>\n           Create a portfolio for free!\n        </h2>\n        <div class=\"mt-8 flex justify-center\">\n            <div class=\"inline-flex rounded-md shadow\">\n                <a href=\"#\"\n                    class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out\">\n                    Get started\n                </a>\n            </div>\n\n        </div>\n    </div>\n</div>"
+  }
+}

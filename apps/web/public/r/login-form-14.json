@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-form-14",
+  "type": "registry:ui",
+  "title": "Login form",
+  "description": "Login form - Créé par @rajesh-maheshwari sur TailwindFlex.",
+  "author": "@rajesh-maheshwari (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/login-form-14.tsx",
+      "content": "/**\n * Component: Login form\n * Author: @rajesh-maheshwari (https://tailwindflex.com/@rajesh-maheshwari)\n * Source: https://tailwindflex.com/@rajesh-maheshwari/login-form-14\n * Attribution: Créé par @rajesh-maheshwari sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LoginForm14() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<body class=\\\"flex items-center justify-center min-h-screen bg-gray-100\\\">\\n    <div class=\\\"bg-white p-8 rounded-2xl shadow-lg w-full max-w-sm border border-gray-200 relative overflow-hidden\\\">\\n        <div class=\\\"absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-500 to-purple-500\\\"></div>\\n        <div class=\\\"absolute top-0 left-0 h-full w-1 bg-gradient-to-b from-blue-500 to-purple-500\\\"></div>\\n        <div class=\\\"absolute top-0 right-0 h-full w-1 bg-gradient-to-b from-blue-500 to-purple-500\\\"></div>\\n        <div class=\\\"flex flex-col items-center\\\">\\n            <img src=\\\"https://tailwindflex.com/images/logo.svg\\\" alt=\\\"Profile Picture\\\" class=\\\"w-14 h-14 rounded-full mt-4\\\">\\n            <h2 class=\\\"text-xl font-semibold mt-2\\\">Welcome, Rajesh!</h2>\\n            <p class=\\\"text-gray-500 text-sm\\\">Sign in to continue</p>\\n        </div>\\n        <form class=\\\"mt-6\\\">\\n            <label class=\\\"block text-sm font-medium text-gray-700\\\">Email</label>\\n            <input type=\\\"email\\\" placeholder=\\\"Email address\\\" class=\\\"mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none\\\">\\n            \\n            <label class=\\\"block text-sm font-medium text-gray-700 mt-4\\\">Password</label>\\n            <div class=\\\"relative\\\">\\n                <input type=\\\"password\\\" placeholder=\\\"Password\\\" class=\\\"mt-1 w-full px-3 py-2 border border-gray-300 rounded-md  focus:outline-none\\\">\\n                <span class=\\\"absolute right-3 top-3 cursor-pointer text-gray-500\\\">👁</span>\\n            </div>\\n            \\n            <div class=\\\"flex items-center justify-between mt-4\\\">\\n                <label class=\\\"flex items-center text-sm text-gray-600\\\">\\n                    <input type=\\\"checkbox\\\" class=\\\"mr-2 border-gray-300\\\"> Remember me\\n                </label>\\n                <a href=\\\"#\\\" class=\\\"text-sm text-blue-500 hover:underline\\\">Forgot password?</a>\\n            </div>\\n            \\n            <button class=\\\"mt-6 w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-md text-center font-semibold\\\">Sign In</button>\\n        </form>\\n    </div>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "form",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rajesh-maheshwari",
+    "authorUrl": "https://tailwindflex.com/@rajesh-maheshwari",
+    "sourceUrl": "https://tailwindflex.com/@rajesh-maheshwari/login-form-14",
+    "mention": "Créé par @rajesh-maheshwari sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<body class=\"flex items-center justify-center min-h-screen bg-gray-100\">\n    <div class=\"bg-white p-8 rounded-2xl shadow-lg w-full max-w-sm border border-gray-200 relative overflow-hidden\">\n        <div class=\"absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-500 to-purple-500\"></div>\n        <div class=\"absolute top-0 left-0 h-full w-1 bg-gradient-to-b from-blue-500 to-purple-500\"></div>\n        <div class=\"absolute top-0 right-0 h-full w-1 bg-gradient-to-b from-blue-500 to-purple-500\"></div>\n        <div class=\"flex flex-col items-center\">\n            <img src=\"https://tailwindflex.com/images/logo.svg\" alt=\"Profile Picture\" class=\"w-14 h-14 rounded-full mt-4\">\n            <h2 class=\"text-xl font-semibold mt-2\">Welcome, Rajesh!</h2>\n            <p class=\"text-gray-500 text-sm\">Sign in to continue</p>\n        </div>\n        <form class=\"mt-6\">\n            <label class=\"block text-sm font-medium text-gray-700\">Email</label>\n            <input type=\"email\" placeholder=\"Email address\" class=\"mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none\">\n            \n            <label class=\"block text-sm font-medium text-gray-700 mt-4\">Password</label>\n            <div class=\"relative\">\n                <input type=\"password\" placeholder=\"Password\" class=\"mt-1 w-full px-3 py-2 border border-gray-300 rounded-md  focus:outline-none\">\n                <span class=\"absolute right-3 top-3 cursor-pointer text-gray-500\">👁</span>\n            </div>\n            \n            <div class=\"flex items-center justify-between mt-4\">\n                <label class=\"flex items-center text-sm text-gray-600\">\n                    <input type=\"checkbox\" class=\"mr-2 border-gray-300\"> Remember me\n                </label>\n                <a href=\"#\" class=\"text-sm text-blue-500 hover:underline\">Forgot password?</a>\n            </div>\n            \n            <button class=\"mt-6 w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-md text-center font-semibold\">Sign In</button>\n        </form>\n    </div>\n</body>\n</html>"
+  }
+}

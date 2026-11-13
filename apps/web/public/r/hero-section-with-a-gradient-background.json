@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-with-a-gradient-background",
+  "type": "registry:ui",
+  "title": "Hero section with a gradient background",
+  "description": "Hero section with a gradient background - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-with-a-gradient-background.tsx",
+      "content": "/**\n * Component: Hero section with a gradient background\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/hero-section-with-a-gradient-background\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSectionWithAGradientBackground() {\n  return (\n    <div>\n    <div className=\"relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden\">\n      <div className=\"absolute inset-0\">\n        <img src=\"https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxjb2RlfGVufDB8MHx8fDE2OTQwOTg0MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Background Image\" className=\"object-cover object-center w-full h-full\" />\n        <div className=\"absolute inset-0 bg-black opacity-50\"></div>\n      </div>\n      \n      <div className=\"relative z-10 flex flex-col justify-center items-center h-full text-center\">\n        <h1 className=\"text-5xl font-bold leading-tight mb-4\">Welcome to Our Awesome Website</h1>\n        <p className=\"text-lg text-gray-300 mb-8\">Discover amazing features and services that await you.</p>\n        <a href=\"#\" className=\"bg-yellow-400 text-gray-900 hover300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover105 hover\">Get Started</a>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/hero-section-with-a-gradient-background",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<div class=\"relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden\">\n  <div class=\"absolute inset-0\">\n    <img src=\"https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxjb2RlfGVufDB8MHx8fDE2OTQwOTg0MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Background Image\" class=\"object-cover object-center w-full h-full\" />\n    <div class=\"absolute inset-0 bg-black opacity-50\"></div>\n  </div>\n  \n  <div class=\"relative z-10 flex flex-col justify-center items-center h-full text-center\">\n    <h1 class=\"text-5xl font-bold leading-tight mb-4\">Welcome to Our Awesome Website</h1>\n    <p class=\"text-lg text-gray-300 mb-8\">Discover amazing features and services that await you.</p>\n    <a href=\"#\" class=\"bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg\">Get Started</a>\n  </div>\n</div>"
+  }
+}

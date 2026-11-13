@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "about-us-card",
+  "type": "registry:ui",
+  "title": "About us card",
+  "description": "About us card - Créé par @sienna sur TailwindFlex.",
+  "author": "@sienna (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/about-us-card.tsx",
+      "content": "/**\n * Component: About us card\n * Author: @sienna (https://tailwindflex.com/@sienna)\n * Source: https://tailwindflex.com/@sienna/about-us-card\n * Attribution: Créé par @sienna sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AboutUsCard() {\n  return (\n    <div>\n    <div className=\"max-w-[400px] bg-white shadow flex flex-col my-4 p-6\">\r\n        <p className=\"text-xl font-semibold pb-5\">About Us</p>\r\n        <p className=\"pb-2\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis est eu odio sagittis\r\n            tristique. Vestibulum ut finibus leo. In hac habitasse platea dictumst.</p>\r\n        <a href=\"#\"\r\n            className=\"w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover700 flex items-center justify-center px-2 py-3 mt-4\">\r\n            Get to know us\r\n        </a>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sienna",
+    "authorUrl": "https://tailwindflex.com/@sienna",
+    "sourceUrl": "https://tailwindflex.com/@sienna/about-us-card",
+    "mention": "Créé par @sienna sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-[400px] bg-white shadow flex flex-col my-4 p-6\">\r\n    <p class=\"text-xl font-semibold pb-5\">About Us</p>\r\n    <p class=\"pb-2\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis est eu odio sagittis\r\n        tristique. Vestibulum ut finibus leo. In hac habitasse platea dictumst.</p>\r\n    <a href=\"#\"\r\n        class=\"w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-4\">\r\n        Get to know us\r\n    </a>\r\n</div>"
+  }
+}

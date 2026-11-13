@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "about-me-section-with-image",
+  "type": "registry:ui",
+  "title": "About me section with image",
+  "description": "About me section with image - Créé par @kofi-osei sur TailwindFlex.",
+  "author": "@kofi-osei (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/about-me-section-with-image.tsx",
+      "content": "/**\n * Component: About me section with image\n * Author: @kofi-osei (https://tailwindflex.com/@kofi-osei)\n * Source: https://tailwindflex.com/@kofi-osei/about-me-section-with-image\n * Attribution: Créé par @kofi-osei sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AboutMeSectionWithImage() {\n  return (\n    <div>\n    <div id=\"about\" className=\"relative bg-white overflow-hidden mt-16\">\r\n        <div className=\"max-w-7xl mx-auto\">\r\n            <div className=\"relative z-10 pb-8 bg-white sm16 md20 lg2xl lg lg28 xl32\">\r\n                <svg className=\"hidden lg absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2\"\r\n                    fill=\"currentColor\" viewBox=\"0 0 100 100\" preserveAspectRatio=\"none\" aria-hidden=\"true\">\r\n                    <polygon points=\"50,0 100,0 50,100 0,100\"></polygon>\r\n                </svg>\r\n    \r\n                <div className=\"pt-1\"></div>\r\n    \r\n                <main className=\"mt-10 mx-auto max-w-7xl px-4 sm12 sm6 md16 lg20 lg8 xl28\">\r\n                    <div className=\"sm lg\">\r\n                        <h2 className=\"my-6 text-2xl tracking-tight font-extrabold text-gray-900 sm3xl md4xl\">\r\n                            About me\r\n                        </h2>\r\n    \r\n                        <p>\r\n                            Donec porttitor, enim ut dapibus lobortis, lectus sem tincidunt dui, eget ornare lectus ex non\r\n                            libero. Nam rhoncus diam ultrices porttitor laoreet. Ut mollis fermentum ex, vel viverra lorem\r\n                            volutpat sodales. In ornare porttitor odio sit amet laoreet. Sed laoreet, nulla a posuere\r\n                            ultrices, purus nulla tristique turpis, hendrerit rutrum augue quam ut est. Fusce malesuada\r\n                            posuere libero, vitae dapibus eros facilisis euismod. Sed sed lobortis justo, ut tincidunt\r\n                            velit. Mauris in maximus eros.\r\n                        </p>\r\n                    </div>\r\n                </main>\r\n            </div>\r\n        </div>\r\n        <div className=\"lg lg0 lg0 lg1/2\">\r\n            <img className=\"h-56 w-full object-cover object-top sm72 md96 lg lg\" src=\"https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_960_720.jpg\" alt=\"\" />\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@kofi-osei",
+    "authorUrl": "https://tailwindflex.com/@kofi-osei",
+    "sourceUrl": "https://tailwindflex.com/@kofi-osei/about-me-section-with-image",
+    "mention": "Créé par @kofi-osei sur TailwindFlex",
+    "rawHtml": "<div id=\"about\" class=\"relative bg-white overflow-hidden mt-16\">\r\n    <div class=\"max-w-7xl mx-auto\">\r\n        <div class=\"relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32\">\r\n            <svg class=\"hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2\"\r\n                fill=\"currentColor\" viewBox=\"0 0 100 100\" preserveAspectRatio=\"none\" aria-hidden=\"true\">\r\n                <polygon points=\"50,0 100,0 50,100 0,100\"></polygon>\r\n            </svg>\r\n\r\n            <div class=\"pt-1\"></div>\r\n\r\n            <main class=\"mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28\">\r\n                <div class=\"sm:text-center lg:text-left\">\r\n                    <h2 class=\"my-6 text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl\">\r\n                        About me\r\n                    </h2>\r\n\r\n                    <p>\r\n                        Donec porttitor, enim ut dapibus lobortis, lectus sem tincidunt dui, eget ornare lectus ex non\r\n                        libero. Nam rhoncus diam ultrices porttitor laoreet. Ut mollis fermentum ex, vel viverra lorem\r\n                        volutpat sodales. In ornare porttitor odio sit amet laoreet. Sed laoreet, nulla a posuere\r\n                        ultrices, purus nulla tristique turpis, hendrerit rutrum augue quam ut est. Fusce malesuada\r\n                        posuere libero, vitae dapibus eros facilisis euismod. Sed sed lobortis justo, ut tincidunt\r\n                        velit. Mauris in maximus eros.\r\n                    </p>\r\n                </div>\r\n            </main>\r\n        </div>\r\n    </div>\r\n    <div class=\"lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2\">\r\n        <img class=\"h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full\" src=\"https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_960_720.jpg\" alt=\"\">\r\n    </div>\r\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "profile-form",
+  "type": "registry:ui",
+  "title": "Profile Form",
+  "description": "Profile Form - Créé par @team-tailwindflex sur TailwindFlex.",
+  "author": "@team-tailwindflex (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/profile-form.tsx",
+      "content": "/**\n * Component: Profile Form\n * Author: @team-tailwindflex (https://tailwindflex.com/@team-tailwindflex)\n * Source: https://tailwindflex.com/@team-tailwindflex/profile-form\n * Attribution: Créé par @team-tailwindflex sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProfileForm() {\n  return (\n    <div>\n    <div className=\"flex justify-center mt-20 px-8\">\n        <form className=\"max-w-2xl\">\n            <div className=\"flex flex-wrap border shadow rounded-lg p-3 dark600\">\n                <h2 className=\"text-xl text-gray-600 dark300 pb-2\">Account settings:</h2>\n    \n                <div className=\"flex flex-col gap-2 w-full border-gray-400\">\n    \n                    <div>\n                        <label className=\"text-gray-600 dark400\">User\n                            name\n                        </label>\n                        <input\n                            className=\"w-full py-3 border border-slate-200 rounded-lg px-3 focus focus500 hover dark600 dark100\"\n                            type=\"text\" />\n                    </div>\n    \n                    <div>\n                        <label className=\"text-gray-600 dark400\">Email</label>\n                        <input\n                            className=\"w-full py-3 border border-slate-200 rounded-lg px-3 focus focus500 hover dark600 dark100\"\n                            type=\"text\" />\n                    </div>\n    \n                    <div>\n                        <label className=\"text-gray-600 dark400\">Bio</label>\n                        <textarea\n                            className=\"w-full py-3 border border-slate-200 rounded-lg px-3 focus focus500 hover dark600 dark100\"\n                            name=\"bio\"></textarea>\n                    </div>\n                    <div className=\"flex justify-end\">\n                        <button\n                            className=\"py-1.5 px-3 m-1 text-center bg-violet-700 border rounded-md text-white  hover500 hover100 dark200 dark700\"\n                            type=\"submit\">Save changes</button>\n                    </div>\n                </div>\n            </div>\n        </form>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@team-tailwindflex",
+    "authorUrl": "https://tailwindflex.com/@team-tailwindflex",
+    "sourceUrl": "https://tailwindflex.com/@team-tailwindflex/profile-form",
+    "mention": "Créé par @team-tailwindflex sur TailwindFlex",
+    "rawHtml": "<div class=\"flex justify-center mt-20 px-8\">\n    <form class=\"max-w-2xl\">\n        <div class=\"flex flex-wrap border shadow rounded-lg p-3 dark:bg-gray-600\">\n            <h2 class=\"text-xl text-gray-600 dark:text-gray-300 pb-2\">Account settings:</h2>\n\n            <div class=\"flex flex-col gap-2 w-full border-gray-400\">\n\n                <div>\n                    <label class=\"text-gray-600 dark:text-gray-400\">User\n                        name\n                    </label>\n                    <input\n                        class=\"w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow dark:bg-gray-600 dark:text-gray-100\"\n                        type=\"text\">\n                </div>\n\n                <div>\n                    <label class=\"text-gray-600 dark:text-gray-400\">Email</label>\n                    <input\n                        class=\"w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow dark:bg-gray-600 dark:text-gray-100\"\n                        type=\"text\">\n                </div>\n\n                <div>\n                    <label class=\"text-gray-600 dark:text-gray-400\">Bio</label>\n                    <textarea\n                        class=\"w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow dark:bg-gray-600 dark:text-gray-100\"\n                        name=\"bio\"></textarea>\n                </div>\n                <div class=\"flex justify-end\">\n                    <button\n                        class=\"py-1.5 px-3 m-1 text-center bg-violet-700 border rounded-md text-white  hover:bg-violet-500 hover:text-gray-100 dark:text-gray-200 dark:bg-violet-700\"\n                        type=\"submit\">Save changes</button>\n                </div>\n            </div>\n        </div>\n    </form>\n</div>"
+  }
+}

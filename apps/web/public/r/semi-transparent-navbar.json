@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "semi-transparent-navbar",
+  "type": "registry:ui",
+  "title": "Semi transparent navbar",
+  "description": "Semi transparent navbar - Créé par @laurits sur TailwindFlex.",
+  "author": "@laurits (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/semi-transparent-navbar.tsx",
+      "content": "/**\n * Component: Semi transparent navbar\n * Author: @laurits (https://tailwindflex.com/@laurits)\n * Source: https://tailwindflex.com/@laurits/semi-transparent-navbar\n * Attribution: Créé par @laurits sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SemiTransparentNavbar() {\n  return (\n    <div>\n    <header className=\"sticky inset-0 z-50 border-b border-slate-100 bg-white/80 backdrop-blur-lg\">\r\n        <nav className=\"mx-auto flex max-w-6xl gap-8 px-6 transition-all duration-200 ease-in-out lg12 py-4\">\r\n            <div className=\"relative flex items-center\">\r\n                <a href=\"/\">\r\n                    <img  src=\"https://www.svgrepo.com/show/499831/target.svg\" loading=\"lazy\" style=\"color\" width=\"32\" height=\"32\" /></a>\r\n            </div>\r\n            <ul className=\"hidden items-center justify-center gap-6 md\">\r\n                <li className=\"pt-1.5 font-dm text-sm font-medium text-slate-700\">\r\n                    <a href=\"#\">Pricing</a>\r\n                </li>\r\n                <li className=\"pt-1.5 font-dm text-sm font-medium text-slate-700\">\r\n                    <a href=\"#\">Blog</a>\r\n                </li>\r\n                <li className=\"pt-1.5 font-dm text-sm font-medium text-slate-700\">\r\n                    <a href=\"#\">Docs</a>\r\n                </li>\r\n            </ul>\r\n            <div className=\"flex-grow\"></div>\r\n            <div className=\"hidden items-center justify-center gap-6 md\">\r\n                <a href=\"#\" className=\"font-dm text-sm font-medium text-slate-700\">Sign in</a>\r\n                <a href=\"#\"\r\n                    className=\"rounded-md bg-gradient-to-br from-green-600 to-emerald-400 px-3 py-1.5 font-dm text-sm font-medium text-white shadow-md shadow-green-400/50 transition-transform duration-200 ease-in-out hover[1.03]\">Sign\r\n                    up for free\r\n                </a>\r\n            </div>\r\n            <div className=\"relative flex items-center justify-center md\">\r\n                <button type=\"button\">\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth=\"1.5\" stroke=\"currentColor\" aria-hidden=\"true\" className=\"h-6 w-auto text-slate-900\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5\"></path></svg>\r\n                </button>\r\n            </div>\r\n        </nav>\r\n    </header>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@laurits",
+    "authorUrl": "https://tailwindflex.com/@laurits",
+    "sourceUrl": "https://tailwindflex.com/@laurits/semi-transparent-navbar",
+    "mention": "Créé par @laurits sur TailwindFlex",
+    "rawHtml": "<header class=\"sticky inset-0 z-50 border-b border-slate-100 bg-white/80 backdrop-blur-lg\">\r\n    <nav class=\"mx-auto flex max-w-6xl gap-8 px-6 transition-all duration-200 ease-in-out lg:px-12 py-4\">\r\n        <div class=\"relative flex items-center\">\r\n            <a href=\"/\">\r\n                <img  src=\"https://www.svgrepo.com/show/499831/target.svg\" loading=\"lazy\" style=\"color:transparent\" width=\"32\" height=\"32\"></a>\r\n        </div>\r\n        <ul class=\"hidden items-center justify-center gap-6 md:flex\">\r\n            <li class=\"pt-1.5 font-dm text-sm font-medium text-slate-700\">\r\n                <a href=\"#\">Pricing</a>\r\n            </li>\r\n            <li class=\"pt-1.5 font-dm text-sm font-medium text-slate-700\">\r\n                <a href=\"#\">Blog</a>\r\n            </li>\r\n            <li class=\"pt-1.5 font-dm text-sm font-medium text-slate-700\">\r\n                <a href=\"#\">Docs</a>\r\n            </li>\r\n        </ul>\r\n        <div class=\"flex-grow\"></div>\r\n        <div class=\"hidden items-center justify-center gap-6 md:flex\">\r\n            <a href=\"#\" class=\"font-dm text-sm font-medium text-slate-700\">Sign in</a>\r\n            <a href=\"#\"\r\n                class=\"rounded-md bg-gradient-to-br from-green-600 to-emerald-400 px-3 py-1.5 font-dm text-sm font-medium text-white shadow-md shadow-green-400/50 transition-transform duration-200 ease-in-out hover:scale-[1.03]\">Sign\r\n                up for free\r\n            </a>\r\n        </div>\r\n        <div class=\"relative flex items-center justify-center md:hidden\">\r\n            <button type=\"button\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" aria-hidden=\"true\" class=\"h-6 w-auto text-slate-900\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5\"></path></svg>\r\n            </button>\r\n        </div>\r\n    </nav>\r\n</header>"
+  }
+}

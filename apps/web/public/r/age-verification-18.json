@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "age-verification-18",
+  "type": "registry:ui",
+  "title": "Age verification 18+",
+  "description": "Age verification 18+ - Créé par @maximus sur TailwindFlex.",
+  "author": "@maximus (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/age-verification-18.tsx",
+      "content": "/**\n * Component: Age verification 18+\n * Author: @maximus (https://tailwindflex.com/@maximus)\n * Source: https://tailwindflex.com/@maximus/age-verification-18\n * Attribution: Créé par @maximus sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AgeVerification18() {\n  return (\n    <div>\n    <div id=\"age\" className=\"fixed z-[9998] top-0 right-0 left-0 bottom-0 w-full h-full bg-black bg-opacity-70 backdrop-blur-lg text-white font-sans p-5 hidden\">\n      <div className=\"max-w-md mx-auto pt-20 text-center\">\n    \t<h2 className=\"text-white font-bold text-2xl mb-4\">Aldersbekræftelse</h2>\n    \t<p className=\"mb-4\">Dette websted er beregnet for personer på 18 år og derover. Bekræft venligst din alder for at få adgang til indholdet, eller forlad webstedet, hvis du ikke er myndig.</p>\n    \t<button className=\"bg-green-600 text-white border-0 py-2 px-4 mt-2 w-full cursor-pointer plausible-event-name=over21\">Ja, jeg er over 18 år</button>\n    \t<br />\n    \t<a href=\"https://www.responsibility.org/\" ref=\"nofollow\" className=\"text-white\">\n    \t  <button className=\"bg-indigo-600 text-white border-0 py-2 px-4 mt-2 w-full\">Afslut</button>\n    \t</a>\n      </div>\n    </div>\n    \n    <div>Hello</div>\n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@maximus",
+    "authorUrl": "https://tailwindflex.com/@maximus",
+    "sourceUrl": "https://tailwindflex.com/@maximus/age-verification-18",
+    "mention": "Créé par @maximus sur TailwindFlex",
+    "rawHtml": "<div id=\"age\" class=\"fixed z-[9998] top-0 right-0 left-0 bottom-0 w-full h-full bg-black bg-opacity-70 backdrop-blur-lg text-white font-sans p-5 hidden\">\n  <div class=\"max-w-md mx-auto pt-20 text-center\">\n\t<h2 class=\"text-white font-bold text-2xl mb-4\">Aldersbekræftelse</h2>\n\t<p class=\"mb-4\">Dette websted er beregnet for personer på 18 år og derover. Bekræft venligst din alder for at få adgang til indholdet, eller forlad webstedet, hvis du ikke er myndig.</p>\n\t<button class=\"bg-green-600 text-white border-0 py-2 px-4 mt-2 w-full cursor-pointer plausible-event-name=over21\" onclick=\"acceptCookie()\">Ja, jeg er over 18 år</button>\n\t<br>\n\t<a href=\"https://www.responsibility.org/\" ref=\"nofollow\" class=\"text-white\">\n\t  <button class=\"bg-indigo-600 text-white border-0 py-2 px-4 mt-2 w-full\">Afslut</button>\n\t</a>\n  </div>\n</div>\n\n<div>Hello</div>\n\n<script>\n  function acceptCookie() {\n\tvar e = new Date();\n\te.setMonth(e.getMonth() + 1);\n\tdocument.cookie = \"cookieaccepted=1; expires=\" + e.toUTCString() + \"; path=/\";\n\tdocument.getElementById(\"age\").style.display = \"none\";\n  }\n  if (document.cookie.indexOf(\"cookieaccepted\") < 0) {\n\tdocument.getElementById(\"age\").style.display = \"block\";\n  }\n</script>"
+  }
+}

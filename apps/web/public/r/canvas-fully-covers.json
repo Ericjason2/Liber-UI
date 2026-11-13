@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "canvas-fully-covers",
+  "type": "registry:ui",
+  "title": "canvas fully covers",
+  "description": "canvas fully covers - Créé par @abdeslami-achraf sur TailwindFlex.",
+  "author": "@abdeslami-achraf (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/canvas-fully-covers.tsx",
+      "content": "/**\n * Component: canvas fully covers\n * Author: @abdeslami-achraf (https://tailwindflex.com/@abdeslami-achraf)\n * Source: https://tailwindflex.com/@abdeslami-achraf/canvas-fully-covers\n * Attribution: Créé par @abdeslami-achraf sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CanvasFullyCovers() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\r\\n<html lang=\\\"en\\\">\\r\\n<head>\\r\\n  <meta charset=\\\"UTF-8\\\">\\r\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r\\n  <title>Cosmos Node Network</title>\\r\\n\\r\\n</head>\\r\\n<style>\\r\\n  * {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n  box-sizing: border-box;\\r\\n}\\r\\n\\r\\nbody {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n  overflow: hidden;\\r\\n  height: 100vh;\\r\\n  background: radial-gradient(circle, #1b2735, #090a0f);\\r\\n}\\r\\n\\r\\ncanvas {\\r\\n  display: block;\\r\\n  position: absolute;\\r\\n  top: 0;\\r\\n  left: 0;\\r\\n  width: 100%; /* Ensure  the width */\\r\\n  height: 100%; /* Ensure canvas fully covers the height */\\r\\n}\\r\\n\\r\\n  </style>\\r\\n<body>\\r\\n  \\r\\n  <canvas id=\\\"cosmosCanvas\\\"></canvas>\\r\\n  \\r\\n</body>\\r\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "profile",
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@abdeslami-achraf",
+    "authorUrl": "https://tailwindflex.com/@abdeslami-achraf",
+    "sourceUrl": "https://tailwindflex.com/@abdeslami-achraf/canvas-fully-covers",
+    "mention": "Créé par @abdeslami-achraf sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <title>Cosmos Node Network</title>\r\n\r\n</head>\r\n<style>\r\n  * {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n  overflow: hidden;\r\n  height: 100vh;\r\n  background: radial-gradient(circle, #1b2735, #090a0f);\r\n}\r\n\r\ncanvas {\r\n  display: block;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%; /* Ensure  the width */\r\n  height: 100%; /* Ensure canvas fully covers the height */\r\n}\r\n\r\n  </style>\r\n<body>\r\n  \r\n  <canvas id=\"cosmosCanvas\"></canvas>\r\n  <script >\r\n  \r\nconst canvas = document.getElementById('cosmosCanvas');\r\nconst ctx = canvas.getContext('2d');\r\n\r\nfunction resizeCanvas() {\r\n  canvas.width = window.innerWidth;\r\n  canvas.height = window.innerHeight;\r\n}\r\n\r\nresizeCanvas();\r\nwindow.addEventListener('resize', resizeCanvas);\r\n\r\nconst particles = [];\r\nconst numParticles = 100;\r\n\r\nclass Particle {\r\n  constructor(x, y, radius, speed) {\r\n    this.x = x;\r\n    this.y = y;\r\n    this.radius = radius;\r\n    this.speed = speed;\r\n    this.angle = Math.random() * Math.PI * 2;\r\n  }\r\n\r\n  update() {\r\n    this.x += Math.cos(this.angle) * this.speed;\r\n    this.y += Math.sin(this.angle) * this.speed;\r\n\r\n    // Bounce off edges\r\n    if (this.x < 0 || this.x > canvas.width) this.angle = Math.PI - this.angle;\r\n    if (this.y < 0 || this.y > canvas.height) this.angle = -this.angle;\r\n  }\r\n\r\n  draw() {\r\n    ctx.beginPath();\r\n    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);\r\n    ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';\r\n    ctx.fill();\r\n  }\r\n}\r\n\r\n// Initialize particles\r\nfor (let i = 0; i < numParticles; i++) {\r\n  particles.push(\r\n    new Particle(\r\n      Math.random() * canvas.width,\r\n      Math.random() * canvas.height,\r\n      Math.random() * 4 + 1,\r\n      Math.random() * 0.5 + 0.2\r\n    )\r\n  );\r\n}\r\n\r\n// Connect particles\r\nfunction connectParticles() {\r\n  for (let a = 0; a < particles.length; a++) {\r\n    for (let b = a + 1; b < particles.length; b++) {\r\n      const dist = Math.hypot(\r\n        particles[a].x - particles[b].x,\r\n        particles[a].y - particles[b].y\r\n      );\r\n\r\n      if (dist < 120) {\r\n        ctx.strokeStyle = `rgba(255, 255, 255, ${1 - dist / 120})`;\r\n        ctx.lineWidth = 0.7;\r\n        ctx.beginPath();\r\n        ctx.moveTo(particles[a].x, particles[a].y);\r\n        ctx.lineTo(particles[b].x, particles[b].y);\r\n        ctx.stroke();\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n// Animation Loop\r\nfunction animate() {\r\n  ctx.clearRect(0, 0, canvas.width, canvas.height);\r\n  particles.forEach(particle => {\r\n    particle.update();\r\n    particle.draw();\r\n  });\r\n  connectParticles();\r\n  requestAnimationFrame(animate);\r\n}\r\n\r\n// Start Animation\r\nanimate();\r\n\r\n  </script>\r\n</body>\r\n</html>"
+  }
+}

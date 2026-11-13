@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-5",
+  "type": "registry:ui",
+  "title": "Hero",
+  "description": "Hero - Créé par @blvpeppa sur TailwindFlex.",
+  "author": "@blvpeppa (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-5.tsx",
+      "content": "/**\n * Component: Hero\n * Author: @blvpeppa (https://tailwindflex.com/@blvpeppa)\n * Source: https://tailwindflex.com/@blvpeppa/hero-5\n * Attribution: Créé par @blvpeppa sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Hero5() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n  <head>\\n    <meta charset=\\\"UTF-8\\\" />\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n    <title>Startup Landing Page</title>\\n    \\n  </head>\\n  <body class=\\\"bg-white text-gray-800\\\">\\n    <!-- Header -->\\n    <header class=\\\"w-full py-6 px-4 md:px-8 lg:px-16 flex justify-between items-center bg-white shadow-md\\\">\\n      <div class=\\\"text-2xl font-bold text-indigo-600\\\">StartupName</div>\\n      <nav class=\\\"hidden md:flex space-x-6\\\">\\n        <a href=\\\"#\\\" class=\\\"hover:text-indigo-600 font-medium\\\">Home</a>\\n        <a href=\\\"#\\\" class=\\\"hover:text-indigo-600 font-medium\\\">Features</a>\\n        <a href=\\\"#\\\" class=\\\"hover:text-indigo-600 font-medium\\\">Pricing</a>\\n        <a href=\\\"#\\\" class=\\\"hover:text-indigo-600 font-medium\\\">Contact</a>\\n      </nav>\\n      <button class=\\\"md:hidden\\\">\\n        <!-- Mobile menu icon -->\\n        <svg class=\\\"w-6 h-6 text-gray-700\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" viewBox=\\\"0 0 24 24\\\">\\n          <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" stroke-width=\\\"2\\\"\\n            d=\\\"M4 6h16M4 12h16M4 18h16\\\" />\\n        </svg>\\n      </button>\\n    </header>\\n\\n    <!-- Hero Section -->\\n    <section class=\\\"text-center py-20 px-4 md:px-16\\\">\\n      <h1 class=\\\"text-4xl md:text-5xl font-extrabold leading-tight mb-6\\\">\\n        Launch your idea with confidence\\n      </h1>\\n      <p class=\\\"text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto\\\">\\n        Build your product, attract users, and grow faster with our powerful tools designed for startups.\\n      </p>\\n      <div class=\\\"flex justify-center space-x-4\\\">\\n        <a href=\\\"#\\\" class=\\\"bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition\\\">Get Started</a>\\n        <a href=\\\"#\\\" class=\\\"border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg hover:bg-indigo-50 transition\\\">Learn More</a>\\n      </div>\\n    </section>\\n\\n    <!-- Footer -->\\n    <footer class=\\\"bg-gray-100 text-center py-6 mt-20\\\">\\n      <p class=\\\"text-gray-500 text-sm\\\">&copy; 2025 StartupName. All rights reserved.</p>\\n    </footer>\\n  </body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@blvpeppa",
+    "authorUrl": "https://tailwindflex.com/@blvpeppa",
+    "sourceUrl": "https://tailwindflex.com/@blvpeppa/hero-5",
+    "mention": "Créé par @blvpeppa sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Startup Landing Page</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n  </head>\n  <body class=\"bg-white text-gray-800\">\n    <!-- Header -->\n    <header class=\"w-full py-6 px-4 md:px-8 lg:px-16 flex justify-between items-center bg-white shadow-md\">\n      <div class=\"text-2xl font-bold text-indigo-600\">StartupName</div>\n      <nav class=\"hidden md:flex space-x-6\">\n        <a href=\"#\" class=\"hover:text-indigo-600 font-medium\">Home</a>\n        <a href=\"#\" class=\"hover:text-indigo-600 font-medium\">Features</a>\n        <a href=\"#\" class=\"hover:text-indigo-600 font-medium\">Pricing</a>\n        <a href=\"#\" class=\"hover:text-indigo-600 font-medium\">Contact</a>\n      </nav>\n      <button class=\"md:hidden\">\n        <!-- Mobile menu icon -->\n        <svg class=\"w-6 h-6 text-gray-700\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\n            d=\"M4 6h16M4 12h16M4 18h16\" />\n        </svg>\n      </button>\n    </header>\n\n    <!-- Hero Section -->\n    <section class=\"text-center py-20 px-4 md:px-16\">\n      <h1 class=\"text-4xl md:text-5xl font-extrabold leading-tight mb-6\">\n        Launch your idea with confidence\n      </h1>\n      <p class=\"text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto\">\n        Build your product, attract users, and grow faster with our powerful tools designed for startups.\n      </p>\n      <div class=\"flex justify-center space-x-4\">\n        <a href=\"#\" class=\"bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition\">Get Started</a>\n        <a href=\"#\" class=\"border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg hover:bg-indigo-50 transition\">Learn More</a>\n      </div>\n    </section>\n\n    <!-- Footer -->\n    <footer class=\"bg-gray-100 text-center py-6 mt-20\">\n      <p class=\"text-gray-500 text-sm\">&copy; 2025 StartupName. All rights reserved.</p>\n    </footer>\n  </body>\n</html>"
+  }
+}

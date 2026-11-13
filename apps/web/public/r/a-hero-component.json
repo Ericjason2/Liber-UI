@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "a-hero-component",
+  "type": "registry:ui",
+  "title": "A hero component",
+  "description": "A hero component - Créé par @vikram sur TailwindFlex.",
+  "author": "@vikram (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/a-hero-component.tsx",
+      "content": "/**\n * Component: A hero component\n * Author: @vikram (https://tailwindflex.com/@vikram)\n * Source: https://tailwindflex.com/@vikram/a-hero-component\n * Attribution: Créé par @vikram sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AHeroComponent() {\n  return (\n    <div>\n    <div className=\"bg-gradient-to-b from-purple-50 to-pink-50\">\n        <div className=\"mx-auto max-w-5xl px-6 py-10 text-center md12 md16\">\n            <h1 className=\"text-3xl leading-[52px] font-semibold md4xl lg5xl\">Discover the power of\n                <span className=\"bg-purple-600 text-white p-0.5 rounded-lg\">creative inspiration</span> online<br />\n                <div className=\"sm2\">\n                    <span className=\"underline decoration-purple-600 underline-offset-4\">\n                        Explore a world of design\n                        possibilities\n                    </span>\n                </div>\n            </h1>\n            <p className=\"mt-4 text-lg font-medium leading-2 text-gray-600 md\">Unleash your creativity with access\n                to a\n                vast collection of website screenshots, code snippets, and more at UI Shots.</p>\n            <div className=\"mt-8 flex justify-center gap-2\">\n                <a href=\"/pages\">\n                    <button\n                        className=\"text-md rounded-lg bg-gradient-to-br from-purple-500 to-purple-700 px-4 py-[10px] font-semibold text-white hover hover500 hover700 \">\n                        <div className=\"flex items-center justify-center\">\n                            <div className=\"\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\"\n                                    fill=\"currentColor\" viewBox=\"0 0 256 256\">\n                                    <path\n                                        d=\"M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z\">\n                                    </path>\n                                </svg>\n                            </div>Browse Inspiration | 1000+\n                        </div>\n                    </button>\n                </a>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@vikram",
+    "authorUrl": "https://tailwindflex.com/@vikram",
+    "sourceUrl": "https://tailwindflex.com/@vikram/a-hero-component",
+    "mention": "Créé par @vikram sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gradient-to-b from-purple-50 to-pink-50\">\n    <div class=\"mx-auto max-w-5xl px-6 py-10 text-center md:px-12 md:py-16\">\n        <h1 class=\"text-3xl leading-[52px] font-semibold md:text-4xl lg:text-5xl\">Discover the power of\n            <span class=\"bg-purple-600 text-white p-0.5 rounded-lg\">creative inspiration</span> online<br>\n            <div class=\"sm:mt-2\">\n                <span class=\"underline decoration-purple-600 underline-offset-4\">\n                    Explore a world of design\n                    possibilities\n                </span>\n            </div>\n        </h1>\n        <p class=\"mt-4 text-lg font-medium leading-2 text-gray-600 md:text-xl\">Unleash your creativity with access\n            to a\n            vast collection of website screenshots, code snippets, and more at UI Shots.</p>\n        <div class=\"mt-8 flex justify-center gap-2\">\n            <a href=\"/pages\">\n                <button\n                    class=\"text-md rounded-lg bg-gradient-to-br from-purple-500 to-purple-700 px-4 py-[10px] font-semibold text-white hover:bg-gradient-to-tl hover:from-purple-500 hover:to-purple-700 \">\n                    <div class=\"flex items-center justify-center\">\n                        <div class=\"\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\"\n                                fill=\"currentColor\" viewBox=\"0 0 256 256\">\n                                <path\n                                    d=\"M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z\">\n                                </path>\n                            </svg>\n                        </div>Browse Inspiration | 1000+\n                    </div>\n                </button>\n            </a>\n        </div>\n    </div>\n</div>"
+  }
+}

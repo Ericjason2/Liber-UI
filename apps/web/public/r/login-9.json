@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-9",
+  "type": "registry:ui",
+  "title": "login",
+  "description": "login - Créé par @mostafa-mohamed-elgdawy sur TailwindFlex.",
+  "author": "@mostafa-mohamed-elgdawy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/login-9.tsx",
+      "content": "/**\n * Component: login\n * Author: @mostafa-mohamed-elgdawy (https://tailwindflex.com/@mostafa-mohamed-elgdawy)\n * Source: https://tailwindflex.com/@mostafa-mohamed-elgdawy/login-9\n * Attribution: Créé par @mostafa-mohamed-elgdawy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Login9() {\n  return (\n    <div>\n    <div className=\"flex h-screen bg-indigo-700\">\n      <div className=\"w-full max-w-xs m-auto bg-indigo-100 rounded p-5\">\n        <header>\n          <img className=\"w-20 mx-auto mb-5\" src=\"https://img.icons8.com/fluent/344/year-of-tiger.png\" />\n        </header>\n        <form>\n          <div>\n            <label className=\"block mb-2 text-indigo-500\" htmlFor=\"username\">Username</label>\n            <input className=\"w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus300\" type=\"text\" name=\"username\" placeholder=\"write your username?\" />\n          </div>\n          <div>\n            <label className=\"block mb-2 text-indigo-500\" htmlFor=\"password\">Password</label>\n            <input className=\"w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus300\" type=\"password\" name=\"password\" placeholder=\"write your Password?\" />\n          </div>\n          <div>\n            <input className=\"w-full bg-indigo-700 hover700 text-white font-bold py-2 px-4 mb-6 rounded\" type=\"submit\" />\n          </div>\n        </form>\n        <footer>\n          <a className=\"text-indigo-700 hover700 text-sm float-left\" href=\"#\">Forgot Password?</a>\n          <a className=\"text-indigo-700 hover700 text-sm float-right\" href=\"#\">Create Account</a>\n        </footer>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mostafa-mohamed-elgdawy",
+    "authorUrl": "https://tailwindflex.com/@mostafa-mohamed-elgdawy",
+    "sourceUrl": "https://tailwindflex.com/@mostafa-mohamed-elgdawy/login-9",
+    "mention": "Créé par @mostafa-mohamed-elgdawy sur TailwindFlex",
+    "rawHtml": "<div class=\"flex h-screen bg-indigo-700\">\n  <div class=\"w-full max-w-xs m-auto bg-indigo-100 rounded p-5\">\n    <header>\n      <img class=\"w-20 mx-auto mb-5\" src=\"https://img.icons8.com/fluent/344/year-of-tiger.png\" />\n    </header>\n    <form>\n      <div>\n        <label class=\"block mb-2 text-indigo-500\" for=\"username\">Username</label>\n        <input class=\"w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus:bg-gray-300\" type=\"text\" name=\"username\" placeholder=\"write your username?\">\n      </div>\n      <div>\n        <label class=\"block mb-2 text-indigo-500\" for=\"password\">Password</label>\n        <input class=\"w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus:bg-gray-300\" type=\"password\" name=\"password\" placeholder=\"write your Password?\">\n      </div>\n      <div>\n        <input class=\"w-full bg-indigo-700 hover:bg-pink-700 text-white font-bold py-2 px-4 mb-6 rounded\" type=\"submit\">\n      </div>\n    </form>\n    <footer>\n      <a class=\"text-indigo-700 hover:text-pink-700 text-sm float-left\" href=\"#\">Forgot Password?</a>\n      <a class=\"text-indigo-700 hover:text-pink-700 text-sm float-right\" href=\"#\">Create Account</a>\n    </footer>\n  </div>\n</div>"
+  }
+}

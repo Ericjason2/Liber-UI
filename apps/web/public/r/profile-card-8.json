@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "profile-card-8",
+  "type": "registry:ui",
+  "title": "Profile card",
+  "description": "Profile card - Créé par @jaberzarif sur TailwindFlex.",
+  "author": "@jaberzarif (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/profile-card-8.tsx",
+      "content": "/**\n * Component: Profile card\n * Author: @jaberzarif (https://tailwindflex.com/@jaberzarif)\n * Source: https://tailwindflex.com/@jaberzarif/profile-card-8\n * Attribution: Créé par @jaberzarif sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProfileCard8() {\n  return (\n    <div>\n    <div className=\"bg-white my-4 mx-4 p-4 shadow border rounded\">\r\n        <img src=\"https://media.istockphoto.com/id/1476170969/photo/portrait-of-young-man-ready-for-job-business-concept.webp?b=1&s=170667a&w=0&k=20&c=FycdXoKn5StpYCKJ7PdkyJo9G5wfNgmSLBWk3dI35Zw=\" className=\"mx-auto text-center  rounded-full h-32 w-32 mb-4 object-cover\" alt=\"profile-img\" title=\"profile-img\"/>\r\n        <h1 className=\"text-center text-gray-900 text-2xl\">John Doe</h1>\r\n        <div className=\"flex flex-wrap justify-center my-4\">\r\n            <a href=\"#\"\r\n                className=\"flex content-center items-center border-gray-300 border rounded px-1 py-1 text-gray-400 mr-2 mb-4 hover500 duration-75 hover hover500\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"23\" height=\"23\" viewBox=\"0 0 50 50\"\r\n                    className=\"mr-1\" fill=\"currentColor\">\r\n                    <path\r\n                        d=\"M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z\">\r\n                    </path>\r\n                </svg>\r\n                Facebook\r\n            </a>\r\n            <a href=\"#\"\r\n                className=\"flex content-center items-center border-gray-300 border rounded px-1 py-1 text-gray-400 mr-2 mb-4 hover500 duration-75 hover hover500\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"23\" height=\"23\" viewBox=\"0 0 50 50\"\r\n                    className=\"mr-1\" fill=\"currentColor\">\r\n                    <path\r\n                        d=\"M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z\">\r\n                    </path>\r\n                </svg>\r\n                Twitter\r\n            </a>\r\n            <a href=\"#\"\r\n                className=\"flex content-center items-center border-gray-300 border rounded px-1 py-1 text-gray-400 mr-2 mb-4 hover500 duration-75 hover hover500\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"23\" height=\"23\" viewBox=\"0 0 50 50\"\r\n                    className=\"mr-1\" fill=\"currentColor\">\r\n                    <path\r\n                        d=\"M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z\">\r\n                    </path>\r\n                </svg>\r\n                Linkedin\r\n            </a>\r\n            <a href=\"#\"\r\n                className=\"flex content-center items-center border-gray-300 border rounded px-1 py-1 text-gray-400 mb-4 hover500 duration-75 hover hover500\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"23\" height=\"23\" viewBox=\"0 0 50 50\"\r\n                    className=\"mr-1\" fill=\"currentColor\">\r\n                    <path\r\n                        d=\"M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z\">\r\n                    </path>\r\n                </svg>\r\n                Instagram\r\n            </a>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@jaberzarif",
+    "authorUrl": "https://tailwindflex.com/@jaberzarif",
+    "sourceUrl": "https://tailwindflex.com/@jaberzarif/profile-card-8",
+    "mention": "Créé par @jaberzarif sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white my-4 mx-4 p-4 shadow border rounded\">\r\n    <img src=\"https://media.istockphoto.com/id/1476170969/photo/portrait-of-young-man-ready-for-job-business-concept.webp?b=1&s=170667a&w=0&k=20&c=FycdXoKn5StpYCKJ7PdkyJo9G5wfNgmSLBWk3dI35Zw=\" class=\"mx-auto text-center  rounded-full h-32 w-32 mb-4 object-cover\" alt=\"profile-img\" title=\"profile-img\"/>\r\n    <h1 class=\"text-center text-gray-900 text-2xl\">John Doe</h1>\r\n    <div class=\"flex flex-wrap justify-center my-4\">\r\n        <a href=\"#\"\r\n            class=\"flex content-center items-center border-gray-300 border rounded px-1 py-1 text-gray-400 mr-2 mb-4 hover:bg-gray-500 duration-75 hover:text-white hover:border-gray-500\">\r\n            <svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"23\" height=\"23\" viewBox=\"0 0 50 50\"\r\n                class=\"mr-1\" fill=\"currentColor\">\r\n                <path\r\n                    d=\"M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z\">\r\n                </path>\r\n            </svg>\r\n            Facebook\r\n        </a>\r\n        <a href=\"#\"\r\n            class=\"flex content-center items-center border-gray-300 border rounded px-1 py-1 text-gray-400 mr-2 mb-4 hover:bg-gray-500 duration-75 hover:text-white hover:border-gray-500\">\r\n            <svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"23\" height=\"23\" viewBox=\"0 0 50 50\"\r\n                class=\"mr-1\" fill=\"currentColor\">\r\n                <path\r\n                    d=\"M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z\">\r\n                </path>\r\n            </svg>\r\n            Twitter\r\n        </a>\r\n        <a href=\"#\"\r\n            class=\"flex content-center items-center border-gray-300 border rounded px-1 py-1 text-gray-400 mr-2 mb-4 hover:bg-gray-500 duration-75 hover:text-white hover:border-gray-500\">\r\n            <svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"23\" height=\"23\" viewBox=\"0 0 50 50\"\r\n                class=\"mr-1\" fill=\"currentColor\">\r\n                <path\r\n                    d=\"M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z\">\r\n                </path>\r\n            </svg>\r\n            Linkedin\r\n        </a>\r\n        <a href=\"#\"\r\n            class=\"flex content-center items-center border-gray-300 border rounded px-1 py-1 text-gray-400 mb-4 hover:bg-gray-500 duration-75 hover:text-white hover:border-gray-500\">\r\n            <svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"23\" height=\"23\" viewBox=\"0 0 50 50\"\r\n                class=\"mr-1\" fill=\"currentColor\">\r\n                <path\r\n                    d=\"M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z\">\r\n                </path>\r\n            </svg>\r\n            Instagram\r\n        </a>\r\n    </div>\r\n</div>"
+  }
+}

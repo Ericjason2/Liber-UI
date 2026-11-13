@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-grid-for-showing-features",
+  "type": "registry:ui",
+  "title": "Card grid for showing features",
+  "description": "Card grid for showing features - Créé par @steven-kuhn sur TailwindFlex.",
+  "author": "@steven-kuhn (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-grid-for-showing-features.tsx",
+      "content": "/**\n * Component: Card grid for showing features\n * Author: @steven-kuhn (https://tailwindflex.com/@steven-kuhn)\n * Source: https://tailwindflex.com/@steven-kuhn/card-grid-for-showing-features\n * Attribution: Créé par @steven-kuhn sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardGridForShowingFeatures() {\n  return (\n    <div>\n    <div className=\"grid grid-cols-1 sm2 gap-4 mt-10 p-10\">\r\n        <div className=\"flex border border-gray-500 rounded-lg p-4 bg-white\"><svg xmlns=\"http://www.w3.org/2000/svg\"\r\n                className=\"text-green-500 flex-shrink-0\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" strokeWidth=\"2\"\r\n                stroke=\"currentColor\" fill=\"none\" strokeLinecap=\"round\" strokeLinejoin=\"round\">\r\n                <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path>\r\n                <path d=\"M5 12l5 5l10 -10\"></path>\r\n            </svg>\r\n            <div className=\"ml-2\">\r\n                <h4 className=\"font-semibold text-base text-primary tracking-normal\">Proof of work</h4>\r\n                <p className=\"text-sm font-normal text-gray tracking-normal\">No guess-work. Hire based on proof-of-work!</p>\r\n            </div>\r\n        </div>\r\n        <div className=\"flex border border-gray-500 rounded-lg p-4 bg-white\"><svg xmlns=\"http://www.w3.org/2000/svg\"\r\n                className=\"text-green-500 flex-shrink-0\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" strokeWidth=\"2\"\r\n                stroke=\"currentColor\" fill=\"none\" strokeLinecap=\"round\" strokeLinejoin=\"round\">\r\n                <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path>\r\n                <path d=\"M5 12l5 5l10 -10\"></path>\r\n            </svg>\r\n            <div className=\"ml-2\">\r\n                <h4 className=\"font-semibold text-base text-primary tracking-normal\">Resume</h4>\r\n                <p className=\"text-sm font-normal text-gray tracking-normal\">Check qualifications, resumé and verified work\r\n                    experience.</p>\r\n            </div>\r\n        </div>\r\n        <div className=\"flex border border-gray-500 rounded-lg p-4 bg-white\"><svg xmlns=\"http://www.w3.org/2000/svg\"\r\n                className=\"text-green-500 flex-shrink-0\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" strokeWidth=\"2\"\r\n                stroke=\"currentColor\" fill=\"none\" strokeLinecap=\"round\" strokeLinejoin=\"round\">\r\n                <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path>\r\n                <path d=\"M5 12l5 5l10 -10\"></path>\r\n            </svg>\r\n            <div className=\"ml-2\">\r\n                <h4 className=\"font-semibold text-base text-primary tracking-normal\">Unique Candidate Details</h4>\r\n                <p className=\"text-sm font-normal text-gray tracking-normal\">Know if candidate is holding any offer, notice\r\n                    period and much more.</p>\r\n            </div>\r\n        </div>\r\n        <div className=\"flex border border-gray-500 rounded-lg p-4 bg-white\"><svg xmlns=\"http://www.w3.org/2000/svg\"\r\n                className=\"text-green-500 flex-shrink-0\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" strokeWidth=\"2\"\r\n                stroke=\"currentColor\" fill=\"none\" strokeLinecap=\"round\" strokeLinejoin=\"round\">\r\n                <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path>\r\n                <path d=\"M5 12l5 5l10 -10\"></path>\r\n            </svg>\r\n            <div className=\"ml-2\">\r\n                <h4 className=\"font-semibold text-base text-primary tracking-normal\">ATS Integrations</h4>\r\n                <p className=\"text-sm font-normal text-gray tracking-normal\">Integrate with your existing ATS to import job\r\n                    posts automatically.</p>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "grid",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@steven-kuhn",
+    "authorUrl": "https://tailwindflex.com/@steven-kuhn",
+    "sourceUrl": "https://tailwindflex.com/@steven-kuhn/card-grid-for-showing-features",
+    "mention": "Créé par @steven-kuhn sur TailwindFlex",
+    "rawHtml": "<div class=\"grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10 p-10\">\r\n    <div class=\"flex border border-gray-500 rounded-lg p-4 bg-white\"><svg xmlns=\"http://www.w3.org/2000/svg\"\r\n            class=\"text-green-500 flex-shrink-0\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" stroke-width=\"2\"\r\n            stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\r\n            <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path>\r\n            <path d=\"M5 12l5 5l10 -10\"></path>\r\n        </svg>\r\n        <div class=\"ml-2\">\r\n            <h4 class=\"font-semibold text-base text-primary tracking-normal\">Proof of work</h4>\r\n            <p class=\"text-sm font-normal text-gray tracking-normal\">No guess-work. Hire based on proof-of-work!</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex border border-gray-500 rounded-lg p-4 bg-white\"><svg xmlns=\"http://www.w3.org/2000/svg\"\r\n            class=\"text-green-500 flex-shrink-0\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" stroke-width=\"2\"\r\n            stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\r\n            <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path>\r\n            <path d=\"M5 12l5 5l10 -10\"></path>\r\n        </svg>\r\n        <div class=\"ml-2\">\r\n            <h4 class=\"font-semibold text-base text-primary tracking-normal\">Resume</h4>\r\n            <p class=\"text-sm font-normal text-gray tracking-normal\">Check qualifications, resumé and verified work\r\n                experience.</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex border border-gray-500 rounded-lg p-4 bg-white\"><svg xmlns=\"http://www.w3.org/2000/svg\"\r\n            class=\"text-green-500 flex-shrink-0\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" stroke-width=\"2\"\r\n            stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\r\n            <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path>\r\n            <path d=\"M5 12l5 5l10 -10\"></path>\r\n        </svg>\r\n        <div class=\"ml-2\">\r\n            <h4 class=\"font-semibold text-base text-primary tracking-normal\">Unique Candidate Details</h4>\r\n            <p class=\"text-sm font-normal text-gray tracking-normal\">Know if candidate is holding any offer, notice\r\n                period and much more.</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex border border-gray-500 rounded-lg p-4 bg-white\"><svg xmlns=\"http://www.w3.org/2000/svg\"\r\n            class=\"text-green-500 flex-shrink-0\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" stroke-width=\"2\"\r\n            stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\r\n            <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path>\r\n            <path d=\"M5 12l5 5l10 -10\"></path>\r\n        </svg>\r\n        <div class=\"ml-2\">\r\n            <h4 class=\"font-semibold text-base text-primary tracking-normal\">ATS Integrations</h4>\r\n            <p class=\"text-sm font-normal text-gray tracking-normal\">Integrate with your existing ATS to import job\r\n                posts automatically.</p>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

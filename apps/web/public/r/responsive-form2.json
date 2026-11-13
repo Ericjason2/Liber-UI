@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-form2",
+  "type": "registry:ui",
+  "title": "Responsive Form2",
+  "description": "Responsive Form2 - Créé par @abdulbast sur TailwindFlex.",
+  "author": "@abdulbast (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-form2.tsx",
+      "content": "/**\n * Component: Responsive Form2\n * Author: @abdulbast (https://tailwindflex.com/@abdulbast)\n * Source: https://tailwindflex.com/@abdulbast/responsive-form2\n * Attribution: Créé par @abdulbast sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveForm2() {\n  return (\n    <div>\n    <section className=\"bg-white mt-4 p-1 xs8\">\n      <div className=\" max-w-96 sm4xl mx-auto border border-[#4D7C0F] rounded-lg p-8\">\n        <h2 className=\"sm text-[12px] font-bold mb-6\">Description and Skills</h2>\n        <form>\n          <div className=\"space-y-6\">\n            <div className=\"job-description mb-[20px]\"><label htmlFor=\"job-desc\" className=\"block mb-[5px]\">Job Description</label>\n              <div className=\"text-editor-toolbar  border rounded-[5px] h-14 border-[#ccc] mb-[10px]\">\n                <button className=\"ml-3  sm[5px] sm5 sm4 bg-none  rounded-[3px]\">B</button><button className=\"ml-3  sm[5px] sm[5px_20px] bg-none rounded-[3px]\"><i>i</i></button><button className=\"ml-3 sm[5px] sm[5px_10px] bg-none  rounded-[3px]\"><u>U</u></button><button className=\"ml-3 sm[5px] sm[5px_20px] bg-none   rounded-[3px]\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"1\" strokeLinecap=\"round\" strokeLinejoin=\"round\" className=\"lucide lucide-align-left\"><line x1=\"21\" x2=\"3\" y1=\"6\" y2=\"6\"></line><line x1=\"15\" x2=\"3\" y1=\"12\" y2=\"12\"></line><line x1=\"17\" x2=\"3\" y1=\"18\" y2=\"18\"></line></svg></button><button className=\"ml-3 mt-3 sm[5px] sm[3px_10px] bg-none  rounded-[3px]\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" strokeWidth=\"1\" stroke=\"currentColor\" className=\"size-5 \"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M8.242 5.992h12m-12 6.003H20.24m-12 5.999h12M4.117 7.495v-3.75H2.99m1.125 3.75H2.99m1.125 0H5.24m-1.92 2.577a1.125 1.125 0 1 1 1.591 1.59l-1.83 1.83h2.16M2.99 15.745h1.125a1.125 1.125 0 0 1 0 2.25H3.74m0-.002h.375a1.125 1.125 0 0 1 0 2.25H2.99\"></path></svg></button><button className=\"ml-3 sm[5px] sm[5px_15px] bg-none text-lg  rounded-[3px]\">\"</button>\n              </div>\n              <textarea name=\"description\" style=\"resize\" id=\"job-desc\" className=\"w-full sm[150px] h-[120px] border border-[#4D7C0F] rounded-[5px] p-[10px]\"></textarea>\n            </div>\n            <div className=\"grid sm1 grid-cols-1 gap-6\">\n              <div><label htmlFor=\"skills\" className=\"text-xs xs font-medium text-gray-700 mb-1\">Required Skills</label>\n                <div className=\"flex flex-wrap items-center border rounded-md p-2 bg-white\">\n                  <span className=\"bg-[#D9F99D] text-[#4D7C0F] px-2 py-1 rounded m-1 text-sm flex items-center\">UI/UX<button className=\"ml-1 text-[#4D7C0F] focus\" type=\"button\">×</button></span><input type=\"text\" placeholder=\"Add skill\" className=\"flex-grow outline-none text-sm ml-2\" value=\"\" />\n                </div>\n              </div>\n            </div>\n          </div>\n          <div className=\"mt-8 pt-6 border-t border-gray-200 flex justify-between\">\n            <button className=\"hidden sm underline-offset-8\">back</button><button type=\"submit\" className=\" sm[86px] w-full h-[50px] text-xs sm bg-[#4D7C0F] rounded-[5px] p-[13px_25px] gap-[10px] text-white\">Next</button>\n          </div>\n        </form>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abdulbast",
+    "authorUrl": "https://tailwindflex.com/@abdulbast",
+    "sourceUrl": "https://tailwindflex.com/@abdulbast/responsive-form2",
+    "mention": "Créé par @abdulbast sur TailwindFlex",
+    "rawHtml": "<section class=\"bg-white mt-4 p-1 xs:p-8\">\n  <div class=\" max-w-96 sm:max-w-4xl mx-auto border border-[#4D7C0F] rounded-lg p-8\">\n    <h2 class=\"sm:text-xl text-[12px] font-bold mb-6\">Description and Skills</h2>\n    <form>\n      <div class=\"space-y-6\">\n        <div class=\"job-description mb-[20px]\"><label for=\"job-desc\" class=\"block mb-[5px]\">Job Description</label>\n          <div class=\"text-editor-toolbar  border rounded-[5px] h-14 border-[#ccc] mb-[10px]\">\n            <button class=\"ml-3  sm:mr-[5px] sm:ml-5 sm:pt-4 bg-none  rounded-[3px]\">B</button><button class=\"ml-3  sm:mr-[5px] sm:p-[5px_20px] bg-none rounded-[3px]\"><i>i</i></button><button class=\"ml-3 sm:mr-[5px] sm:p-[5px_10px] bg-none  rounded-[3px]\"><u>U</u></button><button class=\"ml-3 sm:mr-[5px] sm:p-[5px_20px] bg-none   rounded-[3px]\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-align-left\"><line x1=\"21\" x2=\"3\" y1=\"6\" y2=\"6\"></line><line x1=\"15\" x2=\"3\" y1=\"12\" y2=\"12\"></line><line x1=\"17\" x2=\"3\" y1=\"18\" y2=\"18\"></line></svg></button><button class=\"ml-3 mt-3 sm:mr-[5px] sm:p-[3px_10px] bg-none  rounded-[3px]\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" stroke-width=\"1\" stroke=\"currentColor\" class=\"size-5 \"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M8.242 5.992h12m-12 6.003H20.24m-12 5.999h12M4.117 7.495v-3.75H2.99m1.125 3.75H2.99m1.125 0H5.24m-1.92 2.577a1.125 1.125 0 1 1 1.591 1.59l-1.83 1.83h2.16M2.99 15.745h1.125a1.125 1.125 0 0 1 0 2.25H3.74m0-.002h.375a1.125 1.125 0 0 1 0 2.25H2.99\"></path></svg></button><button class=\"ml-3 sm:mr-[5px] sm:p-[5px_15px] bg-none text-lg  rounded-[3px]\">\"</button>\n          </div>\n          <textarea name=\"description\" style=\"resize:none\" id=\"job-desc\" class=\"w-full sm:h-[150px] h-[120px] border border-[#4D7C0F] rounded-[5px] p-[10px]\"></textarea>\n        </div>\n        <div class=\"grid sm:grid-cols-1 grid-cols-1 gap-6\">\n          <div><label for=\"skills\" class=\"text-xs xs:text-sm font-medium text-gray-700 mb-1\">Required Skills</label>\n            <div class=\"flex flex-wrap items-center border rounded-md p-2 bg-white\">\n              <span class=\"bg-[#D9F99D] text-[#4D7C0F] px-2 py-1 rounded m-1 text-sm flex items-center\">UI/UX<button class=\"ml-1 text-[#4D7C0F] focus:outline-none\" type=\"button\">×</button></span><input type=\"text\" placeholder=\"Add skill\" class=\"flex-grow outline-none text-sm ml-2\" value=\"\">\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"mt-8 pt-6 border-t border-gray-200 flex justify-between\">\n        <button class=\"hidden sm:block underline-offset-8\">back</button><button type=\"submit\" class=\" sm:w-[86px] w-full h-[50px] text-xs sm:text-base bg-[#4D7C0F] rounded-[5px] p-[13px_25px] gap-[10px] text-white\">Next</button>\n      </div>\n    </form>\n  </div>\n</section>"
+  }
+}

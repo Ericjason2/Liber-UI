@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "admin-portal-landing-page",
+  "type": "registry:ui",
+  "title": "Admin portal landing page",
+  "description": "Admin portal landing page - Créé par @srreyashi-deychakii sur TailwindFlex.",
+  "author": "@srreyashi-deychakii (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/admin-portal-landing-page.tsx",
+      "content": "/**\n * Component: Admin portal landing page\n * Author: @srreyashi-deychakii (https://tailwindflex.com/@srreyashi-deychakii)\n * Source: https://tailwindflex.com/@srreyashi-deychakii/admin-portal-landing-page\n * Attribution: Créé par @srreyashi-deychakii sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AdminPortalLandingPage() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div class=\\\"relative h-[400px] bg-gradient-to-tr from-indigo-600 via-indigo-700 to-violet-800\\\">\\n    <div class=\\\"flex flex-col gap-4 justify-center items-center w-full h-full px-3 md:px-0\\\">\\n\\n        <h1 class=\\\"text-4xl md:text-5xl lg:text-6xl font-bold text-white\\\">\\n            Admin Portal\\n\\n        </h1>\\n        <p class=\\\"text-gray-300\\\">\\n           Application update and Status\\n\\n        </p>\\n\\n\\n        <div class=\\\"shadow-lg rounded-lg overflow-hidden mx-3 md:mx-4\\\">\\n    <table class=\\\"w-full table-fixed\\\">\\n        <thead>\\n            <tr class=\\\"bg-gray-100\\\">\\n                <th class=\\\"w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase\\\">Source</th>\\n                <th class=\\\"w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase\\\">Toggle</th>\\n                <th class=\\\"w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase\\\">URL</th>\\n                <th class=\\\"w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase\\\">Status</th>\\n            </tr>\\n        </thead>\\n        <tbody class=\\\"bg-white\\\">\\n            <tr>\\n                <td class=\\\"py-4 px-6 border-b border-gray-200\\\">box</td>\\n                <td class=\\\"py-4 px-6 border-b border-gray-200 truncate\\\">On</td>\\n                <td class=\\\"py-4 px-6 border-b border-gray-200\\\">www.box.net</td>\\n                <td class=\\\"py-4 px-6 border-b border-gray-200\\\">\\n                    <span class=\\\"bg-green-500 text-white py-1 px-2 rounded-full text-xs\\\">Active</span>\\n                </td>\\n            </tr>\\n            <tr>\\n                <td class=\\\"py-4 px-6 border-b border-gray-200\\\">FR</td>\\n                <td class=\\\"py-4 px-6 border-b border-gray-200 truncate\\\">Off</td>\\n                <td class=\\\"py-4 px-6 border-b border-gray-200\\\">www.frr.com</td>\\n                <td class=\\\"py-4 px-6 border-b border-gray-200\\\">\\n                    <span class=\\\"bg-red-500 text-white py-1 px-2 rounded-full text-xs\\\">Inactive</span>\\n                </td>\\n            </tr>\\n            <tr>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@srreyashi-deychakii",
+    "authorUrl": "https://tailwindflex.com/@srreyashi-deychakii",
+    "sourceUrl": "https://tailwindflex.com/@srreyashi-deychakii/admin-portal-landing-page",
+    "mention": "Créé par @srreyashi-deychakii sur TailwindFlex",
+    "rawHtml": "<div class=\"relative h-[400px] bg-gradient-to-tr from-indigo-600 via-indigo-700 to-violet-800\">\n    <div class=\"flex flex-col gap-4 justify-center items-center w-full h-full px-3 md:px-0\">\n\n        <h1 class=\"text-4xl md:text-5xl lg:text-6xl font-bold text-white\">\n            Admin Portal\n\n        </h1>\n        <p class=\"text-gray-300\">\n           Application update and Status\n\n        </p>\n\n\n        <div class=\"shadow-lg rounded-lg overflow-hidden mx-3 md:mx-4\">\n    <table class=\"w-full table-fixed\">\n        <thead>\n            <tr class=\"bg-gray-100\">\n                <th class=\"w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase\">Source</th>\n                <th class=\"w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase\">Toggle</th>\n                <th class=\"w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase\">URL</th>\n                <th class=\"w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase\">Status</th>\n            </tr>\n        </thead>\n        <tbody class=\"bg-white\">\n            <tr>\n                <td class=\"py-4 px-6 border-b border-gray-200\">box</td>\n                <td class=\"py-4 px-6 border-b border-gray-200 truncate\">On</td>\n                <td class=\"py-4 px-6 border-b border-gray-200\">www.box.net</td>\n                <td class=\"py-4 px-6 border-b border-gray-200\">\n                    <span class=\"bg-green-500 text-white py-1 px-2 rounded-full text-xs\">Active</span>\n                </td>\n            </tr>\n            <tr>\n                <td class=\"py-4 px-6 border-b border-gray-200\">FR</td>\n                <td class=\"py-4 px-6 border-b border-gray-200 truncate\">Off</td>\n                <td class=\"py-4 px-6 border-b border-gray-200\">www.frr.com</td>\n                <td class=\"py-4 px-6 border-b border-gray-200\">\n                    <span class=\"bg-red-500 text-white py-1 px-2 rounded-full text-xs\">Inactive</span>\n                </td>\n            </tr>\n            <tr>"
+  }
+}

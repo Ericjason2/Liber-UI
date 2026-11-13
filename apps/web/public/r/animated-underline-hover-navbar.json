@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animated-underline-hover-navbar",
+  "type": "registry:ui",
+  "title": "Animated underline hover navbar",
+  "description": "Animated underline hover navbar - Créé par @inbarajan sur TailwindFlex.",
+  "author": "@inbarajan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/animated-underline-hover-navbar.tsx",
+      "content": "/**\n * Component: Animated underline hover navbar\n * Author: @inbarajan (https://tailwindflex.com/@inbarajan)\n * Source: https://tailwindflex.com/@inbarajan/animated-underline-hover-navbar\n * Attribution: Créé par @inbarajan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AnimatedUnderlineHoverNavbar() {\n  return (\n    <div>\n    <nav className=\"bg-black h-screen flex justify-center items-center w-screen\">\r\n    \t<ul className=\"text-white flex gap-x-12\">\r\n    \t\t<li className=\"relative table-cell py-2\"><a className=\"inline-block relative no-underline after-line\" href=\"#\">About</a></li>\r\n    \t\t<li className=\"relative table-cell py-2\"><a className=\"inline-block relative no-underline after-line\" href=\"#\">Portfolio</a></li>\r\n    \t\t<li className=\"relative table-cell py-2\"><a className=\"inline-block relative no-underline after-line\" href=\"#\">Blog</a></li>\r\n    \t\t<li className=\"relative table-cell py-2\"><a className=\"inline-block relative no-underline after-line\" href=\"#\">Contact</a></li>\r\n    \t</ul>\r\n    </nav>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@inbarajan",
+    "authorUrl": "https://tailwindflex.com/@inbarajan",
+    "sourceUrl": "https://tailwindflex.com/@inbarajan/animated-underline-hover-navbar",
+    "mention": "Créé par @inbarajan sur TailwindFlex",
+    "rawHtml": "<nav class=\"bg-black h-screen flex justify-center items-center w-screen\">\r\n\t<ul class=\"text-white flex gap-x-12\">\r\n\t\t<li class=\"relative table-cell py-2\"><a class=\"inline-block relative no-underline after-line\" href=\"#\">About</a></li>\r\n\t\t<li class=\"relative table-cell py-2\"><a class=\"inline-block relative no-underline after-line\" href=\"#\">Portfolio</a></li>\r\n\t\t<li class=\"relative table-cell py-2\"><a class=\"inline-block relative no-underline after-line\" href=\"#\">Blog</a></li>\r\n\t\t<li class=\"relative table-cell py-2\"><a class=\"inline-block relative no-underline after-line\" href=\"#\">Contact</a></li>\r\n\t</ul>\r\n</nav>"
+  }
+}

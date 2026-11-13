@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "boutons-ios-26",
+  "type": "registry:ui",
+  "title": "Boutons iOS 26",
+  "description": "Boutons iOS 26 - Créé par @omer-fils-elenga sur TailwindFlex.",
+  "author": "@omer-fils-elenga (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/boutons-ios-26.tsx",
+      "content": "/**\n * Component: Boutons iOS 26\n * Author: @omer-fils-elenga (https://tailwindflex.com/@omer-fils-elenga)\n * Source: https://tailwindflex.com/@omer-fils-elenga/boutons-ios-26\n * Attribution: Créé par @omer-fils-elenga sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BoutonsIos26() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\" class=\\\"dark\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"/>\\n  <title>iOS 26 Buttons — Framework7 Style</title>\\n  \\n  \\n  \\n  <style>\\n    body {\\n      background: #000;\\n      color: white;\\n      min-height: 100vh;\\n      display: flex;\\n      flex-direction: column;\\n      align-items: center;\\n      justify-content: center;\\n      gap: 2rem;\\n      padding: 2rem;\\n    }\\n\\n    /* === BOUTON IOS 26 PRIMAIRE (Framework7 style) === */\\n    .ios-btn {\\n      display: inline-flex;\\n      align-items: center;\\n      justify-content: center;\\n      height: 44px;\\n      padding: 0 20px;\\n      font-size: 17px;\\n      font-weight: 500;\\n      line-height: 1.4;\\n      letter-spacing: -0.02em;\\n      text-align: center;\\n      text-transform: uppercase;\\n      border-radius: 12px;\\n      border: 1px solid transparent;\\n      background: transparent;\\n      color:white; \\n      cursor: pointer;\\n      user-select: none;\\n      transition: all 0.2s ease-out;\\n      -webkit-tap-highlight-color: transparent;\\n    }\\n\\n    /* État normal clair */\\n    .light .ios-btn {\\n      color: #007aff;\\n    }\\n\\n    /* État normal sombre */\\n    .dark .ios-btn {\\n      color: #0a84ff;\\n    }\\n\\n    /* Hover / Active */\\n    .ios-btn:hover,\\n    .ios-btn:active {\\n      background: rgba(0, 122, 255, 0.1);\\n      color:white; \\n      transform: scale(0.98);\\n    }\\n\\n    .dark .ios-btn:hover,\\n    .dark .ios-btn:active {\\n      background: rgba(10, 132, 255, 0.15);\\n       color:white; \\n    }\\n\\n    /* === BOUTON IOS 26 DÉSTRUCTIF === */\\n    .ios-btn--destructive {\\n      color: #ff3b30;\\n    }\\n\\n    .light .ios-btn--destructive:hover,\\n    .light .ios-btn--destructive:active {\\n      background: rgba(255, 59, 48, 0.1);\\n    }\\n\\n    .dark .ios-btn--destructive:hover,\\n    .dark .ios-btn--destructive:active {\\n      background: rgba(255, 69, 58, 0.15);\\n    }\\n\\n    /* === BOUTON IOS 26 NEUTRE (gris) === */\\n    .ios-btn--neutral {\\n      color: #8e8e93;\\n    }\\n\\n    .light .ios-btn--neutral:hover,\\n    .light .ios-btn--neutral:active {\\n      background: rgba(142, 142, 147, 0.1);\\n    }\\n\\n    .dark .ios-btn--neutral:hover,\\n    .dark .ios-btn--neutral:active {\\n      background: rgba(142, 142, 147, 0.12);\\n    }\\n\\n    /* === BOUTON PLEIN (comme dans les modales) === */\\n    .ios-btn--fill {\\n      background: #0a84ff;\\n      color: white !important;\\n      border: none;\\n    }\\n\\n    .ios-btn--fill:hover,\\n    .ios-btn--fill:active {\\n      background: #007aff;\\n       color:white; \\n      transform: scale(0.985);\\n    }\\n\\n    /* === Icône (optionnel) === */\\n    .ios-btn svg {\\n      margin-left: 6px;\\n      transition: transform 0.2s ease;\\n    }\\n\\n    .ios-btn:hover svg {\\n      transform: translateX(2px);\\n    }\\n  </style>\\n</head>\\n<body x-data=\\\"{ count: 0 }\\\">\\n  <h2 class=\\\"text-xl font-semibold mb-6\\\">Boutons iOS 26 — Framework7 Style</h2>\\n\\n  <!-- Bouton standard (lien d'action) -->\\n  <button \\n    class=\\\"ios-btn\\\"\\n    @click=\\\"count++\\\"\\n  >\\n    Action\\n  </button>\\n\\n  <!-- Bouton destructif -->\\n  <button \\n    class=\\\"ios-btn ios-btn--destructive\\\"\\n    @click=\\\"count = 0\\\"\\n  >\\n    Delete\\n  </button>\\n\\n  <!-- Bouton neutre -->\\n  <button \\n    class=\\\"ios-btn ios-btn--neutral\\\"\\n    @click=\\\"count--\\\"\\n  >\\n    Cancel\\n  </button>\\n\\n  <!-- Bouton plein (style modale) -->\\n  <button \\n    class=\\\"ios-btn ios-btn--fill\\\"\\n    style=\\\"width: 200px\\\"\\n    @click=\\\"alert('Confirmed!')\\\"\\n  >\\n    Confirm\\n  </button>\\n\\n  <!-- Bouton avec icône -->\\n  <button class=\\\"ios-btn\\\">\\n    Next\\n    <svg width=\\\"16\\\" height=\\\"16\\\" viewBox=\\\"0 0 16 16\\\" fill=\\\"none\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\">\\n      <path d=\\\"M5.293 3.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L8.586 8 5.293 4.707a1 1 0 010-1.414z\\\" \\n            fill=\\\"currentColor\\\"/>\\n    </svg>\\n  </button>\\n\\n  <!-- Compteur pour démo -->\\n  <p class=\\\"mt-6 text-gray-400\\\">Clics : <span x-text=\\\"count\\\" class=\\\"text-white font-mono\\\"></span></p>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@omer-fils-elenga",
+    "authorUrl": "https://tailwindflex.com/@omer-fils-elenga",
+    "sourceUrl": "https://tailwindflex.com/@omer-fils-elenga/boutons-ios-26",
+    "mention": "Créé par @omer-fils-elenga sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\" class=\"dark\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n  <title>iOS 26 Buttons — Framework7 Style</title>\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n  <script defer src=\"https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js\"></script>\n  <script>\n    tailwind.config = {\n      darkMode: 'class',\n      theme: {\n        extend: {\n          fontFamily: {\n            sans: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Text', 'Inter', 'sans-serif']\n          }\n        }\n      }\n    }\n  </script>\n  <style>\n    body {\n      background: #000;\n      color: white;\n      min-height: 100vh;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      gap: 2rem;\n      padding: 2rem;\n    }\n\n    /* === BOUTON IOS 26 PRIMAIRE (Framework7 style) === */\n    .ios-btn {\n      display: inline-flex;\n      align-items: center;\n      justify-content: center;\n      height: 44px;\n      padding: 0 20px;\n      font-size: 17px;\n      font-weight: 500;\n      line-height: 1.4;\n      letter-spacing: -0.02em;\n      text-align: center;\n      text-transform: uppercase;\n      border-radius: 12px;\n      border: 1px solid transparent;\n      background: transparent;\n      color:white; \n      cursor: pointer;\n      user-select: none;\n      transition: all 0.2s ease-out;\n      -webkit-tap-highlight-color: transparent;\n    }\n\n    /* État normal clair */\n    .light .ios-btn {\n      color: #007aff;\n    }\n\n    /* État normal sombre */\n    .dark .ios-btn {\n      color: #0a84ff;\n    }\n\n    /* Hover / Active */\n    .ios-btn:hover,\n    .ios-btn:active {\n      background: rgba(0, 122, 255, 0.1);\n      color:white; \n      transform: scale(0.98);\n    }\n\n    .dark .ios-btn:hover,\n    .dark .ios-btn:active {\n      background: rgba(10, 132, 255, 0.15);\n       color:white; \n    }\n\n    /* === BOUTON IOS 26 DÉSTRUCTIF === */\n    .ios-btn--destructive {\n      color: #ff3b30;\n    }\n\n    .light .ios-btn--destructive:hover,\n    .light .ios-btn--destructive:active {\n      background: rgba(255, 59, 48, 0.1);\n    }\n\n    .dark .ios-btn--destructive:hover,\n    .dark .ios-btn--destructive:active {\n      background: rgba(255, 69, 58, 0.15);\n    }\n\n    /* === BOUTON IOS 26 NEUTRE (gris) === */\n    .ios-btn--neutral {\n      color: #8e8e93;\n    }\n\n    .light .ios-btn--neutral:hover,\n    .light .ios-btn--neutral:active {\n      background: rgba(142, 142, 147, 0.1);\n    }\n\n    .dark .ios-btn--neutral:hover,\n    .dark .ios-btn--neutral:active {\n      background: rgba(142, 142, 147, 0.12);\n    }\n\n    /* === BOUTON PLEIN (comme dans les modales) === */\n    .ios-btn--fill {\n      background: #0a84ff;\n      color: white !important;\n      border: none;\n    }\n\n    .ios-btn--fill:hover,\n    .ios-btn--fill:active {\n      background: #007aff;\n       color:white; \n      transform: scale(0.985);\n    }\n\n    /* === Icône (optionnel) === */\n    .ios-btn svg {\n      margin-left: 6px;\n      transition: transform 0.2s ease;\n    }\n\n    .ios-btn:hover svg {\n      transform: translateX(2px);\n    }\n  </style>\n</head>\n<body x-data=\"{ count: 0 }\">\n  <h2 class=\"text-xl font-semibold mb-6\">Boutons iOS 26 — Framework7 Style</h2>\n\n  <!-- Bouton standard (lien d'action) -->\n  <button \n    class=\"ios-btn\"\n    @click=\"count++\"\n  >\n    Action\n  </button>\n\n  <!-- Bouton destructif -->\n  <button \n    class=\"ios-btn ios-btn--destructive\"\n    @click=\"count = 0\"\n  >\n    Delete\n  </button>\n\n  <!-- Bouton neutre -->\n  <button \n    class=\"ios-btn ios-btn--neutral\"\n    @click=\"count--\"\n  >\n    Cancel\n  </button>\n\n  <!-- Bouton plein (style modale) -->\n  <button \n    class=\"ios-btn ios-btn--fill\"\n    style=\"width: 200px\"\n    @click=\"alert('Confirmed!')\"\n  >\n    Confirm\n  </button>\n\n  <!-- Bouton avec icône -->\n  <button class=\"ios-btn\">\n    Next\n    <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M5.293 3.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L8.586 8 5.293 4.707a1 1 0 010-1.414z\" \n            fill=\"currentColor\"/>\n    </svg>\n  </button>\n\n  <!-- Compteur pour démo -->\n  <p class=\"mt-6 text-gray-400\">Clics : <span x-text=\"count\" class=\"text-white font-mono\"></span></p>\n</body>\n</html>"
+  }
+}

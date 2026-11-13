@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-group-2",
+  "type": "registry:ui",
+  "title": "Button Group",
+  "description": "Button Group - Créé par @prem sur TailwindFlex.",
+  "author": "@prem (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button-group-2.tsx",
+      "content": "/**\n * Component: Button Group\n * Author: @prem (https://tailwindflex.com/@prem)\n * Source: https://tailwindflex.com/@prem/button-group-2\n * Attribution: Créé par @prem sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonGroup2() {\n  return (\n    <div>\n    <div className=\"flex items-center\">\n        <button type=\"button\" className=\"w-full border-l border-t border-b text-base font-medium rounded-l-md text-black bg-white hover100 px-4 py-2\">\n            Left\n        </button>\n        <button type=\"button\" className=\"w-full border text-base font-medium text-black bg-white hover100 px-4 py-2\">\n            Center\n        </button>\n        <button type=\"button\" className=\"w-full border-t border-b border-r text-base font-medium rounded-r-md text-black bg-white hover100 px-4 py-2\">\n            Right\n        </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@prem",
+    "authorUrl": "https://tailwindflex.com/@prem",
+    "sourceUrl": "https://tailwindflex.com/@prem/button-group-2",
+    "mention": "Créé par @prem sur TailwindFlex",
+    "rawHtml": "<div class=\"flex items-center\">\n    <button type=\"button\" class=\"w-full border-l border-t border-b text-base font-medium rounded-l-md text-black bg-white hover:bg-gray-100 px-4 py-2\">\n        Left\n    </button>\n    <button type=\"button\" class=\"w-full border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2\">\n        Center\n    </button>\n    <button type=\"button\" class=\"w-full border-t border-b border-r text-base font-medium rounded-r-md text-black bg-white hover:bg-gray-100 px-4 py-2\">\n        Right\n    </button>\n</div>"
+  }
+}

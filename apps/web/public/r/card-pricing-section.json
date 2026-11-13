@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-pricing-section",
+  "type": "registry:ui",
+  "title": "Card pricing section",
+  "description": "Card pricing section - Créé par @rathanak-phan sur TailwindFlex.",
+  "author": "@rathanak-phan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-pricing-section.tsx",
+      "content": "/**\n * Component: Card pricing section\n * Author: @rathanak-phan (https://tailwindflex.com/@rathanak-phan)\n * Source: https://tailwindflex.com/@rathanak-phan/card-pricing-section\n * Attribution: Créé par @rathanak-phan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardPricingSection() {\n  return (\n    <div>\n    <div className=\"bg-white dark800 min-h-screen flex items-center justify-center p-6\">\n      <div className=\"flex flex-wrap gap-6 justify-center max-w-6xl w-full\">\n    \n        \n        <div className=\"border border-gray-200 dark600 shadow-md shadow-teal-300 rounded-lg p-6 w-full max-w-sm transition-transform transform hover105 duration-300 dark700 dark300\">\n          <h2 className=\"text-2xl font-extrabold font-mono text-center mb-2\">Free</h2>\n          <p className=\"text-center text-xl text-gray-600 dark400 mb-4\">$0<span className=\"text-base\">/month</span></p>\n          <ul className=\"list-disc text-lg px-6 mb-6 space-y-2\">\n            <li>1 Project</li>\n            <li>Community Support</li>\n            <li>Basic Features</li>\n          </ul>\n          <button className=\"w-full bg-teal-500 hover600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300\">\n            Get Started\n          </button>\n        </div>\n    \n        \n        <div className=\"border-2 border-teal-500 shadow-md shadow-teal-300 rounded-lg p-6 w-full max-w-sm transition-transform transform hover105 duration-300 bg-teal-50 dark900 dark100\">\n          <h2 className=\"text-3xl font-extrabold font-mono text-center mb-2\">Pro</h2>\n          <p className=\"text-center text-2xl text-teal-600 dark300 mb-4\">$19<span className=\"text-base\">/month</span></p>\n          <ul className=\"list-disc text-lg px-6 mb-6 space-y-2\">\n            <li>Unlimited Projects</li>\n            <li>Priority Support</li>\n            <li>Custom Domains</li>\n            <li>Analytics</li>\n          </ul>\n          <button className=\"w-full bg-teal-600 hover700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300\">\n            Upgrade to Pro\n          </button>\n        </div>\n    \n        \n        <div className=\"border border-gray-200 dark600 shadow-md shadow-teal-300 rounded-lg p-6 w-full max-w-sm transition-transform transform hover105 duration-300 dark700 dark300\">\n          <h2 className=\"text-2xl font-extrabold font-mono text-center mb-2\">Enterprise</h2>\n          <p className=\"text-center text-xl text-gray-600 dark400 mb-4\">Custom Pricing</p>\n          <ul className=\"list-disc text-lg px-6 mb-6 space-y-2\">\n            <li>All Pro Features</li>\n            <li>Team Management</li>\n            <li>24/7 Premium Support</li>\n            <li>Dedicated Account Manager</li>\n          </ul>\n          <button className=\"w-full bg-teal-500 hover600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300\">\n            Contact Sales\n          </button>\n        </div>\n    \n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rathanak-phan",
+    "authorUrl": "https://tailwindflex.com/@rathanak-phan",
+    "sourceUrl": "https://tailwindflex.com/@rathanak-phan/card-pricing-section",
+    "mention": "Créé par @rathanak-phan sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white dark:bg-gray-800 min-h-screen flex items-center justify-center p-6\">\n  <div class=\"flex flex-wrap gap-6 justify-center max-w-6xl w-full\">\n\n    <!-- Free Plan -->\n    <div class=\"border border-gray-200 dark:border-gray-600 shadow-md shadow-teal-300 rounded-lg p-6 w-full max-w-sm transition-transform transform hover:scale-105 duration-300 dark:bg-gray-700 dark:text-gray-300\">\n      <h2 class=\"text-2xl font-extrabold font-mono text-center mb-2\">Free</h2>\n      <p class=\"text-center text-xl text-gray-600 dark:text-gray-400 mb-4\">$0<span class=\"text-base\">/month</span></p>\n      <ul class=\"list-disc text-lg px-6 mb-6 space-y-2\">\n        <li>1 Project</li>\n        <li>Community Support</li>\n        <li>Basic Features</li>\n      </ul>\n      <button class=\"w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300\">\n        Get Started\n      </button>\n    </div>\n\n    <!-- Pro Plan (Highlighted) -->\n    <div class=\"border-2 border-teal-500 shadow-md shadow-teal-300 rounded-lg p-6 w-full max-w-sm transition-transform transform hover:scale-105 duration-300 bg-teal-50 dark:bg-teal-900 dark:text-gray-100\">\n      <h2 class=\"text-3xl font-extrabold font-mono text-center mb-2\">Pro</h2>\n      <p class=\"text-center text-2xl text-teal-600 dark:text-teal-300 mb-4\">$19<span class=\"text-base\">/month</span></p>\n      <ul class=\"list-disc text-lg px-6 mb-6 space-y-2\">\n        <li>Unlimited Projects</li>\n        <li>Priority Support</li>\n        <li>Custom Domains</li>\n        <li>Analytics</li>\n      </ul>\n      <button class=\"w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300\">\n        Upgrade to Pro\n      </button>\n    </div>\n\n    <!-- Enterprise Plan -->\n    <div class=\"border border-gray-200 dark:border-gray-600 shadow-md shadow-teal-300 rounded-lg p-6 w-full max-w-sm transition-transform transform hover:scale-105 duration-300 dark:bg-gray-700 dark:text-gray-300\">\n      <h2 class=\"text-2xl font-extrabold font-mono text-center mb-2\">Enterprise</h2>\n      <p class=\"text-center text-xl text-gray-600 dark:text-gray-400 mb-4\">Custom Pricing</p>\n      <ul class=\"list-disc text-lg px-6 mb-6 space-y-2\">\n        <li>All Pro Features</li>\n        <li>Team Management</li>\n        <li>24/7 Premium Support</li>\n        <li>Dedicated Account Manager</li>\n      </ul>\n      <button class=\"w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300\">\n        Contact Sales\n      </button>\n    </div>\n\n  </div>\n</div>"
+  }
+}

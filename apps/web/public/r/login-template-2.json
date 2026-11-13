@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-template-2",
+  "type": "registry:ui",
+  "title": "LOGIN TEMPLATE",
+  "description": "LOGIN TEMPLATE - Créé par @ezze191 sur TailwindFlex.",
+  "author": "@ezze191 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/login-template-2.tsx",
+      "content": "/**\n * Component: LOGIN TEMPLATE\n * Author: @ezze191 (https://tailwindflex.com/@ezze191)\n * Source: https://tailwindflex.com/@ezze191/login-template-2\n * Attribution: Créé par @ezze191 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LoginTemplate2() {\n  return (\n    <div>\n    <div className=\"min-h-screen bg-cover bg-center flex items-center justify-center p-4\" \n         style=\"background-image: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=1470&q=80');\">\n    \n      <div className=\"max-w-md w-full bg-white/10 backdrop-blur-lg rounded-xl shadow-xl p-8 border border-white/20\">\n        <h2 className=\"text-3xl font-extrabold text-white mb-6 text-center tracking-wide\">Bienvenido a PeliMania</h2>\n    \n        <form className=\"space-y-5\" >\n          \n          <div>\n            <input type=\"email\"\n              className=\"w-full px-4 py-3 bg-white/20 text-white border border-white/30 rounded-lg focus2 focus500 focus placeholder-white/70\"\n              placeholder=\"Correo electrónico\" required />\n          </div>\n    \n          <div>\n            <input type=\"password\"\n              className=\"w-full px-4 py-3 bg-white/20 text-white border border-white/30 rounded-lg focus2 focus500 focus placeholder-white/70\"\n              placeholder=\"Contraseña\" required />\n          </div>\n    \n          <button\n            className=\"w-full bg-red-600 hover700 text-white font-semibold py-3 rounded-lg transition-all\"\n            type=\"submit\">\n            Entrar\n          </button>\n        </form>\n    \n        <div className=\"mt-6 text-center text-sm text-white\">\n          ¿No tienes cuenta?\n          <a  className=\"text-red-400 hover font-medium\">Regístrate</a>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ezze191",
+    "authorUrl": "https://tailwindflex.com/@ezze191",
+    "sourceUrl": "https://tailwindflex.com/@ezze191/login-template-2",
+    "mention": "Créé par @ezze191 sur TailwindFlex",
+    "rawHtml": "<div class=\"min-h-screen bg-cover bg-center flex items-center justify-center p-4\" \n     style=\"background-image: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=1470&q=80');\">\n\n  <div class=\"max-w-md w-full bg-white/10 backdrop-blur-lg rounded-xl shadow-xl p-8 border border-white/20\">\n    <h2 class=\"text-3xl font-extrabold text-white mb-6 text-center tracking-wide\">Bienvenido a PeliMania</h2>\n\n    <form class=\"space-y-5\" >\n      \n      <div>\n        <input type=\"email\"\n          class=\"w-full px-4 py-3 bg-white/20 text-white border border-white/30 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none placeholder-white/70\"\n          placeholder=\"Correo electrónico\" required />\n      </div>\n\n      <div>\n        <input type=\"password\"\n          class=\"w-full px-4 py-3 bg-white/20 text-white border border-white/30 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none placeholder-white/70\"\n          placeholder=\"Contraseña\" required />\n      </div>\n\n      <button\n        class=\"w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg transition-all\"\n        type=\"submit\">\n        Entrar\n      </button>\n    </form>\n\n    <div class=\"mt-6 text-center text-sm text-white\">\n      ¿No tienes cuenta?\n      <a  class=\"text-red-400 hover:underline font-medium\">Regístrate</a>\n    </div>\n  </div>\n</div>"
+  }
+}

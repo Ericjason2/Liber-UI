@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "page-not-found",
+  "type": "registry:ui",
+  "title": "Page not found",
+  "description": "Page not found - Créé par @blvpeppa sur TailwindFlex.",
+  "author": "@blvpeppa (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/page-not-found.tsx",
+      "content": "/**\n * Component: Page not found\n * Author: @blvpeppa (https://tailwindflex.com/@blvpeppa)\n * Source: https://tailwindflex.com/@blvpeppa/page-not-found\n * Attribution: Créé par @blvpeppa sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PageNotFound() {\n  return (\n    <div>\n    <div className=\"flex min-h-screen bg-white\">\n      \n      <div className=\"hidden lg lg1/2 relative\">\n        <img\n          src=\"https://images.unsplash.com/photo-1549415697-8e9a0872f910?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n          alt=\"Lost man in desert\"\n          className=\"h-full w-full object-cover\"\n        />\n        <div className=\"absolute inset-0 bg-black bg-opacity-30\"></div>\n      </div>\n    \n      \n      <main className=\"flex flex-1 items-center justify-center px-6 py-24 sm32 lg8\">\n        <div className=\"text-center max-w-md\">\n          <p className=\"text-base font-semibold text-green-600\">404</p>\n          <h1 className=\"mt-4 text-5xl font-semibold tracking-tight text-balance text-gray-900 sm7xl\">\n            Page not found\n          </h1>\n          <p className=\"mt-6 text-lg font-medium text-pretty text-gray-500 sm/8\">\n            Sorry, we couldn’t find the page you’re looking for.\n          </p>\n          <div className=\"mt-10 flex items-center justify-center gap-x-6\">\n            <a\n              href=\"/\"\n              className=\"rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover800 focus-visible2 focus-visible2 focus-visible600\"\n            >\n              Go back home\n            </a>\n            <a href=\"/Contact\" className=\"text-sm font-semibold text-gray-900\">\n              Contact support <span aria-hidden=\"true\">&rarr;</span>\n            </a>\n          </div>\n        </div>\n      </main>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@blvpeppa",
+    "authorUrl": "https://tailwindflex.com/@blvpeppa",
+    "sourceUrl": "https://tailwindflex.com/@blvpeppa/page-not-found",
+    "mention": "Créé par @blvpeppa sur TailwindFlex",
+    "rawHtml": "<div class=\"flex min-h-screen bg-white\">\n  <!-- Sidebar Image -->\n  <div class=\"hidden lg:block lg:w-1/2 relative\">\n    <img\n      src=\"https://images.unsplash.com/photo-1549415697-8e9a0872f910?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n      alt=\"Lost man in desert\"\n      class=\"h-full w-full object-cover\"\n    />\n    <div class=\"absolute inset-0 bg-black bg-opacity-30\"></div>\n  </div>\n\n  <!-- Main content -->\n  <main class=\"flex flex-1 items-center justify-center px-6 py-24 sm:py-32 lg:px-8\">\n    <div class=\"text-center max-w-md\">\n      <p class=\"text-base font-semibold text-green-600\">404</p>\n      <h1 class=\"mt-4 text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl\">\n        Page not found\n      </h1>\n      <p class=\"mt-6 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8\">\n        Sorry, we couldn’t find the page you’re looking for.\n      </p>\n      <div class=\"mt-10 flex items-center justify-center gap-x-6\">\n        <a\n          href=\"/\"\n          class=\"rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-green-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600\"\n        >\n          Go back home\n        </a>\n        <a href=\"/Contact\" class=\"text-sm font-semibold text-gray-900\">\n          Contact support <span aria-hidden=\"true\">&rarr;</span>\n        </a>\n      </div>\n    </div>\n  </main>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-testimonial-card-with-stars-ratings",
+  "type": "registry:ui",
+  "title": "Responsive Testimonial Card with stars ratings",
+  "description": "Responsive Testimonial Card with stars ratings - Créé par @quentin sur TailwindFlex.",
+  "author": "@quentin (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-testimonial-card-with-stars-ratings.tsx",
+      "content": "/**\n * Component: Responsive Testimonial Card with stars ratings\n * Author: @quentin (https://tailwindflex.com/@quentin)\n * Source: https://tailwindflex.com/@quentin/responsive-testimonial-card-with-stars-ratings\n * Attribution: Créé par @quentin sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveTestimonialCardWithStarsRatings() {\n  return (\n    <div>\n    <div\n      className=\"max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md2xl\">\n      <div className=\"md\">\n        <div className=\"md0\">\n          <img className=\"h-48 w-full object-cover md md48\" src=\"https://randomuser.me/api/portraits/women/91.jpg\" alt=\"User profile picture\" />\n        </div>\n        <div className=\"p-8\">\n          <div className=\"uppercase tracking-wide text-sm text-indigo-500 font-semibold\">Customer Testimonial</div>\n          <p className=\"mt-2 text-slate-500\">\"This product changed my life! I can't imagine going back to how things were\n            before. Absolutely revolutionary.\"</p>\n          <div className=\"mt-4\">\n            <span className=\"text-slate-900 font-bold\">Sarah Johnson</span>\n            <span className=\"text-slate-600 text-sm ml-2\">CEO, TechInnovate</span>\n          </div>\n          <div className=\"mt-4 flex items-center\">\n            <svg className=\"h-5 w-5 text-yellow-400\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n              <path\n                d=\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\">\n              </path>\n            </svg>\n            <svg className=\"h-5 w-5 text-yellow-400\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n              <path\n                d=\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\">\n              </path>\n            </svg>\n            <svg className=\"h-5 w-5 text-yellow-400\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n              <path\n                d=\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\">\n              </path>\n            </svg>\n            <svg className=\"h-5 w-5 text-yellow-400\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n              <path\n                d=\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\">\n              </path>\n            </svg>\n            <svg className=\"h-5 w-5 text-yellow-400\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n              <path\n                d=\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\">\n              </path>\n            </svg>\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@quentin",
+    "authorUrl": "https://tailwindflex.com/@quentin",
+    "sourceUrl": "https://tailwindflex.com/@quentin/responsive-testimonial-card-with-stars-ratings",
+    "mention": "Créé par @quentin sur TailwindFlex",
+    "rawHtml": "<div\n  class=\"max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl\">\n  <div class=\"md:flex\">\n    <div class=\"md:shrink-0\">\n      <img class=\"h-48 w-full object-cover md:h-full md:w-48\" src=\"https://randomuser.me/api/portraits/women/91.jpg\" alt=\"User profile picture\">\n    </div>\n    <div class=\"p-8\">\n      <div class=\"uppercase tracking-wide text-sm text-indigo-500 font-semibold\">Customer Testimonial</div>\n      <p class=\"mt-2 text-slate-500\">\"This product changed my life! I can't imagine going back to how things were\n        before. Absolutely revolutionary.\"</p>\n      <div class=\"mt-4\">\n        <span class=\"text-slate-900 font-bold\">Sarah Johnson</span>\n        <span class=\"text-slate-600 text-sm ml-2\">CEO, TechInnovate</span>\n      </div>\n      <div class=\"mt-4 flex items-center\">\n        <svg class=\"h-5 w-5 text-yellow-400\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n          <path\n            d=\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\">\n          </path>\n        </svg>\n        <svg class=\"h-5 w-5 text-yellow-400\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n          <path\n            d=\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\">\n          </path>\n        </svg>\n        <svg class=\"h-5 w-5 text-yellow-400\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n          <path\n            d=\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\">\n          </path>\n        </svg>\n        <svg class=\"h-5 w-5 text-yellow-400\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n          <path\n            d=\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\">\n          </path>\n        </svg>\n        <svg class=\"h-5 w-5 text-yellow-400\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n          <path\n            d=\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\">\n          </path>\n        </svg>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-to-action-cta-with-background-image",
+  "type": "registry:ui",
+  "title": "Call to Action (CTA with Background Image)",
+  "description": "Call to Action (CTA with Background Image) - Créé par @eliyantosarage sur TailwindFlex.",
+  "author": "@eliyantosarage (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-to-action-cta-with-background-image.tsx",
+      "content": "/**\n * Component: Call to Action (CTA with Background Image)\n * Author: @eliyantosarage (https://tailwindflex.com/@eliyantosarage)\n * Source: https://tailwindflex.com/@eliyantosarage/call-to-action-cta-with-background-image\n * Attribution: Créé par @eliyantosarage sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToActionCtaWithBackgroundImage() {\n  return (\n    <div>\n    <body className=\"flex items-center justify-center min-h-screen bg-gray-900\">\n        <div className=\"relative w-full h-full bg-cover bg-center flex items-center justify-center bg-cover bg-center p-8 my-8 dui-bg-fixed\"\n            style=\"background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2400');\">\n            <div\n                className=\"p-8 bg-gray-900 bg-opacity-50 text-white/75 rounded-xl shadow-lg text-center w-full max-w-full mx-2\">\n                <h1 className=\"text-4xl font-bold mb-4\">Call to Action (CTA)</h1>\n                <p className=\"text-lg mb-8\">Jadilah bagian dari komunitas kami dan nikmati manfaat eksklusif.</p>\n                <a href=\"https://github.com/idugeni\" target=\"_blank\" rel=\"noopener noreferrer\"\n                    className=\"btn btn-neutral btn-wide\">Daftar Sekarang</a>\n            </div>\n        </div>\n    </body>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@eliyantosarage",
+    "authorUrl": "https://tailwindflex.com/@eliyantosarage",
+    "sourceUrl": "https://tailwindflex.com/@eliyantosarage/call-to-action-cta-with-background-image",
+    "mention": "Créé par @eliyantosarage sur TailwindFlex",
+    "rawHtml": "<body class=\"flex items-center justify-center min-h-screen bg-gray-900\">\n    <div class=\"relative w-full h-full bg-cover bg-center flex items-center justify-center bg-cover bg-center p-8 my-8 dui-bg-fixed\"\n        style=\"background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2400');\">\n        <div\n            class=\"p-8 bg-gray-900 bg-opacity-50 text-white/75 rounded-xl shadow-lg text-center w-full max-w-full mx-2\">\n            <h1 class=\"text-4xl font-bold mb-4\">Call to Action (CTA)</h1>\n            <p class=\"text-lg mb-8\">Jadilah bagian dari komunitas kami dan nikmati manfaat eksklusif.</p>\n            <a href=\"https://github.com/idugeni\" target=\"_blank\" rel=\"noopener noreferrer\"\n                class=\"btn btn-neutral btn-wide\">Daftar Sekarang</a>\n        </div>\n    </div>\n</body>"
+  }
+}

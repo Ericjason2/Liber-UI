@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "buttons-in-pair-2",
+  "type": "registry:ui",
+  "title": "Buttons in pair",
+  "description": "Buttons in pair - Créé par @bunny sur TailwindFlex.",
+  "author": "@bunny (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/buttons-in-pair-2.tsx",
+      "content": "/**\n * Component: Buttons in pair\n * Author: @bunny (https://tailwindflex.com/@bunny)\n * Source: https://tailwindflex.com/@bunny/buttons-in-pair-2\n * Attribution: Créé par @bunny sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonsInPair2() {\n  return (\n    <div>\n    <div className=\"mt-5 sm8 sm sm lg\">\n        <div className=\"rounded-md shadow\">\n            <a className=\"w-full flex items-center justify-center px-8 py-3 text-base leading-6 font-medium rounded-md text-white bg-pink-400 hover500 hover focus ring-offset-2 ring-pink-400 focus transition duration-150 ease-in-out md4 md md10\"\n                href=\"\">\n                Get started\n            </a>\n        </div>\n        <div className=\"mt-3 sm0 sm3\">\n            <a className=\"w-full flex items-center justify-center px-8 py-3 text-base leading-6 font-medium rounded-md text-purple-700 dark700 bg-purple-100 hover50 hover600 focus ring-offset-2 ring-purple-100 focus transition duration-150 ease-in-out md4 md md10\"\n                href=\"\" rel=\"noopener\" target=\"_blank\">\n                Source Code\n            </a>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@bunny",
+    "authorUrl": "https://tailwindflex.com/@bunny",
+    "sourceUrl": "https://tailwindflex.com/@bunny/buttons-in-pair-2",
+    "mention": "Créé par @bunny sur TailwindFlex",
+    "rawHtml": "<div class=\"mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start\">\n    <div class=\"rounded-md shadow\">\n        <a class=\"w-full flex items-center justify-center px-8 py-3 text-base leading-6 font-medium rounded-md text-white bg-pink-400 hover:bg-pink-500 hover:text-white focus:ring ring-offset-2 ring-pink-400 focus:outline-none transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10\"\n            href=\"\">\n            Get started\n        </a>\n    </div>\n    <div class=\"mt-3 sm:mt-0 sm:ml-3\">\n        <a class=\"w-full flex items-center justify-center px-8 py-3 text-base leading-6 font-medium rounded-md text-purple-700 dark:text-purple-700 bg-purple-100 hover:bg-purple-50 hover:text-purple-600 focus:ring ring-offset-2 ring-purple-100 focus:outline-none transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10\"\n            href=\"\" rel=\"noopener\" target=\"_blank\">\n            Source Code\n        </a>\n    </div>\n</div>"
+  }
+}

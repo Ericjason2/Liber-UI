@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scroll-abajo",
+  "type": "registry:ui",
+  "title": "SCROLL ABAJO",
+  "description": "SCROLL ABAJO - Créé par @raulanto sur TailwindFlex.",
+  "author": "@raulanto (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/scroll-abajo.tsx",
+      "content": "/**\n * Component: SCROLL ABAJO\n * Author: @raulanto (https://tailwindflex.com/@raulanto)\n * Source: https://tailwindflex.com/@raulanto/scroll-abajo\n * Attribution: Créé par @raulanto sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ScrollAbajo() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n\\n    \\n    <link href=\\\"https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&family=Noto+Serif:wght@400;500;600&display=swap\\\" rel=\\\"stylesheet\\\">\\n\\n</head>\\n<body class=\\\"bg-paper text-moss-dark font-sans flex justify-center items-center\\\">\\n        <div class=\\\"absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20\\\">\\n            <div class=\\\"flex flex-col items-center animate-bounce\\\">\\n                <span class=\\\"text-xs font-sans text-moss-dark opacity-80 mb-2\\\">Scroll ABAJO</span>\\n                <div class=\\\"w-6 h-10 rounded-full border-2 border-moss border-opacity-50 flex justify-center p-1\\\">\\n                    <div class=\\\"w-1 h-2 bg-moss rounded-full animate-bounce\\\" style=\\\"animation-delay: 0.2s;\\\"></div>\\n                </div>\\n            </div>\\n        </div>\\n    </section>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@raulanto",
+    "authorUrl": "https://tailwindflex.com/@raulanto",
+    "sourceUrl": "https://tailwindflex.com/@raulanto/scroll-abajo",
+    "mention": "Créé par @raulanto sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n    <script>\n        tailwind.config = {\n            theme: {\n                extend: {\n                    colors: {\n                        'moss': '#5a7247',\n                        'moss-light': '#6b8a56',\n                        'moss-dark': '#485b39',\n                        'clay': '#b38a58',\n                        'clay-light': '#c9a06b',\n                        'stone': '#e8e6e1',\n                        'paper': '#f5f3ef',\n                    },\n                    fontFamily: {\n                        sans: ['\"Noto Sans\"', 'sans-serif'],\n                        serif: ['\"Noto Serif\"', 'serif'],\n                    },\n                    animation: {\n                        'float': 'float 6s ease-in-out infinite',\n                        'pulse-slow': 'pulse 6s infinite',\n                        'leaf-rustle': 'leafRustle 8s ease-in-out infinite',\n                        'nav-fade': 'navFade 1s ease-out',\n                        'underline-grow': 'underlineGrow 0.3s ease-out'\n                    },\n                    keyframes: {\n                        float: {\n                            '0%, 100%': { transform: 'translateY(0)' },\n                            '50%': { transform: 'translateY(-15px)' },\n                        },\n                        leafRustle: {\n                            '0%, 100%': { transform: 'rotate(0deg)' },\n                            '25%': { transform: 'rotate(-2deg)' },\n                            '75%': { transform: 'rotate(2deg)' },\n                        },\n                        navFade: {\n                            '0%': { opacity: '0', transform: 'translateY(-20px)' },\n                            '100%': { opacity: '1', transform: 'translateY(0)' },\n                        },\n                        underlineGrow: {\n                            '0%': { transform: 'scaleX(0)' },\n                            '100%': { transform: 'scaleX(1)' },\n                        }\n                    }\n                }\n            }\n        }\n    </script>\n    <link href=\"https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&family=Noto+Serif:wght@400;500;600&display=swap\" rel=\"stylesheet\">\n\n</head>\n<body class=\"bg-paper text-moss-dark font-sans flex justify-center items-center\">\n        <div class=\"absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20\">\n            <div class=\"flex flex-col items-center animate-bounce\">\n                <span class=\"text-xs font-sans text-moss-dark opacity-80 mb-2\">Scroll ABAJO</span>\n                <div class=\"w-6 h-10 rounded-full border-2 border-moss border-opacity-50 flex justify-center p-1\">\n                    <div class=\"w-1 h-2 bg-moss rounded-full animate-bounce\" style=\"animation-delay: 0.2s;\"></div>\n                </div>\n            </div>\n        </div>\n    </section>\n</body>\n</html>"
+  }
+}

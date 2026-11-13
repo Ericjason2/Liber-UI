@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "corner-framed-hover-transition-buttons",
+  "type": "registry:ui",
+  "title": "Corner‑Framed Hover Transition Buttons",
+  "description": "Corner‑Framed Hover Transition Buttons - Créé par @arshidiqbaldev sur TailwindFlex.",
+  "author": "@arshidiqbaldev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/corner-framed-hover-transition-buttons.tsx",
+      "content": "/**\n * Component: Corner‑Framed Hover Transition Buttons\n * Author: @arshidiqbaldev (https://tailwindflex.com/@arshidiqbaldev)\n * Source: https://tailwindflex.com/@arshidiqbaldev/corner-framed-hover-transition-buttons\n * Attribution: Créé par @arshidiqbaldev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CornerFramedHoverTransitionButtons() {\n  return (\n    <div>\n    <div className=\"flex items-center justify-center text-zinc-800 min-h-dvh bg-zinc-900  p-4 \">\n    \n      <div className=\"flex flex-col gap-2  w-full  max-w-100\">\n    \n    \n    \n    \n        <a href=\"#\"\n          className=\"flex w-full self-center relative py-3 px-8 bg-orange-500/10 items-center justify-center hover[90%] transition-all duration-500 ease-in  text-zinc-200 border border-orange-500/10 \">\n          <div\n            className=\"size-4 aspect-square outline-0 border-transparent absolute top-0 left-0  border-l-orange-400 border-t-orange-400 border\">\n          </div>\n    \n          <div\n            className=\"size-4 aspect-square outline-0 border-transparent absolute top-0 right-0  border-r-orange-400 border-t-orange-400 border\">\n          </div>\n    \n          VISIT\n    \n          <div\n            className=\"size-4 aspect-square outline-0 border-transparent absolute bottom-0 left-0  border-l-orange-400 border-b-orange-400 border\">\n          </div>\n    \n    \n    \n          <div\n            className=\"size-4 aspect-square outline-0 border-transparent absolute bottom-0 right-0  border-r-orange-400 border-b-orange-400 border\">\n          </div>\n        </a>\n    \n    \n        <a href=\"#\"\n          className=\"flex w-full *:transition-all *:duration-200 *:ease-in group self-center relative py-3 px-8 bg-green-500/5 items-center justify-center hover[90%] transition-all duration-200 ease-in  text-zinc-200 border border-green-500/10 \">\n          <div\n            className=\"size-4 aspect-square group-hover1 group-hover1 outline-0 border-transparent absolute top-0 left-0  border-l-green-400 border-t-green-400 border\">\n          </div>\n    \n          <div\n            className=\"size-4 aspect-square group-hover1 group-hover1 outline-0 border-transparent absolute top-0 right-0  border-r-green-400 border-t-green-400 border\">\n          </div>\n    \n          DOWNLOAD\n    \n          <div\n            className=\"size-4 aspect-square group-hover1 group-hover1 outline-0 border-transparent absolute bottom-0 left-0  border-l-green-400 border-b-green-400 border\">\n          </div>\n    \n    \n    \n          <div\n            className=\"size-4 aspect-square group-hover1 group-hover1 outline-0 border-transparent absolute bottom-0 right-0  border-r-green-400 border-b-green-400 border\">\n          </div>\n        </a>\n    \n      </div>\n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@arshidiqbaldev",
+    "authorUrl": "https://tailwindflex.com/@arshidiqbaldev",
+    "sourceUrl": "https://tailwindflex.com/@arshidiqbaldev/corner-framed-hover-transition-buttons",
+    "mention": "Créé par @arshidiqbaldev sur TailwindFlex",
+    "rawHtml": "<div class=\"flex items-center justify-center text-zinc-800 min-h-dvh bg-zinc-900  p-4 \">\n\n  <div class=\"flex flex-col gap-2  w-full  max-w-100\">\n\n\n\n\n    <a href=\"#\"\n      class=\"flex w-full self-center relative py-3 px-8 bg-orange-500/10 items-center justify-center hover:w-[90%] transition-all duration-500 ease-in  text-zinc-200 border border-orange-500/10 \">\n      <div\n        class=\"size-4 aspect-square outline-0 border-transparent absolute top-0 left-0  border-l-orange-400 border-t-orange-400 border\">\n      </div>\n\n      <div\n        class=\"size-4 aspect-square outline-0 border-transparent absolute top-0 right-0  border-r-orange-400 border-t-orange-400 border\">\n      </div>\n\n      VISIT\n\n      <div\n        class=\"size-4 aspect-square outline-0 border-transparent absolute bottom-0 left-0  border-l-orange-400 border-b-orange-400 border\">\n      </div>\n\n\n\n      <div\n        class=\"size-4 aspect-square outline-0 border-transparent absolute bottom-0 right-0  border-r-orange-400 border-b-orange-400 border\">\n      </div>\n    </a>\n\n\n    <a href=\"#\"\n      class=\"flex w-full *:transition-all *:duration-200 *:ease-in group self-center relative py-3 px-8 bg-green-500/5 items-center justify-center hover:w-[90%] transition-all duration-200 ease-in  text-zinc-200 border border-green-500/10 \">\n      <div\n        class=\"size-4 aspect-square group-hover:-top-1 group-hover:-left-1 outline-0 border-transparent absolute top-0 left-0  border-l-green-400 border-t-green-400 border\">\n      </div>\n\n      <div\n        class=\"size-4 aspect-square group-hover:-top-1 group-hover:-right-1 outline-0 border-transparent absolute top-0 right-0  border-r-green-400 border-t-green-400 border\">\n      </div>\n\n      DOWNLOAD\n\n      <div\n        class=\"size-4 aspect-square group-hover:-bottom-1 group-hover:-left-1 outline-0 border-transparent absolute bottom-0 left-0  border-l-green-400 border-b-green-400 border\">\n      </div>\n\n\n\n      <div\n        class=\"size-4 aspect-square group-hover:-bottom-1 group-hover:-right-1 outline-0 border-transparent absolute bottom-0 right-0  border-r-green-400 border-b-green-400 border\">\n      </div>\n    </a>\n\n  </div>\n\n</div>"
+  }
+}

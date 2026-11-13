@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "startup-page",
+  "type": "registry:ui",
+  "title": "Startup page",
+  "description": "Startup page - Créé par @blvpeppa sur TailwindFlex.",
+  "author": "@blvpeppa (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/startup-page.tsx",
+      "content": "/**\n * Component: Startup page\n * Author: @blvpeppa (https://tailwindflex.com/@blvpeppa)\n * Source: https://tailwindflex.com/@blvpeppa/startup-page\n * Attribution: Créé par @blvpeppa sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function StartupPage() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\" class=\\\"scroll-smooth\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n  <title>AI Startup Landing</title>\\n  <link href=\\\"https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css\\\" rel=\\\"stylesheet\\\" />\\n</head>\\n<body class=\\\"bg-gray-950 text-white font-sans\\\">\\n\\n  <!-- Hero Section -->\\n  <section class=\\\"min-h-screen flex flex-col justify-center items-center text-center px-6\\\">\\n    <h1 class=\\\"text-5xl font-bold mb-4 animate-fade\\\">AI That Works For You</h1>\\n    <p class=\\\"text-lg text-slate-400 max-w-xl animate-fade delay-200\\\">Build faster, automate smarter. Join the AI revolution today.</p>\\n    <a href=\\\"#features\\\" class=\\\"mt-8 inline-block bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-full font-semibold transition animate-fade delay-300\\\">\\n      Get Started\\n    </a>\\n    <div class=\\\"mt-16 animate-bounce text-3xl text-pink-500\\\">↓</div>\\n  </section>\\n\\n  <!-- Features Section -->\\n  <section id=\\\"features\\\" class=\\\"bg-gray-900 py-24 px-6 text-center\\\">\\n    <h2 class=\\\"text-4xl font-bold mb-12 animate-fade\\\">Why Choose Us?</h2>\\n    <div class=\\\"grid md:grid-cols-3 gap-10 max-w-6xl mx-auto\\\">\\n      <div class=\\\"p-6 bg-gray-800 rounded-xl animate-fade\\\">\\n        <h3 class=\\\"text-xl font-semibold mb-2 text-pink-400\\\">Speed</h3>\\n        <p class=\\\"text-slate-400\\\">Automate repetitive tasks instantly with no code.</p>\\n      </div>\\n      <div class=\\\"p-6 bg-gray-800 rounded-xl animate-fade delay-100\\\">\\n        <h3 class=\\\"text-xl font-semibold mb-2 text-pink-400\\\">Smart</h3>\\n        <p class=\\\"text-slate-400\\\">AI that understands and adapts to your needs.</p>\\n      </div>\\n      <div class=\\\"p-6 bg-gray-800 rounded-xl animate-fade delay-200\\\">\\n        <h3 class=\\\"text-xl font-semibold mb-2 text-pink-400\\\">Secure</h3>\\n        <p class=\\\"text-slate-400\\\">Built with enterprise-grade encryption and control.</p>\\n      </div>\\n    </div>\\n  </section>\\n\\n  <!-- Testimonials -->\\n  <section class=\\\"bg-gray-950 py-24 px-6 text-center\\\">\\n    <h2 class=\\\"text-4xl font-bold mb-12 animate-fade\\\">What Our Users Say</h2>\\n    <div class=\\\"grid md:grid-cols-2 gap-8 max-w-5xl mx-auto\\\">\\n      <div class=\\\"bg-gray-900 p-6 rounded-xl animate-fade\\\">\\n        <p class=\\\"text-slate-400 italic\\\">\\\"The automation saved me 10+ hours every week. Absolutely magical.\\\"</p>\\n        <p class=\\\"mt-4 font-semibold text-pink-400\\\">— Alex M., Product Manager</p>\\n      </div>\\n      <div class=\\\"bg-gray-900 p-6 rounded-xl animate-fade delay-200\\\">\\n        <p class=\\\"text-slate-400 italic\\\">\\\"Setup was seamless. Within minutes, my team was using it daily.\\\"</p>\\n        <p class=\\\"mt-4 font-semibold text-pink-400\\\">— Dana K., Founder</p>\\n      </div>\\n    </div>\\n  </section>\\n\\n  <!-- Call To Action -->\\n  <section class=\\\"bg-pink-600 py-20 px-6 text-center text-white\\\">\\n    <h2 class=\\\"text-4xl font-bold mb-4 animate-fade\\\">Start Your AI Journey Today</h2>\\n    <p class=\\\"text-lg mb-8 animate-fade delay-100\\\">Join thousands of innovators transforming their workflow.</p>\\n    <a href=\\\"#signup\\\" class=\\\"inline-block bg-white text-pink-600 px-6 py-3 rounded-full font-semibold hover:bg-slate-200 transition animate-fade delay-200\\\">\\n      Sign Up Now\\n    </a>\\n  </section>\\n\\n  <!-- Footer -->\\n  <footer class=\\\"bg-gray-900 text-slate-400 text-center py-6\\\">\\n    © 2025 AI Tools Co. All rights reserved.\\n  </footer>\\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@blvpeppa",
+    "authorUrl": "https://tailwindflex.com/@blvpeppa",
+    "sourceUrl": "https://tailwindflex.com/@blvpeppa/startup-page",
+    "mention": "Créé par @blvpeppa sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\" class=\"scroll-smooth\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>AI Startup Landing</title>\n  <link href=\"https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css\" rel=\"stylesheet\" />\n</head>\n<body class=\"bg-gray-950 text-white font-sans\">\n\n  <!-- Hero Section -->\n  <section class=\"min-h-screen flex flex-col justify-center items-center text-center px-6\">\n    <h1 class=\"text-5xl font-bold mb-4 animate-fade\">AI That Works For You</h1>\n    <p class=\"text-lg text-slate-400 max-w-xl animate-fade delay-200\">Build faster, automate smarter. Join the AI revolution today.</p>\n    <a href=\"#features\" class=\"mt-8 inline-block bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-full font-semibold transition animate-fade delay-300\">\n      Get Started\n    </a>\n    <div class=\"mt-16 animate-bounce text-3xl text-pink-500\">↓</div>\n  </section>\n\n  <!-- Features Section -->\n  <section id=\"features\" class=\"bg-gray-900 py-24 px-6 text-center\">\n    <h2 class=\"text-4xl font-bold mb-12 animate-fade\">Why Choose Us?</h2>\n    <div class=\"grid md:grid-cols-3 gap-10 max-w-6xl mx-auto\">\n      <div class=\"p-6 bg-gray-800 rounded-xl animate-fade\">\n        <h3 class=\"text-xl font-semibold mb-2 text-pink-400\">Speed</h3>\n        <p class=\"text-slate-400\">Automate repetitive tasks instantly with no code.</p>\n      </div>\n      <div class=\"p-6 bg-gray-800 rounded-xl animate-fade delay-100\">\n        <h3 class=\"text-xl font-semibold mb-2 text-pink-400\">Smart</h3>\n        <p class=\"text-slate-400\">AI that understands and adapts to your needs.</p>\n      </div>\n      <div class=\"p-6 bg-gray-800 rounded-xl animate-fade delay-200\">\n        <h3 class=\"text-xl font-semibold mb-2 text-pink-400\">Secure</h3>\n        <p class=\"text-slate-400\">Built with enterprise-grade encryption and control.</p>\n      </div>\n    </div>\n  </section>\n\n  <!-- Testimonials -->\n  <section class=\"bg-gray-950 py-24 px-6 text-center\">\n    <h2 class=\"text-4xl font-bold mb-12 animate-fade\">What Our Users Say</h2>\n    <div class=\"grid md:grid-cols-2 gap-8 max-w-5xl mx-auto\">\n      <div class=\"bg-gray-900 p-6 rounded-xl animate-fade\">\n        <p class=\"text-slate-400 italic\">\"The automation saved me 10+ hours every week. Absolutely magical.\"</p>\n        <p class=\"mt-4 font-semibold text-pink-400\">— Alex M., Product Manager</p>\n      </div>\n      <div class=\"bg-gray-900 p-6 rounded-xl animate-fade delay-200\">\n        <p class=\"text-slate-400 italic\">\"Setup was seamless. Within minutes, my team was using it daily.\"</p>\n        <p class=\"mt-4 font-semibold text-pink-400\">— Dana K., Founder</p>\n      </div>\n    </div>\n  </section>\n\n  <!-- Call To Action -->\n  <section class=\"bg-pink-600 py-20 px-6 text-center text-white\">\n    <h2 class=\"text-4xl font-bold mb-4 animate-fade\">Start Your AI Journey Today</h2>\n    <p class=\"text-lg mb-8 animate-fade delay-100\">Join thousands of innovators transforming their workflow.</p>\n    <a href=\"#signup\" class=\"inline-block bg-white text-pink-600 px-6 py-3 rounded-full font-semibold hover:bg-slate-200 transition animate-fade delay-200\">\n      Sign Up Now\n    </a>\n  </section>\n\n  <!-- Footer -->\n  <footer class=\"bg-gray-900 text-slate-400 text-center py-6\">\n    © 2025 AI Tools Co. All rights reserved.\n  </footer>\n\n</body>\n</html>"
+  }
+}

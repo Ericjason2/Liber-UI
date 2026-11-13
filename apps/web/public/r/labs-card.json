@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "labs-card",
+  "type": "registry:ui",
+  "title": "Labs card",
+  "description": "Labs card - Créé par @coder32 sur TailwindFlex.",
+  "author": "@coder32 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/labs-card.tsx",
+      "content": "/**\n * Component: Labs card\n * Author: @coder32 (https://tailwindflex.com/@coder32)\n * Source: https://tailwindflex.com/@coder32/labs-card\n * Attribution: Créé par @coder32 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LabsCard() {\n  return (\n    <div>\n    <div className=\"flex justify-center items-center min-h-screen bg-gradient-to-br from-purple-100 to-indigo-200 p-4\">\n      <div\n        className=\"max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover105\">\n        <div className=\"relative\">\n          <img className=\"w-full h-64 object-cover\" src=\"https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80\" alt=\"Nature scene\" />\n          <div className=\"absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold\">\n            Location\n          </div>\n        </div>\n        <div className=\"p-6\">\n          <h2 className=\"text-2xl font-bold mb-2 text-gray-800\">Lorem ipsum dolor sit amet</h2>\n          <p className=\"text-gray-600 mb-4\">Fusce orci purus, efficitur vel eros eu, cursus pretium urna. Integer efficitur lorem vitae augue auctor aliquam. Aliquam erat volutpat. Aliquam mollis ac mi sit amet fringilla.</p>\n          <div className=\"flex justify-between items-center\">\n            <span className=\"text-2xl font-bold text-gray-800\">$299</span>\n            <a href=\"#\" className=\"px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover700 focus focus2 focus500 focus75 transition duration-300 ease-in-out\">\n              View\n            </a>\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@coder32",
+    "authorUrl": "https://tailwindflex.com/@coder32",
+    "sourceUrl": "https://tailwindflex.com/@coder32/labs-card",
+    "mention": "Créé par @coder32 sur TailwindFlex",
+    "rawHtml": "<div class=\"flex justify-center items-center min-h-screen bg-gradient-to-br from-purple-100 to-indigo-200 p-4\">\n  <div\n    class=\"max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105\">\n    <div class=\"relative\">\n      <img class=\"w-full h-64 object-cover\" src=\"https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80\" alt=\"Nature scene\">\n      <div class=\"absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold\">\n        Location\n      </div>\n    </div>\n    <div class=\"p-6\">\n      <h2 class=\"text-2xl font-bold mb-2 text-gray-800\">Lorem ipsum dolor sit amet</h2>\n      <p class=\"text-gray-600 mb-4\">Fusce orci purus, efficitur vel eros eu, cursus pretium urna. Integer efficitur lorem vitae augue auctor aliquam. Aliquam erat volutpat. Aliquam mollis ac mi sit amet fringilla.</p>\n      <div class=\"flex justify-between items-center\">\n        <span class=\"text-2xl font-bold text-gray-800\">$299</span>\n        <a href=\"#\" class=\"px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 transition duration-300 ease-in-out\">\n          View\n        </a>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

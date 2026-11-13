@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "neomorphism-button",
+  "type": "registry:ui",
+  "title": "Neomorphism button",
+  "description": "Neomorphism button - Créé par @akram6t sur TailwindFlex.",
+  "author": "@akram6t (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/neomorphism-button.tsx",
+      "content": "/**\n * Component: Neomorphism button\n * Author: @akram6t (https://tailwindflex.com/@akram6t)\n * Source: https://tailwindflex.com/@akram6t/neomorphism-button\n * Attribution: Créé par @akram6t sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NeomorphismButton() {\n  return (\n    <div>\n    \n        <button className=\"neomorphism bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out hover300 focus\">\n            Neomorphism\n        </button>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@akram6t",
+    "authorUrl": "https://tailwindflex.com/@akram6t",
+    "sourceUrl": "https://tailwindflex.com/@akram6t/neomorphism-button",
+    "mention": "Créé par @akram6t sur TailwindFlex",
+    "rawHtml": "<!-- Neomorphism Button -->\n    <button class=\"neomorphism bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:bg-gray-300 focus:outline-none\">\n        Neomorphism\n    </button>"
+  }
+}

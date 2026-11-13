@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "buy-me-a-coffee-floating-button",
+  "type": "registry:ui",
+  "title": "Buy me a coffee floating button",
+  "description": "Buy me a coffee floating button - Créé par @ron-hicks sur TailwindFlex.",
+  "author": "@ron-hicks (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/buy-me-a-coffee-floating-button.tsx",
+      "content": "/**\n * Component: Buy me a coffee floating button\n * Author: @ron-hicks (https://tailwindflex.com/@ron-hicks)\n * Source: https://tailwindflex.com/@ron-hicks/buy-me-a-coffee-floating-button\n * Attribution: Créé par @ron-hicks sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BuyMeACoffeeFloatingButton() {\n  return (\n    <div>\n    <div className=\"fixed bottom-6 right-6\">\n        <a href=\"https://www.buymeacoffee.com/yourusername\" target=\"_blank\" rel=\"noopener noreferrer\"\n            className=\"bg-yellow-500 text-white font-medium rounded-md px-4 py-2 flex items-center justify-center hover600 transition duration-300 ease-in-out shadow-lg\">\n            <span className=\"text-lg mr-2\">☕</span>\n            Buy me a coffee\n        </a>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ron-hicks",
+    "authorUrl": "https://tailwindflex.com/@ron-hicks",
+    "sourceUrl": "https://tailwindflex.com/@ron-hicks/buy-me-a-coffee-floating-button",
+    "mention": "Créé par @ron-hicks sur TailwindFlex",
+    "rawHtml": "<div class=\"fixed bottom-6 right-6\">\n    <a href=\"https://www.buymeacoffee.com/yourusername\" target=\"_blank\" rel=\"noopener noreferrer\"\n        class=\"bg-yellow-500 text-white font-medium rounded-md px-4 py-2 flex items-center justify-center hover:bg-yellow-600 transition duration-300 ease-in-out shadow-lg\">\n        <span class=\"text-lg mr-2\">☕</span>\n        Buy me a coffee\n    </a>\n</div>"
+  }
+}

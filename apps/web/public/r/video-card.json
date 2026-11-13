@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "video-card",
+  "type": "registry:ui",
+  "title": "Video card",
+  "description": "Video card - Créé par @rajesh-kulkarni sur TailwindFlex.",
+  "author": "@rajesh-kulkarni (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/video-card.tsx",
+      "content": "/**\n * Component: Video card\n * Author: @rajesh-kulkarni (https://tailwindflex.com/@rajesh-kulkarni)\n * Source: https://tailwindflex.com/@rajesh-kulkarni/video-card\n * Attribution: Créé par @rajesh-kulkarni sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function VideoCard() {\n  return (\n    <div>\n    <div className=\"flex justify-center\">\r\n        <div className=\"rounded-lg shadow-lg bg-white max-w-sm\">\r\n            <a href=\"#!\">\r\n                <video width=\"320\" height=\"240\" controls className=\"w-full rounded-t-lg\">\r\n                    <source src=\"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4\" type=\"video/mp4\" />\r\n                    <source src=\"movie.ogg\" type=\"video/ogg\" />\r\n                    Your browser does not support the video tag.\r\n                </video>\r\n            </a>\r\n            <div className=\"p-6\">\r\n                <h5 className=\"text-gray-900 text-xl font-medium mb-2\">Video Card</h5>\r\n                <p className=\"text-gray-700 text-base mb-4\">\r\n                    Some quick example text to build on the card title and make up the bulk of the card's\r\n                    content.\r\n                </p>\r\n                <button type=\"button\" className=\" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover700 hover focus700 focus focus focus0 active800 active transition duration-150 ease-in-out\">Button</button>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rajesh-kulkarni",
+    "authorUrl": "https://tailwindflex.com/@rajesh-kulkarni",
+    "sourceUrl": "https://tailwindflex.com/@rajesh-kulkarni/video-card",
+    "mention": "Créé par @rajesh-kulkarni sur TailwindFlex",
+    "rawHtml": "<div class=\"flex justify-center\">\r\n    <div class=\"rounded-lg shadow-lg bg-white max-w-sm\">\r\n        <a href=\"#!\">\r\n            <video width=\"320\" height=\"240\" controls class=\"w-full rounded-t-lg\">\r\n                <source src=\"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4\" type=\"video/mp4\">\r\n                <source src=\"movie.ogg\" type=\"video/ogg\">\r\n                Your browser does not support the video tag.\r\n            </video>\r\n        </a>\r\n        <div class=\"p-6\">\r\n            <h5 class=\"text-gray-900 text-xl font-medium mb-2\">Video Card</h5>\r\n            <p class=\"text-gray-700 text-base mb-4\">\r\n                Some quick example text to build on the card title and make up the bulk of the card's\r\n                content.\r\n            </p>\r\n            <button type=\"button\" class=\" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out\">Button</button>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-popup-modal-2",
+  "type": "registry:ui",
+  "title": "Login popup modal",
+  "description": "Login popup modal - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/login-popup-modal-2.tsx",
+      "content": "/**\n * Component: Login popup modal\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/login-popup-modal-2\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LoginPopupModal2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<div id=\\\"login-popup\\\" tabindex=\\\"-1\\\"\\n    class=\\\"bg-black/50 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 h-full items-center justify-center flex\\\">\\n    <div class=\\\"relative p-4 w-full max-w-md h-full md:h-auto\\\">\\n\\n        <div class=\\\"relative bg-white rounded-lg shadow\\\">\\n            <button type=\\\"button\\\"\\n                class=\\\"absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center popup-close\\\"><svg\\n                    aria-hidden=\\\"true\\\" class=\\\"w-5 h-5\\\" fill=\\\"#c6c7c7\\\" viewBox=\\\"0 0 20 20\\\"\\n                    xmlns=\\\"http://www.w3.org/2000/svg\\\">\\n                    <path fill-rule=\\\"evenodd\\\"\\n                        d=\\\"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\\\"\\n                        cliprule=\\\"evenodd\\\"></path>\\n                </svg>\\n                <span class=\\\"sr-only\\\">Close popup</span>\\n            </button>\\n\\n           \\n\\n                <div class=\\\"mt-7 flex flex-col gap-2\\\">\\n\\n                    <button\\n                        class=\\\"inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60\\\"><img\\n                            src=\\\"https://www.svgrepo.com/show/111731/touch.svg\\\" alt=\\\"Keys\\\"\\n                            class=\\\"h-[18px] w-[18px] \\\">\\n                        Sign In with Keys\\n                    </button>\\n\\n                    <button\\n                        class=\\\"inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60\\\"><img\\n                            src=\\\"https://www.svgrepo.com/show/475656/google-color.svg\\\" alt=\\\"Google\\\"\\n                            class=\\\"h-[18px] w-[18px] \\\">Sign with\\n                        Google\\n                    </button>\\n\\n\\n                    <button\\n                        class=\\\"inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60\\\"><img\\n                            src=\\\"https://www.svgrepo.com/show/511330/apple-173.svg\\\" alt=\\\"Google\\\"\\n                            class=\\\"h-[18px] w-[18px] \\\">Sign with\\n                        Apple\\n                    </button>\\n                </div>\\n\\n                <div class=\\\"flex w-full items-center gap-2 py-6 text-sm text-slate-600\\\">\\n                    <div class=\\\"h-px w-full bg-slate-200\\\"></div>\\n                    OR\\n                    <div class=\\\"h-px w-full bg-slate-200\\\"></div>\\n                </div>\\n\\n\\n        \\n\\n                <div class=\\\"mt-6 text-center text-sm text-slate-600\\\">\\n                    Don't have an account?\\n                    <a href=\\\"/signup\\\" class=\\\"font-medium text-[#4285f4]\\\">Sign up</a>\\n                </div>\\n            </div>\\n        </div>\\n    </div>\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/login-popup-modal-2",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<div id=\"login-popup\" tabindex=\"-1\"\n    class=\"bg-black/50 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 h-full items-center justify-center flex\">\n    <div class=\"relative p-4 w-full max-w-md h-full md:h-auto\">\n\n        <div class=\"relative bg-white rounded-lg shadow\">\n            <button type=\"button\"\n                class=\"absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center popup-close\"><svg\n                    aria-hidden=\"true\" class=\"w-5 h-5\" fill=\"#c6c7c7\" viewBox=\"0 0 20 20\"\n                    xmlns=\"http://www.w3.org/2000/svg\">\n                    <path fill-rule=\"evenodd\"\n                        d=\"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\"\n                        cliprule=\"evenodd\"></path>\n                </svg>\n                <span class=\"sr-only\">Close popup</span>\n            </button>\n\n           \n\n                <div class=\"mt-7 flex flex-col gap-2\">\n\n                    <button\n                        class=\"inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60\"><img\n                            src=\"https://www.svgrepo.com/show/111731/touch.svg\" alt=\"Keys\"\n                            class=\"h-[18px] w-[18px] \">\n                        Sign In with Keys\n                    </button>\n\n                    <button\n                        class=\"inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60\"><img\n                            src=\"https://www.svgrepo.com/show/475656/google-color.svg\" alt=\"Google\"\n                            class=\"h-[18px] w-[18px] \">Sign with\n                        Google\n                    </button>\n\n\n                    <button\n                        class=\"inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60\"><img\n                            src=\"https://www.svgrepo.com/show/511330/apple-173.svg\" alt=\"Google\"\n                            class=\"h-[18px] w-[18px] \">Sign with\n                        Apple\n                    </button>\n                </div>\n\n                <div class=\"flex w-full items-center gap-2 py-6 text-sm text-slate-600\">\n                    <div class=\"h-px w-full bg-slate-200\"></div>\n                    OR\n                    <div class=\"h-px w-full bg-slate-200\"></div>\n                </div>\n\n\n        \n\n                <div class=\"mt-6 text-center text-sm text-slate-600\">\n                    Don't have an account?\n                    <a href=\"/signup\" class=\"font-medium text-[#4285f4]\">Sign up</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

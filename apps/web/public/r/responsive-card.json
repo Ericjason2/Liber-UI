@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-card",
+  "type": "registry:ui",
+  "title": "Responsive Card",
+  "description": "Responsive Card - Créé par @akash-gandhar sur TailwindFlex.",
+  "author": "@akash-gandhar (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-card.tsx",
+      "content": "/**\n * Component: Responsive Card\n * Author: @akash-gandhar (https://tailwindflex.com/@akash-gandhar)\n * Source: https://tailwindflex.com/@akash-gandhar/responsive-card\n * Attribution: Créé par @akash-gandhar sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveCard() {\n  return (\n    <div>\n    <div className=\"flex flex-col p-2 w-full rounded-xl md shadow-md \">\r\n      <div className=\"flex justify-center\">\r\n        <p className=\"font-bold pb-3 text-base sm\">\r\n          Subscribe to Premium\r\n        </p>\r\n      </div>\r\n      <div className=\"flex justify-center\">\r\n        <p className=\"w-full font-light sm text-start text-xs md\">\r\n          Enjoy exclusive features and content with our premium\r\n          subscription.\r\n        </p>\r\n      </div>\r\n      <div className=\"flex justify-center pt-4\">\r\n        <button className=\"p-2 px-4 bg-[#009ED8] hover[#009ed8e5] text-white rounded-full text-sm\">\r\n                  SUBSCRIBE\r\n                </button>\r\n      </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@akash-gandhar",
+    "authorUrl": "https://tailwindflex.com/@akash-gandhar",
+    "sourceUrl": "https://tailwindflex.com/@akash-gandhar/responsive-card",
+    "mention": "Créé par @akash-gandhar sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-col p-2 w-full rounded-xl md:max-w-xs shadow-md \">\r\n  <div class=\"flex justify-center\">\r\n    <p class=\"font-bold pb-3 text-base sm:text-lg\">\r\n      Subscribe to Premium\r\n    </p>\r\n  </div>\r\n  <div class=\"flex justify-center\">\r\n    <p class=\"w-full font-light sm:test-center text-start text-xs md:text-base\">\r\n      Enjoy exclusive features and content with our premium\r\n      subscription.\r\n    </p>\r\n  </div>\r\n  <div class=\"flex justify-center pt-4\">\r\n    <button class=\"p-2 px-4 bg-[#009ED8] hover:bg-[#009ed8e5] text-white rounded-full text-sm\">\r\n              SUBSCRIBE\r\n            </button>\r\n  </div>\r\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "beautiful-hero-section",
+  "type": "registry:ui",
+  "title": "Beautiful Hero Section",
+  "description": "Beautiful Hero Section - Créé par @brandon sur TailwindFlex.",
+  "author": "@brandon (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/beautiful-hero-section.tsx",
+      "content": "/**\n * Component: Beautiful Hero Section\n * Author: @brandon (https://tailwindflex.com/@brandon)\n * Source: https://tailwindflex.com/@brandon/beautiful-hero-section\n * Attribution: Créé par @brandon sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BeautifulHeroSection() {\n  return (\n    <div>\n    \r\n    \r\n    \r\n    <div className=\"relative flex flex-col items-center mx-auto lg lg5xl lg12 xl6xl\">\r\n    \r\n        \r\n        <div className=\"w-full h-64 lg1/2 lg\">\r\n            <img className=\"h-full w-full object-cover\" src=\"https://picsum.photos/id/1018/2000\" alt=\"Winding mountain road\" />\r\n        </div>\r\n        \r\n    \r\n        \r\n        <div\r\n            className=\"max-w-lg bg-white md2xl md10 md md md0 md48 lg3/5 lg0 lg20 lg20 xl24 xl12\">\r\n            \r\n            <div className=\"flex flex-col p-12 md16\">\r\n                <h2 className=\"text-2xl font-medium uppercase text-green-800 lg4xl\">Winding Mountain Road</h2>\r\n                <p className=\"mt-4\">\r\n                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\r\n                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\r\n                    ex ea commodo consequat.\r\n                </p>\r\n                \r\n                <div className=\"mt-8\">\r\n                    <a href=\"#\"\r\n                        className=\"inline-block w-full text-center text-lg font-medium text-gray-100 bg-green-600 border-solid border-2 border-gray-600 py-4 px-10 hover800 hover md48\">Read\r\n                        More</a>\r\n                </div>\r\n            </div>\r\n            \r\n        </div>\r\n        \r\n    \r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@brandon",
+    "authorUrl": "https://tailwindflex.com/@brandon",
+    "sourceUrl": "https://tailwindflex.com/@brandon/beautiful-hero-section",
+    "mention": "Créé par @brandon sur TailwindFlex",
+    "rawHtml": "<!-- https://gist.github.com/goodreds/3d044027175954984fb96c7407a955ab -->\r\n\r\n<!-- Container -->\r\n<div class=\"relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl\">\r\n\r\n    <!-- Image Column -->\r\n    <div class=\"w-full h-64 lg:w-1/2 lg:h-auto\">\r\n        <img class=\"h-full w-full object-cover\" src=\"https://picsum.photos/id/1018/2000\" alt=\"Winding mountain road\">\r\n    </div>\r\n    <!-- Close Image Column -->\r\n\r\n    <!-- Text Column -->\r\n    <div\r\n        class=\"max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12\">\r\n        <!-- Text Wrapper -->\r\n        <div class=\"flex flex-col p-12 md:px-16\">\r\n            <h2 class=\"text-2xl font-medium uppercase text-green-800 lg:text-4xl\">Winding Mountain Road</h2>\r\n            <p class=\"mt-4\">\r\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\r\n                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\r\n                ex ea commodo consequat.\r\n            </p>\r\n            <!-- Button Container -->\r\n            <div class=\"mt-8\">\r\n                <a href=\"#\"\r\n                    class=\"inline-block w-full text-center text-lg font-medium text-gray-100 bg-green-600 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48\">Read\r\n                    More</a>\r\n            </div>\r\n        </div>\r\n        <!-- Close Text Wrapper -->\r\n    </div>\r\n    <!-- Close Text Column -->\r\n\r\n</div>"
+  }
+}

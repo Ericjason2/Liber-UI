@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "team-members-showcase-with-portfolio-backlink",
+  "type": "registry:ui",
+  "title": "Team Members Showcase with Portfolio Backlink",
+  "description": "Team Members Showcase with Portfolio Backlink - Créé par @abhirajk sur TailwindFlex.",
+  "author": "@abhirajk (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/team-members-showcase-with-portfolio-backlink.tsx",
+      "content": "/**\n * Component: Team Members Showcase with Portfolio Backlink\n * Author: @abhirajk (https://tailwindflex.com/@abhirajk)\n * Source: https://tailwindflex.com/@abhirajk/team-members-showcase-with-portfolio-backlink\n * Attribution: Créé par @abhirajk sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TeamMembersShowcaseWithPortfolioBacklink() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n  <title>Team Members Showcase</title>\\n  \\n</head>\\n<body class=\\\"bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white p-6\\\">\\n  <div class=\\\"max-w-7xl mx-auto\\\">\\n    <!-- Title -->\\n    <div class=\\\"text-center mb-10\\\">\\n      <h1 class=\\\"text-3xl font-bold\\\">Meet Our Team</h1>\\n      <p class=\\\"text-gray-600 dark:text-gray-400\\\">Our dedicated team of professionals is here to help you succeed.</p>\\n    </div>\\n\\n    <!-- Team Members Grid -->\\n    <div class=\\\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6\\\">\\n      <!-- Team Member Card -->\\n      <div class=\\\"bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden\\\">\\n        <img src=\\\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722161/AbhirajK/Abhirajk2.webp\\\" alt=\\\"Team Member 1\\\" class=\\\"w-full h-48 object-cover\\\">\\n        <div class=\\\"p-6\\\">\\n          <h2 class=\\\"text-xl font-semibold\\\">John Doe</h2>\\n          <p class=\\\"text-gray-600 dark:text-gray-400\\\">Full-Stack Developer</p>\\n          <div class=\\\"flex items-center mt-4 space-x-3\\\">\\n            <a href=\\\"#\\\" class=\\\"text-blue-500 hover:text-blue-600\\\">[Facebook]</a>\\n            <a href=\\\"#\\\" class=\\\"text-blue-400 hover:text-blue-500\\\">[Twitter]</a>\\n            <a href=\\\"#\\\" class=\\\"text-gray-600 dark:text-gray-300 hover:text-gray-900\\\">[Portfolio]</a>\\n          </div>\\n        </div>\\n      </div>\\n\\n      <!-- Duplicate the above block for other team members -->\\n      <div class=\\\"bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden\\\">\\n        <img src=\\\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722161/AbhirajK/Abhirajk3.webp\\\" alt=\\\"Team Member 2\\\" class=\\\"w-full h-48 object-cover\\\">\\n        <div class=\\\"p-6\\\">\\n          <h2 class=\\\"text-xl font-semibold\\\">Jane Smith</h2>\\n          <p class=\\\"text-gray-600 dark:text-gray-400\\\">UI/UX Designer</p>\\n          <div class=\\\"flex items-center mt-4 space-x-3\\\">\\n            <a href=\\\"#\\\" class=\\\"text-blue-500 hover:text-blue-600\\\">[Facebook]</a>\\n            <a href=\\\"#\\\" class=\\\"text-blue-400 hover:text-blue-500\\\">[Twitter]</a>\\n            <a href=\\\"#\\\" class=\\\"text-gray-600 dark:text-gray-300 hover:text-gray-900\\\">[Portfolio]</a>\\n          </div>\\n        </div>\\n      </div>\\n\\n      <div class=\\\"bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden\\\">\\n        <img src=\\\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722163/AbhirajK/Abhirajk%20mykare.webp\\\" alt=\\\"Team Member 3\\\" class=\\\"w-full h-48 object-cover\\\">\\n        <div class=\\\"p-6\\\">\\n          <h2 class=\\\"text-xl font-semibold\\\">Alex Johnson</h2>\\n          <p class=\\\"text-gray-600 dark:text-gray-400\\\">Project Manager</p>\\n          <div class=\\\"flex items-center mt-4 space-x-3\\\">\\n            <a href=\\\"#\\\" class=\\\"text-blue-500 hover:text-blue-600\\\">[Facebook]</a>\\n            <a href=\\\"#\\\" class=\\\"text-blue-400 hover:text-blue-500\\\">[Twitter]</a>\\n            <a href=\\\"#\\\" class=\\\"text-gray-600 dark:text-gray-300 hover:text-gray-900\\\">[Portfolio]</a>\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n\\n    <!-- Portfolio Backlink -->\\n    <div class=\\\"text-center mt-10\\\">\\n      <p class=\\\"text-gray-600 dark:text-gray-400\\\">Created by \\n        <a href=\\\"https://abhirajk.vercel.app/\\\" target=\\\"_blank\\\" class=\\\"text-blue-500 hover:text-blue-600 font-bold\\\">\\n          Abhiraj K\\n        </a>\\n      </p>\\n    </div>\\n  </div>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abhirajk",
+    "authorUrl": "https://tailwindflex.com/@abhirajk",
+    "sourceUrl": "https://tailwindflex.com/@abhirajk/team-members-showcase-with-portfolio-backlink",
+    "mention": "Créé par @abhirajk sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Team Members Showcase</title>\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white p-6\">\n  <div class=\"max-w-7xl mx-auto\">\n    <!-- Title -->\n    <div class=\"text-center mb-10\">\n      <h1 class=\"text-3xl font-bold\">Meet Our Team</h1>\n      <p class=\"text-gray-600 dark:text-gray-400\">Our dedicated team of professionals is here to help you succeed.</p>\n    </div>\n\n    <!-- Team Members Grid -->\n    <div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6\">\n      <!-- Team Member Card -->\n      <div class=\"bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden\">\n        <img src=\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722161/AbhirajK/Abhirajk2.webp\" alt=\"Team Member 1\" class=\"w-full h-48 object-cover\">\n        <div class=\"p-6\">\n          <h2 class=\"text-xl font-semibold\">John Doe</h2>\n          <p class=\"text-gray-600 dark:text-gray-400\">Full-Stack Developer</p>\n          <div class=\"flex items-center mt-4 space-x-3\">\n            <a href=\"#\" class=\"text-blue-500 hover:text-blue-600\">[Facebook]</a>\n            <a href=\"#\" class=\"text-blue-400 hover:text-blue-500\">[Twitter]</a>\n            <a href=\"#\" class=\"text-gray-600 dark:text-gray-300 hover:text-gray-900\">[Portfolio]</a>\n          </div>\n        </div>\n      </div>\n\n      <!-- Duplicate the above block for other team members -->\n      <div class=\"bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden\">\n        <img src=\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722161/AbhirajK/Abhirajk3.webp\" alt=\"Team Member 2\" class=\"w-full h-48 object-cover\">\n        <div class=\"p-6\">\n          <h2 class=\"text-xl font-semibold\">Jane Smith</h2>\n          <p class=\"text-gray-600 dark:text-gray-400\">UI/UX Designer</p>\n          <div class=\"flex items-center mt-4 space-x-3\">\n            <a href=\"#\" class=\"text-blue-500 hover:text-blue-600\">[Facebook]</a>\n            <a href=\"#\" class=\"text-blue-400 hover:text-blue-500\">[Twitter]</a>\n            <a href=\"#\" class=\"text-gray-600 dark:text-gray-300 hover:text-gray-900\">[Portfolio]</a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden\">\n        <img src=\"https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722163/AbhirajK/Abhirajk%20mykare.webp\" alt=\"Team Member 3\" class=\"w-full h-48 object-cover\">\n        <div class=\"p-6\">\n          <h2 class=\"text-xl font-semibold\">Alex Johnson</h2>\n          <p class=\"text-gray-600 dark:text-gray-400\">Project Manager</p>\n          <div class=\"flex items-center mt-4 space-x-3\">\n            <a href=\"#\" class=\"text-blue-500 hover:text-blue-600\">[Facebook]</a>\n            <a href=\"#\" class=\"text-blue-400 hover:text-blue-500\">[Twitter]</a>\n            <a href=\"#\" class=\"text-gray-600 dark:text-gray-300 hover:text-gray-900\">[Portfolio]</a>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Portfolio Backlink -->\n    <div class=\"text-center mt-10\">\n      <p class=\"text-gray-600 dark:text-gray-400\">Created by \n        <a href=\"https://abhirajk.vercel.app/\" target=\"_blank\" class=\"text-blue-500 hover:text-blue-600 font-bold\">\n          Abhiraj K\n        </a>\n      </p>\n    </div>\n  </div>\n</body>\n</html>"
+  }
+}

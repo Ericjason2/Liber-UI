@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-card-4",
+  "type": "registry:ui",
+  "title": "Pricing card",
+  "description": "Pricing card - Créé par @sophia-baker sur TailwindFlex.",
+  "author": "@sophia-baker (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pricing-card-4.tsx",
+      "content": "/**\n * Component: Pricing card\n * Author: @sophia-baker (https://tailwindflex.com/@sophia-baker)\n * Source: https://tailwindflex.com/@sophia-baker/pricing-card-4\n * Attribution: Créé par @sophia-baker sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PricingCard4() {\n  return (\n    <div>\n    <div className=\"flex flex-col mx-auto max-w-lg text-center text-green-800 bg-light-200 rounded-lg shadow\">\n    \n        <div className=\"relative py-4 xl8\">\n            <h3 className=\"text-2xl font-bold\">Most popular</h3>\n    \n            <div className=\"absolute top-0 w-[90%] border-green-300 border-b border-r rounded-br-xl pr-4 py-4 xl8\">\n                <h3 className=\"text-2xl font-bold text-transparent\">Most popular</h3>\n            </div>\n        </div>\n    \n        <div className=\"pt-4 p-6 xl8\">\n            <p className=\"hidden font-light text-green-700 sm\">Best option for personal use &amp; for your next project.\n            </p>\n            <div className=\"flex justify-center items-baseline my-8\">\n                <span className=\"mr-2 text-5xl font-normal\">$129</span>\n                <span className=\"text-2xl\">/month</span>\n            </div>\n    \n            <ul role=\"list\" className=\"mb-8 space-y-4 text-left text-green-700\">\n                <li className=\"flex items-center space-x-3\">\n                    <svg className=\"flex-shrink-0 w-5 h-5 text-green-500 \" fill=\"currentColor\" viewBox=\"0 0 20 20\"\n                        xmlns=\"http://www.w3.org/2000/svg\">\n                        <path fillRule=\"evenodd\"\n                            d=\"M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z\"\n                            clipRule=\"evenodd\"></path>\n                    </svg>\n                    <span>1000 Monthly Articles</span>\n                </li>\n                <li className=\"hidden items-center space-x-3\">\n                    <svg className=\"flex-shrink-0 w-5 h-5 text-green-500 \" fill=\"currentColor\" viewBox=\"0 0 20 20\"\n                        xmlns=\"http://www.w3.org/2000/svg\">\n                        <path fillRule=\"evenodd\"\n                            d=\"M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z\"\n                            clipRule=\"evenodd\"></path>\n                    </svg>\n                    <span className=\"font-semibold\">$0.13 per article</span>\n                </li>\n                <li className=\"flex items-center space-x-3\">\n                    <svg className=\"flex-shrink-0 w-5 h-5 text-green-500 \" fill=\"currentColor\" viewBox=\"0 0 20 20\"\n                        xmlns=\"http://www.w3.org/2000/svg\">\n                        <path fillRule=\"evenodd\"\n                            d=\"M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z\"\n                            clipRule=\"evenodd\"></path>\n                    </svg>\n                    <span>38 Niches</span>\n                </li>\n                <li className=\"flex items-center space-x-3\">\n                    <svg className=\"flex-shrink-0 w-5 h-5 text-green-500 \" fill=\"currentColor\" viewBox=\"0 0 20 20\"\n                        xmlns=\"http://www.w3.org/2000/svg\">\n                        <path fillRule=\"evenodd\"\n                            d=\"M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z\"\n                            clipRule=\"evenodd\"></path>\n                    </svg>\n                    <span>7 Languages</span>\n                </li>\n    \n            </ul>\n            <a href=\"#\"\n                className=\"block text-white bg-green-700 hover800 focus4 focus500 font-bold rounded-lg text-base px-5 py-2.5 text-center\">Start\n                Free Trial\n            </a>\n        </div>\n    \n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@sophia-baker",
+    "authorUrl": "https://tailwindflex.com/@sophia-baker",
+    "sourceUrl": "https://tailwindflex.com/@sophia-baker/pricing-card-4",
+    "mention": "Créé par @sophia-baker sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-col mx-auto max-w-lg text-center text-green-800 bg-light-200 rounded-lg shadow\">\n\n    <div class=\"relative py-4 xl:pt-8\">\n        <h3 class=\"text-2xl font-bold\">Most popular</h3>\n\n        <div class=\"absolute top-0 w-[90%] border-green-300 border-b border-r rounded-br-xl pr-4 py-4 xl:pt-8\">\n            <h3 class=\"text-2xl font-bold text-transparent\">Most popular</h3>\n        </div>\n    </div>\n\n    <div class=\"pt-4 p-6 xl:p-8\">\n        <p class=\"hidden font-light text-green-700 sm:text-lg\">Best option for personal use &amp; for your next project.\n        </p>\n        <div class=\"flex justify-center items-baseline my-8\">\n            <span class=\"mr-2 text-5xl font-normal\">$129</span>\n            <span class=\"text-2xl\">/month</span>\n        </div>\n\n        <ul role=\"list\" class=\"mb-8 space-y-4 text-left text-green-700\">\n            <li class=\"flex items-center space-x-3\">\n                <svg class=\"flex-shrink-0 w-5 h-5 text-green-500 \" fill=\"currentColor\" viewBox=\"0 0 20 20\"\n                    xmlns=\"http://www.w3.org/2000/svg\">\n                    <path fill-rule=\"evenodd\"\n                        d=\"M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z\"\n                        clip-rule=\"evenodd\"></path>\n                </svg>\n                <span>1000 Monthly Articles</span>\n            </li>\n            <li class=\"hidden items-center space-x-3\">\n                <svg class=\"flex-shrink-0 w-5 h-5 text-green-500 \" fill=\"currentColor\" viewBox=\"0 0 20 20\"\n                    xmlns=\"http://www.w3.org/2000/svg\">\n                    <path fill-rule=\"evenodd\"\n                        d=\"M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z\"\n                        clip-rule=\"evenodd\"></path>\n                </svg>\n                <span class=\"font-semibold\">$0.13 per article</span>\n            </li>\n            <li class=\"flex items-center space-x-3\">\n                <svg class=\"flex-shrink-0 w-5 h-5 text-green-500 \" fill=\"currentColor\" viewBox=\"0 0 20 20\"\n                    xmlns=\"http://www.w3.org/2000/svg\">\n                    <path fill-rule=\"evenodd\"\n                        d=\"M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z\"\n                        clip-rule=\"evenodd\"></path>\n                </svg>\n                <span>38 Niches</span>\n            </li>\n            <li class=\"flex items-center space-x-3\">\n                <svg class=\"flex-shrink-0 w-5 h-5 text-green-500 \" fill=\"currentColor\" viewBox=\"0 0 20 20\"\n                    xmlns=\"http://www.w3.org/2000/svg\">\n                    <path fill-rule=\"evenodd\"\n                        d=\"M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z\"\n                        clip-rule=\"evenodd\"></path>\n                </svg>\n                <span>7 Languages</span>\n            </li>\n\n        </ul>\n        <a href=\"#\"\n            class=\"block text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-500 font-bold rounded-lg text-base px-5 py-2.5 text-center\">Start\n            Free Trial\n        </a>\n    </div>\n\n\n</div>"
+  }
+}

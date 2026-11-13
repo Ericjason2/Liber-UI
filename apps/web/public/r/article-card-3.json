@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "article-card-3",
+  "type": "registry:ui",
+  "title": "Article Card",
+  "description": "Article Card - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/article-card-3.tsx",
+      "content": "/**\n * Component: Article Card\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/article-card-3\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ArticleCard3() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!-- https://play.tailwindcss.com/q6uIACp5NI -->\\n<div\\n    class=\\\"flex flex-col sm:flex-row sm:max-w-2xl max-w-xs mx-auto overflow-hidden bg-gray-700 rounded-lg shadow-lg dark:bg-gray-800 p-2\\\">\\n    <div class=\\\"p-2 sm:w-1/2\\\">\\n        <img class=\\\"rounded object-cover w-full sm:h-80 h-60\\\" src=\\\"https://i.pinimg.com/564x/41/c7/52/41c75274ffa14f3222691c0cbe3c1904.jpg\\\" alt=\\\"Article\\\" />\\n    </div>\\n    <div class=\\\"sm:p-4 p-2 sm:w-1/2 flex flex-col justify-between\\\">\\n        <div>\\n            <a href=\\\"#\\\"\\n                class=\\\"block sm:mt-2 text-2xl font-semibold text-gray-50 dark:text-white hover:text-gray-600 hover:underline\\\">Lorem\\n                rem facere</a>\\n            <p class=\\\"mt-2 text-sm text-gray-200 dark:text-gray-400\\\">Lorem ipsum dolor sit, amet consectetur adipisicing\\n                elit. Tenetur labore, cum rem facere obcaecati beatae sunt numquam architecto delectus dignissimos\\n                explicabo quod pariatur at consequatur sint esse aut Facere. <br> Numquam architecto delectus dignissimos\\n            </p>\\n        </div>\\n\\n        <div class=\\\"mt-4\\\">\\n            <div class=\\\"flex items-center\\\">\\n                <div class=\\\"flex items-center\\\">\\n                    <img class=\\\"object-cover h-10 w-10 rounded-full\\\" src=\\\"https://i.pinimg.com/564x/1d/1e/16/1d1e16ad5227a9c726b61bd7cc4eca33.jpg\\\" alt=\\\"Avatar\\\" />\\n                    <a href=\\\"#\\\" class=\\\"mx-2 font-semibold text-gray-50 dark:text-gray-200\\\">Tocino Code</a>\\n                </div>\\n                <span class=\\\"mx-1 text-xs text-gray-400 dark:text-gray-300\\\">21 SEP 2015</span>\\n                <span class=\\\"hover:cursor-pointer relative sm:left-12 text-xs text-gray-400 dark:text-gray-300\\\"\\n          >\\n          <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"17\\\" height=\\\"17\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"#f2f2f2\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\">\\n            <circle cx=\\\"18\\\" cy=\\\"5\\\" r=\\\"3\\\"></circle>\\n            <circle cx=\\\"6\\\" cy=\\\"12\\\" r=\\\"3\\\"></circle>\\n            <circle cx=\\\"18\\\" cy=\\\"19\\\" r=\\\"3\\\"></circle>\\n            <line x1=\\\"8.59\\\" y1=\\\"13.51\\\" x2=\\\"15.42\\\" y2=\\\"17.49\\\"></line>\\n            <line x1=\\\"15.41\\\" y1=\\\"6.51\\\" x2=\\\"8.59\\\" y2=\\\"10.49\\\"></line>\\n            </svg\\n        >\\n        </span>\\n            </div>\\n        </div>\\n    </div>\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/article-card-3",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<!-- https://play.tailwindcss.com/q6uIACp5NI -->\n<div\n    class=\"flex flex-col sm:flex-row sm:max-w-2xl max-w-xs mx-auto overflow-hidden bg-gray-700 rounded-lg shadow-lg dark:bg-gray-800 p-2\">\n    <div class=\"p-2 sm:w-1/2\">\n        <img class=\"rounded object-cover w-full sm:h-80 h-60\" src=\"https://i.pinimg.com/564x/41/c7/52/41c75274ffa14f3222691c0cbe3c1904.jpg\" alt=\"Article\" />\n    </div>\n    <div class=\"sm:p-4 p-2 sm:w-1/2 flex flex-col justify-between\">\n        <div>\n            <a href=\"#\"\n                class=\"block sm:mt-2 text-2xl font-semibold text-gray-50 dark:text-white hover:text-gray-600 hover:underline\">Lorem\n                rem facere</a>\n            <p class=\"mt-2 text-sm text-gray-200 dark:text-gray-400\">Lorem ipsum dolor sit, amet consectetur adipisicing\n                elit. Tenetur labore, cum rem facere obcaecati beatae sunt numquam architecto delectus dignissimos\n                explicabo quod pariatur at consequatur sint esse aut Facere. <br> Numquam architecto delectus dignissimos\n            </p>\n        </div>\n\n        <div class=\"mt-4\">\n            <div class=\"flex items-center\">\n                <div class=\"flex items-center\">\n                    <img class=\"object-cover h-10 w-10 rounded-full\" src=\"https://i.pinimg.com/564x/1d/1e/16/1d1e16ad5227a9c726b61bd7cc4eca33.jpg\" alt=\"Avatar\" />\n                    <a href=\"#\" class=\"mx-2 font-semibold text-gray-50 dark:text-gray-200\">Tocino Code</a>\n                </div>\n                <span class=\"mx-1 text-xs text-gray-400 dark:text-gray-300\">21 SEP 2015</span>\n                <span class=\"hover:cursor-pointer relative sm:left-12 text-xs text-gray-400 dark:text-gray-300\"\n          >\n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#f2f2f2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <circle cx=\"18\" cy=\"5\" r=\"3\"></circle>\n            <circle cx=\"6\" cy=\"12\" r=\"3\"></circle>\n            <circle cx=\"18\" cy=\"19\" r=\"3\"></circle>\n            <line x1=\"8.59\" y1=\"13.51\" x2=\"15.42\" y2=\"17.49\"></line>\n            <line x1=\"15.41\" y1=\"6.51\" x2=\"8.59\" y2=\"10.49\"></line>\n            </svg\n        >\n        </span>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

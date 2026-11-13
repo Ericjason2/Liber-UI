@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "portfolio-hero-section-2",
+  "type": "registry:ui",
+  "title": "Portfolio Hero Section 2",
+  "description": "Portfolio Hero Section 2 - Créé par @sammytg7 sur TailwindFlex.",
+  "author": "@sammytg7 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/portfolio-hero-section-2.tsx",
+      "content": "/**\n * Component: Portfolio Hero Section 2\n * Author: @sammytg7 (https://tailwindflex.com/@sammytg7)\n * Source: https://tailwindflex.com/@sammytg7/portfolio-hero-section-2\n * Attribution: Créé par @sammytg7 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PortfolioHeroSection2() {\n  return (\n    <div>\n    <div className=\"w-full sm h-full bg-black\">\n    <div\n        className=\"w-full h-fit bg-[url('https://images.unsplash.com/photo-1607798748738-b15c40d33d57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8Y29kZXxlbnwwfDB8fHwxNzMyNzk1MjA5fDA&ixlib=rb-4.0.3&q=80&w=1080')] bg-cover bg-center bg-no-repeat\">\n        <header className=\"lg16 px-4 flex flex-wrap items-center py-4 shadow-lg bg-black/60\">\n    \n            <div className=\"flex-1 flex justify-between items-center\">\n                <a href=\"#\" className=\"text-3xl font-semibold font-serif text-green-400\">LOGO</a>\n            </div>\n    \n            <label htmlFor=\"menu-toggle\" className=\"pointer-cursor md block\">\n                <svg className=\"fill-current text-white\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\">\n                <title>menu</title>\n                <path d=\"M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z\"></path>\n                </svg>\n            </label>\n            <input className=\"hidden\" type=\"checkbox\" id=\"menu-toggle\" />\n    \n            <div className=\"hidden md md md w-full\" id=\"menu\">\n                <nav>\n                    <ul className=\"md items-center justify-between text-base text-white pt-4 md0\">\n                        <li><a className=\"md4 py-3 px-0 block text-green-500 hover500\" href=\"#\">Home</a></li>\n                        <li><a className=\"md4 py-3 px-0 block hover500\" href=\"#\">About Me</a></li>\n                        <li><a className=\"md4 py-3 px-0 block hover500\" href=\"#\">Education</a></li>\n                        <li><a className=\"md4 py-3 px-0 block hover500\" href=\"#\">Experience</a></li>\n                        <li><a className=\"md4 py-3 px-0 block hover500 md0 mb-2\" href=\"#\">Contact</a></li>\n                    </ul>\n                </nav>\n            </div>\n        </header>\n    \n        <div className=\"w-full h-full relative top-10 pb-20\">\n            <div className=\"lg16 px-8 flex sm flex-col flex-col-reverse gap-6 justify-center items-center\">\n                <div className=\"sm text-center text-white\">\n                    <h4 className=\"sm2xl text-3xl font-semibold w-fit bg-gray-900/40 p-3\">Hello, My name is\n                        <span className=\"text-green-500 sm2xl text-xl font-serif\">Samuel Abera</span>\n                    </h4>\n                    <h1 className=\"mt-4 sm4xl text-2xl\">I'm\n                        <span className=\"typing libre-baskerville-bold text-green-500\"></span>\n                    </h1>\n    \n                    <p className=\"mt-4 text-lg capitalize\">Experienced full-stack developer\n                        with 4+\n                        years of expertise in Laravel, NestJS, Nuxt.js, Next.js, Android, and some Flutter experience.</p>\n                    <div className=\" mt-6 flex sm flex-col gap-4 sm justify-center\">\n                        <button className=\"p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-green-500 hover600 transition ease-in-out delay-150\">Hire Me</button>\n                        <button className=\"p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-yellow-500 hover600 transition ease-in-out delay-150\">Download CV</button>\n                    </div>\n                </div>\n    \n                \n                <img className=\"md[30%] sm[40%] max-w-[70%] sm sm[5rem] sm[5rem] rounded-full sm outline outline-[.3rem] outline-green-400/60\" src=\"https://techakim.com/sam/tg/7268/li/imgs/profile.jpg\" alt=\"My Pic\" />\n    \n            </div>\n        </div>\n    </div>\n    </div>\n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@sammytg7",
+    "authorUrl": "https://tailwindflex.com/@sammytg7",
+    "sourceUrl": "https://tailwindflex.com/@sammytg7/portfolio-hero-section-2",
+    "mention": "Créé par @sammytg7 sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full sm:h-screen h-full bg-black\">\n<div\n    class=\"w-full h-fit bg-[url('https://images.unsplash.com/photo-1607798748738-b15c40d33d57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8Y29kZXxlbnwwfDB8fHwxNzMyNzk1MjA5fDA&ixlib=rb-4.0.3&q=80&w=1080')] bg-cover bg-center bg-no-repeat\">\n    <header class=\"lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg bg-black/60\">\n\n        <div class=\"flex-1 flex justify-between items-center\">\n            <a href=\"#\" class=\"text-3xl font-semibold font-serif text-green-400\">LOGO</a>\n        </div>\n\n        <label for=\"menu-toggle\" class=\"pointer-cursor md:hidden block\">\n            <svg class=\"fill-current text-white\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\">\n            <title>menu</title>\n            <path d=\"M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z\"></path>\n            </svg>\n        </label>\n        <input class=\"hidden\" type=\"checkbox\" id=\"menu-toggle\" />\n\n        <div class=\"hidden md:flex md:items-center md:w-auto w-full\" id=\"menu\">\n            <nav>\n                <ul class=\"md:flex items-center justify-between text-base text-white pt-4 md:pt-0\">\n                    <li><a class=\"md:p-4 py-3 px-0 block text-green-500 hover:text-green-500\" href=\"#\">Home</a></li>\n                    <li><a class=\"md:p-4 py-3 px-0 block hover:text-green-500\" href=\"#\">About Me</a></li>\n                    <li><a class=\"md:p-4 py-3 px-0 block hover:text-green-500\" href=\"#\">Education</a></li>\n                    <li><a class=\"md:p-4 py-3 px-0 block hover:text-green-500\" href=\"#\">Experience</a></li>\n                    <li><a class=\"md:p-4 py-3 px-0 block hover:text-green-500 md:mb-0 mb-2\" href=\"#\">Contact</a></li>\n                </ul>\n            </nav>\n        </div>\n    </header>\n\n    <div class=\"w-full h-full relative top-10 pb-20\">\n        <div class=\"lg:px-16 px-8 flex sm:flex-row flex-col flex-col-reverse gap-6 justify-center items-center\">\n            <div class=\"sm:text-left text-center text-white\">\n                <h4 class=\"sm:text-2xl text-3xl font-semibold w-fit bg-gray-900/40 p-3\">Hello, My name is\n                    <span class=\"text-green-500 sm:text-2xl text-xl font-serif\">Samuel Abera</span>\n                </h4>\n                <h1 class=\"mt-4 sm:text-4xl text-2xl\">I'm\n                    <span class=\"typing libre-baskerville-bold text-green-500\"></span>\n                </h1>\n\n                <p class=\"mt-4 text-lg capitalize\">Experienced full-stack developer\n                    with 4+\n                    years of expertise in Laravel, NestJS, Nuxt.js, Next.js, Android, and some Flutter experience.</p>\n                <div class=\" mt-6 flex sm:flex-row flex-col gap-4 sm:justify-start justify-center\">\n                    <button class=\"p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-green-500 hover:bg-green-600 transition ease-in-out delay-150\">Hire Me</button>\n                    <button class=\"p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-yellow-500 hover:bg-yellow-600 transition ease-in-out delay-150\">Download CV</button>\n                </div>\n            </div>\n\n            <!-- Image -->\n            <img class=\"md:max-w-[30%] sm:max-w-[40%] max-w-[70%] sm:rounded-sm sm:rounded-br-[5rem] sm:rounded-tl-[5rem] rounded-full sm:outline-none outline outline-[.3rem] outline-green-400/60\" src=\"https://techakim.com/sam/tg/7268/li/imgs/profile.jpg\" alt=\"My Pic\" />\n\n        </div>\n    </div>\n</div>\n</div>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js\" referrerpolicy=\"no-referrer\"></script>\n<script>\n    var typed = new Typed('.typing', {\n    strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,', 'Mobile Apps Developer.'],\n    typeSpeed: 100,\n    BackSpeed: 60,\n    loop: true\n})\n</script>"
+  }
+}

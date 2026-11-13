@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "youtube-subscription-button",
+  "type": "registry:ui",
+  "title": "YouTube subscription button",
+  "description": "YouTube subscription button - Créé par @shakti sur TailwindFlex.",
+  "author": "@shakti (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/youtube-subscription-button.tsx",
+      "content": "/**\n * Component: YouTube subscription button\n * Author: @shakti (https://tailwindflex.com/@shakti)\n * Source: https://tailwindflex.com/@shakti/youtube-subscription-button\n * Attribution: Créé par @shakti sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function YoutubeSubscriptionButton() {\n  return (\n    <div>\n    <a href=\"#\"\r\n        className=\"inline-flex items-center py-2 px-4 bg-red-500 hover600 focus2 focus500 focus2 text-white rounded-md transition duration-300\">\r\n        <svg className=\"w-8 h-8 fill-current mr-2\" viewBox=\"0 0 24 24\">\r\n            <path\r\n                d=\"M21.9 5.9c-.2-.7-.7-1.2-1.4-1.4C18.3 4 12 4 12 4s-6.3 0-8.5.5c-.7.2-1.2.7-1.4 1.4C2 8.1 2 12 2 12s0 3.9.5 5.1c.2.7.7 1.2 1.4 1.4 2.2.5 8.5.5 8.5.5s6.3 0 8.5-.5c.7-.2 1.2-.7 1.4-1.4.5-1.2.5-5.1.5-5.1s0-3.9-.5-5.1zM9.5 15.5V8.5l6.5 3z\" />\r\n        </svg>\r\n        <span>Subscribe Now</span>\r\n    </a>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@shakti",
+    "authorUrl": "https://tailwindflex.com/@shakti",
+    "sourceUrl": "https://tailwindflex.com/@shakti/youtube-subscription-button",
+    "mention": "Créé par @shakti sur TailwindFlex",
+    "rawHtml": "<a href=\"#\"\r\n    class=\"inline-flex items-center py-2 px-4 bg-red-500 hover:bg-red-600 focus:ring-2 focus:ring-red-500 focus:ring-offset-2 text-white rounded-md transition duration-300\">\r\n    <svg class=\"w-8 h-8 fill-current mr-2\" viewBox=\"0 0 24 24\">\r\n        <path\r\n            d=\"M21.9 5.9c-.2-.7-.7-1.2-1.4-1.4C18.3 4 12 4 12 4s-6.3 0-8.5.5c-.7.2-1.2.7-1.4 1.4C2 8.1 2 12 2 12s0 3.9.5 5.1c.2.7.7 1.2 1.4 1.4 2.2.5 8.5.5 8.5.5s6.3 0 8.5-.5c.7-.2 1.2-.7 1.4-1.4.5-1.2.5-5.1.5-5.1s0-3.9-.5-5.1zM9.5 15.5V8.5l6.5 3z\" />\r\n    </svg>\r\n    <span>Subscribe Now</span>\r\n</a>"
+  }
+}

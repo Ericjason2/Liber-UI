@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "google-login-signup-button",
+  "type": "registry:ui",
+  "title": "Google login/signup button",
+  "description": "Google login/signup button - Créé par @shakti sur TailwindFlex.",
+  "author": "@shakti (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/google-login-signup-button.tsx",
+      "content": "/**\n * Component: Google login/signup button\n * Author: @shakti (https://tailwindflex.com/@shakti)\n * Source: https://tailwindflex.com/@shakti/google-login-signup-button\n * Attribution: Créé par @shakti sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function GoogleLoginSignupButton() {\n  return (\n    <div>\n    <div className=\"flex items-center justify-center h-screen dark800\">\r\n        <button className=\"px-4 py-2 border flex gap-2 border-slate-200 dark700 rounded-lg text-slate-700 dark200 hover400 dark500 hover900 dark300 hover transition duration-150\">\r\n            <img className=\"w-6 h-6\" src=\"https://www.svgrepo.com/show/475656/google-color.svg\" loading=\"lazy\" alt=\"google logo\" />\r\n            <span>Login with Google</span>\r\n        </button>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@shakti",
+    "authorUrl": "https://tailwindflex.com/@shakti",
+    "sourceUrl": "https://tailwindflex.com/@shakti/google-login-signup-button",
+    "mention": "Créé par @shakti sur TailwindFlex",
+    "rawHtml": "<div class=\"flex items-center justify-center h-screen dark:bg-gray-800\">\r\n    <button class=\"px-4 py-2 border flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150\">\r\n        <img class=\"w-6 h-6\" src=\"https://www.svgrepo.com/show/475656/google-color.svg\" loading=\"lazy\" alt=\"google logo\">\r\n        <span>Login with Google</span>\r\n    </button>\r\n</div>"
+  }
+}

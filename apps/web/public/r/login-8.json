@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-8",
+  "type": "registry:ui",
+  "title": "login",
+  "description": "login - Créé par @mostafa-mohamed-elgdawy sur TailwindFlex.",
+  "author": "@mostafa-mohamed-elgdawy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/login-8.tsx",
+      "content": "/**\n * Component: login\n * Author: @mostafa-mohamed-elgdawy (https://tailwindflex.com/@mostafa-mohamed-elgdawy)\n * Source: https://tailwindflex.com/@mostafa-mohamed-elgdawy/login-8\n * Attribution: Créé par @mostafa-mohamed-elgdawy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Login8() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Dark Themed Login</title>\\n    <style>\\n        body {\\n            display: flex;\\n            justify-content: center;\\n            align-items: center;\\n            height: 100vh;\\n            background: #0b0f1a;\\n            font-family: Arial, sans-serif;\\n            margin: 0;\\n        }\\n        .container {\\n            position: relative;\\n            width: 350px;\\n            background: rgba(255, 255, 255, 0.05);\\n            border-radius: 15px;\\n            padding: 20px;\\n            text-align: center;\\n            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);\\n            backdrop-filter: blur(10px);\\n        }\\n        .container h2 {\\n            color: white;\\n            margin-bottom: 20px;\\n        }\\n        .input-group {\\n            margin-bottom: 15px;\\n            text-align: left;\\n        }\\n        .input-group label {\\n            display: block;\\n            font-size: 14px;\\n            color: #aaa;\\n        }\\n        .input-group input {\\n            width: 95%;\\n            padding: 10px;\\n            border: none;\\n            background: rgba(255, 255, 255, 0.1);\\n            border-radius: 8px;\\n            color: white;\\n            font-size: 14px;\\n        }\\n        .submit-btn {\\n            display: block;\\n            width: 100%;\\n            padding: 10px;\\n            background: #1f2d52;\\n            color: white;\\n            text-align: center;\\n            border-radius: 25px;\\n            text-decoration: none;\\n            font-weight: bold;\\n            margin-top: 10px;\\n            cursor: pointer;\\n            border: none;\\n        }\\n        .submit-btn:hover {\\n            background: #293b6a;\\n        }\\n        .footer {\\n            margin-top: 10px;\\n            font-size: 14px;\\n            display: flex;\\n            justify-content: space-between;\\n            color: white;\\n        }\\n        .footer a {\\n            text-decoration: none;\\n            color: #4a90e2;\\n        }\\n    </style>\\n</head>\\n<body>\\n    <div class=\\\"container\\\">\\n        <h2>LOGIN</h2>\\n        <div class=\\\"input-group\\\">\\n            <label>USERNAME</label>\\n            <input type=\\\"text\\\" placeholder=\\\"Enter Username\\\">\\n        </div>\\n        <div class=\\\"input-group\\\">\\n            <label>PASSWORD</label>\\n            <input type=\\\"password\\\" placeholder=\\\"Enter Password\\\">\\n        </div>\\n        <button class=\\\"submit-btn\\\">LOGIN</button>\\n        <div class=\\\"footer\\\">\\n            <a href=\\\"#\\\">REGISTER</a>\\n            <a href=\\\"#\\\">FORGOT PASSWORD</a>\\n        </div>\\n    </div>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mostafa-mohamed-elgdawy",
+    "authorUrl": "https://tailwindflex.com/@mostafa-mohamed-elgdawy",
+    "sourceUrl": "https://tailwindflex.com/@mostafa-mohamed-elgdawy/login-8",
+    "mention": "Créé par @mostafa-mohamed-elgdawy sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Dark Themed Login</title>\n    <style>\n        body {\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            height: 100vh;\n            background: #0b0f1a;\n            font-family: Arial, sans-serif;\n            margin: 0;\n        }\n        .container {\n            position: relative;\n            width: 350px;\n            background: rgba(255, 255, 255, 0.05);\n            border-radius: 15px;\n            padding: 20px;\n            text-align: center;\n            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);\n            backdrop-filter: blur(10px);\n        }\n        .container h2 {\n            color: white;\n            margin-bottom: 20px;\n        }\n        .input-group {\n            margin-bottom: 15px;\n            text-align: left;\n        }\n        .input-group label {\n            display: block;\n            font-size: 14px;\n            color: #aaa;\n        }\n        .input-group input {\n            width: 95%;\n            padding: 10px;\n            border: none;\n            background: rgba(255, 255, 255, 0.1);\n            border-radius: 8px;\n            color: white;\n            font-size: 14px;\n        }\n        .submit-btn {\n            display: block;\n            width: 100%;\n            padding: 10px;\n            background: #1f2d52;\n            color: white;\n            text-align: center;\n            border-radius: 25px;\n            text-decoration: none;\n            font-weight: bold;\n            margin-top: 10px;\n            cursor: pointer;\n            border: none;\n        }\n        .submit-btn:hover {\n            background: #293b6a;\n        }\n        .footer {\n            margin-top: 10px;\n            font-size: 14px;\n            display: flex;\n            justify-content: space-between;\n            color: white;\n        }\n        .footer a {\n            text-decoration: none;\n            color: #4a90e2;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <h2>LOGIN</h2>\n        <div class=\"input-group\">\n            <label>USERNAME</label>\n            <input type=\"text\" placeholder=\"Enter Username\">\n        </div>\n        <div class=\"input-group\">\n            <label>PASSWORD</label>\n            <input type=\"password\" placeholder=\"Enter Password\">\n        </div>\n        <button class=\"submit-btn\">LOGIN</button>\n        <div class=\"footer\">\n            <a href=\"#\">REGISTER</a>\n            <a href=\"#\">FORGOT PASSWORD</a>\n        </div>\n    </div>\n</body>\n</html>"
+  }
+}

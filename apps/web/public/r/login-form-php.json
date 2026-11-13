@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-form-php",
+  "type": "registry:ui",
+  "title": "login form php",
+  "description": "login form php - Créé par @nii-fanny sur TailwindFlex.",
+  "author": "@nii-fanny (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/login-form-php.tsx",
+      "content": "/**\n * Component: login form php\n * Author: @nii-fanny (https://tailwindflex.com/@nii-fanny)\n * Source: https://tailwindflex.com/@nii-fanny/login-form-php\n * Attribution: Créé par @nii-fanny sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LoginFormPhp() {\n  return (\n    <div>\n    <li>Save and share your components with the community.</li>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@nii-fanny",
+    "authorUrl": "https://tailwindflex.com/@nii-fanny",
+    "sourceUrl": "https://tailwindflex.com/@nii-fanny/login-form-php",
+    "mention": "Créé par @nii-fanny sur TailwindFlex",
+    "rawHtml": "<li>Save and share your components with the community.</li>"
+  }
+}

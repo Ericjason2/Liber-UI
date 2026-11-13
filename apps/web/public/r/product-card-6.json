@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "product-card-6",
+  "type": "registry:ui",
+  "title": "Product card",
+  "description": "Product card - Créé par @omkar007 sur TailwindFlex.",
+  "author": "@omkar007 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/product-card-6.tsx",
+      "content": "/**\n * Component: Product card\n * Author: @omkar007 (https://tailwindflex.com/@omkar007)\n * Source: https://tailwindflex.com/@omkar007/product-card-6\n * Attribution: Créé par @omkar007 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProductCard6() {\n  return (\n    <div>\n    <div className=\"h-screen w-full flex items-center justify-center  bg-gray-200 dark800\">\n      \n      <article className=\"max-w-sm w-full bg-white rounded-lg shadow-lg overflow-hidden dark700\">\n        <div>\n          <img className=\"object-cover h-64 w-full\" src=\"https://images.unsplash.com/photo-1542291026-7eec264c27ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxzbmVha2Vyc3xlbnwwfDB8fHwxNzEyMjIzNDAyfDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Converse sneakers\" />\n        </div>\n    \n        <div className=\"flex flex-col gap-1 mt-4 px-4\">\n          <h2 className=\"text-lg font-semibold text-gray-800 dark50\">Converse Sneakers</h2>\n          <span className=\"font-normal text-gray-600 dark300\">High Top (Lemon Yellow)</span>\n          <span className=\"font-semibold text-gray-800 dark50\">$60</span>\n        </div>\n    \n        <div className=\"flex gap-4 mt-4 px-4\">\n          <span className=\"sr-only\">Colors available</span>\n    \n          <button aria-label=\"Yellow\" className=\"p-1 border border-gray-200 dark500 rounded-full cursor-pointer bg-yellow-500 dark400\"></button>\n    \n          <button aria-label=\"Red\" className=\"p-1 border border-gray-200 dark500 rounded-full cursor-pointer bg-red-500 dark400\"></button>\n    \n          <button aria-label=\"Blue\" className=\"p-1 border border-gray-200 dark500 rounded-full cursor-pointer bg-blue-500 dark400\"></button>\n    \n          <button aria-label=\"Black\" className=\"p-1 border border-gray-200 dark500 rounded-full cursor-pointer bg-gray-800 dark600\"></button>\n        </div>\n    \n        <div className=\"mt-4 p-4 border-t border-gray-200 dark500\">\n          <button className=\"w-full flex justify-between items-center font-bold cursor-pointer hover text-gray-800 dark50\">\n            <span className=\"text-base\">Add to Cart</span>\n            <svg className=\"h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n              <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M12 6v6m0 0v6m0-6h6m-6 0H6\" />\n            </svg>\n          </button>\n        </div>\n      </article>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@omkar007",
+    "authorUrl": "https://tailwindflex.com/@omkar007",
+    "sourceUrl": "https://tailwindflex.com/@omkar007/product-card-6",
+    "mention": "Créé par @omkar007 sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen w-full flex items-center justify-center  bg-gray-200 dark:bg-gray-800\">\n  <!-- product card -->\n  <article class=\"max-w-sm w-full bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700\">\n    <div>\n      <img class=\"object-cover h-64 w-full\" src=\"https://images.unsplash.com/photo-1542291026-7eec264c27ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxzbmVha2Vyc3xlbnwwfDB8fHwxNzEyMjIzNDAyfDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Converse sneakers\" />\n    </div>\n\n    <div class=\"flex flex-col gap-1 mt-4 px-4\">\n      <h2 class=\"text-lg font-semibold text-gray-800 dark:text-gray-50\">Converse Sneakers</h2>\n      <span class=\"font-normal text-gray-600 dark:text-gray-300\">High Top (Lemon Yellow)</span>\n      <span class=\"font-semibold text-gray-800 dark:text-gray-50\">$60</span>\n    </div>\n\n    <div class=\"flex gap-4 mt-4 px-4\">\n      <span class=\"sr-only\">Colors available</span>\n\n      <button aria-label=\"Yellow\" class=\"p-1 border border-gray-200 dark:border-gray-500 rounded-full cursor-pointer bg-yellow-500 dark:bg-yellow-400\"></button>\n\n      <button aria-label=\"Red\" class=\"p-1 border border-gray-200 dark:border-gray-500 rounded-full cursor-pointer bg-red-500 dark:bg-red-400\"></button>\n\n      <button aria-label=\"Blue\" class=\"p-1 border border-gray-200 dark:border-gray-500 rounded-full cursor-pointer bg-blue-500 dark:bg-blue-400\"></button>\n\n      <button aria-label=\"Black\" class=\"p-1 border border-gray-200 dark:border-gray-500 rounded-full cursor-pointer bg-gray-800 dark:bg-gray-600\"></button>\n    </div>\n\n    <div class=\"mt-4 p-4 border-t border-gray-200 dark:border-gray-500\">\n      <button class=\"w-full flex justify-between items-center font-bold cursor-pointer hover:underline text-gray-800 dark:text-gray-50\">\n        <span class=\"text-base\">Add to Cart</span>\n        <svg class=\"h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 6v6m0 0v6m0-6h6m-6 0H6\" />\n        </svg>\n      </button>\n    </div>\n  </article>\n</div>"
+  }
+}

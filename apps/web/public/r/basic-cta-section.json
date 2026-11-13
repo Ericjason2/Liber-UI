@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "basic-cta-section",
+  "type": "registry:ui",
+  "title": "Basic CTA section",
+  "description": "Basic CTA section - Créé par @limaa-m sur TailwindFlex.",
+  "author": "@limaa-m (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/basic-cta-section.tsx",
+      "content": "/**\n * Component: Basic CTA section\n * Author: @limaa-m (https://tailwindflex.com/@limaa-m)\n * Source: https://tailwindflex.com/@limaa-m/basic-cta-section\n * Attribution: Créé par @limaa-m sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BasicCtaSection() {\n  return (\n    <div>\n    <section className=\"container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center\">\n        <h3 className=\"text-5xl font-semibold\">Ready to grow your business?</h3>\n        <p className=\"mt-8 text-xl font-light\">Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque\n            fermentum dui faucibus in.\n        </p>\n        <p className=\"mt-8\">\n            <button type=\"button\" className=\" py-5 px-16 text-lg bg-teal-500 hover600 rounded text-white \">Get\n                Started Now\n            </button>\n        </p>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@limaa-m",
+    "authorUrl": "https://tailwindflex.com/@limaa-m",
+    "sourceUrl": "https://tailwindflex.com/@limaa-m/basic-cta-section",
+    "mention": "Créé par @limaa-m sur TailwindFlex",
+    "rawHtml": "<section class=\"container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center\">\n    <h3 class=\"text-5xl font-semibold\">Ready to grow your business?</h3>\n    <p class=\"mt-8 text-xl font-light\">Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque\n        fermentum dui faucibus in.\n    </p>\n    <p class=\"mt-8\">\n        <button type=\"button\" class=\" py-5 px-16 text-lg bg-teal-500 hover:bg-teal-600 rounded text-white \">Get\n            Started Now\n        </button>\n    </p>\n</section>"
+  }
+}

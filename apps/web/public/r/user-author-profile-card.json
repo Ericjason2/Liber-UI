@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "user-author-profile-card",
+  "type": "registry:ui",
+  "title": "User | Author profile card",
+  "description": "User | Author profile card - Créé par @cguy2000 sur TailwindFlex.",
+  "author": "@cguy2000 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/user-author-profile-card.tsx",
+      "content": "/**\n * Component: User | Author profile card\n * Author: @cguy2000 (https://tailwindflex.com/@cguy2000)\n * Source: https://tailwindflex.com/@cguy2000/user-author-profile-card\n * Attribution: Créé par @cguy2000 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function UserAuthorProfileCard() {\n  return (\n    <div>\n    <section className=\"mt-10 p-4\">\n        <div className=\"w-full md1/2 md flex flex-col md items-center justify-center text-center\">\n            <img className=\"inline-flex object-cover border-4 border-indigo-600 rounded-full shadow-[5px_5px_0_0_rgba(0,0,0,1)] shadow-indigo-600/100 bg-indigo-50 h-24 w-24 !h-32 !w-32 mb-4 md0 ml-0 md5\"\n            src=\"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxoZWFkc2hvdHxlbnwwfDB8fHwxNjk1ODE3MjEzfDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"\" />\n            <div className=\"flex flex-col\">\n                <div className=\"md mb-3\">\n                    <div className=\"flex flex-col mb-5\">\n                        <p className=\"text-indigo-900 font-bold text-xl\">\n                            John doe\n                        </p>\n    \n                        <ul className=\"mt-2 flex flex-row items-center justify-center md \">\n                            <li className=\"mr-5\">\n                                <a href=\"\" target=\"_blank\" aria-label=\"GitHub\">\n                                    <svg className=\"h-6 text-indigo-700 hover300\" fill=\"currentColor\" role=\"img\"\n                                        viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n                                        <title>GitHub</title>\n                                        <path\n                                            d=\"M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12\">\n                                        </path>\n                                    </svg>\n                                </a>\n                            </li>\n    \n                            <li>\n                                <a href=\"\" target=\"_blank\" aria-label=\"Twitter\">\n                                    <svg className=\"h-6 text-indigo-700 hover300\" fill=\"currentColor\" role=\"img\"\n                                        viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n                                        <title>Twitter</title>\n                                        <path\n                                            d=\"M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z\">\n                                        </path>\n                                    </svg>\n                                </a>\n                            </li>\n                        </ul>\n                    </div>\n    \n                    <p className=\"text-indigo-300 font-semibold text-center md\">\n                     Insurance Specialist | Protecting Lives and Assets | Dedicated to Your Peace of Mind | Serving Since 2007 | Your Trusted Risk Manager\n                    </p>\n                </div>\n            </div>\n        </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@cguy2000",
+    "authorUrl": "https://tailwindflex.com/@cguy2000",
+    "sourceUrl": "https://tailwindflex.com/@cguy2000/user-author-profile-card",
+    "mention": "Créé par @cguy2000 sur TailwindFlex",
+    "rawHtml": "<section class=\"mt-10 p-4\">\n    <div class=\"w-full md:w-1/2 md:mx-auto flex flex-col md:flex-row items-center justify-center text-center\">\n        <img class=\"inline-flex object-cover border-4 border-indigo-600 rounded-full shadow-[5px_5px_0_0_rgba(0,0,0,1)] shadow-indigo-600/100 bg-indigo-50 h-24 w-24 !h-32 !w-32 mb-4 md:mb-0 ml-0 md:mr-5\"\n        src=\"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxoZWFkc2hvdHxlbnwwfDB8fHwxNjk1ODE3MjEzfDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"\">\n        <div class=\"flex flex-col\">\n            <div class=\"md:text-justify mb-3\">\n                <div class=\"flex flex-col mb-5\">\n                    <p class=\"text-indigo-900 font-bold text-xl\">\n                        John doe\n                    </p>\n\n                    <ul class=\"mt-2 flex flex-row items-center justify-center md:justify-start \">\n                        <li class=\"mr-5\">\n                            <a href=\"\" target=\"_blank\" aria-label=\"GitHub\">\n                                <svg class=\"h-6 text-indigo-700 hover:text-indigo-300\" fill=\"currentColor\" role=\"img\"\n                                    viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n                                    <title>GitHub</title>\n                                    <path\n                                        d=\"M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12\">\n                                    </path>\n                                </svg>\n                            </a>\n                        </li>\n\n                        <li>\n                            <a href=\"\" target=\"_blank\" aria-label=\"Twitter\">\n                                <svg class=\"h-6 text-indigo-700 hover:text-indigo-300\" fill=\"currentColor\" role=\"img\"\n                                    viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n                                    <title>Twitter</title>\n                                    <path\n                                        d=\"M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z\">\n                                    </path>\n                                </svg>\n                            </a>\n                        </li>\n                    </ul>\n                </div>\n\n                <p class=\"text-indigo-300 font-semibold text-center md:text-left\">\n                 Insurance Specialist | Protecting Lives and Assets | Dedicated to Your Peace of Mind | Serving Since 2007 | Your Trusted Risk Manager\n                </p>\n            </div>\n        </div>\n    </div>\n</section>"
+  }
+}

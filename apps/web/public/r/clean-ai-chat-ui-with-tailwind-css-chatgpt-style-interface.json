@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clean-ai-chat-ui-with-tailwind-css-chatgpt-style-interface",
+  "type": "registry:ui",
+  "title": "Clean AI Chat UI with Tailwind CSS – ChatGPT-Style Interface",
+  "description": "Clean AI Chat UI with Tailwind CSS – ChatGPT-Style Interface - Créé par @ayyam sur TailwindFlex.",
+  "author": "@ayyam (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/clean-ai-chat-ui-with-tailwind-css-chatgpt-style-interface.tsx",
+      "content": "/**\n * Component: Clean AI Chat UI with Tailwind CSS – ChatGPT-Style Interface\n * Author: @ayyam (https://tailwindflex.com/@ayyam)\n * Source: https://tailwindflex.com/@ayyam/clean-ai-chat-ui-with-tailwind-css-chatgpt-style-interface\n * Attribution: Créé par @ayyam sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CleanAiChatUiWithTailwindCssChatgptStyleInterface() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n  <title>AI Assistant</title>\\n\\n  \\n  <link href=\\\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap\\\" rel=\\\"stylesheet\\\">\\n\\n  <style>\\n    body { font-family: Inter, system-ui, sans-serif; }\\n  </style>\\n</head>\\n\\n<body class=\\\"bg-[#0e0e10] text-[#ececf1]\\\">\\n\\n  <!-- App shell -->\\n  <div class=\\\"min-h-screen flex flex-col\\\">\\n\\n    <!-- Header -->\\n    <header class=\\\"h-16 flex items-center px-6 border-b border-white/10\\\">\\n      <div class=\\\"max-w-3xl w-full mx-auto flex items-center justify-between\\\">\\n        <span class=\\\"text-sm font-medium\\\">AI Assistant</span>\\n        <span class=\\\"text-xs text-white/40\\\">Online</span>\\n      </div>\\n    </header>\\n\\n    <!-- Chat stream -->\\n    <main id=\\\"chat\\\"\\n      class=\\\"flex-1 overflow-y-auto px-6 py-16 space-y-16\\\"\\n    >\\n      <!-- Assistant message -->\\n      <div class=\\\"max-w-3xl mx-auto\\\">\\n        <p class=\\\"text-sm leading-relaxed text-white/90\\\">\\n          Welcome.<br><br>\\n          Ask anything — engineering, architecture, or reasoning.<br>\\n          Responses are clear, structured, and calm.\\n        </p>\\n      </div>\\n    </main>\\n\\n    <!-- Composer -->\\n    <footer class=\\\"sticky bottom-0 bg-[#0e0e10]\\\">\\n      <div class=\\\"max-w-3xl mx-auto px-6 pb-10 pt-6\\\">\\n        <form id=\\\"form\\\"\\n          class=\\\"flex items-end gap-4 rounded-2xl bg-[#1a1a1c] px-5 py-4\\\"\\n        >\\n          <textarea\\n            id=\\\"input\\\"\\n            rows=\\\"1\\\"\\n            placeholder=\\\"Message AI assistant…\\\"\\n            class=\\\"flex-1 resize-none bg-transparent outline-none text-sm leading-relaxed placeholder-white/40\\\"\\n          ></textarea>\\n\\n          <button\\n            class=\\\"px-4 py-2 rounded-xl bg-white text-black text-sm font-medium\\\"\\n          >\\n            Send\\n          </button>\\n        </form>\\n\\n        <p class=\\\"mt-4 text-xs text-center text-white/30\\\">\\n          UI-only prototype • No backend connected\\n        </p>\\n      </div>\\n    </footer>\\n\\n  </div>\\n\\n  \\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ayyam",
+    "authorUrl": "https://tailwindflex.com/@ayyam",
+    "sourceUrl": "https://tailwindflex.com/@ayyam/clean-ai-chat-ui-with-tailwind-css-chatgpt-style-interface",
+    "mention": "Créé par @ayyam sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>AI Assistant</title>\n\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap\" rel=\"stylesheet\">\n\n  <style>\n    body { font-family: Inter, system-ui, sans-serif; }\n  </style>\n</head>\n\n<body class=\"bg-[#0e0e10] text-[#ececf1]\">\n\n  <!-- App shell -->\n  <div class=\"min-h-screen flex flex-col\">\n\n    <!-- Header -->\n    <header class=\"h-16 flex items-center px-6 border-b border-white/10\">\n      <div class=\"max-w-3xl w-full mx-auto flex items-center justify-between\">\n        <span class=\"text-sm font-medium\">AI Assistant</span>\n        <span class=\"text-xs text-white/40\">Online</span>\n      </div>\n    </header>\n\n    <!-- Chat stream -->\n    <main id=\"chat\"\n      class=\"flex-1 overflow-y-auto px-6 py-16 space-y-16\"\n    >\n      <!-- Assistant message -->\n      <div class=\"max-w-3xl mx-auto\">\n        <p class=\"text-sm leading-relaxed text-white/90\">\n          Welcome.<br><br>\n          Ask anything — engineering, architecture, or reasoning.<br>\n          Responses are clear, structured, and calm.\n        </p>\n      </div>\n    </main>\n\n    <!-- Composer -->\n    <footer class=\"sticky bottom-0 bg-[#0e0e10]\">\n      <div class=\"max-w-3xl mx-auto px-6 pb-10 pt-6\">\n        <form id=\"form\"\n          class=\"flex items-end gap-4 rounded-2xl bg-[#1a1a1c] px-5 py-4\"\n        >\n          <textarea\n            id=\"input\"\n            rows=\"1\"\n            placeholder=\"Message AI assistant…\"\n            class=\"flex-1 resize-none bg-transparent outline-none text-sm leading-relaxed placeholder-white/40\"\n          ></textarea>\n\n          <button\n            class=\"px-4 py-2 rounded-xl bg-white text-black text-sm font-medium\"\n          >\n            Send\n          </button>\n        </form>\n\n        <p class=\"mt-4 text-xs text-center text-white/30\">\n          UI-only prototype • No backend connected\n        </p>\n      </div>\n    </footer>\n\n  </div>\n\n  <script>\n    const chat = document.getElementById('chat');\n    const form = document.getElementById('form');\n    const input = document.getElementById('input');\n\n    form.addEventListener('submit', e => {\n      e.preventDefault();\n      const value = input.value.trim();\n      if (!value) return;\n\n      addMessage(value, true);\n      input.value = '';\n\n      setTimeout(() => {\n        addMessage(\n          \"Understood. Here’s a clear, structured response.\\n\\nI’ll focus on correctness, trade-offs, and real-world usage.\",\n          false\n        );\n      }, 900);\n    });\n\n    function addMessage(text, isUser) {\n      const wrap = document.createElement('div');\n      wrap.className = 'max-w-3xl mx-auto';\n\n      const p = document.createElement('p');\n      p.className = `\n        text-sm leading-relaxed whitespace-pre-line\n        ${isUser ? 'text-right text-white' : 'text-left text-white/90'}\n      `;\n      p.textContent = text;\n\n      wrap.appendChild(p);\n      chat.appendChild(wrap);\n      chat.scrollTop = chat.scrollHeight;\n    }\n  </script>\n\n</body>\n</html>"
+  }
+}

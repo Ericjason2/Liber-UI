@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "smooth-scale-float-reveal",
+  "type": "registry:ui",
+  "title": "Smooth Scale &amp; Float Reveal",
+  "description": "Smooth Scale &amp; Float Reveal - Créé par @Starboy sur TailwindFlex.",
+  "author": "@Starboy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/smooth-scale-float-reveal.tsx",
+      "content": "/**\n * Component: Smooth Scale &amp; Float Reveal\n * Author: @Starboy (https://tailwindflex.com/@Starboy)\n * Source: https://tailwindflex.com/@Starboy/smooth-scale-float-reveal\n * Attribution: Créé par @Starboy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SmoothScaleFloatReveal() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n  <title>Smooth Scale Reveal Demo</title>\\n  <link rel=\\\"stylesheet\\\" href=\\\"styles.css\\\">\\n  <style>\\n    /* Estilos demo */\\n    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #111; color: white; overflow-x: hidden; }\\n    h1 { text-align: center; margin-top: 50px; font-weight: 300; }\\n    \\n    /* Cajas para visualizar el efecto */\\n    .card {\\n        background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);\\n        min-height: 400px;\\n        margin: 50px auto;\\n        width: 80%;\\n        max-width: 800px;\\n        border-radius: 20px;\\n        display: flex;\\n        justify-content: center;\\n        align-items: center;\\n        font-size: 2rem;\\n        box-shadow: 0 10px 30px rgba(0,0,0,0.5);\\n    }\\n  </style>\\n</head>\\n<body>\\n\\n  <h1>Scroll Down to see the Magic 👇</h1>\\n\\n  <div class=\\\"card reveal\\\">\\n    <span>✨ Floating Card 1</span>\\n  </div>\\n\\n  <div class=\\\"card reveal\\\">\\n    <span>🚀 Floating Card 2</span>\\n  </div>\\n\\n  <div class=\\\"card reveal\\\">\\n    <span>🎨 Floating Card 3</span>\\n  </div>\\n\\n  \\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@Starboy",
+    "authorUrl": "https://tailwindflex.com/@Starboy",
+    "sourceUrl": "https://tailwindflex.com/@Starboy/smooth-scale-float-reveal",
+    "mention": "Créé par @Starboy sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Smooth Scale Reveal Demo</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n  <style>\n    /* Estilos demo */\n    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #111; color: white; overflow-x: hidden; }\n    h1 { text-align: center; margin-top: 50px; font-weight: 300; }\n    \n    /* Cajas para visualizar el efecto */\n    .card {\n        background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);\n        min-height: 400px;\n        margin: 50px auto;\n        width: 80%;\n        max-width: 800px;\n        border-radius: 20px;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        font-size: 2rem;\n        box-shadow: 0 10px 30px rgba(0,0,0,0.5);\n    }\n  </style>\n</head>\n<body>\n\n  <h1>Scroll Down to see the Magic 👇</h1>\n\n  <div class=\"card reveal\">\n    <span>✨ Floating Card 1</span>\n  </div>\n\n  <div class=\"card reveal\">\n    <span>🚀 Floating Card 2</span>\n  </div>\n\n  <div class=\"card reveal\">\n    <span>🎨 Floating Card 3</span>\n  </div>\n\n  <script src=\"script.js\"></script>\n</body>\n</html>"
+  }
+}

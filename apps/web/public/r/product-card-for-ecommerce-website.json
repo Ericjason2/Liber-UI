@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "product-card-for-ecommerce-website",
+  "type": "registry:ui",
+  "title": "Product card for eCommerce website",
+  "description": "Product card for eCommerce website - Créé par @steven-kuhn sur TailwindFlex.",
+  "author": "@steven-kuhn (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/product-card-for-ecommerce-website.tsx",
+      "content": "/**\n * Component: Product card for eCommerce website\n * Author: @steven-kuhn (https://tailwindflex.com/@steven-kuhn)\n * Source: https://tailwindflex.com/@steven-kuhn/product-card-for-ecommerce-website\n * Attribution: Créé par @steven-kuhn sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProductCardForEcommerceWebsite() {\n  return (\n    <div>\n    <div className=\"w-80 bg-white shadow rounded\">\n        <div className=\"h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center\"\n            style=\"background-image: url('https://images.pexels.com/photos/7989741/pexels-photo-7989741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')\">\n            <div className=\"flex justify-between\">\n                <input type=\"checkbox\" />\n                <button className=\"text-white hover500\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\"\n                        stroke=\"currentColor\">\n                        <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M12 4v16m8-8H4\" />\n                    </svg>\n                </button>\n            </div>\n            <div>\n                <span\n                    className=\"uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none\">\n                    available\n                </span>\n            </div>\n        </div>\n        <div className=\"p-4 flex flex-col items-center\">\n            <p className=\"text-gray-400 font-light text-xs text-center\">Hammond robotics</p>\n            <h1 className=\"text-gray-800 text-center mt-1\">Item name</h1>\n            <p className=\"text-center text-gray-800 mt-1\">€1299</p>\n            <div className=\"inline-flex items-center mt-2\">\n                <button\n                    className=\"bg-white rounded-l border text-gray-600 hover100 active200 disabled50 inline-flex items-center px-2 py-1 border-r border-gray-200\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-6 w-4\" fill=\"none\" viewBox=\"0 0 24 24\"\n                        stroke=\"currentColor\">\n                        <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M20 12H4\" />\n                    </svg>\n                </button>\n                <div\n                    className=\"bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover100 inline-flex items-center px-4 py-1 select-none\">\n                    2\n                </div>\n                <button\n                    className=\"bg-white rounded-r border text-gray-600 hover100 active200 disabled50 inline-flex items-center px-2 py-1 border-r border-gray-200\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-6 w-4\" fill=\"none\" viewBox=\"0 0 24 24\"\n                        stroke=\"currentColor\">\n                        <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M12 4v16m8-8H4\" />\n                    </svg>\n                </button>\n            </div>\n    \n            <button\n                className=\"py-2 px-4 bg-blue-500 text-white rounded hover600 active700 disabled50 mt-4 w-full flex items-center justify-center\">\n                Add to order\n                <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-6 w-6 ml-2\" fill=\"none\" viewBox=\"0 0 24 24\"\n                    stroke=\"currentColor\">\n                    <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\"\n                        d=\"M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z\" />\n                </svg>\n            </button>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@steven-kuhn",
+    "authorUrl": "https://tailwindflex.com/@steven-kuhn",
+    "sourceUrl": "https://tailwindflex.com/@steven-kuhn/product-card-for-ecommerce-website",
+    "mention": "Créé par @steven-kuhn sur TailwindFlex",
+    "rawHtml": "<div class=\"w-80 bg-white shadow rounded\">\n    <div class=\"h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center\"\n        style=\"background-image: url('https://images.pexels.com/photos/7989741/pexels-photo-7989741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')\">\n        <div class=\"flex justify-between\">\n            <input type=\"checkbox\" />\n            <button class=\"text-white hover:text-blue-500\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\"\n                    stroke=\"currentColor\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 4v16m8-8H4\" />\n                </svg>\n            </button>\n        </div>\n        <div>\n            <span\n                class=\"uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none\">\n                available\n            </span>\n        </div>\n    </div>\n    <div class=\"p-4 flex flex-col items-center\">\n        <p class=\"text-gray-400 font-light text-xs text-center\">Hammond robotics</p>\n        <h1 class=\"text-gray-800 text-center mt-1\">Item name</h1>\n        <p class=\"text-center text-gray-800 mt-1\">€1299</p>\n        <div class=\"inline-flex items-center mt-2\">\n            <button\n                class=\"bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-4\" fill=\"none\" viewBox=\"0 0 24 24\"\n                    stroke=\"currentColor\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M20 12H4\" />\n                </svg>\n            </button>\n            <div\n                class=\"bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none\">\n                2\n            </div>\n            <button\n                class=\"bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-4\" fill=\"none\" viewBox=\"0 0 24 24\"\n                    stroke=\"currentColor\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 4v16m8-8H4\" />\n                </svg>\n            </button>\n        </div>\n\n        <button\n            class=\"py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center\">\n            Add to order\n            <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 ml-2\" fill=\"none\" viewBox=\"0 0 24 24\"\n                stroke=\"currentColor\">\n                <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\n                    d=\"M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z\" />\n            </svg>\n        </button>\n    </div>\n</div>"
+  }
+}

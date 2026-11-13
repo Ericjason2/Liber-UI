@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-yet-stylish-pricing-table",
+  "type": "registry:ui",
+  "title": "Simple yet stylish pricing table",
+  "description": "Simple yet stylish pricing table - Créé par @laurits sur TailwindFlex.",
+  "author": "@laurits (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-yet-stylish-pricing-table.tsx",
+      "content": "/**\n * Component: Simple yet stylish pricing table\n * Author: @laurits (https://tailwindflex.com/@laurits)\n * Source: https://tailwindflex.com/@laurits/simple-yet-stylish-pricing-table\n * Attribution: Créé par @laurits sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SimpleYetStylishPricingTable() {\n  return (\n    <div>\n    <div className=\"h-screen bg-gray-100 p-10\">\n        <div className=\"max-w-screen-lg mx-auto grid grid-cols-1 sm2 md3 gap-8\">\n            <div className=\"rounded-lg overflow-hidden shadow-md bg-white\">\n                <div className=\"px-6 py-8\">\n                    <h3 className=\"text-3xl font-bold mb-4 text-purple-600\">Basic</h3>\n                    <p className=\"text-lg text-gray-600 mb-8\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                    <h2 className=\"text-5xl font-bold mb-8 text-purple-600\">$19</h2>\n                    <a href=\"#\"\n                        className=\"bg-purple-600 text-white py-2 px-4 rounded-lg text-lg hover700 transition duration-300 ease-in-out\">Buy\n                        Now</a>\n                </div>\n            </div>\n            <div className=\"rounded-lg overflow-hidden shadow-md bg-white\">\n                <div className=\"px-6 py-8\">\n                    <h3 className=\"text-3xl font-bold mb-4 text-green-600\">Premium</h3>\n                    <p className=\"text-lg text-gray-600 mb-8\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                    <h2 className=\"text-5xl font-bold mb-8 text-green-600\">$49</h2>\n                    <a href=\"#\"\n                        className=\"bg-green-600 text-white py-2 px-4 rounded-lg text-lg hover700 transition duration-300 ease-in-out\">Buy\n                        Now</a>\n                </div>\n            </div>\n            <div className=\"rounded-lg overflow-hidden shadow-md bg-white\">\n                <div className=\"px-6 py-8\">\n                    <h3 className=\"text-3xl font-bold mb-4 text-yellow-600\">Pro</h3>\n                    <p className=\"text-lg text-gray-600 mb-8\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                    <h2 className=\"text-5xl font-bold mb-8 text-yellow-600\">$99</h2>\n                    <a href=\"#\"\n                        className=\"bg-yellow-600 text-white py-2 px-4 rounded-lg text-lg hover700 transition duration-300 ease-in-out\">Buy\n                        Now</a>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@laurits",
+    "authorUrl": "https://tailwindflex.com/@laurits",
+    "sourceUrl": "https://tailwindflex.com/@laurits/simple-yet-stylish-pricing-table",
+    "mention": "Créé par @laurits sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen bg-gray-100 p-10\">\n    <div class=\"max-w-screen-lg mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8\">\n        <div class=\"rounded-lg overflow-hidden shadow-md bg-white\">\n            <div class=\"px-6 py-8\">\n                <h3 class=\"text-3xl font-bold mb-4 text-purple-600\">Basic</h3>\n                <p class=\"text-lg text-gray-600 mb-8\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                <h2 class=\"text-5xl font-bold mb-8 text-purple-600\">$19</h2>\n                <a href=\"#\"\n                    class=\"bg-purple-600 text-white py-2 px-4 rounded-lg text-lg hover:bg-purple-700 transition duration-300 ease-in-out\">Buy\n                    Now</a>\n            </div>\n        </div>\n        <div class=\"rounded-lg overflow-hidden shadow-md bg-white\">\n            <div class=\"px-6 py-8\">\n                <h3 class=\"text-3xl font-bold mb-4 text-green-600\">Premium</h3>\n                <p class=\"text-lg text-gray-600 mb-8\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                <h2 class=\"text-5xl font-bold mb-8 text-green-600\">$49</h2>\n                <a href=\"#\"\n                    class=\"bg-green-600 text-white py-2 px-4 rounded-lg text-lg hover:bg-green-700 transition duration-300 ease-in-out\">Buy\n                    Now</a>\n            </div>\n        </div>\n        <div class=\"rounded-lg overflow-hidden shadow-md bg-white\">\n            <div class=\"px-6 py-8\">\n                <h3 class=\"text-3xl font-bold mb-4 text-yellow-600\">Pro</h3>\n                <p class=\"text-lg text-gray-600 mb-8\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                <h2 class=\"text-5xl font-bold mb-8 text-yellow-600\">$99</h2>\n                <a href=\"#\"\n                    class=\"bg-yellow-600 text-white py-2 px-4 rounded-lg text-lg hover:bg-yellow-700 transition duration-300 ease-in-out\">Buy\n                    Now</a>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

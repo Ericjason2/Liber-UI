@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "floating-pus-button",
+  "type": "registry:ui",
+  "title": "Floating pus button",
+  "description": "Floating pus button - Créé par @jaffarhussain1011 sur TailwindFlex.",
+  "author": "@jaffarhussain1011 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/floating-pus-button.tsx",
+      "content": "/**\n * Component: Floating pus button\n * Author: @jaffarhussain1011 (https://tailwindflex.com/@jaffarhussain1011)\n * Source: https://tailwindflex.com/@jaffarhussain1011/floating-pus-button\n * Attribution: Créé par @jaffarhussain1011 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FloatingPusButton() {\n  return (\n    <div>\n    <div className=\"fixed bottom-4 right-4\">\n      <button className=\"bg-blue-500 hover600 text-white rounded-full py-2 px-4 shadow-lg\">\n        +\n      </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@jaffarhussain1011",
+    "authorUrl": "https://tailwindflex.com/@jaffarhussain1011",
+    "sourceUrl": "https://tailwindflex.com/@jaffarhussain1011/floating-pus-button",
+    "mention": "Créé par @jaffarhussain1011 sur TailwindFlex",
+    "rawHtml": "<div class=\"fixed bottom-4 right-4\">\n  <button class=\"bg-blue-500 hover:bg-blue-600 text-white rounded-full py-2 px-4 shadow-lg\">\n    +\n  </button>\n</div>"
+  }
+}

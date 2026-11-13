@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "banner-section",
+  "type": "registry:ui",
+  "title": "Call to action section with image",
+  "description": "Call to action section with image - Créé par @steven-kuhn sur TailwindFlex.",
+  "author": "@steven-kuhn (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/banner-section.tsx",
+      "content": "/**\n * Component: Call to action section with image\n * Author: @steven-kuhn (https://tailwindflex.com/@steven-kuhn)\n * Source: https://tailwindflex.com/@steven-kuhn/banner-section\n * Attribution: Créé par @steven-kuhn sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BannerSection() {\n  return (\n    <div>\n    <section className=\"py-12 md24\">\r\n        <div className=\"w-full max-w-6xl mx-auto px-4 sm6 md8 relative\">\r\n            <div className=\"shadow rounded-xl\">\r\n                <div className=\"grid overflow-hidden text-white shadow-xl md2 bg-blue-600 rounded-xl\">\r\n                    <aside className=\"p-8 space-y-4 md16\">\r\n                        <h2 className=\"text-2xl font-bold tracking-tight md4xl font-headline\">\r\n                            Ready to dive in?\r\n                            Start your free trial today.\r\n                        </h2>\r\n    \r\n                        <p className=\"font-medium text-blue-100 md2xl\">\r\n                            Create an account to enjoy your 5-day free trial, no credit card required.\r\n                        </p>\r\n    \r\n                        <div>\r\n                            <a href=\"\" className=\"bg-white text-blue-600 px-4 py-2 mt-3 rounded-xl\">\r\n                                Start free trial\r\n                            </a>\r\n                        </div>\r\n                    </aside>\r\n    \r\n                    <aside className=\"relative hidden md\">\r\n                        <img className=\"absolute inset-0 object-cover object-left-top w-full h-full mt-16 -mr-16 rounded-tl-lg\" src=\"https://picsum.photos/200\" alt=\"Discover our beautiful panel\" />\r\n                    </aside>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@steven-kuhn",
+    "authorUrl": "https://tailwindflex.com/@steven-kuhn",
+    "sourceUrl": "https://tailwindflex.com/@steven-kuhn/banner-section",
+    "mention": "Créé par @steven-kuhn sur TailwindFlex",
+    "rawHtml": "<section class=\"py-12 md:py-24\">\r\n    <div class=\"w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 relative\">\r\n        <div class=\"shadow rounded-xl\">\r\n            <div class=\"grid overflow-hidden text-white shadow-xl md:grid-cols-2 bg-blue-600 rounded-xl\">\r\n                <aside class=\"p-8 space-y-4 md:p-16\">\r\n                    <h2 class=\"text-2xl font-bold tracking-tight md:text-4xl font-headline\">\r\n                        Ready to dive in?\r\n                        Start your free trial today.\r\n                    </h2>\r\n\r\n                    <p class=\"font-medium text-blue-100 md:text-2xl\">\r\n                        Create an account to enjoy your 5-day free trial, no credit card required.\r\n                    </p>\r\n\r\n                    <div>\r\n                        <a href=\"\" class=\"bg-white text-blue-600 px-4 py-2 mt-3 rounded-xl\">\r\n                            Start free trial\r\n                        </a>\r\n                    </div>\r\n                </aside>\r\n\r\n                <aside class=\"relative hidden md:block\">\r\n                    <img class=\"absolute inset-0 object-cover object-left-top w-full h-full mt-16 -mr-16 rounded-tl-lg\" src=\"https://picsum.photos/200\" alt=\"Discover our beautiful panel\">\r\n                </aside>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>"
+  }
+}

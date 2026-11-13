@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "floating-go-to-top-button-with-tailwind-css",
+  "type": "registry:ui",
+  "title": "Floating &quot;Go to Top&quot; Button with Tailwind CSS",
+  "description": "Floating &quot;Go to Top&quot; Button with Tailwind CSS - Créé par @abdul-baset-bappy sur TailwindFlex.",
+  "author": "@abdul-baset-bappy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/floating-go-to-top-button-with-tailwind-css.tsx",
+      "content": "/**\n * Component: Floating &quot;Go to Top&quot; Button with Tailwind CSS\n * Author: @abdul-baset-bappy (https://tailwindflex.com/@abdul-baset-bappy)\n * Source: https://tailwindflex.com/@abdul-baset-bappy/floating-go-to-top-button-with-tailwind-css\n * Attribution: Créé par @abdul-baset-bappy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FloatingGoToTopButtonWithTailwindCss() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<head>\\n<link rel=\\\"stylesheet\\\" href=\\\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css\\\" integrity=\\\"sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==\\\" crossorigin=\\\"anonymous\\\" referrerpolicy=\\\"no-referrer\\\" />\\n</head>\\n\\n<body class=\\\"relative h-[2000px] bg-slate-100 dark:bg-slate-900\\\">\\n  <h1 class=\\\"text-6xl font-extrabold text-center pt-40 dark:text-slate-100 text-slate-900\\\">Scroll Down ⬇ To see the Button</h1>\\n  <button id=\\\"goTopBtn\\\"\\n    class=\\\"fixed bottom-20 right-8 z-50 w-16 h-16 hidden rounded-full bg-slate-950 dark:bg-slate-500 p-4 text-white shadow-lg transition-all duration-300 hover:bg-slate-800 hover:scale-110  hover:shadow-xl active:scale-90\\\"\\n   >\\n    <!--Use Your Icon Here--->\\n     <i class=\\\"fas fa-chevron-up text-xl\\\"></i>\\n  </button>\\n\\n  \" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abdul-baset-bappy",
+    "authorUrl": "https://tailwindflex.com/@abdul-baset-bappy",
+    "sourceUrl": "https://tailwindflex.com/@abdul-baset-bappy/floating-go-to-top-button-with-tailwind-css",
+    "mention": "Créé par @abdul-baset-bappy sur TailwindFlex",
+    "rawHtml": "<head>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css\" integrity=\"sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />\n</head>\n\n<body class=\"relative h-[2000px] bg-slate-100 dark:bg-slate-900\">\n  <h1 class=\"text-6xl font-extrabold text-center pt-40 dark:text-slate-100 text-slate-900\">Scroll Down ⬇ To see the Button</h1>\n  <button id=\"goTopBtn\"\n    class=\"fixed bottom-20 right-8 z-50 w-16 h-16 hidden rounded-full bg-slate-950 dark:bg-slate-500 p-4 text-white shadow-lg transition-all duration-300 hover:bg-slate-800 hover:scale-110  hover:shadow-xl active:scale-90\"\n    onclick=\"scrollToTop()\">\n    <!--Use Your Icon Here--->\n     <i class=\"fas fa-chevron-up text-xl\"></i>\n  </button>\n\n  <script>\n    const goTopBtn = document.getElementById(\"goTopBtn\");\n\n    window.addEventListener(\"scroll\", () => {\n      if (window.scrollY > 300) {\n        goTopBtn.classList.remove(\"hidden\");\n        goTopBtn.classList.add(\"opacity-100\");\n      } else {\n        goTopBtn.classList.add(\"hidden\");\n        goTopBtn.classList.remove(\"opacity-100\");\n      }\n    });\n\n    function scrollToTop() {\n      window.scrollTo({ top: 0, behavior: \"smooth\" });\n    }\n  </script>"
+  }
+}

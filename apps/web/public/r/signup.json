@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "signup",
+  "type": "registry:ui",
+  "title": "signup",
+  "description": "signup - Créé par @Shadad-01 sur TailwindFlex.",
+  "author": "@Shadad-01 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/signup.tsx",
+      "content": "/**\n * Component: signup\n * Author: @Shadad-01 (https://tailwindflex.com/@Shadad-01)\n * Source: https://tailwindflex.com/@Shadad-01/signup\n * Attribution: Créé par @Shadad-01 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Signup() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<body class=\\\"bg-gray-100 min-h-screen flex items-center justify-center \\\">\\n\\n  <div class=\\\"bg-white shadow-md rounded-lg p-8 w-full max-w-md\\\">\\n    <h2 class=\\\"text-2xl font-bold text-center text-blue-600 mb-6\\\">Create an Account</h2>\\n\\n    <form>\\n      <div class=\\\"mb-4\\\">\\n        <label class=\\\"block text-gray-700\\\">Full Name</label>\\n        <input type=\\\"text\\\" placeholder=\\\"Your name\\\"\\n               class=\\\"w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400\\\" required>\\n      </div>\\n\\n      <div class=\\\"mb-4\\\">\\n        <label class=\\\"block text-gray-700\\\">Email Address</label>\\n        <input type=\\\"email\\\" placeholder=\\\"you@example.com\\\"\\n               class=\\\"w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400\\\" required>\\n      </div>\\n\\n      <div class=\\\"mb-4\\\">\\n        <label class=\\\"block text-gray-700\\\">Password</label>\\n        <input type=\\\"password\\\" placeholder=\\\"********\\\"\\n               class=\\\"w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400\\\" required>\\n      </div>\\n\\n      <div class=\\\"mb-6\\\">\\n        <label class=\\\"block text-gray-700\\\">Confirm Password</label>\\n        <input type=\\\"password\\\" placeholder=\\\"********\\\"\\n               class=\\\"w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400\\\" required>\\n      </div>\\n\\n      <button type=\\\"submit\\\"\\n              class=\\\"w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-md transition duration-300 \\\">\\n        Sign Up\\n      </button>\\n    </form>\\n\\n    <p class=\\\"text-sm text-center text-gray-600 mt-4\\\">\\n      Already have an account? <a href=\\\"#\\\" class=\\\"text-blue-500 hover:underline\\\">Login</a>\\n    </p>\\n  </div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@Shadad-01",
+    "authorUrl": "https://tailwindflex.com/@Shadad-01",
+    "sourceUrl": "https://tailwindflex.com/@Shadad-01/signup",
+    "mention": "Créé par @Shadad-01 sur TailwindFlex",
+    "rawHtml": "<body class=\"bg-gray-100 min-h-screen flex items-center justify-center \">\n\n  <div class=\"bg-white shadow-md rounded-lg p-8 w-full max-w-md\">\n    <h2 class=\"text-2xl font-bold text-center text-blue-600 mb-6\">Create an Account</h2>\n\n    <form>\n      <div class=\"mb-4\">\n        <label class=\"block text-gray-700\">Full Name</label>\n        <input type=\"text\" placeholder=\"Your name\"\n               class=\"w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400\" required>\n      </div>\n\n      <div class=\"mb-4\">\n        <label class=\"block text-gray-700\">Email Address</label>\n        <input type=\"email\" placeholder=\"you@example.com\"\n               class=\"w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400\" required>\n      </div>\n\n      <div class=\"mb-4\">\n        <label class=\"block text-gray-700\">Password</label>\n        <input type=\"password\" placeholder=\"********\"\n               class=\"w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400\" required>\n      </div>\n\n      <div class=\"mb-6\">\n        <label class=\"block text-gray-700\">Confirm Password</label>\n        <input type=\"password\" placeholder=\"********\"\n               class=\"w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400\" required>\n      </div>\n\n      <button type=\"submit\"\n              class=\"w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-md transition duration-300 \">\n        Sign Up\n      </button>\n    </form>\n\n    <p class=\"text-sm text-center text-gray-600 mt-4\">\n      Already have an account? <a href=\"#\" class=\"text-blue-500 hover:underline\">Login</a>\n    </p>\n  </div>"
+  }
+}

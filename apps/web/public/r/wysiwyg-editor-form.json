@@ -3,24 +3,52 @@
   "name": "wysiwyg-editor-form",
   "type": "registry:ui",
   "title": "WYSIWYG Editor Form",
-  "description": "Form with CKEditor",
-  "author": "ip-leroy",
+  "description": "WYSIWYG Editor Form - Créé par @ip-leroy sur TailwindFlex.",
+  "author": "@ip-leroy (TailwindFlex)",
   "categories": [
-    "data-display"
+    "buttons"
   ],
   "dependencies": [],
   "files": [
     {
       "path": "ui/wysiwyg-editor-form.tsx",
-      "content": "import React from \"react\";\n\nexport function WYSIWYGEditorForm() {\n  return (\n    <div className=\"max-w-2xl mx-auto p-4\">\n    <form action=\"/submit-post\" method=\"POST\">\n        <div className=\"mb-6\">\n            <label for=\"title\" className=\"block text-lg font-medium text-gray-800 mb-1\">Title</label>\n            <input type=\"text\" id=\"title\" name=\"title\" className=\"w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500\" required />\n        </div>\n\n        <div className=\"mb-6\">\n            <label for=\"content\" className=\"block text-lg font-medium text-gray-800 mb-1\">Content</label>\n            <textarea id=\"content\" name=\"content\" className=\"w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500\" rows=\"6\" required></textarea>\n        </div>\n\n        <div className=\"mb-6\">\n            <label for=\"image\" className=\"block text-lg font-medium text-gray-800 mb-1\">Image</label>\n            <input type=\"file\" id=\"image\" name=\"image\" accept=\"image/*\" className=\"w-full\" />\n        </div>\n\n        <div className=\"flex justify-end\">\n            <button type=\"submit\" className=\"px-6 py-2 bg-indigo-500 text-white font-semibold rounded-md hover:bg-indigo-600 focus:outline-none\">Submit</button>\n        </div>\n    </form>\n</div>\n  );\n}",
+      "content": "/**\n * Component: WYSIWYG Editor Form\n * Author: @ip-leroy (https://tailwindflex.com/@ip-leroy)\n * Source: https://tailwindflex.com/@ip-leroy/wysiwyg-editor-form\n * Attribution: Créé par @ip-leroy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function WysiwygEditorForm() {\n  return (\n    <div>\n    <div className=\"max-w-2xl mx-auto p-4\">\n        <form action=\"/submit-post\" method=\"POST\">\n            <div className=\"mb-6\">\n                <label htmlFor=\"title\" className=\"block text-lg font-medium text-gray-800 mb-1\">Title</label>\n                <input type=\"text\" id=\"title\" name=\"title\" className=\"w-full px-4 py-2 border border-gray-300 rounded-md focus focus500\" required />\n            </div>\n    \n            <div className=\"mb-6\">\n                <label htmlFor=\"content\" className=\"block text-lg font-medium text-gray-800 mb-1\">Content</label>\n                <textarea id=\"content\" name=\"content\" className=\"w-full px-4 py-2 border border-gray-300 rounded-md focus focus500\" rows=\"6\" required></textarea>\n            </div>\n    \n            <div className=\"mb-6\">\n                <label htmlFor=\"image\" className=\"block text-lg font-medium text-gray-800 mb-1\">Image</label>\n                <input type=\"file\" id=\"image\" name=\"image\" accept=\"image/*\" className=\"w-full\" />\n            </div>\n    \n            <div className=\"flex justify-end\">\n                <button type=\"submit\" className=\"px-6 py-2 bg-indigo-500 text-white font-semibold rounded-md hover600 focus\">Submit</button>\n            </div>\n        </form>\n    </div>\n    \n    \n    </div>\n  );\n}\n",
       "type": "registry:ui"
     }
   ],
   "meta": {
     "kind": "component",
     "tags": [
-      "widget",
-      "form"
-    ]
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ip-leroy",
+    "authorUrl": "https://tailwindflex.com/@ip-leroy",
+    "sourceUrl": "https://tailwindflex.com/@ip-leroy/wysiwyg-editor-form",
+    "mention": "Créé par @ip-leroy sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-2xl mx-auto p-4\">\n    <form action=\"/submit-post\" method=\"POST\">\n        <div class=\"mb-6\">\n            <label for=\"title\" class=\"block text-lg font-medium text-gray-800 mb-1\">Title</label>\n            <input type=\"text\" id=\"title\" name=\"title\" class=\"w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500\" required>\n        </div>\n\n        <div class=\"mb-6\">\n            <label for=\"content\" class=\"block text-lg font-medium text-gray-800 mb-1\">Content</label>\n            <textarea id=\"content\" name=\"content\" class=\"w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500\" rows=\"6\" required></textarea>\n        </div>\n\n        <div class=\"mb-6\">\n            <label for=\"image\" class=\"block text-lg font-medium text-gray-800 mb-1\">Image</label>\n            <input type=\"file\" id=\"image\" name=\"image\" accept=\"image/*\" class=\"w-full\">\n        </div>\n\n        <div class=\"flex justify-end\">\n            <button type=\"submit\" class=\"px-6 py-2 bg-indigo-500 text-white font-semibold rounded-md hover:bg-indigo-600 focus:outline-none\">Submit</button>\n        </div>\n    </form>\n</div>\n<script src=\"https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js\"></script>\n<script>\n    ClassicEditor\n    .create(document.querySelector('#content'))\n    .catch(error => {\n      console.error(error);\n    });\n</script>"
   }
 }

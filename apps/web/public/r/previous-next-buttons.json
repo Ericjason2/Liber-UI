@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "previous-next-buttons",
+  "type": "registry:ui",
+  "title": "Previous Next Buttons",
+  "description": "Previous Next Buttons - Créé par @alok sur TailwindFlex.",
+  "author": "@alok (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/previous-next-buttons.tsx",
+      "content": "/**\n * Component: Previous Next Buttons\n * Author: @alok (https://tailwindflex.com/@alok)\n * Source: https://tailwindflex.com/@alok/previous-next-buttons\n * Attribution: Créé par @alok sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PreviousNextButtons() {\n  return (\n    <div>\n    <nav className=\"inline-flex space-x-2.5\">\n        <a className=\"flex items-center py-2 px-3 rounded font-medium select-none border text-gray-900 dark bg-white dark800 transition-colors hover600 hover400 hover dark\"\n            href=\"#\">\n            ⪻\n            Previous\n        </a>\n        <a className=\"flex items-center py-2 px-3 rounded font-medium select-none border text-gray-900 dark bg-white dark800 transition-colors hover600 hover400 hover dark\"\n            href=\"#\">\n            Next\n            ⪼\n        </a>\n    </nav>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@alok",
+    "authorUrl": "https://tailwindflex.com/@alok",
+    "sourceUrl": "https://tailwindflex.com/@alok/previous-next-buttons",
+    "mention": "Créé par @alok sur TailwindFlex",
+    "rawHtml": "<nav class=\"inline-flex space-x-2.5\">\n    <a class=\"flex items-center py-2 px-3 rounded font-medium select-none border text-gray-900 dark:text-white bg-white dark:bg-gray-800 transition-colors hover:border-blue-600 hover:bg-blue-400 hover:text-white dark:hover:text-white\"\n        href=\"#\">\n        ⪻\n        Previous\n    </a>\n    <a class=\"flex items-center py-2 px-3 rounded font-medium select-none border text-gray-900 dark:text-white bg-white dark:bg-gray-800 transition-colors hover:border-blue-600 hover:bg-blue-400 hover:text-white dark:hover:text-white\"\n        href=\"#\">\n        Next\n        ⪼\n    </a>\n</nav>"
+  }
+}

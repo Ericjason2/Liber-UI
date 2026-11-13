@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "menu-button",
+  "type": "registry:ui",
+  "title": "Menu button",
+  "description": "Menu button - Créé par @freja-jensen sur TailwindFlex.",
+  "author": "@freja-jensen (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/menu-button.tsx",
+      "content": "/**\n * Component: Menu button\n * Author: @freja-jensen (https://tailwindflex.com/@freja-jensen)\n * Source: https://tailwindflex.com/@freja-jensen/menu-button\n * Attribution: Créé par @freja-jensen sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function MenuButton() {\n  return (\n    <div>\n    <button className=\"flex items-center gap-1 bg-gray-800 text-white py-2 px-4 rounded-md hover700 transition duration-300 ease-in-out transform hover110\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" className=\"w-6 h-6\">\n        <path d=\"M2.75 7.25h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5zM2.75 11.25h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5zM2.75 15.25h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5z\"/>\n      </svg>\n      Menu\n    </button>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@freja-jensen",
+    "authorUrl": "https://tailwindflex.com/@freja-jensen",
+    "sourceUrl": "https://tailwindflex.com/@freja-jensen/menu-button",
+    "mention": "Créé par @freja-jensen sur TailwindFlex",
+    "rawHtml": "<button class=\"flex items-center gap-1 bg-gray-800 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition duration-300 ease-in-out transform hover:scale-110\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" class=\"w-6 h-6\">\n    <path d=\"M2.75 7.25h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5zM2.75 11.25h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5zM2.75 15.25h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5z\"/>\n  </svg>\n  Menu\n</button>"
+  }
+}

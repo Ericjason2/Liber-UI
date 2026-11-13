@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "feature-display-card-grid-layout",
+  "type": "registry:ui",
+  "title": "Feature display cards (grid layout)",
+  "description": "Feature display cards (grid layout) - Créé par @sophia-baker sur TailwindFlex.",
+  "author": "@sophia-baker (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/feature-display-card-grid-layout.tsx",
+      "content": "/**\n * Component: Feature display cards (grid layout)\n * Author: @sophia-baker (https://tailwindflex.com/@sophia-baker)\n * Source: https://tailwindflex.com/@sophia-baker/feature-display-card-grid-layout\n * Attribution: Créé par @sophia-baker sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FeatureDisplayCardGridLayout() {\n  return (\n    <div>\n    <div className=\"max-w-screen-xl mx-auto py-8 px-4 lg16 lg6\">\n        <div className=\"text-center mb-10\">\n            <h2 className=\"text-4xl tracking-tight font-bold text-primary-800\">Highlighted Features</h2>\n        </div>\n    \n        <div className=\"flex flex-col md\">\n            \n            <div className=\"mr-0 md8 mb-6 md0\">\n                <img className=\"w-1/2 md mx-auto\" src=\"https://placeholder.pics/svg/400\" alt=\"can_help_banner\" />\n            </div>\n            \n    \n            <div className=\"flex-1 flex flex-col sm flex-wrap -mb-4 -mx-2\">\n                <div className=\"w-full sm1/2 mb-4 px-2 \">\n                    <div className=\"h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl\">\n                        <h3 className=\"text-2xl font-bold text-md mb-6\">Dynamic Personalization:</h3>\n                        <p className=\"text-sm\">Our platform leverages user data and behavior to provide a highly personalized experience, with dynamic content and product recommendations that change in real-time.</p>\n                    </div>\n                </div>\n                <div className=\"w-full sm1/2 mb-4 px-2 \">\n                    <div className=\"h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl\">\n                        <h3 className=\"text-2xl font-bold text-md mb-6\">Mobile-Optimized Interface</h3>\n                        <p className=\"text-sm\"> Our website is designed with a mobile-first approach, offering a seamless browsing experience across all devices, including smartphones and tablets.</p>\n                    </div>\n                </div>\n    \n                <div className=\"w-full sm1/2 mb-4 px-2 \">\n                    <div className=\"h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl\">\n                        <h3 className=\"text-2xl font-bold text-md mb-6\">24/7 Customer Support</h3>\n                        <p className=\"text-sm\">ur U.S.-based customer support team is available around the clock to answer any questions, resolve any issues, and provide helpful solutions. Whether it's through email, phone, or live chat, we're always here to support you.</p>\n                    </div>\n                </div>\n    \n                <div className=\"w-full sm1/2 mb-4 px-2 \">\n                    <div className=\"h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl\">\n                        <h3 className=\"text-2xl font-bold text-md mb-6\">Secure Payment Processing</h3>\n                        <p className=\"text-sm\">We use cutting-edge security measures to protect our customers' sensitive information and ensure the safety of all transactions made on our site.</p>\n                    </div>\n                </div>\n    \n    \n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "grid",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sophia-baker",
+    "authorUrl": "https://tailwindflex.com/@sophia-baker",
+    "sourceUrl": "https://tailwindflex.com/@sophia-baker/feature-display-card-grid-layout",
+    "mention": "Créé par @sophia-baker sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6\">\n    <div class=\"text-center mb-10\">\n        <h2 class=\"text-4xl tracking-tight font-bold text-primary-800\">Highlighted Features</h2>\n    </div>\n\n    <div class=\"flex flex-col md:flex-row\">\n        <!-- can help image -->\n        <div class=\"mr-0 md:mr-8 mb-6 md:mb-0\">\n            <img class=\"w-1/2 md:w-full mx-auto\" src=\"https://placeholder.pics/svg/400\" alt=\"can_help_banner\">\n        </div>\n        <!-- end can help image -->\n\n        <div class=\"flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2\">\n            <div class=\"w-full sm:w-1/2 mb-4 px-2 \">\n                <div class=\"h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl\">\n                    <h3 class=\"text-2xl font-bold text-md mb-6\">Dynamic Personalization:</h3>\n                    <p class=\"text-sm\">Our platform leverages user data and behavior to provide a highly personalized experience, with dynamic content and product recommendations that change in real-time.</p>\n                </div>\n            </div>\n            <div class=\"w-full sm:w-1/2 mb-4 px-2 \">\n                <div class=\"h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl\">\n                    <h3 class=\"text-2xl font-bold text-md mb-6\">Mobile-Optimized Interface</h3>\n                    <p class=\"text-sm\"> Our website is designed with a mobile-first approach, offering a seamless browsing experience across all devices, including smartphones and tablets.</p>\n                </div>\n            </div>\n\n            <div class=\"w-full sm:w-1/2 mb-4 px-2 \">\n                <div class=\"h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl\">\n                    <h3 class=\"text-2xl font-bold text-md mb-6\">24/7 Customer Support</h3>\n                    <p class=\"text-sm\">ur U.S.-based customer support team is available around the clock to answer any questions, resolve any issues, and provide helpful solutions. Whether it's through email, phone, or live chat, we're always here to support you.</p>\n                </div>\n            </div>\n\n            <div class=\"w-full sm:w-1/2 mb-4 px-2 \">\n                <div class=\"h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl\">\n                    <h3 class=\"text-2xl font-bold text-md mb-6\">Secure Payment Processing</h3>\n                    <p class=\"text-sm\">We use cutting-edge security measures to protect our customers' sensitive information and ensure the safety of all transactions made on our site.</p>\n                </div>\n            </div>\n\n\n        </div>\n    </div>\n</div>"
+  }
+}

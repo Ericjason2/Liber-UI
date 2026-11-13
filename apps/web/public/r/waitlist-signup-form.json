@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "waitlist-signup-form",
+  "type": "registry:ui",
+  "title": "Waitlist signup form",
+  "description": "Waitlist signup form - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/waitlist-signup-form.tsx",
+      "content": "/**\n * Component: Waitlist signup form\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/waitlist-signup-form\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function WaitlistSignupForm() {\n  return (\n    <div>\n    <div className=\"flex flex-col\" id=\"waitlist\">\n      <div className=\"text-4xl font-semibold max-w-xl text-center px-4\">\n        <span>Unlock <span className=\"text-green-500\">innovation</span> and <span className=\"text-blue-500\">progress</span> with\n        <span className=\"text-yellow-500\">small teams</span> for\n        <span className=\"text-purple-500\">exceptional outcomes</span>.</span>\n      </div>\n      <div>\n        <div className=\"flex justify-center\">\n          <div className=\"flex mt-6 flex-col md\">\n            <div className=\"sm4 mt-4\">\n              <div className=\"flex rounded-xl shadow-sm ring-1 ring-inset ring-gray-300 focus sm mr-2\">\n                <input type=\"email\" name=\"email\" id=\"email\" autoComplete=\"email\" value=\"\" className=\"w-72 h-14 rounded-xl block flex-1 bg-transparent py-4 pl-4 text-gray-900 placeholder400 focus sm sm6 text-lg\" placeholder=\"Enter your e-mail\" />\n              </div>\n            </div>\n            <button className=\"mx-auto bg-blue-700 text-white px-6 py-2 rounded-xl shadow border font-medium mt-4 text-xl hover90\"> Get Early Access </button>\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/waitlist-signup-form",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-col\" id=\"waitlist\">\n  <div class=\"text-4xl font-semibold max-w-xl text-center px-4\">\n    <span>Unlock <span class=\"text-green-500\">innovation</span> and <span class=\"text-blue-500\">progress</span> with\n    <span class=\"text-yellow-500\">small teams</span> for\n    <span class=\"text-purple-500\">exceptional outcomes</span>.</span>\n  </div>\n  <div>\n    <div class=\"flex justify-center\">\n      <div class=\"flex mt-6 flex-col md:flex-row\">\n        <div class=\"sm:col-span-4 mt-4\">\n          <div class=\"flex rounded-xl shadow-sm ring-1 ring-inset ring-gray-300 focus:none sm:max-w-md mr-2\">\n            <input type=\"email\" name=\"email\" id=\"email\" autocomplete=\"email\" value=\"\" class=\"w-72 h-14 rounded-xl block flex-1 bg-transparent py-4 pl-4 text-gray-900 placeholder:text-gray-400 focus:none sm:text-md sm:leading-6 text-lg\" placeholder=\"Enter your e-mail\">\n          </div>\n        </div>\n        <button class=\"mx-auto bg-blue-700 text-white px-6 py-2 rounded-xl shadow border font-medium mt-4 text-xl hover:brightness-90\"> Get Early Access </button>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

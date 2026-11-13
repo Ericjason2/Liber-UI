@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "digital-banking-hero",
+  "type": "registry:ui",
+  "title": "Digital banking hero",
+  "description": "Digital banking hero - Créé par @shariful-islam sur TailwindFlex.",
+  "author": "@shariful-islam (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/digital-banking-hero.tsx",
+      "content": "/**\n * Component: Digital banking hero\n * Author: @shariful-islam (https://tailwindflex.com/@shariful-islam)\n * Source: https://tailwindflex.com/@shariful-islam/digital-banking-hero\n * Attribution: Créé par @shariful-islam sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function DigitalBankingHero() {\n  return (\n    <div>\n    <div className=\"bg-gray-50 min-h-screen\">\n      \n      <header className=\"w-full bg-white shadow-sm\">\n        <div className=\"max-w-7xl mx-auto px-6 flex items-center justify-between py-4\">\n          \n          <div className=\"flex items-center space-x-2\">\n            <div className=\"w-6 h-6 bg-green-500 rounded-full\"></div>\n            <span className=\"text-lg font-semibold text-gray-800\">Acorns</span>\n          </div>\n          \n          <nav className=\"hidden md space-x-6 text-gray-700\">\n            <a href=\"#\" className=\"hover900\">Invest</a>\n            <a href=\"#\" className=\"hover900\">Later</a>\n            <a href=\"#\" className=\"hover900\">Spend</a>\n            <a href=\"#\" className=\"hover900\">Early</a>\n            <a href=\"#\" className=\"hover900\">Earn</a>\n            <a href=\"#\" className=\"hover900\">Grow</a>\n            <a href=\"#\" className=\"hover900\">Pricing</a>\n          </nav>\n          \n          <div className=\"flex items-center space-x-4\">\n            <a href=\"#\" className=\"text-gray-700 hover900\">Log in</a>\n            <a\n              href=\"#\"\n              className=\"px-4 py-2 bg-green-500 text-white rounded-lg font-medium hover600 transition\"\n            >\n              Get started\n            </a>\n          </div>\n        </div>\n      </header>\n    \n      \n      <div className=\"max-w-7xl mx-auto px-6 py-12 grid md2 gap-8 items-center\">\n        \n        <div>\n          <h1 className=\"text-4xl md5xl font-bold text-gray-800 mb-4\">\n            Acorns helps you <br /> grow your money\n          </h1>\n          <p className=\"text-gray-600 mb-6\">\n            Take control with all-in-one investment, retirement, checking, and more.\n          </p>\n          <a\n            href=\"#\"\n            className=\"px-6 py-3 bg-green-500 text-white font-medium text-lg rounded-lg hover600 transition\"\n          >\n            Get started\n          </a>\n        </div>\n    \n        \n        <div className=\"relative\">\n          <div className=\"absolute -left-8 -top-8 w-24 h-24 bg-green-100 rounded-full\"></div>\n          <img\n            src=\"https://via.placeholder.com/300x400\" \n            alt=\"Acorns Card\"\n            className=\"absolute -rotate-12 transform translate-y-6\"\n          />\n          <img\n            src=\"https://static-ssl.businessinsider.com/image/5be0ca3dda27f82a0016f894-1200/acorn.png\" \n            alt=\"Acorns Mobile\"\n            className=\"relative z-10 mx-auto\"\n          />\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@shariful-islam",
+    "authorUrl": "https://tailwindflex.com/@shariful-islam",
+    "sourceUrl": "https://tailwindflex.com/@shariful-islam/digital-banking-hero",
+    "mention": "Créé par @shariful-islam sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-50 min-h-screen\">\n  <!-- Header -->\n  <header class=\"w-full bg-white shadow-sm\">\n    <div class=\"max-w-7xl mx-auto px-6 flex items-center justify-between py-4\">\n      <!-- Logo -->\n      <div class=\"flex items-center space-x-2\">\n        <div class=\"w-6 h-6 bg-green-500 rounded-full\"></div>\n        <span class=\"text-lg font-semibold text-gray-800\">Acorns</span>\n      </div>\n      <!-- Navigation Links -->\n      <nav class=\"hidden md:flex space-x-6 text-gray-700\">\n        <a href=\"#\" class=\"hover:text-gray-900\">Invest</a>\n        <a href=\"#\" class=\"hover:text-gray-900\">Later</a>\n        <a href=\"#\" class=\"hover:text-gray-900\">Spend</a>\n        <a href=\"#\" class=\"hover:text-gray-900\">Early</a>\n        <a href=\"#\" class=\"hover:text-gray-900\">Earn</a>\n        <a href=\"#\" class=\"hover:text-gray-900\">Grow</a>\n        <a href=\"#\" class=\"hover:text-gray-900\">Pricing</a>\n      </nav>\n      <!-- Right Buttons -->\n      <div class=\"flex items-center space-x-4\">\n        <a href=\"#\" class=\"text-gray-700 hover:text-gray-900\">Log in</a>\n        <a\n          href=\"#\"\n          class=\"px-4 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-green-600 transition\"\n        >\n          Get started\n        </a>\n      </div>\n    </div>\n  </header>\n\n  <!-- Hero Section -->\n  <div class=\"max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center\">\n    <!-- Left Content -->\n    <div>\n      <h1 class=\"text-4xl md:text-5xl font-bold text-gray-800 mb-4\">\n        Acorns helps you <br /> grow your money\n      </h1>\n      <p class=\"text-gray-600 mb-6\">\n        Take control with all-in-one investment, retirement, checking, and more.\n      </p>\n      <a\n        href=\"#\"\n        class=\"px-6 py-3 bg-green-500 text-white font-medium text-lg rounded-lg hover:bg-green-600 transition\"\n      >\n        Get started\n      </a>\n    </div>\n\n    <!-- Right Content -->\n    <div class=\"relative\">\n      <div class=\"absolute -left-8 -top-8 w-24 h-24 bg-green-100 rounded-full\"></div>\n      <img\n        src=\"https://via.placeholder.com/300x400\" \n        alt=\"Acorns Card\"\n        class=\"absolute -rotate-12 transform translate-y-6\"\n      />\n      <img\n        src=\"https://static-ssl.businessinsider.com/image/5be0ca3dda27f82a0016f894-1200/acorn.png\" \n        alt=\"Acorns Mobile\"\n        class=\"relative z-10 mx-auto\"\n      />\n    </div>\n  </div>\n</div>"
+  }
+}

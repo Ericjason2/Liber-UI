@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "new-save-component-tailwindflex",
+  "type": "registry:ui",
+  "title": "new Save Component tailwindflex",
+  "description": "new Save Component tailwindflex - Créé par @omer-fils-elenga sur TailwindFlex.",
+  "author": "@omer-fils-elenga (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/new-save-component-tailwindflex.tsx",
+      "content": "/**\n * Component: new Save Component tailwindflex\n * Author: @omer-fils-elenga (https://tailwindflex.com/@omer-fils-elenga)\n * Source: https://tailwindflex.com/@omer-fils-elenga/new-save-component-tailwindflex\n * Attribution: Créé par @omer-fils-elenga sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NewSaveComponentTailwindflex() {\n  return (\n    <div>\n    <div className=\"min-h-screen bg-slate-50 dark950 p-8 flex items-center justify-center transition-colors duration-300\">\n      \n      \n      <div className=\"w-full max-w-lg bg-white/80 dark900/80 backdrop-blur-md border border-slate-200 dark800 rounded-2xl p-6 shadow-xl\">\n        \n        \n        <div className=\"mb-6\">\n          <h2 className=\"text-xl font-bold text-slate-900 dark\">Save Component</h2>\n          <p className=\"text-xs text-slate-500 dark400 mt-1\">Enregistrez votre snippet de code proprement pour vos futurs projets.</p>\n        </div>\n    \n        <form className=\"space-y-5\">\n          \n          \n          <div>\n            <label htmlFor=\"title\" className=\"block text-xs font-semibold uppercase tracking-wider text-slate-600 dark400 mb-1.5\">\n              Title <span className=\"text-rose-500\">*</span>\n            </label>\n            <input \n              type=\"text\" \n              id=\"title\" \n              required\n              placeholder=\"Ex: Credit Card 3D Flip\" \n              className=\"w-full px-4 py-2.5 rounded-xl border border-slate-200 dark800 bg-white dark950 text-slate-900 dark100 placeholder-slate-400 dark600 text-sm focus focus2 focus500 focus transition-all\"\n            />\n          </div>\n    \n          \n          <div>\n            <label htmlFor=\"description\" className=\"block text-xs font-semibold uppercase tracking-wider text-slate-600 dark400 mb-1.5\">\n              Description\n            </label>\n            <textarea \n              id=\"description\" \n              rows=\"3\"\n              placeholder=\"Décrivez le fonctionnement ou les dépendances du composant...\" \n              className=\"w-full px-4 py-2.5 rounded-xl border border-slate-200 dark800 bg-white dark950 text-slate-900 dark100 placeholder-slate-400 dark600 text-sm focus focus2 focus500 focus transition-all resize-none\"\n            ></textarea>\n          </div>\n    \n          \n          <div className=\"grid grid-cols-1 sm2 gap-4\">\n            \n            \n            <div>\n              <label htmlFor=\"tags\" className=\"block text-xs font-semibold uppercase tracking-wider text-slate-600 dark400 mb-1.5\">\n                Tags\n              </label>\n              <input \n                type=\"text\" \n                id=\"tags\" \n                placeholder=\"Tailwind, 3D, UI\" \n                className=\"w-full px-4 py-2.5 rounded-xl border border-slate-200 dark800 bg-white dark950 text-slate-900 dark100 placeholder-slate-400 dark600 text-sm focus focus2 focus500 focus transition-all\"\n              />\n            </div>\n    \n            \n            <div>\n              <label htmlFor=\"search-tags\" className=\"block text-xs font-semibold uppercase tracking-wider text-slate-600 dark400 mb-1.5\">\n                Search Tags\n              </label>\n              <input \n                type=\"text\" \n                id=\"search-tags\" \n                placeholder=\"card, flip, animate, js\" \n                className=\"w-full px-4 py-2.5 rounded-xl border border-slate-200 dark800 bg-white dark950 text-slate-900 dark100 placeholder-slate-400 dark600 text-sm focus focus2 focus500 focus transition-all\"\n              />\n            </div>\n    \n          </div>\n    \n          \n          <div className=\"flex justify-end gap-3 pt-2 border-t border-slate-100 dark800/60 mt-6\">\n            <button \n              type=\"button\" \n              className=\"px-4 py-2 text-xs font-medium text-slate-600 dark400 hover100 dark800 rounded-xl transition-all\"\n            >\n              Annuler\n            </button>\n            <button \n              type=\"submit\" \n              className=\"px-5 py-2 text-xs font-semibold text-white bg-indigo-600 hover500 dark500 dark400 rounded-xl shadow-md shadow-indigo-500/10 active95 transition-all\"\n            >\n              Sauvegarder\n            </button>\n          </div>\n    \n        </form>\n      </div>\n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@omer-fils-elenga",
+    "authorUrl": "https://tailwindflex.com/@omer-fils-elenga",
+    "sourceUrl": "https://tailwindflex.com/@omer-fils-elenga/new-save-component-tailwindflex",
+    "mention": "Créé par @omer-fils-elenga sur TailwindFlex",
+    "rawHtml": "<div class=\"min-h-screen bg-slate-50 dark:bg-slate-950 p-8 flex items-center justify-center transition-colors duration-300\">\n  \n  <!-- Formulaire Save Component -->\n  <div class=\"w-full max-w-lg bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xl\">\n    \n    <!-- En-tête -->\n    <div class=\"mb-6\">\n      <h2 class=\"text-xl font-bold text-slate-900 dark:text-white\">Save Component</h2>\n      <p class=\"text-xs text-slate-500 dark:text-slate-400 mt-1\">Enregistrez votre snippet de code proprement pour vos futurs projets.</p>\n    </div>\n\n    <form class=\"space-y-5\" onsubmit=\"event.preventDefault();\">\n      \n      <!-- Title -->\n      <div>\n        <label for=\"title\" class=\"block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-1.5\">\n          Title <span class=\"text-rose-500\">*</span>\n        </label>\n        <input \n          type=\"text\" \n          id=\"title\" \n          required\n          placeholder=\"Ex: Credit Card 3D Flip\" \n          class=\"w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all\"\n        />\n      </div>\n\n      <!-- Description -->\n      <div>\n        <label for=\"description\" class=\"block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-1.5\">\n          Description\n        </label>\n        <textarea \n          id=\"description\" \n          rows=\"3\"\n          placeholder=\"Décrivez le fonctionnement ou les dépendances du composant...\" \n          class=\"w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all resize-none\"\n        ></textarea>\n      </div>\n\n      <!-- Tags & Search Tags Grid -->\n      <div class=\"grid grid-cols-1 sm:grid-cols-2 gap-4\">\n        \n        <!-- Tags (Affichage/Catégorie) -->\n        <div>\n          <label for=\"tags\" class=\"block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-1.5\">\n            Tags\n          </label>\n          <input \n            type=\"text\" \n            id=\"tags\" \n            placeholder=\"Tailwind, 3D, UI\" \n            class=\"w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all\"\n          />\n        </div>\n\n        <!-- Search Tags (Mots-clés d'indexation) -->\n        <div>\n          <label for=\"search-tags\" class=\"block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-1.5\">\n            Search Tags\n          </label>\n          <input \n            type=\"text\" \n            id=\"search-tags\" \n            placeholder=\"card, flip, animate, js\" \n            class=\"w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all\"\n          />\n        </div>\n\n      </div>\n\n      <!-- Actions Buttons -->\n      <div class=\"flex justify-end gap-3 pt-2 border-t border-slate-100 dark:border-slate-800/60 mt-6\">\n        <button \n          type=\"button\" \n          class=\"px-4 py-2 text-xs font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-all\"\n        >\n          Annuler\n        </button>\n        <button \n          type=\"submit\" \n          class=\"px-5 py-2 text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-400 rounded-xl shadow-md shadow-indigo-500/10 active:scale-95 transition-all\"\n        >\n          Sauvegarder\n        </button>\n      </div>\n\n    </form>\n  </div>\n\n</div>"
+  }
+}

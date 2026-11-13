@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "beautiful-info-cards-for-website",
+  "type": "registry:ui",
+  "title": "Beautiful info cards",
+  "description": "Beautiful info cards - Créé par @amit sur TailwindFlex.",
+  "author": "@amit (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/beautiful-info-cards-for-website.tsx",
+      "content": "/**\n * Component: Beautiful info cards\n * Author: @amit (https://tailwindflex.com/@amit)\n * Source: https://tailwindflex.com/@amit/beautiful-info-cards-for-website\n * Attribution: Créé par @amit sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BeautifulInfoCardsForWebsite() {\n  return (\n    <div>\n    <div className=\"bg-gray-200 h-screen w-full dark700 flex justify-center items-center\">\r\n    \r\n        <div className=\"max-w-7xl mx-auto px-4 sm6 lg24 lg8\">\r\n            <h2 className=\"text-3xl font-extrabold tracking-tight text-gray-900 sm4xl dark\">Our service\r\n                statistics</h2>\r\n            <div className=\"grid grid-cols-1 gap-5 sm4 mt-4\">\r\n                <div className=\"bg-white overflow-hidden shadow sm dark900\">\r\n                    <div className=\"px-4 py-5 sm6\">\r\n                        <dl>\r\n                            <dt className=\"text-sm leading-5 font-medium text-gray-500 truncate dark400\">Total free\r\n                                servers</dt>\r\n                            <dd className=\"mt-1 text-3xl leading-9 font-semibold text-indigo-600 dark400\">1.6M</dd>\r\n                        </dl>\r\n                    </div>\r\n                </div>\r\n                <div className=\"bg-white overflow-hidden shadow sm dark900\">\r\n                    <div className=\"px-4 py-5 sm6\">\r\n                        <dl>\r\n                            <dt className=\"text-sm leading-5 font-medium text-gray-500 truncate dark400\">Servers a\r\n                                month</dt>\r\n                            <dd className=\"mt-1 text-3xl leading-9 font-semibold text-indigo-600 dark400\">19.2K\r\n                            </dd>\r\n                        </dl>\r\n                    </div>\r\n                </div>\r\n                <div className=\"bg-white overflow-hidden shadow sm dark900\">\r\n                    <div className=\"px-4 py-5 sm6\">\r\n                        <dl>\r\n                            <dt className=\"text-sm leading-5 font-medium text-gray-500 truncate dark400\">Servers a\r\n                                week</dt>\r\n                            <dd className=\"mt-1 text-3xl leading-9 font-semibold text-indigo-600 dark400\">4.9K</dd>\r\n                        </dl>\r\n                    </div>\r\n                </div>\r\n                <div className=\"bg-white overflow-hidden shadow sm dark900\">\r\n                    <div className=\"px-4 py-5 sm6\">\r\n                        <dl>\r\n                            <dt className=\"text-sm leading-5 font-medium text-gray-500 truncate dark400\">Total users\r\n                            </dt>\r\n                            <dd className=\"mt-1 text-3xl leading-9 font-semibold text-indigo-600 dark400\">166.7K\r\n                            </dd>\r\n                        </dl>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@amit",
+    "authorUrl": "https://tailwindflex.com/@amit",
+    "sourceUrl": "https://tailwindflex.com/@amit/beautiful-info-cards-for-website",
+    "mention": "Créé par @amit sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-200 h-screen w-full dark:bg-gray-700 flex justify-center items-center\">\r\n\r\n    <div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:py-24 lg:px-8\">\r\n        <h2 class=\"text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white\">Our service\r\n            statistics</h2>\r\n        <div class=\"grid grid-cols-1 gap-5 sm:grid-cols-4 mt-4\">\r\n            <div class=\"bg-white overflow-hidden shadow sm:rounded-lg dark:bg-gray-900\">\r\n                <div class=\"px-4 py-5 sm:p-6\">\r\n                    <dl>\r\n                        <dt class=\"text-sm leading-5 font-medium text-gray-500 truncate dark:text-gray-400\">Total free\r\n                            servers</dt>\r\n                        <dd class=\"mt-1 text-3xl leading-9 font-semibold text-indigo-600 dark:text-indigo-400\">1.6M</dd>\r\n                    </dl>\r\n                </div>\r\n            </div>\r\n            <div class=\"bg-white overflow-hidden shadow sm:rounded-lg dark:bg-gray-900\">\r\n                <div class=\"px-4 py-5 sm:p-6\">\r\n                    <dl>\r\n                        <dt class=\"text-sm leading-5 font-medium text-gray-500 truncate dark:text-gray-400\">Servers a\r\n                            month</dt>\r\n                        <dd class=\"mt-1 text-3xl leading-9 font-semibold text-indigo-600 dark:text-indigo-400\">19.2K\r\n                        </dd>\r\n                    </dl>\r\n                </div>\r\n            </div>\r\n            <div class=\"bg-white overflow-hidden shadow sm:rounded-lg dark:bg-gray-900\">\r\n                <div class=\"px-4 py-5 sm:p-6\">\r\n                    <dl>\r\n                        <dt class=\"text-sm leading-5 font-medium text-gray-500 truncate dark:text-gray-400\">Servers a\r\n                            week</dt>\r\n                        <dd class=\"mt-1 text-3xl leading-9 font-semibold text-indigo-600 dark:text-indigo-400\">4.9K</dd>\r\n                    </dl>\r\n                </div>\r\n            </div>\r\n            <div class=\"bg-white overflow-hidden shadow sm:rounded-lg dark:bg-gray-900\">\r\n                <div class=\"px-4 py-5 sm:p-6\">\r\n                    <dl>\r\n                        <dt class=\"text-sm leading-5 font-medium text-gray-500 truncate dark:text-gray-400\">Total users\r\n                        </dt>\r\n                        <dd class=\"mt-1 text-3xl leading-9 font-semibold text-indigo-600 dark:text-indigo-400\">166.7K\r\n                        </dd>\r\n                    </dl>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

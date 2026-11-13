@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkout-card-2",
+  "type": "registry:ui",
+  "title": "Checkout Card",
+  "description": "Checkout Card - Créé par @rajesh-maheshwari sur TailwindFlex.",
+  "author": "@rajesh-maheshwari (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/checkout-card-2.tsx",
+      "content": "/**\n * Component: Checkout Card\n * Author: @rajesh-maheshwari (https://tailwindflex.com/@rajesh-maheshwari)\n * Source: https://tailwindflex.com/@rajesh-maheshwari/checkout-card-2\n * Attribution: Créé par @rajesh-maheshwari sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CheckoutCard2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<body class=\\\"bg-black flex items-center justify-center min-h-screen p-4\\\">\\n\\n    <div class=\\\"w-full max-w-md bg-white rounded-2xl shadow-lg p-6 md:p-8\\\">\\n        <!-- Header -->\\n        <h2 class=\\\"text-2xl font-bold text-gray-800 text-center\\\">Checkout</h2>\\n        <p class=\\\"text-gray-500 text-center mt-1\\\">Complete your purchase</p>\\n\\n        <!-- Product Details -->\\n        <div class=\\\"mt-6 flex items-center space-x-4\\\">\\n            <img src=\\\"https://media.istockphoto.com/id/913851526/photo/white-headphones.webp?a=1&b=1&s=612x612&w=0&k=20&c=1XeKlfmsO28pA3VLjiJFvvyl9AwFYjilm5AOMJGrwqM=\\\" alt=\\\"Product Image\\\" class=\\\"w-20 h-20 rounded-lg shadow\\\">\\n            <div>\\n                <h3 class=\\\"text-lg font-semibold text-gray-800\\\">Wireless Headphones</h3>\\n                <p class=\\\"text-sm text-gray-500\\\">Noise Cancelling, Bluetooth 5.0</p>\\n            </div>\\n        </div>\\n\\n        <!-- Price Breakdown -->\\n        <div class=\\\"mt-6 space-y-3\\\">\\n            <div class=\\\"flex justify-between text-gray-600\\\">\\n                <span>Subtotal</span>\\n                <span>$149.99</span>\\n            </div>\\n            <div class=\\\"flex justify-between text-gray-600\\\">\\n                <span>Shipping</span>\\n                <span class=\\\"text-green-500\\\">Free</span>\\n            </div>\\n            <div class=\\\"flex justify-between font-semibold text-gray-800\\\">\\n                <span>Total</span>\\n                <span>$149.99</span>\\n            </div>\\n        </div>\\n\\n        <!-- Payment Options -->\\n        <div class=\\\"mt-6\\\">\\n            <label class=\\\"block text-gray-700 font-medium mb-2\\\">Payment Method</label>\\n            <div class=\\\"flex items-center space-x-3\\\">\\n                <button class=\\\"flex-1 bg-gray-100 hover:bg-gray-200 transition p-3 rounded-lg\\\">\\n                    <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg\\\" alt=\\\"Mastercard\\\" class=\\\"h-6 mx-auto\\\">\\n                </button>\\n                <button class=\\\"flex-1 bg-gray-100 hover:bg-gray-200 transition p-3 rounded-lg\\\">\\n                    <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg\\\" alt=\\\"Visa\\\" class=\\\"h-6 mx-auto\\\">\\n                </button>\\n                <button class=\\\"flex-1 bg-gray-100 hover:bg-gray-200 transition p-3 rounded-lg\\\">\\n                    <img src=\\\"https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg\\\" alt=\\\"PayPal\\\" class=\\\"h-6 mx-auto\\\">\\n                </button>\\n            </div>\\n        </div>\\n\\n        <!-- Checkout Button -->\\n        <button class=\\\"mt-6 w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 rounded-lg shadow-md hover:shadow-lg transition duration-200\\\">\\n            Complete Purchase\\n        </button>\\n\\n        <!-- Secure Payment Notice -->\\n        <p class=\\\"text-center text-gray-500 text-sm mt-4\\\">🔒 Secure Payment. Your information is encrypted.</p>\\n    </div>\\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "pricing",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@rajesh-maheshwari",
+    "authorUrl": "https://tailwindflex.com/@rajesh-maheshwari",
+    "sourceUrl": "https://tailwindflex.com/@rajesh-maheshwari/checkout-card-2",
+    "mention": "Créé par @rajesh-maheshwari sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<body class=\"bg-black flex items-center justify-center min-h-screen p-4\">\n\n    <div class=\"w-full max-w-md bg-white rounded-2xl shadow-lg p-6 md:p-8\">\n        <!-- Header -->\n        <h2 class=\"text-2xl font-bold text-gray-800 text-center\">Checkout</h2>\n        <p class=\"text-gray-500 text-center mt-1\">Complete your purchase</p>\n\n        <!-- Product Details -->\n        <div class=\"mt-6 flex items-center space-x-4\">\n            <img src=\"https://media.istockphoto.com/id/913851526/photo/white-headphones.webp?a=1&b=1&s=612x612&w=0&k=20&c=1XeKlfmsO28pA3VLjiJFvvyl9AwFYjilm5AOMJGrwqM=\" alt=\"Product Image\" class=\"w-20 h-20 rounded-lg shadow\">\n            <div>\n                <h3 class=\"text-lg font-semibold text-gray-800\">Wireless Headphones</h3>\n                <p class=\"text-sm text-gray-500\">Noise Cancelling, Bluetooth 5.0</p>\n            </div>\n        </div>\n\n        <!-- Price Breakdown -->\n        <div class=\"mt-6 space-y-3\">\n            <div class=\"flex justify-between text-gray-600\">\n                <span>Subtotal</span>\n                <span>$149.99</span>\n            </div>\n            <div class=\"flex justify-between text-gray-600\">\n                <span>Shipping</span>\n                <span class=\"text-green-500\">Free</span>\n            </div>\n            <div class=\"flex justify-between font-semibold text-gray-800\">\n                <span>Total</span>\n                <span>$149.99</span>\n            </div>\n        </div>\n\n        <!-- Payment Options -->\n        <div class=\"mt-6\">\n            <label class=\"block text-gray-700 font-medium mb-2\">Payment Method</label>\n            <div class=\"flex items-center space-x-3\">\n                <button class=\"flex-1 bg-gray-100 hover:bg-gray-200 transition p-3 rounded-lg\">\n                    <img src=\"https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg\" alt=\"Mastercard\" class=\"h-6 mx-auto\">\n                </button>\n                <button class=\"flex-1 bg-gray-100 hover:bg-gray-200 transition p-3 rounded-lg\">\n                    <img src=\"https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg\" alt=\"Visa\" class=\"h-6 mx-auto\">\n                </button>\n                <button class=\"flex-1 bg-gray-100 hover:bg-gray-200 transition p-3 rounded-lg\">\n                    <img src=\"https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg\" alt=\"PayPal\" class=\"h-6 mx-auto\">\n                </button>\n            </div>\n        </div>\n\n        <!-- Checkout Button -->\n        <button class=\"mt-6 w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 rounded-lg shadow-md hover:shadow-lg transition duration-200\">\n            Complete Purchase\n        </button>\n\n        <!-- Secure Payment Notice -->\n        <p class=\"text-center text-gray-500 text-sm mt-4\">🔒 Secure Payment. Your information is encrypted.</p>\n    </div>\n\n</body>\n</html>"
+  }
+}

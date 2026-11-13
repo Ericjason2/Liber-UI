@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "contact-us-form-template",
+  "type": "registry:ui",
+  "title": "Contact us form template",
+  "description": "Contact us form template - Créé par @lukas-muller sur TailwindFlex.",
+  "author": "@lukas-muller (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/contact-us-form-template.tsx",
+      "content": "/**\n * Component: Contact us form template\n * Author: @lukas-muller (https://tailwindflex.com/@lukas-muller)\n * Source: https://tailwindflex.com/@lukas-muller/contact-us-form-template\n * Attribution: Créé par @lukas-muller sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ContactUsFormTemplate() {\n  return (\n    <div>\n    <form\n        className=\"relative border-8 border-neutral-900 p-6 rounded-lg grid gap-8 md1 md my-4 md12 lg16 bg-white dark800 w-full\">\n        <h2 id=\"contact\" className=\"text-3xl font-bold\">Let's Connect</h2>\n        <div className=\"relative\">\n            <input type=\"text\" id=\"name\" placeholder=\"Your Name\"\n                className=\"peer w-full py-2 border-4 border-amber-400 rounded-md focus4 dark2 focus400 focus400 focus dark400 dark900 placeholder-transparent\" />\n            <label htmlFor=\"name\"\n                className=\"text-neutral-500 text-sm font-bold uppercase absolute -top-4 left-2 -translate-y-1/2 transition-all peer-placeholder-shown4 peer-placeholder-shown1/2 peer-placeholder-shown900 peer-focus4 peer-focus2 peer-focus600 dark300 \">Your\n                Name\n            </label>\n        </div>\n        <div className=\"relative\">\n            <input type=\"text\" id=\"email\" placeholder=\"Your Email\"\n                className=\" peer w-full py-2 border-4 border-amber-400 rounded-md focus4 dark2 focus400 focus400 focus dark400 dark900 placeholder-transparent\" />\n            <label htmlFor=\"email\"\n                className=\" text-neutral-500 text-sm font-bold uppercase absolute -top-4 left-2 -translate-y-1/2 transition-all peer-placeholder-shown4 peer-placeholder-shown1/2 peer-placeholder-shown900 peer-focus4 peer-focus2 peer-focus600 dark300 \">Your\n                Email\n            </label>\n        </div>\n        <div className=\"relative\">\n            <textarea name=\"content\" id=\"content\" cols=\"20\" rows=\"5\" placeholder=\"How can we help?\"\n                className=\" peer form-textarea resize-none w-full border-4 border-amber-400 rounded-md focus4 dark2 focus400 focus400 focus dark400 dark900 placeholder-transparent\"></textarea>\n            <label htmlFor=\"content\"\n                className=\" text-neutral-500 text-sm font-bold uppercase absolute -top-3 left-2 -translate-y-1/2 transition-all peer-placeholder-shown4 peer-placeholder-shown6 peer-placeholder-shown900 peer-focus4 peer-focus2 peer-focus600 dark300 \">How\n                can we help?\n            </label>\n        </div>\n        <a href=\"#\" role=\"menuitem\"\n            className=\" py-2 px-6 bg-neutral-900 text-white w-max shadow-xl hover transition-shadow focus focus-visible4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark400 \">\n            Send\n        </a>\n    </form>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@lukas-muller",
+    "authorUrl": "https://tailwindflex.com/@lukas-muller",
+    "sourceUrl": "https://tailwindflex.com/@lukas-muller/contact-us-form-template",
+    "mention": "Créé par @lukas-muller sur TailwindFlex",
+    "rawHtml": "<form\n    class=\"relative border-8 border-neutral-900 p-6 rounded-lg grid gap-8 md:flex-1 md:max-w-lg my-4 md:my-12 lg:my-16 bg-white dark:bg-neutral-800 w-full\">\n    <h2 id=\"contact\" class=\"text-3xl font-bold\">Let's Connect</h2>\n    <div class=\"relative\">\n        <input type=\"text\" id=\"name\" placeholder=\"Your Name\"\n            class=\"peer w-full py-2 border-4 border-amber-400 rounded-md focus:ring-4 dark:focus:ring-offset-2 focus:ring-amber-400 focus:border-amber-400 focus:outline-none dark:bg-amber-400 dark:text-neutral-900 placeholder-transparent\">\n        <label for=\"name\"\n            class=\"text-neutral-500 text-sm font-bold uppercase absolute -top-4 left-2 -translate-y-1/2 transition-all peer-placeholder-shown:left-4 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-neutral-900 peer-focus:-top-4 peer-focus:left-2 peer-focus:text-neutral-600 dark:peer-focus:text-neutral-300 \">Your\n            Name\n        </label>\n    </div>\n    <div class=\"relative\">\n        <input type=\"text\" id=\"email\" placeholder=\"Your Email\"\n            class=\" peer w-full py-2 border-4 border-amber-400 rounded-md focus:ring-4 dark:focus:ring-offset-2 focus:ring-amber-400 focus:border-amber-400 focus:outline-none dark:bg-amber-400 dark:text-neutral-900 placeholder-transparent\">\n        <label for=\"email\"\n            class=\" text-neutral-500 text-sm font-bold uppercase absolute -top-4 left-2 -translate-y-1/2 transition-all peer-placeholder-shown:left-4 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-neutral-900 peer-focus:-top-4 peer-focus:left-2 peer-focus:text-neutral-600 dark:peer-focus:text-neutral-300 \">Your\n            Email\n        </label>\n    </div>\n    <div class=\"relative\">\n        <textarea name=\"content\" id=\"content\" cols=\"20\" rows=\"5\" placeholder=\"How can we help?\"\n            class=\" peer form-textarea resize-none w-full border-4 border-amber-400 rounded-md focus:ring-4 dark:focus:ring-offset-2 focus:ring-amber-400 focus:border-amber-400 focus:outline-none dark:bg-amber-400 dark:text-neutral-900 placeholder-transparent\"></textarea>\n        <label for=\"content\"\n            class=\" text-neutral-500 text-sm font-bold uppercase absolute -top-3 left-2 -translate-y-1/2 transition-all peer-placeholder-shown:left-4 peer-placeholder-shown:top-6 peer-placeholder-shown:text-neutral-900 peer-focus:-top-4 peer-focus:left-2 peer-focus:text-neutral-600 dark:peer-focus:text-neutral-300 \">How\n            can we help?\n        </label>\n    </div>\n    <a href=\"#\" role=\"menuitem\"\n        class=\" py-2 px-6 bg-neutral-900 text-white w-max shadow-xl hover:shadow-none transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark:ring-offset-amber-400 \">\n        Send\n    </a>\n</form>"
+  }
+}

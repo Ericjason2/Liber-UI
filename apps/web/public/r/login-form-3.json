@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "login-form-3",
+  "type": "registry:ui",
+  "title": "Login form",
+  "description": "Login form - Créé par @leon-bachmann sur TailwindFlex.",
+  "author": "@leon-bachmann (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/login-form-3.tsx",
+      "content": "/**\n * Component: Login form\n * Author: @leon-bachmann (https://tailwindflex.com/@leon-bachmann)\n * Source: https://tailwindflex.com/@leon-bachmann/login-form-3\n * Attribution: Créé par @leon-bachmann sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LoginForm3() {\n  return (\n    <div>\n    <div className=\"min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm6 lg8 px-6\">\n        <div className=\"sm sm sm\">\n            <img className=\"mx-auto h-10 w-auto\" src=\"https://www.svgrepo.com/show/301692/login.svg\" alt=\"Workflow\" />\n            <h2 className=\"mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900\">\n                Sign in to your account\n            </h2>\n            <p className=\"mt-2 text-center text-sm leading-5 text-blue-500 max-w\">\n                Or\n                <a href=\"#\"\n                    className=\"font-medium text-blue-500 hover500 focus focus transition ease-in-out duration-150\">\n                    create a new acccount\n                </a>\n            </p>\n        </div>\n    \n    \n        <div className=\"mt-8 sm sm sm\">\n            <div className=\"bg-white py-8 px-4 shadow sm sm10\">\n                <form>\n                    <div>\n                        <label htmlFor=\"email\" className=\"block text-sm font-medium leading-5  text-gray-700\">Email address</label>\n                        <div className=\"mt-1 relative rounded-md shadow-sm\">\n                            <input id=\"email\" name=\"email\" placeholder=\"user.com\" type=\"email\" required=\"\" value=\"\" className=\"appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus focus focus300 transition duration-150 ease-in-out sm sm5\" />\n                            <div className=\"hidden absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none\">\n                                <svg className=\"h-5 w-5 text-red-500\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n                                    <path fillRule=\"evenodd\"\n                                        d=\"M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z\"\n                                        clipRule=\"evenodd\"></path>\n                                </svg>\n                            </div>\n                        </div>\n                    </div>\n    \n                    <div className=\"mt-6\">\n                        <label htmlFor=\"password\" className=\"block text-sm font-medium leading-5 text-gray-700\">Password</label>\n                        <div className=\"mt-1 rounded-md shadow-sm\">\n                            <input id=\"password\" name=\"password\" type=\"password\" required=\"\" className=\"appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus focus focus300 transition duration-150 ease-in-out sm sm5\" />\n                        </div>\n                    </div>\n    \n                    <div className=\"mt-6 flex items-center justify-between\">\n                        <div className=\"flex items-center\">\n                            <input id=\"remember_me\" name=\"remember\" type=\"checkbox\" value=\"1\" className=\"form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out\" />\n                            <label htmlFor=\"remember_me\" className=\"ml-2 block text-sm leading-5 text-gray-900\">Remember me</label>\n                        </div>\n    \n                        <div className=\"text-sm leading-5\">\n                            <a href=\"#\"\n                                className=\"font-medium text-blue-500 hover500 focus focus transition ease-in-out duration-150\">\n                                Forgot your password?\n                            </a>\n                        </div>\n                    </div>\n    \n                    <div className=\"mt-6\">\n                        <span className=\"block w-full rounded-md shadow-sm\">\n                <button type=\"submit\" className=\"w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-500 hover500 focus focus700 focus active700 transition duration-150 ease-in-out\">\n                  Sign in\n                </button>\n              </span>\n                    </div>\n                </form>\n    \n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@leon-bachmann",
+    "authorUrl": "https://tailwindflex.com/@leon-bachmann",
+    "sourceUrl": "https://tailwindflex.com/@leon-bachmann/login-form-3",
+    "mention": "Créé par @leon-bachmann sur TailwindFlex",
+    "rawHtml": "<div class=\"min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8 px-6\">\n    <div class=\"sm:mx-auto sm:w-full sm:max-w-md\">\n        <img class=\"mx-auto h-10 w-auto\" src=\"https://www.svgrepo.com/show/301692/login.svg\" alt=\"Workflow\">\n        <h2 class=\"mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900\">\n            Sign in to your account\n        </h2>\n        <p class=\"mt-2 text-center text-sm leading-5 text-blue-500 max-w\">\n            Or\n            <a href=\"#\"\n                class=\"font-medium text-blue-500 hover:text-blue-500 focus:outline-none focus:underline transition ease-in-out duration-150\">\n                create a new acccount\n            </a>\n        </p>\n    </div>\n\n\n    <div class=\"mt-8 sm:mx-auto sm:w-full sm:max-w-md\">\n        <div class=\"bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10\">\n            <form>\n                <div>\n                    <label for=\"email\" class=\"block text-sm font-medium leading-5  text-gray-700\">Email address</label>\n                    <div class=\"mt-1 relative rounded-md shadow-sm\">\n                        <input id=\"email\" name=\"email\" placeholder=\"user@example.com\" type=\"email\" required=\"\" value=\"\" class=\"appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5\">\n                        <div class=\"hidden absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none\">\n                            <svg class=\"h-5 w-5 text-red-500\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n                                <path fill-rule=\"evenodd\"\n                                    d=\"M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z\"\n                                    clip-rule=\"evenodd\"></path>\n                            </svg>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"mt-6\">\n                    <label for=\"password\" class=\"block text-sm font-medium leading-5 text-gray-700\">Password</label>\n                    <div class=\"mt-1 rounded-md shadow-sm\">\n                        <input id=\"password\" name=\"password\" type=\"password\" required=\"\" class=\"appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5\">\n                    </div>\n                </div>\n\n                <div class=\"mt-6 flex items-center justify-between\">\n                    <div class=\"flex items-center\">\n                        <input id=\"remember_me\" name=\"remember\" type=\"checkbox\" value=\"1\" class=\"form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out\">\n                        <label for=\"remember_me\" class=\"ml-2 block text-sm leading-5 text-gray-900\">Remember me</label>\n                    </div>\n\n                    <div class=\"text-sm leading-5\">\n                        <a href=\"#\"\n                            class=\"font-medium text-blue-500 hover:text-blue-500 focus:outline-none focus:underline transition ease-in-out duration-150\">\n                            Forgot your password?\n                        </a>\n                    </div>\n                </div>\n\n                <div class=\"mt-6\">\n                    <span class=\"block w-full rounded-md shadow-sm\">\n            <button type=\"submit\" class=\"w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out\">\n              Sign in\n            </button>\n          </span>\n                </div>\n            </form>\n\n        </div>\n    </div>\n</div>"
+  }
+}

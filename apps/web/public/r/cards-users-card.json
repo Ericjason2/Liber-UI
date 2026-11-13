@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cards-users-card",
+  "type": "registry:ui",
+  "title": "Cards - Users Card",
+  "description": "Cards - Users Card - Créé par @nejaa-badr sur TailwindFlex.",
+  "author": "@nejaa-badr (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cards-users-card.tsx",
+      "content": "/**\n * Component: Cards - Users Card\n * Author: @nejaa-badr (https://tailwindflex.com/@nejaa-badr)\n * Source: https://tailwindflex.com/@nejaa-badr/cards-users-card\n * Attribution: Créé par @nejaa-badr sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardsUsersCard() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Users Card</title>\\n    \\n</head>\\n<body class=\\\"bg-gradient-to-r from-indigo-800 to-blue-900 min-h-screen flex items-center justify-center p-4\\\">\\n    <div class=\\\"bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-md w-full overflow-hidden transition-all duration-300 hover:shadow-3xl animate-fade-in\\\">\\n        <div class=\\\"p-6\\\">\\n            <h2 class=\\\"text-2xl font-bold text-indigo-800 dark:text-white mb-4\\\">Team Members</h2>\\n            <div class=\\\"space-y-4\\\">\\n                <div class=\\\"flex items-center space-x-4 p-3 bg-indigo-50 dark:bg-gray-700 rounded-lg transition-all duration-300 hover:bg-indigo-100 dark:hover:bg-gray-600\\\">\\n                    <img src=\\\"https://i.pravatar.cc/100?img=1\\\" alt=\\\"Sarah Johnson\\\" class=\\\"w-12 h-12 rounded-full border-2 border-indigo-800 dark:border-blue-900\\\">\\n                    <div>\\n                        <h3 class=\\\"text-lg font-semibold text-indigo-800 dark:text-white\\\">Sarah Johnson</h3>\\n                        <p class=\\\"text-sm text-gray-600 dark:text-gray-300\\\">Lead Designer</p>\\n                    </div>\\n                </div>\\n                <div class=\\\"flex items-center space-x-4 p-3 bg-indigo-50 dark:bg-gray-700 rounded-lg transition-all duration-300 hover:bg-indigo-100 dark:hover:bg-gray-600\\\">\\n                    <img src=\\\"https://i.pravatar.cc/100?img=2\\\" alt=\\\"Michael Chen\\\" class=\\\"w-12 h-12 rounded-full border-2 border-indigo-800 dark:border-blue-900\\\">\\n                    <div>\\n                        <h3 class=\\\"text-lg font-semibold text-indigo-800 dark:text-white\\\">Michael Chen</h3>\\n                        <p class=\\\"text-sm text-gray-600 dark:text-gray-300\\\">Senior Developer</p>\\n                    </div>\\n                </div>\\n                <div class=\\\"flex items-center space-x-4 p-3 bg-indigo-50 dark:bg-gray-700 rounded-lg transition-all duration-300 hover:bg-indigo-100 dark:hover:bg-gray-600\\\">\\n                    <img src=\\\"https://i.pravatar.cc/100?img=3\\\" alt=\\\"Emily Rodriguez\\\" class=\\\"w-12 h-12 rounded-full border-2 border-indigo-800 dark:border-blue-900\\\">\\n                    <div>\\n                        <h3 class=\\\"text-lg font-semibold text-indigo-800 dark:text-white\\\">Emily Rodriguez</h3>\\n                        <p class=\\\"text-sm text-gray-600 dark:text-gray-300\\\">Product Manager</p>\\n                    </div>\\n                </div>\\n            </div>\\n        </div>\\n        <div class=\\\"px-6 py-4 bg-indigo-100 dark:bg-gray-700 flex justify-between items-center\\\">\\n            <span class=\\\"text-sm text-indigo-800 dark:text-gray-300\\\">3 team members</span>\\n            <button class=\\\"bg-indigo-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:ring-offset-2 dark:focus:ring-offset-gray-800\\\">\\n                Add Member\\n            </button>\\n        </div>\\n    </div>\\n\\n    <style>\\n        @keyframes fadeIn {\\n            from { opacity: 0; transform: translateY(-10px); }\\n            to { opacity: 1; transform: translateY(0); }\\n        }\\n        .animate-fade-in {\\n            animation: fadeIn 0.5s ease-out forwards;\\n        }\\n    </style>\\n\\n    \\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@nejaa-badr",
+    "authorUrl": "https://tailwindflex.com/@nejaa-badr",
+    "sourceUrl": "https://tailwindflex.com/@nejaa-badr/cards-users-card",
+    "mention": "Créé par @nejaa-badr sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Users Card</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gradient-to-r from-indigo-800 to-blue-900 min-h-screen flex items-center justify-center p-4\">\n    <div class=\"bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-md w-full overflow-hidden transition-all duration-300 hover:shadow-3xl animate-fade-in\">\n        <div class=\"p-6\">\n            <h2 class=\"text-2xl font-bold text-indigo-800 dark:text-white mb-4\">Team Members</h2>\n            <div class=\"space-y-4\">\n                <div class=\"flex items-center space-x-4 p-3 bg-indigo-50 dark:bg-gray-700 rounded-lg transition-all duration-300 hover:bg-indigo-100 dark:hover:bg-gray-600\">\n                    <img src=\"https://i.pravatar.cc/100?img=1\" alt=\"Sarah Johnson\" class=\"w-12 h-12 rounded-full border-2 border-indigo-800 dark:border-blue-900\">\n                    <div>\n                        <h3 class=\"text-lg font-semibold text-indigo-800 dark:text-white\">Sarah Johnson</h3>\n                        <p class=\"text-sm text-gray-600 dark:text-gray-300\">Lead Designer</p>\n                    </div>\n                </div>\n                <div class=\"flex items-center space-x-4 p-3 bg-indigo-50 dark:bg-gray-700 rounded-lg transition-all duration-300 hover:bg-indigo-100 dark:hover:bg-gray-600\">\n                    <img src=\"https://i.pravatar.cc/100?img=2\" alt=\"Michael Chen\" class=\"w-12 h-12 rounded-full border-2 border-indigo-800 dark:border-blue-900\">\n                    <div>\n                        <h3 class=\"text-lg font-semibold text-indigo-800 dark:text-white\">Michael Chen</h3>\n                        <p class=\"text-sm text-gray-600 dark:text-gray-300\">Senior Developer</p>\n                    </div>\n                </div>\n                <div class=\"flex items-center space-x-4 p-3 bg-indigo-50 dark:bg-gray-700 rounded-lg transition-all duration-300 hover:bg-indigo-100 dark:hover:bg-gray-600\">\n                    <img src=\"https://i.pravatar.cc/100?img=3\" alt=\"Emily Rodriguez\" class=\"w-12 h-12 rounded-full border-2 border-indigo-800 dark:border-blue-900\">\n                    <div>\n                        <h3 class=\"text-lg font-semibold text-indigo-800 dark:text-white\">Emily Rodriguez</h3>\n                        <p class=\"text-sm text-gray-600 dark:text-gray-300\">Product Manager</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"px-6 py-4 bg-indigo-100 dark:bg-gray-700 flex justify-between items-center\">\n            <span class=\"text-sm text-indigo-800 dark:text-gray-300\">3 team members</span>\n            <button class=\"bg-indigo-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:ring-offset-2 dark:focus:ring-offset-gray-800\">\n                Add Member\n            </button>\n        </div>\n    </div>\n\n    <style>\n        @keyframes fadeIn {\n            from { opacity: 0; transform: translateY(-10px); }\n            to { opacity: 1; transform: translateY(0); }\n        }\n        .animate-fade-in {\n            animation: fadeIn 0.5s ease-out forwards;\n        }\n    </style>\n\n    <script>\n        // Toggle dark mode based on system preference\n        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n            document.documentElement.classList.add('dark');\n        }\n\n        // Add hover effect to user items\n        const userItems = document.querySelectorAll('.bg-indigo-50');\n        userItems.forEach(item => {\n            item.addEventListener('mouseover', () => {\n                item.classList.add('transform', 'scale-105');\n            });\n            item.addEventListener('mouseout', () => {\n                item.classList.remove('transform', 'scale-105');\n            });\n        });\n    </script>\n</body>\n</html>"
+  }
+}

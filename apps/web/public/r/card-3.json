@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-3",
+  "type": "registry:ui",
+  "title": "Holiday package card",
+  "description": "Holiday package card - Créé par @Aman300 sur TailwindFlex.",
+  "author": "@Aman300 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-3.tsx",
+      "content": "/**\n * Component: Holiday package card\n * Author: @Aman300 (https://tailwindflex.com/@Aman300)\n * Source: https://tailwindflex.com/@Aman300/card-3\n * Attribution: Créé par @Aman300 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Card3() {\n  return (\n    <div>\n    <div className=\"flex flex-col justify-center h-screen\">\n      <div\n        className=\"relative flex flex-col md md5 space-y-3 md0 rounded-xl shadow-lg p-3 max-w-xs md3xl mx-auto border border-white bg-white\">\n        <div className=\"w-full md1/3 bg-white grid place-items-center\">\n          <img src=\"https://images.unsplash.com/photo-1508528075895-be7a6cabd37a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1vdW50YWluJTIwd2F0ZXJmYWxsfGVufDB8fDB8fHww\" alt=\"tailwind logo\" className=\"rounded-xl\" />\n        </div>\n        <div className=\"w-full md2/3 bg-white flex flex-col space-y-2 p-3\">\n          <div className=\"flex justify-between item-center\">\n            <p className=\"text-gray-500 font-medium hidden md\">Vacations</p>\n            <div className=\"flex items-center\">\n              <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-5 w-5 text-yellow-500\" viewBox=\"0 0 20 20\"\n                fill=\"currentColor\">\n                <path\n                  d=\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\" />\n              </svg>\n              <p className=\"text-gray-600 font-bold text-sm ml-1\">\n                4.96\n                <span className=\"text-gray-500 font-normal\">(76 reviews)</span>\n              </p>\n            </div>\n            <div className=\"\">\n              <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-5 w-5 text-pink-500\" viewBox=\"0 0 20 20\" fill=\"currentColor\">\n                <path fillRule=\"evenodd\"\n                  d=\"M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z\"\n                  clipRule=\"evenodd\" />\n              </svg>\n            </div>\n            <div className=\"bg-gray-200 px-3 py-1 rounded-full text-xs font-medium text-gray-800 hidden md\">\n              Superhost</div>\n          </div>\n          <h3 className=\"font-black text-gray-800 md3xl text-xl\">The Majestic and Wonderful Bahamas</h3>\n          <p className=\"md text-gray-500 text-base\">The best kept secret of The Bahamas is the country’s sheer\n            size and diversity. With 16 major islands, The Bahamas is an unmatched destination</p>\n          <p className=\"text-xl font-black text-gray-800\">\n            $110\n            <span className=\"font-normal text-gray-600 text-base\">/night</span>\n          </p>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@Aman300",
+    "authorUrl": "https://tailwindflex.com/@Aman300",
+    "sourceUrl": "https://tailwindflex.com/@Aman300/card-3",
+    "mention": "Créé par @Aman300 sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-col justify-center h-screen\">\n  <div\n    class=\"relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white\">\n    <div class=\"w-full md:w-1/3 bg-white grid place-items-center\">\n      <img src=\"https://images.unsplash.com/photo-1508528075895-be7a6cabd37a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1vdW50YWluJTIwd2F0ZXJmYWxsfGVufDB8fDB8fHww\" alt=\"tailwind logo\" class=\"rounded-xl\" />\n    </div>\n    <div class=\"w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3\">\n      <div class=\"flex justify-between item-center\">\n        <p class=\"text-gray-500 font-medium hidden md:block\">Vacations</p>\n        <div class=\"flex items-center\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-5 w-5 text-yellow-500\" viewBox=\"0 0 20 20\"\n            fill=\"currentColor\">\n            <path\n              d=\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\" />\n          </svg>\n          <p class=\"text-gray-600 font-bold text-sm ml-1\">\n            4.96\n            <span class=\"text-gray-500 font-normal\">(76 reviews)</span>\n          </p>\n        </div>\n        <div class=\"\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-5 w-5 text-pink-500\" viewBox=\"0 0 20 20\" fill=\"currentColor\">\n            <path fill-rule=\"evenodd\"\n              d=\"M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z\"\n              clip-rule=\"evenodd\" />\n          </svg>\n        </div>\n        <div class=\"bg-gray-200 px-3 py-1 rounded-full text-xs font-medium text-gray-800 hidden md:block\">\n          Superhost</div>\n      </div>\n      <h3 class=\"font-black text-gray-800 md:text-3xl text-xl\">The Majestic and Wonderful Bahamas</h3>\n      <p class=\"md:text-lg text-gray-500 text-base\">The best kept secret of The Bahamas is the country’s sheer\n        size and diversity. With 16 major islands, The Bahamas is an unmatched destination</p>\n      <p class=\"text-xl font-black text-gray-800\">\n        $110\n        <span class=\"font-normal text-gray-600 text-base\">/night</span>\n      </p>\n    </div>\n  </div>\n</div>"
+  }
+}

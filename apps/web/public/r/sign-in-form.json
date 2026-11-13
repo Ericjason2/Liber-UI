@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sign-in-form",
+  "type": "registry:ui",
+  "title": "Sign In form",
+  "description": "Sign In form - Créé par @amit sur TailwindFlex.",
+  "author": "@amit (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/sign-in-form.tsx",
+      "content": "/**\n * Component: Sign In form\n * Author: @amit (https://tailwindflex.com/@amit)\n * Source: https://tailwindflex.com/@amit/sign-in-form\n * Attribution: Créé par @amit sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SignInForm() {\n  return (\n    <div>\n    <form className=\"max-w-md \">\r\n        <div>\r\n            <label htmlFor=\"email\" className=\"block font-semibold\">Email</label>\r\n            <div className=\"mt-1\"><input type=\"text\" name=\"email\" id=\"email\" value=\"\" autoFocus=\"autofocus\" className=\"bg-white shadow-sm ring-0 block w-full text-lg focus focus500 border-tan-300 p-2 border-2\" />\r\n            </div>\r\n        </div>\r\n        <div className=\"mt-6\">\r\n            <div className=\"flex justify-between\">\r\n                <label htmlFor=\"password\" className=\"block font-semibold\">Password</label> <a href=\"\" tabIndex=\"-1\"\r\n                    className=\"branded-link text-sm font-semibold\">Forgot your password?</a>\r\n            </div>\r\n            <div className=\"mt-1\">\r\n                <input type=\"password\" name=\"password\" id=\"password\" className=\"bg-white shadow-sm ring-0 block w-full text-lg focus focus500 border-tan-300 p-2 border-2\" />\r\n            </div>\r\n        </div>\r\n    \r\n        <label className=\"mt-8 flex content-start\"><input type=\"checkbox\" name=\"remember\" className=\"mr-2 form-checkbox rounded-none ring-0 focus500 border-tan-300 border-2 w-5 h-5 text-highlight\" /> \r\n          <span className=\"text-sm font-semibold\">Remember me</span>\r\n        </label>\r\n        <div>\r\n            <button className=\"flex flex-no-wrap mt-6 border-2 border-black bg-yellow-500 py-2 px-4\">\r\n                <span>Sign In</span> \r\n                <span>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\" className=\"ml-2 w-6 h-6\"><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line><polyline points=\"12 5 19 12 12 19\"></polyline></svg>\r\n                </span>\r\n            </button>\r\n        </div>\r\n    </form>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@amit",
+    "authorUrl": "https://tailwindflex.com/@amit",
+    "sourceUrl": "https://tailwindflex.com/@amit/sign-in-form",
+    "mention": "Créé par @amit sur TailwindFlex",
+    "rawHtml": "<form class=\"max-w-md \">\r\n    <div>\r\n        <label for=\"email\" class=\"block font-semibold\">Email</label>\r\n        <div class=\"mt-1\"><input type=\"text\" name=\"email\" id=\"email\" value=\"\" autofocus=\"autofocus\" class=\"bg-white shadow-sm ring-0 block w-full text-lg focus:outline-none focus:border-tan-500 border-tan-300 p-2 border-2\">\r\n        </div>\r\n    </div>\r\n    <div class=\"mt-6\">\r\n        <div class=\"flex justify-between\">\r\n            <label for=\"password\" class=\"block font-semibold\">Password</label> <a href=\"\" tabindex=\"-1\"\r\n                class=\"branded-link text-sm font-semibold\">Forgot your password?</a>\r\n        </div>\r\n        <div class=\"mt-1\">\r\n            <input type=\"password\" name=\"password\" id=\"password\" class=\"bg-white shadow-sm ring-0 block w-full text-lg focus:outline-none focus:border-tan-500 border-tan-300 p-2 border-2\">\r\n        </div>\r\n    </div>\r\n\r\n    <label class=\"mt-8 flex content-start\"><input type=\"checkbox\" name=\"remember\" class=\"mr-2 form-checkbox rounded-none ring-0 focus:border-tan-500 border-tan-300 border-2 w-5 h-5 text-highlight\"> \r\n      <span class=\"text-sm font-semibold\">Remember me</span>\r\n    </label>\r\n    <div>\r\n        <button class=\"flex flex-no-wrap mt-6 border-2 border-black bg-yellow-500 py-2 px-4\">\r\n            <span>Sign In</span> \r\n            <span>\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"ml-2 w-6 h-6\"><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line><polyline points=\"12 5 19 12 12 19\"></polyline></svg>\r\n            </span>\r\n        </button>\r\n    </div>\r\n</form>"
+  }
+}

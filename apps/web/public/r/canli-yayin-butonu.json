@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "canli-yayin-butonu",
+  "type": "registry:ui",
+  "title": "Canlı Yayın Butonu",
+  "description": "Canlı Yayın Butonu - Créé par @coder32 sur TailwindFlex.",
+  "author": "@coder32 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/canli-yayin-butonu.tsx",
+      "content": "/**\n * Component: Canlı Yayın Butonu\n * Author: @coder32 (https://tailwindflex.com/@coder32)\n * Source: https://tailwindflex.com/@coder32/canli-yayin-butonu\n * Attribution: Créé par @coder32 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CanliYayinButonu() {\n  return (\n    <div>\n    <div className=\"flex justify-center items-center mt-8\">\n        <a href=\"https://www.youtube.com/channel/YOUR_CHANNEL_ID\" target=\"_blank\"\n           className=\"relative flex items-center justify-center px-6 py-3 bg-red-600 text-white text-lg font-semibold rounded-full shadow-lg transform hover105 transition-transform duration-200\">\n            \n            <span className=\"absolute inset-0 rounded-full bg-red-500 opacity-50 animate-ping\"></span>\n            <span className=\"relative z-10\">Now Live</span>\n            \n            <svg className=\"w-7 h-7 ml-2 relative z-10\" xmlns=\"http://www.w3.org/2000/svg\" \n            viewBox=\"0 0 64 64\" style=\"enable-background 0 0 64 64\" xml><path style=\"fill:#ffffff\" d=\"m57.931 54.658-2.216-1.289c3.743-6.432 5.721-13.821 5.721-21.368s-1.979-14.936-5.721-21.368l2.216-1.289C61.901 16.166 64 24.001 64 32c0 7.999-2.099 15.834-6.069 22.658zm-51.862 0C2.099 47.833 0 39.998 0 32S2.099 16.167 6.069 9.342l2.216 1.289C4.542 17.065 2.564 24.454 2.564 32s1.979 14.935 5.721 21.368l-2.216 1.29zm45.32-4.895-2.215-1.292c2.897-4.963 4.428-10.659 4.428-16.471 0-5.8-1.525-11.497-4.41-16.474l2.218-1.286a35.446 35.446 0 0 1 4.755 17.759c.001 6.266-1.651 12.409-4.776 17.764zm-38.778 0C9.486 44.408 7.834 38.265 7.834 32a35.431 35.431 0 0 1 4.756-17.759l2.218 1.286a32.866 32.866 0 0 0-4.41 16.474c0 5.812 1.531 11.508 4.428 16.471l-2.215 1.291zm32.278-4.9-2.218-1.284A23.127 23.127 0 0 0 45.769 32c0-4.076-1.071-8.079-3.098-11.578l2.218-1.284A25.681 25.681 0 0 1 48.332 32a25.68 25.68 0 0 1-3.443 12.863zm-25.778 0A25.69 25.69 0 0 1 15.668 32c0-4.526 1.191-8.973 3.443-12.862l2.218 1.284A23.12 23.12 0 0 0 18.231 32c0 4.075 1.071 8.079 3.098 11.579l-2.218 1.284zm12.615-4.312c-4.716 0-8.553-3.837-8.553-8.553s3.837-8.552 8.553-8.552 8.552 3.836 8.552 8.552-3.836 8.553-8.552 8.553zm0-14.541a5.996 5.996 0 0 0-5.989 5.988 5.996 5.996 0 0 0 5.989 5.989 5.995 5.995 0 0 0 5.988-5.989 5.995 5.995 0 0 0-5.988-5.988z\"/><circle style=\"fill:#ffffff\" cx=\"31.728\" cy=\"31.997\" r=\"5.987\"/></svg>\n        </a>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@coder32",
+    "authorUrl": "https://tailwindflex.com/@coder32",
+    "sourceUrl": "https://tailwindflex.com/@coder32/canli-yayin-butonu",
+    "mention": "Créé par @coder32 sur TailwindFlex",
+    "rawHtml": "<div class=\"flex justify-center items-center mt-8\">\n    <a href=\"https://www.youtube.com/channel/YOUR_CHANNEL_ID\" target=\"_blank\"\n       class=\"relative flex items-center justify-center px-6 py-3 bg-red-600 text-white text-lg font-semibold rounded-full shadow-lg transform hover:scale-105 transition-transform duration-200\">\n        <!-- Arka Plan Puls Etkisi -->\n        <span class=\"absolute inset-0 rounded-full bg-red-500 opacity-50 animate-ping\"></span>\n        <span class=\"relative z-10\">Now Live</span>\n        <!-- Canlı Yayın İkonu -->\n        <svg class=\"w-7 h-7 ml-2 relative z-10\" xmlns=\"http://www.w3.org/2000/svg\" \n        viewBox=\"0 0 64 64\" style=\"enable-background:new 0 0 64 64\" xml:space=\"preserve\"><path style=\"fill:#ffffff\" d=\"m57.931 54.658-2.216-1.289c3.743-6.432 5.721-13.821 5.721-21.368s-1.979-14.936-5.721-21.368l2.216-1.289C61.901 16.166 64 24.001 64 32c0 7.999-2.099 15.834-6.069 22.658zm-51.862 0C2.099 47.833 0 39.998 0 32S2.099 16.167 6.069 9.342l2.216 1.289C4.542 17.065 2.564 24.454 2.564 32s1.979 14.935 5.721 21.368l-2.216 1.29zm45.32-4.895-2.215-1.292c2.897-4.963 4.428-10.659 4.428-16.471 0-5.8-1.525-11.497-4.41-16.474l2.218-1.286a35.446 35.446 0 0 1 4.755 17.759c.001 6.266-1.651 12.409-4.776 17.764zm-38.778 0C9.486 44.408 7.834 38.265 7.834 32a35.431 35.431 0 0 1 4.756-17.759l2.218 1.286a32.866 32.866 0 0 0-4.41 16.474c0 5.812 1.531 11.508 4.428 16.471l-2.215 1.291zm32.278-4.9-2.218-1.284A23.127 23.127 0 0 0 45.769 32c0-4.076-1.071-8.079-3.098-11.578l2.218-1.284A25.681 25.681 0 0 1 48.332 32a25.68 25.68 0 0 1-3.443 12.863zm-25.778 0A25.69 25.69 0 0 1 15.668 32c0-4.526 1.191-8.973 3.443-12.862l2.218 1.284A23.12 23.12 0 0 0 18.231 32c0 4.075 1.071 8.079 3.098 11.579l-2.218 1.284zm12.615-4.312c-4.716 0-8.553-3.837-8.553-8.553s3.837-8.552 8.553-8.552 8.552 3.836 8.552 8.552-3.836 8.553-8.552 8.553zm0-14.541a5.996 5.996 0 0 0-5.989 5.988 5.996 5.996 0 0 0 5.989 5.989 5.995 5.995 0 0 0 5.988-5.989 5.995 5.995 0 0 0-5.988-5.988z\"/><circle style=\"fill:#ffffff\" cx=\"31.728\" cy=\"31.997\" r=\"5.987\"/></svg>\n    </a>\n</div>"
+  }
+}

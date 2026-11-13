@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "payment-cards",
+  "type": "registry:ui",
+  "title": "Payment Cards",
+  "description": "Payment Cards - Créé par @cycotechnolgies sur TailwindFlex.",
+  "author": "@cycotechnolgies (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/payment-cards.tsx",
+      "content": "/**\n * Component: Payment Cards\n * Author: @cycotechnolgies (https://tailwindflex.com/@cycotechnolgies)\n * Source: https://tailwindflex.com/@cycotechnolgies/payment-cards\n * Attribution: Créé par @cycotechnolgies sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PaymentCards() {\n  return (\n    <div>\n    <div className=\"grid grid-cols-1 sm2 md2 lg3 gap-4 p-4\">\n      <div className=\"bg-white rounded-xl shadow-md overflow-hidden\">\n        <div className=\"p-4 flex items-center\">\n          <div className=\"bg-blue-600 p-4 rounded-full text-center\">\n            <p className=\"text-2xl font-bold text-white\">05</p>\n          </div>\n          <div className=\"ml-4\">\n            <div className=\"uppercase px-2 rounded-md text-white bg-green-400 font-semibold\">\n              Paid</div>\n            <p className=\"mt-2 text-gray-600\">DATE: 2024-07-25</p>\n            <p className=\"mt-2 font-semibold text-gray-600\">AMOUNT: Rs. 5000/-</p>\n          </div>\n        </div>\n      </div>\n      <div className=\"bg-white rounded-xl shadow-md overflow-hidden\">\n        <div className=\"p-4 flex items-center\">\n          <div className=\"bg-blue-600 p-4 rounded-full text-center\">\n            <p className=\"text-2xl font-bold text-white\">05</p>\n          </div>\n          <div className=\"ml-4\">\n            <div className=\"uppercase px-2 rounded-md text-white bg-green-400 font-semibold\">\n              Paid</div>\n            <p className=\"mt-2 text-gray-600\">DATE: 2024-07-25</p>\n            <p className=\"mt-2 font-semibold text-gray-600\">AMOUNT: Rs. 5000/-</p>\n          </div>\n        </div>\n      </div>\n      <div className=\"bg-white rounded-xl shadow-md overflow-hidden\">\n        <div className=\"p-4 flex items-center\">\n          <div className=\"bg-blue-600 p-4 rounded-full text-center\">\n            <p className=\"text-2xl font-bold text-white\">05</p>\n          </div>\n          <div className=\"ml-4\">\n            <div className=\"uppercase px-2 rounded-md text-white bg-green-400 font-semibold\">\n              Paid</div>\n            <p className=\"mt-2 text-gray-600\">DATE: 2024-07-25</p>\n            <p className=\"mt-2 font-semibold text-gray-600\">AMOUNT: Rs. 5000/-</p>\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@cycotechnolgies",
+    "authorUrl": "https://tailwindflex.com/@cycotechnolgies",
+    "sourceUrl": "https://tailwindflex.com/@cycotechnolgies/payment-cards",
+    "mention": "Créé par @cycotechnolgies sur TailwindFlex",
+    "rawHtml": "<div class=\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4\">\n  <div class=\"bg-white rounded-xl shadow-md overflow-hidden\">\n    <div class=\"p-4 flex items-center\">\n      <div class=\"bg-blue-600 p-4 rounded-full text-center\">\n        <p class=\"text-2xl font-bold text-white\">05</p>\n      </div>\n      <div class=\"ml-4\">\n        <div class=\"uppercase px-2 rounded-md text-white bg-green-400 font-semibold\">\n          Paid</div>\n        <p class=\"mt-2 text-gray-600\">DATE: 2024-07-25</p>\n        <p class=\"mt-2 font-semibold text-gray-600\">AMOUNT: Rs. 5000/-</p>\n      </div>\n    </div>\n  </div>\n  <div class=\"bg-white rounded-xl shadow-md overflow-hidden\">\n    <div class=\"p-4 flex items-center\">\n      <div class=\"bg-blue-600 p-4 rounded-full text-center\">\n        <p class=\"text-2xl font-bold text-white\">05</p>\n      </div>\n      <div class=\"ml-4\">\n        <div class=\"uppercase px-2 rounded-md text-white bg-green-400 font-semibold\">\n          Paid</div>\n        <p class=\"mt-2 text-gray-600\">DATE: 2024-07-25</p>\n        <p class=\"mt-2 font-semibold text-gray-600\">AMOUNT: Rs. 5000/-</p>\n      </div>\n    </div>\n  </div>\n  <div class=\"bg-white rounded-xl shadow-md overflow-hidden\">\n    <div class=\"p-4 flex items-center\">\n      <div class=\"bg-blue-600 p-4 rounded-full text-center\">\n        <p class=\"text-2xl font-bold text-white\">05</p>\n      </div>\n      <div class=\"ml-4\">\n        <div class=\"uppercase px-2 rounded-md text-white bg-green-400 font-semibold\">\n          Paid</div>\n        <p class=\"mt-2 text-gray-600\">DATE: 2024-07-25</p>\n        <p class=\"mt-2 font-semibold text-gray-600\">AMOUNT: Rs. 5000/-</p>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

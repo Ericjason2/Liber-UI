@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-13",
+  "type": "registry:ui",
+  "title": "Hero Section",
+  "description": "Hero Section - Créé par @gbenga-adegoke sur TailwindFlex.",
+  "author": "@gbenga-adegoke (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-13.tsx",
+      "content": "/**\n * Component: Hero Section\n * Author: @gbenga-adegoke (https://tailwindflex.com/@gbenga-adegoke)\n * Source: https://tailwindflex.com/@gbenga-adegoke/hero-section-13\n * Attribution: Créé par @gbenga-adegoke sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSection13() {\n  return (\n    <div>\n    \r\n    <section className=\"bg-indigo-600 text-white py-20 px-4\">\r\n        <div className=\"container mx-auto flex flex-col md justify-between items-center\">\r\n            <div className=\"md1/2 mb-10 md0\">\r\n                <h2 className=\"text-4xl font-bold leading-tight mb-4\">Welcome to Our Site</h2>\r\n                <p className=\"text-xl mb-4\">We offer a range of services to help you achieve your goals.</p>\r\n                <button className=\"bg-white text-indigo-600 font-bold py-3 px-6 rounded hover600 hover\">Get Started</button>\r\n            </div>\r\n            <div className=\"md1/2\">\r\n                <img src=\"https://images.unsplash.com/photo-1542831371-29b0f74f9713\" alt=\"Hero Image\" className=\"w-full rounded-xl\" />\r\n            </div>\r\n        </div>\r\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@gbenga-adegoke",
+    "authorUrl": "https://tailwindflex.com/@gbenga-adegoke",
+    "sourceUrl": "https://tailwindflex.com/@gbenga-adegoke/hero-section-13",
+    "mention": "Créé par @gbenga-adegoke sur TailwindFlex",
+    "rawHtml": "<!-- Hero Section -->\r\n<section class=\"bg-indigo-600 text-white py-20 px-4\">\r\n    <div class=\"container mx-auto flex flex-col md:flex-row justify-between items-center\">\r\n        <div class=\"md:w-1/2 mb-10 md:mb-0\">\r\n            <h2 class=\"text-4xl font-bold leading-tight mb-4\">Welcome to Our Site</h2>\r\n            <p class=\"text-xl mb-4\">We offer a range of services to help you achieve your goals.</p>\r\n            <button class=\"bg-white text-indigo-600 font-bold py-3 px-6 rounded hover:bg-indigo-600 hover:text-white\">Get Started</button>\r\n        </div>\r\n        <div class=\"md:w-1/2\">\r\n            <img src=\"https://images.unsplash.com/photo-1542831371-29b0f74f9713\" alt=\"Hero Image\" class=\"w-full rounded-xl\">\r\n        </div>\r\n    </div>\r\n</section>"
+  }
+}

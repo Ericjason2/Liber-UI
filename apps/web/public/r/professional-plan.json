@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "professional-plan",
+  "type": "registry:ui",
+  "title": "Professional Plan",
+  "description": "Professional Plan - Créé par @MuzammilRiaz786 sur TailwindFlex.",
+  "author": "@MuzammilRiaz786 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/professional-plan.tsx",
+      "content": "/**\n * Component: Professional Plan\n * Author: @MuzammilRiaz786 (https://tailwindflex.com/@MuzammilRiaz786)\n * Source: https://tailwindflex.com/@MuzammilRiaz786/professional-plan\n * Attribution: Créé par @MuzammilRiaz786 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProfessionalPlan() {\n  return (\n    <div>\n    <div className=\"mt-20 max-w-sm mx-auto bg-white dark800 rounded-xl shadow-lg overflow-hidden hover2xl transition-shadow duration-500 group border border-gray-200 dark700 relative\">\n      <div className=\"absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover10 transition-opacity duration-500 rounded-xl\"></div>\n      \n      <div className=\"px-6 py-4\">\n        <div className=\"flex justify-between items-center mb-2\">\n          <h3 className=\"text-xl font-bold text-gray-800 dark\">Professional Plan</h3>\n          <span className=\"bg-blue-100 dark900 text-blue-800 dark200 text-xs px-3 py-1 rounded-full\">Popular</span>\n        </div>\n        \n        <p className=\"text-gray-600 dark300 text-sm mb-6\">For growing businesses that need advanced features</p>\n        \n        <div className=\"mb-6\">\n          <span className=\"text-4xl font-bold text-gray-800 dark\">$29</span>\n          <span className=\"text-gray-600 dark400\">/month</span>\n        </div>\n        \n        <ul className=\"space-y-3 mb-8\">\n          <li className=\"flex items-center\">\n            <svg className=\"h-5 w-5 text-green-500 mr-2\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n              <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\" />\n            </svg>\n            <span className=\"text-gray-700 dark300\">50 GB Storage</span>\n          </li>\n          <li className=\"flex items-center\">\n            <svg className=\"h-5 w-5 text-green-500 mr-2\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n              <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\" />\n            </svg>\n            <span className=\"text-gray-700 dark300\">Unlimited Users</span>\n          </li>\n          <li className=\"flex items-center\">\n            <svg className=\"h-5 w-5 text-green-500 mr-2\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n              <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\" />\n            </svg>\n            <span className=\"text-gray-700 dark300\">Premium Support</span>\n          </li>\n        </ul>\n        \n        <button className=\"w-full py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover600 hover700 text-white font-medium rounded-lg transition-all duration-300 transform hover[1.02] shadow-md hover\">\n          Get Started\n        </button>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@MuzammilRiaz786",
+    "authorUrl": "https://tailwindflex.com/@MuzammilRiaz786",
+    "sourceUrl": "https://tailwindflex.com/@MuzammilRiaz786/professional-plan",
+    "mention": "Créé par @MuzammilRiaz786 sur TailwindFlex",
+    "rawHtml": "<div class=\"mt-20 max-w-sm mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-500 group border border-gray-200 dark:border-gray-700 relative\">\n  <div class=\"absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-xl\"></div>\n  \n  <div class=\"px-6 py-4\">\n    <div class=\"flex justify-between items-center mb-2\">\n      <h3 class=\"text-xl font-bold text-gray-800 dark:text-white\">Professional Plan</h3>\n      <span class=\"bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full\">Popular</span>\n    </div>\n    \n    <p class=\"text-gray-600 dark:text-gray-300 text-sm mb-6\">For growing businesses that need advanced features</p>\n    \n    <div class=\"mb-6\">\n      <span class=\"text-4xl font-bold text-gray-800 dark:text-white\">$29</span>\n      <span class=\"text-gray-600 dark:text-gray-400\">/month</span>\n    </div>\n    \n    <ul class=\"space-y-3 mb-8\">\n      <li class=\"flex items-center\">\n        <svg class=\"h-5 w-5 text-green-500 mr-2\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\" />\n        </svg>\n        <span class=\"text-gray-700 dark:text-gray-300\">50 GB Storage</span>\n      </li>\n      <li class=\"flex items-center\">\n        <svg class=\"h-5 w-5 text-green-500 mr-2\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\" />\n        </svg>\n        <span class=\"text-gray-700 dark:text-gray-300\">Unlimited Users</span>\n      </li>\n      <li class=\"flex items-center\">\n        <svg class=\"h-5 w-5 text-green-500 mr-2\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\" />\n        </svg>\n        <span class=\"text-gray-700 dark:text-gray-300\">Premium Support</span>\n      </li>\n    </ul>\n    \n    <button class=\"w-full py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-md hover:shadow-lg\">\n      Get Started\n    </button>\n  </div>\n</div>"
+  }
+}

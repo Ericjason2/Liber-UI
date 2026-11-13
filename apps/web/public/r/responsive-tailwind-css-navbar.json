@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-tailwind-css-navbar",
+  "type": "registry:ui",
+  "title": "Responsive Tailwind CSS Navbar",
+  "description": "Responsive Tailwind CSS Navbar - Créé par @irahoza-daniel sur TailwindFlex.",
+  "author": "@irahoza-daniel (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-tailwind-css-navbar.tsx",
+      "content": "/**\n * Component: Responsive Tailwind CSS Navbar\n * Author: @irahoza-daniel (https://tailwindflex.com/@irahoza-daniel)\n * Source: https://tailwindflex.com/@irahoza-daniel/responsive-tailwind-css-navbar\n * Attribution: Créé par @irahoza-daniel sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveTailwindCssNavbar() {\n  return (\n    <div>\n    <nav className=\"bg-white shadow-md\">\n      <div className=\"max-w-7xl mx-auto px-4 sm6 lg8\">\n        <div className=\"flex justify-between h-16\">\n          \n          <div className=\"flex-shrink-0 flex items-center\">\n            <a href=\"#\" className=\"text-xl text-blue-600 font-bold text-gray-800\">DanDev</a>\n          </div>\n    \n          \n          <div className=\"hidden md space-x-6 items-center\">\n            <a href=\"#\" className=\"text-gray-600 hover600 font-medium\">Home</a>\n            <a href=\"#\" className=\"text-gray-600 hover600 font-medium\">Projects</a>\n            <a href=\"#\" className=\"text-gray-600 hover600 font-medium\">About</a>\n            <a href=\"#\" className=\"text-gray-600 hover600 font-medium\">Contact</a>\n          </div>\n    \n          \n          <div className=\"md flex items-center\">\n            <button id=\"menu-btn\" className=\"text-gray-600 focus\">\n              <svg className=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"\n                xmlns=\"http://www.w3.org/2000/svg\">\n                <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\"\n                  d=\"M4 6h16M4 12h16M4 18h16\"></path>\n              </svg>\n            </button>\n          </div>\n        </div>\n      </div>\n    \n    \n      <div id=\"mobile-menu\" className=\"md hidden px-4 pb-4 space-y-2\">\n        <a href=\"#\" className=\"block text-gray-600 hover600\">Home</a>\n        <a href=\"#\" className=\"block text-gray-600 hover600\">Projects</a>\n        <a href=\"#\" className=\"block text-gray-600 hover600\">About</a>\n        <a href=\"#\" className=\"block text-gray-600 hover600\">Contact</a>\n      </div>\n    </nav>\n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@irahoza-daniel",
+    "authorUrl": "https://tailwindflex.com/@irahoza-daniel",
+    "sourceUrl": "https://tailwindflex.com/@irahoza-daniel/responsive-tailwind-css-navbar",
+    "mention": "Créé par @irahoza-daniel sur TailwindFlex",
+    "rawHtml": "<nav class=\"bg-white shadow-md\">\n  <div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\n    <div class=\"flex justify-between h-16\">\n      <!-- Logo -->\n      <div class=\"flex-shrink-0 flex items-center\">\n        <a href=\"#\" class=\"text-xl text-blue-600 font-bold text-gray-800\">DanDev</a>\n      </div>\n\n      <!-- Desktop Menu -->\n      <div class=\"hidden md:flex space-x-6 items-center\">\n        <a href=\"#\" class=\"text-gray-600 hover:text-blue-600 font-medium\">Home</a>\n        <a href=\"#\" class=\"text-gray-600 hover:text-blue-600 font-medium\">Projects</a>\n        <a href=\"#\" class=\"text-gray-600 hover:text-blue-600 font-medium\">About</a>\n        <a href=\"#\" class=\"text-gray-600 hover:text-blue-600 font-medium\">Contact</a>\n      </div>\n\n      <!-- Mobile Menu Button -->\n      <div class=\"md:hidden flex items-center\">\n        <button id=\"menu-btn\" class=\"text-gray-600 focus:outline-none\">\n          <svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"\n            xmlns=\"http://www.w3.org/2000/svg\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\n              d=\"M4 6h16M4 12h16M4 18h16\"></path>\n          </svg>\n        </button>\n      </div>\n    </div>\n  </div>\n\n\n  <div id=\"mobile-menu\" class=\"md:hidden hidden px-4 pb-4 space-y-2\">\n    <a href=\"#\" class=\"block text-gray-600 hover:text-blue-600\">Home</a>\n    <a href=\"#\" class=\"block text-gray-600 hover:text-blue-600\">Projects</a>\n    <a href=\"#\" class=\"block text-gray-600 hover:text-blue-600\">About</a>\n    <a href=\"#\" class=\"block text-gray-600 hover:text-blue-600\">Contact</a>\n  </div>\n</nav>\n\n<script>\n  const btn = document.getElementById('menu-btn');\n  const menu = document.getElementById('mobile-menu');\n\n  btn.addEventListener('click', () => {\n    menu.classList.toggle('hidden');\n  });\n</script>"
+  }
+}

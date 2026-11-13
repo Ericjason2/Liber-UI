@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "ribbon-at-corner",
+  "type": "registry:ui",
+  "title": "Ribbon at Corner",
+  "description": "Ribbon at Corner - Créé par @mohit sur TailwindFlex.",
+  "author": "@mohit (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/ribbon-at-corner.tsx",
+      "content": "/**\n * Component: Ribbon at Corner\n * Author: @mohit (https://tailwindflex.com/@mohit)\n * Source: https://tailwindflex.com/@mohit/ribbon-at-corner\n * Attribution: Créé par @mohit sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function RibbonAtCorner() {\n  return (\n    <div>\n    <div className=\"relative overflow-hidden w-56 h-56 bg-white border\">\n      <div className=\"absolute right-0 top-0 h-16 w-16\">\n        <div\n          className=\"absolute transform rotate-45 bg-green-600 text-center text-white font-semibold py-1 right-[-35px] top-[32px] w-[170px]\">\n          20% off\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mohit",
+    "authorUrl": "https://tailwindflex.com/@mohit",
+    "sourceUrl": "https://tailwindflex.com/@mohit/ribbon-at-corner",
+    "mention": "Créé par @mohit sur TailwindFlex",
+    "rawHtml": "<div class=\"relative overflow-hidden w-56 h-56 bg-white border\">\n  <div class=\"absolute right-0 top-0 h-16 w-16\">\n    <div\n      class=\"absolute transform rotate-45 bg-green-600 text-center text-white font-semibold py-1 right-[-35px] top-[32px] w-[170px]\">\n      20% off\n    </div>\n  </div>\n</div>"
+  }
+}

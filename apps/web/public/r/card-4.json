@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-4",
+  "type": "registry:ui",
+  "title": "card",
+  "description": "card - Créé par @Aman300 sur TailwindFlex.",
+  "author": "@Aman300 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-4.tsx",
+      "content": "/**\n * Component: card\n * Author: @Aman300 (https://tailwindflex.com/@Aman300)\n * Source: https://tailwindflex.com/@Aman300/card-4\n * Attribution: Créé par @Aman300 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Card4() {\n  return (\n    <div>\n    <div className=\"flex justify-center items-center xl lg md sm p-5\">\n      <div className=\"grid xl4 lg4 md4 sm2 grid-cols-1 xl5 lg5 md5 sm5 gap-5 px-5\">\n        <div className=\"text-center w-[200px] shadow-2xl rounded-2xl p-5 border\">\n          <h1 className=\"font-extrabold\">Card</h1>\n          <p className=\"text-sm\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus accusamus perspiciatis at harum quaerat ad dolore, quia ea rerum pariatur minus. Doloremque, odit cum inventore enim porro voluptatum laborum. Natus?</p>\n        </div>\n    \n        <div className=\"text-center w-[200px] shadow-2xl rounded-2xl p-5 border\">\n          <h1 className=\"font-extrabold\">Card</h1>\n          <p className=\"text-sm\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus accusamus perspiciatis at harum quaerat ad dolore, quia ea rerum pariatur minus. Doloremque, odit cum inventore enim porro voluptatum laborum. Natus?</p>\n        </div>\n    \n        <div className=\"text-center w-[200px] shadow-2xl rounded-2xl p-5 border\">\n          <h1 className=\"font-extrabold\">Card</h1>\n          <p className=\"text-sm\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus accusamus perspiciatis at harum quaerat ad dolore, quia ea rerum pariatur minus. Doloremque, odit cum inventore enim porro voluptatum laborum. Natus?</p>\n        </div>\n    \n        <div className=\"text-center w-[200px] shadow-2xl rounded-2xl p-5 border\">\n          <h1 className=\"font-extrabold\">Card</h1>\n          <p className=\"text-sm\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus accusamus perspiciatis at harum quaerat ad dolore, quia ea rerum pariatur minus. Doloremque, odit cum inventore enim porro voluptatum laborum. Natus?</p>\n        </div>\n    \n    \n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "grid",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@Aman300",
+    "authorUrl": "https://tailwindflex.com/@Aman300",
+    "sourceUrl": "https://tailwindflex.com/@Aman300/card-4",
+    "mention": "Créé par @Aman300 sur TailwindFlex",
+    "rawHtml": "<div class=\"flex justify-center items-center xl:h-screen lg:h-screen md:h-screen sm:h-screen p-5\">\n  <div class=\"grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 xl:gap-5 lg:gap-5 md:gap-5 sm:gap-5 gap-5 px-5\">\n    <div class=\"text-center w-[200px] shadow-2xl rounded-2xl p-5 border\">\n      <h1 class=\"font-extrabold\">Card</h1>\n      <p class=\"text-sm\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus accusamus perspiciatis at harum quaerat ad dolore, quia ea rerum pariatur minus. Doloremque, odit cum inventore enim porro voluptatum laborum. Natus?</p>\n    </div>\n\n    <div class=\"text-center w-[200px] shadow-2xl rounded-2xl p-5 border\">\n      <h1 class=\"font-extrabold\">Card</h1>\n      <p class=\"text-sm\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus accusamus perspiciatis at harum quaerat ad dolore, quia ea rerum pariatur minus. Doloremque, odit cum inventore enim porro voluptatum laborum. Natus?</p>\n    </div>\n\n    <div class=\"text-center w-[200px] shadow-2xl rounded-2xl p-5 border\">\n      <h1 class=\"font-extrabold\">Card</h1>\n      <p class=\"text-sm\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus accusamus perspiciatis at harum quaerat ad dolore, quia ea rerum pariatur minus. Doloremque, odit cum inventore enim porro voluptatum laborum. Natus?</p>\n    </div>\n\n    <div class=\"text-center w-[200px] shadow-2xl rounded-2xl p-5 border\">\n      <h1 class=\"font-extrabold\">Card</h1>\n      <p class=\"text-sm\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus accusamus perspiciatis at harum quaerat ad dolore, quia ea rerum pariatur minus. Doloremque, odit cum inventore enim porro voluptatum laborum. Natus?</p>\n    </div>\n\n\n  </div>\n</div>"
+  }
+}

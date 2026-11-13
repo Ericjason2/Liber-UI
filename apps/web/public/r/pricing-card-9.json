@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-card-9",
+  "type": "registry:ui",
+  "title": "Pricing card",
+  "description": "Pricing card - Créé par @piet-vriend sur TailwindFlex.",
+  "author": "@piet-vriend (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pricing-card-9.tsx",
+      "content": "/**\n * Component: Pricing card\n * Author: @piet-vriend (https://tailwindflex.com/@piet-vriend)\n * Source: https://tailwindflex.com/@piet-vriend/pricing-card-9\n * Attribution: Créé par @piet-vriend sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PricingCard9() {\n  return (\n    <div>\n    <div className=\"bg-white rounded-lg shadow-md overflow-hidden max-w-xs\">\n        <div className=\"bg-purple-500 px-6 py-8\">\n            <h3 className=\"text-lg font-medium text-white\">Starter Plan</h3>\n            <p className=\"text-gray-200 mt-2\">The perfect plan to get started</p>\n            <p className=\"text-gray-200 mt-2 text-2xl font-bold\">$9<span className=\"text-white text-base font-medium\">/month</span>\n            </p>\n        </div>\n        <div className=\"px-6 py-8\">\n            <ul className=\"text-gray-700 text-base leading-6\">\n                <li><span className=\"text-purple-500 font-medium mr-2\">&#10003;</span>Unlimited users</li>\n                <li><span className=\"text-purple-500 font-medium mr-2\">&#10003;</span>10GB storage</li>\n                <li><span className=\"text-purple-500 font-medium mr-2\">&#10003;</span>Email support</li>\n                <li><span className=\"text-purple-500 font-medium mr-2\">&#10003;</span>Basic analytics</li>\n            </ul>\n            <button className=\"mt-6 px-4 py-2 bg-purple-500 text-white font-medium rounded-full hover600 transition duration-200\">Sign up now</button>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@piet-vriend",
+    "authorUrl": "https://tailwindflex.com/@piet-vriend",
+    "sourceUrl": "https://tailwindflex.com/@piet-vriend/pricing-card-9",
+    "mention": "Créé par @piet-vriend sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white rounded-lg shadow-md overflow-hidden max-w-xs\">\n    <div class=\"bg-purple-500 px-6 py-8\">\n        <h3 class=\"text-lg font-medium text-white\">Starter Plan</h3>\n        <p class=\"text-gray-200 mt-2\">The perfect plan to get started</p>\n        <p class=\"text-gray-200 mt-2 text-2xl font-bold\">$9<span class=\"text-white text-base font-medium\">/month</span>\n        </p>\n    </div>\n    <div class=\"px-6 py-8\">\n        <ul class=\"text-gray-700 text-base leading-6\">\n            <li><span class=\"text-purple-500 font-medium mr-2\">&#10003;</span>Unlimited users</li>\n            <li><span class=\"text-purple-500 font-medium mr-2\">&#10003;</span>10GB storage</li>\n            <li><span class=\"text-purple-500 font-medium mr-2\">&#10003;</span>Email support</li>\n            <li><span class=\"text-purple-500 font-medium mr-2\">&#10003;</span>Basic analytics</li>\n        </ul>\n        <button class=\"mt-6 px-4 py-2 bg-purple-500 text-white font-medium rounded-full hover:bg-purple-600 transition duration-200\">Sign up now</button>\n    </div>\n</div>"
+  }
+}

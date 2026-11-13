@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "blog-post-card",
+  "type": "registry:ui",
+  "title": "Blog post card",
+  "description": "Blog post card - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/blog-post-card.tsx",
+      "content": "/**\n * Component: Blog post card\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/blog-post-card\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BlogPostCard() {\n  return (\n    <div>\n    <div className=\"min-h-screen flex flex-col p-8 sm16 md24 justify-center bg-white\">\n      \n      <div data-theme=\"teal\" className=\"mx-auto max-w-6xl\">\n        <h2 className=\"sr-only\">Featured case study</h2>\n        <section className=\"font-sans text-black\">\n          <div className=\"[ lg lg ] [ fancy-corners fancy-corners--large fancy-corners--top-left fancy-corners--bottom-right ]\">\n            <div className=\"flex-shrink-0 self-stretch sm40 md50 xl60\">\n              <div className=\"h-full\">\n                <article className=\"h-full\">\n                  <div className=\"h-full\">\n                    <img className=\"h-full object-cover\" src=\"https://inviqa.com/sites/default/files/styles/pullout/public/2020-08/XD-1.jpeg?h=f75d236a&itok=PBoXPDmW\" width=\"733\" height=\"412\" alt='\"\"' typeof=\"foaf\" />\n                  </div>\n                </article>\n              </div>\n            </div>\n            <div className=\"p-6 bg-grey\">\n              <div className=\"leading-relaxed\">\n                <h2 className=\"leading-tight text-4xl font-bold\">CXcon: Experience Transformation</h2>\n                <p className=\"mt-4\">Our second CXcon in October was dedicated to experience transformation. The free one-day virtual event&nbsp;brought together 230+ heads of digital, thought leaders, and UX practitioners to discuss all aspects of experience design..</p>\n                <p className=\"mt-4\">In a jam-packed day filled with keynote sessions, panels, and virtual networking we explored topics including design leadership, UX ethics, designing for emotion and innovation at scale.</p>\n                <p><a className=\"mt-4 button button--secondary\" href=\"https://inviqa.com/cxcon-experience-transformation\">Explore this event</a></p>\n              </div>\n            </div>\n          </div>\n        </section>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "call-to-action",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/blog-post-card",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<div class=\"min-h-screen flex flex-col p-8 sm:p-16 md:p-24 justify-center bg-white\">\n  <!-- Themes: blue, purple and teal -->\n  <div data-theme=\"teal\" class=\"mx-auto max-w-6xl\">\n    <h2 class=\"sr-only\">Featured case study</h2>\n    <section class=\"font-sans text-black\">\n      <div class=\"[ lg:flex lg:items-center ] [ fancy-corners fancy-corners--large fancy-corners--top-left fancy-corners--bottom-right ]\">\n        <div class=\"flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60\">\n          <div class=\"h-full\">\n            <article class=\"h-full\">\n              <div class=\"h-full\">\n                <img class=\"h-full object-cover\" src=\"https://inviqa.com/sites/default/files/styles/pullout/public/2020-08/XD-1.jpeg?h=f75d236a&itok=PBoXPDmW\" width=\"733\" height=\"412\" alt='\"\"' typeof=\"foaf:Image\" />\n              </div>\n            </article>\n          </div>\n        </div>\n        <div class=\"p-6 bg-grey\">\n          <div class=\"leading-relaxed\">\n            <h2 class=\"leading-tight text-4xl font-bold\">CXcon: Experience Transformation</h2>\n            <p class=\"mt-4\">Our second CXcon in October was dedicated to experience transformation. The free one-day virtual event&nbsp;brought together 230+ heads of digital, thought leaders, and UX practitioners to discuss all aspects of experience design..</p>\n            <p class=\"mt-4\">In a jam-packed day filled with keynote sessions, panels, and virtual networking we explored topics including design leadership, UX ethics, designing for emotion and innovation at scale.</p>\n            <p><a class=\"mt-4 button button--secondary\" href=\"https://inviqa.com/cxcon-experience-transformation\">Explore this event</a></p>\n          </div>\n        </div>\n      </div>\n    </section>\n  </div>\n</div>"
+  }
+}

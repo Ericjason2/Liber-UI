@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "navigation-bar",
+  "type": "registry:ui",
+  "title": "Navigation bar",
+  "description": "Navigation bar - Créé par @Aman300 sur TailwindFlex.",
+  "author": "@Aman300 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/navigation-bar.tsx",
+      "content": "/**\n * Component: Navigation bar\n * Author: @Aman300 (https://tailwindflex.com/@Aman300)\n * Source: https://tailwindflex.com/@Aman300/navigation-bar\n * Attribution: Créé par @Aman300 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NavigationBar() {\n  return (\n    <div>\n    <navbar>\n          <div className='w-full py-3 border-b'>\n    \n            <div className='flex justify-between px-20 items-center font-semibold'>\n              <div>\n                <h1 className=\"text-2xl\">LOGO</h1>\n              </div>\n              <div className='flex xl10 md8  gap-2'>\n                <a href=\"\">Home</a>\n                <a href=\"\">Work</a>\n                <a href=\"\">About</a>\n                <a href=\"\">Services</a>\n                <a href=\"\">Testimonial</a>\n              </div>\n              <div>\n                <button className='py-2 px-6 bg-black text-white rounded-3xl font-semibold'>Contact</button>\n              </div>\n            </div>\n            \n          </div>\n        </navbar>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@Aman300",
+    "authorUrl": "https://tailwindflex.com/@Aman300",
+    "sourceUrl": "https://tailwindflex.com/@Aman300/navigation-bar",
+    "mention": "Créé par @Aman300 sur TailwindFlex",
+    "rawHtml": "<navbar>\n      <div class='w-full py-3 border-b'>\n\n        <div class='flex justify-between px-20 items-center font-semibold'>\n          <div>\n            <h1 class=\"text-2xl\">LOGO</h1>\n          </div>\n          <div class='flex xl:gap-10 md:gap-8  gap-2'>\n            <a href=\"\">Home</a>\n            <a href=\"\">Work</a>\n            <a href=\"\">About</a>\n            <a href=\"\">Services</a>\n            <a href=\"\">Testimonial</a>\n          </div>\n          <div>\n            <button class='py-2 px-6 bg-black text-white rounded-3xl font-semibold'>Contact</button>\n          </div>\n        </div>\n        \n      </div>\n    </navbar>"
+  }
+}

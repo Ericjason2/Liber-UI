@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-navbar-using-css-only",
+  "type": "registry:ui",
+  "title": "Responsive NavBar Using CSS Only",
+  "description": "Responsive NavBar Using CSS Only - Créé par @shivam-vishvakarma sur TailwindFlex.",
+  "author": "@shivam-vishvakarma (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-navbar-using-css-only.tsx",
+      "content": "/**\n * Component: Responsive NavBar Using CSS Only\n * Author: @shivam-vishvakarma (https://tailwindflex.com/@shivam-vishvakarma)\n * Source: https://tailwindflex.com/@shivam-vishvakarma/responsive-navbar-using-css-only\n * Attribution: Créé par @shivam-vishvakarma sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveNavbarUsingCssOnly() {\n  return (\n    <div>\n    <header className=\"p-4 shadow-lg\">\r\n          <section\r\n            className=\"max-w-screen-xl mx-auto flex justify-between items-center group\"\r\n          >\r\n            <div\r\n              className=\"size-14 border rounded-full overflow-hidden border-black shadow-lg hover\"\r\n            >\r\n              <img\r\n                src=\"https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?semt=ais_hybrid&w=740\"\r\n              />\r\n            </div>\r\n            <input type=\"checkbox\" id=\"nav-toggle\" hidden />\r\n            <menu\r\n              className=\"flex gap-4 text-lg font-semibold fixed md md md8 bg-white md left-0 top-20 w-full md shadow-lg md flex-col md justify-center md p-4 md0 *:border-b md:*:border-none border-b-gray-200 md0 transition-all duration-300 ease-in-out -translate-y-[200%] group-has-[:checked]:translate-y-0 md0 z-10\"\r\n            >\r\n              <a href=\"/\"> Home </a>\r\n              <a href=\"/\"> About </a>\r\n              <a href=\"/\"> Portfolio </a>\r\n              <a href=\"/\"> Contact </a>\r\n            </menu>\r\n            <label\r\n              htmlFor=\"nav-toggle\"\r\n              className=\"cursor-pointer md text-2xl font-bold\"\r\n            >\r\n              <svg\r\n                xmlns=\"http://www.w3.org/2000/svg\"\r\n                fill=\"none\"\r\n                viewBox=\"0 0 24 24\"\r\n                strokeWidth=\"1.5\"\r\n                stroke=\"currentColor\"\r\n                className=\"w-8 h-8\"\r\n              >\r\n                <path\r\n                  strokeLinecap=\"round\"\r\n                  strokeLinejoin=\"round\"\r\n                  d=\"M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5\"\r\n                />\r\n              </svg>\r\n            </label>\r\n            <label htmlFor=\"nav-toggle\" className=\"hidden fixed group-has-[:checked]:block top-0 left-0 right-0 bottom-0 bg-black/10 z-0\"></label>\r\n          </section>\r\n        </header>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@shivam-vishvakarma",
+    "authorUrl": "https://tailwindflex.com/@shivam-vishvakarma",
+    "sourceUrl": "https://tailwindflex.com/@shivam-vishvakarma/responsive-navbar-using-css-only",
+    "mention": "Créé par @shivam-vishvakarma sur TailwindFlex",
+    "rawHtml": "<header class=\"p-4 shadow-lg\">\r\n      <section\r\n        class=\"max-w-screen-xl mx-auto flex justify-between items-center group\"\r\n      >\r\n        <div\r\n          class=\"size-14 border rounded-full overflow-hidden border-black shadow-lg hover:rotate\"\r\n        >\r\n          <img\r\n            src=\"https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?semt=ais_hybrid&w=740\"\r\n          />\r\n        </div>\r\n        <input type=\"checkbox\" id=\"nav-toggle\" hidden />\r\n        <menu\r\n          class=\"flex gap-4 text-lg font-semibold fixed md:static md:flex-row md:gap-8 bg-white md:bg-transparent left-0 top-20 w-full md:w-auto shadow-lg md:shadow-none flex-col md:flex-row justify-center md:justify-start p-4 md:p-0 *:border-b md:*:border-none border-b-gray-200 md:border-b-0 transition-all duration-300 ease-in-out -translate-y-[200%] group-has-[:checked]:translate-y-0 md:translate-y-0 z-10\"\r\n        >\r\n          <a href=\"/\"> Home </a>\r\n          <a href=\"/\"> About </a>\r\n          <a href=\"/\"> Portfolio </a>\r\n          <a href=\"/\"> Contact </a>\r\n        </menu>\r\n        <label\r\n          for=\"nav-toggle\"\r\n          class=\"cursor-pointer md:hidden text-2xl font-bold\"\r\n        >\r\n          <svg\r\n            xmlns=\"http://www.w3.org/2000/svg\"\r\n            fill=\"none\"\r\n            viewBox=\"0 0 24 24\"\r\n            stroke-width=\"1.5\"\r\n            stroke=\"currentColor\"\r\n            class=\"w-8 h-8\"\r\n          >\r\n            <path\r\n              stroke-linecap=\"round\"\r\n              stroke-linejoin=\"round\"\r\n              d=\"M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5\"\r\n            />\r\n          </svg>\r\n        </label>\r\n        <label for=\"nav-toggle\" class=\"hidden fixed group-has-[:checked]:block top-0 left-0 right-0 bottom-0 bg-black/10 z-0\"></label>\r\n      </section>\r\n    </header>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-sign-up-form",
+  "type": "registry:ui",
+  "title": "Simple Sign up form",
+  "description": "Simple Sign up form - Créé par @mdadul sur TailwindFlex.",
+  "author": "@mdadul (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-sign-up-form.tsx",
+      "content": "/**\n * Component: Simple Sign up form\n * Author: @mdadul (https://tailwindflex.com/@mdadul)\n * Source: https://tailwindflex.com/@mdadul/simple-sign-up-form\n * Attribution: Créé par @mdadul sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SimpleSignUpForm() {\n  return (\n    <div>\n    \n    <section>\n      \n      <div className=\"grid md md2\">\n        \n        <div className=\"flex flex-col items-center justify-center bg-white\">\n          \n          <div className=\"max-w-lg px-5 py-16 text-center md10 md24 lg32\">\n            \n            <h2 className=\"mb-8 text-3xl font-bold md12 md5xl\">Start your 14-day free trial</h2>\n            \n            <form className=\"mx-auto mb-4 max-w-sm pb-4\" name=\"wf-form-password\" method=\"get\">\n              <div className=\"relative\">\n                <img alt=\"\" src=\"https://assets.website-files.com/6357722e2a5f19121d37f84d/6357722e2a5f190b7e37f878_EnvelopeSimple.svg\" className=\"absolute bottom-0 left-[5%] right-auto top-[26%] inline-block\" />\n                <input type=\"email\" className=\"mb-4 block h-9 w-full border border-black bg-[#f2f2f7] px-3 py-6 pl-14 text-sm text-[#333333]\" maxlength=\"256\" name=\"name\" placeholder=\"Email Address\" required=\"\" />\n              </div>\n              <div className=\"relative mb-4\">\n                <img alt=\"\" src=\"https://assets.website-files.com/6357722e2a5f19121d37f84d/6357722e2a5f19601037f879_Lock-2.svg\" className=\"absolute bottom-0 left-[5%] right-auto top-[26%] inline-block\" />\n                <input type=\"password\" className=\"mb-4 block h-9 w-full border border-black bg-[#f2f2f7] px-3 py-6 pl-14 text-sm text-[#333333]\" placeholder=\"Password (min 8 characters)\" required=\"\" />\n              </div>\n              \n              <label className=\"mb-6 flex items-center pb-12 font-medium lg1\">\n                <input type=\"checkbox\" name=\"checkbox\" />\n                <span className=\"ml-4 inline-block cursor-pointer text-sm\" htmlFor=\"checkbox\">I agree with the <a href=\"#\" className=\"font-bold text-[#0b0b1f]\">Terms &amp; Conditions</a>\n                </span>\n              </label>\n              \n              <a href=\"#\" className=\"flex items-center justify-center bg-[#276ef1] px-8 py-4 text-center font-semibold text-white transition [box-shadow(171,_196,_245)_-8px_8px] hover:[box-shadow(171,_196,_245)_0px_0px]\">\n                <p className=\"mr-6 font-bold\">Join Flowspark</p>\n                <svg className=\"h-4 w-4 flex-none\" fill=\"currentColor\" viewBox=\"0 0 20 21\" xmlns=\"http://www.w3.org/2000/svg\">\n                  <title>Arrow Right</title>\n                  <polygon points=\"16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9\"></polygon>\n                </svg>\n              </a>\n            </form>\n            <p className=\"text-sm text-[#636262]\">Already have an account? <a href=\"#\" className=\"text-sm font-bold text-black\">Login now</a>\n            </p>\n          </div>\n        </div>\n        \n        <div className=\"flex flex-col items-center justify-center bg-[#f2f2f7]\">\n          \n          <div className=\"max-w-lg px-5 py-16 md10 md24 lg32\">\n            <div className=\"mb-6 ml-2 flex h-14 w-14 items-center justify-center bg-[#276ef1] [box-shadow(171,_196,_245)_-8px_8px]\">\n              <img src=\"https://assets.website-files.com/6357722e2a5f19121d37f84d/6358f5ec37c8c32b17d1c725_Vector-9.svg\" alt=\"\" className=\"inline-block\" />\n            </div>\n            <p className=\"mb-8 text-[#647084] md12 lg16\">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim.</p>\n            <p className=\"font-bold\">John Robert</p>\n            <p className=\"text-sm\">Senior Webflow Developer</p>\n          </div>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mdadul",
+    "authorUrl": "https://tailwindflex.com/@mdadul",
+    "sourceUrl": "https://tailwindflex.com/@mdadul/simple-sign-up-form",
+    "mention": "Créé par @mdadul sur TailwindFlex",
+    "rawHtml": "<!-- Section SING IN -->\n<section>\n  <!-- Container -->\n  <div class=\"grid md:h-screen md:grid-cols-2\">\n    <!-- Component -->\n    <div class=\"flex flex-col items-center justify-center bg-white\">\n      <!-- Wrapper -->\n      <div class=\"max-w-lg px-5 py-16 text-center md:px-10 md:py-24 lg:py-32\">\n        <!-- Title -->\n        <h2 class=\"mb-8 text-3xl font-bold md:mb-12 md:text-5xl\">Start your 14-day free trial</h2>\n        <!-- Form -->\n        <form class=\"mx-auto mb-4 max-w-sm pb-4\" name=\"wf-form-password\" method=\"get\">\n          <div class=\"relative\">\n            <img alt=\"\" src=\"https://assets.website-files.com/6357722e2a5f19121d37f84d/6357722e2a5f190b7e37f878_EnvelopeSimple.svg\" class=\"absolute bottom-0 left-[5%] right-auto top-[26%] inline-block\" />\n            <input type=\"email\" class=\"mb-4 block h-9 w-full border border-black bg-[#f2f2f7] px-3 py-6 pl-14 text-sm text-[#333333]\" maxlength=\"256\" name=\"name\" placeholder=\"Email Address\" required=\"\" />\n          </div>\n          <div class=\"relative mb-4\">\n            <img alt=\"\" src=\"https://assets.website-files.com/6357722e2a5f19121d37f84d/6357722e2a5f19601037f879_Lock-2.svg\" class=\"absolute bottom-0 left-[5%] right-auto top-[26%] inline-block\" />\n            <input type=\"password\" class=\"mb-4 block h-9 w-full border border-black bg-[#f2f2f7] px-3 py-6 pl-14 text-sm text-[#333333]\" placeholder=\"Password (min 8 characters)\" required=\"\" />\n          </div>\n          <!-- Сheckbox -->\n          <label class=\"mb-6 flex items-center pb-12 font-medium lg:mb-1\">\n            <input type=\"checkbox\" name=\"checkbox\" />\n            <span class=\"ml-4 inline-block cursor-pointer text-sm\" for=\"checkbox\">I agree with the <a href=\"#\" class=\"font-bold text-[#0b0b1f]\">Terms &amp; Conditions</a>\n            </span>\n          </label>\n          <!-- Button -->\n          <a href=\"#\" class=\"flex items-center justify-center bg-[#276ef1] px-8 py-4 text-center font-semibold text-white transition [box-shadow:rgb(171,_196,_245)_-8px_8px] hover:[box-shadow:rgb(171,_196,_245)_0px_0px]\">\n            <p class=\"mr-6 font-bold\">Join Flowspark</p>\n            <svg class=\"h-4 w-4 flex-none\" fill=\"currentColor\" viewBox=\"0 0 20 21\" xmlns=\"http://www.w3.org/2000/svg\">\n              <title>Arrow Right</title>\n              <polygon points=\"16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9\"></polygon>\n            </svg>\n          </a>\n        </form>\n        <p class=\"text-sm text-[#636262]\">Already have an account? <a href=\"#\" class=\"text-sm font-bold text-black\">Login now</a>\n        </p>\n      </div>\n    </div>\n    <!-- Component -->\n    <div class=\"flex flex-col items-center justify-center bg-[#f2f2f7]\">\n      <!-- Wrapper -->\n      <div class=\"max-w-lg px-5 py-16 md:px-10 md:py-24 lg:py-32\">\n        <div class=\"mb-6 ml-2 flex h-14 w-14 items-center justify-center bg-[#276ef1] [box-shadow:rgb(171,_196,_245)_-8px_8px]\">\n          <img src=\"https://assets.website-files.com/6357722e2a5f19121d37f84d/6358f5ec37c8c32b17d1c725_Vector-9.svg\" alt=\"\" class=\"inline-block\" />\n        </div>\n        <p class=\"mb-8 text-[#647084] md:mb-12 lg:mb-16\">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim.</p>\n        <p class=\"font-bold\">John Robert</p>\n        <p class=\"text-sm\">Senior Webflow Developer</p>\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

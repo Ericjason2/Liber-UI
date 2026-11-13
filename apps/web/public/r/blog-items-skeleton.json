@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "blog-items-skeleton",
+  "type": "registry:ui",
+  "title": "Blog items skeleton",
+  "description": "Blog items skeleton - Créé par @niianyetei sur TailwindFlex.",
+  "author": "@niianyetei (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/blog-items-skeleton.tsx",
+      "content": "/**\n * Component: Blog items skeleton\n * Author: @niianyetei (https://tailwindflex.com/@niianyetei)\n * Source: https://tailwindflex.com/@niianyetei/blog-items-skeleton\n * Attribution: Créé par @niianyetei sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BlogItemsSkeleton() {\n  return (\n    <div>\n    <section className=\"bg-white dark900\">\n            <div className=\"container px-6 py-10 mx-auto animate-pulse\">\n                <h1 className=\"w-48 h-2 mx-auto bg-gray-200 rounded-lg dark700\"></h1>\n    \n                <p className=\"w-64 h-2 mx-auto mt-4 bg-gray-200 rounded-lg dark700\"></p>\n                <p className=\"w-64 h-2 mx-auto mt-4 bg-gray-200 rounded-lg sm80 dark700\"></p>\n    \n                <div className=\"grid grid-cols-1 gap-8 mt-8 xl12 xl12 sm2 xl4 lg3\">\n                    <div className=\"w-full \">\n                        <div className=\"w-full h-64 bg-gray-300 rounded-lg dark600\"></div>\n                        \n                        <h1 className=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></h1>\n                        <p className=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></p>\n                    </div>\n    \n                    <div className=\"w-full \">\n                        <div className=\"w-full h-64 bg-gray-300 rounded-lg dark600\"></div>\n                        \n                        <h1 className=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></h1>\n                        <p className=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></p>\n                    </div>\n    \n                    <div className=\"w-full \">\n                        <div className=\"w-full h-64 bg-gray-300 rounded-lg dark600\"></div>\n                        \n                        <h1 className=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></h1>\n                        <p className=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></p>\n                    </div>\n    \n                    <div className=\"w-full \">\n                        <div className=\"w-full h-64 bg-gray-300 rounded-lg dark600\"></div>\n                        \n                        <h1 className=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></h1>\n                        <p className=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></p>\n                    </div>\n    \n                    <div className=\"w-full \">\n                        <div className=\"w-full h-64 bg-gray-300 rounded-lg dark600\"></div>\n                        \n                        <h1 className=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></h1>\n                        <p className=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></p>\n                    </div>\n    \n                    <div className=\"w-full \">\n                        <div className=\"w-full h-64 bg-gray-300 rounded-lg dark600\"></div>\n                        \n                        <h1 className=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></h1>\n                        <p className=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></p>\n                    </div>\n    \n                    <div className=\"w-full \">\n                        <div className=\"w-full h-64 bg-gray-300 rounded-lg dark600\"></div>\n                        \n                        <h1 className=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></h1>\n                        <p className=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></p>\n                    </div>\n    \n                    <div className=\"w-full \">\n                        <div className=\"w-full h-64 bg-gray-300 rounded-lg dark600\"></div>\n                        \n                        <h1 className=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></h1>\n                        <p className=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark700\"></p>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "grid",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@niianyetei",
+    "authorUrl": "https://tailwindflex.com/@niianyetei",
+    "sourceUrl": "https://tailwindflex.com/@niianyetei/blog-items-skeleton",
+    "mention": "Créé par @niianyetei sur TailwindFlex",
+    "rawHtml": "<section class=\"bg-white dark:bg-gray-900\">\n        <div class=\"container px-6 py-10 mx-auto animate-pulse\">\n            <h1 class=\"w-48 h-2 mx-auto bg-gray-200 rounded-lg dark:bg-gray-700\"></h1>\n\n            <p class=\"w-64 h-2 mx-auto mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></p>\n            <p class=\"w-64 h-2 mx-auto mt-4 bg-gray-200 rounded-lg sm:w-80 dark:bg-gray-700\"></p>\n\n            <div class=\"grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3\">\n                <div class=\"w-full \">\n                    <div class=\"w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600\"></div>\n                    \n                    <h1 class=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></h1>\n                    <p class=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></p>\n                </div>\n\n                <div class=\"w-full \">\n                    <div class=\"w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600\"></div>\n                    \n                    <h1 class=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></h1>\n                    <p class=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></p>\n                </div>\n\n                <div class=\"w-full \">\n                    <div class=\"w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600\"></div>\n                    \n                    <h1 class=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></h1>\n                    <p class=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></p>\n                </div>\n\n                <div class=\"w-full \">\n                    <div class=\"w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600\"></div>\n                    \n                    <h1 class=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></h1>\n                    <p class=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></p>\n                </div>\n\n                <div class=\"w-full \">\n                    <div class=\"w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600\"></div>\n                    \n                    <h1 class=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></h1>\n                    <p class=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></p>\n                </div>\n\n                <div class=\"w-full \">\n                    <div class=\"w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600\"></div>\n                    \n                    <h1 class=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></h1>\n                    <p class=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></p>\n                </div>\n\n                <div class=\"w-full \">\n                    <div class=\"w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600\"></div>\n                    \n                    <h1 class=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></h1>\n                    <p class=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></p>\n                </div>\n\n                <div class=\"w-full \">\n                    <div class=\"w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600\"></div>\n                    \n                    <h1 class=\"w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></h1>\n                    <p class=\"w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700\"></p>\n                </div>\n            </div>\n        </div>\n    </section>"
+  }
+}

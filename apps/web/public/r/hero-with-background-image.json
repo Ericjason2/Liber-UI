@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-with-background-image",
+  "type": "registry:ui",
+  "title": "Hero with Background Image",
+  "description": "Hero with Background Image - Créé par @ariaw sur TailwindFlex.",
+  "author": "@ariaw (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-with-background-image.tsx",
+      "content": "/**\n * Component: Hero with Background Image\n * Author: @ariaw (https://tailwindflex.com/@ariaw)\n * Source: https://tailwindflex.com/@ariaw/hero-with-background-image\n * Attribution: Créé par @ariaw sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroWithBackgroundImage() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Hero with Background Image</title>\\n    \\n    <link rel=\\\"preconnect\\\" href=\\\"https://fonts.googleapis.com\\\">\\n    <link rel=\\\"preconnect\\\" href=\\\"https://fonts.gstatic.com\\\" crossorigin>\\n    <link href=\\\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap\\\" rel=\\\"stylesheet\\\">\\n  <style>\\n    body {\\n      font-family: 'Inter', sans-serif;\\n    }\\n  </style>\\n</head>\\n<body>\\n    <!-- Hero Model 1: Full Background Image -->\\n    <section class=\\\"relative min-h-screen flex items-center justify-center bg-gray-900\\\">\\n        <!-- Background Image -->\\n        <div class=\\\"absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20\\\" style=\\\"background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80')\\\"></div>\\n        \\n        <!-- Overlay -->\\n        <div class=\\\"absolute inset-0 bg-black opacity-40\\\"></div>\\n\\n        <!-- Content -->\\n        <div class=\\\"relative max-w-7xl mx-auto w-full py-12 md:py-20 px-4 sm:px-6 lg:px-8 text-center\\\">\\n            <!-- Badge -->\\n            <div class=\\\"inline-flex items-center px-4 py-2 bg-white rounded-none shadow-sm mb-6\\\">\\n                <span class=\\\"text-sm font-medium text-gray-500\\\">Premium Digital Solutions</span>\\n            </div>\\n\\n            <!-- Main Heading -->\\n            <h1 class=\\\"text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight\\\">\\n                Transform Your Digital \\n                <span class=\\\"text-gray-300 block mt-2\\\">Presence Today</span>\\n            </h1>\\n\\n            <!-- Description -->\\n            <p class=\\\"text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto\\\">\\n                We create stunning digital experiences that captivate your audience and drive meaningful results for your business growth and success.\\n            </p>\\n\\n            <!-- CTA Buttons -->\\n            <div class=\\\"flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center\\\">\\n                <button class=\\\"px-6 sm:px-8 py-3 sm:py-4 bg-white text-black text-base sm:text-lg font-medium hover:bg-gray-100 transition-colors whitespace-nowrap\\\">\\n                    Start Your Project\\n                </button>\\n                <button class=\\\"px-6 sm:px-8 py-3 sm:py-4 bg-transparent text-white border border-white text-base sm:text-lg font-medium hover:bg-white hover:text-black transition-colors whitespace-nowrap\\\">\\n                    View Case Studies\\n                </button>\\n            </div>\\n\\n            <!-- Stats -->\\n            <div class=\\\"grid grid-cols-3 gap-4 sm:gap-6 mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-600\\\">\\n                <div class=\\\"text-center\\\">\\n                    <div class=\\\"text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1\\\">99%</div>\\n                    <div class=\\\"text-gray-400 text-xs sm:text-sm\\\">Client Satisfaction</div>\\n                </div>\\n                <div class=\\\"text-center\\\">\\n                    <div class=\\\"text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1\\\">24/7</div>\\n                    <div class=\\\"text-gray-400 text-xs sm:text-sm\\\">Support</div>\\n                </div>\\n                <div class=\\\"text-center\\\">\\n                    <div class=\\\"text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1\\\">5x</div>\\n                    <div class=\\\"text-gray-400 text-xs sm:text-sm\\\">ROI Average</div>\\n                </div>\\n            </div>\\n        </div>\\n\\n        <!-- Scroll Indicator -->\\n        <div class=\\\"absolute bottom-8 left-1/2 transform -translate-x-1/2\\\">\\n            <div class=\\\"inline-flex flex-col items-center text-gray-400\\\">\\n                <span class=\\\"text-xs sm:text-sm mb-2\\\">Scroll to explore</span>\\n                <svg class=\\\"w-4 h-4 sm:w-5 sm:h-5 animate-bounce\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" viewBox=\\\"0 0 24 24\\\">\\n                    <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" stroke-width=\\\"2\\\" d=\\\"M19 14l-7 7m0 0l-7-7m7 7V3\\\"></path>\\n                </svg>\\n            </div>\\n        </div>\\n    </section>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ariaw",
+    "authorUrl": "https://tailwindflex.com/@ariaw",
+    "sourceUrl": "https://tailwindflex.com/@ariaw/hero-with-background-image",
+    "mention": "Créé par @ariaw sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Hero with Background Image</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n    <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap\" rel=\"stylesheet\">\n  <style>\n    body {\n      font-family: 'Inter', sans-serif;\n    }\n  </style>\n</head>\n<body>\n    <!-- Hero Model 1: Full Background Image -->\n    <section class=\"relative min-h-screen flex items-center justify-center bg-gray-900\">\n        <!-- Background Image -->\n        <div class=\"absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20\" style=\"background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80')\"></div>\n        \n        <!-- Overlay -->\n        <div class=\"absolute inset-0 bg-black opacity-40\"></div>\n\n        <!-- Content -->\n        <div class=\"relative max-w-7xl mx-auto w-full py-12 md:py-20 px-4 sm:px-6 lg:px-8 text-center\">\n            <!-- Badge -->\n            <div class=\"inline-flex items-center px-4 py-2 bg-white rounded-none shadow-sm mb-6\">\n                <span class=\"text-sm font-medium text-gray-500\">Premium Digital Solutions</span>\n            </div>\n\n            <!-- Main Heading -->\n            <h1 class=\"text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight\">\n                Transform Your Digital \n                <span class=\"text-gray-300 block mt-2\">Presence Today</span>\n            </h1>\n\n            <!-- Description -->\n            <p class=\"text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto\">\n                We create stunning digital experiences that captivate your audience and drive meaningful results for your business growth and success.\n            </p>\n\n            <!-- CTA Buttons -->\n            <div class=\"flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center\">\n                <button class=\"px-6 sm:px-8 py-3 sm:py-4 bg-white text-black text-base sm:text-lg font-medium hover:bg-gray-100 transition-colors whitespace-nowrap\">\n                    Start Your Project\n                </button>\n                <button class=\"px-6 sm:px-8 py-3 sm:py-4 bg-transparent text-white border border-white text-base sm:text-lg font-medium hover:bg-white hover:text-black transition-colors whitespace-nowrap\">\n                    View Case Studies\n                </button>\n            </div>\n\n            <!-- Stats -->\n            <div class=\"grid grid-cols-3 gap-4 sm:gap-6 mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-600\">\n                <div class=\"text-center\">\n                    <div class=\"text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1\">99%</div>\n                    <div class=\"text-gray-400 text-xs sm:text-sm\">Client Satisfaction</div>\n                </div>\n                <div class=\"text-center\">\n                    <div class=\"text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1\">24/7</div>\n                    <div class=\"text-gray-400 text-xs sm:text-sm\">Support</div>\n                </div>\n                <div class=\"text-center\">\n                    <div class=\"text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1\">5x</div>\n                    <div class=\"text-gray-400 text-xs sm:text-sm\">ROI Average</div>\n                </div>\n            </div>\n        </div>\n\n        <!-- Scroll Indicator -->\n        <div class=\"absolute bottom-8 left-1/2 transform -translate-x-1/2\">\n            <div class=\"inline-flex flex-col items-center text-gray-400\">\n                <span class=\"text-xs sm:text-sm mb-2\">Scroll to explore</span>\n                <svg class=\"w-4 h-4 sm:w-5 sm:h-5 animate-bounce\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M19 14l-7 7m0 0l-7-7m7 7V3\"></path>\n                </svg>\n            </div>\n        </div>\n    </section>\n</body>\n</html>"
+  }
+}

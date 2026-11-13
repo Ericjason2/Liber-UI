@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "trading",
+  "type": "registry:ui",
+  "title": "Trading",
+  "description": "Trading - Créé par @nii-fanny sur TailwindFlex.",
+  "author": "@nii-fanny (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/trading.tsx",
+      "content": "/**\n * Component: Trading\n * Author: @nii-fanny (https://tailwindflex.com/@nii-fanny)\n * Source: https://tailwindflex.com/@nii-fanny/trading\n * Attribution: Créé par @nii-fanny sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Trading() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>AgroTrade - Cash Crop Marketplace</title>\\n   s\\n</head>\\n<body>\\n    <header>\\n        <h1>AgroTrade</h1>\\n        <nav>\\n            <ul>\\n                <li><a href=\\\"#\\\">Home</a></li>\\n                <li><a href=\\\"#crops\\\">Crops</a></li>\\n                <li><a href=\\\"#trade\\\">Trade</a></li>\\n                <li><a href=\\\"#contact\\\">Contact</a></li>\\n            </ul>\\n        </nav>\\n    </header>\\n\\n    <section class=\\\"hero\\\">\\n        <h2>Trade Cash Crops Directly with Farmers</h2>\\n        <p>Connecting buyers and sellers of fresh, quality cash crops.</p>\\n    </section>\\n\\n    <section id=\\\"crops\\\" class=\\\"crop-list\\\">\\n        <h2>Available Cash Crops</h2>\\n        <div class=\\\"crop-card\\\">\\n            <img src=\\\"https://via.placeholder.com/200\\\" alt=\\\"Maize\\\">\\n            <h3>Maize</h3>\\n            <p>Price: $250/ton</p>\\n        </div>\\n        <div class=\\\"crop-card\\\">\\n            <img src=\\\"https://via.placeholder.com/200\\\" alt=\\\"Cotton\\\">\\n            <h3>Cotton</h3>\\n            <p>Price: $400/ton</p>\\n        </div>\\n        <div class=\\\"crop-card\\\">\\n            <img src=\\\"https://via.placeholder.com/200\\\" alt=\\\"Soybean\\\">\\n            <h3>Soybean</h3>\\n            <p>Price: $350/ton</p>\\n        </div>\\n    </section>\\n\\n    <section id=\\\"trade\\\" class=\\\"trade-form\\\">\\n        <h2>Trade With Us</h2>\\n        <form>\\n            <input type=\\\"text\\\" placeholder=\\\"Your Name\\\" required>\\n            <input type=\\\"email\\\" placeholder=\\\"Your Email\\\" required>\\n            <select required>\\n                <option value=\\\"\\\">Select Crop</option>\\n                <option value=\\\"maize\\\">Maize</option>\\n                <option value=\\\"cotton\\\">Cotton</option>\\n                <option value=\\\"soybean\\\">Soybean</option>\\n            </select>\\n            <textarea placeholder=\\\"Enter your trade offer or message...\\\" required></textarea>\\n            <button type=\\\"submit\\\">Submit</button>\\n        </form>\\n    </section>\\n\\n    <footer id=\\\"contact\\\">\\n        <p>&copy; 2025 AgroTrade. All rights reserved.</p>\\n    </footer>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@nii-fanny",
+    "authorUrl": "https://tailwindflex.com/@nii-fanny",
+    "sourceUrl": "https://tailwindflex.com/@nii-fanny/trading",
+    "mention": "Créé par @nii-fanny sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>AgroTrade - Cash Crop Marketplace</title>\n   s\n</head>\n<body>\n    <header>\n        <h1>AgroTrade</h1>\n        <nav>\n            <ul>\n                <li><a href=\"#\">Home</a></li>\n                <li><a href=\"#crops\">Crops</a></li>\n                <li><a href=\"#trade\">Trade</a></li>\n                <li><a href=\"#contact\">Contact</a></li>\n            </ul>\n        </nav>\n    </header>\n\n    <section class=\"hero\">\n        <h2>Trade Cash Crops Directly with Farmers</h2>\n        <p>Connecting buyers and sellers of fresh, quality cash crops.</p>\n    </section>\n\n    <section id=\"crops\" class=\"crop-list\">\n        <h2>Available Cash Crops</h2>\n        <div class=\"crop-card\">\n            <img src=\"https://via.placeholder.com/200\" alt=\"Maize\">\n            <h3>Maize</h3>\n            <p>Price: $250/ton</p>\n        </div>\n        <div class=\"crop-card\">\n            <img src=\"https://via.placeholder.com/200\" alt=\"Cotton\">\n            <h3>Cotton</h3>\n            <p>Price: $400/ton</p>\n        </div>\n        <div class=\"crop-card\">\n            <img src=\"https://via.placeholder.com/200\" alt=\"Soybean\">\n            <h3>Soybean</h3>\n            <p>Price: $350/ton</p>\n        </div>\n    </section>\n\n    <section id=\"trade\" class=\"trade-form\">\n        <h2>Trade With Us</h2>\n        <form>\n            <input type=\"text\" placeholder=\"Your Name\" required>\n            <input type=\"email\" placeholder=\"Your Email\" required>\n            <select required>\n                <option value=\"\">Select Crop</option>\n                <option value=\"maize\">Maize</option>\n                <option value=\"cotton\">Cotton</option>\n                <option value=\"soybean\">Soybean</option>\n            </select>\n            <textarea placeholder=\"Enter your trade offer or message...\" required></textarea>\n            <button type=\"submit\">Submit</button>\n        </form>\n    </section>\n\n    <footer id=\"contact\">\n        <p>&copy; 2025 AgroTrade. All rights reserved.</p>\n    </footer>\n</body>\n</html>"
+  }
+}

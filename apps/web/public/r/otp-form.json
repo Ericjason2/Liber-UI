@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "otp-form",
+  "type": "registry:ui",
+  "title": "Otp form",
+  "description": "Otp form - Créé par @rafferty sur TailwindFlex.",
+  "author": "@rafferty (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/otp-form.tsx",
+      "content": "/**\n * Component: Otp form\n * Author: @rafferty (https://tailwindflex.com/@rafferty)\n * Source: https://tailwindflex.com/@rafferty/otp-form\n * Attribution: Créé par @rafferty sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function OtpForm() {\n  return (\n    <div>\n    <div className=\"max-w-md mx-auto border mt-20\">\r\n        <form className=\"bg-white shadow-md rounded px-8 py-6\">\r\n            <div className=\"mb-4\">\r\n                <label className=\"block text-gray-700 text-sm font-bold mb-2\" htmlFor=\"otp\">OTP:</label>\r\n                <input className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\" id=\"otp\" type=\"text\" placeholder=\"Enter OTP\" />\r\n            </div>\r\n            <div className=\"flex items-center justify-between\">\r\n                <button className=\"bg-teal-500 hover700 text-white font-bold py-2 px-4 rounded focus focus\" type=\"button\">\r\n                    Verify\r\n                 </button>\r\n                <a className=\"inline-block align-baseline font-bold text-sm text-teal-500 hover800\" href=\"#\">\r\n                    Resend OTP\r\n                </a>\r\n            </div>\r\n        </form>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rafferty",
+    "authorUrl": "https://tailwindflex.com/@rafferty",
+    "sourceUrl": "https://tailwindflex.com/@rafferty/otp-form",
+    "mention": "Créé par @rafferty sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-md mx-auto border mt-20\">\r\n    <form class=\"bg-white shadow-md rounded px-8 py-6\">\r\n        <div class=\"mb-4\">\r\n            <label class=\"block text-gray-700 text-sm font-bold mb-2\" for=\"otp\">OTP:</label>\r\n            <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"otp\" type=\"text\" placeholder=\"Enter OTP\">\r\n        </div>\r\n        <div class=\"flex items-center justify-between\">\r\n            <button class=\"bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\" type=\"button\">\r\n                Verify\r\n             </button>\r\n            <a class=\"inline-block align-baseline font-bold text-sm text-teal-500 hover:text-teal-800\" href=\"#\">\r\n                Resend OTP\r\n            </a>\r\n        </div>\r\n    </form>\r\n</div>"
+  }
+}

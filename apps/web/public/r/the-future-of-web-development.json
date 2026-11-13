@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "the-future-of-web-development",
+  "type": "registry:ui",
+  "title": "The Future of Web Development",
+  "description": "The Future of Web Development - Créé par @mfuranziza-hamza sur TailwindFlex.",
+  "author": "@mfuranziza-hamza (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/the-future-of-web-development.tsx",
+      "content": "/**\n * Component: The Future of Web Development\n * Author: @mfuranziza-hamza (https://tailwindflex.com/@mfuranziza-hamza)\n * Source: https://tailwindflex.com/@mfuranziza-hamza/the-future-of-web-development\n * Attribution: Créé par @mfuranziza-hamza sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TheFutureOfWebDevelopment() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n  <title>Smart UI Cards</title>\\n  \\n</head>\\n<body class=\\\"bg-gray-100 p-10\\\">\\n\\n  <section class=\\\"max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\\\">\\n\\n    <!-- Blog Card -->\\n    <article class=\\\"bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow\\\">\\n      <img class=\\\"w-full h-48 object-cover rounded-t-xl\\\" src=\\\"https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d\\\" alt=\\\"Web Dev Blog\\\" />\\n      <div class=\\\"p-6\\\">\\n        <span class=\\\"inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mb-4\\\">Technology</span>\\n        <h2 class=\\\"text-xl font-bold text-gray-800 mb-2\\\">The Future of Web Development</h2>\\n        <p class=\\\"text-gray-600 mb-4\\\">Explore trends shaping web development.</p>\\n        <div class=\\\"flex justify-between items-center\\\">\\n          <button class=\\\"bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700\\\">Read More</button>\\n          <span class=\\\"text-sm text-gray-500\\\">5 min read</span>\\n        </div>\\n      </div>\\n    </article>\\n\\n    <!-- Product Card -->\\n    <article class=\\\"bg-white rounded-xl shadow-md hover:scale-105 transform transition\\\">\\n      <div class=\\\"relative\\\">\\n        <img class=\\\"w-full h-48 object-cover\\\" src=\\\"https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d\\\" alt=\\\"Wireless Headphones\\\" />\\n        <span class=\\\"absolute top-2 right-2 bg-red-500 text-white text-sm px-3 py-1 rounded-full\\\">30% OFF</span>\\n      </div>\\n      <div class=\\\"p-6\\\">\\n        <div class=\\\"flex items-center mb-2\\\">\\n          <span class=\\\"text-yellow-400\\\">★★★★★</span>\\n          <span class=\\\"text-gray-600 ml-2\\\">(128 reviews)</span>\\n        </div>\\n        <h3 class=\\\"text-xl font-bold text-gray-800 mb-2\\\">Premium Wireless Headphones</h3>\\n        <div class=\\\"flex items-center\\\">\\n          <span class=\\\"text-2xl font-bold text-gray-900\\\">$199</span>\\n          <span class=\\\"line-through text-gray-500 ml-2\\\">$299</span>\\n        </div>\\n        <button class=\\\"w-full mt-4 bg-emerald-600 text-white py-3 rounded-lg hover:bg-emerald-700\\\">Add to Cart</button>\\n      </div>\\n    </article>\\n\\n    <!-- Profile Card -->\\n    <article class=\\\"bg-white rounded-xl shadow-md overflow-hidden text-center\\\">\\n      <div class=\\\"bg-blue-100 h-32 relative\\\">\\n        <img class=\\\"w-24 h-24 rounded-full border-4 border-white mx-auto absolute -bottom-12 left-1/2 transform -translate-x-1/2\\\"\\n             src=\\\"https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d\\\" alt=\\\"Hamza's profile picture\\\" />\\n      </div>\\n      <div class=\\\"pt-16 pb-6\\\">\\n        <h3 class=\\\"text-xl font-bold text-gray-800 mb-1\\\">HAMZA</h3>\\n        <p class=\\\"text-gray-600 mb-4\\\">Senior UX Designer</p>\\n        <div class=\\\"flex justify-center space-x-4 mb-4\\\">\\n          <div>\\n            <p class=\\\"font-bold text-gray-800\\\">2.8k</p>\\n            <p class=\\\"text-gray-600 text-sm\\\">Followers</p>\\n          </div>\\n          <div>\\n            <p class=\\\"font-bold text-gray-800\\\">348</p>\\n            <p class=\\\"text-gray-600 text-sm\\\">Following</p>\\n          </div>\\n        </div>\\n        <div class=\\\"flex justify-center space-x-3\\\">\\n          <button class=\\\"bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700\\\">Follow</button>\\n          <button class=\\\"border border-gray-300 text-gray-600 px-6 py-2 rounded-full hover:bg-gray-50\\\">Message</button>\\n        </div>\\n      </div>\\n    </article>\\n\\n  </section>\\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "landing-page",
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@mfuranziza-hamza",
+    "authorUrl": "https://tailwindflex.com/@mfuranziza-hamza",
+    "sourceUrl": "https://tailwindflex.com/@mfuranziza-hamza/the-future-of-web-development",
+    "mention": "Créé par @mfuranziza-hamza sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>Smart UI Cards</title>\n  <script src=\"https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d\"></script>\n</head>\n<body class=\"bg-gray-100 p-10\">\n\n  <section class=\"max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\">\n\n    <!-- Blog Card -->\n    <article class=\"bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow\">\n      <img class=\"w-full h-48 object-cover rounded-t-xl\" src=\"https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d\" alt=\"Web Dev Blog\" />\n      <div class=\"p-6\">\n        <span class=\"inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mb-4\">Technology</span>\n        <h2 class=\"text-xl font-bold text-gray-800 mb-2\">The Future of Web Development</h2>\n        <p class=\"text-gray-600 mb-4\">Explore trends shaping web development.</p>\n        <div class=\"flex justify-between items-center\">\n          <button class=\"bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700\">Read More</button>\n          <span class=\"text-sm text-gray-500\">5 min read</span>\n        </div>\n      </div>\n    </article>\n\n    <!-- Product Card -->\n    <article class=\"bg-white rounded-xl shadow-md hover:scale-105 transform transition\">\n      <div class=\"relative\">\n        <img class=\"w-full h-48 object-cover\" src=\"https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d\" alt=\"Wireless Headphones\" />\n        <span class=\"absolute top-2 right-2 bg-red-500 text-white text-sm px-3 py-1 rounded-full\">30% OFF</span>\n      </div>\n      <div class=\"p-6\">\n        <div class=\"flex items-center mb-2\">\n          <span class=\"text-yellow-400\">★★★★★</span>\n          <span class=\"text-gray-600 ml-2\">(128 reviews)</span>\n        </div>\n        <h3 class=\"text-xl font-bold text-gray-800 mb-2\">Premium Wireless Headphones</h3>\n        <div class=\"flex items-center\">\n          <span class=\"text-2xl font-bold text-gray-900\">$199</span>\n          <span class=\"line-through text-gray-500 ml-2\">$299</span>\n        </div>\n        <button class=\"w-full mt-4 bg-emerald-600 text-white py-3 rounded-lg hover:bg-emerald-700\">Add to Cart</button>\n      </div>\n    </article>\n\n    <!-- Profile Card -->\n    <article class=\"bg-white rounded-xl shadow-md overflow-hidden text-center\">\n      <div class=\"bg-blue-100 h-32 relative\">\n        <img class=\"w-24 h-24 rounded-full border-4 border-white mx-auto absolute -bottom-12 left-1/2 transform -translate-x-1/2\"\n             src=\"https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d\" alt=\"Hamza's profile picture\" />\n      </div>\n      <div class=\"pt-16 pb-6\">\n        <h3 class=\"text-xl font-bold text-gray-800 mb-1\">HAMZA</h3>\n        <p class=\"text-gray-600 mb-4\">Senior UX Designer</p>\n        <div class=\"flex justify-center space-x-4 mb-4\">\n          <div>\n            <p class=\"font-bold text-gray-800\">2.8k</p>\n            <p class=\"text-gray-600 text-sm\">Followers</p>\n          </div>\n          <div>\n            <p class=\"font-bold text-gray-800\">348</p>\n            <p class=\"text-gray-600 text-sm\">Following</p>\n          </div>\n        </div>\n        <div class=\"flex justify-center space-x-3\">\n          <button class=\"bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700\">Follow</button>\n          <button class=\"border border-gray-300 text-gray-600 px-6 py-2 rounded-full hover:bg-gray-50\">Message</button>\n        </div>\n      </div>\n    </article>\n\n  </section>\n\n</body>\n</html>"
+  }
+}

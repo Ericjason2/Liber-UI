@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-to-action-box",
+  "type": "registry:ui",
+  "title": "Call to Action Box",
+  "description": "Call to Action Box - Créé par @aitrik-saha sur TailwindFlex.",
+  "author": "@aitrik-saha (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-to-action-box.tsx",
+      "content": "/**\n * Component: Call to Action Box\n * Author: @aitrik-saha (https://tailwindflex.com/@aitrik-saha)\n * Source: https://tailwindflex.com/@aitrik-saha/call-to-action-box\n * Attribution: Créé par @aitrik-saha sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToActionBox() {\n  return (\n    <div>\n    <div className=\"p-4 lg2\">\n      <div\n        className=\"bg-gradient-to-r from-green-900 to-green-600 text-white p-8 flex flex-col lg rounded-2xl items-center lg lg\">\n        <div className=\"lg1/2 space-y-6 flex flex-col justify-start\">\n          <h2 className=\"text-sm uppercase font-semibold tracking-widest text-start\">\n            Premium Services\n          </h2>\n          <h1 className=\"text-4xl lg5xl font-bold leading-tight text-start\">\n            Revolutionize your business with <span className=\"text-green-300\">innovative solutions</span>\n          </h1>\n          <p className=\"text-lg text-gray-300 text-start\">\n            Unlock cutting-edge tools and connect with the best professionals to drive success and growth. Achieve new heights in business operations.\n          </p>\n          <ul className=\"space-y-2\">\n            <li className=\"flex items-center space-x-2 text-start\">\n              <span className=\"text-green-300\">✓</span>\n              <span>Access top-tier experts to strengthen your team</span>\n            </li>\n            <li className=\"flex items-center space-x-2 text-start\">\n              <span className=\"text-green-300\">✓</span>\n              <span>Seamlessly manage projects and optimize workflows</span>\n            </li>\n            <li className=\"flex items-center space-x-2 text-start\">\n              <span className=\"text-green-300\">✓</span>\n              <span>Benefit from continuous support and end-to-end solutions</span>\n            </li>\n          </ul>\n          <button\n            className=\"bg-white text-green-900 font-bold py-2 px-4 rounded hover200 transition\">\n            Discover More\n          </button>\n        </div>\n        <div className=\"hidden lg lg1/2 mt-8 lg0 justify-center\">\n          <img\n            src=\"https://images.unsplash.com/photo-1621060344848-262c81b806a2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVwbGV8ZW58MHx8MHx8fDA%3D\"\n            alt=\"Business Solutions\"\n            className=\"rounded-lg shadow-lg h-full\" />\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "call-to-action",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@aitrik-saha",
+    "authorUrl": "https://tailwindflex.com/@aitrik-saha",
+    "sourceUrl": "https://tailwindflex.com/@aitrik-saha/call-to-action-box",
+    "mention": "Créé par @aitrik-saha sur TailwindFlex",
+    "rawHtml": "<div class=\"p-4 lg:mx-2\">\n  <div\n    class=\"bg-gradient-to-r from-green-900 to-green-600 text-white p-8 flex flex-col lg:flex-row rounded-2xl items-center lg:items-start lg:justify-between\">\n    <div class=\"lg:w-1/2 space-y-6 flex flex-col justify-start\">\n      <h2 class=\"text-sm uppercase font-semibold tracking-widest text-start\">\n        Premium Services\n      </h2>\n      <h1 class=\"text-4xl lg:text-5xl font-bold leading-tight text-start\">\n        Revolutionize your business with <span class=\"text-green-300\">innovative solutions</span>\n      </h1>\n      <p class=\"text-lg text-gray-300 text-start\">\n        Unlock cutting-edge tools and connect with the best professionals to drive success and growth. Achieve new heights in business operations.\n      </p>\n      <ul class=\"space-y-2\">\n        <li class=\"flex items-center space-x-2 text-start\">\n          <span class=\"text-green-300\">✓</span>\n          <span>Access top-tier experts to strengthen your team</span>\n        </li>\n        <li class=\"flex items-center space-x-2 text-start\">\n          <span class=\"text-green-300\">✓</span>\n          <span>Seamlessly manage projects and optimize workflows</span>\n        </li>\n        <li class=\"flex items-center space-x-2 text-start\">\n          <span class=\"text-green-300\">✓</span>\n          <span>Benefit from continuous support and end-to-end solutions</span>\n        </li>\n      </ul>\n      <button\n        class=\"bg-white text-green-900 font-bold py-2 px-4 rounded hover:bg-gray-200 transition\">\n        Discover More\n      </button>\n    </div>\n    <div class=\"hidden lg:flex lg:w-1/2 mt-8 lg:mt-0 justify-center\">\n      <img\n        src=\"https://images.unsplash.com/photo-1621060344848-262c81b806a2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVwbGV8ZW58MHx8MHx8fDA%3D\"\n        alt=\"Business Solutions\"\n        class=\"rounded-lg shadow-lg h-full\" />\n    </div>\n  </div>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "beutiful-post-cards",
+  "type": "registry:ui",
+  "title": "Beautiful post cards",
+  "description": "Beautiful post cards - Créé par @matej-kovac sur TailwindFlex.",
+  "author": "@matej-kovac (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/beutiful-post-cards.tsx",
+      "content": "/**\n * Component: Beautiful post cards\n * Author: @matej-kovac (https://tailwindflex.com/@matej-kovac)\n * Source: https://tailwindflex.com/@matej-kovac/beutiful-post-cards\n * Attribution: Créé par @matej-kovac sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BeutifulPostCards() {\n  return (\n    <div>\n    <div className=\"flex flex-col w-fit mx-auto\">\n      <div className=\"product-card grid grid-cols-1 md2 gap-10 py-12 lg8 lg10\">\n        <div\n          className=\"bg-gradient-to-b from-blue-400 to-blue-200 dark800 dark700 border rounded-xl w-fit mx-auto flex flex-col justify-center gap-y-4\">\n          <div className=\"w-full flex flex-col justify-between gap-y-5 max-w-[20rem] mx-auto p-5 rounded-xl\">\n            <img className=\"rounded-[calc(20px-12px)] rounded-b-none\" src=\"https://images.unsplash.com/photo-1570831739435-6601aa3fa4fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw5fHxwcm9kdWN0fGVufDB8MHx8fDE3MTIwNjI5MDF8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Professional UI/UX Design Service\" style=\"width: 100%; height: 250px;\" />\n            <div className=\"flex flex-col gap-y-2\">\n              <h4 className=\"text-2xl font-bold text-black dark lg\">Professional UI/UX Design Service\n              </h4>\n              <p className=\"text-black dark text-sm lg\">Our expert designers craft stunning user\n                interfaces and seamless experiences tailored to your needs.</p>\n              <button className=\"flex item-start bg-black text-white w-fit px-5 py-1 rounded-full\">Get Started</button>\n            </div>\n          </div>\n        </div>\n        <div\n          className=\"bg-gradient-to-b from-green-400 to-green-200 dark800 dark700 border rounded-xl w-fit mx-auto flex flex-col justify-center gap-y-4\">\n          <div className=\"w-full flex flex-col justify-between gap-y-5 max-w-[20rem] mx-auto p-5 rounded-xl\">\n            <img className=\"rounded-[calc(20px-12px)] rounded-b-none\" src=\"https://images.unsplash.com/photo-1559056199-641a0ac8b55e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw3fHxwcm9kdWN0fGVufDB8MHx8fDE3MTIwNjI5MDF8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Innovative UI Design Solutions\" style=\"width: 100%; height: 250px;\" />\n            <div className=\"flex flex-col gap-y-2\">\n              <h4 className=\"text-2xl font-bold text-black dark lg\">Innovative UI Design Solutions</h4>\n              <p className=\"text-black dark text-sm lg\">Transform your ideas into reality with our\n                cutting-edge UI design solutions that captivate your audience.</p>\n              <button className=\"flex item-start bg-black text-white w-fit px-5 py-1 rounded-full\">Get Started</button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@matej-kovac",
+    "authorUrl": "https://tailwindflex.com/@matej-kovac",
+    "sourceUrl": "https://tailwindflex.com/@matej-kovac/beutiful-post-cards",
+    "mention": "Créé par @matej-kovac sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-col w-fit mx-auto\">\n  <div class=\"product-card grid grid-cols-1 md:grid-cols-2 gap-10 py-12 lg:pb-8 lg:pt-10\">\n    <div\n      class=\"bg-gradient-to-b from-blue-400 to-blue-200 dark:from-gray-800 dark:to-gray-700 border rounded-xl w-fit mx-auto flex flex-col justify-center gap-y-4\">\n      <div class=\"w-full flex flex-col justify-between gap-y-5 max-w-[20rem] mx-auto p-5 rounded-xl\">\n        <img class=\"rounded-[calc(20px-12px)] rounded-b-none\" src=\"https://images.unsplash.com/photo-1570831739435-6601aa3fa4fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw5fHxwcm9kdWN0fGVufDB8MHx8fDE3MTIwNjI5MDF8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Professional UI/UX Design Service\" style=\"width: 100%; height: 250px;\">\n        <div class=\"flex flex-col gap-y-2\">\n          <h4 class=\"text-2xl font-bold text-black dark:text-white lg:text-left\">Professional UI/UX Design Service\n          </h4>\n          <p class=\"text-black dark:text-white text-sm lg:text-left\">Our expert designers craft stunning user\n            interfaces and seamless experiences tailored to your needs.</p>\n          <button class=\"flex item-start bg-black text-white w-fit px-5 py-1 rounded-full\">Get Started</button>\n        </div>\n      </div>\n    </div>\n    <div\n      class=\"bg-gradient-to-b from-green-400 to-green-200 dark:from-gray-800 dark:to-gray-700 border rounded-xl w-fit mx-auto flex flex-col justify-center gap-y-4\">\n      <div class=\"w-full flex flex-col justify-between gap-y-5 max-w-[20rem] mx-auto p-5 rounded-xl\">\n        <img class=\"rounded-[calc(20px-12px)] rounded-b-none\" src=\"https://images.unsplash.com/photo-1559056199-641a0ac8b55e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw3fHxwcm9kdWN0fGVufDB8MHx8fDE3MTIwNjI5MDF8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Innovative UI Design Solutions\" style=\"width: 100%; height: 250px;\">\n        <div class=\"flex flex-col gap-y-2\">\n          <h4 class=\"text-2xl font-bold text-black dark:text-white lg:text-left\">Innovative UI Design Solutions</h4>\n          <p class=\"text-black dark:text-white text-sm lg:text-left\">Transform your ideas into reality with our\n            cutting-edge UI design solutions that captivate your audience.</p>\n          <button class=\"flex item-start bg-black text-white w-fit px-5 py-1 rounded-full\">Get Started</button>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "info-card-3",
+  "type": "registry:ui",
+  "title": "Info Card",
+  "description": "Info Card - Créé par @brandon sur TailwindFlex.",
+  "author": "@brandon (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/info-card-3.tsx",
+      "content": "/**\n * Component: Info Card\n * Author: @brandon (https://tailwindflex.com/@brandon)\n * Source: https://tailwindflex.com/@brandon/info-card-3\n * Attribution: Créé par @brandon sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InfoCard3() {\n  return (\n    <div>\n    <div className=\"bg-white rounded shadow max-w-md mx-auto\">\r\n        <header className=\"p-4\">\r\n            <img src=\"https://via.placeholder.com/200\" className=\"float-left rounded-full w-10 h-10 m-1 mr-3\" />\r\n            <h3 className=\"text-lg font-bold\">Island Holiday Escape</h3>\r\n            <p className=\"text-sm text-gray-600\">5 nights (inc flights) from $1999</p>\r\n        </header>\r\n    \r\n        <section>\r\n            <img src=\"https://via.placeholder.com/400x250\" className=\"w-full\" />\r\n            <p className=\"text-sm text-gray-600 p-4\">Omnis consectetur voluptatem labore aut et vel itaque recusandae. Et\r\n                molestiae iure qui et nihil minus nes ciunt.</p>\r\n        </section>\r\n    \r\n        <footer className=\"p-4\">\r\n            <a href=\"#\" className=\"uppercase font-bold text-sm text-blue-700 hover mr-3\">Book Online</a>\r\n            <a href=\"#\" className=\"uppercase font-bold text-sm text-blue-700 hover\">More Info</a>\r\n            <a href=\"#\" className=\"float-right\"><img src=\"https://img.icons8.com/flat_round/24/000000/share--v1.png\"/></a>\r\n            <a href=\"#\" className=\"float-right mr-3\"><img src=\"https://img.icons8.com/flat_round/24/000000/hearts.png\"/></a>\r\n        </footer>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@brandon",
+    "authorUrl": "https://tailwindflex.com/@brandon",
+    "sourceUrl": "https://tailwindflex.com/@brandon/info-card-3",
+    "mention": "Créé par @brandon sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white rounded shadow max-w-md mx-auto\">\r\n    <header class=\"p-4\">\r\n        <img src=\"https://via.placeholder.com/200\" class=\"float-left rounded-full w-10 h-10 m-1 mr-3\" />\r\n        <h3 class=\"text-lg font-bold\">Island Holiday Escape</h3>\r\n        <p class=\"text-sm text-gray-600\">5 nights (inc flights) from $1999</p>\r\n    </header>\r\n\r\n    <section>\r\n        <img src=\"https://via.placeholder.com/400x250\" class=\"w-full\" />\r\n        <p class=\"text-sm text-gray-600 p-4\">Omnis consectetur voluptatem labore aut et vel itaque recusandae. Et\r\n            molestiae iure qui et nihil minus nes ciunt.</p>\r\n    </section>\r\n\r\n    <footer class=\"p-4\">\r\n        <a href=\"#\" class=\"uppercase font-bold text-sm text-blue-700 hover:underline mr-3\">Book Online</a>\r\n        <a href=\"#\" class=\"uppercase font-bold text-sm text-blue-700 hover:underline\">More Info</a>\r\n        <a href=\"#\" class=\"float-right\"><img src=\"https://img.icons8.com/flat_round/24/000000/share--v1.png\"/></a>\r\n        <a href=\"#\" class=\"float-right mr-3\"><img src=\"https://img.icons8.com/flat_round/24/000000/hearts.png\"/></a>\r\n    </footer>\r\n</div>"
+  }
+}

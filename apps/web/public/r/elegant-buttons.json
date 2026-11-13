@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "elegant-buttons",
+  "type": "registry:ui",
+  "title": "Elegant Buttons",
+  "description": "Elegant Buttons - Créé par @nickgirga sur TailwindFlex.",
+  "author": "@nickgirga (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/elegant-buttons.tsx",
+      "content": "/**\n * Component: Elegant Buttons\n * Author: @nickgirga (https://tailwindflex.com/@nickgirga)\n * Source: https://tailwindflex.com/@nickgirga/elegant-buttons\n * Attribution: Créé par @nickgirga sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ElegantButtons() {\n  return (\n    <div>\n    \r\n    <div className=\"flex flex-row items-center justify-center gap-4 my-8\">\r\n    \r\n        \r\n        <div className=\"flex flex-col gap-4 w-[32mm]\">\r\n    \r\n            \r\n            <button\r\n                className=\"btn\">\r\n                Default\r\n            </button>\r\n    \r\n            \r\n            <button\r\n                className=\"btn btn-primary\">\r\n                Primary\r\n            </button>\r\n    \r\n            \r\n            <button\r\n                className=\"btn btn-secondary\">\r\n                Secondary\r\n            </button>\r\n    \r\n            \r\n            <button\r\n                className=\"btn btn-info\">\r\n                Info\r\n            </button>\r\n    \r\n        </div>\r\n    \r\n        \r\n        <div className=\"flex flex-col gap-4 w-[32mm]\">\r\n    \r\n            \r\n            <button\r\n                className=\"btn btn-success\">\r\n                Success\r\n            </button>\r\n    \r\n            \r\n            <button\r\n                className=\"btn btn-warn\">\r\n                Warn\r\n            </button>\r\n    \r\n            \r\n            <button\r\n                className=\"btn btn-error\">\r\n                Error\r\n            </button>\r\n    \r\n            \r\n            <button\r\n                className=\"btn bg-blue-600 hover700 active800 text-blue-200 hover400 active500\">\r\n                Custom\r\n            </button>\r\n    \r\n        </div>\r\n    \r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@nickgirga",
+    "authorUrl": "https://tailwindflex.com/@nickgirga",
+    "sourceUrl": "https://tailwindflex.com/@nickgirga/elegant-buttons",
+    "mention": "Créé par @nickgirga sur TailwindFlex",
+    "rawHtml": "<!-- Main Container -->\r\n<div class=\"flex flex-row items-center justify-center gap-4 my-8\">\r\n\r\n    <!-- Button Container (Column 1) -->\r\n    <div class=\"flex flex-col gap-4 w-[32mm]\">\r\n\r\n        <!-- Uses default button styling -->\r\n        <button\r\n            class=\"btn\">\r\n            Default\r\n        </button>\r\n\r\n        <!-- Uses primary colors -->\r\n        <button\r\n            class=\"btn btn-primary\">\r\n            Primary\r\n        </button>\r\n\r\n        <!-- Uses secondary colors -->\r\n        <button\r\n            class=\"btn btn-secondary\">\r\n            Secondary\r\n        </button>\r\n\r\n        <!-- Uses info colors -->\r\n        <button\r\n            class=\"btn btn-info\">\r\n            Info\r\n        </button>\r\n\r\n    </div>\r\n\r\n    <!-- Button Container (Column 2) -->\r\n    <div class=\"flex flex-col gap-4 w-[32mm]\">\r\n\r\n        <!-- Uses success colors -->\r\n        <button\r\n            class=\"btn btn-success\">\r\n            Success\r\n        </button>\r\n\r\n        <!-- Uses warn colors -->\r\n        <button\r\n            class=\"btn btn-warn\">\r\n            Warn\r\n        </button>\r\n\r\n        <!-- Uses error colors -->\r\n        <button\r\n            class=\"btn btn-error\">\r\n            Error\r\n        </button>\r\n\r\n        <!-- Uses Tailwind classes to modify default button styling -->\r\n        <button\r\n            class=\"btn bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-blue-200 hover:text-green-400 active:text-pink-500\">\r\n            Custom\r\n        </button>\r\n\r\n    </div>\r\n\r\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "neo-brutalist-login-form",
+  "type": "registry:ui",
+  "title": "Neo-Brutalist Login Form",
+  "description": "Neo-Brutalist Login Form - Créé par @jugendra-gangwar sur TailwindFlex.",
+  "author": "@jugendra-gangwar (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/neo-brutalist-login-form.tsx",
+      "content": "/**\n * Component: Neo-Brutalist Login Form\n * Author: @jugendra-gangwar (https://tailwindflex.com/@jugendra-gangwar)\n * Source: https://tailwindflex.com/@jugendra-gangwar/neo-brutalist-login-form\n * Attribution: Créé par @jugendra-gangwar sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NeoBrutalistLoginForm() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n<meta charset=\\\"UTF-8\\\">\\n<meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n<title>Log in - Pixel Club</title>\\n\\n<link rel=\\\"preconnect\\\" href=\\\"https://fonts.googleapis.com\\\">\\n<link rel=\\\"preconnect\\\" href=\\\"https://fonts.gstatic.com\\\" crossorigin>\\n<link href=\\\"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap\\\" rel=\\\"stylesheet\\\">\\n</head>\\n<body class=\\\"min-h-screen antialiased bg-[#FFF6D6] text-black\\\" style=\\\"font-family:'Space Grotesk',sans-serif\\\">\\n<main class=\\\"min-h-screen flex items-center justify-center p-4 sm:p-6\\\">\\n\\n<section class=\\\"w-full max-w-md bg-yellow-300 border-[3px] border-black rounded-3xl p-7 sm:p-9 shadow-[8px_8px_0_#000]\\\">\\n  <span class=\\\"inline-block bg-black text-white text-sm font-bold px-3 py-1 rounded-md\\\">Pixel Club</span>\\n  <h1 class=\\\"text-4xl font-black leading-tight mt-3\\\">Hop back in!</h1>\\n  <p class=\\\"text-base font-semibold text-black/75 mt-1\\\">Your projects are right where you left them.</p>\\n  <form data-form class=\\\"space-y-4 mt-7\\\" novalidate>\\n    <div>\\n      <label for=\\\"user\\\" class=\\\"text-sm font-black text-black block mb-1.5\\\">Username or email</label>\\n      <input id=\\\"user\\\" type=\\\"text\\\" required autocomplete=\\\"username\\\" placeholder=\\\"pixel_wizard\\\" class=\\\"w-full bg-white border-2 border-black rounded-xl px-4 py-3 text-sm font-semibold text-black placeholder-neutral-400 transition focus:outline-none focus:shadow-[4px_4px_0_#000] focus:-translate-x-0.5 focus:-translate-y-0.5\\\">\\n    </div>\\n    <div>\\n  <div class=\\\"flex items-center justify-between mb-1.5\\\">\\n    <label for=\\\"pw\\\" class=\\\"text-sm font-black text-black\\\">Password</label><a href=\\\"#\\\" class=\\\"text-sm font-bold underline\\\">Forgot it?</a>\\n  </div>\\n  <div class=\\\"relative\\\">\\n    <input id=\\\"pw\\\" type=\\\"password\\\" required minlength=\\\"6\\\" autocomplete=\\\"current-password\\\" placeholder=\\\"Your password\\\" class=\\\"w-full bg-white border-2 border-black rounded-xl px-4 py-3 text-sm font-semibold text-black placeholder-neutral-400 transition focus:outline-none focus:shadow-[4px_4px_0_#000] focus:-translate-x-0.5 focus:-translate-y-0.5 pr-16\\\">\\n    <button type=\\\"button\\\" data-toggle=\\\"pw\\\" aria-pressed=\\\"false\\\" class=\\\"absolute right-3 top-1/2 -translate-y-1/2 text-xs font-semibold text-black underline focus-visible:outline-none focus-visible:underline\\\">Show</button>\\n  </div>\\n</div>\\n    <button type=\\\"submit\\\" data-loading=\\\"Logging in...\\\" class=\\\"w-full bg-black text-white hover:bg-white hover:text-black border-2 border-black font-black text-base py-3.5 rounded-xl transition shadow-[4px_4px_0_#fff] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black/30\\\">Log in</button>\\n  </form>\\n  <p class=\\\"text-center text-sm font-semibold mt-7\\\">No account yet? <a href=\\\"#\\\" class=\\\"font-black underline\\\">Sign up free</a></p>\\n</section>\\n</main>\\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@jugendra-gangwar",
+    "authorUrl": "https://tailwindflex.com/@jugendra-gangwar",
+    "sourceUrl": "https://tailwindflex.com/@jugendra-gangwar/neo-brutalist-login-form",
+    "mention": "Créé par @jugendra-gangwar sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>Log in - Pixel Club</title>\n<script src=\"https://cdn.tailwindcss.com/3.4.17\"></script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap\" rel=\"stylesheet\">\n</head>\n<body class=\"min-h-screen antialiased bg-[#FFF6D6] text-black\" style=\"font-family:'Space Grotesk',sans-serif\">\n<main class=\"min-h-screen flex items-center justify-center p-4 sm:p-6\">\n\n<section class=\"w-full max-w-md bg-yellow-300 border-[3px] border-black rounded-3xl p-7 sm:p-9 shadow-[8px_8px_0_#000]\">\n  <span class=\"inline-block bg-black text-white text-sm font-bold px-3 py-1 rounded-md\">Pixel Club</span>\n  <h1 class=\"text-4xl font-black leading-tight mt-3\">Hop back in!</h1>\n  <p class=\"text-base font-semibold text-black/75 mt-1\">Your projects are right where you left them.</p>\n  <form data-form class=\"space-y-4 mt-7\" novalidate>\n    <div>\n      <label for=\"user\" class=\"text-sm font-black text-black block mb-1.5\">Username or email</label>\n      <input id=\"user\" type=\"text\" required autocomplete=\"username\" placeholder=\"pixel_wizard\" class=\"w-full bg-white border-2 border-black rounded-xl px-4 py-3 text-sm font-semibold text-black placeholder-neutral-400 transition focus:outline-none focus:shadow-[4px_4px_0_#000] focus:-translate-x-0.5 focus:-translate-y-0.5\">\n    </div>\n    <div>\n  <div class=\"flex items-center justify-between mb-1.5\">\n    <label for=\"pw\" class=\"text-sm font-black text-black\">Password</label><a href=\"#\" class=\"text-sm font-bold underline\">Forgot it?</a>\n  </div>\n  <div class=\"relative\">\n    <input id=\"pw\" type=\"password\" required minlength=\"6\" autocomplete=\"current-password\" placeholder=\"Your password\" class=\"w-full bg-white border-2 border-black rounded-xl px-4 py-3 text-sm font-semibold text-black placeholder-neutral-400 transition focus:outline-none focus:shadow-[4px_4px_0_#000] focus:-translate-x-0.5 focus:-translate-y-0.5 pr-16\">\n    <button type=\"button\" data-toggle=\"pw\" aria-pressed=\"false\" class=\"absolute right-3 top-1/2 -translate-y-1/2 text-xs font-semibold text-black underline focus-visible:outline-none focus-visible:underline\">Show</button>\n  </div>\n</div>\n    <button type=\"submit\" data-loading=\"Logging in...\" class=\"w-full bg-black text-white hover:bg-white hover:text-black border-2 border-black font-black text-base py-3.5 rounded-xl transition shadow-[4px_4px_0_#fff] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black/30\">Log in</button>\n  </form>\n  <p class=\"text-center text-sm font-semibold mt-7\">No account yet? <a href=\"#\" class=\"font-black underline\">Sign up free</a></p>\n</section>\n</main>\n<script>\nconst SPIN='<svg class=\"animate-spin h-4 w-4 inline-block mr-2 -mt-0.5\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><circle class=\"opacity-25\" cx=\"12\" cy=\"12\" r=\"10\" stroke=\"currentColor\" stroke-width=\"4\"/><path class=\"opacity-75\" fill=\"currentColor\" d=\"M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z\"/></svg>';\ndocument.querySelectorAll('[data-toggle]').forEach(b=>b.addEventListener('click',()=>{\n  const i=document.getElementById(b.dataset.toggle),show=i.type==='password';\n  i.type=show?'text':'password';b.textContent=show?'Hide':'Show';b.setAttribute('aria-pressed',show);\n}));\ndocument.querySelectorAll('form[data-form]').forEach(f=>f.addEventListener('submit',e=>{\n  e.preventDefault();\n  if(!f.checkValidity()){f.reportValidity();return;}\n  const b=f.querySelector('[type=submit]'),old=b.innerHTML;\n  b.disabled=true;b.classList.add('opacity-80','cursor-wait');b.innerHTML=SPIN+(b.dataset.loading||'Please wait...');\n  setTimeout(()=>{b.disabled=false;b.classList.remove('opacity-80','cursor-wait');b.innerHTML=old;},1600);\n}));\n</script>\n</body>\n</html>"
+  }
+}

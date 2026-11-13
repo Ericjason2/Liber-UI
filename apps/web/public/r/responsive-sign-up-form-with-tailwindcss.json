@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-sign-up-form-with-tailwindcss",
+  "type": "registry:ui",
+  "title": "Responsive Sign-Up Form with TailwindCSS",
+  "description": "Responsive Sign-Up Form with TailwindCSS - Créé par @shariful-islam sur TailwindFlex.",
+  "author": "@shariful-islam (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-sign-up-form-with-tailwindcss.tsx",
+      "content": "/**\n * Component: Responsive Sign-Up Form with TailwindCSS\n * Author: @shariful-islam (https://tailwindflex.com/@shariful-islam)\n * Source: https://tailwindflex.com/@shariful-islam/responsive-sign-up-form-with-tailwindcss\n * Attribution: Créé par @shariful-islam sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveSignUpFormWithTailwindcss() {\n  return (\n    <div>\n    <div className=\"flex items-center justify-center h-screen\">\n        <div className=\"w-full max-w-md bg-white p-6 rounded-lg shadow-lg\">\n        \n        <div className=\"text-center\">\n          <h1 className=\"text-2xl font-semibold text-blue-600 flex items-center justify-center\">\n            <span className=\"mr-1 text-3xl font-bold\">ES</span>\n            BAZAR\n          </h1>\n          <p className=\"text-gray-500 text-sm mt-1\">\n            Best online ecommerce website for you\n          </p>\n        </div>\n    \n        \n        <div className=\"my-6 border-t border-gray-300 relative\">\n          <span className=\"absolute top-[-10px] bg-white left-1/2 transform -translate-x-1/2 px-3 text-gray-500\">\n            Sign up\n          </span>\n        </div>\n    \n        \n        <form className=\"space-y-4\">\n          \n          <div>\n            <input\n              type=\"text\"\n              placeholder=\"Full Name\"\n              className=\"w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus focus focus100\"\n            />\n          </div>\n    \n          \n          <div>\n            <input\n              type=\"text\"\n              placeholder=\"Mobile Number\"\n              className=\"w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus focus focus100\"\n            />\n          </div>\n    \n          \n          <div>\n            <input\n              type=\"email\"\n              placeholder=\"Email\"\n              className=\"w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus focus focus100\"\n            />\n          </div>\n    \n          \n          <div className=\"relative\">\n            <input\n              type=\"password\"\n              placeholder=\"Password\"\n              className=\"w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus focus focus100\"\n            />\n            <span className=\"absolute right-3 top-2.5 text-gray-400 cursor-pointer\">\n              👁️\n            </span>\n          </div>\n    \n          \n          <div className=\"relative\">\n            <input\n              type=\"password\"\n              placeholder=\"Confirm Password\"\n              className=\"w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus focus focus100\"\n            />\n            <span className=\"absolute right-3 top-2.5 text-gray-400 cursor-pointer\">\n              👁️\n            </span>\n          </div>\n    \n          \n          <button\n            type=\"submit\"\n            className=\"w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 rounded-lg hover600 hover700 transition\"\n          >\n            Sign Up\n          </button>\n        </form>\n    \n        \n        <div className=\"mt-4 text-center\">\n          <p className=\"text-gray-500 text-sm\">\n            Have your account? \n            <a href=\"#\" className=\"text-blue-500 font-medium hover\">Login Now</a>\n          </p>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@shariful-islam",
+    "authorUrl": "https://tailwindflex.com/@shariful-islam",
+    "sourceUrl": "https://tailwindflex.com/@shariful-islam/responsive-sign-up-form-with-tailwindcss",
+    "mention": "Créé par @shariful-islam sur TailwindFlex",
+    "rawHtml": "<div class=\"flex items-center justify-center h-screen\">\n    <div class=\"w-full max-w-md bg-white p-6 rounded-lg shadow-lg\">\n    <!-- Logo and Heading -->\n    <div class=\"text-center\">\n      <h1 class=\"text-2xl font-semibold text-blue-600 flex items-center justify-center\">\n        <span class=\"mr-1 text-3xl font-bold\">ES</span>\n        BAZAR\n      </h1>\n      <p class=\"text-gray-500 text-sm mt-1\">\n        Best online ecommerce website for you\n      </p>\n    </div>\n\n    <!-- Divider -->\n    <div class=\"my-6 border-t border-gray-300 relative\">\n      <span class=\"absolute top-[-10px] bg-white left-1/2 transform -translate-x-1/2 px-3 text-gray-500\">\n        Sign up\n      </span>\n    </div>\n\n    <!-- Form -->\n    <form class=\"space-y-4\">\n      <!-- Full Name -->\n      <div>\n        <input\n          type=\"text\"\n          placeholder=\"Full Name\"\n          class=\"w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring focus:ring-blue-100\"\n        />\n      </div>\n\n      <!-- Mobile Number -->\n      <div>\n        <input\n          type=\"text\"\n          placeholder=\"Mobile Number\"\n          class=\"w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring focus:ring-blue-100\"\n        />\n      </div>\n\n      <!-- Email -->\n      <div>\n        <input\n          type=\"email\"\n          placeholder=\"Email\"\n          class=\"w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring focus:ring-blue-100\"\n        />\n      </div>\n\n      <!-- Password -->\n      <div class=\"relative\">\n        <input\n          type=\"password\"\n          placeholder=\"Password\"\n          class=\"w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring focus:ring-blue-100\"\n        />\n        <span class=\"absolute right-3 top-2.5 text-gray-400 cursor-pointer\">\n          👁️\n        </span>\n      </div>\n\n      <!-- Confirm Password -->\n      <div class=\"relative\">\n        <input\n          type=\"password\"\n          placeholder=\"Confirm Password\"\n          class=\"w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring focus:ring-blue-100\"\n        />\n        <span class=\"absolute right-3 top-2.5 text-gray-400 cursor-pointer\">\n          👁️\n        </span>\n      </div>\n\n      <!-- Submit Button -->\n      <button\n        type=\"submit\"\n        class=\"w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 rounded-lg hover:from-blue-600 hover:to-blue-700 transition\"\n      >\n        Sign Up\n      </button>\n    </form>\n\n    <!-- Footer -->\n    <div class=\"mt-4 text-center\">\n      <p class=\"text-gray-500 text-sm\">\n        Have your account? \n        <a href=\"#\" class=\"text-blue-500 font-medium hover:underline\">Login Now</a>\n      </p>\n    </div>\n  </div>\n</div>"
+  }
+}

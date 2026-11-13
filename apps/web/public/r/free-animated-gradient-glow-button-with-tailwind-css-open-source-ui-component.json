@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "free-animated-gradient-glow-button-with-tailwind-css-open-source-ui-component",
+  "type": "registry:ui",
+  "title": "Free Animated Gradient Glow Button with Tailwind CSS",
+  "description": "Free Animated Gradient Glow Button with Tailwind CSS - Créé par @homayunmmdy sur TailwindFlex.",
+  "author": "@homayunmmdy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/free-animated-gradient-glow-button-with-tailwind-css-open-source-ui-component.tsx",
+      "content": "/**\n * Component: Free Animated Gradient Glow Button with Tailwind CSS\n * Author: @homayunmmdy (https://tailwindflex.com/@homayunmmdy)\n * Source: https://tailwindflex.com/@homayunmmdy/free-animated-gradient-glow-button-with-tailwind-css-open-source-ui-component\n * Attribution: Créé par @homayunmmdy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FreeAnimatedGradientGlowButtonWithTailwindCssOpenSourceUiComponent() {\n  return (\n    <div>\n    <div className=\"bg-white dark800 flex justify-center items-center w-screen h-screen p-5\">\n    <button\n      className=\"before[''] mt-4 flex gap-2 items-center cursor-pointer after[''] group relative h-16 w-full origin-left overflow-hidden rounded-lg border bg-neutral-800 p-3 text-left text-base font-bold text-gray-50 underline underline-offset-2 duration-500 before before1 before1 before10 before12 before12 before before500 before before500 after after8 after3 after10 after20 after20 after after300 after after500 hover300 hover300 hover hover2 hover4 hover500 hover8 hover12 hover hover:[box-shadow:_20px_20px_20px_30px_#a21caf] hover8 group-hover500 group-hover500\"\n    >\n      <svg className=\"h-5 w-5 transition-transform duration-300 group-hover110\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n        <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M13 10V3L4 14h7v7l9-11h-7z\" />\n      </svg>\n      Click Me\n    </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@homayunmmdy",
+    "authorUrl": "https://tailwindflex.com/@homayunmmdy",
+    "sourceUrl": "https://tailwindflex.com/@homayunmmdy/free-animated-gradient-glow-button-with-tailwind-css-open-source-ui-component",
+    "mention": "Créé par @homayunmmdy sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\">\n<button\n  class=\"before:content[''] mt-4 flex gap-2 items-center cursor-pointer after:content[''] group relative h-16 w-full origin-left overflow-hidden rounded-lg border bg-neutral-800 p-3 text-left text-base font-bold text-gray-50 underline underline-offset-2 duration-500 before:absolute before:right-1 before:top-1 before:z-10 before:h-12 before:w-12 before:rounded-full before:bg-violet-500 before:blur-lg before:duration-500 after:absolute after:right-8 after:top-3 after:z-10 after:h-20 after:w-20 after:rounded-full after:bg-rose-300 after:blur-lg after:duration-500 hover:border-rose-300 hover:text-rose-300 hover:underline hover:decoration-2 hover:underline-offset-4 hover:duration-500 hover:before:-bottom-8 hover:before:right-12 hover:before:blur-sm hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] hover:after:-right-8 group-hover:before:duration-500 group-hover:after:duration-500\"\n>\n  <svg class=\"h-5 w-5 transition-transform duration-300 group-hover:scale-110\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M13 10V3L4 14h7v7l9-11h-7z\" />\n  </svg>\n  Click Me\n</button>\n</div>"
+  }
+}

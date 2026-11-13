@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwind-card-with-gradient-border",
+  "type": "registry:ui",
+  "title": "Tailwind card with gradient border",
+  "description": "Tailwind card with gradient border - Créé par @007-davis sur TailwindFlex.",
+  "author": "@007-davis (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tailwind-card-with-gradient-border.tsx",
+      "content": "/**\n * Component: Tailwind card with gradient border\n * Author: @007-davis (https://tailwindflex.com/@007-davis)\n * Source: https://tailwindflex.com/@007-davis/tailwind-card-with-gradient-border\n * Attribution: Créé par @007-davis sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TailwindCardWithGradientBorder() {\n  return (\n    <div>\n    <a className=\"relative bg-gray-900 block p-6 border border-gray-100 rounded-lg max-w-sm mx-auto mt-24\" href=\"#\">\n      \n        <span className=\"absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600\"></span>\n    \n        <div className=\"my-4\">\n            <h2 className=\"text-white text-2xl font-bold pb-2\">Card Title</h2>\n            <p className=\"text-gray-300 py-1\">Card description or content goes here.</p>\n        </div>\n    \n        <div className=\"flex justify-end\">\n            <button className=\"px-2 py-1 text-white border border-gray-200 font-semibold rounded hover800\">Click Me</button>\n        </div>\n    </a>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@007-davis",
+    "authorUrl": "https://tailwindflex.com/@007-davis",
+    "sourceUrl": "https://tailwindflex.com/@007-davis/tailwind-card-with-gradient-border",
+    "mention": "Créé par @007-davis sur TailwindFlex",
+    "rawHtml": "<a class=\"relative bg-gray-900 block p-6 border border-gray-100 rounded-lg max-w-sm mx-auto mt-24\" href=\"#\">\n  \n    <span class=\"absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600\"></span>\n\n    <div class=\"my-4\">\n        <h2 class=\"text-white text-2xl font-bold pb-2\">Card Title</h2>\n        <p class=\"text-gray-300 py-1\">Card description or content goes here.</p>\n    </div>\n\n    <div class=\"flex justify-end\">\n        <button class=\"px-2 py-1 text-white border border-gray-200 font-semibold rounded hover:bg-gray-800\">Click Me</button>\n    </div>\n</a>"
+  }
+}

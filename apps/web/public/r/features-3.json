@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "features-3",
+  "type": "registry:ui",
+  "title": "Features",
+  "description": "Features - Créé par @saurav-singh sur TailwindFlex.",
+  "author": "@saurav-singh (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/features-3.tsx",
+      "content": "/**\n * Component: Features\n * Author: @saurav-singh (https://tailwindflex.com/@saurav-singh)\n * Source: https://tailwindflex.com/@saurav-singh/features-3\n * Attribution: Créé par @saurav-singh sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Features3() {\n  return (\n    <div>\n    \n    <section className=\"py-20 \">\n      <div className=\"max-w-7xl mx-auto px-6\">\n        <h2 className=\"text-4xl font-bold text-center text-gray-800 mb-16\">Our Features</h2>\n    \n        <div className=\"grid gap-10 md3\">\n          \n          <div className=\"bg-white/80 backdrop-blur-lg border border-gray-200 rounded-xl p-8 shadow-lg hover transition duration-300\">\n            <div className=\"flex items-center justify-center w-12 h-12 mb-4 bg-blue-100 rounded-full\">\n              \n              <svg className=\"w-6 h-6 text-blue-600\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"2\"\n                   viewBox=\"0 0 24 24\">\n                <path strokeLinecap=\"round\" strokeLinejoin=\"round\"\n                      d=\"M13 10V3L4 14h7v7l9-11h-7z\" />\n              </svg>\n            </div>\n            <h3 className=\"text-xl font-semibold text-gray-800 mb-2\">Fast Performance</h3>\n            <p className=\"text-gray-500 text-sm\">Optimized for speed and lightweight performance with utility-first styling.</p>\n          </div>\n    \n          \n          <div className=\"bg-white/80 backdrop-blur-lg border border-gray-200 rounded-xl p-8 shadow-lg hover transition duration-300\">\n            <div className=\"flex items-center justify-center w-12 h-12 mb-4 bg-green-100 rounded-full\">\n              \n              <svg className=\"w-6 h-6 text-green-600\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"2\"\n                   viewBox=\"0 0 24 24\">\n                <path strokeLinecap=\"round\" strokeLinejoin=\"round\"\n                      d=\"M3 12l2-2m0 0l7-7 7 7m-7-7v18\" />\n              </svg>\n            </div>\n            <h3 className=\"text-xl font-semibold text-gray-800 mb-2\">Responsive Design</h3>\n            <p className=\"text-gray-500 text-sm\">Looks stunning on all screens — mobile, tablet, and desktop.</p>\n          </div>\n    \n          \n          <div className=\"bg-white/80 backdrop-blur-lg border border-gray-200 rounded-xl p-8 shadow-lg hover transition duration-300\">\n            <div className=\"flex items-center justify-center w-12 h-12 mb-4 bg-purple-100 rounded-full\">\n              \n              <svg className=\"w-6 h-6 text-purple-600\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"2\"\n                   viewBox=\"0 0 24 24\">\n                <path strokeLinecap=\"round\" strokeLinejoin=\"round\"\n                      d=\"M4 6h16M4 12h16M4 18h7\" />\n              </svg>\n            </div>\n            <h3 className=\"text-xl font-semibold text-gray-800 mb-2\">Easy Customization</h3>\n            <p className=\"text-gray-500 text-sm\">Tailor components to match your brand or project needs with ease.</p>\n          </div>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@saurav-singh",
+    "authorUrl": "https://tailwindflex.com/@saurav-singh",
+    "sourceUrl": "https://tailwindflex.com/@saurav-singh/features-3",
+    "mention": "Créé par @saurav-singh sur TailwindFlex",
+    "rawHtml": "<!-- Modern Features Section -->\n<section class=\"py-20 \">\n  <div class=\"max-w-7xl mx-auto px-6\">\n    <h2 class=\"text-4xl font-bold text-center text-gray-800 mb-16\">Our Features</h2>\n\n    <div class=\"grid gap-10 md:grid-cols-3\">\n      <!-- Card 1 -->\n      <div class=\"bg-white/80 backdrop-blur-lg border border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300\">\n        <div class=\"flex items-center justify-center w-12 h-12 mb-4 bg-blue-100 rounded-full\">\n          <!-- Icon -->\n          <svg class=\"w-6 h-6 text-blue-600\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"\n               viewBox=\"0 0 24 24\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                  d=\"M13 10V3L4 14h7v7l9-11h-7z\" />\n          </svg>\n        </div>\n        <h3 class=\"text-xl font-semibold text-gray-800 mb-2\">Fast Performance</h3>\n        <p class=\"text-gray-500 text-sm\">Optimized for speed and lightweight performance with utility-first styling.</p>\n      </div>\n\n      <!-- Card 2 -->\n      <div class=\"bg-white/80 backdrop-blur-lg border border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300\">\n        <div class=\"flex items-center justify-center w-12 h-12 mb-4 bg-green-100 rounded-full\">\n          <!-- Icon -->\n          <svg class=\"w-6 h-6 text-green-600\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"\n               viewBox=\"0 0 24 24\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                  d=\"M3 12l2-2m0 0l7-7 7 7m-7-7v18\" />\n          </svg>\n        </div>\n        <h3 class=\"text-xl font-semibold text-gray-800 mb-2\">Responsive Design</h3>\n        <p class=\"text-gray-500 text-sm\">Looks stunning on all screens — mobile, tablet, and desktop.</p>\n      </div>\n\n      <!-- Card 3 -->\n      <div class=\"bg-white/80 backdrop-blur-lg border border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300\">\n        <div class=\"flex items-center justify-center w-12 h-12 mb-4 bg-purple-100 rounded-full\">\n          <!-- Icon -->\n          <svg class=\"w-6 h-6 text-purple-600\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"\n               viewBox=\"0 0 24 24\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                  d=\"M4 6h16M4 12h16M4 18h7\" />\n          </svg>\n        </div>\n        <h3 class=\"text-xl font-semibold text-gray-800 mb-2\">Easy Customization</h3>\n        <p class=\"text-gray-500 text-sm\">Tailor components to match your brand or project needs with ease.</p>\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

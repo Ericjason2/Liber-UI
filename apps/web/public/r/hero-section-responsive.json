@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-responsive",
+  "type": "registry:ui",
+  "title": "Hero section responsive",
+  "description": "Hero section responsive - Créé par @samuel33 sur TailwindFlex.",
+  "author": "@samuel33 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-responsive.tsx",
+      "content": "/**\n * Component: Hero section responsive\n * Author: @samuel33 (https://tailwindflex.com/@samuel33)\n * Source: https://tailwindflex.com/@samuel33/hero-section-responsive\n * Attribution: Créé par @samuel33 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSectionResponsive() {\n  return (\n    <div>\n    \r\n    <section className=\"px-3 py-5 bg-neutral-100 lg10\">\r\n        <div className=\"grid lg2 items-center justify-items-center gap-5\">\r\n            <div className=\"order-2 lg1 flex flex-col justify-center items-center\">\r\n                <p className=\"text-4xl font-bold md7xl text-orange-600\">25% OFF</p>\r\n                <p className=\"text-4xl font-bold md7xl\">SUMMER SALE</p>\r\n                <p className=\"mt-2 text-sm md\">For limited time only!</p>\r\n                <button className=\"text-lg md2xl bg-black text-white py-2 px-5 mt-10 hover800\">Shop Now</button>\r\n            </div>\r\n            <div className=\"order-1 lg2\">\r\n                <img className=\"h-80 w-80 object-cover lg[500px] lg[500px]\" src=\"https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80\" alt=\"\" />\r\n            </div>\r\n        </div>\r\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@samuel33",
+    "authorUrl": "https://tailwindflex.com/@samuel33",
+    "sourceUrl": "https://tailwindflex.com/@samuel33/hero-section-responsive",
+    "mention": "Créé par @samuel33 sur TailwindFlex",
+    "rawHtml": "<!-- source: https://codepen.io/mfg888/pen/MWVGddj -->\r\n<section class=\"px-3 py-5 bg-neutral-100 lg:py-10\">\r\n    <div class=\"grid lg:grid-cols-2 items-center justify-items-center gap-5\">\r\n        <div class=\"order-2 lg:order-1 flex flex-col justify-center items-center\">\r\n            <p class=\"text-4xl font-bold md:text-7xl text-orange-600\">25% OFF</p>\r\n            <p class=\"text-4xl font-bold md:text-7xl\">SUMMER SALE</p>\r\n            <p class=\"mt-2 text-sm md:text-lg\">For limited time only!</p>\r\n            <button class=\"text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-zinc-800\">Shop Now</button>\r\n        </div>\r\n        <div class=\"order-1 lg:order-2\">\r\n            <img class=\"h-80 w-80 object-cover lg:w-[500px] lg:h-[500px]\" src=\"https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80\" alt=\"\">\r\n        </div>\r\n    </div>\r\n</section>"
+  }
+}

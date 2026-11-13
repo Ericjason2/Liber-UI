@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-form-4",
+  "type": "registry:ui",
+  "title": "simple form",
+  "description": "simple form - Créé par @Aman300 sur TailwindFlex.",
+  "author": "@Aman300 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-form-4.tsx",
+      "content": "/**\n * Component: simple form\n * Author: @Aman300 (https://tailwindflex.com/@Aman300)\n * Source: https://tailwindflex.com/@Aman300/simple-form-4\n * Attribution: Créé par @Aman300 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SimpleForm4() {\n  return (\n    <div>\n    <div className=\"flex justify-center items-center h-screen bg-gray-800\">\n      <div className=\"bg-white w-72 h-80 rounded-3xl shadow-lg\">\n    \n        <form action=\"\">\n    \n          <div className=\"flex justify-center mb-3 mt-10\">\n            <input type=\"text\" name=\"\" id=\"\" className=\"bg-gray-200 px-5 py-3 rounded-xl\" placeholder=\"Name\" />\n          </div>\n          <div className=\"flex justify-center mb-3\">\n            <input type=\"email\" name=\"\" id=\"\" className=\"bg-gray-200 px-5 py-3 rounded-xl\" placeholder=\"Email\" />\n          </div>\n          <div className=\"flex justify-center mb-3\">\n            <input type=\"password\" name=\"\" id=\"\" className=\"bg-gray-200 px-5 py-3 rounded-xl\" placeholder=\"password\" />\n          </div>\n          <div className=\"flex justify-center\">\n           <button className=\"bg-blue-600 rounded-xl w-40 py-2 text-white hover700\">Submit</button>\n          </div>\n        </form>\n        \n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@Aman300",
+    "authorUrl": "https://tailwindflex.com/@Aman300",
+    "sourceUrl": "https://tailwindflex.com/@Aman300/simple-form-4",
+    "mention": "Créé par @Aman300 sur TailwindFlex",
+    "rawHtml": "<div class=\"flex justify-center items-center h-screen bg-gray-800\">\n  <div class=\"bg-white w-72 h-80 rounded-3xl shadow-lg\">\n\n    <form action=\"\">\n\n      <div class=\"flex justify-center mb-3 mt-10\">\n        <input type=\"text\" name=\"\" id=\"\" class=\"bg-gray-200 px-5 py-3 rounded-xl\" placeholder=\"Name\">\n      </div>\n      <div class=\"flex justify-center mb-3\">\n        <input type=\"email\" name=\"\" id=\"\" class=\"bg-gray-200 px-5 py-3 rounded-xl\" placeholder=\"Email\">\n      </div>\n      <div class=\"flex justify-center mb-3\">\n        <input type=\"password\" name=\"\" id=\"\" class=\"bg-gray-200 px-5 py-3 rounded-xl\" placeholder=\"password\">\n      </div>\n      <div class=\"flex justify-center\">\n       <button class=\"bg-blue-600 rounded-xl w-40 py-2 text-white hover:bg-blue-700\">Submit</button>\n      </div>\n    </form>\n    \n  </div>\n</div>"
+  }
+}

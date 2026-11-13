@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "info-card-9",
+  "type": "registry:ui",
+  "title": "Info card",
+  "description": "Info card - Créé par @samuel33 sur TailwindFlex.",
+  "author": "@samuel33 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/info-card-9.tsx",
+      "content": "/**\n * Component: Info card\n * Author: @samuel33 (https://tailwindflex.com/@samuel33)\n * Source: https://tailwindflex.com/@samuel33/info-card-9\n * Attribution: Créé par @samuel33 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InfoCard9() {\n  return (\n    <div>\n    <div className=\"h-40 rounded-xl shadow-md p-6\" style=\"background: rgb(0, 255, 244);\">\r\n        <div className=\"font-semibold mb-1 text-lg\" style=\"color: rgb(0, 56, 55);\">Today</div>\r\n        <div className=\"font-semibold text-5xl tracking-tight\" style=\"color: rgb(0, 56, 55);\">$12.921</div>\r\n        <div className=\"font-normal\" style=\"color: rgb(0, 119, 117);\">Gross volume</div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@samuel33",
+    "authorUrl": "https://tailwindflex.com/@samuel33",
+    "sourceUrl": "https://tailwindflex.com/@samuel33/info-card-9",
+    "mention": "Créé par @samuel33 sur TailwindFlex",
+    "rawHtml": "<div class=\"h-40 rounded-xl shadow-md p-6\" style=\"background: rgb(0, 255, 244);\">\r\n    <div class=\"font-semibold mb-1 text-lg\" style=\"color: rgb(0, 56, 55);\">Today</div>\r\n    <div class=\"font-semibold text-5xl tracking-tight\" style=\"color: rgb(0, 56, 55);\">$12.921</div>\r\n    <div class=\"font-normal\" style=\"color: rgb(0, 119, 117);\">Gross volume</div>\r\n</div>"
+  }
+}

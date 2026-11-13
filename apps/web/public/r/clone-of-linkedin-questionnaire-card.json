@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clone-of-linkedin-questionnaire-card",
+  "type": "registry:ui",
+  "title": "Clone of LinkedIn Questionnaire Card",
+  "description": "Clone of LinkedIn Questionnaire Card - Créé par @sammytg7 sur TailwindFlex.",
+  "author": "@sammytg7 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/clone-of-linkedin-questionnaire-card.tsx",
+      "content": "/**\n * Component: Clone of LinkedIn Questionnaire Card\n * Author: @sammytg7 (https://tailwindflex.com/@sammytg7)\n * Source: https://tailwindflex.com/@sammytg7/clone-of-linkedin-questionnaire-card\n * Attribution: Créé par @sammytg7 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CloneOfLinkedinQuestionnaireCard() {\n  return (\n    <div>\n    <div className=\"w-full h-screen flex items-center bg-gray-300 dark900\">\n        <div className=\"xl[40%] lg[50%] sm[80%] xs[96%] mx-auto shadow-lg flex flex-col gap-2 justify-center items-center p-4 mx-4 border-2 rounded-lg bg-white dark500 dark900\">\n            <img src=\"https://media.licdn.com/media/AAYQAgSuAAgAAQAAAAAAACusnN9kMj0wRRWck-KbrrrLSg.png\" alt=\"User Profile\" className=\"w-[6rem] h-[6rem] outline outline-2 outline-gray-200 rounded-full\" />\n            <div className=\"w-full pt-4 text-center\">\n                <h3 className=\"text-2xl font-serif text-gray-900 dark\">Hi Samuel, are you hiring?</h3>\n                <p className=\"text-xl text-serif pt-2 text-gray-500 dark400\">Discover free and easy ways to find a great\n                    hire,\n                    fast.</p>\n            </div>\n    \n            <div className=\"flex sm xs gap-4 pt-4 dark\">\n                <button className=\"px-6 py-1 rounded-full outline outline-1 outline-blue-700 font-serif\">Yes, I'm hiring</button>\n                <button className=\"px-6 py-1 rounded-full outline outline-1 outline-blue-700 font-serif\">No, not right now</button>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sammytg7",
+    "authorUrl": "https://tailwindflex.com/@sammytg7",
+    "sourceUrl": "https://tailwindflex.com/@sammytg7/clone-of-linkedin-questionnaire-card",
+    "mention": "Créé par @sammytg7 sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full h-screen flex items-center bg-gray-300 dark:bg-gray-900\">\n    <div class=\"xl:w-[40%] lg:w-[50%] sm:w-[80%] xs:w-[96%] mx-auto shadow-lg flex flex-col gap-2 justify-center items-center p-4 mx-4 border-2 rounded-lg bg-white dark:border-gray-500 dark:bg-gray-900\">\n        <img src=\"https://media.licdn.com/media/AAYQAgSuAAgAAQAAAAAAACusnN9kMj0wRRWck-KbrrrLSg.png\" alt=\"User Profile\" class=\"w-[6rem] h-[6rem] outline outline-2 outline-gray-200 rounded-full\" />\n        <div class=\"w-full pt-4 text-center\">\n            <h3 class=\"text-2xl font-serif text-gray-900 dark:text-white\">Hi Samuel, are you hiring?</h3>\n            <p class=\"text-xl text-serif pt-2 text-gray-500 dark:text-gray-400\">Discover free and easy ways to find a great\n                hire,\n                fast.</p>\n        </div>\n\n        <div class=\"flex sm:flex-row xs:flex-col gap-4 pt-4 dark:text-white\">\n            <button class=\"px-6 py-1 rounded-full outline outline-1 outline-blue-700 font-serif\">Yes, I'm hiring</button>\n            <button class=\"px-6 py-1 rounded-full outline outline-1 outline-blue-700 font-serif\">No, not right now</button>\n        </div>\n    </div>\n</div>"
+  }
+}

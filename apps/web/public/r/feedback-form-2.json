@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "feedback-form-2",
+  "type": "registry:ui",
+  "title": "Feedback Form",
+  "description": "Feedback Form - Créé par @jaxstone sur TailwindFlex.",
+  "author": "@jaxstone (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/feedback-form-2.tsx",
+      "content": "/**\n * Component: Feedback Form\n * Author: @jaxstone (https://tailwindflex.com/@jaxstone)\n * Source: https://tailwindflex.com/@jaxstone/feedback-form-2\n * Attribution: Créé par @jaxstone sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FeedbackForm2() {\n  return (\n    <div>\n    <form className=\"max-w-md mx-auto mt-20 p-6 bg-white border rounded-lg shadow-lg\">\n        <h2 className=\"text-2xl font-bold mb-6\">Feedback Form</h2>\n        <div className=\"mb-4\">\n            <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"name\">\n          Name:\n        </label>\n            <input className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\" id=\"name\" type=\"text\" placeholder=\"Enter your name\" />\n        </div>\n        <div className=\"mb-4\">\n            <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"email\">\n          Email:\n        </label>\n            <input className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\" id=\"email\" type=\"email\" placeholder=\"Enter your email\" />\n        </div>\n        <div className=\"mb-4\">\n            <label className=\"block text-gray-700 font-bold mb-2\" htmlFor=\"feedback\">\n          Feedback:\n        </label>\n            <textarea className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\" id=\"feedback\" rows=\"5\" placeholder=\"Enter your feedback\"></textarea>\n        </div>\n        <button className=\"bg-blue-500 hover700 text-white font-bold py-2 px-4 rounded focus focus\" type=\"submit\">\n        Submit\n      </button>\n    </form>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@jaxstone",
+    "authorUrl": "https://tailwindflex.com/@jaxstone",
+    "sourceUrl": "https://tailwindflex.com/@jaxstone/feedback-form-2",
+    "mention": "Créé par @jaxstone sur TailwindFlex",
+    "rawHtml": "<form class=\"max-w-md mx-auto mt-20 p-6 bg-white border rounded-lg shadow-lg\">\n    <h2 class=\"text-2xl font-bold mb-6\">Feedback Form</h2>\n    <div class=\"mb-4\">\n        <label class=\"block text-gray-700 font-bold mb-2\" for=\"name\">\n      Name:\n    </label>\n        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"name\" type=\"text\" placeholder=\"Enter your name\">\n    </div>\n    <div class=\"mb-4\">\n        <label class=\"block text-gray-700 font-bold mb-2\" for=\"email\">\n      Email:\n    </label>\n        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"email\" type=\"email\" placeholder=\"Enter your email\">\n    </div>\n    <div class=\"mb-4\">\n        <label class=\"block text-gray-700 font-bold mb-2\" for=\"feedback\">\n      Feedback:\n    </label>\n        <textarea class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"feedback\" rows=\"5\" placeholder=\"Enter your feedback\"></textarea>\n    </div>\n    <button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\" type=\"submit\">\n    Submit\n  </button>\n</form>"
+  }
+}

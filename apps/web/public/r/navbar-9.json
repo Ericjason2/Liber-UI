@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "navbar-9",
+  "type": "registry:ui",
+  "title": "Responsive Gradient Navbar with Toggle",
+  "description": "Responsive Gradient Navbar with Toggle - Créé par @sudip-chaudhary sur TailwindFlex.",
+  "author": "@sudip-chaudhary (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/navbar-9.tsx",
+      "content": "/**\n * Component: Responsive Gradient Navbar with Toggle\n * Author: @sudip-chaudhary (https://tailwindflex.com/@sudip-chaudhary)\n * Source: https://tailwindflex.com/@sudip-chaudhary/navbar-9\n * Attribution: Créé par @sudip-chaudhary sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Navbar9() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n  <title>Responsive Tailwind Navbar</title>\\n  \\n</head>\\n<body class=\\\"bg-gray-100\\\">\\n\\n  <nav class=\\\"bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 shadow-lg\\\">\\n    <div class=\\\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\\\">\\n      <div class=\\\"flex justify-between h-16 items-center\\\">\\n        <!-- Logo -->\\n        <div class=\\\"flex-shrink-0 text-white text-2xl font-bold\\\">\\n          MyBrand\\n        </div>\\n\\n        <!-- Desktop Menu -->\\n        <div class=\\\"hidden md:flex space-x-6 text-white font-medium\\\">\\n          <a href=\\\"#\\\" class=\\\"hover:text-yellow-300 transition\\\">Home</a>\\n          <a href=\\\"#\\\" class=\\\"hover:text-yellow-300 transition\\\">About</a>\\n          <a href=\\\"#\\\" class=\\\"hover:text-yellow-300 transition\\\">Services</a>\\n          <a href=\\\"#\\\" class=\\\"hover:text-yellow-300 transition\\\">Contact</a>\\n        </div>\\n\\n        <!-- Desktop Button -->\\n        <div class=\\\"hidden md:block\\\">\\n          <a href=\\\"#\\\" class=\\\"bg-white text-indigo-700 px-4 py-2 rounded-xl hover:bg-yellow-300 transition-all font-semibold\\\">\\n            Get Started\\n          </a>\\n        </div>\\n\\n        <!-- Mobile Menu Button -->\\n        <div class=\\\"md:hidden\\\">\\n          <button id=\\\"menu-toggle\\\" class=\\\"text-white focus:outline-none text-2xl\\\">\\n            ☰\\n          </button>\\n        </div>\\n      </div>\\n    </div>\\n\\n    <!-- Mobile Menu -->\\n    <div id=\\\"mobile-menu\\\" class=\\\"md:hidden hidden px-4 pb-4 space-y-2 text-white font-medium\\\">\\n      <a href=\\\"#\\\" class=\\\"block hover:text-yellow-300 transition\\\">Home</a>\\n      <a href=\\\"#\\\" class=\\\"block hover:text-yellow-300 transition\\\">About</a>\\n      <a href=\\\"#\\\" class=\\\"block hover:text-yellow-300 transition\\\">Services</a>\\n      <a href=\\\"#\\\" class=\\\"block hover:text-yellow-300 transition\\\">Contact</a>\\n      <a href=\\\"#\\\" class=\\\"block bg-white text-indigo-700 text-center px-4 py-2 rounded-xl hover:bg-yellow-300 transition-all font-semibold mt-2\\\">\\n        Get Started\\n      </a>\\n    </div>\\n  </nav>\\n\\n  \\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sudip-chaudhary",
+    "authorUrl": "https://tailwindflex.com/@sudip-chaudhary",
+    "sourceUrl": "https://tailwindflex.com/@sudip-chaudhary/navbar-9",
+    "mention": "Créé par @sudip-chaudhary sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>Responsive Tailwind Navbar</title>\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gray-100\">\n\n  <nav class=\"bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 shadow-lg\">\n    <div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\n      <div class=\"flex justify-between h-16 items-center\">\n        <!-- Logo -->\n        <div class=\"flex-shrink-0 text-white text-2xl font-bold\">\n          MyBrand\n        </div>\n\n        <!-- Desktop Menu -->\n        <div class=\"hidden md:flex space-x-6 text-white font-medium\">\n          <a href=\"#\" class=\"hover:text-yellow-300 transition\">Home</a>\n          <a href=\"#\" class=\"hover:text-yellow-300 transition\">About</a>\n          <a href=\"#\" class=\"hover:text-yellow-300 transition\">Services</a>\n          <a href=\"#\" class=\"hover:text-yellow-300 transition\">Contact</a>\n        </div>\n\n        <!-- Desktop Button -->\n        <div class=\"hidden md:block\">\n          <a href=\"#\" class=\"bg-white text-indigo-700 px-4 py-2 rounded-xl hover:bg-yellow-300 transition-all font-semibold\">\n            Get Started\n          </a>\n        </div>\n\n        <!-- Mobile Menu Button -->\n        <div class=\"md:hidden\">\n          <button id=\"menu-toggle\" class=\"text-white focus:outline-none text-2xl\">\n            ☰\n          </button>\n        </div>\n      </div>\n    </div>\n\n    <!-- Mobile Menu -->\n    <div id=\"mobile-menu\" class=\"md:hidden hidden px-4 pb-4 space-y-2 text-white font-medium\">\n      <a href=\"#\" class=\"block hover:text-yellow-300 transition\">Home</a>\n      <a href=\"#\" class=\"block hover:text-yellow-300 transition\">About</a>\n      <a href=\"#\" class=\"block hover:text-yellow-300 transition\">Services</a>\n      <a href=\"#\" class=\"block hover:text-yellow-300 transition\">Contact</a>\n      <a href=\"#\" class=\"block bg-white text-indigo-700 text-center px-4 py-2 rounded-xl hover:bg-yellow-300 transition-all font-semibold mt-2\">\n        Get Started\n      </a>\n    </div>\n  </nav>\n\n  <script>\n    const toggle = document.getElementById('menu-toggle');\n    const mobileMenu = document.getElementById('mobile-menu');\n\n    toggle.addEventListener('click', () => {\n      mobileMenu.classList.toggle('hidden');\n    });\n  </script>\n\n</body>\n</html>"
+  }
+}

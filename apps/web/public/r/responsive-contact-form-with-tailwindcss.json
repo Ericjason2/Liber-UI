@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-contact-form-with-tailwindcss",
+  "type": "registry:ui",
+  "title": "Responsive Contact Form with TailwindCSS",
+  "description": "Responsive Contact Form with TailwindCSS - Créé par @shariful-islam sur TailwindFlex.",
+  "author": "@shariful-islam (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-contact-form-with-tailwindcss.tsx",
+      "content": "/**\n * Component: Responsive Contact Form with TailwindCSS\n * Author: @shariful-islam (https://tailwindflex.com/@shariful-islam)\n * Source: https://tailwindflex.com/@shariful-islam/responsive-contact-form-with-tailwindcss\n * Attribution: Créé par @shariful-islam sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveContactFormWithTailwindcss() {\n  return (\n    <div>\n    <body className=\"flex justify-center items-center min-h-screen bg-gray-100\">\n    \n        <div className=\"relative p-10 bg-white rounded-2xl shadow-lg max-w-lg w-full\">\n            \n            <div className=\"absolute inset-0 -z-10 transform rotate-6 bg-green-500 rounded-2xl\"></div>\n    \n            <h2 className=\"text-xl font-semibold text-gray-800\">\n                <span className=\"text-green-600 font-bold\">Get Help?</span> Please Write Your Subject, Message & Notify Your Email.\n            </h2>\n    \n            <form className=\"mt-5 space-y-4\">\n                <div>\n                    <label className=\"block font-medium text-gray-700\">Full Name*</label>\n                    <input type=\"text\" placeholder=\"Type Name\" className=\"w-full mt-1 p-3 border rounded-md focus2 focus500 outline-none\" />\n                </div>\n                \n                <div>\n                    <label className=\"block font-medium text-gray-700\">Email*</label>\n                    <input type=\"email\" placeholder=\"Type Your Email\" className=\"w-full mt-1 p-3 border rounded-md focus2 focus500 outline-none\" />\n                </div>\n    \n                <div>\n                    <label className=\"block font-medium text-gray-700\">Subject*</label>\n                    <input type=\"text\" placeholder=\"Type Here\" className=\"w-full mt-1 p-3 border rounded-md focus2 focus500 outline-none\" />\n                </div>\n    \n                <div>\n                    <label className=\"block font-medium text-gray-700\">Your Message*</label>\n                    <textarea placeholder=\"Type Here\" rows=\"4\" className=\"w-full mt-1 p-3 border rounded-md focus2 focus500 outline-none\"></textarea>\n                </div>\n    \n                <button type=\"submit\" className=\"w-full py-3 text-white bg-green-600 rounded-md hover700 transition\">\n                    Send Message\n                </button>\n            </form>\n        </div>\n    \n    </body>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@shariful-islam",
+    "authorUrl": "https://tailwindflex.com/@shariful-islam",
+    "sourceUrl": "https://tailwindflex.com/@shariful-islam/responsive-contact-form-with-tailwindcss",
+    "mention": "Créé par @shariful-islam sur TailwindFlex",
+    "rawHtml": "<body class=\"flex justify-center items-center min-h-screen bg-gray-100\">\n\n    <div class=\"relative p-10 bg-white rounded-2xl shadow-lg max-w-lg w-full\">\n        <!-- Decorative Background -->\n        <div class=\"absolute inset-0 -z-10 transform rotate-6 bg-green-500 rounded-2xl\"></div>\n\n        <h2 class=\"text-xl font-semibold text-gray-800\">\n            <span class=\"text-green-600 font-bold\">Get Help?</span> Please Write Your Subject, Message & Notify Your Email.\n        </h2>\n\n        <form class=\"mt-5 space-y-4\">\n            <div>\n                <label class=\"block font-medium text-gray-700\">Full Name*</label>\n                <input type=\"text\" placeholder=\"Type Name\" class=\"w-full mt-1 p-3 border rounded-md focus:ring-2 focus:ring-green-500 outline-none\">\n            </div>\n            \n            <div>\n                <label class=\"block font-medium text-gray-700\">Email*</label>\n                <input type=\"email\" placeholder=\"Type Your Email\" class=\"w-full mt-1 p-3 border rounded-md focus:ring-2 focus:ring-green-500 outline-none\">\n            </div>\n\n            <div>\n                <label class=\"block font-medium text-gray-700\">Subject*</label>\n                <input type=\"text\" placeholder=\"Type Here\" class=\"w-full mt-1 p-3 border rounded-md focus:ring-2 focus:ring-green-500 outline-none\">\n            </div>\n\n            <div>\n                <label class=\"block font-medium text-gray-700\">Your Message*</label>\n                <textarea placeholder=\"Type Here\" rows=\"4\" class=\"w-full mt-1 p-3 border rounded-md focus:ring-2 focus:ring-green-500 outline-none\"></textarea>\n            </div>\n\n            <button type=\"submit\" class=\"w-full py-3 text-white bg-green-600 rounded-md hover:bg-green-700 transition\">\n                Send Message\n            </button>\n        </form>\n    </div>\n\n</body>"
+  }
+}

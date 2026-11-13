@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-card-12",
+  "type": "registry:ui",
+  "title": "Pricing Card",
+  "description": "Pricing Card - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pricing-card-12.tsx",
+      "content": "/**\n * Component: Pricing Card\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/pricing-card-12\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PricingCard12() {\n  return (\n    <div>\n    <div className=\"max-w-sm w-full\">\n      <div className=\"relative group\">\n        <div\n          className=\"absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-25 group-hover100 transition duration-1000 group-hover200\">\n        </div>\n        <div\n          className=\"relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex flex-col items-top justify-start space-y-6\">\n          <div className=\"flex justify-between items-center\">\n            <span className=\"text-2xl font-bold text-gray-900\">Pro Plan</span>\n            <span className=\"px-3 py-1 text-sm text-white bg-purple-500 rounded-full\">Popular</span>\n          </div>\n          <div className=\"text-5xl font-bold text-gray-900\">$29<span className=\"text-lg font-normal text-gray-600\">/mo</span>\n          </div>\n          <ul className=\"space-y-3\">\n            <li className=\"flex items-center\">\n              <svg className=\"w-5 h-5 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"\n                xmlns=\"http://www.w3.org/2000/svg\">\n                <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path>\n              </svg>\n              Unlimited projects\n            </li>\n            <li className=\"flex items-center\">\n              <svg className=\"w-5 h-5 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"\n                xmlns=\"http://www.w3.org/2000/svg\">\n                <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path>\n              </svg>\n              Advanced analytics\n            </li>\n            <li className=\"flex items-center\">\n              <svg className=\"w-5 h-5 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"\n                xmlns=\"http://www.w3.org/2000/svg\">\n                <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M5 13l4 4L19 7\"></path>\n              </svg>\n              24/7 Support\n            </li>\n          </ul>\n          <button className=\"w-full py-3 font-bold text-white bg-purple-600 rounded-lg hover700 transition duration-300 transform hover105\">\n                        Choose Plan\n                    </button>\n          <div className=\"absolute -top-16 right-0 -mt-4 -mr-6 w-16 h-16 float-animation\">\n            <img src=\"https://www.svgrepo.com/show/506715/fire.svg\" alt=\"Icon\" className=\"w-full h-full object-cover rounded-full \" />\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/pricing-card-12",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-sm w-full\">\n  <div class=\"relative group\">\n    <div\n      class=\"absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200\">\n    </div>\n    <div\n      class=\"relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex flex-col items-top justify-start space-y-6\">\n      <div class=\"flex justify-between items-center\">\n        <span class=\"text-2xl font-bold text-gray-900\">Pro Plan</span>\n        <span class=\"px-3 py-1 text-sm text-white bg-purple-500 rounded-full\">Popular</span>\n      </div>\n      <div class=\"text-5xl font-bold text-gray-900\">$29<span class=\"text-lg font-normal text-gray-600\">/mo</span>\n      </div>\n      <ul class=\"space-y-3\">\n        <li class=\"flex items-center\">\n          <svg class=\"w-5 h-5 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"\n            xmlns=\"http://www.w3.org/2000/svg\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n          </svg>\n          Unlimited projects\n        </li>\n        <li class=\"flex items-center\">\n          <svg class=\"w-5 h-5 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"\n            xmlns=\"http://www.w3.org/2000/svg\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n          </svg>\n          Advanced analytics\n        </li>\n        <li class=\"flex items-center\">\n          <svg class=\"w-5 h-5 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"\n            xmlns=\"http://www.w3.org/2000/svg\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n          </svg>\n          24/7 Support\n        </li>\n      </ul>\n      <button class=\"w-full py-3 font-bold text-white bg-purple-600 rounded-lg hover:bg-purple-700 transition duration-300 transform hover:scale-105\">\n                    Choose Plan\n                </button>\n      <div class=\"absolute -top-16 right-0 -mt-4 -mr-6 w-16 h-16 float-animation\">\n        <img src=\"https://www.svgrepo.com/show/506715/fire.svg\" alt=\"Icon\" class=\"w-full h-full object-cover rounded-full \" />\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "profile-card-16",
+  "type": "registry:ui",
+  "title": "profile card",
+  "description": "profile card - Créé par @yel-59 sur TailwindFlex.",
+  "author": "@yel-59 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/profile-card-16.tsx",
+      "content": "/**\n * Component: profile card\n * Author: @yel-59 (https://tailwindflex.com/@yel-59)\n * Source: https://tailwindflex.com/@yel-59/profile-card-16\n * Attribution: Créé par @yel-59 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProfileCard16() {\n  return (\n    <div>\n    <a className=\"p-8 max-w-lg border border-indigo-300 rounded-2xl hover hover50 flex flex-col items-center\"\n        href=\"#\">\n        <img src=\"https://loremflickr.com/800/600/girl\" className=\"shadow rounded-lg overflow-hidden border\"  />\n        <div className=\"mt-8\">\n            <h4 className=\"font-bold text-xl\">Exercises</h4>\n            <p className=\"mt-2 text-gray-600\">Create Exercises for any subject with the topics you and your students care about.\n            </p>\n            <div className=\"mt-5\">\n                <button type=\"button\" className=\"inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover900\">Start Creating</button>\n            </div>\n        </div>\n    </a>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@yel-59",
+    "authorUrl": "https://tailwindflex.com/@yel-59",
+    "sourceUrl": "https://tailwindflex.com/@yel-59/profile-card-16",
+    "mention": "Créé par @yel-59 sur TailwindFlex",
+    "rawHtml": "<a class=\"p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center\"\n    href=\"#\">\n    <img src=\"https://loremflickr.com/800/600/girl\" class=\"shadow rounded-lg overflow-hidden border\" >\n    <div class=\"mt-8\">\n        <h4 class=\"font-bold text-xl\">Exercises</h4>\n        <p class=\"mt-2 text-gray-600\">Create Exercises for any subject with the topics you and your students care about.\n        </p>\n        <div class=\"mt-5\">\n            <button type=\"button\" class=\"inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900\">Start Creating</button>\n        </div>\n    </div>\n</a>"
+  }
+}

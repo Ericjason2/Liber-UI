@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "beautiful-card-design-with-image",
+  "type": "registry:ui",
+  "title": "Beautiful card design with image",
+  "description": "Beautiful card design with image - Créé par @brandon sur TailwindFlex.",
+  "author": "@brandon (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/beautiful-card-design-with-image.tsx",
+      "content": "/**\n * Component: Beautiful card design with image\n * Author: @brandon (https://tailwindflex.com/@brandon)\n * Source: https://tailwindflex.com/@brandon/beautiful-card-design-with-image\n * Attribution: Créé par @brandon sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BeautifulCardDesignWithImage() {\n  return (\n    <div>\n    <div className=\"flex px-3 py-3\">\r\n        <div className=\"max-w-sm rounded overflow-hidden shadow-lg\">\r\n            <img className=\"w-full\" src=\"https://tailwindcss.com/img/card-top.jpg\" alt=\"Sunset in the mountains\" />\r\n            <div className=\"px-6 py-4\">\r\n                <div className=\"font-bold text-xl mb-2\">The Coldest Sunset</div>\r\n                <p className=\"text-gray-700 text-base\">\r\n                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et\r\n                    perferendis eaque, exercitationem praesentium nihil.\r\n                </p>\r\n            </div>\r\n            <div className=\"px-6 py-4\">\r\n                <span className=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2\">#photography</span>\r\n                <span className=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2\">#travel</span>\r\n                <span className=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700\">#winter</span>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@brandon",
+    "authorUrl": "https://tailwindflex.com/@brandon",
+    "sourceUrl": "https://tailwindflex.com/@brandon/beautiful-card-design-with-image",
+    "mention": "Créé par @brandon sur TailwindFlex",
+    "rawHtml": "<div class=\"flex px-3 py-3\">\r\n    <div class=\"max-w-sm rounded overflow-hidden shadow-lg\">\r\n        <img class=\"w-full\" src=\"https://tailwindcss.com/img/card-top.jpg\" alt=\"Sunset in the mountains\">\r\n        <div class=\"px-6 py-4\">\r\n            <div class=\"font-bold text-xl mb-2\">The Coldest Sunset</div>\r\n            <p class=\"text-gray-700 text-base\">\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et\r\n                perferendis eaque, exercitationem praesentium nihil.\r\n            </p>\r\n        </div>\r\n        <div class=\"px-6 py-4\">\r\n            <span class=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2\">#photography</span>\r\n            <span class=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2\">#travel</span>\r\n            <span class=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700\">#winter</span>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

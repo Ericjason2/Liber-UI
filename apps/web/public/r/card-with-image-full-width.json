@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-with-image-full-width",
+  "type": "registry:ui",
+  "title": "Card with image full width",
+  "description": "Card with image full width - Créé par @mr-robot sur TailwindFlex.",
+  "author": "@mr-robot (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-with-image-full-width.tsx",
+      "content": "/**\n * Component: Card with image full width\n * Author: @mr-robot (https://tailwindflex.com/@mr-robot)\n * Source: https://tailwindflex.com/@mr-robot/card-with-image-full-width\n * Attribution: Créé par @mr-robot sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardWithImageFullWidth() {\n  return (\n    <div>\n    <div className=\"max-w-screen-lg mx-auto p-5 sm10 md16\">\r\n    \r\n        <div className=\"mb-10 rounded overflow-hidden flex flex-col mx-auto\">\r\n            <a href=\"#\"\r\n                className=\"text-xl sm4xl font-semibold inline-block hover600 transition duration-500 ease-in-out inline-block mb-2\">The\r\n                Best Activewear from the Nordstrom Anniversary Sale</a>\r\n    \r\n            <div className=\"relative\">\r\n                <a href=\"#\">\r\n                    <img className=\"w-full\"\r\n                        src=\"https://images.pexels.com/photos/5120892/pexels-photo-5120892.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=625.0&amp;sharp=10&amp;w=1500\"\r\n                        alt=\"Sunset in the mountains\" />\r\n                </a>\r\n                <a href=\"#!\"\r\n                    className=\"hidden absolute z-10 text-xs absolute bottom-0 left-0 bg-indigo-600 px-6 m-2 py-2 text-white hover hover600 transition duration-500 ease-in-out sm items-center\"><span\r\n                        className=\"text-lg\">|</span>&nbsp;&nbsp;<span>Cooking</span></a>\r\n    \r\n                <a href=\"#!\"\r\n                    className=\"hidden absolute z-10 text-xs absolute bottom-0 right-0 bg-indigo-600 px-6 m-2 py-2 text-white hover hover600 transition duration-500 ease-in-out sm items-center\"><span\r\n                        className=\"text-lg\">|</span>&nbsp;&nbsp;<span>Read more</span></a>\r\n    \r\n            </div>\r\n            <p className=\"text-gray-700 py-5 text-base leading-8\">\r\n                Machu Picchu is a 15th-century Inca citadel situated on a mountain ridge 2,430 metres (7,970 ft) above sea\r\n                level. It is located in the Cusco Region, Urubamba Province, Machupicchu District in Peru, above the Sacred\r\n                Valley, which is 80 kilometres (50 mi) northwest of Cuzco and through which the Urubamba River flows.\r\n            </p>\r\n            <div className=\"py-5 text-sm font-regular text-gray-900 flex\">\r\n                <span className=\"mr-3 flex flex-row items-center\">\r\n                    <svg className=\"text-indigo-600\" fill=\"currentColor\" height=\"13px\" width=\"13px\" version=\"1.1\" id=\"Layer_1\"\r\n                        xmlns=\"http://www.w3.org/2000/svg\" xmlns x=\"0px\" y=\"0px\"\r\n                        viewBox=\"0 0 512 512\" style=\"enable-background 0 0 512 512;\" xml>\r\n                        <g>\r\n                            <g>\r\n                                <path d=\"M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256\r\n    \t\t\tc0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128\r\n    \t\t\tc0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z\"></path>\r\n                            </g>\r\n                        </g>\r\n                    </svg>\r\n                    <span className=\"ml-1\">6 mins ago</span></span>\r\n                <a href=\"#\" className=\"flex flex-row items-center hover600\">\r\n                    <svg className=\"text-indigo-600\" fill=\"currentColor\" height=\"16px\" aria-hidden=\"true\" role=\"img\"\r\n                        focusable=\"false\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                        <path fill=\"currentColor\"\r\n                            d=\"M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\">\r\n                        </path>\r\n                        <path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\r\n                    </svg>\r\n                    <span className=\"ml-1\">AliSher Azimi</span></a>\r\n            </div>\r\n            <hr />\r\n    \r\n        </div>\r\n    \r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mr-robot",
+    "authorUrl": "https://tailwindflex.com/@mr-robot",
+    "sourceUrl": "https://tailwindflex.com/@mr-robot/card-with-image-full-width",
+    "mention": "Créé par @mr-robot sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-screen-lg mx-auto p-5 sm:p-10 md:p-16\">\r\n\r\n    <div class=\"mb-10 rounded overflow-hidden flex flex-col mx-auto\">\r\n        <a href=\"#\"\r\n            class=\"text-xl sm:text-4xl font-semibold inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2\">The\r\n            Best Activewear from the Nordstrom Anniversary Sale</a>\r\n\r\n        <div class=\"relative\">\r\n            <a href=\"#\">\r\n                <img class=\"w-full\"\r\n                    src=\"https://images.pexels.com/photos/5120892/pexels-photo-5120892.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=625.0&amp;sharp=10&amp;w=1500\"\r\n                    alt=\"Sunset in the mountains\">\r\n            </a>\r\n            <a href=\"#!\"\r\n                class=\"hidden absolute z-10 text-xs absolute bottom-0 left-0 bg-indigo-600 px-6 m-2 py-2 text-white hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out sm:flex items-center\"><span\r\n                    class=\"text-lg\">|</span>&nbsp;&nbsp;<span>Cooking</span></a>\r\n\r\n            <a href=\"#!\"\r\n                class=\"hidden absolute z-10 text-xs absolute bottom-0 right-0 bg-indigo-600 px-6 m-2 py-2 text-white hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out sm:flex items-center\"><span\r\n                    class=\"text-lg\">|</span>&nbsp;&nbsp;<span>Read more</span></a>\r\n\r\n        </div>\r\n        <p class=\"text-gray-700 py-5 text-base leading-8\">\r\n            Machu Picchu is a 15th-century Inca citadel situated on a mountain ridge 2,430 metres (7,970 ft) above sea\r\n            level. It is located in the Cusco Region, Urubamba Province, Machupicchu District in Peru, above the Sacred\r\n            Valley, which is 80 kilometres (50 mi) northwest of Cuzco and through which the Urubamba River flows.\r\n        </p>\r\n        <div class=\"py-5 text-sm font-regular text-gray-900 flex\">\r\n            <span class=\"mr-3 flex flex-row items-center\">\r\n                <svg class=\"text-indigo-600\" fill=\"currentColor\" height=\"13px\" width=\"13px\" version=\"1.1\" id=\"Layer_1\"\r\n                    xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\r\n                    viewBox=\"0 0 512 512\" style=\"enable-background:new 0 0 512 512;\" xml:space=\"preserve\">\r\n                    <g>\r\n                        <g>\r\n                            <path d=\"M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256\r\n\t\t\tc0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128\r\n\t\t\tc0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z\"></path>\r\n                        </g>\r\n                    </g>\r\n                </svg>\r\n                <span class=\"ml-1\">6 mins ago</span></span>\r\n            <a href=\"#\" class=\"flex flex-row items-center hover:text-indigo-600\">\r\n                <svg class=\"text-indigo-600\" fill=\"currentColor\" height=\"16px\" aria-hidden=\"true\" role=\"img\"\r\n                    focusable=\"false\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                    <path fill=\"currentColor\"\r\n                        d=\"M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\">\r\n                    </path>\r\n                    <path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\r\n                </svg>\r\n                <span class=\"ml-1\">AliSher Azimi</span></a>\r\n        </div>\r\n        <hr>\r\n\r\n    </div>\r\n\r\n</div>"
+  }
+}

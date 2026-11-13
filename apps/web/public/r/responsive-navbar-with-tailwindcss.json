@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-navbar-with-tailwindcss",
+  "type": "registry:ui",
+  "title": "Responsive Navbar with TailwindCSS",
+  "description": "Responsive Navbar with TailwindCSS - Créé par @rathanak-phan sur TailwindFlex.",
+  "author": "@rathanak-phan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-navbar-with-tailwindcss.tsx",
+      "content": "/**\n * Component: Responsive Navbar with TailwindCSS\n * Author: @rathanak-phan (https://tailwindflex.com/@rathanak-phan)\n * Source: https://tailwindflex.com/@rathanak-phan/responsive-navbar-with-tailwindcss\n * Attribution: Créé par @rathanak-phan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveNavbarWithTailwindcss() {\n  return (\n    <div>\n    \n    <nav className=\"bg-gray-500 fixed top-0 left-0 w-full z-50\">\n      <div className=\"flex justify-between items-center h-16 md20 lg24 px-5 sm10 lg20 text-white\">\n        \n        <a href=\"#\" className=\"text-2xl lg3xl flex items-center gap-2 font-serif\">\n          <i className=\"fa-solid fa-shop text-green-700\"></i>\n          <span>LoGo</span>\n        </a>\n    \n        \n        <ul className=\"hidden md gap-8 text-lg\">\n          <li><a href=\"/#\" className=\"hover\">Home</a></li>\n          <li><a href=\"/shop\" className=\"hover\">Shop</a></li>\n          <li><a href=\"/about\" className=\"hover\">About</a></li>\n          <li><a href=\"/contact\" className=\"hover\">Contact</a></li>\n        </ul>\n    \n        \n        <div className=\"flex items-center gap-5\">\n          \n    \n          <i className=\"fa-solid fa-circle-user text-2xl lg3xl hover\"></i>\n    \n    \n    \n          \n          <button className=\"hidden md border-2 rounded-md bg-blue-500 text-lg px-2\">\n            Get started\n          </button>\n          <button className=\"md text-2xl\">\n            <i className=\"fa-solid fa-bars\">=</i>\n          </button>\n        </div>\n      </div>\n    \n      \n      <div id=\"mobileMenu\" className=\"md bg-gray-800 text-white p-5 space-y-3\">\n        <a href=\"/\" className=\"block hover700 py-2 px-4 rounded\">Home</a>\n        <a href=\"/shop\" className=\"block hover700 py-2 px-4 rounded\">Shop</a>\n        <a href=\"/about\" className=\"block hover700 py-2 px-4 rounded\">About</a>\n        <a href=\"/contact\" className=\"block hover700 py-2 px-4 rounded\">Contact</a>\n      </div>\n    </nav>\n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rathanak-phan",
+    "authorUrl": "https://tailwindflex.com/@rathanak-phan",
+    "sourceUrl": "https://tailwindflex.com/@rathanak-phan/responsive-navbar-with-tailwindcss",
+    "mention": "Créé par @rathanak-phan sur TailwindFlex",
+    "rawHtml": "<!-- Navbar -->\n<nav class=\"bg-gray-500 fixed top-0 left-0 w-full z-50\">\n  <div class=\"flex justify-between items-center h-16 md:h-20 lg:h-24 px-5 sm:px-10 lg:px-20 text-white\">\n    <!-- Logo -->\n    <a href=\"#\" class=\"text-2xl lg:text-3xl flex items-center gap-2 font-serif\">\n      <i class=\"fa-solid fa-shop text-green-700\"></i>\n      <span>LoGo</span>\n    </a>\n\n    <!-- Navbar Links (Desktop) -->\n    <ul class=\"hidden md:flex gap-8 text-lg\">\n      <li><a href=\"/#\" class=\"hover:underline\">Home</a></li>\n      <li><a href=\"/shop\" class=\"hover:underline\">Shop</a></li>\n      <li><a href=\"/about\" class=\"hover:underline\">About</a></li>\n      <li><a href=\"/contact\" class=\"hover:underline\">Contact</a></li>\n    </ul>\n\n    <!-- Actions -->\n    <div class=\"flex items-center gap-5\">\n      <!-- User Icon -->\n\n      <i class=\"fa-solid fa-circle-user text-2xl lg:text-3xl hover:cursor-pointer\"></i>\n\n\n\n      <!-- Mobile Hamburger Menu -->\n      <button class=\"hidden md:flex border-2 rounded-md bg-blue-500 text-lg px-2\">\n        Get started\n      </button>\n      <button class=\"md:hidden text-2xl\" onclick=\"toggleMenu()\">\n        <i class=\"fa-solid fa-bars\">=</i>\n      </button>\n    </div>\n  </div>\n\n  <!-- Mobile Dropdown Menu -->\n  <div id=\"mobileMenu\" class=\"md:hidden bg-gray-800 text-white p-5 space-y-3\">\n    <a href=\"/\" class=\"block hover:bg-gray-700 py-2 px-4 rounded\">Home</a>\n    <a href=\"/shop\" class=\"block hover:bg-gray-700 py-2 px-4 rounded\">Shop</a>\n    <a href=\"/about\" class=\"block hover:bg-gray-700 py-2 px-4 rounded\">About</a>\n    <a href=\"/contact\" class=\"block hover:bg-gray-700 py-2 px-4 rounded\">Contact</a>\n  </div>\n</nav>\n\n<script>\n  // JavaScript for toggling the mobile menu\n  function toggleMenu() {\n    const mobileMenu = document.getElementById(\"mobileMenu\");\n    mobileMenu.classList.toggle(\"hidden\");\n  }\n</script>"
+  }
+}

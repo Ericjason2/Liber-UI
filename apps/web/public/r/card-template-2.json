@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-template-2",
+  "type": "registry:ui",
+  "title": "Card template",
+  "description": "Card template - Créé par @raulanto sur TailwindFlex.",
+  "author": "@raulanto (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-template-2.tsx",
+      "content": "/**\n * Component: Card template\n * Author: @raulanto (https://tailwindflex.com/@raulanto)\n * Source: https://tailwindflex.com/@raulanto/card-template-2\n * Attribution: Créé par @raulanto sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardTemplate2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"es\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Immersive Real Estate Card</title>\\n    \\n    <link href=\\\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap\\\" rel=\\\"stylesheet\\\">\\n    <style>\\n        body {\\n            font-family: 'Inter', sans-serif;\\n            /* Patrón de puntos sutil para el fondo */\\n            background-color: #f8f8f8;\\n            background-image: radial-gradient(#d1d5db 1px, transparent 1px);\\n            background-size: 24px 24px;\\n        }\\n    </style>\\n</head>\\n<body class=\\\"bg-gray-200 flex items-center justify-center min-h-screen p-6\\\">\\n\\n    <div class=\\\"relative w-[340px] h-[450px] rounded-[32px] overflow-hidden shadow-2xl transition-transform hover:scale-[1.02] duration-300\\\">\\n        \\n        <img src=\\\"https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=800&auto=format&fit=crop\\\" \\n             alt=\\\"Cabin House\\\" \\n             class=\\\"absolute inset-0 w-full h-full object-cover\\\">\\n\\n        <div class=\\\"absolute inset-0 bg-gradient-to-t from-[#1a2118] via-[#1a2118]/90 via-40% to-transparent\\\"></div>\\n\\n        <div class=\\\"absolute top-6 left-6\\\">\\n            <div class=\\\"bg-white px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm\\\">\\n                <svg class=\\\"w-3.5 h-3.5 text-yellow-500 fill-current\\\" viewBox=\\\"0 0 20 20\\\"><path d=\\\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\\\"/></svg>\\n                <span class=\\\"text-xs font-semibold text-gray-800 tracking-wide\\\">Prime Pick</span>\\n            </div>\\n        </div>\\n\\n        <div class=\\\"absolute bottom-0 w-full p-7 text-white z-10\\\">\\n            \\n            <div class=\\\"mb-6\\\">\\n                <h2 class=\\\"text-3xl font-semibold tracking-tight mb-2\\\">\\n                    <span class=\\\"font-normal text-gray-300 mr-1\\\">List:</span>$250,000\\n                </h2>\\n                <p class=\\\"text-gray-300 text-sm leading-relaxed\\\">\\n                    Harry koingsbergstr...<br>\\n                    1063 AG Guillaume Briard\\n                </p>\\n            </div>\\n\\n            <div class=\\\"flex items-center gap-6 mb-6\\\">\\n                <div class=\\\"flex flex-col\\\">\\n                    <span class=\\\"text-lg font-medium\\\">29 m²</span>\\n                    <span class=\\\"text-xs text-gray-400 font-light\\\">Living</span>\\n                </div>\\n                \\n                <div class=\\\"w-px h-8 bg-gray-600/50\\\"></div>\\n\\n                <div class=\\\"flex flex-col text-center\\\">\\n                    <span class=\\\"text-lg font-medium\\\">2</span>\\n                    <span class=\\\"text-xs text-gray-400 font-light\\\">Rooms</span>\\n                </div>\\n            </div>\\n\\n            <div class=\\\"border-t border-white/10 pt-4 flex justify-between items-center text-sm\\\">\\n                <div class=\\\"text-gray-400\\\">\\n                    By <span class=\\\"text-white underline decoration-1 underline-offset-4 decoration-gray-400\\\">Waleed Sabir</span>\\n                </div>\\n                <div class=\\\"text-gray-500\\\">\\n                    2 days ago\\n                </div>\\n            </div>\\n\\n        </div>\\n\\n    </div>\\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "pricing",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@raulanto",
+    "authorUrl": "https://tailwindflex.com/@raulanto",
+    "sourceUrl": "https://tailwindflex.com/@raulanto/card-template-2",
+    "mention": "Créé par @raulanto sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Immersive Real Estate Card</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n    <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap\" rel=\"stylesheet\">\n    <style>\n        body {\n            font-family: 'Inter', sans-serif;\n            /* Patrón de puntos sutil para el fondo */\n            background-color: #f8f8f8;\n            background-image: radial-gradient(#d1d5db 1px, transparent 1px);\n            background-size: 24px 24px;\n        }\n    </style>\n</head>\n<body class=\"bg-gray-200 flex items-center justify-center min-h-screen p-6\">\n\n    <div class=\"relative w-[340px] h-[450px] rounded-[32px] overflow-hidden shadow-2xl transition-transform hover:scale-[1.02] duration-300\">\n        \n        <img src=\"https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=800&auto=format&fit=crop\" \n             alt=\"Cabin House\" \n             class=\"absolute inset-0 w-full h-full object-cover\">\n\n        <div class=\"absolute inset-0 bg-gradient-to-t from-[#1a2118] via-[#1a2118]/90 via-40% to-transparent\"></div>\n\n        <div class=\"absolute top-6 left-6\">\n            <div class=\"bg-white px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm\">\n                <svg class=\"w-3.5 h-3.5 text-yellow-500 fill-current\" viewBox=\"0 0 20 20\"><path d=\"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z\"/></svg>\n                <span class=\"text-xs font-semibold text-gray-800 tracking-wide\">Prime Pick</span>\n            </div>\n        </div>\n\n        <div class=\"absolute bottom-0 w-full p-7 text-white z-10\">\n            \n            <div class=\"mb-6\">\n                <h2 class=\"text-3xl font-semibold tracking-tight mb-2\">\n                    <span class=\"font-normal text-gray-300 mr-1\">List:</span>$250,000\n                </h2>\n                <p class=\"text-gray-300 text-sm leading-relaxed\">\n                    Harry koingsbergstr...<br>\n                    1063 AG Guillaume Briard\n                </p>\n            </div>\n\n            <div class=\"flex items-center gap-6 mb-6\">\n                <div class=\"flex flex-col\">\n                    <span class=\"text-lg font-medium\">29 m²</span>\n                    <span class=\"text-xs text-gray-400 font-light\">Living</span>\n                </div>\n                \n                <div class=\"w-px h-8 bg-gray-600/50\"></div>\n\n                <div class=\"flex flex-col text-center\">\n                    <span class=\"text-lg font-medium\">2</span>\n                    <span class=\"text-xs text-gray-400 font-light\">Rooms</span>\n                </div>\n            </div>\n\n            <div class=\"border-t border-white/10 pt-4 flex justify-between items-center text-sm\">\n                <div class=\"text-gray-400\">\n                    By <span class=\"text-white underline decoration-1 underline-offset-4 decoration-gray-400\">Waleed Sabir</span>\n                </div>\n                <div class=\"text-gray-500\">\n                    2 days ago\n                </div>\n            </div>\n\n        </div>\n\n    </div>\n\n</body>\n</html>"
+  }
+}

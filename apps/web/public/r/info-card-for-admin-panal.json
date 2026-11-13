@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "info-card-for-admin-panal",
+  "type": "registry:ui",
+  "title": "Info card for admin panal",
+  "description": "Info card for admin panal - Créé par @arya sur TailwindFlex.",
+  "author": "@arya (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/info-card-for-admin-panal.tsx",
+      "content": "/**\n * Component: Info card for admin panal\n * Author: @arya (https://tailwindflex.com/@arya)\n * Source: https://tailwindflex.com/@arya/info-card-for-admin-panal\n * Attribution: Créé par @arya sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InfoCardForAdminPanal() {\n  return (\n    <div>\n    <div className=\"bg-gray-100 w-full h-screen grid justify-center content-center\">\n        <div className=\"w-fit rounded-[25px] bg-white p-8 aspect\">\n            <div className=\"h-12\">\n                <svg className=\"h-full fill-white stroke-blue-500\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\"\n                    viewBox=\"0 0 24 24\" strokeWidth=\"1.5\" stroke=\"currentColor\" className=\"h-6 w-6\">\n                    <path strokeLinecap=\"round\" strokeLinejoin=\"round\"\n                        d=\"M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z\" />\n                </svg>\n            </div>\n            <div className=\"my-2\">\n                <h2 className=\"text-4xl font-bold\"><span>2680</span> +</h2>\n            </div>\n    \n            <div>\n                <p className=\"mt-2 font-sans text-base font-medium text-gray-500\">Put The Client First</p>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@arya",
+    "authorUrl": "https://tailwindflex.com/@arya",
+    "sourceUrl": "https://tailwindflex.com/@arya/info-card-for-admin-panal",
+    "mention": "Créé par @arya sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-100 w-full h-screen grid justify-center content-center\">\n    <div class=\"w-fit rounded-[25px] bg-white p-8 aspect\">\n        <div class=\"h-12\">\n            <svg class=\"h-full fill-white stroke-blue-500\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\"\n                viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"h-6 w-6\">\n                <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                    d=\"M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z\" />\n            </svg>\n        </div>\n        <div class=\"my-2\">\n            <h2 class=\"text-4xl font-bold\"><span>2680</span> +</h2>\n        </div>\n\n        <div>\n            <p class=\"mt-2 font-sans text-base font-medium text-gray-500\">Put The Client First</p>\n        </div>\n    </div>\n</div>"
+  }
+}

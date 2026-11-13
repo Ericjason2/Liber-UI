@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "material-ios-navbar-mobile-apple-endroid",
+  "type": "registry:ui",
+  "title": "material ios navbar mobile apple endroid",
+  "description": "material ios navbar mobile apple endroid - Créé par @omer-fils-elenga sur TailwindFlex.",
+  "author": "@omer-fils-elenga (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/material-ios-navbar-mobile-apple-endroid.tsx",
+      "content": "/**\n * Component: material ios navbar mobile apple endroid\n * Author: @omer-fils-elenga (https://tailwindflex.com/@omer-fils-elenga)\n * Source: https://tailwindflex.com/@omer-fils-elenga/material-ios-navbar-mobile-apple-endroid\n * Attribution: Créé par @omer-fils-elenga sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function MaterialIosNavbarMobileAppleEndroid() {\n  return (\n    <div>\n    <div className=\"fixed rounded-full bottom-0 z-50 w-full -translate-x-1/2 left-1/2\">\n        <div className=\"w-full p-4 mx-auto rounded-full\">\n            <div className=\"grid  backdrop-blur-lg rounded-full max-w-xs grid-cols-3 gap-1 p-1 mx-auto my-2   \" role=\"group\">\n                <button type=\"button\" className=\"px-5 bg-[#157cda] flex items-center justify-center flex-col py-1.5 text-xs font-medium text-gray-900 hover200 dark dark700 rounded-full\">\n                    <svg  className=\"w-6 h-6 text-gray-100 dark300 group-hover600 dark400 transition-colors\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\">\n                       <path d=\"M12.71 2.29a1 1 0 0 0-1.42 0l-9 9a1 1 0 0 0 0 1.42A1 1 0 0 0 3 13h1v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7h1a1 1 0 0 0 1-1 1 1 0 0 0-.29-.71zM6 20v-9.59l6-6 6 6V20z\"></path>\n                    </svg>\n                     <span className=\"text-[10px] mt-1 text-gray-100   group-hover600  transition-colors\">Home</span>\n        \n                </button>\n                <button type=\"button\" className=\"px-5  flex items-center justify-center flex-col py-1.5 text-xs font-medium text-gray-900 hover200 dark dark700 rounded-full\">\n                   <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" style=\"fill: rgba(0, 0, 0, 1);transform: ;msFilter:;\"><path d=\"M19.148 2.971A2.008 2.008 0 0 0 17.434 2H6.566c-.698 0-1.355.372-1.714.971L2.143 7.485A.995.995 0 0 0 2 8a3.97 3.97 0 0 0 1 2.618V19c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-8.382A3.97 3.97 0 0 0 22 8a.995.995 0 0 0-.143-.515l-2.709-4.514zm.836 5.28A2.003 2.003 0 0 1 18 10c-1.103 0-2-.897-2-2 0-.068-.025-.128-.039-.192l.02-.004L15.22 4h2.214l2.55 4.251zM10.819 4h2.361l.813 4.065C13.958 9.137 13.08 10 12 10s-1.958-.863-1.993-1.935L10.819 4zM6.566 4H8.78l-.76 3.804.02.004C8.025 7.872 8 7.932 8 8c0 1.103-.897 2-2 2a2.003 2.003 0 0 1-1.984-1.749L6.566 4zM10 19v-3h4v3h-4zm6 0v-3c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v3H5v-7.142c.321.083.652.142 1 .142a3.99 3.99 0 0 0 3-1.357c.733.832 1.807 1.357 3 1.357s2.267-.525 3-1.357A3.99 3.99 0 0 0 18 12c.348 0 .679-.059 1-.142V19h-3z\"></path></svg>\n                    <span className=\"text-[10px] mt-1 text-gray-500 dark400 group-hover600 dark400 transition-colors\">store</span>\n                </button>\n                <button type=\"button\" className=\"px-5  flex items-center justify-center flex-col py-1.5 text-xs font-medium text-gray-900 hover200 dark dark700 rounded-full\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" style=\"fill: rgba(0, 0, 0, 1);transform: ;msFilter:;\"><path d=\"M16.57 22a2 2 0 0 0 1.43-.59l2.71-2.71a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0l-1.6 1.59a7.55 7.55 0 0 1-3-1.59 7.62 7.62 0 0 1-1.59-3l1.59-1.6a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0L2.59 6A2 2 0 0 0 2 7.43 15.28 15.28 0 0 0 6.3 17.7 15.28 15.28 0 0 0 16.57 22zM6 5.41 8.59 8 7.3 9.29a1 1 0 0 0-.3.91 10.12 10.12 0 0 0 2.3 4.5 10.08 10.08 0 0 0 4.5 2.3 1 1 0 0 0 .91-.27L16 15.41 18.59 18l-2 2a13.28 13.28 0 0 1-8.87-3.71A13.28 13.28 0 0 1 4 7.41zM20 11h2a8.81 8.81 0 0 0-9-9v2a6.77 6.77 0 0 1 7 7z\"></path><path d=\"M13 8c2.1 0 3 .9 3 3h2c0-3.22-1.78-5-5-5z\"></path></svg>\n                     <span className=\"text-[10px] mt-1 text-gray-500   group-hover600  transition-colors\">Contact</span>\n                </button>\n            </div>\n        </div> \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@omer-fils-elenga",
+    "authorUrl": "https://tailwindflex.com/@omer-fils-elenga",
+    "sourceUrl": "https://tailwindflex.com/@omer-fils-elenga/material-ios-navbar-mobile-apple-endroid",
+    "mention": "Créé par @omer-fils-elenga sur TailwindFlex",
+    "rawHtml": "<div class=\"fixed rounded-full bottom-0 z-50 w-full -translate-x-1/2 left-1/2\">\n    <div class=\"w-full p-4 mx-auto rounded-full\">\n        <div class=\"grid  backdrop-blur-lg rounded-full max-w-xs grid-cols-3 gap-1 p-1 mx-auto my-2   \" role=\"group\">\n            <button type=\"button\" class=\"px-5 bg-[#157cda] flex items-center justify-center flex-col py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-full\">\n                <svg  class=\"w-6 h-6 text-gray-100 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\">\n                   <path d=\"M12.71 2.29a1 1 0 0 0-1.42 0l-9 9a1 1 0 0 0 0 1.42A1 1 0 0 0 3 13h1v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7h1a1 1 0 0 0 1-1 1 1 0 0 0-.29-.71zM6 20v-9.59l6-6 6 6V20z\"></path>\n                </svg>\n                 <span class=\"text-[10px] mt-1 text-gray-100   group-hover:text-white-600  transition-colors\">Home</span>\n    \n            </button>\n            <button type=\"button\" class=\"px-5  flex items-center justify-center flex-col py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-full\">\n               <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" style=\"fill: rgba(0, 0, 0, 1);transform: ;msFilter:;\"><path d=\"M19.148 2.971A2.008 2.008 0 0 0 17.434 2H6.566c-.698 0-1.355.372-1.714.971L2.143 7.485A.995.995 0 0 0 2 8a3.97 3.97 0 0 0 1 2.618V19c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-8.382A3.97 3.97 0 0 0 22 8a.995.995 0 0 0-.143-.515l-2.709-4.514zm.836 5.28A2.003 2.003 0 0 1 18 10c-1.103 0-2-.897-2-2 0-.068-.025-.128-.039-.192l.02-.004L15.22 4h2.214l2.55 4.251zM10.819 4h2.361l.813 4.065C13.958 9.137 13.08 10 12 10s-1.958-.863-1.993-1.935L10.819 4zM6.566 4H8.78l-.76 3.804.02.004C8.025 7.872 8 7.932 8 8c0 1.103-.897 2-2 2a2.003 2.003 0 0 1-1.984-1.749L6.566 4zM10 19v-3h4v3h-4zm6 0v-3c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v3H5v-7.142c.321.083.652.142 1 .142a3.99 3.99 0 0 0 3-1.357c.733.832 1.807 1.357 3 1.357s2.267-.525 3-1.357A3.99 3.99 0 0 0 18 12c.348 0 .679-.059 1-.142V19h-3z\"></path></svg>\n                <span class=\"text-[10px] mt-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors\">store</span>\n            </button>\n            <button type=\"button\" class=\"px-5  flex items-center justify-center flex-col py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-full\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" style=\"fill: rgba(0, 0, 0, 1);transform: ;msFilter:;\"><path d=\"M16.57 22a2 2 0 0 0 1.43-.59l2.71-2.71a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0l-1.6 1.59a7.55 7.55 0 0 1-3-1.59 7.62 7.62 0 0 1-1.59-3l1.59-1.6a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0L2.59 6A2 2 0 0 0 2 7.43 15.28 15.28 0 0 0 6.3 17.7 15.28 15.28 0 0 0 16.57 22zM6 5.41 8.59 8 7.3 9.29a1 1 0 0 0-.3.91 10.12 10.12 0 0 0 2.3 4.5 10.08 10.08 0 0 0 4.5 2.3 1 1 0 0 0 .91-.27L16 15.41 18.59 18l-2 2a13.28 13.28 0 0 1-8.87-3.71A13.28 13.28 0 0 1 4 7.41zM20 11h2a8.81 8.81 0 0 0-9-9v2a6.77 6.77 0 0 1 7 7z\"></path><path d=\"M13 8c2.1 0 3 .9 3 3h2c0-3.22-1.78-5-5-5z\"></path></svg>\n                 <span class=\"text-[10px] mt-1 text-gray-500   group-hover:text-white-600  transition-colors\">Contact</span>\n            </button>\n        </div>\n    </div> \n</div>"
+  }
+}

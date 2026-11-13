@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-12",
+  "type": "registry:ui",
+  "title": "card",
+  "description": "card - Créé par @suprem101 sur TailwindFlex.",
+  "author": "@suprem101 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-12.tsx",
+      "content": "/**\n * Component: card\n * Author: @suprem101 (https://tailwindflex.com/@suprem101)\n * Source: https://tailwindflex.com/@suprem101/card-12\n * Attribution: Créé par @suprem101 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Card12() {\n  return (\n    <div>\n    <div className=\"flex min-h-screen items-center justify-center bg-amber-100 text-white\">\n      <div className=\"flex max-w-2xl rounded-xl border-black bg-white \">\n        <div className=\"w-1/2  \"><img src=\"https://i.ibb.co/7ztJFPH/image-product-desktop.jpg\" alt=\"\" className=\" rounded-l-xl \" /></div>\n    \n    \n    \n    \n        <div className=\"w-1/2 space-y-4 rounded-xl bg-white text-black\">\n        <div className=\" space-y-4 ml-7 mt-14\">\n          <p className=\" \">P E R F U M E</p>\n          <h1 className=\"text-4xl font-bold\">Gabrielle Essence Eau De Parfum</h1>\n          <p className=\" space-y-4\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugit nesciunt reprehenderit fugiat esse nam quam cupiditate animi recusandae laboriosam.</p>\n    \n          <div className=\"flex items-center  \">\n            <p class= \" text-green-700 text-4xl font-bold\">$149.99</p>\n            <span className=\"ml-8 line-through\">$169.99</span>\n          </div>\n    \n          </div>\n          \n          <div className=\" items-center text-center  justify-center\">\n            <button className=\"text-white font-bold bg-green-800 py-4 px-20 rounded-xl\">Add to card</button>\n            </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@suprem101",
+    "authorUrl": "https://tailwindflex.com/@suprem101",
+    "sourceUrl": "https://tailwindflex.com/@suprem101/card-12",
+    "mention": "Créé par @suprem101 sur TailwindFlex",
+    "rawHtml": "<div class=\"flex min-h-screen items-center justify-center bg-amber-100 text-white\">\n  <div class=\"flex max-w-2xl rounded-xl border-black bg-white \">\n    <div class=\"w-1/2  \"><img src=\"https://i.ibb.co/7ztJFPH/image-product-desktop.jpg\" alt=\"\" class=\" rounded-l-xl \" /></div>\n\n\n\n\n    <div class=\"w-1/2 space-y-4 rounded-xl bg-white text-black\">\n    <div class=\" space-y-4 ml-7 mt-14\">\n      <p class=\" \">P E R F U M E</p>\n      <h1 class=\"text-4xl font-bold\">Gabrielle Essence Eau De Parfum</h1>\n      <p class=\" space-y-4\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugit nesciunt reprehenderit fugiat esse nam quam cupiditate animi recusandae laboriosam.</p>\n\n      <div class=\"flex items-center  \">\n        <p class= \" text-green-700 text-4xl font-bold\">$149.99</p>\n        <span class=\"ml-8 line-through\">$169.99</span>\n      </div>\n\n      </div>\n      \n      <div class=\" items-center text-center  justify-center\">\n        <button class=\"text-white font-bold bg-green-800 py-4 px-20 rounded-xl\">Add to card</button>\n        </div>\n    </div>\n  </div>\n</div>"
+  }
+}

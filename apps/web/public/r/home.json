@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "home",
+  "type": "registry:ui",
+  "title": "Home",
+  "description": "Home - Créé par @mostafa-mohamed-elgdawy sur TailwindFlex.",
+  "author": "@mostafa-mohamed-elgdawy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/home.tsx",
+      "content": "/**\n * Component: Home\n * Author: @mostafa-mohamed-elgdawy (https://tailwindflex.com/@mostafa-mohamed-elgdawy)\n * Source: https://tailwindflex.com/@mostafa-mohamed-elgdawy/home\n * Attribution: Créé par @mostafa-mohamed-elgdawy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Home() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<html>\\n\\n</html>\\n\\n<head>\\n  <title>\\n    Subscribe Now\\n  </title>\\n  <!-- <link rel=\\\"stylesheet\\\" href=\\\"style.css\\\"> -->\\n  <style>\\n       body {\\n            margin: 0;\\n            font-family: 'Poppins', sans-serif;\\n            background-color: #1a2b3c;\\n            color: #ffffff;\\n        }\\n        .container {\\n            display: flex;\\n            justify-content: space-between;\\n            align-items: center;\\n            padding: 20px;\\n        }\\n        .logo {\\n            display: flex;\\n            align-items: center;\\n        }\\n        .logo img {\\n            width: 40px;\\n            margin-right: 10px;\\n        }\\n        .nav {\\n            display: flex;\\n            gap: 20px;\\n        }\\n        .nav a {\\n            color: #ffffff;\\n            text-decoration:#f1c40f;\\n            font-weight: 700;\\n            opacity: 0.2;\\n            transition: 1s;\\n        }\\n        .nav a:hover{\\n           opacity:1 ;\\n            color: #f1c40f;\\n            \\n        }\\n        .subscribe-section {\\n            display: flex;\\n            justify-content: space-between;\\n            align-items: center;\\n            padding: 50px;\\n        }\\n        .subscribe-text {\\n            max-width: 50%;\\n        }\\n        .subscribe-text h1 {\\n            font-size: 48px;\\n            color: #f1c40f;\\n        }\\n        .subscribe-text p {\\n            font-size: 18px;\\n            margin: 20px 0;\\n        }\\n        .subscribe-form {\\n            display: flex;\\n            flex-direction: column;\\n            gap: 10px;\\n        }\\n        .subscribe-form input {\\n            padding: 10px;\\n            border: none;\\n            border-radius: 5px;\\n            font-size: 16px;\\n        }\\n        .subscribe-form button {\\n            padding: 10px;\\n            background-color: #f1c40f;\\n            border: none;\\n            border-radius: 5px;\\n            font-size: 16px;\\n            font-weight: 700;\\n            cursor: pointer;\\n        }\\n        .subscribe-image {\\n            position: relative;\\n        }\\n        .subscribe-image img {\\n            border-radius: 20px;\\n            width: 400px;\\n        }\\n            .background-shape {\\n            position: absolute;\\n            top: 0;\\n            right: 0;\\n            width: 100%;\\n            height: 100%;\\n            background-size: cover;\\n            border-radius: 20px;\\n            z-index: -1;\\n        }\\n        .icon {\\n            position: absolute;\\n            width: 50px;\\n            height: 50px;\\n        }\\n        .icon-1 {\\n            top: 20px;\\n            left: 20px;\\n        }\\n        .icon-2 {\\n            bottom: 20px;\\n            left: 20px;\\n        }\\n        .icon-3 {\\n            top: 20px;\\n            right: 20px;\\n        }\\n  </style>\\n</head>\\n\\n<body>\\n  <div class=\\\"container\\\">\\n    <div class=\\\"logo\\\">\\n      <img src=\\\"images.png\\\" alt=\\\"\\\">\\n      <span>\\n        Creative Marketing\\n      </span>\\n    </div>\\n    <div class=\\\"nav\\\">\\n      <a href=\\\"#\\\">\\n        Home\\n      </a>\\n      <a href=\\\"#\\\">\\n        Services\\n      </a>\\n      <a href=\\\"#\\\">\\n        Blog\\n      </a>\\n      <a href=\\\"#\\\">\\n        About\\n      </a>\\n      <a href=\\\"#\\\">\\n        FAQ\\n      </a>\\n    </div>\\n  </div>\\n  <div class=\\\"subscribe-section\\\">\\n    <div class=\\\"subscribe-text\\\">\\n      <h1>\\n        Subscribe Now to Our Newsletter\\n      </h1>\\n      <p>\\n        Stay updated with our latest news and offers. Enter your email below to subscribe to our newsletter.\\n      </p>\\n      <div class=\\\"subscribe-form\\\">\\n        <input placeholder=\\\"Name\\\" type=\\\"text\\\" />\\n        <input placeholder=\\\"Email\\\" type=\\\"email\\\" />\\n        <button>\\n          Subscribe\\n        </button>\\n      </div>\\n    </div>\\n    <div class=\\\"subscribe-image\\\">\\n      <img src=\\\"images.png\\\" alt=\\\"\\\">\\n      <div class=\\\"background-shape\\\">\\n      </div>\\n    </div>\\n</body>\\n\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "landing-page",
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mostafa-mohamed-elgdawy",
+    "authorUrl": "https://tailwindflex.com/@mostafa-mohamed-elgdawy",
+    "sourceUrl": "https://tailwindflex.com/@mostafa-mohamed-elgdawy/home",
+    "mention": "Créé par @mostafa-mohamed-elgdawy sur TailwindFlex",
+    "rawHtml": "<html>\n\n</html>\n\n<head>\n  <title>\n    Subscribe Now\n  </title>\n  <!-- <link rel=\"stylesheet\" href=\"style.css\"> -->\n  <style>\n       body {\n            margin: 0;\n            font-family: 'Poppins', sans-serif;\n            background-color: #1a2b3c;\n            color: #ffffff;\n        }\n        .container {\n            display: flex;\n            justify-content: space-between;\n            align-items: center;\n            padding: 20px;\n        }\n        .logo {\n            display: flex;\n            align-items: center;\n        }\n        .logo img {\n            width: 40px;\n            margin-right: 10px;\n        }\n        .nav {\n            display: flex;\n            gap: 20px;\n        }\n        .nav a {\n            color: #ffffff;\n            text-decoration:#f1c40f;\n            font-weight: 700;\n            opacity: 0.2;\n            transition: 1s;\n        }\n        .nav a:hover{\n           opacity:1 ;\n            color: #f1c40f;\n            \n        }\n        .subscribe-section {\n            display: flex;\n            justify-content: space-between;\n            align-items: center;\n            padding: 50px;\n        }\n        .subscribe-text {\n            max-width: 50%;\n        }\n        .subscribe-text h1 {\n            font-size: 48px;\n            color: #f1c40f;\n        }\n        .subscribe-text p {\n            font-size: 18px;\n            margin: 20px 0;\n        }\n        .subscribe-form {\n            display: flex;\n            flex-direction: column;\n            gap: 10px;\n        }\n        .subscribe-form input {\n            padding: 10px;\n            border: none;\n            border-radius: 5px;\n            font-size: 16px;\n        }\n        .subscribe-form button {\n            padding: 10px;\n            background-color: #f1c40f;\n            border: none;\n            border-radius: 5px;\n            font-size: 16px;\n            font-weight: 700;\n            cursor: pointer;\n        }\n        .subscribe-image {\n            position: relative;\n        }\n        .subscribe-image img {\n            border-radius: 20px;\n            width: 400px;\n        }\n            .background-shape {\n            position: absolute;\n            top: 0;\n            right: 0;\n            width: 100%;\n            height: 100%;\n            background-size: cover;\n            border-radius: 20px;\n            z-index: -1;\n        }\n        .icon {\n            position: absolute;\n            width: 50px;\n            height: 50px;\n        }\n        .icon-1 {\n            top: 20px;\n            left: 20px;\n        }\n        .icon-2 {\n            bottom: 20px;\n            left: 20px;\n        }\n        .icon-3 {\n            top: 20px;\n            right: 20px;\n        }\n  </style>\n</head>\n\n<body>\n  <div class=\"container\">\n    <div class=\"logo\">\n      <img src=\"images.png\" alt=\"\">\n      <span>\n        Creative Marketing\n      </span>\n    </div>\n    <div class=\"nav\">\n      <a href=\"#\">\n        Home\n      </a>\n      <a href=\"#\">\n        Services\n      </a>\n      <a href=\"#\">\n        Blog\n      </a>\n      <a href=\"#\">\n        About\n      </a>\n      <a href=\"#\">\n        FAQ\n      </a>\n    </div>\n  </div>\n  <div class=\"subscribe-section\">\n    <div class=\"subscribe-text\">\n      <h1>\n        Subscribe Now to Our Newsletter\n      </h1>\n      <p>\n        Stay updated with our latest news and offers. Enter your email below to subscribe to our newsletter.\n      </p>\n      <div class=\"subscribe-form\">\n        <input placeholder=\"Name\" type=\"text\" />\n        <input placeholder=\"Email\" type=\"email\" />\n        <button>\n          Subscribe\n        </button>\n      </div>\n    </div>\n    <div class=\"subscribe-image\">\n      <img src=\"images.png\" alt=\"\">\n      <div class=\"background-shape\">\n      </div>\n    </div>\n</body>\n\n</html>"
+  }
+}

@@ -978,14 +978,41 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
 
                   {/* TailwindFlex scraped components */}
                   {!BASE_SLUGS.includes(item.slug) && (
-                    <div className="w-full h-full flex flex-col items-center justify-center p-8 text-center space-y-4">
-                      <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shadow-sm">
-                        <Code2 className="h-6 w-6" />
+                    <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center space-y-3">
+                      <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shadow-sm">
+                        <Code2 className="h-5 w-5" />
                       </div>
-                      <div className="space-y-1.5 max-w-md">
+                      <div className="space-y-1 max-w-md">
                         <span className="text-sm font-semibold text-foreground block">
                           {item.name}
                         </span>
+                        {item.author && (
+                          <div className="flex items-center justify-center gap-1.5 text-[11px] text-muted-foreground">
+                            <span>Créé par</span>
+                            {item.authorUrl ? (
+                              <a
+                                href={item.authorUrl}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="font-medium text-foreground hover:underline"
+                              >
+                                {item.author}
+                              </a>
+                            ) : (
+                              <span className="font-medium text-foreground">{item.author}</span>
+                            )}
+                            {item.sourceUrl && (
+                              <a
+                                href={item.sourceUrl}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-[10px] text-primary/80 hover:underline"
+                              >
+                                ↗ TailwindFlex
+                              </a>
+                            )}
+                          </div>
+                        )}
                         <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">
                           {item.description}
                         </p>
@@ -999,7 +1026,7 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
                               setSelectedTag(t);
                               setCurrentPage(1);
                             }}
-                            className="px-2.5 py-0.5 rounded-full text-[10px] font-mono bg-muted/80 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors cursor-pointer"
+                            className="px-2 py-0.5 rounded-full text-[10px] font-mono bg-muted/80 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors cursor-pointer"
                           >
                             #{t}
                           </button>
@@ -1009,16 +1036,28 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
                         <button
                           type="button"
                           onClick={() => setComponentModes((prev) => ({ ...prev, [item.slug]: "code" }))}
-                          className="px-3.5 py-1.5 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground transition-colors shadow-sm"
+                          className="px-3 py-1.5 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground transition-colors shadow-sm"
                         >
-                          Afficher le code TSX
+                          Voir le code
                         </button>
+                        {item.rawHtml && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              navigator.clipboard.writeText(item.rawHtml || "");
+                              toast("Code HTML brut copié !");
+                            }}
+                            className="px-3 py-1.5 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground transition-colors shadow-sm"
+                          >
+                            Copier HTML
+                          </button>
+                        )}
                         <button
                           type="button"
                           onClick={() => handleCopyCmd(item)}
-                          className="px-3.5 py-1.5 rounded-lg bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition-opacity shadow-sm"
+                          className="px-3 py-1.5 rounded-lg bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition-opacity shadow-sm"
                         >
-                          Copier liber add
+                          liber add
                         </button>
                       </div>
                     </div>
@@ -1027,19 +1066,39 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
               ) : (
                 /* Code View */
                 <div className="p-4 bg-neutral-950 font-mono text-xs overflow-x-auto relative">
-                  <div className="flex items-center justify-between pb-2 border-b border-neutral-800 text-neutral-400 text-[11px] mb-2">
-                    <span>{item.slug}.tsx</span>
-                    <button
-                      onClick={() => {
-                        navigator.clipboard.writeText(getComponentCode(item.slug));
-                        toast("Copied code snippet");
-                      }}
-                      className="text-neutral-400 hover:text-neutral-100 transition-colors"
-                    >
-                      Copy JSX
-                    </button>
+                  <div className="flex flex-wrap items-center justify-between pb-2 border-b border-neutral-800 text-neutral-400 text-[11px] mb-2 gap-2">
+                    <div className="flex items-center gap-2">
+                      <span className="font-semibold text-neutral-200">{item.slug}.tsx</span>
+                      {item.mention && (
+                        <span className="text-[10px] text-neutral-400 bg-neutral-900 px-2 py-0.5 rounded border border-neutral-800">
+                          {item.mention}
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      {item.rawHtml && (
+                        <button
+                          onClick={() => {
+                            navigator.clipboard.writeText(item.rawHtml || "");
+                            toast("HTML brut copié !");
+                          }}
+                          className="px-2 py-1 rounded bg-neutral-900 border border-neutral-800 text-neutral-300 hover:text-white transition-colors text-[10px]"
+                        >
+                          Copier HTML brut
+                        </button>
+                      )}
+                      <button
+                        onClick={() => {
+                          navigator.clipboard.writeText(getComponentCode(item.slug));
+                          toast("Code React copié !");
+                        }}
+                        className="px-2 py-1 rounded bg-neutral-900 border border-neutral-800 text-neutral-300 hover:text-white transition-colors text-[10px]"
+                      >
+                        Copier React TSX
+                      </button>
+                    </div>
                   </div>
-                  <pre className="text-neutral-200 select-all leading-relaxed">
+                  <pre className="text-neutral-200 select-all leading-relaxed max-h-96 overflow-y-auto">
                     {getComponentCode(item.slug)}
                   </pre>
                 </div>
@@ -1049,20 +1108,35 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
               <div className="p-4 border-t border-border flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs">
                 <div className="space-y-1 flex-1 min-w-0">
                   <p className="text-muted-foreground line-clamp-1">{item.description}</p>
-                  <div className="flex flex-wrap items-center gap-1.5">
-                    {item.tags.slice(0, 4).map((t) => (
-                      <button
-                        key={t}
-                        type="button"
-                        onClick={() => {
-                          setSelectedTag(t);
-                          setCurrentPage(1);
-                        }}
-                        className="text-[10px] font-mono text-muted-foreground/80 hover:text-foreground underline transition-colors"
-                      >
-                        #{t}
-                      </button>
-                    ))}
+                  <div className="flex flex-wrap items-center gap-2">
+                    {item.author && (
+                      <span className="text-[11px] text-muted-foreground font-mono">
+                        by{" "}
+                        <a
+                          href={item.authorUrl || `https://tailwindflex.com/${item.author}`}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-foreground hover:underline"
+                        >
+                          {item.author}
+                        </a>
+                      </span>
+                    )}
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      {item.tags.slice(0, 4).map((t) => (
+                        <button
+                          key={t}
+                          type="button"
+                          onClick={() => {
+                            setSelectedTag(t);
+                            setCurrentPage(1);
+                          }}
+                          className="text-[10px] font-mono text-muted-foreground/80 hover:text-foreground underline transition-colors"
+                        >
+                          #{t}
+                        </button>
+                      ))}
+                    </div>
                   </div>
                 </div>
                 <button

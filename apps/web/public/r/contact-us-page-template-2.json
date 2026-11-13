@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "contact-us-page-template-2",
+  "type": "registry:ui",
+  "title": "Contact us page template",
+  "description": "Contact us page template - Créé par @geoffrey-callaghan sur TailwindFlex.",
+  "author": "@geoffrey-callaghan (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/contact-us-page-template-2.tsx",
+      "content": "/**\n * Component: Contact us page template\n * Author: @geoffrey-callaghan (https://tailwindflex.com/@geoffrey-callaghan)\n * Source: https://tailwindflex.com/@geoffrey-callaghan/contact-us-page-template-2\n * Attribution: Créé par @geoffrey-callaghan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ContactUsPageTemplate2() {\n  return (\n    <div>\n    <div className=\"min-h-screen bg-gray-800 py-6 flex flex-col justify-center sm12\">\n        <div className=\"relative py-3 sm sm\">\n            <div\n                className=\"absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm0 sm6 sm3xl\">\n            </div>\n            <div className=\"text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm3xl sm20\">\n    \n                <div className=\"text-center pb-6\">\n                    <h1 className=\"text-3xl\">Contact Us!</h1>\n    \n                    <p className=\"text-gray-300\">\n                        Fill up the form below to send us a message.\n                    </p>\n                </div>\n    \n           <form action=\"https://fabform.io/f/{form-id}\" method=\"post\">\n    \n                    <input\n                            className=\"shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\"\n                            type=\"text\" placeholder=\"Name\" name=\"name\" />\n    \n                    <input\n                            className=\"shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\"\n                            type=\"email\" placeholder=\"Email\" name=\"email\" />\n    \n                    <input\n                            className=\"shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\"\n                            type=\"text\" placeholder=\"Subject\" name=\"_subject\" />\n    \n                    <textarea\n                            className=\"shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus focus\"\n                            type=\"text\" placeholder=\"Type your message here...\" name=\"message\" style=\"height: 121px;\"></textarea>\n    \n                    <div className=\"flex justify-between\">\n                        <input\n                            className=\"shadow bg-indigo-600 hover700 text-white font-bold py-2 px-4 rounded focus focus\"\n                            type=\"submit\" value=\"Send ➤\" />\n                        <input\n                            className=\"shadow bg-red-600 hover700 text-white font-bold py-2 px-4 rounded focus focus\"\n                            type=\"reset\" />\n                    </div>\n    <a href=\"https://veilmail.io/e/FkKh7o\" className=\"font-medium text-blue-600 dark500 hover\">Or click here to reveal our protected email address</a>\n        \n                </form>\n            </div>\n            \n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@geoffrey-callaghan",
+    "authorUrl": "https://tailwindflex.com/@geoffrey-callaghan",
+    "sourceUrl": "https://tailwindflex.com/@geoffrey-callaghan/contact-us-page-template-2",
+    "mention": "Créé par @geoffrey-callaghan sur TailwindFlex",
+    "rawHtml": "<div class=\"min-h-screen bg-gray-800 py-6 flex flex-col justify-center sm:py-12\">\n    <div class=\"relative py-3 sm:max-w-xl sm:mx-auto\">\n        <div\n            class=\"absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl\">\n        </div>\n        <div class=\"text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-3xl sm:p-20\">\n\n            <div class=\"text-center pb-6\">\n                <h1 class=\"text-3xl\">Contact Us!</h1>\n\n                <p class=\"text-gray-300\">\n                    Fill up the form below to send us a message.\n                </p>\n            </div>\n\n       <form action=\"https://fabform.io/f/{form-id}\" method=\"post\">\n\n                <input\n                        class=\"shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\n                        type=\"text\" placeholder=\"Name\" name=\"name\">\n\n                <input\n                        class=\"shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\n                        type=\"email\" placeholder=\"Email\" name=\"email\">\n\n                <input\n                        class=\"shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\n                        type=\"text\" placeholder=\"Subject\" name=\"_subject\">\n\n                <textarea\n                        class=\"shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\n                        type=\"text\" placeholder=\"Type your message here...\" name=\"message\" style=\"height: 121px;\"></textarea>\n\n                <div class=\"flex justify-between\">\n                    <input\n                        class=\"shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\"\n                        type=\"submit\" value=\"Send ➤\">\n                    <input\n                        class=\"shadow bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\"\n                        type=\"reset\">\n                </div>\n<a href=\"https://veilmail.io/e/FkKh7o\" class=\"font-medium text-blue-600 dark:text-blue-500 hover:underline\">Or click here to reveal our protected email address</a>\n    \n            </form>\n        </div>\n        \n    </div>\n</div>"
+  }
+}

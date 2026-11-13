@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-card-with-image",
+  "type": "registry:ui",
+  "title": "Responsive card with image",
+  "description": "Responsive card with image - Créé par @simon-scheffer sur TailwindFlex.",
+  "author": "@simon-scheffer (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-card-with-image.tsx",
+      "content": "/**\n * Component: Responsive card with image\n * Author: @simon-scheffer (https://tailwindflex.com/@simon-scheffer)\n * Source: https://tailwindflex.com/@simon-scheffer/responsive-card-with-image\n * Attribution: Créé par @simon-scheffer sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveCardWithImage() {\n  return (\n    <div>\n    <div className=\"max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md2xl\">\r\n        <div className=\"md\">\r\n            <div className=\"md0\">\r\n                <img className=\"h-48 w-full object-cover md md48\" src=\"https://loremflickr.com/g/320/240/team\" />\r\n            </div>\r\n            <div className=\"p-8\">\r\n                <div className=\"uppercase tracking-wide text-sm text-indigo-500 font-semibold\">Company retreats</div>\r\n                <a href=\"#\" className=\"block mt-1 text-lg leading-tight font-medium text-black hover\">Incredible\r\n                    accommodation for your team\r\n                </a>\r\n                <p className=\"mt-2 text-slate-500\">Looking to take your team away on a retreat to enjoy awesome food and take in\r\n                    some sunshine? We have a list of places to do just that.\r\n                </p>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@simon-scheffer",
+    "authorUrl": "https://tailwindflex.com/@simon-scheffer",
+    "sourceUrl": "https://tailwindflex.com/@simon-scheffer/responsive-card-with-image",
+    "mention": "Créé par @simon-scheffer sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl\">\r\n    <div class=\"md:flex\">\r\n        <div class=\"md:shrink-0\">\r\n            <img class=\"h-48 w-full object-cover md:h-full md:w-48\" src=\"https://loremflickr.com/g/320/240/team\">\r\n        </div>\r\n        <div class=\"p-8\">\r\n            <div class=\"uppercase tracking-wide text-sm text-indigo-500 font-semibold\">Company retreats</div>\r\n            <a href=\"#\" class=\"block mt-1 text-lg leading-tight font-medium text-black hover:underline\">Incredible\r\n                accommodation for your team\r\n            </a>\r\n            <p class=\"mt-2 text-slate-500\">Looking to take your team away on a retreat to enjoy awesome food and take in\r\n                some sunshine? We have a list of places to do just that.\r\n            </p>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

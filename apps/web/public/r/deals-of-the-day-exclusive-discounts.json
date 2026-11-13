@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "deals-of-the-day-exclusive-discounts",
+  "type": "registry:ui",
+  "title": "Deals of the Day - Exclusive Discounts!",
+  "description": "Deals of the Day - Exclusive Discounts! - Créé par @shariful-islam sur TailwindFlex.",
+  "author": "@shariful-islam (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/deals-of-the-day-exclusive-discounts.tsx",
+      "content": "/**\n * Component: Deals of the Day - Exclusive Discounts!\n * Author: @shariful-islam (https://tailwindflex.com/@shariful-islam)\n * Source: https://tailwindflex.com/@shariful-islam/deals-of-the-day-exclusive-discounts\n * Attribution: Créé par @shariful-islam sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function DealsOfTheDayExclusiveDiscounts() {\n  return (\n    <div>\n    <div className=\"bg-white dark800 flex justify-center items-center w-screen h-screen p-5\">\n     <div className=\"bg-white shadow-lg rounded-lg p-6 w-80 relative text-center\">\n        \n        <div className=\"absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full\">\n          25% OFF\n        </div>\n    \n        \n        <img src=\"https://www.gadstyle.com/wp-content/uploads/2024/08/samsung-galaxy-watch-7-ai-smart-watch-40mm-44mm-2.webp\" alt=\"Product Image\" className=\"mx-auto w-40 h-40 object-contain\" />\n    \n        \n        <h2 className=\"text-xl font-bold text-blue-600 mt-4\">New Apple HomePod Mini</h2>\n    \n        \n        <p className=\"text-gray-500 text-sm mt-2\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>\n    \n        \n        <a href=\"#\" className=\"mt-4 inline-flex items-center gap-2 px-5 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-md hover700 transition\">\n          Shop Now\n          <span>➡️</span>\n        </a>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@shariful-islam",
+    "authorUrl": "https://tailwindflex.com/@shariful-islam",
+    "sourceUrl": "https://tailwindflex.com/@shariful-islam/deals-of-the-day-exclusive-discounts",
+    "mention": "Créé par @shariful-islam sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\">\n <div class=\"bg-white shadow-lg rounded-lg p-6 w-80 relative text-center\">\n    <!-- Discount Badge -->\n    <div class=\"absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full\">\n      25% OFF\n    </div>\n\n    <!-- Product Image -->\n    <img src=\"https://www.gadstyle.com/wp-content/uploads/2024/08/samsung-galaxy-watch-7-ai-smart-watch-40mm-44mm-2.webp\" alt=\"Product Image\" class=\"mx-auto w-40 h-40 object-contain\">\n\n    <!-- Product Title -->\n    <h2 class=\"text-xl font-bold text-blue-600 mt-4\">New Apple HomePod Mini</h2>\n\n    <!-- Product Description -->\n    <p class=\"text-gray-500 text-sm mt-2\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>\n\n    <!-- CTA Button -->\n    <a href=\"#\" class=\"mt-4 inline-flex items-center gap-2 px-5 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition\">\n      Shop Now\n      <span>➡️</span>\n    </a>\n  </div>\n</div>"
+  }
+}

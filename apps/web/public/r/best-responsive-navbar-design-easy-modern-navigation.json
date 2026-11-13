@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "best-responsive-navbar-design-easy-modern-navigation",
+  "type": "registry:ui",
+  "title": "Best Responsive Navbar Design | Easy &amp; Modern Navigation",
+  "description": "Best Responsive Navbar Design | Easy &amp; Modern Navigation - Créé par @vishvajeet sur TailwindFlex.",
+  "author": "@vishvajeet (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/best-responsive-navbar-design-easy-modern-navigation.tsx",
+      "content": "/**\n * Component: Best Responsive Navbar Design | Easy &amp; Modern Navigation\n * Author: @vishvajeet (https://tailwindflex.com/@vishvajeet)\n * Source: https://tailwindflex.com/@vishvajeet/best-responsive-navbar-design-easy-modern-navigation\n * Attribution: Créé par @vishvajeet sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BestResponsiveNavbarDesignEasyModernNavigation() {\n  return (\n    <div>\n    <nav className=\"bg-white border-gray-200 py-2.5 dark900\">\r\n        <div className=\"flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto\">\r\n            <a href=\"#\" className=\"flex items-center\">\r\n                <span className=\"self-center text-xl font-semibold whitespace-nowrap dark\">Company Logo</span>\r\n            </a>\r\n            <div className=\"flex items-center lg2\">\r\n                <div className=\"hidden mt-2 mr-4 sm\">\r\n                    <span></span>\r\n                </div>\r\n    \r\n                <a href=\"https://themesberg.com/product/tailwind-css/landing-page\"\r\n                    className=\"text-white bg-purple-700 hover800 focus4 focus300 font-medium rounded-lg text-sm px-4 lg5 py-2 lg2.5 sm2 lg0 dark600 dark700 focus dark800\">Download</a>\r\n                <button data-collapse-toggle=\"mobile-menu-2\" type=\"button\"\r\n    \t\t\t\tclassName=\"inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg hover100 focus focus2 focus200 dark400 dark700 dark600\"\r\n    \t\t\t\taria-controls=\"mobile-menu-2\" aria-expanded=\"true\">\r\n    \t\t\t\t<span className=\"sr-only\">Open main menu</span>\r\n    \t\t\t\t<svg className=\"w-6 h-6\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\r\n    \t\t\t\t\t<path fillRule=\"evenodd\"\r\n    \t\t\t\t\t\td=\"M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z\"\r\n    \t\t\t\t\t\tclipRule=\"evenodd\"></path>\r\n    \t\t\t\t</svg>\r\n    \t\t\t\t<svg className=\"hidden w-6 h-6\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\r\n    \t\t\t\t\t<path fillRule=\"evenodd\"\r\n    \t\t\t\t\t\td=\"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\"\r\n    \t\t\t\t\t\tclipRule=\"evenodd\"></path>\r\n    \t\t\t\t</svg>\r\n    \t\t\t</button>\r\n            </div>\r\n            <div className=\"items-center justify-between w-full lg lg lg1\" id=\"mobile-menu-2\">\r\n                <ul className=\"flex flex-col mt-4 font-medium lg lg8 lg0\">\r\n                    <li>\r\n                        <a href=\"#\"\r\n                            className=\"block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg lg700 lg0 dark\"\r\n                            aria-current=\"page\">Home</a>\r\n                    </li>\r\n                    <li>\r\n                        <a href=\"#\"\r\n                            className=\"block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover50 lg lg0 lg700 lg0 dark400 lg dark700 dark lg dark700\">Company</a>\r\n                    </li>\r\n                    <li>\r\n                        <a href=\"#\"\r\n                            className=\"block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover50 lg lg0 lg700 lg0 dark400 lg dark700 dark lg dark700\">Marketplace</a>\r\n                    </li>\r\n                    <li>\r\n                        <a href=\"#\"\r\n                            className=\"block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover50 lg lg0 lg700 lg0 dark400 lg dark700 dark lg dark700\">Features</a>\r\n                    </li>\r\n                    <li>\r\n                        <a href=\"#\"\r\n                            className=\"block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover50 lg lg0 lg700 lg0 dark400 lg dark700 dark lg dark700\">Team</a>\r\n                    </li>\r\n                    <li>\r\n                        <a href=\"#\"\r\n                            className=\"block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover50 lg lg0 lg700 lg0 dark400 lg dark700 dark lg dark700\">Contact</a>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </nav>\r\n    \r\n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@vishvajeet",
+    "authorUrl": "https://tailwindflex.com/@vishvajeet",
+    "sourceUrl": "https://tailwindflex.com/@vishvajeet/best-responsive-navbar-design-easy-modern-navigation",
+    "mention": "Créé par @vishvajeet sur TailwindFlex",
+    "rawHtml": "<nav class=\"bg-white border-gray-200 py-2.5 dark:bg-gray-900\">\r\n    <div class=\"flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto\">\r\n        <a href=\"#\" class=\"flex items-center\">\r\n            <span class=\"self-center text-xl font-semibold whitespace-nowrap dark:text-white\">Company Logo</span>\r\n        </a>\r\n        <div class=\"flex items-center lg:order-2\">\r\n            <div class=\"hidden mt-2 mr-4 sm:inline-block\">\r\n                <span></span>\r\n            </div>\r\n\r\n            <a href=\"https://themesberg.com/product/tailwind-css/landing-page\"\r\n                class=\"text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800\">Download</a>\r\n            <button data-collapse-toggle=\"mobile-menu-2\" type=\"button\"\r\n\t\t\t\tclass=\"inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600\"\r\n\t\t\t\taria-controls=\"mobile-menu-2\" aria-expanded=\"true\">\r\n\t\t\t\t<span class=\"sr-only\">Open main menu</span>\r\n\t\t\t\t<svg class=\"w-6 h-6\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\r\n\t\t\t\t\t<path fill-rule=\"evenodd\"\r\n\t\t\t\t\t\td=\"M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z\"\r\n\t\t\t\t\t\tclip-rule=\"evenodd\"></path>\r\n\t\t\t\t</svg>\r\n\t\t\t\t<svg class=\"hidden w-6 h-6\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\r\n\t\t\t\t\t<path fill-rule=\"evenodd\"\r\n\t\t\t\t\t\td=\"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\"\r\n\t\t\t\t\t\tclip-rule=\"evenodd\"></path>\r\n\t\t\t\t</svg>\r\n\t\t\t</button>\r\n        </div>\r\n        <div class=\"items-center justify-between w-full lg:flex lg:w-auto lg:order-1\" id=\"mobile-menu-2\">\r\n            <ul class=\"flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0\">\r\n                <li>\r\n                    <a href=\"#\"\r\n                        class=\"block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white\"\r\n                        aria-current=\"page\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"#\"\r\n                        class=\"block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700\">Company</a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"#\"\r\n                        class=\"block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700\">Marketplace</a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"#\"\r\n                        class=\"block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700\">Features</a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"#\"\r\n                        class=\"block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700\">Team</a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"#\"\r\n                        class=\"block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700\">Contact</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>\r\n\r\n<script src=\"https://unpkg.com/flowbite@1.4.1/dist/flowbite.js\"></script>"
+  }
+}

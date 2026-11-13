@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "feedback-form-with-rating-input",
+  "type": "registry:ui",
+  "title": "Feedback Form with rating input",
+  "description": "Feedback Form with rating input - Créé par @nour-haider sur TailwindFlex.",
+  "author": "@nour-haider (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/feedback-form-with-rating-input.tsx",
+      "content": "/**\n * Component: Feedback Form with rating input\n * Author: @nour-haider (https://tailwindflex.com/@nour-haider)\n * Source: https://tailwindflex.com/@nour-haider/feedback-form-with-rating-input\n * Attribution: Créé par @nour-haider sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FeedbackFormWithRatingInput() {\n  return (\n    <div>\n    \r\n    <form className=\"max-w-md mx-auto mt-16 p-4 bg-white shadow rounded\">\r\n        <h2 className=\"text-2xl font-bold mb-4\">Feedback Form</h2>\r\n        <div className=\"mb-4\">\r\n            <label htmlFor=\"name\" className=\"block mb-1\">Name</label>\r\n            <input type=\"text\" id=\"name\" className=\"w-full py-2 px-4 rounded border border-gray-300 focus focus2 focus500\" />\r\n        </div>\r\n        <div className=\"mb-4\">\r\n            <label htmlFor=\"email\" className=\"block mb-1\">Email</label>\r\n            <input type=\"email\" id=\"email\" className=\"w-full py-2 px-4 rounded border border-gray-300 focus focus2 focus500\" />\r\n        </div>\r\n        <div className=\"mb-4\">\r\n            <label className=\"block mb-1\">Rating</label>\r\n            <div className=\"flex items-center space-x-2\">\r\n                <input type=\"radio\" name=\"rating\" id=\"rating1\" value=\"1\" className=\"focus focus2 focus500\" />\r\n                <label htmlFor=\"rating1\">1</label>\r\n                <input type=\"radio\" name=\"rating\" id=\"rating2\" value=\"2\" className=\"focus focus2 focus500\" />\r\n                <label htmlFor=\"rating2\">2</label>\r\n                <input type=\"radio\" name=\"rating\" id=\"rating3\" value=\"3\" className=\"focus focus2 focus500\" />\r\n                <label htmlFor=\"rating3\">3</label>\r\n                <input type=\"radio\" name=\"rating\" id=\"rating4\" value=\"4\" className=\"focus focus2 focus500\" />\r\n                <label htmlFor=\"rating4\">4</label>\r\n                <input type=\"radio\" name=\"rating\" id=\"rating5\" value=\"5\" className=\"focus focus2 focus500\" />\r\n                <label htmlFor=\"rating5\">5</label>\r\n            </div>\r\n        </div>\r\n        <div className=\"mb-4\">\r\n            <label htmlFor=\"message\" className=\"block mb-1\">Message</label>\r\n            <textarea id=\"message\" className=\"w-full py-2 px-4 rounded border border-gray-300 focus focus2 focus500\"></textarea>\r\n        </div>\r\n        <button type=\"submit\" className=\"py-2 px-4 bg-blue-500 text-white rounded hover600 focus focus2 focus500\">Submit</button>\r\n    </form>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@nour-haider",
+    "authorUrl": "https://tailwindflex.com/@nour-haider",
+    "sourceUrl": "https://tailwindflex.com/@nour-haider/feedback-form-with-rating-input",
+    "mention": "Créé par @nour-haider sur TailwindFlex",
+    "rawHtml": "<!-- HTML Structure -->\r\n<form class=\"max-w-md mx-auto mt-16 p-4 bg-white shadow rounded\">\r\n    <h2 class=\"text-2xl font-bold mb-4\">Feedback Form</h2>\r\n    <div class=\"mb-4\">\r\n        <label for=\"name\" class=\"block mb-1\">Name</label>\r\n        <input type=\"text\" id=\"name\" class=\"w-full py-2 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500\">\r\n    </div>\r\n    <div class=\"mb-4\">\r\n        <label for=\"email\" class=\"block mb-1\">Email</label>\r\n        <input type=\"email\" id=\"email\" class=\"w-full py-2 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500\">\r\n    </div>\r\n    <div class=\"mb-4\">\r\n        <label class=\"block mb-1\">Rating</label>\r\n        <div class=\"flex items-center space-x-2\">\r\n            <input type=\"radio\" name=\"rating\" id=\"rating1\" value=\"1\" class=\"focus:outline-none focus:ring-2 focus:ring-blue-500\">\r\n            <label for=\"rating1\">1</label>\r\n            <input type=\"radio\" name=\"rating\" id=\"rating2\" value=\"2\" class=\"focus:outline-none focus:ring-2 focus:ring-blue-500\">\r\n            <label for=\"rating2\">2</label>\r\n            <input type=\"radio\" name=\"rating\" id=\"rating3\" value=\"3\" class=\"focus:outline-none focus:ring-2 focus:ring-blue-500\">\r\n            <label for=\"rating3\">3</label>\r\n            <input type=\"radio\" name=\"rating\" id=\"rating4\" value=\"4\" class=\"focus:outline-none focus:ring-2 focus:ring-blue-500\">\r\n            <label for=\"rating4\">4</label>\r\n            <input type=\"radio\" name=\"rating\" id=\"rating5\" value=\"5\" class=\"focus:outline-none focus:ring-2 focus:ring-blue-500\">\r\n            <label for=\"rating5\">5</label>\r\n        </div>\r\n    </div>\r\n    <div class=\"mb-4\">\r\n        <label for=\"message\" class=\"block mb-1\">Message</label>\r\n        <textarea id=\"message\" class=\"w-full py-2 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500\"></textarea>\r\n    </div>\r\n    <button type=\"submit\" class=\"py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500\">Submit</button>\r\n</form>"
+  }
+}

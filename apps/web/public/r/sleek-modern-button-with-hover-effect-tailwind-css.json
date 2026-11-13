@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sleek-modern-button-with-hover-effect-tailwind-css",
+  "type": "registry:ui",
+  "title": "🔥 Sleek &amp; Modern Button with Hover Effect – Tailwind CSS",
+  "description": "🔥 Sleek &amp; Modern Button with Hover Effect – Tailwind CSS - Créé par @ahitabisma sur TailwindFlex.",
+  "author": "@ahitabisma (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/sleek-modern-button-with-hover-effect-tailwind-css.tsx",
+      "content": "/**\n * Component: 🔥 Sleek &amp; Modern Button with Hover Effect – Tailwind CSS\n * Author: @ahitabisma (https://tailwindflex.com/@ahitabisma)\n * Source: https://tailwindflex.com/@ahitabisma/sleek-modern-button-with-hover-effect-tailwind-css\n * Attribution: Créé par @ahitabisma sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SleekModernButtonWithHoverEffectTailwindCss() {\n  return (\n    <div>\n    <div className=\"w-svw h-svh flex justify-center items-center\">\n      <button className=\"inline-flex items-center gap-2 transition duration-300 ease-linear \n        bg-[#5751E1] text-white text-lg font-semibold font-['Poppins',sans-serif] leading-[1.12] \n        px-8 py-4 text-center capitalize select-none rounded-full shadow-[4px_6px_0px_0px_#050071] \n        whitespace-nowrap hover[#ffc224] hover\">\n        Button\n    </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@ahitabisma",
+    "authorUrl": "https://tailwindflex.com/@ahitabisma",
+    "sourceUrl": "https://tailwindflex.com/@ahitabisma/sleek-modern-button-with-hover-effect-tailwind-css",
+    "mention": "Créé par @ahitabisma sur TailwindFlex",
+    "rawHtml": "<div class=\"w-svw h-svh flex justify-center items-center\">\n  <button class=\"inline-flex items-center gap-2 transition duration-300 ease-linear \n    bg-[#5751E1] text-white text-lg font-semibold font-['Poppins',sans-serif] leading-[1.12] \n    px-8 py-4 text-center capitalize select-none rounded-full shadow-[4px_6px_0px_0px_#050071] \n    whitespace-nowrap hover:bg-[#ffc224] hover:shadow-none\">\n    Button\n</button>\n</div>"
+  }
+}

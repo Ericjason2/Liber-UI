@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "simple-navbar-2",
+  "type": "registry:ui",
+  "title": "Simple Navbar",
+  "description": "Simple Navbar - Créé par @jugendra-gangwar sur TailwindFlex.",
+  "author": "@jugendra-gangwar (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/simple-navbar-2.tsx",
+      "content": "/**\n * Component: Simple Navbar\n * Author: @jugendra-gangwar (https://tailwindflex.com/@jugendra-gangwar)\n * Source: https://tailwindflex.com/@jugendra-gangwar/simple-navbar-2\n * Attribution: Créé par @jugendra-gangwar sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SimpleNavbar2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<body class=\\\"min-h-screen bg-gray-50\\\">\\r\\n  <nav id=\\\"navbar\\\" class=\\\"fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-transparent\\\">\\r\\n    <div class=\\\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\\\">\\r\\n      <div class=\\\"flex items-center justify-between h-16 md:h-20\\\">\\r\\n\\r\\n        <!-- Brand -->\\r\\n        <a href=\\\"#\\\" class=\\\"flex-shrink-0 text-xl md:text-2xl font-bold text-gray-900 tracking-tight\\\">\\r\\n          Tailwind<span class=\\\"text-indigo-600\\\">Flex</span>\\r\\n        </a>\\r\\n\\r\\n        <!-- Desktop links -->\\r\\n        <ul class=\\\"hidden md:flex items-center gap-8 lg:gap-10\\\">\\r\\n          <li><a href=\\\"#\\\" class=\\\"text-sm lg:text-[15px] font-medium text-gray-600 hover:text-gray-900 transition-colors\\\">Home</a></li>\\r\\n          <li><a href=\\\"#\\\" class=\\\"text-sm lg:text-[15px] font-medium text-gray-600 hover:text-gray-900 transition-colors\\\">About</a></li>\\r\\n          <li><a href=\\\"#\\\" class=\\\"text-sm lg:text-[15px] font-medium text-gray-600 hover:text-gray-900 transition-colors\\\">Services</a></li>\\r\\n          <li><a href=\\\"#\\\" class=\\\"text-sm lg:text-[15px] font-medium text-gray-600 hover:text-gray-900 transition-colors\\\">Contact</a></li>\\r\\n          <li>\\r\\n            <a href=\\\"#\\\" class=\\\"inline-flex items-center rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 active:bg-indigo-800 transition-colors\\\">\\r\\n              Get Started\\r\\n            </a>\\r\\n          </li>\\r\\n        </ul>\\r\\n\\r\\n        <!-- Mobile menu button -->\\r\\n        <button id=\\\"mobileMenuBtn\\\" aria-label=\\\"Toggle menu\\\" aria-expanded=\\\"false\\\" class=\\\"md:hidden relative w-9 h-9 flex flex-col items-center justify-center gap-1.5 group\\\">\\r\\n          <span class=\\\"block h-0.5 w-6 rounded-full bg-gray-900 transition-all duration-300 origin-center group-[.active]:rotate-45 group-[.active]:translate-y-2\\\"></span>\\r\\n          <span class=\\\"block h-0.5 w-6 rounded-full bg-gray-900 transition-all duration-300 group-[.active]:opacity-0\\\"></span>\\r\\n          <span class=\\\"block h-0.5 w-6 rounded-full bg-gray-900 transition-all duration-300 origin-center group-[.active]:-rotate-45 group-[.active]:-translate-y-2\\\"></span>\\r\\n        </button>\\r\\n      </div>\\r\\n    </div>\\r\\n\\r\\n    <!-- Mobile menu panel -->\\r\\n    <div id=\\\"navLinks\\\" class=\\\"md:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white border-t border-gray-100\\\">\\r\\n      <ul class=\\\"flex flex-col px-4 py-3 gap-1\\\">\\r\\n        <li><a href=\\\"#\\\" class=\\\"nav-link block rounded-lg px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors\\\">Home</a></li>\\r\\n        <li><a href=\\\"#\\\" class=\\\"nav-link block rounded-lg px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors\\\">About</a></li>\\r\\n        <li><a href=\\\"#\\\" class=\\\"nav-link block rounded-lg px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors\\\">Services</a></li>\\r\\n        <li><a href=\\\"#\\\" class=\\\"nav-link block rounded-lg px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors\\\">Contact</a></li>\\r\\n        <li class=\\\"pt-2\\\">\\r\\n          <a href=\\\"#\\\" class=\\\" block text-center rounded-full bg-black px-5 py-2.5 text-base font-semibold text-white hover:bg-indigo-700 transition-colors\\\">Get Started</a>\\r\\n        </li>\\r\\n      </ul>\\r\\n    </div>\\r\\n  </nav>\\r\\n\\r\\n  <main class=\\\"pt-16 md:pt-20\\\">\\r\\n  </main>\\r\\n\\r\\n  \" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@jugendra-gangwar",
+    "authorUrl": "https://tailwindflex.com/@jugendra-gangwar",
+    "sourceUrl": "https://tailwindflex.com/@jugendra-gangwar/simple-navbar-2",
+    "mention": "Créé par @jugendra-gangwar sur TailwindFlex",
+    "rawHtml": "<body class=\"min-h-screen bg-gray-50\">\r\n  <nav id=\"navbar\" class=\"fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-transparent\">\r\n    <div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\r\n      <div class=\"flex items-center justify-between h-16 md:h-20\">\r\n\r\n        <!-- Brand -->\r\n        <a href=\"#\" class=\"flex-shrink-0 text-xl md:text-2xl font-bold text-gray-900 tracking-tight\">\r\n          Tailwind<span class=\"text-indigo-600\">Flex</span>\r\n        </a>\r\n\r\n        <!-- Desktop links -->\r\n        <ul class=\"hidden md:flex items-center gap-8 lg:gap-10\">\r\n          <li><a href=\"#\" class=\"text-sm lg:text-[15px] font-medium text-gray-600 hover:text-gray-900 transition-colors\">Home</a></li>\r\n          <li><a href=\"#\" class=\"text-sm lg:text-[15px] font-medium text-gray-600 hover:text-gray-900 transition-colors\">About</a></li>\r\n          <li><a href=\"#\" class=\"text-sm lg:text-[15px] font-medium text-gray-600 hover:text-gray-900 transition-colors\">Services</a></li>\r\n          <li><a href=\"#\" class=\"text-sm lg:text-[15px] font-medium text-gray-600 hover:text-gray-900 transition-colors\">Contact</a></li>\r\n          <li>\r\n            <a href=\"#\" class=\"inline-flex items-center rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 active:bg-indigo-800 transition-colors\">\r\n              Get Started\r\n            </a>\r\n          </li>\r\n        </ul>\r\n\r\n        <!-- Mobile menu button -->\r\n        <button id=\"mobileMenuBtn\" aria-label=\"Toggle menu\" aria-expanded=\"false\" class=\"md:hidden relative w-9 h-9 flex flex-col items-center justify-center gap-1.5 group\">\r\n          <span class=\"block h-0.5 w-6 rounded-full bg-gray-900 transition-all duration-300 origin-center group-[.active]:rotate-45 group-[.active]:translate-y-2\"></span>\r\n          <span class=\"block h-0.5 w-6 rounded-full bg-gray-900 transition-all duration-300 group-[.active]:opacity-0\"></span>\r\n          <span class=\"block h-0.5 w-6 rounded-full bg-gray-900 transition-all duration-300 origin-center group-[.active]:-rotate-45 group-[.active]:-translate-y-2\"></span>\r\n        </button>\r\n      </div>\r\n    </div>\r\n\r\n    <!-- Mobile menu panel -->\r\n    <div id=\"navLinks\" class=\"md:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white border-t border-gray-100\">\r\n      <ul class=\"flex flex-col px-4 py-3 gap-1\">\r\n        <li><a href=\"#\" class=\"nav-link block rounded-lg px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors\">Home</a></li>\r\n        <li><a href=\"#\" class=\"nav-link block rounded-lg px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors\">About</a></li>\r\n        <li><a href=\"#\" class=\"nav-link block rounded-lg px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors\">Services</a></li>\r\n        <li><a href=\"#\" class=\"nav-link block rounded-lg px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors\">Contact</a></li>\r\n        <li class=\"pt-2\">\r\n          <a href=\"#\" class=\" block text-center rounded-full bg-black px-5 py-2.5 text-base font-semibold text-white hover:bg-indigo-700 transition-colors\">Get Started</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </nav>\r\n\r\n  <main class=\"pt-16 md:pt-20\">\r\n  </main>\r\n\r\n  <script>\r\n    const navbar = document.getElementById('navbar');\r\n    const mobileMenuBtn = document.getElementById('mobileMenuBtn');\r\n    const navLinks = document.getElementById('navLinks');\r\n\r\n    window.addEventListener('scroll', () => {\r\n      if (window.scrollY > 50) {\r\n        navbar.classList.add('shadow-md', 'border-gray-200');\r\n        navbar.classList.remove('border-transparent');\r\n      } else {\r\n        navbar.classList.remove('shadow-md', 'border-gray-200');\r\n        navbar.classList.add('border-transparent');\r\n      }\r\n    });\r\n\r\n    function toggleMenu(forceClose = false) {\r\n      const isOpen = mobileMenuBtn.classList.contains('active');\r\n      const willOpen = forceClose ? false : !isOpen;\r\n\r\n      mobileMenuBtn.classList.toggle('active', willOpen);\r\n      mobileMenuBtn.setAttribute('aria-expanded', String(willOpen));\r\n\r\n      if (willOpen) {\r\n        navLinks.style.maxHeight = navLinks.scrollHeight + 'px';\r\n      } else {\r\n        navLinks.style.maxHeight = '0px';\r\n      }\r\n    }\r\n\r\n    mobileMenuBtn.addEventListener('click', () => toggleMenu());\r\n\r\n    document.querySelectorAll('.nav-link').forEach(link => {\r\n      link.addEventListener('click', () => toggleMenu(true));\r\n    });\r\n\r\n    window.addEventListener('resize', () => {\r\n      if (window.innerWidth >= 768) toggleMenu(true);\r\n    });\r\n  </script>"
+  }
+}

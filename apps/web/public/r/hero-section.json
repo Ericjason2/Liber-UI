@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section",
+  "type": "registry:ui",
+  "title": "Hero Section",
+  "description": "Hero Section - Créé par @manon-daniel sur TailwindFlex.",
+  "author": "@manon-daniel (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section.tsx",
+      "content": "/**\n * Component: Hero Section\n * Author: @manon-daniel (https://tailwindflex.com/@manon-daniel)\n * Source: https://tailwindflex.com/@manon-daniel/hero-section\n * Attribution: Créé par @manon-daniel sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSection() {\n  return (\n    <div>\n    <section>\n      <div className=\"relative items-center w-full px-5 py-12 mx-auto md12 lg16 max-w-7xl lg24\">\n        <div className=\"flex w-full mx-auto text-left\">\n          <div className=\"relative inline-flex items-center mx-auto align-middle\">\n            <div className=\"text-center\">\n              <h1 className=\"max-w-5xl text-2xl font-bold leading-none tracking-tighter text-neutral-600 md5xl lg6xl lg7xl\">\n                Long headline to turn <br className=\"hidden lg\" />\n                your visitors into users\n              </h1>\n              <p className=\"max-w-xl mx-auto mt-8 text-base leading-relaxed text-gray-500\">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>\n              <div className=\"flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6\">\n                <div className=\"mt-3 rounded-lg sm0\">\n                  <button className=\"px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 lg10 rounded-xl hover700 focus focus2 focus2 focus500\">Get bundle</button>\n                </div>\n                <div className=\"mt-3 rounded-lg sm0 sm3\">\n                  <button className=\"items-center block px-5 lg10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus focus2 focus2 focus500\">See features</button>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@manon-daniel",
+    "authorUrl": "https://tailwindflex.com/@manon-daniel",
+    "sourceUrl": "https://tailwindflex.com/@manon-daniel/hero-section",
+    "mention": "Créé par @manon-daniel sur TailwindFlex",
+    "rawHtml": "<section>\n  <div class=\"relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24\">\n    <div class=\"flex w-full mx-auto text-left\">\n      <div class=\"relative inline-flex items-center mx-auto align-middle\">\n        <div class=\"text-center\">\n          <h1 class=\"max-w-5xl text-2xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-6xl lg:max-w-7xl\">\n            Long headline to turn <br class=\"hidden lg:block\">\n            your visitors into users\n          </h1>\n          <p class=\"max-w-xl mx-auto mt-8 text-base leading-relaxed text-gray-500\">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>\n          <div class=\"flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6\">\n            <div class=\"mt-3 rounded-lg sm:mt-0\">\n              <button class=\"px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500\">Get bundle</button>\n            </div>\n            <div class=\"mt-3 rounded-lg sm:mt-0 sm:ml-3\">\n              <button class=\"items-center block px-5 lg:px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500\">See features</button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

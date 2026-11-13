@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cadd-with-sale-ribbon",
+  "type": "registry:ui",
+  "title": "Card with sale ribbon",
+  "description": "Card with sale ribbon - Créé par @fagundo sur TailwindFlex.",
+  "author": "@fagundo (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cadd-with-sale-ribbon.tsx",
+      "content": "/**\n * Component: Card with sale ribbon\n * Author: @fagundo (https://tailwindflex.com/@fagundo)\n * Source: https://tailwindflex.com/@fagundo/cadd-with-sale-ribbon\n * Attribution: Créé par @fagundo sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CaddWithSaleRibbon() {\n  return (\n    <div>\n    <div className=\"max-w-xs mx-auto overflow-hidden bg-white rounded-lg shadow-md\">\n        <div className=\"relative\">\n            <img className=\"w-full h-64 object-cover\" src=\"https://picsum.photos/200/200\" alt=\"Image\" />\n            <div className=\"absolute top-0 right-0\">\n                <div className=\"w-32 h-8 absolute top-4 -right-8\">\n                    <div\n                        className=\"h-full w-full bg-red-500 text-white text-center leading-8 font-semibold transform rotate-45\">\n                        SALE</div>\n                </div>\n            </div>\n        </div>\n        <div className=\"p-4\">\n            <h3 className=\"text-xl font-semibold mb-2\">Product Sale</h3>\n            <p className=\"text-gray-700 text-base\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum\n                auctor felis, vel consequat odio ullamcorper eu.\n            </p>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@fagundo",
+    "authorUrl": "https://tailwindflex.com/@fagundo",
+    "sourceUrl": "https://tailwindflex.com/@fagundo/cadd-with-sale-ribbon",
+    "mention": "Créé par @fagundo sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-xs mx-auto overflow-hidden bg-white rounded-lg shadow-md\">\n    <div class=\"relative\">\n        <img class=\"w-full h-64 object-cover\" src=\"https://picsum.photos/200/200\" alt=\"Image\">\n        <div class=\"absolute top-0 right-0\">\n            <div class=\"w-32 h-8 absolute top-4 -right-8\">\n                <div\n                    class=\"h-full w-full bg-red-500 text-white text-center leading-8 font-semibold transform rotate-45\">\n                    SALE</div>\n            </div>\n        </div>\n    </div>\n    <div class=\"p-4\">\n        <h3 class=\"text-xl font-semibold mb-2\">Product Sale</h3>\n        <p class=\"text-gray-700 text-base\">\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum\n            auctor felis, vel consequat odio ullamcorper eu.\n        </p>\n    </div>\n</div>"
+  }
+}

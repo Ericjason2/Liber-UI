@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-hero-section-2",
+  "type": "registry:ui",
+  "title": "Responsive Hero Section",
+  "description": "Responsive Hero Section - Créé par @vernon-francis sur TailwindFlex.",
+  "author": "@vernon-francis (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-hero-section-2.tsx",
+      "content": "/**\n * Component: Responsive Hero Section\n * Author: @vernon-francis (https://tailwindflex.com/@vernon-francis)\n * Source: https://tailwindflex.com/@vernon-francis/responsive-hero-section-2\n * Attribution: Créé par @vernon-francis sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveHeroSection2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>MyCompany - Responsive Hero Section</title>\\n    \\n    <style>\\n        /* ... (previous styles remain unchanged) ... */\\n    </style>\\n</head>\\n<body class=\\\"font-sans\\\">\\n    <!-- ... (previous header code remains unchanged) ... -->\\n\\n    <main class=\\\"pt-16 bg-gray-100\\\">\\n        <!-- Hero Section -->\\n        <section class=\\\"container mx-auto px-4 py-12 md:py-24\\\">\\n            <div class=\\\"flex flex-col md:flex-row items-center justify-between\\\">\\n                <!-- Left Side: Company Info -->\\n                <div class=\\\"w-full md:w-1/2 mb-8 md:mb-0\\\">\\n                    <h1 class=\\\"text-4xl md:text-5xl font-bold text-gray-800 mb-4\\\">Welcome to MyCompany</h1>\\n                    <p class=\\\"text-xl text-gray-600 mb-6\\\">We're revolutionizing the industry with innovative solutions tailored to your needs.</p>\\n                    <a href=\\\"#\\\" class=\\\"inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300\\\">Learn More</a>\\n                </div>\\n\\n                <!-- Right xSide: Details and Buttons -->\\n                <div class=\\\"w-full md:w-1/2\\\">\\n                    <div class=\\\"bg-white rounded-lg shadow-lg p-6\\\">\\n                        <h2 class=\\\"text-2xl font-semibold text-gray-800 mb-4\\\">Why Choose Us?</h2>\\n                        <ul class=\\\"space-y-2 mb-6\\\">\\n                            <li class=\\\"flex items-center\\\">\\n                                <svg class=\\\"w-5 h-5 text-green-500 mr-2\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" viewBox=\\\"0 0 24 24\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"><path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" stroke-width=\\\"2\\\" d=\\\"M5 13l4 4L19 7\\\"></path></svg>\\n                                Industry-leading technology\\n                            </li>\\n                            <li class=\\\"flex items-center\\\">\\n                                <svg class=\\\"w-5 h-5 text-green-500 mr-2\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" viewBox=\\\"0 0 24 24\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"><path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" stroke-width=\\\"2\\\" d=\\\"M5 13l4 4L19 7\\\"></path></svg>\\n                                24/7 customer support\\n                            </li>\\n                            <li class=\\\"flex items-center\\\">\\n                                <svg class=\\\"w-5 h-5 text-green-500 mr-2\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" viewBox=\\\"0 0 24 24\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"><path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" stroke-width=\\\"2\\\" d=\\\"M5 13l4 4L19 7\\\"></path></svg>\\n                                Customizable solutions\\n                            </li>\\n                        </ul>\\n                        <div class=\\\"space-y-4\\\">\\n                            <a href=\\\"#\\\" class=\\\"block text-center bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300\\\">Get Started</a>\\n                            <a href=\\\"#\\\" class=\\\"block text-center border border-blue-600 text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition duration-300\\\">Contact Sales</a>\\n                        </div>\\n                    </div>\\n                </div>\\n            </div>\\n        </section>\\n\\n        <!-- ... (rest of your main content) ... -->\\n    </main>\\n\\n    <!-- ... (previous script remains unchanged) ... -->\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@vernon-francis",
+    "authorUrl": "https://tailwindflex.com/@vernon-francis",
+    "sourceUrl": "https://tailwindflex.com/@vernon-francis/responsive-hero-section-2",
+    "mention": "Créé par @vernon-francis sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>MyCompany - Responsive Hero Section</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n    <style>\n        /* ... (previous styles remain unchanged) ... */\n    </style>\n</head>\n<body class=\"font-sans\">\n    <!-- ... (previous header code remains unchanged) ... -->\n\n    <main class=\"pt-16 bg-gray-100\">\n        <!-- Hero Section -->\n        <section class=\"container mx-auto px-4 py-12 md:py-24\">\n            <div class=\"flex flex-col md:flex-row items-center justify-between\">\n                <!-- Left Side: Company Info -->\n                <div class=\"w-full md:w-1/2 mb-8 md:mb-0\">\n                    <h1 class=\"text-4xl md:text-5xl font-bold text-gray-800 mb-4\">Welcome to MyCompany</h1>\n                    <p class=\"text-xl text-gray-600 mb-6\">We're revolutionizing the industry with innovative solutions tailored to your needs.</p>\n                    <a href=\"#\" class=\"inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300\">Learn More</a>\n                </div>\n\n                <!-- Right xSide: Details and Buttons -->\n                <div class=\"w-full md:w-1/2\">\n                    <div class=\"bg-white rounded-lg shadow-lg p-6\">\n                        <h2 class=\"text-2xl font-semibold text-gray-800 mb-4\">Why Choose Us?</h2>\n                        <ul class=\"space-y-2 mb-6\">\n                            <li class=\"flex items-center\">\n                                <svg class=\"w-5 h-5 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>\n                                Industry-leading technology\n                            </li>\n                            <li class=\"flex items-center\">\n                                <svg class=\"w-5 h-5 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>\n                                24/7 customer support\n                            </li>\n                            <li class=\"flex items-center\">\n                                <svg class=\"w-5 h-5 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>\n                                Customizable solutions\n                            </li>\n                        </ul>\n                        <div class=\"space-y-4\">\n                            <a href=\"#\" class=\"block text-center bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300\">Get Started</a>\n                            <a href=\"#\" class=\"block text-center border border-blue-600 text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition duration-300\">Contact Sales</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n\n        <!-- ... (rest of your main content) ... -->\n    </main>\n\n    <!-- ... (previous script remains unchanged) ... -->\n</body>\n</html>"
+  }
+}

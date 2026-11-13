@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwind-card",
+  "type": "registry:ui",
+  "title": "Tailwind card",
+  "description": "Tailwind card - Créé par @conan-hilton sur TailwindFlex.",
+  "author": "@conan-hilton (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tailwind-card.tsx",
+      "content": "/**\n * Component: Tailwind card\n * Author: @conan-hilton (https://tailwindflex.com/@conan-hilton)\n * Source: https://tailwindflex.com/@conan-hilton/tailwind-card\n * Attribution: Créé par @conan-hilton sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TailwindCard() {\n  return (\n    <div>\n    <div className=\"flex flex-col justify-center items-center bg-gray-100 min-h-screen\">\n        <div className=\"bg-white rounded-lg shadow-lg overflow-hidden max-w-lg w-full\">\n            <img src=\"https://images.unsplash.com/photo-1454496522488-7a8e488e8606\" alt=\"Mountain\" className=\"w-full h-64 object-cover\" />\n            <div className=\"p-6\">\n                <h2 className=\"text-2xl font-bold text-gray-800 mb-2\">Beautiful Mountain View</h2>\n                <p className=\"text-gray-700 leading-tight mb-4\">\n                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu sapien porttitor, blandit velit ac,\n                    vehicula elit. Nunc et ex at turpis rutrum viverra.\n                </p>\n                <div className=\"flex justify-between items-center\">\n                    <div className=\"flex items-center\">\n                        <img src=\"https://randomuser.me/api/portraits/men/32.jpg\" alt=\"Avatar\" className=\"w-8 h-8 rounded-full mr-2 object-cover\" />\n                        <span className=\"text-gray-800 font-semibold\">John Doe</span>\n                    </div>\n                    <span className=\"text-gray-600\">2 hours ago</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@conan-hilton",
+    "authorUrl": "https://tailwindflex.com/@conan-hilton",
+    "sourceUrl": "https://tailwindflex.com/@conan-hilton/tailwind-card",
+    "mention": "Créé par @conan-hilton sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-col justify-center items-center bg-gray-100 min-h-screen\">\n    <div class=\"bg-white rounded-lg shadow-lg overflow-hidden max-w-lg w-full\">\n        <img src=\"https://images.unsplash.com/photo-1454496522488-7a8e488e8606\" alt=\"Mountain\" class=\"w-full h-64 object-cover\">\n        <div class=\"p-6\">\n            <h2 class=\"text-2xl font-bold text-gray-800 mb-2\">Beautiful Mountain View</h2>\n            <p class=\"text-gray-700 leading-tight mb-4\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu sapien porttitor, blandit velit ac,\n                vehicula elit. Nunc et ex at turpis rutrum viverra.\n            </p>\n            <div class=\"flex justify-between items-center\">\n                <div class=\"flex items-center\">\n                    <img src=\"https://randomuser.me/api/portraits/men/32.jpg\" alt=\"Avatar\" class=\"w-8 h-8 rounded-full mr-2 object-cover\">\n                    <span class=\"text-gray-800 font-semibold\">John Doe</span>\n                </div>\n                <span class=\"text-gray-600\">2 hours ago</span>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

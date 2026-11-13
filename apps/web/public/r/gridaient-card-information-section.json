@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "gridaient-card-information-section",
+  "type": "registry:ui",
+  "title": "Gridaient Card Information Section",
+  "description": "Gridaient Card Information Section - Créé par @akram6t sur TailwindFlex.",
+  "author": "@akram6t (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/gridaient-card-information-section.tsx",
+      "content": "/**\n * Component: Gridaient Card Information Section\n * Author: @akram6t (https://tailwindflex.com/@akram6t)\n * Source: https://tailwindflex.com/@akram6t/gridaient-card-information-section\n * Attribution: Créé par @akram6t sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function GridaientCardInformationSection() {\n  return (\n    <div>\n    <body className=\"bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center min-h-screen p-4\">\n        <div className=\"bg-black bg-opacity-50 rounded-lg shadow-2xl p-8 max-w-md w-full neon-border\">\n            <div className=\"flex items-center justify-center mb-6\">\n                <img className=\"w-32 h-32 rounded-full object-cover border-4 border-pink-500\" src=\"https://via.placeholder.com/150\" alt=\"Profile Picture\" />\n            </div>\n            <h2 className=\"text-3xl font-bold text-center text-white mb-2 neon-text\">John Dey</h2>\n            <p className=\"text-center text-pink-300 mb-4\">Master of Computer Applications (MCA)</p>\n            <div className=\"border-t border-pink-500 pt-4 space-y-2\">\n                <p className=\"text-white\"><span className=\"font-semibold text-pink-300\">Father's Name:</span> John Smith</p>\n                <p className=\"text-white\"><span className=\"font-semibold text-pink-300\">Date of Birth:</span> 15 August 1995</p>\n                <p className=\"text-white\"><span className=\"font-semibold text-pink-300\">University:</span> XYZ University</p>\n                <p className=\"text-white\"><span className=\"font-semibold text-pink-300\">Specialization:</span> Artificial Intelligence</p>\n                <p className=\"text-white\"><span className=\"font-semibold text-pink-300\">Skills:</span> Python, Machine Learning, Data Analysis</p>\n            </div>\n            <div className=\"mt-6 flex justify-center space-x-4\">\n                <button className=\"bg-gradient-to-r from-pink-500 to-purple-500 hover600 hover600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover105 neon-border\">\n                    Contact Me\n                </button>\n                <button className=\"bg-gradient-to-r from-blue-500 to-teal-500 hover600 hover600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover105 neon-border\">\n                    View Portfolio\n                </button>\n            </div>\n        </div>\n    </body>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@akram6t",
+    "authorUrl": "https://tailwindflex.com/@akram6t",
+    "sourceUrl": "https://tailwindflex.com/@akram6t/gridaient-card-information-section",
+    "mention": "Créé par @akram6t sur TailwindFlex",
+    "rawHtml": "<body class=\"bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center min-h-screen p-4\">\n    <div class=\"bg-black bg-opacity-50 rounded-lg shadow-2xl p-8 max-w-md w-full neon-border\">\n        <div class=\"flex items-center justify-center mb-6\">\n            <img class=\"w-32 h-32 rounded-full object-cover border-4 border-pink-500\" src=\"https://via.placeholder.com/150\" alt=\"Profile Picture\">\n        </div>\n        <h2 class=\"text-3xl font-bold text-center text-white mb-2 neon-text\">John Dey</h2>\n        <p class=\"text-center text-pink-300 mb-4\">Master of Computer Applications (MCA)</p>\n        <div class=\"border-t border-pink-500 pt-4 space-y-2\">\n            <p class=\"text-white\"><span class=\"font-semibold text-pink-300\">Father's Name:</span> John Smith</p>\n            <p class=\"text-white\"><span class=\"font-semibold text-pink-300\">Date of Birth:</span> 15 August 1995</p>\n            <p class=\"text-white\"><span class=\"font-semibold text-pink-300\">University:</span> XYZ University</p>\n            <p class=\"text-white\"><span class=\"font-semibold text-pink-300\">Specialization:</span> Artificial Intelligence</p>\n            <p class=\"text-white\"><span class=\"font-semibold text-pink-300\">Skills:</span> Python, Machine Learning, Data Analysis</p>\n        </div>\n        <div class=\"mt-6 flex justify-center space-x-4\">\n            <button class=\"bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105 neon-border\">\n                Contact Me\n            </button>\n            <button class=\"bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105 neon-border\">\n                View Portfolio\n            </button>\n        </div>\n    </div>\n</body>"
+  }
+}

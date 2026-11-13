@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "product-card-3",
+  "type": "registry:ui",
+  "title": "Product card",
+  "description": "Product card - Créé par @simon-scheffer sur TailwindFlex.",
+  "author": "@simon-scheffer (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/product-card-3.tsx",
+      "content": "/**\n * Component: Product card\n * Author: @simon-scheffer (https://tailwindflex.com/@simon-scheffer)\n * Source: https://tailwindflex.com/@simon-scheffer/product-card-3\n * Attribution: Créé par @simon-scheffer sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProductCard3() {\n  return (\n    <div>\n    <div className=\"flex-col md justify-between flex gap-4 items-start mx-4 py-12\">\n        <div className=\"flex bg-white rounded-lg shadow dark800 flex-col md\">\n            <div className=\"relative w-full md48 flex justify-center items-center\">\n                <img src=\"https://cdn.pixabay.com/photo/2013/07/13/14/07/apparel-162180_960_720.png\" alt=\"shopping image\"\n                    className=\"object-cover w-full h-48 md rounded-t-lg md md\" />\n            </div>\n            <form className=\"flex-auto p-6\">\n                <div className=\"flex flex-wrap\">\n                    <h1 className=\"flex-auto text-xl font-semibold dark50\">Product name</h1>\n                    <div className=\"text-xl font-semibold text-gray-500 dark300\">$110.00</div>\n                    <div className=\"flex-none w-full mt-2 text-sm font-medium text-gray-500 dark300\">In stock</div>\n                </div>\n                <div className=\"flex items-baseline mt-4 mb-6 text-gray-700 dark300\">\n                    <div className=\"flex space-x-2\">\n    \n                        <label className=\"text-center\">\n    \n                            <input type=\"radio\"\n                                className=\"flex items-center justify-center w-6 h-6 accent-violet-600 bg-gray-100 rounded-lg dark600\"\n                                name=\"size\" value=\"xs\" />XS\n                        </label>\n                        <label className=\"text-center\">\n                            <input type=\"radio\" className=\"flex items-center justify-center w-6 h-6 accent-violet-600\" name=\"size\"\n                                value=\"s\" />S\n                        </label>\n                        <label className=\"text-center\">\n                            <input type=\"radio\" className=\"flex items-center justify-center w-6 h-6 accent-violet-600\" name=\"size\"\n                                value=\"m\" />M\n                        </label>\n                        <label className=\"text-center\">\n                            <input type=\"radio\" className=\"flex items-center justify-center w-6 h-6 accent-violet-600\" name=\"size\"\n                                value=\"l\" />L\n                        </label>\n                        <label className=\"text-center\">\n                            <input type=\"radio\" className=\"flex items-center justify-center w-6 h-6 accent-violet-600\" name=\"size\"\n                                value=\"xl\" />XL\n                        </label>\n                    </div>\n                    <a href=\"#\"\n                        className=\"hidden ml-auto text-sm text-gray-500 underline md dark300\">Size\n                        Guide\n                    </a>\n                </div>\n                <div className=\"flex mb-4 text-sm font-medium\">\n                    <button type=\"button\"\n                        className=\"py-2 px-4 bg-indigo-600 hover700 focus500 focus200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus focus2 focus2 rounded-lg \">Buy\n                        now</button>\n                </div>\n                <p className=\"text-sm text-gray-500 dark300\">Free shipping on all continental US orders.</p>\n            </form>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@simon-scheffer",
+    "authorUrl": "https://tailwindflex.com/@simon-scheffer",
+    "sourceUrl": "https://tailwindflex.com/@simon-scheffer/product-card-3",
+    "mention": "Créé par @simon-scheffer sur TailwindFlex",
+    "rawHtml": "<div class=\"flex-col md:flex-row justify-between flex gap-4 items-start mx-4 py-12\">\n    <div class=\"flex bg-white rounded-lg shadow dark:bg-gray-800 flex-col md:flex-row\">\n        <div class=\"relative w-full md:w-48 flex justify-center items-center\">\n            <img src=\"https://cdn.pixabay.com/photo/2013/07/13/14/07/apparel-162180_960_720.png\" alt=\"shopping image\"\n                class=\"object-cover w-full h-48 md:h-full rounded-t-lg md:rounded-l-lg md:rounded-t-none\">\n        </div>\n        <form class=\"flex-auto p-6\">\n            <div class=\"flex flex-wrap\">\n                <h1 class=\"flex-auto text-xl font-semibold dark:text-gray-50\">Product name</h1>\n                <div class=\"text-xl font-semibold text-gray-500 dark:text-gray-300\">$110.00</div>\n                <div class=\"flex-none w-full mt-2 text-sm font-medium text-gray-500 dark:text-gray-300\">In stock</div>\n            </div>\n            <div class=\"flex items-baseline mt-4 mb-6 text-gray-700 dark:text-gray-300\">\n                <div class=\"flex space-x-2\">\n\n                    <label class=\"text-center\">\n\n                        <input type=\"radio\"\n                            class=\"flex items-center justify-center w-6 h-6 accent-violet-600 bg-gray-100 rounded-lg dark:bg-gray-600\"\n                            name=\"size\" value=\"xs\">XS\n                    </label>\n                    <label class=\"text-center\">\n                        <input type=\"radio\" class=\"flex items-center justify-center w-6 h-6 accent-violet-600\" name=\"size\"\n                            value=\"s\">S\n                    </label>\n                    <label class=\"text-center\">\n                        <input type=\"radio\" class=\"flex items-center justify-center w-6 h-6 accent-violet-600\" name=\"size\"\n                            value=\"m\">M\n                    </label>\n                    <label class=\"text-center\">\n                        <input type=\"radio\" class=\"flex items-center justify-center w-6 h-6 accent-violet-600\" name=\"size\"\n                            value=\"l\">L\n                    </label>\n                    <label class=\"text-center\">\n                        <input type=\"radio\" class=\"flex items-center justify-center w-6 h-6 accent-violet-600\" name=\"size\"\n                            value=\"xl\">XL\n                    </label>\n                </div>\n                <a href=\"#\"\n                    class=\"hidden ml-auto text-sm text-gray-500 underline md:block dark:text-gray-300\">Size\n                    Guide\n                </a>\n            </div>\n            <div class=\"flex mb-4 text-sm font-medium\">\n                <button type=\"button\"\n                    class=\"py-2 px-4 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg \">Buy\n                    now</button>\n            </div>\n            <p class=\"text-sm text-gray-500 dark:text-gray-300\">Free shipping on all continental US orders.</p>\n        </form>\n    </div>\n</div>"
+  }
+}

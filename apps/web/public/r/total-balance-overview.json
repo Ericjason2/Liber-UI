@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "total-balance-overview",
+  "type": "registry:ui",
+  "title": "Total balance overview",
+  "description": "Total balance overview - Créé par @raulanto sur TailwindFlex.",
+  "author": "@raulanto (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/total-balance-overview.tsx",
+      "content": "/**\n * Component: Total balance overview\n * Author: @raulanto (https://tailwindflex.com/@raulanto)\n * Source: https://tailwindflex.com/@raulanto/total-balance-overview\n * Attribution: Créé par @raulanto sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TotalBalanceOverview() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"es\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Balance Financiero</title>\\n    \\n    \\n    <style>\\n        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');\\n        \\n        body {\\n            font-family: 'Inter', sans-serif;\\n            background-color: #f8fafc;\\n        }\\n        \\n        .card {\\n            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\\n        }\\n        \\n        .gradient-bg {\\n            background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);\\n        }\\n        \\n        .time-selector {\\n            transition: all 0.2s ease;\\n        }\\n        \\n        .time-selector.active {\\n            background-color: #3b82f6;\\n            color: white;\\n        }\\n    </style>\\n</head>\\n<body class=\\\"min-h-screen flex items-center justify-center p-4\\\">\\n    <div class=\\\"card bg-white rounded-2xl p-6 w-full max-w-md\\\">\\n\\n        <div class=\\\"flex justify-between items-start mb-6\\\">\\n            <div>\\n                <p class=\\\"text-gray-500 text-sm font-medium\\\">Total balance</p>\\n                <h1 class=\\\"text-3xl font-bold text-gray-800 mt-1\\\">$11,920</h1>\\n            </div>\\n            <div class=\\\"bg-green-50 text-green-700 px-3 py-1.5 rounded-full text-sm font-semibold flex items-center\\\">\\n                <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" class=\\\"h-4 w-4 mr-1\\\" fill=\\\"none\\\" viewBox=\\\"0 0 24 24\\\" stroke=\\\"currentColor\\\">\\n                    <path stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" stroke-width=\\\"2\\\" d=\\\"M5 10l7-7m0 0l7 7m-7-7v18\\\" />\\n                </svg>\\n                14.2%\\n            </div>\\n        </div>\\n        \\n        <!-- Gráfico -->\\n        <div class=\\\"relative mb-6\\\">\\n            <canvas id=\\\"balanceChart\\\" height=\\\"180\\\"></canvas>\\n        </div>\\n        \\n\\n        <div class=\\\"flex justify-between items-center mb-6\\\">\\n            <p class=\\\"text-gray-500 text-sm\\\">Jun 21</p>\\n            <p class=\\\"text-gray-800 font-semibold\\\">$608.21</p>\\n        </div>\\n        \\n        <div class=\\\"flex justify-between bg-gray-100 p-1 rounded-lg\\\">\\n            <button class=\\\"time-selector active py-2 px-4 rounded-md text-sm font-medium\\\">1M</button>\\n            <button class=\\\"time-selector py-2 px-4 rounded-md text-sm font-medium\\\">3M</button>\\n            <button class=\\\"time-selector py-2 px-4 rounded-md text-sm font-medium\\\">6M</button>\\n            <button class=\\\"time-selector py-2 px-4 rounded-md text-sm font-medium\\\">1Y</button>\\n            <button class=\\\"time-selector py-2 px-4 rounded-md text-sm font-medium\\\">ALL</button>\\n        </div>\\n    </div>\\n\\n    \\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@raulanto",
+    "authorUrl": "https://tailwindflex.com/@raulanto",
+    "sourceUrl": "https://tailwindflex.com/@raulanto/total-balance-overview",
+    "mention": "Créé par @raulanto sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Balance Financiero</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n    <style>\n        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');\n        \n        body {\n            font-family: 'Inter', sans-serif;\n            background-color: #f8fafc;\n        }\n        \n        .card {\n            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\n        }\n        \n        .gradient-bg {\n            background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);\n        }\n        \n        .time-selector {\n            transition: all 0.2s ease;\n        }\n        \n        .time-selector.active {\n            background-color: #3b82f6;\n            color: white;\n        }\n    </style>\n</head>\n<body class=\"min-h-screen flex items-center justify-center p-4\">\n    <div class=\"card bg-white rounded-2xl p-6 w-full max-w-md\">\n\n        <div class=\"flex justify-between items-start mb-6\">\n            <div>\n                <p class=\"text-gray-500 text-sm font-medium\">Total balance</p>\n                <h1 class=\"text-3xl font-bold text-gray-800 mt-1\">$11,920</h1>\n            </div>\n            <div class=\"bg-green-50 text-green-700 px-3 py-1.5 rounded-full text-sm font-semibold flex items-center\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-4 w-4 mr-1\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 10l7-7m0 0l7 7m-7-7v18\" />\n                </svg>\n                14.2%\n            </div>\n        </div>\n        \n        <!-- Gráfico -->\n        <div class=\"relative mb-6\">\n            <canvas id=\"balanceChart\" height=\"180\"></canvas>\n        </div>\n        \n\n        <div class=\"flex justify-between items-center mb-6\">\n            <p class=\"text-gray-500 text-sm\">Jun 21</p>\n            <p class=\"text-gray-800 font-semibold\">$608.21</p>\n        </div>\n        \n        <div class=\"flex justify-between bg-gray-100 p-1 rounded-lg\">\n            <button class=\"time-selector active py-2 px-4 rounded-md text-sm font-medium\">1M</button>\n            <button class=\"time-selector py-2 px-4 rounded-md text-sm font-medium\">3M</button>\n            <button class=\"time-selector py-2 px-4 rounded-md text-sm font-medium\">6M</button>\n            <button class=\"time-selector py-2 px-4 rounded-md text-sm font-medium\">1Y</button>\n            <button class=\"time-selector py-2 px-4 rounded-md text-sm font-medium\">ALL</button>\n        </div>\n    </div>\n\n    <script>\n\n        const ctx = document.getElementById('balanceChart').getContext('2d');\n        \n\n        const gradient = ctx.createLinearGradient(0, 0, 0, 180);\n        gradient.addColorStop(0, 'rgba(59, 130, 246, 0.4)');\n        gradient.addColorStop(1, 'rgba(59, 130, 246, 0.05)');\n        \n\n        const data = {\n            labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],\n            datasets: [{\n                label: 'Balance',\n                data: [8000, 9500, 10200, 11000, 11500, 11920],\n                borderColor: '#3b82f6',\n                backgroundColor: gradient,\n                borderWidth: 2,\n                fill: true,\n                tension: 0.4,\n                pointRadius: 0,\n                pointHoverRadius: 5,\n                pointBackgroundColor: '#3b82f6',\n                pointBorderColor: '#ffffff',\n                pointBorderWidth: 2\n            }]\n        };\n        \n\n        const config = {\n            type: 'line',\n            data: data,\n            options: {\n                responsive: true,\n                maintainAspectRatio: false,\n                plugins: {\n                    legend: {\n                        display: false\n                    },\n                    tooltip: {\n                        mode: 'index',\n                        intersect: false,\n                        backgroundColor: '#1f2937',\n                        titleColor: '#f9fafb',\n                        bodyColor: '#f9fafb',\n                        borderColor: '#374151',\n                        borderWidth: 1,\n                        padding: 10,\n                        displayColors: false,\n                        callbacks: {\n                            label: function(context) {\n                                return `$${context.parsed.y.toLocaleString()}`;\n                            }\n                        }\n                    }\n                },\n                scales: {\n                    x: {\n                        grid: {\n                            display: false,\n                            drawBorder: false\n                        },\n                        ticks: {\n                            color: '#9ca3af'\n                        }\n                    },\n                    y: {\n                        display: false,\n                        grid: {\n                            display: false\n                        }\n                    }\n                },\n                interaction: {\n                    intersect: false,\n                    mode: 'nearest'\n                }\n            }\n        };\n        \n        // Crear el gráfico\n        const balanceChart = new Chart(ctx, config);\n\n    </script>\n</body>\n</html>"
+  }
+}

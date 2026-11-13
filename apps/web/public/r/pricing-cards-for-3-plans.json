@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-cards-for-3-plans",
+  "type": "registry:ui",
+  "title": "Pricing cards for 3 plans",
+  "description": "Pricing cards for 3 plans - Créé par @laurits sur TailwindFlex.",
+  "author": "@laurits (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/pricing-cards-for-3-plans.tsx",
+      "content": "/**\n * Component: Pricing cards for 3 plans\n * Author: @laurits (https://tailwindflex.com/@laurits)\n * Source: https://tailwindflex.com/@laurits/pricing-cards-for-3-plans\n * Attribution: Créé par @laurits sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PricingCardsFor3Plans() {\n  return (\n    <div>\n    <div className=\"grid grid-cols-1 md2 lg3 gap-5 lg10 p-10\">\r\n        <div className=\"bg-white hover300 hover rounded-lg bg-indigo-50/30 border\">\r\n            <div className=\"p-1 rounded-t-lg bg-sky-400\"></div>\r\n            <div className=\"flex flex-col rounded p-5 lg8\">\r\n                <h3 className=\"text-3xl text-black font-bold\">Fast-Track</h3>\r\n                <p className=\"py-1 text-sm\">Why wait 60 days? Skip the line and Get your tool listed ASAP! 🚀</p>\r\n                <p className=\"text-6xl font-bold tracking-tight pt-5\">$\r\n                    10\r\n                </p>\r\n                <p className=\"py-1 text-sm\">One Time Payment</p>\r\n                <div className=\"pt-3 flex flex-col gap-2\"><a\r\n                        className=\"w-full bg-sky-400 text-white font-medium text-center py-2 mt-3 rounded-md\" target=\"_blank\"\r\n                        href=\"https://cutt.ly/10dwebsite\">Submit Now</a></div>\r\n            </div>\r\n        </div>\r\n        <div className=\"bg-white hover300 hover rounded-lg bg-indigo-50/30 border\">\r\n            <div className=\"p-1 rounded-t-lg bg-sky-400\"></div>\r\n            <div className=\"flex flex-col rounded p-5 lg8\">\r\n                <h3 className=\"text-3xl text-black font-bold\">Homepage Premium</h3>\r\n                <p className=\"py-1 text-sm\">Get your tool listed on the top of our Home Page! 😎</p>\r\n                <p className=\"text-6xl font-bold tracking-tight pt-5\">$\r\n                    100\r\n                </p>\r\n                <p className=\"py-1 text-sm\">For 2 Weeks</p>\r\n                <div className=\"pt-3 flex flex-col gap-2\"><a\r\n                        className=\"w-full bg-sky-400 text-white font-medium text-center py-2 mt-3 rounded-md\" target=\"_blank\"\r\n                        href=\"https://cutt.ly/100dwebsite\">Buy Now</a></div>\r\n            </div>\r\n        </div>\r\n        <div className=\"bg-white hover300 hover rounded-lg bg-indigo-50/30 border\">\r\n            <div className=\"p-1 rounded-t-lg bg-sky-400\"></div>\r\n            <div className=\"flex flex-col rounded p-5 lg8\">\r\n                <h3 className=\"text-3xl text-black font-bold\">Category Premium</h3>\r\n                <p className=\"py-1 text-sm\">Get your tool listed on the top of category page! 🌟</p>\r\n                <p className=\"text-6xl font-bold tracking-tight pt-5\">$\r\n                    50\r\n                </p>\r\n                <p className=\"py-1 text-sm\">For 2 Weeks</p>\r\n                <div className=\"pt-3 flex flex-col gap-2\"><a\r\n                        className=\"w-full bg-sky-400 text-white font-medium text-center py-2 mt-3 rounded-md\" target=\"_blank\"\r\n                        href=\"https://cutt.ly/cat50dweb\">Buy Now</a></div>\r\n            </div>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@laurits",
+    "authorUrl": "https://tailwindflex.com/@laurits",
+    "sourceUrl": "https://tailwindflex.com/@laurits/pricing-cards-for-3-plans",
+    "mention": "Créé par @laurits sur TailwindFlex",
+    "rawHtml": "<div class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 p-10\">\r\n    <div class=\"bg-white hover:shadow-indigo-300 hover:shadow-md rounded-lg bg-indigo-50/30 border\">\r\n        <div class=\"p-1 rounded-t-lg bg-sky-400\"></div>\r\n        <div class=\"flex flex-col rounded p-5 lg:p-8\">\r\n            <h3 class=\"text-3xl text-black font-bold\">Fast-Track</h3>\r\n            <p class=\"py-1 text-sm\">Why wait 60 days? Skip the line and Get your tool listed ASAP! 🚀</p>\r\n            <p class=\"text-6xl font-bold tracking-tight pt-5\">$\r\n                <!-- -->10\r\n            </p>\r\n            <p class=\"py-1 text-sm\">One Time Payment</p>\r\n            <div class=\"pt-3 flex flex-col gap-2\"><a\r\n                    class=\"w-full bg-sky-400 text-white font-medium text-center py-2 mt-3 rounded-md\" target=\"_blank\"\r\n                    href=\"https://cutt.ly/10dwebsite\">Submit Now</a></div>\r\n        </div>\r\n    </div>\r\n    <div class=\"bg-white hover:shadow-indigo-300 hover:shadow-md rounded-lg bg-indigo-50/30 border\">\r\n        <div class=\"p-1 rounded-t-lg bg-sky-400\"></div>\r\n        <div class=\"flex flex-col rounded p-5 lg:p-8\">\r\n            <h3 class=\"text-3xl text-black font-bold\">Homepage Premium</h3>\r\n            <p class=\"py-1 text-sm\">Get your tool listed on the top of our Home Page! 😎</p>\r\n            <p class=\"text-6xl font-bold tracking-tight pt-5\">$\r\n                <!-- -->100\r\n            </p>\r\n            <p class=\"py-1 text-sm\">For 2 Weeks</p>\r\n            <div class=\"pt-3 flex flex-col gap-2\"><a\r\n                    class=\"w-full bg-sky-400 text-white font-medium text-center py-2 mt-3 rounded-md\" target=\"_blank\"\r\n                    href=\"https://cutt.ly/100dwebsite\">Buy Now</a></div>\r\n        </div>\r\n    </div>\r\n    <div class=\"bg-white hover:shadow-indigo-300 hover:shadow-md rounded-lg bg-indigo-50/30 border\">\r\n        <div class=\"p-1 rounded-t-lg bg-sky-400\"></div>\r\n        <div class=\"flex flex-col rounded p-5 lg:p-8\">\r\n            <h3 class=\"text-3xl text-black font-bold\">Category Premium</h3>\r\n            <p class=\"py-1 text-sm\">Get your tool listed on the top of category page! 🌟</p>\r\n            <p class=\"text-6xl font-bold tracking-tight pt-5\">$\r\n                <!-- -->50\r\n            </p>\r\n            <p class=\"py-1 text-sm\">For 2 Weeks</p>\r\n            <div class=\"pt-3 flex flex-col gap-2\"><a\r\n                    class=\"w-full bg-sky-400 text-white font-medium text-center py-2 mt-3 rounded-md\" target=\"_blank\"\r\n                    href=\"https://cutt.ly/cat50dweb\">Buy Now</a></div>\r\n        </div>\r\n    </div>\r\n</div>"
+  }
+}

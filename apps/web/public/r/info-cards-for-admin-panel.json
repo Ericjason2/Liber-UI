@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "info-cards-for-admin-panel",
+  "type": "registry:ui",
+  "title": "Info cards for admin panel",
+  "description": "Info cards for admin panel - Créé par @sophia-baker sur TailwindFlex.",
+  "author": "@sophia-baker (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/info-cards-for-admin-panel.tsx",
+      "content": "/**\n * Component: Info cards for admin panel\n * Author: @sophia-baker (https://tailwindflex.com/@sophia-baker)\n * Source: https://tailwindflex.com/@sophia-baker/info-cards-for-admin-panel\n * Attribution: Créé par @sophia-baker sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InfoCardsForAdminPanel() {\n  return (\n    <div>\n    <div className=\"h-screen dark800 flex justify-center items-center\">\r\n        <section className=\"grid gap-6 md3 p-4 md8 max-w-5xl mx-auto w-full \">\r\n            <div className=\"p-6 bg-white shadow rounded-2xl dark900\">\r\n                <dl className=\"space-y-2\">\r\n                    <dt className=\"text-sm font-medium text-gray-500 dark400\">Unique views</dt>\r\n    \r\n                    <dd className=\"text-5xl font-light md6xl dark\">192.1k</dd>\r\n    \r\n                    <dd className=\"flex items-center space-x-1 text-sm font-medium text-green-500 dark400\">\r\n                        <span>32k increase</span>\r\n    \r\n                        <svg className=\"w-7 h-7\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\">\r\n                            <path stroke=\"currentColor\" strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"1.5\"\r\n                                d=\"M17.25 15.25V6.75H8.75\"></path>\r\n                            <path stroke=\"currentColor\" strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"1.5\"\r\n                                d=\"M17 7L6.75 17.25\"></path>\r\n                        </svg>\r\n                    </dd>\r\n                </dl>\r\n            </div>\r\n    \r\n            <div className=\"p-6 bg-white shadow rounded-2xl dark900\">\r\n                <dl className=\"space-y-2\">\r\n                    <dt className=\"text-sm font-medium text-gray-500 dark400\">Bounce rate</dt>\r\n    \r\n                    <dd className=\"text-5xl font-light md6xl dark\">21%</dd>\r\n    \r\n                    <dd className=\"flex items-center space-x-1 text-sm font-medium text-red-500 dark400\">\r\n                        <span>7% increase</span>\r\n    \r\n                        <svg className=\"w-7 h-7\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\">\r\n                            <path stroke=\"currentColor\" strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"1.5\"\r\n                                d=\"M17.25 8.75V17.25H8.75\"></path>\r\n                            <path stroke=\"currentColor\" strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"1.5\"\r\n                                d=\"M17 17L6.75 6.75\"></path>\r\n                        </svg>\r\n                    </dd>\r\n                </dl>\r\n            </div>\r\n    \r\n            <div className=\"p-6 bg-white shadow rounded-2xl dark900\">\r\n                <dl className=\"space-y-2\">\r\n                    <dt className=\"text-sm font-medium text-gray-500 dark400\">Average time on page</dt>\r\n    \r\n                    <dd className=\"text-5xl font-light md6xl dark\">03:12</dd>\r\n    \r\n                    <dd className=\"flex items-center space-x-1 text-sm font-medium text-green-500 dark400\">\r\n                        <span>3% increase</span>\r\n    \r\n                        <svg className=\"w-7 h-7\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\">\r\n                            <path stroke=\"currentColor\" strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"1.5\"\r\n                                d=\"M17.25 15.25V6.75H8.75\"></path>\r\n                            <path stroke=\"currentColor\" strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"1.5\"\r\n                                d=\"M17 7L6.75 17.25\"></path>\r\n                        </svg>\r\n                    </dd>\r\n                </dl>\r\n            </div>\r\n        </section>\r\n    \r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sophia-baker",
+    "authorUrl": "https://tailwindflex.com/@sophia-baker",
+    "sourceUrl": "https://tailwindflex.com/@sophia-baker/info-cards-for-admin-panel",
+    "mention": "Créé par @sophia-baker sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen dark:bg-gray-800 flex justify-center items-center\">\r\n    <section class=\"grid gap-6 md:grid-cols-3 p-4 md:p-8 max-w-5xl mx-auto w-full \">\r\n        <div class=\"p-6 bg-white shadow rounded-2xl dark:bg-gray-900\">\r\n            <dl class=\"space-y-2\">\r\n                <dt class=\"text-sm font-medium text-gray-500 dark:text-gray-400\">Unique views</dt>\r\n\r\n                <dd class=\"text-5xl font-light md:text-6xl dark:text-white\">192.1k</dd>\r\n\r\n                <dd class=\"flex items-center space-x-1 text-sm font-medium text-green-500 dark:text-green-400\">\r\n                    <span>32k increase</span>\r\n\r\n                    <svg class=\"w-7 h-7\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\">\r\n                        <path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"\r\n                            d=\"M17.25 15.25V6.75H8.75\"></path>\r\n                        <path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"\r\n                            d=\"M17 7L6.75 17.25\"></path>\r\n                    </svg>\r\n                </dd>\r\n            </dl>\r\n        </div>\r\n\r\n        <div class=\"p-6 bg-white shadow rounded-2xl dark:bg-gray-900\">\r\n            <dl class=\"space-y-2\">\r\n                <dt class=\"text-sm font-medium text-gray-500 dark:text-gray-400\">Bounce rate</dt>\r\n\r\n                <dd class=\"text-5xl font-light md:text-6xl dark:text-white\">21%</dd>\r\n\r\n                <dd class=\"flex items-center space-x-1 text-sm font-medium text-red-500 dark:text-red-400\">\r\n                    <span>7% increase</span>\r\n\r\n                    <svg class=\"w-7 h-7\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\">\r\n                        <path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"\r\n                            d=\"M17.25 8.75V17.25H8.75\"></path>\r\n                        <path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"\r\n                            d=\"M17 17L6.75 6.75\"></path>\r\n                    </svg>\r\n                </dd>\r\n            </dl>\r\n        </div>\r\n\r\n        <div class=\"p-6 bg-white shadow rounded-2xl dark:bg-gray-900\">\r\n            <dl class=\"space-y-2\">\r\n                <dt class=\"text-sm font-medium text-gray-500 dark:text-gray-400\">Average time on page</dt>\r\n\r\n                <dd class=\"text-5xl font-light md:text-6xl dark:text-white\">03:12</dd>\r\n\r\n                <dd class=\"flex items-center space-x-1 text-sm font-medium text-green-500 dark:text-green-400\">\r\n                    <span>3% increase</span>\r\n\r\n                    <svg class=\"w-7 h-7\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\">\r\n                        <path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"\r\n                            d=\"M17.25 15.25V6.75H8.75\"></path>\r\n                        <path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"\r\n                            d=\"M17 7L6.75 17.25\"></path>\r\n                    </svg>\r\n                </dd>\r\n            </dl>\r\n        </div>\r\n    </section>\r\n\r\n</div>"
+  }
+}

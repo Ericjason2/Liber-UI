@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "header-with-logo-menu-and-buttons",
+  "type": "registry:ui",
+  "title": "Header with logo, menu and buttons",
+  "description": "Header with logo, menu and buttons - Créé par @markvaren sur TailwindFlex.",
+  "author": "@markvaren (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/header-with-logo-menu-and-buttons.tsx",
+      "content": "/**\n * Component: Header with logo, menu and buttons\n * Author: @markvaren (https://tailwindflex.com/@markvaren)\n * Source: https://tailwindflex.com/@markvaren/header-with-logo-menu-and-buttons\n * Attribution: Créé par @markvaren sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeaderWithLogoMenuAndButtons() {\n  return (\n    <div>\n    \n    \n    <header className=\"bg-gray-500 sticky top-0 z-50 px-4\">\n        <div className=\"container mx-auto flex justify-between items-center py-4\">\n          \n          <div className=\"flex items-center\">\n            <img src=\"https://spacema-dev.com/blue-star/assets/images/blue-logo.png\" alt=\"Logo\" className=\"h-14 w-auto mr-4\" />\n          </div>\n    \n          \n          <div className=\"flex md\">\n            <button id=\"hamburger\" className=\"text-white focus\">\n              <svg className=\"w-6 h-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M4 6h16M4 12h16m-7 6h7\"></path>\n              </svg>\n            </button>\n          </div>\n    \n          \n          <nav className=\"hidden md md justify-center\">\n            <ul className=\"flex justify-center space-x-4 text-white\">\n              <li><a href=\"#home\" className=\"hover font-bold\">Home</a></li>\n              <li><a href=\"#aboutus\" className=\"hover font-bold\">About us</a></li>\n              <li><a href=\"#results\" className=\"hover font-bold\">Results</a></li>\n              <li><a href=\"#reviews\" className=\"hover font-bold\">Reviews</a></li>\n              <li><a href=\"#portfolio\" className=\"hover font-bold\">Portfolio</a></li>\n              <li><a href=\"#team\" className=\"hover font-bold\">Team</a></li>\n              <li><a href=\"#contact\" className=\"hover font-bold\">Contact</a></li>\n            </ul>\n          </nav>\n    \n          \n          <div className=\"hidden lg items-center space-x-4\">\n            <a href=\"#\" className=\"bg-green-500 hover500 text-white font-semibold px-4 py-2 rounded inline-block\">Github</a>\n            <a href=\"#\" className=\"bg-blue-500 hover500 text-white font-semibold px-4 py-2 rounded inline-block\">Download</a>\n          </div>\n        </div>\n      </header>\n    \n     \n    <nav id=\"mobile-menu-placeholder\" className=\"mobile-menu hidden flex-col items-center space-y-8 md px-8\">\n      <ul className=\"w-full text-center\">\n        <li className=\"border-b border-gray-300 pb-4 pt-4\"><a href=\"#home\" className=\"hover font-bold\">Home</a></li>\n        <li className=\"border-b border-gray-300 pb-4 pt-4\"><a href=\"#aboutus\" className=\"hover font-bold\">About us</a></li>\n        <li className=\"border-b border-gray-300 pb-4 pt-4\"><a href=\"#results\" className=\"hover font-bold\">Results</a></li>\n        <li className=\"border-b border-gray-300 pb-4 pt-4\"><a href=\"#reviews\" className=\"hover font-bold\">Reviews</a></li>\n        <li className=\"border-b border-gray-300 pb-4 pt-4\"><a href=\"#portfolio\" className=\"hover font-bold\">Portfolio</a></li>\n        <li className=\"border-b border-gray-300 pb-4 pt-4\"><a href=\"#team\" className=\"hover font-bold\">Team</a></li>\n        <li className=\"pb-4 pt-4\"><a href=\"#contact\" className=\"hover font-bold\">Contact</a></li>\n      </ul>\n      <div className=\"flex flex-col mt-6 space-y-2 items-center\">\n        <a href=\"#\" className=\"bg-green-500 hover500 text-white font-semibold px-4 py-2 rounded inline-block flex items-center justify-center min-w-[110px]\">Github</a>\n        <a href=\"#\" className=\"bg-blue-500 hover500 text-white font-semibold px-4 py-2 rounded inline-block flex items-center justify-center min-w-[110px]\">Download</a>\n      </div>\n    </nav>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "header",
+      "footer",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@markvaren",
+    "authorUrl": "https://tailwindflex.com/@markvaren",
+    "sourceUrl": "https://tailwindflex.com/@markvaren/header-with-logo-menu-and-buttons",
+    "mention": "Créé par @markvaren sur TailwindFlex",
+    "rawHtml": "<!-- source https://github.com/spacemadev/Free-blue-star-tailwind-landing-page-template -->\n\n<header class=\"bg-gray-500 sticky top-0 z-50 px-4\">\n    <div class=\"container mx-auto flex justify-between items-center py-4\">\n      <!-- Left section: Logo -->\n      <div class=\"flex items-center\">\n        <img src=\"https://spacema-dev.com/blue-star/assets/images/blue-logo.png\" alt=\"Logo\" class=\"h-14 w-auto mr-4\">\n      </div>\n\n      <!-- Hamburger menu (for mobile) -->\n      <div class=\"flex md:hidden\">\n        <button id=\"hamburger\" class=\"text-white focus:outline-none\">\n          <svg class=\"w-6 h-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16m-7 6h7\"></path>\n          </svg>\n        </button>\n      </div>\n\n      <!-- Center section: Menu -->\n      <nav class=\"hidden md:flex md:flex-grow justify-center\">\n        <ul class=\"flex justify-center space-x-4 text-white\">\n          <li><a href=\"#home\" class=\"hover:text-secondary font-bold\">Home</a></li>\n          <li><a href=\"#aboutus\" class=\"hover:text-secondary font-bold\">About us</a></li>\n          <li><a href=\"#results\" class=\"hover:text-secondary font-bold\">Results</a></li>\n          <li><a href=\"#reviews\" class=\"hover:text-secondary font-bold\">Reviews</a></li>\n          <li><a href=\"#portfolio\" class=\"hover:text-secondary font-bold\">Portfolio</a></li>\n          <li><a href=\"#team\" class=\"hover:text-secondary font-bold\">Team</a></li>\n          <li><a href=\"#contact\" class=\"hover:text-secondary font-bold\">Contact</a></li>\n        </ul>\n      </nav>\n\n      <!-- Right section: Buttons (for desktop) -->\n      <div class=\"hidden lg:flex items-center space-x-4\">\n        <a href=\"#\" class=\"bg-green-500 hover:bg-blue-500 text-white font-semibold px-4 py-2 rounded inline-block\">Github</a>\n        <a href=\"#\" class=\"bg-blue-500 hover:bg-green-500 text-white font-semibold px-4 py-2 rounded inline-block\">Download</a>\n      </div>\n    </div>\n  </header>\n\n <!-- Mobile menu -->\n<nav id=\"mobile-menu-placeholder\" class=\"mobile-menu hidden flex-col items-center space-y-8 md:hidden px-8\">\n  <ul class=\"w-full text-center\">\n    <li class=\"border-b border-gray-300 pb-4 pt-4\"><a href=\"#home\" class=\"hover:text-secondary font-bold\">Home</a></li>\n    <li class=\"border-b border-gray-300 pb-4 pt-4\"><a href=\"#aboutus\" class=\"hover:text-secondary font-bold\">About us</a></li>\n    <li class=\"border-b border-gray-300 pb-4 pt-4\"><a href=\"#results\" class=\"hover:text-secondary font-bold\">Results</a></li>\n    <li class=\"border-b border-gray-300 pb-4 pt-4\"><a href=\"#reviews\" class=\"hover:text-secondary font-bold\">Reviews</a></li>\n    <li class=\"border-b border-gray-300 pb-4 pt-4\"><a href=\"#portfolio\" class=\"hover:text-secondary font-bold\">Portfolio</a></li>\n    <li class=\"border-b border-gray-300 pb-4 pt-4\"><a href=\"#team\" class=\"hover:text-secondary font-bold\">Team</a></li>\n    <li class=\"pb-4 pt-4\"><a href=\"#contact\" class=\"hover:text-secondary font-bold\">Contact</a></li>\n  </ul>\n  <div class=\"flex flex-col mt-6 space-y-2 items-center\">\n    <a href=\"#\" class=\"bg-green-500 hover:bg-blue-500 text-white font-semibold px-4 py-2 rounded inline-block flex items-center justify-center min-w-[110px]\">Github</a>\n    <a href=\"#\" class=\"bg-blue-500 hover:bg-green-500 text-white font-semibold px-4 py-2 rounded inline-block flex items-center justify-center min-w-[110px]\">Download</a>\n  </div>\n</nav>"
+  }
+}

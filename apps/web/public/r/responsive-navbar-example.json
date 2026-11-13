@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-navbar-example",
+  "type": "registry:ui",
+  "title": "Responsive Navbar Example",
+  "description": "Responsive Navbar Example - Créé par @noob_dev sur TailwindFlex.",
+  "author": "@noob_dev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-navbar-example.tsx",
+      "content": "/**\n * Component: Responsive Navbar Example\n * Author: @noob_dev (https://tailwindflex.com/@noob_dev)\n * Source: https://tailwindflex.com/@noob_dev/responsive-navbar-example\n * Attribution: Créé par @noob_dev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveNavbarExample() {\n  return (\n    <div>\n    <nav className=\"flex flex-wrap items-center justify-between p-3 bg-teal-200/20\">\n        <img src=\"https://tailwindflex.com/public/favicon.ico\" className=\"h-10 w-10\" alt=\"\" />\n        <div className=\"flex md\">\n            <button id=\"hamburger\">\n              <img className=\"toggle block\" src=\"https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png\" width=\"48\" height=\"48\" />\n              <img className=\"toggle hidden\" src=\"https://img.icons8.com/fluent-systems-regular/2x/close-window.png\" width=\"48\" height=\"48\" />\n            </button>\n        </div>\n        <div\n            className=\"toggle hidden w-full md md text-right text-bold mt-5 md0 border-t-2 border-teal-900 md\">\n            <a href=\"#\"\n                className=\"block md text-teal-900 hover500 px-3 py-3 border-b-2 border-teal-900 md\">Home\n            </a>\n            <a href=\"#\"\n                className=\"block md text-teal-900 hover500 px-3 py-3 border-b-2 border-teal-900 md\">Products\n            </a>\n            <a href=\"#\"\n                className=\"block md text-teal-900 hover500 px-3 py-3 border-b-2 border-teal-900 md\">Pricing\n            </a>\n            <a href=\"#\"\n                className=\"block md text-teal-900 hover500 px-3 py-3 border-b-2 border-teal-900 md\">Contact\n            </a>\n        </div>\n        <a href=\"#\"\n            className=\"toggle hidden md w-full md px-4 py-2 text-right bg-teal-900 hover500 text-white md\">Create\n            Account\n        </a>\n    </nav>\n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@noob_dev",
+    "authorUrl": "https://tailwindflex.com/@noob_dev",
+    "sourceUrl": "https://tailwindflex.com/@noob_dev/responsive-navbar-example",
+    "mention": "Créé par @noob_dev sur TailwindFlex",
+    "rawHtml": "<nav class=\"flex flex-wrap items-center justify-between p-3 bg-teal-200/20\">\n    <img src=\"https://tailwindflex.com/public/favicon.ico\" class=\"h-10 w-10\" alt=\"\" />\n    <div class=\"flex md:hidden\">\n        <button id=\"hamburger\">\n          <img class=\"toggle block\" src=\"https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png\" width=\"48\" height=\"48\" />\n          <img class=\"toggle hidden\" src=\"https://img.icons8.com/fluent-systems-regular/2x/close-window.png\" width=\"48\" height=\"48\" />\n        </button>\n    </div>\n    <div\n        class=\"toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-teal-900 md:border-none\">\n        <a href=\"#\"\n            class=\"block md:inline-block text-teal-900 hover:text-teal-500 px-3 py-3 border-b-2 border-teal-900 md:border-none\">Home\n        </a>\n        <a href=\"#\"\n            class=\"block md:inline-block text-teal-900 hover:text-teal-500 px-3 py-3 border-b-2 border-teal-900 md:border-none\">Products\n        </a>\n        <a href=\"#\"\n            class=\"block md:inline-block text-teal-900 hover:text-teal-500 px-3 py-3 border-b-2 border-teal-900 md:border-none\">Pricing\n        </a>\n        <a href=\"#\"\n            class=\"block md:inline-block text-teal-900 hover:text-teal-500 px-3 py-3 border-b-2 border-teal-900 md:border-none\">Contact\n        </a>\n    </div>\n    <a href=\"#\"\n        class=\"toggle hidden md:flex w-full md:w-auto px-4 py-2 text-right bg-teal-900 hover:bg-teal-500 text-white md:rounded\">Create\n        Account\n    </a>\n</nav>\n<script>\n    document.getElementById(\"hamburger\").onclick = function toggleMenu() {\n        const navToggle = document.getElementsByClassName(\"toggle\");\n        for (let i = 0; i < navToggle.length; i++) {\n          navToggle.item(i).classList.toggle(\"hidden\");\n        }\n      };\n</script>"
+  }
+}

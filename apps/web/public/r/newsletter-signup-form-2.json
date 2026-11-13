@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "newsletter-signup-form-2",
+  "type": "registry:ui",
+  "title": "Newsletter Signup Form",
+  "description": "Newsletter Signup Form - Créé par @team-tailwindflex sur TailwindFlex.",
+  "author": "@team-tailwindflex (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/newsletter-signup-form-2.tsx",
+      "content": "/**\n * Component: Newsletter Signup Form\n * Author: @team-tailwindflex (https://tailwindflex.com/@team-tailwindflex)\n * Source: https://tailwindflex.com/@team-tailwindflex/newsletter-signup-form-2\n * Attribution: Créé par @team-tailwindflex sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NewsletterSignupForm2() {\n  return (\n    <div>\n    <div className=\"h-screen w-full relative dark800\">\r\n        \r\n        <div className=\"relative  bottom-0 isolate overflow-hidden px-6 py-24 sm24 xl32\">\r\n    \r\n            <h4\r\n                className=\"mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight sm4xl text-gray-900 dark\">\r\n                Keep Updated\r\n            </h4>\r\n    \r\n            <p className=\"mx-auto mt-2 max-w-xl text-center text-lg leading-8 dark300 text-gray-700\">\r\n                Receive notifications about recently added high-quality components.\r\n            </p>\r\n    \r\n            <form className=\"mx-auto mt-10 flex max-w-md gap-x-4\">\r\n                <label htmlFor=\"email-address\" className=\"sr-only\">Email address</label>\r\n                <input id=\"email-address\" name=\"email\" type=\"email\" autoComplete=\"email\" required=\"\" className=\"min-w-0 flex-auto rounded-md bg-gray-200/50 border-0 dark/5 px-3.5 py-2 dark sm sm6\" placeholder=\"Enter your email\" />\r\n                <button type=\"submit\" className=\"flex-none border border-primary-200/50 dark rounded-md dark dark900 bg-gray-100 text-gray-900 px-3.5 py-2.5 text-sm font-semibold shadow-sm hover100 dark100\">\r\n                    Notify me\r\n                </button>\r\n            </form>\r\n    \r\n            <svg viewBox=\"0 0 1024 1024\" className=\"absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2\"\r\n                aria-hidden=\"true\">\r\n                <circle cx=\"512\" cy=\"512\" r=\"512\" fill=\"url(#759c1415-0410-454c-8f7c-9a820de03641)\" fill-opacity=\"0.7\">\r\n                </circle>\r\n                <defs>\r\n                    <radialGradient id=\"759c1415-0410-454c-8f7c-9a820de03641\" cx=\"0\" cy=\"0\" r=\"1\"\r\n                        gradientUnits=\"userSpaceOnUse\" gradientTransform=\"translate(512 512) rotate(90) scale(512)\">\r\n                        <stop stopColor=\"#7775D6\"></stop>\r\n                        <stop offset=\"1\" stopColor=\"#7ED321\" stopOpacity=\"0\"></stop>\r\n                    </radialGradient>\r\n                </defs>\r\n            </svg>\r\n        </div>\r\n    \r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@team-tailwindflex",
+    "authorUrl": "https://tailwindflex.com/@team-tailwindflex",
+    "sourceUrl": "https://tailwindflex.com/@team-tailwindflex/newsletter-signup-form-2",
+    "mention": "Créé par @team-tailwindflex sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen w-full relative dark:bg-gray-800\">\r\n    <!-- component -->\r\n    <div class=\"relative  bottom-0 isolate overflow-hidden px-6 py-24 sm:px-24 xl:py-32\">\r\n\r\n        <h4\r\n            class=\"mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight sm:text-4xl text-gray-900 dark:text-white\">\r\n            Keep Updated\r\n        </h4>\r\n\r\n        <p class=\"mx-auto mt-2 max-w-xl text-center text-lg leading-8 dark:text-gray-300 text-gray-700\">\r\n            Receive notifications about recently added high-quality components.\r\n        </p>\r\n\r\n        <form class=\"mx-auto mt-10 flex max-w-md gap-x-4\">\r\n            <label for=\"email-address\" class=\"sr-only\">Email address</label>\r\n            <input id=\"email-address\" name=\"email\" type=\"email\" autocomplete=\"email\" required=\"\" class=\"min-w-0 flex-auto rounded-md bg-gray-200/50 border-0 dark:bg-white/5 px-3.5 py-2 dark:text-white sm:text-sm sm:leading-6\" placeholder=\"Enter your email\">\r\n            <button type=\"submit\" class=\"flex-none border border-primary-200/50 dark:border-none rounded-md dark:bg-white dark:text-gray-900 bg-gray-100 text-gray-900 px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-gray-100 dark:hover:bg-gray-100\">\r\n                Notify me\r\n            </button>\r\n        </form>\r\n\r\n        <svg viewBox=\"0 0 1024 1024\" class=\"absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2\"\r\n            aria-hidden=\"true\">\r\n            <circle cx=\"512\" cy=\"512\" r=\"512\" fill=\"url(#759c1415-0410-454c-8f7c-9a820de03641)\" fill-opacity=\"0.7\">\r\n            </circle>\r\n            <defs>\r\n                <radialGradient id=\"759c1415-0410-454c-8f7c-9a820de03641\" cx=\"0\" cy=\"0\" r=\"1\"\r\n                    gradientUnits=\"userSpaceOnUse\" gradientTransform=\"translate(512 512) rotate(90) scale(512)\">\r\n                    <stop stop-color=\"#7775D6\"></stop>\r\n                    <stop offset=\"1\" stop-color=\"#7ED321\" stop-opacity=\"0\"></stop>\r\n                </radialGradient>\r\n            </defs>\r\n        </svg>\r\n    </div>\r\n\r\n</div>"
+  }
+}

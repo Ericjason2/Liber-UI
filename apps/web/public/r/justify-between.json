@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "justify-between",
+  "type": "registry:ui",
+  "title": "justify between",
+  "description": "justify between - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/justify-between.tsx",
+      "content": "/**\n * Component: justify between\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/justify-between\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function JustifyBetween() {\n  return (\n    <div>\n    <div className=\"relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm12\">\n      <img src=\"/img/beams.jpg\" alt=\"\" className=\"absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2\" width=\"1308\" />\n      <div className=\"absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image(180deg,white,rgba(255,255,255,0))]\"></div>\n      <div className=\"relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm sm sm sm10\">\n        <div className=\"mx-auto max-w-md h-96\">\n          <div className=\"flex flex-col justify-between h-full\">\n            <div>\n              <div className=\"space-y-6 py-8 text-base leading-7 text-gray-600\">\n                <p>An advanced online playground for Tailwind CSS, including support for things like:</p>\n                <ul className=\"space-y-4\">\n                  <li className=\"flex items-center\">\n                    <svg className=\"h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2\" strokeLinecap=\"round\" strokeLinejoin=\"round\">\n                      <circle cx=\"12\" cy=\"12\" r=\"11\" />\n                      <path d=\"m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9\" fill=\"none\" />\n                    </svg>\n                    <p className=\"ml-4\">\n                      Customizing your\n                      <code className=\"text-sm font-bold text-gray-900\">tailwind.config.js</code> file\n                    </p>\n                  </li>\n                  \n                </ul>\n              </div>\n            </div>\n    \n            <div className=\"pt-8 text-base font-semibold leading-7\">\n              <p className=\"text-gray-900\">Want to dig deeper into Tailwind?</p>\n              <p>\n                <a href=\"https://tailwindcss.com/docs\" className=\"text-sky-500 hover600\">Read the docs &rarr;</a>\n              </p>\n            </div>\n          </div>\n      </div>\n    </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/justify-between",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<div class=\"relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12\">\n  <img src=\"/img/beams.jpg\" alt=\"\" class=\"absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2\" width=\"1308\" />\n  <div class=\"absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]\"></div>\n  <div class=\"relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10\">\n    <div class=\"mx-auto max-w-md h-96\">\n      <div class=\"flex flex-col justify-between h-full\">\n        <div>\n          <div class=\"space-y-6 py-8 text-base leading-7 text-gray-600\">\n            <p>An advanced online playground for Tailwind CSS, including support for things like:</p>\n            <ul class=\"space-y-4\">\n              <li class=\"flex items-center\">\n                <svg class=\"h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                  <circle cx=\"12\" cy=\"12\" r=\"11\" />\n                  <path d=\"m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9\" fill=\"none\" />\n                </svg>\n                <p class=\"ml-4\">\n                  Customizing your\n                  <code class=\"text-sm font-bold text-gray-900\">tailwind.config.js</code> file\n                </p>\n              </li>\n              \n            </ul>\n          </div>\n        </div>\n\n        <div class=\"pt-8 text-base font-semibold leading-7\">\n          <p class=\"text-gray-900\">Want to dig deeper into Tailwind?</p>\n          <p>\n            <a href=\"https://tailwindcss.com/docs\" class=\"text-sky-500 hover:text-sky-600\">Read the docs &rarr;</a>\n          </p>\n        </div>\n      </div>\n  </div>\n</div>"
+  }
+}

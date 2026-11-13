@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-with-dark-mode",
+  "type": "registry:ui",
+  "title": "Card with Dark Mode",
+  "description": "Card with Dark Mode - Créé par @omkar007 sur TailwindFlex.",
+  "author": "@omkar007 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/card-with-dark-mode.tsx",
+      "content": "/**\n * Component: Card with Dark Mode\n * Author: @omkar007 (https://tailwindflex.com/@omkar007)\n * Source: https://tailwindflex.com/@omkar007/card-with-dark-mode\n * Attribution: Créé par @omkar007 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CardWithDarkMode() {\n  return (\n    <div>\n    <div className=\"w-[300px] rounded-md border bg-white dark800 shadow-lg transition-colors duration-500\">\n        <img\n          src=\"https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60\"\n          alt=\"Laptop\"\n          className=\"h-[200px] w-full rounded-t-md object-cover\"\n        />\n        <div className=\"p-4\">\n            <h1 className=\"inline-flex items-center text-lg font-semibold text-gray-900 dark100\">\n                About Macbook &nbsp;\n                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"\n                    stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\" className=\"h-4 w-4\">\n                    <line x1=\"7\" y1=\"17\" x2=\"17\" y2=\"7\"></line>\n                    <polyline points=\"7 7 17 7 17 17\"></polyline>\n                </svg>\n            </h1>\n            <p className=\"mt-3 text-sm text-gray-600 dark400\">\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,\n                debitis?\n            </p>\n            <div className=\"mt-4\">\n                <span className=\"mb-2 mr-2 inline-block rounded-full bg-gray-100 dark700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark300\">\n              #Macbook\n            </span>\n                <span className=\"mb-2 mr-2 inline-block rounded-full bg-gray-100 dark700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark300\">\n              #Apple\n            </span>\n                <span className=\"mb-2 mr-2 inline-block rounded-full bg-gray-100 dark700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark300\">\n              #Laptop\n            </span>\n            </div>\n            <button\n            type=\"button\"\n            className=\"mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover/80 focus-visible focus-visible2 focus-visible2 focus-visible dark transition-all duration-300\"\n          >\n            Read\n          </button>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@omkar007",
+    "authorUrl": "https://tailwindflex.com/@omkar007",
+    "sourceUrl": "https://tailwindflex.com/@omkar007/card-with-dark-mode",
+    "mention": "Créé par @omkar007 sur TailwindFlex",
+    "rawHtml": "<div class=\"w-[300px] rounded-md border bg-white dark:bg-gray-800 shadow-lg transition-colors duration-500\">\n    <img\n      src=\"https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60\"\n      alt=\"Laptop\"\n      class=\"h-[200px] w-full rounded-t-md object-cover\"\n    />\n    <div class=\"p-4\">\n        <h1 class=\"inline-flex items-center text-lg font-semibold text-gray-900 dark:text-gray-100\">\n            About Macbook &nbsp;\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"\n                stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"h-4 w-4\">\n                <line x1=\"7\" y1=\"17\" x2=\"17\" y2=\"7\"></line>\n                <polyline points=\"7 7 17 7 17 17\"></polyline>\n            </svg>\n        </h1>\n        <p class=\"mt-3 text-sm text-gray-600 dark:text-gray-400\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,\n            debitis?\n        </p>\n        <div class=\"mt-4\">\n            <span class=\"mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300\">\n          #Macbook\n        </span>\n            <span class=\"mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300\">\n          #Apple\n        </span>\n            <span class=\"mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300\">\n          #Laptop\n        </span>\n        </div>\n        <button\n        type=\"button\"\n        class=\"mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white transition-all duration-300\"\n      >\n        Read\n      </button>\n    </div>\n</div>"
+  }
+}

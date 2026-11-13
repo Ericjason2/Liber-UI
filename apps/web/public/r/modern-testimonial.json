@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "modern-testimonial",
+  "type": "registry:ui",
+  "title": "Modern Testimonial",
+  "description": "Modern Testimonial - Créé par @onyxwebdev sur TailwindFlex.",
+  "author": "@onyxwebdev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/modern-testimonial.tsx",
+      "content": "/**\n * Component: Modern Testimonial\n * Author: @onyxwebdev (https://tailwindflex.com/@onyxwebdev)\n * Source: https://tailwindflex.com/@onyxwebdev/modern-testimonial\n * Attribution: Créé par @onyxwebdev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ModernTestimonial() {\n  return (\n    <div>\n    <div className=\"bg-[#0a0a0a] border border-[#222222] rounded-lg w-[260px] relative pb-4 mt-10\">\n        <div className=\"before[''] before before \n                    before1 before1 before1 \n                    before[#222222] before \n                    before before1/2 before0\n                    bg-[#0a0a0a] relative rounded-full -top-10 left-2 w-20 h-20 -mb-6\n                    flex items-center justify-center overflow-hidden\">\n            <img src=\"https://avatars.githubusercontent.com/u/15827433?v=4\" className=\"rounded-full h-16 w-16\" />\n        </div>\n        <div className=\"absolute top-3 right-3 flex gap-0.5\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\">\n                <path fill=\"#d0d0d0\" d=\"m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z\" />\n            </svg>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\">\n                <path fill=\"#d0d0d0\" d=\"m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z\" />\n            </svg>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\">\n                <path fill=\"#d0d0d0\" d=\"m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z\" />\n            </svg>\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\">\n                <path fill=\"#d0d0d0\" d=\"m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z\" />\n            </svg>\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\">\n                <path fill=\"#d0d0d0\" d=\"m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z\" />\n            </svg>\n        </div>\n        <div className=\"text-base text-white font-light px-4\">\n            Using Coastal UI has been wonderful. My project looks great!\n        </div>\n        <div className=\"flex justify-between w-full px-4 text-sm mt-5\">\n            <div className=\"text-zinc-400\">Samuel Altrov</div>\n            <div className=\"text-zinc-700 text-xs\">Student</div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@onyxwebdev",
+    "authorUrl": "https://tailwindflex.com/@onyxwebdev",
+    "sourceUrl": "https://tailwindflex.com/@onyxwebdev/modern-testimonial",
+    "mention": "Créé par @onyxwebdev sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-[#0a0a0a] border border-[#222222] rounded-lg w-[260px] relative pb-4 mt-10\">\n    <div class=\"before:content-[''] before:absolute before:inset \n                before:border-t-1 before:border-l-1 before:border-r-1 \n                before:border-[#222222] before:rounded-t-full \n                before:w-full before:h-1/2 before:top-0\n                bg-[#0a0a0a] relative rounded-full -top-10 left-2 w-20 h-20 -mb-6\n                flex items-center justify-center overflow-hidden\">\n        <img src=\"https://avatars.githubusercontent.com/u/15827433?v=4\" class=\"rounded-full h-16 w-16\" />\n    </div>\n    <div class=\"absolute top-3 right-3 flex gap-0.5\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\">\n            <path fill=\"#d0d0d0\" d=\"m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z\" />\n        </svg>\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\">\n            <path fill=\"#d0d0d0\" d=\"m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z\" />\n        </svg>\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\">\n            <path fill=\"#d0d0d0\" d=\"m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z\" />\n        </svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\">\n            <path fill=\"#d0d0d0\" d=\"m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z\" />\n        </svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\">\n            <path fill=\"#d0d0d0\" d=\"m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z\" />\n        </svg>\n    </div>\n    <div class=\"text-base text-white font-light px-4\">\n        Using Coastal UI has been wonderful. My project looks great!\n    </div>\n    <div class=\"flex justify-between w-full px-4 text-sm mt-5\">\n        <div class=\"text-zinc-400\">Samuel Altrov</div>\n        <div class=\"text-zinc-700 text-xs\">Student</div>\n    </div>\n</div>"
+  }
+}

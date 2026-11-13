@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "user-profile-card-4",
+  "type": "registry:ui",
+  "title": "User Profile Card",
+  "description": "User Profile Card - Créé par @abhi sur TailwindFlex.",
+  "author": "@abhi (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/user-profile-card-4.tsx",
+      "content": "/**\n * Component: User Profile Card\n * Author: @abhi (https://tailwindflex.com/@abhi)\n * Source: https://tailwindflex.com/@abhi/user-profile-card-4\n * Attribution: Créé par @abhi sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function UserProfileCard4() {\n  return (\n    <div>\n    <div className=\"text-sm leading-6\">\n        <figure className=\"relative flex flex-col-reverse bg-slate-100 rounded-lg p-6 dark800 dark/5\">\n            <blockquote className=\"mt-6 text-slate-700 dark300\">\n                <p>I may not show it but i cant live without {product}.</p>\n            </blockquote>\n            <figcaption className=\"flex items-center space-x-4\">\n                <img src=\"https://images.unsplash.com/photo-1632910121591-29e2484c0259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxjb2RlcnxlbnwwfDB8fHwxNzEwMTY0NjIzfDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"\" className=\"flex-none w-14 h-14 rounded-full object-cover\" loading=\"lazy\" decoding=\"async\" />\n                <div className=\"flex-auto\">\n                    <div className=\"text-base text-slate-900 font-semibold dark200\">\n                        John Doe\n                    </div>\n                    <div className=\"mt-0.5 dark300\">\n                        Web Developer\n                    </div>\n                </div>\n            </figcaption>\n        </figure>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "profile",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@abhi",
+    "authorUrl": "https://tailwindflex.com/@abhi",
+    "sourceUrl": "https://tailwindflex.com/@abhi/user-profile-card-4",
+    "mention": "Créé par @abhi sur TailwindFlex",
+    "rawHtml": "<div class=\"text-sm leading-6\">\n    <figure class=\"relative flex flex-col-reverse bg-slate-100 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5\">\n        <blockquote class=\"mt-6 text-slate-700 dark:text-slate-300\">\n            <p>I may not show it but i cant live without {product}.</p>\n        </blockquote>\n        <figcaption class=\"flex items-center space-x-4\">\n            <img src=\"https://images.unsplash.com/photo-1632910121591-29e2484c0259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxjb2RlcnxlbnwwfDB8fHwxNzEwMTY0NjIzfDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"\" class=\"flex-none w-14 h-14 rounded-full object-cover\" loading=\"lazy\" decoding=\"async\">\n            <div class=\"flex-auto\">\n                <div class=\"text-base text-slate-900 font-semibold dark:text-slate-200\">\n                    John Doe\n                </div>\n                <div class=\"mt-0.5 dark:text-slate-300\">\n                    Web Developer\n                </div>\n            </div>\n        </figcaption>\n    </figure>\n</div>"
+  }
+}

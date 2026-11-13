@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "profil-card",
+  "type": "registry:ui",
+  "title": "Profile Card",
+  "description": "Profile Card - Créé par @thuggys sur TailwindFlex.",
+  "author": "@thuggys (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/profil-card.tsx",
+      "content": "/**\n * Component: Profile Card\n * Author: @thuggys (https://tailwindflex.com/@thuggys)\n * Source: https://tailwindflex.com/@thuggys/profil-card\n * Attribution: Créé par @thuggys sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProfilCard() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<body class=\\\"h-screen flex items-center justify-center p-4\\\">\\n    <!-- Cooler Card Component -->\\n    <div class=\\\"relative group\\\">\\n        <!-- Animated Background Blur -->\\n        <div class=\\\"absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt\\\"></div>\\n        \\n        <!-- Main Card -->\\n        <div class=\\\"relative px-7 py-6 bg-black/80 backdrop-blur-xl rounded-xl leading-none flex flex-col items-center max-w-sm\\\">\\n            <!-- Status Indicator -->\\n            <div class=\\\"absolute top-4 right-4 flex items-center\\\">\\n                <div class=\\\"h-3 w-3 bg-green-400 rounded-full animate-pulse\\\"></div>\\n                <span class=\\\"text-green-400 text-xs ml-1.5\\\">ONLINE</span>\\n            </div>\\n\\n            <!-- Profile Image with Ring Animation -->\\n            <div class=\\\"relative group\\\">\\n                <div class=\\\"absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt\\\"></div>\\n                <div class=\\\"relative\\\">\\n                    <img src=\\\"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\\\"\\n                         class=\\\"w-32 h-32 rounded-full object-cover transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-6\\\"\\n                         alt=\\\"Profile\\\">\\n                </div>\\n            </div>\\n\\n            <!-- Profile Info -->\\n            <div class=\\\"mt-6 text-center\\\">\\n                <h2 class=\\\"text-2xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text\\\">John Doe</h2>\\n                <p class=\\\"text-purple-400 font-medium mt-1\\\">Creative Technologist</p>\\n                <p class=\\\"text-gray-300 mt-2 text-sm\\\">Crafting digital experiences at the intersection of design and code</p>\\n            </div>\\n\\n            <!-- Animated Stats -->\\n            <div class=\\\"flex justify-between w-full mt-6 px-4\\\">\\n                <div class=\\\"text-center transform transition-all duration-300 hover:scale-110\\\">\\n                    <p class=\\\"text-2xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text\\\">1.2k</p>\\n                    <p class=\\\"text-gray-400 text-xs\\\">FOLLOWERS</p>\\n                </div>\\n                <div class=\\\"text-center transform transition-all duration-300 hover:scale-110\\\">\\n                    <p class=\\\"text-2xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text\\\">86</p>\\n                    <p class=\\\"text-gray-400 text-xs\\\">PROJECTS</p>\\n                </div>\\n                <div class=\\\"text-center transform transition-all duration-300 hover:scale-110\\\">\\n                    <p class=\\\"text-2xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text\\\">4.8</p>\\n                    <p class=\\\"text-gray-400 text-xs\\\">RATING</p>\\n                </div>\\n            </div>\\n\\n            <!-- Connect Button -->\\n            <button class=\\\"relative mt-8 w-full group/btn\\\">\\n                <div class=\\\"absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover/btn:opacity-100 transition duration-1000 group-hover:duration-200\\\"></div>\\n                <div class=\\\"relative px-6 py-3 bg-black rounded-lg leading-none flex items-center justify-center\\\">\\n                    <span class=\\\"text-gray-200 group-hover/btn:text-white transition duration-200\\\">Connect</span>\\n                </div>\\n            </button>\\n\\n            <!-- Tech Stack Pills -->\\n            <div class=\\\"flex flex-wrap gap-2 mt-6 justify-center\\\">\\n                <span class=\\\"px-3 py-1 text-xs bg-purple-900/50 text-purple-300 rounded-full\\\">React</span>\\n                <span class=\\\"px-3 py-1 text-xs bg-blue-900/50 text-blue-300 rounded-full\\\">TypeScript</span>\\n                <span class=\\\"px-3 py-1 text-xs bg-teal-900/50 text-teal-300 rounded-full\\\">Tailwind</span>\\n            </div>\\n        </div>\\n    </div>\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@thuggys",
+    "authorUrl": "https://tailwindflex.com/@thuggys",
+    "sourceUrl": "https://tailwindflex.com/@thuggys/profil-card",
+    "mention": "Créé par @thuggys sur TailwindFlex",
+    "rawHtml": "<body class=\"h-screen flex items-center justify-center p-4\">\n    <!-- Cooler Card Component -->\n    <div class=\"relative group\">\n        <!-- Animated Background Blur -->\n        <div class=\"absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt\"></div>\n        \n        <!-- Main Card -->\n        <div class=\"relative px-7 py-6 bg-black/80 backdrop-blur-xl rounded-xl leading-none flex flex-col items-center max-w-sm\">\n            <!-- Status Indicator -->\n            <div class=\"absolute top-4 right-4 flex items-center\">\n                <div class=\"h-3 w-3 bg-green-400 rounded-full animate-pulse\"></div>\n                <span class=\"text-green-400 text-xs ml-1.5\">ONLINE</span>\n            </div>\n\n            <!-- Profile Image with Ring Animation -->\n            <div class=\"relative group\">\n                <div class=\"absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt\"></div>\n                <div class=\"relative\">\n                    <img src=\"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\"\n                         class=\"w-32 h-32 rounded-full object-cover transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-6\"\n                         alt=\"Profile\">\n                </div>\n            </div>\n\n            <!-- Profile Info -->\n            <div class=\"mt-6 text-center\">\n                <h2 class=\"text-2xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text\">John Doe</h2>\n                <p class=\"text-purple-400 font-medium mt-1\">Creative Technologist</p>\n                <p class=\"text-gray-300 mt-2 text-sm\">Crafting digital experiences at the intersection of design and code</p>\n            </div>\n\n            <!-- Animated Stats -->\n            <div class=\"flex justify-between w-full mt-6 px-4\">\n                <div class=\"text-center transform transition-all duration-300 hover:scale-110\">\n                    <p class=\"text-2xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text\">1.2k</p>\n                    <p class=\"text-gray-400 text-xs\">FOLLOWERS</p>\n                </div>\n                <div class=\"text-center transform transition-all duration-300 hover:scale-110\">\n                    <p class=\"text-2xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text\">86</p>\n                    <p class=\"text-gray-400 text-xs\">PROJECTS</p>\n                </div>\n                <div class=\"text-center transform transition-all duration-300 hover:scale-110\">\n                    <p class=\"text-2xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text\">4.8</p>\n                    <p class=\"text-gray-400 text-xs\">RATING</p>\n                </div>\n            </div>\n\n            <!-- Connect Button -->\n            <button class=\"relative mt-8 w-full group/btn\">\n                <div class=\"absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover/btn:opacity-100 transition duration-1000 group-hover:duration-200\"></div>\n                <div class=\"relative px-6 py-3 bg-black rounded-lg leading-none flex items-center justify-center\">\n                    <span class=\"text-gray-200 group-hover/btn:text-white transition duration-200\">Connect</span>\n                </div>\n            </button>\n\n            <!-- Tech Stack Pills -->\n            <div class=\"flex flex-wrap gap-2 mt-6 justify-center\">\n                <span class=\"px-3 py-1 text-xs bg-purple-900/50 text-purple-300 rounded-full\">React</span>\n                <span class=\"px-3 py-1 text-xs bg-blue-900/50 text-blue-300 rounded-full\">TypeScript</span>\n                <span class=\"px-3 py-1 text-xs bg-teal-900/50 text-teal-300 rounded-full\">Tailwind</span>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  }
+}

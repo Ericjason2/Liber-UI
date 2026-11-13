@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-with-a-gradient-border-using-tailwind-css",
+  "type": "registry:ui",
+  "title": "Button with a gradient border using Tailwind CSS",
+  "description": "Button with a gradient border using Tailwind CSS - Créé par @dipti sur TailwindFlex.",
+  "author": "@dipti (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button-with-a-gradient-border-using-tailwind-css.tsx",
+      "content": "/**\n * Component: Button with a gradient border using Tailwind CSS\n * Author: @dipti (https://tailwindflex.com/@dipti)\n * Source: https://tailwindflex.com/@dipti/button-with-a-gradient-border-using-tailwind-css\n * Attribution: Créé par @dipti sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonWithAGradientBorderUsingTailwindCss() {\n  return (\n    <div>\n    <div style=\"max-width: 240px;\"\n        className=\"flex rounded-full mx-auto bg-gradient-to-tr from-red-400 via-orange-400 to-rose-400 p-1 shadow-lg\">\n        <button className=\"flex-1 font-bold text-xl bg-white px-6 py-1 rounded-full\">\n            Welcome\n        </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@dipti",
+    "authorUrl": "https://tailwindflex.com/@dipti",
+    "sourceUrl": "https://tailwindflex.com/@dipti/button-with-a-gradient-border-using-tailwind-css",
+    "mention": "Créé par @dipti sur TailwindFlex",
+    "rawHtml": "<div style=\"max-width: 240px;\"\n    class=\"flex rounded-full mx-auto bg-gradient-to-tr from-red-400 via-orange-400 to-rose-400 p-1 shadow-lg\">\n    <button class=\"flex-1 font-bold text-xl bg-white px-6 py-1 rounded-full\">\n        Welcome\n    </button>\n</div>"
+  }
+}

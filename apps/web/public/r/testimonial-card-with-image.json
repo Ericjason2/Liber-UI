@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "testimonial-card-with-image",
+  "type": "registry:ui",
+  "title": "Testimonial card with image",
+  "description": "Testimonial card with image - Créé par @simon-scheffer sur TailwindFlex.",
+  "author": "@simon-scheffer (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/testimonial-card-with-image.tsx",
+      "content": "/**\n * Component: Testimonial card with image\n * Author: @simon-scheffer (https://tailwindflex.com/@simon-scheffer)\n * Source: https://tailwindflex.com/@simon-scheffer/testimonial-card-with-image\n * Attribution: Créé par @simon-scheffer sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TestimonialCardWithImage() {\n  return (\n    <div>\n    <div className=\"max-w-sm\">\n        <div className=\"shadow-lg rounded overflow-hidden\">\n            <img className=\"\" src=\"https://loremflickr.com/g/600/400/girl\" />\n            <div className=\"bg-white p-12\">\n                <p className=\"font-light text-xl italic font-gray-800\">\n                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\n                    dolore magna aliqua. Ut enim ad minim veniam.\n                </p>\n                <p className=\"mt-4 font-light text-sm text-gray-500\">Customer Support Pro</p>\n                <p className=\"mt-1 font-semibold text-sm text-gray-900\">US transport</p>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "profile",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@simon-scheffer",
+    "authorUrl": "https://tailwindflex.com/@simon-scheffer",
+    "sourceUrl": "https://tailwindflex.com/@simon-scheffer/testimonial-card-with-image",
+    "mention": "Créé par @simon-scheffer sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-sm\">\n    <div class=\"shadow-lg rounded overflow-hidden\">\n        <img class=\"\" src=\"https://loremflickr.com/g/600/400/girl\">\n        <div class=\"bg-white p-12\">\n            <p class=\"font-light text-xl italic font-gray-800\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\n                dolore magna aliqua. Ut enim ad minim veniam.\n            </p>\n            <p class=\"mt-4 font-light text-sm text-gray-500\">Customer Support Pro</p>\n            <p class=\"mt-1 font-semibold text-sm text-gray-900\">US transport</p>\n        </div>\n    </div>\n</div>"
+  }
+}

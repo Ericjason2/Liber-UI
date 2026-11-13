@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwind-css-radio-button-cards",
+  "type": "registry:ui",
+  "title": "Tailwind CSS Radio Button Cards",
+  "description": "Tailwind CSS Radio Button Cards - Créé par @prashant sur TailwindFlex.",
+  "author": "@prashant (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tailwind-css-radio-button-cards.tsx",
+      "content": "/**\n * Component: Tailwind CSS Radio Button Cards\n * Author: @prashant (https://tailwindflex.com/@prashant)\n * Source: https://tailwindflex.com/@prashant/tailwind-css-radio-button-cards\n * Attribution: Créé par @prashant sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TailwindCssRadioButtonCards() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<style>\\n    input:checked + label {\\n\\tborder-color: black;\\n\\tbox-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);\\n}\\n</style>\\n\\n\\n<div class=\\\"flex items-center justify-center w-screen h-screen\\\">\\n\\n\\t<!-- Component Start -->\\n\\t<form class=\\\"grid grid-cols-3 gap-2 w-full max-w-screen-sm\\\">\\n\\t\\t<div>\\n\\t\\t\\t<input class=\\\"hidden\\\" id=\\\"radio_1\\\" type=\\\"radio\\\" name=\\\"radio\\\" checked>\\n\\t\\t\\t<label class=\\\"flex flex-col p-4 border-2 border-gray-400 cursor-pointer\\\" for=\\\"radio_1\\\">\\n\\t\\t\\t\\t<span class=\\\"text-xs font-semibold uppercase\\\">Small</span>\\n\\t\\t\\t\\t<span class=\\\"text-xl font-bold mt-2\\\">$10/mo</span>\\n\\t\\t\\t\\t<ul class=\\\"text-sm mt-2\\\">\\n\\t\\t\\t\\t\\t<li>Thing 1</li>\\n\\t\\t\\t\\t\\t<li>Thing 2</li>\\n\\t\\t\\t\\t</ul>\\n\\t\\t\\t</label>\\n\\t\\t</div>\\n\\t\\t<div>\\n\\t\\t\\t<input class=\\\"hidden\\\" id=\\\"radio_2\\\" type=\\\"radio\\\" name=\\\"radio\\\">\\n\\t\\t\\t<label class=\\\"flex flex-col p-4 border-2 border-gray-400 cursor-pointer\\\" for=\\\"radio_2\\\">\\n\\t\\t\\t\\t<span class=\\\"text-xs font-semibold uppercase\\\">Medium</span>\\n\\t\\t\\t\\t<span class=\\\"text-xl font-bold mt-2\\\">$40/mo</span>\\n\\t\\t\\t\\t<ul class=\\\"text-sm mt-2\\\">\\n\\t\\t\\t\\t\\t<li>Thing 1</li>\\n\\t\\t\\t\\t\\t<li>Thing 2</li>\\n\\t\\t\\t\\t</ul>\\n\\t\\t\\t</label>\\n\\t\\t</div>\\n\\t\\t<div>\\n\\t\\t\\t<input class=\\\"hidden\\\" id=\\\"radio_3\\\" type=\\\"radio\\\" name=\\\"radio\\\">\\n\\t\\t\\t<label class=\\\"flex flex-col p-4 border-2 border-gray-400 cursor-pointer\\\" for=\\\"radio_3\\\">\\n\\t\\t\\t\\t<span class=\\\"text-xs font-semibold uppercase\\\">Big</span>\\n\\t\\t\\t\\t<span class=\\\"text-xl font-bold mt-2\\\">$100/mo</span>\\n\\t\\t\\t\\t<ul class=\\\"text-sm mt-2\\\">\\n\\t\\t\\t\\t\\t<li>Thing 1</li>\\n\\t\\t\\t\\t\\t<li>Thing 2</li>\\n\\t\\t\\t\\t</ul>\\n\\t\\t\\t</label>\\n\\t\\t</div>\\n\\t</form>\\n\\t<!-- Component End  -->\\n\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@prashant",
+    "authorUrl": "https://tailwindflex.com/@prashant",
+    "sourceUrl": "https://tailwindflex.com/@prashant/tailwind-css-radio-button-cards",
+    "mention": "Créé par @prashant sur TailwindFlex",
+    "rawHtml": "<style>\n    input:checked + label {\n\tborder-color: black;\n\tbox-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);\n}\n</style>\n\n\n<div class=\"flex items-center justify-center w-screen h-screen\">\n\n\t<!-- Component Start -->\n\t<form class=\"grid grid-cols-3 gap-2 w-full max-w-screen-sm\">\n\t\t<div>\n\t\t\t<input class=\"hidden\" id=\"radio_1\" type=\"radio\" name=\"radio\" checked>\n\t\t\t<label class=\"flex flex-col p-4 border-2 border-gray-400 cursor-pointer\" for=\"radio_1\">\n\t\t\t\t<span class=\"text-xs font-semibold uppercase\">Small</span>\n\t\t\t\t<span class=\"text-xl font-bold mt-2\">$10/mo</span>\n\t\t\t\t<ul class=\"text-sm mt-2\">\n\t\t\t\t\t<li>Thing 1</li>\n\t\t\t\t\t<li>Thing 2</li>\n\t\t\t\t</ul>\n\t\t\t</label>\n\t\t</div>\n\t\t<div>\n\t\t\t<input class=\"hidden\" id=\"radio_2\" type=\"radio\" name=\"radio\">\n\t\t\t<label class=\"flex flex-col p-4 border-2 border-gray-400 cursor-pointer\" for=\"radio_2\">\n\t\t\t\t<span class=\"text-xs font-semibold uppercase\">Medium</span>\n\t\t\t\t<span class=\"text-xl font-bold mt-2\">$40/mo</span>\n\t\t\t\t<ul class=\"text-sm mt-2\">\n\t\t\t\t\t<li>Thing 1</li>\n\t\t\t\t\t<li>Thing 2</li>\n\t\t\t\t</ul>\n\t\t\t</label>\n\t\t</div>\n\t\t<div>\n\t\t\t<input class=\"hidden\" id=\"radio_3\" type=\"radio\" name=\"radio\">\n\t\t\t<label class=\"flex flex-col p-4 border-2 border-gray-400 cursor-pointer\" for=\"radio_3\">\n\t\t\t\t<span class=\"text-xs font-semibold uppercase\">Big</span>\n\t\t\t\t<span class=\"text-xl font-bold mt-2\">$100/mo</span>\n\t\t\t\t<ul class=\"text-sm mt-2\">\n\t\t\t\t\t<li>Thing 1</li>\n\t\t\t\t\t<li>Thing 2</li>\n\t\t\t\t</ul>\n\t\t\t</label>\n\t\t</div>\n\t</form>\n\t<!-- Component End  -->\n\n</div>"
+  }
+}

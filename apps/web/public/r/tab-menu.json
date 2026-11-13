@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tab-menu",
+  "type": "registry:ui",
+  "title": "Tab Menu",
+  "description": "Tab Menu - Créé par @sammytg7 sur TailwindFlex.",
+  "author": "@sammytg7 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tab-menu.tsx",
+      "content": "/**\n * Component: Tab Menu\n * Author: @sammytg7 (https://tailwindflex.com/@sammytg7)\n * Source: https://tailwindflex.com/@sammytg7/tab-menu\n * Attribution: Créé par @sammytg7 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TabMenu() {\n  return (\n    <div>\n    <div className=\"h-screen flex flex-col items-center justify-center bg-gray-900 dark\">\n        <div\n            className=\"sm xs[90%] sm4  py-2 rounded-sm flex md xs md4 xs1 justify-center dark200 bg-gray-800 text-white dark cursor-pointer md md xs\">\n            <div\n                className=\"px-4 border-b-2 dark500 border-yellow-600 hover2 hover600 rounded-b-md\">\n                Posts</div>\n            <div className=\"px-4 hover2 dark500 hover600 rounded-b-md\">About</div>\n            <div className=\"px-4 hover2 dark500 hover600 rounded-b-md\">Gallery</div>\n            <div className=\"px-4 hover2 dark500 hover600 rounded-b-md\">More</div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sammytg7",
+    "authorUrl": "https://tailwindflex.com/@sammytg7",
+    "sourceUrl": "https://tailwindflex.com/@sammytg7/tab-menu",
+    "mention": "Créé par @sammytg7 sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen flex flex-col items-center justify-center bg-gray-900 dark:bg-white\">\n    <div\n        class=\"sm:w-fit xs:w-[90%] sm:px-4  py-2 rounded-sm flex md:flex-no-wrap xs:flex-wrap md:gap-4 xs:gap-1 justify-center dark:bg-gray-200 bg-gray-800 text-white dark:text-black cursor-pointer md:text-lg md:font-semibold xs:text-sm\">\n        <div\n            class=\"px-4 border-b-2 dark:border-blue-500 border-yellow-600 hover:border-b-2 hover:border-yellow-600 rounded-b-md\">\n            Posts</div>\n        <div class=\"px-4 hover:border-b-2 dark:hover:border-blue-500 hover:border-yellow-600 rounded-b-md\">About</div>\n        <div class=\"px-4 hover:border-b-2 dark:hover:border-blue-500 hover:border-yellow-600 rounded-b-md\">Gallery</div>\n        <div class=\"px-4 hover:border-b-2 dark:hover:border-blue-500 hover:border-yellow-600 rounded-b-md\">More</div>\n    </div>\n</div>"
+  }
+}

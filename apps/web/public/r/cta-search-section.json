@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cta-search-section",
+  "type": "registry:ui",
+  "title": "CTA Search Section",
+  "description": "CTA Search Section - Créé par @eliteai-tools sur TailwindFlex.",
+  "author": "@eliteai-tools (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cta-search-section.tsx",
+      "content": "/**\n * Component: CTA Search Section\n * Author: @eliteai-tools (https://tailwindflex.com/@eliteai-tools)\n * Source: https://tailwindflex.com/@eliteai-tools/cta-search-section\n * Attribution: Créé par @eliteai-tools sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CtaSearchSection() {\n  return (\n    <div>\n    <div className=\"relative px-6 py-20 mx-auto overflow-hidden text-center isolate sm16 max-w-7xl lg8\">\n      <p className=\"max-w-2xl mx-auto text-xl text-gray-600\">\n        Didn't find tool you were looking for?\n      </p>\n    \n      <form action=\"https://eliteai.tools/search\"\n        className=\"relative flex flex-col items-center justify-center max-w-2xl gap-2 px-2 py-2 mx-auto mt-4 bg-white border rounded shadow-2xl min-w-sm md focus-within300\">\n        <input id=\"search-bar\" placeholder=\"e.g Tool for Creating Powerpoint Presentation\" name=\"q\"\n          className=\"flex-1 w-full px-6 py-2 bg-white rounded outline-none\" required=\"\" />\n        <button type=\"submit\"\n          className=\"relative w-full px-6 py-2 overflow-hidden text-white transition-all duration-100 bg-black border border-black rounded md fill-white active95 will-change-transform\">\n          <span className=\"flex items-center transition-all opacity-1\">\n    \n            <span className=\"mx-auto text-sm font-semibold truncate whitespace-nowrap\">\n              Search\n            </span>\n          </span>\n        </button>\n        <span className=\"absolute text-sm text-gray-600 right-1 -bottom-7\">\n          Be as detailed as possible for better results\n        </span>\n      </form>\n    \n      <svg viewBox=\"0 0 1024 1024\"\n        className=\"absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image(closest-side,white,transparent)]\"\n        aria-hidden=\"true\">\n        <circle cx=\"512\" cy=\"512\" r=\"512\" fill=\"url(#827591b1-ce8c-4110-b064-7cb85a0b1217)\" fill-opacity=\"0.7\">\n        </circle>\n        <defs>\n          <radialGradient id=\"827591b1-ce8c-4110-b064-7cb85a0b1217\">\n            <stop stopColor=\"#3b82f6\"></stop>\n            <stop offset=\"1\" stopColor=\"#1d4ed8\"></stop>\n          </radialGradient>\n        </defs>\n      </svg>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@eliteai-tools",
+    "authorUrl": "https://tailwindflex.com/@eliteai-tools",
+    "sourceUrl": "https://tailwindflex.com/@eliteai-tools/cta-search-section",
+    "mention": "Créé par @eliteai-tools sur TailwindFlex",
+    "rawHtml": "<div class=\"relative px-6 py-20 mx-auto overflow-hidden text-center isolate sm:px-16 max-w-7xl lg:px-8\">\n  <p class=\"max-w-2xl mx-auto text-xl text-gray-600\">\n    Didn't find tool you were looking for?\n  </p>\n\n  <form action=\"https://eliteai.tools/search\"\n    class=\"relative flex flex-col items-center justify-center max-w-2xl gap-2 px-2 py-2 mx-auto mt-4 bg-white border rounded shadow-2xl min-w-sm md:flex-row focus-within:border-gray-300\">\n    <input id=\"search-bar\" placeholder=\"e.g Tool for Creating Powerpoint Presentation\" name=\"q\"\n      class=\"flex-1 w-full px-6 py-2 bg-white rounded outline-none\" required=\"\">\n    <button type=\"submit\"\n      class=\"relative w-full px-6 py-2 overflow-hidden text-white transition-all duration-100 bg-black border border-black rounded md:w-auto fill-white active:scale-95 will-change-transform\">\n      <span class=\"flex items-center transition-all opacity-1\">\n\n        <span class=\"mx-auto text-sm font-semibold truncate whitespace-nowrap\">\n          Search\n        </span>\n      </span>\n    </button>\n    <span class=\"absolute text-sm text-gray-600 right-1 -bottom-7\">\n      Be as detailed as possible for better results\n    </span>\n  </form>\n\n  <svg viewBox=\"0 0 1024 1024\"\n    class=\"absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]\"\n    aria-hidden=\"true\">\n    <circle cx=\"512\" cy=\"512\" r=\"512\" fill=\"url(#827591b1-ce8c-4110-b064-7cb85a0b1217)\" fill-opacity=\"0.7\">\n    </circle>\n    <defs>\n      <radialGradient id=\"827591b1-ce8c-4110-b064-7cb85a0b1217\">\n        <stop stop-color=\"#3b82f6\"></stop>\n        <stop offset=\"1\" stop-color=\"#1d4ed8\"></stop>\n      </radialGradient>\n    </defs>\n  </svg>\n</div>"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwindflex-navbar",
+  "type": "registry:ui",
+  "title": "Tailwindflex navbar",
+  "description": "Tailwindflex navbar - Créé par @amit sur TailwindFlex.",
+  "author": "@amit (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tailwindflex-navbar.tsx",
+      "content": "/**\n * Component: Tailwindflex navbar\n * Author: @amit (https://tailwindflex.com/@amit)\n * Source: https://tailwindflex.com/@amit/tailwindflex-navbar\n * Attribution: Créé par @amit sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TailwindflexNavbar() {\n  return (\n    <div>\n    <div className=\"flex p-2 justify-between items-center border-b border-gray-300 flex-wrap\">\n        <div className=\"flex items-center\">\n            <img src=\"https://tailwindflex.com/public/images/logo.svg\" className=\"w-10 h-10\" />\n            <h2 className=\"font-bold text-2xl text-purple-600\">TailwildFlex</h2>\n        </div>\n        <div className=\"relative flex items-center hidden md\">\n            <input type=\"text\" placeholder=\"Search\" className=\"border border-gray-200 rounded-md py-1 px-2\"/>\n            <svg className=\"absolute right-2 h-6 w-6 text-gray-400 hover500\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\"\n                viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\"\n                    d=\"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z\" />\n            </svg>\n        </div>\n        <div className=\"flex items-center gap-2\">\n            <button className=\"border px-2 py-1 rounded-md\">Center</button>\n            <button className=\"border px-2 py-1 rounded-md\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-6 w-6 text-gray-400 hover500 text-gray-700\" fill=\"none\"\n                viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\"\n                    d=\"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z\" />\n            </svg>\n            </button>\n            <button className=\"border px-2 py-1 rounded-md text-gray-500\">Tailwind V3</button>\n            <button className=\"border px-2 py-1 rounded-md bg-purple-600 text-white hover700\">Save</button>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@amit",
+    "authorUrl": "https://tailwindflex.com/@amit",
+    "sourceUrl": "https://tailwindflex.com/@amit/tailwindflex-navbar",
+    "mention": "Créé par @amit sur TailwindFlex",
+    "rawHtml": "<div class=\"flex p-2 justify-between items-center border-b border-gray-300 flex-wrap\">\n    <div class=\"flex items-center\">\n        <img src=\"https://tailwindflex.com/public/images/logo.svg\" class=\"w-10 h-10\">\n        <h2 class=\"font-bold text-2xl text-purple-600\">TailwildFlex</h2>\n    </div>\n    <div class=\"relative flex items-center hidden md:inline-flex\">\n        <input type=\"text\" placeholder=\"Search\" class=\"border border-gray-200 rounded-md py-1 px-2\"/>\n        <svg class=\"absolute right-2 h-6 w-6 text-gray-400 hover:text-gray-500\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\"\n            viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\n                d=\"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z\" />\n        </svg>\n    </div>\n    <div class=\"flex items-center gap-2\">\n        <button class=\"border px-2 py-1 rounded-md\">Center</button>\n        <button class=\"border px-2 py-1 rounded-md\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-gray-400 hover:text-gray-500 text-gray-700\" fill=\"none\"\n            viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\n                d=\"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z\" />\n        </svg>\n        </button>\n        <button class=\"border px-2 py-1 rounded-md text-gray-500\">Tailwind V3</button>\n        <button class=\"border px-2 py-1 rounded-md bg-purple-600 text-white hover:bg-purple-700\">Save</button>\n    </div>\n</div>"
+  }
+}

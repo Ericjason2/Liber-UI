@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "info-card-2",
+  "type": "registry:ui",
+  "title": "Info Card",
+  "description": "Info Card - Créé par @prashant sur TailwindFlex.",
+  "author": "@prashant (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/info-card-2.tsx",
+      "content": "/**\n * Component: Info Card\n * Author: @prashant (https://tailwindflex.com/@prashant)\n * Source: https://tailwindflex.com/@prashant/info-card-2\n * Attribution: Créé par @prashant sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InfoCard2() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<section class=\\\"flex flex-col justify-center antialiased bg-gray-50 text-gray-600 min-h-screen p-4\\\">\\n    <div class=\\\"h-full\\\">\\n        <!-- Card -->\\n        <div class=\\\"max-w-2xl mx-auto bg-indigo-600 shadow-lg rounded-lg\\\">\\n            <div class=\\\"px-6 py-5\\\">\\n                <div class=\\\"flex items-start\\\">\\n                    <!-- Icon -->\\n                    <svg class=\\\"fill-current flex-shrink-0 mr-5\\\" width=\\\"30\\\" height=\\\"30\\\" viewBox=\\\"0 0 30 30\\\">\\n                        <path class=\\\"text-indigo-300\\\" d=\\\"m16 14.883 14-7L14.447.106a1 1 0 0 0-.895 0L0 6.883l16 8Z\\\" />\\n                        <path class=\\\"text-indigo-200\\\" d=\\\"M16 14.619v15l13.447-6.724A.998.998 0 0 0 30 22V7.619l-14 7Z\\\" />\\n                        <path class=\\\"text-indigo-500\\\" d=\\\"m16 14.619-16-8V21c0 .379.214.725.553.895L16 29.619v-15Z\\\" />\\n                    </svg>\\n                    <!-- Card content -->\\n                    <div class=\\\"flex-grow truncate\\\">\\n                        <!-- Card header -->\\n                        <div class=\\\"w-full sm:flex justify-between items-center mb-3\\\">\\n                            <!-- Title -->\\n                            <h2 class=\\\"text-2xl leading-snug font-extrabold text-gray-50 truncate mb-1 sm:mb-0\\\">Simple Design Tips</h2>\\n                            <!-- Like and comment buttons -->\\n                            <div class=\\\"flex-shrink-0 flex items-center space-x-3 sm:ml-2\\\">\\n                                <button class=\\\"flex items-center text-left text-sm font-medium text-indigo-100 hover:text-white group focus:outline-none focus-visible:border-b focus-visible:border-indigo-100\\\">\\n                                    <svg class=\\\"w-4 h-4 flex-shrink-0 mr-2 fill-current text-gray-300 group-hover:text-gray-200\\\" viewBox=\\\"0 0 16 16\\\">\\n                                        <path d=\\\"M14.682 2.318A4.485 4.485 0 0 0 11.5 1 4.377 4.377 0 0 0 8 2.707 4.383 4.383 0 0 0 4.5 1a4.5 4.5 0 0 0-3.182 7.682L8 15l6.682-6.318a4.5 4.5 0 0 0 0-6.364Zm-1.4 4.933L8 12.247l-5.285-5A2.5 2.5 0 0 1 4.5 3c1.437 0 2.312.681 3.5 2.625C9.187 3.681 10.062 3 11.5 3a2.5 2.5 0 0 1 1.785 4.251h-.003Z\\\" />\\n                                    </svg>\\n                                    <span>498 <span class=\\\"sr-only\\\">likes</span></span>\\n                                </button>\\n                                <button class=\\\"flex items-center text-left text-sm font-medium text-indigo-100 hover:text-white group focus:outline-none focus-visible:border-b focus-visible:border-indigo-100\\\">\\n                                    <svg class=\\\"w-4 h-4 flex-shrink-0 mr-2 fill-current text-gray-300 group-hover:text-gray-200\\\" viewBox=\\\"0 0 16 16\\\">\\n                                        <path d=\\\"M8 0C3.6 0 0 3.1 0 7s3.6 7 8 7h.6l5.4 2v-4.4c1.2-1.2 2-2.8 2-4.6 0-3.9-3.6-7-8-7Zm4 10.8v2.3L8.9 12H8c-3.3 0-6-2.2-6-5s2.7-5 6-5 6 2.2 6 5c0 2.2-2 3.8-2 3.8Z\\\" />\\n                                    </svg>\\n                                    <span>64 <span class=\\\"sr-only\\\">comments</span></span>\\n                                </button>\\n                            </div>\\n                        </div>\\n                        <!-- Card body -->\\n                        <div class=\\\"flex items-end justify-between whitespace-normal\\\">\\n                            <!-- Paragraph -->\\n                            <div class=\\\"max-w-md text-indigo-100\\\">\\n                                <p class=\\\"mb-2\\\">Lorem ipsum dolor sit amet, consecte adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore.</p>\\n                            </div>\\n                            <!-- More link -->\\n                            <a class=\\\"flex-shrink-0 flex items-center justify-center text-indigo-600 w-10 h-10 rounded-full bg-gradient-to-b from-indigo-50 to-indigo-100 hover:from-white hover:to-indigo-50 focus:outline-none focus-visible:from-white focus-visible:to-white transition duration-150 ml-2\\\" href=\\\"#0\\\">\\n                                <span class=\\\"block font-bold\\\"><span class=\\\"sr-only\\\">Read more</span> -></span>\\n                            </a>\\n                        </div>\\n                    </div>\\n                </div>\\n            </div>\\n        </div>\\n    </div>\\n</section>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@prashant",
+    "authorUrl": "https://tailwindflex.com/@prashant",
+    "sourceUrl": "https://tailwindflex.com/@prashant/info-card-2",
+    "mention": "Créé par @prashant sur TailwindFlex",
+    "rawHtml": "<section class=\"flex flex-col justify-center antialiased bg-gray-50 text-gray-600 min-h-screen p-4\">\n    <div class=\"h-full\">\n        <!-- Card -->\n        <div class=\"max-w-2xl mx-auto bg-indigo-600 shadow-lg rounded-lg\">\n            <div class=\"px-6 py-5\">\n                <div class=\"flex items-start\">\n                    <!-- Icon -->\n                    <svg class=\"fill-current flex-shrink-0 mr-5\" width=\"30\" height=\"30\" viewBox=\"0 0 30 30\">\n                        <path class=\"text-indigo-300\" d=\"m16 14.883 14-7L14.447.106a1 1 0 0 0-.895 0L0 6.883l16 8Z\" />\n                        <path class=\"text-indigo-200\" d=\"M16 14.619v15l13.447-6.724A.998.998 0 0 0 30 22V7.619l-14 7Z\" />\n                        <path class=\"text-indigo-500\" d=\"m16 14.619-16-8V21c0 .379.214.725.553.895L16 29.619v-15Z\" />\n                    </svg>\n                    <!-- Card content -->\n                    <div class=\"flex-grow truncate\">\n                        <!-- Card header -->\n                        <div class=\"w-full sm:flex justify-between items-center mb-3\">\n                            <!-- Title -->\n                            <h2 class=\"text-2xl leading-snug font-extrabold text-gray-50 truncate mb-1 sm:mb-0\">Simple Design Tips</h2>\n                            <!-- Like and comment buttons -->\n                            <div class=\"flex-shrink-0 flex items-center space-x-3 sm:ml-2\">\n                                <button class=\"flex items-center text-left text-sm font-medium text-indigo-100 hover:text-white group focus:outline-none focus-visible:border-b focus-visible:border-indigo-100\">\n                                    <svg class=\"w-4 h-4 flex-shrink-0 mr-2 fill-current text-gray-300 group-hover:text-gray-200\" viewBox=\"0 0 16 16\">\n                                        <path d=\"M14.682 2.318A4.485 4.485 0 0 0 11.5 1 4.377 4.377 0 0 0 8 2.707 4.383 4.383 0 0 0 4.5 1a4.5 4.5 0 0 0-3.182 7.682L8 15l6.682-6.318a4.5 4.5 0 0 0 0-6.364Zm-1.4 4.933L8 12.247l-5.285-5A2.5 2.5 0 0 1 4.5 3c1.437 0 2.312.681 3.5 2.625C9.187 3.681 10.062 3 11.5 3a2.5 2.5 0 0 1 1.785 4.251h-.003Z\" />\n                                    </svg>\n                                    <span>498 <span class=\"sr-only\">likes</span></span>\n                                </button>\n                                <button class=\"flex items-center text-left text-sm font-medium text-indigo-100 hover:text-white group focus:outline-none focus-visible:border-b focus-visible:border-indigo-100\">\n                                    <svg class=\"w-4 h-4 flex-shrink-0 mr-2 fill-current text-gray-300 group-hover:text-gray-200\" viewBox=\"0 0 16 16\">\n                                        <path d=\"M8 0C3.6 0 0 3.1 0 7s3.6 7 8 7h.6l5.4 2v-4.4c1.2-1.2 2-2.8 2-4.6 0-3.9-3.6-7-8-7Zm4 10.8v2.3L8.9 12H8c-3.3 0-6-2.2-6-5s2.7-5 6-5 6 2.2 6 5c0 2.2-2 3.8-2 3.8Z\" />\n                                    </svg>\n                                    <span>64 <span class=\"sr-only\">comments</span></span>\n                                </button>\n                            </div>\n                        </div>\n                        <!-- Card body -->\n                        <div class=\"flex items-end justify-between whitespace-normal\">\n                            <!-- Paragraph -->\n                            <div class=\"max-w-md text-indigo-100\">\n                                <p class=\"mb-2\">Lorem ipsum dolor sit amet, consecte adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore.</p>\n                            </div>\n                            <!-- More link -->\n                            <a class=\"flex-shrink-0 flex items-center justify-center text-indigo-600 w-10 h-10 rounded-full bg-gradient-to-b from-indigo-50 to-indigo-100 hover:from-white hover:to-indigo-50 focus:outline-none focus-visible:from-white focus-visible:to-white transition duration-150 ml-2\" href=\"#0\">\n                                <span class=\"block font-bold\"><span class=\"sr-only\">Read more</span> -></span>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>"
+  }
+}

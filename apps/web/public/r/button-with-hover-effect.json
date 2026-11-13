@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-with-hover-effect",
+  "type": "registry:ui",
+  "title": "Button with hover effect",
+  "description": "Button with hover effect - Créé par @isasxm sur TailwindFlex.",
+  "author": "@isasxm (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/button-with-hover-effect.tsx",
+      "content": "/**\n * Component: Button with hover effect\n * Author: @isasxm (https://tailwindflex.com/@isasxm)\n * Source: https://tailwindflex.com/@isasxm/button-with-hover-effect\n * Attribution: Créé par @isasxm sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonWithHoverEffect() {\n  return (\n    <div>\n    <div className='flex items-center justify-center w-full h-[100vh] bg-white dark'>\n      <button className=\"flex items-center gap-2 w-max py-3 px-10 m-auto rounded-full border border-white bg-black text-white dark dark500 dark relative z-0 after after0 after0 after10 after after after after dark hover125 hover150 hover0 hover hover500\">\n        Hover me \n        <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth=\"1.5\" stroke=\"currentColor\" className=\"size-4\">\n          <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3\" />\n        </svg>\n      </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@isasxm",
+    "authorUrl": "https://tailwindflex.com/@isasxm",
+    "sourceUrl": "https://tailwindflex.com/@isasxm/button-with-hover-effect",
+    "mention": "Créé par @isasxm sur TailwindFlex",
+    "rawHtml": "<div class='flex items-center justify-center w-full h-[100vh] bg-white dark:bg-black'>\n  <button class=\"flex items-center gap-2 w-max py-3 px-10 m-auto rounded-full border border-white bg-black text-white dark:bg-white dark:border-gray-500 dark:text-black relative z-0 after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-full after:rounded-full after:bg-black dark:after:bg-white hover:after:scale-x-125 hover:after:scale-y-150 hover:after:opacity-0 hover:after:transition hover:after:duration-500\">\n    Hover me \n    <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-4\">\n      <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3\" />\n    </svg>\n  </button>\n</div>"
+  }
+}

@@ -3,16 +3,16 @@
   "name": "a-fullscreen-hero-section",
   "type": "registry:ui",
   "title": "A Fullscreen Hero Section",
-  "description": "A Fullscreen Hero Section Tailwind CSS component from TailwindFlex.",
-  "author": "brandon",
+  "description": "A Fullscreen Hero Section - Créé par @brandon sur TailwindFlex.",
+  "author": "@brandon (TailwindFlex)",
   "categories": [
-    "data-display"
+    "buttons"
   ],
   "dependencies": [],
   "files": [
     {
       "path": "ui/a-fullscreen-hero-section.tsx",
-      "content": "import React from \"react\";\n\nexport function AFullscreenHeroSection() {\n  return (\n    <div className=\"flex flex-wrap\">\r\n    <div className=\"w-full sm:w-8/12 mb-10\">\r\n      <div className=\"container mx-auto h-full sm:p-10\">\r\n        <nav className=\"flex px-4 justify-between items-center\">\r\n          <div className=\"text-4xl font-bold\">\r\n            Plant<span className=\"text-green-700\">.</span>\r\n          </div>\r\n          <div>\r\n            <img src=\"https://image.flaticon.com/icons/svg/497/497348.svg\" alt=\"\" className=\"w-8\" />\r\n          </div>\r\n        </nav>\r\n        <header className=\"container px-4 lg:flex mt-10 items-center h-full lg:mt-0\">\r\n          <div className=\"w-full\">\r\n            <h1 className=\"text-4xl lg:text-6xl font-bold\">Find your <span className=\"text-green-700\">greeny</span> stuff for your room</h1>\r\n            <div className=\"w-20 h-2 bg-green-700 my-4\"></div>\r\n            <p className=\"text-xl mb-10\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maiores neque eaque ea odit placeat, tenetur illum distinctio nulla voluptatum a corrupti beatae tempora aperiam quia id aliquam possimus aut.</p>\r\n            <button className=\"bg-green-500 text-white text-2xl font-medium px-4 py-2 rounded shadow\">Learn More</button>\r\n          </div>\r\n        </header>\r\n      </div>\r\n    </div>\r\n    <img src=\"https://images.unsplash.com/photo-1536147116438-62679a5e01f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80\" alt=\"Leafs\" className=\"w-full h-48 object-cover sm:h-screen sm:w-4/12\" />\n</div>\n  );\n}",
+      "content": "/**\n * Component: A Fullscreen Hero Section\n * Author: @brandon (https://tailwindflex.com/@brandon)\n * Source: https://tailwindflex.com/@brandon/a-fullscreen-hero-section\n * Attribution: Créé par @brandon sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AFullscreenHeroSection() {\n  return (\n    <div>\n    <div className=\"flex flex-wrap\">\r\n        <div className=\"w-full sm8/12 mb-10\">\r\n          <div className=\"container mx-auto h-full sm10\">\r\n            <nav className=\"flex px-4 justify-between items-center\">\r\n              <div className=\"text-4xl font-bold\">\r\n                Plant<span className=\"text-green-700\">.</span>\r\n              </div>\r\n              <div>\r\n                <img src=\"https://image.flaticon.com/icons/svg/497/497348.svg\" alt=\"\" className=\"w-8\" />\r\n              </div>\r\n            </nav>\r\n            <header className=\"container px-4 lg mt-10 items-center h-full lg0\">\r\n              <div className=\"w-full\">\r\n                <h1 className=\"text-4xl lg6xl font-bold\">Find your <span className=\"text-green-700\">greeny</span> stuff for your room</h1>\r\n                <div className=\"w-20 h-2 bg-green-700 my-4\"></div>\r\n                <p className=\"text-xl mb-10\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maiores neque eaque ea odit placeat, tenetur illum distinctio nulla voluptatum a corrupti beatae tempora aperiam quia id aliquam possimus aut.</p>\r\n                <button className=\"bg-green-500 text-white text-2xl font-medium px-4 py-2 rounded shadow\">Learn More</button>\r\n              </div>\r\n            </header>\r\n          </div>\r\n        </div>\r\n        <img src=\"https://images.unsplash.com/photo-1536147116438-62679a5e01f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80\" alt=\"Leafs\" className=\"w-full h-48 object-cover sm sm4/12\" />\r\n      </div>\n    </div>\n  );\n}\n",
       "type": "registry:ui"
     }
   ],
@@ -20,7 +20,36 @@
     "kind": "component",
     "tags": [
       "hero",
-      "landing-page"
-    ]
+      "landing-page",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@brandon",
+    "authorUrl": "https://tailwindflex.com/@brandon",
+    "sourceUrl": "https://tailwindflex.com/@brandon/a-fullscreen-hero-section",
+    "mention": "Créé par @brandon sur TailwindFlex",
+    "rawHtml": "<div class=\"flex flex-wrap\">\r\n    <div class=\"w-full sm:w-8/12 mb-10\">\r\n      <div class=\"container mx-auto h-full sm:p-10\">\r\n        <nav class=\"flex px-4 justify-between items-center\">\r\n          <div class=\"text-4xl font-bold\">\r\n            Plant<span class=\"text-green-700\">.</span>\r\n          </div>\r\n          <div>\r\n            <img src=\"https://image.flaticon.com/icons/svg/497/497348.svg\" alt=\"\" class=\"w-8\">\r\n          </div>\r\n        </nav>\r\n        <header class=\"container px-4 lg:flex mt-10 items-center h-full lg:mt-0\">\r\n          <div class=\"w-full\">\r\n            <h1 class=\"text-4xl lg:text-6xl font-bold\">Find your <span class=\"text-green-700\">greeny</span> stuff for your room</h1>\r\n            <div class=\"w-20 h-2 bg-green-700 my-4\"></div>\r\n            <p class=\"text-xl mb-10\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maiores neque eaque ea odit placeat, tenetur illum distinctio nulla voluptatum a corrupti beatae tempora aperiam quia id aliquam possimus aut.</p>\r\n            <button class=\"bg-green-500 text-white text-2xl font-medium px-4 py-2 rounded shadow\">Learn More</button>\r\n          </div>\r\n        </header>\r\n      </div>\r\n    </div>\r\n    <img src=\"https://images.unsplash.com/photo-1536147116438-62679a5e01f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80\" alt=\"Leafs\" class=\"w-full h-48 object-cover sm:h-screen sm:w-4/12\">\r\n  </div>"
   }
 }

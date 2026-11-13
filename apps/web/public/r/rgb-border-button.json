@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "rgb-border-button",
+  "type": "registry:ui",
+  "title": "rgb border button",
+  "description": "rgb border button - Créé par @akram6t sur TailwindFlex.",
+  "author": "@akram6t (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/rgb-border-button.tsx",
+      "content": "/**\n * Component: rgb border button\n * Author: @akram6t (https://tailwindflex.com/@akram6t)\n * Source: https://tailwindflex.com/@akram6t/rgb-border-button\n * Attribution: Créé par @akram6t sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function RgbBorderButton() {\n  return (\n    <div>\n    \n    <button className=\"button\">Click Me</button>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@akram6t",
+    "authorUrl": "https://tailwindflex.com/@akram6t",
+    "sourceUrl": "https://tailwindflex.com/@akram6t/rgb-border-button",
+    "mention": "Créé par @akram6t sur TailwindFlex",
+    "rawHtml": "<!-- rgb button -->\n<button class=\"button\">Click Me</button>"
+  }
+}

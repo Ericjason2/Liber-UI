@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "ghekkk",
+  "type": "registry:ui",
+  "title": "Smooth Slide-in Animation for Text in Tailwind CSS",
+  "description": "Smooth Slide-in Animation for Text in Tailwind CSS - Créé par @vikas-kushwah sur TailwindFlex.",
+  "author": "@vikas-kushwah (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/ghekkk.tsx",
+      "content": "/**\n * Component: Smooth Slide-in Animation for Text in Tailwind CSS\n * Author: @vikas-kushwah (https://tailwindflex.com/@vikas-kushwah)\n * Source: https://tailwindflex.com/@vikas-kushwah/ghekkk\n * Attribution: Créé par @vikas-kushwah sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Ghekkk() {\n  return (\n    <div>\n    <section className=\"bg-blue-400 w-full pt-20 flex flex-col justify-center items-center text-white py-10\">\n              \n            <div className=\"animate-slidein opacity-0 [--slidein-delay:300ms]\">\n              <div className=\"flex items-center gap-3 border-2 border-blue-50 bg-slate-500 px-4 py-1 rounded-xl\">Introducing Linear Asks <FaArrowRight /></div>\n            </div>\n             \n            <h1 className=\"animate-slidein opacity-0 [--slidein-delay:300ms] text-6xl py-7 font-medium px-20 text-center\">\n              Linear is a better way\n              <br />\n              to build products\n            </h1>\n             \n            <p className=\"animate-slidein opacity-0 [--slidein-delay:500ms] text-xl text-center pb-5\">\n              Meet the new standard for modern software development.\n              <br />\n              Streamline issues, sprints, and product roadmaps.\n            </p>\n             \n            <div className=\"animate-slidein opacity-0 [--slidein-delay:700ms] ...\">\n              <div className=\" \">\n                <samp className=\"px-5 py-2 rounded-xl border-2 border-gray-50 bg-slate-900\">Get started</samp> </div>\n            </div>\n      </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@vikas-kushwah",
+    "authorUrl": "https://tailwindflex.com/@vikas-kushwah",
+    "sourceUrl": "https://tailwindflex.com/@vikas-kushwah/ghekkk",
+    "mention": "Créé par @vikas-kushwah sur TailwindFlex",
+    "rawHtml": "<section class=\"bg-blue-400 w-full pt-20 flex flex-col justify-center items-center text-white py-10\">\n         <!-- Element 1 --> \n        <div class=\"animate-slidein opacity-0 [--slidein-delay:300ms]\">\n          <div class=\"flex items-center gap-3 border-2 border-blue-50 bg-slate-500 px-4 py-1 rounded-xl\">Introducing Linear Asks <FaArrowRight /></div>\n        </div>\n        <!-- Element 2 --> \n        <h1 class=\"animate-slidein opacity-0 [--slidein-delay:300ms] text-6xl py-7 font-medium px-20 text-center\">\n          Linear is a better way\n          <br />\n          to build products\n        </h1>\n        <!-- Element 3 --> \n        <p class=\"animate-slidein opacity-0 [--slidein-delay:500ms] text-xl text-center pb-5\">\n          Meet the new standard for modern software development.\n          <br />\n          Streamline issues, sprints, and product roadmaps.\n        </p>\n         <!-- Element 4 -->\n        <div class=\"animate-slidein opacity-0 [--slidein-delay:700ms] ...\">\n          <div class=\" \">\n            <samp class=\"px-5 py-2 rounded-xl border-2 border-gray-50 bg-slate-900\">Get started</samp> </div>\n        </div>\n  </section>"
+  }
+}

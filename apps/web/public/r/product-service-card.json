@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "product-service-card",
+  "type": "registry:ui",
+  "title": "Product / Service Card",
+  "description": "Product / Service Card - Créé par @noob_dev sur TailwindFlex.",
+  "author": "@noob_dev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/product-service-card.tsx",
+      "content": "/**\n * Component: Product / Service Card\n * Author: @noob_dev (https://tailwindflex.com/@noob_dev)\n * Source: https://tailwindflex.com/@noob_dev/product-service-card\n * Attribution: Créé par @noob_dev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ProductServiceCard() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<link href=\\\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css\\\" rel=\\\"stylesheet\\\" />\\n\\n<div class=\\\"antialiased text-gray-900 \\\">\\n  <div class=\\\"bg-gray-200 min-h-screen p-8 flex items-center justify-center\\\">\\n    <div class=\\\"bg-white rounded-lg overflow-hidden shadow-2xl xl:w-1/5 lg:w-1/4 md:w-1/3 sm:w-1/2\\\">\\n      <!--E11-->\\n      <!-- <div class=\\\"h-48 bg-cover bg-center\\\" style=\\\"background-image:url('https://images.unsplash.com/photo-1570797197190-8e003a00c846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80')\\\"></div>-->\\n      <img class=\\\"h-48 w-full object-cover object-end\\\" src=\\\"https://images.unsplash.com/photo-1570797197190-8e003a00c846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80\\\" alt=\\\"Home in Countryside\\\" />\\n      <div class=\\\"p-6\\\">\\n        <div class=\\\"flex items-baseline\\\">\\n          <span class=\\\"inline-block bg-teal-200 text-teal-800 py-1 px-4 text-xs rounded-full uppercase font-semibold tracking-wide\\\">New</span>\\n          <div class=\\\"ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide\\\">\\n            3 beds &bull; 2 baths\\n          </div>\\n        </div>\\n        <h4 class=\\\"mt-2 font-semibold text-lg leading-tight truncate\\\">Beautiful Home in the countryside</h4>\\n\\n        <div class=\\\"mt-1\\\">\\n          <span>$1,900.00</span>\\n          <span class=\\\"text-gray-600 text-sm\\\">/ wk</span>\\n        </div>\\n        <div class=\\\"mt-2 flex items-center\\\">\\n          <span class=\\\"text-teal-600 font-semibold\\\">\\n            <span>\\n              <i class=\\\"fas fa-star\\\"></i>\\n              <i class=\\\"fas fa-star\\\"></i>\\n              <i class=\\\"fas fa-star\\\"></i>\\n              <i class=\\\"fas fa-star\\\"></i>\\n              <i class=\\\"far fa-star\\\"></i>\\n              <span>\\n              </span>\\n              <span class=\\\"ml-2 text-gray-600 text-sm\\\">34 reviews</span>\\n        </div>\\n      </div>\\n    </div>\\n  </div>\\n</div>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@noob_dev",
+    "authorUrl": "https://tailwindflex.com/@noob_dev",
+    "sourceUrl": "https://tailwindflex.com/@noob_dev/product-service-card",
+    "mention": "Créé par @noob_dev sur TailwindFlex",
+    "rawHtml": "<link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css\" rel=\"stylesheet\" />\n\n<div class=\"antialiased text-gray-900 \">\n  <div class=\"bg-gray-200 min-h-screen p-8 flex items-center justify-center\">\n    <div class=\"bg-white rounded-lg overflow-hidden shadow-2xl xl:w-1/5 lg:w-1/4 md:w-1/3 sm:w-1/2\">\n      <!--E11-->\n      <!-- <div class=\"h-48 bg-cover bg-center\" style=\"background-image:url('https://images.unsplash.com/photo-1570797197190-8e003a00c846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80')\"></div>-->\n      <img class=\"h-48 w-full object-cover object-end\" src=\"https://images.unsplash.com/photo-1570797197190-8e003a00c846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80\" alt=\"Home in Countryside\" />\n      <div class=\"p-6\">\n        <div class=\"flex items-baseline\">\n          <span class=\"inline-block bg-teal-200 text-teal-800 py-1 px-4 text-xs rounded-full uppercase font-semibold tracking-wide\">New</span>\n          <div class=\"ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide\">\n            3 beds &bull; 2 baths\n          </div>\n        </div>\n        <h4 class=\"mt-2 font-semibold text-lg leading-tight truncate\">Beautiful Home in the countryside</h4>\n\n        <div class=\"mt-1\">\n          <span>$1,900.00</span>\n          <span class=\"text-gray-600 text-sm\">/ wk</span>\n        </div>\n        <div class=\"mt-2 flex items-center\">\n          <span class=\"text-teal-600 font-semibold\">\n            <span>\n              <i class=\"fas fa-star\"></i>\n              <i class=\"fas fa-star\"></i>\n              <i class=\"fas fa-star\"></i>\n              <i class=\"fas fa-star\"></i>\n              <i class=\"far fa-star\"></i>\n              <span>\n              </span>\n              <span class=\"ml-2 text-gray-600 text-sm\">34 reviews</span>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

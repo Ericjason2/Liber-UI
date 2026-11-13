@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "portfolio-4",
+  "type": "registry:ui",
+  "title": "Portfolio",
+  "description": "Portfolio - Créé par @aitrik-saha sur TailwindFlex.",
+  "author": "@aitrik-saha (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/portfolio-4.tsx",
+      "content": "/**\n * Component: Portfolio\n * Author: @aitrik-saha (https://tailwindflex.com/@aitrik-saha)\n * Source: https://tailwindflex.com/@aitrik-saha/portfolio-4\n * Attribution: Créé par @aitrik-saha sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Portfolio4() {\n  return (\n    <div>\n    <div className=\"w-full h-auto bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 overflow-hidden\">\n      <div className=\"lg16 xs4 xs10 sm10 px-8 py-1 pb-4 h-full flex items-center text-white\">\n        <div className=\"w-full grid grid-cols-1 lg2 gap-8 items-center\">\n          <div className=\"flex flex-col z-10 w-full\">\n            <h4 className=\"text-lg font-semibold text-white xl2xl\">\n              Welcome to my portfolio\n            </h4>\n            <h1 className=\"xl8xl sm6xl xs3xl font-semibold font-serif mt-2\">\n              I'm <span>Aitrik</span>\n            </h1>\n            <h1 className=\"sm6xl xs3xl font-semibold font-serif\">\n              Saha\n            </h1>\n            <h4 className=\"text-green-300 mt-4 lg2xl\">\n              -- FrontEnd Web Developer\n            </h4>\n            <p className=\"lg[70%] xs text-white text-sm mt-4 xl\">\n              Experienced full-stack developer with 4+ years of expertise in Laravel,\n              NestJS, Nuxt.js, Next.js, Android, and some Flutter experience.\n            </p>\n            <div>\n              <button className=\"mt-6 px-6 py-3 rounded-full bg-green-400 hover600 text-gray-300 text-sm lg font-bold transition-all duration-300 ease-in-out shadow-md\">\n        Contact Me\n      </button>\n            </div>\n    \n          </div>\n    \n          <div className=\"flex justify-center items-center\">\n            <div className=\"relative rounded-lg shadow-lg overflow-hidden\">\n              <img\n                      className=\"w-full h-auto\"\n                      src=\"https://images.unsplash.com/photo-1632255658480-3546119b5ec2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxNXx8cG9ydGZvbGlvfGVufDB8MXx8fDE3MzczNzQxMDd8MA&ixlib=rb-4.0.3&q=80&w=1080\"\n                      alt=\"Incognito Image\"\n                    />\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@aitrik-saha",
+    "authorUrl": "https://tailwindflex.com/@aitrik-saha",
+    "sourceUrl": "https://tailwindflex.com/@aitrik-saha/portfolio-4",
+    "mention": "Créé par @aitrik-saha sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full h-auto bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 overflow-hidden\">\n  <div class=\"lg:px-16 xs:px-4 xs:py-10 sm:py-10 px-8 py-1 pb-4 h-full flex items-center text-white\">\n    <div class=\"w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center\">\n      <div class=\"flex flex-col z-10 w-full\">\n        <h4 class=\"text-lg font-semibold text-white xl:text-2xl\">\n          Welcome to my portfolio\n        </h4>\n        <h1 class=\"xl:text-8xl sm:text-6xl xs:text-3xl font-semibold font-serif mt-2\">\n          I'm <span>Aitrik</span>\n        </h1>\n        <h1 class=\"sm:text-6xl xs:text-3xl font-semibold font-serif\">\n          Saha\n        </h1>\n        <h4 class=\"text-green-300 mt-4 lg:text-2xl\">\n          -- FrontEnd Web Developer\n        </h4>\n        <p class=\"lg:w-[70%] xs:w-full text-white text-sm mt-4 xl:text-xl\">\n          Experienced full-stack developer with 4+ years of expertise in Laravel,\n          NestJS, Nuxt.js, Next.js, Android, and some Flutter experience.\n        </p>\n        <div>\n          <button class=\"mt-6 px-6 py-3 rounded-full bg-green-400 hover:bg-green-600 text-gray-300 text-sm lg:text-lg font-bold transition-all duration-300 ease-in-out shadow-md\">\n    Contact Me\n  </button>\n        </div>\n\n      </div>\n\n      <div class=\"flex justify-center items-center\">\n        <div class=\"relative rounded-lg shadow-lg overflow-hidden\">\n          <img\n                  className=\"w-full h-auto\"\n                  src=\"https://images.unsplash.com/photo-1632255658480-3546119b5ec2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxNXx8cG9ydGZvbGlvfGVufDB8MXx8fDE3MzczNzQxMDd8MA&ixlib=rb-4.0.3&q=80&w=1080\"\n                  alt=\"Incognito Image\"\n                />\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+}

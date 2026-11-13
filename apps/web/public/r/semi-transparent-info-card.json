@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "semi-transparent-info-card",
+  "type": "registry:ui",
+  "title": "Semi transparent Info card",
+  "description": "Semi transparent Info card - Créé par @prajwal sur TailwindFlex.",
+  "author": "@prajwal (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/semi-transparent-info-card.tsx",
+      "content": "/**\n * Component: Semi transparent Info card\n * Author: @prajwal (https://tailwindflex.com/@prajwal)\n * Source: https://tailwindflex.com/@prajwal/semi-transparent-info-card\n * Attribution: Créé par @prajwal sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SemiTransparentInfoCard() {\n  return (\n    <div>\n    <div className=\"h-screen w-screen bg-gradient-to-tr from-lime-600 via-emerald-600 to-teal-800\">\r\n    \r\n        <div className=\"flex flex-wrap gap-4 justify-center pt-32\">\r\n    \r\n            \r\n            <div\r\n                className=\"flex flex-col gap-2 h-40 text-white rounded-xl shadow-md p-6 max-w-[240px] bg-gray-200 bg-opacity-30 backdrop-filter backdrop-blur-lg\">\r\n                <div className=\"font-semibold text-lg\">Today</div>\r\n                <div className=\"font-semibold text-5xl tracking-tight\">$12.921</div>\r\n                <div className=\"font-normal\">Gross volume</div>\r\n            </div>\r\n    \r\n            \r\n            <div\r\n                className=\"flex flex-col gap-2 h-40 text-white rounded-xl shadow-md p-6 max-w-[240px] bg-gray-200 bg-opacity-30 backdrop-filter backdrop-blur-lg\">\r\n                <div className=\"font-semibold text-lg\">Yesterday</div>\r\n                <div className=\"font-semibold text-5xl tracking-tight\">$9.524</div>\r\n                <div className=\"font-normal\">Gross volume</div>\r\n            </div>\r\n    \r\n        </div>\r\n    \r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@prajwal",
+    "authorUrl": "https://tailwindflex.com/@prajwal",
+    "sourceUrl": "https://tailwindflex.com/@prajwal/semi-transparent-info-card",
+    "mention": "Créé par @prajwal sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen w-screen bg-gradient-to-tr from-lime-600 via-emerald-600 to-teal-800\">\r\n\r\n    <div class=\"flex flex-wrap gap-4 justify-center pt-32\">\r\n\r\n        <!-- card 1 -->\r\n        <div\r\n            class=\"flex flex-col gap-2 h-40 text-white rounded-xl shadow-md p-6 max-w-[240px] bg-gray-200 bg-opacity-30 backdrop-filter backdrop-blur-lg\">\r\n            <div class=\"font-semibold text-lg\">Today</div>\r\n            <div class=\"font-semibold text-5xl tracking-tight\">$12.921</div>\r\n            <div class=\"font-normal\">Gross volume</div>\r\n        </div>\r\n\r\n        <!-- card 2 -->\r\n        <div\r\n            class=\"flex flex-col gap-2 h-40 text-white rounded-xl shadow-md p-6 max-w-[240px] bg-gray-200 bg-opacity-30 backdrop-filter backdrop-blur-lg\">\r\n            <div class=\"font-semibold text-lg\">Yesterday</div>\r\n            <div class=\"font-semibold text-5xl tracking-tight\">$9.524</div>\r\n            <div class=\"font-normal\">Gross volume</div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n</div>"
+  }
+}

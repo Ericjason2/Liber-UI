@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tailwind-css-button-wavy-button",
+  "type": "registry:ui",
+  "title": "Tailwind CSS Button (Wavy Button)",
+  "description": "Tailwind CSS Button (Wavy Button) - Créé par @kuldeep541 sur TailwindFlex.",
+  "author": "@kuldeep541 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/tailwind-css-button-wavy-button.tsx",
+      "content": "/**\n * Component: Tailwind CSS Button (Wavy Button)\n * Author: @kuldeep541 (https://tailwindflex.com/@kuldeep541)\n * Source: https://tailwindflex.com/@kuldeep541/tailwind-css-button-wavy-button\n * Attribution: Créé par @kuldeep541 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TailwindCssButtonWavyButton() {\n  return (\n    <div>\n    <div className=\"w-full h-screen flex items-center justify-center bg-gray-100 font-poppins\">\n    \n        <button className=\"relative w-[250px] h-[60px] bg-yellow-400 border border-black rounded-[5mm] shadow-[3px_3px_0_rgb(0,0,0)] cursor-pointer overflow-hidden transition-shadow duration-300 hover[6px_6px_0_rgb(0,0,0)] hover10\">\n        \n        <div className=\"relative z-10 flex items-center justify-center h-full text-xl font-bold text-black font-poppins\">\n          HOVER ME!\n        </div>\n        \n        <div className=\"absolute w-full h-1/2 top-full left-0 wave\"></div>\n      </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@kuldeep541",
+    "authorUrl": "https://tailwindflex.com/@kuldeep541",
+    "sourceUrl": "https://tailwindflex.com/@kuldeep541/tailwind-css-button-wavy-button",
+    "mention": "Créé par @kuldeep541 sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full h-screen flex items-center justify-center bg-gray-100 font-poppins\">\n\n    <button class=\"relative w-[250px] h-[60px] bg-yellow-400 border border-black rounded-[5mm] shadow-[3px_3px_0_rgb(0,0,0)] cursor-pointer overflow-hidden transition-shadow duration-300 hover:shadow-[6px_6px_0_rgb(0,0,0)] hover:z-10\">\n    <!-- Text -->\n    <div class=\"relative z-10 flex items-center justify-center h-full text-xl font-bold text-black font-poppins\">\n      HOVER ME!\n    </div>\n    <!-- Wave overlay -->\n    <div class=\"absolute w-full h-1/2 top-full left-0 wave\"></div>\n  </button>\n</div>"
+  }
+}

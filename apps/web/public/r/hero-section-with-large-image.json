@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-with-large-image",
+  "type": "registry:ui",
+  "title": "Hero section with large image",
+  "description": "Hero section with large image - Créé par @mdadul sur TailwindFlex.",
+  "author": "@mdadul (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-with-large-image.tsx",
+      "content": "/**\n * Component: Hero section with large image\n * Author: @mdadul (https://tailwindflex.com/@mdadul)\n * Source: https://tailwindflex.com/@mdadul/hero-section-with-large-image\n * Attribution: Créé par @mdadul sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSectionWithLargeImage() {\n  return (\n    <div>\n    <section className=\"relatve\">\n      \n      <div className=\"mx-auto w-full max-w-7xl px-5 py-16 md10 md24 lg32\">\n        \n        <div className=\"mx-auto mb-12 w-full max-w-3xl text-center md16 lg20\">\n          <h1 className=\"mb-4 text-4xl font-semibold md6xl\">The Website You Want Without The <span className=\"bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-4 text-white\">Dev Time</span>.</h1>\n          <p className=\"mx-auto mb-5 max-w-[528px] text-xl text-[#636262] lg8\">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus</p>\n          \n          <div className=\"flex justify-center\">\n            <a href=\"#\" className=\"mr-5 inline-block rounded-xl bg-black px-8 py-4 text-center font-semibold text-white [box-shadow(19,_83,_254)_6px_6px] md6\">Get Started</a>\n            <a href=\"#\" className=\"flex max-w-full flex-row items-center justify-center rounded-xl border border-solid border-[#1353fe] px-6 py-3 font-semibold text-[#1353fe] [box-shadow(19,_83,_254)_6px_6px]\">\n              <img src=\"https://assets.website-files.com/63904f663019b0d8edf8d57c/63905a575ec39b6784fc687c_Play.svg\" alt=\"\" className=\"mr-2 inline-block w-6\" />\n              <p className=\"text-black\">View Showreel</p>\n            </a>\n          </div>\n        </div>\n        \n        <div className=\"relative mx-auto h-[512px]\">\n          <img src=\"https://assets.website-files.com/63904f663019b0d8edf8d57c/63915d247ab06a755ee4aaee_magicpattern-KfFmwa7m5VQ-unsplash.jpg\" alt=\"\" className=\"inline-block h-full w-full rounded-xl object-cover sm2xl\" />\n          <div className=\"absolute bottom-0 left-4 right-0 top-4 -z-10 h-full w-full rounded-2xl bg-black\"></div>\n        </div>\n      </div>\n      \n      <img src=\"https://assets.website-files.com/63904f663019b0d8edf8d57c/63905b9f809b5c8180ce30c5_pattern-1.svg\" alt=\"\" className=\"absolute bottom-0 left-0 right-auto top-auto -z-10 inline-block md1/2 md0 md md\" />\n      <img src=\"https://assets.website-files.com/63904f663019b0d8edf8d57c/63905ba1538296b3f50a905e_pattern-2.svg\" alt=\"\" className=\"absolute bottom-auto left-auto right-0 top-0 -z-10 hidden sm\" />\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mdadul",
+    "authorUrl": "https://tailwindflex.com/@mdadul",
+    "sourceUrl": "https://tailwindflex.com/@mdadul/hero-section-with-large-image",
+    "mention": "Créé par @mdadul sur TailwindFlex",
+    "rawHtml": "<section class=\"relatve\">\n  <!-- Container -->\n  <div class=\"mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32\">\n    <!-- Heading Div -->\n    <div class=\"mx-auto mb-12 w-full max-w-3xl text-center md:mb-16 lg:mb-20\">\n      <h1 class=\"mb-4 text-4xl font-semibold md:text-6xl\">The Website You Want Without The <span class=\"bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-4 text-white\">Dev Time</span>.</h1>\n      <p class=\"mx-auto mb-5 max-w-[528px] text-xl text-[#636262] lg:mb-8\">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus</p>\n      <!-- Button Wrap -->\n      <div class=\"flex justify-center\">\n        <a href=\"#\" class=\"mr-5 inline-block rounded-xl bg-black px-8 py-4 text-center font-semibold text-white [box-shadow:rgb(19,_83,_254)_6px_6px] md:mr-6\">Get Started</a>\n        <a href=\"#\" class=\"flex max-w-full flex-row items-center justify-center rounded-xl border border-solid border-[#1353fe] px-6 py-3 font-semibold text-[#1353fe] [box-shadow:rgb(19,_83,_254)_6px_6px]\">\n          <img src=\"https://assets.website-files.com/63904f663019b0d8edf8d57c/63905a575ec39b6784fc687c_Play.svg\" alt=\"\" class=\"mr-2 inline-block w-6\" />\n          <p class=\"text-black\">View Showreel</p>\n        </a>\n      </div>\n    </div>\n    <!-- Image Div -->\n    <div class=\"relative mx-auto h-[512px]\">\n      <img src=\"https://assets.website-files.com/63904f663019b0d8edf8d57c/63915d247ab06a755ee4aaee_magicpattern-KfFmwa7m5VQ-unsplash.jpg\" alt=\"\" class=\"inline-block h-full w-full rounded-xl object-cover sm:rounded-2xl\" />\n      <div class=\"absolute bottom-0 left-4 right-0 top-4 -z-10 h-full w-full rounded-2xl bg-black\"></div>\n    </div>\n  </div>\n  <!-- BG Images -->\n  <img src=\"https://assets.website-files.com/63904f663019b0d8edf8d57c/63905b9f809b5c8180ce30c5_pattern-1.svg\" alt=\"\" class=\"absolute bottom-0 left-0 right-auto top-auto -z-10 inline-block md:bottom-1/2 md:left-0 md:right-auto md:top-auto\" />\n  <img src=\"https://assets.website-files.com/63904f663019b0d8edf8d57c/63905ba1538296b3f50a905e_pattern-2.svg\" alt=\"\" class=\"absolute bottom-auto left-auto right-0 top-0 -z-10 hidden sm:inline-block\" />\n</section>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "user-profile-card-8",
+  "type": "registry:ui",
+  "title": "User Profile Card",
+  "description": "User Profile Card - Créé par @Tanvir-yzu sur TailwindFlex.",
+  "author": "@Tanvir-yzu (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/user-profile-card-8.tsx",
+      "content": "/**\n * Component: User Profile Card\n * Author: @Tanvir-yzu (https://tailwindflex.com/@Tanvir-yzu)\n * Source: https://tailwindflex.com/@Tanvir-yzu/user-profile-card-8\n * Attribution: Créé par @Tanvir-yzu sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function UserProfileCard8() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>User Profile Card</title>\\n    <!-- Tailwind CSS CDN -->\\n    <link href=\\\"https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css\\\" rel=\\\"stylesheet\\\">\\n    <style>\\n        /* Fade-in animation for the card */\\n        @keyframes fadeIn {\\n            from {\\n                opacity: 0;\\n                transform: translateY(20px);\\n            }\\n            to {\\n                opacity: 1;\\n                transform: translateY(0);\\n            }\\n        }\\n        .animate-fade-in {\\n            animation: fadeIn 0.8s ease-out forwards;\\n        }\\n\\n        /* Gradient for fallback cover image if no URL is provided */\\n        .cover-gradient-fallback {\\n            background: linear-gradient(to right top, #a78bfa, #818cf8, #6366f1);\\n        }\\n    </style>\\n</head>\\n<body class=\\\"bg-gray-100 flex items-center justify-center min-h-screen p-4\\\">\\n\\n    <div class=\\\"relative w-full max-w-md bg-white shadow-xl rounded-lg overflow-hidden animate-fade-in\\\">\\n        <!-- Cover Image Section -->\\n        <div class=\\\"h-40 bg-cover bg-center cover-gradient-fallback\\\"\\n             style=\\\"background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ');\\\">\\n            <!-- You can replace the URL with your desired cover image -->\\n        </div>\\n\\n        <!-- Profile Picture and Details Section -->\\n        <div class=\\\"relative px-6 -mt-20\\\">\\n            <!-- Profile Picture -->\\n            <img class=\\\"w-32 h-32 rounded-full border-4 border-white mx-auto shadow-md object-cover\\\"\\n                 src=\\\"https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ\\\"\\n                 alt=\\\"Profile Picture\\\">\\n            <!-- You can replace the URL with your desired profile picture -->\\n\\n            <!-- User Info -->\\n            <div class=\\\"text-center mt-4\\\">\\n                <h2 class=\\\"text-2xl font-semibold text-gray-800\\\">Jane Doe</h2>\\n                <p class=\\\"text-gray-600\\\">Software Engineer | UI/UX Designer</p>\\n                <p class=\\\"text-sm text-gray-500 mt-2\\\">Passionate about creating intuitive and beautiful web experiences.</p>\\n            </div>\\n\\n            <!-- Optional: Social Links or Stats -->\\n            <div class=\\\"flex justify-center mt-6 space-x-4 border-t pt-6 border-gray-100\\\">\\n                <div class=\\\"text-center\\\">\\n                    <p class=\\\"font-bold text-lg text-gray-800\\\">1.2K</p>\\n                    <p class=\\\"text-gray-500 text-sm\\\">Followers</p>\\n                </div>\\n                <div class=\\\"text-center\\\">\\n                    <p class=\\\"font-bold text-lg text-gray-800\\\">250</p>\\n                    <p class=\\\"text-gray-500 text-sm\\\">Following</p>\\n                </div>\\n                <div class=\\\"text-center\\\">\\n                    <p class=\\\"font-bold text-lg text-gray-800\\\">50</p>\\n                    <p class=\\\"text-gray-500 text-sm\\\">Projects</p>\\n                </div>\\n            </div>\\n\\n            <!-- Call to Action Button (Optional) -->\\n            <div class=\\\"mt-8 mb-4\\\">\\n                <button class=\\\"w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300\\\">\\n                    Connect\\n                </button>\\n            </div>\\n        </div>\\n    </div>\\n\\n</body>\\n</html>\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@Tanvir-yzu",
+    "authorUrl": "https://tailwindflex.com/@Tanvir-yzu",
+    "sourceUrl": "https://tailwindflex.com/@Tanvir-yzu/user-profile-card-8",
+    "mention": "Créé par @Tanvir-yzu sur TailwindFlex",
+    "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>User Profile Card</title>\n    <!-- Tailwind CSS CDN -->\n    <link href=\"https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css\" rel=\"stylesheet\">\n    <style>\n        /* Fade-in animation for the card */\n        @keyframes fadeIn {\n            from {\n                opacity: 0;\n                transform: translateY(20px);\n            }\n            to {\n                opacity: 1;\n                transform: translateY(0);\n            }\n        }\n        .animate-fade-in {\n            animation: fadeIn 0.8s ease-out forwards;\n        }\n\n        /* Gradient for fallback cover image if no URL is provided */\n        .cover-gradient-fallback {\n            background: linear-gradient(to right top, #a78bfa, #818cf8, #6366f1);\n        }\n    </style>\n</head>\n<body class=\"bg-gray-100 flex items-center justify-center min-h-screen p-4\">\n\n    <div class=\"relative w-full max-w-md bg-white shadow-xl rounded-lg overflow-hidden animate-fade-in\">\n        <!-- Cover Image Section -->\n        <div class=\"h-40 bg-cover bg-center cover-gradient-fallback\"\n             style=\"background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ');\">\n            <!-- You can replace the URL with your desired cover image -->\n        </div>\n\n        <!-- Profile Picture and Details Section -->\n        <div class=\"relative px-6 -mt-20\">\n            <!-- Profile Picture -->\n            <img class=\"w-32 h-32 rounded-full border-4 border-white mx-auto shadow-md object-cover\"\n                 src=\"https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ\"\n                 alt=\"Profile Picture\">\n            <!-- You can replace the URL with your desired profile picture -->\n\n            <!-- User Info -->\n            <div class=\"text-center mt-4\">\n                <h2 class=\"text-2xl font-semibold text-gray-800\">Jane Doe</h2>\n                <p class=\"text-gray-600\">Software Engineer | UI/UX Designer</p>\n                <p class=\"text-sm text-gray-500 mt-2\">Passionate about creating intuitive and beautiful web experiences.</p>\n            </div>\n\n            <!-- Optional: Social Links or Stats -->\n            <div class=\"flex justify-center mt-6 space-x-4 border-t pt-6 border-gray-100\">\n                <div class=\"text-center\">\n                    <p class=\"font-bold text-lg text-gray-800\">1.2K</p>\n                    <p class=\"text-gray-500 text-sm\">Followers</p>\n                </div>\n                <div class=\"text-center\">\n                    <p class=\"font-bold text-lg text-gray-800\">250</p>\n                    <p class=\"text-gray-500 text-sm\">Following</p>\n                </div>\n                <div class=\"text-center\">\n                    <p class=\"font-bold text-lg text-gray-800\">50</p>\n                    <p class=\"text-gray-500 text-sm\">Projects</p>\n                </div>\n            </div>\n\n            <!-- Call to Action Button (Optional) -->\n            <div class=\"mt-8 mb-4\">\n                <button class=\"w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300\">\n                    Connect\n                </button>\n            </div>\n        </div>\n    </div>\n\n</body>\n</html>"
+  }
+}

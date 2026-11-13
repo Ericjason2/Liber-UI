@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hero-section-with-bold-heading",
+  "type": "registry:ui",
+  "title": "Hero section with bold heading",
+  "description": "Hero section with bold heading - Créé par @abigail sur TailwindFlex.",
+  "author": "@abigail (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/hero-section-with-bold-heading.tsx",
+      "content": "/**\n * Component: Hero section with bold heading\n * Author: @abigail (https://tailwindflex.com/@abigail)\n * Source: https://tailwindflex.com/@abigail/hero-section-with-bold-heading\n * Attribution: Créé par @abigail sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSectionWithBoldHeading() {\n  return (\n    <div>\n    <div className=\"xl pt-6 md12 pb-6 lg10 mx-auto px-6 sm6 md8 lg12 xl24\">\n        <h1 className=\"text-3xl md4xl lg6xl xl7xl font-bold mb-6 text-gray-900\">\n            Eco-Friendly Reusable Silicone Food Storage Bags\n        </h1>\n        <div className=\"prose prose-lg lg xl2xl\">\n            These reusable silicone food storage bags are a must-have for\n            anyone looking to reduce their environmental impact and save money in the long run.\n        </div>\n        <div className=\"flex gap-4 flex-wrap my-4 md8\">\n            <a href=\"#\"\n                className=\"bg-indigo-600 hover700 transition ease-in-out duration-150 text-base text-white px-4 lg8 py-4 inline-block font-bold rounded-md shadow-xl\">Start\n                Browse\n            </a>\n    \n            <a href=\"\"\n                className=\"bg-white hover200 text-base text-indigo-600 px-4 lg8 py-4 inline-block font-bold rounded-md shadow-xl transition ease-in-out duration-150\">\n                Our impact\n            </a>\n        </div>\n        <a href=\"\" className=\"font-semibold mt-6 inline-block text-lg lg text-indigo-600 hover\"><span\n                className=\"hidden sm\">Discover our key features. »</span>\n            <span className=\"inline sm\">Learn more »</span>\n        </a>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abigail",
+    "authorUrl": "https://tailwindflex.com/@abigail",
+    "sourceUrl": "https://tailwindflex.com/@abigail/hero-section-with-bold-heading",
+    "mention": "Créé par @abigail sur TailwindFlex",
+    "rawHtml": "<div class=\"xl:max-w-screen-xl pt-6 md:pt-12 pb-6 lg:pb-10 mx-auto px-6 sm:px-6 md:px-8 lg:px-12 xl:pt-24\">\n    <h1 class=\"text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold mb-6 text-gray-900\">\n        Eco-Friendly Reusable Silicone Food Storage Bags\n    </h1>\n    <div class=\"prose prose-lg lg:prose-xl xl:prose-2xl\">\n        These reusable silicone food storage bags are a must-have for\n        anyone looking to reduce their environmental impact and save money in the long run.\n    </div>\n    <div class=\"flex gap-4 flex-wrap my-4 md:mt-8\">\n        <a href=\"#\"\n            class=\"bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-150 text-base text-white px-4 lg:px-8 py-4 inline-block font-bold rounded-md shadow-xl\">Start\n            Browse\n        </a>\n\n        <a href=\"\"\n            class=\"bg-white hover:bg-yellow-200 text-base text-indigo-600 px-4 lg:px-8 py-4 inline-block font-bold rounded-md shadow-xl transition ease-in-out duration-150\">\n            Our impact\n        </a>\n    </div>\n    <a href=\"\" class=\"font-semibold mt-6 inline-block text-lg lg:text-xl text-indigo-600 hover:underline\"><span\n            class=\"hidden sm:inline\">Discover our key features. »</span>\n        <span class=\"inline sm:hidden\">Learn more »</span>\n    </a>\n</div>"
+  }
+}

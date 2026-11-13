@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "form-for-editing-items",
+  "type": "registry:ui",
+  "title": "Form for editing items",
+  "description": "Form for editing items - Créé par @sophia-baker sur TailwindFlex.",
+  "author": "@sophia-baker (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/form-for-editing-items.tsx",
+      "content": "/**\n * Component: Form for editing items\n * Author: @sophia-baker (https://tailwindflex.com/@sophia-baker)\n * Source: https://tailwindflex.com/@sophia-baker/form-for-editing-items\n * Attribution: Créé par @sophia-baker sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FormForEditingItems() {\n  return (\n    <div>\n    <div className=\"bg-white border border-4 rounded-lg shadow relative m-10\">\n    \n        <div className=\"flex items-start justify-between p-5 border-b rounded-t\">\n            <h3 className=\"text-xl font-semibold\">\n                Edit product\n            </h3>\n            <button type=\"button\" className=\"text-gray-400 bg-transparent hover200 hover900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center\" data-modal-toggle=\"product-modal\">\n               <svg className=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path fillRule=\"evenodd\" d=\"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\" clipRule=\"evenodd\"></path></svg>\n            </button>\n        </div>\n    \n        <div className=\"p-6 space-y-6\">\n            <form action=\"#\">\n                <div className=\"grid grid-cols-6 gap-6\">\n                    <div className=\"col-span-6 sm3\">\n                        <label htmlFor=\"product-name\" className=\"text-sm font-medium text-gray-900 block mb-2\">Product Name</label>\n                        <input type=\"text\" name=\"product-name\" id=\"product-name\" className=\"shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm rounded-lg focus600 focus600 block w-full p-2.5\" placeholder=\"Apple Imac 27”\" required=\"\" />\n                    </div>\n                    <div className=\"col-span-6 sm3\">\n                        <label htmlFor=\"category\" className=\"text-sm font-medium text-gray-900 block mb-2\">Category</label>\n                        <input type=\"text\" name=\"category\" id=\"category\" className=\"shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm rounded-lg focus600 focus600 block w-full p-2.5\" placeholder=\"Electronics\" required=\"\" />\n                    </div>\n                    <div className=\"col-span-6 sm3\">\n                        <label htmlFor=\"brand\" className=\"text-sm font-medium text-gray-900 block mb-2\">Brand</label>\n                        <input type=\"text\" name=\"brand\" id=\"brand\" className=\"shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm rounded-lg focus600 focus600 block w-full p-2.5\" placeholder=\"Apple\" required=\"\" />\n                    </div>\n                    <div className=\"col-span-6 sm3\">\n                        <label htmlFor=\"price\" className=\"text-sm font-medium text-gray-900 block mb-2\">Price</label>\n                        <input type=\"number\" name=\"price\" id=\"price\" className=\"shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm rounded-lg focus600 focus600 block w-full p-2.5\" placeholder=\"$2300\" required=\"\" />\n                    </div>\n                    <div className=\"col-span-full\">\n                        <label htmlFor=\"product-details\" className=\"text-sm font-medium text-gray-900 block mb-2\">Product Details</label>\n                        <textarea id=\"product-details\" rows=\"6\" className=\"bg-gray-50 border border-gray-300 text-gray-900 sm rounded-lg focus600 focus600 block w-full p-4\" placeholder=\"Details\"></textarea>\n                    </div>\n                </div>\n            </form>\n        </div>\n    \n        <div className=\"p-6 border-t border-gray-200 rounded-b\">\n            <button className=\"text-white bg-cyan-600 hover700 focus4 focus200 font-medium rounded-lg text-sm px-5 py-2.5 text-center\" type=\"submit\">Save all</button>\n        </div>\n    \n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sophia-baker",
+    "authorUrl": "https://tailwindflex.com/@sophia-baker",
+    "sourceUrl": "https://tailwindflex.com/@sophia-baker/form-for-editing-items",
+    "mention": "Créé par @sophia-baker sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white border border-4 rounded-lg shadow relative m-10\">\n\n    <div class=\"flex items-start justify-between p-5 border-b rounded-t\">\n        <h3 class=\"text-xl font-semibold\">\n            Edit product\n        </h3>\n        <button type=\"button\" class=\"text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center\" data-modal-toggle=\"product-modal\">\n           <svg class=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" d=\"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\" clip-rule=\"evenodd\"></path></svg>\n        </button>\n    </div>\n\n    <div class=\"p-6 space-y-6\">\n        <form action=\"#\">\n            <div class=\"grid grid-cols-6 gap-6\">\n                <div class=\"col-span-6 sm:col-span-3\">\n                    <label for=\"product-name\" class=\"text-sm font-medium text-gray-900 block mb-2\">Product Name</label>\n                    <input type=\"text\" name=\"product-name\" id=\"product-name\" class=\"shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-2.5\" placeholder=\"Apple Imac 27”\" required=\"\">\n                </div>\n                <div class=\"col-span-6 sm:col-span-3\">\n                    <label for=\"category\" class=\"text-sm font-medium text-gray-900 block mb-2\">Category</label>\n                    <input type=\"text\" name=\"category\" id=\"category\" class=\"shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-2.5\" placeholder=\"Electronics\" required=\"\">\n                </div>\n                <div class=\"col-span-6 sm:col-span-3\">\n                    <label for=\"brand\" class=\"text-sm font-medium text-gray-900 block mb-2\">Brand</label>\n                    <input type=\"text\" name=\"brand\" id=\"brand\" class=\"shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-2.5\" placeholder=\"Apple\" required=\"\">\n                </div>\n                <div class=\"col-span-6 sm:col-span-3\">\n                    <label for=\"price\" class=\"text-sm font-medium text-gray-900 block mb-2\">Price</label>\n                    <input type=\"number\" name=\"price\" id=\"price\" class=\"shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-2.5\" placeholder=\"$2300\" required=\"\">\n                </div>\n                <div class=\"col-span-full\">\n                    <label for=\"product-details\" class=\"text-sm font-medium text-gray-900 block mb-2\">Product Details</label>\n                    <textarea id=\"product-details\" rows=\"6\" class=\"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-4\" placeholder=\"Details\"></textarea>\n                </div>\n            </div>\n        </form>\n    </div>\n\n    <div class=\"p-6 border-t border-gray-200 rounded-b\">\n        <button class=\"text-white bg-cyan-600 hover:bg-cyan-700 focus:ring-4 focus:ring-cyan-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center\" type=\"submit\">Save all</button>\n    </div>\n\n</div>"
+  }
+}

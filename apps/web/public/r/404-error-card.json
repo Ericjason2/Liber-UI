@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "404-error-card",
+  "type": "registry:ui",
+  "title": "404 Error card",
+  "description": "404 Error card - Créé par @shakti sur TailwindFlex.",
+  "author": "@shakti (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/404-error-card.tsx",
+      "content": "/**\n * Component: 404 Error card\n * Author: @shakti (https://tailwindflex.com/@shakti)\n * Source: https://tailwindflex.com/@shakti/404-error-card\n * Attribution: Créé par @shakti sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Comp404ErrorCard() {\n  return (\n    <div>\n    <div className=\"bg-gray-100 h-screen flex items-center justify-center\">\r\n        <div className=\"bg-white p-8 rounded-lg shadow-lg max-w-md w-full\">\r\n            <h1 className=\"text-4xl font-bold text-gray-800 mb-8\">404 - Page Not Found</h1>\r\n            <p className=\"text-gray-600 mb-6\">The page you are looking for might have been removed, had its name changed or is\r\n                temporarily unavailable.</p>\r\n            <a href=\"/\" className=\"inline-block py-3 px-6 bg-blue-500 hover600 text-white rounded-lg font-semibold\">Go\r\n                back to homepage</a>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@shakti",
+    "authorUrl": "https://tailwindflex.com/@shakti",
+    "sourceUrl": "https://tailwindflex.com/@shakti/404-error-card",
+    "mention": "Créé par @shakti sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-gray-100 h-screen flex items-center justify-center\">\r\n    <div class=\"bg-white p-8 rounded-lg shadow-lg max-w-md w-full\">\r\n        <h1 class=\"text-4xl font-bold text-gray-800 mb-8\">404 - Page Not Found</h1>\r\n        <p class=\"text-gray-600 mb-6\">The page you are looking for might have been removed, had its name changed or is\r\n            temporarily unavailable.</p>\r\n        <a href=\"/\" class=\"inline-block py-3 px-6 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold\">Go\r\n            back to homepage</a>\r\n    </div>\r\n</div>"
+  }
+}

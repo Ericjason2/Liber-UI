@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "info-card-with-image",
+  "type": "registry:ui",
+  "title": "Info Card with image",
+  "description": "Info Card with image - Créé par @arya sur TailwindFlex.",
+  "author": "@arya (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/info-card-with-image.tsx",
+      "content": "/**\n * Component: Info Card with image\n * Author: @arya (https://tailwindflex.com/@arya)\n * Source: https://tailwindflex.com/@arya/info-card-with-image\n * Attribution: Créé par @arya sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InfoCardWithImage() {\n  return (\n    <div>\n    <div className=\"bg-white rounded-md shadow-md overflow-hidden p-4 max-w-sm\">\n        <img className=\"w-full\" src=\"https://tailwindflex.com/public/images/profile/118.png?ver=1\" alt=\"Info card image\" />\n        <div className=\"px-6 py-4\">\n            <h2 className=\"text-lg font-bold leading-tight text-gray-900\">\n                Info Card Title</h2>\n            <p className=\"mt-2 text-gray-600\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n                incididunt ut labore et dolore magna aliqua.</p>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@arya",
+    "authorUrl": "https://tailwindflex.com/@arya",
+    "sourceUrl": "https://tailwindflex.com/@arya/info-card-with-image",
+    "mention": "Créé par @arya sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white rounded-md shadow-md overflow-hidden p-4 max-w-sm\">\n    <img class=\"w-full\" src=\"https://tailwindflex.com/public/images/profile/118.png?ver=1\" alt=\"Info card image\">\n    <div class=\"px-6 py-4\">\n        <h2 class=\"text-lg font-bold leading-tight text-gray-900\">\n            Info Card Title</h2>\n        <p class=\"mt-2 text-gray-600\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n            incididunt ut labore et dolore magna aliqua.</p>\n    </div>\n</div>"
+  }
+}

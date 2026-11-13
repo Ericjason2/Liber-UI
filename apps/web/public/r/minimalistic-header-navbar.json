@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "minimalistic-header-navbar",
+  "type": "registry:ui",
+  "title": "Minimalistic navbar",
+  "description": "Minimalistic navbar - Créé par @sophia-baker sur TailwindFlex.",
+  "author": "@sophia-baker (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/minimalistic-header-navbar.tsx",
+      "content": "/**\n * Component: Minimalistic navbar\n * Author: @sophia-baker (https://tailwindflex.com/@sophia-baker)\n * Source: https://tailwindflex.com/@sophia-baker/minimalistic-header-navbar\n * Attribution: Créé par @sophia-baker sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function MinimalisticHeaderNavbar() {\n  return (\n    <div>\n    <div className=\"px-4 mx-auto max-w-7xl sm6\">\r\n        <div className=\"relative pt-6 pb-16 sm24\">\r\n            <nav className=\"relative flex items-center justify-between sm10 md\" aria-label=\"Global\">\r\n                <div className=\"flex items-center flex-1 md md0 md0\">\r\n                    <div className=\"flex items-center justify-between w-full md\">\r\n                        <a href=\"#\"><span className=\"sr-only\">Company Name</span>\r\n                            <img className=\"w-auto h-8 sm10\" src=\"https://www.svgrepo.com/show/448244/pack.svg\" loading=\"lazy\" width=\"202\" height=\"40\" />\r\n                        </a>\r\n                        <div className=\"flex items-center -mr-2 md\">\r\n                            <button className=\"inline-flex items-center justify-center p-2 text-gray-400 bg-gray-50 rounded-md hover500 hover100 focus focus2 focus focus50\"  type=\"button\" aria-expanded=\"false\">\r\n                                <span className=\"sr-only\">Open main menu</span>\r\n                                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth=\"2\" stroke=\"currentColor\" aria-hidden=\"true\" className=\"w-6 h-6\">\r\n                                <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M4 6h16M4 12h16M4 18h16\"></path>\r\n                                </svg>\r\n                            </button>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div className=\"hidden md md10 list-none\">\r\n                    <li>\r\n                        <a href=\"#\" className=\"text-base font-normal text-gray-500 list-none hover900\"\r\n                            target=\"\">Pricing</a>\r\n                    </li>\r\n                    <li>\r\n                        <a href=\"#\" className=\"text-base font-normal text-gray-500 list-none hover900\"\r\n                            target=\"\">Gallary\r\n                        </a>\r\n                    </li>\r\n                    <li>\r\n                        <a href=\"#\" className=\"text-base font-normal text-gray-500 list-none hover900\"\r\n                            target=\"_blank\">Blog\r\n                        </a>\r\n                    </li>\r\n                </div>\r\n                <div className=\"hidden md md md md md0 md0\">\r\n                    <div className=\"inline-flex rounded-full shadow\">\r\n                        <div href=\"#\"\r\n                            className=\"inline-flex items-center px-4 py-2 text-base text-gray-900 bg-white border border-transparent rounded-full cursor-pointer font-base hover50 \">\r\n                            Sign in\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </nav>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sophia-baker",
+    "authorUrl": "https://tailwindflex.com/@sophia-baker",
+    "sourceUrl": "https://tailwindflex.com/@sophia-baker/minimalistic-header-navbar",
+    "mention": "Créé par @sophia-baker sur TailwindFlex",
+    "rawHtml": "<div class=\"px-4 mx-auto max-w-7xl sm:px-6\">\r\n    <div class=\"relative pt-6 pb-16 sm:pb-24\">\r\n        <nav class=\"relative flex items-center justify-between sm:h-10 md:justify-center\" aria-label=\"Global\">\r\n            <div class=\"flex items-center flex-1 md:absolute md:inset-y-0 md:left-0\">\r\n                <div class=\"flex items-center justify-between w-full md:w-auto\">\r\n                    <a href=\"#\"><span class=\"sr-only\">Company Name</span>\r\n                        <img class=\"w-auto h-8 sm:h-10\" src=\"https://www.svgrepo.com/show/448244/pack.svg\" loading=\"lazy\" width=\"202\" height=\"40\">\r\n                    </a>\r\n                    <div class=\"flex items-center -mr-2 md:hidden\">\r\n                        <button class=\"inline-flex items-center justify-center p-2 text-gray-400 bg-gray-50 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50\"  type=\"button\" aria-expanded=\"false\">\r\n                            <span class=\"sr-only\">Open main menu</span>\r\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"2\" stroke=\"currentColor\" aria-hidden=\"true\" class=\"w-6 h-6\">\r\n                            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M4 6h16M4 12h16M4 18h16\"></path>\r\n                            </svg>\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"hidden md:flex md:space-x-10 list-none\">\r\n                <li>\r\n                    <a href=\"#\" class=\"text-base font-normal text-gray-500 list-none hover:text-gray-900\"\r\n                        target=\"\">Pricing</a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"#\" class=\"text-base font-normal text-gray-500 list-none hover:text-gray-900\"\r\n                        target=\"\">Gallary\r\n                    </a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"#\" class=\"text-base font-normal text-gray-500 list-none hover:text-gray-900\"\r\n                        target=\"_blank\">Blog\r\n                    </a>\r\n                </li>\r\n            </div>\r\n            <div class=\"hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0\">\r\n                <div class=\"inline-flex rounded-full shadow\">\r\n                    <div href=\"#\"\r\n                        class=\"inline-flex items-center px-4 py-2 text-base text-gray-900 bg-white border border-transparent rounded-full cursor-pointer font-base hover:bg-gray-50 \">\r\n                        Sign in\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </nav>\r\n    </div>\r\n</div>"
+  }
+}

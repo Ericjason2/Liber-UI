@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "blog-post-cards",
+  "type": "registry:ui",
+  "title": "Blog post cards",
+  "description": "Blog post cards - Créé par @mr-robot sur TailwindFlex.",
+  "author": "@mr-robot (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/blog-post-cards.tsx",
+      "content": "/**\n * Component: Blog post cards\n * Author: @mr-robot (https://tailwindflex.com/@mr-robot)\n * Source: https://tailwindflex.com/@mr-robot/blog-post-cards\n * Attribution: Créé par @mr-robot sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BlogPostCards() {\n  return (\n    <div>\n    <div className=\"max-w-screen-xl mx-auto p-16\">\r\n    \r\n        <div className=\"sm lg3 sm2 gap-10\">\r\n            <div\r\n                className=\"hover900 hover transition duration-300 max-w-sm rounded overflow-hidden shadow-lg\">\r\n                <div className=\"py-4 px-8\">\r\n                    <img src=\"https://tailwindcss.com/img/jonathan.jpg\" className=\"rounded-full h-12 w-12 mb-4\" />\r\n                    <a href=\"#\">\r\n                        <h4 className=\"text-lg mb-3 font-semibold\">How to be effective at working remotely?</h4>\r\n                    </a>\r\n                    <p className=\"mb-2 text-sm text-gray-600\">Lorem Ipsum is simply dummy text of the printing and typesetting\r\n                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>\r\n    \r\n                    <img src=\"https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500\" className=\"w-100\" />\r\n    \r\n                    <hr className=\"mt-4\" />\r\n                    <span className=\"text-xs\">ARTICLE</span>\r\n                    &nbsp;<span className=\"text-xs text-gray-500\">PROCESS</span>\r\n                </div>\r\n            </div>\r\n    \r\n            <div\r\n                className=\"hover900 hover transition duration-300 max-w-sm rounded overflow-hidden shadow-lg\">\r\n                <div className=\"py-4 px-8\">\r\n                    <img src=\"https://tailwindcss.com/img/jonathan.jpg\" className=\"rounded-full h-12 w-12 mb-4\" />\r\n                    <a href=\"#\">\r\n                        <h4 className=\"text-lg mb-3 font-semibold\">How to be effective at working remotely?</h4>\r\n                    </a>\r\n                    <p className=\"mb-2 text-sm text-gray-600\">Lorem Ipsum is simply dummy text of the printing and typesetting\r\n                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>\r\n    \r\n                    <img src=\"https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500\" className=\"w-100\" />\r\n    \r\n                    <hr className=\"mt-4\" />\r\n                    <span className=\"text-xs\">ARTICLE</span>\r\n                    &nbsp;<span className=\"text-xs text-gray-500\">PROCESS</span>\r\n                </div>\r\n            </div>\r\n    \r\n            <div\r\n                className=\"hover900 hover transition duration-300 max-w-sm rounded overflow-hidden shadow-lg\">\r\n                <div className=\"py-4 px-8\">\r\n                    <img src=\"https://tailwindcss.com/img/jonathan.jpg\" className=\"rounded-full h-12 w-12 mb-4\" />\r\n                    <a href=\"#\">\r\n                        <h4 className=\"text-lg mb-3 font-semibold\">How to be effective at working remotely?</h4>\r\n                    </a>\r\n                    <p className=\"mb-2 text-sm text-gray-600\">Lorem Ipsum is simply dummy text of the printing and typesetting\r\n                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>\r\n    \r\n                    <img src=\"https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500\" className=\"w-100\" />\r\n    \r\n                    <hr className=\"mt-4\" />\r\n                    <span className=\"text-xs\">ARTICLE</span>\r\n                    &nbsp;<span className=\"text-xs text-gray-500\">PROCESS</span>\r\n                </div>\r\n            </div>\r\n    \r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "grid",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@mr-robot",
+    "authorUrl": "https://tailwindflex.com/@mr-robot",
+    "sourceUrl": "https://tailwindflex.com/@mr-robot/blog-post-cards",
+    "mention": "Créé par @mr-robot sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-screen-xl mx-auto p-16\">\r\n\r\n    <div class=\"sm:grid lg:grid-cols-3 sm:grid-cols-2 gap-10\">\r\n        <div\r\n            class=\"hover:bg-gray-900 hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg\">\r\n            <div class=\"py-4 px-8\">\r\n                <img src=\"https://tailwindcss.com/img/jonathan.jpg\" class=\"rounded-full h-12 w-12 mb-4\">\r\n                <a href=\"#\">\r\n                    <h4 class=\"text-lg mb-3 font-semibold\">How to be effective at working remotely?</h4>\r\n                </a>\r\n                <p class=\"mb-2 text-sm text-gray-600\">Lorem Ipsum is simply dummy text of the printing and typesetting\r\n                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>\r\n\r\n                <img src=\"https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500\" class=\"w-100\">\r\n\r\n                <hr class=\"mt-4\">\r\n                <span class=\"text-xs\">ARTICLE</span>\r\n                &nbsp;<span class=\"text-xs text-gray-500\">PROCESS</span>\r\n            </div>\r\n        </div>\r\n\r\n        <div\r\n            class=\"hover:bg-gray-900 hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg\">\r\n            <div class=\"py-4 px-8\">\r\n                <img src=\"https://tailwindcss.com/img/jonathan.jpg\" class=\"rounded-full h-12 w-12 mb-4\">\r\n                <a href=\"#\">\r\n                    <h4 class=\"text-lg mb-3 font-semibold\">How to be effective at working remotely?</h4>\r\n                </a>\r\n                <p class=\"mb-2 text-sm text-gray-600\">Lorem Ipsum is simply dummy text of the printing and typesetting\r\n                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>\r\n\r\n                <img src=\"https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500\" class=\"w-100\">\r\n\r\n                <hr class=\"mt-4\">\r\n                <span class=\"text-xs\">ARTICLE</span>\r\n                &nbsp;<span class=\"text-xs text-gray-500\">PROCESS</span>\r\n            </div>\r\n        </div>\r\n\r\n        <div\r\n            class=\"hover:bg-gray-900 hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg\">\r\n            <div class=\"py-4 px-8\">\r\n                <img src=\"https://tailwindcss.com/img/jonathan.jpg\" class=\"rounded-full h-12 w-12 mb-4\">\r\n                <a href=\"#\">\r\n                    <h4 class=\"text-lg mb-3 font-semibold\">How to be effective at working remotely?</h4>\r\n                </a>\r\n                <p class=\"mb-2 text-sm text-gray-600\">Lorem Ipsum is simply dummy text of the printing and typesetting\r\n                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>\r\n\r\n                <img src=\"https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500\" class=\"w-100\">\r\n\r\n                <hr class=\"mt-4\">\r\n                <span class=\"text-xs\">ARTICLE</span>\r\n                &nbsp;<span class=\"text-xs text-gray-500\">PROCESS</span>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n</div>"
+  }
+}

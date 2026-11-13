@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-to-action-6",
+  "type": "registry:ui",
+  "title": "Call to action",
+  "description": "Call to action - Créé par @sophia-baker sur TailwindFlex.",
+  "author": "@sophia-baker (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-to-action-6.tsx",
+      "content": "/**\n * Component: Call to action\n * Author: @sophia-baker (https://tailwindflex.com/@sophia-baker)\n * Source: https://tailwindflex.com/@sophia-baker/call-to-action-6\n * Attribution: Créé par @sophia-baker sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToAction6() {\n  return (\n    <div>\n    <div className=\"py-8 px-4 mx-auto sm16 lg6 bg-green-50 mt-40\">\n        <div className=\"mx-auto max-w-screen-sm text-center\">\n            <h2 className=\"mb-4 text-3xl tracking-tight font-bold leading-tight text-green-800\">Start your\n                free trial today</h2>\n            <p className=\"mb-6 text-green-700 md\">Try now. 30-day money-back guarantee</p>\n    \n    \n            <a href=\"#\"\n                className=\"inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-green-700 hover800 focus4 focus500 \">\n                Get started\n                <svg className=\"w-5 h-5 ml-2 -mr-1\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path fillRule=\"evenodd\"\n                        d=\"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z\"\n                        clipRule=\"evenodd\"></path>\n                </svg>\n            </a>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sophia-baker",
+    "authorUrl": "https://tailwindflex.com/@sophia-baker",
+    "sourceUrl": "https://tailwindflex.com/@sophia-baker/call-to-action-6",
+    "mention": "Créé par @sophia-baker sur TailwindFlex",
+    "rawHtml": "<div class=\"py-8 px-4 mx-auto sm:py-16 lg:px-6 bg-green-50 mt-40\">\n    <div class=\"mx-auto max-w-screen-sm text-center\">\n        <h2 class=\"mb-4 text-3xl tracking-tight font-bold leading-tight text-green-800\">Start your\n            free trial today</h2>\n        <p class=\"mb-6 text-green-700 md:text-lg\">Try now. 30-day money-back guarantee</p>\n\n\n        <a href=\"#\"\n            class=\"inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-500 \">\n            Get started\n            <svg class=\"w-5 h-5 ml-2 -mr-1\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\n                <path fill-rule=\"evenodd\"\n                    d=\"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z\"\n                    clip-rule=\"evenodd\"></path>\n            </svg>\n        </a>\n    </div>\n</div>"
+  }
+}

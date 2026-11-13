@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "chat-box-for-marketing",
+  "type": "registry:ui",
+  "title": "Chat Box for Marketing",
+  "description": "Chat Box for Marketing - Créé par @onyxwebdev sur TailwindFlex.",
+  "author": "@onyxwebdev (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/chat-box-for-marketing.tsx",
+      "content": "/**\n * Component: Chat Box for Marketing\n * Author: @onyxwebdev (https://tailwindflex.com/@onyxwebdev)\n * Source: https://tailwindflex.com/@onyxwebdev/chat-box-for-marketing\n * Attribution: Créé par @onyxwebdev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ChatBoxForMarketing() {\n  return (\n    <div>\n    <div className=\"w-full flex justify-center\">\n        <div className=\"flex items-center justify-center bg-[#030303] w-[900px] m-6 mr-12 my-12 pb-10 border border-1 border-zinc-300 border-opacity-30 rounded-md relative overflow-hidden p-5\">\n            <div className=\"absolute -top-10 -right-10 w-[72%] h-12 bg-gray-500 rounded-full opacity-90 blur-[100px]\"></div>\n            <div className=\"absolute -bottom-10 -left-10 w-[72%] h-8 bg-blue-500 rounded-full opacity-90 blur-[100px]\"></div>\n            <div className=\"flex flex-col w-full\">\n                <div id=\"rightMsg\" className=\"flex justify-end items-center\">\n                    <div className=\"w-[400px] bg-[#030303] border border-1 border-zinc-300 border-opacity-30 rounded-md flex items-center px-2 py-2 text-zinc-300 relative\">\n                        Hey, we just completed the landing page. Any thoughts?\n                        <div className=\"absolute -bottom-6 right-0 text-zinc-600 text-sm\">\n                            Sent at 2:50pm\n                        </div>\n                    </div>\n                    <img src=\"https://github.com/thomas5.png?size=56\" className=\"h-12 w-12 border border-[1px] border-zinc-300 border-opacity-50 rounded-full ml-3 opacity-90 pl-[1px]\"/>\n                </div>\n                <div id=\"leftMsg\" className=\"flex justify-start items-center mt-8\">\n                    <img src=\"https://github.com/mojombo.png?size=56\" className=\"h-12 w-12 border border-[1px] border-zinc-300 border-opacity-50 rounded-full mr-3 opacity-90\" alt=\"User avatar\"/>\n                    <div className=\"w-[400px] min-h-[56px] bg-[#030303] border border-1 border-zinc-300 border-opacity-30 rounded-md flex items-start px-2 py-2 text-zinc-300 relative\">\n                    Hey, I just reviewed the landing page. It looks great! What's next?\n                    <div className=\"absolute -bottom-6 left-0 text-zinc-600 text-sm\">\n                        Sent at 3:05pm\n                    </div>\n                    </div>\n                </div>\n                <div id=\"rightMsg\" className=\"flex justify-end items-center mt-8\">\n                    <div className=\"w-[400px] bg-[#030303] border border-1 border-zinc-300 border-opacity-30 rounded-md flex items-center px-2 py-2 text-zinc-300 relative\">\n                        We are going to start work on the contact us form, using that agreed upon design.\n                        <div className=\"absolute -bottom-6 right-0 text-zinc-600 text-sm\">\n                            Sent at 3:07pm\n                        </div>\n                    </div>\n                    <img src=\"https://github.com/thomas5.png?size=56\" className=\"h-12 w-12 border border-[1px] border-zinc-300 border-opacity-50 rounded-full ml-3 opacity-90 pl-[1px]\"/>\n                </div>\n                <div id=\"leftMsg\" className=\"flex justify-start items-center mt-8\">\n                    <img src=\"https://github.com/mojombo.png?size=56\" className=\"h-12 w-12 border border-[1px] border-zinc-300 border-opacity-50 rounded-full mr-3 opacity-90\" alt=\"User avatar\"/>\n                    <div className=\"w-[400px] min-h-[56px] bg-[#030303] border border-1 border-zinc-300 border-opacity-30 rounded-md flex items-start px-2 py-2 text-zinc-300 relative\">\n                    This is all looking awesome! I look forward to our review meeting tommorow at 11:00am.\n                    <div className=\"absolute -bottom-6 left-0 text-zinc-600 text-sm\">\n                        Sent at 3:12pm\n                    </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "hero",
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@onyxwebdev",
+    "authorUrl": "https://tailwindflex.com/@onyxwebdev",
+    "sourceUrl": "https://tailwindflex.com/@onyxwebdev/chat-box-for-marketing",
+    "mention": "Créé par @onyxwebdev sur TailwindFlex",
+    "rawHtml": "<div class=\"w-full flex justify-center\">\n    <div class=\"flex items-center justify-center bg-[#030303] w-[900px] m-6 mr-12 my-12 pb-10 border border-1 border-zinc-300 border-opacity-30 rounded-md relative overflow-hidden p-5\">\n        <div class=\"absolute -top-10 -right-10 w-[72%] h-12 bg-gray-500 rounded-full opacity-90 blur-[100px]\"></div>\n        <div class=\"absolute -bottom-10 -left-10 w-[72%] h-8 bg-blue-500 rounded-full opacity-90 blur-[100px]\"></div>\n        <div class=\"flex flex-col w-full\">\n            <div id=\"rightMsg\" class=\"flex justify-end items-center\">\n                <div class=\"w-[400px] bg-[#030303] border border-1 border-zinc-300 border-opacity-30 rounded-md flex items-center px-2 py-2 text-zinc-300 relative\">\n                    Hey, we just completed the landing page. Any thoughts?\n                    <div class=\"absolute -bottom-6 right-0 text-zinc-600 text-sm\">\n                        Sent at 2:50pm\n                    </div>\n                </div>\n                <img src=\"https://github.com/thomas5.png?size=56\" class=\"h-12 w-12 border border-[1px] border-zinc-300 border-opacity-50 rounded-full ml-3 opacity-90 pl-[1px]\"/>\n            </div>\n            <div id=\"leftMsg\" class=\"flex justify-start items-center mt-8\">\n                <img src=\"https://github.com/mojombo.png?size=56\" class=\"h-12 w-12 border border-[1px] border-zinc-300 border-opacity-50 rounded-full mr-3 opacity-90\" alt=\"User avatar\"/>\n                <div class=\"w-[400px] min-h-[56px] bg-[#030303] border border-1 border-zinc-300 border-opacity-30 rounded-md flex items-start px-2 py-2 text-zinc-300 relative\">\n                Hey, I just reviewed the landing page. It looks great! What's next?\n                <div class=\"absolute -bottom-6 left-0 text-zinc-600 text-sm\">\n                    Sent at 3:05pm\n                </div>\n                </div>\n            </div>\n            <div id=\"rightMsg\" class=\"flex justify-end items-center mt-8\">\n                <div class=\"w-[400px] bg-[#030303] border border-1 border-zinc-300 border-opacity-30 rounded-md flex items-center px-2 py-2 text-zinc-300 relative\">\n                    We are going to start work on the contact us form, using that agreed upon design.\n                    <div class=\"absolute -bottom-6 right-0 text-zinc-600 text-sm\">\n                        Sent at 3:07pm\n                    </div>\n                </div>\n                <img src=\"https://github.com/thomas5.png?size=56\" class=\"h-12 w-12 border border-[1px] border-zinc-300 border-opacity-50 rounded-full ml-3 opacity-90 pl-[1px]\"/>\n            </div>\n            <div id=\"leftMsg\" class=\"flex justify-start items-center mt-8\">\n                <img src=\"https://github.com/mojombo.png?size=56\" class=\"h-12 w-12 border border-[1px] border-zinc-300 border-opacity-50 rounded-full mr-3 opacity-90\" alt=\"User avatar\"/>\n                <div class=\"w-[400px] min-h-[56px] bg-[#030303] border border-1 border-zinc-300 border-opacity-30 rounded-md flex items-start px-2 py-2 text-zinc-300 relative\">\n                This is all looking awesome! I look forward to our review meeting tommorow at 11:00am.\n                <div class=\"absolute -bottom-6 left-0 text-zinc-600 text-sm\">\n                    Sent at 3:12pm\n                </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+  }
+}

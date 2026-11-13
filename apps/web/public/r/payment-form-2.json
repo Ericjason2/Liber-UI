@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "payment-form-2",
+  "type": "registry:ui",
+  "title": "Payment form",
+  "description": "Payment form - Créé par @blvpeppa sur TailwindFlex.",
+  "author": "@blvpeppa (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/payment-form-2.tsx",
+      "content": "/**\n * Component: Payment form\n * Author: @blvpeppa (https://tailwindflex.com/@blvpeppa)\n * Source: https://tailwindflex.com/@blvpeppa/payment-form-2\n * Attribution: Créé par @blvpeppa sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PaymentForm2() {\n  return (\n    <div>\n    \n    <section className=\"bg-gray-100 py-20 px-6\">\n      <div className=\"max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden grid grid-cols-1 md2\">\n        \n        \n        <div className=\"p-8\">\n          <h2 className=\"text-2xl font-bold text-gray-800 mb-4\">Payment Details</h2>\n          <form className=\"space-y-5\">\n            <div>\n              <label className=\"block mb-1 text-sm text-gray-600\">Name on Card</label>\n              <input type=\"text\" placeholder=\"John Doe\" className=\"w-full border px-4 py-3 rounded-lg focus focus2 focus500\" />\n            </div>\n            <div>\n              <label className=\"block mb-1 text-sm text-gray-600\">Card Number</label>\n              <input type=\"text\" placeholder=\"1234 5678 9012 3456\" className=\"w-full border px-4 py-3 rounded-lg focus focus2 focus500\" />\n            </div>\n            <div className=\"flex gap-4\">\n              <div className=\"w-1/2\">\n                <label className=\"block mb-1 text-sm text-gray-600\">Expiry</label>\n                <input type=\"text\" placeholder=\"MM/YY\" className=\"w-full border px-4 py-3 rounded-lg focus focus2 focus500\" />\n              </div>\n              <div className=\"w-1/2\">\n                <label className=\"block mb-1 text-sm text-gray-600\">CVC</label>\n                <input type=\"text\" placeholder=\"123\" className=\"w-full border px-4 py-3 rounded-lg focus focus2 focus500\" />\n              </div>\n            </div>\n            <button type=\"submit\" className=\"w-full mt-4 bg-indigo-600 hover700 text-white text-lg py-3 rounded-lg transition\">Pay $49.99</button>\n          </form>\n        </div>\n    \n        \n        <div className=\"bg-gray-50 p-8 border-l border-gray-200\">\n          <h3 className=\"text-xl font-semibold text-gray-700 mb-6\">Choose Payment Method</h3>\n    \n          <div className=\"space-y-4\">\n            \n            <div className=\"flex items-center p-4 bg-white rounded-lg shadow-sm border hover transition\">\n              <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/512px-Visa.svg.png\" className=\"h-6 mr-4\" alt=\"Visa\" />\n              <p className=\"text-gray-700 font-medium\">Credit / Debit Card</p>\n            </div>\n            \n            \n            <div className=\"flex items-center p-4 bg-white rounded-lg shadow-sm border hover transition\">\n              <img src=\"https://www.paypalobjects.com/webstatic/icon/pp258.png\" className=\"h-6 mr-4\" alt=\"PayPal\" />\n              <p className=\"text-gray-700 font-medium\">PayPal</p>\n            </div>\n    \n            \n            <div className=\"flex items-center p-4 bg-white rounded-lg shadow-sm border hover transition\">\n              <img src=\"https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg\" className=\"h-6 mr-4\" alt=\"Apple\" />\n              <p className=\"text-gray-700 font-medium\">Apple Pay</p>\n            </div>\n          </div>\n    \n          \n          <div className=\"mt-10 border-t pt-6\">\n            <h4 className=\"text-gray-700 font-semibold mb-2\">Order Summary</h4>\n            <div className=\"flex justify-between text-gray-600\">\n              <span>Subscription Plan</span>\n              <span>$49.99</span>\n            </div>\n            <div className=\"flex justify-between text-gray-600 mt-1\">\n              <span>Tax</span>\n              <span>$0.00</span>\n            </div>\n            <div className=\"flex justify-between text-lg font-bold text-gray-800 mt-4\">\n              <span>Total</span>\n              <span>$49.99</span>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "pricing",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "profile"
+    ],
+    "author": "@blvpeppa",
+    "authorUrl": "https://tailwindflex.com/@blvpeppa",
+    "sourceUrl": "https://tailwindflex.com/@blvpeppa/payment-form-2",
+    "mention": "Créé par @blvpeppa sur TailwindFlex",
+    "rawHtml": "<!-- Payment Section -->\n<section class=\"bg-gray-100 py-20 px-6\">\n  <div class=\"max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2\">\n    \n    <!-- Checkout Form -->\n    <div class=\"p-8\">\n      <h2 class=\"text-2xl font-bold text-gray-800 mb-4\">Payment Details</h2>\n      <form class=\"space-y-5\">\n        <div>\n          <label class=\"block mb-1 text-sm text-gray-600\">Name on Card</label>\n          <input type=\"text\" placeholder=\"John Doe\" class=\"w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500\" />\n        </div>\n        <div>\n          <label class=\"block mb-1 text-sm text-gray-600\">Card Number</label>\n          <input type=\"text\" placeholder=\"1234 5678 9012 3456\" class=\"w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500\" />\n        </div>\n        <div class=\"flex gap-4\">\n          <div class=\"w-1/2\">\n            <label class=\"block mb-1 text-sm text-gray-600\">Expiry</label>\n            <input type=\"text\" placeholder=\"MM/YY\" class=\"w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500\" />\n          </div>\n          <div class=\"w-1/2\">\n            <label class=\"block mb-1 text-sm text-gray-600\">CVC</label>\n            <input type=\"text\" placeholder=\"123\" class=\"w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500\" />\n          </div>\n        </div>\n        <button type=\"submit\" class=\"w-full mt-4 bg-indigo-600 hover:bg-indigo-700 text-white text-lg py-3 rounded-lg transition\">Pay $49.99</button>\n      </form>\n    </div>\n\n    <!-- Payment Methods & Summary -->\n    <div class=\"bg-gray-50 p-8 border-l border-gray-200\">\n      <h3 class=\"text-xl font-semibold text-gray-700 mb-6\">Choose Payment Method</h3>\n\n      <div class=\"space-y-4\">\n        <!-- Credit Card -->\n        <div class=\"flex items-center p-4 bg-white rounded-lg shadow-sm border hover:shadow-md transition\">\n          <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/512px-Visa.svg.png\" class=\"h-6 mr-4\" alt=\"Visa\" />\n          <p class=\"text-gray-700 font-medium\">Credit / Debit Card</p>\n        </div>\n        \n        <!-- PayPal -->\n        <div class=\"flex items-center p-4 bg-white rounded-lg shadow-sm border hover:shadow-md transition\">\n          <img src=\"https://www.paypalobjects.com/webstatic/icon/pp258.png\" class=\"h-6 mr-4\" alt=\"PayPal\" />\n          <p class=\"text-gray-700 font-medium\">PayPal</p>\n        </div>\n\n        <!-- Apple Pay -->\n        <div class=\"flex items-center p-4 bg-white rounded-lg shadow-sm border hover:shadow-md transition\">\n          <img src=\"https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg\" class=\"h-6 mr-4\" alt=\"Apple\" />\n          <p class=\"text-gray-700 font-medium\">Apple Pay</p>\n        </div>\n      </div>\n\n      <!-- Order Summary -->\n      <div class=\"mt-10 border-t pt-6\">\n        <h4 class=\"text-gray-700 font-semibold mb-2\">Order Summary</h4>\n        <div class=\"flex justify-between text-gray-600\">\n          <span>Subscription Plan</span>\n          <span>$49.99</span>\n        </div>\n        <div class=\"flex justify-between text-gray-600 mt-1\">\n          <span>Tax</span>\n          <span>$0.00</span>\n        </div>\n        <div class=\"flex justify-between text-lg font-bold text-gray-800 mt-4\">\n          <span>Total</span>\n          <span>$49.99</span>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>"
+  }
+}

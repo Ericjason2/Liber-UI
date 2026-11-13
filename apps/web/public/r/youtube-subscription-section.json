@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "youtube-subscription-section",
+  "type": "registry:ui",
+  "title": "YouTube subscription section",
+  "description": "YouTube subscription section - Créé par @leif99 sur TailwindFlex.",
+  "author": "@leif99 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/youtube-subscription-section.tsx",
+      "content": "/**\n * Component: YouTube subscription section\n * Author: @leif99 (https://tailwindflex.com/@leif99)\n * Source: https://tailwindflex.com/@leif99/youtube-subscription-section\n * Attribution: Créé par @leif99 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function YoutubeSubscriptionSection() {\n  return (\n    <div>\n    <div className=\"h-screen bg-gray-100 py-20\">\r\n      <div className=\"max-w-xl mx-auto px-4 sm6 lg3xl lg8\">\r\n        <div className=\"px-6 py-10 bg-white rounded-lg shadow-lg\">\r\n          <h2 className=\"text-2xl font-bold mb-6\">Subscribe to our YouTube Channel</h2>\r\n          <p className=\"text-gray-600 mb-6\">Stay up-to-date with our latest videos and tutorials.</p>\r\n          <a href=\"#\" className=\"inline-flex items-center py-3 px-4 bg-red-500 hover600 focus2 focus500 focus2 text-white rounded-md transition duration-300\">\r\n            <svg className=\"w-5 h-5 fill-current mr-2\" viewBox=\"0 0 24 24\"><path d=\"M21.9 5.9c-.2-.7-.7-1.2-1.4-1.4C18.3 4 12 4 12 4s-6.3 0-8.5.5c-.7.2-1.2.7-1.4 1.4C2 8.1 2 12 2 12s0 3.9.5 5.1c.2.7.7 1.2 1.4 1.4 2.2.5 8.5.5 8.5.5s6.3 0 8.5-.5c.7-.2 1.2-.7 1.4-1.4.5-1.2.5-5.1.5-5.1s0-3.9-.5-5.1zM9.5 15.5V8.5l6.5 3z\"/></svg>\r\n            <span>Subscribe Now</span>\r\n          </a>\r\n        </div>\r\n      </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@leif99",
+    "authorUrl": "https://tailwindflex.com/@leif99",
+    "sourceUrl": "https://tailwindflex.com/@leif99/youtube-subscription-section",
+    "mention": "Créé par @leif99 sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen bg-gray-100 py-20\">\r\n  <div class=\"max-w-xl mx-auto px-4 sm:px-6 lg:max-w-3xl lg:px-8\">\r\n    <div class=\"px-6 py-10 bg-white rounded-lg shadow-lg\">\r\n      <h2 class=\"text-2xl font-bold mb-6\">Subscribe to our YouTube Channel</h2>\r\n      <p class=\"text-gray-600 mb-6\">Stay up-to-date with our latest videos and tutorials.</p>\r\n      <a href=\"#\" class=\"inline-flex items-center py-3 px-4 bg-red-500 hover:bg-red-600 focus:ring-2 focus:ring-red-500 focus:ring-offset-2 text-white rounded-md transition duration-300\">\r\n        <svg class=\"w-5 h-5 fill-current mr-2\" viewBox=\"0 0 24 24\"><path d=\"M21.9 5.9c-.2-.7-.7-1.2-1.4-1.4C18.3 4 12 4 12 4s-6.3 0-8.5.5c-.7.2-1.2.7-1.4 1.4C2 8.1 2 12 2 12s0 3.9.5 5.1c.2.7.7 1.2 1.4 1.4 2.2.5 8.5.5 8.5.5s6.3 0 8.5-.5c.7-.2 1.2-.7 1.4-1.4.5-1.2.5-5.1.5-5.1s0-3.9-.5-5.1zM9.5 15.5V8.5l6.5 3z\"/></svg>\r\n        <span>Subscribe Now</span>\r\n      </a>\r\n    </div>\r\n  </div>\r\n</div>"
+  }
+}

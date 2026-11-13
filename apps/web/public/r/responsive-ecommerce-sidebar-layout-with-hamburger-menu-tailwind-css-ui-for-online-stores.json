@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-ecommerce-sidebar-layout-with-hamburger-menu-tailwind-css-ui-for-online-stores",
+  "type": "registry:ui",
+  "title": "Responsive eCommerce Sidebar Layout with Hamburger Menu | Tailwind CSS UI for Online Stores",
+  "description": "Responsive eCommerce Sidebar Layout with Hamburger Menu | Tailwind CSS UI for Online Stores - Créé par @rajesh-pandey sur TailwindFlex.",
+  "author": "@rajesh-pandey (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-ecommerce-sidebar-layout-with-hamburger-menu-tailwind-css-ui-for-online-stores.tsx",
+      "content": "/**\n * Component: Responsive eCommerce Sidebar Layout with Hamburger Menu | Tailwind CSS UI for Online Stores\n * Author: @rajesh-pandey (https://tailwindflex.com/@rajesh-pandey)\n * Source: https://tailwindflex.com/@rajesh-pandey/responsive-ecommerce-sidebar-layout-with-hamburger-menu-tailwind-css-ui-for-online-stores\n * Attribution: Créé par @rajesh-pandey sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveEcommerceSidebarLayoutWithHamburgerMenuTailwindCssUiForOnlineStores() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"<!-- Sidebar & Hamburger Menu -->\\n<div x-data=\\\"{ open: false }\\\" class=\\\"flex h-screen bg-white dark:bg-gray-900\\\">\\n  <!-- Sidebar -->\\n  <div :class=\\\"open ? 'translate-x-0' : '-translate-x-full'\\\" class=\\\"fixed z-30 inset-y-0 left-0 w-64 transition duration-300 transform bg-white dark:bg-gray-800 shadow-lg overflow-y-auto\\\">\\n    <div class=\\\"flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700\\\">\\n      <h2 class=\\\"text-xl font-semibold text-gray-800 dark:text-white\\\">🛍️ MyShop</h2>\\n      <button @click=\\\"open = false\\\" class=\\\"text-gray-600 dark:text-gray-300 hover:text-red-500 focus:outline-none text-2xl\\\">&times;</button>\\n    </div>\\n    <nav class=\\\"p-4\\\">\\n      <a href=\\\"#\\\" class=\\\"block py-2 px-4 rounded text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700\\\">Home</a>\\n      <a href=\\\"#\\\" class=\\\"block py-2 px-4 rounded text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700\\\">Shop</a>\\n      <a href=\\\"#\\\" class=\\\"block py-2 px-4 rounded text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700\\\">Categories</a>\\n      <a href=\\\"#\\\" class=\\\"block py-2 px-4 rounded text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700\\\">About</a>\\n      <a href=\\\"#\\\" class=\\\"block py-2 px-4 rounded text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700\\\">Contact</a>\\n    </nav>\\n  </div>\\n\\n  <!-- Content Area -->\\n  <div class=\\\"flex-1 flex flex-col overflow-hidden w-full\\\">\\n    <!-- Header -->\\n    <header class=\\\"flex items-center justify-between px-4 py-3 bg-white dark:bg-gray-800 shadow-md\\\">\\n      <div class=\\\"flex items-center space-x-4\\\">\\n        <button @click=\\\"open = true\\\" class=\\\"text-gray-700 dark:text-gray-300 focus:outline-none text-2xl\\\">\\n          &#9776;\\n        </button>\\n        <span class=\\\"text-xl font-semibold text-gray-800 dark:text-white\\\">Jai Shree Ram Store</span>\\n      </div>\\n      <div class=\\\"flex items-center space-x-3\\\">\\n        <button class=\\\"relative text-gray-700 dark:text-gray-300 hover:text-gray-900\\\">\\n          🛒\\n        </button>\\n        <button class=\\\"bg-yellow-400 text-white px-4 py-1 rounded hover:bg-yellow-500\\\">Login</button>\\n      </div>\\n    </header>\\n\\n    <!-- Main Content Placeholder -->\\n    <main class=\\\"flex-1 p-6 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100\\\">\\n      <!-- Insert Hero Section or Page Content Here -->\\n      <h2 class=\\\"text-2xl font-bold\\\">Welcome to Your Divine Shopping Experience</h2>\\n    </main>\\n  </div>\\n</div>\\n\\n<!-- Alpine.js for toggle functionality (add to <head> or before </body>) -->\\n\" }} />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rajesh-pandey",
+    "authorUrl": "https://tailwindflex.com/@rajesh-pandey",
+    "sourceUrl": "https://tailwindflex.com/@rajesh-pandey/responsive-ecommerce-sidebar-layout-with-hamburger-menu-tailwind-css-ui-for-online-stores",
+    "mention": "Créé par @rajesh-pandey sur TailwindFlex",
+    "rawHtml": "<!-- Sidebar & Hamburger Menu -->\n<div x-data=\"{ open: false }\" class=\"flex h-screen bg-white dark:bg-gray-900\">\n  <!-- Sidebar -->\n  <div :class=\"open ? 'translate-x-0' : '-translate-x-full'\" class=\"fixed z-30 inset-y-0 left-0 w-64 transition duration-300 transform bg-white dark:bg-gray-800 shadow-lg overflow-y-auto\">\n    <div class=\"flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700\">\n      <h2 class=\"text-xl font-semibold text-gray-800 dark:text-white\">🛍️ MyShop</h2>\n      <button @click=\"open = false\" class=\"text-gray-600 dark:text-gray-300 hover:text-red-500 focus:outline-none text-2xl\">&times;</button>\n    </div>\n    <nav class=\"p-4\">\n      <a href=\"#\" class=\"block py-2 px-4 rounded text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700\">Home</a>\n      <a href=\"#\" class=\"block py-2 px-4 rounded text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700\">Shop</a>\n      <a href=\"#\" class=\"block py-2 px-4 rounded text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700\">Categories</a>\n      <a href=\"#\" class=\"block py-2 px-4 rounded text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700\">About</a>\n      <a href=\"#\" class=\"block py-2 px-4 rounded text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700\">Contact</a>\n    </nav>\n  </div>\n\n  <!-- Content Area -->\n  <div class=\"flex-1 flex flex-col overflow-hidden w-full\">\n    <!-- Header -->\n    <header class=\"flex items-center justify-between px-4 py-3 bg-white dark:bg-gray-800 shadow-md\">\n      <div class=\"flex items-center space-x-4\">\n        <button @click=\"open = true\" class=\"text-gray-700 dark:text-gray-300 focus:outline-none text-2xl\">\n          &#9776;\n        </button>\n        <span class=\"text-xl font-semibold text-gray-800 dark:text-white\">Jai Shree Ram Store</span>\n      </div>\n      <div class=\"flex items-center space-x-3\">\n        <button class=\"relative text-gray-700 dark:text-gray-300 hover:text-gray-900\">\n          🛒\n        </button>\n        <button class=\"bg-yellow-400 text-white px-4 py-1 rounded hover:bg-yellow-500\">Login</button>\n      </div>\n    </header>\n\n    <!-- Main Content Placeholder -->\n    <main class=\"flex-1 p-6 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100\">\n      <!-- Insert Hero Section or Page Content Here -->\n      <h2 class=\"text-2xl font-bold\">Welcome to Your Divine Shopping Experience</h2>\n    </main>\n  </div>\n</div>\n\n<!-- Alpine.js for toggle functionality (add to <head> or before </body>) -->\n<script src=\"https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js\" defer></script>"
+  }
+}

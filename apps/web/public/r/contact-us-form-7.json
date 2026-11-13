@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "contact-us-form-7",
+  "type": "registry:ui",
+  "title": "Contact Us form",
+  "description": "Contact Us form - Créé par @abdulbast sur TailwindFlex.",
+  "author": "@abdulbast (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/contact-us-form-7.tsx",
+      "content": "/**\n * Component: Contact Us form\n * Author: @abdulbast (https://tailwindflex.com/@abdulbast)\n * Source: https://tailwindflex.com/@abdulbast/contact-us-form-7\n * Attribution: Créé par @abdulbast sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ContactUsForm7() {\n  return (\n    <div>\n    <section className=\"dark800 bg-[#F9F9F9]\">\n      <div className=\"max-w-[556px] px-4 py-10 mx-auto  flex flex-col \">\n        <div className=\"w-full flex flex-col gap-5\">\n          <div className=\"flex gap-9\">\n            <label className=\"flex items-center gap-4\"><input type=\"radio\" className=\"w-7 h-7  accent-[#b9ff66]\" /><span className=\"justify-start dark text-black text-base sm font-normal \">Say Hi</span></label><label className=\"flex items-center gap-4\"><input type=\"radio\" className=\"w-7 h-7  accent-[#b9ff66]\" /><span className=\"justify-start dark text-black text-base sm font-normal \">Get a Quote</span></label>\n          </div>\n          <div className=\"w-full flex flex-col justify-start items-start gap-6\">\n            <div className=\"w-full\">\n              <label className=\" dark text-black text-base font-normal  leading-7\">Name*</label><input placeholder=\"Name\" type=\"text\" className=\"mt-2 w-full px-5 py-2 bg-white rounded-xl outline outline-1 outline-offset-[-1px] outline-black  overflow-hidden  text-[#898989] text-lg font-normal \" />\n            </div>\n            <div className=\"w-full\">\n              <label className=\"dark text-black text-base font-normal  leading-7\">Email*</label><input placeholder=\"Email\" type=\"email\" className=\"mt-2 w-full px-5 py-2 bg-white rounded-xl outline outline-1 outline-offset-[-1px] outline-black  overflow-hidden  text-[#898989] text-lg font-normal \" />\n            </div>\n            <div className=\"w-full\">\n              <label className=\"dark text-black text-base font-normal  leading-7\">Message*</label><textarea className=\"mt-2 w-full resize-none px-5 py-2 bg-white rounded-xl outline outline-1 outline-offset-[-1px] outline-black  overflow-hidden  text-[#898989] text-lg font-normal \" placeholder=\"Message\" cols=\"40\" rows=\"10\"></textarea>\n            </div>\n          </div>\n          <button className=\" px-9 py-5 bg-[#191a23] rounded-2xl  dark text-center dark[#191a23]  text-white text-xl font-normal  leading-7\">Send Message</button>\n        </div>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@abdulbast",
+    "authorUrl": "https://tailwindflex.com/@abdulbast",
+    "sourceUrl": "https://tailwindflex.com/@abdulbast/contact-us-form-7",
+    "mention": "Créé par @abdulbast sur TailwindFlex",
+    "rawHtml": "<section class=\"dark:bg-gray-800 bg-[#F9F9F9]\">\n  <div class=\"max-w-[556px] px-4 py-10 mx-auto  flex flex-col \">\n    <div class=\"w-full flex flex-col gap-5\">\n      <div class=\"flex gap-9\">\n        <label class=\"flex items-center gap-4\"><input type=\"radio\" class=\"w-7 h-7  accent-[#b9ff66]\"><span class=\"justify-start dark:text-white text-black text-base sm:text-lg font-normal \">Say Hi</span></label><label class=\"flex items-center gap-4\"><input type=\"radio\" class=\"w-7 h-7  accent-[#b9ff66]\"><span class=\"justify-start dark:text-white text-black text-base sm:text-lg font-normal \">Get a Quote</span></label>\n      </div>\n      <div class=\"w-full flex flex-col justify-start items-start gap-6\">\n        <div class=\"w-full\">\n          <label class=\" dark:text-white text-black text-base font-normal  leading-7\">Name*</label><input placeholder=\"Name\" type=\"text\" class=\"mt-2 w-full px-5 py-2 bg-white rounded-xl outline outline-1 outline-offset-[-1px] outline-black  overflow-hidden  text-[#898989] text-lg font-normal \">\n        </div>\n        <div class=\"w-full\">\n          <label class=\"dark:text-white text-black text-base font-normal  leading-7\">Email*</label><input placeholder=\"Email\" type=\"email\" class=\"mt-2 w-full px-5 py-2 bg-white rounded-xl outline outline-1 outline-offset-[-1px] outline-black  overflow-hidden  text-[#898989] text-lg font-normal \">\n        </div>\n        <div class=\"w-full\">\n          <label class=\"dark:text-white text-black text-base font-normal  leading-7\">Message*</label><textarea class=\"mt-2 w-full resize-none px-5 py-2 bg-white rounded-xl outline outline-1 outline-offset-[-1px] outline-black  overflow-hidden  text-[#898989] text-lg font-normal \" placeholder=\"Message\" cols=\"40\" rows=\"10\"></textarea>\n        </div>\n      </div>\n      <button class=\" px-9 py-5 bg-[#191a23] rounded-2xl  dark:bg-white text-center dark:text-[#191a23]  text-white text-xl font-normal  leading-7\">Send Message</button>\n    </div>\n  </div>\n</section>"
+  }
+}

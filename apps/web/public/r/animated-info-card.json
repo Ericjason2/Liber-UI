@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animated-info-card",
+  "type": "registry:ui",
+  "title": "Animated Info Card",
+  "description": "Animated Info Card - Créé par @shivam-vishvakarma sur TailwindFlex.",
+  "author": "@shivam-vishvakarma (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/animated-info-card.tsx",
+      "content": "/**\n * Component: Animated Info Card\n * Author: @shivam-vishvakarma (https://tailwindflex.com/@shivam-vishvakarma)\n * Source: https://tailwindflex.com/@shivam-vishvakarma/animated-info-card\n * Attribution: Créé par @shivam-vishvakarma sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AnimatedInfoCard() {\n  return (\n    <div>\n    <div className=\"size-52\">\n      <svg id=\"animated\" viewbox=\"0 0 100 100\">\n        <circle cx=\"50\" cy=\"50\" r=\"45\" fill=\"#FDB900\" />\n        <path fill=\"none\" strokeLinecap=\"round\" strokeWidth=\"5\" stroke=\"#fff\" stroke-dasharray=\"251.2,0\"\n          d=\"M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80\">\n          <animate attributeName=\"stroke-dasharray\" from=\"0,251.2\" to=\"251.2,0\" dur=\"5s\" />\n        </path>\n        <text id=\"count\" className=\"stroke-white fill-white\" x=\"50\" y=\"35\" text-anchor=\"middle\" dy=\"7\"\n          font-size=\"10\">VIEWS</text>\n        <text id=\"count\" className=\"stroke-white fill-white\" x=\"50\" y=\"55\" text-anchor=\"middle\" dy=\"7\"\n          font-size=\"20\">15k</text>\n      </svg>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@shivam-vishvakarma",
+    "authorUrl": "https://tailwindflex.com/@shivam-vishvakarma",
+    "sourceUrl": "https://tailwindflex.com/@shivam-vishvakarma/animated-info-card",
+    "mention": "Créé par @shivam-vishvakarma sur TailwindFlex",
+    "rawHtml": "<div class=\"size-52\">\n  <svg id=\"animated\" viewbox=\"0 0 100 100\">\n    <circle cx=\"50\" cy=\"50\" r=\"45\" fill=\"#FDB900\" />\n    <path fill=\"none\" stroke-linecap=\"round\" stroke-width=\"5\" stroke=\"#fff\" stroke-dasharray=\"251.2,0\"\n      d=\"M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80\">\n      <animate attributeName=\"stroke-dasharray\" from=\"0,251.2\" to=\"251.2,0\" dur=\"5s\" />\n    </path>\n    <text id=\"count\" class=\"stroke-white fill-white\" x=\"50\" y=\"35\" text-anchor=\"middle\" dy=\"7\"\n      font-size=\"10\">VIEWS</text>\n    <text id=\"count\" class=\"stroke-white fill-white\" x=\"50\" y=\"55\" text-anchor=\"middle\" dy=\"7\"\n      font-size=\"20\">15k</text>\n  </svg>\n</div>"
+  }
+}

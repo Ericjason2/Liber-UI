@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "twitter-like-users-list",
+  "type": "registry:ui",
+  "title": "Twitter like users list",
+  "description": "Twitter like users list - Créé par @simon-scheffer sur TailwindFlex.",
+  "author": "@simon-scheffer (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/twitter-like-users-list.tsx",
+      "content": "/**\n * Component: Twitter like users list\n * Author: @simon-scheffer (https://tailwindflex.com/@simon-scheffer)\n * Source: https://tailwindflex.com/@simon-scheffer/twitter-like-users-list\n * Attribution: Créé par @simon-scheffer sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function TwitterLikeUsersList() {\n  return (\n    <div>\n    <div className=\"max-w-sm mx-auto mt-40\">\n        <div className=\"p-3 flex items-center justify-between border-t cursor-pointer hover200\">\n            <div className=\"flex items-center\">\n                <img className=\"rounded-full h-10 w-10\" src=\"https://loremflickr.com/g/600/600/girl\" />\n                <div className=\"ml-2 flex flex-col\">\n                    <div className=\"leading-snug text-sm text-gray-900 font-bold\">Jane doe</div>\n                    <div className=\"leading-snug text-xs text-gray-600\">@jane</div>\n                </div>\n            </div>\n            <button className=\"h-8 px-3 text-md font-bold text-blue-400 border border-blue-400 rounded-full hover100\">Follow</button>\n        </div>\n        <div className=\"p-3 flex items-center justify-between border-t cursor-pointer hover200\">\n            <div className=\"flex items-center\">\n                <img className=\"rounded-full h-10 w-10\" src=\"https://loremflickr.com/g/600/600/boy\" />\n                <div className=\"ml-2 flex flex-col\">\n                    <div className=\"leading-snug text-sm text-gray-900 font-bold\">john doe</div>\n                    <div className=\"leading-snug text-xs text-gray-600\">@john</div>\n                </div>\n            </div>\n            <button className=\"h-8 px-3 text-md font-bold text-blue-400 border border-blue-400 rounded-full hover100\">Follow</button>\n        </div>\n        <div className=\"p-3 flex items-center justify-between border-t cursor-pointer hover200\">\n            <div className=\"flex items-center\">\n                <img className=\"rounded-full h-10 w-10\" src=\"https://loremflickr.com/g/600/600/paris\" />\n                <div className=\"ml-2 flex flex-col\">\n                    <div className=\"leading-snug text-sm text-gray-900 font-bold\">Paris</div>\n                    <div className=\"leading-snug text-xs text-gray-600\">@paris</div>\n                </div>\n            </div>\n            <button className=\"h-8 px-3 text-md font-bold text-blue-400 border border-blue-400 rounded-full hover100\">Follow</button>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "profile",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing"
+    ],
+    "author": "@simon-scheffer",
+    "authorUrl": "https://tailwindflex.com/@simon-scheffer",
+    "sourceUrl": "https://tailwindflex.com/@simon-scheffer/twitter-like-users-list",
+    "mention": "Créé par @simon-scheffer sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-sm mx-auto mt-40\">\n    <div class=\"p-3 flex items-center justify-between border-t cursor-pointer hover:bg-gray-200\">\n        <div class=\"flex items-center\">\n            <img class=\"rounded-full h-10 w-10\" src=\"https://loremflickr.com/g/600/600/girl\">\n            <div class=\"ml-2 flex flex-col\">\n                <div class=\"leading-snug text-sm text-gray-900 font-bold\">Jane doe</div>\n                <div class=\"leading-snug text-xs text-gray-600\">@jane</div>\n            </div>\n        </div>\n        <button class=\"h-8 px-3 text-md font-bold text-blue-400 border border-blue-400 rounded-full hover:bg-blue-100\">Follow</button>\n    </div>\n    <div class=\"p-3 flex items-center justify-between border-t cursor-pointer hover:bg-gray-200\">\n        <div class=\"flex items-center\">\n            <img class=\"rounded-full h-10 w-10\" src=\"https://loremflickr.com/g/600/600/boy\">\n            <div class=\"ml-2 flex flex-col\">\n                <div class=\"leading-snug text-sm text-gray-900 font-bold\">john doe</div>\n                <div class=\"leading-snug text-xs text-gray-600\">@john</div>\n            </div>\n        </div>\n        <button class=\"h-8 px-3 text-md font-bold text-blue-400 border border-blue-400 rounded-full hover:bg-blue-100\">Follow</button>\n    </div>\n    <div class=\"p-3 flex items-center justify-between border-t cursor-pointer hover:bg-gray-200\">\n        <div class=\"flex items-center\">\n            <img class=\"rounded-full h-10 w-10\" src=\"https://loremflickr.com/g/600/600/paris\">\n            <div class=\"ml-2 flex flex-col\">\n                <div class=\"leading-snug text-sm text-gray-900 font-bold\">Paris</div>\n                <div class=\"leading-snug text-xs text-gray-600\">@paris</div>\n            </div>\n        </div>\n        <button class=\"h-8 px-3 text-md font-bold text-blue-400 border border-blue-400 rounded-full hover:bg-blue-100\">Follow</button>\n    </div>\n</div>"
+  }
+}

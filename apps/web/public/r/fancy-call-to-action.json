@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "fancy-call-to-action",
+  "type": "registry:ui",
+  "title": "Fancy call to action",
+  "description": "Fancy call to action - Créé par @leon-bachmann sur TailwindFlex.",
+  "author": "@leon-bachmann (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/fancy-call-to-action.tsx",
+      "content": "/**\n * Component: Fancy call to action\n * Author: @leon-bachmann (https://tailwindflex.com/@leon-bachmann)\n * Source: https://tailwindflex.com/@leon-bachmann/fancy-call-to-action\n * Attribution: Créé par @leon-bachmann sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FancyCallToAction() {\n  return (\n    <div>\n    <div className=\"h-screen w-screen bg-black \">\r\n    \r\n        <div className=\"relative pt-20\">\r\n            <div aria-hidden=\"true\" className=\"hidden sm\">\r\n                <div className=\"absolute inset-y-0 left-0 w-1/2 bg-gray-800 rounded-r-3xl\">\r\n                </div>\r\n                <svg className=\"absolute top-8 left-1/2 -ml-3\" width=\"404\" height=\"392\" fill=\"none\" viewBox=\"0 0 404 392\">\r\n                    <defs>\r\n                        <pattern id=\"8228f071-bcee-4ec8-905a-2a059a2cc4fb\" x=\"0\" y=\"0\" width=\"20\" height=\"20\"\r\n                            patternUnits=\"userSpaceOnUse\">\r\n                            <rect x=\"0\" y=\"0\" width=\"4\" height=\"4\" className=\"text-gray-200\" fill=\"currentColor\"></rect>\r\n                        </pattern>\r\n                    </defs>\r\n                    <rect width=\"404\" height=\"392\" fill=\"url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)\"></rect>\r\n                </svg>\r\n            </div>\r\n            <div className=\"mx-auto max-w-md px-4 sm3xl sm6 lg7xl lg8\">\r\n                <div className=\"relative rounded-2xl px-6 py-10 bg-gray-700 overflow-hidden shadow-xl sm12 sm20\">\r\n                    <div aria-hidden=\"true\" className=\"absolute inset-0 -mt-72 sm32 md0\"><svg\r\n                            className=\"absolute inset-0 h-full w-full\" preserveAspectRatio=\"xMidYMid slice\"\r\n                            xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 1463 360\">\r\n                            <path className=\"text-gray-600 text-opacity-40\" fill=\"currentColor\"\r\n                                d=\"M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z\"></path>\r\n                            <path className=\"text-gray-800 text-opacity-40\" fill=\"currentColor\"\r\n                                d=\"M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z\"></path>\r\n                        </svg>\r\n                    </div>\r\n                    <div className=\"relative flex flex-col\">\r\n                        <div className=\"sm\">\r\n                            <h2 className=\"text-3xl font-extrabold text-white tracking-tight sm4xl\"> Push hot code updates\r\n                            </h2>\r\n                            <p className=\"mt-6 mx-auto max-w-2xl text-lg text-gray-100\"> Like you push a commit </p>\r\n                        </div>\r\n                        <a href=\"#\"\r\n                            className=\"w-auto inline-block mt-5 mx-auto rounded-md border border-transparent px-5 py-3 bg-gray-900 text-base font-medium text-white shadow hover focus focus2 focus focus2 focus500 sm10\">\r\n                            Get started →\r\n                        </a>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    \r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@leon-bachmann",
+    "authorUrl": "https://tailwindflex.com/@leon-bachmann",
+    "sourceUrl": "https://tailwindflex.com/@leon-bachmann/fancy-call-to-action",
+    "mention": "Créé par @leon-bachmann sur TailwindFlex",
+    "rawHtml": "<div class=\"h-screen w-screen bg-black \">\r\n\r\n    <div class=\"relative pt-20\">\r\n        <div aria-hidden=\"true\" class=\"hidden sm:block\">\r\n            <div class=\"absolute inset-y-0 left-0 w-1/2 bg-gray-800 rounded-r-3xl\">\r\n            </div>\r\n            <svg class=\"absolute top-8 left-1/2 -ml-3\" width=\"404\" height=\"392\" fill=\"none\" viewBox=\"0 0 404 392\">\r\n                <defs>\r\n                    <pattern id=\"8228f071-bcee-4ec8-905a-2a059a2cc4fb\" x=\"0\" y=\"0\" width=\"20\" height=\"20\"\r\n                        patternUnits=\"userSpaceOnUse\">\r\n                        <rect x=\"0\" y=\"0\" width=\"4\" height=\"4\" class=\"text-gray-200\" fill=\"currentColor\"></rect>\r\n                    </pattern>\r\n                </defs>\r\n                <rect width=\"404\" height=\"392\" fill=\"url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)\"></rect>\r\n            </svg>\r\n        </div>\r\n        <div class=\"mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8\">\r\n            <div class=\"relative rounded-2xl px-6 py-10 bg-gray-700 overflow-hidden shadow-xl sm:px-12 sm:py-20\">\r\n                <div aria-hidden=\"true\" class=\"absolute inset-0 -mt-72 sm:-mt-32 md:mt-0\"><svg\r\n                        class=\"absolute inset-0 h-full w-full\" preserveAspectRatio=\"xMidYMid slice\"\r\n                        xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 1463 360\">\r\n                        <path class=\"text-gray-600 text-opacity-40\" fill=\"currentColor\"\r\n                            d=\"M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z\"></path>\r\n                        <path class=\"text-gray-800 text-opacity-40\" fill=\"currentColor\"\r\n                            d=\"M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z\"></path>\r\n                    </svg>\r\n                </div>\r\n                <div class=\"relative flex flex-col\">\r\n                    <div class=\"sm:text-center\">\r\n                        <h2 class=\"text-3xl font-extrabold text-white tracking-tight sm:text-4xl\"> Push hot code updates\r\n                        </h2>\r\n                        <p class=\"mt-6 mx-auto max-w-2xl text-lg text-gray-100\"> Like you push a commit </p>\r\n                    </div>\r\n                    <a href=\"#\"\r\n                        class=\"w-auto inline-block mt-5 mx-auto rounded-md border border-transparent px-5 py-3 bg-gray-900 text-base font-medium text-white shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10\">\r\n                        Get started →\r\n                    </a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</div>"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "responsive-classes-list-table-with-edit-and-delete-buttons-using-tailwind-css",
+  "type": "registry:ui",
+  "title": "Responsive Classes List Table with Edit and Delete buttons using Tailwind CSS",
+  "description": "Responsive Classes List Table with Edit and Delete buttons using Tailwind CSS - Créé par @anum-shahana sur TailwindFlex.",
+  "author": "@anum-shahana (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/responsive-classes-list-table-with-edit-and-delete-buttons-using-tailwind-css.tsx",
+      "content": "/**\n * Component: Responsive Classes List Table with Edit and Delete buttons using Tailwind CSS\n * Author: @anum-shahana (https://tailwindflex.com/@anum-shahana)\n * Source: https://tailwindflex.com/@anum-shahana/responsive-classes-list-table-with-edit-and-delete-buttons-using-tailwind-css\n * Attribution: Créé par @anum-shahana sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ResponsiveClassesListTableWithEditAndDeleteButtonsUsingTailwindCss() {\n  return (\n    <div>\n    <div className=\"bg-white p-8 overflow-auto mt-16 h-screen\">\n      <h2 className=\"text-2xl mb-4\">Classes List</h2>\n    \n      \n      <div className=\"relative overflow-auto\">\n        <div className=\"overflow- rounded-lg\">\n          <table className=\"min-w-full bg-white border mb-20\">\n            <thead>\n              <tr className=\"bg-[#2B4DC994] text-center text-xs md font-thin text-white\">\n                <th className=\"p-0\">\n                  <span className=\"block py-2 px-3 border-r border-gray-300\">ID</span>\n                </th>\n                <th className=\"p-0\">\n                  <span className=\"block py-2 px-3 border-r border-gray-300\">Class Name</span>\n                </th>\n                <th className=\"p-0\">\n                  <span className=\"block py-2 px-3 border-r border-gray-300\">Level</span>\n                </th>\n                <th className=\"p-4 text-xs md\">Actions</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr className=\"border-b text-xs md text-center text-gray-800\">\n                <td className=\"p-2 md4\">01</td>\n                <td className=\"p-2 md4\">Class 1</td>\n                <td className=\"p-2 md4\">Beginner</td>\n                <td className=\"relative p-2 md4 flex justify-center space-x-2\">\n                  <button className=\"bg-blue-500 text-white px-3 py-1 rounded-md text-xs md\">Edit</button>\n                  <button className=\"bg-red-500 text-white px-3 py-1 rounded-md text-xs md\">Delete</button>\n                </td>\n              </tr>\n              <tr className=\"border-b text-xs md text-center text-gray-800\">\n                <td className=\"p-2 md4\">02</td>\n                <td className=\"p-2 md4\">Class 2</td>\n                <td className=\"p-2 md4\">Intermediate</td>\n                <td className=\"relative p-2 md4 flex justify-center space-x-2\">\n                  <button className=\"bg-blue-500 text-white px-3 py-1 rounded-md text-xs md\">Edit</button>\n                  <button className=\"bg-red-500 text-white px-3 py-1 rounded-md text-xs md\">Delete</button>\n                </td>\n              </tr>\n              <tr className=\"border-b text-xs md text-center text-gray-800\">\n                <td className=\"p-2 md4\">03</td>\n                <td className=\"p-2 md4\">Class 3</td>\n                <td className=\"p-2 md4\">Advanced</td>\n                <td className=\"relative p-2 md4 flex justify-center space-x-2\">\n                  <button className=\"bg-blue-500 text-white px-3 py-1 rounded-md text-xs md\">Edit</button>\n                  <button className=\"bg-red-500 text-white px-3 py-1 rounded-md text-xs md\">Delete</button>\n                </td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "form",
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anum-shahana",
+    "authorUrl": "https://tailwindflex.com/@anum-shahana",
+    "sourceUrl": "https://tailwindflex.com/@anum-shahana/responsive-classes-list-table-with-edit-and-delete-buttons-using-tailwind-css",
+    "mention": "Créé par @anum-shahana sur TailwindFlex",
+    "rawHtml": "<div class=\"bg-white p-8 overflow-auto mt-16 h-screen\">\n  <h2 class=\"text-2xl mb-4\">Classes List</h2>\n\n  <!-- Classes Table -->\n  <div class=\"relative overflow-auto\">\n    <div class=\"overflow-x-auto rounded-lg\">\n      <table class=\"min-w-full bg-white border mb-20\">\n        <thead>\n          <tr class=\"bg-[#2B4DC994] text-center text-xs md:text-sm font-thin text-white\">\n            <th class=\"p-0\">\n              <span class=\"block py-2 px-3 border-r border-gray-300\">ID</span>\n            </th>\n            <th class=\"p-0\">\n              <span class=\"block py-2 px-3 border-r border-gray-300\">Class Name</span>\n            </th>\n            <th class=\"p-0\">\n              <span class=\"block py-2 px-3 border-r border-gray-300\">Level</span>\n            </th>\n            <th class=\"p-4 text-xs md:text-sm\">Actions</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr class=\"border-b text-xs md:text-sm text-center text-gray-800\">\n            <td class=\"p-2 md:p-4\">01</td>\n            <td class=\"p-2 md:p-4\">Class 1</td>\n            <td class=\"p-2 md:p-4\">Beginner</td>\n            <td class=\"relative p-2 md:p-4 flex justify-center space-x-2\">\n              <button class=\"bg-blue-500 text-white px-3 py-1 rounded-md text-xs md:text-sm\">Edit</button>\n              <button class=\"bg-red-500 text-white px-3 py-1 rounded-md text-xs md:text-sm\">Delete</button>\n            </td>\n          </tr>\n          <tr class=\"border-b text-xs md:text-sm text-center text-gray-800\">\n            <td class=\"p-2 md:p-4\">02</td>\n            <td class=\"p-2 md:p-4\">Class 2</td>\n            <td class=\"p-2 md:p-4\">Intermediate</td>\n            <td class=\"relative p-2 md:p-4 flex justify-center space-x-2\">\n              <button class=\"bg-blue-500 text-white px-3 py-1 rounded-md text-xs md:text-sm\">Edit</button>\n              <button class=\"bg-red-500 text-white px-3 py-1 rounded-md text-xs md:text-sm\">Delete</button>\n            </td>\n          </tr>\n          <tr class=\"border-b text-xs md:text-sm text-center text-gray-800\">\n            <td class=\"p-2 md:p-4\">03</td>\n            <td class=\"p-2 md:p-4\">Class 3</td>\n            <td class=\"p-2 md:p-4\">Advanced</td>\n            <td class=\"relative p-2 md:p-4 flex justify-center space-x-2\">\n              <button class=\"bg-blue-500 text-white px-3 py-1 rounded-md text-xs md:text-sm\">Edit</button>\n              <button class=\"bg-red-500 text-white px-3 py-1 rounded-md text-xs md:text-sm\">Delete</button>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n</div>"
+  }
+}

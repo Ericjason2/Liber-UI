@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "call-to-example",
+  "type": "registry:ui",
+  "title": "Call to example",
+  "description": "Call to example - Créé par @oliver-hansen sur TailwindFlex.",
+  "author": "@oliver-hansen (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/call-to-example.tsx",
+      "content": "/**\n * Component: Call to example\n * Author: @oliver-hansen (https://tailwindflex.com/@oliver-hansen)\n * Source: https://tailwindflex.com/@oliver-hansen/call-to-example\n * Attribution: Créé par @oliver-hansen sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CallToExample() {\n  return (\n    <div>\n    <div className=\"mx-auto max-w-7xl sm6 lg8 mt-20\">\r\n    \r\n        <div\r\n            className=\"relative isolate overflow-hidden bg-white px-6 py-20 text-center sm3xl sm sm100 sm16 sm\">\r\n    \r\n            <h2 className=\"mx-auto max-w-2xl text-3xl font-bold tracking-tight text-gray-900 sm4xl\">\r\n                Join our community today!\r\n            </h2>\r\n    \r\n            <h3 className=\"mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-500\">\r\n                Sign up for exclusive access to events, resources, and more\r\n            </h3>\r\n    \r\n            <div className=\"mt-8 flex items-center justify-center gap-x-6\">\r\n                <a className=\"inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover500 focus-visible focus-visible2 focus-visible2 focus-visible600\"\r\n                    href=\"#\">\r\n                    Explore the forum\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" className=\"h-4 w-4\" viewBox=\"0 0 20 20\" fill=\"currentColor\">\r\n                        <path fillRule=\"evenodd\"\r\n                            d=\"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z\"\r\n                            clipRule=\"evenodd\"></path>\r\n                    </svg>\r\n                </a>\r\n            </div>\r\n    \r\n            \r\n            <svg viewBox=\"0 0 1024 1024\"\r\n                className=\"absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image(closest-side,white,transparent)]\"\r\n                aria-hidden=\"true\">\r\n                <circle cx=\"512\" cy=\"512\" r=\"512\" fill=\"url(#827591b1-ce8c-4110-b064-7cb85a0b1217)\" fill-opacity=\"0.7\">\r\n                </circle>\r\n                <defs>\r\n                    <radialGradient id=\"827591b1-ce8c-4110-b064-7cb85a0b1217\">\r\n                        <stop stopColor=\"#3b82f6\"></stop>\r\n                        <stop offset=\"1\" stopColor=\"#1d4ed8\"></stop>\r\n                    </radialGradient>\r\n                </defs>\r\n            </svg>\r\n    \r\n        </div>\r\n        \r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@oliver-hansen",
+    "authorUrl": "https://tailwindflex.com/@oliver-hansen",
+    "sourceUrl": "https://tailwindflex.com/@oliver-hansen/call-to-example",
+    "mention": "Créé par @oliver-hansen sur TailwindFlex",
+    "rawHtml": "<div class=\"mx-auto max-w-7xl sm:px-6 lg:px-8 mt-20\">\r\n\r\n    <div\r\n        class=\"relative isolate overflow-hidden bg-white px-6 py-20 text-center sm:rounded-3xl sm:border sm:border-gray-100 sm:px-16 sm:shadow-sm\">\r\n\r\n        <h2 class=\"mx-auto max-w-2xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl\">\r\n            Join our community today!\r\n        </h2>\r\n\r\n        <h3 class=\"mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-500\">\r\n            Sign up for exclusive access to events, resources, and more\r\n        </h3>\r\n\r\n        <div class=\"mt-8 flex items-center justify-center gap-x-6\">\r\n            <a class=\"inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600\"\r\n                href=\"#\">\r\n                Explore the forum\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-4 w-4\" viewBox=\"0 0 20 20\" fill=\"currentColor\">\r\n                    <path fill-rule=\"evenodd\"\r\n                        d=\"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z\"\r\n                        clip-rule=\"evenodd\"></path>\r\n                </svg>\r\n            </a>\r\n        </div>\r\n\r\n        <!-- gradient svg -->\r\n        <svg viewBox=\"0 0 1024 1024\"\r\n            class=\"absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]\"\r\n            aria-hidden=\"true\">\r\n            <circle cx=\"512\" cy=\"512\" r=\"512\" fill=\"url(#827591b1-ce8c-4110-b064-7cb85a0b1217)\" fill-opacity=\"0.7\">\r\n            </circle>\r\n            <defs>\r\n                <radialGradient id=\"827591b1-ce8c-4110-b064-7cb85a0b1217\">\r\n                    <stop stop-color=\"#3b82f6\"></stop>\r\n                    <stop offset=\"1\" stop-color=\"#1d4ed8\"></stop>\r\n                </radialGradient>\r\n            </defs>\r\n        </svg>\r\n\r\n    </div>\r\n    \r\n</div>"
+  }
+}

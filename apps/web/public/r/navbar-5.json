@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "navbar-5",
+  "type": "registry:ui",
+  "title": "NavBar",
+  "description": "NavBar - Créé par @sammytg7 sur TailwindFlex.",
+  "author": "@sammytg7 (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/navbar-5.tsx",
+      "content": "/**\n * Component: NavBar\n * Author: @sammytg7 (https://tailwindflex.com/@sammytg7)\n * Source: https://tailwindflex.com/@sammytg7/navbar-5\n * Attribution: Créé par @sammytg7 sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Navbar5() {\n  return (\n    <div>\n    <div\n      className=\"w-screen h-full bg-gray-100  dark700\">\n    \n      <div\n        className=\"container mx-auto relative md0 px-4 md10 bg-[#111111] dark rounded-xl overflow-hidden\">\n        \n        <nav className=\"bg-[#111111] dark shadow-lg w-full z-50\">\n          <div className=\"max-w-7xl mx-auto px-4 sm6 lg8\">\n            <div className=\"flex justify-between items-center h-16\">\n              \n              <div className=\"flex-shrink-0\">\n                <a href=\"#\" className=\"lg md text-sm font-bold text-gray-700 dark capitalize\">\n                  <span className=\"px-1 bg-green-400 dark600 rounded-full animate-[ping_1.9s_linear_infinite]\">N</span>\n                  <span className=\"px-1 bg-green-400 dark600 rounded-full animate-[ping_2s_linear_infinite]\">a</span>\n                  <span className=\"px-1 bg-green-400 dark600 rounded-full animate-[ping_2.1s_linear_infinite]\">v</span>\n                  <span className=\"px-1 bg-green-400 dark600 rounded-full animate-[ping_2.21s_linear_infinite]\">b</span>\n                  <span className=\"px-1 bg-green-400 dark600 rounded-full animate-[ping_2.3s_linear_infinite]\">a</span>\n                  <span className=\"px-1 bg-green-400 dark600 rounded-full animate-[ping_2.4s_linear_infinite]\">r</span>\n                </a>\n              </div>\n    \n              \n              <div className=\"hidden md space-x-8 text-gray-400 dark700\">\n                <a href=\"#about\" className=\"text-green-400 dark600\">Home</a>\n                <a href=\"#what-i-do\" className=\"hover400 dark600 \">What I Do</a>\n                <a href=\"#testimonials\" className=\"hover400 dark600 \">Testimonials</a>\n                <a href=\"#clients\" className=\"hover400 dark600 \">Clients</a>\n                <a href=\"#fun-facts\" className=\"hover400 dark600 \">Fun Facts</a>\n              </div>\n    \n              \n              <div className=\"md flex items-center\">\n                <button id=\"mobile-menu-button\" className=\"text-green-400 dark600 hover600 focus\">\n                <svg className=\"w-6 h-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                  <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M4 6h16M4 12h16m-7 6h7\" />\n                </svg>\n              </button>\n              </div>\n            </div>\n          </div>\n    \n          \n          <div id=\"mobile-menu\" className=\"absolute inset-0 bg-[#111111] dark bg-opacity-50 z-50 hidden\">\n            <div className=\"fixed inset-y-0 left-0 bg-[#111111] dark w-64 p-6 transform -translate- transition-transform\">\n              <button id=\"close-menu-button\" className=\"text-green-400 dark600 hover600 focus mb-4\">\n              <svg className=\"w-6 h-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M6 18L18 6M6 6l12 12\" />\n              </svg>\n            </button>\n              <nav className=\"space-y-4 text-gray-400 dark700\">\n                <a href=\"#about\" className=\"block text-green-400 dark600\">Home</a>\n                <a href=\"#what-i-do\" className=\"block hover400 dark600 \">What I Do</a>\n                <a href=\"#testimonials\" className=\"block hover400 dark600 \">Testimonials</a>\n                <a href=\"#clients\" className=\"block hover400 dark600 \">Clients</a>\n                <a href=\"#fun-facts\" className=\"block hover400 dark600 \">Fun Facts</a>\n              </nav>\n            </div>\n          </div>\n        </nav>\n    \n      </div>\n    </div>\n    \n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "navbar",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@sammytg7",
+    "authorUrl": "https://tailwindflex.com/@sammytg7",
+    "sourceUrl": "https://tailwindflex.com/@sammytg7/navbar-5",
+    "mention": "Créé par @sammytg7 sur TailwindFlex",
+    "rawHtml": "<div\n  class=\"w-screen h-full bg-gray-100  dark:bg-gray-700\">\n\n  <div\n    class=\"container mx-auto relative md:px-0 px-4 md:my-10 bg-[#111111] dark:bg-white rounded-xl overflow-hidden\">\n    <!-- Nav -->\n    <nav class=\"bg-[#111111] dark:bg-white shadow-lg w-full z-50\">\n      <div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\n        <div class=\"flex justify-between items-center h-16\">\n          <!-- Logo -->\n          <div class=\"flex-shrink-0\">\n            <a href=\"#\" class=\"lg:text-xl md:text-lg text-sm font-bold text-gray-700 dark:text-white capitalize\">\n              <span class=\"px-1 bg-green-400 dark:bg-green-600 rounded-full animate-[ping_1.9s_linear_infinite]\">N</span>\n              <span class=\"px-1 bg-green-400 dark:bg-green-600 rounded-full animate-[ping_2s_linear_infinite]\">a</span>\n              <span class=\"px-1 bg-green-400 dark:bg-green-600 rounded-full animate-[ping_2.1s_linear_infinite]\">v</span>\n              <span class=\"px-1 bg-green-400 dark:bg-green-600 rounded-full animate-[ping_2.21s_linear_infinite]\">b</span>\n              <span class=\"px-1 bg-green-400 dark:bg-green-600 rounded-full animate-[ping_2.3s_linear_infinite]\">a</span>\n              <span class=\"px-1 bg-green-400 dark:bg-green-600 rounded-full animate-[ping_2.4s_linear_infinite]\">r</span>\n            </a>\n          </div>\n\n          <!-- Desktop Menu -->\n          <div class=\"hidden md:flex space-x-8 text-gray-400 dark:text-gray-700\">\n            <a href=\"#about\" class=\"text-green-400 dark:text-green-600\">Home</a>\n            <a href=\"#what-i-do\" class=\"hover:text-green-400 dark:hover:text-green-600 \">What I Do</a>\n            <a href=\"#testimonials\" class=\"hover:text-green-400 dark:hover:text-green-600 \">Testimonials</a>\n            <a href=\"#clients\" class=\"hover:text-green-400 dark:hover:text-green-600 \">Clients</a>\n            <a href=\"#fun-facts\" class=\"hover:text-green-400 dark:hover:text-green-600 \">Fun Facts</a>\n          </div>\n\n          <!-- Mobile Menu Button -->\n          <div class=\"md:hidden flex items-center\">\n            <button id=\"mobile-menu-button\" class=\"text-green-400 dark:text-green-600 hover:text-green-600 focus:outline-none\">\n            <svg class=\"w-6 h-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n              <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16m-7 6h7\" />\n            </svg>\n          </button>\n          </div>\n        </div>\n      </div>\n\n      <!-- Mobile Menu -->\n      <div id=\"mobile-menu\" class=\"absolute inset-0 bg-[#111111] dark:bg-white bg-opacity-50 z-50 hidden\">\n        <div class=\"fixed inset-y-0 left-0 bg-[#111111] dark:bg-white w-64 p-6 transform -translate-x-full transition-transform\">\n          <button id=\"close-menu-button\" class=\"text-green-400 dark:text-green-600 hover:text-green-600 focus:outline-none mb-4\">\n          <svg class=\"w-6 h-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M6 18L18 6M6 6l12 12\" />\n          </svg>\n        </button>\n          <nav class=\"space-y-4 text-gray-400 dark:text-gray-700\">\n            <a href=\"#about\" class=\"block text-green-400 dark:text-green-600\">Home</a>\n            <a href=\"#what-i-do\" class=\"block hover:text-green-400 dark:hover:text-green-600 \">What I Do</a>\n            <a href=\"#testimonials\" class=\"block hover:text-green-400 dark:hover:text-green-600 \">Testimonials</a>\n            <a href=\"#clients\" class=\"block hover:text-green-400 dark:hover:text-green-600 \">Clients</a>\n            <a href=\"#fun-facts\" class=\"block hover:text-green-400 dark:hover:text-green-600 \">Fun Facts</a>\n          </nav>\n        </div>\n      </div>\n    </nav>\n\n  </div>\n</div>\n\n<script>\n  const mobileMenuButton = document.getElementById('mobile-menu-button');\n    const mobileMenu = document.getElementById('mobile-menu');\n    const closeMenuButton = document.getElementById('close-menu-button');\n\n    mobileMenuButton.addEventListener('click', () => {\n      mobileMenu.classList.remove('hidden');\n      mobileMenu.querySelector('div').classList.remove('-translate-x-full');\n    });\n\n    closeMenuButton.addEventListener('click', () => {\n      mobileMenu.querySelector('div').classList.add('-translate-x-full');\n      setTimeout(() => mobileMenu.classList.add('hidden'), 300);\n    });\n\n    mobileMenu.addEventListener('click', (e) => {\n      if (e.target === mobileMenu) {\n        closeMenuButton.click();\n      }\n    });\n</script>"
+  }
+}

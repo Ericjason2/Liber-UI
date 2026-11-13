@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sign-in-form-7",
+  "type": "registry:ui",
+  "title": "Sign In Form",
+  "description": "Sign In Form - Créé par @lekhraj-ghimire- sur TailwindFlex.",
+  "author": "@lekhraj-ghimire- (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/sign-in-form-7.tsx",
+      "content": "/**\n * Component: Sign In Form\n * Author: @lekhraj-ghimire- (https://tailwindflex.com/@lekhraj-ghimire-)\n * Source: https://tailwindflex.com/@lekhraj-ghimire-/sign-in-form-7\n * Attribution: Créé par @lekhraj-ghimire- sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SignInForm7() {\n  return (\n    <div>\n    <div className=\"max-w-md mx-auto p-8 bg-white shadow-xl rounded-xl border border-gray-200\">\r\n      <h2 className=\"text-2xl font-bold text-center text-blue-600 mb-6\">Sign In</h2>\r\n      <form className=\"space-y-4\">\r\n        <div>\r\n          <label className=\"block mb-1 text-sm text-gray-600\">Email Address</label>\r\n          <input type=\"email\" className=\"w-full border border-gray-300 rounded-lg px-4 py-2 focus focus2 focus500\" placeholder=\"you.com\" required />\r\n        </div>\r\n        <div>\r\n          <label className=\"block mb-1 text-sm text-gray-600\">Password</label>\r\n          <input type=\"password\" className=\"w-full border border-gray-300 rounded-lg px-4 py-2 focus focus2 focus500\" placeholder=\"••••••••\" required />\r\n        </div>\r\n        <div className=\"flex items-center justify-between\">\r\n          <label className=\"flex items-center\">\r\n            <input type=\"checkbox\" className=\"mr-2\" />\r\n            <span className=\"text-sm text-gray-600\">Remember me</span>\r\n          </label>\r\n          <a href=\"#\" className=\"text-sm text-blue-500 hover\">Forgot password?</a>\r\n        </div>\r\n        <button type=\"submit\" className=\"w-full bg-blue-600 text-white py-2 rounded-lg hover700 transition\">Sign In</button>\r\n      </form>\r\n      <p className=\"text-sm text-center text-gray-500 mt-6\">Don't have an account? <a href=\"#\"\r\n          className=\"text-blue-500 hover\">Sign Up</a></p>\r\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "call-to-action",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@lekhraj-ghimire-",
+    "authorUrl": "https://tailwindflex.com/@lekhraj-ghimire-",
+    "sourceUrl": "https://tailwindflex.com/@lekhraj-ghimire-/sign-in-form-7",
+    "mention": "Créé par @lekhraj-ghimire- sur TailwindFlex",
+    "rawHtml": "<div class=\"max-w-md mx-auto p-8 bg-white shadow-xl rounded-xl border border-gray-200\">\r\n  <h2 class=\"text-2xl font-bold text-center text-blue-600 mb-6\">Sign In</h2>\r\n  <form class=\"space-y-4\">\r\n    <div>\r\n      <label class=\"block mb-1 text-sm text-gray-600\">Email Address</label>\r\n      <input type=\"email\" class=\"w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500\" placeholder=\"you@example.com\" required>\r\n    </div>\r\n    <div>\r\n      <label class=\"block mb-1 text-sm text-gray-600\">Password</label>\r\n      <input type=\"password\" class=\"w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500\" placeholder=\"••••••••\" required>\r\n    </div>\r\n    <div class=\"flex items-center justify-between\">\r\n      <label class=\"flex items-center\">\r\n        <input type=\"checkbox\" class=\"mr-2\">\r\n        <span class=\"text-sm text-gray-600\">Remember me</span>\r\n      </label>\r\n      <a href=\"#\" class=\"text-sm text-blue-500 hover:underline\">Forgot password?</a>\r\n    </div>\r\n    <button type=\"submit\" class=\"w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition\">Sign In</button>\r\n  </form>\r\n  <p class=\"text-sm text-center text-gray-500 mt-6\">Don't have an account? <a href=\"#\"\r\n      class=\"text-blue-500 hover:underline\">Sign Up</a></p>\r\n</div>"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "masonary-cards-effect-using-columns",
+  "type": "registry:ui",
+  "title": "masonary grids effect for cards using columns",
+  "description": "masonary grids effect for cards using columns - Créé par @rohit-whyphy sur TailwindFlex.",
+  "author": "@rohit-whyphy (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/masonary-cards-effect-using-columns.tsx",
+      "content": "/**\n * Component: masonary grids effect for cards using columns\n * Author: @rohit-whyphy (https://tailwindflex.com/@rohit-whyphy)\n * Source: https://tailwindflex.com/@rohit-whyphy/masonary-cards-effect-using-columns\n * Attribution: Créé par @rohit-whyphy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function MasonaryCardsEffectUsingColumns() {\n  return (\n    <div>\n    <div className=\"columns-2 md3 lg4 gap-4 m-4\">\n        <div className=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 150px;\">Card 1</div>\n        <div className=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 200px;\">Card 2</div>\n        <div className=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 250px;\">Card 3</div>\n        <div className=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 180px;\">Card 4</div>\n        <div className=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 220px;\">Card 5</div>\n        <div className=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 220px;\">Card 6</div>\n        <div className=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 220px;\">Card 7</div>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "grid",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@rohit-whyphy",
+    "authorUrl": "https://tailwindflex.com/@rohit-whyphy",
+    "sourceUrl": "https://tailwindflex.com/@rohit-whyphy/masonary-cards-effect-using-columns",
+    "mention": "Créé par @rohit-whyphy sur TailwindFlex",
+    "rawHtml": "<div class=\"columns-2 md:columns-3 lg:columns-4 gap-4 m-4\">\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 150px;\">Card 1</div>\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 200px;\">Card 2</div>\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 250px;\">Card 3</div>\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 180px;\">Card 4</div>\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 220px;\">Card 5</div>\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 220px;\">Card 6</div>\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 220px;\">Card 7</div>\n</div>"
+  }
+}

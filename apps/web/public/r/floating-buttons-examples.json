@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "floating-buttons-examples",
+  "type": "registry:ui",
+  "title": "Floating buttons examples",
+  "description": "Floating buttons examples - Créé par @livia-flores sur TailwindFlex.",
+  "author": "@livia-flores (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/floating-buttons-examples.tsx",
+      "content": "/**\n * Component: Floating buttons examples\n * Author: @livia-flores (https://tailwindflex.com/@livia-flores)\n * Source: https://tailwindflex.com/@livia-flores/floating-buttons-examples\n * Attribution: Créé par @livia-flores sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function FloatingButtonsExamples() {\n  return (\n    <div>\n    \n    <div className=\"fixed bottom-4 right-4\">\n        <button className=\"bg-blue-500 hover600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n        Feedback\n      </button>\n    </div>\n    \n    \n    \n    <div className=\"fixed bottom-4 left-4\">\n        <button className=\"bg-blue-500 hover600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n        Feedback\n      </button>\n    </div>\n    \n    \n    \n    <div className=\"fixed top-4 right-4\">\n        <button className=\"bg-blue-500 hover600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n        Feedback\n      </button>\n    </div>\n    \n    \n    \n    <div className=\"fixed top-4 left-4\">\n        <button className=\"bg-blue-500 hover600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n        Feedback\n      </button>\n    </div>\n    \n    \n    \n    <div className=\"fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2\">\n        <button className=\"bg-blue-500 hover600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n        Feedback\n      </button>\n    </div>\n    \n    \n    \n    <div className=\"fixed bottom-4 left-1/2 transform -translate-x-1/2\">\n        <button className=\"bg-blue-500 hover600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n        Feedback\n      </button>\n    </div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@livia-flores",
+    "authorUrl": "https://tailwindflex.com/@livia-flores",
+    "sourceUrl": "https://tailwindflex.com/@livia-flores/floating-buttons-examples",
+    "mention": "Créé par @livia-flores sur TailwindFlex",
+    "rawHtml": "<!-- Bottom-Right Corner -->\n<div class=\"fixed bottom-4 right-4\">\n    <button class=\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n    Feedback\n  </button>\n</div>\n\n\n<!-- Bottom-Left Corner -->\n<div class=\"fixed bottom-4 left-4\">\n    <button class=\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n    Feedback\n  </button>\n</div>\n\n\n<!-- Top-Right Corner -->\n<div class=\"fixed top-4 right-4\">\n    <button class=\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n    Feedback\n  </button>\n</div>\n\n\n<!-- Top-Left Corner -->\n<div class=\"fixed top-4 left-4\">\n    <button class=\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n    Feedback\n  </button>\n</div>\n\n\n<!-- Center -->\n<div class=\"fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2\">\n    <button class=\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n    Feedback\n  </button>\n</div>\n\n\n<!-- Bottom-Center -->\n<div class=\"fixed bottom-4 left-1/2 transform -translate-x-1/2\">\n    <button class=\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n    Feedback\n  </button>\n</div>"
+  }
+}

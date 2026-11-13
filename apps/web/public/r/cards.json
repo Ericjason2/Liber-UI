@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cards",
+  "type": "registry:ui",
+  "title": "cards",
+  "description": "cards - Créé par @anonymous sur TailwindFlex.",
+  "author": "@anonymous (TailwindFlex)",
+  "categories": [
+    "buttons"
+  ],
+  "dependencies": [],
+  "files": [
+    {
+      "path": "ui/cards.tsx",
+      "content": "/**\n * Component: cards\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/cards\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Cards() {\n  return (\n    <div>\n    \r\n    <div className=\"area\">\r\n    \r\n    \r\n    \t<div className=\"w-1/2 px-4 lg1/3\">\r\n    \t\t<div className=\"bg-white shadow-lg rounded-lg overflow-hidden my-6 grid grid-cols-[auto,1fr]\">\r\n    \t\t\t<div className=\"bg-gray-100 px-5 py-2   grid items-end justify-center __col h-full\">\r\n    \t\t\t\t<a href=\"#\" className=\"text-blue-600 font-medium hover800\">Learn more</a>\r\n    \t\t\t</div>\r\n    \t\t\t<div className=\"p-6\">\r\n    \t\t\t\t<h2 className=\"text-xl font-semibold text-gray-800 mb-4\">Fast Performance</h2>\r\n    \t\t\t\t<p className=\"text-gray-600\">Suspendisse tincidunt metus vitae libero auctor, at aliquam purus. Morbi sit\r\n    \t\t\t\t\tamet lectus non sapien aliquet rutrum.</p>\r\n    \t\t\t</div>\r\n    \t\t</div>\r\n    \t</div>\r\n    \r\n    \r\n    \t<div className=\"w-1/2 px-4 lg1/3\">\r\n    \t\t<div className=\"bg-white shadow-lg rounded-lg overflow-hidden my-6 grid grid-cols-[auto,1fr]\">\r\n    \t\t\t<div className=\"bg-gray-100 px-5 py-2   grid items-end justify-center __col h-full\">\r\n    \t\t\t\t<a href=\"#\" className=\"text-blue-600 font-medium hover800\">Learn more</a>\r\n    \t\t\t</div>\r\n    \t\t\t<div className=\"p-6\">\r\n    \t\t\t\t<h2 className=\"text-xl font-semibold text-gray-800 mb-4\">Elegance</h2>\r\n    \t\t\t\t<p className=\"text-gray-600\">Suspendisse tincidunt metus vitae libero auctor, at aliquam purus. Morbi sit\r\n    \t\t\t\t\tamet lectus non sapien aliquet rutrum.</p>\r\n    \t\t\t</div>\r\n    \t\t</div>\r\n    \t</div>\r\n    \r\n    \r\n    \r\n    \t<div className=\"w-1/2 px-4 lg1/3\">\r\n    \t\t<div className=\"bg-white shadow-lg rounded-lg overflow-hidden my-6 grid grid-cols-[auto,1fr]\">\r\n    \t\t\t<div className=\"bg-gray-100 px-5 py-2   grid items-end justify-center __col h-full\">\r\n    \t\t\t\t<a href=\"#\" className=\"text-blue-600 font-medium hover800\">Learn more</a>\r\n    \t\t\t</div>\r\n    \t\t\t<div className=\"p-6\">\r\n    \t\t\t\t<h2 className=\"text-xl font-semibold text-gray-800 mb-4\">Fast Performance</h2>\r\n    \t\t\t\t<p className=\"text-gray-600\">Suspendisse tincidunt metus vitae libero auctor, at aliquam purus. Morbi sit\r\n    \t\t\t\t\tamet lectus non sapien aliquet rutrum.</p>\r\n    \t\t\t</div>\r\n    \t\t</div>\r\n    \t</div>\r\n    \r\n    \r\n    \r\n    \t<div className=\"w-1/2 px-4 lg1/3\">\r\n    \t\t<div className=\"bg-white shadow-lg rounded-lg overflow-hidden my-6 grid grid-cols-[auto,1fr]\">\r\n    \t\t\t<div className=\"bg-gray-100 px-5 py-2   grid items-end justify-center __col h-full\">\r\n    \t\t\t\t<a href=\"#\" className=\"text-blue-600 font-medium hover800\">Learn more</a>\r\n    \t\t\t</div>\r\n    \t\t\t<div className=\"p-6\">\r\n    \t\t\t\t<h2 className=\"text-xl font-semibold text-gray-800 mb-4\">Spacial Diversity</h2>\r\n    \t\t\t\t<p className=\"text-gray-600\">Suspendisse tincidunt metus vitae libero auctor, at aliquam purus. Morbi sit\r\n    \t\t\t\t\tamet lectus non sapien aliquet rutrum.</p>\r\n    \t\t\t</div>\r\n    \t\t</div>\r\n    \t</div>\r\n    \t<ul className=\"circles\">\r\n    \t\t<li></li>\r\n    \t\t<li></li>\r\n    \t\t<li></li>\r\n    \t\t<li></li>\r\n    \t\t<li></li>\r\n    \t\t<li></li>\r\n    \t\t<li></li>\r\n    \t\t<li></li>\r\n    \t\t<li></li>\r\n    \t\t<li></li>\r\n    \t</ul>\r\n    </div>\r\n    \n    </div>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "kind": "component",
+    "tags": [
+      "card",
+      "footer",
+      "header",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "button",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "author": "@anonymous",
+    "authorUrl": "https://tailwindflex.com/@anonymous",
+    "sourceUrl": "https://tailwindflex.com/@anonymous/cards",
+    "mention": "Créé par @anonymous sur TailwindFlex",
+    "rawHtml": "<!--Start Background Animation Body-->\r\n<div class=\"area\">\r\n\r\n\r\n\t<div class=\"w-1/2 px-4 lg:w-1/3\">\r\n\t\t<div class=\"bg-white shadow-lg rounded-lg overflow-hidden my-6 grid grid-cols-[auto,1fr]\">\r\n\t\t\t<div class=\"bg-gray-100 px-5 py-2   grid items-end justify-center __col h-full\">\r\n\t\t\t\t<a href=\"#\" class=\"text-blue-600 font-medium hover:text-blue-800\">Learn more</a>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"p-6\">\r\n\t\t\t\t<h2 class=\"text-xl font-semibold text-gray-800 mb-4\">Fast Performance</h2>\r\n\t\t\t\t<p class=\"text-gray-600\">Suspendisse tincidunt metus vitae libero auctor, at aliquam purus. Morbi sit\r\n\t\t\t\t\tamet lectus non sapien aliquet rutrum.</p>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\r\n\t<div class=\"w-1/2 px-4 lg:w-1/3\">\r\n\t\t<div class=\"bg-white shadow-lg rounded-lg overflow-hidden my-6 grid grid-cols-[auto,1fr]\">\r\n\t\t\t<div class=\"bg-gray-100 px-5 py-2   grid items-end justify-center __col h-full\">\r\n\t\t\t\t<a href=\"#\" class=\"text-blue-600 font-medium hover:text-blue-800\">Learn more</a>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"p-6\">\r\n\t\t\t\t<h2 class=\"text-xl font-semibold text-gray-800 mb-4\">Elegance</h2>\r\n\t\t\t\t<p class=\"text-gray-600\">Suspendisse tincidunt metus vitae libero auctor, at aliquam purus. Morbi sit\r\n\t\t\t\t\tamet lectus non sapien aliquet rutrum.</p>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\r\n\r\n\t<div class=\"w-1/2 px-4 lg:w-1/3\">\r\n\t\t<div class=\"bg-white shadow-lg rounded-lg overflow-hidden my-6 grid grid-cols-[auto,1fr]\">\r\n\t\t\t<div class=\"bg-gray-100 px-5 py-2   grid items-end justify-center __col h-full\">\r\n\t\t\t\t<a href=\"#\" class=\"text-blue-600 font-medium hover:text-blue-800\">Learn more</a>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"p-6\">\r\n\t\t\t\t<h2 class=\"text-xl font-semibold text-gray-800 mb-4\">Fast Performance</h2>\r\n\t\t\t\t<p class=\"text-gray-600\">Suspendisse tincidunt metus vitae libero auctor, at aliquam purus. Morbi sit\r\n\t\t\t\t\tamet lectus non sapien aliquet rutrum.</p>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\r\n\r\n\t<div class=\"w-1/2 px-4 lg:w-1/3\">\r\n\t\t<div class=\"bg-white shadow-lg rounded-lg overflow-hidden my-6 grid grid-cols-[auto,1fr]\">\r\n\t\t\t<div class=\"bg-gray-100 px-5 py-2   grid items-end justify-center __col h-full\">\r\n\t\t\t\t<a href=\"#\" class=\"text-blue-600 font-medium hover:text-blue-800\">Learn more</a>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"p-6\">\r\n\t\t\t\t<h2 class=\"text-xl font-semibold text-gray-800 mb-4\">Spacial Diversity</h2>\r\n\t\t\t\t<p class=\"text-gray-600\">Suspendisse tincidunt metus vitae libero auctor, at aliquam purus. Morbi sit\r\n\t\t\t\t\tamet lectus non sapien aliquet rutrum.</p>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\t<ul class=\"circles\">\r\n\t\t<li></li>\r\n\t\t<li></li>\r\n\t\t<li></li>\r\n\t\t<li></li>\r\n\t\t<li></li>\r\n\t\t<li></li>\r\n\t\t<li></li>\r\n\t\t<li></li>\r\n\t\t<li></li>\r\n\t\t<li></li>\r\n\t</ul>\r\n</div>\r\n<!--End Background Animation Body-->"
+  }
+}

@@ -23,9 +23,13 @@ export interface ComponentItem {
   tags: string[];
   license: "MIT";
   author: string;
+  authorUrl?: string;
+  sourceUrl?: string;
+  mention?: string;
   registryDependencies: string[];
   dependencies: string[];
   code: string;
+  rawHtml?: string;
 }
 
 export const SAMPLE_BLOCKS: BlockItem[] = [
