@@ -9,7 +9,7 @@ import { OFFICIAL_LOGOS } from "@/lib/catalog-logos";
 import { TOTAL_THEMES_COUNT } from "@/lib/catalog-themes-base";
 import { TOTAL_FONTS_COUNT } from "@/lib/catalog-fonts-base";
 import { SAMPLE_ANIMATIONS } from "@/lib/catalog-animations";
-import { SAMPLE_COMPONENTS } from "@/lib/catalog-components";
+import { TOTAL_COMPONENTS_COUNT } from "@/lib/catalog-components-base";
 
 /**
  * Module 1 — "What's inside Liber UI?" 3x2 Bento showcase inspired by Behance Module 1.
@@ -251,7 +251,7 @@ export function HomeBentoCatalog() {
                 UI Components
               </h3>
               <p className="text-xs font-mono text-muted-foreground">
-                {SAMPLE_COMPONENTS.length} Accessible Interactive TSX Blocks
+                {TOTAL_COMPONENTS_COUNT.toLocaleString()}+ Accessible Interactive TSX Blocks
               </p>
             </div>
             <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

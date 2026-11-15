@@ -39,7 +39,7 @@ const rawDocs: SearchDoc[] = [
     kind: "component" as const,
     category: c.category,
     tags: c.tags,
-    url: `/components#${c.slug}`,
+    url: `/components/${c.slug}`,
   })),
   ...SAMPLE_THEMES.map((t) => ({
     id: `theme-${t.slug}`,
