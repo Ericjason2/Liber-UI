@@ -16,7 +16,7 @@ import { OFFICIAL_LOGOS } from "@/lib/catalog-logos";
 import { TOTAL_THEMES_COUNT } from "@/lib/catalog-themes-base";
 import { TOTAL_FONTS_COUNT } from "@/lib/catalog-fonts-base";
 import { SAMPLE_ANIMATIONS } from "@/lib/catalog-animations";
-import { SAMPLE_COMPONENTS } from "@/lib/catalog-components";
+import { TOTAL_COMPONENTS_COUNT } from "@/lib/catalog-components-base";
 
 interface HomeHeroShowcaseProps {
   onOpenSearch: () => void;
@@ -76,7 +76,7 @@ export function HomeHeroShowcase({ onOpenSearch }: HomeHeroShowcaseProps) {
         >
           {OFFICIAL_LOGOS.length}+ official tech logos, {TOTAL_FONTS_COUNT.toLocaleString()}+ free fonts,{" "}
           {TOTAL_THEMES_COUNT} WCAG palettes, {SAMPLE_ANIMATIONS.length} GPU animations &{" "}
-          {SAMPLE_COMPONENTS.length} UI primitives. Copy directly or install with one command.
+          {TOTAL_COMPONENTS_COUNT.toLocaleString()}+ UI primitives. Copy directly or install with one command.
         </p>
 
         {/* Wide Search Bar + Primary Pill CTAs */}

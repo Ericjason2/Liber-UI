@@ -1,8 +1,10 @@
 export { OFFICIAL_LOGOS, type LogoItem } from "./catalog-logos";
 export { ANIMATIONS_DATA, SAMPLE_ANIMATIONS, type AnimationItem } from "./catalog-animations";
 export {
+  BASE_COMPONENTS,
   SAMPLE_BLOCKS,
   SAMPLE_COMPONENTS,
+  TOTAL_COMPONENTS_COUNT,
   type BlockItem,
   type ComponentItem,
 } from "./catalog-components";

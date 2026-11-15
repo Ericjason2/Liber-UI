@@ -17,6 +17,7 @@ import { GET as getLogoCss } from "../../apps/web/src/handlers/logoCssApiHandler
 import { GET as getFontCss } from "../../apps/web/src/handlers/fontCssApiHandler";
 import { extractFontFromZipBuffer } from "../../apps/web/src/handlers/fontFileApiHandler";
 import { GET as getFontsApi } from "../../apps/web/src/handlers/fontsApiHandler";
+import { GET as getComponentsApi } from "../../apps/web/src/handlers/componentsApiHandler";
 import { GET as getRegistryItem } from "../../apps/web/src/handlers/registryItemHandler";
 import { GET as getSearchApi } from "../../apps/web/src/handlers/searchApiHandler";
 
@@ -291,14 +292,29 @@ describe("End-User E2E Flows — Logos, Fonts (CSS/Tailwind/TTF), Themes, Animat
   });
 
   describe("5. UI Components — Complete Copy-Paste TSX & Static Registry Manifests", () => {
-    it("provides full TSX code and static /public/r/<slug>.json manifests for all catalog components", () => {
-      expect(SAMPLE_COMPONENTS.length).toBeGreaterThanOrEqual(10);
+    it("provides full TSX code, rawHtml preview, and static /public/r/<slug>.json manifests for all catalog components", async () => {
+      expect(SAMPLE_COMPONENTS.length).toBeGreaterThanOrEqual(1500);
 
-      // Validate in-memory code integrity for all components
+      // Validate in-memory code and rawHtml integrity for all components
       for (const comp of SAMPLE_COMPONENTS) {
         expect(comp.code.length).toBeGreaterThan(120);
         expect(comp.code).toContain("export ");
+        expect(Boolean(comp.rawHtml && comp.rawHtml.length > 20)).toBe(true);
       }
+
+      // Test /api/components pagination & tag filtering
+      const listReq = new NextRequest(
+        "https://liber-ui-delta.vercel.app/api/components?tag=card&page=1&limit=12"
+      );
+      const listRes = await getComponentsApi(listReq);
+      expect(listRes.status).toBe(200);
+      const listData = (await listRes.json()) as {
+        totalFiltered: number;
+        components: Array<{ slug: string; rawHtml?: string }>;
+      };
+      expect(listData.totalFiltered).toBeGreaterThan(400);
+      expect(listData.components).toHaveLength(12);
+      expect(listData.components[0]?.rawHtml).toBeTruthy();
 
       // Validate static registry files for representative sample across catalog
       const sampleSlugs = [

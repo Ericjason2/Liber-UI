@@ -17,7 +17,7 @@ import { EditorialDivider, TiltedPill } from "./HomePrimitives";
 import { ScrollReveal, getRevealMotionProps, useInViewOnce } from "./ScrollReveal";
 import { OFFICIAL_LOGOS } from "@/lib/catalog-logos";
 import { SAMPLE_ANIMATIONS } from "@/lib/catalog-animations";
-import { SAMPLE_COMPONENTS } from "@/lib/catalog-components";
+import { TOTAL_COMPONENTS_COUNT } from "@/lib/catalog-components-base";
 import { BASE_THEMES } from "@/lib/catalog-themes-base";
 import { BASE_FONTS } from "@/lib/catalog-fonts-base";
 import { useToast } from "@/context/ToastContext";
@@ -67,7 +67,7 @@ export function HomeComponentsShowcase() {
                 Components
               </h2>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                {SAMPLE_COMPONENTS.length} accessible TypeScript primitives built with clean Tailwind
+                {TOTAL_COMPONENTS_COUNT.toLocaleString()}+ accessible TypeScript primitives built with clean Tailwind
                 utilities. Inspect states live or install straight into your repo via CLI.
               </p>
             </div>
@@ -190,7 +190,7 @@ export function HomeComponentsShowcase() {
                   href="/components"
                   className="text-xs font-mono font-medium text-[#2563EB] dark:text-[#38BDF8] hover:underline inline-flex items-center gap-1"
                 >
-                  <span>All {SAMPLE_COMPONENTS.length} components</span>
+                  <span>All {TOTAL_COMPONENTS_COUNT.toLocaleString()} components</span>
                   <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
               </div>
