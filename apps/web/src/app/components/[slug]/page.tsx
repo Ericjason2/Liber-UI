@@ -23,7 +23,7 @@ export async function generateMetadata({
   }
   return {
     title: `${component.name} — Documentation, Preview & Installation | Liber UI`,
-    description: `${component.description} — Prévisualisation interactive, installation CLI, téléchargement direct et code source React TSX / Tailwind CSS.`,
+    description: `${component.description} — Interactive live preview, CLI installation, direct download, and React TSX / Tailwind CSS source code.`,
   };
 }
 

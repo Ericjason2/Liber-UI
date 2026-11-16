@@ -5,7 +5,7 @@ import ComponentsView from "@/views/ComponentsView";
 export const metadata: Metadata = {
   title: "UI Components — Liber UI",
   description:
-    "1 525 composants UI open-source prêts à l'emploi avec prévisualisation interactive, installation CLI et téléchargement direct React TSX / Tailwind CSS.",
+    "1,525 open-source UI components ready to use with interactive live preview, CLI installation, and direct React TSX / Tailwind CSS download.",
 };
 
 export default function ComponentsRoute() {

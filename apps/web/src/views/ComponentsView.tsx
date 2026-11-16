@@ -98,15 +98,15 @@ export default function ComponentsPage({
   }, [searchQuery, selectedCat, currentPage]);
 
   const categories = [
-    { id: "all", label: "Tous les composants", count: categoryCounts.all ?? TOTAL_COMPONENTS_COUNT },
+    { id: "all", label: "All Components", count: categoryCounts.all ?? TOTAL_COMPONENTS_COUNT },
     { id: "card", label: "Cards", count: categoryCounts.card ?? 0 },
-    { id: "form", label: "Formulaires", count: categoryCounts.form ?? 0 },
+    { id: "form", label: "Forms", count: categoryCounts.form ?? 0 },
     { id: "navbar", label: "Navbars & Menus", count: categoryCounts.navbar ?? 0 },
-    { id: "button", label: "Boutons & CTA", count: categoryCounts.button ?? 0 },
-    { id: "hero", label: "Hero & Bannières", count: categoryCounts.hero ?? 0 },
-    { id: "pricing", label: "Tarifs & Pricing", count: categoryCounts.pricing ?? 0 },
-    { id: "grid", label: "Grilles & Bento", count: categoryCounts.grid ?? 0 },
-    { id: "profile", label: "Profils & Auteurs", count: categoryCounts.profile ?? 0 },
+    { id: "button", label: "Buttons & CTA", count: categoryCounts.button ?? 0 },
+    { id: "hero", label: "Hero & Banners", count: categoryCounts.hero ?? 0 },
+    { id: "pricing", label: "Pricing", count: categoryCounts.pricing ?? 0 },
+    { id: "grid", label: "Grids & Bento", count: categoryCounts.grid ?? 0 },
+    { id: "profile", label: "Profiles & Authors", count: categoryCounts.profile ?? 0 },
     { id: "landing-page", label: "Landing Pages", count: categoryCounts["landing-page"] ?? 0 },
   ];
 
@@ -124,13 +124,13 @@ export default function ComponentsPage({
           <span className="text-foreground font-medium">Components</span>
         </div>
 
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pb-6 border-b border-border">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pb-2">
           <div className="space-y-2">
             <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground">
               UI Components
             </h1>
             <p className="text-sm text-muted-foreground max-w-2xl leading-relaxed">
-              {TOTAL_COMPONENTS_COUNT.toLocaleString()} composants open-source prêts à l&apos;emploi. Prévisualisez chaque élément en direct et accédez au code source React TSX et Tailwind CSS.
+              {TOTAL_COMPONENTS_COUNT.toLocaleString()} open-source UI components ready to use. Interactive live previews with instant React TSX and Tailwind CSS code export.
             </p>
           </div>
 
@@ -151,7 +151,7 @@ export default function ComponentsPage({
               ))}
             </div>
             <div className="flex items-center gap-2 font-mono text-xs text-foreground bg-muted border border-border px-3.5 h-10 rounded-[10px]">
-              <span>{totalFiltered} Composants</span>
+              <span>{totalFiltered} Components</span>
             </div>
           </div>
         </div>
@@ -169,7 +169,7 @@ export default function ComponentsPage({
                 setSearchQuery(e.target.value);
                 setCurrentPage(1);
               }}
-              placeholder="Rechercher un composant par nom (ex: card, hero, form, button, navbar, pricing, header)..."
+              placeholder="Search components by name (e.g. card, hero, form, button, navbar, pricing, header)..."
               className="w-full h-11 pl-10 pr-4 rounded-[10px] border border-border bg-card text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-all font-sans"
             />
           </div>
@@ -230,14 +230,14 @@ export default function ComponentsPage({
                 />
               </div>
 
-              {/* Card Footer: Short Description + Elegant "Consulter le composant →" Link */}
+              {/* Card Footer: Short Description + Elegant "View component →" Link */}
               <div className="p-4 sm:px-5 sm:py-4 flex items-center justify-between gap-3 text-xs bg-card">
                 <p className="text-muted-foreground line-clamp-1 text-xs flex-1">
                   {item.description}
                 </p>
 
                 <span className="inline-flex items-center gap-1 font-medium text-xs text-foreground/80 group-hover:text-primary transition-colors shrink-0">
-                  <span>Consulter</span>
+                  <span>View component</span>
                   <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                 </span>
               </div>
@@ -246,13 +246,13 @@ export default function ComponentsPage({
         })}
       </div>
 
-      {/* 4. Pagination Controls */}
+      {/* 4. Pagination Controls (Clean whitespace without harsh divider line) */}
       {totalPages > 1 && (
-        <div className="pt-10 sm:pt-14 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="pt-8 sm:pt-10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-xs text-muted-foreground font-mono">
-            Affichage de {(currentPage - 1) * PAGE_SIZE + 1} à{" "}
-            {Math.min(currentPage * PAGE_SIZE, totalFiltered)} sur {totalFiltered}{" "}
-            composants disponibles
+            Showing {(currentPage - 1) * PAGE_SIZE + 1} to{" "}
+            {Math.min(currentPage * PAGE_SIZE, totalFiltered)} of {totalFiltered}{" "}
+            available components
           </div>
 
           <div className="flex items-center gap-1.5">
@@ -265,7 +265,7 @@ export default function ComponentsPage({
               }}
               className="px-3 py-1.5 rounded-lg border border-border text-xs font-medium text-foreground hover:bg-muted disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
             >
-              Précédent
+              Previous
             </button>
 
             <div className="flex items-center gap-1">
@@ -313,7 +313,7 @@ export default function ComponentsPage({
               }}
               className="px-3 py-1.5 rounded-lg border border-border text-xs font-medium text-foreground hover:bg-muted disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
             >
-              Suivant
+              Next
             </button>
           </div>
         </div>

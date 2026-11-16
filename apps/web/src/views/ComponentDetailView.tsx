@@ -81,7 +81,7 @@ export default function ComponentDetailView({
 @tailwind components;
 @tailwind utilities;
 
-/* Styles de base et polices pour le composant */
+/* Base styles and fonts for the component */
 @layer base {
   * {
     border-color: hsl(var(--border));
@@ -171,7 +171,7 @@ export default function ExamplePage() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    toast(`Fichier ${filename} téléchargé !`);
+    toast(`File ${filename} downloaded!`);
   };
 
   const getCodeContent = (tab: "tsx" | "html" | "css" | "config") => {
@@ -201,7 +201,7 @@ export default function ExamplePage() {
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-16 sm:space-y-24">
+    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 space-y-14 sm:space-y-20">
       {/* 1. Breadcrumb & Back Link */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-2 font-mono text-xs text-muted-foreground">
@@ -239,7 +239,7 @@ export default function ExamplePage() {
             className="inline-flex items-center gap-1.5 px-3.5 h-8 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground transition-colors"
           >
             <Download className="h-3.5 w-3.5 text-primary" />
-            <span>Télécharger .tsx</span>
+            <span>Download .tsx</span>
           </button>
           <button
             type="button"
@@ -253,13 +253,13 @@ export default function ExamplePage() {
             className="inline-flex items-center gap-1.5 px-3.5 h-8 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground transition-colors"
           >
             <Download className="h-3.5 w-3.5 text-muted-foreground" />
-            <span>Télécharger .html</span>
+            <span>Download .html</span>
           </button>
         </div>
       </div>
 
-      {/* 2. Component Header: Title & Description (Clean, No tags, No "rendu garanti" badge) */}
-      <div className="space-y-4 pb-8 border-b border-border/80">
+      {/* 2. Component Header: Title & Description (Clean, No tags, No harsh divider) */}
+      <div className="space-y-4">
         <div className="flex items-center gap-2.5">
           <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-muted text-muted-foreground border border-border capitalize">
             {component.category}
@@ -283,11 +283,10 @@ export default function ExamplePage() {
             <button
               type="button"
               onClick={() => setTopTab("preview")}
-              className={`pb-2.5 -mb-[11px] text-sm font-medium border-b-2 transition-colors flex items-center gap-1.5 ${
-                topTab === "preview"
+              className={`pb-2.5 -mb-[11px] text-sm font-medium border-b-2 transition-colors flex items-center gap-1.5 ${topTab === "preview"
                   ? "border-foreground text-foreground font-semibold"
                   : "border-transparent text-muted-foreground hover:text-foreground"
-              }`}
+                }`}
             >
               <Eye className="h-4 w-4" />
               <span>Preview</span>
@@ -295,11 +294,10 @@ export default function ExamplePage() {
             <button
               type="button"
               onClick={() => setTopTab("code")}
-              className={`pb-2.5 -mb-[11px] text-sm font-medium border-b-2 transition-colors flex items-center gap-1.5 ${
-                topTab === "code"
+              className={`pb-2.5 -mb-[11px] text-sm font-medium border-b-2 transition-colors flex items-center gap-1.5 ${topTab === "code"
                   ? "border-foreground text-foreground font-semibold"
                   : "border-transparent text-muted-foreground hover:text-foreground"
-              }`}
+                }`}
             >
               <Code2 className="h-4 w-4" />
               <span>Code</span>
@@ -315,11 +313,10 @@ export default function ExamplePage() {
                     type="button"
                     onClick={() => setViewport("100%")}
                     title="Desktop (100%)"
-                    className={`px-2.5 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${
-                      viewport === "100%"
+                    className={`px-2.5 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${viewport === "100%"
                         ? "bg-muted text-foreground font-semibold"
                         : "text-muted-foreground hover:text-foreground"
-                    }`}
+                      }`}
                   >
                     <Laptop className="h-3.5 w-3.5" />
                     <span>100%</span>
@@ -328,11 +325,10 @@ export default function ExamplePage() {
                     type="button"
                     onClick={() => setViewport("768px")}
                     title="Tablet (768px)"
-                    className={`px-2.5 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${
-                      viewport === "768px"
+                    className={`px-2.5 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${viewport === "768px"
                         ? "bg-muted text-foreground font-semibold"
                         : "text-muted-foreground hover:text-foreground"
-                    }`}
+                      }`}
                   >
                     <Tablet className="h-3.5 w-3.5" />
                     <span>768px</span>
@@ -341,11 +337,10 @@ export default function ExamplePage() {
                     type="button"
                     onClick={() => setViewport("375px")}
                     title="Mobile (375px)"
-                    className={`px-2.5 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${
-                      viewport === "375px"
+                    className={`px-2.5 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${viewport === "375px"
                         ? "bg-muted text-foreground font-semibold"
                         : "text-muted-foreground hover:text-foreground"
-                    }`}
+                      }`}
                   >
                     <Smartphone className="h-3.5 w-3.5" />
                     <span>375px</span>
@@ -388,44 +383,40 @@ export default function ExamplePage() {
                 <button
                   type="button"
                   onClick={() => setCodeTab("tsx")}
-                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors whitespace-nowrap ${
-                    codeTab === "tsx"
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors whitespace-nowrap ${codeTab === "tsx"
                       ? "bg-muted text-foreground font-semibold"
                       : "text-muted-foreground hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   TypeScript (.tsx)
                 </button>
                 <button
                   type="button"
                   onClick={() => setCodeTab("html")}
-                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors whitespace-nowrap ${
-                    codeTab === "html"
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors whitespace-nowrap ${codeTab === "html"
                       ? "bg-muted text-foreground font-semibold"
                       : "text-muted-foreground hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   HTML
                 </button>
                 <button
                   type="button"
                   onClick={() => setCodeTab("css")}
-                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors whitespace-nowrap ${
-                    codeTab === "css"
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors whitespace-nowrap ${codeTab === "css"
                       ? "bg-muted text-foreground font-semibold"
                       : "text-muted-foreground hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   CSS
                 </button>
                 <button
                   type="button"
                   onClick={() => setCodeTab("config")}
-                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors whitespace-nowrap ${
-                    codeTab === "config"
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors whitespace-nowrap ${codeTab === "config"
                       ? "bg-muted text-foreground font-semibold"
                       : "text-muted-foreground hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   Config
                 </button>
@@ -469,7 +460,7 @@ export default function ExamplePage() {
                   className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-200 transition-colors"
                 >
                   <Download className="h-3.5 w-3.5" />
-                  <span>Télécharger</span>
+                  <span>Download</span>
                 </button>
                 <button
                   type="button"
@@ -477,7 +468,7 @@ export default function ExamplePage() {
                     handleCopy(
                       getCodeContent(codeTab),
                       `code-${codeTab}`,
-                      `Code ${codeTab.toUpperCase()} copié !`
+                      `Copied ${codeTab.toUpperCase()} code!`
                     )
                   }
                   className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-200 transition-colors"
@@ -487,7 +478,7 @@ export default function ExamplePage() {
                   ) : (
                     <Copy className="h-3.5 w-3.5" />
                   )}
-                  <span>Copier</span>
+                  <span>Copy</span>
                 </button>
               </div>
             </div>
@@ -513,7 +504,7 @@ export default function ExamplePage() {
                 {component.name}
               </h2>
               <span className="text-xs text-muted-foreground hidden md:inline">
-                (Appuyez sur <kbd className="px-1.5 py-0.5 rounded bg-muted border border-border text-[11px] font-mono">Échap</kbd> pour quitter)
+                (Press <kbd className="px-1.5 py-0.5 rounded bg-muted border border-border text-[11px] font-mono">Esc</kbd> to exit)
               </span>
             </div>
 
@@ -522,33 +513,30 @@ export default function ExamplePage() {
                 <button
                   type="button"
                   onClick={() => setViewport("100%")}
-                  className={`px-2.5 py-1 rounded-md text-xs font-mono ${
-                    viewport === "100%"
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono ${viewport === "100%"
                       ? "bg-muted text-foreground font-semibold"
                       : "text-muted-foreground"
-                  }`}
+                    }`}
                 >
                   100%
                 </button>
                 <button
                   type="button"
                   onClick={() => setViewport("768px")}
-                  className={`px-2.5 py-1 rounded-md text-xs font-mono ${
-                    viewport === "768px"
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono ${viewport === "768px"
                       ? "bg-muted text-foreground font-semibold"
                       : "text-muted-foreground"
-                  }`}
+                    }`}
                 >
                   768px
                 </button>
                 <button
                   type="button"
                   onClick={() => setViewport("375px")}
-                  className={`px-2.5 py-1 rounded-md text-xs font-mono ${
-                    viewport === "375px"
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono ${viewport === "375px"
                       ? "bg-muted text-foreground font-semibold"
                       : "text-muted-foreground"
-                  }`}
+                    }`}
                 >
                   375px
                 </button>
@@ -568,7 +556,7 @@ export default function ExamplePage() {
                 className="px-3 py-1.5 rounded-lg bg-primary text-primary-foreground text-xs font-medium flex items-center gap-1.5 shadow-sm"
               >
                 <Minimize2 className="h-3.5 w-3.5" />
-                <span>Quitter le plein écran</span>
+                <span>Exit Fullscreen</span>
               </button>
             </div>
           </div>
@@ -580,9 +568,9 @@ export default function ExamplePage() {
               className="h-full rounded-2xl border border-border bg-white dark:bg-slate-950 shadow-2xl overflow-hidden transition-all duration-300"
             >
               <iframe
-                title={`Plein écran ${component.name}`}
+                title={`Fullscreen ${component.name}`}
                 srcDoc={`<!DOCTYPE html>
-<html lang="fr" class="${previewDark ? "dark" : ""}">
+<html lang="en" class="${previewDark ? "dark" : ""}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -613,13 +601,13 @@ export default function ExamplePage() {
       )}
 
       {/* 5. Installation Section (Exact shadcn/ui Layout: Command | Manual) */}
-      <section className="pt-16 sm:pt-20 border-t border-border/80 space-y-8">
+      <section className="space-y-8">
         <div className="space-y-1.5">
           <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-foreground">
             Installation
           </h2>
           <p className="text-sm text-muted-foreground">
-            Ajoutez ce composant directement dans votre projet via la ligne de commande ou manuellement.
+            Add this component to your project via CLI or manually.
           </p>
         </div>
 
@@ -628,11 +616,10 @@ export default function ExamplePage() {
           <button
             type="button"
             onClick={() => setInstallTab("cli")}
-            className={`pb-3 -mb-px text-sm font-medium border-b-2 transition-colors flex items-center gap-2 ${
-              installTab === "cli"
+            className={`pb-3 -mb-px text-sm font-medium border-b-2 transition-colors flex items-center gap-2 ${installTab === "cli"
                 ? "border-primary text-foreground font-semibold"
                 : "border-transparent text-muted-foreground hover:text-foreground"
-            }`}
+              }`}
           >
             <Terminal className="h-4 w-4" />
             <span>Command (CLI)</span>
@@ -640,14 +627,13 @@ export default function ExamplePage() {
           <button
             type="button"
             onClick={() => setInstallTab("manual")}
-            className={`pb-3 -mb-px text-sm font-medium border-b-2 transition-colors flex items-center gap-2 ${
-              installTab === "manual"
+            className={`pb-3 -mb-px text-sm font-medium border-b-2 transition-colors flex items-center gap-2 ${installTab === "manual"
                 ? "border-primary text-foreground font-semibold"
                 : "border-transparent text-muted-foreground hover:text-foreground"
-            }`}
+              }`}
           >
             <FileCode2 className="h-4 w-4" />
-            <span>Manual (Fichiers)</span>
+            <span>Manual (Files)</span>
           </button>
         </div>
 
@@ -662,11 +648,10 @@ export default function ExamplePage() {
                       key={m}
                       type="button"
                       onClick={() => setPm(m)}
-                      className={`px-2.5 py-1 rounded-md font-mono text-xs transition-colors ${
-                        pm === m
+                      className={`px-2.5 py-1 rounded-md font-mono text-xs transition-colors ${pm === m
                           ? "bg-neutral-800 text-white font-semibold"
                           : "text-neutral-400 hover:text-neutral-200"
-                      }`}
+                        }`}
                     >
                       {m}
                     </button>
@@ -675,20 +660,20 @@ export default function ExamplePage() {
                 <button
                   type="button"
                   onClick={() =>
-                    handleCopy(cliCommand, "cli-cmd", `Commande ${pm} copiée !`)
+                    handleCopy(cliCommand, "cli-cmd", `Copied ${pm} command!`)
                   }
                   className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-xs font-mono text-neutral-300 hover:text-white transition-colors"
-                  title="Copier la commande"
+                  title="Copy command"
                 >
                   {copiedId === "cli-cmd" ? (
                     <>
                       <Check className="h-3.5 w-3.5 text-emerald-400" />
-                      <span className="text-emerald-400">Copié</span>
+                      <span className="text-emerald-400">Copied</span>
                     </>
                   ) : (
                     <>
                       <Copy className="h-3.5 w-3.5" />
-                      <span>Copier</span>
+                      <span>Copy</span>
                     </>
                   )}
                 </button>
@@ -701,14 +686,14 @@ export default function ExamplePage() {
 
             <div className="p-4 rounded-xl border border-border bg-card/60 text-xs text-muted-foreground space-y-1.5">
               <p className="font-medium text-foreground">
-                Fonctionnement de l&apos;installation automatique :
+                How automatic installation works:
               </p>
               <p className="leading-relaxed">
-                Cette commande installe les dépendances nécessaires et génère automatiquement le fichier source{" "}
+                This command automatically installs necessary dependencies and creates the source file{" "}
                 <code className="font-mono text-foreground px-1.5 py-0.5 rounded bg-muted">
                   components/ui/{component.slug}.tsx
                 </code>{" "}
-                dans votre arborescence Next.js / React avec le typage TypeScript et les styles Tailwind CSS.
+                in your Next.js / React project with TypeScript types and Tailwind CSS styles.
               </p>
             </div>
           </div>
@@ -721,7 +706,7 @@ export default function ExamplePage() {
                   1
                 </span>
                 <p className="text-sm font-medium text-foreground">
-                  Installez les dépendances requises dans votre terminal :
+                  Install the required dependencies in your terminal:
                 </p>
               </div>
 
@@ -734,11 +719,10 @@ export default function ExamplePage() {
                         key={m}
                         type="button"
                         onClick={() => setPm(m)}
-                        className={`px-2.5 py-1 rounded-md font-mono text-xs transition-colors ${
-                          pm === m
+                        className={`px-2.5 py-1 rounded-md font-mono text-xs transition-colors ${pm === m
                             ? "bg-neutral-800 text-white font-semibold"
                             : "text-neutral-400 hover:text-neutral-200"
-                        }`}
+                          }`}
                       >
                         {m}
                       </button>
@@ -750,7 +734,7 @@ export default function ExamplePage() {
                       handleCopy(
                         getDepsCommand(pm),
                         "manual-deps",
-                        `Commande de dépendances copiée !`
+                        `Dependencies install command copied!`
                       )
                     }
                     className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-xs font-mono text-neutral-300 hover:text-white transition-colors"
@@ -758,12 +742,12 @@ export default function ExamplePage() {
                     {copiedId === "manual-deps" ? (
                       <>
                         <Check className="h-3.5 w-3.5 text-emerald-400" />
-                        <span className="text-emerald-400">Copié</span>
+                        <span className="text-emerald-400">Copied</span>
                       </>
                     ) : (
                       <>
                         <Copy className="h-3.5 w-3.5" />
-                        <span>Copier</span>
+                        <span>Copy</span>
                       </>
                     )}
                   </button>
@@ -783,7 +767,7 @@ export default function ExamplePage() {
                     2
                   </span>
                   <p className="text-sm font-medium text-foreground">
-                    Créez le fichier et copiez-y le code source du composant :
+                    Create the component file and paste the source code:
                   </p>
                 </div>
 
@@ -791,22 +775,20 @@ export default function ExamplePage() {
                   <button
                     type="button"
                     onClick={() => setManualFormat("tsx")}
-                    className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors ${
-                      manualFormat === "tsx"
+                    className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors ${manualFormat === "tsx"
                         ? "bg-muted text-foreground font-semibold"
                         : "text-muted-foreground hover:text-foreground"
-                    }`}
+                      }`}
                   >
                     components/ui/{component.slug}.tsx
                   </button>
                   <button
                     type="button"
                     onClick={() => setManualFormat("html")}
-                    className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors ${
-                      manualFormat === "html"
+                    className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors ${manualFormat === "html"
                         ? "bg-muted text-foreground font-semibold"
                         : "text-muted-foreground hover:text-foreground"
-                    }`}
+                      }`}
                   >
                     {component.slug}.html
                   </button>
@@ -841,7 +823,7 @@ export default function ExamplePage() {
                       className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-200 transition-colors"
                     >
                       <Download className="h-3.5 w-3.5" />
-                      <span>Télécharger</span>
+                      <span>Download</span>
                     </button>
 
                     <button
@@ -850,7 +832,7 @@ export default function ExamplePage() {
                         handleCopy(
                           manualFormat === "tsx" ? component.code : exactHtml,
                           "manual-code",
-                          "Code source copié !"
+                          "Source code copied!"
                         )
                       }
                       className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-200 transition-colors"
@@ -858,12 +840,12 @@ export default function ExamplePage() {
                       {copiedId === "manual-code" ? (
                         <>
                           <Check className="h-3.5 w-3.5 text-emerald-400" />
-                          <span className="text-emerald-400">Copié</span>
+                          <span className="text-emerald-400">Copied</span>
                         </>
                       ) : (
                         <>
                           <Copy className="h-3.5 w-3.5" />
-                          <span>Copier</span>
+                          <span>Copy</span>
                         </>
                       )}
                     </button>
@@ -871,9 +853,8 @@ export default function ExamplePage() {
                 </div>
 
                 <div
-                  className={`relative overflow-hidden transition-all ${
-                    codeExpanded ? "max-h-[900px]" : "max-h-[320px]"
-                  }`}
+                  className={`relative overflow-hidden transition-all ${codeExpanded ? "max-h-[900px]" : "max-h-[320px]"
+                    }`}
                 >
                   <pre className="p-4 sm:p-5 font-mono text-xs sm:text-[13px] text-neutral-200 leading-relaxed overflow-x-auto select-all">
                     <code>
@@ -888,7 +869,7 @@ export default function ExamplePage() {
                         onClick={() => setCodeExpanded(true)}
                         className="px-3.5 py-1.5 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-xs font-medium text-white border border-neutral-700 shadow-md transition-colors"
                       >
-                        Afficher tout le code
+                        Expand code
                       </button>
                     </div>
                   )}
@@ -901,7 +882,7 @@ export default function ExamplePage() {
                       onClick={() => setCodeExpanded(false)}
                       className="px-3 py-1 rounded-md text-xs font-mono text-neutral-400 hover:text-white transition-colors"
                     >
-                      Réduire
+                      Collapse
                     </button>
                   </div>
                 )}
@@ -915,7 +896,7 @@ export default function ExamplePage() {
                   3
                 </span>
                 <p className="text-sm font-medium text-foreground">
-                  Importez et affichez le composant dans votre page :
+                  Import and render the component in your page or layout:
                 </p>
               </div>
 
@@ -925,19 +906,19 @@ export default function ExamplePage() {
                   <button
                     type="button"
                     onClick={() =>
-                      handleCopy(fullUsageSnippet, "manual-full-usage", "Exemple d'utilisation copié !")
+                      handleCopy(fullUsageSnippet, "manual-full-usage", "Usage example copied!")
                     }
                     className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-xs font-mono text-neutral-300 hover:text-white transition-colors"
                   >
                     {copiedId === "manual-full-usage" ? (
                       <>
                         <Check className="h-3.5 w-3.5 text-emerald-400" />
-                        <span className="text-emerald-400">Copié</span>
+                        <span className="text-emerald-400">Copied</span>
                       </>
                     ) : (
                       <>
                         <Copy className="h-3.5 w-3.5" />
-                        <span>Copier</span>
+                        <span>Copy</span>
                       </>
                     )}
                   </button>
@@ -952,13 +933,13 @@ export default function ExamplePage() {
       </section>
 
       {/* 6. Usage Section (Exact shadcn/ui Layout: Import + JSX) */}
-      <section className="pt-16 sm:pt-20 border-t border-border/80 space-y-8">
+      <section className="space-y-8">
         <div className="space-y-1.5">
           <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-foreground">
             Usage
           </h2>
           <p className="text-sm text-muted-foreground">
-            Snippets rapides pour importer et instancier ce composant.
+            Quick snippets to import and instantiate this component.
           </p>
         </div>
 
@@ -969,7 +950,7 @@ export default function ExamplePage() {
             <button
               type="button"
               onClick={() =>
-                handleCopy(usageImportCode, "usage-import", "Import copié !")
+                handleCopy(usageImportCode, "usage-import", "Import snippet copied!")
               }
               className="p-1.5 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-300 hover:text-white transition-colors"
             >
@@ -992,7 +973,7 @@ export default function ExamplePage() {
             <button
               type="button"
               onClick={() =>
-                handleCopy(usageRenderCode, "usage-jsx", "JSX copié !")
+                handleCopy(usageRenderCode, "usage-jsx", "JSX snippet copied!")
               }
               className="p-1.5 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-300 hover:text-white transition-colors"
             >
@@ -1011,21 +992,21 @@ export default function ExamplePage() {
 
       {/* 7. Related Components Grid */}
       {relatedComponents.length > 0 && (
-        <section className="pt-16 sm:pt-20 border-t border-border/80 space-y-8">
-          <div className="flex items-center justify-between border-b border-border pb-4">
+        <section className="space-y-8">
+          <div className="flex items-center justify-between">
             <div>
               <h2 className="text-xl sm:text-2xl font-semibold text-foreground">
-                Composants similaires
+                Similar Components
               </h2>
               <p className="text-xs sm:text-sm text-muted-foreground mt-1">
-                Consultez d&apos;autres composants de la catégorie {component.category}.
+                Explore other components in the {component.category} category.
               </p>
             </div>
             <Link
               href="/components"
               className="text-xs font-mono text-primary hover:underline"
             >
-              Voir tout le catalogue →
+              View full catalog →
             </Link>
           </div>
 
@@ -1056,7 +1037,7 @@ export default function ExamplePage() {
                     {rel.description}
                   </span>
                   <span className="text-xs font-medium text-foreground/80 group-hover:text-primary transition-colors flex items-center gap-1 shrink-0">
-                    Consulter <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+                    View component <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
                   </span>
                 </div>
               </Link>

@@ -37,7 +37,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "products-card-grid",
     "kind": "component",
     "name": "Products card grid",
-    "description": "Products card grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Products card grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card"
@@ -101,7 +101,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-grid-section",
     "kind": "component",
     "name": "Card grid section",
-    "description": "Card grid section — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Card grid section — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -167,7 +167,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "products-cards-w-hover-effect",
     "kind": "component",
     "name": "Products cards w/ hover effect",
-    "description": "Products cards w/ hover effect — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Products cards w/ hover effect — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -184,7 +184,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-grid-for-posts",
     "kind": "component",
     "name": "Card grid for posts",
-    "description": "Card grid for posts — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Card grid for posts — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -201,7 +201,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "feature-cards-with-icons-on-top",
     "kind": "component",
     "name": "Feature cards with icons on top",
-    "description": "Feature cards with icons on top — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Feature cards with icons on top — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card"
@@ -217,7 +217,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-grid-for-blog-posts-articles",
     "kind": "component",
     "name": "Card grid for blog Posts / Articles",
-    "description": "Card grid for blog Posts / Articles — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Card grid for blog Posts / Articles — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -250,7 +250,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-card-grid-3",
     "kind": "component",
     "name": "Responsive card grid",
-    "description": "Responsive card grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive card grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -283,7 +283,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "feature-card",
     "kind": "component",
     "name": "Feature Card",
-    "description": "Feature Card — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Feature Card — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card"
@@ -299,7 +299,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-card-with-image",
     "kind": "component",
     "name": "Call to action card with image",
-    "description": "Call to action card with image — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to action card with image — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "card"
@@ -396,7 +396,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "blog-post-card",
     "kind": "component",
     "name": "Blog post card",
-    "description": "Blog post card — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Blog post card — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "card",
@@ -461,7 +461,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "features-cards-section",
     "kind": "component",
     "name": "Features cards section",
-    "description": "Features cards section — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Features cards section — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card"
@@ -493,7 +493,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "pile-carde-scroll",
     "kind": "component",
     "name": "pile carde scroll",
-    "description": "pile carde scroll — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "pile carde scroll — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -558,7 +558,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "section-card",
     "kind": "component",
     "name": "section card",
-    "description": "section card — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "section card — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card",
@@ -738,7 +738,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "product-review-card",
     "kind": "component",
     "name": "Product review card",
-    "description": "Product review card — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Product review card — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "card",
@@ -804,7 +804,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "blog-post-cards",
     "kind": "component",
     "name": "Blog post cards",
-    "description": "Blog post cards — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Blog post cards — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -870,7 +870,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "features-grid",
     "kind": "component",
     "name": "Features grid",
-    "description": "Features grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Features grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -968,7 +968,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-card-grid-5",
     "kind": "component",
     "name": "Responsive Card Grid",
-    "description": "Responsive Card Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive Card Grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -1228,7 +1228,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-feature-card",
     "kind": "component",
     "name": "Responsive Feature Card",
-    "description": "Responsive Feature Card — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive Feature Card — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -1262,7 +1262,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-card-grid",
     "kind": "component",
     "name": "Responsive Card Grid",
-    "description": "Responsive Card Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive Card Grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -1295,7 +1295,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-with-cta",
     "kind": "component",
     "name": "Greeting Card with CTA",
-    "description": "Greeting Card with CTA — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Greeting Card with CTA — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "card",
@@ -1328,7 +1328,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "feature-highlights-cards",
     "kind": "component",
     "name": "Feature Highlights cards",
-    "description": "Feature Highlights cards — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Feature Highlights cards — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -1345,7 +1345,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "elevated-feature-card",
     "kind": "component",
     "name": "Elevated feature card",
-    "description": "Elevated feature card — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Elevated feature card — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card"
@@ -1425,7 +1425,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "clickable-and-responsive-card-grid",
     "kind": "component",
     "name": "Clickable and Responsive Card Grid",
-    "description": "Clickable and Responsive Card Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Clickable and Responsive Card Grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -1555,7 +1555,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "info-cards",
     "kind": "component",
     "name": "Info cards",
-    "description": "Info cards — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Info cards — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -1572,7 +1572,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "producthunt-showcase-section",
     "kind": "component",
     "name": "Product hunt showcase section",
-    "description": "Product hunt showcase section — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Product hunt showcase section — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card"
@@ -1637,7 +1637,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-features-section",
     "kind": "component",
     "name": "Responsive Features Section",
-    "description": "Responsive Features Section — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Responsive Features Section — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card"
@@ -1653,7 +1653,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "product-features-cards",
     "kind": "component",
     "name": "Product features cards",
-    "description": "Product features cards — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Product features cards — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -1702,7 +1702,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sticky-headings",
     "kind": "component",
     "name": "sticky headings",
-    "description": "sticky headings — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "sticky headings — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "card",
@@ -1867,7 +1867,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-4",
     "kind": "component",
     "name": "card",
-    "description": "card — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "card — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -1980,7 +1980,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-with-social-media-share-buttons",
     "kind": "component",
     "name": "Card with social media share buttons",
-    "description": "Card with social media share buttons — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Card with social media share buttons — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "card"
@@ -2141,7 +2141,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "imdb-score-and-votes-box",
     "kind": "component",
     "name": "IMDB score and votes box",
-    "description": "IMDB score and votes box — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "IMDB score and votes box — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "card",
@@ -2547,7 +2547,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "giftcard-grid",
     "kind": "component",
     "name": "Giftcard grid",
-    "description": "Giftcard grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Giftcard grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -2676,7 +2676,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "grid-2",
     "kind": "component",
     "name": "Grid",
-    "description": "Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -2774,7 +2774,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-card-grid-6",
     "kind": "component",
     "name": "Responsive Card Grid",
-    "description": "Responsive Card Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive Card Grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -3004,7 +3004,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-pizza-menu-grid",
     "kind": "component",
     "name": "Animated Pizza Menu Grid",
-    "description": "Animated Pizza Menu Grid — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Animated Pizza Menu Grid — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "card"
@@ -3036,7 +3036,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "grid-3",
     "kind": "component",
     "name": "Grid",
-    "description": "Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -3312,7 +3312,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "product-review-card-2",
     "kind": "component",
     "name": "Product review card",
-    "description": "Product review card — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Product review card — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "card",
@@ -3345,7 +3345,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "feature-card-2",
     "kind": "component",
     "name": "Feature Card",
-    "description": "Feature Card — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Feature Card — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card"
@@ -3377,7 +3377,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-responsive-and-dark-mode-grid",
     "kind": "component",
     "name": "Card responsive and dark mode grid",
-    "description": "Card responsive and dark mode grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Card responsive and dark mode grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card"
@@ -3393,7 +3393,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "grid-card",
     "kind": "component",
     "name": "grid card",
-    "description": "grid card — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "grid card — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -3573,7 +3573,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "amazing-e-commerce-card",
     "kind": "component",
     "name": "Amazing E-commerce card",
-    "description": "Amazing E-commerce card — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Amazing E-commerce card — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -3640,7 +3640,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "team-members-showcase-with-portfolio-backlink",
     "kind": "component",
     "name": "Team Members Showcase with Portfolio Backlink",
-    "description": "Team Members Showcase with Portfolio Backlink — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Team Members Showcase with Portfolio Backlink — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card"
@@ -3672,7 +3672,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "amazing-e-commerce-card-2",
     "kind": "component",
     "name": "Amazing E-commerce card 2",
-    "description": "Amazing E-commerce card 2 — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Amazing E-commerce card 2 — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -3689,7 +3689,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-tailwind-css-listing-cards",
     "kind": "component",
     "name": "Responsive Tailwind CSS Listing Cards",
-    "description": "Responsive Tailwind CSS Listing Cards — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive Tailwind CSS Listing Cards — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -3818,7 +3818,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "feature-card-3",
     "kind": "component",
     "name": "Feature card",
-    "description": "Feature card — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Feature card — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card"
@@ -3946,7 +3946,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-animate",
     "kind": "component",
     "name": "Card animate",
-    "description": "Card animate — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Card animate — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -3979,7 +3979,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "game-character-cards",
     "kind": "component",
     "name": "Game Character Cards",
-    "description": "Game Character Cards — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Game Character Cards — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -4060,7 +4060,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-features-section-2",
     "kind": "component",
     "name": "Responsive Features Section",
-    "description": "Responsive Features Section — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive Features Section — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -4077,7 +4077,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-animate-3",
     "kind": "component",
     "name": "Card animate",
-    "description": "Card animate — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Card animate — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -4191,7 +4191,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-box",
     "kind": "component",
     "name": "Call to Action Box",
-    "description": "Call to Action Box — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to Action Box — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "card",
@@ -4225,7 +4225,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "user-profile-sidebar-menu",
     "kind": "component",
     "name": "User Profile Sidebar Menu",
-    "description": "User Profile Sidebar Menu — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "User Profile Sidebar Menu — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "card"
@@ -4274,7 +4274,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "masonary-cards-effect-using-columns",
     "kind": "component",
     "name": "masonary grids effect for cards using columns",
-    "description": "masonary grids effect for cards using columns — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "masonary grids effect for cards using columns — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -4307,7 +4307,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "get-started-membership-section-responsive-darkmode",
     "kind": "component",
     "name": "Get Started ,Membership section - responsive - darkMode",
-    "description": "Get Started ,Membership section - responsive - darkMode — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Get Started ,Membership section - responsive - darkMode — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "card",
@@ -4422,7 +4422,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "brand-grid-with-hover-effect",
     "kind": "component",
     "name": "Brand Grid with Hover Effect",
-    "description": "Brand Grid with Hover Effect — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Brand Grid with Hover Effect — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -4543,7 +4543,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cards-seaction-services-block",
     "kind": "component",
     "name": "Cards Seaction - Services block",
-    "description": "Cards Seaction - Services block — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Cards Seaction - Services block — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "card"
@@ -4607,7 +4607,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "clean-architectural-blog-news-section-grid",
     "kind": "component",
     "name": "Clean Architectural Blog &amp; News Section Grid",
-    "description": "Clean Architectural Blog &amp; News Section Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Clean Architectural Blog &amp; News Section Grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card"
@@ -4639,7 +4639,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "dynamic-service-showcase-with-interactive-flip-cards",
     "kind": "component",
     "name": "Dynamic Service Showcase with Interactive Flip Cards",
-    "description": "Dynamic Service Showcase with Interactive Flip Cards — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Dynamic Service Showcase with Interactive Flip Cards — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card"
@@ -4655,7 +4655,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "feature-section-cards",
     "kind": "component",
     "name": "Feature Section Cards",
-    "description": "Feature Section Cards — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Feature Section Cards — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card"
@@ -4671,7 +4671,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "image-card-2",
     "kind": "component",
     "name": "Image Card",
-    "description": "Image Card — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Image Card — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "card",
@@ -4704,7 +4704,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "features",
     "kind": "component",
     "name": "Features",
-    "description": "Features — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Features — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card"
@@ -4720,7 +4720,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "e-learning-course-card-with-badge-and-level-indicator",
     "kind": "component",
     "name": "E-Learning Course Card with Badge and Level Indicator",
-    "description": "E-Learning Course Card with Badge and Level Indicator — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "E-Learning Course Card with Badge and Level Indicator — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "card",
@@ -4855,7 +4855,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "feature-card-4",
     "kind": "component",
     "name": "Feature Card",
-    "description": "Feature Card — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Feature Card — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card",
@@ -4940,7 +4940,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hover-grid-card",
     "kind": "component",
     "name": "hover grid card",
-    "description": "hover grid card — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "hover grid card — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -4957,7 +4957,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "premium-high-performance-web-gaming-hub",
     "kind": "component",
     "name": "Premium High-Performance Web Gaming Hub",
-    "description": "Premium High-Performance Web Gaming Hub — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Premium High-Performance Web Gaming Hub — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "card",
@@ -4979,7 +4979,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cards-5",
     "kind": "component",
     "name": "cards",
-    "description": "cards — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "cards — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card",
@@ -5013,7 +5013,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-post-blog",
     "kind": "component",
     "name": "Card post blog",
-    "description": "Card post blog — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Card post blog — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -5046,7 +5046,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "devport",
     "kind": "component",
     "name": "DevPort",
-    "description": "DevPort — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "DevPort — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "card",
@@ -5114,7 +5114,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "pinterest-style-masonry-gallery",
     "kind": "component",
     "name": "Pinterest-Style Masonry Gallery",
-    "description": "Pinterest-Style Masonry Gallery — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Pinterest-Style Masonry Gallery — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -5131,7 +5131,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-30-70",
     "kind": "component",
     "name": "Card 30/70",
-    "description": "Card 30/70 — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Card 30/70 — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -5228,7 +5228,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-section-neon",
     "kind": "component",
     "name": "card section neon",
-    "description": "card section neon — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "card section neon — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "card",
@@ -5410,7 +5410,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "landing-page-6",
     "kind": "component",
     "name": "landing page",
-    "description": "landing page — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "landing page — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "card",
@@ -5508,7 +5508,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "features-3",
     "kind": "component",
     "name": "Features",
-    "description": "Features — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Features — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "card"
@@ -5557,7 +5557,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "enhanced-student-testimonials-section",
     "kind": "component",
     "name": "Enhanced Student Testimonials Section",
-    "description": "Enhanced Student Testimonials Section — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Enhanced Student Testimonials Section — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -5622,7 +5622,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-css-banner-offer",
     "kind": "component",
     "name": "Tailwind css banner offer",
-    "description": "Tailwind css banner offer — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Tailwind css banner offer — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "card",
@@ -5687,7 +5687,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "code-editor-ui",
     "kind": "component",
     "name": "Code Editor UI",
-    "description": "Code Editor UI — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Code Editor UI — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "card",
@@ -5900,7 +5900,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-card-components",
     "kind": "component",
     "name": "Tailwind Card Components",
-    "description": "Tailwind Card Components — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Tailwind Card Components — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -5933,7 +5933,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-kpi",
     "kind": "component",
     "name": "Card KPI",
-    "description": "Card KPI — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Card KPI — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -5982,7 +5982,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "carde-iptplus",
     "kind": "component",
     "name": "carde Iptplus",
-    "description": "carde Iptplus — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "carde Iptplus — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "card",
@@ -6016,7 +6016,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-kpi-2",
     "kind": "component",
     "name": "Card KPI",
-    "description": "Card KPI — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Card KPI — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -6147,7 +6147,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "linear-dinamique-section-by-raul-antonio-de-la-cruz-hernandez-remix-omerlinx-responsive",
     "kind": "component",
     "name": "Linear  dinamique section by Raul antonio de la cruz hernandez  remix omerlinx responsive",
-    "description": "Linear  dinamique section by Raul antonio de la cruz hernandez  remix omerlinx responsive — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Linear  dinamique section by Raul antonio de la cruz hernandez  remix omerlinx responsive — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "card",
@@ -6201,7 +6201,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "omerlinkstream",
     "kind": "component",
     "name": "omerlinkStream",
-    "description": "omerlinkStream — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "omerlinkStream — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "card",
@@ -6726,7 +6726,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-features-section-3",
     "kind": "component",
     "name": "Responsive Features Section",
-    "description": "Responsive Features Section — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive Features Section — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "card",
@@ -7033,7 +7033,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hero-header-with-search-button",
     "kind": "component",
     "name": "Hero section with search",
-    "description": "Hero section with search — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hero section with search — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero"
@@ -7130,7 +7130,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "landing-full-page-header",
     "kind": "component",
     "name": "Full-page header for landing pages",
-    "description": "Full-page header for landing pages — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Full-page header for landing pages — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -7179,7 +7179,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "header-page",
     "kind": "component",
     "name": "Hero",
-    "description": "Hero — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hero — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -7294,7 +7294,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hero-section-15",
     "kind": "component",
     "name": "Hero Section",
-    "description": "Hero Section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hero Section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -7489,7 +7489,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hero-section-3",
     "kind": "component",
     "name": "Hero section",
-    "description": "Hero section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hero section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -7506,7 +7506,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "flour-mill-website-landing-page",
     "kind": "component",
     "name": "Flour mill website landing page template",
-    "description": "Flour mill website landing page template — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Flour mill website landing page template — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -7524,7 +7524,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sky-stars-sun-and-moon-illustrations",
     "kind": "component",
     "name": "Stars: Sun and Moon Illustrations",
-    "description": "Stars: Sun and Moon Illustrations — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Stars: Sun and Moon Illustrations — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -7654,7 +7654,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hero-w-navbar",
     "kind": "component",
     "name": "Hero w/ navbar",
-    "description": "Hero w/ navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hero w/ navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -7803,7 +7803,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "yoga-coach-hero-section",
     "kind": "component",
     "name": "Yoga Coach Hero Section",
-    "description": "Yoga Coach Hero Section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Yoga Coach Hero Section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -7820,7 +7820,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "portfolio-hero-section-3",
     "kind": "component",
     "name": "Portfolio Hero Section 3",
-    "description": "Portfolio Hero Section 3 — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Portfolio Hero Section 3 — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -7904,7 +7904,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "impressive-portfolio-hero-section",
     "kind": "component",
     "name": "Portfolio Hero Section 1",
-    "description": "Portfolio Hero Section 1 — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Portfolio Hero Section 1 — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8035,7 +8035,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-hero-section",
     "kind": "component",
     "name": "Tailwind Hero Section",
-    "description": "Tailwind Hero Section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Tailwind Hero Section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8102,7 +8102,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "beautifull-web-page",
     "kind": "component",
     "name": "beautifull web page",
-    "description": "beautifull web page — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "beautifull web page — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8235,7 +8235,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "mobil-navigation",
     "kind": "component",
     "name": "mobil navigation",
-    "description": "mobil navigation — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "mobil navigation — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8269,7 +8269,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "flower",
     "kind": "component",
     "name": "flower",
-    "description": "flower — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "flower — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8303,7 +8303,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "strawbery",
     "kind": "component",
     "name": "strawbery",
-    "description": "strawbery — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "strawbery — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8467,7 +8467,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "modern-page",
     "kind": "component",
     "name": "Modern page",
-    "description": "Modern page — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Modern page — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8583,7 +8583,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "portfolio-hero-section-4-2",
     "kind": "component",
     "name": "Portfolio Hero Section 5",
-    "description": "Portfolio Hero Section 5 — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Portfolio Hero Section 5 — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8633,7 +8633,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "creative-hero-section",
     "kind": "component",
     "name": "Creative Hero Section",
-    "description": "Creative Hero Section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Creative Hero Section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8700,7 +8700,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hero-simple",
     "kind": "component",
     "name": "Hero simple",
-    "description": "Hero simple — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hero simple — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8833,7 +8833,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "home",
     "kind": "component",
     "name": "Home",
-    "description": "Home — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Home — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8851,7 +8851,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "home-3",
     "kind": "component",
     "name": "home",
-    "description": "home — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "home — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8869,7 +8869,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "portifolio",
     "kind": "component",
     "name": "portifolio",
-    "description": "portifolio — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "portifolio — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8887,7 +8887,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hero-navigation-2",
     "kind": "component",
     "name": "Hero $ Navigation",
-    "description": "Hero $ Navigation — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hero $ Navigation — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero"
@@ -8919,7 +8919,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "garden",
     "kind": "component",
     "name": "Garden",
-    "description": "Garden — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Garden — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -8936,7 +8936,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "life-tree",
     "kind": "component",
     "name": "Life Tree",
-    "description": "Life Tree — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Life Tree — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -9067,7 +9067,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-header-and-hero-section-design",
     "kind": "component",
     "name": "Responsive Header and Hero Section Design",
-    "description": "Responsive Header and Hero Section Design — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Header and Hero Section Design — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -9084,7 +9084,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "pasta",
     "kind": "component",
     "name": "pasta",
-    "description": "pasta — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "pasta — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -9118,7 +9118,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "home-page-3",
     "kind": "component",
     "name": "home page",
-    "description": "home page — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "home page — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -9151,7 +9151,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tradition-music",
     "kind": "component",
     "name": "tradition music",
-    "description": "tradition music — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "tradition music — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -9410,7 +9410,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "less-is-more",
     "kind": "component",
     "name": "less is more",
-    "description": "less is more — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "less is more — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -9477,7 +9477,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "app-hero-section-with-header",
     "kind": "component",
     "name": "App Hero Section With header",
-    "description": "App Hero Section With header — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "App Hero Section With header — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -9494,7 +9494,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "nft-header-with-hero",
     "kind": "component",
     "name": "NFT Header with Hero",
-    "description": "NFT Header with Hero — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "NFT Header with Hero — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -9576,7 +9576,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "heade-with-hero-section",
     "kind": "component",
     "name": "Heade With Hero Section",
-    "description": "Heade With Hero Section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Heade With Hero Section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -9625,7 +9625,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "joker",
     "kind": "component",
     "name": "joker",
-    "description": "joker — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "joker — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -9690,7 +9690,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "real-estate-website-hero-section",
     "kind": "component",
     "name": "Real Estate Website • Hero Section",
-    "description": "Real Estate Website • Hero Section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Real Estate Website • Hero Section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -9855,7 +9855,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "template-hero",
     "kind": "component",
     "name": "template hero",
-    "description": "template hero — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "template hero — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -9906,7 +9906,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "e-commerce-website-landing-page-template-with-tailwind-css",
     "kind": "component",
     "name": "e-commerce website landing page template with Tailwind CSS.",
-    "description": "e-commerce website landing page template with Tailwind CSS. — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "e-commerce website landing page template with Tailwind CSS. — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -10042,7 +10042,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hero-modern",
     "kind": "component",
     "name": "hero modern",
-    "description": "hero modern — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "hero modern — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -10093,7 +10093,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hero-template-5",
     "kind": "component",
     "name": "hero template",
-    "description": "hero template — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "hero template — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -10111,7 +10111,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tinderclone-by-omerlinks",
     "kind": "component",
     "name": "tinderclone By omerlinks",
-    "description": "tinderclone By omerlinks — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "tinderclone By omerlinks — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -10227,7 +10227,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "intelligent-ai-tools-built-to-help",
     "kind": "component",
     "name": "Intelligent AI tools built to help.",
-    "description": "Intelligent AI tools built to help. — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Intelligent AI tools built to help. — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -10359,7 +10359,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "reader-ai-your-ai-powered-knowledge-thinking-system",
     "kind": "component",
     "name": "Reader AI – Your AI-Powered Knowledge &amp; Thinking System",
-    "description": "Reader AI – Your AI-Powered Knowledge &amp; Thinking System — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Reader AI – Your AI-Powered Knowledge &amp; Thinking System — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "hero",
@@ -13679,7 +13679,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "get-the-app-section",
     "kind": "component",
     "name": "Get the app section",
-    "description": "Get the app section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Get the app section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13695,7 +13695,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-with-a-gradient-border-using-tailwind-css",
     "kind": "component",
     "name": "Button with a gradient border using Tailwind CSS",
-    "description": "Button with a gradient border using Tailwind CSS — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button with a gradient border using Tailwind CSS — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13711,7 +13711,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buttons-2",
     "kind": "component",
     "name": "Buttons!",
-    "description": "Buttons! — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Buttons! — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13727,7 +13727,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "simple-btn-animation",
     "kind": "component",
     "name": "Simple Btn animation",
-    "description": "Simple Btn animation — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Simple Btn animation — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button",
@@ -13760,7 +13760,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "menu-button",
     "kind": "component",
     "name": "Menu button",
-    "description": "Menu button — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Menu button — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "button"
@@ -13776,7 +13776,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hamburger-menu-with-hover-effect",
     "kind": "component",
     "name": "Hamburger menu button with hover effect",
-    "description": "Hamburger menu button with hover effect — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hamburger menu button with hover effect — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "button"
@@ -13792,7 +13792,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "back-to-top-button",
     "kind": "component",
     "name": "Back to top button",
-    "description": "Back to top button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Back to top button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13808,7 +13808,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "floating-feedback-button",
     "kind": "component",
     "name": "Floating feedback button",
-    "description": "Floating feedback button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Floating feedback button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13824,7 +13824,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "glowing-gradient-button",
     "kind": "component",
     "name": "Glowing gradient button",
-    "description": "Glowing gradient button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Glowing gradient button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13840,7 +13840,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "download-on-the-app-store-light-button",
     "kind": "component",
     "name": "Download on the App Store light button",
-    "description": "Download on the App Store light button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Download on the App Store light button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13856,7 +13856,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "gradient-button-3",
     "kind": "component",
     "name": "gradient button",
-    "description": "gradient button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "gradient button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13872,7 +13872,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buttons-set",
     "kind": "component",
     "name": "Buttons set",
-    "description": "Buttons set — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Buttons set — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13888,7 +13888,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-with-bouncing-animation",
     "kind": "component",
     "name": "Button with Bouncing Animation",
-    "description": "Button with Bouncing Animation — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button with Bouncing Animation — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13904,7 +13904,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hamburger-menu-with-openclose-animation",
     "kind": "component",
     "name": "Hamburger menu button with open/close animation",
-    "description": "Hamburger menu button with open/close animation — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hamburger menu button with open/close animation — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "button"
@@ -13920,7 +13920,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-with-shadow",
     "kind": "component",
     "name": "Button with shadow",
-    "description": "Button with shadow — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button with shadow — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13936,7 +13936,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "background-gradient-changing-button",
     "kind": "component",
     "name": "Background gradient changing button",
-    "description": "Background gradient changing button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Background gradient changing button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13952,7 +13952,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "border-bottom-button",
     "kind": "component",
     "name": "Border bottom button",
-    "description": "Border bottom button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Border bottom button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13968,7 +13968,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buttons-with-shadow",
     "kind": "component",
     "name": "Buttons with shadow",
-    "description": "Buttons with shadow — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Buttons with shadow — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -13984,7 +13984,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buttons-variations",
     "kind": "component",
     "name": "Buttons variations",
-    "description": "Buttons variations — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Buttons variations — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14000,7 +14000,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buttons-examples",
     "kind": "component",
     "name": "Buttons examples",
-    "description": "Buttons examples — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Buttons examples — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14016,7 +14016,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "botton-hover",
     "kind": "component",
     "name": "Botton hover",
-    "description": "Botton hover — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Botton hover — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14032,7 +14032,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "corner-framed-hover-transition-buttons",
     "kind": "component",
     "name": "Corner‑Framed Hover Transition Buttons",
-    "description": "Corner‑Framed Hover Transition Buttons — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Corner‑Framed Hover Transition Buttons — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14048,7 +14048,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buttons-in-pair-2",
     "kind": "component",
     "name": "Buttons in pair",
-    "description": "Buttons in pair — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Buttons in pair — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14064,7 +14064,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "background-gradient-button-with-hover-effects",
     "kind": "component",
     "name": "Background Gradient Button with Hover Effects",
-    "description": "Background Gradient Button with Hover Effects — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Background Gradient Button with Hover Effects — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14080,7 +14080,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-button-with-rotating-light-beam",
     "kind": "component",
     "name": "Animated button with rotating light beam",
-    "description": "Animated button with rotating light beam — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Animated button with rotating light beam — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14096,7 +14096,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "glowing-gradient-button-2",
     "kind": "component",
     "name": "Glowing gradient button",
-    "description": "Glowing gradient button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Glowing gradient button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14112,7 +14112,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "dark-mode-toggle-button",
     "kind": "component",
     "name": "Dark mode toggle button",
-    "description": "Dark mode toggle button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Dark mode toggle button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14128,7 +14128,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-4",
     "kind": "component",
     "name": "button",
-    "description": "button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14144,7 +14144,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-8",
     "kind": "component",
     "name": "Button",
-    "description": "Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14160,7 +14160,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buttons-with-icon",
     "kind": "component",
     "name": "Buttons with Icon",
-    "description": "Buttons with Icon — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Buttons with Icon — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14176,7 +14176,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "color-changing-button",
     "kind": "component",
     "name": "Color changing button",
-    "description": "Color changing button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Color changing button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14192,7 +14192,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "google-style-button",
     "kind": "component",
     "name": "Google style Button",
-    "description": "Google style Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Google style Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14208,7 +14208,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "neon-button-purple",
     "kind": "component",
     "name": "neon-button-purple",
-    "description": "neon-button-purple — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "neon-button-purple — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14224,7 +14224,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-5",
     "kind": "component",
     "name": "Button",
-    "description": "Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14240,7 +14240,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-group",
     "kind": "component",
     "name": "Button group",
-    "description": "Button group — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button group — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14256,7 +14256,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-with-loader",
     "kind": "component",
     "name": "Button With Loader",
-    "description": "Button With Loader — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button With Loader — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14272,7 +14272,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-with-hover-to-button-shadow",
     "kind": "component",
     "name": "Button with hover to button shadow",
-    "description": "Button with hover to button shadow — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button with hover to button shadow — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14288,7 +14288,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "simple-pagination",
     "kind": "component",
     "name": "Simple Pagination",
-    "description": "Simple Pagination — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Simple Pagination — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14304,7 +14304,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-group-2",
     "kind": "component",
     "name": "Button Group",
-    "description": "Button Group — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button Group — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14320,7 +14320,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "disabled-button-active-button",
     "kind": "component",
     "name": "Disabled Button &amp; Active Button",
-    "description": "Disabled Button &amp; Active Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Disabled Button &amp; Active Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14368,7 +14368,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "gradient-button",
     "kind": "component",
     "name": "Gradient Button",
-    "description": "Gradient Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Gradient Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14384,7 +14384,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "color-changing-gradient-button",
     "kind": "component",
     "name": "Color Changing Gradient Button",
-    "description": "Color Changing Gradient Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Color Changing Gradient Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14400,7 +14400,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buy-me-a-coffee-floating-button",
     "kind": "component",
     "name": "Buy me a coffee floating button",
-    "description": "Buy me a coffee floating button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Buy me a coffee floating button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14416,7 +14416,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "join-now-button",
     "kind": "component",
     "name": "Join now button",
-    "description": "Join now button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Join now button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14432,7 +14432,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "previous-next-buttons",
     "kind": "component",
     "name": "Previous Next Buttons",
-    "description": "Previous Next Buttons — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Previous Next Buttons — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14448,7 +14448,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sign-in-with-github-button",
     "kind": "component",
     "name": "Sign in with GitHub Button",
-    "description": "Sign in with GitHub Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Sign in with GitHub Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14464,7 +14464,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "thumbs-up-and-thumbs-down-buttons",
     "kind": "component",
     "name": "Thumbs up and thumbs down buttons",
-    "description": "Thumbs up and thumbs down buttons — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Thumbs up and thumbs down buttons — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14480,7 +14480,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card",
     "kind": "component",
     "name": "Card",
-    "description": "Card — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Card — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14496,7 +14496,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-group-7",
     "kind": "component",
     "name": "Button group",
-    "description": "Button group — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button group — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14512,7 +14512,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "continue-with-google-button",
     "kind": "component",
     "name": "Continue with Google button",
-    "description": "Continue with Google button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Continue with Google button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14528,7 +14528,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-button",
     "kind": "component",
     "name": "Animated button",
-    "description": "Animated button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Animated button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14544,7 +14544,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-pair",
     "kind": "component",
     "name": "Button pair",
-    "description": "Button pair — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button pair — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14560,7 +14560,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "github-star-button",
     "kind": "component",
     "name": "Github star button",
-    "description": "Github star button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Github star button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14576,7 +14576,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "floating-buttons-examples",
     "kind": "component",
     "name": "Floating buttons examples",
-    "description": "Floating buttons examples — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Floating buttons examples — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14592,7 +14592,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "old-style-button-designs",
     "kind": "component",
     "name": "Old style Button Designs",
-    "description": "Old style Button Designs — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Old style Button Designs — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14608,7 +14608,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "app-store-button",
     "kind": "component",
     "name": "App Store Button",
-    "description": "App Store Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "App Store Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14624,7 +14624,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sign-up-with-google-button",
     "kind": "component",
     "name": "Sign up with google button",
-    "description": "Sign up with google button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Sign up with google button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14640,7 +14640,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sign-in-with-google-button",
     "kind": "component",
     "name": "Sign in with boogle button",
-    "description": "Sign in with boogle button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Sign in with boogle button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14656,7 +14656,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "github-stars-button",
     "kind": "component",
     "name": "Github stars button",
-    "description": "Github stars button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Github stars button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14672,7 +14672,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "youtube-subscription-button",
     "kind": "component",
     "name": "YouTube subscription button",
-    "description": "YouTube subscription button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "YouTube subscription button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14688,7 +14688,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tab-menu",
     "kind": "component",
     "name": "Tab Menu",
-    "description": "Tab Menu — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Tab Menu — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "button"
@@ -14704,7 +14704,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action",
     "kind": "component",
     "name": "Call to Action (for app stores)",
-    "description": "Call to Action (for app stores) — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to Action (for app stores) — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14720,7 +14720,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "store-buttons-applegoogle-play",
     "kind": "component",
     "name": "Store buttons (apple,google play)",
-    "description": "Store buttons (apple,google play) — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Store buttons (apple,google play) — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14736,7 +14736,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "playstore-button",
     "kind": "component",
     "name": "Playstore Button",
-    "description": "Playstore Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Playstore Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14752,7 +14752,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sign-in-with-facebook-button",
     "kind": "component",
     "name": "Sign in with facebook button",
-    "description": "Sign in with facebook button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Sign in with facebook button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14768,7 +14768,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "payment-button",
     "kind": "component",
     "name": "Payment Button",
-    "description": "Payment Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Payment Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14784,7 +14784,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "social-share",
     "kind": "component",
     "name": "Social Share",
-    "description": "Social Share — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Social Share — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14800,7 +14800,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-different-button-styles",
     "kind": "component",
     "name": "Tailwind Different Button Styles",
-    "description": "Tailwind Different Button Styles — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Tailwind Different Button Styles — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14832,7 +14832,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "simple-buttons-for-links",
     "kind": "component",
     "name": "Simple buttons for links",
-    "description": "Simple buttons for links — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Simple buttons for links — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14848,7 +14848,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hover-button",
     "kind": "component",
     "name": "Hover Button",
-    "description": "Hover Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Hover Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14864,7 +14864,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "social-buttons",
     "kind": "component",
     "name": "Social buttons",
-    "description": "Social buttons — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Social buttons — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14880,7 +14880,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buttons-group",
     "kind": "component",
     "name": "buttons group",
-    "description": "buttons group — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "buttons group — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14896,7 +14896,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "download-on-the-app-store-dark-button",
     "kind": "component",
     "name": "Download on the App Store dark button",
-    "description": "Download on the App Store dark button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Download on the App Store dark button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14912,7 +14912,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sign-in-with-buttons",
     "kind": "component",
     "name": "Sign in with buttons",
-    "description": "Sign in with buttons — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Sign in with buttons — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14928,7 +14928,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-css-button-wavy-button",
     "kind": "component",
     "name": "Tailwind CSS Button (Wavy Button)",
-    "description": "Tailwind CSS Button (Wavy Button) — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Tailwind CSS Button (Wavy Button) — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button",
@@ -14945,7 +14945,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-7",
     "kind": "component",
     "name": "Button",
-    "description": "Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14961,7 +14961,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "phone-simulator-with-built-in-car-racing-game-and-play",
     "kind": "component",
     "name": "Phone Simulator with Built-in Car Racing Game and Play.",
-    "description": "Phone Simulator with Built-in Car Racing Game and Play. — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Phone Simulator with Built-in Car Racing Game and Play. — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14977,7 +14977,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "shadcn-button",
     "kind": "component",
     "name": "shadcn Button",
-    "description": "shadcn Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "shadcn Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -14993,7 +14993,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "rgb-border-button",
     "kind": "component",
     "name": "rgb border button",
-    "description": "rgb border button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "rgb border button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15009,7 +15009,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "neon-morphism-button",
     "kind": "component",
     "name": "Neon Morphism button",
-    "description": "Neon Morphism button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Neon Morphism button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15025,7 +15025,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-2",
     "kind": "component",
     "name": "Button",
-    "description": "Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15041,7 +15041,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "download-on-the-mac-app-store-dark-button",
     "kind": "component",
     "name": "Download on the Mac App Store dark button",
-    "description": "Download on the Mac App Store dark button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Download on the Mac App Store dark button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15057,7 +15057,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "floating-pus-button",
     "kind": "component",
     "name": "Floating pus button",
-    "description": "Floating pus button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Floating pus button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15073,7 +15073,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button",
     "kind": "component",
     "name": "Button",
-    "description": "Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15089,7 +15089,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "neomorphism-button",
     "kind": "component",
     "name": "Neomorphism button",
-    "description": "Neomorphism button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Neomorphism button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15105,7 +15105,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "listen-on-spotify-apple-music-button",
     "kind": "component",
     "name": "Listen on Spotify/Apple Music Button",
-    "description": "Listen on Spotify/Apple Music Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Listen on Spotify/Apple Music Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15121,7 +15121,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "exapnd-and-collapse-button-for-large-content-without-javascript",
     "kind": "component",
     "name": "Exapnd and collapse button for large content without javascript",
-    "description": "Exapnd and collapse button for large content without javascript — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Exapnd and collapse button for large content without javascript — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15137,7 +15137,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "exapnd-and-collaps-button-for-large-content",
     "kind": "component",
     "name": "Exapnd and collapse button for large content",
-    "description": "Exapnd and collapse button for large content — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Exapnd and collapse button for large content — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15153,7 +15153,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-button-2",
     "kind": "component",
     "name": "Animated Button",
-    "description": "Animated Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Animated Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15169,7 +15169,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "motfx-loading",
     "kind": "component",
     "name": "Motfx loading",
-    "description": "Motfx loading — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Motfx loading — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15185,7 +15185,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-3",
     "kind": "component",
     "name": "Button",
-    "description": "Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15201,7 +15201,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "elevated-buton",
     "kind": "component",
     "name": "Elevated Buton",
-    "description": "Elevated Buton — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Elevated Buton — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15217,7 +15217,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "simple-btn",
     "kind": "component",
     "name": "Simple Btn",
-    "description": "Simple Btn — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Simple Btn — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15249,7 +15249,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "primary-secondary-button-pair",
     "kind": "component",
     "name": "Primary secondary button pair",
-    "description": "Primary secondary button pair — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Primary secondary button pair — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15265,7 +15265,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "custom-carosel",
     "kind": "component",
     "name": "Custom Carosel",
-    "description": "Custom Carosel — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Custom Carosel — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15281,7 +15281,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "canli-yayin-butonu",
     "kind": "component",
     "name": "Canlı Yayın Butonu",
-    "description": "Canlı Yayın Butonu — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Canlı Yayın Butonu — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15297,7 +15297,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "plug-and-play-button-animated-gradient-background",
     "kind": "component",
     "name": "Plug and Play Button - Animated gradient background",
-    "description": "Plug and Play Button - Animated gradient background — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Plug and Play Button - Animated gradient background — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15313,7 +15313,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-dropdown",
     "kind": "component",
     "name": "Button Dropdown",
-    "description": "Button Dropdown — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button Dropdown — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15329,7 +15329,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "beautiful-buttons-set",
     "kind": "component",
     "name": "beautiful buttons set",
-    "description": "beautiful buttons set — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "beautiful buttons set — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15345,7 +15345,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "applications-showcase",
     "kind": "component",
     "name": "Applications Showcase",
-    "description": "Applications Showcase — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Applications Showcase — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button",
@@ -15378,7 +15378,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "disabled-button-active-button-2",
     "kind": "component",
     "name": "Disabled Button &amp; Active Button",
-    "description": "Disabled Button &amp; Active Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Disabled Button &amp; Active Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15394,7 +15394,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "interactive-morphing-play-pause-button",
     "kind": "component",
     "name": "Interactive &quot;Morphing&quot; Play/Pause Button",
-    "description": "Interactive &quot;Morphing&quot; Play/Pause Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Interactive &quot;Morphing&quot; Play/Pause Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15426,7 +15426,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tilted-button-on-hover",
     "kind": "component",
     "name": "Tilted button on hover.",
-    "description": "Tilted button on hover. — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Tilted button on hover. — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button",
@@ -15443,7 +15443,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buttons",
     "kind": "component",
     "name": "Buttons",
-    "description": "Buttons — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Buttons — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15459,7 +15459,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "futuristic-button",
     "kind": "component",
     "name": "futuristic button",
-    "description": "futuristic button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "futuristic button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15475,7 +15475,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "ripple-button-2",
     "kind": "component",
     "name": "Ripple Button",
-    "description": "Ripple Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Ripple Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15491,7 +15491,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-with-hover-animation",
     "kind": "component",
     "name": "Button with hover animation",
-    "description": "Button with hover animation — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button with hover animation — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15507,7 +15507,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "interactive-toggle-switch-with-smooth-animation",
     "kind": "component",
     "name": "Interactive Toggle Switch with Smooth Animation",
-    "description": "Interactive Toggle Switch with Smooth Animation — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Interactive Toggle Switch with Smooth Animation — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15523,7 +15523,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "bubblegum-button",
     "kind": "component",
     "name": "Bubblegum Button",
-    "description": "Bubblegum Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Bubblegum Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button",
@@ -15540,7 +15540,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "elegant-buttons",
     "kind": "component",
     "name": "Elegant Buttons",
-    "description": "Elegant Buttons — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Elegant Buttons — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15556,7 +15556,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "home-page-2",
     "kind": "component",
     "name": "Home page 2",
-    "description": "Home page 2 — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Home page 2 — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15572,7 +15572,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sleek-modern-button-with-hover-effect-tailwind-css",
     "kind": "component",
     "name": "🔥 Sleek &amp; Modern Button with Hover Effect – Tailwind CSS",
-    "description": "🔥 Sleek &amp; Modern Button with Hover Effect – Tailwind CSS — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "🔥 Sleek &amp; Modern Button with Hover Effect – Tailwind CSS — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15588,7 +15588,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-animation",
     "kind": "component",
     "name": "button animation",
-    "description": "button animation — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "button animation — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15604,7 +15604,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "componentes-para-mi-empresa",
     "kind": "component",
     "name": "Componentes para mi empresa",
-    "description": "Componentes para mi empresa — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Componentes para mi empresa — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15620,7 +15620,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tilted-button-on-hover-2",
     "kind": "component",
     "name": "Tilted button on hover.",
-    "description": "Tilted button on hover. — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Tilted button on hover. — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button",
@@ -15637,7 +15637,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "lots-of-button-examples",
     "kind": "component",
     "name": "Lots of button examples",
-    "description": "Lots of button examples — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Lots of button examples — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15653,7 +15653,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "floating-go-to-top-button-with-tailwind-css",
     "kind": "component",
     "name": "Floating &quot;Go to Top&quot; Button with Tailwind CSS",
-    "description": "Floating &quot;Go to Top&quot; Button with Tailwind CSS — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Floating &quot;Go to Top&quot; Button with Tailwind CSS — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15669,7 +15669,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "material-3-buttons-light",
     "kind": "component",
     "name": "Material 3 Buttons [Light]",
-    "description": "Material 3 Buttons [Light] — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Material 3 Buttons [Light] — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15685,7 +15685,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "modern-portifolio",
     "kind": "component",
     "name": "modern portifolio",
-    "description": "modern portifolio — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "modern portifolio — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "button",
@@ -15702,7 +15702,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buttons-htmlwind",
     "kind": "component",
     "name": "Buttons - Htmlwind",
-    "description": "Buttons - Htmlwind — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Buttons - Htmlwind — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15718,7 +15718,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "5-different-style-of-button",
     "kind": "component",
     "name": "5 Different Style of Button",
-    "description": "5 Different Style of Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "5 Different Style of Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15734,7 +15734,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sidebar-elastico",
     "kind": "component",
     "name": "sidebar elastico",
-    "description": "sidebar elastico — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "sidebar elastico — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15750,7 +15750,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-search-bar",
     "kind": "component",
     "name": "Animated Search bar",
-    "description": "Animated Search bar — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Animated Search bar — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15766,7 +15766,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-with-hover-effect",
     "kind": "component",
     "name": "Button with hover effect",
-    "description": "Button with hover effect — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Button with hover effect — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15782,7 +15782,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "scroll-abajo",
     "kind": "component",
     "name": "SCROLL ABAJO",
-    "description": "SCROLL ABAJO — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "SCROLL ABAJO — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15798,7 +15798,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "chair",
     "kind": "component",
     "name": "chair",
-    "description": "chair — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "chair — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "button",
@@ -15815,7 +15815,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "game-changer",
     "kind": "component",
     "name": "Game changer",
-    "description": "Game changer — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Game changer — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "button",
@@ -15832,7 +15832,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-gradient-button-component",
     "kind": "component",
     "name": "Animated Gradient Button Component",
-    "description": "Animated Gradient Button Component — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Animated Gradient Button Component — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button",
@@ -15849,7 +15849,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "free-animated-gradient-glow-button-with-tailwind-css-open-source-ui-component",
     "kind": "component",
     "name": "Free Animated Gradient Glow Button with Tailwind CSS",
-    "description": "Free Animated Gradient Glow Button with Tailwind CSS — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Free Animated Gradient Glow Button with Tailwind CSS — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button",
@@ -15882,7 +15882,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "premium-button-collection-with-12-unique-animations",
     "kind": "component",
     "name": "Premium Button Collection with 12 Unique Animations",
-    "description": "Premium Button Collection with 12 Unique Animations — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Premium Button Collection with 12 Unique Animations — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15898,7 +15898,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "boutons-ios-26",
     "kind": "component",
     "name": "Boutons iOS 26",
-    "description": "Boutons iOS 26 — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Boutons iOS 26 — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15914,7 +15914,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "download-app-buttons",
     "kind": "component",
     "name": "Download App Buttons",
-    "description": "Download App Buttons — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Download App Buttons — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15930,7 +15930,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-toggle-button",
     "kind": "component",
     "name": "Animated Light/Dark Mode Toggle",
-    "description": "Animated Light/Dark Mode Toggle — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Animated Light/Dark Mode Toggle — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15946,7 +15946,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "neo-brutalism-ui-button-collection-bold-css-button-styles-withtailwind-css",
     "kind": "component",
     "name": "Neo-Brutalism UI Button Collection - Bold CSS Button Styles with Tailwind CSS",
-    "description": "Neo-Brutalism UI Button Collection - Bold CSS Button Styles with Tailwind CSS — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Neo-Brutalism UI Button Collection - Bold CSS Button Styles with Tailwind CSS — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15962,7 +15962,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-6",
     "kind": "component",
     "name": "button",
-    "description": "button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15978,7 +15978,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-neon-purple-super",
     "kind": "component",
     "name": "button-neon-purple-super",
-    "description": "button-neon-purple-super — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "button-neon-purple-super — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -15994,7 +15994,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buttons-3",
     "kind": "component",
     "name": "Callouts and CTAs",
-    "description": "Callouts and CTAs — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Callouts and CTAs — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -16010,7 +16010,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buuton",
     "kind": "component",
     "name": "Buuton",
-    "description": "Buuton — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Buuton — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -16026,7 +16026,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-9",
     "kind": "component",
     "name": "button",
-    "description": "button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -16042,7 +16042,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "ultimate-tailwind-css-buttons",
     "kind": "component",
     "name": "Ultimate Tailwind CSS Buttons",
-    "description": "Ultimate Tailwind CSS Buttons — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Ultimate Tailwind CSS Buttons — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -16058,7 +16058,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "button-10",
     "kind": "component",
     "name": "button",
-    "description": "button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button"
@@ -16074,7 +16074,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-products-grid",
     "kind": "component",
     "name": "Responsive products grid",
-    "description": "Responsive products grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive products grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16090,7 +16090,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-image-gallery",
     "kind": "component",
     "name": "Tailwind image gallery",
-    "description": "Tailwind image gallery — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Tailwind image gallery — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16106,7 +16106,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "masonry-grid",
     "kind": "component",
     "name": "Masonry Grid",
-    "description": "Masonry Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Masonry Grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16122,7 +16122,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "feature-showcase",
     "kind": "component",
     "name": "Feature Showcase",
-    "description": "Feature Showcase — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Feature Showcase — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16138,7 +16138,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-card-grid-with-images",
     "kind": "component",
     "name": "Responsive Card Grid with images",
-    "description": "Responsive Card Grid with images — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive Card Grid with images — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16154,7 +16154,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "customer-testimonies-grid",
     "kind": "component",
     "name": "Customer testimonies grid",
-    "description": "Customer testimonies grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Customer testimonies grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16170,7 +16170,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "feature-icon-grid",
     "kind": "component",
     "name": "Feature / Icon grid",
-    "description": "Feature / Icon grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Feature / Icon grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16186,7 +16186,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-grid",
     "kind": "component",
     "name": "Card grid",
-    "description": "Card grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Card grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16202,7 +16202,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "verticle-card-grid",
     "kind": "component",
     "name": "Verticle card grid",
-    "description": "Verticle card grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Verticle card grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16218,7 +16218,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-grid-for-showing-features",
     "kind": "component",
     "name": "Card grid for showing features",
-    "description": "Card grid for showing features — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Card grid for showing features — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16234,7 +16234,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "features-section-2",
     "kind": "component",
     "name": "Features section",
-    "description": "Features section — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Features section — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16250,7 +16250,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "data-metrics-showcase",
     "kind": "component",
     "name": "Data Metrics Showcase",
-    "description": "Data Metrics Showcase — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Data Metrics Showcase — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16266,7 +16266,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tweets-showcase-grid",
     "kind": "component",
     "name": "Tweets showcase grid",
-    "description": "Tweets showcase grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Tweets showcase grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16282,7 +16282,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "feature-display-card-grid-layout",
     "kind": "component",
     "name": "Feature display cards (grid layout)",
-    "description": "Feature display cards (grid layout) — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Feature display cards (grid layout) — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16298,7 +16298,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "engineering-project-dashboard",
     "kind": "component",
     "name": "Engineering Project Dashboard",
-    "description": "Engineering Project Dashboard — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Engineering Project Dashboard — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "button",
@@ -16315,7 +16315,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "logo-grid-4",
     "kind": "component",
     "name": "Logo grid",
-    "description": "Logo grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Logo grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16331,7 +16331,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "product-grid-4",
     "kind": "component",
     "name": "Product grid",
-    "description": "Product grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Product grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16347,7 +16347,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "blog-post-showcase",
     "kind": "component",
     "name": "Blog Post Showcase",
-    "description": "Blog Post Showcase — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Blog Post Showcase — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16363,7 +16363,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "img-grid-layout",
     "kind": "component",
     "name": "img grid layout",
-    "description": "img grid layout — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "img grid layout — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16379,7 +16379,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "logo-grid-5",
     "kind": "component",
     "name": "Logo grid",
-    "description": "Logo grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Logo grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16395,7 +16395,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwindcss-flex-grid",
     "kind": "component",
     "name": "TailwindCss-flex/grid2",
-    "description": "TailwindCss-flex/grid2 — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "TailwindCss-flex/grid2 — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16411,7 +16411,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "service-section",
     "kind": "component",
     "name": "Service section",
-    "description": "Service section — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Service section — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16427,7 +16427,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "articles-card-grid",
     "kind": "component",
     "name": "Articles Card Grid",
-    "description": "Articles Card Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Articles Card Grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16443,7 +16443,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "content-2",
     "kind": "component",
     "name": "Content showing for Call to action",
-    "description": "Content showing for Call to action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Content showing for Call to action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "grid",
@@ -16460,7 +16460,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "image-classification-models-response-grid",
     "kind": "component",
     "name": "Image Classification Models Response Grid",
-    "description": "Image Classification Models Response Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Image Classification Models Response Grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16476,7 +16476,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "simplegrid",
     "kind": "component",
     "name": "SimpleGrid",
-    "description": "SimpleGrid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "SimpleGrid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16508,7 +16508,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "table-crud",
     "kind": "component",
     "name": "Table CRUD",
-    "description": "Table CRUD — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Table CRUD — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16524,7 +16524,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "feature-section",
     "kind": "component",
     "name": "Feature Section",
-    "description": "Feature Section — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Feature Section — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16540,7 +16540,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-data-cards",
     "kind": "component",
     "name": "Responsive data cards",
-    "description": "Responsive data cards — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive data cards — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16556,7 +16556,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "feature-showcase-cards-2",
     "kind": "component",
     "name": "Feature showcase cards",
-    "description": "Feature showcase cards — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Feature showcase cards — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16572,7 +16572,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "blog-post-list",
     "kind": "component",
     "name": "Blog Post List",
-    "description": "Blog Post List — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Blog Post List — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16588,7 +16588,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-grid-layout-3",
     "kind": "component",
     "name": "Responsive grid layout",
-    "description": "Responsive grid layout — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive grid layout — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16604,7 +16604,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "book-showcase-grid",
     "kind": "component",
     "name": "Book Showcase Grid",
-    "description": "Book Showcase Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Book Showcase Grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16620,7 +16620,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "bento-grid-layout-with-images",
     "kind": "component",
     "name": "Bento Grid Layout with Images",
-    "description": "Bento Grid Layout with Images — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Bento Grid Layout with Images — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16636,7 +16636,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "blog-items-skeleton",
     "kind": "component",
     "name": "Blog items skeleton",
-    "description": "Blog items skeleton — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Blog items skeleton — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16652,7 +16652,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "blog-post-showcase-minimal",
     "kind": "component",
     "name": "Blog post showcase minimal",
-    "description": "Blog post showcase minimal — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Blog post showcase minimal — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16668,7 +16668,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cols-3",
     "kind": "component",
     "name": "cols-3",
-    "description": "cols-3 — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "cols-3 — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16684,7 +16684,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "layout-deisgn-img",
     "kind": "component",
     "name": "layout deisgn img",
-    "description": "layout deisgn img — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "layout deisgn img — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16700,7 +16700,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "grid-2x3",
     "kind": "component",
     "name": "Grid (2x3)",
-    "description": "Grid (2x3) — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Grid (2x3) — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16716,7 +16716,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "active-beauty-main-page",
     "kind": "component",
     "name": "Active Beauty Main Page",
-    "description": "Active Beauty Main Page — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Active Beauty Main Page — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "grid",
@@ -16749,7 +16749,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-product-gallery",
     "kind": "component",
     "name": "Tailwind product gallery",
-    "description": "Tailwind product gallery — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Tailwind product gallery — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16765,7 +16765,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "galerie-de-produits-gis-et-affiche-tailwind",
     "kind": "component",
     "name": "Galerie de produits Gis et Affiche Tailwind",
-    "description": "Galerie de produits Gis et Affiche Tailwind — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Galerie de produits Gis et Affiche Tailwind — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16781,7 +16781,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-projects-section",
     "kind": "component",
     "name": "Responsive Projects Section",
-    "description": "Responsive Projects Section — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive Projects Section — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16797,7 +16797,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "luxurious-grid-gallery",
     "kind": "component",
     "name": "Luxurious Grid Gallery",
-    "description": "Luxurious Grid Gallery — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Luxurious Grid Gallery — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16813,7 +16813,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-projects-section-2",
     "kind": "component",
     "name": "Responsive Projects Section",
-    "description": "Responsive Projects Section — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Responsive Projects Section — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16829,7 +16829,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "product-grid",
     "kind": "component",
     "name": "Product grid",
-    "description": "Product grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Product grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16862,7 +16862,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "clean-image-grid-gallery",
     "kind": "component",
     "name": "Clean Image Grid Gallery",
-    "description": "Clean Image Grid Gallery — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Clean Image Grid Gallery — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16878,7 +16878,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "product-grid-2",
     "kind": "component",
     "name": "Product grid",
-    "description": "Product grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Product grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16894,7 +16894,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "logo-grid",
     "kind": "component",
     "name": "Logo grid",
-    "description": "Logo grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Logo grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16910,7 +16910,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "services-6",
     "kind": "component",
     "name": "Services list",
-    "description": "Services list — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Services list — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16926,7 +16926,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "logo-grid-2",
     "kind": "component",
     "name": "Logo grid",
-    "description": "Logo grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Logo grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16942,7 +16942,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "product-grid-3",
     "kind": "component",
     "name": "Product grid",
-    "description": "Product grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Product grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16958,7 +16958,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "product-grid-5",
     "kind": "component",
     "name": "Product grid",
-    "description": "Product grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Product grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16974,7 +16974,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "logo-grid-3",
     "kind": "component",
     "name": "Logo grid",
-    "description": "Logo grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Logo grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -16990,7 +16990,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "feature-grid",
     "kind": "component",
     "name": "feature grid",
-    "description": "feature grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "feature grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -17006,7 +17006,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-feature-grid-component-with-tailwind-css",
     "kind": "component",
     "name": "Animated Feature Grid Component with Tailwind CSS",
-    "description": "Animated Feature Grid Component with Tailwind CSS — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Animated Feature Grid Component with Tailwind CSS — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -17022,7 +17022,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "automation-that-delivers-real-results",
     "kind": "component",
     "name": "Automation that delivers real results",
-    "description": "Automation that delivers real results — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Automation that delivers real results — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -17054,7 +17054,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "about-our-apps-ui-components",
     "kind": "component",
     "name": "About our apps UI Components",
-    "description": "About our apps UI Components — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "About our apps UI Components — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -17070,7 +17070,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "blog-card-4",
     "kind": "component",
     "name": "Blog Card",
-    "description": "Blog Card — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Blog Card — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "grid"
@@ -17086,7 +17086,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-cta",
     "kind": "component",
     "name": "Responsive CTA",
-    "description": "Responsive CTA — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Responsive CTA — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17102,7 +17102,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-example",
     "kind": "component",
     "name": "Call to example",
-    "description": "Call to example — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to example — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17118,7 +17118,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-section-2",
     "kind": "component",
     "name": "Call to action section",
-    "description": "Call to action section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to action section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17134,7 +17134,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-8",
     "kind": "component",
     "name": "Call to action",
-    "description": "Call to action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17150,7 +17150,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-9",
     "kind": "component",
     "name": "Call to action",
-    "description": "Call to action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17182,7 +17182,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-cta-section",
     "kind": "component",
     "name": "Tailwind CTA section",
-    "description": "Tailwind CTA section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Tailwind CTA section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17198,7 +17198,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-13",
     "kind": "component",
     "name": "Call to Action",
-    "description": "Call to Action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to Action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action",
@@ -17231,7 +17231,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cta-responsive",
     "kind": "component",
     "name": "CTA Responsive",
-    "description": "CTA Responsive — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "CTA Responsive — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17247,7 +17247,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "modern-cta-section-2",
     "kind": "component",
     "name": "Modern CTA section",
-    "description": "Modern CTA section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Modern CTA section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17263,7 +17263,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "an-off-line-game-of-catching-afox",
     "kind": "component",
     "name": "an  off line game of catching afox",
-    "description": "an  off line game of catching afox — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "an  off line game of catching afox — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17279,7 +17279,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "asimple-game-quest-log",
     "kind": "component",
     "name": "asimple game Quest Log",
-    "description": "asimple game Quest Log — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "asimple game Quest Log — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17295,7 +17295,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "fancy-call-to-action",
     "kind": "component",
     "name": "Fancy call to action",
-    "description": "Fancy call to action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Fancy call to action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17311,7 +17311,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "subscribe-to-our-newsletter-section",
     "kind": "component",
     "name": "Subscribe to our newsletter section",
-    "description": "Subscribe to our newsletter section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Subscribe to our newsletter section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17327,7 +17327,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cta-card-with-gradient-border",
     "kind": "component",
     "name": "CTA card with gradient border",
-    "description": "CTA card with gradient border — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "CTA card with gradient border — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17343,7 +17343,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "modern-cta-section",
     "kind": "component",
     "name": "Modern CTA section",
-    "description": "Modern CTA section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Modern CTA section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17359,7 +17359,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-section-4",
     "kind": "component",
     "name": "Call to Action section",
-    "description": "Call to Action section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to Action section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17375,7 +17375,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "geaux-code-cta-section",
     "kind": "component",
     "name": "Geaux Code CTA Section",
-    "description": "Geaux Code CTA Section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Geaux Code CTA Section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17391,7 +17391,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "basic-cta-card",
     "kind": "component",
     "name": "Basic CTA card",
-    "description": "Basic CTA card — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Basic CTA card — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17407,7 +17407,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "clean-cta",
     "kind": "component",
     "name": "Clean CTA",
-    "description": "Clean CTA — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Clean CTA — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17423,7 +17423,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cta-block",
     "kind": "component",
     "name": "CTA block",
-    "description": "CTA block — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "CTA block — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17455,7 +17455,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-ya",
     "kind": "component",
     "name": "Call ya",
-    "description": "Call ya — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call ya — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17471,7 +17471,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-cta-section",
     "kind": "component",
     "name": "Call to action (CTA) section",
-    "description": "Call to action (CTA) section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to action (CTA) section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17503,7 +17503,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "buy-me-a-coffee-cta-section",
     "kind": "component",
     "name": "Buy Me a Coffee CTA section",
-    "description": "Buy Me a Coffee CTA section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Buy Me a Coffee CTA section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17519,7 +17519,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "get-it-on-google-play-app-store-section",
     "kind": "component",
     "name": "Get it on Google play / App store section",
-    "description": "Get it on Google play / App store section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Get it on Google play / App store section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17535,7 +17535,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-5",
     "kind": "component",
     "name": "Call to action",
-    "description": "Call to action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17551,7 +17551,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-6",
     "kind": "component",
     "name": "Call to action",
-    "description": "Call to action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17567,7 +17567,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-section",
     "kind": "component",
     "name": "Call to action section",
-    "description": "Call to action section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to action section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17583,7 +17583,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-10",
     "kind": "component",
     "name": "Call to action",
-    "description": "Call to action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17599,7 +17599,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cta-block-for-take-our-survey",
     "kind": "component",
     "name": "CTA block for &quot;Take our survey&quot;",
-    "description": "CTA block for &quot;Take our survey&quot; — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "CTA block for &quot;Take our survey&quot; — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17615,7 +17615,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-section-for-home-page",
     "kind": "component",
     "name": "Call to Action section for home page",
-    "description": "Call to Action section for home page — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to Action section for home page — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17631,7 +17631,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "gamingonline",
     "kind": "component",
     "name": "GamingOnline",
-    "description": "GamingOnline — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "GamingOnline — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17647,7 +17647,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "youtube-subscription-section",
     "kind": "component",
     "name": "YouTube subscription section",
-    "description": "YouTube subscription section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "YouTube subscription section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17663,7 +17663,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "solo-leveling",
     "kind": "component",
     "name": "Solo leveling",
-    "description": "Solo leveling — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Solo leveling — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17679,7 +17679,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-for-action",
     "kind": "component",
     "name": "Call for action",
-    "description": "Call for action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call for action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17695,7 +17695,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "basic-cta",
     "kind": "component",
     "name": "Basic CTA",
-    "description": "Basic CTA — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Basic CTA — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17743,7 +17743,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-component",
     "kind": "component",
     "name": "Call to action component",
-    "description": "Call to action component — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to action component — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17759,7 +17759,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "component-calltoaction",
     "kind": "component",
     "name": "Component-[callToAction]",
-    "description": "Component-[callToAction] — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Component-[callToAction] — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17775,7 +17775,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "promotion-block",
     "kind": "component",
     "name": "Promotion Block",
-    "description": "Promotion Block — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Promotion Block — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17823,7 +17823,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "basic-cta-section",
     "kind": "component",
     "name": "Basic CTA section",
-    "description": "Basic CTA section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Basic CTA section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17839,7 +17839,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cta-block-2",
     "kind": "component",
     "name": "CTA block",
-    "description": "CTA block — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "CTA block — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17855,7 +17855,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "bottom-drawer-with-tailwind-css-and-alpinejs",
     "kind": "component",
     "name": "bottom drawer with Tailwind CSS and Alpinejs",
-    "description": "bottom drawer with Tailwind CSS and Alpinejs — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "bottom drawer with Tailwind CSS and Alpinejs — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17871,7 +17871,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-cta-2",
     "kind": "component",
     "name": "Responsive CTA",
-    "description": "Responsive CTA — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Responsive CTA — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17887,7 +17887,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-cta-with-background-image",
     "kind": "component",
     "name": "Call to Action (CTA with Background Image)",
-    "description": "Call to Action (CTA with Background Image) — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to Action (CTA with Background Image) — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17903,7 +17903,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-with-background-image",
     "kind": "component",
     "name": "Call to Action with Background image",
-    "description": "Call to Action with Background image — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to Action with Background image — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17919,7 +17919,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-11",
     "kind": "component",
     "name": "Call to action",
-    "description": "Call to action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17935,7 +17935,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "centered-footer-with-cta",
     "kind": "component",
     "name": "Centered footer with CTA",
-    "description": "Centered footer with CTA — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Centered footer with CTA — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17951,7 +17951,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cta-search-section",
     "kind": "component",
     "name": "CTA Search Section",
-    "description": "CTA Search Section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "CTA Search Section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17967,7 +17967,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-card",
     "kind": "component",
     "name": "Call-to-Action Card",
-    "description": "Call-to-Action Card — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call-to-Action Card — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -17983,7 +17983,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-with-two-cta-buttons",
     "kind": "component",
     "name": "Navbar with two CTA buttons",
-    "description": "Navbar with two CTA buttons — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar with two CTA buttons — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "call-to-action",
@@ -18000,7 +18000,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cta-section-with-light-beam-from-bottom-effect",
     "kind": "component",
     "name": "CTA section with light beam from bottom effect",
-    "description": "CTA section with light beam from bottom effect — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "CTA section with light beam from bottom effect — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18034,7 +18034,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "boost-your-business-with-a-stunning-website",
     "kind": "component",
     "name": "Boost Your Business with a Stunning Website!",
-    "description": "Boost Your Business with a Stunning Website! — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Boost Your Business with a Stunning Website! — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18050,7 +18050,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "clean-responsive-footer-design-with-tailwind-css-with-cta-button",
     "kind": "component",
     "name": "Clean &amp; Responsive Footer Design with Tailwind CSS With CTA Button",
-    "description": "Clean &amp; Responsive Footer Design with Tailwind CSS With CTA Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Clean &amp; Responsive Footer Design with Tailwind CSS With CTA Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18066,7 +18066,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cta-call-to-action-section",
     "kind": "component",
     "name": "CTA - call to action section",
-    "description": "CTA - call to action section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "CTA - call to action section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18098,7 +18098,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "floating-action-button",
     "kind": "component",
     "name": "Floating Action Button",
-    "description": "Floating Action Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Floating Action Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18114,7 +18114,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "brutalist-hero",
     "kind": "component",
     "name": "Brutalist Hero",
-    "description": "Brutalist Hero — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Brutalist Hero — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "call-to-action",
@@ -18131,7 +18131,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "the-future-of-web-development",
     "kind": "component",
     "name": "The Future of Web Development",
-    "description": "The Future of Web Development — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "The Future of Web Development — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action",
@@ -18149,7 +18149,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "about-section",
     "kind": "component",
     "name": "Responsive About Section with Tailwind CSS",
-    "description": "Responsive About Section with Tailwind CSS — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Responsive About Section with Tailwind CSS — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18181,7 +18181,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cta-section-with-floating-icos-as-background",
     "kind": "component",
     "name": "CTA section with floating icos as background",
-    "description": "CTA section with floating icos as background — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "CTA section with floating icos as background — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18197,7 +18197,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "e-commerce-delivery-truck-animation",
     "kind": "component",
     "name": "E-Commerce Delivery Truck Animation",
-    "description": "E-Commerce Delivery Truck Animation — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "E-Commerce Delivery Truck Animation — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18213,7 +18213,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-cta-section-2",
     "kind": "component",
     "name": "Call to Action (CTA) Section",
-    "description": "Call to Action (CTA) Section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to Action (CTA) Section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18229,7 +18229,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "creative-developer-designer",
     "kind": "component",
     "name": "Acode master",
-    "description": "Acode master — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Acode master — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "call-to-action",
@@ -18246,7 +18246,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cta-htmlwind",
     "kind": "component",
     "name": "CTA - Htmlwind",
-    "description": "CTA - Htmlwind — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "CTA - Htmlwind — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18262,7 +18262,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "bug-beach-day-heatwave",
     "kind": "component",
     "name": "Bug Beach Day Heatwave",
-    "description": "Bug Beach Day Heatwave — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Bug Beach Day Heatwave — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18278,7 +18278,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "cta-call-to-action",
     "kind": "component",
     "name": "CTA Call To Action",
-    "description": "CTA Call To Action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "CTA Call To Action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18294,7 +18294,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "artogallery",
     "kind": "component",
     "name": "ArtoGallery",
-    "description": "ArtoGallery — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "ArtoGallery — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action",
@@ -18311,7 +18311,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sliceheaven",
     "kind": "component",
     "name": "SliceHeaven",
-    "description": "SliceHeaven — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "SliceHeaven — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18344,7 +18344,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "call-to-action-12",
     "kind": "component",
     "name": "Call to Action",
-    "description": "Call to Action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Call to Action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18360,7 +18360,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "gaming-profile",
     "kind": "component",
     "name": "gaming profile.",
-    "description": "gaming profile. — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "gaming profile. — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18408,7 +18408,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "boimator-dashboard",
     "kind": "component",
     "name": "Boimator  welcoming back",
-    "description": "Boimator  welcoming back — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Boimator  welcoming back — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18424,7 +18424,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-nav",
     "kind": "component",
     "name": "animated nav",
-    "description": "animated nav — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "animated nav — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18440,7 +18440,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "footer-12",
     "kind": "component",
     "name": "Footer",
-    "description": "Footer — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Footer — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18456,7 +18456,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-call-to-action-section",
     "kind": "component",
     "name": "Animated Call-to-Action Section",
-    "description": "Animated Call-to-Action Section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Animated Call-to-Action Section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18472,7 +18472,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "asimple-game-lay-out",
     "kind": "component",
     "name": "asimple game lay out",
-    "description": "asimple game lay out — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "asimple game lay out — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18488,7 +18488,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-text-rotator-smooth-css-text-transition-effects",
     "kind": "component",
     "name": "Animated Text Rotator | Smooth Tailwindcss Text Transition Effects",
-    "description": "Animated Text Rotator | Smooth Tailwindcss Text Transition Effects — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Animated Text Rotator | Smooth Tailwindcss Text Transition Effects — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18504,7 +18504,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-42",
     "kind": "component",
     "name": "Card",
-    "description": "Card — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Card — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18520,7 +18520,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-section",
     "kind": "component",
     "name": "Navbar Section",
-    "description": "Navbar Section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar Section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18536,7 +18536,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "floating-call-widget-2",
     "kind": "component",
     "name": "Floating Call Widget",
-    "description": "Floating Call Widget — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "Floating Call Widget — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18569,7 +18569,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "test-deepseek-ticket",
     "kind": "component",
     "name": "test deepseek ticket",
-    "description": "test deepseek ticket — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+    "description": "test deepseek ticket — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
     "category": "button",
     "tags": [
       "call-to-action"
@@ -18585,7 +18585,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-navbar",
     "kind": "component",
     "name": "Responsive navbar",
-    "description": "Responsive navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18601,7 +18601,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-with-search",
     "kind": "component",
     "name": "Navbar with search",
-    "description": "Navbar with search — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar with search — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18617,7 +18617,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-drawer",
     "kind": "component",
     "name": "Animated Drawer",
-    "description": "Animated Drawer — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Animated Drawer — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18633,7 +18633,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "fixed-navbar",
     "kind": "component",
     "name": "Fixed navbar",
-    "description": "Fixed navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Fixed navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18649,7 +18649,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "semi-transparent-navbar",
     "kind": "component",
     "name": "Semi transparent navbar",
-    "description": "Semi transparent navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Semi transparent navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18665,7 +18665,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-compoent",
     "kind": "component",
     "name": "Navbar compoent",
-    "description": "Navbar compoent — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar compoent — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18681,7 +18681,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-navbar-with-dark-mode-support",
     "kind": "component",
     "name": "Responsive navbar with dark mode support",
-    "description": "Responsive navbar with dark mode support — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive navbar with dark mode support — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18697,7 +18697,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "minimalistic-header-navbar",
     "kind": "component",
     "name": "Minimalistic navbar",
-    "description": "Minimalistic navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Minimalistic navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18713,7 +18713,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-sidebar-layout",
     "kind": "component",
     "name": "Tailwind Sidebar Layout",
-    "description": "Tailwind Sidebar Layout — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Tailwind Sidebar Layout — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18729,7 +18729,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "very-simple-navbar",
     "kind": "component",
     "name": "Very simple navbar",
-    "description": "Very simple navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Very simple navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18745,7 +18745,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "simple-navbar",
     "kind": "component",
     "name": "Simple navbar",
-    "description": "Simple navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Simple navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18761,7 +18761,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwindflex-navbar",
     "kind": "component",
     "name": "Tailwindflex navbar",
-    "description": "Tailwindflex navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Tailwindflex navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18777,7 +18777,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navigation-bar-responsive",
     "kind": "component",
     "name": "Navigation Bar Responsive",
-    "description": "Navigation Bar Responsive — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navigation Bar Responsive — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18793,7 +18793,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-with-social-links",
     "kind": "component",
     "name": "Navbar with social links",
-    "description": "Navbar with social links — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar with social links — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18809,7 +18809,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-navbar-example",
     "kind": "component",
     "name": "Responsive Navbar Example",
-    "description": "Responsive Navbar Example — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Navbar Example — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18825,7 +18825,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navigation",
     "kind": "component",
     "name": "navigation",
-    "description": "navigation — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "navigation — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18841,7 +18841,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "daystar-day-care-dashboard",
     "kind": "component",
     "name": "Daystar Day care Dashboard",
-    "description": "Daystar Day care Dashboard — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Daystar Day care Dashboard — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18857,7 +18857,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "new-nav-component",
     "kind": "component",
     "name": "New Nav Component",
-    "description": "New Nav Component — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "New Nav Component — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -18874,7 +18874,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-navbar-2",
     "kind": "component",
     "name": "Responsive Navbar",
-    "description": "Responsive Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -18891,7 +18891,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navigation-bar",
     "kind": "component",
     "name": "Navigation bar",
-    "description": "Navigation bar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navigation bar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18907,7 +18907,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-sidebar-layout-3",
     "kind": "component",
     "name": "Tailwind Sidebar Layout",
-    "description": "Tailwind Sidebar Layout — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Tailwind Sidebar Layout — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18923,7 +18923,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "production-ready-responsive-navigation",
     "kind": "component",
     "name": "Production-Ready Responsive Navigation",
-    "description": "Production-Ready Responsive Navigation — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Production-Ready Responsive Navigation — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -18940,7 +18940,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-sidebar-layout-2",
     "kind": "component",
     "name": "Tailwind Sidebar Layout",
-    "description": "Tailwind Sidebar Layout — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Tailwind Sidebar Layout — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18956,7 +18956,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar",
     "kind": "component",
     "name": "Navbar",
-    "description": "Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18972,7 +18972,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-for-filters",
     "kind": "component",
     "name": "Simple Filters Navbar",
-    "description": "Simple Filters Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Simple Filters Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -18988,7 +18988,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "beautifull-responsive-navbar",
     "kind": "component",
     "name": "beautifull responsive navbar",
-    "description": "beautifull responsive navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "beautifull responsive navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19004,7 +19004,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-2",
     "kind": "component",
     "name": "Navbar",
-    "description": "Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19021,7 +19021,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "icon-on-the-left-links-and-call-to-actions-on-the-right",
     "kind": "component",
     "name": "Navbar with Icon on the left, links and call to actions on the right",
-    "description": "Navbar with Icon on the left, links and call to actions on the right — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar with Icon on the left, links and call to actions on the right — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19037,7 +19037,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-bottom-nav",
     "kind": "component",
     "name": "Responsive Bottom Nav",
-    "description": "Responsive Bottom Nav — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Bottom Nav — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19053,7 +19053,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-css-navigation-header",
     "kind": "component",
     "name": "Tailwind css navigation header",
-    "description": "Tailwind css navigation header — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Tailwind css navigation header — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19069,7 +19069,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-underline-hover-navbar",
     "kind": "component",
     "name": "Animated underline hover navbar",
-    "description": "Animated underline hover navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Animated underline hover navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19085,7 +19085,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-navbar-with-alpinejs",
     "kind": "component",
     "name": "Responsive navbar with alpinejs",
-    "description": "Responsive navbar with alpinejs — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive navbar with alpinejs — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19101,7 +19101,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-navigation-bar",
     "kind": "component",
     "name": "animated navigation bar",
-    "description": "animated navigation bar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "animated navigation bar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19117,7 +19117,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-sidebar-layout-improved",
     "kind": "component",
     "name": "Tailwind Sidebar Layout (improved)",
-    "description": "Tailwind Sidebar Layout (improved) — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Tailwind Sidebar Layout (improved) — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19133,7 +19133,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hover-animated-navbar",
     "kind": "component",
     "name": "Hover Animated Navbar",
-    "description": "Hover Animated Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hover Animated Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19149,7 +19149,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-sidebar-layout-5",
     "kind": "component",
     "name": "Tailwind Sidebar Layout",
-    "description": "Tailwind Sidebar Layout — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Tailwind Sidebar Layout — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19165,7 +19165,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sidebar-3",
     "kind": "component",
     "name": "Sidebar",
-    "description": "Sidebar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Sidebar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19181,7 +19181,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "basic-auto-hiding-navbar",
     "kind": "component",
     "name": "Basic Auto-Hiding Navbar",
-    "description": "Basic Auto-Hiding Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Basic Auto-Hiding Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19197,7 +19197,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-5",
     "kind": "component",
     "name": "NavBar",
-    "description": "NavBar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "NavBar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19213,7 +19213,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-navbar-with-dark-mode-support-2",
     "kind": "component",
     "name": "Responsive navbar with dark mode support",
-    "description": "Responsive navbar with dark mode support — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive navbar with dark mode support — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19229,7 +19229,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "apple-dock-navigation-bar",
     "kind": "component",
     "name": "Apple Dock Navigation Bar",
-    "description": "Apple Dock Navigation Bar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Apple Dock Navigation Bar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19245,7 +19245,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tesla-navbar",
     "kind": "component",
     "name": "Tesla Navbar",
-    "description": "Tesla Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Tesla Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19261,7 +19261,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-navbar-with-tailwindcss",
     "kind": "component",
     "name": "Responsive Navbar with TailwindCSS",
-    "description": "Responsive Navbar with TailwindCSS — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Navbar with TailwindCSS — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19277,7 +19277,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-header",
     "kind": "component",
     "name": "Tailwind Header",
-    "description": "Tailwind Header — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Tailwind Header — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19294,7 +19294,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-6",
     "kind": "component",
     "name": "Navbar",
-    "description": "Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19310,7 +19310,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "nav-bar",
     "kind": "component",
     "name": "Nav Bar",
-    "description": "Nav Bar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Nav Bar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19326,7 +19326,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "dark-mode-sidenav-with-collapsible-menu",
     "kind": "component",
     "name": "Dark  mode sidenav with collapsible menu",
-    "description": "Dark  mode sidenav with collapsible menu — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Dark  mode sidenav with collapsible menu — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19343,7 +19343,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "best-responsive-navbar-design-easy-modern-navigation",
     "kind": "component",
     "name": "Best Responsive Navbar Design | Easy &amp; Modern Navigation",
-    "description": "Best Responsive Navbar Design | Easy &amp; Modern Navigation — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Best Responsive Navbar Design | Easy &amp; Modern Navigation — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19359,7 +19359,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sidebar-with-only-icons",
     "kind": "component",
     "name": "Sidebar with only icons",
-    "description": "Sidebar with only icons — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Sidebar with only icons — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19376,7 +19376,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-with-sub-menus",
     "kind": "component",
     "name": "Navbar with sub menus",
-    "description": "Navbar with sub menus — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar with sub menus — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19393,7 +19393,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-header-2",
     "kind": "component",
     "name": "Responsive Header",
-    "description": "Responsive Header — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Header — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19410,7 +19410,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-navbar-with-search-profile-options",
     "kind": "component",
     "name": "Responsive Navbar with search profile options",
-    "description": "Responsive Navbar with search profile options — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Navbar with search profile options — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19427,7 +19427,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-4",
     "kind": "component",
     "name": "Navbar",
-    "description": "Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19443,7 +19443,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-7",
     "kind": "component",
     "name": "navbar",
-    "description": "navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19459,7 +19459,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-tailwind-css-header-with-navigation-buttons-ready-to-use",
     "kind": "component",
     "name": "Responsive Tailwind CSS Header with Navigation &amp; Buttons | Ready to Use",
-    "description": "Responsive Tailwind CSS Header with Navigation &amp; Buttons | Ready to Use — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Tailwind CSS Header with Navigation &amp; Buttons | Ready to Use — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19476,7 +19476,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "transparent-navbar",
     "kind": "component",
     "name": "Transparent Navbar",
-    "description": "Transparent Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Transparent Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19493,7 +19493,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "admin-panel-with-collapsible-menus",
     "kind": "component",
     "name": "Admin panel with collapsible menus",
-    "description": "Admin panel with collapsible menus — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Admin panel with collapsible menus — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19510,7 +19510,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "collapsible-sidebar-menu",
     "kind": "component",
     "name": "Collapsible Sidebar Menu",
-    "description": "Collapsible Sidebar Menu — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Collapsible Sidebar Menu — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19527,7 +19527,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "elegant-navbar",
     "kind": "component",
     "name": "Elegant NavBar",
-    "description": "Elegant NavBar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Elegant NavBar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19543,7 +19543,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "material-3-navbar-light",
     "kind": "component",
     "name": "Material 3 AppBar [Light]",
-    "description": "Material 3 AppBar [Light] — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Material 3 AppBar [Light] — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19559,7 +19559,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-ecommerce-sidebar-layout-with-hamburger-menu-tailwind-css-ui-for-online-stores",
     "kind": "component",
     "name": "Responsive eCommerce Sidebar Layout with Hamburger Menu | Tailwind CSS UI for Online Stores",
-    "description": "Responsive eCommerce Sidebar Layout with Hamburger Menu | Tailwind CSS UI for Online Stores — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive eCommerce Sidebar Layout with Hamburger Menu | Tailwind CSS UI for Online Stores — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19575,7 +19575,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "elegant-navbar-drawer-2",
     "kind": "component",
     "name": "Elegant NavBar + Drawer",
-    "description": "Elegant NavBar + Drawer — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Elegant NavBar + Drawer — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19591,7 +19591,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "material-3-navbar-light-2",
     "kind": "component",
     "name": "Material 3 NavBar [Light]",
-    "description": "Material 3 NavBar [Light] — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Material 3 NavBar [Light] — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19607,7 +19607,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "vav-bar",
     "kind": "component",
     "name": "vav bar",
-    "description": "vav bar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "vav bar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19625,7 +19625,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navber",
     "kind": "component",
     "name": "navber",
-    "description": "navber — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "navber — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19641,7 +19641,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-tailwind-css-navbar",
     "kind": "component",
     "name": "Responsive Tailwind CSS Navbar",
-    "description": "Responsive Tailwind CSS Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Tailwind CSS Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19657,7 +19657,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "enhanced-modern-navbar",
     "kind": "component",
     "name": "Enhanced Modern Navbar",
-    "description": "Enhanced Modern Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Enhanced Modern Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19673,7 +19673,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "tailwind-css-navbar",
     "kind": "component",
     "name": "Tailwind CSS Navbar",
-    "description": "Tailwind CSS Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Tailwind CSS Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19689,7 +19689,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-9",
     "kind": "component",
     "name": "Responsive Gradient Navbar with Toggle",
-    "description": "Responsive Gradient Navbar with Toggle — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Gradient Navbar with Toggle — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19705,7 +19705,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "admin-panel-5",
     "kind": "component",
     "name": "Admin Panel",
-    "description": "Admin Panel — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Admin Panel — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19721,7 +19721,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "htmlbasics",
     "kind": "component",
     "name": "htmlbasics",
-    "description": "htmlbasics — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "htmlbasics — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19737,7 +19737,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "admin-panel-ui",
     "kind": "component",
     "name": "admin panel UI",
-    "description": "admin panel UI — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "admin panel UI — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19754,7 +19754,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-navbar-using-css-only",
     "kind": "component",
     "name": "Responsive NavBar Using CSS Only",
-    "description": "Responsive NavBar Using CSS Only — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive NavBar Using CSS Only — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19771,7 +19771,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "brand-navbar",
     "kind": "component",
     "name": "Brand Navbar",
-    "description": "Brand Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Brand Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19787,7 +19787,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "htmlcolours",
     "kind": "component",
     "name": "htmlcolours",
-    "description": "htmlcolours — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "htmlcolours — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19803,7 +19803,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "basichtml",
     "kind": "component",
     "name": "basichtml",
-    "description": "basichtml — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "basichtml — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19819,7 +19819,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "websitee",
     "kind": "component",
     "name": "websitee",
-    "description": "websitee — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "websitee — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19835,7 +19835,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "modern-website-header-footer",
     "kind": "component",
     "name": "Modern Website Header &amp; Footer",
-    "description": "Modern Website Header &amp; Footer — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Modern Website Header &amp; Footer — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19852,7 +19852,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "basichtml-2",
     "kind": "component",
     "name": "basichtml",
-    "description": "basichtml — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "basichtml — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19868,7 +19868,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-10",
     "kind": "component",
     "name": "Navbar",
-    "description": "Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19884,7 +19884,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navigation-mobile-ios",
     "kind": "component",
     "name": "Navigation Mobile iOS",
-    "description": "Navigation Mobile iOS — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navigation Mobile iOS — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19900,7 +19900,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-12",
     "kind": "component",
     "name": "Navbar",
-    "description": "Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -19917,7 +19917,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "macos-style-webpage-macos-design-in-the-browser",
     "kind": "component",
     "name": "macOS Style Webpage – macOS Design in the Browser",
-    "description": "macOS Style Webpage – macOS Design in the Browser — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "macOS Style Webpage – macOS Design in the Browser — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19933,7 +19933,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-navbar-with-tailwindcss-and-alpinejs",
     "kind": "component",
     "name": "Responsive Navbar with TailwindCSS and AlpineJS",
-    "description": "Responsive Navbar with TailwindCSS and AlpineJS — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Navbar with TailwindCSS and AlpineJS — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19949,7 +19949,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-with-dropdown",
     "kind": "component",
     "name": "Navbar with Dropdown",
-    "description": "Navbar with Dropdown — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar with Dropdown — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19965,7 +19965,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-in-tailwindcss",
     "kind": "component",
     "name": "navbar in tailwindcss",
-    "description": "navbar in tailwindcss — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "navbar in tailwindcss — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19981,7 +19981,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "material-ios-navbar-mobile-apple-endroid",
     "kind": "component",
     "name": "material ios navbar mobile apple endroid",
-    "description": "material ios navbar mobile apple endroid — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "material ios navbar mobile apple endroid — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -19997,7 +19997,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "vscode-a-la-omerlinks",
     "kind": "component",
     "name": "vscode a la omerlinks",
-    "description": "vscode a la omerlinks — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "vscode a la omerlinks — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -20014,7 +20014,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-13",
     "kind": "component",
     "name": "navbar",
-    "description": "navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20030,7 +20030,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "avigation-mobile-ios-spa",
     "kind": "component",
     "name": "avigation Mobile iOS  - SPA",
-    "description": "avigation Mobile iOS  - SPA — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "avigation Mobile iOS  - SPA — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20046,7 +20046,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "nav-mobile-bottom",
     "kind": "component",
     "name": "nav mobile bottom",
-    "description": "nav mobile bottom — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "nav mobile bottom — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20062,7 +20062,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "colourful-navbar-by-itunu-ijila",
     "kind": "component",
     "name": "Colourful NavBar by Itunu Ijila",
-    "description": "Colourful NavBar by Itunu Ijila — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Colourful NavBar by Itunu Ijila — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20078,7 +20078,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-moderne-et-epure",
     "kind": "component",
     "name": "navbar moderne et epure",
-    "description": "navbar moderne et epure — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "navbar moderne et epure — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20094,7 +20094,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sticky-navbar",
     "kind": "component",
     "name": "Sticky Navbar",
-    "description": "Sticky Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Sticky Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -20111,7 +20111,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hero-section-vitesse",
     "kind": "component",
     "name": "hero section VITESSE.",
-    "description": "hero section VITESSE. — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "hero section VITESSE. — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20127,7 +20127,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "modern-fashion-landing-page-with-hero-slider-gsap-animations-responsive-layout",
     "kind": "component",
     "name": "Fashion Landing Page with Hero Slider, GSAP Animations",
-    "description": "Fashion Landing Page with Hero Slider, GSAP Animations — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Fashion Landing Page with Hero Slider, GSAP Animations — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -20145,7 +20145,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sidebar-responsive",
     "kind": "component",
     "name": "sidebar responsive",
-    "description": "sidebar responsive — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "sidebar responsive — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20161,7 +20161,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "fintech-banking-navbar-with-trust-bar-mobile-sidebar",
     "kind": "component",
     "name": "FinTech Banking Navbar with Trust Bar &amp; Mobile Sidebar",
-    "description": "FinTech Banking Navbar with Trust Bar &amp; Mobile Sidebar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "FinTech Banking Navbar with Trust Bar &amp; Mobile Sidebar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -20178,7 +20178,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "premium-ai-startup-glassmorphism-navbar-with-neon-gradient-floating-navigation",
     "kind": "component",
     "name": "Startup Glassmorphism Navbar with Neon Gradient &amp; Floating Navigation",
-    "description": "Startup Glassmorphism Navbar with Neon Gradient &amp; Floating Navigation — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Startup Glassmorphism Navbar with Neon Gradient &amp; Floating Navigation — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -20195,7 +20195,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "repsonsive-navbar",
     "kind": "component",
     "name": "Repsonsive Navbar",
-    "description": "Repsonsive Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Repsonsive Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20211,7 +20211,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "premium-glassmorphism-saas-dashboard-navbar-with-search-notifications-slide-in-mobile-menu",
     "kind": "component",
     "name": "SaaS Dashboard Navbar with Search, Notifications &amp; Slide-In Mobile Menu",
-    "description": "SaaS Dashboard Navbar with Search, Notifications &amp; Slide-In Mobile Menu — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "SaaS Dashboard Navbar with Search, Notifications &amp; Slide-In Mobile Menu — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -20228,7 +20228,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "simple-navbar-2",
     "kind": "component",
     "name": "Simple Navbar",
-    "description": "Simple Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Simple Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -20245,7 +20245,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "ai-saas-hero-section-with-dashboard",
     "kind": "component",
     "name": "AI SaaS Hero Section with Dashboard",
-    "description": "AI SaaS Hero Section with Dashboard — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "AI SaaS Hero Section with Dashboard — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20261,7 +20261,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "luxury-fashion-ecommerce-navbar-with-mega-menu-expanding-search-mobile-sidebar",
     "kind": "component",
     "name": "Ecommerce Navbar with products, Expanding Search &amp; Mobile sidebar filter",
-    "description": "Ecommerce Navbar with products, Expanding Search &amp; Mobile sidebar filter — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Ecommerce Navbar with products, Expanding Search &amp; Mobile sidebar filter — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -20278,7 +20278,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "creative-agency-navbar-with-fullscreen-mobile-menu-animated-cta",
     "kind": "component",
     "name": "Creative Agency Navbar with Fullscreen Mobile Menu &amp; Animated CTA",
-    "description": "Creative Agency Navbar with Fullscreen Mobile Menu &amp; Animated CTA — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Creative Agency Navbar with Fullscreen Mobile Menu &amp; Animated CTA — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -20295,7 +20295,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "modern-saas-agency-landing-page-with-dark-mode-mobile-menue-com-with-nav-and-filter",
     "kind": "component",
     "name": "Modern SaaS Agency Landing Page with Dark Mode &amp; Mobile MenuE-Com With nav and filter",
-    "description": "Modern SaaS Agency Landing Page with Dark Mode &amp; Mobile MenuE-Com With nav and filter — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Modern SaaS Agency Landing Page with Dark Mode &amp; Mobile MenuE-Com With nav and filter — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -20313,7 +20313,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-14",
     "kind": "component",
     "name": "Navbar",
-    "description": "Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20329,7 +20329,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "growing-navigation-menu-with-tailwind-css",
     "kind": "component",
     "name": "Growing Navigation Menu with Tailwind CSS",
-    "description": "Growing Navigation Menu with Tailwind CSS — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Growing Navigation Menu with Tailwind CSS — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20345,7 +20345,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "simple-responsive-navigation-bar-w-translation-link",
     "kind": "component",
     "name": "Simple Responsive Navigation Bar w/Translation link",
-    "description": "Simple Responsive Navigation Bar w/Translation link — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Simple Responsive Navigation Bar w/Translation link — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20361,7 +20361,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navbar-15",
     "kind": "component",
     "name": "Navbar",
-    "description": "Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20377,7 +20377,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-gradient-navbar",
     "kind": "component",
     "name": "Responsive Gradient Navbar",
-    "description": "Responsive Gradient Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Gradient Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -20394,7 +20394,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-login-support-form",
     "kind": "component",
     "name": "Responsive Login &amp; Support Form",
-    "description": "Responsive Login &amp; Support Form — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Login &amp; Support Form — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20410,7 +20410,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "landing-page-template",
     "kind": "component",
     "name": "Landing Page Template",
-    "description": "Landing Page Template — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Landing Page Template — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20426,7 +20426,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "simple-responsive-navigation-bar",
     "kind": "component",
     "name": "Simple Responsive Navigation Bar",
-    "description": "Simple Responsive Navigation Bar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Simple Responsive Navigation Bar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar"
@@ -20442,7 +20442,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "simple-landing-page",
     "kind": "component",
     "name": "Simple landing page",
-    "description": "Simple landing page — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Simple landing page — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20458,7 +20458,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "simple-app-landing-page",
     "kind": "component",
     "name": "Simple app landing page",
-    "description": "Simple app landing page — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Simple app landing page — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20474,7 +20474,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "template",
     "kind": "component",
     "name": "Basic landing page template",
-    "description": "Basic landing page template — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Basic landing page template — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20490,7 +20490,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "modern-retail-analytics-dashboard-ui-with-interactive-charts",
     "kind": "component",
     "name": "Modern Retail Analytics Dashboard UI with Interactive Charts",
-    "description": "Modern Retail Analytics Dashboard UI with Interactive Charts — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Modern Retail Analytics Dashboard UI with Interactive Charts — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "navbar",
@@ -20507,7 +20507,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "landing-page",
     "kind": "component",
     "name": "Landing page",
-    "description": "Landing page — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Landing page — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20539,7 +20539,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "simple-app-landing-page-with-video",
     "kind": "component",
     "name": "Simple app landing page with video preview",
-    "description": "Simple app landing page with video preview — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Simple app landing page with video preview — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20572,7 +20572,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "product-landing-page",
     "kind": "component",
     "name": "Product Landing Page",
-    "description": "Product Landing Page — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Product Landing Page — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20588,7 +20588,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "landing-page-4",
     "kind": "component",
     "name": "landing page",
-    "description": "landing page — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "landing page — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20604,7 +20604,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "educonnect",
     "kind": "component",
     "name": "EduConnect",
-    "description": "EduConnect — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "EduConnect — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20620,7 +20620,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "chinese",
     "kind": "component",
     "name": "Chinese",
-    "description": "Chinese — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Chinese — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20636,7 +20636,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "learn-confidently-with-rabbil-hasan",
     "kind": "component",
     "name": "Learn Confidently with Rabbil Hasan",
-    "description": "Learn Confidently with Rabbil Hasan — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Learn Confidently with Rabbil Hasan — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20652,7 +20652,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "standard-landing-boilerplate",
     "kind": "component",
     "name": "Standard Landing Boilerplate",
-    "description": "Standard Landing Boilerplate — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Standard Landing Boilerplate — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20685,7 +20685,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "mfuranziza-hamza",
     "kind": "component",
     "name": "Mfuranziza Hamza",
-    "description": "Mfuranziza Hamza — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Mfuranziza Hamza — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20701,7 +20701,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "custom-audio-player",
     "kind": "component",
     "name": "Custom Audio Player",
-    "description": "Custom Audio Player — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Custom Audio Player — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20717,7 +20717,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "instagram-clone",
     "kind": "component",
     "name": "Instagram clone",
-    "description": "Instagram clone — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Instagram clone — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20733,7 +20733,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "single-page-portfolio-2",
     "kind": "component",
     "name": "Single Page Portfolio",
-    "description": "Single Page Portfolio — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Single Page Portfolio — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20749,7 +20749,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hero",
     "kind": "component",
     "name": "Hero",
-    "description": "Hero — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hero — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "landing-page",
@@ -20782,7 +20782,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "neo-brutalism-page",
     "kind": "component",
     "name": "neo brutalism page",
-    "description": "neo brutalism page — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "neo brutalism page — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20798,7 +20798,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "modern-responsive-footer-with-tailwind-css",
     "kind": "component",
     "name": "Modern Responsive Footer with Tailwind CSS",
-    "description": "Modern Responsive Footer with Tailwind CSS — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Modern Responsive Footer with Tailwind CSS — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20814,7 +20814,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "employee-data-management-system-tailwindcss-html",
     "kind": "component",
     "name": "Employee Data Management System TailwindCSS,Html",
-    "description": "Employee Data Management System TailwindCSS,Html — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Employee Data Management System TailwindCSS,Html — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20830,7 +20830,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-ecommerce-footer-component-with-tailwind-css",
     "kind": "component",
     "name": "Responsive eCommerce Footer Component with Tailwind CSS",
-    "description": "Responsive eCommerce Footer Component with Tailwind CSS — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Responsive eCommerce Footer Component with Tailwind CSS — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20846,7 +20846,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "landing-page-template-2",
     "kind": "component",
     "name": "Landing page template",
-    "description": "Landing page template — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Landing page template — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20862,7 +20862,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "modern-testimonial",
     "kind": "component",
     "name": "Modern Testimonial",
-    "description": "Modern Testimonial — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Modern Testimonial — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20878,7 +20878,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "coming-soon-page-4",
     "kind": "component",
     "name": "Coming Soon Page",
-    "description": "Coming Soon Page — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Coming Soon Page — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20894,7 +20894,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-coming-soon-page-1-2",
     "kind": "component",
     "name": "Animated Coming Soon Page 1",
-    "description": "Animated Coming Soon Page 1 — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Animated Coming Soon Page 1 — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20943,7 +20943,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-bento-box",
     "kind": "component",
     "name": "Animated bento box.",
-    "description": "Animated bento box. — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "Animated bento box. — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "landing-page"
@@ -20959,7 +20959,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "gallary-2",
     "kind": "component",
     "name": "gallary",
-    "description": "gallary — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "gallary — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20975,7 +20975,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "gallary",
     "kind": "component",
     "name": "gallary",
-    "description": "gallary — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "gallary — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -20991,7 +20991,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "landing-page-3",
     "kind": "component",
     "name": "landing page",
-    "description": "landing page — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "landing page — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21007,7 +21007,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "side-bar",
     "kind": "component",
     "name": "side bar",
-    "description": "side bar — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "side bar — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21023,7 +21023,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "home-2",
     "kind": "component",
     "name": "home",
-    "description": "home — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "home — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21055,7 +21055,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-coming-soon-page-1-3",
     "kind": "component",
     "name": "Animated Coming Soon Page 1",
-    "description": "Animated Coming Soon Page 1 — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Animated Coming Soon Page 1 — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21071,7 +21071,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "video-player",
     "kind": "component",
     "name": "Video Player",
-    "description": "Video Player — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Video Player — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21087,7 +21087,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "page-not-found",
     "kind": "component",
     "name": "Page not found",
-    "description": "Page not found — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Page not found — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21103,7 +21103,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "landing-page-5",
     "kind": "component",
     "name": "Landing page",
-    "description": "Landing page — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Landing page — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21119,7 +21119,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "exclusive-offers-and-discounts-for-study-in-china-and-turkey",
     "kind": "component",
     "name": "Exclusive Offers and Discounts for Study in China and Turkey",
-    "description": "Exclusive Offers and Discounts for Study in China and Turkey — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Exclusive Offers and Discounts for Study in China and Turkey — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21135,7 +21135,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "chaicode",
     "kind": "component",
     "name": "ChaiCode",
-    "description": "ChaiCode — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "ChaiCode — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21151,7 +21151,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "chinaedu",
     "kind": "component",
     "name": "ChinaEdu",
-    "description": "ChinaEdu — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "ChinaEdu — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21167,7 +21167,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "educhina",
     "kind": "component",
     "name": "EduChina",
-    "description": "EduChina — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "EduChina — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21183,7 +21183,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "about-video",
     "kind": "component",
     "name": "about video",
-    "description": "about video — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "about video — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21199,7 +21199,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "coming-soon-countdown-section-animated-responsive",
     "kind": "component",
     "name": "Coming Soon Countdown Section – Animated &amp; Responsive",
-    "description": "Coming Soon Countdown Section – Animated &amp; Responsive — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Coming Soon Countdown Section – Animated &amp; Responsive — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21215,7 +21215,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "about-company-section-animated-responsive",
     "kind": "component",
     "name": "About Company Section – Animated &amp; Responsive",
-    "description": "About Company Section – Animated &amp; Responsive — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "About Company Section – Animated &amp; Responsive — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21231,7 +21231,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "our-services-section-animated-responsive",
     "kind": "component",
     "name": "Our Services Section – Animated &amp; Responsive",
-    "description": "Our Services Section – Animated &amp; Responsive — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Our Services Section – Animated &amp; Responsive — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21247,7 +21247,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hostellandingpage",
     "kind": "component",
     "name": "HostelLandingPage",
-    "description": "HostelLandingPage — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "HostelLandingPage — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21263,7 +21263,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "minimalist-lading-page",
     "kind": "component",
     "name": "Minimalist Lading page",
-    "description": "Minimalist Lading page — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Minimalist Lading page — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21279,7 +21279,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "caming-soon-page-design",
     "kind": "component",
     "name": "Caming Soon page design",
-    "description": "Caming Soon page design — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Caming Soon page design — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21295,7 +21295,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "serverhub-interface",
     "kind": "component",
     "name": "ServerHub Interface",
-    "description": "ServerHub Interface — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "ServerHub Interface — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21327,7 +21327,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "home-page-4",
     "kind": "component",
     "name": "home page",
-    "description": "home page — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "home page — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "landing-page",
@@ -21360,7 +21360,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "blog-card-5",
     "kind": "component",
     "name": "blog card",
-    "description": "blog card — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "blog card — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21376,7 +21376,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "django-error",
     "kind": "component",
     "name": "django error",
-    "description": "django error — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "django error — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21392,7 +21392,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "coming-soon-countdown-section-animated-responsive-2",
     "kind": "component",
     "name": "Coming Soon Countdown Section – Animated &amp; Responsive",
-    "description": "Coming Soon Countdown Section – Animated &amp; Responsive — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Coming Soon Countdown Section – Animated &amp; Responsive — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21408,7 +21408,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-coming-soon-page-1",
     "kind": "component",
     "name": "Animated Coming Soon Page 1",
-    "description": "Animated Coming Soon Page 1 — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Animated Coming Soon Page 1 — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21424,7 +21424,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "omerlinksound",
     "kind": "component",
     "name": "OmerLinkSound",
-    "description": "OmerLinkSound — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "OmerLinkSound — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21440,7 +21440,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "section-heading",
     "kind": "component",
     "name": "Section Heading",
-    "description": "Section Heading — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Section Heading — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "landing-page",
@@ -21457,7 +21457,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "portfolio-by-omerlinks-the-mouse",
     "kind": "component",
     "name": "Portfolio by omerlinks the mouse",
-    "description": "Portfolio by omerlinks the mouse — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Portfolio by omerlinks the mouse — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21473,7 +21473,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "eduplay",
     "kind": "component",
     "name": "Eduplay",
-    "description": "Eduplay — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Eduplay — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21521,7 +21521,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "skl-gsdk-sfh-landing",
     "kind": "component",
     "name": "اصقل جسدك صفحة Landing",
-    "description": "اصقل جسدك صفحة Landing — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "اصقل جسدك صفحة Landing — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21537,7 +21537,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "our-technical-services",
     "kind": "component",
     "name": "Our Technical Services",
-    "description": "Our Technical Services — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+    "description": "Our Technical Services — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
     "category": "landing-page",
     "tags": [
       "landing-page"
@@ -21553,7 +21553,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "card-bento-2",
     "kind": "component",
     "name": "card bento",
-    "description": "card bento — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+    "description": "card bento — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
     "category": "grid",
     "tags": [
       "landing-page"
@@ -21954,7 +21954,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-portfolio-with-dark-mode",
     "kind": "component",
     "name": "Responsive portfolio with dark mode",
-    "description": "Responsive portfolio with dark mode — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive portfolio with dark mode — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "profile",
@@ -22003,7 +22003,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "canvas-fully-covers",
     "kind": "component",
     "name": "canvas fully covers",
-    "description": "canvas fully covers — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "canvas fully covers — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "profile",
@@ -22100,7 +22100,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "canvas-fully-covers-2",
     "kind": "component",
     "name": "canvas fully covers",
-    "description": "canvas fully covers — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "canvas fully covers — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "profile",
@@ -22389,7 +22389,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-portfolio-webpage-with-tailwind-css",
     "kind": "component",
     "name": "Responsive Portfolio Webpage with Tailwind CSS",
-    "description": "Responsive Portfolio Webpage with Tailwind CSS — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Portfolio Webpage with Tailwind CSS — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "profile",
@@ -23910,7 +23910,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "full-width-header-with-gradient",
     "kind": "component",
     "name": "Full width header with gradient",
-    "description": "Full width header with gradient — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Full width header with gradient — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -23926,7 +23926,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "testing-components",
     "kind": "component",
     "name": "Testing Components",
-    "description": "Testing Components — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Testing Components — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -23942,7 +23942,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "page-heaading-stacked",
     "kind": "component",
     "name": "page heaading stacked",
-    "description": "page heaading stacked — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "page heaading stacked — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -23958,7 +23958,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "promotional-sticky-top-section",
     "kind": "component",
     "name": "Promotional sticky top section",
-    "description": "Promotional sticky top section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Promotional sticky top section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -23974,7 +23974,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "header-with-svg-background",
     "kind": "component",
     "name": "Header with svg background",
-    "description": "Header with svg background — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Header with svg background — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -23990,7 +23990,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-title",
     "kind": "component",
     "name": "Animated Title",
-    "description": "Animated Title — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Animated Title — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24006,7 +24006,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "header",
     "kind": "component",
     "name": "header",
-    "description": "header — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "header — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24022,7 +24022,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "animated-navigation-with-tailwind-css-and-apinejs",
     "kind": "component",
     "name": "Animated navigation with Tailwind CSS and Apinejs",
-    "description": "Animated navigation with Tailwind CSS and Apinejs — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Animated navigation with Tailwind CSS and Apinejs — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24038,7 +24038,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "side-with-tailwind-css-and-alpinejs",
     "kind": "component",
     "name": "Sidebar with Tailwind CSs and alpinejs",
-    "description": "Sidebar with Tailwind CSs and alpinejs — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Sidebar with Tailwind CSs and alpinejs — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24054,7 +24054,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "admin-portal-landing-page",
     "kind": "component",
     "name": "Admin portal landing page",
-    "description": "Admin portal landing page — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Admin portal landing page — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24070,7 +24070,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "sticky-changelog",
     "kind": "component",
     "name": "Sticky Changelog",
-    "description": "Sticky Changelog — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Sticky Changelog — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24086,7 +24086,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hero-section-16",
     "kind": "component",
     "name": "Hero Section",
-    "description": "Hero Section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hero Section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24102,7 +24102,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "navigation-header",
     "kind": "component",
     "name": "navigation header",
-    "description": "navigation header — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "navigation header — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24118,7 +24118,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "xzccxzc",
     "kind": "component",
     "name": "xZCcxzc",
-    "description": "xZCcxzc — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "xZCcxzc — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24134,7 +24134,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "header-with-logo-menu-and-buttons",
     "kind": "component",
     "name": "Header with logo, menu and buttons",
-    "description": "Header with logo, menu and buttons — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Header with logo, menu and buttons — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24150,7 +24150,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "my-website",
     "kind": "component",
     "name": "my website",
-    "description": "my website — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "my website — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24166,7 +24166,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "header-simple-hero-section",
     "kind": "component",
     "name": "Header + simple Hero Section",
-    "description": "Header + simple Hero Section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Header + simple Hero Section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24182,7 +24182,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "home-page",
     "kind": "component",
     "name": "Home page",
-    "description": "Home page — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Home page — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24198,7 +24198,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "responsive-header",
     "kind": "component",
     "name": "Responsive Header",
-    "description": "Responsive Header — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Responsive Header — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24214,7 +24214,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "shrinkable-header",
     "kind": "component",
     "name": "Shrinkable Header",
-    "description": "Shrinkable Header — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Shrinkable Header — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24230,7 +24230,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "basic-sidebar",
     "kind": "component",
     "name": "Basic sidebar",
-    "description": "Basic sidebar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Basic sidebar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24246,7 +24246,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "yvette-3",
     "kind": "component",
     "name": "yvette",
-    "description": "yvette — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "yvette — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24262,7 +24262,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "yvette-4",
     "kind": "component",
     "name": "Yvette",
-    "description": "Yvette — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Yvette — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24278,7 +24278,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "vanessa",
     "kind": "component",
     "name": "vanessa",
-    "description": "vanessa — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "vanessa — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24294,7 +24294,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "no-one",
     "kind": "component",
     "name": "No one",
-    "description": "No one — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "No one — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24310,7 +24310,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "pixel-blast",
     "kind": "component",
     "name": "Pixel Blast",
-    "description": "Pixel Blast — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Pixel Blast — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24326,7 +24326,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "acode-master-fb-whatsapp-ui-combo",
     "kind": "component",
     "name": "Acode Master - FB &amp; WhatsApp UI Combo",
-    "description": "Acode Master - FB &amp; WhatsApp UI Combo — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Acode Master - FB &amp; WhatsApp UI Combo — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24342,7 +24342,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "header-2",
     "kind": "component",
     "name": "Header",
-    "description": "Header — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Header — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24358,7 +24358,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "title",
     "kind": "component",
     "name": "Title",
-    "description": "Title — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Title — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24374,7 +24374,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "avant-apres",
     "kind": "component",
     "name": "Avant &amp; Après",
-    "description": "Avant &amp; Après — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Avant &amp; Après — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24390,7 +24390,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "omerlink-menu-page",
     "kind": "component",
     "name": "OMERLINK MENU PAGE",
-    "description": "OMERLINK MENU PAGE — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "OMERLINK MENU PAGE — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24406,7 +24406,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "header-and-footer-with-doodle-design-with-tailwind-css",
     "kind": "component",
     "name": "Header and footer with Doodle design with Tailwind CSS",
-    "description": "Header and footer with Doodle design with Tailwind CSS — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Header and footer with Doodle design with Tailwind CSS — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24422,7 +24422,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hero-section-27",
     "kind": "component",
     "name": "Hero Section",
-    "description": "Hero Section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hero Section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24438,7 +24438,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hospitality-management",
     "kind": "component",
     "name": "Hospitality Management",
-    "description": "Hospitality Management — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hospitality Management — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24454,7 +24454,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "plasma",
     "kind": "component",
     "name": "Plasma",
-    "description": "Plasma — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Plasma — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24470,7 +24470,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "ai-intelligence-magazine-carousel-premium-dark-tailwind-css-component",
     "kind": "component",
     "name": "AI Trends Showcase",
-    "description": "AI Trends Showcase — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "AI Trends Showcase — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24486,7 +24486,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "markert-shop",
     "kind": "component",
     "name": "Markert shop",
-    "description": "Markert shop — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Markert shop — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24502,7 +24502,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "section-header",
     "kind": "component",
     "name": "section header",
-    "description": "section header — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "section header — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"
@@ -24518,7 +24518,7 @@ export const TAILWINDFLEX_COMPONENTS: TailwindFlexComponentItem[] = [
     "slug": "hero-component-2",
     "kind": "component",
     "name": "Hero Components",
-    "description": "Hero Components — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+    "description": "Hero Components — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
     "category": "navbar",
     "tags": [
       "header"

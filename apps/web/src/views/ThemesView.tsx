@@ -337,12 +337,12 @@ export default function ThemesPage() {
           {searchQuery && (
             <div className="flex items-center gap-2">
               <span className="px-3 py-1 rounded-full text-xs font-mono bg-muted text-foreground border border-border flex items-center gap-1.5">
-                <span>Thème: &ldquo;{searchQuery}&rdquo;</span>
+                <span>Theme: &ldquo;{searchQuery}&rdquo;</span>
                 <span className="text-muted-foreground font-semibold">({filteredThemes.length})</span>
                 <button
                   onClick={() => setSearchQuery("")}
                   className="hover:text-primary transition-colors ml-0.5"
-                  title="Effacer la recherche"
+                  title="Clear search"
                 >
                   ✕
                 </button>
@@ -539,10 +539,10 @@ export default function ThemesPage() {
       {filteredThemes.length === 0 && (
         <div className="py-20 text-center space-y-3 rounded-[12px] border border-dashed border-border bg-card/60 p-8">
           <p className="text-base text-foreground font-semibold">
-            Aucun résultat pour &ldquo;{searchQuery}&rdquo;
+            No results for &ldquo;{searchQuery}&rdquo;
           </p>
           <p className="text-xs text-muted-foreground font-sans max-w-md mx-auto">
-            Aucune palette de couleurs ne correspond à ce thème. Essayez un mot-clé comme <span className="font-mono text-foreground font-medium">médécine</span>, <span className="font-mono text-foreground font-medium">nature</span>, <span className="font-mono text-foreground font-medium">luxe</span>, <span className="font-mono text-foreground font-medium">tech</span>, <span className="font-mono text-foreground font-medium">pastel</span>, ou <span className="font-mono text-foreground font-medium">sunset</span>.
+            No color palette matches this theme. Try a keyword like <span className="font-mono text-foreground font-medium">medicine</span>, <span className="font-mono text-foreground font-medium">nature</span>, <span className="font-mono text-foreground font-medium">luxury</span>, <span className="font-mono text-foreground font-medium">tech</span>, <span className="font-mono text-foreground font-medium">pastel</span>, or <span className="font-mono text-foreground font-medium">sunset</span>.
           </p>
           <div className="pt-2">
             <button
@@ -552,7 +552,7 @@ export default function ThemesPage() {
               }}
               className="px-4 py-2 text-xs rounded-[10px] bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
             >
-              Afficher toutes les palettes
+              Show all color palettes
             </button>
           </div>
         </div>

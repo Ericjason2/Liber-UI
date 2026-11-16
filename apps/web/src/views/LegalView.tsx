@@ -4,7 +4,7 @@ import { ShieldCheck, Scale, AlertCircle } from "lucide-react";
 export default function LegalPage() {
   return (
     <div className="max-w-[760px] mx-auto px-4 sm:px-6 py-12 sm:py-16 space-y-12">
-      <div className="space-y-3 pb-6 border-b border-border">
+      <div className="space-y-3 pb-2">
         <h1 className="text-3xl font-semibold tracking-tight text-foreground">
           Legal, Trademarks & Takedown
         </h1>
@@ -38,7 +38,7 @@ export default function LegalPage() {
       </section>
 
       {/* 2. Licenses Section */}
-      <section className="space-y-4 border-t border-border pt-8" id="licenses">
+      <section className="space-y-4" id="licenses">
         <div className="flex items-center gap-2 text-base font-semibold text-foreground">
           <Scale className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
           <h2>Open Source Code Licenses</h2>
@@ -63,7 +63,7 @@ export default function LegalPage() {
       </section>
 
       {/* 3. Takedown Requests Section */}
-      <section className="space-y-4 border-t border-border pt-8" id="takedown">
+      <section className="space-y-4" id="takedown">
         <div className="flex items-center gap-2 text-base font-semibold text-foreground">
           <AlertCircle className="h-5 w-5 text-amber-600 dark:text-amber-400" />
           <h2>Notice & Takedown Procedure (7-Day SLA)</h2>

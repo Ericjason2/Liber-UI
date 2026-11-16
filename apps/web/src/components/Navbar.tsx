@@ -77,7 +77,7 @@ export function Navbar() {
 
             {/* Desktop Navigation (>= 768px) with responsive compact density */}
             <nav
-              aria-label="Navigation principale"
+              aria-label="Main navigation"
               className="hidden md:flex items-center gap-0.5 lg:gap-1 text-sm font-medium"
             >
               {navLinks.map((link) => {
@@ -108,7 +108,7 @@ export function Navbar() {
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              aria-label="Rechercher dans le catalogue (Ctrl K)"
+              aria-label="Search catalog (Ctrl K)"
               className="flex h-9 items-center gap-2 rounded-[10px] border border-border bg-surface-subtle px-2.5 lg:px-3 text-xs text-muted-foreground hover:text-foreground hover:border-neutral-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               <Search className="h-3.5 w-3.5 shrink-0" />
@@ -122,7 +122,7 @@ export function Navbar() {
             <button
               type="button"
               onClick={toggleTheme}
-              aria-label="Changer de thème (clair/sombre)"
+              aria-label="Toggle theme (light/dark)"
               className="flex h-9 w-9 items-center justify-center rounded-[10px] border border-border bg-card text-muted-foreground hover:text-foreground hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
@@ -133,7 +133,7 @@ export function Navbar() {
               href="https://github.com/Ericjason2/Liber-UI"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Dépôt GitHub de Liber UI"
+              aria-label="Liber UI GitHub repository"
               className="hidden lg:flex h-9 w-9 items-center justify-center rounded-[10px] border border-border bg-card text-muted-foreground hover:text-foreground hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               <GithubMono size={16} />
@@ -144,7 +144,7 @@ export function Navbar() {
               ref={menuButtonRef}
               type="button"
               onClick={() => setMobileMenuOpen((prev) => !prev)}
-              aria-label={mobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu de navigation"}
+              aria-label={mobileMenuOpen ? "Close menu" : "Open navigation menu"}
               aria-expanded={mobileMenuOpen}
               aria-controls="mobile-navigation"
               className="md:hidden flex h-9 w-9 items-center justify-center rounded-[10px] border border-border bg-card text-muted-foreground hover:text-foreground hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
@@ -158,7 +158,7 @@ export function Navbar() {
         {mobileMenuOpen && (
           <nav
             id="mobile-navigation"
-            aria-label="Menu mobile"
+            aria-label="Mobile menu"
             className="md:hidden border-b border-border bg-card/98 backdrop-blur-lg px-4 py-4 space-y-3 animate-in fade-in slide-in-from-top-2 duration-150"
           >
             {/* Main Section Links */}
@@ -207,7 +207,7 @@ export function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="hover:text-foreground hover:underline"
                 >
-                  Mentions légales
+                  Legal Notice
                 </Link>
                 <span>·</span>
                 <Link
@@ -215,7 +215,7 @@ export function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="hover:text-foreground hover:underline"
                 >
-                  Conditions (CGU)
+                  Terms of Service
                 </Link>
                 <span>·</span>
                 <Link

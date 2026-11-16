@@ -17,32 +17,32 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-border/60">
           <div className="space-y-3">
             <div className="font-mono text-[11px] font-semibold text-foreground uppercase tracking-wider">
-              Ressources
+              Resources
             </div>
             <ul className="space-y-2">
               <li>
                 <Link href="/logos" className="hover:text-foreground transition-colors">
-                  Logos Tech &amp; Marques
+                  Tech &amp; Brand Logos
                 </Link>
               </li>
               <li>
                 <Link href="/themes" className="hover:text-foreground transition-colors">
-                  Palettes &amp; Thèmes
+                  Color Themes &amp; Palettes
                 </Link>
               </li>
               <li>
                 <Link href="/fonts" className="hover:text-foreground transition-colors">
-                  Typographies &amp; Polices
+                  Typography &amp; Fonts
                 </Link>
               </li>
               <li>
                 <Link href="/animations" className="hover:text-foreground transition-colors">
-                  Animations CSS &amp; Tailwind
+                  CSS &amp; Tailwind Animations
                 </Link>
               </li>
               <li>
                 <Link href="/components" className="hover:text-foreground transition-colors">
-                  Composants Open-Source
+                  Open-Source Components
                 </Link>
               </li>
             </ul>
@@ -50,7 +50,7 @@ export function Footer() {
 
           <div className="space-y-3">
             <div className="font-mono text-[11px] font-semibold text-foreground uppercase tracking-wider">
-              Developers & CLI
+              Developers &amp; CLI
             </div>
             <ul className="space-y-2">
               <li>
@@ -65,7 +65,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/docs#logos-guide" className="hover:text-foreground transition-colors">
-                  Guide @liber-ui/logo
+                  @liber-ui/logo Guide
                 </Link>
               </li>
             </ul>
@@ -73,22 +73,22 @@ export function Footer() {
 
           <div className="space-y-3">
             <div className="font-mono text-[11px] font-semibold text-foreground uppercase tracking-wider">
-              Legal & Brands
+              Legal &amp; Brands
             </div>
             <ul className="space-y-2">
               <li>
                 <Link href="/legal/mentions-legales" className="hover:text-foreground transition-colors">
-                  Mentions légales
+                  Legal Notice
                 </Link>
               </li>
               <li>
                 <Link href="/legal/terms" className="hover:text-foreground transition-colors">
-                  Conditions générales (CGU)
+                  Terms of Service
                 </Link>
               </li>
               <li>
                 <Link href="/legal/cookies" className="hover:text-foreground transition-colors">
-                  Politique des cookies
+                  Cookie Policy
                 </Link>
               </li>
               <li>
@@ -98,12 +98,12 @@ export function Footer() {
                   className="hover:text-foreground transition-colors inline-flex items-center gap-1.5 text-left"
                 >
                   <Cookie className="h-3 w-3 text-primary" />
-                  <span>Gérer les cookies</span>
+                  <span>Manage cookies</span>
                 </button>
               </li>
               <li>
                 <Link href="/legal" className="hover:text-foreground transition-colors">
-                  Marques &amp; Procédure Takedown
+                  Brands &amp; Takedown Policy
                 </Link>
               </li>
             </ul>
@@ -114,7 +114,7 @@ export function Footer() {
               Liber UI
             </div>
             <p className="text-xs leading-relaxed text-muted-foreground">
-              Catalogue de ressources open-source pour designers et développeurs. Primitives gratuites prêtes à l&apos;emploi, zéro dépendance imposée.
+              Open-source resource catalog for designers and developers. Free, copy-paste primitives with zero vendor lock-in.
             </p>
             <div className="pt-1">
               <a
@@ -132,12 +132,12 @@ export function Footer() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-muted-foreground">
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-            <span>© 2026 Liber UI. Code sous licence MIT.</span>
+            <span>© 2026 Liber UI. Source code under MIT License.</span>
             <Link href="/legal/mentions-legales" className="hover:text-foreground underline transition-colors">
-              Mentions légales
+              Legal Notice
             </Link>
             <Link href="/legal/terms" className="hover:text-foreground underline transition-colors">
-              CGU
+              Terms
             </Link>
             <Link href="/legal/cookies" className="hover:text-foreground underline transition-colors">
               Cookies
@@ -147,11 +147,11 @@ export function Footer() {
               onClick={handleOpenCookieManager}
               className="hover:text-foreground underline transition-colors"
             >
-              Préférences cookies
+              Cookie preferences
             </button>
           </div>
           <p className="font-mono opacity-80">
-            Copiez, personnalisez, maîtrisez votre code.
+            Copy, customize, own your code.
           </p>
         </div>
       </div>
