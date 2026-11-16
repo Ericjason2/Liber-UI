@@ -46,6 +46,7 @@ export function buildPreviewSrcDoc(
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
   <script>
     tailwind.config = {
@@ -69,16 +70,15 @@ export function buildPreviewSrcDoc(
       font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       -webkit-font-smoothing: antialiased;
     }
-    ${
-      isThumbnail
-        ? `
+    ${isThumbnail
+      ? `
     html, body {
       overflow: hidden !important;
     }
     ::-webkit-scrollbar {
       display: none;
     }`
-        : ""
+      : ""
     }
     .preview-root > * {
       max-width: 100%;
