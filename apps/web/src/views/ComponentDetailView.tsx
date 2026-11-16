@@ -1,18 +1,22 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import type { ComponentItem } from "@/lib/catalog-components-base";
 import { ComponentLivePreview } from "@/components/ComponentLivePreview";
 import {
   ArrowLeft,
+  ArrowRight,
   Check,
+  CheckCircle2,
   Copy,
   Code2,
   Download,
   Eye,
   FileCode2,
   Laptop,
+  Maximize2,
+  Minimize2,
   Moon,
   Smartphone,
   Sun,
@@ -60,12 +64,13 @@ export default function ComponentDetailView({
   const { toast } = useToast();
   const [pm, setPm] = useState<PackageManager>("pnpm");
   const [topTab, setTopTab] = useState<"preview" | "code">("preview");
-  const [topCodeFormat, setTopCodeFormat] = useState<"tsx" | "html">("tsx");
+  const [codeTab, setCodeTab] = useState<"tsx" | "html" | "css" | "config">("tsx");
   const [installTab, setInstallTab] = useState<"cli" | "manual">("cli");
   const [manualFormat, setManualFormat] = useState<"tsx" | "html">("tsx");
   const [codeExpanded, setCodeExpanded] = useState<boolean>(false);
   const [viewport, setViewport] = useState<"100%" | "768px" | "375px">("100%");
   const [previewDark, setPreviewDark] = useState<boolean>(false);
+  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [copiedId, setCopiedId] = useState<string | null>(null);
 
   const pascalName = toPascalCase(component.slug);
@@ -73,19 +78,59 @@ export default function ComponentDetailView({
     component.rawHtml ||
     `<div class="p-6">\n  ${component.description}\n</div>`;
 
-  const demoTsxCode = `import { ${pascalName} } from "@/components/ui/${component.slug}"
+  const cssCode = `@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-export function ${pascalName}Demo() {
-  return (
-    <${pascalName} />
-  )
+/* Styles de base et polices pour le composant */
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
 }`;
 
+  const configCode = `import type { Config } from "tailwindcss"
+
+export default {
+  darkMode: ["class"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
+      },
+    },
+  },
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
+} satisfies Config`;
+
   const usageImportCode = `import { ${pascalName} } from "@/components/ui/${component.slug}"`;
-
   const usageRenderCode = `<${pascalName} />`;
-
   const cliCommand = getShadcnStyleCommand(pm, component.slug);
+
+  // Escape key exits fullscreen
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isFullscreen) {
+        setIsFullscreen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isFullscreen]);
 
   const handleCopy = (text: string, id: string, label: string) => {
     navigator.clipboard.writeText(text);
@@ -107,8 +152,34 @@ export function ${pascalName}Demo() {
     toast(`Fichier ${filename} téléchargé !`);
   };
 
+  const getCodeContent = (tab: "tsx" | "html" | "css" | "config") => {
+    switch (tab) {
+      case "tsx":
+        return component.code;
+      case "html":
+        return exactHtml;
+      case "css":
+        return cssCode;
+      case "config":
+        return configCode;
+    }
+  };
+
+  const getCodeFilename = (tab: "tsx" | "html" | "css" | "config") => {
+    switch (tab) {
+      case "tsx":
+        return `components/ui/${component.slug}.tsx`;
+      case "html":
+        return `${component.slug}.html`;
+      case "css":
+        return "styles/globals.css";
+      case "config":
+        return "tailwind.config.ts";
+    }
+  };
+
   return (
-    <div className="max-w-[1040px] mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-12">
+    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-12">
       {/* 1. Breadcrumb & Back Link */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-2 font-mono text-xs text-muted-foreground">
@@ -127,7 +198,7 @@ export function ${pascalName}Demo() {
             Components
           </Link>
           <span>/</span>
-          <span className="text-foreground font-medium truncate max-w-[260px]">
+          <span className="text-foreground font-medium truncate max-w-[280px]">
             {component.name}
           </span>
         </div>
@@ -143,7 +214,7 @@ export function ${pascalName}Demo() {
                 "text/typescript;charset=utf-8"
               )
             }
-            className="inline-flex items-center gap-1.5 px-3 h-8 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground transition-colors"
+            className="inline-flex items-center gap-1.5 px-3.5 h-8 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground transition-colors"
           >
             <Download className="h-3.5 w-3.5 text-primary" />
             <span>Télécharger .tsx</span>
@@ -157,7 +228,7 @@ export function ${pascalName}Demo() {
                 "text/html;charset=utf-8"
               )
             }
-            className="inline-flex items-center gap-1.5 px-3 h-8 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground transition-colors"
+            className="inline-flex items-center gap-1.5 px-3.5 h-8 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground transition-colors"
           >
             <Download className="h-3.5 w-3.5 text-muted-foreground" />
             <span>Télécharger .html</span>
@@ -165,41 +236,36 @@ export function ${pascalName}Demo() {
         </div>
       </div>
 
-      {/* 2. Component Title & Description (Clean shadcn/ui Header) */}
-      <div className="space-y-4">
-        <div className="space-y-2">
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
-            {component.name}
-          </h1>
-          <p className="text-base text-muted-foreground leading-relaxed max-w-3xl">
-            {component.description}
-          </p>
+      {/* 2. Component Header: Title & Description by Authors (Clean, No tags) */}
+      <div className="space-y-3">
+        <div className="flex items-center gap-2.5">
+          <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-muted text-muted-foreground border border-border capitalize">
+            {component.category}
+          </span>
+          <span className="inline-flex items-center gap-1 text-[11px] font-mono text-emerald-600 dark:text-emerald-400">
+            <CheckCircle2 className="h-3.5 w-3.5" />
+            <span>Rendu garanti 100% identique (HTML &amp; TypeScript)</span>
+          </span>
         </div>
 
-        {component.tags && component.tags.length > 0 && (
-          <div className="flex flex-wrap items-center gap-1.5 pt-1">
-            {component.tags.map((tag) => (
-              <Link
-                key={tag}
-                href={`/components?tag=${encodeURIComponent(tag)}`}
-                className="px-2.5 py-0.5 rounded-md text-xs font-mono bg-muted text-muted-foreground hover:text-foreground transition-colors border border-border/60"
-              >
-                #{tag}
-              </Link>
-            ))}
-          </div>
-        )}
+        <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-foreground">
+          {component.name}
+        </h1>
+
+        <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-4xl">
+          {component.description}
+        </p>
       </div>
 
-      {/* 3. Main Preview / Code Studio (shadcn/ui Top Section) */}
-      <div className="space-y-3">
-        {/* Tabs Bar: Preview | Code + Responsive Controls */}
-        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-2">
+      {/* 3. Main Preview / Code Studio (Wide Canvas, Fullscreen mode, Tabs: Preview | Code) */}
+      <div className="space-y-4">
+        {/* Tabs Bar: Preview | Code + Viewport Controls + Fullscreen Button */}
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-2.5">
           <div className="flex items-center gap-4">
             <button
               type="button"
               onClick={() => setTopTab("preview")}
-              className={`pb-2 -mb-[9px] text-sm font-medium border-b-2 transition-colors flex items-center gap-1.5 ${
+              className={`pb-2.5 -mb-[11px] text-sm font-medium border-b-2 transition-colors flex items-center gap-1.5 ${
                 topTab === "preview"
                   ? "border-foreground text-foreground font-semibold"
                   : "border-transparent text-muted-foreground hover:text-foreground"
@@ -211,7 +277,7 @@ export function ${pascalName}Demo() {
             <button
               type="button"
               onClick={() => setTopTab("code")}
-              className={`pb-2 -mb-[9px] text-sm font-medium border-b-2 transition-colors flex items-center gap-1.5 ${
+              className={`pb-2.5 -mb-[11px] text-sm font-medium border-b-2 transition-colors flex items-center gap-1.5 ${
                 topTab === "code"
                   ? "border-foreground text-foreground font-semibold"
                   : "border-transparent text-muted-foreground hover:text-foreground"
@@ -222,7 +288,7 @@ export function ${pascalName}Demo() {
             </button>
           </div>
 
-          {/* Right Controls: Viewport Size & Light/Dark Toggle */}
+          {/* Right Controls: Viewport Size, Dark/Light Toggle, and Fullscreen */}
           <div className="flex items-center gap-2">
             {topTab === "preview" ? (
               <>
@@ -231,7 +297,7 @@ export function ${pascalName}Demo() {
                     type="button"
                     onClick={() => setViewport("100%")}
                     title="Desktop (100%)"
-                    className={`px-2 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${
+                    className={`px-2.5 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${
                       viewport === "100%"
                         ? "bg-muted text-foreground font-semibold"
                         : "text-muted-foreground hover:text-foreground"
@@ -244,7 +310,7 @@ export function ${pascalName}Demo() {
                     type="button"
                     onClick={() => setViewport("768px")}
                     title="Tablet (768px)"
-                    className={`px-2 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${
+                    className={`px-2.5 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${
                       viewport === "768px"
                         ? "bg-muted text-foreground font-semibold"
                         : "text-muted-foreground hover:text-foreground"
@@ -257,7 +323,7 @@ export function ${pascalName}Demo() {
                     type="button"
                     onClick={() => setViewport("375px")}
                     title="Mobile (375px)"
-                    className={`px-2 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${
+                    className={`px-2.5 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${
                       viewport === "375px"
                         ? "bg-muted text-foreground font-semibold"
                         : "text-muted-foreground hover:text-foreground"
@@ -272,6 +338,7 @@ export function ${pascalName}Demo() {
                   type="button"
                   onClick={() => setPreviewDark((d) => !d)}
                   className="px-2.5 py-1.5 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground flex items-center gap-1.5 transition-colors"
+                  title="Basculer le thème Clair / Sombre"
                 >
                   {previewDark ? (
                     <>
@@ -285,85 +352,251 @@ export function ${pascalName}Demo() {
                     </>
                   )}
                 </button>
-              </>
-            ) : (
-              <div className="flex items-center gap-1 rounded-lg border border-border bg-card p-0.5">
+
+                {/* Fullscreen Button */}
                 <button
                   type="button"
-                  onClick={() => setTopCodeFormat("tsx")}
-                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors ${
-                    topCodeFormat === "tsx"
+                  onClick={() => setIsFullscreen(true)}
+                  className="px-2.5 py-1.5 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground flex items-center gap-1.5 transition-colors"
+                  title="Afficher la prévisualisation en plein écran"
+                >
+                  <Maximize2 className="h-3.5 w-3.5" />
+                  <span className="hidden sm:inline">Plein écran</span>
+                </button>
+              </>
+            ) : (
+              /* Code sub-tabs: TypeScript, HTML, CSS, Config */
+              <div className="flex items-center gap-1 rounded-lg border border-border bg-card p-0.5 overflow-x-auto">
+                <button
+                  type="button"
+                  onClick={() => setCodeTab("tsx")}
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors whitespace-nowrap ${
+                    codeTab === "tsx"
                       ? "bg-muted text-foreground font-semibold"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
-                  React (TSX)
+                  TypeScript (.tsx)
                 </button>
                 <button
                   type="button"
-                  onClick={() => setTopCodeFormat("html")}
-                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors ${
-                    topCodeFormat === "html"
+                  onClick={() => setCodeTab("html")}
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors whitespace-nowrap ${
+                    codeTab === "html"
                       ? "bg-muted text-foreground font-semibold"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
-                  Tailwind HTML
+                  HTML
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setCodeTab("css")}
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors whitespace-nowrap ${
+                    codeTab === "css"
+                      ? "bg-muted text-foreground font-semibold"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  CSS
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setCodeTab("config")}
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors whitespace-nowrap ${
+                    codeTab === "config"
+                      ? "bg-muted text-foreground font-semibold"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  Config
                 </button>
               </div>
             )}
           </div>
         </div>
 
-        {/* Preview Canvas OR Demo Code Block */}
+        {/* Preview Canvas OR Code Block */}
         {topTab === "preview" ? (
-          <div className="rounded-xl border border-border bg-card overflow-hidden shadow-sm">
+          <div className="rounded-2xl border border-border bg-card overflow-hidden shadow-sm">
             <ComponentLivePreview
               rawHtml={exactHtml}
               title={component.name}
               mode="full"
               darkMode={previewDark}
               viewportWidth={viewport}
-              minHeight={520}
+              minHeight={580}
             />
           </div>
         ) : (
-          <div className="rounded-xl border border-neutral-800 bg-neutral-950 text-neutral-100 overflow-hidden shadow-sm">
-            <div className="px-4 py-2.5 border-b border-neutral-800 flex items-center justify-between text-xs font-mono text-neutral-400">
-              <span>
-                {topCodeFormat === "tsx"
-                  ? `${component.slug}-demo.tsx`
-                  : `${component.slug}.html`}
-              </span>
-              <button
-                type="button"
-                onClick={() =>
-                  handleCopy(
-                    topCodeFormat === "tsx" ? demoTsxCode : exactHtml,
-                    "top-code",
-                    "Code copié dans le presse-papiers !"
-                  )
-                }
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-200 transition-colors"
-              >
-                {copiedId === "top-code" ? (
-                  <Check className="h-3.5 w-3.5 text-emerald-400" />
-                ) : (
-                  <Copy className="h-3.5 w-3.5" />
-                )}
-                <span>Copier</span>
-              </button>
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-950 text-neutral-100 overflow-hidden shadow-sm">
+            <div className="px-4 py-2.5 border-b border-neutral-800 flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-neutral-400">
+              <div className="flex items-center gap-2">
+                <FileCode2 className="h-3.5 w-3.5 text-neutral-400" />
+                <span className="text-neutral-200">{getCodeFilename(codeTab)}</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() =>
+                    handleDownloadFile(
+                      getCodeContent(codeTab),
+                      getCodeFilename(codeTab).split("/").pop() || `${component.slug}.txt`,
+                      codeTab === "html"
+                        ? "text/html;charset=utf-8"
+                        : "text/plain;charset=utf-8"
+                    )
+                  }
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-200 transition-colors"
+                >
+                  <Download className="h-3.5 w-3.5" />
+                  <span>Télécharger</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() =>
+                    handleCopy(
+                      getCodeContent(codeTab),
+                      `code-${codeTab}`,
+                      `Code ${codeTab.toUpperCase()} copié !`
+                    )
+                  }
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-200 transition-colors"
+                >
+                  {copiedId === `code-${codeTab}` ? (
+                    <Check className="h-3.5 w-3.5 text-emerald-400" />
+                  ) : (
+                    <Copy className="h-3.5 w-3.5" />
+                  )}
+                  <span>Copier</span>
+                </button>
+              </div>
             </div>
-            <pre className="p-4 sm:p-5 font-mono text-xs sm:text-[13px] text-neutral-200 leading-relaxed overflow-x-auto max-h-[520px] overflow-y-auto select-all">
-              <code>{topCodeFormat === "tsx" ? demoTsxCode : exactHtml}</code>
+
+            <pre className="p-4 sm:p-6 font-mono text-xs sm:text-[13px] text-neutral-200 leading-relaxed overflow-x-auto max-h-[580px] overflow-y-auto select-all">
+              <code>{getCodeContent(codeTab)}</code>
             </pre>
           </div>
         )}
       </div>
 
-      {/* 4. Installation Section (Exact shadcn/ui Layout: Command | Manual) */}
-      <section className="space-y-4 pt-2">
-        <h2 className="text-2xl font-semibold tracking-tight text-foreground border-b border-border pb-2">
+      {/* 4. Fullscreen Modal View */}
+      {isFullscreen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          className="fixed inset-0 z-50 bg-background/95 backdrop-blur-md flex flex-col p-3 sm:p-6 animate-in fade-in duration-200"
+        >
+          {/* Fullscreen Header Bar */}
+          <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-border">
+            <div className="flex items-center gap-3">
+              <h2 className="text-base font-semibold text-foreground">
+                {component.name}
+              </h2>
+              <span className="text-xs text-muted-foreground hidden md:inline">
+                (Appuyez sur <kbd className="px-1.5 py-0.5 rounded bg-muted border border-border text-[11px] font-mono">Échap</kbd> pour quitter)
+              </span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1 rounded-lg border border-border bg-card p-0.5">
+                <button
+                  type="button"
+                  onClick={() => setViewport("100%")}
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono ${
+                    viewport === "100%"
+                      ? "bg-muted text-foreground font-semibold"
+                      : "text-muted-foreground"
+                  }`}
+                >
+                  100%
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setViewport("768px")}
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono ${
+                    viewport === "768px"
+                      ? "bg-muted text-foreground font-semibold"
+                      : "text-muted-foreground"
+                  }`}
+                >
+                  768px
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setViewport("375px")}
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono ${
+                    viewport === "375px"
+                      ? "bg-muted text-foreground font-semibold"
+                      : "text-muted-foreground"
+                  }`}
+                >
+                  375px
+                </button>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setPreviewDark((d) => !d)}
+                className="px-2.5 py-1.5 rounded-lg border border-border bg-card text-xs font-medium text-foreground"
+              >
+                {previewDark ? "Light" : "Dark"}
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setIsFullscreen(false)}
+                className="px-3 py-1.5 rounded-lg bg-primary text-primary-foreground text-xs font-medium flex items-center gap-1.5 shadow-sm"
+              >
+                <Minimize2 className="h-3.5 w-3.5" />
+                <span>Quitter le plein écran</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Fullscreen Canvas */}
+          <div className="flex-1 w-full pt-3 overflow-hidden flex items-center justify-center">
+            <div
+              style={{ width: viewport }}
+              className="h-full rounded-2xl border border-border bg-white dark:bg-slate-950 shadow-2xl overflow-hidden transition-all duration-300"
+            >
+              <iframe
+                title={`Plein écran ${component.name}`}
+                srcDoc={`<!DOCTYPE html>
+<html lang="fr" class="${previewDark ? "dark" : ""}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0; width: 100%; min-height: 100vh;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+  </style>
+</head>
+<body class="${previewDark ? "bg-slate-950 text-slate-100" : "bg-slate-50 text-slate-900"}">
+  <div class="min-h-screen w-full flex flex-col items-center justify-center p-6">
+    <div class="w-full">
+      ${exactHtml}
+    </div>
+  </div>
+</body>
+</html>`}
+                sandbox="allow-scripts"
+                className="w-full h-full border-0 block"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 5. Installation Section (Exact shadcn/ui Layout: Command | Manual) */}
+      <section className="space-y-4 pt-4">
+        <h2 className="text-2xl font-semibold tracking-tight text-foreground border-b border-border pb-2.5">
           Installation
         </h2>
 
@@ -575,9 +808,9 @@ export function ${pascalName}Demo() {
         )}
       </section>
 
-      {/* 5. Usage Section (Exact shadcn/ui Layout: Import + JSX) */}
+      {/* 6. Usage Section (Exact shadcn/ui Layout: Import + JSX) */}
       <section className="space-y-4 pt-2">
-        <h2 className="text-2xl font-semibold tracking-tight text-foreground border-b border-border pb-2">
+        <h2 className="text-2xl font-semibold tracking-tight text-foreground border-b border-border pb-2.5">
           Usage
         </h2>
 
@@ -628,7 +861,7 @@ export function ${pascalName}Demo() {
         </div>
       </section>
 
-      {/* 6. Related Components Grid */}
+      {/* 7. Related Components Grid */}
       {relatedComponents.length > 0 && (
         <section className="space-y-6 pt-6">
           <div className="flex items-center justify-between border-b border-border pb-3">
@@ -637,7 +870,7 @@ export function ${pascalName}Demo() {
                 Composants similaires
               </h2>
               <p className="text-xs text-muted-foreground">
-                Cliquez sur un composant pour ouvrir sa prévisualisation et ses instructions d&apos;installation.
+                Consultez d&apos;autres composants de la même catégorie.
               </p>
             </div>
             <Link
@@ -653,27 +886,31 @@ export function ${pascalName}Demo() {
               <Link
                 key={rel.slug}
                 href={`/components/${rel.slug}`}
-                className="group rounded-xl border border-border bg-card overflow-hidden hover:border-primary/60 transition-all flex flex-col justify-between shadow-sm"
+                className="group rounded-2xl border border-border bg-card overflow-hidden hover:border-foreground/35 hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
               >
-                <div className="relative border-b border-border overflow-hidden">
-                  <ComponentLivePreview
-                    rawHtml={rel.rawHtml || ""}
-                    title={rel.name}
-                    mode="thumbnail"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
-                    <span className="px-3.5 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-medium shadow-md">
-                      Voir le composant →
-                    </span>
-                  </div>
-                </div>
-
-                <div className="p-4 flex items-center justify-between gap-2">
+                <div className="px-4 py-3 border-b border-border/80 bg-muted/20 flex items-center justify-between gap-2">
                   <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors truncate">
                     {rel.name}
                   </h3>
                   <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-muted text-muted-foreground capitalize shrink-0">
                     {rel.category}
+                  </span>
+                </div>
+
+                <div className="relative border-b border-border/80 overflow-hidden bg-slate-50 dark:bg-slate-950">
+                  <ComponentLivePreview
+                    rawHtml={rel.rawHtml || ""}
+                    title={rel.name}
+                    mode="thumbnail"
+                  />
+                </div>
+
+                <div className="p-3.5 flex items-center justify-between text-xs bg-card">
+                  <span className="text-muted-foreground line-clamp-1 flex-1 mr-2">
+                    {rel.description}
+                  </span>
+                  <span className="text-xs font-medium text-foreground/80 group-hover:text-primary transition-colors flex items-center gap-1 shrink-0">
+                    Consulter <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
                   </span>
                 </div>
               </Link>
