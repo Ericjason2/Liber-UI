@@ -39,7 +39,7 @@ export const SAMPLE_BLOCKS: BlockItem[] = [
     category: "hero",
     tags: ["hero", "landing", "centered"],
     license: "MIT",
-    author: "core",
+    author: "Liber UI",
     registryDependencies: ["button", "badge", "input"],
     dependencies: ["lucide-react"],
   },
@@ -51,7 +51,7 @@ export const SAMPLE_BLOCKS: BlockItem[] = [
     category: "hero",
     tags: ["hero", "split", "terminal", "code", "developer"],
     license: "MIT",
-    author: "core",
+    author: "Liber UI",
     registryDependencies: ["button", "badge"],
     dependencies: ["lucide-react"],
   },
@@ -63,7 +63,7 @@ export const SAMPLE_BLOCKS: BlockItem[] = [
     category: "features",
     tags: ["bento", "grid", "features", "analytics"],
     license: "MIT",
-    author: "core",
+    author: "Liber UI",
     registryDependencies: ["card", "badge"],
     dependencies: ["lucide-react"],
   },
@@ -75,7 +75,7 @@ export const SAMPLE_BLOCKS: BlockItem[] = [
     category: "features",
     tags: ["stats", "metrics", "dashboard"],
     license: "MIT",
-    author: "core",
+    author: "Liber UI",
     registryDependencies: ["card"],
     dependencies: [],
   },
@@ -87,7 +87,7 @@ export const SAMPLE_BLOCKS: BlockItem[] = [
     category: "pricing",
     tags: ["pricing", "tiers", "saas"],
     license: "MIT",
-    author: "core",
+    author: "Liber UI",
     registryDependencies: ["button", "card", "badge"],
     dependencies: ["lucide-react"],
   },
@@ -99,7 +99,7 @@ export const SAMPLE_BLOCKS: BlockItem[] = [
     category: "testimonials",
     tags: ["testimonials", "quotes", "social-proof"],
     license: "MIT",
-    author: "core",
+    author: "Liber UI",
     registryDependencies: ["card", "avatar"],
     dependencies: ["lucide-react"],
   },
@@ -111,7 +111,7 @@ export const SAMPLE_BLOCKS: BlockItem[] = [
     category: "cta",
     tags: ["auth", "login", "modal"],
     license: "MIT",
-    author: "core",
+    author: "Liber UI",
     registryDependencies: ["dialog", "button", "input"],
     dependencies: ["lucide-react"],
   },
@@ -123,7 +123,7 @@ export const SAMPLE_BLOCKS: BlockItem[] = [
     category: "footers",
     tags: ["footer", "navigation", "status"],
     license: "MIT",
-    author: "core",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: ["lucide-react"],
   },
@@ -135,7 +135,7 @@ export const SAMPLE_BLOCKS: BlockItem[] = [
     category: "features",
     tags: ["faq", "accordion", "help", "questions"],
     license: "MIT",
-    author: "core",
+    author: "Liber UI",
     registryDependencies: ["accordion"],
     dependencies: ["lucide-react"],
   },
@@ -147,7 +147,7 @@ export const SAMPLE_BLOCKS: BlockItem[] = [
     category: "cta",
     tags: ["cta", "newsletter", "email", "conversion"],
     license: "MIT",
-    author: "core",
+    author: "Liber UI",
     registryDependencies: ["button", "input"],
     dependencies: ["lucide-react"],
   },
@@ -159,7 +159,7 @@ export const SAMPLE_BLOCKS: BlockItem[] = [
     category: "headers",
     tags: ["header", "navbar", "navigation", "menu"],
     license: "MIT",
-    author: "core",
+    author: "Liber UI",
     registryDependencies: ["button"],
     dependencies: ["lucide-react"],
   },
@@ -174,8 +174,7 @@ export const BASE_COMPONENTS: ComponentItem[] = [
     category: "buttons",
     tags: ["button", "interactive", "form"],
     license: "MIT",
-    author: "@liber-ui",
-    mention: "Créé par @liber-ui — Liber UI Core",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: [],
     rawHtml: `<div class="flex flex-wrap items-center justify-center gap-3 p-6">
@@ -185,25 +184,28 @@ export const BASE_COMPONENTS: ComponentItem[] = [
   <button class="px-4 py-2 rounded-lg hover:bg-slate-100 text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors">Ghost</button>
   <button class="px-4 py-2 rounded-lg bg-rose-600 hover:bg-rose-700 text-white text-sm font-medium transition-colors">Destructive</button>
 </div>`,
-    code: `import React from "react";
+    code: `import * as React from "react"
 
-export function Button({
+function Button({
   children,
   variant = "primary",
   className = "",
   ...props
-}: React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  variant?: "primary" | "secondary" | "outline" | "ghost" | "destructive";
+}: React.ComponentProps<"button"> & {
+  variant?: "primary" | "secondary" | "outline" | "ghost" | "destructive"
 }) {
   return (
     <button
+      data-slot="button"
       className={\`px-3.5 py-1.5 rounded-[8px] text-xs font-medium transition-colors \${className}\`}
       {...props}
     >
       {children}
     </button>
-  );
-}`,
+  )
+}
+
+export { Button }`,
   },
   {
     slug: "input",
@@ -213,8 +215,7 @@ export function Button({
     category: "inputs",
     tags: ["input", "form", "text", "search"],
     license: "MIT",
-    author: "@liber-ui",
-    mention: "Créé par @liber-ui — Liber UI Core",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: [],
     rawHtml: `<div class="w-full max-w-sm mx-auto p-6 space-y-2">
@@ -224,16 +225,22 @@ export function Button({
     <input type="text" placeholder="Search components, themes, fonts..." class="w-full h-10 pl-9 pr-4 rounded-lg border border-slate-300 bg-white text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-600" />
   </div>
 </div>`,
-    code: `import React from "react";
+    code: `import * as React from "react"
 
-export function Input(props: React.InputHTMLAttributes<HTMLInputElement>) {
+function Input({
+  className = "",
+  ...props
+}: React.ComponentProps<"input">) {
   return (
     <input
-      className="w-full h-9 px-3 rounded-[8px] border border-border bg-card text-xs text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+      data-slot="input"
+      className={\`w-full h-9 px-3 rounded-[8px] border border-border bg-card text-xs text-foreground focus:outline-none focus:ring-2 focus:ring-ring \${className}\`}
       {...props}
     />
-  );
-}`,
+  )
+}
+
+export { Input }`,
   },
   {
     slug: "stat-card",
@@ -243,8 +250,7 @@ export function Input(props: React.InputHTMLAttributes<HTMLInputElement>) {
     category: "data-display",
     tags: ["card", "stats", "metrics"],
     license: "MIT",
-    author: "@liber-ui",
-    mention: "Créé par @liber-ui — Liber UI Core",
+    author: "Liber UI",
     registryDependencies: ["card"],
     dependencies: [],
     rawHtml: `<div class="w-full max-w-xs mx-auto p-5 rounded-xl border border-slate-200 bg-white space-y-3 shadow-sm">
@@ -261,19 +267,25 @@ export function Input(props: React.InputHTMLAttributes<HTMLInputElement>) {
     <span>Next reset in 8d</span>
   </div>
 </div>`,
-    code: `import React from "react";
+    code: `import * as React from "react"
 
-export function StatCard({
+function StatCard({
   label = "Total Edge Traffic",
   value = "1,429,820",
   delta = "+24.8%",
-}: {
-  label?: string;
-  value?: string;
-  delta?: string;
+  className = "",
+  ...props
+}: React.ComponentProps<"div"> & {
+  label?: string
+  value?: string
+  delta?: string
 }) {
   return (
-    <div className="p-4 rounded-[10px] border border-border bg-card space-y-2 shadow-sm">
+    <div
+      data-slot="stat-card"
+      className={\`p-4 rounded-[10px] border border-border bg-card space-y-2 shadow-sm \${className}\`}
+      {...props}
+    >
       <div className="flex items-center justify-between text-xs text-muted-foreground">
         <span>{label}</span>
         <span className="font-mono text-emerald-600 font-semibold bg-emerald-500/10 px-1.5 py-0.5 rounded-[4px]">
@@ -282,8 +294,10 @@ export function StatCard({
       </div>
       <div className="text-2xl font-bold font-mono text-foreground">{value}</div>
     </div>
-  );
-}`,
+  )
+}
+
+export { StatCard }`,
   },
   {
     slug: "badge-pill",
@@ -293,8 +307,7 @@ export function StatCard({
     category: "feedback",
     tags: ["badge", "pill", "status", "tag"],
     license: "MIT",
-    author: "@liber-ui",
-    mention: "Créé par @liber-ui — Liber UI Core",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: [],
     rawHtml: `<div class="flex flex-wrap items-center justify-center gap-2.5 p-6">
@@ -311,16 +324,26 @@ export function StatCard({
     Outage
   </span>
 </div>`,
-    code: `import React from "react";
+    code: `import * as React from "react"
 
-export function BadgePill({ label = "Operational" }: { label?: string }) {
+function BadgePill({
+  label = "Operational",
+  className = "",
+  ...props
+}: React.ComponentProps<"span"> & { label?: string }) {
   return (
-    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 font-medium">
+    <span
+      data-slot="badge-pill"
+      className={\`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 font-medium \${className}\`}
+      {...props}
+    >
       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
       {label}
     </span>
-  );
-}`,
+  )
+}
+
+export { BadgePill }`,
   },
   {
     slug: "tabs-control",
@@ -330,8 +353,7 @@ export function BadgePill({ label = "Operational" }: { label?: string }) {
     category: "data-display",
     tags: ["tabs", "navigation", "toggle"],
     license: "MIT",
-    author: "@liber-ui",
-    mention: "Créé par @liber-ui — Liber UI Core",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: [],
     rawHtml: `<div class="w-full max-w-sm mx-auto p-6 space-y-3">
@@ -341,19 +363,26 @@ export function BadgePill({ label = "Operational" }: { label?: string }) {
     <button class="flex-1 py-1.5 rounded-md text-slate-600 hover:text-slate-900">Settings</button>
   </div>
 </div>`,
-    code: `import React, { useState } from "react";
+    code: `import * as React from "react"
 
-export function TabsControl({
+function TabsControl({
   tabs = ["overview", "analytics", "settings"],
-}: {
-  tabs?: string[];
+  className = "",
+  ...props
+}: React.ComponentProps<"div"> & {
+  tabs?: string[]
 }) {
-  const [active, setActive] = useState(tabs[0]);
+  const [active, setActive] = React.useState(tabs[0])
   return (
-    <div className="flex items-center rounded-[8px] border border-border bg-muted/40 p-1 text-xs">
+    <div
+      data-slot="tabs-control"
+      className={\`flex items-center rounded-[8px] border border-border bg-muted/40 p-1 text-xs \${className}\`}
+      {...props}
+    >
       {tabs.map((t) => (
         <button
           key={t}
+          type="button"
           onClick={() => setActive(t)}
           className={\`flex-1 py-1 rounded-[6px] capitalize \${
             active === t
@@ -365,8 +394,10 @@ export function TabsControl({
         </button>
       ))}
     </div>
-  );
-}`,
+  )
+}
+
+export { TabsControl }`,
   },
   {
     slug: "accordion-item",
@@ -376,8 +407,7 @@ export function TabsControl({
     category: "data-display",
     tags: ["accordion", "collapse", "faq"],
     license: "MIT",
-    author: "@liber-ui",
-    mention: "Créé par @liber-ui — Liber UI Core",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: ["lucide-react"],
     rawHtml: `<div class="w-full max-w-sm mx-auto rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm">
@@ -389,19 +419,25 @@ export function TabsControl({
     Assets are copied directly into your codebase as TypeScript and Tailwind source files with zero runtime lock-in.
   </div>
 </div>`,
-    code: `import React, { useState } from "react";
+    code: `import * as React from "react"
 
-export function AccordionItem({
+function AccordionItem({
   title = "How are assets installed?",
   children = "Assets are copied directly into your codebase.",
-}: {
-  title?: string;
-  children?: React.ReactNode;
+  className = "",
+  ...props
+}: React.ComponentProps<"div"> & {
+  title?: string
 }) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = React.useState(true)
   return (
-    <div className="rounded-[8px] border border-border bg-card overflow-hidden">
+    <div
+      data-slot="accordion-item"
+      className={\`rounded-[8px] border border-border bg-card overflow-hidden \${className}\`}
+      {...props}
+    >
       <button
+        type="button"
         onClick={() => setOpen(!open)}
         className="w-full px-4 py-3 flex items-center justify-between text-xs font-semibold text-foreground"
       >
@@ -413,8 +449,10 @@ export function AccordionItem({
         </div>
       )}
     </div>
-  );
-}`,
+  )
+}
+
+export { AccordionItem }`,
   },
   {
     slug: "avatar-stack",
@@ -424,8 +462,7 @@ export function AccordionItem({
     category: "data-display",
     tags: ["avatar", "team", "presence"],
     license: "MIT",
-    author: "@liber-ui",
-    mention: "Créé par @liber-ui — Liber UI Core",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: [],
     rawHtml: `<div class="flex items-center justify-center gap-3 p-6">
@@ -436,15 +473,21 @@ export function AccordionItem({
     <div class="w-10 h-10 rounded-full border-2 border-white bg-blue-600 text-white flex items-center justify-center font-mono text-xs font-bold shadow-sm">+12</div>
   </div>
 </div>`,
-    code: `import React from "react";
+    code: `import * as React from "react"
 
-export function AvatarStack({
+function AvatarStack({
   initials = ["SC", "AD", "KM", "EL"],
-}: {
-  initials?: string[];
+  className = "",
+  ...props
+}: React.ComponentProps<"div"> & {
+  initials?: string[]
 }) {
   return (
-    <div className="flex -space-x-2">
+    <div
+      data-slot="avatar-stack"
+      className={\`flex -space-x-2 \${className}\`}
+      {...props}
+    >
       {initials.map((init, i) => (
         <div
           key={i}
@@ -454,8 +497,10 @@ export function AvatarStack({
         </div>
       ))}
     </div>
-  );
-}`,
+  )
+}
+
+export { AvatarStack }`,
   },
   {
     slug: "toggle-switch",
@@ -465,8 +510,7 @@ export function AvatarStack({
     category: "inputs",
     tags: ["switch", "toggle", "form", "boolean"],
     license: "MIT",
-    author: "@liber-ui",
-    mention: "Créé par @liber-ui — Liber UI Core",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: [],
     rawHtml: `<div class="flex items-center justify-center gap-4 p-6">
@@ -475,18 +519,24 @@ export function AvatarStack({
     <span class="w-5 h-5 rounded-full bg-white block translate-x-5 shadow-sm"></span>
   </button>
 </div>`,
-    code: `import React, { useState } from "react";
+    code: `import * as React from "react"
 
-export function ToggleSwitch() {
-  const [checked, setChecked] = useState(true);
+function ToggleSwitch({
+  className = "",
+  ...props
+}: React.ComponentProps<"button">) {
+  const [checked, setChecked] = React.useState(true)
   return (
     <button
+      type="button"
       role="switch"
       aria-checked={checked}
+      data-slot="toggle-switch"
       onClick={() => setChecked(!checked)}
       className={\`w-11 h-6 rounded-full p-0.5 border transition-colors \${
         checked ? "bg-primary border-primary" : "bg-muted border-border"
-      }\`}
+      } \${className}\`}
+      {...props}
     >
       <span
         className={\`w-5 h-5 rounded-full block transition-transform \${
@@ -496,8 +546,10 @@ export function ToggleSwitch() {
         }\`}
       />
     </button>
-  );
-}`,
+  )
+}
+
+export { ToggleSwitch }`,
   },
   {
     slug: "alert-banner",
@@ -507,30 +559,37 @@ export function ToggleSwitch() {
     category: "feedback",
     tags: ["alert", "banner", "feedback", "notification"],
     license: "MIT",
-    author: "@liber-ui",
-    mention: "Créé par @liber-ui — Liber UI Core",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: ["lucide-react"],
     rawHtml: `<div class="w-full max-w-sm mx-auto p-4 rounded-xl border border-blue-200 bg-blue-50/80 text-xs text-slate-900 space-y-1">
   <span class="font-semibold text-blue-900 block">Notice: API rate limits updated</span>
   <span class="text-blue-700 leading-relaxed block">Standard tier quotas have been doubled to 20,000 requests/hour.</span>
 </div>`,
-    code: `import React from "react";
+    code: `import * as React from "react"
 
-export function AlertBanner({
+function AlertBanner({
   title = "Notice",
   message = "Standard tier quotas have been updated.",
-}: {
-  title?: string;
-  message?: string;
+  className = "",
+  ...props
+}: React.ComponentProps<"div"> & {
+  title?: string
+  message?: string
 }) {
   return (
-    <div className="p-3.5 rounded-[8px] border border-blue-500/20 bg-blue-500/10 text-xs text-foreground space-y-0.5">
+    <div
+      data-slot="alert-banner"
+      className={\`p-3.5 rounded-[8px] border border-blue-500/20 bg-blue-500/10 text-xs text-foreground space-y-0.5 \${className}\`}
+      {...props}
+    >
       <span className="font-semibold block">{title}</span>
       <span className="text-muted-foreground text-[11px] block">{message}</span>
     </div>
-  );
-}`,
+  )
+}
+
+export { AlertBanner }`,
   },
   {
     slug: "progress-bar",
@@ -540,8 +599,7 @@ export function AlertBanner({
     category: "feedback",
     tags: ["progress", "stepper", "loading", "indicator"],
     license: "MIT",
-    author: "@liber-ui",
-    mention: "Créé par @liber-ui — Liber UI Core",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: [],
     rawHtml: `<div class="w-full max-w-sm mx-auto p-6 space-y-2">
@@ -553,11 +611,19 @@ export function AlertBanner({
     <div style="width: 68%" class="h-full bg-blue-600 rounded-full"></div>
   </div>
 </div>`,
-    code: `import React from "react";
+    code: `import * as React from "react"
 
-export function ProgressBar({ value = 68 }: { value?: number }) {
+function ProgressBar({
+  value = 68,
+  className = "",
+  ...props
+}: React.ComponentProps<"div"> & { value?: number }) {
   return (
-    <div className="w-full space-y-1.5">
+    <div
+      data-slot="progress-bar"
+      className={\`w-full space-y-1.5 \${className}\`}
+      {...props}
+    >
       <div className="flex justify-between text-xs font-mono">
         <span>Progress</span>
         <span>{value}%</span>
@@ -569,19 +635,20 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
         />
       </div>
     </div>
-  );
-}`,
+  )
+}
+
+export { ProgressBar }`,
   },
   {
     slug: "modal-dialog",
     kind: "component",
     name: "Modal Dialog",
-    description: "Accessible dialog overlay with backdrop dismiss, keyboard trap, and action triggers (Flowbite UI).",
+    description: "Accessible dialog overlay with backdrop dismiss, keyboard trap, and action triggers.",
     category: "feedback",
-    tags: ["modal", "dialog", "overlay", "accessible", "flowbite"],
+    tags: ["modal", "dialog", "overlay", "accessible"],
     license: "MIT",
-    author: "@flowbite",
-    mention: "Créé par @flowbite — Flowbite Open UI",
+    author: "Liber UI",
     registryDependencies: ["button"],
     dependencies: ["lucide-react"],
     rawHtml: `<div class="w-full max-w-sm mx-auto p-5 rounded-xl border border-slate-200 bg-white shadow-lg space-y-3">
@@ -595,24 +662,25 @@ export function ProgressBar({ value = 68 }: { value?: number }) {
     <button class="px-3 py-1.5 rounded-lg bg-blue-600 text-white text-xs font-medium">Confirm</button>
   </div>
 </div>`,
-    code: `import React, { useState, useEffect } from "react";
+    code: `import * as React from "react"
 
-export function ModalDialog() {
-  const [isOpen, setIsOpen] = useState(false);
+function ModalDialog() {
+  const [isOpen, setIsOpen] = React.useState(false)
 
-  useEffect(() => {
+  React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setIsOpen(false);
-    };
-    if (isOpen) {
-      document.addEventListener("keydown", handleKeyDown);
+      if (e.key === "Escape") setIsOpen(false)
     }
-    return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen]);
+    if (isOpen) {
+      document.addEventListener("keydown", handleKeyDown)
+    }
+    return () => document.removeEventListener("keydown", handleKeyDown)
+  }, [isOpen])
 
   return (
     <>
       <button
+        type="button"
         onClick={() => setIsOpen(true)}
         className="px-3.5 py-1.5 rounded-[8px] bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition-opacity"
       >
@@ -623,6 +691,7 @@ export function ModalDialog() {
         <div
           role="dialog"
           aria-modal="true"
+          data-slot="modal-dialog"
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
           onClick={() => setIsOpen(false)}
         >
@@ -633,9 +702,10 @@ export function ModalDialog() {
             <div className="flex items-center justify-between border-b border-border pb-3">
               <h3 className="text-sm font-semibold text-foreground">Confirm Action</h3>
               <button
+                type="button"
                 onClick={() => setIsOpen(false)}
                 className="text-muted-foreground hover:text-foreground text-xs p-1"
-                aria-label="Fermer"
+                aria-label="Close"
               >
                 ✕
               </button>
@@ -645,12 +715,14 @@ export function ModalDialog() {
             </p>
             <div className="flex items-center justify-end gap-2 pt-2">
               <button
+                type="button"
                 onClick={() => setIsOpen(false)}
                 className="px-3 py-1.5 rounded-[8px] border border-border text-xs text-foreground hover:bg-muted"
               >
                 Cancel
               </button>
               <button
+                type="button"
                 onClick={() => setIsOpen(false)}
                 className="px-3 py-1.5 rounded-[8px] bg-primary text-primary-foreground text-xs font-medium hover:opacity-90"
               >
@@ -661,19 +733,20 @@ export function ModalDialog() {
         </div>
       )}
     </>
-  );
-}`,
+  )
+}
+
+export { ModalDialog }`,
   },
   {
     slug: "dropdown-menu",
     kind: "component",
     name: "Dropdown Menu",
-    description: "Floating action popover with outside click detection and keyboard item navigation (Preline UI).",
+    description: "Floating action popover with outside click detection and keyboard item navigation.",
     category: "buttons",
-    tags: ["dropdown", "menu", "popover", "preline", "accessible"],
+    tags: ["dropdown", "menu", "popover", "accessible"],
     license: "MIT",
-    author: "@preline",
-    mention: "Créé par @preline — Preline Open UI",
+    author: "Liber UI",
     registryDependencies: ["button"],
     dependencies: [],
     rawHtml: `<div class="flex flex-col items-center justify-center p-4">
@@ -684,25 +757,26 @@ export function ModalDialog() {
     <div class="px-3 py-1.5 text-rose-600">Delete</div>
   </div>
 </div>`,
-    code: `import React, { useState, useRef, useEffect } from "react";
+    code: `import * as React from "react"
 
-export function DropdownMenu() {
-  const [isOpen, setIsOpen] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
+function DropdownMenu() {
+  const [isOpen, setIsOpen] = React.useState(false)
+  const ref = React.useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
+  React.useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
       if (ref.current && !ref.current.contains(e.target as Node)) {
-        setIsOpen(false);
+        setIsOpen(false)
       }
     }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [])
 
   return (
-    <div className="relative inline-block text-left" ref={ref}>
+    <div data-slot="dropdown-menu" className="relative inline-block text-left" ref={ref}>
       <button
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         className="px-3.5 py-1.5 rounded-[8px] border border-border bg-card hover:bg-muted text-xs font-medium text-foreground flex items-center gap-2"
@@ -713,12 +787,14 @@ export function DropdownMenu() {
       {isOpen && (
         <div className="absolute left-0 mt-2 w-48 rounded-lg border border-border bg-card shadow-lg py-1 z-20 text-xs">
           <button
+            type="button"
             onClick={() => setIsOpen(false)}
             className="w-full text-left px-3 py-1.5 text-foreground hover:bg-muted transition-colors"
           >
             Edit project
           </button>
           <button
+            type="button"
             onClick={() => setIsOpen(false)}
             className="w-full text-left px-3 py-1.5 text-foreground hover:bg-muted transition-colors"
           >
@@ -726,6 +802,7 @@ export function DropdownMenu() {
           </button>
           <div className="h-px bg-border my-1" />
           <button
+            type="button"
             onClick={() => setIsOpen(false)}
             className="w-full text-left px-3 py-1.5 text-red-600 hover:bg-red-500/10 transition-colors"
           >
@@ -734,33 +811,35 @@ export function DropdownMenu() {
         </div>
       )}
     </div>
-  );
-}`,
+  )
+}
+
+export { DropdownMenu }`,
   },
   {
     slug: "tooltip-hint",
     kind: "component",
     name: "Tooltip Hint",
-    description: "Subtle informational callout with pointer indicator on hover and focus (Flowbite UI).",
+    description: "Subtle informational callout with pointer indicator on hover and focus.",
     category: "data-display",
-    tags: ["tooltip", "hint", "hover", "flowbite", "accessible"],
+    tags: ["tooltip", "hint", "hover", "accessible"],
     license: "MIT",
-    author: "@flowbite",
-    mention: "Créé par @flowbite — Flowbite Open UI",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: [],
     rawHtml: `<div class="flex flex-col items-center justify-center p-6 gap-2">
   <div class="px-2.5 py-1 bg-slate-900 text-white text-[11px] font-medium rounded shadow-md">Quick helpful tip</div>
   <button class="px-3.5 py-1.5 rounded-lg border border-slate-200 bg-white text-xs text-slate-800 shadow-sm">Hover over me</button>
 </div>`,
-    code: `import React, { useState } from "react";
+    code: `import * as React from "react"
 
-export function TooltipHint() {
-  const [visible, setVisible] = useState(false);
+function TooltipHint() {
+  const [visible, setVisible] = React.useState(false)
 
   return (
-    <div className="relative inline-block">
+    <div data-slot="tooltip-hint" className="relative inline-block">
       <button
+        type="button"
         onMouseEnter={() => setVisible(true)}
         onMouseLeave={() => setVisible(false)}
         onFocus={() => setVisible(true)}
@@ -779,19 +858,20 @@ export function TooltipHint() {
         </div>
       )}
     </div>
-  );
-}`,
+  )
+}
+
+export { TooltipHint }`,
   },
   {
     slug: "toast-snackbar",
     kind: "component",
     name: "Toast Snackbar",
-    description: "Floating status card with action feedback, status iconography, and dismiss trigger (Preline UI).",
+    description: "Floating status card with action feedback, status iconography, and dismiss trigger.",
     category: "feedback",
-    tags: ["toast", "snackbar", "notification", "preline", "feedback"],
+    tags: ["toast", "snackbar", "notification", "feedback"],
     license: "MIT",
-    author: "@preline",
-    mention: "Créé par @preline — Preline Open UI",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: [],
     rawHtml: `<div class="w-full max-w-sm mx-auto p-6">
@@ -803,13 +883,13 @@ export function TooltipHint() {
     <span class="text-slate-400">✕</span>
   </div>
 </div>`,
-    code: `import React, { useState } from "react";
+    code: `import * as React from "react"
 
-export function ToastSnackbar() {
-  const [visible, setVisible] = useState(true);
+function ToastSnackbar() {
+  const [visible, setVisible] = React.useState(true)
 
   return (
-    <div className="w-full max-w-sm">
+    <div data-slot="toast-snackbar" className="w-full max-w-sm">
       {visible ? (
         <div
           role="status"
@@ -820,6 +900,7 @@ export function ToastSnackbar() {
             <span className="text-foreground font-medium">Changes saved successfully</span>
           </div>
           <button
+            type="button"
             onClick={() => setVisible(false)}
             className="text-muted-foreground hover:text-foreground text-xs px-1"
             aria-label="Dismiss toast"
@@ -829,6 +910,7 @@ export function ToastSnackbar() {
         </div>
       ) : (
         <button
+          type="button"
           onClick={() => setVisible(true)}
           className="px-3 py-1.5 rounded-[8px] border border-border text-xs text-muted-foreground hover:text-foreground"
         >
@@ -836,19 +918,20 @@ export function ToastSnackbar() {
         </button>
       )}
     </div>
-  );
-}`,
+  )
+}
+
+export { ToastSnackbar }`,
   },
   {
     slug: "skeleton-shimmer",
     kind: "component",
     name: "Skeleton Shimmer Loader",
-    description: "Wireframe placeholder elements with pulsing animation for async loading states (Flowbite UI).",
+    description: "Wireframe placeholder elements with pulsing animation for async loading states.",
     category: "feedback",
-    tags: ["skeleton", "loader", "shimmer", "flowbite", "placeholder"],
+    tags: ["skeleton", "loader", "shimmer", "placeholder"],
     license: "MIT",
-    author: "@flowbite",
-    mention: "Créé par @flowbite — Flowbite Open UI",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: [],
     rawHtml: `<div class="w-full max-w-sm mx-auto p-4 rounded-xl border border-slate-200 bg-white space-y-3">
@@ -864,11 +947,18 @@ export function ToastSnackbar() {
     <div class="h-3 w-4/5 rounded bg-slate-200 animate-pulse"></div>
   </div>
 </div>`,
-    code: `import React from "react";
+    code: `import * as React from "react"
 
-export function SkeletonShimmer() {
+function SkeletonShimmer({
+  className = "",
+  ...props
+}: React.ComponentProps<"div">) {
   return (
-    <div className="w-full max-w-sm p-4 rounded-xl border border-border bg-card space-y-3">
+    <div
+      data-slot="skeleton-shimmer"
+      className={\`w-full max-w-sm p-4 rounded-xl border border-border bg-card space-y-3 \${className}\`}
+      {...props}
+    >
       <div className="flex items-center gap-3">
         <div className="w-10 h-10 rounded-full bg-muted animate-pulse" />
         <div className="space-y-1.5 flex-1">
@@ -881,19 +971,20 @@ export function SkeletonShimmer() {
         <div className="h-3 w-4/5 rounded bg-muted animate-pulse" />
       </div>
     </div>
-  );
-}`,
+  )
+}
+
+export { SkeletonShimmer }`,
   },
   {
     slug: "breadcrumb-trail",
     kind: "component",
     name: "Breadcrumb Trail",
-    description: "Semantic breadcrumb navigation with chevron delimiters and WCAG aria-current attributes (Flowbite UI).",
+    description: "Semantic breadcrumb navigation with chevron delimiters and WCAG aria-current attributes.",
     category: "data-display",
-    tags: ["breadcrumb", "navigation", "trail", "flowbite", "accessible"],
+    tags: ["breadcrumb", "navigation", "trail", "accessible"],
     license: "MIT",
-    author: "@flowbite",
-    mention: "Créé par @flowbite — Flowbite Open UI",
+    author: "Liber UI",
     registryDependencies: [],
     dependencies: [],
     rawHtml: `<nav aria-label="Breadcrumb" class="flex items-center justify-center p-6 text-xs text-slate-500">
@@ -905,17 +996,25 @@ export function SkeletonShimmer() {
     <li><span class="font-semibold text-slate-900">Navigation</span></li>
   </ol>
 </nav>`,
-    code: `import React from "react";
+    code: `import * as React from "react"
 
-export function BreadcrumbTrail() {
+function BreadcrumbTrail({
+  className = "",
+  ...props
+}: React.ComponentProps<"nav">) {
   const items = [
     { label: "Home", href: "#" },
     { label: "Components", href: "#" },
     { label: "Navigation", href: "#", current: true },
-  ];
+  ]
 
   return (
-    <nav aria-label="Breadcrumb" className="flex items-center text-xs text-muted-foreground">
+    <nav
+      aria-label="Breadcrumb"
+      data-slot="breadcrumb-trail"
+      className={\`flex items-center text-xs text-muted-foreground \${className}\`}
+      {...props}
+    >
       <ol className="inline-flex items-center space-x-1 md:space-x-2">
         {items.map((item, index) => (
           <li key={item.label} className="inline-flex items-center">
@@ -933,10 +1032,11 @@ export function BreadcrumbTrail() {
         ))}
       </ol>
     </nav>
-  );
-}`,
+  )
+}
+
+export { BreadcrumbTrail }`,
   },
 ];
 
 export const TOTAL_COMPONENTS_COUNT = 1525;
-

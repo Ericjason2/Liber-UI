@@ -3,16 +3,16 @@
   "name": "info-cards",
   "type": "registry:ui",
   "title": "Info cards",
-  "description": "Info cards - Créé par @arya sur TailwindFlex.",
-  "author": "@arya (TailwindFlex)",
+  "description": "Info cards — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, grid, footer).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/info-cards.tsx",
-      "content": "/**\n * Component: Info cards\n * Author: @arya (https://tailwindflex.com/@arya)\n * Source: https://tailwindflex.com/@arya/info-cards\n * Attribution: Créé par @arya sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function InfoCards() {\n  return (\n    <div>\n    <ul className=\"flex flex-col md grid-cols-3 gap-5 text-redis-neutral-800 max-w-2xl mx-auto p-10 mt-10\">\n        <li\n            className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n            <span className=\"mb-1 text-teal-400 font-display text-5xl\">45K+</span>\n            Users\n        </li>\n        <li\n            className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n            <span className=\"mb-1 text-teal-400 font-display text-5xl\">78K+</span>\n            Downloads\n        </li>\n        <li\n            className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n            <span className=\"mb-1 text-teal-400 font-display text-5xl\">50+</span>\n            Products\n        </li>\n    </ul>\n    </div>\n  );\n}\n",
+      "path": "components/ui/info-cards.tsx",
+      "content": "import * as React from \"react\"\n\nfunction InfoCards({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"info-cards\"\n      className={className}\n      {...props}\n    >\n      <ul className=\"flex flex-col md grid-cols-3 gap-5 text-redis-neutral-800 max-w-2xl mx-auto p-10 mt-10\">\n          <li\n              className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n              <span className=\"mb-1 text-teal-400 font-display text-5xl\">45K+</span>\n              Users\n          </li>\n          <li\n              className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n              <span className=\"mb-1 text-teal-400 font-display text-5xl\">78K+</span>\n              Downloads\n          </li>\n          <li\n              className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n              <span className=\"mb-1 text-teal-400 font-display text-5xl\">50+</span>\n              Products\n          </li>\n      </ul>\n    </div>\n  )\n}\n\nexport { InfoCards }\n",
       "type": "registry:ui"
     }
   ],
@@ -46,10 +46,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@arya",
-    "authorUrl": "https://tailwindflex.com/@arya",
-    "sourceUrl": "https://tailwindflex.com/@arya/info-cards",
-    "mention": "Créé par @arya sur TailwindFlex",
     "rawHtml": "<ul class=\"flex flex-col md:grid grid-cols-3 gap-5 text-redis-neutral-800 max-w-2xl mx-auto p-10 mt-10\">\n    <li\n        class=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n        <span class=\"mb-1 text-teal-400 font-display text-5xl\">45K+</span>\n        Users\n    </li>\n    <li\n        class=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n        <span class=\"mb-1 text-teal-400 font-display text-5xl\">78K+</span>\n        Downloads\n    </li>\n    <li\n        class=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n        <span class=\"mb-1 text-teal-400 font-display text-5xl\">50+</span>\n        Products\n    </li>\n</ul>"
   }
 }

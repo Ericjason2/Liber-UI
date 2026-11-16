@@ -3,16 +3,16 @@
   "name": "boost-your-business-with-a-stunning-website",
   "type": "registry:ui",
   "title": "Boost Your Business with a Stunning Website!",
-  "description": "Boost Your Business with a Stunning Website! - Créé par @vikas-kushwah sur TailwindFlex.",
-  "author": "@vikas-kushwah (TailwindFlex)",
+  "description": "Boost Your Business with a Stunning Website! — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/boost-your-business-with-a-stunning-website.tsx",
-      "content": "/**\n * Component: Boost Your Business with a Stunning Website!\n * Author: @vikas-kushwah (https://tailwindflex.com/@vikas-kushwah)\n * Source: https://tailwindflex.com/@vikas-kushwah/boost-your-business-with-a-stunning-website\n * Attribution: Créé par @vikas-kushwah sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BoostYourBusinessWithAStunningWebsite() {\n  return (\n    <div>\n    <main className=\"h-screen my-10\">\n          <section className=\"bg-gradient-to-r from-[#75723E] to-[#A06C5D]  text-white  flex justify-center items-center px-6 text-center py-20\">\n            <div className=\" max-w-3xl mx-auto\">\n              <h2 className=\"text-3xl md4xl font-bold mb-4\">\n                Transform Your Online Presence Today!\n              </h2>\n              <p className=\"text-lg md md20 pb-10\">\n                Get a high-performing, visually stunning website tailored for your business needs.\n              </p>\n              <a\n                href=\"/contact\"\n                className=\"bg-white  text-[#75723E] hover200 text-lg font-semibold py-3 px-6 rounded-full shadow-lg transition-all duration-300\"\n              >\n                Get a Free Consultation\n              </a>\n            </div>\n          </section>\n    </main>\n    </div>\n  );\n}\n",
+      "path": "components/ui/boost-your-business-with-a-stunning-website.tsx",
+      "content": "import * as React from \"react\"\n\nfunction BoostYourBusinessWithAStunningWebsite({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"boost-your-business-with-a-stunning-website\"\n      className={className}\n      {...props}\n    >\n      <main className=\"h-screen my-10\">\n            <section className=\"bg-gradient-to-r from-[#75723E] to-[#A06C5D]  text-white  flex justify-center items-center px-6 text-center py-20\">\n              <div className=\" max-w-3xl mx-auto\">\n                <h2 className=\"text-3xl md4xl font-bold mb-4\">\n                  Transform Your Online Presence Today!\n                </h2>\n                <p className=\"text-lg md md20 pb-10\">\n                  Get a high-performing, visually stunning website tailored for your business needs.\n                </p>\n                <a\n                  href=\"/contact\"\n                  className=\"bg-white  text-[#75723E] hover200 text-lg font-semibold py-3 px-6 rounded-full shadow-lg transition-all duration-300\"\n                >\n                  Get a Free Consultation\n                </a>\n              </div>\n            </section>\n      </main>\n    </div>\n  )\n}\n\nexport { BoostYourBusinessWithAStunningWebsite }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@vikas-kushwah",
-    "authorUrl": "https://tailwindflex.com/@vikas-kushwah",
-    "sourceUrl": "https://tailwindflex.com/@vikas-kushwah/boost-your-business-with-a-stunning-website",
-    "mention": "Créé par @vikas-kushwah sur TailwindFlex",
     "rawHtml": "<main class=\"h-screen my-10\">\n      <section class=\"bg-gradient-to-r from-[#75723E] to-[#A06C5D]  text-white  flex justify-center items-center px-6 text-center py-20\">\n        <div class=\" max-w-3xl mx-auto\">\n          <h2 class=\"text-3xl md:text-4xl font-bold mb-4\">\n            Transform Your Online Presence Today!\n          </h2>\n          <p class=\"text-lg md:text-xl md:pb-20 pb-10\">\n            Get a high-performing, visually stunning website tailored for your business needs.\n          </p>\n          <a\n            href=\"/contact\"\n            class=\"bg-white  text-[#75723E] hover:bg-gray-200 text-lg font-semibold py-3 px-6 rounded-full shadow-lg transition-all duration-300\"\n          >\n            Get a Free Consultation\n          </a>\n        </div>\n      </section>\n</main>"
   }
 }

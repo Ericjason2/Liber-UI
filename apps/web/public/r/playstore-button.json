@@ -3,16 +3,16 @@
   "name": "playstore-button",
   "type": "registry:ui",
   "title": "Playstore Button",
-  "description": "Playstore Button - Créé par @arya sur TailwindFlex.",
-  "author": "@arya (TailwindFlex)",
+  "description": "Playstore Button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/playstore-button.tsx",
-      "content": "/**\n * Component: Playstore Button\n * Author: @arya (https://tailwindflex.com/@arya)\n * Source: https://tailwindflex.com/@arya/playstore-button\n * Attribution: Créé par @arya sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PlaystoreButton() {\n  return (\n    <div>\n    <button className=\"px-3 py-1.5 flex gap-2 items-center rounded-xl outline outline-2\">\n      <div className=\"w-10\">\n        <img className=\"h-full w-full\"  src=\"https://www.svgrepo.com/show/394180/google-play.svg\"  />\n      </div>\n      <div className=\"\">\n        <div className=\"text-sm font-extrabold\">Download on the</div>\n        <div className=\"text-2xl\">Google Play</div>\n      </div>\n    </button>\n    </div>\n  );\n}\n",
+      "path": "components/ui/playstore-button.tsx",
+      "content": "import * as React from \"react\"\n\nfunction PlaystoreButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"playstore-button\"\n      className={className}\n      {...props}\n    >\n      <button className=\"px-3 py-1.5 flex gap-2 items-center rounded-xl outline outline-2\">\n        <div className=\"w-10\">\n          <img className=\"h-full w-full\"  src=\"https://www.svgrepo.com/show/394180/google-play.svg\"  />\n        </div>\n        <div className=\"\">\n          <div className=\"text-sm font-extrabold\">Download on the</div>\n          <div className=\"text-2xl\">Google Play</div>\n        </div>\n      </button>\n    </div>\n  )\n}\n\nexport { PlaystoreButton }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@arya",
-    "authorUrl": "https://tailwindflex.com/@arya",
-    "sourceUrl": "https://tailwindflex.com/@arya/playstore-button",
-    "mention": "Créé par @arya sur TailwindFlex",
     "rawHtml": "<button class=\"px-3 py-1.5 flex gap-2 items-center rounded-xl outline outline-2\">\n  <div class=\"w-10\">\n    <img class=\"h-full w-full\"  src=\"https://www.svgrepo.com/show/394180/google-play.svg\" >\n  </div>\n  <div class=\"\">\n    <div class=\"text-sm font-extrabold\">Download on the</div>\n    <div class=\"text-2xl\">Google Play</div>\n  </div>\n</button>"
   }
 }

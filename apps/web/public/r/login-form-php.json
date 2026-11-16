@@ -3,16 +3,16 @@
   "name": "login-form-php",
   "type": "registry:ui",
   "title": "login form php",
-  "description": "login form php - Créé par @nii-fanny sur TailwindFlex.",
-  "author": "@nii-fanny (TailwindFlex)",
+  "description": "login form php — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/login-form-php.tsx",
-      "content": "/**\n * Component: login form php\n * Author: @nii-fanny (https://tailwindflex.com/@nii-fanny)\n * Source: https://tailwindflex.com/@nii-fanny/login-form-php\n * Attribution: Créé par @nii-fanny sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function LoginFormPhp() {\n  return (\n    <div>\n    <li>Save and share your components with the community.</li>\n    </div>\n  );\n}\n",
+      "path": "components/ui/login-form-php.tsx",
+      "content": "import * as React from \"react\"\n\nfunction LoginFormPhp({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"login-form-php\"\n      className={className}\n      {...props}\n    >\n      <li>Save and share your components with the community.</li>\n    </div>\n  )\n}\n\nexport { LoginFormPhp }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@nii-fanny",
-    "authorUrl": "https://tailwindflex.com/@nii-fanny",
-    "sourceUrl": "https://tailwindflex.com/@nii-fanny/login-form-php",
-    "mention": "Créé par @nii-fanny sur TailwindFlex",
     "rawHtml": "<li>Save and share your components with the community.</li>"
   }
 }

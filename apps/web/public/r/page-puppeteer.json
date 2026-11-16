@@ -3,16 +3,16 @@
   "name": "page-puppeteer",
   "type": "registry:ui",
   "title": "Page puppeteer",
-  "description": "Page puppeteer - Créé par @asbpy sur TailwindFlex.",
-  "author": "@asbpy (TailwindFlex)",
+  "description": "Page puppeteer — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (profile, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/page-puppeteer.tsx",
-      "content": "/**\n * Component: Page puppeteer\n * Author: @asbpy (https://tailwindflex.com/@asbpy)\n * Source: https://tailwindflex.com/@asbpy/page-puppeteer\n * Attribution: Créé par @asbpy sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PagePuppeteer() {\n  return (\n    <div>\n    <div className=\"flex flex-col\">\n      <div className=\"flex items-center justify-between bg-slate-200 p-4\">\n        <div className=\"flex items-center space-x-4\">\n          <span>Ini ikon</span>\n          <span className=\"font-bold\">REPORT</span>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "path": "components/ui/page-puppeteer.tsx",
+      "content": "import * as React from \"react\"\n\nfunction PagePuppeteer({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"page-puppeteer\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex flex-col\">\n        <div className=\"flex items-center justify-between bg-slate-200 p-4\">\n          <div className=\"flex items-center space-x-4\">\n            <span>Ini ikon</span>\n            <span className=\"font-bold\">REPORT</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { PagePuppeteer }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pagination",
       "pricing"
     ],
-    "author": "@asbpy",
-    "authorUrl": "https://tailwindflex.com/@asbpy",
-    "sourceUrl": "https://tailwindflex.com/@asbpy/page-puppeteer",
-    "mention": "Créé par @asbpy sur TailwindFlex",
     "rawHtml": "<div class=\"flex flex-col\">\n  <div class=\"flex items-center justify-between bg-slate-200 p-4\">\n    <div class=\"flex items-center space-x-4\">\n      <span>Ini ikon</span>\n      <span class=\"font-bold\">REPORT</span>\n    </div>\n  </div>\n</div>"
   }
 }

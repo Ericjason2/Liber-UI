@@ -12,11 +12,11 @@ import {
   ArrowUpRight,
   Copy,
   Check,
+  Download,
   Terminal,
   Search,
   Code2,
   Eye,
-  ExternalLink,
 } from "lucide-react";
 import { useToast } from "@/context/ToastContext";
 import {
@@ -62,7 +62,7 @@ export default function ComponentsPage({
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [componentModes, setComponentModes] = useState<
-    Record<string, "preview" | "html" | "tsx">
+    Record<string, "preview" | "tsx" | "html">
   >({});
   const [pm, setPm] = useState<PackageManager>("pnpm");
 
@@ -123,7 +123,7 @@ export default function ComponentsPage({
       } finally {
         setLoading(false);
       }
-    }, 80);
+    }, 60);
 
     return () => {
       clearTimeout(timer);
@@ -148,6 +148,19 @@ export default function ComponentsPage({
     setTimeout(() => setCopiedKey(null), 2000);
   };
 
+  const handleDownloadComponent = (c: ComponentItem) => {
+    const blob = new Blob([c.code], { type: "text/typescript;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${c.slug}.tsx`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    toast(`Fichier ${c.slug}.tsx téléchargé !`);
+  };
+
   return (
     <div className="max-w-[1280px] mx-auto px-4 sm:px-6 py-10 sm:py-16 space-y-10">
       {/* 1. Breadcrumb & Top Bar */}
@@ -163,10 +176,10 @@ export default function ComponentsPage({
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-4 border-b border-border">
           <div className="space-y-1.5">
             <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground">
-              UI Components &amp; TailwindFlex Library
+              UI Components
             </h1>
             <p className="text-sm text-muted-foreground max-w-2xl">
-              Explorez {TOTAL_COMPONENTS_COUNT.toLocaleString()} composants gratuits avec prévisualisation visuelle en direct, mention du créateur, code HTML exact d&apos;origine et composant React TSX. Cliquez sur un composant pour ouvrir sa page dédiée.
+              {TOTAL_COMPONENTS_COUNT.toLocaleString()} composants open-source prêts à l&apos;emploi. Prévisualisez chaque composant en direct, installez-le via CLI ou téléchargez directement son fichier source <code className="font-mono text-xs text-foreground">components/ui/&lt;nom&gt;.tsx</code>.
             </p>
           </div>
 
@@ -188,7 +201,7 @@ export default function ComponentsPage({
               ))}
             </div>
             <div className="flex items-center gap-2 font-mono text-xs text-foreground bg-muted border border-border px-3.5 h-10 rounded-[10px]">
-              <span>{totalFiltered} Composants disponibles</span>
+              <span>{totalFiltered} Composants</span>
             </div>
           </div>
         </div>
@@ -206,7 +219,7 @@ export default function ComponentsPage({
                 setSearchQuery(e.target.value);
                 setCurrentPage(1);
               }}
-              placeholder="Rechercher par tag, titre, créateur ou slug (ex: card, hero, form, navbar, pricing, @samuel)..."
+              placeholder="Rechercher un composant par tag ou nom (ex: card, hero, form, button, navbar, pricing, header)..."
               className="w-full h-10 pl-10 pr-4 rounded-[10px] border border-border bg-card text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-all font-sans"
             />
           </div>
@@ -233,7 +246,7 @@ export default function ComponentsPage({
           </div>
         </div>
 
-        {/* Tag Cloud Pills Bar (All scraped TailwindFlex tags) */}
+        {/* Tag Cloud Pills Bar */}
         <div className="flex items-center gap-1.5 overflow-x-auto py-1.5 scrollbar-none">
           <button
             type="button"
@@ -272,7 +285,7 @@ export default function ComponentsPage({
 
       {/* 3. Live Visual Component Cards Grid */}
       <div
-        className={`grid grid-cols-1 md:grid-cols-2 gap-7 transition-opacity duration-200 ${
+        className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-opacity duration-200 ${
           loading ? "opacity-75" : "opacity-100"
         }`}
       >
@@ -281,31 +294,26 @@ export default function ComponentsPage({
           const isCopied = copiedKey === item.slug;
           const exactHtml =
             item.rawHtml ||
-            `<!-- ${item.name} -->\n<div class="p-6">${item.description}</div>`;
+            `<div class="p-6">${item.description}</div>`;
 
           return (
             <article
               key={item.slug}
               id={item.slug}
-              className="group rounded-2xl border border-border bg-card overflow-hidden hover:border-primary/60 transition-all scroll-mt-20 flex flex-col justify-between shadow-sm"
+              className="group rounded-xl border border-border bg-card overflow-hidden hover:border-primary/60 transition-all scroll-mt-20 flex flex-col justify-between shadow-sm"
             >
               {/* Card Header Bar */}
-              <div className="px-4 sm:px-5 py-3 border-b border-border bg-muted/40 flex items-center justify-between gap-2">
-                <div className="flex items-center gap-2 min-w-0">
-                  <Link
-                    href={`/components/${item.slug}`}
-                    className="font-semibold text-sm text-foreground hover:text-primary transition-colors truncate"
-                  >
-                    {item.name}
-                  </Link>
-                  <span className="px-2 py-0.5 rounded-full text-[10px] font-mono bg-muted text-muted-foreground border border-border capitalize shrink-0">
-                    {item.category}
-                  </span>
-                </div>
+              <div className="px-4 py-2.5 border-b border-border bg-muted/30 flex items-center justify-between gap-2">
+                <Link
+                  href={`/components/${item.slug}`}
+                  className="font-semibold text-sm text-foreground hover:text-primary transition-colors truncate"
+                >
+                  {item.name}
+                </Link>
 
-                <div className="flex items-center gap-1.5 shrink-0">
-                  {/* Inline Preview / HTML / TSX Switcher */}
-                  <div className="flex items-center rounded-lg border border-border bg-card p-0.5 text-[11px]">
+                <div className="flex items-center gap-1 shrink-0">
+                  {/* Inline Preview / Code Switcher */}
+                  <div className="flex items-center rounded-md border border-border bg-card p-0.5 text-[11px]">
                     <button
                       type="button"
                       onClick={() =>
@@ -314,31 +322,14 @@ export default function ComponentsPage({
                           [item.slug]: "preview",
                         }))
                       }
-                      className={`px-2 py-0.5 rounded-md font-medium transition-colors flex items-center gap-1 ${
+                      className={`px-2 py-0.5 rounded font-medium transition-colors flex items-center gap-1 ${
                         currentMode === "preview"
                           ? "bg-muted text-foreground font-semibold"
                           : "text-muted-foreground hover:text-foreground"
                       }`}
                     >
                       <Eye className="h-3 w-3" />
-                      <span>Aperçu</span>
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() =>
-                        setComponentModes((prev) => ({
-                          ...prev,
-                          [item.slug]: "html",
-                        }))
-                      }
-                      className={`px-2 py-0.5 rounded-md font-medium transition-colors flex items-center gap-1 ${
-                        currentMode === "html"
-                          ? "bg-muted text-foreground font-semibold"
-                          : "text-muted-foreground hover:text-foreground"
-                      }`}
-                    >
-                      <Code2 className="h-3 w-3" />
-                      <span>HTML</span>
+                      <span>Preview</span>
                     </button>
                     <button
                       type="button"
@@ -348,24 +339,26 @@ export default function ComponentsPage({
                           [item.slug]: "tsx",
                         }))
                       }
-                      className={`px-2 py-0.5 rounded-md font-medium transition-colors ${
+                      className={`px-2 py-0.5 rounded font-medium transition-colors flex items-center gap-1 ${
                         currentMode === "tsx"
                           ? "bg-muted text-foreground font-semibold"
                           : "text-muted-foreground hover:text-foreground"
                       }`}
                     >
-                      TSX
+                      <Code2 className="h-3 w-3" />
+                      <span>Code</span>
                     </button>
                   </div>
 
-                  {/* Open Full Detail Page */}
-                  <Link
-                    href={`/components/${item.slug}`}
-                    title={`Ouvrir ${item.name} en plein écran avec le code`}
-                    className="p-1.5 rounded-lg border border-border bg-card text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors"
+                  {/* Direct Download .tsx */}
+                  <button
+                    type="button"
+                    onClick={() => handleDownloadComponent(item)}
+                    title={`Télécharger ${item.slug}.tsx`}
+                    className="p-1.5 rounded-md border border-border bg-card text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    <ArrowUpRight className="h-3.5 w-3.5" />
-                  </Link>
+                    <Download className="h-3.5 w-3.5" />
+                  </button>
                 </div>
               </div>
 
@@ -382,107 +375,61 @@ export default function ComponentsPage({
                   />
 
                   {/* Hover Action Overlay */}
-                  <div className="absolute inset-0 bg-slate-950/0 group-hover/preview:bg-slate-950/35 transition-colors flex items-center justify-center opacity-0 group-hover/preview:opacity-100">
-                    <span className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary text-primary-foreground text-xs font-medium shadow-lg transform translate-y-1 group-hover/preview:translate-y-0 transition-all">
+                  <div className="absolute inset-0 bg-slate-950/0 group-hover/preview:bg-slate-950/30 transition-colors flex items-center justify-center opacity-0 group-hover/preview:opacity-100">
+                    <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-medium shadow-lg">
                       <Eye className="h-3.5 w-3.5" />
-                      <span>Voir la prévisualisation &amp; le code exact</span>
+                      <span>Ouvrir la prévisualisation &amp; le code</span>
                       <ArrowUpRight className="h-3.5 w-3.5" />
                     </span>
                   </div>
                 </Link>
               ) : (
-                <div className="p-4 bg-neutral-950 font-mono text-xs overflow-x-auto border-b border-border h-[260px] flex flex-col">
-                  <div className="flex flex-wrap items-center justify-between pb-2 border-b border-neutral-800 text-neutral-400 text-[11px] mb-2 gap-2 shrink-0">
-                    <div className="flex items-center gap-2">
-                      <span className="font-semibold text-neutral-200">
-                        {currentMode === "html"
-                          ? `${item.slug}.html (Exact Original)`
-                          : `${item.slug}.tsx`}
-                      </span>
-                      {item.mention && (
-                        <span className="text-[10px] text-neutral-400 bg-neutral-900 px-2 py-0.5 rounded border border-neutral-800">
-                          {item.mention}
-                        </span>
-                      )}
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                      <button
-                        type="button"
-                        onClick={() => {
-                          navigator.clipboard.writeText(
-                            currentMode === "html" ? exactHtml : item.code
-                          );
-                          toast(
-                            currentMode === "html"
-                              ? "Code HTML exact copié !"
-                              : "Code React TSX copié !"
-                          );
-                        }}
-                        className="px-2 py-1 rounded bg-neutral-900 border border-neutral-700 text-neutral-200 hover:text-white transition-colors text-[10px]"
-                      >
-                        Copier {currentMode === "html" ? "HTML exact" : "TSX"}
-                      </button>
-                    </div>
+                <div className="p-3.5 bg-neutral-950 font-mono text-xs overflow-x-auto border-b border-border h-[250px] flex flex-col">
+                  <div className="flex items-center justify-between pb-2 border-b border-neutral-800 text-neutral-400 text-[11px] mb-2 gap-2 shrink-0">
+                    <span className="font-semibold text-neutral-200 truncate">
+                      components/ui/{item.slug}.tsx
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        navigator.clipboard.writeText(item.code);
+                        toast("Code copié !");
+                      }}
+                      className="px-2 py-0.5 rounded bg-neutral-900 border border-neutral-700 text-neutral-200 hover:text-white transition-colors text-[10px] shrink-0"
+                    >
+                      Copier
+                    </button>
                   </div>
-                  <pre className="text-neutral-200 select-all leading-relaxed overflow-y-auto flex-1">
-                    <code>{currentMode === "html" ? exactHtml : item.code}</code>
+                  <pre className="text-neutral-200 select-all leading-relaxed overflow-y-auto flex-1 text-[11px]">
+                    <code>{item.code}</code>
                   </pre>
                 </div>
               )}
 
-              {/* Card Footer: Creator Attribution, Tags & Open / CLI Buttons */}
-              <div className="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs bg-card">
-                <div className="space-y-1.5 flex-1 min-w-0">
-                  <div className="flex flex-wrap items-center gap-2">
-                    {item.author && (
-                      <span className="text-[11px] text-muted-foreground font-mono">
-                        Créé par{" "}
-                        <a
-                          href={item.authorUrl || `https://tailwindflex.com/${item.author}`}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-foreground font-semibold hover:text-primary hover:underline"
-                        >
-                          {item.author}
-                        </a>
-                      </span>
-                    )}
-                    {item.sourceUrl && (
-                      <a
-                        href={item.sourceUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-0.5 text-[10px] font-mono text-primary/80 hover:underline"
-                      >
-                        <span>TailwindFlex</span>
-                        <ExternalLink className="h-2.5 w-2.5" />
-                      </a>
-                    )}
-                  </div>
-
-                  <div className="flex flex-wrap items-center gap-1.5">
-                    {item.tags.slice(0, 5).map((t) => (
-                      <button
-                        key={t}
-                        type="button"
-                        onClick={() => {
-                          setSelectedTag(t);
-                          setCurrentPage(1);
-                        }}
-                        className="px-2 py-0.5 rounded-full text-[10px] font-mono bg-muted/70 text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-                      >
-                        #{t}
-                      </button>
-                    ))}
-                  </div>
+              {/* Card Footer: Tags & Open / CLI Buttons */}
+              <div className="p-3.5 flex items-center justify-between gap-2 text-xs bg-card">
+                <div className="flex flex-wrap items-center gap-1 min-w-0 overflow-hidden">
+                  {item.tags.slice(0, 3).map((t) => (
+                    <button
+                      key={t}
+                      type="button"
+                      onClick={() => {
+                        setSelectedTag(t);
+                        setCurrentPage(1);
+                      }}
+                      className="px-2 py-0.5 rounded-md text-[10px] font-mono bg-muted/70 text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors truncate"
+                    >
+                      #{t}
+                    </button>
+                  ))}
                 </div>
 
-                <div className="flex items-center gap-2 shrink-0">
+                <div className="flex items-center gap-1.5 shrink-0">
                   <button
                     type="button"
                     onClick={() => handleCopyCmd(item)}
                     title={`Copier la commande CLI pour ${item.name}`}
-                    className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-border bg-muted/50 hover:bg-muted text-foreground font-mono text-[11px] whitespace-nowrap transition-colors"
+                    className="flex items-center gap-1 px-2.5 py-1 rounded-md border border-border bg-muted/40 hover:bg-muted text-foreground font-mono text-[11px] whitespace-nowrap transition-colors"
                   >
                     <Terminal className="h-3 w-3 text-muted-foreground" />
                     <span>add</span>
@@ -495,10 +442,10 @@ export default function ComponentsPage({
 
                   <Link
                     href={`/components/${item.slug}`}
-                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-primary text-primary-foreground hover:opacity-90 font-medium text-xs whitespace-nowrap transition-opacity shadow-sm"
+                    className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-primary text-primary-foreground hover:opacity-90 font-medium text-[11px] whitespace-nowrap transition-opacity shadow-sm"
                   >
-                    <span>Aperçu &amp; Code</span>
-                    <ArrowUpRight className="h-3.5 w-3.5" />
+                    <span>Ouvrir</span>
+                    <ArrowUpRight className="h-3 w-3" />
                   </Link>
                 </div>
               </div>

@@ -3,16 +3,16 @@
   "name": "plug-and-play-animated-button-for-hero-statements-landing-pages",
   "type": "registry:ui",
   "title": "Plug and Play Animated Button for Hero Statements / Landing Pages",
-  "description": "Plug and Play Animated Button for Hero Statements / Landing Pages - Créé par @onyxwebdev sur TailwindFlex.",
-  "author": "@onyxwebdev (TailwindFlex)",
+  "description": "Plug and Play Animated Button for Hero Statements / Landing Pages — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/plug-and-play-animated-button-for-hero-statements-landing-pages.tsx",
-      "content": "/**\n * Component: Plug and Play Animated Button for Hero Statements / Landing Pages\n * Author: @onyxwebdev (https://tailwindflex.com/@onyxwebdev)\n * Source: https://tailwindflex.com/@onyxwebdev/plug-and-play-animated-button-for-hero-statements-landing-pages\n * Attribution: Créé par @onyxwebdev sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function PlugAndPlayAnimatedButtonForHeroStatementsLandingPages() {\n  return (\n    <div>\n    <button className=\"relative px-5 py-2 rounded-full text-zinc-300 flex items-center overflow-hidden group bg-black\">\n        <div className=\"absolute -inset-[130%] flex items-center justify-center bg-gradient-to-t from-blue-100 to-transparent animate-spin [animation_4s_linear_infinite]\">\n        </div>\n        <div className=\"absolute inset-[2px] rounded-full bg-zinc-900\">\n        </div>\n        <div className=\"relative z-10 flex items-center group-hover transition duration-1000\">\n        Refresh Page</div>\n    </button>\n    </div>\n  );\n}\n",
+      "path": "components/ui/plug-and-play-animated-button-for-hero-statements-landing-pages.tsx",
+      "content": "import * as React from \"react\"\n\nfunction PlugAndPlayAnimatedButtonForHeroStatementsLandingPages({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"plug-and-play-animated-button-for-hero-statements-landing-pages\"\n      className={className}\n      {...props}\n    >\n      <button className=\"relative px-5 py-2 rounded-full text-zinc-300 flex items-center overflow-hidden group bg-black\">\n          <div className=\"absolute -inset-[130%] flex items-center justify-center bg-gradient-to-t from-blue-100 to-transparent animate-spin [animation_4s_linear_infinite]\">\n          </div>\n          <div className=\"absolute inset-[2px] rounded-full bg-zinc-900\">\n          </div>\n          <div className=\"relative z-10 flex items-center group-hover transition duration-1000\">\n          Refresh Page</div>\n      </button>\n    </div>\n  )\n}\n\nexport { PlugAndPlayAnimatedButtonForHeroStatementsLandingPages }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@onyxwebdev",
-    "authorUrl": "https://tailwindflex.com/@onyxwebdev",
-    "sourceUrl": "https://tailwindflex.com/@onyxwebdev/plug-and-play-animated-button-for-hero-statements-landing-pages",
-    "mention": "Créé par @onyxwebdev sur TailwindFlex",
     "rawHtml": "<button class=\"relative px-5 py-2 rounded-full text-zinc-300 flex items-center overflow-hidden group bg-black\">\n    <div class=\"absolute -inset-[130%] flex items-center justify-center bg-gradient-to-t from-blue-100 to-transparent animate-spin [animation:spin_4s_linear_infinite]\">\n    </div>\n    <div class=\"absolute inset-[2px] rounded-full bg-zinc-900\">\n    </div>\n    <div class=\"relative z-10 flex items-center group-hover:text-white transition duration-1000\">\n    Refresh Page</div>\n</button>"
   }
 }

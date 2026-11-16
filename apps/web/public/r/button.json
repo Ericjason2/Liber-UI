@@ -3,20 +3,48 @@
   "name": "button",
   "type": "registry:ui",
   "title": "Button",
-  "description": "Primary, outline, secondary, ghost and destructive button primitives.",
-  "author": "Liber Team",
+  "description": "Button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/button.tsx",
-      "content": "import React from \"react\";\n\nexport function Button({ children, variant = \"primary\", className = \"\", ...props }: React.ButtonHTMLAttributes<HTMLButtonElement> & { variant?: \"primary\" | \"secondary\" | \"outline\" | \"ghost\" | \"destructive\" }) {\n  return <button className={`px-3.5 py-1.5 rounded-[8px] text-xs font-medium transition-colors ${className}`} {...props}>{children}</button>;\n}\n",
+      "path": "components/ui/button.tsx",
+      "content": "import * as React from \"react\"\n\nfunction Button({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button\"\n      className={className}\n      {...props}\n    >\n      <button className=\"px-10 py-4 rounded-full cursor-pointer border-0 bg-white shadow-sm uppercase text-sm tracking-wider transition-all duration-500 ease-in-out hover hover[#5d18dc] hover hover[0_7px_29px_0_rgba(93,24,220,0.5)] active active[#5d18dc] active active active2.5 active100\">\n          Button Text\n      </button>\n    </div>\n  )\n}\n\nexport { Button }\n",
       "type": "registry:ui"
     }
   ],
   "meta": {
-    "kind": "component"
+    "kind": "component",
+    "tags": [
+      "button",
+      "footer",
+      "header",
+      "card",
+      "article",
+      "avatar",
+      "faq",
+      "banner",
+      "blog",
+      "breadcrumb",
+      "call-to-action",
+      "form",
+      "carousel",
+      "contact-us-page",
+      "error-page",
+      "feature",
+      "gallery",
+      "hero",
+      "input",
+      "loading",
+      "login",
+      "modal",
+      "pagination",
+      "pricing",
+      "profile"
+    ],
+    "rawHtml": "<button class=\"px-10 py-4 rounded-full cursor-pointer border-0 bg-white shadow-sm uppercase text-sm tracking-wider transition-all duration-500 ease-in-out hover:tracking-widest hover:bg-[#5d18dc] hover:text-white hover:shadow-[0_7px_29px_0_rgba(93,24,220,0.5)] active:tracking-widest active:bg-[#5d18dc] active:text-white active:shadow-none active:translate-y-2.5 active:duration-100\">\n    Button Text\n</button>"
   }
 }

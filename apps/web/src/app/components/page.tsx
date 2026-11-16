@@ -3,9 +3,9 @@ import { SAMPLE_COMPONENTS } from "@/lib/catalog-components";
 import ComponentsView from "@/views/ComponentsView";
 
 export const metadata: Metadata = {
-  title: "UI Primitives & Components — Liber UI",
+  title: "UI Components — Liber UI",
   description:
-    "1525 accessible React & Tailwind CSS UI primitives with live interactive previews and copy-pasteable TypeScript source code.",
+    "1 525 composants UI open-source prêts à l'emploi avec prévisualisation interactive, installation CLI et téléchargement direct React TSX / Tailwind CSS.",
 };
 
 export default function ComponentsRoute() {

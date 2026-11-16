@@ -3,16 +3,16 @@
   "name": "hero-section-fashion-page",
   "type": "registry:ui",
   "title": "Hero Section Fashion Page",
-  "description": "Hero Section Fashion Page - Créé par @abdulbast sur TailwindFlex.",
-  "author": "@abdulbast (TailwindFlex)",
+  "description": "Hero Section Fashion Page — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/hero-section-fashion-page.tsx",
-      "content": "/**\n * Component: Hero Section Fashion Page\n * Author: @abdulbast (https://tailwindflex.com/@abdulbast)\n * Source: https://tailwindflex.com/@abdulbast/hero-section-fashion-page\n * Attribution: Créé par @abdulbast sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HeroSectionFashionPage() {\n  return (\n    <div>\n    <section className=\"bg-[#C2EFD4]  py-12\">\n      <div className=\"flex mx-auto max-w-[1440px] justify-between\">\n        <div className=\"w-[649px] h-[632px] \">\n          <h1 className=\"  text-[#224f34] text-[86px] font-bold font-['Rufina']\">Discover and Find Your Own Fashion!</h1>\n          <p className=\"mt-5 mb-12 text-[#267d49] text-2xl font-medium font-['Poppins'] leading-[50px]\">Explore our curated\n            collection of stylish clothing and accessories tailored to your unique taste.</p>\n          <button className=\"px-16 py-5  text-white text-xl font-medium font-['Poppins'] uppercase  bg-[#224e34] rounded-[3px] shadow-[6px_33px_59px_0px_rgba(0,0,0,0.30)]\">Explore Now</button>\n        </div><img className=\"w-[570px]\" src=\"https://iili.io/3Bw8BSt.png\" alt=\"\" />\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "path": "components/ui/hero-section-fashion-page.tsx",
+      "content": "import * as React from \"react\"\n\nfunction HeroSectionFashionPage({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"hero-section-fashion-page\"\n      className={className}\n      {...props}\n    >\n      <section className=\"bg-[#C2EFD4]  py-12\">\n        <div className=\"flex mx-auto max-w-[1440px] justify-between\">\n          <div className=\"w-[649px] h-[632px] \">\n            <h1 className=\"  text-[#224f34] text-[86px] font-bold font-['Rufina']\">Discover and Find Your Own Fashion!</h1>\n            <p className=\"mt-5 mb-12 text-[#267d49] text-2xl font-medium font-['Poppins'] leading-[50px]\">Explore our curated\n              collection of stylish clothing and accessories tailored to your unique taste.</p>\n            <button className=\"px-16 py-5  text-white text-xl font-medium font-['Poppins'] uppercase  bg-[#224e34] rounded-[3px] shadow-[6px_33px_59px_0px_rgba(0,0,0,0.30)]\">Explore Now</button>\n          </div><img className=\"w-[570px]\" src=\"https://iili.io/3Bw8BSt.png\" alt=\"\" />\n        </div>\n      </section>\n    </div>\n  )\n}\n\nexport { HeroSectionFashionPage }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@abdulbast",
-    "authorUrl": "https://tailwindflex.com/@abdulbast",
-    "sourceUrl": "https://tailwindflex.com/@abdulbast/hero-section-fashion-page",
-    "mention": "Créé par @abdulbast sur TailwindFlex",
     "rawHtml": "<section class=\"bg-[#C2EFD4]  py-12\">\n  <div class=\"flex mx-auto max-w-[1440px] justify-between\">\n    <div class=\"w-[649px] h-[632px] \">\n      <h1 class=\"  text-[#224f34] text-[86px] font-bold font-['Rufina']\">Discover and Find Your Own Fashion!</h1>\n      <p class=\"mt-5 mb-12 text-[#267d49] text-2xl font-medium font-['Poppins'] leading-[50px]\">Explore our curated\n        collection of stylish clothing and accessories tailored to your unique taste.</p>\n      <button class=\"px-16 py-5  text-white text-xl font-medium font-['Poppins'] uppercase  bg-[#224e34] rounded-[3px] shadow-[6px_33px_59px_0px_rgba(0,0,0,0.30)]\">Explore Now</button>\n    </div><img class=\"w-[570px]\" src=\"https://iili.io/3Bw8BSt.png\" alt=\"\">\n  </div>\n</section>"
   }
 }

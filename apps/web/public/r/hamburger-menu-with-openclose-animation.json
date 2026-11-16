@@ -3,16 +3,16 @@
   "name": "hamburger-menu-with-openclose-animation",
   "type": "registry:ui",
   "title": "Hamburger menu button with open/close animation",
-  "description": "Hamburger menu button with open/close animation - Créé par @krishna sur TailwindFlex.",
-  "author": "@krishna (TailwindFlex)",
+  "description": "Hamburger menu button with open/close animation — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/hamburger-menu-with-openclose-animation.tsx",
-      "content": "/**\n * Component: Hamburger menu button with open/close animation\n * Author: @krishna (https://tailwindflex.com/@krishna)\n * Source: https://tailwindflex.com/@krishna/hamburger-menu-with-openclose-animation\n * Attribution: Créé par @krishna sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HamburgerMenuWithOpencloseAnimation() {\n  return (\n    <div dangerouslySetInnerHTML={{ __html: \"\\n<div class=\\\"min-h-screen bg-gray-100 flex flex-col justify-center\\\">\\n    <div class=\\\"relative py-3 sm:max-w-xl mx-auto\\\">\\n        <nav x-data=\\\"{ open: false }\\\">\\n            <button class=\\\"w-14 h-14 relative focus:outline-none bg-teal-600 rounded\\\" @click=\\\"open = !open\\\">\\n                <div class=\\\"block w-5 absolute left-6 top-1/2   transform  -translate-x-1/2 -translate-y-1/2\\\">\\n                    <span  class=\\\"block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out\\\" :class=\\\"{'rotate-45': open,' -translate-y-1.5': !open }\\\"></span>\\n                    <span  class=\\\"block absolute  h-0.5 w-5 text-white bg-current   transform transition duration-500 ease-in-out\\\" :class=\\\"{'opacity-0': open } \\\"></span>\\n                    <span  class=\\\"block absolute  h-0.5 w-7 text-white bg-current transform  transition duration-500 ease-in-out\\\" :class=\\\"{'-rotate-45': open, ' translate-y-1.5': !open}\\\"></span>\\n                </div>\\n            </button>\\n        </nav>\\n    </div>\\n</div>\" }} />\n  );\n}\n",
+      "path": "components/ui/hamburger-menu-with-openclose-animation.tsx",
+      "content": "import * as React from \"react\"\n\nfunction HamburgerMenuWithOpencloseAnimation({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"hamburger-menu-with-openclose-animation\"\n      className={className}\n      dangerouslySetInnerHTML={{ __html: \"\\n<div class=\\\"min-h-screen bg-gray-100 flex flex-col justify-center\\\">\\n    <div class=\\\"relative py-3 sm:max-w-xl mx-auto\\\">\\n        <nav x-data=\\\"{ open: false }\\\">\\n            <button class=\\\"w-14 h-14 relative focus:outline-none bg-teal-600 rounded\\\" @click=\\\"open = !open\\\">\\n                <div class=\\\"block w-5 absolute left-6 top-1/2   transform  -translate-x-1/2 -translate-y-1/2\\\">\\n                    <span  class=\\\"block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out\\\" :class=\\\"{'rotate-45': open,' -translate-y-1.5': !open }\\\"></span>\\n                    <span  class=\\\"block absolute  h-0.5 w-5 text-white bg-current   transform transition duration-500 ease-in-out\\\" :class=\\\"{'opacity-0': open } \\\"></span>\\n                    <span  class=\\\"block absolute  h-0.5 w-7 text-white bg-current transform  transition duration-500 ease-in-out\\\" :class=\\\"{'-rotate-45': open, ' translate-y-1.5': !open}\\\"></span>\\n                </div>\\n            </button>\\n        </nav>\\n    </div>\\n</div>\" }}\n      {...props}\n    />\n  )\n}\n\nexport { HamburgerMenuWithOpencloseAnimation }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@krishna",
-    "authorUrl": "https://tailwindflex.com/@krishna",
-    "sourceUrl": "https://tailwindflex.com/@krishna/hamburger-menu-with-openclose-animation",
-    "mention": "Créé par @krishna sur TailwindFlex",
     "rawHtml": "<script src=\"https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js\"></script>\n<div class=\"min-h-screen bg-gray-100 flex flex-col justify-center\">\n    <div class=\"relative py-3 sm:max-w-xl mx-auto\">\n        <nav x-data=\"{ open: false }\">\n            <button class=\"w-14 h-14 relative focus:outline-none bg-teal-600 rounded\" @click=\"open = !open\">\n                <div class=\"block w-5 absolute left-6 top-1/2   transform  -translate-x-1/2 -translate-y-1/2\">\n                    <span  class=\"block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out\" :class=\"{'rotate-45': open,' -translate-y-1.5': !open }\"></span>\n                    <span  class=\"block absolute  h-0.5 w-5 text-white bg-current   transform transition duration-500 ease-in-out\" :class=\"{'opacity-0': open } \"></span>\n                    <span  class=\"block absolute  h-0.5 w-7 text-white bg-current transform  transition duration-500 ease-in-out\" :class=\"{'-rotate-45': open, ' translate-y-1.5': !open}\"></span>\n                </div>\n            </button>\n        </nav>\n    </div>\n</div>"
   }
 }

@@ -3,16 +3,16 @@
   "name": "cta-banner",
   "type": "registry:ui",
   "title": "CTA banner",
-  "description": "CTA banner - Créé par @anonymous sur TailwindFlex.",
-  "author": "@anonymous (TailwindFlex)",
+  "description": "CTA banner — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/cta-banner.tsx",
-      "content": "/**\n * Component: CTA banner\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/cta-banner\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function CtaBanner() {\n  return (\n    <div>\n    <section className=\"bg-black overflow-visible my-0 py-24 mt-24\">\n      <div className=\"text-white items-center text-center flex flex-col\">\n        <h2 className=\"font-bold text-2xl lg4xl\">Embark on an Adventure</h2>\n        <p className=\"mx-auto mt-6 max-w-xl text-lg md leading-8 text-slate-400\">\n          Take a thrilling journey through our product's features. Book an adventurous demo and discover endless\n          possibilities.\n        </p>\n        <a className=\"mt-8 rounded-md bg-white px-5 py-2.5 text-base font-semibold leading-7 text-black hover200 transition focus focus focus300\"\n          href=\"#\">Claim Your 15% off Adventure! Start Now</a>\n      </div>\n    </section>\n    </div>\n  );\n}\n",
+      "path": "components/ui/cta-banner.tsx",
+      "content": "import * as React from \"react\"\n\nfunction CtaBanner({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"cta-banner\"\n      className={className}\n      {...props}\n    >\n      <section className=\"bg-black overflow-visible my-0 py-24 mt-24\">\n        <div className=\"text-white items-center text-center flex flex-col\">\n          <h2 className=\"font-bold text-2xl lg4xl\">Embark on an Adventure</h2>\n          <p className=\"mx-auto mt-6 max-w-xl text-lg md leading-8 text-slate-400\">\n            Take a thrilling journey through our product's features. Book an adventurous demo and discover endless\n            possibilities.\n          </p>\n          <a className=\"mt-8 rounded-md bg-white px-5 py-2.5 text-base font-semibold leading-7 text-black hover200 transition focus focus focus300\"\n            href=\"#\">Claim Your 15% off Adventure! Start Now</a>\n        </div>\n      </section>\n    </div>\n  )\n}\n\nexport { CtaBanner }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@anonymous",
-    "authorUrl": "https://tailwindflex.com/@anonymous",
-    "sourceUrl": "https://tailwindflex.com/@anonymous/cta-banner",
-    "mention": "Créé par @anonymous sur TailwindFlex",
     "rawHtml": "<section class=\"bg-black overflow-visible my-0 py-24 mt-24\">\n  <div class=\"text-white items-center text-center flex flex-col\">\n    <h2 class=\"font-bold text-2xl lg:text-4xl\">Embark on an Adventure</h2>\n    <p class=\"mx-auto mt-6 max-w-xl text-lg md:text-xl leading-8 text-slate-400\">\n      Take a thrilling journey through our product's features. Book an adventurous demo and discover endless\n      possibilities.\n    </p>\n    <a class=\"mt-8 rounded-md bg-white px-5 py-2.5 text-base font-semibold leading-7 text-black hover:bg-gray-200 transition focus:outline-none focus:ring focus:border-blue-300\"\n      href=\"#\">Claim Your 15% off Adventure! Start Now</a>\n  </div>\n</section>"
   }
 }

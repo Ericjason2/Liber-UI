@@ -3,16 +3,16 @@
   "name": "test-9",
   "type": "registry:ui",
   "title": "test",
-  "description": "test - Créé par @anonymous sur TailwindFlex.",
-  "author": "@anonymous (TailwindFlex)",
+  "description": "test — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/test-9.tsx",
-      "content": "/**\n * Component: test\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/test-9\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function Test9() {\n  return (\n    <div>\n    <div>\n      <p>Label </p>\n      </div>\n    </div>\n  );\n}\n",
+      "path": "components/ui/test-9.tsx",
+      "content": "import * as React from \"react\"\n\nfunction Test9({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"test-9\"\n      className={className}\n      {...props}\n    >\n      <div>\n        <p>Label </p>\n        </div>\n    </div>\n  )\n}\n\nexport { Test9 }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@anonymous",
-    "authorUrl": "https://tailwindflex.com/@anonymous",
-    "sourceUrl": "https://tailwindflex.com/@anonymous/test-9",
-    "mention": "Créé par @anonymous sur TailwindFlex",
     "rawHtml": "<div>\n  <p>Label </p>\n  </div>"
   }
 }

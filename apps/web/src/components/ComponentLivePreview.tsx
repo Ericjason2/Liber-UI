@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect, useRef, useState } from "react";
 
 export interface ComponentLivePreviewProps {
   rawHtml: string;
@@ -13,8 +13,8 @@ export interface ComponentLivePreviewProps {
 }
 
 /**
- * Builds a complete, isolated HTML document for an iframe srcDoc that renders
- * the exact creator-submitted Tailwind HTML (`rawHtml`) just like tailwindflex.com.
+ * Builds an isolated HTML document for an iframe srcDoc that renders
+ * the component's Tailwind HTML (`rawHtml`) cleanly in Light or Dark mode.
  */
 export function buildPreviewSrcDoc(
   rawHtml: string,
@@ -92,7 +92,6 @@ export function buildPreviewSrcDoc(
     </div>
   </div>
   <script>
-    // Prevent links and form submissions inside the preview from navigating the iframe away
     document.addEventListener('click', function(e) {
       var anchor = e.target && e.target.closest ? e.target.closest('a') : null;
       if (anchor) {
@@ -114,9 +113,30 @@ export function ComponentLivePreview({
   darkMode = false,
   viewportWidth = "100%",
   className = "",
-  minHeight = 560,
+  minHeight = 520,
 }: ComponentLivePreviewProps) {
   const isThumbnail = mode === "thumbnail";
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [inView, setInView] = useState<boolean>(!isThumbnail);
+
+  useEffect(() => {
+    if (!isThumbnail) return;
+    const node = containerRef.current;
+    if (!node || typeof IntersectionObserver === "undefined") {
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "280px" }
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [isThumbnail]);
 
   const srcDoc = useMemo(
     () => buildPreviewSrcDoc(rawHtml, darkMode, isThumbnail),
@@ -126,24 +146,29 @@ export function ComponentLivePreview({
   if (isThumbnail) {
     return (
       <div
-        className={`relative w-full h-[260px] overflow-hidden bg-slate-50 dark:bg-slate-950 select-none ${className}`}
+        ref={containerRef}
+        className={`relative w-full h-[250px] overflow-hidden bg-slate-50 dark:bg-slate-950 select-none ${className}`}
       >
-        <iframe
-          title={`Aperçu de ${title}`}
-          srcDoc={srcDoc}
-          loading="lazy"
-          sandbox="allow-scripts"
-          tabIndex={-1}
-          aria-hidden="true"
-          className="w-[200%] h-[520px] border-0 origin-top-left scale-50 pointer-events-none"
-        />
+        {inView ? (
+          <iframe
+            title={`Aperçu de ${title}`}
+            srcDoc={srcDoc}
+            loading="lazy"
+            sandbox="allow-scripts"
+            tabIndex={-1}
+            aria-hidden="true"
+            className="w-[200%] h-[500px] border-0 origin-top-left scale-50 pointer-events-none"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center bg-muted/20 animate-pulse" />
+        )}
       </div>
     );
   }
 
   return (
     <div
-      className={`w-full flex justify-center bg-muted/20 dark:bg-neutral-950/60 p-2 sm:p-4 overflow-x-auto ${className}`}
+      className={`w-full flex justify-center bg-muted/15 dark:bg-neutral-950/60 p-3 sm:p-6 overflow-x-auto ${className}`}
     >
       <div
         style={{
