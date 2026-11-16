@@ -3,10 +3,10 @@
   "name": "zoom-in-effect-card",
   "type": "registry:ui",
   "title": "zoom in effect card",
-  "description": "zoom in effect card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "zoom in effect card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\">\n  <div class=\"border shadow-teal-300 shadow-md max-w-xl p-2 rounded-lg dark:bg-gray-700 dark:text-gray-300\">\n    \n    <div class=\"overflow-hidden\">\n      <img \n        src=\"https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=2210&quality=70\" \n        alt=\"Scenic View\" \n        class=\"w-full h-auto transition-transform duration-300 ease-in-out hover:scale-110\" \n      />\n    </div>\n  </div>\n</div>"
   }

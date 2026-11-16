@@ -3,10 +3,10 @@
   "name": "call-to-action-card",
   "type": "registry:ui",
   "title": "Call-to-Action Card",
-  "description": "Call-to-Action Card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "Call-to-Action Card — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"bg-white\">\n  <div class=\"mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8\">\n    <div class=\"relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16\">\n      <h2 class=\"mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl\">Unlock the Power of AI\n      </h2>\n      <p class=\"mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300\">Sign up now to leverage the capabilities of our\n        AI platform. AIHub is currently in beta testing; don't hesitate to contact us for any inquiries.</p>\n      <div class=\"mt-10 flex items-center justify-center gap-x-6\">\n        <a href=\"#\"\n          class=\"rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white\">Get\n          started\n        </a>\n        <a href=\"mailto:hello@aihub.com\"\n          class=\"text-sm font-semibold leading-6 text-white hover:underline hover:underline-offset-2\">\n          hello@aihub.com\n        </a>\n      </div>\n    </div>\n  </div>\n</div>"
   }

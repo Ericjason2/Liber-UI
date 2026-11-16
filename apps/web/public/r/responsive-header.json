@@ -3,10 +3,10 @@
   "name": "responsive-header",
   "type": "registry:ui",
   "title": "Responsive Header",
-  "description": "Responsive Header — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (header, footer, card).",
+  "description": "Responsive Header — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "navbar"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "header",
-      "footer",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "header"
     ],
     "rawHtml": "<!-- Header Section -->\n    <header class=\"bg-blue-900 text-white\">\n        <div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5\">\n            <div class=\"flex items-center justify-between\">\n                <!-- Logo Section -->\n                <div class=\"flex-shrink-0\">\n                    <a href=\"#\" class=\"text-2xl font-bold\">Tailwind </a>\n                </div>\n\n                <!-- Navigation Menu -->\n                <nav class=\"hidden md:flex space-x-10 text-lg\">\n                    <a href=\"#\" class=\"hover:text-gray-300 transition-all\">Home</a>\n                    <a href=\"#services\" class=\"hover:text-gray-300 transition-all\">Services</a>\n                    <a href=\"#about\" class=\"hover:text-gray-300 transition-all\">About Us</a>\n                    <a href=\"#contact\" class=\"hover:text-gray-300 transition-all\">Contact</a>\n                </nav>\n\n                <!-- Call-to-Action Button -->\n                <div class=\"hidden md:block\">\n                    <a href=\"#contact\" class=\"bg-yellow-500 hover:bg-yellow-400 text-black py-2 px-6 rounded-full text-lg transition-all\">\n                        Get in Touch\n                    </a>\n                </div>\n\n                <!-- Mobile Menu Button (for smaller screens) -->\n                <div class=\"md:hidden flex items-center\">\n                    <button id=\"menu-button\" class=\"text-white focus:outline-none\">\n                        <svg class=\"h-6 w-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n                            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16M4 18h16\"></path>\n                        </svg>\n                    </button>\n                </div>\n            </div>\n\n            <!-- Mobile Navigation Menu -->\n            <div id=\"mobile-menu\" class=\"md:hidden mt-5 hidden space-y-4\">\n                <a href=\"#\" class=\"block text-lg hover:text-gray-300 transition-all\">Home</a>\n                <a href=\"#services\" class=\"block text-lg hover:text-gray-300 transition-all\">Services</a>\n                <a href=\"#about\" class=\"block text-lg hover:text-gray-300 transition-all\">About Us</a>\n                <a href=\"#contact\" class=\"block text-lg hover:text-gray-300 transition-all\">Contact</a>\n            </div>\n        </div>\n    </header>\n\n    <script>\n        // Mobile Menu Toggle\n        const menuButton = document.getElementById('menu-button');\n        const mobileMenu = document.getElementById('mobile-menu');\n\n        menuButton.addEventListener('click', () => {\n            mobileMenu.classList.toggle('hidden');\n        });\n    </script>"
   }

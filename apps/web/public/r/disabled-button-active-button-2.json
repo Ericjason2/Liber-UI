@@ -3,10 +3,10 @@
   "name": "disabled-button-active-button-2",
   "type": "registry:ui",
   "title": "Disabled Button &amp; Active Button",
-  "description": "Disabled Button &amp; Active Button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Disabled Button &amp; Active Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"flex gap-2\">\n  <!-- HTML -->\n  <button class=\"bg-gray-300 px-4 py-2 rounded-md opacity-50\" >\n    Disabled Button\n  </button>\n\n  <!-- HTML -->\n  <button class=\"bg-green-500 hover:bg-green-700 active:bg-green-800 px-4 py-2 rounded-md text-white\">\n    Active Button\n  </button>\n\n</div>"
   }

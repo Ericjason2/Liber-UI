@@ -3,10 +3,10 @@
   "name": "very-simple-hero",
   "type": "registry:ui",
   "title": "Very simple hero",
-  "description": "Very simple hero — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, call-to-action, footer).",
+  "description": "Very simple hero — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "hero",
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"pt-16 pb-8 mx-auto max-w-5xl px-4 sm:pt-24\">\r\n    <div class=\"text-center\">\r\n        <h1 class=\"text-5xl tracking-tight font-extrabold sm:text-5xl pb-3 md:pb-0 md:text-6xl\">\r\n            The Reverse Job Board for Blockchain developers\r\n        </h1>\r\n        <p class=\"mt-3 max-w-md mx-auto text-base text-gray-600 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl\">\r\n            <code class=\"text-gray-600 font-semibold\">BlockchainDevs</code>\r\n            <span>helps independent developers get their next Web3 gig.</span>\r\n        </p>\r\n        <div class=\"mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8\">\r\n            <div class=\"rounded-md shadow\">\r\n                <a class=\"w-full text-white flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-md  bg-green-600 hover:bg-green-500 md:py-5  md:text-2xl md:px-10\"\r\n                    href=\"#\">Get started for free</a>\r\n            </div>\r\n\r\n        </div>\r\n    </div>\r\n</div>"
   }

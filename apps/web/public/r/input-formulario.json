@@ -3,10 +3,10 @@
   "name": "input-formulario",
   "type": "registry:ui",
   "title": "Input Formulario",
-  "description": "Input Formulario — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Input Formulario — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"w-screen h-screen flex flex-col justify-center items-center  dark:bg-gray-900\">\n    <div class=\"relative py-3 sm:max-w-xs sm:mx-auto\">\n        <div class=\" px-8 py-6 mt-4 text-left\">\n            <!-- Component Input -->\n            <div class=\"w-full flex flex-col gap-2 select-none\">\n                <label class=\"font-semibold text-xs text-gray-400 \">Username</label>\n                <input class=\"border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark:border-gray-500 dark:bg-gray-900\" placeholder=\"Username\" />\n            </div>\n        </div>\n    </div>\n</div>"
   }

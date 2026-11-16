@@ -3,10 +3,10 @@
   "name": "componentes-para-mi-empresa",
   "type": "registry:ui",
   "title": "Componentes para mi empresa",
-  "description": "Componentes para mi empresa — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Componentes para mi empresa — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<button class=\"bg-[#0070F3] text-white font-medium py-2 px-4 rounded hover:bg-blue-600 transition\">\n  Cotiza tu sitio\n</button>\n<button class=\"bg-black text-white border border-white py-2 px-4 rounded hover:bg-white hover:text-black transition\">\n  Más información\n</button>\n\n<div class=\"bg-white text-black p-6 rounded-xl shadow-md border border-gray-light\">\n  <h3 class=\"text-lg font-semibold mb-2\">Software a medida</h3>\n  <p class=\"text-gray-default text-sm\">Desarrollamos soluciones según tus necesidades.</p>\n</div>\n\n<nav class=\"bg-black text-white flex justify-between items-center px-6 py-4\">\n  <div class=\"text-xl font-bold\">MiMarca</div>\n  <div class=\"space-x-6\">\n    <a href=\"#\" class=\"hover:text-blue-primary\">Inicio</a>\n    <a href=\"#\" class=\"hover:text-blue-primary\">Servicios</a>\n    <a href=\"#\" class=\"hover:text-blue-primary\">Contacto</a>\n  </div>\n</nav>\n<input type=\"text\" placeholder=\"Tu correo\" class=\"bg-black border border-gray-light text-white px-4 py-2 rounded-md placeholder-gray-default focus:outline-none focus:border-blue-primary transition\">"
   }

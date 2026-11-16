@@ -3,10 +3,10 @@
   "name": "profile3",
   "type": "registry:ui",
   "title": "profile3",
-  "description": "profile3 — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "profile3 — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "profile"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"h-screen w-screen text-slate-600  bg-gradient-to-r from-cyan-300 to-violet-500 dark:text-slate-100 dark:bg-gradient-to-t dark:from-cyan-300 dark:to-slate-600 flex justify-between items-center\">\n  \n  <div\n    class=\"p-1 m-1 h-50 min-w-xs w-full mx-auto max-w-sm outline outline-2 outline-offset-0 outline-slate-300 shadow-xl shadow-slate-500/50 dark:shadow-cyan-500/50 dark:outline-cyan-300 rounded-xl\">\n    <div class=\"h-1/2 p-1 place-items-center block text-center sm:flex sm:justify-between\">\n      <img class=\"rounded-full sm:rounded-xl size-20 sm:size-[10rem] object-cover\" src=\"https://images.unsplash.com/photo-1466112928291-0903b80a9466?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxwcm9maWxlfGVufDB8MHx8fDE3NTA1MDA4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080\" alt=\"profile\"/>\n      <div class=\"m-2 py-2\">\n        <main>Cait Genevieve</main>\n        <main>🎀New york</main>\n        <button class=\"p-2 m-2 w-24 rounded-full bg-blue-300 border-none text-slate-600 font-semibold focus:text-slate-100 hover:text-slate-100 transition delay-150 duration-300 ease-in hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 \">Follow</button>\n        <button class=\"p-2 m-2 w-24 rounded-full bg-blue-300 border-none text-slate-600 font-semibold focus:text-slate-100 hover:text-slate-100 transform transition hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-non\">Message</button>\n      </div>\n    </div>\n    \n    <div class=\"border border-b-1 m-1 border-slate-200 dark:border-cyan-300\"></div>\n\n    <div class=\"p-2 m-2 text-center sm:text-left py-2\">\n      <main>🤩 Total 11k follower</main>\n      <article class=\"shrink\">Loremaslcknassdfihwoeif ckanLoremaslc\n        knassdfihwoeif ckanLoremas\n        lcknassdfihwoeif ckanLo\n        remaslcknassdfihwoeif ckan</article>\n    </div>\n  </div>\n</div>"
   }

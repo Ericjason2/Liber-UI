@@ -3,10 +3,10 @@
   "name": "cols-3",
   "type": "registry:ui",
   "title": "cols-3",
-  "description": "cols-3 — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (grid, footer, header).",
+  "description": "cols-3 — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "grid",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<section class=\"bg-white\">\n\t\t<div class=\"py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6\">\n\t\t\t<div class=\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4\">\n\t\t\t\t<div class=\"col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50\">\n\t\t\t\t\t\n2\n\t\t\t\t\t\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50\">\n\n2\t\t\n\t\t\t\t\t\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-span-1 sm:col-span-1 md:col-span-1 bg-sky-50\">\n\n1\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</section>"
   }

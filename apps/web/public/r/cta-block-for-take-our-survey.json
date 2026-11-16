@@ -3,10 +3,10 @@
   "name": "cta-block-for-take-our-survey",
   "type": "registry:ui",
   "title": "CTA block for &quot;Take our survey&quot;",
-  "description": "CTA block for &quot;Take our survey&quot; — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "CTA block for &quot;Take our survey&quot; — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"w-full max-w-2xl my-4 mx-auto p-2\">\n\n    <div class=\"border border-indigo-500 p-4 md:p-6 rounded-lg text-center\">\n        <h2 class=\"text-2xl md:text-3xl font-bold mb-4\">We need your help!</h2>\n\n        <p class=\"text-lg mb-4 text-gray-700\">\n            We're developing a website for <strong>study materials for students</strong>.\n            <br>\n            We would love to hear your answers to some of the questions.\n        </p>\n\n        <a href=\"#\"\n            class=\"font-bold inline-block bg-indigo-100 text-indigo-700 py-2 px-4 rounded-lg hover:bg-indigo-100 transition duration-300 ease-in-out\">\n            Take Survey\n        </a>\n\n        <p class=\"text-sm py-2 text-gray-500\">\n            You will be rewarded for completing survey\n        </p>\n    </div>\n\n</div>"
   }

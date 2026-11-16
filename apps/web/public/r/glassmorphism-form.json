@@ -3,10 +3,10 @@
   "name": "glassmorphism-form",
   "type": "registry:ui",
   "title": "Glassmorphism form",
-  "description": "Glassmorphism form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Glassmorphism form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"bg-gradient-to-r from-blue-300 to-purple-500 h-screen flex justify-center items-center\">\n    <div class=\"py-8 px-6 max-w-md bg-white bg-opacity-30 rounded-lg shadow-lg backdrop-blur-xl backdrop-filter\">\n        <h1 class=\"text-3xl font-extrabold text-center text-gray-800 mb-5\">Glassmorphism Design</h1>\n        <p class=\"text-lg text-center text-gray-700 mb-8\">Using Tailwind CSS</p>\n     \n        <form class=\"flex flex-col\" action=\"https://fabform.io/f/{form-id}\" method=\"post\">\n        <form class=\"flex flex-col\">\n            <div class=\"mb-5\">\n                <label class=\"text-gray-700 font-semibold mb-2\" for=\"name\">Name</label>\n                <input class=\"bg-transparent border rounded-lg shadow border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 px-4 block w-full appearance-none leading-normal\" type=\"text\" id=\"name\" name=\"name\" required>\n            </div>\n            <div class=\"mb-5\">\n                <label class=\"text-gray-700 font-semibold mb-2\" for=\"email\">Email</label>\n                <input class=\"bg-transparent border rounded-lg shadow border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 px-4 block w-full appearance-none leading-normal\" type=\"email\" id=\"email\" name=\"email\" required>\n            </div>\n            <div class=\"mb-5\">\n                <label class=\"text-gray-700 font-semibold mb-2\" for=\"message\">Message</label>\n                <textarea class=\"bg-transparent border rounded-lg shadow border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 px-4 block w-full appearance-none leading-normal\" id=\"message\" name=\"message\" rows=\"5\" required></textarea>\n            </div>\n            <button class=\"bg-gradient-to-r from-purple-400 to-indigo-500 text-white font-semibold py-2 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out mb-5\" type=\"submit\">Send Message</button>\n        </form>\n           <a href=\"https://veilmail.io/e/FkKh7o\" class=\"font-medium text-blue-600 hover:underline\">Or click here to reveal our protected email address</a>\n    \n    </div>\n    \n</div>\n</form>"
   }

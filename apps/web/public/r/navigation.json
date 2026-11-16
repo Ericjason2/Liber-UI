@@ -3,10 +3,10 @@
   "name": "navigation",
   "type": "registry:ui",
   "title": "navigation",
-  "description": "navigation — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (navbar, footer, header).",
+  "description": "navigation — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "navbar"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "navbar",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "navbar"
     ],
     "rawHtml": "<div class=\"bg-white px-4 py-6 sm:px-6 lg:px-8\">\n  <div class=\"mx-auto max-w-7xl\">\n\n    <div>\n      <div class=\"sm:hidden\">\n        <label for=\"tabs\" class=\"sr-only\">Select a tab</label>\n        <!-- Use an \"onChange\" listener to redirect the user to the selected tab URL. -->\n        <select id=\"tabs\" name=\"tabs\" class=\"block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500\">\n\n          <option>My Account</option>\n        \n          <option>Company</option>\n        \n          <option selected=\"\">Team Members</option>\n        \n          <option>Billing</option>\n        \n      </select>\n      </div>\n      <div class=\"hidden sm:block\">\n        <nav class=\"flex space-x-4\" aria-label=\"Tabs\">\n\n          <a href=\"#\" class=\"text-gray-500 hover:bg-gray-100 text-gray-700 px-3 py-2 font-medium text-sm rounded-md\"\n            x-state:on=\"Current\" x-state:off=\"Default\"\n            x-state-description=\"Current: &quot;bg-gray-100 text-gray-700&quot;, Default: &quot;text-gray-500 hover:text-gray-700&quot;\">My\n            Account</a>\n\n          <a href=\"#\" class=\"text-gray-500 hover:bg-gray-100 text-gray-700 px-3 py-2 font-medium text-sm rounded-md\"\n            x-state-description=\"undefined: &quot;bg-gray-100 text-gray-700&quot;, undefined: &quot;text-gray-500 hover:text-gray-700&quot;\">Company</a>\n\n          <a href=\"#\" class=\"bg-gray-100 text-gray-700 px-3 py-2 font-medium text-sm rounded-md\" aria-current=\"page\"\n            x-state-description=\"undefined: &quot;bg-gray-100 text-gray-700&quot;, undefined: &quot;text-gray-500 hover:text-gray-700&quot;\">Team\n            Members</a>\n\n          <a href=\"#\" class=\"text-gray-500 hover:bg-gray-100 text-gray-700 px-3 py-2 font-medium text-sm rounded-md\"\n            x-state-description=\"undefined: &quot;bg-gray-100 text-gray-700&quot;, undefined: &quot;text-gray-500 hover:text-gray-700&quot;\">Billing</a>\n\n        </nav>\n      </div>\n    </div>\n\n  </div>\n</div>"
   }

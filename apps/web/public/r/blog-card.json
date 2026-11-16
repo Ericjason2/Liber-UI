@@ -3,10 +3,10 @@
   "name": "blog-card",
   "type": "registry:ui",
   "title": "Blog Card",
-  "description": "Blog Card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Blog Card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"p-4 max-w-md\">\n    <div class=\"h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden\">\n        <img class=\"h-48 w-full object-cover object-center\" src=\"https://dummyimage.com/720x400\" alt=\"blog\">\n        <div class=\"p-6\">\n            <h2 class=\"tracking-widest text-xs title-font font-medium text-gray-400 mb-1\">CATEGORY</h2>\n            <h1 class=\"title-font text-lg font-medium text-gray-900 mb-3\">The Catalyzer</h1>\n            <p class=\"leading-relaxed mb-3\">\n                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing\n                tousled waistcoat.\n            </p>\n            <div class=\"flex items-center flex-wrap\">\n                <a class=\"text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0\">\n                    Learn More\n                    <svg class=\"w-4 h-4 ml-2\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"\n                        stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M5 12h14\"></path>\n                        <path d=\"M12 5l7 7-7 7\"></path>\n                    </svg>\n                </a>\n                <span class=\"text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200\">\n                    <svg class=\"w-4 h-4 mr-1\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" viewBox=\"0 0 24 24\">\n                        <path d=\"M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z\"></path>\n                        <circle cx=\"12\" cy=\"12\" r=\"3\"></circle>\n                    </svg>\n                    1.2K\n                </span>\n                <span class=\"text-gray-400 inline-flex items-center leading-none text-sm\">\n                    <svg class=\"w-4 h-4 mr-1\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" viewBox=\"0 0 24 24\">\n                        <path d=\"M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z\"></path>\n                    </svg>6\n                </span>\n            </div>\n        </div>\n    </div>\n</div>"
   }

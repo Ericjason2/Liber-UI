@@ -3,10 +3,10 @@
   "name": "feature-section-cards",
   "type": "registry:ui",
   "title": "Feature Section Cards",
-  "description": "Feature Section Cards — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Feature Section Cards — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "landing-page"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<!-- Add Icons link -->\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\">\n\n\n<div class=\"features\">\n    <div class=\"feature\">\n        <i class=\"feature-icon fas fa-rocket\"></i>\n        <h3 class=\"feature-title\">Blazing Fast</h3>\n        <p class=\"feature-description\">Experience lightning-quick load times and smooth interactions that push the\n            boundaries of web performance.</p>\n    </div>\n    <div class=\"feature\">\n        <i class=\"feature-icon fas fa-paint-brush\"></i>\n        <h3 class=\"feature-title\">Stunning Design</h3>\n        <p class=\"feature-description\">Immerse yourself in a visually captivating interface that combines futuristic\n            aesthetics with intuitive usability.</p>\n    </div>\n    <div class=\"feature\">\n        <i class=\"feature-icon fas fa-shield-alt\"></i>\n        <h3 class=\"feature-title\">Robust Security</h3>\n        <p class=\"feature-description\">Rest easy knowing your data is protected by state-of-the-art security\n            measures and encryption protocols.</p>\n    </div>\n</div>"
   }

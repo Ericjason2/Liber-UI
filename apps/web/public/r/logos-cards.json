@@ -3,10 +3,10 @@
   "name": "logos-cards",
   "type": "registry:ui",
   "title": "Logos cards",
-  "description": "Logos cards — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Logos cards — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 sm:gap-2 gap-4 auto-cols-fr my-2\">\n    <a\n        href=\"https://lqrs.com/brands/heineken/?utm_source=q&amp;utm_medium=cpc&amp;utm_campaign=brand&amp;utm_term=Heineken\"\n        class=\"flex flex-col items-center justify-center p-4 bg-white border border-2 border-gray-200 hover:border-rose-600 rounded-2xl group transition-colors min-h-[120px] transition-all duration-300\"\n    >\n        <div class=\"mb-2 w-32 aspect-square flex items-center justify-center\">\n            <img class=\"max-w-full max-h-full object-contain\" src=\"https://lqrs.com/site/assets/files/62390/heineken-logo.320x0.png\" alt=\"Heineken logo\" />\n        </div>\n        <h5 class=\"text-center text-lg sm:text-base font-medium text-gray-900 group-hover:text-rose-600\">\n            Heineken\n        </h5>\n    </a>\n    <a\n        href=\"https://lqrs.com/brands/budweiser/?utm_source=q&amp;utm_medium=cpc&amp;utm_campaign=brand&amp;utm_term=Budweiser\"\n        class=\"flex flex-col items-center justify-center p-4 bg-white border border-2 border-gray-200 hover:border-rose-600 rounded-2xl group transition-colors min-h-[120px] transition-all duration-300\"\n    >\n        <div class=\"mb-2 w-32 aspect-square flex items-center justify-center\">\n            <img class=\"max-w-full max-h-full object-contain\" src=\"https://lqrs.com/site/assets/files/62391/budweiser-logo.320x0.png\" alt=\"Budweiser logo\" />\n        </div>\n        <h5 class=\"text-center text-lg sm:text-base font-medium text-gray-900 group-hover:text-rose-600\">\n            Budweiser\n        </h5>\n    </a>\n    <a\n        href=\"https://lqrs.com/brands/carlsberg/?utm_source=q&amp;utm_medium=cpc&amp;utm_campaign=brand&amp;utm_term=Carlsberg\"\n        class=\"flex flex-col items-center justify-center p-4 bg-white border border-2 border-gray-200 hover:border-rose-600 rounded-2xl group transition-colors min-h-[120px] transition-all duration-300\"\n    >\n        <div class=\"mb-2 w-32 aspect-square flex items-center justify-center\">\n            <img class=\"max-w-full max-h-full object-contain\" src=\"https://lqrs.com/site/assets/files/15605/carlsberg-logo.320x0.png\" alt=\"Carlsberg logo\" />\n        </div>\n        <h5 class=\"text-center text-lg sm:text-base font-medium text-gray-900 group-hover:text-rose-600\">\n            Carlsberg\n        </h5>\n    </a>\n    <a\n        href=\"https://lqrs.com/brands/stella-artois/?utm_source=q&amp;utm_medium=cpc&amp;utm_campaign=brand&amp;utm_term=Stella Artois\"\n        class=\"flex flex-col items-center justify-center p-4 bg-white border border-2 border-gray-200 hover:border-rose-600 rounded-2xl group transition-colors min-h-[120px] transition-all duration-300\"\n    >\n        <div class=\"mb-2 w-32 aspect-square flex items-center justify-center\">\n            <img class=\"max-w-full max-h-full object-contain\" src=\"https://lqrs.com/site/assets/files/62394/stella-artois-logo.320x0.png\" alt=\"Stella Artois logo\" />\n        </div>\n        <h5 class=\"text-center text-lg sm:text-base font-medium text-gray-900 group-hover:text-rose-600\">\n            Stella Artois\n        </h5>\n    </a>\n</div>"
   }

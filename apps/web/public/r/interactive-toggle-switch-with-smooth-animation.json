@@ -3,10 +3,10 @@
   "name": "interactive-toggle-switch-with-smooth-animation",
   "type": "registry:ui",
   "title": "Interactive Toggle Switch with Smooth Animation",
-  "description": "Interactive Toggle Switch with Smooth Animation — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Interactive Toggle Switch with Smooth Animation — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"flex items-center justify-center h-screen\">\n  <div class=\"flex items-center\">\n    <input\n      type=\"checkbox\"\n      id=\"toggleSwitch\"\n      class=\"hidden\"\n      onchange=\"toggleSwitch(this)\"\n    />\n    <label\n      for=\"toggleSwitch\"\n      class=\"select-none relative inline-flex h-6 w-14 items-center rounded-full transition-colors duration-200 cursor-pointer bg-[#E6E6E6]\"\n    >\n      <span\n        id=\"toggleText\"\n        class=\"absolute w-full text-xs transition-transform duration-200 text-right pr-1.5 text-black\"\n      >\n        OFF\n      </span>\n      <span\n        id=\"toggleBall\"\n        class=\"inline-block w-[17px] h-[17px] transform rounded-full bg-white transition-transform duration-200 translate-x-1\"\n      ></span>\n    </label>\n  </div>\n</div>\n\n<script>\n  function toggleSwitch(input) {\n    const label = input.nextElementSibling;\n    const text = label.querySelector(\"#toggleText\");\n    const ball = label.querySelector(\"#toggleBall\");\n\n    if (input.checked) {\n      label.classList.add(\"bg-[#0E947A]\");\n      label.classList.remove(\"bg-[#E6E6E6]\");\n      text.textContent = \"ON\";\n      text.classList.remove(\"text-black\", \"text-right\", \"pr-1.5\");\n      text.classList.add(\"text-white\", \"text-left\", \"pl-2\");\n      ball.style.transform = \"translateX(36px)\";\n    } else {\n      label.classList.add(\"bg-[#E6E6E6]\");\n      label.classList.remove(\"bg-[#0E947A]\");\n      text.textContent = \"OFF\";\n      text.classList.remove(\"text-white\", \"text-left\", \"pl-2\");\n      text.classList.add(\"text-black\", \"text-right\", \"pr-1.5\");\n      ball.style.transform = \"translateX(4px)\";\n    }\n  }\n</script>"
   }

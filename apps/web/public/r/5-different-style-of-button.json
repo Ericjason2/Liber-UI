@@ -3,10 +3,10 @@
   "name": "5-different-style-of-button",
   "type": "registry:ui",
   "title": "5 Different Style of Button",
-  "description": "5 Different Style of Button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "5 Different Style of Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"bg-gray-100 flex flex-col items-center justify-center min-h-screen space-y-4\">\n  <!-- Button 1: Gradient Button -->\n  <button class=\"bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl\">\n    Gradient Button\n  </button>\n\n  <!-- Button 2: Outline with Hover Fill -->\n  <button class=\"border-2 border-blue-500 text-blue-500 font-semibold py-3 px-6 rounded-lg relative overflow-hidden transition-all duration-300 hover:bg-blue-500 hover:text-white\">\n    Outline Button\n  </button>\n\n  <!-- Button 3: Neon Glowing -->\n  <button class=\"bg-gray-900 text-green-400 font-semibold py-3 px-6 rounded-lg shadow-md border-2 border-green-400 transition-shadow duration-300 hover:shadow-xl hover:scale-105\">\n    Neon Button\n  </button>\n\n  <!-- Button 4: Sliding Background -->\n  <button class=\"relative bg-white text-black font-semibold py-3 px-6 rounded-lg overflow-hidden group\">\n    <span class=\"absolute inset-0 bg-indigo-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out\"></span>\n    <span class=\"relative z-10\">Sliding Background</span>\n  </button>\n\n  <!-- Button 5: Pulsing Animation -->\n  <button class=\"bg-pink-500 text-white font-semibold py-3 px-6 rounded-lg animate-pulse hover:scale-105 transition-transform duration-300\">\n    Pulsing Button\n  </button>\n</div>"
   }

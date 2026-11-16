@@ -3,10 +3,10 @@
   "name": "call-for-action",
   "type": "registry:ui",
   "title": "Call for action",
-  "description": "Call for action — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "Call for action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"text-center\">\r\n    <h1 class=\"text-3xl font-extrabold tracking-normal text-gray-900 sm:text-5xl md:text-5xl md:leading-none\">\r\n        <span class=\"block\">Focus on creative</span>\r\n    </h1>\r\n    <p\r\n        class=\"max-w-sm mx-auto mt-1 font-normal text-gray-500 text- sm:mt-5 sm:text-md md:mt-5 md:text-xl sm:max-w-2xl md:max-w-2xl\">\r\n        Create ad previews with fewer steps so you can focus on what you do best.</p>\r\n    <div class=\"max-w-md mx-auto mt-3 sm:flex sm:justify-center md:mt-6\">\r\n        <div class=\"rounded-full shadow\">\r\n            <button type=\"button\" class=\"flex items-center justify-center w-full px-8 py-3 text-base font-normal text-white bg-teal-400 border border-transparent rounded-full text-md hover:bg-teal-300 md:py-4 md:text-2xl md:px-10\">Start for free</button>\r\n        </div>\r\n    </div>\r\n</div>"
   }

@@ -3,10 +3,10 @@
   "name": "confirm-otp-form",
   "type": "registry:ui",
   "title": "Confirm OTP Form",
-  "description": "Confirm OTP Form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Confirm OTP Form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"flex flex-1 flex-col  justify-center space-y-5 max-w-md mx-auto mt-24\">\r\n    <div class=\"flex flex-col space-y-2 text-center\">\r\n        <h2 class=\"text-3xl md:text-4xl font-bold\">Confirm OTP</h2>\r\n        <p class=\"text-md md:text-xl\">\r\n            Enter the OTP we just sent you.\r\n        </p>\r\n    </div>\r\n    <div class=\"flex flex-col max-w-md space-y-5\">\r\n        <input type=\"text\" placeholder=\"otp\"\r\n              class=\"flex px-3 py-2 md:px-4 md:py-3 border-2 border-black rounded-lg font-medium placeholder:font-normal\" />\r\n        <button class=\"flex items-center justify-center flex-none px-3 py-2 md:px-4 md:py-3 border-2 rounded-lg font-medium border-black bg-black text-white\">\r\n            Confirm\r\n        </button>\r\n    </div>\r\n</div>"
   }

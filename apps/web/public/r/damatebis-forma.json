@@ -3,10 +3,10 @@
   "name": "damatebis-forma",
   "type": "registry:ui",
   "title": "damatebis forma",
-  "description": "damatebis forma — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "damatebis forma — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "</div>\n<form class=\"md:col-span-8 p-10\">\n    <div class=\"flex flex-wrap -mx-3 mb-6\">\n        <div class=\"w-full md:w-1/2 px-3 mb-6 md:mb-0\">\n            <label class=\"block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2\"\n                        for=\"grid-first-name\">\n                        სახელი\n                    </label>\n            <input\n                        class=\"appearance-none block w-full bg-[#F5EDED] text-gray-700 border-e-60  border-natural-950 rounded-full  py-3 px-4 mb-3 leading-tight focus:outline focus:bg-black\"\n                        id=\"grid-first-name\" type=\"text\" placeholder=\"გია\">\n        </div>\n        <div class=\"w-full md:w-1/2 px-3\">\n            <label class=\"block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2\"\n                        for=\"grid-last-name\">\n                        გვარი\n                    </label>\n            <input\n                        class=\"appearance-none block w-full bg-[#F5EDED] text-gray-700 border-e-60  border-natural-950 rounded-full  py-3 px-4 mb-3 leading-tight focus:outline focus:bg-black\"\n                        id=\"grid-last-name\" type=\"text\" placeholder=\"მურმანიძე\">\n        </div>\n    </div>\n    </div>\n    </div>\n<form class=\"md:col-span-8 p-10\">\n    <div class=\"flex flex-wrap -mx-3 mb-6\">\n        <div class=\"w-full md:w-1/2 px-3 mb-6 md:mb-0\">\n            <label class=\"block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2\"\n                        for=\"grid-first-name\">\n                        ტელეფონი\n                    </label>\n            <input\n                        class=\"appearance-none block w-full bg-[#F5EDED] text-gray-700 border-e-60  border-natural-950 rounded-full  py-3 px-4 mb-3 leading-tight focus:outline focus:bg-black\"\n                        id=\"grid-first-name\" type=\"text\" placeholder=\"--- -- -- --\">\n        </div>\n        <div class=\"w-full md:w-1/2 px-3\">\n            <label class=\"block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2\"\n                        for=\"grid-last-name\">\n                        პირადი ნომერი\n                    </label>\n            <input\n                        class=\"appearance-none block w-full bg-[#F5EDED] text-gray-700 border-e-60  border-natural-950 rounded-full  py-3 px-4 mb-3 leading-tight focus:outline focus:bg-black\"\n                        id=\"grid-last-name\" type=\"text\" placeholder=\"-----------\">\n        </div>\n    </div>\n    </div>\n    </div>\n<form class=\"md:col-span-8 p-10\">\n    <div class=\"flex flex-wrap -mx-3 mb-6\">\n        <div class=\"w-full md:w-1/2 px-3 mb-6 md:mb-0\">\n            <label class=\"block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2\"\n                        for=\"grid-first-name\">\n                        მისამართი\n                    </label>\n            <input\n                        class=\"appearance-none block w-full bg-[#F5EDED] text-gray-700 border-e-60  border-natural-950 rounded-full  py-3 px-4 mb-3 leading-tight focus:outline focus:bg-black\"\n                        id=\"grid-first-name\" type=\"text\" placeholder=\"ბათუმი\">\n        </div>\n        <div class=\"w-full md:w-1/2 px-3\">\n            <label class=\"block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2\"\n                        for=\"grid-last-name\">\n                        ელ-ფოსტა\n                    </label>\n            <input\n                        class=\"appearance-none block w-full bg-[#F5EDED] text-gray-700 border-e-60  border-natural-950 rounded-full  py-3 px-4 mb-3 leading-tight focus:outline focus:bg-black\"\n                        id=\"grid-last-name\" type=\"text\" placeholder=\"*****@cmp.idelapps.dev\">\n        </div>\n    </div>\n    </div>\n    </div>\n<form class=\"md:col-span-8 p-10\">\n    <div class=\"flex flex-wrap -mx-3 mb-6\">\n        <div class=\"w-full md:w-1/2 px-3 mb-6 md:mb-0\">\n            <label class=\"block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2\"\n                        for=\"grid-first-name\">\n                        დაბდების დღე\n                    </label>\n            <input\n                        class=\"appearance-none block w-full bg-[#F5EDED] text-gray-700 border-e-60  border-natural-950 rounded-full  py-3 px-4 mb-3 leading-tight focus:outline focus:bg-black\"\n                        id=\"grid-first-name\" type=\"text\" placeholder=\"09.17.2024\">\n        </div>\n        <div class=\"w-full md:w-1/2 px-3\">\n            <label class=\"block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2\"\n                        for=\"grid-last-name\">\n                        მოქლაქე\n                    </label>\n            <input\n                        class=\"appearance-none block w-full bg-[#F5EDED] text-gray-700 border-e-60  border-natural-950 rounded-full  py-3 px-4 mb-3 leading-tight focus:outline focus:bg-black\"\n                        id=\"grid-last-name\" type=\"text\" placeholder=\"ბათუმი\">\n        </div>\n    </div>\n    </div>\n    </div>\n<form class=\"md:col-span-8 p-10\">\n    <div class=\"flex flex-wrap -mx-3 mb-6\">\n        <div class=\"w-full md:w-1/1 px-3 mb-6 md:mb-0\">\n            <label class=\"block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2\"\n                        for=\"grid-first-name\">\n                        <center>საიდან გაიგე ჩვენს შესახებ</center>\n                    </label>\n            <input\n                        class=\"appearance-none block w-full bg-[#F5EDED] text-gray-700 border-e-60  border-natural-950 rounded-full  py-3 px-4 mb-3 leading-tight focus:outline focus:bg-black\"\n                        id=\"grid-first-name\" type=\"text\" style=\"text-align: center;\" placeholder=\"გთხოვ მიუთითოთ ერთ-ერთი პასუხი\">\n        </div>\n\n<button class=\"w-full  rounded-full bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2\" type=\"button\">\n  პაციენტის დამატება\n</button>"
   }

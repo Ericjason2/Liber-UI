@@ -3,10 +3,10 @@
   "name": "button-group-7",
   "type": "registry:ui",
   "title": "Button group",
-  "description": "Button group — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Button group — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"container mx-auto flex justify-center p-3\">\r\n    <a class=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-yellow py-2 px-2  hover:bg-yellow-300 focus:outline-none bg-yellow\"\r\n        href=\"\">👪 Everyone\r\n    </a>\r\n    <a class=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-blue-300 py-2 px-2 ml-5 hover:bg-blue-300 focus:outline-none \"\r\n        href=\"\">👍 Following\r\n    </a>\r\n    <a class=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-purple-300 py-2 px-2 ml-5 hover:bg-purple-300 focus:outline-none \"\r\n        href=\"\">💰 For sale\r\n    </a>\r\n    <a class=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-emerald-300 py-2 px-2 ml-5 hover:bg-emerald-300 focus:outline-none \"\r\n        href=\"\">🔥 Leaderboard\r\n    </a>\r\n</div>"
   }

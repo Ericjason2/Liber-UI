@@ -3,10 +3,10 @@
   "name": "hero-section-3",
   "type": "registry:ui",
   "title": "Hero section",
-  "description": "Hero section — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, header, footer).",
+  "description": "Hero section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "navbar"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "hero",
-      "header",
-      "footer",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "header"
     ],
     "rawHtml": "<div class=\"relative h-[400px] bg-gradient-to-tr from-indigo-600 via-indigo-700 to-violet-800\">\n    <div class=\"flex flex-col gap-4 justify-center items-center w-full h-full px-3 md:px-0\">\n\n        <h1 class=\"text-4xl md:text-5xl lg:text-6xl font-bold text-white\">\n            McqMate\n        </h1>\n        <p class=\"text-gray-300\">\n            For Students, From Students\n        </p>\n\n\n        <div class=\"relative p-3 border border-gray-200 rounded-lg w-full max-w-lg\">\n            <input type=\"text\" class=\"rounded-md w-full p-3 \" placeholder=\"Search MCQ | Topic | Course\">\n\n\n            <button type=\"submit\" class=\"absolute right-6 top-6\">\n\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\"\n                        stroke=\"currentColor\" class=\"w-6 h-6\">\n                        <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                            d=\"M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z\" />\n                    </svg>\n                </button>\n\n        </div>\n    </div>\n\n</div>"
   }

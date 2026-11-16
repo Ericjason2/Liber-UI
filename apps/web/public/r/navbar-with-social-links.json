@@ -3,10 +3,10 @@
   "name": "navbar-with-social-links",
   "type": "registry:ui",
   "title": "Navbar with social links",
-  "description": "Navbar with social links — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (navbar, footer, header).",
+  "description": "Navbar with social links — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "navbar"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "navbar",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "navbar"
     ],
     "rawHtml": "<header class=\"flex flex-col items-center justify-between max-w-full md:max-w-6xl px-2 md:px-6 py-12 mx-auto md:flex-row\">\r\n    <a href=\"/\" class=\"text-indigo-900 z-10 active\">\r\n        <img src=\"https://www.svgrepo.com/show/489282/brand.svg\" class=\"w-24 py-8 md:py-0 g-image\">\r\n    </a>\r\n    <nav class=\"z-10\">\r\n        <ul class=\"flex flex-row items-center px-6 py-4 text-indigo-100 bg-indigo-900 rounded-lg\">\r\n            <li class=\"pr-8\">\r\n                <a href=\"/blog\">Blog</a>\r\n            </li>\r\n            <li class=\"pr-8\">\r\n                <a href=\"\" target=\"_blank\">LinkedIn</a>\r\n            </li>\r\n            <li class=\"pr-8\">\r\n                <a href=\"\" target=\"_blank\">Twitter</a>\r\n            </li>\r\n            <li class=\"text-red-200\">\r\n                <a href=\"\" class=\"ml-2\">Email</a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n</header>"
   }

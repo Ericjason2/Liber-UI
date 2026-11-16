@@ -3,10 +3,10 @@
   "name": "minimal-profile-card",
   "type": "registry:ui",
   "title": "Minimal Profile card",
-  "description": "Minimal Profile card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, profile, footer).",
+  "description": "Minimal Profile card — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "profile"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "profile",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing"
+      "profile"
     ],
     "rawHtml": "<div\n    class=\"py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6\">\n    <img class=\"block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0\" src=\"https://tailwindcss.com/img/erin-lindford.jpg\" alt=\"Woman's Face\">\n    <div class=\"text-center space-y-2 sm:text-left\">\n        <div class=\"space-y-0.5\">\n            <p class=\"text-lg text-black font-semibold\">\n                Erin Lindford\n            </p>\n            <p class=\"text-slate-500 font-medium\">\n                Product Engineer\n            </p>\n        </div>\n        <button class=\"px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2\">Message</button>\n    </div>\n</div>"
   }

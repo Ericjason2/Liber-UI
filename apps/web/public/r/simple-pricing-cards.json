@@ -3,10 +3,10 @@
   "name": "simple-pricing-cards",
   "type": "registry:ui",
   "title": "Simple pricing cards",
-  "description": "Simple pricing cards — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (pricing, footer, header).",
+  "description": "Simple pricing cards — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "pricing"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "pricing",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "profile"
+      "pricing"
     ],
     "rawHtml": "<div class=\"max-w-screen-xl mx-auto px-6 md:px-8 lg:px-12 grid grid-cols-1 sm:grid-cols-2 gap-x-6 mt-16\">\n    <a href=\"#\" class=\"shadow hover:shadow-lg duration-500 mb-6 bg-yellow-100 py-4 lg:py-6 px-8 rounded-lg\">\n        <ul>\n            <li class=\"grid grid-cols-2 gap-4\">\n                <div>\n                    <p class=\"text-xl lg:text-2xl font-bold text-gray-800 mb-2\">5 sites</p>\n                </div>\n                <div>\n                    <p class=\"text-xl lg:text-2xl font-bold text-gray-800 mb-2\">€5 p/m</p>\n                    <p class=\"text-lg\">€1.00 per site</p>\n                </div>\n            </li>\n        </ul>\n    </a>\n    <a href=\"#\" class=\"shadow hover:shadow-lg duration-500 mb-6 bg-yellow-100 py-4 lg:py-6 px-8 rounded-lg\">\n        <ul>\n            <li class=\"grid grid-cols-2 gap-4\">\n                <div>\n                    <p class=\"text-xl lg:text-2xl font-bold text-gray-800 mb-2\">10 sites</p>\n                </div>\n                <div>\n                    <p class=\"text-xl lg:text-2xl font-bold text-gray-800 mb-2\">€9 p/m</p>\n                    <p class=\"text-lg\">€0.90 per site</p>\n                </div>\n            </li>\n        </ul>\n    </a>\n    <a href=\"#\" class=\"shadow hover:shadow-lg duration-500 mb-6 bg-yellow-100 py-4 lg:py-6 px-8 rounded-lg\">\n        <ul>\n            <li class=\"grid grid-cols-2 gap-4\">\n                <div>\n                    <p class=\"text-xl lg:text-2xl font-bold text-gray-800 mb-2\">25 sites</p>\n                </div>\n                <div>\n                    <p class=\"text-xl lg:text-2xl font-bold text-gray-800 mb-2\">€20 p/m</p>\n                    <p class=\"text-lg\">€0.80 per site</p>\n                </div>\n            </li>\n        </ul>\n    </a>\n    <a href=\"#\" class=\"shadow hover:shadow-lg duration-500 mb-6 bg-yellow-100 py-4 lg:py-6 px-8 rounded-lg\">\n        <ul>\n            <li class=\"grid grid-cols-2 gap-4\">\n                <div>\n                    <p class=\"text-xl lg:text-2xl font-bold text-gray-800 mb-2\">50 sites</p>\n                </div>\n                <div>\n                    <p class=\"text-xl lg:text-2xl font-bold text-gray-800 mb-2\">€35 p/m</p>\n                    <p class=\"text-lg\">€0.70 per site</p>\n                </div>\n            </li>\n        </ul>\n    </a>\n    <a href=\"#\" class=\"shadow hover:shadow-lg duration-500 mb-6 bg-yellow-100 py-4 lg:py-6 px-8 rounded-lg\">\n        <ul>\n            <li class=\"grid grid-cols-2 gap-4\">\n                <div>\n                    <p class=\"text-xl lg:text-2xl font-bold text-gray-800 mb-2\">100 sites</p>\n                </div>\n                <div>\n                    <p class=\"text-xl lg:text-2xl font-bold text-gray-800 mb-2\">€65 p/m</p>\n                    <p class=\"text-lg\">€0.65 per site</p>\n                </div>\n            </li>\n        </ul>\n    </a>\n    <a href=\"#\" class=\"shadow hover:shadow-lg duration-500 mb-6 bg-yellow-100 py-4 lg:py-6 px-8 rounded-lg\">\n        <ul>\n            <li class=\"grid grid-cols-2 gap-4\">\n                <div>\n                    <p class=\"text-xl lg:text-2xl font-bold text-gray-800 mb-2\">200 sites</p>\n                </div>\n                <div>\n                    <p class=\"text-xl lg:text-2xl font-bold text-gray-800 mb-2\">€100 p/m</p>\n                    <p class=\"text-lg\">€0.50 per site</p>\n                </div>\n            </li>\n        </ul>\n    </a>\n</div>"
   }

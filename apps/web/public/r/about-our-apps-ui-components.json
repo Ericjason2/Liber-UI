@@ -3,10 +3,10 @@
   "name": "about-our-apps-ui-components",
   "type": "registry:ui",
   "title": "About our apps UI Components",
-  "description": "About our apps UI Components — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (grid, footer, header).",
+  "description": "About our apps UI Components — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "grid",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<h1 class=\"text-3xl font-semibold text-center mx-auto mt-32\">About our apps</h1>\n<p class=\"text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto\">\n    A visual collection of our most recent works - each piece crafted with intention, emotion and style.\n</p>\n<div class=\"relative max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 px-8 md:px-0 pt-16\">\n    <div class=\"size-[520px] -top-80 left-1/2 -translate-x-1/2 rounded-full absolute blur-[300px] -z-10 bg-[#FBFFE1]\"></div>\n    <div>\n        <div class=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/flashEmoji.png\" alt=\"\">\n        </div>\n        <div class=\"mt-5 space-y-2\">\n            <h3 class=\"text-base font-medium text-slate-600\">Lightning-Fast Performance</h3>\n            <p class=\"text-sm text-slate-500\">Built with speed — minimal load times and optimized.</p>\n        </div>\n    </div>\n    <div>\n        <div class=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/colorsEmoji.png\" alt=\"\">\n        </div>\n        <div class=\"mt-5 space-y-2\">\n            <h3 class=\"text-base font-medium text-slate-600\">Beautifully Designed Components</h3>\n            <p class=\"text-sm text-slate-500\">Modern, pixel-perfect UI components ready for any project.</p>\n        </div>\n    </div>\n    <div>\n        <div class=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/puzzelEmoji.png\" alt=\"\">\n        </div>\n        <div class=\"mt-5 space-y-2\">\n            <h3 class=\"text-base font-medium text-slate-600\">Plug-and-Play Integration</h3>\n            <p class=\"text-sm text-slate-500\">Simple setup with support for React, Next.js and Tailwind css.</p>\n        </div>\n    </div>\n    <div>\n        <div class=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/bookEmoji.png\" alt=\"\">\n        </div>\n        <div class=\"mt-5 space-y-2\">\n            <h3 class=\"text-base font-medium text-slate-600\">Clear & Comprehensive</h3>\n            <p class=\"text-sm text-slate-500\">Get started fast with usage examples, live previews and code.</p>\n        </div>\n    </div>\n    <div>\n        <div class=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/boxEmoji.png\" alt=\"\">\n        </div>\n        <div class=\"mt-5 space-y-2\">\n            <h3 class=\"text-base font-medium text-slate-600\">Fully Customizable</h3>\n            <p class=\"text-sm text-slate-500\">Easily adapt styles, colors and layout to match your brand or product.</p>\n        </div>\n    </div>\n    <div>\n        <div class=\"size-10 p-2 bg-indigo-50 border border-indigo-200 rounded\">\n            <img src=\"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/aboutSection/brainEmoji.png\" alt=\"\">\n        </div>\n        <div class=\"mt-5 space-y-2\">\n            <h3 class=\"text-base font-medium text-slate-600\">Accessibility First</h3>\n            <p class=\"text-sm text-slate-500\">Built with WCAG standards in mind to ensure inclusive user experiences.</p>\n        </div>\n    </div>\n</div>"
   }

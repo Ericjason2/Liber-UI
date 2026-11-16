@@ -3,10 +3,10 @@
   "name": "user-feedback-card",
   "type": "registry:ui",
   "title": "User Feedback Card",
-  "description": "User Feedback Card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "User Feedback Card — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "profile"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"w-full h-screen bg-gray-200 px-10 pt-10\">\n    <div class=\"relative mt-16 mb-32 max-w-sm mx-auto mt-24\">\n        <div class=\"rounded-lg overflow-hidden shadow-lg bg-gray-50\">\n            <div class=\"absolute -mt-16 w-full flex justify-center\">\n                <div class=\"h-36 w-36 border-4 border-gray-200 rounded-md\">\n                    <img src=\"https://img.freepik.com/free-photo/handsome-bearded-guy-posing-against-white-wall_273609-20597.jpg?size=626&ext=jpg&ga=GA1.1.1369675164.1715299200&semt=sph\" class=\"rounded-md object-cover h-full w-full shadow-lg\" alt=\"Hamza ali\" />\n                </div>\n            </div>\n            <div class=\"px-6 mt-20\">\n                <h1 class=\"font-semibold text-4xl text-center mb-1 text-blue-600\">Hamza Ali</h1>\n                <p class=\"text-gray-700 text-sm text-center italic\">Frontend Developer</p>\n                <p class=\"text-center text-gray-500 text-base pt-4 font-light\">\n                    Working with Anum has been an absolute pleasure. Her dedication\n                    to her craft is unmatched, and her attention to detail is\n                    commendable.\n                </p>\n                <div class=\"flex justify-center mt-4\">\n                    <button class=\"px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600\">Connect</button>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
   }

@@ -3,10 +3,10 @@
   "name": "tilted-button-on-hover-2",
   "type": "registry:ui",
   "title": "Tilted button on hover.",
-  "description": "Tilted button on hover. — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, call-to-action, footer).",
+  "description": "Tilted button on hover. — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "button",
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\">\n  <button\n        class=\"inline-flex items-center justify-center px-8 py-2\n          text-lg font-bold text-white\n          bg-gradient-to-r from-indigo-500 to-indigo-700\n          dark:from-indigo-500 dark:to-indigo-700\n          rounded-3xl\n          drop-shadow-md\n          transform-gpu\n          hover:rotate-[2deg] hover:scale-110\n          hover:skew-x-1\n          transition-all duration-300\n          shadow-lg hover:shadow-3xl will-change-transform\"\n    >\n        <span class=\"uppercase text-xs will-change-transform\">\n          Hover to tilt!\n        </span>\n  </button>\n</div>"
   }

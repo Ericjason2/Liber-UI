@@ -3,10 +3,10 @@
   "name": "navbar-for-filters",
   "type": "registry:ui",
   "title": "Simple Filters Navbar",
-  "description": "Simple Filters Navbar — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (navbar, footer, header).",
+  "description": "Simple Filters Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "navbar"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "navbar",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "navbar"
     ],
     "rawHtml": "<div class=\"flex\">\n  <div class=\"mx-1 hidden rounded-full border border-black bg-white px-5 py-2 text-center md:block\">Dates</div>\n  <div class=\"mx-1 hidden rounded-full border border-black bg-white px-5 py-1 text-center md:block\">Group</div>\n  <div class=\"divide mx-1 px-5 hidden divide-x divide-solid rounded-full border border-black bg-white py-1 text-center md:block \">Filter</div>\n  \n  <div class=\"bg-gradient-to-r via-white flex justify-center items-center\">\n    <div\n      class=\"shadow-[0px_0px_20px_20px_rgba(0,0,0,0.09)] z-10 -mr-4 hidden w-9 h-9 justify-center rounded-full border border-black bg-white text-center text-xl font-extrabold md:block\">\n      <</div>\n    </div>\n    <div class=\"flex gap-2 grow flex-content overflow-hidden \">\n\n      <div class=\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\"> category 1</div>\n      <div class=\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\"> category 2</div>\n      <div class=\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\"> category 4</div>\n      <div class=\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\"> category 3</div>\n      <div class=\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\"> category 3</div>\n      <div class=\"rounded-full text-xs sm:text-sm min-w-fit px-4 bg-slate-200 self-center py-2\"> category 3</div>\n\n    </div>\n\n\n    <div\n      class=\"z-10 -ml-4 hidden w-9 h-9 justify-center rounded-full border border-black bg-white text-center text-xl font-extrabold shadow-lg shadow-slate-200/10 md:block\">\n      ></div>\n  </div>"
   }

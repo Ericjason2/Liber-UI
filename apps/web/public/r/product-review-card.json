@@ -3,10 +3,10 @@
   "name": "product-review-card",
   "type": "registry:ui",
   "title": "Product review card",
-  "description": "Product review card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, call-to-action, footer).",
+  "description": "Product review card — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "call-to-action",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<section class=\"container mx-auto p-10 md:py-20 px-0 md:p-10 md:px-0\">\n    <section class=\"relative px-10 md:p-0 transform duration-500 hover:shadow-2xl cursor-pointer hover:-translate-y-1 \">\n        <img class=\"xl:max-w-6xl\" src=\"https://images.pexels.com/photos/5990153/pexels-photo-5990153.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1860\" alt=\"\">\n        <div class=\"content bg-white p-2 pt-8 md:p-12 pb-12 lg:max-w-lg w-full lg:absolute top-48 right-5\">\n            <div class=\"flex justify-between font-bold text-sm\">\n                <p>Product Review</p>\n                <p class=\"text-gray-400\">17th March, 2021</p>\n            </div>\n            <h2 class=\"text-3xl font-semibold mt-4 md:mt-10\">Coffee From Heaven</h2>\n            <p class=\"my-3 text-justify font-medium text-gray-700 leading-relaxed\">Lorem ipsum dolor sit amet\n                consectetur adipisicing elit. Autem aperiam nulla cupiditate saepe sed quis veritatis minus rem adipisci\n                aliquid.</p>\n            <button class=\"mt-2 md:mt-5 p-3 px-5 bg-black text-white font-bold text-sm hover:bg-purple-800\">Read\n          More</button>\n        </div>\n    </section>\n</section>"
   }

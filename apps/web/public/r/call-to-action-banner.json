@@ -3,10 +3,10 @@
   "name": "call-to-action-banner",
   "type": "registry:ui",
   "title": "Call to action banner",
-  "description": "Call to action banner — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "Call to action banner — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"relative flex-1 bg-blue-600 px-5 py-24 lg:px-8\">\n  <div class=\"mx-auto max-w-3xl text-center\">\n    <h2 class=\"text-center text-4xl font-bold leading-tight text-white md:text-5xl\">Automate customer support in under\n      2 weeks</h2>\n    <div class=\"mt-10 flex flex-col items-center justify-center space-y-5 sm:flex-row sm:gap-x-6 sm:space-y-0\">\n      <a href=\"/\" target=\"_blank\" rel=\"nofollow noreferrer\"\n        class=\"w-full rounded-3xl border border-gray-900 bg-gray-900 px-7 py-3 text-center text-base font-bold text-white transition-colors duration-150 ease-in-out hover:border-gray-800 hover:bg-gray-800 sm:w-auto sm:border-2\">Get\n        a demo</a>\n      <a class=\"relative inline-flex w-full items-center justify-center rounded-3xl border border-white px-7 py-3 sm:w-auto sm:border-2\"\n        href=\"/pricing\">\n        <p class=\"text-base font-bold text-white\">Get started</p>\n        <span class=\"absolute inset-0 z-0 overflow-hidden rounded-3xl opacity-0 transition-colors duration-150 ease-in-out hover:bg-[#f5f7fc] hover:opacity-5\"></span>\n      </a>\n    </div>\n  </div>\n</div>"
   }

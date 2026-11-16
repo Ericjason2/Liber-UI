@@ -3,10 +3,10 @@
   "name": "articles-card-grid",
   "type": "registry:ui",
   "title": "Articles Card Grid",
-  "description": "Articles Card Grid — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (grid, footer, header).",
+  "description": "Articles Card Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "grid",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<div class=\"flex items-center justify-center w-screen min-h-screen p-10\">\n    <!-- Component Start -->\n    <div class=\"grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 max-w-6xl\">\n        <!-- Tile 1 -->\n        <div class=\"flex flex-col bg-gray-200 rounded-lg p-4 m-2\">\n            <div class=\"h-40 bg-gray-400 rounded-lg\"></div>\n            <div class=\"flex flex-col items-start mt-4\">\n                <h4 class=\"text-xl font-semibold\">Heading</h4>\n                <p class=\"text-sm\">Some text about the thing that goes over a few lines.</p>\n                <a class=\"p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase\" href=\"#\">Click\n                    Here</a>\n            </div>\n        </div>\n        <!-- Tile 2 -->\n        <div class=\"flex flex-col bg-gray-200 rounded-lg p-4 m-2\">\n            <div class=\"h-40 bg-gray-400 rounded-lg\"></div>\n            <div class=\"flex flex-col items-start mt-4\">\n                <h4 class=\"text-xl font-semibold\">Heading</h4>\n                <p class=\"text-sm\">Some text about the thing that goes over a few lines.</p>\n                <a class=\"p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase\" href=\"#\">Click\n                    Here</a>\n            </div>\n        </div>\n        <!-- Tile 3 -->\n        <div class=\"flex flex-col bg-gray-200 rounded-lg p-4 m-2\">\n            <div class=\"h-40 bg-gray-400 rounded-lg\"></div>\n            <div class=\"flex flex-col items-start mt-4\">\n                <h4 class=\"text-xl font-semibold\">Heading</h4>\n                <p class=\"text-sm\">Some text about the thing that goes over a few lines.</p>\n                <a class=\"p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase\" href=\"#\">Click\n                    Here</a>\n            </div>\n        </div>\n        <!-- Tile 4 -->\n        <div class=\"flex flex-col bg-gray-200 rounded-lg p-4 m-2\">\n            <div class=\"h-40 bg-gray-400 rounded-lg\"></div>\n            <div class=\"flex flex-col items-start mt-4\">\n                <h4 class=\"text-xl font-semibold\">Heading</h4>\n                <p class=\"text-sm\">Some text about the thing that goes over a few lines.</p>\n                <a class=\"p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase\" href=\"#\">Click\n                    Here</a>\n            </div>\n        </div>\n    </div>\n    <!-- Component End  -->\n</div>"
   }

@@ -3,10 +3,10 @@
   "name": "youtube-subscription-section",
   "type": "registry:ui",
   "title": "YouTube subscription section",
-  "description": "YouTube subscription section — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "YouTube subscription section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"h-screen bg-gray-100 py-20\">\r\n  <div class=\"max-w-xl mx-auto px-4 sm:px-6 lg:max-w-3xl lg:px-8\">\r\n    <div class=\"px-6 py-10 bg-white rounded-lg shadow-lg\">\r\n      <h2 class=\"text-2xl font-bold mb-6\">Subscribe to our YouTube Channel</h2>\r\n      <p class=\"text-gray-600 mb-6\">Stay up-to-date with our latest videos and tutorials.</p>\r\n      <a href=\"#\" class=\"inline-flex items-center py-3 px-4 bg-red-500 hover:bg-red-600 focus:ring-2 focus:ring-red-500 focus:ring-offset-2 text-white rounded-md transition duration-300\">\r\n        <svg class=\"w-5 h-5 fill-current mr-2\" viewBox=\"0 0 24 24\"><path d=\"M21.9 5.9c-.2-.7-.7-1.2-1.4-1.4C18.3 4 12 4 12 4s-6.3 0-8.5.5c-.7.2-1.2.7-1.4 1.4C2 8.1 2 12 2 12s0 3.9.5 5.1c.2.7.7 1.2 1.4 1.4 2.2.5 8.5.5 8.5.5s6.3 0 8.5-.5c.7-.2 1.2-.7 1.4-1.4.5-1.2.5-5.1.5-5.1s0-3.9-.5-5.1zM9.5 15.5V8.5l6.5 3z\"/></svg>\r\n        <span>Subscribe Now</span>\r\n      </a>\r\n    </div>\r\n  </div>\r\n</div>"
   }

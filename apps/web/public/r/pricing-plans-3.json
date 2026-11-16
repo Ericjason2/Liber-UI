@@ -3,10 +3,10 @@
   "name": "pricing-plans-3",
   "type": "registry:ui",
   "title": "Pricing Plans",
-  "description": "Pricing Plans — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Pricing Plans — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "pricing"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\" />\n\n<div class=\"flex min-h-screen items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-4\">\n  <section class=\"mx-auto w-full max-w-7xl px-4 py-12\">\n    <div class=\"mb-16 text-center\">\n      <h2 class=\"mb-4 text-4xl font-bold text-gray-800 md:text-5xl\">Pricing Plans</h2>\n      <p class=\"mx-auto max-w-2xl text-lg text-gray-600\">Choose the perfect plan for your needs. All plans include our core features with options to scale as you grow.</p>\n    </div>\n\n    <div class=\"grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3\">\n      <!-- Basic Plan -->\n      <div class=\"flex transform flex-col rounded-xl border border-gray-200 bg-white p-8 transition-all duration-300 hover:-translate-y-2 hover:border-black\">\n        <div class=\"mb-8\">\n          <h3 class=\"mb-2 text-2xl font-bold\">Basic</h3>\n          <div class=\"flex items-baseline\">\n            <span class=\"text-4xl font-bold\">$19</span>\n            <span class=\"ml-1 text-gray-500\">/month</span>\n          </div>\n        </div>\n\n        <ul class=\"mb-8 flex-grow space-y-4\">\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>Single User</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>5GB Storage</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>Unlimited Public Projects</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>Community Access</span>\n          </li>\n          <li class=\"flex items-center text-gray-400\">\n            <i class=\"fas fa-times mr-3 text-red-400\"></i>\n            <span>Private Projects</span>\n          </li>\n          <li class=\"flex items-center text-gray-400\">\n            <i class=\"fas fa-times mr-3 text-red-400\"></i>\n            <span>Dedicated Support</span>\n          </li>\n        </ul>\n\n        <button class=\"mt-auto w-full cursor-pointer rounded-lg bg-black py-3 font-semibold text-white transition-colors hover:bg-gray-800\">Buy Now</button>\n      </div>\n\n      <!-- Pro Plan -->\n      <div class=\"relative flex transform flex-col rounded-xl border border-gray-200 bg-white p-8 transition-all duration-300 hover:-translate-y-2 hover:border-black\">\n        <div class=\"mb-8\">\n          <h3 class=\"mb-2 text-2xl font-bold\">Pro</h3>\n          <div class=\"flex items-baseline\">\n            <span class=\"text-4xl font-bold\">$49</span>\n            <span class=\"ml-1 text-gray-500\">/month</span>\n          </div>\n        </div>\n\n        <ul class=\"mb-8 flex-grow space-y-4\">\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>5 Users</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>50GB Storage</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>Unlimited Public Projects</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>Community Access</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>Private Projects</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>Dedicated Support</span>\n          </li>\n        </ul>\n\n        <button class=\"mt-auto w-full cursor-pointer rounded-lg bg-black py-3 font-semibold text-white transition-colors hover:bg-gray-800\">Buy Now</button>\n      </div>\n\n      <!-- Enterprise Plan -->\n      <div class=\"flex transform flex-col rounded-xl border border-gray-200 bg-white p-8 transition-all duration-300 hover:-translate-y-2 hover:border-black\">\n        <div class=\"mb-8\">\n          <h3 class=\"mb-2 text-2xl font-bold\">Enterprise</h3>\n          <div class=\"flex items-baseline\">\n            <span class=\"text-4xl font-bold\">$99</span>\n            <span class=\"ml-1 text-gray-500\">/month</span>\n          </div>\n        </div>\n\n        <ul class=\"mb-8 flex-grow space-y-4\">\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>Unlimited Users</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>500GB Storage</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>Unlimited Public Projects</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>Community Access</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>Private Projects</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>Dedicated Support</span>\n          </li>\n          <li class=\"flex items-center\">\n            <i class=\"fas fa-check mr-3 text-green-500\"></i>\n            <span>Advanced Analytics</span>\n          </li>\n        </ul>\n\n        <button class=\"mt-auto w-full cursor-pointer rounded-lg bg-black py-3 font-semibold text-white transition-colors hover:bg-gray-800\">Buy Now</button>\n      </div>\n    </div>\n\n    <div class=\"mt-16 text-center text-gray-600\">\n      <p class=\"mb-4\">All plans come with a 14-day money-back guarantee.</p>\n      <p>Need something custom? <a href=\"#\" class=\"font-semibold text-black hover:underline\">Contact us</a></p>\n    </div>\n  </section>\n</div>"
   }

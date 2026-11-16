@@ -3,10 +3,10 @@
   "name": "social-share",
   "type": "registry:ui",
   "title": "Social Share",
-  "description": "Social Share — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Social Share — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<section class=\"py-20 bg-gradient-to-b from-[#121212] to-purple-800 md:px-20 lg:px-20\">\n  <div class=\"container mx-auto px-4\">\n    <div class=\"text-center mb-12\">\n      <h2 class=\"text-3xl font-bold text-white mb-4 section-title\" data-aos=\"fade-down\">\n        Follow Our Journey\n      </h2>\n      <p class=\"text-gray-300 max-w-2xl mx-auto\" data-aos=\"fade-down\">\n        Discover our latest captures and behind-the-scenes moments on our\n        social media channels. Join our community of photography\n        enthusiasts!\n      </p>\n    </div>\n\n    <!-- Social Links Section -->\n    <div class=\"flex flex-col sm:flex-row justify-center items-center gap-6\" data-aos=\"fade-up\">\n      <!-- Instagram Link -->\n      <a\n        href=\"#\"\n        target=\"_blank\"\n        rel=\"noopener noreferrer\"\n        class=\"flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 px-8 rounded-full hover:from-pink-600 hover:to-purple-600 transition duration-900 ease-in-out shadow-lg hover:shadow-xl\"\n      >\n        <!-- Instagram Icon -->\n        <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-6 h-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 2a10 10 0 11-10 10 10 10 0 0110-10zm0 14a4 4 0 100-8 4 4 0 000 8zm4-8a4 4 0 10-8 0 4 4 0 008 0z\" />\n        </svg>\n        <span>Follow on Instagram</span>\n      </a>\n\n      <!-- YouTube Link -->\n      <a\n        href=\"#\"\n        target=\"_blank\"\n        rel=\"noopener noreferrer\"\n        class=\"flex items-center justify-center gap-2 bg-gradient-to-r from-red-600 to-black text-white py-3 px-8 rounded-full hover:from-black hover:to-red-600 transition duration-900 ease-in-out shadow-lg hover:shadow-xl\"\n      >\n        <!-- YouTube Icon -->\n        <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-6 h-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M10 12l-6 4V8l6 4zm8 0l-6 4V8l6 4z\" />\n        </svg>\n        <span>Subscribe on YouTube</span>\n      </a>\n    </div>\n  </div>\n</section>"
   }

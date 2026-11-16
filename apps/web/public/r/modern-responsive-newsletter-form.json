@@ -3,10 +3,10 @@
   "name": "modern-responsive-newsletter-form",
   "type": "registry:ui",
   "title": "Modern responsive Newsletter form",
-  "description": "Modern responsive Newsletter form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, call-to-action, footer).",
+  "description": "Modern responsive Newsletter form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "form",
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<section>\n  <!--Container -->\n  <div class=\"mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32\">\n    <!-- Component -->\n    <div class=\"bg-blue-50 p-8 text-center sm:p-10 md:p-16\">\n      <!-- Title -->\n      <h2 class=\"mb-4 text-3xl font-bold md:text-5xl\">Join the TailwindFlex Community</h2>\n      <p class=\"mx-auto mb-6 max-w-2xl text-[#647084] md:mb-10\">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna</p>\n      <!-- Form -->\n      <form name=\"email-form\" method=\"get\" class=\"relative mx-auto mb-4 flex w-full max-w-2xl flex-col items-start justify-center sm:flex-row\">\n        <input type=\"email\" class=\"mb-3 mr-6 block h-9 w-full bg-white px-6 py-7 text-sm text-[#333333] focus:border-[#3898ec]\" placeholder=\"Enter your email\" required=\"\" />\n        <input type=\"submit\" value=\"Subscribe\" class=\"inline-block w-full cursor-pointer bg-[#276ef1] px-6 py-3 text-center font-semibold text-white transition [box-shadow:rgb(171,_196,_245)_-8px_8px] hover:[box-shadow:rgb(171,_196,_245)_0px_0px] sm:w-28\" />\n      </form>\n    </div>\n  </div>\n</section>"
   }

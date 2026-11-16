@@ -3,10 +3,10 @@
   "name": "news-feed-2",
   "type": "registry:ui",
   "title": "News Feed",
-  "description": "News Feed — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "News Feed — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"w-full min-h-screen flex flex-col items-center justify-center py-10\">\n  <span class=\"text-md md:text-lg font-bold text-[#117278] flex items-center gap-1\"><ion-icon name=\"heart-outline\"></ion-icon>Our Insights</span>\n  <h2 class=\"text-4xl sm:text-5xl md:text-7xl text-center chelsea-market-regular font-bold text-[#117278] md:mb-16 mb-10\">News Feeds</h2>\n\n  <div class=\"px-4 md:px-[2rem] xl:px-[6rem] flex flex-col lg:flex-row gap-10\">\n    <!-- col 1 -->\n    <div class=\"lg:w-[80%] xl:w-[60%]\">\n      <!-- Blog Image -->\n      <img class=\"w-full object-cover h-[12rem] md:h-[18rem] aspect-square\" src=\"https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHx3ZWJ8ZW58MHwwfHx8MTc2NDA1NTA0MXww&ixlib=rb-4.1.0&q=80&w=1080\" alt=\"blog image\">\n\n      <div class=\"flex flex-col px-6 py-8 border-l border-r border-b\">\n        <!-- Author & Category -->\n        <div class=\"flex gap-4 text-sm text-gray-700 font-semibold\">\n          <span class=\"flex gap-1 items-center\"><ion-icon name=\"person-outline\"></ion-icon>By Sammytg7</span>\n          <span class=\"flex gap-1 items-center\"><ion-icon class=\"-rotate-90\" name=\"pricetags-outline\"></ion-icon>TechNews</span>\n        </div>\n        <!-- Blog Titile -->\n        <h3 class=\"text-2xl md:text-3xl font-semibold text-teal-900 chelsea-market-regular\">A Beginner's Guide to Modern Web Design</h3>\n        <!-- Blog Description -->\n        <p class=\"text-md text-gray-500\">Step into the world of Tailwind CSS with this beginner-friendly guide. Learn\n          the basics of Tailwind's utility classes, responsive design features, and customization options to kickstart\n          your journey in modern web design.</p>\n      </div>\n    </div>\n\n\n    <!-- col 2 -->\n    <div class=\"w-full flex flex-col items-stretch justify-center\">\n      <!-- 1 -->\n      <div class=\"flex flex-col sm:flex-row gap-6 pb-6 border-b-2 border-gray-100\">\n        <!-- Blog Date -->\n        <div class=\"w-full h-[7rem] sm:w-[10rem] sm:h-[10rem] aspect-square rounded-l px-6 py-2 bg-yellow-500 text-white flex flex-col items-center justify-center\">\n          <span class=\"text-7xl font-semibold\">13</span>\n          <span class=\"font-semibold\">January</span>\n        </div>\n        <!--  -->\n        <div class=\"flex flex-col justify-between\">\n          <!-- Author & Category -->\n          <div class=\"flex md:gap-4 gap-2 text-sm text-gray-700 font-semibold\">\n            <span class=\"flex gap-1 items-center\"><ion-icon name=\"person-outline\"></ion-icon>By Sammytg7</span>\n            <span class=\"flex gap-1 items-center\"><ion-icon class=\"-rotate-90\" name=\"pricetags-outline\"></ion-icon>TechNews</span>\n          </div>\n          <!-- Blog Titile -->\n          <h3 class=\"text-2xl md:text-3xl font-semibold text-teal-900 capitalize chelsea-market-regular\">Effortless Styling: Unleashing the Power of\n            Tailwind CSS</h3>\n          <!-- Blog Description -->\n          <p class=\"text-md text-gray-500\">Discover how Tailwind CSS revolutionizes web development with its\n            utility-first approach.</p>\n        </div>\n      </div>\n\n      <!-- 2 -->\n      <div class=\"flex flex-col sm:flex-row gap-6 pb-6 border-b-2 border-gray-100\">\n        <!-- Blog Date -->\n        <div class=\"w-full h-[7rem] sm:w-[10rem] sm:h-[10rem] aspect-square rounded-l px-6 py-2 bg-teal-500 text-white flex flex-col items-center justify-center\">\n          <span class=\"text-7xl font-semibold\">13</span>\n          <span class=\"font-semibold\">January</span>\n        </div>\n        <!--  -->\n        <div class=\"flex flex-col justify-between\">\n          <!-- Author & Category -->\n          <div class=\"flex md:gap-4 gap-2 text-sm text-gray-700 font-semibold\">\n            <span class=\"flex gap-1 items-center\"><ion-icon name=\"person-outline\"></ion-icon>By Sammytg7</span>\n            <span class=\"flex gap-1 items-center\"><ion-icon class=\"-rotate-90\" name=\"pricetags-outline\"></ion-icon>TechNews</span>\n          </div>\n          <!-- Blog Titile -->\n          <h3 class=\"text-2xl md:text-3xl font-semibold text-teal-900 capitalize chelsea-market-regular\">Tailwind CSS Pro Tips: Advanced Techniques for\n            Stunning Web Interfaces</h3>\n          <!-- Blog Description -->\n          <p class=\"text-md text-gray-500\">Elevate your web design skills with advanced tips and tricks for Tailwind\n            CSS. Uncover techniques for optimizing your workflow</p>\n        </div>\n      </div>\n\n      <!-- 3 -->\n      <div class=\"flex flex-col sm:flex-row gap-6 pb-6 border-b-2 border-gray-100\">\n        <!-- Blog Date -->\n        <div class=\"w-full h-[7rem] sm:w-[10rem] sm:h-[10rem] aspect-square rounded-l px-6 py-2 bg-red-500 text-white flex flex-col items-center justify-center\">\n          <span class=\"text-7xl font-semibold\">13</span>\n          <span class=\"font-semibold\">January</span>\n        </div>\n        <!--  -->\n        <div class=\"flex flex-col justify-between\">\n          <!-- Author & Category -->\n          <div class=\"flex md:gap-4 gap-2 text-sm text-gray-700 font-semibold\">\n            <span class=\"flex gap-1 items-center\"><ion-icon name=\"person-outline\"></ion-icon>By Sammytg7</span>\n            <span class=\"flex gap-1 items-center\"><ion-icon class=\"-rotate-90\" name=\"pricetags-outline\"></ion-icon>TechNews</span>\n          </div>\n          <!-- Blog Titile -->\n          <h3 class=\"text-2xl md:text-3xl font-semibold text-teal-900 capitalize chelsea-market-regular\">Responsive Design Made Easy: Harnessing Tailwind\n            CSS for Mobile-First Websites</h3>\n          <!-- Blog Description -->\n          <p class=\"text-md text-gray-500\">Explore how Tailwind CSS simplifies responsive design for mobile-first\n            websites.</p>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>\n\n<!-- Icons -->\n<script type=\"module\" src=\"https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js\"></script>\n<script nomodule src=\"https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js\"></script>"
   }

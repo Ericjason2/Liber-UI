@@ -3,10 +3,10 @@
   "name": "pricing-plans",
   "type": "registry:ui",
   "title": "Pricing Plans",
-  "description": "Pricing Plans — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (pricing, footer, header).",
+  "description": "Pricing Plans — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "pricing"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "pricing",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "profile"
+      "pricing"
     ],
     "rawHtml": "<section class=\"py-16 bg-gray-50 px-6\">\n  <div class=\"max-w-7xl mx-auto text-center mb-12\">\n    <h2 class=\"text-3xl font-bold text-gray-900\">Pricing Plans</h2>\n    <p class=\"mt-2 text-gray-600 max-w-xl mx-auto\">Choose the plan that works best for you.</p>\n\n    <div class=\"mt-6 flex justify-center items-center space-x-4\">\n      <span class=\"text-gray-700 font-medium\">Monthly</span>\n      <label for=\"toggle\" class=\"inline-flex relative items-center cursor-pointer\">\n        <input type=\"checkbox\" id=\"toggle\" class=\"sr-only peer\" />\n        <div class=\"w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-blue-600 transition\"></div>\n        <div class=\"absolute left-1 top-1 w-4 h-4 bg-white rounded-full peer-checked:translate-x-5 transition\"></div>\n      </label>\n      <span class=\"text-gray-700 font-medium\">Yearly</span>\n    </div>\n  </div>\n\n  <div id=\"pricing-cards\" class=\"max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3\">\n    <!-- Card 1 -->\n    <div class=\"bg-white border border-gray-200 rounded-lg p-6 shadow-sm flex flex-col\">\n      <h3 class=\"text-xl font-semibold mb-4\">Basic</h3>\n      <p class=\"text-3xl font-bold mb-2\"><span class=\"price-monthly\">$10</span><span class=\"price-yearly hidden\">$100</span><span class=\"text-base font-normal\">/mo</span></p>\n      <ul class=\"mb-6 space-y-2 text-gray-600 flex-grow\">\n        <li>✔️ 10 Projects</li>\n        <li>✔️ 5 GB Storage</li>\n        <li>✔️ Basic Support</li>\n      </ul>\n      <button class=\"mt-auto bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition\">Choose Plan</button>\n    </div>\n    <!-- Card 2 -->\n    <div class=\"bg-white border border-gray-200 rounded-lg p-6 shadow-sm flex flex-col\">\n      <h3 class=\"text-xl font-semibold mb-4\">Pro</h3>\n      <p class=\"text-3xl font-bold mb-2\"><span class=\"price-monthly\">$25</span><span class=\"price-yearly hidden\">$250</span><span class=\"text-base font-normal\">/mo</span></p>\n      <ul class=\"mb-6 space-y-2 text-gray-600 flex-grow\">\n        <li>✔️ 50 Projects</li>\n        <li>✔️ 50 GB Storage</li>\n        <li>✔️ Priority Support</li>\n      </ul>\n      <button class=\"mt-auto bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition\">Choose Plan</button>\n    </div>\n    <!-- Card 3 -->\n    <div class=\"bg-white border border-gray-200 rounded-lg p-6 shadow-sm flex flex-col\">\n      <h3 class=\"text-xl font-semibold mb-4\">Enterprise</h3>\n      <p class=\"text-3xl font-bold mb-2\"><span class=\"price-monthly\">$50</span><span class=\"price-yearly hidden\">$500</span><span class=\"text-base font-normal\">/mo</span></p>\n      <ul class=\"mb-6 space-y-2 text-gray-600 flex-grow\">\n        <li>✔️ Unlimited Projects</li>\n        <li>✔️ 200 GB Storage</li>\n        <li>✔️ 24/7 Support</li>\n      </ul>\n      <button class=\"mt-auto bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition\">Choose Plan</button>\n    </div>\n  </div>\n\n  <script>\n    const toggle = document.getElementById('toggle');\n    toggle.addEventListener('change', () => {\n      const monthlyPrices = document.querySelectorAll('.price-monthly');\n      const yearlyPrices = document.querySelectorAll('.price-yearly');\n      monthlyPrices.forEach(el => el.classList.toggle('hidden'));\n      yearlyPrices.forEach(el => el.classList.toggle('hidden'));\n    });\n  </script>\n</section>"
   }

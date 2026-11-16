@@ -3,10 +3,10 @@
   "name": "customer-testimonial-card",
   "type": "registry:ui",
   "title": "Customer testimonial card",
-  "description": "Customer testimonial card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Customer testimonial card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"p-4\">\n  <figure class=\"md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800\">\n    <img class=\"w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto object-cover\" src=\"https://images.unsplash.com/photo-1495716868937-273203d5bb0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxsYWR5fGVufDB8MHx8fDE2OTQxNzI4MTV8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"\" width=\"384\" height=\"512\">\n    <div class=\"pt-6 md:p-8 text-center md:text-left space-y-4\">\n      <blockquote>\n        <p class=\"text-lg font-medium dark:text-slate-100\">\n          “Tailwind CSS is the only framework that I've seen scale\n          on large teams. It’s easy to customize, adapts to any design,\n          and the build size is tiny.”\n        </p>\n      </blockquote>\n      <figcaption class=\"font-medium\">\n        <div class=\"text-sky-500 dark:text-sky-400\">\n          Sarah Dayan\n        </div>\n        <div class=\"text-slate-700 dark:text-slate-400\">\n          Staff Engineer, Algolia\n        </div>\n      </figcaption>\n    </div>\n  </figure>\n</div>"
   }

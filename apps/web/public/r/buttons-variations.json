@@ -3,10 +3,10 @@
   "name": "buttons-variations",
   "type": "registry:ui",
   "title": "Buttons variations",
-  "description": "Buttons variations — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Buttons variations — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"flex flex-col gap-4\">\n    <p class=\"font-bold\">Rounded Buttons:</p>\n\n    <div class=\"flex space-x-4\">\n        <button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\">\n            Button 1\n        </button>\n        <button class=\"bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded\">\n            Button 2\n        </button>\n        <button class=\"bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded\">\n            Button 3\n        </button>\n    </div>\n\n\n    <p class=\"font-bold\">Outline Buttons</p>\n    <div class=\"flex space-x-4\">\n\n        <button class=\"border border-blue-500 text-blue-500 font-bold py-2 px-4 rounded\">\n            Button\n        </button>\n\n        <button class=\"border border-red-500 text-red-500 font-bold py-2 px-4 rounded\">\n            Button\n        </button>\n\n        <button class=\"border border-green-500 text-green-500 font-bold py-2 px-4 rounded\">\n            Button\n        </button>\n    </div>\n\n\n    <p class=\"font-bold\">Gradient Buttons:</p>\n    <div class=\"flex space-x-4\">\n\n        <button class=\"bg-gradient-to-r from-red-400 to-yellow-500 text-white font-bold py-2 px-4 rounded\">\n            Button\n        </button>\n\n        <button class=\"bg-gradient-to-r from-blue-400 to-indigo-500 text-white font-bold py-2 px-4 rounded\">\n            Button\n        </button>\n\n        <button class=\"bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold py-2 px-4 rounded\">\n            Button\n        </button>\n    </div>\n</div>"
   }

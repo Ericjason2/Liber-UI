@@ -3,10 +3,10 @@
   "name": "brand-navbar",
   "type": "registry:ui",
   "title": "Brand Navbar",
-  "description": "Brand Navbar — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (navbar, footer, header).",
+  "description": "Brand Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "navbar"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "navbar",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "navbar"
     ],
     "rawHtml": "<nav class=\"bg-white shadow fixed top-0 w-full z-50\">\n  <div class=\"max-w-7xl mx-auto px-6\">\n    <div class=\"flex justify-between items-center h-16\">\n      <div class=\"text-2xl font-bold text-blue-600\">Brand</div>\n      <div class=\"hidden md:flex space-x-8\">\n        <a href=\"#\" class=\"text-gray-700 hover:text-blue-600\">Home</a>\n        <a href=\"#\" class=\"text-gray-700 hover:text-blue-600\">Features</a>\n        <a href=\"#\" class=\"text-gray-700 hover:text-blue-600\">Pricing</a>\n        <div class=\"relative group\">\n          <button class=\"inline-flex items-center text-gray-700 hover:text-blue-600 focus:outline-none\">\n            More\n            <svg class=\"ml-1 h-4 w-4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M19 9l-7 7-7-7\"/></svg>\n          </button>\n          <div class=\"absolute hidden group-hover:block bg-white shadow-md rounded mt-2 py-2 w-40\">\n            <a href=\"#\" class=\"block px-4 py-2 hover:bg-gray-100\">About</a>\n            <a href=\"#\" class=\"block px-4 py-2 hover:bg-gray-100\">Contact</a>\n            <a href=\"#\" class=\"block px-4 py-2 hover:bg-gray-100\">Help</a>\n          </div>\n        </div>\n      </div>\n      <div class=\"md:hidden\">\n        <button id=\"menu-btn\" class=\"text-gray-700 focus:outline-none\">\n          <svg class=\"h-6 w-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M4 6h16M4 12h16M4 18h16\"/></svg>\n        </button>\n      </div>\n    </div>\n  </div>\n  <div id=\"mobile-menu\" class=\"hidden md:hidden bg-white shadow-md\">\n    <a href=\"#\" class=\"block px-6 py-3 border-b border-gray-200 hover:bg-gray-100\">Home</a>\n    <a href=\"#\" class=\"block px-6 py-3 border-b border-gray-200 hover:bg-gray-100\">Features</a>\n    <a href=\"#\" class=\"block px-6 py-3 border-b border-gray-200 hover:bg-gray-100\">Pricing</a>\n    <a href=\"#\" class=\"block px-6 py-3 border-b border-gray-200 hover:bg-gray-100\">About</a>\n    <a href=\"#\" class=\"block px-6 py-3 hover:bg-gray-100\">Contact</a>\n  </div>\n\n  <script>\n    const btn = document.getElementById('menu-btn');\n    const menu = document.getElementById('mobile-menu');\n\n    btn.addEventListener('click', () => {\n      menu.classList.toggle('hidden');\n    });\n  </script>\n</nav>"
   }

@@ -3,10 +3,10 @@
   "name": "plug-and-play-button-animated-gradient-background",
   "type": "registry:ui",
   "title": "Plug and Play Button - Animated gradient background",
-  "description": "Plug and Play Button - Animated gradient background — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Plug and Play Button - Animated gradient background — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"relative inline-block\">\r\n    <div class=\"absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[140%] overflow-hidden blur-[35px] opacity-60\">\r\n        <div class=\"absolute flex items-center justify-center animate-spin [animation:spin_20s_linear_infinite]\">\r\n            <div class=\"h-48 w-60 bg-gradient-to-tr from-orange-500 via-red-500 to-yellow-600\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <button class=\"relative px-5 py-3 rounded-2xl text-zinc-300 bg-zinc-900 border border-1 border-zinc-500 flex items-center group\">\r\n        <div class=\"relative z-10 flex items-center font-semibold group-hover:text-white transition\">\r\n        View Product</div>\r\n    </button>\r\n</div>"
   }

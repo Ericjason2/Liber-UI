@@ -3,10 +3,10 @@
   "name": "hero-section-fashion-page",
   "type": "registry:ui",
   "title": "Hero Section Fashion Page",
-  "description": "Hero Section Fashion Page — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, footer, header).",
+  "description": "Hero Section Fashion Page — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "hero",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "hero"
     ],
     "rawHtml": "<section class=\"bg-[#C2EFD4]  py-12\">\n  <div class=\"flex mx-auto max-w-[1440px] justify-between\">\n    <div class=\"w-[649px] h-[632px] \">\n      <h1 class=\"  text-[#224f34] text-[86px] font-bold font-['Rufina']\">Discover and Find Your Own Fashion!</h1>\n      <p class=\"mt-5 mb-12 text-[#267d49] text-2xl font-medium font-['Poppins'] leading-[50px]\">Explore our curated\n        collection of stylish clothing and accessories tailored to your unique taste.</p>\n      <button class=\"px-16 py-5  text-white text-xl font-medium font-['Poppins'] uppercase  bg-[#224e34] rounded-[3px] shadow-[6px_33px_59px_0px_rgba(0,0,0,0.30)]\">Explore Now</button>\n    </div><img class=\"w-[570px]\" src=\"https://iili.io/3Bw8BSt.png\" alt=\"\">\n  </div>\n</section>"
   }

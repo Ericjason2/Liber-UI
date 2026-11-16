@@ -3,10 +3,10 @@
   "name": "component",
   "type": "registry:ui",
   "title": "component",
-  "description": "component — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "component — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"h-screen w-screen text-slate-600 bg-slate-100 dark:text-slate-100 dark:bg-slate-600 flex justify-center items-center\">\n  <div class=\"min-h-xs h-full max-h-[20rem] min-w-xs w-full max-w-sm rounded-xl bg-local relative bg-cover border border-1 border-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-cyan-500/50 dark:border-cyan-300 -translate-6 bg-[url(https://images.unsplash.com/photo-1619995745882-f4128ac82ad6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxM3x8aW1hZ2V8ZW58MHwwfHx8MTc1MDUxOTY4MHww&ixlib=rb-4.1.0&q=80&w=1080)]\">\n    <div class=\"absolute bottom-7 left-2\">\n      <p class=\"text-2xl font-bold text-slate-200 dark:text-cyan-500 hover:underline decoration-wavy dark:decoration-cyan-400 truncate\">Forest🕸️</p>\n      <p class=\"text-xl font-semibold text-slate-300 dark:text-cyan-500\">Spider</p>\n    </div>\n  </div>\n</div>\n\n<div\n    class=\"w-40 h-20 flex justify-center items-center text-sky-200 border-2 rounded-lg border-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]\"\n>\n    Neon container\n</div>"
   }

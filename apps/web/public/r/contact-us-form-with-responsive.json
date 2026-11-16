@@ -3,10 +3,10 @@
   "name": "contact-us-form-with-responsive",
   "type": "registry:ui",
   "title": "Contact us Form with Responsive",
-  "description": "Contact us Form with Responsive — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, call-to-action, footer).",
+  "description": "Contact us Form with Responsive — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "call-to-action",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<!-- Contact Section -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\" />\n<section class=\"contact-section\">\n  <div class=\"container mx-auto px-4 py-8\">\n    <div class=\"grid md:grid-cols-2 gap-8 bg-white rounded-lg shadow-lg overflow-hidden\">\n      \n      <!-- Contact Info -->\n      <div class=\"p-8 bg-gray-800 text-white\">\n        <h2 class=\"text-2xl text-blue-400 mb-8 relative pb-4\">\n          Contact Information\n          <span class=\"absolute bottom-0 left-0 w-12 h-0.5 bg-blue-500\"></span>\n        </h2>\n        \n        <!-- Location -->\n        <div class=\"flex items-start gap-4 mb-8\">\n          <div class=\"w-12 h-12 bg-blue-500 flex items-center justify-center rounded-full text-xl\">\n            <i class=\"fas fa-map-marker-alt\"></i>\n          </div>\n          <div>\n            <h3 class=\"text-lg mb-1\">Our Location</h3>\n            <p class=\"text-gray-300 leading-relaxed\">\n              Lucknow\n            </p>\n          </div>\n        </div>\n        \n        <!-- Phone Numbers -->\n        <div class=\"flex items-start gap-4 mb-8\">\n          <div class=\"w-12 h-12 bg-blue-500 flex items-center justify-center rounded-full text-xl\">\n            <i class=\"fas fa-phone-alt\"></i>\n          </div>\n          <div>\n            <h3 class=\"text-lg mb-1\">Phone Numbers</h3>\n            <p class=\"text-gray-300 leading-relaxed\">\n              <a href=\"tel:+978589658\" class=\"hover:text-blue-400\">+91 748598658</a><br />\n              <a href=\"tel:+748596255\" class=\"hover:text-blue-400\">+91 789456123</a>\n            </p>\n          </div>\n        </div>\n        \n        <!-- Email -->\n        <div class=\"flex items-start gap-4 mb-8\">\n          <div class=\"w-12 h-12 bg-blue-500 flex items-center justify-center rounded-full text-xl\">\n            <i class=\"fas fa-envelope\"></i>\n          </div>\n          <div>\n            <h3 class=\"text-lg mb-1\">Email Address</h3>\n            <p class=\"text-gray-300 leading-relaxed\">\n              <a href=\"mailto:kuldeepprajapati2111@gmail.com\" class=\"hover:text-blue-400\">kuldeepprajapati2111@gmail.com</a><br />\n             \n            </p>\n          </div>\n        </div>\n        \n        <!-- Social Links -->\n        <div class=\"flex gap-4 mt-8\">\n          <a href=\"#\" class=\"w-10 h-10 bg-gray-700 flex items-center justify-center rounded-full text-white transition duration-300 hover:bg-blue-500 transform hover:-translate-y-1\">\n            <i class=\"fab fa-facebook-f\"></i>\n          </a>\n          <a href=\"#\" class=\"w-10 h-10 bg-gray-700 flex items-center justify-center rounded-full text-white transition duration-300 hover:bg-pink-500 transform hover:-translate-y-1\">\n            <i class=\"fab fa-instagram\"></i>\n          </a>\n          <a href=\"#\" class=\"w-10 h-10 bg-gray-700 flex items-center justify-center rounded-full text-white transition duration-300 hover:bg-blue-400 transform hover:-translate-y-1\">\n            <i class=\"fab fa-twitter\"></i>\n          </a>\n          <a href=\"#\" class=\"w-10 h-10 bg-gray-700 flex items-center justify-center rounded-full text-white transition duration-300 hover:bg-blue-700 transform hover:-translate-y-1\">\n            <i class=\"fab fa-linkedin-in\"></i>\n          </a>\n        </div>\n      </div>\n      \n      <!-- Contact Form -->\n      <div class=\"p-8\">\n        <h2 class=\"text-2xl text-blue-500 mb-8 relative pb-4\">\n          Send Us a Message\n          <span class=\"absolute bottom-0 left-0 w-12 h-0.5 bg-blue-500\"></span>\n        </h2>\n        <form class=\"space-y-6\">\n          <!-- Name -->\n          <div>\n            <label for=\"name\" class=\"block mb-2 font-medium\">Your Name</label>\n            <input type=\"text\" id=\"name\" class=\"w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 transition\" required />\n          </div>\n          <!-- Email -->\n          <div>\n            <label for=\"email\" class=\"block mb-2 font-medium\">Email Address</label>\n            <input type=\"email\" id=\"email\" class=\"w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 transition\" required />\n          </div>\n          <!-- Phone -->\n          <div>\n            <label for=\"phone\" class=\"block mb-2 font-medium\">Phone Number</label>\n            <input type=\"tel\" id=\"phone\" class=\"w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 transition\" />\n          </div>\n          <!-- Subject -->\n          <div>\n            <label for=\"subject\" class=\"block mb-2 font-medium\">Subject</label>\n            <input type=\"text\" id=\"subject\" class=\"w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 transition\" />\n          </div>\n          <!-- Message -->\n          <div>\n            <label for=\"message\" class=\"block mb-2 font-medium\">Your Message</label>\n            <textarea id=\"message\" class=\"w-full p-3 border border-gray-300 rounded-md min-h-[150px] resize-y focus:outline-none focus:ring-2 focus:ring-blue-300 transition\" required></textarea>\n          </div>\n          \n          <!-- Submit Button -->\n          <button type=\"submit\" class=\"flex items-center gap-2 bg-gradient-to-br from-blue-500 to-blue-400 text-white font-semibold py-3 px-6 rounded-full hover:scale-105 hover:shadow-lg transition duration-300\">\n            <i class=\"fas fa-paper-plane\"></i> Send Message\n          </button>\n        </form>\n      </div>\n    </div>\n  </div>\n</section>"
   }

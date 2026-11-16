@@ -3,10 +3,10 @@
   "name": "pricing-card",
   "type": "registry:ui",
   "title": "Pricing Card",
-  "description": "Pricing Card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (pricing, footer, header).",
+  "description": "Pricing Card — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "pricing"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "pricing",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "profile"
+      "pricing"
     ],
     "rawHtml": "<div class=\"mt-4 max-w-sm mx-auto px-4 mt-16\">\r\n    <div class=\"bg-white border rounded text-center px-4 pt-6 pb-8 shadow\">\r\n        <h3 class=\"text-2xl\">\r\n            Starter\r\n        </h3>\r\n        <div class=\"mt-4\">\r\n            <span class=\"text-red-500 text-2xl line-through\">19 €</span>\r\n        </div>\r\n        <div class=\"mt-1\">\r\n            <span class=\"font-bold text-3xl\">9 €</span>\r\n            <span class=\"text-gray-600\">/ month</span>\r\n        </div>\r\n        <div class=\"mt-6\">\r\n            <div class=\"font-bold text-lg\">2.000 translation keys</div>\r\n            <div class=\"mt-3\">Unlimited projects</div>\r\n            <div class=\"mt-3\">Unlimited languages</div>\r\n            <div class=\"mt-3\">Unlimited seats</div>\r\n        </div>\r\n        <div class=\"mt-8\">\r\n            <a href=\"\" class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\">\r\n                Start my 14-day trial\r\n            </a>\r\n        </div>\r\n    </div>\r\n</div>"
   }

@@ -3,10 +3,10 @@
   "name": "pricing-card-15",
   "type": "registry:ui",
   "title": "Pricing card",
-  "description": "Pricing card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Pricing card — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "pricing"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"max-w-md mx-auto rounded-lg shadow-lg mt-5 dark:bg-gray-700 dark:shadow-blue-100\">\n  <div class=\"px-6 py-4\">\n    <div class=\"flex flex-col w-24\">\n      <h2 class=\"font-bold text-xl dark:text-gray-100\">Basic Plan</h2>\n      <div class=\"border-2 border-blue-500 mb-3 text\"></div>\n    </div>\n    <div class=\"text-gray-500 dark:text-gray-200\">\n      <p>In this plan you will get</p>\n      <ul>\n        <li>item 10</li>\n        <li>item 2</li>\n        <li>item 3</li>\n      </ul>\n    </div>\n  </div>\n\n  <div class=\"bg-gray-100 px-6 py-3 rounded-t-lg dark:bg-blue-100\">\n    <h2 class=\"font-bold text-2xl mb-2\">$9.99/mo</h2>\n    <p class=\"text-gray-600 dark:text-gray-600\">Access to basic features</p>\n    <button class=\"bg-blue-600 px-4 py-2 mt-3 rounded font-semibold text-white hover:bg-blue-700\">Subscribe</button>\n  </div>\n</div>"
   }

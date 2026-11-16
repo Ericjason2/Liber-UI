@@ -3,10 +3,10 @@
   "name": "tailwind-sidebar-layout",
   "type": "registry:ui",
   "title": "Tailwind Sidebar Layout",
-  "description": "Tailwind Sidebar Layout — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (navbar, footer, header).",
+  "description": "Tailwind Sidebar Layout — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "navbar"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "navbar",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "navbar"
     ],
     "rawHtml": "<div class=\"flex h-screen bg-gray-100\">\r\n\r\n    <!-- sidebar -->\r\n    <div class=\"hidden md:flex flex-col w-64 bg-gray-800\">\r\n        <div class=\"flex items-center justify-center h-16 bg-gray-900\">\r\n            <span class=\"text-white font-bold uppercase\">Sidebar</span>\r\n        </div>\r\n        <div class=\"flex flex-col flex-1 overflow-y-auto\">\r\n            <nav class=\"flex-1 px-2 py-4 bg-gray-800\">\r\n                <a href=\"#\" class=\"flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700\">\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 mr-2\" fill=\"none\" viewBox=\"0 0 24 24\"\r\n                        stroke=\"currentColor\">\r\n                        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\r\n                            d=\"M4 6h16M4 12h16M4 18h16\" />\r\n                    </svg>\r\n                    Dashboard\r\n                </a>\r\n                <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700\">\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 mr-2\" fill=\"none\" viewBox=\"0 0 24 24\"\r\n                        stroke=\"currentColor\">\r\n                        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\r\n                            d=\"M6 18L18 6M6 6l12 12\" />\r\n                    </svg>\r\n                    Messages\r\n                </a>\r\n                <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700\">\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 mr-2\" fill=\"none\" viewBox=\"0 0 24 24\"\r\n                        stroke=\"currentColor\">\r\n                        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\r\n                            d=\"M13 10V3L4 14h7v7l9-11h-7z\" />\r\n                    </svg>\r\n                    Settings\r\n                </a>\r\n            </nav>\r\n        </div>\r\n    </div>\r\n\r\n    <!-- Main content -->\r\n    <div class=\"flex flex-col flex-1 overflow-y-auto\">\r\n        <div class=\"flex items-center justify-between h-16 bg-white border-b border-gray-200\">\r\n            <div class=\"flex items-center px-4\">\r\n                <button class=\"text-gray-500 focus:outline-none focus:text-gray-700\">\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\"\r\n                        stroke=\"currentColor\">\r\n                        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\r\n                            d=\"M4 6h16M4 12h16M4 18h16\" />\r\n                    </svg>\r\n                </button>\r\n                <input class=\"mx-4 w-full border rounded-md px-4 py-2\" type=\"text\" placeholder=\"Search\">\r\n            </div>\r\n            <div class=\"flex items-center pr-4\">\r\n\r\n                <button\r\n                    class=\"flex items-center text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700\">\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\"\r\n                        stroke=\"currentColor\">\r\n                        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\r\n                            d=\"M12 19l-7-7 7-7m5 14l7-7-7-7\" />\r\n                    </svg>\r\n                </button>\r\n            </div>\r\n        </div>\r\n        <div class=\"p-4\">\r\n            <h1 class=\"text-2xl font-bold\">Welcome to my dashboard!</h1>\r\n            <p class=\"mt-2 text-gray-600\">This is an example dashboard using Tailwind CSS.</p>\r\n        </div>\r\n    </div>\r\n    \r\n</div>"
   }

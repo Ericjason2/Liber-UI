@@ -3,10 +3,10 @@
   "name": "responsive-card",
   "type": "registry:ui",
   "title": "Responsive Card",
-  "description": "Responsive Card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Responsive Card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"flex flex-col p-2 w-full rounded-xl md:max-w-xs shadow-md \">\r\n  <div class=\"flex justify-center\">\r\n    <p class=\"font-bold pb-3 text-base sm:text-lg\">\r\n      Subscribe to Premium\r\n    </p>\r\n  </div>\r\n  <div class=\"flex justify-center\">\r\n    <p class=\"w-full font-light sm:test-center text-start text-xs md:text-base\">\r\n      Enjoy exclusive features and content with our premium\r\n      subscription.\r\n    </p>\r\n  </div>\r\n  <div class=\"flex justify-center pt-4\">\r\n    <button class=\"p-2 px-4 bg-[#009ED8] hover:bg-[#009ed8e5] text-white rounded-full text-sm\">\r\n              SUBSCRIBE\r\n            </button>\r\n  </div>\r\n</div>"
   }

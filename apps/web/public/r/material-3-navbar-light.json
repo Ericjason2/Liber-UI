@@ -3,10 +3,10 @@
   "name": "material-3-navbar-light",
   "type": "registry:ui",
   "title": "Material 3 AppBar [Light]",
-  "description": "Material 3 AppBar [Light] — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (navbar, footer, header).",
+  "description": "Material 3 AppBar [Light] — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "navbar"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "navbar",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "navbar"
     ],
     "rawHtml": "<head>\n    <!-- Roboto Font -->\n    <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&amp;display=swap\" rel=\"stylesheet\">\n    \n    <!-- Material Icons -->\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200\">\n</head>\n\n<body data-theme=\"light\">\n  <div class=\"flex flex-col gap-8 my-8\">\n\n    <!--\n      Drop Shadows are optional.\n      They were for better visibility in the example.\n      Google's are usually very flat: https://m3.material.io/components/app-bars\n     -->\n\n    <!-- 'My App' AppBar-->\n    <div class=\"appbar drop-shadow-xl\">\n      <div class=\"appbar-start-box px-2\">\n        <button class=\"btn btn-appbar p-3\">\n          <span class=\"material-symbols-outlined\">menu</span>\n        </button>\n      </div>\n      <div class=\"appbar-center-box\">\n        <span class=\"appbar-heading px-16\">My App</span>\n      </div>\n      <div class=\"appbar-end-box px-2\">\n        <button class=\"btn btn-appbar p-3\">\n          <span class=\"material-symbols-outlined\">more_vert</span>\n        </button>\n      </div>\n    </div>\n\n    <!-- 'Details' AppBar-->\n    <div class=\"appbar drop-shadow-xl\">\n      <div class=\"appbar-start-box px-2\">\n        <button class=\"btn btn-appbar p-3\">\n          <span class=\"material-symbols-outlined\">arrow_back</span>\n        </button>\n        <span class=\"appbar-heading\">Details</span>\n      </div>\n      <div class=\"appbar-end-box px-2\">\n        <button class=\"btn btn-appbar p-3\">\n          <span class=\"material-symbols-outlined\">share</span>\n        </button>\n        <button class=\"btn btn-appbar p-3\">\n          <span class=\"material-symbols-outlined\">account_circle</span>\n        </button>\n      </div>\n    </div>\n\n    <!-- 'Inbox' AppBar (Responsive) -->\n    <div class=\"appbar drop-shadow-xl\">\n      <div class=\"appbar-start-box px-2\">\n        <button class=\"btn btn-appbar p-3 sm:hidden\">\n          <span class=\"material-symbols-outlined\">menu</span>\n        </button>\n        <span class=\"appbar-heading sm:ml-4\">Inbox</span>\n      </div>\n      <div class=\"appbar-end-box px-2\">\n        <button class=\"btn btn-appbar p-3\">\n          <span class=\"material-symbols-outlined\">attach_file</span>\n        </button>\n        <button class=\"btn btn-appbar p-3\">\n          <span class=\"material-symbols-outlined\">calendar_month</span>\n        </button>\n        <button class=\"btn btn-appbar p-3\">\n          <span class=\"material-symbols-outlined\">more_vert</span>\n        </button>\n      </div>\n    </div>\n\n    <!-- 'Crop Photo' AppBar -->\n    <div class=\"appbar drop-shadow-xl\">\n      <div class=\"appbar-start-box px-2\">\n        <button class=\"btn btn-appbar p-3\">\n          <span class=\"material-symbols-outlined\">arrow_back</span>\n        </button>\n        <span class=\"appbar-heading pr-16\">Crop Photo</span>\n      </div>\n      <div class=\"appbar-end-box px-2\">\n        <button class=\"btn px-5 py-3\">\n          <span class=\"material-symbols-outlined\">check</span>\n        </button>\n      </div>\n    </div>\n\n    <!-- 'Meals' AppBar -->\n    <div class=\"appbar drop-shadow-xl\">\n      <div class=\"appbar-start-box px-2\">\n        <button class=\"btn btn-appbar p-3\">\n          <span class=\"material-symbols-outlined\">arrow_back</span>\n        </button>\n        <span class=\"appbar-heading\">Meals</span>\n      </div>\n      <div class=\"appbar-end-box px-2\">\n        <button class=\"btn p-3\">\n          <span class=\"material-symbols-outlined\">add</span>\n        </button>\n      </div>\n    </div>\n\n    <!-- 'Places' AppBar -->\n    <div class=\"appbar drop-shadow-xl\">\n      <div class=\"appbar-start-box px-2\">\n        <button class=\"btn btn-appbar p-3\">\n          <span class=\"material-symbols-outlined\">arrow_back</span>\n        </button>\n        <span class=\"appbar-heading\">Places</span>\n      </div>\n      <div class=\"appbar-end-box px-2\">\n        <button class=\"btn btn-tonal p-3\">\n          <span class=\"material-symbols-outlined\" style=\"font-variation-settings: 'FILL' 1;\">bookmark</span>\n        </button>\n      </div>\n    </div>\n\n  </div>\n</body>"
   }

@@ -3,10 +3,10 @@
   "name": "button-group",
   "type": "registry:ui",
   "title": "Button group",
-  "description": "Button group — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Button group — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"flex justify-center m-r-auto bg-violet-600\" id=\"buttons_container\">\n    <button class=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover:text-slate-50\"\n        onclick=\"toggle(0)\">\n        sm\n    </button>\n    <button class=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover:text-slate-50\"\n        onclick=\"toggle(1)\">\n        md\n    </button>\n    <button class=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover:text-slate-50\"\n        onclick=\"toggle(2)\">\n        lg\n    </button>\n    <button class=\"text-gray-200 px-6 py-2 text-xl font-mono hover:text-slate-50\"\n        onclick=\"toggle(3)\">\n        xl\n    </button>\n</div>\n<script>\n    function toggle(index) {\n        var buttons = document.getElementById('buttons_container').children;\n        for (var i = 0; i < buttons.length; i++) {\n            buttons[i].classList.remove('text-white');\n            buttons[i].classList.remove('underline');\n        }\n        buttons[index].classList.add('text-white');\n        buttons[index].classList.add('underline');\n    }\n</script>"
   }

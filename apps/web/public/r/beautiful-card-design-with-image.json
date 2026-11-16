@@ -3,10 +3,10 @@
   "name": "beautiful-card-design-with-image",
   "type": "registry:ui",
   "title": "Beautiful card design with image",
-  "description": "Beautiful card design with image — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Beautiful card design with image — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"flex px-3 py-3\">\r\n    <div class=\"max-w-sm rounded overflow-hidden shadow-lg\">\r\n        <img class=\"w-full\" src=\"https://tailwindcss.com/img/card-top.jpg\" alt=\"Sunset in the mountains\">\r\n        <div class=\"px-6 py-4\">\r\n            <div class=\"font-bold text-xl mb-2\">The Coldest Sunset</div>\r\n            <p class=\"text-gray-700 text-base\">\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et\r\n                perferendis eaque, exercitationem praesentium nihil.\r\n            </p>\r\n        </div>\r\n        <div class=\"px-6 py-4\">\r\n            <span class=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2\">#photography</span>\r\n            <span class=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2\">#travel</span>\r\n            <span class=\"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700\">#winter</span>\r\n        </div>\r\n    </div>\r\n</div>"
   }

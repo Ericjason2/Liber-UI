@@ -3,10 +3,10 @@
   "name": "button-3",
   "type": "registry:ui",
   "title": "Button",
-  "description": "Button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<button class=\"relative inline-block py-[15px] px-[30px] text-[#00fff2] text-2xl no-underline uppercase overflow-hidden transition-all duration-500 tracking-[4px] border-none bg-transparent cursor-pointer hover:bg-[#00fff2] hover:text-[#050801] hover:shadow-[0_0_5px_#00fff2,0_0_25px_#00fff2,0_0_50px_#00fff2,0_0_200px_#00fff2] hover:neon-button-reflect\">\n        <span class=\"absolute block top-0 left-[-100%] w-full h-[2px] bg-gradient-to-r from-transparent to-[#00fff2] animate-btn-anim1\"></span>\n        <span class=\"absolute block top-[-100%] right-0 w-[2px] h-full bg-gradient-to-b from-transparent to-[#00fff2] animate-btn-anim2\"></span>\n        <span class=\"absolute block bottom-0 right-[-100%] w-full h-[2px] bg-gradient-to-l from-transparent to-[#00fff2] animate-btn-anim3\"></span>\n        <span class=\"absolute block bottom-[-100%] left-0 w-[2px] h-full bg-gradient-to-t from-transparent to-[#00fff2] animate-btn-anim4\"></span>\n        Neon Button\n    </button>"
   }

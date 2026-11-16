@@ -3,10 +3,10 @@
   "name": "simple-product-card",
   "type": "registry:ui",
   "title": "Simple product card",
-  "description": "Simple product card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Simple product card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"mx-auto max-w-[475px] min-h-[690px] overflow-hidden rounded-xl bg-white shadow-xl p-8 pt-o relative border border-gray-200\">\n  <span class=\"bg-neutral-300 text-black text-lg mx-auto p-4 rounded-b-lg absolute top-0 shadow-lg inset-x-0 max-w-44 text-center z-1\">October 20th </span>\n  <div class=\"rounded-full aspect-square bg-gray-200 size-1/2 mx-auto mt-12 flex flex-col justify-center items-center\">\n    <svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M18 25.1999V28.7999M12.6 30.5999H23.4M7.20001 25.1999H28.8C30.7882 25.1999 32.4 23.5881 32.4 21.5999V8.9999C32.4 7.01168 30.7882 5.3999 28.8 5.3999H7.20001C5.21178 5.3999 3.60001 7.01168 3.60001 8.9999V21.5999C3.60001 23.5881 5.21178 25.1999 7.20001 25.1999Z\" stroke=\"black\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n    </svg>\n\n  </div>\n  <h3 class=\"text-center text-3xl mt-12\">Online Training</h3>\n  <p class=\"text-xl text-center text-neutral-400 my-8 max-w-[400px] mx-auto\">Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar dolor elementum tempus hac.</p>\n  <div class=\"flex flex-col items-center justify-center\">\n    <a href=\"#\" class=\"transition w-64 inline-flex bg-neutral-500 justify-center items-center rounded-full px-6 py-2 text-lg text-center font-medium transition duration-150 ease-in-out px-6 bg-primary text-white hover:bg-neutral-700 hover:shadow-secondary-lg focus:bg-gray-500 focus:shadow-secondary-lg focus:outline-none focus:ring-0 active:bg-neutral-700 mb-8\">Main action</a>\n\n    <a href=\"\" class=\"transition w-64 border border-neutral-500 inline-flex items-center justify-center rounded-full px-6 py-2 text-lg font-medium transition duration-150 ease-in-out px-6 focus:shadow-secondary-2 focus:outline-none focus:ring-0 hover:shadow-lg hover:border-neutral-400 hover:bg-neutral-200 text-neutral-500\">More action</a>\n  </div>\n</div>"
   }

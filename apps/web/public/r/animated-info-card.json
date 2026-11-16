@@ -3,10 +3,10 @@
   "name": "animated-info-card",
   "type": "registry:ui",
   "title": "Animated Info Card",
-  "description": "Animated Info Card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Animated Info Card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"size-52\">\n  <svg id=\"animated\" viewbox=\"0 0 100 100\">\n    <circle cx=\"50\" cy=\"50\" r=\"45\" fill=\"#FDB900\" />\n    <path fill=\"none\" stroke-linecap=\"round\" stroke-width=\"5\" stroke=\"#fff\" stroke-dasharray=\"251.2,0\"\n      d=\"M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80\">\n      <animate attributeName=\"stroke-dasharray\" from=\"0,251.2\" to=\"251.2,0\" dur=\"5s\" />\n    </path>\n    <text id=\"count\" class=\"stroke-white fill-white\" x=\"50\" y=\"35\" text-anchor=\"middle\" dy=\"7\"\n      font-size=\"10\">VIEWS</text>\n    <text id=\"count\" class=\"stroke-white fill-white\" x=\"50\" y=\"55\" text-anchor=\"middle\" dy=\"7\"\n      font-size=\"20\">15k</text>\n  </svg>\n</div>"
   }

@@ -3,10 +3,10 @@
   "name": "digital-banking-hero",
   "type": "registry:ui",
   "title": "Digital banking hero",
-  "description": "Digital banking hero — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (landing-page, footer, header).",
+  "description": "Digital banking hero — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "landing-page",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "landing-page"
     ],
     "rawHtml": "<div class=\"bg-gray-50 min-h-screen\">\n  <!-- Header -->\n  <header class=\"w-full bg-white shadow-sm\">\n    <div class=\"max-w-7xl mx-auto px-6 flex items-center justify-between py-4\">\n      <!-- Logo -->\n      <div class=\"flex items-center space-x-2\">\n        <div class=\"w-6 h-6 bg-green-500 rounded-full\"></div>\n        <span class=\"text-lg font-semibold text-gray-800\">Acorns</span>\n      </div>\n      <!-- Navigation Links -->\n      <nav class=\"hidden md:flex space-x-6 text-gray-700\">\n        <a href=\"#\" class=\"hover:text-gray-900\">Invest</a>\n        <a href=\"#\" class=\"hover:text-gray-900\">Later</a>\n        <a href=\"#\" class=\"hover:text-gray-900\">Spend</a>\n        <a href=\"#\" class=\"hover:text-gray-900\">Early</a>\n        <a href=\"#\" class=\"hover:text-gray-900\">Earn</a>\n        <a href=\"#\" class=\"hover:text-gray-900\">Grow</a>\n        <a href=\"#\" class=\"hover:text-gray-900\">Pricing</a>\n      </nav>\n      <!-- Right Buttons -->\n      <div class=\"flex items-center space-x-4\">\n        <a href=\"#\" class=\"text-gray-700 hover:text-gray-900\">Log in</a>\n        <a\n          href=\"#\"\n          class=\"px-4 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-green-600 transition\"\n        >\n          Get started\n        </a>\n      </div>\n    </div>\n  </header>\n\n  <!-- Hero Section -->\n  <div class=\"max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center\">\n    <!-- Left Content -->\n    <div>\n      <h1 class=\"text-4xl md:text-5xl font-bold text-gray-800 mb-4\">\n        Acorns helps you <br /> grow your money\n      </h1>\n      <p class=\"text-gray-600 mb-6\">\n        Take control with all-in-one investment, retirement, checking, and more.\n      </p>\n      <a\n        href=\"#\"\n        class=\"px-6 py-3 bg-green-500 text-white font-medium text-lg rounded-lg hover:bg-green-600 transition\"\n      >\n        Get started\n      </a>\n    </div>\n\n    <!-- Right Content -->\n    <div class=\"relative\">\n      <div class=\"absolute -left-8 -top-8 w-24 h-24 bg-green-100 rounded-full\"></div>\n      <img\n        src=\"https://via.placeholder.com/300x400\" \n        alt=\"Acorns Card\"\n        class=\"absolute -rotate-12 transform translate-y-6\"\n      />\n      <img\n        src=\"https://static-ssl.businessinsider.com/image/5be0ca3dda27f82a0016f894-1200/acorn.png\" \n        alt=\"Acorns Mobile\"\n        class=\"relative z-10 mx-auto\"\n      />\n    </div>\n  </div>\n</div>"
   }

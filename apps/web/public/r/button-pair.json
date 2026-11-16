@@ -3,10 +3,10 @@
   "name": "button-pair",
   "type": "registry:ui",
   "title": "Button pair",
-  "description": "Button pair — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Button pair — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"flex flex-row items-center justify-start gap-4\">\r\n    <button class=\"rounded-2xl bg-red-600 px-4 py-2 font-bold leading-none text-white\">Logout</button>\r\n    <button class=\"font-bold text-red-600\">Delete Account</button>\r\n</div>"
   }

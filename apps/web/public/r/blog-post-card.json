@@ -3,10 +3,10 @@
   "name": "blog-post-card",
   "type": "registry:ui",
   "title": "Blog post card",
-  "description": "Blog post card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, call-to-action, footer).",
+  "description": "Blog post card — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "call-to-action",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"min-h-screen flex flex-col p-8 sm:p-16 md:p-24 justify-center bg-white\">\n  <!-- Themes: blue, purple and teal -->\n  <div data-theme=\"teal\" class=\"mx-auto max-w-6xl\">\n    <h2 class=\"sr-only\">Featured case study</h2>\n    <section class=\"font-sans text-black\">\n      <div class=\"[ lg:flex lg:items-center ] [ fancy-corners fancy-corners--large fancy-corners--top-left fancy-corners--bottom-right ]\">\n        <div class=\"flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60\">\n          <div class=\"h-full\">\n            <article class=\"h-full\">\n              <div class=\"h-full\">\n                <img class=\"h-full object-cover\" src=\"https://inviqa.com/sites/default/files/styles/pullout/public/2020-08/XD-1.jpeg?h=f75d236a&itok=PBoXPDmW\" width=\"733\" height=\"412\" alt='\"\"' typeof=\"foaf:Image\" />\n              </div>\n            </article>\n          </div>\n        </div>\n        <div class=\"p-6 bg-grey\">\n          <div class=\"leading-relaxed\">\n            <h2 class=\"leading-tight text-4xl font-bold\">CXcon: Experience Transformation</h2>\n            <p class=\"mt-4\">Our second CXcon in October was dedicated to experience transformation. The free one-day virtual event&nbsp;brought together 230+ heads of digital, thought leaders, and UX practitioners to discuss all aspects of experience design..</p>\n            <p class=\"mt-4\">In a jam-packed day filled with keynote sessions, panels, and virtual networking we explored topics including design leadership, UX ethics, designing for emotion and innovation at scale.</p>\n            <p><a class=\"mt-4 button button--secondary\" href=\"https://inviqa.com/cxcon-experience-transformation\">Explore this event</a></p>\n          </div>\n        </div>\n      </div>\n    </section>\n  </div>\n</div>"
   }

@@ -3,10 +3,10 @@
   "name": "simple-login-page-template",
   "type": "registry:ui",
   "title": "Simple login page template",
-  "description": "Simple login page template — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Simple login page template — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"h-screen bg-gray-200 py-20 p-4 md:p-20 lg:p-32\">\n    <div class=\"max-w-sm bg-white rounded-lg overflow-hidden shadow-lg mx-auto\">\n        <div class=\"p-6\">\n            <h2 class=\"text-2xl font-bold text-gray-800 mb-2\">Welcome Back!</h2>\n            <p class=\"text-gray-700 mb-6\">Please sign in to your account</p>\n            <form>\n                <div class=\"mb-4\">\n                    <label class=\"block text-gray-700 font-bold mb-2\" for=\"username\">\n            Username\n          </label>\n                    <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"username\" type=\"text\" placeholder=\"Username\">\n                </div>\n                <div class=\"mb-6\">\n                    <label class=\"block text-gray-700 font-bold mb-2\" for=\"password\">\n            Password\n          </label>\n                    <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"password\" type=\"password\" placeholder=\"Password\">\n                </div>\n                <div class=\"flex items-center justify-between\">\n                    <button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\" type=\"button\">\n            Sign In\n          </button>\n                    <a class=\"inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800\" href=\"#\">\n                        Forgot Password?\n                    </a>\n                </div>\n            </form>\n        </div>\n    </div>\n</div>"
   }

@@ -3,10 +3,10 @@
   "name": "login-10",
   "type": "registry:ui",
   "title": "login!!!!",
-  "description": "login!!!! — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (landing-page, footer, header).",
+  "description": "login!!!! — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "landing-page",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "landing-page"
     ],
     "rawHtml": "<script>\n\n</script>\n<link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css\" rel=\"stylesheet\">\n<div class=\"container py-5\">\n  <button  type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#loginModal\">\n      Open Login Modal\n  </button>\n\n  <div class=\"modal fade\" id=\"loginModal\" tabindex=\"-1\">\n    <div class=\"modal-dialog modal-dialog-centered\">\n      <div class=\"modal-content\">\n        <div class=\"modal-header\">\n          <h5 class=\"modal-title\">Welcome Back!</h5>\n          <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\"></button>\n        </div>\n        <div class=\"modal-body\">\n          <form>\n            <div class=\"mb-3\">\n              <label class=\"form-label\">Email address</label>\n              <div class=\"input-group\">\n                <input type=\"email\" class=\"form-control\" placeholder=\"name@example.com\">\n                <span class=\"input-group-text\">\n                    <i class=\"fas fa-envelope\"></i>\n                  </span>\n              </div>\n            </div>\n\n            <div class=\"mb-3\">\n              <label class=\"form-label\">Password</label>\n              <div class=\"input-group\">\n                <input type=\"password\" class=\"form-control\" placeholder=\"Enter your password\">\n                <span class=\"input-group-text password-toggle\">\n                    <i class=\"fas fa-eye\"></i>\n                  </span>\n              </div>\n            </div>\n\n            <div class=\"form-check\">\n              <div>\n                <input type=\"checkbox\" class=\"form-check-input\" id=\"remember\">\n                <label class=\"form-check-label\" for=\"remember\">Remember me</label>\n              </div>\n              <a href=\"#\" class=\"text-decoration-none\">Forgot password?</a>\n            </div>\n\n            <button type=\"submit\" class=\"btn btn-login text-white\">Sign In</button>\n\n            <div class=\"divider\">\n              <span>or continue with</span>\n            </div>\n\n            <div class=\"social-login\">\n              <button type=\"button\" class=\"btn btn-social\">\n                  <i class=\"fab fa-google\"></i>Google\n                </button>\n              <button type=\"button\" class=\"btn btn-social\">\n                  <i class=\"fab fa-facebook-f\"></i>Facebook\n                </button>\n            </div>\n\n            <div class=\"register-link\">\n              Don't have an account? <a href=\"#\" class=\"text-decoration-none\">Register now</a>\n            </div>\n          </form>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
   }

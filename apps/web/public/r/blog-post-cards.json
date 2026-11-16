@@ -3,10 +3,10 @@
   "name": "blog-post-cards",
   "type": "registry:ui",
   "title": "Blog post cards",
-  "description": "Blog post cards — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, grid, footer).",
+  "description": "Blog post cards — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -20,31 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "grid",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<div class=\"max-w-screen-xl mx-auto p-16\">\r\n\r\n    <div class=\"sm:grid lg:grid-cols-3 sm:grid-cols-2 gap-10\">\r\n        <div\r\n            class=\"hover:bg-gray-900 hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg\">\r\n            <div class=\"py-4 px-8\">\r\n                <img src=\"https://tailwindcss.com/img/jonathan.jpg\" class=\"rounded-full h-12 w-12 mb-4\">\r\n                <a href=\"#\">\r\n                    <h4 class=\"text-lg mb-3 font-semibold\">How to be effective at working remotely?</h4>\r\n                </a>\r\n                <p class=\"mb-2 text-sm text-gray-600\">Lorem Ipsum is simply dummy text of the printing and typesetting\r\n                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>\r\n\r\n                <img src=\"https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500\" class=\"w-100\">\r\n\r\n                <hr class=\"mt-4\">\r\n                <span class=\"text-xs\">ARTICLE</span>\r\n                &nbsp;<span class=\"text-xs text-gray-500\">PROCESS</span>\r\n            </div>\r\n        </div>\r\n\r\n        <div\r\n            class=\"hover:bg-gray-900 hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg\">\r\n            <div class=\"py-4 px-8\">\r\n                <img src=\"https://tailwindcss.com/img/jonathan.jpg\" class=\"rounded-full h-12 w-12 mb-4\">\r\n                <a href=\"#\">\r\n                    <h4 class=\"text-lg mb-3 font-semibold\">How to be effective at working remotely?</h4>\r\n                </a>\r\n                <p class=\"mb-2 text-sm text-gray-600\">Lorem Ipsum is simply dummy text of the printing and typesetting\r\n                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>\r\n\r\n                <img src=\"https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500\" class=\"w-100\">\r\n\r\n                <hr class=\"mt-4\">\r\n                <span class=\"text-xs\">ARTICLE</span>\r\n                &nbsp;<span class=\"text-xs text-gray-500\">PROCESS</span>\r\n            </div>\r\n        </div>\r\n\r\n        <div\r\n            class=\"hover:bg-gray-900 hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg\">\r\n            <div class=\"py-4 px-8\">\r\n                <img src=\"https://tailwindcss.com/img/jonathan.jpg\" class=\"rounded-full h-12 w-12 mb-4\">\r\n                <a href=\"#\">\r\n                    <h4 class=\"text-lg mb-3 font-semibold\">How to be effective at working remotely?</h4>\r\n                </a>\r\n                <p class=\"mb-2 text-sm text-gray-600\">Lorem Ipsum is simply dummy text of the printing and typesetting\r\n                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>\r\n\r\n                <img src=\"https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500\" class=\"w-100\">\r\n\r\n                <hr class=\"mt-4\">\r\n                <span class=\"text-xs\">ARTICLE</span>\r\n                &nbsp;<span class=\"text-xs text-gray-500\">PROCESS</span>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n</div>"
   }

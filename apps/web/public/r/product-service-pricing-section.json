@@ -3,10 +3,10 @@
   "name": "product-service-pricing-section",
   "type": "registry:ui",
   "title": "Product / Service pricing section",
-  "description": "Product / Service pricing section — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (pricing, footer, header).",
+  "description": "Product / Service pricing section — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "pricing"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "pricing",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "profile"
+      "pricing"
     ],
     "rawHtml": "<ul class=\"grid gap-6 mt-6 md:gap-12 md:grid-cols-3 p-5\">\r\n    <li class=\"p-6 shadow-xl rounded-xl ring-1 ring-black/5 shadow-black/10\">\r\n        <h3 class=\"font-bold tracking-tight text-violet-600\">Starter</h3>\r\n        <p class=\"mt-6 text-4xl font-bold tracking-tighter\">$5</p>\r\n        <p class=\"mt-3 text-black/60\">\r\n            For small businesses that want to automate their link previews and start growing.\r\n        </p>\r\n\r\n        <ul class=\"mt-6 space-y-1.5\">\r\n            <li class=\"flex items-center gap-1.5 font-medium\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5 text-violet-600\" fill=\"none\"\r\n                    viewBox=\"0 0 24 24\" stroke=\"currentColor\">\r\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\r\n                </svg>\r\n                <span>10 Sites</span>\r\n            </li>\r\n            <li class=\"flex items-center gap-1.5 font-medium\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5 text-violet-600\" fill=\"none\"\r\n                    viewBox=\"0 0 24 24\" stroke=\"currentColor\">\r\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\r\n                </svg>\r\n                <span>50 Templates</span>\r\n            </li>\r\n            <li class=\"flex items-center gap-1.5 font-medium\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5 text-violet-600\" fill=\"none\"\r\n                    viewBox=\"0 0 24 24\" stroke=\"currentColor\">\r\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\r\n                </svg>\r\n                <span>250 Images per month</span>\r\n            </li>\r\n            <li class=\"flex items-center gap-1.5 font-medium\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5 text-violet-600\" fill=\"none\"\r\n                    viewBox=\"0 0 24 24\" stroke=\"currentColor\">\r\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\r\n                </svg>\r\n                <span>Full API access</span>\r\n            </li>\r\n        </ul>\r\n        <a class=\"flex mt-3 justify-center bg-gray-100 rounded rounded-xl py-1\"\r\n            href=\"https://previewify.app/app/register\">Try 7\r\n            days for free</a>\r\n    </li>\r\n    <li class=\"p-6 shadow-xl rounded-xl ring-1 ring-black/5 shadow-black/10\">\r\n        <h3 class=\"font-bold tracking-tight text-violet-600\">Pro</h3>\r\n        <p class=\"mt-6 text-4xl font-bold tracking-tighter\">$14</p>\r\n        <p class=\"mt-3 text-black/60\">\r\n            For professional businesses that require automation for scaling their link previews.\r\n        </p>\r\n\r\n        <ul class=\"mt-6 space-y-1.5\">\r\n            <li class=\"flex items-center gap-1.5 font-medium\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5 text-violet-600\" fill=\"none\"\r\n                    viewBox=\"0 0 24 24\" stroke=\"currentColor\">\r\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\r\n                </svg>\r\n                <span>50 Sites</span>\r\n            </li>\r\n            <li class=\"flex items-center gap-1.5 font-medium\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5 text-violet-600\" fill=\"none\"\r\n                    viewBox=\"0 0 24 24\" stroke=\"currentColor\">\r\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\r\n                </svg>\r\n                <span>100 Templates</span>\r\n            </li>\r\n            <li class=\"flex items-center gap-1.5 font-medium\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5 text-violet-600\" fill=\"none\"\r\n                    viewBox=\"0 0 24 24\" stroke=\"currentColor\">\r\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\r\n                </svg>\r\n                <span>1000 Images per month</span>\r\n            </li>\r\n            <li class=\"flex items-center gap-1.5 font-medium\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5 text-violet-600\" fill=\"none\"\r\n                    viewBox=\"0 0 24 24\" stroke=\"currentColor\">\r\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\r\n                </svg>\r\n                <span>Full API access</span>\r\n            </li>\r\n        </ul>\r\n        <a class=\"flex mt-3 justify-center bg-gray-100 rounded rounded-xl py-1\"\r\n            href=\"https://previewify.app/app/register\">Try 7\r\n            days for free</a>\r\n    </li>\r\n    <li class=\"p-6 shadow-xl rounded-xl ring-1 ring-black/5 shadow-black/10\">\r\n        <h3 class=\"font-bold tracking-tight text-violet-600\">Business</h3>\r\n        <p class=\"mt-6 text-4xl font-bold tracking-tighter\">$29</p>\r\n        <p class=\"mt-3 text-black/60\">\r\n            For large organizations that require high volume automation for their link previews.\r\n        </p>\r\n\r\n        <ul class=\"mt-6 space-y-1.5\">\r\n            <li class=\"flex items-center gap-1.5 font-medium\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5 text-violet-600\" fill=\"none\"\r\n                    viewBox=\"0 0 24 24\" stroke=\"currentColor\">\r\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\r\n                </svg>\r\n                <span>10000 Sites</span>\r\n            </li>\r\n            <li class=\"flex items-center gap-1.5 font-medium\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5 text-violet-600\" fill=\"none\"\r\n                    viewBox=\"0 0 24 24\" stroke=\"currentColor\">\r\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\r\n                </svg>\r\n                <span>10000 Templates</span>\r\n            </li>\r\n            <li class=\"flex items-center gap-1.5 font-medium\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5 text-violet-600\" fill=\"none\"\r\n                    viewBox=\"0 0 24 24\" stroke=\"currentColor\">\r\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\r\n                </svg>\r\n                <span>10000 Images per month</span>\r\n            </li>\r\n            <li class=\"flex items-center gap-1.5 font-medium\">\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"flex-shrink-0 w-5 h-5 text-violet-600\" fill=\"none\"\r\n                    viewBox=\"0 0 24 24\" stroke=\"currentColor\">\r\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\r\n                </svg>\r\n                <span>Full API access</span>\r\n            </li>\r\n        </ul>\r\n        <a class=\"flex mt-3 justify-center bg-gray-100 rounded rounded-xl py-1\"\r\n            href=\"https://previewify.app/app/register\">Try 7\r\n            days for free</a>\r\n    </li>\r\n</ul>"
   }

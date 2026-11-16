@@ -3,10 +3,10 @@
   "name": "pricing-plan-selector",
   "type": "registry:ui",
   "title": "Pricing Plan Selector",
-  "description": "Pricing Plan Selector — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (pricing, footer, header).",
+  "description": "Pricing Plan Selector — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "pricing"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "pricing",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "profile"
+      "pricing"
     ],
     "rawHtml": "<!-- credit:https://play.tailwindcss.com/f6zsuCPdwj -->\n<!-- I've added dark mode support -->\n\n<div class=\"flex min-h-screen items-center justify-center bg-slate-200 dark:bg-gray-800\">\n  <div class=\"mx-auto max-w-6xl px-12\">\n    <div class=\"flex flex-wrap justify-center gap-3\">\n      <label class=\"cursor-pointer\">\n        <input type=\"radio\" class=\"peer sr-only\" name=\"pricing\" />\n        <div class=\"w-72 max-w-xl rounded-md bg-white dark:bg-gray-900 p-5 text-gray-600 dark:text-gray-300 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2\">\n          <div class=\"flex flex-col gap-1\">\n            <div class=\"flex items-center justify-between\">\n              <p class=\"text-sm font-semibold uppercase text-gray-500 dark:text-gray-400\">essential</p>\n              <div>\n                <svg class=\"text-gray-500 dark:text-gray-400\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"m10.6 13.8l-2.175-2.175q-.275-.275-.675-.275t-.7.3q-.275.275-.275.7q0 .425.275.7L9.9 15.9q.275.275.7.275q.425 0 .7-.275l5.675-5.675q.275-.275.275-.675t-.3-.7q-.275-.275-.7-.275q-.425 0-.7.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z\" /></svg>\n              </div>\n            </div>\n            <div class=\"flex items-end justify-between\">\n              <p><span class=\"text-lg font-bold\">12 GB</span> of storage</p>\n              <p class=\"text-sm font-bold\">$12 / mo</p>\n            </div>\n          </div>\n        </div>\n      </label>\n      <!-- Repeat similar structure for other pricing options -->\n\n      <!-- Pro Pricing Option -->\n      <label class=\"cursor-pointer\">\n        <input type=\"radio\" class=\"peer sr-only\" name=\"pricing\" />\n        <div class=\"w-72 max-w-xl rounded-md bg-white dark:bg-gray-900 p-5 text-gray-600 dark:text-gray-300 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2\">\n          <div class=\"flex flex-col gap-1\">\n            <div class=\"flex items-center justify-between\">\n              <p class=\"text-sm font-semibold uppercase text-gray-500 dark:text-gray-400\">pro</p>\n              <div>\n                <svg class=\"text-gray-500 dark:text-gray-400\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"m10.6 13.8l-2.175-2.175q-.275-.275-.675-.275t-.7.3q-.275.275-.275.7q0 .425.275.7L9.9 15.9q.275.275.7.275q.425 0 .7-.275l5.675-5.675q.275-.275.275-.675t-.3-.7q-.275-.275-.7-.275q-.425 0-.7.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z\" /></svg>\n              </div>\n            </div>\n            <div class=\"flex items-end justify-between\">\n              <p><span class=\"text-lg font-bold\">50 GB</span> of storage</p>\n              <p class=\"text-sm font-bold\">$21 / mo</p>\n            </div>\n          </div>\n        </div>\n      </label>\n\n      <!-- Premium Pricing Option -->\n      <label class=\"cursor-pointer\">\n        <input type=\"radio\" class=\"peer sr-only\" name=\"pricing\" />\n        <div class=\"w-72 max-w-xl rounded-md bg-white dark:bg-gray-900 p-5 text-gray-600 dark:text-gray-300 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2\">\n          <div class=\"flex flex-col gap-1\">\n            <div class=\"flex items-center justify-between\">\n              <p class=\"text-sm font-semibold uppercase text-gray-500 dark:text-gray-400\">premium</p>\n              <div>\n                <svg class=\"text-gray-500 dark:text-gray-400\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"m10.6 13.8l-2.175-2.175q-.275-.275-.675-.275t-.7.3q-.275.275-.275.7q0 .425.275.7L9.9 15.9q.275.275.7.275q.425 0 .7-.275l5.675-5.675q.275-.275.275-.675t-.3-.7q-.275-.275-.7-.275q-.425 0-.7.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z\" /></svg>\n              </div>\n            </div>\n            <div class=\"flex items-end justify-between\">\n              <p><span class=\"text-lg font-bold\">100 GB</span> of storage</p>\n              <p class=\"text-sm font-bold\">$49 / mo</p>\n            </div>\n          </div>\n        </div>\n      </label>\n    </div>\n  </div>\n</div>"
   }

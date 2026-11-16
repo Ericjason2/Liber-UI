@@ -3,10 +3,10 @@
   "name": "hero-section-14",
   "type": "registry:ui",
   "title": "hero section",
-  "description": "hero section — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, footer, header).",
+  "description": "hero section — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "hero",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "hero"
     ],
     "rawHtml": "<div class=\"items-center w-10/12 grid-cols-2 mx-auto overflow-x-hidden lg:grid md:py-14 lg:py-24 xl:py-14 lg:mt-3 xl:mt-5\" data-aos=\"fade-right\" data-aos-duration=\"800\">\n          <div class=\"pr-2 md:mb-14 py-14 md:py-0\">\n            <h1 class=\"text-3xl font-semibold text-blue-900 xl:text-5xl lg:text-3xl\"><span class=\"block w-full\">Get a financial experience</span> for growing your business!</h1>\n            <p class=\"py-4 text-lg text-gray-500 2xl:py-8 md:py-6 2xl:pr-5\">\n              Empowering you to make better financial decisions, We truly are professional money planners...\n            </p>\n            <div class=\"mt-4\">\n              <a href=\"#contact\" class=\"px-5 py-3 text-lg tracking-wider text-white bg-blue-500 rounded-lg md:px-8 hover:bg-blue-600 group\"><span>Explore More</span> </a>\n            </div>\n          </div>\n  \n          <div class=\"pb-10 overflow-hidden md:p-10 lg:p-0 sm:pb-0\">\n            <img id=\"heroImg1\" class=\"transition-all duration-300 ease-in-out hover:scale-105 lg:w-full sm:mx-auto sm:w-4/6 sm:pb-12 lg:pb-0\" src=\"https://bootstrapmade.com/demo/templates/FlexStart/assets/img/hero-img.png\" alt=\"Awesome hero page image\" width=\"500\" height=\"488\"/>\n          </div>\n        </div>"
   }

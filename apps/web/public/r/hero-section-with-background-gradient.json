@@ -3,10 +3,10 @@
   "name": "hero-section-with-background-gradient",
   "type": "registry:ui",
   "title": "Hero section with background gradient",
-  "description": "Hero section with background gradient — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, footer, header).",
+  "description": "Hero section with background gradient — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "hero",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "hero"
     ],
     "rawHtml": "<section class=\"bg-gradient-to-br from-purple-500 to-pink-500 py-16 md:py-32\">\n    <div class=\"container mx-auto px-4 md:px-8 text-center\">\n        <h1 class=\"text-white font-bold text-4xl md:text-6xl leading-tight mb-6\">Welcome to our <br>Colorful World</h1>\n        <p class=\"text-white text-lg md:text-2xl mb-12\">Experience the magic of colors with our unique products and\n            services.</p>\n        <a href=\"#\"\n            class=\"bg-white text-purple-500 font-bold py-2 px-8 rounded-full hover:bg-purple-500 hover:text-white transition duration-200\">Shop\n            Now</a>\n    </div>\n</section>"
   }

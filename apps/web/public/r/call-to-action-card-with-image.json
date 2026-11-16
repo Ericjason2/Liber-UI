@@ -3,10 +3,10 @@
   "name": "call-to-action-card-with-image",
   "type": "registry:ui",
   "title": "Call to action card with image",
-  "description": "Call to action card with image — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Call to action card with image — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"px-2 py-20 w-full flex justify-center\">\n    <div class=\"bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg rounded-lg\">\n        <div class=\"lg:w-1/2\">\n            <div class=\"lg:scale-110 h-80 bg-cover lg:h-full rounded-b-none border lg:rounded-lg\"\n                style=\"background-image:url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97')\">\n            </div>\n        </div>\n        <div class=\"py-12 px-6 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none border lg:rounded-lg\">\n            <h2 class=\"text-3xl text-gray-800 font-bold\">\n                Promoting Sustainable Lifestyle Choices\n                <span class=\"text-indigo-600\">Choices</span>\n            </h2>\n            <p class=\"mt-4 text-gray-600\">\n                The \"Eco-Tracker\" project aims to create a web-based platform that encourages individuals to adopt\n                sustainable lifestyle choices and actively contribute to environmental conservation. The platform will\n                provide users with personalized tracking, education, and engagement features to empower them to make\n                eco-friendly decisions in various aspects of their lives.\n            </p>\n            <div class=\"mt-8\">\n                <a href=\"#\" class=\"bg-gray-900 text-gray-100 px-5 py-3 font-semibold rounded\">Start Now</a>\n            </div>\n        </div>\n    </div>\n</div>"
   }

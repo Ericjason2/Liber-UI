@@ -3,10 +3,10 @@
   "name": "call-to-action-5",
   "type": "registry:ui",
   "title": "Call to action",
-  "description": "Call to action — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "Call to action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"bg-gray-800 mt-10\">\n    <div class=\"max-w-screen-xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8\">\n        <h2 class=\"text-3xl leading-9 font-extrabold tracking-tight text-white sm:text-4xl sm:leading-10\">\n            Ready to get started?\n            <br>\n           Create a portfolio for free!\n        </h2>\n        <div class=\"mt-8 flex justify-center\">\n            <div class=\"inline-flex rounded-md shadow\">\n                <a href=\"#\"\n                    class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out\">\n                    Get started\n                </a>\n            </div>\n\n        </div>\n    </div>\n</div>"
   }

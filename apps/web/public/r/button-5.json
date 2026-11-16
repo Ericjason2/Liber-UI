@@ -3,10 +3,10 @@
   "name": "button-5",
   "type": "registry:ui",
   "title": "Button",
-  "description": "Button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css\">\n\n\n<button id=\"btn\" class=\"border rounded-md m-3 p-2 bg-blue-500 text-white font-bold active:translate-y-1 hover:scale-[1.1] transition-all\" onclick=\"handleSubscribe()\">\n   <i id=\"spin\" class=\"fa-solid fa-spinner fa-spin-pulse\" hidden></i>\n   <span id=\"btnText\">Subscribe</span>\n</button>\n\n<script>\n    function handleSubscribe() {\n        const btn = document.querySelector('#btn');\n        const spin = document.querySelector('#spin');\n        const btnText = document.querySelector('#btnText');\n\n        // 1. Afficher le spinner et changer le texte\n        spin.hidden = false; \n        btnText.innerText = \"Loading...\";\n        btn.disabled = true; // Désactive le bouton pour éviter les doubles clics\n        btn.classList.add('opacity-75', 'cursor-not-allowed');\n\n        // 2. Simuler un appel serveur (ex: ajout d'un étudiant en base de données)\n        setTimeout(() => {\n            spin.hidden = true;\n            btnText.innerText = \"Subscribed !\";\n            btn.classList.replace('bg-blue-500', 'bg-green-500');\n        }, 3000);\n    }\n</script>"
   }

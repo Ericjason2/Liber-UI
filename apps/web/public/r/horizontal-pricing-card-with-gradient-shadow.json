@@ -3,10 +3,10 @@
   "name": "horizontal-pricing-card-with-gradient-shadow",
   "type": "registry:ui",
   "title": "Horizontal Pricing Card with gradient shadow",
-  "description": "Horizontal Pricing Card with gradient shadow — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (pricing, footer, header).",
+  "description": "Horizontal Pricing Card with gradient shadow — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "pricing"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "pricing",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "profile"
+      "pricing"
     ],
     "rawHtml": "<section class=\"mx-auto max-w-7xl px-6 lg:px-8\">\n  <div class=\"relative max-w-2xl mx-auto mt-8 sm:mt-12 lg:mx-0 lg:flex lg:max-w-none\">\n    <div\n      class=\"absolute transition duration-1000 rounded-lg opacity-25 -z-10 -inset-1 bg-gradient-to-r from-red-600 to-violet-600 blur group-hover:opacity-100 group-hover:duration-200\">\n    </div>\n\n    <div class=\"bg-white rounded-2xl lg:flex lg:max-w-none\">\n      <div class=\"p-4 sm:p-8 lg:flex-auto \">\n        <h3 class=\"text-2xl font-bold tracking-tight text-gray-700\">\n          <strong class=\"text-black\">Free</strong> listing\n        </h3>\n        <p class=\"pl-6 mt-4 space-y-2 text-lg text-gray-800\">\n          To avail this free offer you have to mention EliteAi.tools on any of your social media accounts\n          mentioned here (X (formerly\n          Twitter), LinkedIn).\n        </p>\n\n        <div class=\"mt-10 flex items-center gap-x-4\">\n          <h4 class=\"flex-none text-sm font-semibold leading-6 text-blue-600\">What’s included</h4>\n          <div class=\"h-px flex-auto bg-gray-100\"></div>\n        </div>\n        <ul class=\"mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6\">\n          <li class=\"flex items-center\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" zoomAndPan=\"magnify\"\n              viewBox=\"0 0 30 30.000001\" height=\"20\" preserveAspectRatio=\"xMidYMid meet\" version=\"1.0\"\n              id=\"IconChangeColor\">\n              <defs>\n                <clipPath id=\"id1\">\n                  <path\n                    d=\"M 2.847656 4.792969 L 26.796875 4.792969 L 26.796875 24.390625 L 2.847656 24.390625 Z M 2.847656 4.792969 \"\n                    clip-rule=\"nonzero\" id=\"mainIconPathAttribute\" fill=\"green\"></path>\n                </clipPath>\n              </defs>\n              <g clip-path=\"url(#id1)\">\n                <path fill=\"green\"\n                  d=\"M 11.078125 24.3125 L 2.847656 15.890625 L 6.128906 12.53125 L 11.078125 17.597656 L 23.519531 4.875 L 26.796875 8.230469 Z M 11.078125 24.3125 \"\n                  fill-opacity=\"1\" fill-rule=\"nonzero\" id=\"mainIconPathAttribute\"></path>\n              </g>\n            </svg> <span class=\"font-bold mx-1\">30 days</span><span>boost</span></li>\n          <li class=\"flex items-center\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" zoomAndPan=\"magnify\"\n              viewBox=\"0 0 30 30.000001\" height=\"20\" preserveAspectRatio=\"xMidYMid meet\" version=\"1.0\"\n              id=\"IconChangeColor\">\n              <defs>\n                <clipPath id=\"id1\">\n                  <path\n                    d=\"M 2.847656 4.792969 L 26.796875 4.792969 L 26.796875 24.390625 L 2.847656 24.390625 Z M 2.847656 4.792969 \"\n                    clip-rule=\"nonzero\" id=\"mainIconPathAttribute\" fill=\"green\"></path>\n                </clipPath>\n              </defs>\n              <g clip-path=\"url(#id1)\">\n                <path fill=\"green\"\n                  d=\"M 11.078125 24.3125 L 2.847656 15.890625 L 6.128906 12.53125 L 11.078125 17.597656 L 23.519531 4.875 L 26.796875 8.230469 Z M 11.078125 24.3125 \"\n                  fill-opacity=\"1\" fill-rule=\"nonzero\" id=\"mainIconPathAttribute\"></path>\n              </g>\n            </svg>Lifetime trafic</li>\n          <li class=\"flex items-center\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" zoomAndPan=\"magnify\"\n              viewBox=\"0 0 30 30.000001\" height=\"20\" preserveAspectRatio=\"xMidYMid meet\" version=\"1.0\"\n              id=\"IconChangeColor\">\n              <defs>\n                <clipPath id=\"id1\">\n                  <path\n                    d=\"M 2.847656 4.792969 L 26.796875 4.792969 L 26.796875 24.390625 L 2.847656 24.390625 Z M 2.847656 4.792969 \"\n                    clip-rule=\"nonzero\" id=\"mainIconPathAttribute\" fill=\"green\"></path>\n                </clipPath>\n              </defs>\n              <g clip-path=\"url(#id1)\">\n                <path fill=\"green\"\n                  d=\"M 11.078125 24.3125 L 2.847656 15.890625 L 6.128906 12.53125 L 11.078125 17.597656 L 23.519531 4.875 L 26.796875 8.230469 Z M 11.078125 24.3125 \"\n                  fill-opacity=\"1\" fill-rule=\"nonzero\" id=\"mainIconPathAttribute\"></path>\n              </g>\n            </svg>Separate landing Page</li>\n          <li class=\"flex items-center\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" zoomAndPan=\"magnify\"\n              viewBox=\"0 0 30 30.000001\" height=\"20\" preserveAspectRatio=\"xMidYMid meet\" version=\"1.0\"\n              id=\"IconChangeColor\">\n              <defs>\n                <clipPath id=\"id1\">\n                  <path\n                    d=\"M 2.847656 4.792969 L 26.796875 4.792969 L 26.796875 24.390625 L 2.847656 24.390625 Z M 2.847656 4.792969 \"\n                    clip-rule=\"nonzero\" id=\"mainIconPathAttribute\" fill=\"green\"></path>\n                </clipPath>\n              </defs>\n              <g clip-path=\"url(#id1)\">\n                <path fill=\"green\"\n                  d=\"M 11.078125 24.3125 L 2.847656 15.890625 L 6.128906 12.53125 L 11.078125 17.597656 L 23.519531 4.875 L 26.796875 8.230469 Z M 11.078125 24.3125 \"\n                  fill-opacity=\"1\" fill-rule=\"nonzero\" id=\"mainIconPathAttribute\"></path>\n              </g>\n            </svg>Blog listing</li>\n        </ul>\n      </div>\n\n      <div class=\"p-2 mt-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0\">\n        <div\n          class=\"py-10 text-center rounded-2xl bg-gray-50/50 ring-1 ring-inset ring-gray-500/5 lg:flex lg:flex-col lg:justify-center lg:py-16\">\n          <div class=\"max-w-xs px-8 mx-auto min-w-[300px]\">\n            <p class=\"text-base font-semibold text-gray-600\">One Time</p>\n            <p class=\"flex items-baseline justify-center mt-6 mb-12 gap-x-2\">\n              <span class=\"text-5xl font-bold tracking-tight text-gray-900\">\n                <span class=\"px-2 line-through\">$29</span><span class=\"italic text-gray-700\">FREE*</span></span>\n            </p>\n            <a href=\"mailto:admin@eliteai.tools\" class=\"block w-full py-2 my-6 text-white rounded-sm bg-green-600\">\n              Email Us →\n            </a>\n            <p class=\"px-3 py-1 text-base font-bold \">\n              Limited time promotional offer\n            </p>\n          </div>\n        </div>\n      </div>\n    </div>\n\n  </div>\n</section>"
   }

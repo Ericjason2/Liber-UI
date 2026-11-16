@@ -3,10 +3,10 @@
   "name": "feature-card-2",
   "type": "registry:ui",
   "title": "Feature Card",
-  "description": "Feature Card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Feature Card — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "landing-page"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"flex justify-center items-center dark:bg-gray-800 h-screen w-full\">\n    <div class=\"relative cursor-pointer dark:text-white\">\n        <span class=\"absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg dark:bg-gray-200\"></span>\n        <div\n            class=\"relative p-6 bg-white dark:bg-gray-800 border-2 border-indigo-500 dark:border-gray-300 rounded-lg hover:scale-105 transition duration-500\">\n            <div class=\"flex items-center\">\n                \n                <h3 class=\"my-2 ml-3 text-lg font-bold text-gray-800 dark:text-white\">Cool Feature</h3>\n            </div>\n            <p class=\"text-gray-600 dark:text-gray-300\">\n                This is the short description of your feature.\n            </p>\n        </div>\n    </div>\n\n</div>"
   }

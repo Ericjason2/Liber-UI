@@ -3,10 +3,10 @@
   "name": "beautiful-buttons-set",
   "type": "registry:ui",
   "title": "beautiful buttons set",
-  "description": "beautiful buttons set — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "beautiful buttons set — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg\">\n        <h1 class=\"text-3xl font-bold mb-6 text-center text-gray-800\">Beautiful Buttons</h1>\n\n        <!-- Solid Buttons -->\n        <div class=\"mb-8\">\n            <h2 class=\"text-xl font-semibold mb-4\">Solid Buttons</h2>\n            <div class=\"flex flex-wrap gap-4\">\n                <button class=\"inline-flex items-center justify-center bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-check mr-2\"></i> Primary\n                </button>\n                <button class=\"inline-flex items-center justify-center bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-plus mr-2\"></i> Success\n                </button>\n                <button class=\"inline-flex items-center justify-center bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-times mr-2\"></i> Danger\n                </button>\n                <button class=\"inline-flex items-center justify-center bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-exclamation-triangle mr-2\"></i> Warning\n                </button>\n                <button class=\"inline-flex items-center justify-center bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-info mr-2\"></i> Info\n                </button>\n            </div>\n        </div>\n\n        <!-- Outline Buttons -->\n        <div class=\"mb-8\">\n            <h2 class=\"text-xl font-semibold mb-4\">Outline Buttons</h2>\n            <div class=\"flex flex-wrap gap-4\">\n                <button class=\"inline-flex items-center justify-center border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-check mr-2\"></i> Primary\n                </button>\n                <button class=\"inline-flex items-center justify-center border border-green-500 text-green-500 px-4 py-2 rounded hover:bg-green-500 hover:text-white transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-plus mr-2\"></i> Success\n                </button>\n                <button class=\"inline-flex items-center justify-center border border-red-500 text-red-500 px-4 py-2 rounded hover:bg-red-500 hover:text-white transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-times mr-2\"></i> Danger\n                </button>\n                <button class=\"inline-flex items-center justify-center border border-yellow-500 text-yellow-500 px-4 py-2 rounded hover:bg-yellow-500 hover:text-white transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-exclamation-triangle mr-2\"></i> Warning\n                </button>\n                <button class=\"inline-flex items-center justify-center border border-gray-500 text-gray-500 px-4 py-2 rounded hover:bg-gray-500 hover:text-white transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-info mr-2\"></i> Info\n                </button>\n            </div>\n        </div>\n\n        <!-- Text Buttons -->\n        <div class=\"mb-8\">\n            <h2 class=\"text-xl font-semibold mb-4\">Text Buttons</h2>\n            <div class=\"flex flex-wrap gap-4\">\n                <button class=\"inline-flex items-center justify-center text-blue-500 px-4 py-2 rounded hover:bg-blue-100 transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-check mr-2\"></i> Primary\n                </button>\n                <button class=\"inline-flex items-center justify-center text-green-500 px-4 py-2 rounded hover:bg-green-100 transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-plus mr-2\"></i> Success\n                </button>\n                <button class=\"inline-flex items-center justify-center text-red-500 px-4 py-2 rounded hover:bg-red-100 transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-times mr-2\"></i> Danger\n                </button>\n                <button class=\"inline-flex items-center justify-center text-yellow-500 px-4 py-2 rounded hover:bg-yellow-100 transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-exclamation-triangle mr-2\"></i> Warning\n                </button>\n                <button class=\"inline-flex items-center justify-center text-gray-500 px-4 py-2 rounded hover:bg-gray-100 transition transform hover:translate-y-[-2px] hover:shadow-md\">\n                    <i class=\"fas fa-info mr-2\"></i> Info\n                </button>\n            </div>\n        </div>\n\n    </div>"
   }

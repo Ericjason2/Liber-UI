@@ -3,10 +3,10 @@
   "name": "credit-card-form",
   "type": "registry:ui",
   "title": "Credit card form",
-  "description": "Credit card form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Credit card form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"max-w-sm mx-auto mt-20 bg-white rounded-md shadow-md overflow-hidden\">\r\n    <div class=\"px-6 py-4 bg-gray-900 text-white\">\r\n        <h1 class=\"text-lg font-bold\">Credit Card</h1>\r\n    </div>\r\n    <div class=\"px-6 py-4\">\r\n\r\n        <div class=\"mb-4\">\r\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"card-number\">\r\n                Card Number\r\n            </label>\r\n            <input\r\n                class=\"appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\r\n                id=\"card-number\" type=\"text\" placeholder=\"**** **** **** ****\">\r\n        </div>\r\n\r\n        <div class=\"mb-4\">\r\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"expiration-date\">\r\n                Expiration Date\r\n            </label>\r\n            <input\r\n                class=\"appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\r\n                id=\"expiration-date\" type=\"text\" placeholder=\"MM/YY\">\r\n        </div>\r\n\r\n        <div class=\"mb-4\">\r\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"cvv\">\r\n                CVV\r\n            </label>\r\n            <input\r\n                class=\"appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\r\n                id=\"cvv\" type=\"text\" placeholder=\"***\">\r\n        </div>\r\n\r\n        <div class=\"mb-4\">\r\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"cvv\">\r\n                Cardholder Name\r\n            </label>\r\n            <input\r\n                class=\"appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\r\n                type=\"text\" placeholder=\"Full Name\">\r\n        </div>\r\n\r\n        <button class=\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full\">\r\n            Pay Now\r\n        </button>\r\n    </div>\r\n</div>"
   }

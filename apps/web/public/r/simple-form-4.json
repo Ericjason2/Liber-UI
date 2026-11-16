@@ -3,10 +3,10 @@
   "name": "simple-form-4",
   "type": "registry:ui",
   "title": "simple form",
-  "description": "simple form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "simple form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"flex justify-center items-center h-screen bg-gray-800\">\n  <div class=\"bg-white w-72 h-80 rounded-3xl shadow-lg\">\n\n    <form action=\"\">\n\n      <div class=\"flex justify-center mb-3 mt-10\">\n        <input type=\"text\" name=\"\" id=\"\" class=\"bg-gray-200 px-5 py-3 rounded-xl\" placeholder=\"Name\">\n      </div>\n      <div class=\"flex justify-center mb-3\">\n        <input type=\"email\" name=\"\" id=\"\" class=\"bg-gray-200 px-5 py-3 rounded-xl\" placeholder=\"Email\">\n      </div>\n      <div class=\"flex justify-center mb-3\">\n        <input type=\"password\" name=\"\" id=\"\" class=\"bg-gray-200 px-5 py-3 rounded-xl\" placeholder=\"password\">\n      </div>\n      <div class=\"flex justify-center\">\n       <button class=\"bg-blue-600 rounded-xl w-40 py-2 text-white hover:bg-blue-700\">Submit</button>\n      </div>\n    </form>\n    \n  </div>\n</div>"
   }

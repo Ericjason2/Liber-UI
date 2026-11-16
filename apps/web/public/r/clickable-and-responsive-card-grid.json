@@ -3,10 +3,10 @@
   "name": "clickable-and-responsive-card-grid",
   "type": "registry:ui",
   "title": "Clickable and Responsive Card Grid",
-  "description": "Clickable and Responsive Card Grid — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, grid, footer).",
+  "description": "Clickable and Responsive Card Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -20,31 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "grid",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<div class=\"bg-gray-100 p-4 sm:p-8 md:p-16 mt-20\">\n  <div class=\"container mx-auto\">\n    <div class=\"grid grid-cols-1 sm:grid-cols-2 gap-4\">\n\n      <a href=\"/frontend-performance\"\n        class=\"relative flex h-full flex-col rounded-md border border-gray-200 bg-white p-2.5 hover:border-gray-400 sm:rounded-lg sm:p-5\">\n        <span class=\"text-md mb-0 font-semibold text-gray-900 hover:text-black sm:mb-1.5 sm:text-xl\">\n          Frontend Performance\n        </span>\n        <span class=\"text-sm leading-normal text-gray-400 sm:block\">\n          Detailed list of best practices to improve your frontend performance\n        </span>\n      </a>\n      <a href=\"/api-security\"\n        class=\"relative flex h-full flex-col rounded-md border border-gray-200 bg-white p-2.5 hover:border-gray-400 sm:rounded-lg sm:p-5\">\n        <span class=\"text-md mb-0 font-semibold text-gray-900 hover:text-black sm:mb-1.5 sm:text-xl\">\n          API Security\n        </span>\n        <span class=\"text-sm leading-normal text-gray-400 sm:block\">\n          Detailed list of best practices to make your APIs secure\n        </span>\n      </a>\n      <a href=\"/code-review\"\n        class=\"relative flex h-full flex-col rounded-md border border-gray-200 bg-white p-2.5 hover:border-gray-400 sm:rounded-lg sm:p-5\">\n        <span class=\"text-md mb-0 font-semibold text-gray-900 hover:text-black sm:mb-1.5 sm:text-xl\">\n          Code Reviews\n        </span>\n        <span class=\"text-sm leading-normal text-gray-400 sm:block\">\n          Detailed list of best practices for effective code reviews and quality\n        </span>\n      </a>\n      <a href=\"/aws\"\n        class=\"relative flex h-full flex-col rounded-md border border-gray-200 bg-white p-2.5 hover:border-gray-400 sm:rounded-lg sm:p-5\">\n        <span class=\"text-md mb-0 font-semibold text-gray-900 hover:text-black sm:mb-1.5 sm:text-xl\">\n          AWS\n        </span>\n        <span class=\"text-sm leading-normal text-gray-400 sm:block\">\n          Detailed list of best practices for Amazon Web Services (AWS)\n        </span>\n      </a>\n    </div>\n  </div>\n</div>"
   }

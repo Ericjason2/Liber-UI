@@ -3,10 +3,10 @@
   "name": "otp-code-template",
   "type": "registry:ui",
   "title": "Otp-code template",
-  "description": "Otp-code template — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Otp-code template — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Your OTP Code</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gray-100\">\n    <div class=\"max-w-2xl mx-auto my-8 bg-white rounded-lg shadow-md overflow-hidden\">\n        <div class=\"bg-indigo-600 py-6 px-8\">\n            <h1 class=\"text-3xl font-bold text-white text-center\">Your OTP Code</h1>\n        </div>\n        <div class=\"p-8\">\n            <p class=\"text-gray-700 mb-6\">Hello,</p>\n            <p class=\"text-gray-700 mb-6\">Your One-Time Password (OTP) for account verification is:</p>\n            <div class=\"bg-gray-100 rounded-lg p-4 mb-6\">\n                <p class=\"text-4xl font-bold text-center text-indigo-600\">5695314</p>\n            </div>\n            <p class=\"text-gray-700 mb-6\">This OTP is valid for <span class=\"font-semibold\">2 minutes</span>. Please do not share this code with anyone.</p>\n            <p class=\"text-gray-700 mb-2\">If you didn't request this code, please ignore this email.</p>\n            <p class=\"text-gray-700\">Thank you for using our service!</p>\n        </div>\n        <div class=\"bg-gray-100 py-4 px-8\">\n            <p class=\"text-sm text-gray-600 text-center\">&copy; 2024 Your Company Name. All rights reserved.</p>\n        </div>\n    </div>\n</body>\n</html>"
   }

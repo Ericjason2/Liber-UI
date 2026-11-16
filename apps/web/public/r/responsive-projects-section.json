@@ -3,10 +3,10 @@
   "name": "responsive-projects-section",
   "type": "registry:ui",
   "title": "Responsive Projects Section",
-  "description": "Responsive Projects Section — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (grid, footer, header).",
+  "description": "Responsive Projects Section — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "grid",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<section class=\"px-4 py-12 sm:px-6 lg:px-8\">\r\n    <div class=\"mx-auto max-w-7xl\">\r\n      <!-- Section Header -->\r\n      <div class=\"mb-12 text-center\">\r\n        <h2 class=\"text-3xl font-extrabold text-gray-900 sm:text-4xl\">Our Projects</h2>\r\n        <p class=\"mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4\">Check out some of our recent work and case studies.</p>\r\n      </div>\r\n\r\n      <!-- Projects Grid -->\r\n      <div class=\"grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3\">\r\n        <!-- Project 1 -->\r\n        <div class=\"overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 hover:scale-105\">\r\n          <div class=\"h-48 overflow-hidden bg-blue-500\">\r\n            <img src=\"https://placehold.co/600x400/transparent/FFF\" alt=\"Project 1\" class=\"h-full w-full object-cover\" />\r\n          </div>\r\n          <div class=\"p-6\">\r\n            <h3 class=\"text-xl font-semibold text-gray-900\">Website Redesign</h3>\r\n            <p class=\"mt-2 text-gray-600\">Complete redesign of corporate website with improved UX and modern aesthetics.</p>\r\n            <div class=\"mt-4 flex flex-wrap gap-2\">\r\n              <span class=\"rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-800\">Web Design</span>\r\n              <span class=\"rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-800\">UX</span>\r\n            </div>\r\n            <a href=\"#\" class=\"mt-4 inline-flex items-center text-blue-600 hover:text-blue-800\">\r\n              View case study\r\n              <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"ml-1 h-5 w-5\" viewBox=\"0 0 20 20\" fill=\"currentColor\">\r\n                <path fill-rule=\"evenodd\" d=\"M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z\" clip-rule=\"evenodd\" />\r\n              </svg>\r\n            </a>\r\n          </div>\r\n        </div>\r\n\r\n        <!-- Project 2 -->\r\n        <div class=\"overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 hover:scale-105\">\r\n          <div class=\"h-48 overflow-hidden bg-green-500\">\r\n            <img src=\"https://placehold.co/600x400/transparent/FFF\" alt=\"Project 2\" class=\"h-full w-full object-cover\" />\r\n          </div>\r\n          <div class=\"p-6\">\r\n            <h3 class=\"text-xl font-semibold text-gray-900\">Mobile Application</h3>\r\n            <p class=\"mt-2 text-gray-600\">Cross-platform mobile app for health tracking with real-time analytics.</p>\r\n            <div class=\"mt-4 flex flex-wrap gap-2\">\r\n              <span class=\"rounded-full bg-purple-100 px-3 py-1 text-xs font-medium text-purple-800\">React Native</span>\r\n              <span class=\"rounded-full bg-yellow-100 px-3 py-1 text-xs font-medium text-yellow-800\">Health Tech</span>\r\n            </div>\r\n            <a href=\"#\" class=\"mt-4 inline-flex items-center text-blue-600 hover:text-blue-800\">\r\n              View case study\r\n              <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"ml-1 h-5 w-5\" viewBox=\"0 0 20 20\" fill=\"currentColor\">\r\n                <path fill-rule=\"evenodd\" d=\"M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z\" clip-rule=\"evenodd\" />\r\n              </svg>\r\n            </a>\r\n          </div>\r\n        </div>\r\n\r\n        <!-- Project 3 -->\r\n        <div class=\"overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 hover:scale-105\">\r\n          <div class=\"h-48 overflow-hidden bg-purple-500\">\r\n            <img src=\"https://placehold.co/600x400/transparent/FFF\" alt=\"Project 3\" class=\"h-full w-full object-cover\" />\r\n          </div>\r\n          <div class=\"p-6\">\r\n            <h3 class=\"text-xl font-semibold text-gray-900\">E-commerce Platform</h3>\r\n            <p class=\"mt-2 text-gray-600\">Custom e-commerce solution with integrated payment processing and inventory management.</p>\r\n            <div class=\"mt-4 flex flex-wrap gap-2\">\r\n              <span class=\"rounded-full bg-red-100 px-3 py-1 text-xs font-medium text-red-800\">E-commerce</span>\r\n              <span class=\"rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-800\">Payment Gateway</span>\r\n            </div>\r\n            <a href=\"#\" class=\"mt-4 inline-flex items-center text-blue-600 hover:text-blue-800\">\r\n              View case study\r\n              <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"ml-1 h-5 w-5\" viewBox=\"0 0 20 20\" fill=\"currentColor\">\r\n                <path fill-rule=\"evenodd\" d=\"M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z\" clip-rule=\"evenodd\" />\r\n              </svg>\r\n            </a>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <!-- View More Button -->\r\n      <div class=\"mt-12 text-center\">\r\n        <a href=\"#\" class=\"inline-flex items-center rounded-md border border-transparent bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700\"> View all projects </a>\r\n      </div>\r\n    </div>\r\n  </section>"
   }

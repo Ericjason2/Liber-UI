@@ -3,10 +3,10 @@
   "name": "card-with-cta",
   "type": "registry:ui",
   "title": "Greeting Card with CTA",
-  "description": "Greeting Card with CTA — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, call-to-action, footer).",
+  "description": "Greeting Card with CTA — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "call-to-action",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"px-4 md:px-8 py-12 bg-gray-100 rounded-lg shadow-2xl max-w-xl\">\n\n  <h1 class=\"text-lg mb-4\">\n    Hey Amit<span class=\"mx-2\" id=\"demo\"></span><span class=\"text-xl\">😄</span>,\n    <br>\n    <span class=\"text-4xl font-semibold\">Have you booked your</span>\n    <span class=\"text-4xl font-semibold text-blue-700\">Seat?</span>\n  </h1>\n\n  <div class=\"flex flex-col justify-center w-full text-center mt-8 gap-6 sm:flex-row text-lg font-semibold\">\n    <a href=\"https://tailwindflex.com/@amit\"\n      class=\"py-4 w-full sm:w-40 border border-blue-700 rounded-lg hover:shadow-2xl hover:text-blue-700 shadow-lg\">\n      Yes\n    </a>\n    <a href=\"https://tailwindflex.com\"\n      class=\"bg-blue-600 w-full sm:w-40 py-4 rounded-lg text-white hover:bg-blue-700 shadow-lg\">\n      Book Now\n    </a>\n  </div>\n\n</div>\n\n<script>\n  const time = new Date().getHours();\n    let greeting;\n    if (time < 10) {\n      greeting = \"Good morning\";\n    } else if (time < 20) {\n      greeting = \"Good day\";\n    } else {\n      greeting = \"Good evening\";\n    }\n    document.getElementById(\"demo\").innerHTML = greeting;\n</script>"
   }

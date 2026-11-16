@@ -3,10 +3,10 @@
   "name": "elevated-feature-card",
   "type": "registry:ui",
   "title": "Elevated feature card",
-  "description": "Elevated feature card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Elevated feature card — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "landing-page"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"relative max-w-sm\">\n    <span class=\"absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg\"></span>\n    <div class=\"relative h-full p-3 bg-white border-2 border-green-500 rounded-lg\">\n        <div class=\"flex items-center -mt-1\">\n            <svg class=\"w-8 h-8 text-green-500\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\"\n                fill=\"currentColor\" aria-hidden=\"true\">\n                <path\n                    d=\"M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z\">\n                </path>\n            </svg>\n            <h3 class=\"my-2 ml-3 text-lg font-bold text-gray-800\">New content, more engagement</h3>\n        </div>\n\n        <p class=\"my-2 text-gray-600\">\n            Our AI will help you create engaging content that resonates\n            with your audience.\n        </p>\n    </div>\n\n</div>"
   }

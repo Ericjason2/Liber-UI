@@ -3,10 +3,10 @@
   "name": "gradient-marketing-hero",
   "type": "registry:ui",
   "title": "Gradient Marketing Hero",
-  "description": "Gradient Marketing Hero — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, call-to-action, footer).",
+  "description": "Gradient Marketing Hero — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "hero",
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-700 dark:to-indigo-700 py-20\">\n  <div class=\"container mx-auto\">\n    <div class=\"flex items-center justify-center\">\n      <div class=\"text-center text-white\">\n        <h1 class=\"mb-12 font-serif text-5xl font-bold\">\n          Supercharge <br class=\"md:hidden\" />\n          Your Marketing\n        </h1>\n        <p class=\"mb-14 text-2xl font- tracking-wide\">\n          Boost your brand awareness <br class=\"sm:hidden\" />\n          and reach new customers.\n        </p>\n        <a href=\"#\"\n          class=\"rounded-md bg-white px-6 py-4 text-lg font-semibold text-indigo-600 shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/80\">Get\n          Started</a>\n      </div>\n    </div>\n  </div>\n</div>"
   }

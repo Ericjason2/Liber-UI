@@ -3,10 +3,10 @@
   "name": "card-animate",
   "type": "registry:ui",
   "title": "Card animate",
-  "description": "Card animate — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, grid, footer).",
+  "description": "Card animate — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -20,31 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "grid",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<div class=\"relative p-8 overflow-hidden rounded-xl min-h-28 max-w-96 shadow h-fit w-full dark:bg-cool-950 dark:text-cool-100 transition-all duration-200 border border-cool-300 dark:border-cool-700 group hover:shadow\">\n  <!-- Efecto de círculo degradado como fondo -->\n  <div class=\"absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl\">\n    <div class=\"absolute w-20 h-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-full transform -translate-x-1/2 -translate-y-1/2 pointer-events-none mix-blend-soft-light transition-all duration-100\"\n     style=\"top: var(--mouse-y); left: var(--mouse-x);\"></div>\n  </div>\n\n  <!-- Contenido de la tarjeta -->\n  <h2 class=\"text-xl font-bold mb-2 relative\">Título de la tarjeta</h2>\n  <p class=\"text-gray-700 relative\">Este es el contenido de la tarjeta.</p>\n</div>\n\n<script>\n  document.querySelector('.group').addEventListener('mousemove', (e) => {\n    const card = e.currentTarget;\n    const rect = card.getBoundingClientRect();\n    const x = e.clientX - rect.left;\n    const y = e.clientY - rect.top;\n    card.style.setProperty('--mouse-x', `${x}px`);\n    card.style.setProperty('--mouse-y', `${y}px`);\n  });\n</script>"
   }

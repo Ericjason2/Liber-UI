@@ -3,10 +3,10 @@
   "name": "product-card-6",
   "type": "registry:ui",
   "title": "Product card",
-  "description": "Product card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Product card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"h-screen w-full flex items-center justify-center  bg-gray-200 dark:bg-gray-800\">\n  <!-- product card -->\n  <article class=\"max-w-sm w-full bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700\">\n    <div>\n      <img class=\"object-cover h-64 w-full\" src=\"https://images.unsplash.com/photo-1542291026-7eec264c27ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxzbmVha2Vyc3xlbnwwfDB8fHwxNzEyMjIzNDAyfDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Converse sneakers\" />\n    </div>\n\n    <div class=\"flex flex-col gap-1 mt-4 px-4\">\n      <h2 class=\"text-lg font-semibold text-gray-800 dark:text-gray-50\">Converse Sneakers</h2>\n      <span class=\"font-normal text-gray-600 dark:text-gray-300\">High Top (Lemon Yellow)</span>\n      <span class=\"font-semibold text-gray-800 dark:text-gray-50\">$60</span>\n    </div>\n\n    <div class=\"flex gap-4 mt-4 px-4\">\n      <span class=\"sr-only\">Colors available</span>\n\n      <button aria-label=\"Yellow\" class=\"p-1 border border-gray-200 dark:border-gray-500 rounded-full cursor-pointer bg-yellow-500 dark:bg-yellow-400\"></button>\n\n      <button aria-label=\"Red\" class=\"p-1 border border-gray-200 dark:border-gray-500 rounded-full cursor-pointer bg-red-500 dark:bg-red-400\"></button>\n\n      <button aria-label=\"Blue\" class=\"p-1 border border-gray-200 dark:border-gray-500 rounded-full cursor-pointer bg-blue-500 dark:bg-blue-400\"></button>\n\n      <button aria-label=\"Black\" class=\"p-1 border border-gray-200 dark:border-gray-500 rounded-full cursor-pointer bg-gray-800 dark:bg-gray-600\"></button>\n    </div>\n\n    <div class=\"mt-4 p-4 border-t border-gray-200 dark:border-gray-500\">\n      <button class=\"w-full flex justify-between items-center font-bold cursor-pointer hover:underline text-gray-800 dark:text-gray-50\">\n        <span class=\"text-base\">Add to Cart</span>\n        <svg class=\"h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 6v6m0 0v6m0-6h6m-6 0H6\" />\n        </svg>\n      </button>\n    </div>\n  </article>\n</div>"
   }

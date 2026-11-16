@@ -3,10 +3,10 @@
   "name": "button-with-hover-to-button-shadow",
   "type": "registry:ui",
   "title": "Button with hover to button shadow",
-  "description": "Button with hover to button shadow — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Button with hover to button shadow — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"h-screen w-full bg-[#262626] flex items-center justify-center\">\n  <button class=\"h-fit cursor-pointer py-2.5 px-4 rounded-full text-orange-500 border border-orange-500 hover:shadow-button-shadow\">\n    Zayed Hossain\n  </button>\n</div>"
   }

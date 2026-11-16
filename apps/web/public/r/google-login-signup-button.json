@@ -3,10 +3,10 @@
   "name": "google-login-signup-button",
   "type": "registry:ui",
   "title": "Google login/signup button",
-  "description": "Google login/signup button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Google login/signup button — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"flex items-center justify-center h-screen dark:bg-gray-800\">\r\n    <button class=\"px-4 py-2 border flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150\">\r\n        <img class=\"w-6 h-6\" src=\"https://www.svgrepo.com/show/475656/google-color.svg\" loading=\"lazy\" alt=\"google logo\">\r\n        <span>Login with Google</span>\r\n    </button>\r\n</div>"
   }

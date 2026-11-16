@@ -3,10 +3,10 @@
   "name": "card-profie",
   "type": "registry:ui",
   "title": "card profie",
-  "description": "card profie — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, profile, footer).",
+  "description": "card profie — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "profile"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "profile",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing"
+      "profile"
     ],
     "rawHtml": "<div>\n  <div class=\"flex justify-center items-center h-screen\">\n    <div class=\"w-1/2 shadow-xl rounded-2xl p-10 border\">\n      <div class=\"flex justify-around gap-11 items-center\">\n        <div>\n          <img src=\"https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMnx8cHJvZmlsZXxlbnwwfDB8fHwxNzA2NzQ5NjEyfDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"\" class=\"rounded-2xl\">\n        </div>\n        <div>\n          <h1 class=\" font-extrabold text-3xl\">Hi, I'm Aman</h1>\n          <p class=\" font-semibold text-sm\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nam\n            asperiores harum? Sunt totam ut aliquam facere, autem quo deleniti ipsa beatae perspiciatis debitis optio\n            repudiandae voluptatum, molestias eos iusto?</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
   }

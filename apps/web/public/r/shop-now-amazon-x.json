@@ -3,10 +3,10 @@
   "name": "shop-now-amazon-x",
   "type": "registry:ui",
   "title": "Shop Now Amazon x",
-  "description": "Shop Now Amazon x — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Shop Now Amazon x — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<!-- Main Product Showcase Section -->\n<section class=\"bg-gray-50 min-h-screen py-16 px-6\">\n  <!-- Hero -->\n  <div class=\"text-center mb-12\">\n    <h1 class=\"text-4xl md:text-5xl font-extrabold text-gray-900\">Explore Our Premium Gear</h1>\n    <p class=\"mt-4 text-lg text-gray-600 max-w-2xl mx-auto\">Top-rated tech and lifestyle essentials to power your day. Free shipping on all orders above $50.</p>\n    <div class=\"mt-6\">\n      <button class=\"bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800\">Shop Now</button>\n    </div>\n  </div>\n\n  <!-- Category Filters -->\n  <div class=\"flex flex-wrap justify-center gap-4 mb-10\">\n    <button class=\"bg-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-300\">All</button>\n    <button class=\"bg-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-300\">Headphones</button>\n    <button class=\"bg-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-300\">Shoes</button>\n    <button class=\"bg-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-300\">Watches</button>\n    <button class=\"bg-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-300\">Accessories</button>\n  </div>\n\n  <!-- Product Grid -->\n  <div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto\">\n    <!-- Product Card -->\n    <div class=\"bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden group\">\n      <div class=\"relative\">\n        <img src=\"https://plus.unsplash.com/premium_photo-1680346529160-549ad950bd1f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" alt=\"Product Image\" class=\"w-full h-60 object-cover group-hover:scale-105 transition-transform\" />\n        <span class=\"absolute top-3 right-3 bg-black text-white text-xs px-2 py-1 rounded\">NEW</span>\n      </div>\n      <div class=\"p-5\">\n        <h3 class=\"text-lg font-bold text-gray-900 mb-1\">Noise Cancelling Headphones</h3>\n        <p class=\"text-sm text-gray-500 mb-2\">30hr Battery · Bluetooth 5.3</p>\n        <div class=\"flex justify-between items-center mt-4\">\n          <span class=\"text-lg font-semibold text-green-600\">$129.00</span>\n          <button class=\"bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800\">Buy</button>\n        </div>\n      </div>\n    </div>\n\n    <!-- Duplicate Product Cards -->\n    <div class=\"bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden group\">\n      <div class=\"relative\">\n        <img src=\"https://images.unsplash.com/photo-1709258228137-19a8c193be39?q=80&w=2011&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" alt=\"Product Image\" class=\"w-full h-60 object-cover group-hover:scale-105 transition-transform\" />\n        <span class=\"absolute top-3 right-3 bg-red-600 text-white text-xs px-2 py-1 rounded\">SALE</span>\n      </div>\n      <div class=\"p-5\">\n        <h3 class=\"text-lg font-bold text-gray-900 mb-1\">Running Shoes Pro</h3>\n        <p class=\"text-sm text-gray-500 mb-2\">Lightweight · Breathable</p>\n        <div class=\"flex justify-between items-center mt-4\">\n          <span class=\"text-lg font-semibold text-green-600\">$89.99</span>\n          <button class=\"bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800\">Buy</button>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden group\">\n      <div class=\"relative\">\n        <img src=\"https://images.unsplash.com/photo-1718309602791-8f3cc83840b7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" alt=\"Product Image\" class=\"w-full h-60 object-cover group-hover:scale-105 transition-transform\" />\n      </div>\n      <div class=\"p-5\">\n        <h3 class=\"text-lg font-bold text-gray-900 mb-1\">Smart Fitness Watch</h3>\n        <p class=\"text-sm text-gray-500 mb-2\">Heart Rate · Sleep Tracking</p>\n        <div class=\"flex justify-between items-center mt-4\">\n          <span class=\"text-lg font-semibold text-green-600\">$149.00</span>\n          <button class=\"bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800\">Buy</button>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>"
   }

@@ -3,10 +3,10 @@
   "name": "cta-block",
   "type": "registry:ui",
   "title": "CTA block",
-  "description": "CTA block — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "CTA block — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<section class=\"h-auto bg-black w-full pt-12 md:pb-20 border-b border-[#23232C] p-3\">\n    <div class=\"max-w-6xl mx-auto md:text-center tails-relative\">\n        <h2 class=\"jakarta text-white font-bold text-xl md:px-0 px-10 md:text-3xl\">And many more features ✨</h2>\n        <p class=\"text-gray-400 mt-2 md:mt-5 md:px-0 px-10 md:text-2xl\">Try out the app for yourself to see them all!\n        </p>\n        <a href=\"#\"\n            class=\"inline-flex mt-12 justify-center md:mt-8 items-center w-full px-8 py-5 md:mb-6 text-xl font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-500 hover:to-indigo-700 sm:mb-0 md:w-auto hover:bg-indigo-600 md:rounded-full\">\n            <svg class=\"w-5 h-5 mr-2 fill-current\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n                <g fill=\"none\" stroke=\"none\">\n                    <path\n                        d=\"M6 12l5.485-5.485A12 12 0 0 1 19.971 3H21v1.029a12 12 0 0 1-3.515 8.486L12 18m-6-6l6 6m-6-6L3 9l.828-.828A4 4 0 0 1 6.657 7H11l-5 5zm6 6l3 3 .828-.828A4 4 0 0 0 17 17.343V13l-5 5zm-4.5-4.5l-2.379 2.379A7.242 7.242 0 0 0 3 21a7.243 7.243 0 0 0 5.121-2.121L10.5 16.5\"\n                        stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                    <path d=\"M16.778 7.916a.5.5 0 1 1-.556-.832.5.5 0 0 1 .556.832z\" fill=\"#212121\"\n                        stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                </g>\n            </svg>\n            <span>Try the App for FREE</span>\n        </a>\n    </div>\n</section>"
   }

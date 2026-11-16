@@ -3,10 +3,10 @@
   "name": "responsive-grid-layout-3",
   "type": "registry:ui",
   "title": "Responsive grid layout",
-  "description": "Responsive grid layout — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (grid, footer, header).",
+  "description": "Responsive grid layout — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "grid",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<div class=\"mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 p-4\">\r\n    <div class=\"bg-gray-100 p-4\">Item 1</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 2</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 3</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 4</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 5</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 6</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 7</div>\r\n    <div class=\"bg-gray-100 p-4\">Item 8</div>\r\n</div>"
   }

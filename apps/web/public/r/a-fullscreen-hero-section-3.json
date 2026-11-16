@@ -3,10 +3,10 @@
   "name": "a-fullscreen-hero-section-3",
   "type": "registry:ui",
   "title": "A Fullscreen Hero Section",
-  "description": "A Fullscreen Hero Section — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (landing-page, footer, header).",
+  "description": "A Fullscreen Hero Section — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "landing-page",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "landing-page"
     ],
     "rawHtml": "<div class=\"flex flex-wrap\">\r\n    <div class=\"w-full sm:w-8/12 mb-10\">\r\n      <div class=\"container mx-auto h-full sm:p-10\">\r\n        <nav class=\"flex px-4 justify-between items-center\">\r\n          <div class=\"text-4xl font-bold\">\r\n            Plant<span class=\"text-green-700\">.</span>\r\n          </div>\r\n          <div>\r\n            <img src=\"https://image.flaticon.com/icons/svg/497/497348.svg\" alt=\"\" class=\"w-8\">\r\n          </div>\r\n        </nav>\r\n        <header class=\"container px-4 lg:flex mt-10 items-center h-full lg:mt-0\">\r\n          <div class=\"w-full\">\r\n            <h1 class=\"text-4xl lg:text-6xl font-bold\">Find your <span class=\"text-green-700\">greeny</span> stuff for your room</h1>\r\n            <div class=\"w-20 h-2 bg-green-700 my-4\"></div>\r\n            <p class=\"text-xl mb-10\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maiores neque eaque ea odit placeat, tenetur illum distinctio nulla voluptatum a corrupti beatae tempora aperiam quia id aliquam possimus aut.</p>\r\n            <button class=\"bg-green-500 text-white text-2xl font-medium px-4 py-2 rounded shadow\">Learn More</button>\r\n          </div>\r\n        </header>\r\n      </div>\r\n    </div>\r\n    <img src=\"https://images.unsplash.com/photo-1611571969724-3987039ae55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMHx8b2ZmaWNlJTIwbGFtcHxlbnwwfDB8fHwxNzM3MDU2Nzc2fDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"Leafs\" class=\"w-full h-48 object-cover sm:h-screen sm:w-4/12\">\r\n  </div>"
   }

@@ -3,10 +3,10 @@
   "name": "hero-section-for-website-2",
   "type": "registry:ui",
   "title": "Hero section for website",
-  "description": "Hero section for website — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, footer, header).",
+  "description": "Hero section for website — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "hero",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "hero"
     ],
     "rawHtml": "<div class=\"flex h-screen justify-center items-center dark:bg-gray-800\">\n    <div class=\"text-center max-w-6xl mx-10\">\n        <p class=\"my-3 text-sm tracking-widest text-dark from-blue-600-500 uppercase\">We Are Netplatoon Ventures</p>\n        <h1 class=\"my-3 text-3xl font-bold tracking-tight text-gray-800 md:text-5xl dark:text-gray-100\">\n            The IT Department \n            You Wish You Had.\n        </h1>\n        <div>\n            <p class=\"max-w-2xl mx-auto my-2 text-base text-gray-500 md:leading-relaxed md:text-xl dark:text-gray-400\">\n                Introducing our latest service offering. Get started quickly and efficiently with our range of\n                solutions.\n                Designed to meet your needs using the latest technologies.\n            </p>\n        </div>\n        <div class=\"flex flex-col items-center justify-center gap-5 mt-6 md:flex-row\"><a\n                class=\"inline-block w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:bg-gradient-to-b dark:shadow-blue-900 shadow-blue-200 hover:shadow-2xl hover:shadow-blue-400 hover:-tranneutral-y-px \"\n                href=\"\">Schedule A Consultation\n            </a>\n            <a class=\"inline-block w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all bg-gray-700 dark:bg-white dark:text-gray-800 rounded-md shadow-xl sm:w-auto hover:bg-gray-900 hover:text-white shadow-neutral-300 dark:shadow-neutral-700 hover:shadow-2xl hover:shadow-neutral-400 hover:-tranneutral-y-px\"\n                href=\"\">See Our Services\n            </a>\n        </div>\n    </div>\n</div>"
   }

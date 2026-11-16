@@ -3,10 +3,10 @@
   "name": "tailwind-flex-hero",
   "type": "registry:ui",
   "title": "Tailwind flex Hero",
-  "description": "Tailwind flex Hero — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, hero, footer).",
+  "description": "Tailwind flex Hero — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "hero",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "hero"
     ],
     "rawHtml": "<div class=\"container mx-auto flex flex-col md:flex-row items-stretch justify-center gap-5 py-10\">\n  <div\n    class=\"relative flex md:flex-1 aspect-[1.08/1] overflow-hidden sm:[clip-path:polygon(40%_0,_100%_0,_60%_100%,_0_100%)] md:[clip-path:polygon(40%_0,_100%_0,_60%_100%,_0%_100%)] [&:not(:first-child)]:ml-[-13%]\">\n    <div class=\"w-full h-full\">\n      <a class=\"flex-1 cursor-pointer text-inherit no-underline outline-none outline-2 outline-transparent outline-offset-2 transition duration-150 ease-out\"\n        href=\"#\">\n        <img\n            alt=\"data.name\"\n            src=\"https://images.unsplash.com/photo-1761839256951-10c4468c3621?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n            class=\"block w-full h-full hover:scale-105 object-cover brightness-50 hover:brightness-100 transition-[filter,transform] duration-[200ms,750ms] ease-in-out origin-center will-change-[transform,filter] [backface-visibility:hidden] [transform:translateZ(0)]\"\n          />\n        <div class=\"absolute left-[50%] top-[50%] z-[2] -translate-x-1/2 -translate-y-1/2\">\n          <p class=\"chakra-text css-1vxj0b9\">\n            <span class=\"text-white hover-color-teal text-3xl css-1vxj0b9\">\n                Photo Name\n              </span>\n          </p>\n        </div>\n      </a>\n    </div>\n  </div>\n  <div\n    class=\"relative flex md:flex-1 aspect-[1.08/1] overflow-hidden sm:[clip-path:polygon(40%_0,_100%_0,_60%_100%,_0_100%)] md:[clip-path:polygon(40%_0,_100%_0,_60%_100%,_0%_100%)] [&:not(:first-child)]:ml-[-13%]\">\n    <div class=\"w-full h-full\">\n      <a class=\"flex-1 cursor-pointer text-inherit no-underline outline-none outline-2 outline-transparent outline-offset-2 transition duration-150 ease-out\"\n        href=\"#\">\n        <img\n            alt=\"data.name\"\n            src=\"https://images.unsplash.com/photo-1761839258045-6ef373ab82a7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n            class=\"block w-full h-full hover:scale-105 object-cover brightness-50 hover:brightness-100 transition-[filter,transform] duration-[200ms,750ms] ease-in-out origin-center will-change-[transform,filter] [backface-visibility:hidden] [transform:translateZ(0)]\"\n          />\n        <div class=\"absolute left-[50%] top-[50%] z-[2] -translate-x-1/2 -translate-y-1/2\">\n          <p class=\"chakra-text css-1vxj0b9\">\n            <span class=\"text-white hover-color-teal text-3xl css-1vxj0b9\">\n                Photo Name\n              </span>\n          </p>\n        </div>\n      </a>\n    </div>\n  </div>\n  <div\n    class=\"relative flex md:flex-1 aspect-[1.08/1] overflow-hidden sm:[clip-path:polygon(40%_0,_100%_0,_60%_100%,_0_100%)] md:[clip-path:polygon(40%_0,_100%_0,_60%_100%,_0%_100%)] [&:not(:first-child)]:ml-[-13%]\">\n    <div class=\"w-full h-full\">\n      <a class=\"flex-1 cursor-pointer text-inherit no-underline outline-none outline-2 outline-transparent outline-offset-2 transition duration-150 ease-out\"\n        href=\"#\">\n        <img\n            alt=\"data.name\"\n            src=\"https://images.unsplash.com/photo-1768326205103-0ad658551cea?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n            class=\"block w-full h-full hover:scale-105 object-cover brightness-50 hover:brightness-100 transition-[filter,transform] duration-[200ms,750ms] ease-in-out origin-center will-change-[transform,filter] [backface-visibility:hidden] [transform:translateZ(0)]\"\n          />\n        <div class=\"absolute left-[50%] top-[50%] z-[2] -translate-x-1/2 -translate-y-1/2\">\n          <p class=\"chakra-text css-1vxj0b9\">\n            <span class=\"text-white hover-color-teal text-3xl css-1vxj0b9\">\n                Photo Name\n              </span>\n          </p>\n        </div>\n      </a>\n    </div>\n  </div>\n  <div\n    class=\"relative flex md:flex-1 aspect-[1.08/1] overflow-hidden sm:[clip-path:polygon(40%_0,_100%_0,_60%_100%,_0_100%)] md:[clip-path:polygon(40%_0,_100%_0,_60%_100%,_0%_100%)] [&:not(:first-child)]:ml-[-13%]\">\n    <div class=\"w-full h-full\">\n      <a class=\"flex-1 cursor-pointer text-inherit no-underline outline-none outline-2 outline-transparent outline-offset-2 transition duration-150 ease-out\"\n        href=\"#\">\n        <img\n            alt=\"data.name\"\n            src=\"https://images.unsplash.com/photo-1767719243883-5d6e8d61c403?q=80&w=654&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n            class=\"block w-full h-full hover:scale-105 object-cover brightness-50 hover:brightness-100 transition-[filter,transform] duration-[200ms,750ms] ease-in-out origin-center will-change-[transform,filter] [backface-visibility:hidden] [transform:translateZ(0)]\"\n          />\n        <div class=\"absolute left-[50%] top-[50%] z-[2] -translate-x-1/2 -translate-y-1/2\">\n          <p class=\"chakra-text css-1vxj0b9\">\n            <span class=\"text-white hover-color-teal text-3xl css-1vxj0b9\">\n                Photo Name\n              </span>\n          </p>\n        </div>\n      </a>\n    </div>\n  </div>\n</div>"
   }

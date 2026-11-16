@@ -3,10 +3,10 @@
   "name": "navigation-bar",
   "type": "registry:ui",
   "title": "Navigation bar",
-  "description": "Navigation bar — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (navbar, footer, header).",
+  "description": "Navigation bar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "navbar"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "navbar",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "navbar"
     ],
     "rawHtml": "<navbar>\n      <div class='w-full py-3 border-b'>\n\n        <div class='flex justify-between px-20 items-center font-semibold'>\n          <div>\n            <h1 class=\"text-2xl\">LOGO</h1>\n          </div>\n          <div class='flex xl:gap-10 md:gap-8  gap-2'>\n            <a href=\"\">Home</a>\n            <a href=\"\">Work</a>\n            <a href=\"\">About</a>\n            <a href=\"\">Services</a>\n            <a href=\"\">Testimonial</a>\n          </div>\n          <div>\n            <button class='py-2 px-6 bg-black text-white rounded-3xl font-semibold'>Contact</button>\n          </div>\n        </div>\n        \n      </div>\n    </navbar>"
   }

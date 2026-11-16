@@ -3,10 +3,10 @@
   "name": "cta-banner-2",
   "type": "registry:ui",
   "title": "CTA banner",
-  "description": "CTA banner — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "CTA banner — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"p-4 max-w-xl rounded-lg border-l-4 border-teal-400 bg-gradient-to-r from-teal-100/50 to-white\">\n  <p class=\"text-xl font-semibold text-gray-800\">\n    Have a Custom Design in Mind?\n  </p>\n  <p class=\"mt-1 text-gray-700\">\n    Bring your idea to us, and we will work on it to create something special just for you.\n  </p>\n  <div class=\"mt-4\">\n    <a href=\"/\"\n      class=\"inline-block px-4 py-2 font-medium text-white transition duration-300 rounded-md bg-red-500 hover:bg-red-600\">\n      Submit Your Idea\n    </a>\n  </div>\n</div>"
   }

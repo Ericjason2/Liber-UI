@@ -3,10 +3,10 @@
   "name": "button",
   "type": "registry:ui",
   "title": "Button",
-  "description": "Button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<button class=\"px-10 py-4 rounded-full cursor-pointer border-0 bg-white shadow-sm uppercase text-sm tracking-wider transition-all duration-500 ease-in-out hover:tracking-widest hover:bg-[#5d18dc] hover:text-white hover:shadow-[0_7px_29px_0_rgba(93,24,220,0.5)] active:tracking-widest active:bg-[#5d18dc] active:text-white active:shadow-none active:translate-y-2.5 active:duration-100\">\n    Button Text\n</button>"
   }

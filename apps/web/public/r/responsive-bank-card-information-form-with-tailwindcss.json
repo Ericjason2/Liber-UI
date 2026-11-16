@@ -3,10 +3,10 @@
   "name": "responsive-bank-card-information-form-with-tailwindcss",
   "type": "registry:ui",
   "title": "Responsive Bank Card Information Form with TailwindCSS",
-  "description": "Responsive Bank Card Information Form with TailwindCSS — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Responsive Bank Card Information Form with TailwindCSS — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"flex items-center justify-center min-h-screen \">\n   <div class=\"bg-white p-6 rounded-2xl shadow-lg max-w-md w-full\">\n    <h1 class=\"text-2xl font-semibold mb-4 text-gray-800\">Enter Card Information</h1>\n    <form action=\"#\" method=\"POST\">\n      <!-- Cardholder Name -->\n      <div class=\"mb-4\">\n        <label for=\"cardholder-name\" class=\"block text-sm font-medium text-gray-700\">Cardholder Name</label>\n        <input\n          type=\"text\"\n          id=\"cardholder-name\"\n          name=\"cardholder-name\"\n          placeholder=\"John Doe\"\n          class=\"mt-1 block w-full p-2 rounded-lg border-gray-300 focus:ring-blue-500 focus:border-blue-500 shadow-sm\"\n          required\n        />\n      </div>\n\n      <!-- Card Number -->\n      <div class=\"mb-4\">\n        <label for=\"card-number\" class=\"block text-sm font-medium text-gray-700\">Card Number</label>\n        <input\n          type=\"text\"\n          id=\"card-number\"\n          name=\"card-number\"\n          placeholder=\"1234 5678 9012 3456\"\n          class=\"mt-1 block w-full p-2 rounded-lg border-gray-300 focus:ring-blue-500 focus:border-blue-500 shadow-sm\"\n          required\n          maxlength=\"19\"\n        />\n      </div>\n\n      <!-- Expiry Date & CVV -->\n      <div class=\"flex gap-4\">\n        <!-- Expiry Date -->\n        <div class=\"mb-4 w-1/2\">\n          <label for=\"expiry-date\" class=\"block text-sm font-medium text-gray-700\">Expiry Date</label>\n          <input\n            type=\"text\"\n            id=\"expiry-date\"\n            name=\"expiry-date\"\n            placeholder=\"MM/YY\"\n            class=\"mt-1 block w-full p-2 rounded-lg border-gray-300 focus:ring-blue-500 focus:border-blue-500 shadow-sm\"\n            required\n            maxlength=\"5\"\n          />\n        </div>\n\n        <!-- CVV -->\n        <div class=\"mb-4 w-1/2\">\n          <label for=\"cvv\" class=\"block text-sm font-medium text-gray-700\">CVV</label>\n          <input\n            type=\"text\"\n            id=\"cvv\"\n            name=\"cvv\"\n            placeholder=\"123\"\n            class=\"mt-1 block w-full p-2 rounded-lg border-gray-300 focus:ring-blue-500 focus:border-blue-500 shadow-sm\"\n            required\n            maxlength=\"3\"\n          />\n        </div>\n      </div>\n\n      <!-- Submit Button -->\n      <div>\n        <button\n          type=\"submit\"\n          class=\"w-full bg-blue-600 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-700 transition\"\n        >\n          Submit\n        </button>\n      </div>\n    </form>\n  </div>\n</div>"
   }

@@ -3,10 +3,10 @@
   "name": "pricing-table-6",
   "type": "registry:ui",
   "title": "Pricing Table",
-  "description": "Pricing Table — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (pricing, footer, header).",
+  "description": "Pricing Table — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "pricing"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "pricing",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "profile"
+      "pricing"
     ],
     "rawHtml": "<div class=\"bg-gray-100 py-12\">\n  <div class=\"max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8\">\n    <div class=\"flex flex-wrap -mx-4\">\n      <!-- Pricing Table 1 -->\n      <div class=\"w-full sm:w-1/2 lg:w-1/3 px-4 mb-8\">\n        <div class=\"bg-white p-6 rounded-lg shadow-lg\">\n          <h2 class=\"text-2xl font-semibold text-gray-800\">Basic Plan</h2>\n          <div class=\"mt-4\">\n            <span class=\"text-5xl font-bold text-gray-900\">$19</span>\n            <span class=\"text-gray-600\">/month</span>\n          </div>\n          <ul class=\"mt-6 space-y-2\">\n            <li class=\"flex items-center\">\n              <svg class=\"h-6 w-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>\n              Unlimited Access\n            </li>\n            <li class=\"flex items-center\">\n              <svg class=\"h-6 w-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>\n              24/7 Customer Support\n            </li>\n            <li class=\"flex items-center\">\n              <svg class=\"h-6 w-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>\n              Premium Features\n            </li>\n          </ul>\n          <div class=\"mt-8\">\n            <a href=\"#\" class=\"block w-full bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-center py-2 rounded-lg transition duration-300 ease-in-out transform hover:scale-105\">Get Started</a>\n          </div>\n        </div>\n      </div>\n      \n      <!-- Pricing Table 2 -->\n      <div class=\"w-full sm:w-1/2 lg:w-1/3 px-4 mb-8\">\n        <div class=\"bg-white p-6 rounded-lg shadow-lg\">\n          <h2 class=\"text-2xl font-semibold text-gray-800\">Pro Plan</h2>\n          <div class=\"mt-4\">\n            <span class=\"text-5xl font-bold text-gray-900\">$39</span>\n            <span class=\"text-gray-600\">/month</span>\n          </div>\n          <ul class=\"mt-6 space-y-2\">\n            <li class=\"flex items-center\">\n              <svg class=\"h-6 w-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>\n              Unlimited Access\n            </li>\n            <li class=\"flex items-center\">\n              <svg class=\"h-6 w-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>\n              24/7 Customer Support\n            </li>\n            <li class=\"flex items-center\">\n              <svg class=\"h-6 w-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>\n              Premium Features\n            </li>\n          </ul>\n          <div class=\"mt-8\">\n            <a href=\"#\" class=\"block w-full bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-center py-2 rounded-lg transition duration-300 ease-in-out transform hover:scale-105\">Get Started</a>\n          </div>\n        </div>\n      </div>\n\n      <!-- Pricing Table 3 -->\n      <div class=\"w-full sm:w-1/2 lg:w-1/3 px-4 mb-8\">\n        <div class=\"bg-white p-6 rounded-lg shadow-lg\">\n          <h2 class=\"text-2xl font-semibold text-gray-800\">Premium Plan</h2>\n          <div class=\"mt-4\">\n            <span class=\"text-5xl font-bold text-gray-900\">$79</span>\n            <span class=\"text-gray-600\">/month</span>\n          </div>\n          <ul class=\"mt-6 space-y-2\">\n            <li class=\"flex items-center\">\n              <svg class=\"h-6 w-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>\n              Unlimited Access\n            </li>\n            <li class=\"flex items-center\">\n              <svg class=\"h-6 w-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>\n              24/7 Customer Support\n            </li>\n            <li class=\"flex items-center\">\n              <svg class=\"h-6 w-6 text-green-500 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path></svg>\n              Premium Features\n            </li>\n          </ul>\n          <div class=\"mt-8\">\n            <a href=\"#\" class=\"block w-full bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-center py-2 rounded-lg transition duration-300 ease-in-out transform hover:scale-105\">Get Started</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
   }

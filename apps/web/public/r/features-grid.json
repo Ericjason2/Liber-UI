@@ -3,10 +3,10 @@
   "name": "features-grid",
   "type": "registry:ui",
   "title": "Features grid",
-  "description": "Features grid — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, grid, footer).",
+  "description": "Features grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -20,31 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "grid",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<section class=\"container p-6 mx-auto space-y-3 dark:bg-gray-800 dark:text-white\">\r\n\r\n    <h4 class=\"text-xl font-bold text-gray-700 capitalize dark:text-gray-300 md:text-3xl text-center\">⚒️ More Tools 🛠️</h4>\r\n    <p class=\"text-center dark:text-gray-400\">Tools that will help you get things done in less time.</p>\r\n\r\n    <div class=\"flex items-center justify-center\">\r\n        <div class=\"grid gap-8 my-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4\">\r\n            <!-- cards -->\r\n            <div class=\"w-full max-w-xs text-center\">\r\n\r\n                <a href=\"/\">\r\n                    <div\r\n                        class=\"object-cover object-center w-full h-48 mx-auto rounded-lg bg-blue-100 border-4 border-blue-200 dark:bg-gray-900 dark:border-gray-600\">\r\n                        <div class=\"py-16 px-4\">\r\n                            <h5 class=\"text-lg font-bold t dark:text-white\">Open Bulk URL</h5>\r\n                            <span class=\"mt-1 font-medium dark:text-gray-400\">In new tab/windows</span>\r\n                        </div>\r\n                    </div>\r\n                </a>\r\n            </div>\r\n\r\n            <div class=\"w-full max-w-xs text-center\">\r\n                <a href=\"\">\r\n                    <div\r\n                        class=\"object-cover object-center w-full h-48 mx-auto rounded-lg bg-blue-100 border-4 border-blue-200 dark:bg-gray-900 dark:border-gray-600\">\r\n                        <div class=\"py-16 px-4\">\r\n                            <h5 class=\"text-lg font-bold dark:text-white\">Random Websites</h5>\r\n                            <span class=\"mt-1 font-medium dark:text-gray-400\">Random but Useful websites\r\n                                    collection</span>\r\n\r\n                        </div>\r\n                    </div>\r\n                </a>\r\n            </div>\r\n\r\n            <div class=\"w-full max-w-xs text-center\">\r\n                <a href=\"\">\r\n                    <div\r\n                        class=\"object-cover object-center w-full h-48 mx-auto rounded-lg bg-blue-100 border-4 border-blue-200 dark:bg-gray-900 dark:border-gray-600\">\r\n                        <div class=\"py-16 px-4\">\r\n                            <h5 class=\"text-lg font-bold dark:text-white\">Extract URL from text</h5>\r\n                            <span class=\"mt-1 font-medium dark:text-gray-400\">Easily extract URL in Bulk</span>\r\n                        </div>\r\n                    </div>\r\n                </a>\r\n            </div>\r\n\r\n\r\n            <div class=\"w-full max-w-xs text-center\">\r\n                <a href=\"\">\r\n                    <div\r\n                        class=\"object-cover object-center w-full h-48 mx-auto rounded-lg bg-blue-100 border-4 border-blue-200 dark:bg-gray-900 dark:border-gray-600\">\r\n                        <div class=\"py-16 px-4\">\r\n                            <h5 class=\"text-lg font-bold dark:text-white\">Auto Reload Websites</h5>\r\n                            <span class=\"mt-1 font-medium dark:text-gray-400\">Useful websites collection</span>\r\n                        </div>\r\n                    </div>\r\n                </a>\r\n            </div>\r\n\r\n\r\n            <div class=\"w-full max-w-xs text-center\">\r\n                <a href=\"#\">\r\n                    <div\r\n                        class=\"object-cover object-center w-full h-48 mx-auto rounded-lg bg-gray-100 border-4 border-gray-200 dark:bg-gray-900 dark:border-gray-600\">\r\n                        <div class=\"py-16 px-4\">\r\n                            <h5 class=\"text-lg font-bold dark:text-white\">Coming Soon</h5>\r\n                            <span class=\"mt-1 font-medium dark:text-gray-400\">More tools</span>\r\n                        </div>\r\n                    </div>\r\n                </a>\r\n            </div>\r\n\r\n\r\n        </div>\r\n    </div>\r\n</section>"
   }

@@ -3,10 +3,10 @@
   "name": "blog-card-2",
   "type": "registry:ui",
   "title": "Blog Card",
-  "description": "Blog Card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Blog Card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"bg-gray-200 dark:bg-gray-800 flex items-center p-8\">\n    <div class=\"py-8 px-4 mx-auto max-w-screen-xl h-screen lg:py-16 lg:px-6\">\n        <!-- blog -->\n        <div class=\"bg-white w-96 p-4 border-2 border-gray-300 dark:border-gray-500 shadow-lg rounded-xl dark:bg-slate-700\">\n            <!-- image wrapper -->\n            <div>\n                <a href=\"#\">\n                    <img class=\"rounded-lg\" src=\"https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5fGVufDB8MHx8fDE3MTk1OTg4Njd8MA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"image\" />\n                </a>\n            </div>\n            <!-- image wrapper end -->\n            <!-- tag -->\n            <div class=\"capitalize text-purple-900 font-semibold my-4 bg-purple-200 w-fit px-3 rounded-lg\">\n                <p>article</p>\n            </div>\n            <!-- tag end -->\n            <!-- article heading -->\n            <div class=\"text-2xl font-bold my-2 dark:text-white\">\n                <a href=\"#\">\n                    <h2>Getting started with tailwind</h2>\n                </a>\n            </div>\n            <!-- article heading end -->\n            <!-- article text -->\n            <div class=\"dark:text-gray-400\">\n                <p>Getting started with Tailwind CSS is easy: install it via npm, configure your settings, and start building responsive, utility-first designs with minimal custom CSS.</p>\n            </div>\n            <!-- article text end -->\n            <!-- blogger -->\n            <div class=\"flex items-cente\">\n                <!-- blogger img -->\n                <div class=\"mt-4\">\n                    <img class=\"w-12 h-12 object-cover rounded-full\" src=\"https://images.unsplash.com/photo-1624188327913-e0c59aaaa3ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxibGFjayUyMG1hbnxlbnwwfDB8fHwxNzE5NjAxMzQ2fDA&ixlib=rb-4.0.3&q=80&w=1080\" alt=\"image\" />\n                </div>\n                <!-- blogger img end -->\n                <!-- blogger details -->\n                <div class=\"block mt-3.5\">\n                    <!-- blogger name -->\n                    <div class=\"capitalize text-lg font-semibold pl-4 dark:text-white\">\n                        <h3>robert chunga</h3>\n                    </div>\n                    <!-- blogger name end -->\n                    <!-- blog date -->\n                    <div class=\"capitalize text-sm text-gray-400 pl-4\">\n                        <p>Aug 15, 2021 · 16 min read</p>\n                    </div>\n                    <!-- blog date end -->\n                </div>\n                <!-- blogger details end -->\n            </div>\n            <!-- blogger end -->\n        </div>\n        <!-- blog end -->\n    </div>\n</div>"
   }

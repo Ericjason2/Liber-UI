@@ -3,10 +3,10 @@
   "name": "page-puppeteer",
   "type": "registry:ui",
   "title": "Page puppeteer",
-  "description": "Page puppeteer — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (profile, footer, header).",
+  "description": "Page puppeteer — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "profile"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "profile",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing"
+      "profile"
     ],
     "rawHtml": "<div class=\"flex flex-col\">\n  <div class=\"flex items-center justify-between bg-slate-200 p-4\">\n    <div class=\"flex items-center space-x-4\">\n      <span>Ini ikon</span>\n      <span class=\"font-bold\">REPORT</span>\n    </div>\n  </div>\n</div>"
   }

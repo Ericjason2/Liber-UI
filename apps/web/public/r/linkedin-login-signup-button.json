@@ -3,10 +3,10 @@
   "name": "linkedin-login-signup-button",
   "type": "registry:ui",
   "title": "Linkedin login/signup button",
-  "description": "Linkedin login/signup button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Linkedin login/signup button — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<button\r\n    class=\"px-4 py-2 border flex gap-2 border-slate-200 rounded-lg text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150\">\r\n    <img class=\"w-6 h-6\" src=\"https://www.svgrepo.com/show/475661/linkedin-color.svg\" loading=\"lazy\" alt=\"google logo\">\r\n    <span class=\"pt-0.5\">Login with Linkedin</span>\r\n</button>"
   }

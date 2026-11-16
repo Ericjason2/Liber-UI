@@ -3,10 +3,10 @@
   "name": "imdb-score-and-votes-box",
   "type": "registry:ui",
   "title": "IMDB score and votes box",
-  "description": "IMDB score and votes box — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, button, footer).",
+  "description": "IMDB score and votes box — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "button",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"flex flex-col items-center\">\n<div class=\"imdb-box w-20\">\n  <div class=\"flex flex-col border rounded-md p-1 bg-yellow-400 w-full\">\n      <div class=\"imdb-score text-3xl text-center font-bold\">4.7</div>\n      <div class=\"imdb-title text-center\">IMDb</div>\n      <div class=\"imdb-voted text-xs\">45.7K votes</div>\n  </div>\n</div>\n<div class=\"text-xs text-gray-400 mt-5\">\nUsed in project <a class=\"font-bold\" href=\"https://tvfilmai.lt\" target=\"_blank\">tvfilmai.lt</a>\n</div>\n</div>"
   }

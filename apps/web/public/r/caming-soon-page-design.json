@@ -3,10 +3,10 @@
   "name": "caming-soon-page-design",
   "type": "registry:ui",
   "title": "Caming Soon page design",
-  "description": "Caming Soon page design — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (landing-page, footer, header).",
+  "description": "Caming Soon page design — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "landing-page"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "landing-page",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "landing-page"
     ],
     "rawHtml": "<div\n    class=\"w-full h-screen bg-gradient-to-bl from-teal-400 to-blue-500 flex flex-col justify-center items-center text-white\">\n    <h1 class=\"text-5xl\">We are <b>Almost</b> there!</h1>\n    <p>Stay tuned for something amazing!!!</p>\n\n    <div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-10 lg:mt-20\">\n\n        <div class=\"bg-transparent border text-center\">\n            <p class=\"text-5xl px-10 py-5\">336</p>\n            <hr>\n            <p class=\"px-10 py-5\">days</p>\n        </div>\n\n        <div class=\"bg-transparent border text-center\">\n            <p class=\"text-5xl px-10 py-5\">03</p>\n            <hr>\n            <p class=\"px-10 py-5\">hours</p>\n        </div>\n\n        <div class=\"bg-transparent border text-center\">\n            <p class=\"text-5xl px-10 py-5\">35</p>\n            <hr>\n            <p class=\"px-10 py-5\">mins</p>\n        </div>\n        <div class=\"bg-transparent border text-center\">\n            <p class=\"text-5xl px-10 py-5\">01</p>\n            <hr>\n            <p class=\"px-10 py-5\">secs</p>\n        </div>\n    </div>\n    \n</div>"
   }

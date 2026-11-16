@@ -3,10 +3,10 @@
   "name": "hero-section-23",
   "type": "registry:ui",
   "title": "hero section",
-  "description": "hero section — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, footer, header).",
+  "description": "hero section — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "hero",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "hero"
     ],
     "rawHtml": "<section class=\"px-6 py-20 md:py-32 bg-white dark:bg-gray-900\">\n    <div class=\"max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-10 md:space-y-0\">\n      \n      <!-- Text Content -->\n      <div class=\"md:w-1/2\">\n        <h1 class=\"text-4xl md:text-6xl font-bold mb-6 leading-tight\">\n          Step Into Style <br class=\"hidden md:block\" />\n          with <span class=\"text-orange-500\">Classic Sneakers</span>\n        </h1>\n        <p class=\"text-lg mb-8 text-gray-600 dark:text-gray-300\">\n          Discover comfort, quality, and elegance in every step. Perfect for every occasion.\n        </p>\n        <a href=\"#\" class=\"bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition duration-200\">\n          Shop Now\n        </a>\n      </div>\n\n      <!-- Hero Image -->\n      <div class=\"md:w-1/2\">\n        <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzJOBc888horStIw5v_cpA6OOGG39NMeDgEg&s\" alt=\"Hero Image\" class=\"rounded-lg shadow-lg w-full\" />\n      </div>\n    </div>\n  </section>"
   }

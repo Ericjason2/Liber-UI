@@ -3,10 +3,10 @@
   "name": "cta-card-with-gradient-border",
   "type": "registry:ui",
   "title": "CTA card with gradient border",
-  "description": "CTA card with gradient border — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "CTA card with gradient border — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"relative mx-auto max-w-5xl mt-20\">\r\n    <div class=\"rounded-xl p-1\"\r\n        style=\"background-image: linear-gradient(to right bottom, rgb(79, 70, 229) 0%, rgb(165, 56, 164) 50%, rgb(220, 38, 38) 100%);\">\r\n        <div class=\"rounded-lg bg-black/80 backdrop-blur\">\r\n            <div class=\"flex w-full flex-wrap items-center justify-between gap-4 px-8 py-10 sm:px-16 lg:flex-nowrap\">\r\n                <div class=\"lg:max-w-xl\">\r\n                    <h2\r\n                        class=\"block w-full pb-2 bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl\">\r\n                        Enhancing Productivity with Artificial Intelligence \r\n                        </h2>\r\n                    <p class=\"my-4 bg-transparent font-medium leading-relaxed tracking-wide text-gray-400\">\r\n                        Natural Language Processing (NLP): The SmartAI Assistant understands and interprets natural\r\n                        language commands, allowing users to communicate with it effortlessly.\r\n                    </p>\r\n                </div>\r\n                <div class=\"flex flex-wrap items-center justify-center gap-6 \">\r\n                    <button class=\"bg-violet-600 text-white button-text flex items-center justify-center whitespace-nowrap rounded-md transition-all duration-300 px-8 py-3 text-xs sm:text-sm\">Get Started</button>\r\n                    <button class=\"flex items-center justify-center whitespace-nowrap rounded-md border border-zinc-700 bg-zinc-900 text-center text-white backdrop-blur transition-all hover:bg-zinc-800 px-8 py-3 text-xs sm:text-sm\">Learn More</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
   }

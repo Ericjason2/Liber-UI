@@ -3,10 +3,10 @@
   "name": "hero-section-with-bold-heading",
   "type": "registry:ui",
   "title": "Hero section with bold heading",
-  "description": "Hero section with bold heading — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, footer, header).",
+  "description": "Hero section with bold heading — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "hero",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "hero"
     ],
     "rawHtml": "<div class=\"xl:max-w-screen-xl pt-6 md:pt-12 pb-6 lg:pb-10 mx-auto px-6 sm:px-6 md:px-8 lg:px-12 xl:pt-24\">\n    <h1 class=\"text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold mb-6 text-gray-900\">\n        Eco-Friendly Reusable Silicone Food Storage Bags\n    </h1>\n    <div class=\"prose prose-lg lg:prose-xl xl:prose-2xl\">\n        These reusable silicone food storage bags are a must-have for\n        anyone looking to reduce their environmental impact and save money in the long run.\n    </div>\n    <div class=\"flex gap-4 flex-wrap my-4 md:mt-8\">\n        <a href=\"#\"\n            class=\"bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-150 text-base text-white px-4 lg:px-8 py-4 inline-block font-bold rounded-md shadow-xl\">Start\n            Browse\n        </a>\n\n        <a href=\"\"\n            class=\"bg-white hover:bg-yellow-200 text-base text-indigo-600 px-4 lg:px-8 py-4 inline-block font-bold rounded-md shadow-xl transition ease-in-out duration-150\">\n            Our impact\n        </a>\n    </div>\n    <a href=\"\" class=\"font-semibold mt-6 inline-block text-lg lg:text-xl text-indigo-600 hover:underline\"><span\n            class=\"hidden sm:inline\">Discover our key features. »</span>\n        <span class=\"inline sm:hidden\">Learn more »</span>\n    </a>\n</div>"
   }

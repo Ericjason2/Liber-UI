@@ -3,10 +3,10 @@
   "name": "clean-cta",
   "type": "registry:ui",
   "title": "Clean CTA",
-  "description": "Clean CTA — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "Clean CTA — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"bg-red-500 py-12\">\n    <div class=\"max-w-5xl mx-auto px-4 sm:px-6 lg:px-8\">\n        <h2 class=\"text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl\">\n            Are you panicking yet?\n        </h2>\n        <p class=\"mt-6 text-xl text-white max-w-3xl\">\n            Don't worry, we're here to help. Contact us now to get the support and guidance you need to get through this\n            crisis.\n        </p>\n        <div class=\"mt-10\">\n            <a href=\"#\"\n                class=\"inline-block bg-white py-3 px-8 border border-transparent rounded-md text-base font-medium text-red-500 hover:bg-gray-100 hover:text-red-600\">\n                Contact Us\n            </a>\n        </div>\n    </div>\n</div>"
   }

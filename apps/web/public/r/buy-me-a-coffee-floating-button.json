@@ -3,10 +3,10 @@
   "name": "buy-me-a-coffee-floating-button",
   "type": "registry:ui",
   "title": "Buy me a coffee floating button",
-  "description": "Buy me a coffee floating button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Buy me a coffee floating button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"fixed bottom-6 right-6\">\n    <a href=\"https://www.buymeacoffee.com/yourusername\" target=\"_blank\" rel=\"noopener noreferrer\"\n        class=\"bg-yellow-500 text-white font-medium rounded-md px-4 py-2 flex items-center justify-center hover:bg-yellow-600 transition duration-300 ease-in-out shadow-lg\">\n        <span class=\"text-lg mr-2\">☕</span>\n        Buy me a coffee\n    </a>\n</div>"
   }

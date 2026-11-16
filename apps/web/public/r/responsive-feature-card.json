@@ -3,10 +3,10 @@
   "name": "responsive-feature-card",
   "type": "registry:ui",
   "title": "Responsive Feature Card",
-  "description": "Responsive Feature Card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, grid, footer).",
+  "description": "Responsive Feature Card — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -20,31 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "grid",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4 md:p-12 w-full p-4\">\n\t<div class=\"p-6 bg-gray-100\">\n\t\t<p class=\"text-center text-4xl\">\n\t\t\t😁\n\t\t</p>\n\n\t\t<h2 class=\"font-semibold text-lg text-center text-gray-800 mt-2\">\n\t\t\tYour Feature Here\n\t\t</h2>\n\n\t\t<p class=\"mt-2 text-gray-800 text-center\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias excepturi fuga, laudantium molestias\n\t\t\tnesciunt tempore.\n\t\t</p>\n\t</div>\n\t<div class=\"p-6 bg-gray-100\">\n\t\t<p class=\"text-center text-4xl\">\n\t\t\t🤩\n\t\t</p>\n\n\t\t<h2 class=\"font-semibold text-lg text-center text-gray-800 mt-2\">\n\t\t\tYour Feature Here\n\t\t</h2>\n\n\t\t<p class=\"mt-2 text-gray-800 text-center\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias excepturi fuga, laudantium molestias\n\t\t\tnesciunt tempore.\n\t\t</p>\n\t</div>\n\t<div class=\"p-6 bg-gray-100\">\n\t\t<p class=\"text-center text-4xl\">\n\t\t\t😎\n\t\t</p>\n\n\t\t<h2 class=\"font-semibold text-lg text-center text-gray-800 mt-2\">\n\t\t\tYour Feature Here\n\t\t</h2>\n\n\t\t<p class=\"mt-2 text-gray-800 text-center\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias excepturi fuga, laudantium molestias\n\t\t\tnesciunt tempore.\n\t\t</p>\n\t</div>\n\t<div class=\"p-6 bg-gray-100\">\n\t\t<p class=\"text-center text-4xl\">\n\t\t\t🥰\n\t\t</p>\n\n\t\t<h2 class=\"font-semibold text-lg text-center text-gray-800 mt-2\">\n\t\t\tYour Feature Here\n\t\t</h2>\n\n\t\t<p class=\"mt-2 text-gray-800 text-center\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias excepturi fuga, laudantium molestias\n\t\t\tnesciunt tempore.\n\t\t</p>\n\t</div>\n</div>"
   }

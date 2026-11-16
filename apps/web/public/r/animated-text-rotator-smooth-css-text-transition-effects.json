@@ -3,10 +3,10 @@
   "name": "animated-text-rotator-smooth-css-text-transition-effects",
   "type": "registry:ui",
   "title": "Animated Text Rotator | Smooth Tailwindcss Text Transition Effects",
-  "description": "Animated Text Rotator | Smooth Tailwindcss Text Transition Effects — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "Animated Text Rotator | Smooth Tailwindcss Text Transition Effects — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<body \n  class=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\"\n>\n  <div class=\"text-rotate-container relative h-32 flex items-center justify-center w-full max-w-4xl\">\n    <div class=\"text-item text-5xl font-bold text-black dark:text-white\">\n      Welcome to Our Platform\n    </div>\n    <div class=\"text-item text-5xl font-bold text-blue-400\">\n      Build Amazing Things\n    </div>\n    <div class=\"text-item text-5xl font-bold text-purple-400\">\n      Transform Your Ideas\n    </div>\n    <div class=\"text-item text-5xl font-bold text-green-400\">\n      Create Without Limits\n    </div>\n    <div class=\"text-item text-5xl font-bold text-orange-400\">\n      Innovate Every Day\n    </div>\n  </div>\n\n\n</body>\n\n<style>\n@keyframes textRotate {\n  0%, 5% {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  10%, 25% {\n    opacity: 1;\n    transform: translateY(0);\n  }\n  30%, 100% {\n    opacity: 0;\n    transform: translateY(-20px);\n  }\n}\n\n.text-item {\n  animation: textRotate 20s infinite linear;\n  position: absolute;\n  width: 100%;\n  text-align: center;\n  opacity: 0;\n}\n\n.text-item:nth-child(1) { animation-delay: 0s; }\n.text-item:nth-child(2) { animation-delay: 4s; }\n.text-item:nth-child(3) { animation-delay: 8s; }\n.text-item:nth-child(4) { animation-delay: 12s; }\n.text-item:nth-child(5) { animation-delay: 16s; }\n\n.text-rotate-container:hover .text-item {\n  animation-play-state: paused;\n}\n</style>"
   }

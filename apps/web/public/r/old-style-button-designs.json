@@ -3,10 +3,10 @@
   "name": "old-style-button-designs",
   "type": "registry:ui",
   "title": "Old style Button Designs",
-  "description": "Old style Button Designs — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Old style Button Designs — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"\">\r\n    <span class=\"inline-block mr-2 mb-2\">\r\n        <a href=\"\" class=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-teal-500 hover:bg-teal-600\">Buy on Booktopia\r\n        </a>\r\n    </span>\r\n    <span class=\"inline-block mr-2 mb-2\">\r\n        <a href=\"\" class=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-gray-400 hover:bg-gray-500\">Buy on Amazon USA\r\n        </a>\r\n    </span>\r\n    <span class=\"inline-block mr-2 mb-2\">\r\n        <a href=\"\" class=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-red-400 hover:bg-red-500\">Buy on Amazon UK\r\n        </a>\r\n    </span>\r\n</div>"
   }

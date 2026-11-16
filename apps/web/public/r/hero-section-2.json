@@ -3,10 +3,10 @@
   "name": "hero-section-2",
   "type": "registry:ui",
   "title": "Hero section",
-  "description": "Hero section — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, call-to-action, footer).",
+  "description": "Hero section — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "hero",
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<section class=\"text-gray-600 body-font\">\n    <div class=\"container mx-auto flex px-5 py-24 md:flex-row flex-col items-center\">\n        <div\n            class=\"lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center\">\n            <h1 class=\"title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900\">Before they sold out\n                <br class=\"hidden lg:inline-block\">readymade gluten\n            </h1>\n            <p class=\"mb-8 leading-relaxed\">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant\n                cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic\n                tumeric truffaut hexagon try-hard chambray.</p>\n            <div class=\"flex justify-center\">\n                <button class=\"inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg\">Button</button>\n                <button class=\"ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg\">Button</button>\n            </div>\n        </div>\n        <div class=\"lg:max-w-lg lg:w-full md:w-1/2 w-5/6\">\n            <img class=\"object-cover object-center rounded\" alt=\"hero\" src=\"https://dummyimage.com/720x600\">\n        </div>\n    </div>\n</section>"
   }

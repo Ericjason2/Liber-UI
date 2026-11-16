@@ -3,10 +3,10 @@
   "name": "basic-pricing-card-2",
   "type": "registry:ui",
   "title": "Basic pricing card",
-  "description": "Basic pricing card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (pricing, footer, header).",
+  "description": "Basic pricing card — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "pricing"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "pricing",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "profile"
+      "pricing"
     ],
     "rawHtml": "<div class=\"max-w-sm mx-auto rounded overflow-hidden shadow-lg\">\r\n  <div class=\"px-6 py-4 bg-white\">\r\n    <div class=\"font-bold text-xl mb-2\">Basic</div>\r\n    <p class=\"text-gray-700 text-base\">\r\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\r\n    </p>\r\n  </div>\r\n  <div class=\"px-6 py-4 bg-gray-100\">\r\n    <div class=\"font-bold text-xl mb-2\">$9.99/mo</div>\r\n    <p class=\"text-gray-700 text-base\">\r\n      Access to all features\r\n    </p>\r\n    <div class=\"mt-4\">\r\n      <a href=\"#\" class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\">\r\n        Subscribe\r\n      </a>\r\n    </div>\r\n  </div>\r\n</div>"
   }

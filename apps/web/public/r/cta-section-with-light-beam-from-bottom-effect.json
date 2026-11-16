@@ -3,10 +3,10 @@
   "name": "cta-section-with-light-beam-from-bottom-effect",
   "type": "registry:ui",
   "title": "CTA section with light beam from bottom effect",
-  "description": "CTA section with light beam from bottom effect — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "CTA section with light beam from bottom effect — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"relative overflow-hidden border-b w-full dark:border-gray-700 dark:bg-gray-900\">\n    <div class=\"px-6 py-8 sm:px-6 sm:py-20\">\n        <div class=\"max-w-2xl mx-auto text-center\">\n            <h2 class=\"text-2xl font-semibold tracking-tight text-center text-black sm:text-4xl dark:text-white\">\n                Didn't find the tool you were looking for?\n            </h2>\n            <p\n                class=\"max-w-xl mx-auto mt-3 text-gray-700 sm:mt-6 text-md sm:text-lg sm:leading-snug dark:text-gray-300\">\n                We're constantly working to improve and expand our toolset to meet your needs. If you have a\n                specific tool in mind that you couldn't find, please let us know.\n            </p>\n            <div class=\"flex items-center justify-center mt-6 sm:mt-10 gap-x-6\">\n                <a class=\"flex flex-row items-center justify-center min-w-[130px] rounded-full border disabled:cursor-not-allowed disabled:opacity-50 transition ease-in-out duration-150 text-base bg-black text-white font-medium tracking-wide border-transparent py-1.5 h-[38px] hover:text-gray-200 dark:bg-white dark:text-black dark:hover:text-gray-700 px-8\"\n                    href=\"\">\n                    Request Tool\n                </a>\n            </div>\n        </div>\n    </div>\n    <svg viewBox=\"0 0 1024 1024\"\n        class=\"absolute left-1/2 z-10 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]\"\n        aria-hidden=\"true\">\n        <circle cx=\"512\" cy=\"512\" r=\"512\" fill=\"url(#827591b1-ce8c-4110-b064-7cb85a0b1217)\" fill-opacity=\"0.7\">\n        </circle>\n        <defs>\n            <radialGradient id=\"827591b1-ce8c-4110-b064-7cb85a0b1217\">\n                <stop stop-color=\"#3b82f6\"></stop>\n                <stop offset=\"1\" stop-color=\"#1d4ed8\"></stop>\n            </radialGradient>\n        </defs>\n    </svg>\n</div>"
   }

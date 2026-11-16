@@ -3,10 +3,10 @@
   "name": "basic-cta-section",
   "type": "registry:ui",
   "title": "Basic CTA section",
-  "description": "Basic CTA section — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "Basic CTA section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<section class=\"container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center\">\n    <h3 class=\"text-5xl font-semibold\">Ready to grow your business?</h3>\n    <p class=\"mt-8 text-xl font-light\">Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque\n        fermentum dui faucibus in.\n    </p>\n    <p class=\"mt-8\">\n        <button type=\"button\" class=\" py-5 px-16 text-lg bg-teal-500 hover:bg-teal-600 rounded text-white \">Get\n            Started Now\n        </button>\n    </p>\n</section>"
   }

@@ -3,10 +3,10 @@
   "name": "book-appointment-form-2",
   "type": "registry:ui",
   "title": "Book appointment form",
-  "description": "Book appointment form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Book appointment form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"flex items-center justify-center p-12\">\n    <!-- Author: FormBold Team -->\n    <div class=\"mx-auto w-full max-w-[550px] bg-white\">\n        <form>\n            <div class=\"mb-5\">\n                <label for=\"name\" class=\"mb-3 block text-base font-medium text-[#07074D]\">\n                    Full Name\n                </label>\n                <input type=\"text\" name=\"name\" id=\"name\" placeholder=\"Full Name\"\n                    class=\"w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md\" />\n            </div>\n            <div class=\"mb-5\">\n                <label for=\"phone\" class=\"mb-3 block text-base font-medium text-[#07074D]\">\n                    Phone Number\n                </label>\n                <input type=\"text\" name=\"phone\" id=\"phone\" placeholder=\"Enter your phone number\"\n                    class=\"w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md\" />\n            </div>\n            <div class=\"mb-5\">\n                <label for=\"email\" class=\"mb-3 block text-base font-medium text-[#07074D]\">\n                    Email Address\n                </label>\n                <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Enter your email\"\n                    class=\"w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md\" />\n            </div>\n            <div class=\"-mx-3 flex flex-wrap\">\n                <div class=\"w-full px-3 sm:w-1/2\">\n                    <div class=\"mb-5\">\n                        <label for=\"date\" class=\"mb-3 block text-base font-medium text-[#07074D]\">\n                            Date\n                        </label>\n                        <input type=\"date\" name=\"date\" id=\"date\"\n                            class=\"w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md\" />\n                    </div>\n                </div>\n                <div class=\"w-full px-3 sm:w-1/2\">\n                    <div class=\"mb-5\">\n                        <label for=\"time\" class=\"mb-3 block text-base font-medium text-[#07074D]\">\n                            Time\n                        </label>\n                        <input type=\"time\" name=\"time\" id=\"time\"\n                            class=\"w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md\" />\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"mb-5 pt-3\">\n                <label class=\"mb-5 block text-base font-semibold text-[#07074D] sm:text-xl\">\n                    Address Details\n                </label>\n                <div class=\"-mx-3 flex flex-wrap\">\n                    <div class=\"w-full px-3 sm:w-1/2\">\n                        <div class=\"mb-5\">\n                            <input type=\"text\" name=\"area\" id=\"area\" placeholder=\"Enter area\"\n                                class=\"w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md\" />\n                        </div>\n                    </div>\n                    <div class=\"w-full px-3 sm:w-1/2\">\n                        <div class=\"mb-5\">\n                            <input type=\"text\" name=\"city\" id=\"city\" placeholder=\"Enter city\"\n                                class=\"w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md\" />\n                        </div>\n                    </div>\n                    <div class=\"w-full px-3 sm:w-1/2\">\n                        <div class=\"mb-5\">\n                            <input type=\"text\" name=\"state\" id=\"state\" placeholder=\"Enter state\"\n                                class=\"w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md\" />\n                        </div>\n                    </div>\n                    <div class=\"w-full px-3 sm:w-1/2\">\n                        <div class=\"mb-5\">\n                            <input type=\"text\" name=\"post-code\" id=\"post-code\" placeholder=\"Post Code\"\n                                class=\"w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md\" />\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div>\n                <button\n                    class=\"hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none\">\n                    Book Appointment\n                </button>\n            </div>\n        </form>\n    </div>\n</div>"
   }

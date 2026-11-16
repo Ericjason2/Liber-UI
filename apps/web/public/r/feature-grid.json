@@ -3,10 +3,10 @@
   "name": "feature-grid",
   "type": "registry:ui",
   "title": "feature grid",
-  "description": "feature grid — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (grid, footer, header).",
+  "description": "feature grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "grid",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<div class=\"mx-auto max-w-7xl\">\n  <div class=\"m-5 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3\">\n    <div class=\"space-y-7 rounded-md bg-blue-400/20 px-8 pt-8\">\n      <div class=\"space-y-3\">\n        <h3 class=\"text-2xl font-bold\">Unlimited Color Schemes</h3>\n        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n      </div>\n      <img src=\"https://placehold.co/600x400/3b82f6/ffffff?text=Color+Schemes\" alt=\"Color Schemes\" class=\"w-full rounded-t-md\" />\n    </div>\n\n    <div class=\"space-y-7 rounded-md bg-red-400/20 px-8 pt-8\">\n      <div class=\"space-y-3\">\n        <h3 class=\"text-2xl font-bold\">Google Page Speed</h3>\n        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n      </div>\n      <img src=\"https://placehold.co/600x400/ef4444/ffffff?text=Page+Speed\" alt=\"Page Speed\" class=\"w-full rounded-t-md\" />\n    </div>\n\n    <div class=\"space-y-7 rounded-md bg-yellow-400/20 px-8 pt-8\">\n      <div class=\"space-y-3\">\n        <h3 class=\"text-2xl font-bold\">Smooth Animations</h3>\n        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n      </div>\n      <img src=\"https://placehold.co/600x400/f59e0b/ffffff?text=Animations\" alt=\"Smooth Animations\" class=\"w-full rounded-t-md\" />\n    </div>\n  </div>\n</div>"
   }

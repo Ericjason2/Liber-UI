@@ -3,10 +3,10 @@
   "name": "battery",
   "type": "registry:ui",
   "title": "Battery and signal",
-  "description": "Battery and signal — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Battery and signal — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"flex space-x-5\">\n\n<div class=\"white w-fit p-20 border-2 border border-green-500 rounded-2xl\">\n<div class=\"flex justify-center items-center\">\n<div class=\"flex justify-evenly items-center w-24 h-12 border-4 border-gray-300 rounded-lg bg-white\">\n  <div class=\"w-3 h-8 bg-green-500 \"></div>\n  <div class=\"w-3 h-8 bg-green-500\"></div>\n  <div class=\"w-3 h-8 bg-green-500\"></div>\n  <div class=\"w-3 h-8 bg-green-500\"></div>\n  <div class=\"w-3 h-8 bg-gray-300\"></div> \n</div>\n<div class=\"w-2 h-4 bg-gray-300 rounded-tr-sm rounded-br-sm\"></div>\n</div>\n</div>\n\n<div class=\"white w-fit p-20 border-2 border border-green-500 rounded-2xl\">\n  <div class=\"flex justify-evenly items-end w-24 h-12 rounded-lg bg-white\">\n  <div class=\"w-3 h-4 bg-green-500 rounded-full\"></div>\n  <div class=\"w-3 h-6 bg-green-500 rounded-full\"></div>\n  <div class=\"w-3 h-8 bg-green-500 rounded-full\"></div>\n  <div class=\"w-3 h-10 bg-green-500 rounded-full\"></div>\n  <div class=\"w-3 h-12 bg-gray-300 rounded-full\"></div>\n  </div>\n</div>\n\n</div>"
   }

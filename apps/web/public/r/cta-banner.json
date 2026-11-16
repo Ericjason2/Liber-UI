@@ -3,10 +3,10 @@
   "name": "cta-banner",
   "type": "registry:ui",
   "title": "CTA banner",
-  "description": "CTA banner — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "CTA banner — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<section class=\"bg-black overflow-visible my-0 py-24 mt-24\">\n  <div class=\"text-white items-center text-center flex flex-col\">\n    <h2 class=\"font-bold text-2xl lg:text-4xl\">Embark on an Adventure</h2>\n    <p class=\"mx-auto mt-6 max-w-xl text-lg md:text-xl leading-8 text-slate-400\">\n      Take a thrilling journey through our product's features. Book an adventurous demo and discover endless\n      possibilities.\n    </p>\n    <a class=\"mt-8 rounded-md bg-white px-5 py-2.5 text-base font-semibold leading-7 text-black hover:bg-gray-200 transition focus:outline-none focus:ring focus:border-blue-300\"\n      href=\"#\">Claim Your 15% off Adventure! Start Now</a>\n  </div>\n</section>"
   }

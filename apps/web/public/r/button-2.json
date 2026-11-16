@@ -3,10 +3,10 @@
   "name": "button-2",
   "type": "registry:ui",
   "title": "Button",
-  "description": "Button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<button class=\"relative px-4 py-2 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 bg-white overflow-hidden transition-transform duration-300 ease-in-out hover:bg-purple-600 hover:border-transparent hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2\">\n    <div class=\"text-animation\">\n      <span>M</span>\n      <span>e</span>\n      <span>s</span>\n      <span>s</span>\n      <span>a</span>\n      <span>g</span>\n      <span>e</span>\n    </div>\n  </button>"
   }

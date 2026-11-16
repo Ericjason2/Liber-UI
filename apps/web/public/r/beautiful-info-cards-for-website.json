@@ -3,10 +3,10 @@
   "name": "beautiful-info-cards-for-website",
   "type": "registry:ui",
   "title": "Beautiful info cards",
-  "description": "Beautiful info cards — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Beautiful info cards — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"bg-gray-200 h-screen w-full dark:bg-gray-700 flex justify-center items-center\">\r\n\r\n    <div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:py-24 lg:px-8\">\r\n        <h2 class=\"text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white\">Our service\r\n            statistics</h2>\r\n        <div class=\"grid grid-cols-1 gap-5 sm:grid-cols-4 mt-4\">\r\n            <div class=\"bg-white overflow-hidden shadow sm:rounded-lg dark:bg-gray-900\">\r\n                <div class=\"px-4 py-5 sm:p-6\">\r\n                    <dl>\r\n                        <dt class=\"text-sm leading-5 font-medium text-gray-500 truncate dark:text-gray-400\">Total free\r\n                            servers</dt>\r\n                        <dd class=\"mt-1 text-3xl leading-9 font-semibold text-indigo-600 dark:text-indigo-400\">1.6M</dd>\r\n                    </dl>\r\n                </div>\r\n            </div>\r\n            <div class=\"bg-white overflow-hidden shadow sm:rounded-lg dark:bg-gray-900\">\r\n                <div class=\"px-4 py-5 sm:p-6\">\r\n                    <dl>\r\n                        <dt class=\"text-sm leading-5 font-medium text-gray-500 truncate dark:text-gray-400\">Servers a\r\n                            month</dt>\r\n                        <dd class=\"mt-1 text-3xl leading-9 font-semibold text-indigo-600 dark:text-indigo-400\">19.2K\r\n                        </dd>\r\n                    </dl>\r\n                </div>\r\n            </div>\r\n            <div class=\"bg-white overflow-hidden shadow sm:rounded-lg dark:bg-gray-900\">\r\n                <div class=\"px-4 py-5 sm:p-6\">\r\n                    <dl>\r\n                        <dt class=\"text-sm leading-5 font-medium text-gray-500 truncate dark:text-gray-400\">Servers a\r\n                            week</dt>\r\n                        <dd class=\"mt-1 text-3xl leading-9 font-semibold text-indigo-600 dark:text-indigo-400\">4.9K</dd>\r\n                    </dl>\r\n                </div>\r\n            </div>\r\n            <div class=\"bg-white overflow-hidden shadow sm:rounded-lg dark:bg-gray-900\">\r\n                <div class=\"px-4 py-5 sm:p-6\">\r\n                    <dl>\r\n                        <dt class=\"text-sm leading-5 font-medium text-gray-500 truncate dark:text-gray-400\">Total users\r\n                        </dt>\r\n                        <dd class=\"mt-1 text-3xl leading-9 font-semibold text-indigo-600 dark:text-indigo-400\">166.7K\r\n                        </dd>\r\n                    </dl>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
   }

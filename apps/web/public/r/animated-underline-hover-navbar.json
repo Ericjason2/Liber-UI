@@ -3,10 +3,10 @@
   "name": "animated-underline-hover-navbar",
   "type": "registry:ui",
   "title": "Animated underline hover navbar",
-  "description": "Animated underline hover navbar — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (navbar, footer, header).",
+  "description": "Animated underline hover navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "navbar"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "navbar",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "navbar"
     ],
     "rawHtml": "<nav class=\"bg-black h-screen flex justify-center items-center w-screen\">\r\n\t<ul class=\"text-white flex gap-x-12\">\r\n\t\t<li class=\"relative table-cell py-2\"><a class=\"inline-block relative no-underline after-line\" href=\"#\">About</a></li>\r\n\t\t<li class=\"relative table-cell py-2\"><a class=\"inline-block relative no-underline after-line\" href=\"#\">Portfolio</a></li>\r\n\t\t<li class=\"relative table-cell py-2\"><a class=\"inline-block relative no-underline after-line\" href=\"#\">Blog</a></li>\r\n\t\t<li class=\"relative table-cell py-2\"><a class=\"inline-block relative no-underline after-line\" href=\"#\">Contact</a></li>\r\n\t</ul>\r\n</nav>"
   }

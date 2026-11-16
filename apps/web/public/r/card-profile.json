@@ -3,10 +3,10 @@
   "name": "card-profile",
   "type": "registry:ui",
   "title": "Card profile",
-  "description": "Card profile — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, profile, footer).",
+  "description": "Card profile — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "profile"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "profile",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing"
+      "profile"
     ],
     "rawHtml": "<div class=\"flex h-screen items-center justify-center px-10\">\n  <div class=\"w-full sm:w-1/2  bg-white shadow-xl rounded-3xl\">\n    <div class=\"mt-10 flex justify-center mb-5 \">\n      <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKN2MjSr0slVb3jxwjrIuBaAaqo669IBIKxw&usqp=CAU\" class=\"rounded-full\" alt=\"\" />\n    </div>\n    <div class=\"flex justify-center px-5 \">\n      <div class=\"border-b-2 border-gray-500 w-full\"></div>\n    </div>\n    <div class=\"flex justify-center text-center p-5\">\n      <p>\"I'm Jane Hong, and I recently graduated with an advanced diploma from Smith secondary school. I'm seeking an\n        internship where I can apply my skills in content creation and increase my experience in digital marketing.\"</p>\n    </div>\n    <div class=\"flex justify-center gap-4 p-5\">\n      <button class=\"py-3 bg-indigo-500 font-semibold text-white w-1/4 rounded-xl hover:bg-indigo-600\">Follow</button>\n      <button class=\"py-3 bg-pink-500 font-semibold text-white w-1/4 rounded-xl hover:bg-pink-600\">Subscribe</button>\n    </div>\n  </div>\n</div>"
   }

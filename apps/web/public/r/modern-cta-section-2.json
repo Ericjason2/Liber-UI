@@ -3,10 +3,10 @@
   "name": "modern-cta-section-2",
   "type": "registry:ui",
   "title": "Modern CTA section",
-  "description": "Modern CTA section — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "Modern CTA section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"bg-slate-50 dark:bg-gray-800 border-b my-20\">\n    <div class=\"py-8 px-6 sm:px-6 sm:py-20\">\n        <div class=\"mx-auto max-w-2xl text-center\">\n            <h2 class=\"text-center text-2xl font-semibold tracking-tight text-black dark:text-white sm:text-4xl\">\n                Start creating AI\n                Arts today\n            </h2>\n            <p\n                class=\"mx-auto mt-3 sm:mt-6 max-w-xl text-md sm:text-lg sm:leading-snug text-gray-600 dark:text-gray-300\">\n                Automate your\n                workflow with our state of the art tools. Let Your Imagination Run Wild.\n            </p>\n            <div class=\"mt-6 sm:mt-10 flex items-center justify-center gap-x-6\">\n                <a class=\"flex flex-row items-center justify-center min-w-[130px] px-4 rounded-full font-medium tracking-wide border disabled:cursor-not-allowed disabled:opacity-50 transition ease-in-out duration-150 text-base bg-black dark:bg-white text-white dark:text-black font-medium tracking-wide border-transparent py-1.5 h-[38px] text-sm py-6 px-8\"\n                    href=\"/#navbar\">\n                    Get Started Now\n                </a>\n            </div>\n        </div>\n    </div>\n</div>"
   }

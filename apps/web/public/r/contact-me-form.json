@@ -3,10 +3,10 @@
   "name": "contact-me-form",
   "type": "registry:ui",
   "title": "Contact me form",
-  "description": "Contact me form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Contact me form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"h-screen bg-gray-800\">\r\n    <div class=\"pt-10 md:pt-20\">\r\n        <div class=\"p-4 md:p-8\">\r\n            <h1 class=\"text-white text-center pb-8 font-light text-4xl md:text-5xl lg:text-6xl\">Contact Me</h1>\r\n            <form class=\"flex flex-col items-center\">\r\n                <div class=\"md:w-3/4 lg:w-2/3 xl:w-1/2\">\r\n                    <div class=\"flex flex-col md:flex-row\">\r\n                        <input id=\"name\" type=\"text\"\r\n                            class=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md:w-1/2 md:mr-2 outline-none focus:ring-2 focus:ring-blue-600\"\r\n                            placeholder=\"Name\">\r\n                        <input id=\"email\" type=\"email\"\r\n                            class=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md:w-1/2 md:ml-2 outline-none focus:ring-2 focus:ring-blue-600\"\r\n                            placeholder=\"Email\">\r\n                    </div>\r\n                    <input id=\"subject\" type=\"text\" placeholder=\"Subject\"\r\n                        class=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600\">\r\n                    <textarea id=\"message\" rows=\"5\" placeholder=\"Say Something\"\r\n                        class=\"my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600\"></textarea>\r\n                </div>\r\n                <button\r\n                    class=\"border-2 text-md mt-5 rounded-md py-2 px-4 bg-blue-600 hover:bg-blue-700 text-gray-100 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-600\">\r\n                    Send Message\r\n                </button>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>"
   }

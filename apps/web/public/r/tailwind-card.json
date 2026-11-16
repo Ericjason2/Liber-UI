@@ -3,10 +3,10 @@
   "name": "tailwind-card",
   "type": "registry:ui",
   "title": "Tailwind card",
-  "description": "Tailwind card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Tailwind card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"flex flex-col justify-center items-center bg-gray-100 min-h-screen\">\n    <div class=\"bg-white rounded-lg shadow-lg overflow-hidden max-w-lg w-full\">\n        <img src=\"https://images.unsplash.com/photo-1454496522488-7a8e488e8606\" alt=\"Mountain\" class=\"w-full h-64 object-cover\">\n        <div class=\"p-6\">\n            <h2 class=\"text-2xl font-bold text-gray-800 mb-2\">Beautiful Mountain View</h2>\n            <p class=\"text-gray-700 leading-tight mb-4\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu sapien porttitor, blandit velit ac,\n                vehicula elit. Nunc et ex at turpis rutrum viverra.\n            </p>\n            <div class=\"flex justify-between items-center\">\n                <div class=\"flex items-center\">\n                    <img src=\"https://randomuser.me/api/portraits/men/32.jpg\" alt=\"Avatar\" class=\"w-8 h-8 rounded-full mr-2 object-cover\">\n                    <span class=\"text-gray-800 font-semibold\">John Doe</span>\n                </div>\n                <span class=\"text-gray-600\">2 hours ago</span>\n            </div>\n        </div>\n    </div>\n</div>"
   }

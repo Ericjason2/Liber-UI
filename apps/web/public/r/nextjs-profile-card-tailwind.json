@@ -3,10 +3,10 @@
   "name": "nextjs-profile-card-tailwind",
   "type": "registry:ui",
   "title": "nextjs-profile-card-tailwind",
-  "description": "nextjs-profile-card-tailwind — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, profile, footer).",
+  "description": "nextjs-profile-card-tailwind — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "profile"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "profile",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing"
+      "profile"
     ],
     "rawHtml": "<!--\n    Taken from\n    https://bbbootstrap.com/snippets/profile-card-tailwind-css-53535136\n-->\n<div class=\"flex bg-[#f0feff] justify-center items-center h-screen\">\n    <div class=\"max-w-[490px] rounded-lg w-[100%] overflow-hidden bg-white shadow-[0_0_1rem_rgba(0,0,0,0.2)] \">\n        <div class=\"card\">\n            <div class=\"grid grid-cols-5\">\n                <div class=\"col-span-2 p-3\">\n                    <img src=\"https://svgshare.com/i/16D0.svg\" alt=\"demo\" />\n                </div>\n                <div class=\"col-span-3 p-3\">\n                    <div class=\"font-bold\">Darlene Robertson</div>\n                    <div class=\"mb-3\">Senior Journalist</div>\n                    <div\n                        class=\"card flex justify-between items-center text-gray-500 bg-gray-200 focus:bg-white rounded-lg p-2\">\n                        <div class=\"text-center\">\n                            <p class=\"text-sm\">Articles</p>\n                            <p class=\"font-bold text-gray-800\">37</p>\n                        </div>\n                        <div class=\"text-center\">\n                            <p class=\"text-sm\">Followers</p>\n                            <p class=\"font-bold text-gray-800\">850</p>\n                        </div>\n                        <div class=\"text-center\">\n                            <p class=\"text-sm\">Rating</p>\n                            <p class=\"font-bold text-gray-800 flex gap-1\">\n                                <img src=\"https://svgshare.com/i/16Fg.svg\" />\n                                    9.5\n                            </p>\n                        </div>\n                    </div>\n                    <div class=\"flex mt-3 gap-2\">\n                        <button class=\"bg-white text-gray-500 py-2 px-4 rounded-lg border-2 hover:bg-gray-400 flex-1\">\n                              Chat\n                            </button>\n                        <button class=\"bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 flex-1\">\n                              Follow\n                            </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
   }

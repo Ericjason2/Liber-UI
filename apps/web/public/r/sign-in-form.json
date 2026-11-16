@@ -3,10 +3,10 @@
   "name": "sign-in-form",
   "type": "registry:ui",
   "title": "Sign In form",
-  "description": "Sign In form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Sign In form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<form class=\"max-w-md \">\r\n    <div>\r\n        <label for=\"email\" class=\"block font-semibold\">Email</label>\r\n        <div class=\"mt-1\"><input type=\"text\" name=\"email\" id=\"email\" value=\"\" autofocus=\"autofocus\" class=\"bg-white shadow-sm ring-0 block w-full text-lg focus:outline-none focus:border-tan-500 border-tan-300 p-2 border-2\">\r\n        </div>\r\n    </div>\r\n    <div class=\"mt-6\">\r\n        <div class=\"flex justify-between\">\r\n            <label for=\"password\" class=\"block font-semibold\">Password</label> <a href=\"\" tabindex=\"-1\"\r\n                class=\"branded-link text-sm font-semibold\">Forgot your password?</a>\r\n        </div>\r\n        <div class=\"mt-1\">\r\n            <input type=\"password\" name=\"password\" id=\"password\" class=\"bg-white shadow-sm ring-0 block w-full text-lg focus:outline-none focus:border-tan-500 border-tan-300 p-2 border-2\">\r\n        </div>\r\n    </div>\r\n\r\n    <label class=\"mt-8 flex content-start\"><input type=\"checkbox\" name=\"remember\" class=\"mr-2 form-checkbox rounded-none ring-0 focus:border-tan-500 border-tan-300 border-2 w-5 h-5 text-highlight\"> \r\n      <span class=\"text-sm font-semibold\">Remember me</span>\r\n    </label>\r\n    <div>\r\n        <button class=\"flex flex-no-wrap mt-6 border-2 border-black bg-yellow-500 py-2 px-4\">\r\n            <span>Sign In</span> \r\n            <span>\r\n                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"ml-2 w-6 h-6\"><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line><polyline points=\"12 5 19 12 12 19\"></polyline></svg>\r\n            </span>\r\n        </button>\r\n    </div>\r\n</form>"
   }

@@ -3,10 +3,10 @@
   "name": "plug-and-play-animated-button-for-hero-statements-landing-pages",
   "type": "registry:ui",
   "title": "Plug and Play Animated Button for Hero Statements / Landing Pages",
-  "description": "Plug and Play Animated Button for Hero Statements / Landing Pages — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Plug and Play Animated Button for Hero Statements / Landing Pages — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<button class=\"relative px-5 py-2 rounded-full text-zinc-300 flex items-center overflow-hidden group bg-black\">\n    <div class=\"absolute -inset-[130%] flex items-center justify-center bg-gradient-to-t from-blue-100 to-transparent animate-spin [animation:spin_4s_linear_infinite]\">\n    </div>\n    <div class=\"absolute inset-[2px] rounded-full bg-zinc-900\">\n    </div>\n    <div class=\"relative z-10 flex items-center group-hover:text-white transition duration-1000\">\n    Refresh Page</div>\n</button>"
   }

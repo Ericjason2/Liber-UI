@@ -3,10 +3,10 @@
   "name": "buttons-with-icon",
   "type": "registry:ui",
   "title": "Buttons with Icon",
-  "description": "Buttons with Icon — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Buttons with Icon — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css\">\n\n<section class=\"flex flex-col md:flex-row\">\n    <div class=\"flex-1 m-6\">\n        <p class=\"text-lg text-center\">Left icon</p>\n        <hr class=\"my-2\">\n        <div class=\"flex flex-wrap justify-center\">\n            <button class=\"bg-black rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2\"><i class=\"fab fa-github mr-1\"></i> Github</button>\n            <button class=\"bg-blue-700 rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2\"><i class=\"fab fa-facebook mr-1\"></i> Facebook</button>\n            <button class=\"bg-red-700 rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2\"><i class=\"fab fa-youtube mr-1\"></i> Youtube</button>\n            <button class=\"bg-red-500 rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2\"><i class=\"fab fa-laravel mr-1\"></i> Laravel</button>\n            <button class=\"bg-green-200 text-green-800 rounded-lg text-xs text-center self-center px-3 py-2 my-2 mx-2\"><i class=\"fab fa-vuejs mr-1\"></i> VueJS</button>\n        </div>\n    </div>\n    <div class=\"flex-1 m-6\">\n        <p class=\"text-lg text-center\">Right icon</p>\n        <hr class=\"my-2\">\n        <div class=\"flex flex-wrap justify-center\">\n            <button class=\"bg-black rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2\">Github <i class=\"fab fa-github ml-1\"></i></button>\n            <button class=\"bg-blue-700 rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2\">Facebook <i class=\"fab fa-facebook ml-1\"></i></button>\n            <button class=\"bg-red-700 rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2\">Youtube <i class=\"fab fa-youtube ml-1\"></i></button>\n            <button class=\"bg-red-500 rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2\">Laravel <i class=\"fab fa-laravel ml-1\"></i></button>\n            <button class=\"bg-green-200 text-green-800 rounded-lg text-xs text-center self-center px-3 py-2 my-2 mx-2\">VueJS <i class=\"fab fa-vuejs ml-1\"></i></button>\n        </div>\n    </div>\n</section>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js\"></script>"
   }

@@ -3,10 +3,10 @@
   "name": "data-metrics-showcase",
   "type": "registry:ui",
   "title": "Data Metrics Showcase",
-  "description": "Data Metrics Showcase — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (grid, footer, header).",
+  "description": "Data Metrics Showcase — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "grid",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<div class=\"bg-white py-24 sm:py-32\">\n  <div class=\"mx-auto max-w-7xl px-6 lg:px-8\">\n    <div class=\"mx-auto max-w-2xl lg:max-w-none\">\n      <div class=\"text-center\">\n        <h2 class=\"text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl\">Empowering Businesses Globally</h2>\n        <p class=\"mt-4 text-lg leading-8 text-gray-600\">\n          Our platform is trusted by organizations worldwide to boost productivity, streamline operations, and enhance\n          customer experiences.\n        </p>\n      </div>\n      <dl class=\"mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4\">\n        <div class=\"flex flex-col bg-gray-200/50 p-8\">\n          <dt class=\"text-sm font-semibold leading-6 text-gray-600\">Active Users</dt>\n          <dd class=\"order-first text-3xl font-semibold tracking-tight text-gray-900\">12,345</dd>\n        </div>\n        <div class=\"flex flex-col bg-gray-200/50 p-8\">\n          <dt class=\"text-sm font-semibold leading-6 text-gray-600\">Transactions Today</dt>\n          <dd class=\"order-first text-3xl font-semibold tracking-tight text-gray-900\">1.23M</dd>\n        </div>\n        <div class=\"flex flex-col bg-gray-200/50 p-8\">\n          <dt class=\"text-sm font-semibold leading-6 text-gray-600\">Total Revenue</dt>\n          <dd class=\"order-first text-3xl font-semibold tracking-tight text-gray-900\">$5.6B</dd>\n        </div>\n        <div class=\"flex flex-col bg-gray-200/50 p-8\">\n          <dt class=\"text-sm font-semibold leading-6 text-gray-600\">Happy Customers</dt>\n          <dd class=\"order-first text-3xl font-semibold tracking-tight text-gray-900\">98%</dd>\n        </div>\n      </dl>\n    </div>\n  </div>\n</div>"
   }

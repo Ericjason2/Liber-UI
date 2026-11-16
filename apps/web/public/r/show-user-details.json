@@ -3,10 +3,10 @@
   "name": "show-user-details",
   "type": "registry:ui",
   "title": "Show user details",
-  "description": "Show user details — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (profile, footer, header).",
+  "description": "Show user details — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "profile"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "profile",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing"
+      "profile"
     ],
     "rawHtml": "<div class=\"bg-white overflow-hidden shadow rounded-lg border\">\r\n    <div class=\"px-4 py-5 sm:px-6\">\r\n        <h3 class=\"text-lg leading-6 font-medium text-gray-900\">\r\n            User Profile\r\n        </h3>\r\n        <p class=\"mt-1 max-w-2xl text-sm text-gray-500\">\r\n            This is some information about the user.\r\n        </p>\r\n    </div>\r\n    <div class=\"border-t border-gray-200 px-4 py-5 sm:p-0\">\r\n        <dl class=\"sm:divide-y sm:divide-gray-200\">\r\n            <div class=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt class=\"text-sm font-medium text-gray-500\">\r\n                    Full name\r\n                </dt>\r\n                <dd class=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    John Doe\r\n                </dd>\r\n            </div>\r\n            <div class=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt class=\"text-sm font-medium text-gray-500\">\r\n                    Email address\r\n                </dt>\r\n                <dd class=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    johndoe@example.com\r\n                </dd>\r\n            </div>\r\n            <div class=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt class=\"text-sm font-medium text-gray-500\">\r\n                    Phone number\r\n                </dt>\r\n                <dd class=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    (123) 456-7890\r\n                </dd>\r\n            </div>\r\n            <div class=\"py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6\">\r\n                <dt class=\"text-sm font-medium text-gray-500\">\r\n                    Address\r\n                </dt>\r\n                <dd class=\"mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2\">\r\n                    123 Main St<br>\r\n                     Anytown, USA 12345\r\n                </dd>\r\n            </div>\r\n        </dl>\r\n    </div>\r\n</div>"
   }

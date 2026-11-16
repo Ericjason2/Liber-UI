@@ -3,10 +3,10 @@
   "name": "ripple-animation-2",
   "type": "registry:ui",
   "title": "Ripple Animation",
-  "description": "Ripple Animation — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Ripple Animation — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"w-full h-screen relative overflow-hidden py-20 bg-black dark:bg-black\">\n  <div class=\"absolute w-full inset-0 flex items-center justify-center\">\n    <div\n      class=\"absolute animate-ripple rounded-full z-10 bg-cover bg-no-repeat bg-center bg-[url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxwZXJzb258ZW58MHwwfHx8MTc0MzMyNzEzNHww&ixlib=rb-4.0.3&q=80&w=1080')] outline outline-offset-2 outline-blue-300 dark:outline-gray-600 shadow-xl border [--i:0] w-[180px] h-[180px] opacity-1 [animation-delay:0s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-green-200 shadow-xl border [--i:1] w-[250px] h-[250px] opacity-[0.17] [animation-delay:0.06s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-green-400 shadow-xl border [--i:2] w-[320px] h-[320px] opacity-[0.14] [animation-delay:0.12s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-green-400 shadow-xl border [--i:3] w-[390px] h-[390px] opacity-[0.11000000000000001] [animation-delay:0.18s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-green-400 shadow-xl border [--i:4] w-[460px] h-[460px] opacity-[0.08000000000000002] [animation-delay:0.24s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-green-400 shadow-xl border [--i:5] width:530px;height:530px;opacity:0.05000000000000002;animation-delay:0.3s;border-style:solid;border-width:1px;border-color:hsl(var(--foreground), 0.3);top:50%;left:50%;transform:translate(-50%, -50%) scale(1)\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-green-400 shadow-xl border [--i:6] w-[600px] h-[600px] opacity-[0.020000000000000018] [animation-delay:0.36s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-green-400 shadow-xl border [--i:7] w-[670px] h-[670px] opacity-[-0.009999999999999981] [animation-delay:0.42s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-green-400 shadow-xl border [--i:8] w-[740px] h-[740px] opacity-[-0.03999999999999998] [animation-delay:0.48s] border-solid border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n    <div\n      class=\"absolute animate-ripple rounded-full bg-green-400 shadow-xl border [--i:9] w-[810px] h-[810px] opacity-[-0.07] [animation-delay:0.54s] border-dashed border top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 scale-100\">\n    </div>\n  </div>\n</div>"
   }

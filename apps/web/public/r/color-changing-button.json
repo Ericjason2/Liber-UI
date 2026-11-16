@@ -3,10 +3,10 @@
   "name": "color-changing-button",
   "type": "registry:ui",
   "title": "Color changing button",
-  "description": "Color changing button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Color changing button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<button id=\"change-button\" class=\"bg-red-500 text-white px-4 py-2 rounded-lg\">\n    Change Color!\n</button>\n\n<script>\n    let button = document.getElementById('change-button');\nlet colors = [\"red\", \"blue\", \"green\", \"yellow\", \"pink\", \"purple\", \"gray\"];  //Add more colors from tailwind design pallete as per requirement\n\nfunction changeColor(){\n    let color = colors[Math.floor(Math.random() * colors.length)]; \n    button.className = '';  \n    button.classList.add('px-4', 'py-2','rounded-lg','text-white',`bg-${color}-500`);\n}\n\nsetInterval(() => {\n    changeColor();\n}, 500);    //Color change duration is 500 ms, you can adjust the duration.\n</script>"
   }

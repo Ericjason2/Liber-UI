@@ -3,10 +3,10 @@
   "name": "cards-order",
   "type": "registry:ui",
   "title": "cards order",
-  "description": "cards order — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "cards order — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"flex flex-wrap gap-6 justify-center mt-8\">\n  <!-- Green Border Card -->\n  <div class=\"border-4 border-[#00FF00] bg-white p-6 rounded-lg shadow-md w-64\">\n    <h3 class=\"font-bold text-xl mb-2 text-gray-800\">Green Border</h3>\n    <p class=\"text-gray-600\">Subtle white background with bold green border.</p>\n  </div>\n\n  <!-- Blue Gradient Card -->\n  <div class=\"bg-gradient-to-br from-blue-500 to-[#0000FF] text-white p-6 rounded-lg shadow-lg w-64\">\n    <h3 class=\"font-bold text-xl mb-2\">Blue Gradient</h3>\n    <p class=\"opacity-90\">Smooth fade to blue-100.</p>\n  </div>\n\n  <!-- Gray Text Card -->\n  <div class=\"bg-white border border-gray-300 p-6 rounded-lg shadow-sm w-64\">\n    <h3 class=\"font-bold text-xl mb-2 text-[#808080]\">Gray Text</h3>\n    <p class=\"text-gray-600\">Uses gray-100 for headings.</p>\n  </div>\n</div>"
   }

@@ -3,10 +3,10 @@
   "name": "ghekkk",
   "type": "registry:ui",
   "title": "Smooth Slide-in Animation for Text in Tailwind CSS",
-  "description": "Smooth Slide-in Animation for Text in Tailwind CSS — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, footer, header).",
+  "description": "Smooth Slide-in Animation for Text in Tailwind CSS — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "hero",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "hero"
     ],
     "rawHtml": "<section class=\"bg-blue-400 w-full pt-20 flex flex-col justify-center items-center text-white py-10\">\n         <!-- Element 1 --> \n        <div class=\"animate-slidein opacity-0 [--slidein-delay:300ms]\">\n          <div class=\"flex items-center gap-3 border-2 border-blue-50 bg-slate-500 px-4 py-1 rounded-xl\">Introducing Linear Asks <FaArrowRight /></div>\n        </div>\n        <!-- Element 2 --> \n        <h1 class=\"animate-slidein opacity-0 [--slidein-delay:300ms] text-6xl py-7 font-medium px-20 text-center\">\n          Linear is a better way\n          <br />\n          to build products\n        </h1>\n        <!-- Element 3 --> \n        <p class=\"animate-slidein opacity-0 [--slidein-delay:500ms] text-xl text-center pb-5\">\n          Meet the new standard for modern software development.\n          <br />\n          Streamline issues, sprints, and product roadmaps.\n        </p>\n         <!-- Element 4 -->\n        <div class=\"animate-slidein opacity-0 [--slidein-delay:700ms] ...\">\n          <div class=\" \">\n            <samp class=\"px-5 py-2 rounded-xl border-2 border-gray-50 bg-slate-900\">Get started</samp> </div>\n        </div>\n  </section>"
   }

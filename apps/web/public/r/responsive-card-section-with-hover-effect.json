@@ -3,10 +3,10 @@
   "name": "responsive-card-section-with-hover-effect",
   "type": "registry:ui",
   "title": "Responsive Card Section With Hover Effect",
-  "description": "Responsive Card Section With Hover Effect — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Responsive Card Section With Hover Effect — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"p-6 min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300\">\r\n  <h2 class=\"text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white\">\r\n    Responsive Card Section With Hover Effect\r\n  </h2>\r\n\r\n  <div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6\">\r\n    \r\n    <!-- Card 1 -->\r\n    <div class=\"bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300\">\r\n      <img src=\"https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" alt=\"Web Development\" class=\"w-full h-48 object-cover\">\r\n      <div class=\"p-6\">\r\n        <h3 class=\"text-xl font-semibold mb-2 text-gray-800 dark:text-white\">Web Development</h3>\r\n        <p class=\"text-gray-600 dark:text-gray-300\">Build responsive websites using React, Node.js, and Tailwind CSS.</p>\r\n      </div>\r\n    </div>\r\n\r\n    <!-- Card 2 -->\r\n    <div class=\"bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300\">\r\n      <img src=\"https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" alt=\"UI Design\" class=\"w-full h-48 object-cover\">\r\n      <div class=\"p-6\">\r\n        <h3 class=\"text-xl font-semibold mb-2 text-gray-800 dark:text-white\">UI/UX Design</h3>\r\n        <p class=\"text-gray-600 dark:text-gray-300\">Design beautiful interfaces and smooth user experiences.</p>\r\n      </div>\r\n    </div>\r\n\r\n    <!-- Card 3 -->\r\n    <div class=\"bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300\">\r\n      <img src=\"https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" alt=\"SEO\" class=\"w-full h-48 object-cover\">\r\n      <div class=\"p-6\">\r\n        <h3 class=\"text-xl font-semibold mb-2 text-gray-800 dark:text-white\">SEO Optimization</h3>\r\n        <p class=\"text-gray-600 dark:text-gray-300\">Boost your site's visibility on Google with smart SEO practices.</p>\r\n      </div>\r\n    </div>\r\n    <!-- Card 1 -->\r\n    <div class=\"bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300\">\r\n      <img src=\"https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" alt=\"Web Development\" class=\"w-full h-48 object-cover\">\r\n      <div class=\"p-6\">\r\n        <h3 class=\"text-xl font-semibold mb-2 text-gray-800 dark:text-white\">Web Development</h3>\r\n        <p class=\"text-gray-600 dark:text-gray-300\">Build responsive websites using React, Node.js, and Tailwind CSS.</p>\r\n      </div>\r\n    </div>\r\n\r\n    <!-- Card 2 -->\r\n    <div class=\"bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300\">\r\n      <img src=\"https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" alt=\"UI Design\" class=\"w-full h-48 object-cover\">\r\n      <div class=\"p-6\">\r\n        <h3 class=\"text-xl font-semibold mb-2 text-gray-800 dark:text-white\">UI/UX Design</h3>\r\n        <p class=\"text-gray-600 dark:text-gray-300\">Design beautiful interfaces and smooth user experiences.</p>\r\n      </div>\r\n    </div>\r\n\r\n    <!-- Card 3 -->\r\n    <div class=\"bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300\">\r\n      <img src=\"https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" alt=\"SEO\" class=\"w-full h-48 object-cover\">\r\n      <div class=\"p-6\">\r\n        <h3 class=\"text-xl font-semibold mb-2 text-gray-800 dark:text-white\">SEO Optimization</h3>\r\n        <p class=\"text-gray-600 dark:text-gray-300\">Boost your site's visibility on Google with smart SEO practices.</p>\r\n      </div>\r\n    </div>\r\n\r\n    <!-- Card 1 -->\r\n    <div class=\"bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300\">\r\n      <img src=\"https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" alt=\"Web Development\" class=\"w-full h-48 object-cover\">\r\n      <div class=\"p-6\">\r\n        <h3 class=\"text-xl font-semibold mb-2 text-gray-800 dark:text-white\">Web Development</h3>\r\n        <p class=\"text-gray-600 dark:text-gray-300\">Build responsive websites using React, Node.js, and Tailwind CSS.</p>\r\n      </div>\r\n    </div>\r\n\r\n    <!-- Card 2 -->\r\n    <div class=\"bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300\">\r\n      <img src=\"https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" alt=\"UI Design\" class=\"w-full h-48 object-cover\">\r\n      <div class=\"p-6\">\r\n        <h3 class=\"text-xl font-semibold mb-2 text-gray-800 dark:text-white\">UI/UX Design</h3>\r\n        <p class=\"text-gray-600 dark:text-gray-300\">Design beautiful interfaces and smooth user experiences.</p>\r\n      </div>\r\n    </div>\r\n\r\n    <!-- Card 3 -->\r\n    <div class=\"bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300\">\r\n      <img src=\"https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\" alt=\"SEO\" class=\"w-full h-48 object-cover\">\r\n      <div class=\"p-6\">\r\n        <h3 class=\"text-xl font-semibold mb-2 text-gray-800 dark:text-white\">SEO Optimization</h3>\r\n        <p class=\"text-gray-600 dark:text-gray-300\">Boost your site's visibility on Google with smart SEO practices.</p>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>"
   }

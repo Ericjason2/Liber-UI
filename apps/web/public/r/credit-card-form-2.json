@@ -3,10 +3,10 @@
   "name": "credit-card-form-2",
   "type": "registry:ui",
   "title": "Credit card form 2",
-  "description": "Credit card form 2 — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Credit card form 2 — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"max-w-md mx-auto bg-gray-100 shadow-md rounded-md overflow-hidden mt-16\">\r\n    <div class=\"bg-blue-600 text-white p-4 flex justify-between\">\r\n        <div class=\"font-bold text-lg\">Credit Card</div>\r\n        <div class=\"text-lg\"><i class=\"fab fa-cc-visa\"></i></div>\r\n    </div>\r\n    <div class=\"p-6\">\r\n        <div class=\"mb-4\">\r\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"card_number\">\r\n                Card Number\r\n            </label>\r\n            <input\r\n                class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\r\n                id=\"card_number\" type=\"text\" placeholder=\"xxxx xxxx xxxx xxxx\">\r\n        </div>\r\n        <div class=\"mb-4 flex justify-between\">\r\n            <div>\r\n                <label class=\"block text-gray-700 font-bold mb-2\" for=\"expiration_date\">\r\n                    Expiration Date\r\n                </label>\r\n                <input\r\n                    class=\"shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\r\n                    id=\"expiration_date\" type=\"text\" placeholder=\"MM/YY\">\r\n            </div>\r\n            <div>\r\n                <label class=\"block text-gray-700 font-bold mb-2\" for=\"cvv\">\r\n                    CVV\r\n                </label>\r\n                <input\r\n                    class=\"shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\r\n                    id=\"cvv\" type=\"text\" placeholder=\"XXX\">\r\n            </div>\r\n        </div>\r\n        <div class=\"mb-4\">\r\n            <label class=\"block text-gray-700 font-bold mb-2\" for=\"name_on_card\">\r\n                Name on Card\r\n            </label>\r\n            <input\r\n                class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\"\r\n                id=\"name_on_card\" type=\"text\" placeholder=\"John Doe\">\r\n        </div>\r\n        <button\r\n            class=\"bg-blue-600 text-white py-2 px-4 rounded font-bold hover:bg-blue-700 focus:outline-none focus:shadow-outline\">Save\r\n            Card\r\n        </button>\r\n    </div>\r\n</div>"
   }

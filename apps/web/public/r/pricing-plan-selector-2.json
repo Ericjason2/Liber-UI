@@ -3,10 +3,10 @@
   "name": "pricing-plan-selector-2",
   "type": "registry:ui",
   "title": "Pricing Plan Selector",
-  "description": "Pricing Plan Selector — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (pricing, footer, header).",
+  "description": "Pricing Plan Selector — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "pricing"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "pricing",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "profile"
+      "pricing"
     ],
     "rawHtml": "<div class=\"flex min-h-screen items-center justify-center bg-slate-200 dark:bg-gray-800\">\n  <div class=\"mx-auto max-w-6xl px-12\">\n    <div class=\"flex flex-wrap justify-center gap-3\">\n\n      <label class=\"cursor-pointer\">\n        <input type=\"radio\" class=\"peer sr-only\" name=\"pricing\" />\n        <div class=\"w-72 max-w-xl rounded-md bg-white dark:bg-gray-900 p-5 text-gray-600 dark:text-gray-300 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2\">\n            <div class=\"flex items-center justify-between\">\n              <p><span class=\"text-lg font-bold\">%3</span> iskonto</p>\n              <div class=\"text-sm font-bold\">₺68.609,00</div>\n            </div>\n        </div>\n      </label>\n\n      <label class=\"cursor-pointer\">\n        <input type=\"radio\" class=\"peer sr-only\" name=\"pricing\" />\n        <div class=\"w-72 max-w-xl rounded-md bg-white dark:bg-gray-900 p-5 text-gray-600 dark:text-gray-300 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2\">\n            <div class=\"flex items-center justify-between\">\n              <p><span class=\"text-lg font-bold\">%5</span> iskonto</p>\n              <div class=\"text-sm font-bold\">₺68.609,00</div>\n            </div>\n        </div>\n      </label>\n\n      <label class=\"cursor-pointer\">\n        <input type=\"radio\" class=\"peer sr-only\" name=\"pricing\" />\n        <div class=\"w-72 max-w-xl rounded-md bg-white dark:bg-gray-900 p-5 text-gray-600 dark:text-gray-300 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2\">\n            <div class=\"flex items-center justify-between\">\n              <p><span class=\"text-lg font-bold\">%10</span> iskonto</p>\n              <div class=\"text-sm font-bold\">₺68.609,00</div>\n            </div>\n        </div>\n      </label>\n\n<button id=\"apply-discount\" class=\"mt-4 px-4 py-2 bg-green-500 text-white rounded\">İskonto Uygula ve Devam Et</button>\n    </div>\n\n    </div>\n  </div>\n</div>"
   }

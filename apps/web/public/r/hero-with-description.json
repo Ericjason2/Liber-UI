@@ -3,10 +3,10 @@
   "name": "hero-with-description",
   "type": "registry:ui",
   "title": "Hero with description",
-  "description": "Hero with description — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, footer, header).",
+  "description": "Hero with description — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "hero"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "hero",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "hero"
     ],
     "rawHtml": "<div class=\"relative px-6 lg:px-8 dark:bg-gray-800\">\r\n    <div class=\"mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40\">\r\n        <div>\r\n            <div>\r\n                <h1 class=\"text-4xl font-bold tracking-tight sm:text-center sm:text-6xl dark:text-gray-100\">\r\n                    Title of your website\r\n                </h1>\r\n                <p class=\"mt-6 text-lg leading-8 text-gray-600 sm:text-center dark:text-gray-200\">\r\n                    Long description of your website,\r\n                    Long description of your website,\r\n                    Long description of your website,\r\n                    Long description of your website,\r\n                    Long description of your website,\r\n                </p>\r\n                <div class=\"mt-8 flex gap-x-4 sm:justify-center\">\r\n                    <a href=\"#\"\r\n                        class=\"inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700\">\r\n                        Get started\r\n                        <span aria-hidden=\"true\" class=\"text-indigo-200\">→</span>\r\n                    </a>\r\n                    <a href=\"#\"\r\n                        class=\"inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 dark:text-gray-100 ring-1 ring-gray-900/10 hover:ring-gray-900/20\">\r\n                        Read the guide\r\n                        <span aria-hidden=\"true\" class=\"text-gray-400\">→</span>\r\n                    </a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
   }

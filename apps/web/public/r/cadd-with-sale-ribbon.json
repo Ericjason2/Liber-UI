@@ -3,10 +3,10 @@
   "name": "cadd-with-sale-ribbon",
   "type": "registry:ui",
   "title": "Card with sale ribbon",
-  "description": "Card with sale ribbon — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Card with sale ribbon — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"max-w-xs mx-auto overflow-hidden bg-white rounded-lg shadow-md\">\n    <div class=\"relative\">\n        <img class=\"w-full h-64 object-cover\" src=\"https://picsum.photos/200/200\" alt=\"Image\">\n        <div class=\"absolute top-0 right-0\">\n            <div class=\"w-32 h-8 absolute top-4 -right-8\">\n                <div\n                    class=\"h-full w-full bg-red-500 text-white text-center leading-8 font-semibold transform rotate-45\">\n                    SALE</div>\n            </div>\n        </div>\n    </div>\n    <div class=\"p-4\">\n        <h3 class=\"text-xl font-semibold mb-2\">Product Sale</h3>\n        <p class=\"text-gray-700 text-base\">\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum\n            auctor felis, vel consequat odio ullamcorper eu.\n        </p>\n    </div>\n</div>"
   }

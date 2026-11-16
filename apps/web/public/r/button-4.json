@@ -3,10 +3,10 @@
   "name": "button-4",
   "type": "registry:ui",
   "title": "button",
-  "description": "button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"flex flex-wrap gap-4 p-8 bg-seasalt\">\n\n  <button class=\"bg-aerospace-orange hover:bg-flame text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300\">\n    Botón Primario\n  </button>\n\n  <button class=\"bg-federal-blue hover:bg-eerie-black text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300\">\n    Botón Oscuro\n  </button>\n\n  <button class=\"border-2 border-aero text-aero hover:bg-aero hover:text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300\">\n    Botón Contorno\n  </button>\n\n  <button class=\"bg-transparent text-eerie-black hover:bg-eerie-black/10 font-bold py-2 px-4 rounded-md transition-all duration-300\">\n    Botón Sutil\n  </button>\n\n  <button class=\"bg-aerospace-orange text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300 hover:bg-flame hover:shadow-lg hover:shadow-aerospace-orange/40\">\n    Animación Sombra\n  </button>\n\n  <button class=\"bg-federal-blue text-seasalt font-bold py-2 px-4 rounded-md transition-all duration-300 transform hover:scale-105 hover:bg-eerie-black\">\n    Animación Escala\n  </button>\n\n  <button class=\"bg-aero text-federal-blue font-bold py-2 px-4 rounded-md transition-all duration-300 focus:ring-4 focus:ring-aero/50 focus:outline-none\">\n    Animación Anillo (Click)\n  </button>\n\n  <button class=\"bg-flame hover:bg-aerospace-orange text-seasalt font-bold w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 transform hover:rotate-12\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"2\" stroke=\"currentColor\" class=\"w-6 h-6\">\n      <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4.5 12.75 6 6 9-13.5\" />\n    </svg>\n  </button>\n\n\n    <button class=\"border-2 border-flame text-flame hover:bg-flame hover:text-white font-bold py-2 px-4 rounded-md transition-all duration-300\">\n    Botón Contorno\n  </button>\n<button\n    class=\"px-4 py-2 border flex gap-2 border-federal-blue rounded-lg text-federal-blue hover:border-federal-bluehover:text-federal-blue hover:shadow transition duration-150\">\n    <span class=\"pt-0.5\">    Botón Contorno</span>\n</button>\n</div>"
   }

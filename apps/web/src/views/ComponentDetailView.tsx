@@ -8,7 +8,6 @@ import {
   ArrowLeft,
   ArrowRight,
   Check,
-  CheckCircle2,
   Copy,
   Code2,
   Download,
@@ -121,6 +120,29 @@ export default {
   const usageRenderCode = `<${pascalName} />`;
   const cliCommand = getShadcnStyleCommand(pm, component.slug);
 
+  const getDepsCommand = (m: PackageManager) => {
+    switch (m) {
+      case "pnpm":
+        return "pnpm add lucide-react clsx tailwind-merge";
+      case "npm":
+        return "npm install lucide-react clsx tailwind-merge";
+      case "yarn":
+        return "yarn add lucide-react clsx tailwind-merge";
+      case "bun":
+        return "bun add lucide-react clsx tailwind-merge";
+    }
+  };
+
+  const fullUsageSnippet = `import { ${pascalName} } from "@/components/ui/${component.slug}"
+
+export default function ExamplePage() {
+  return (
+    <main className="min-h-screen p-8 flex items-center justify-center">
+      <${pascalName} />
+    </main>
+  )
+}`;
+
   // Escape key exits fullscreen
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -179,7 +201,7 @@ export default {
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-12">
+    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-16 sm:space-y-24">
       {/* 1. Breadcrumb & Back Link */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-2 font-mono text-xs text-muted-foreground">
@@ -236,15 +258,11 @@ export default {
         </div>
       </div>
 
-      {/* 2. Component Header: Title & Description by Authors (Clean, No tags) */}
-      <div className="space-y-3">
+      {/* 2. Component Header: Title & Description (Clean, No tags, No "rendu garanti" badge) */}
+      <div className="space-y-4 pb-8 border-b border-border/80">
         <div className="flex items-center gap-2.5">
           <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-muted text-muted-foreground border border-border capitalize">
             {component.category}
-          </span>
-          <span className="inline-flex items-center gap-1 text-[11px] font-mono text-emerald-600 dark:text-emerald-400">
-            <CheckCircle2 className="h-3.5 w-3.5" />
-            <span>Rendu garanti 100% identique (HTML &amp; TypeScript)</span>
           </span>
         </div>
 
@@ -595,87 +613,177 @@ export default {
       )}
 
       {/* 5. Installation Section (Exact shadcn/ui Layout: Command | Manual) */}
-      <section className="space-y-4 pt-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-foreground border-b border-border pb-2.5">
-          Installation
-        </h2>
+      <section className="pt-16 sm:pt-20 border-t border-border/80 space-y-8">
+        <div className="space-y-1.5">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-foreground">
+            Installation
+          </h2>
+          <p className="text-sm text-muted-foreground">
+            Ajoutez ce composant directement dans votre projet via la ligne de commande ou manuellement.
+          </p>
+        </div>
 
         {/* Command | Manual Sub-tabs */}
-        <div className="flex items-center gap-4 border-b border-border">
+        <div className="flex items-center gap-6 border-b border-border">
           <button
             type="button"
             onClick={() => setInstallTab("cli")}
-            className={`pb-2.5 -mb-px text-sm font-medium border-b-2 transition-colors ${
+            className={`pb-3 -mb-px text-sm font-medium border-b-2 transition-colors flex items-center gap-2 ${
               installTab === "cli"
-                ? "border-foreground text-foreground font-semibold"
+                ? "border-primary text-foreground font-semibold"
                 : "border-transparent text-muted-foreground hover:text-foreground"
             }`}
           >
-            Command
+            <Terminal className="h-4 w-4" />
+            <span>Command (CLI)</span>
           </button>
           <button
             type="button"
             onClick={() => setInstallTab("manual")}
-            className={`pb-2.5 -mb-px text-sm font-medium border-b-2 transition-colors ${
+            className={`pb-3 -mb-px text-sm font-medium border-b-2 transition-colors flex items-center gap-2 ${
               installTab === "manual"
-                ? "border-foreground text-foreground font-semibold"
+                ? "border-primary text-foreground font-semibold"
                 : "border-transparent text-muted-foreground hover:text-foreground"
             }`}
           >
-            Manual
+            <FileCode2 className="h-4 w-4" />
+            <span>Manual (Fichiers)</span>
           </button>
         </div>
 
         {installTab === "cli" ? (
-          <div className="rounded-xl border border-neutral-800 bg-neutral-950 text-neutral-100 overflow-hidden shadow-sm">
-            <div className="px-4 py-2 border-b border-neutral-800 flex items-center justify-between">
-              <div className="flex items-center gap-1">
-                <Terminal className="h-3.5 w-3.5 text-neutral-400 mr-1.5" />
-                {PACKAGE_MANAGERS.map((m) => (
-                  <button
-                    key={m}
-                    type="button"
-                    onClick={() => setPm(m)}
-                    className={`px-2.5 py-1 rounded-md font-mono text-xs transition-colors ${
-                      pm === m
-                        ? "bg-neutral-800 text-white font-semibold"
-                        : "text-neutral-400 hover:text-neutral-200"
-                    }`}
-                  >
-                    {m}
-                  </button>
-                ))}
+          <div className="space-y-6">
+            <div className="rounded-xl border border-neutral-800 bg-neutral-950 text-neutral-100 overflow-hidden shadow-sm">
+              <div className="px-4 py-2.5 border-b border-neutral-800 flex items-center justify-between">
+                <div className="flex items-center gap-1.5">
+                  <Terminal className="h-3.5 w-3.5 text-neutral-400 mr-1.5" />
+                  {PACKAGE_MANAGERS.map((m) => (
+                    <button
+                      key={m}
+                      type="button"
+                      onClick={() => setPm(m)}
+                      className={`px-2.5 py-1 rounded-md font-mono text-xs transition-colors ${
+                        pm === m
+                          ? "bg-neutral-800 text-white font-semibold"
+                          : "text-neutral-400 hover:text-neutral-200"
+                      }`}
+                    >
+                      {m}
+                    </button>
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  onClick={() =>
+                    handleCopy(cliCommand, "cli-cmd", `Commande ${pm} copiée !`)
+                  }
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-xs font-mono text-neutral-300 hover:text-white transition-colors"
+                  title="Copier la commande"
+                >
+                  {copiedId === "cli-cmd" ? (
+                    <>
+                      <Check className="h-3.5 w-3.5 text-emerald-400" />
+                      <span className="text-emerald-400">Copié</span>
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="h-3.5 w-3.5" />
+                      <span>Copier</span>
+                    </>
+                  )}
+                </button>
               </div>
-              <button
-                type="button"
-                onClick={() =>
-                  handleCopy(cliCommand, "cli-cmd", `Commande ${pm} copiée !`)
-                }
-                className="p-1.5 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-300 hover:text-white transition-colors"
-                title="Copier la commande"
-              >
-                {copiedId === "cli-cmd" ? (
-                  <Check className="h-3.5 w-3.5 text-emerald-400" />
-                ) : (
-                  <Copy className="h-3.5 w-3.5" />
-                )}
-              </button>
+              <div className="p-4 sm:p-5 font-mono text-xs sm:text-sm text-neutral-100 overflow-x-auto flex items-center gap-2.5 select-all">
+                <span className="text-neutral-500 select-none">$</span>
+                <code>{cliCommand}</code>
+              </div>
             </div>
-            <div className="p-4 font-mono text-xs sm:text-sm text-neutral-100 overflow-x-auto select-all">
-              <code>{cliCommand}</code>
+
+            <div className="p-4 rounded-xl border border-border bg-card/60 text-xs text-muted-foreground space-y-1.5">
+              <p className="font-medium text-foreground">
+                Fonctionnement de l&apos;installation automatique :
+              </p>
+              <p className="leading-relaxed">
+                Cette commande installe les dépendances nécessaires et génère automatiquement le fichier source{" "}
+                <code className="font-mono text-foreground px-1.5 py-0.5 rounded bg-muted">
+                  components/ui/{component.slug}.tsx
+                </code>{" "}
+                dans votre arborescence Next.js / React avec le typage TypeScript et les styles Tailwind CSS.
+              </p>
             </div>
           </div>
         ) : (
-          <div className="space-y-6 pt-2">
-            {/* Step 1: Copy or Download Component Source File */}
+          <div className="space-y-8 pt-2">
+            {/* Step 1: Install dependencies */}
             <div className="space-y-3">
-              <div className="flex flex-wrap items-center justify-between gap-2">
+              <div className="flex items-center gap-2.5">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 border border-primary/20 text-xs font-mono font-semibold text-primary">
+                  1
+                </span>
+                <p className="text-sm font-medium text-foreground">
+                  Installez les dépendances requises dans votre terminal :
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-neutral-800 bg-neutral-950 text-neutral-100 overflow-hidden shadow-sm">
+                <div className="px-4 py-2 border-b border-neutral-800 flex items-center justify-between">
+                  <div className="flex items-center gap-1.5">
+                    <Terminal className="h-3.5 w-3.5 text-neutral-400 mr-1.5" />
+                    {PACKAGE_MANAGERS.map((m) => (
+                      <button
+                        key={m}
+                        type="button"
+                        onClick={() => setPm(m)}
+                        className={`px-2.5 py-1 rounded-md font-mono text-xs transition-colors ${
+                          pm === m
+                            ? "bg-neutral-800 text-white font-semibold"
+                            : "text-neutral-400 hover:text-neutral-200"
+                        }`}
+                      >
+                        {m}
+                      </button>
+                    ))}
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      handleCopy(
+                        getDepsCommand(pm),
+                        "manual-deps",
+                        `Commande de dépendances copiée !`
+                      )
+                    }
+                    className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-xs font-mono text-neutral-300 hover:text-white transition-colors"
+                  >
+                    {copiedId === "manual-deps" ? (
+                      <>
+                        <Check className="h-3.5 w-3.5 text-emerald-400" />
+                        <span className="text-emerald-400">Copié</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="h-3.5 w-3.5" />
+                        <span>Copier</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+                <div className="p-4 font-mono text-xs sm:text-sm text-neutral-100 overflow-x-auto flex items-center gap-2.5 select-all">
+                  <span className="text-neutral-500 select-none">$</span>
+                  <code>{getDepsCommand(pm)}</code>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 2: Copy or Download Component Source File */}
+            <div className="space-y-3">
+              <div className="flex flex-wrap items-center justify-between gap-3">
                 <div className="flex items-center gap-2.5">
-                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-muted border border-border text-xs font-mono font-semibold text-foreground">
-                    1
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 border border-primary/20 text-xs font-mono font-semibold text-primary">
+                    2
                   </span>
                   <p className="text-sm font-medium text-foreground">
-                    Copiez et collez le code suivant dans votre projet ou téléchargez le fichier.
+                    Créez le fichier et copiez-y le code source du composant :
                   </p>
                 </div>
 
@@ -748,11 +856,16 @@ export default {
                       className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-200 transition-colors"
                     >
                       {copiedId === "manual-code" ? (
-                        <Check className="h-3.5 w-3.5 text-emerald-400" />
+                        <>
+                          <Check className="h-3.5 w-3.5 text-emerald-400" />
+                          <span className="text-emerald-400">Copié</span>
+                        </>
                       ) : (
-                        <Copy className="h-3.5 w-3.5" />
+                        <>
+                          <Copy className="h-3.5 w-3.5" />
+                          <span>Copier</span>
+                        </>
                       )}
-                      <span>Copier</span>
                     </button>
                   </div>
                 </div>
@@ -775,7 +888,7 @@ export default {
                         onClick={() => setCodeExpanded(true)}
                         className="px-3.5 py-1.5 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-xs font-medium text-white border border-neutral-700 shadow-md transition-colors"
                       >
-                        Expand code
+                        Afficher tout le code
                       </button>
                     </div>
                   )}
@@ -788,35 +901,70 @@ export default {
                       onClick={() => setCodeExpanded(false)}
                       className="px-3 py-1 rounded-md text-xs font-mono text-neutral-400 hover:text-white transition-colors"
                     >
-                      Collapse
+                      Réduire
                     </button>
                   </div>
                 )}
               </div>
             </div>
 
-            {/* Step 2: Update import paths */}
-            <div className="flex items-center gap-2.5">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-muted border border-border text-xs font-mono font-semibold text-foreground">
-                2
-              </span>
-              <p className="text-sm font-medium text-foreground">
-                Mettez à jour les chemins d&apos;importation selon la configuration de votre projet.
-              </p>
+            {/* Step 3: Import and use */}
+            <div className="space-y-3">
+              <div className="flex items-center gap-2.5">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 border border-primary/20 text-xs font-mono font-semibold text-primary">
+                  3
+                </span>
+                <p className="text-sm font-medium text-foreground">
+                  Importez et affichez le composant dans votre page :
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-neutral-800 bg-neutral-950 text-neutral-100 overflow-hidden shadow-sm">
+                <div className="px-4 py-2 border-b border-neutral-800 flex items-center justify-between text-xs font-mono text-neutral-400">
+                  <span>app/page.tsx</span>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      handleCopy(fullUsageSnippet, "manual-full-usage", "Exemple d'utilisation copié !")
+                    }
+                    className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-xs font-mono text-neutral-300 hover:text-white transition-colors"
+                  >
+                    {copiedId === "manual-full-usage" ? (
+                      <>
+                        <Check className="h-3.5 w-3.5 text-emerald-400" />
+                        <span className="text-emerald-400">Copié</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="h-3.5 w-3.5" />
+                        <span>Copier</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+                <pre className="p-4 font-mono text-xs sm:text-[13px] text-neutral-200 overflow-x-auto select-all leading-relaxed">
+                  <code>{fullUsageSnippet}</code>
+                </pre>
+              </div>
             </div>
           </div>
         )}
       </section>
 
       {/* 6. Usage Section (Exact shadcn/ui Layout: Import + JSX) */}
-      <section className="space-y-4 pt-2">
-        <h2 className="text-2xl font-semibold tracking-tight text-foreground border-b border-border pb-2.5">
-          Usage
-        </h2>
+      <section className="pt-16 sm:pt-20 border-t border-border/80 space-y-8">
+        <div className="space-y-1.5">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-foreground">
+            Usage
+          </h2>
+          <p className="text-sm text-muted-foreground">
+            Snippets rapides pour importer et instancier ce composant.
+          </p>
+        </div>
 
         {/* Import Block */}
         <div className="rounded-xl border border-neutral-800 bg-neutral-950 text-neutral-100 overflow-hidden shadow-sm">
-          <div className="px-4 py-2 border-b border-neutral-800 flex items-center justify-between text-xs font-mono text-neutral-400">
+          <div className="px-4 py-2.5 border-b border-neutral-800 flex items-center justify-between text-xs font-mono text-neutral-400">
             <span>Import</span>
             <button
               type="button"
@@ -839,7 +987,7 @@ export default {
 
         {/* Render Block */}
         <div className="rounded-xl border border-neutral-800 bg-neutral-950 text-neutral-100 overflow-hidden shadow-sm">
-          <div className="px-4 py-2 border-b border-neutral-800 flex items-center justify-between text-xs font-mono text-neutral-400">
+          <div className="px-4 py-2.5 border-b border-neutral-800 flex items-center justify-between text-xs font-mono text-neutral-400">
             <span>JSX</span>
             <button
               type="button"
@@ -863,14 +1011,14 @@ export default {
 
       {/* 7. Related Components Grid */}
       {relatedComponents.length > 0 && (
-        <section className="space-y-6 pt-6">
-          <div className="flex items-center justify-between border-b border-border pb-3">
+        <section className="pt-16 sm:pt-20 border-t border-border/80 space-y-8">
+          <div className="flex items-center justify-between border-b border-border pb-4">
             <div>
-              <h2 className="text-xl font-semibold text-foreground">
+              <h2 className="text-xl sm:text-2xl font-semibold text-foreground">
                 Composants similaires
               </h2>
-              <p className="text-xs text-muted-foreground">
-                Consultez d&apos;autres composants de la même catégorie.
+              <p className="text-xs sm:text-sm text-muted-foreground mt-1">
+                Consultez d&apos;autres composants de la catégorie {component.category}.
               </p>
             </div>
             <Link
@@ -892,9 +1040,7 @@ export default {
                   <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors truncate">
                     {rel.name}
                   </h3>
-                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-muted text-muted-foreground capitalize shrink-0">
-                    {rel.category}
-                  </span>
+                  <ArrowRight className="h-3.5 w-3.5 text-muted-foreground group-hover:text-foreground transition-transform group-hover:translate-x-0.5 shrink-0" />
                 </div>
 
                 <div className="relative border-b border-border/80 overflow-hidden bg-slate-50 dark:bg-slate-950">

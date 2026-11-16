@@ -3,10 +3,10 @@
   "name": "navbar-section",
   "type": "registry:ui",
   "title": "Navbar Section",
-  "description": "Navbar Section — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (navbar, footer, header).",
+  "description": "Navbar Section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "navbar"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "navbar",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "navbar"
     ],
     "rawHtml": "<header class=\"lg:px-16 px-4 bg-white flex flex-wrap items-center py-4 shadow-md\">\n    <div class=\"flex-1 flex justify-between items-center\">\n        <a href=\"#\" class=\"text-xl\">Company</a>\n    </div>\n\n    <label for=\"menu-toggle\" class=\"pointer-cursor md:hidden block\">\n      <svg class=\"fill-current text-gray-900\"\n        xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\">\n        <title>menu</title>\n        <path d=\"M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z\"></path>\n      </svg>\n    </label>\n    <input class=\"hidden\" type=\"checkbox\" id=\"menu-toggle\" />\n\n    <div class=\"hidden md:flex md:items-center md:w-auto w-full\" id=\"menu\">\n        <nav>\n            <ul class=\"md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0\">\n                <li><a class=\"md:p-4 py-3 px-0 block\" href=\"#\">AboutUs</a></li>\n                <li><a class=\"md:p-4 py-3 px-0 block\" href=\"#\">Treatments</a></li>\n                <li><a class=\"md:p-4 py-3 px-0 block\" href=\"#\">Blog</a></li>\n                <li><a class=\"md:p-4 py-3 px-0 block md:mb-0 mb-2\" href=\"#\">Contact Us</a></li>\n            </ul>\n        </nav>\n    </div>\n</header>"
   }

@@ -3,10 +3,10 @@
   "name": "pricing-section-6",
   "type": "registry:ui",
   "title": "Pricing Section",
-  "description": "Pricing Section — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (pricing, footer, header).",
+  "description": "Pricing Section — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "pricing"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "pricing",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "profile"
+      "pricing"
     ],
     "rawHtml": "<body class=\"bg-light-blue dark:bg-dark-blue\">\n  <div class=\"container mx-auto p-8\">\n    <h2 class=\"text-3xl font-bold text-center text-gray-800 dark:text-white mb-10\">\n      Our Pricing Plans\n    </h2>\n\n    <div\n      class=\"grid grid-cols-1 md:grid-cols-3 gap-8 peer-hover-plan2:bg-blue-50 dark:peer-hover-plan2:bg-gray-700 transition-colors duration-500 ease-in-out\">\n      <!-- Plan 1 -->\n      <div class=\"bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow\">\n        <h3 class=\"text-xl font-semibold text-gray-800 dark:text-white mb-2\">Basic</h3>\n        <p class=\"text-gray-600 dark:text-gray-300 mb-4\">For individuals</p>\n        <div class=\"text-4xl font-bold text-blue-600 dark:text-blue-400 mb-6\">\n          $19<span class=\"text-lg text-gray-600 dark:text-gray-300\">/month</span>\n        </div>\n        <ul>\n          <li class=\"text-gray-600 dark:text-gray-300 mb-2\">10 Projects</li>\n          <li class=\"text-gray-600 dark:text-gray-300 mb-2\">5GB Storage</li>\n          <li class=\"text-gray-600 dark:text-gray-300 mb-2\">Basic Support</li>\n        </ul>\n        <button class=\"mt-6 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition-colors\">\n                    Choose Plan\n                </button>\n      </div>\n\n      <!-- Plan 2 (Most Popular) -->\n      <div\n        class=\"peer peer-hover:bg-blue-700 dark:peer-hover:bg-gray-600 group bg-blue-500 dark:bg-gray-700 rounded-lg shadow-2xl p-6 relative hover:shadow-xl transition-shadow\">\n        <span class=\"absolute top-0 right-0 bg-yellow-400 text-white px-3 py-1 rounded-tl-lg rounded-br-lg text-sm font-semibold\">\n                    Most Popular\n                </span>\n        <h3 class=\"text-xl font-semibold text-white mb-2\">Pro</h3>\n        <p class=\"text-gray-200 mb-4\">For growing teams</p>\n        <div class=\"text-4xl font-bold text-white mb-6\">\n          $49<span class=\"text-lg text-gray-200\">/month</span>\n        </div>\n        <ul>\n          <li class=\"text-gray-200 mb-2\">50 Projects</li>\n          <li class=\"text-gray-200 mb-2\">25GB Storage</li>\n          <li class=\"text-gray-200 mb-2\">Premium Support</li>\n        </ul>\n        <button class=\"mt-6 w-full bg-white hover:bg-gray-100 text-blue-600 font-bold py-2 px-4 rounded-md transition-colors group-hover:bg-blue-500 group-hover:text-white dark:group-hover:bg-blue-400 dark:group-hover:text-white\">\n                    Choose Plan\n                </button>\n      </div>\n\n      <!-- Plan 3 -->\n      <div class=\"bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow\">\n        <h3 class=\"text-xl font-semibold text-gray-800 dark:text-white mb-2\">Enterprise</h3>\n        <p class=\"text-gray-600 dark:text-gray-300 mb-4\">For large organizations</p>\n        <div class=\"text-4xl font-bold text-blue-600 dark:text-blue-400 mb-6\">\n          $99<span class=\"text-lg text-gray-600 dark:text-gray-300\">/month</span>\n        </div>\n        <ul>\n          <li class=\"text-gray-600 dark:text-gray-300 mb-2\">Unlimited Projects</li>\n          <li class=\"text-gray-600 dark:text-gray-300 mb-2\">100GB Storage</li>\n          <li class=\"text-gray-600 dark:text-gray-300 mb-2\">24/7 Support</li>\n        </ul>\n        <button class=\"mt-6 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition-colors\">\n                    Choose Plan\n                </button>\n      </div>\n    </div>\n  </div>"
   }

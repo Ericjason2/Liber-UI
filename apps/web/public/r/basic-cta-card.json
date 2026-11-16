@@ -3,10 +3,10 @@
   "name": "basic-cta-card",
   "type": "registry:ui",
   "title": "Basic CTA card",
-  "description": "Basic CTA card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "Basic CTA card — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"flex justify-center items-center h-screen dark:bg-gray-800\">\n  <section class=\"w-full max-w-5xl mx-auto rounded-xl py-14 lg:py-20 px-5 lg:px-0\">\n    <div\n      class=\"rounded-2xl p-5 py-14 bg-[#DEF6F5] dark:bg-gray-700 mx-auto flex flex-col gap-y-5 justify-center items-center\">\n      <h3\n        class=\"text-3xl md:text-4xl lg:text-5xl max-w-xl lg:max-w-3xl mx-auto font-bold text-black dark:text-white text-center\">\n        Discover endless learning opportunities.</h3>\n      <p class=\"text-base md:text-lg lg:text-xl text-center text-gray-800 dark:text-gray-300\">Unlock your potential with\n        our wide range of courses and resources.</p>\n      <button class=\"bg-[#1EBFC1] dark:bg-[#0E6B6D] w-1/2 md:w-1/3 hover:shadow-lg border border-transparent hover:drop-shadow transition duration-200 lg:w-1/3 text-white font-semibold text-sm lg:text-base rounded px-4 py-2\">Get Started</button>\n    </div>\n  </section>\n</div>"
   }

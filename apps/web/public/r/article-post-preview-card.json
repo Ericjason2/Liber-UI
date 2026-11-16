@@ -3,10 +3,10 @@
   "name": "article-post-preview-card",
   "type": "registry:ui",
   "title": "Article-Post Preview card",
-  "description": "Article-Post Preview card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Article-Post Preview card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"px-4 py-4 mx-5 font-normal bg-gray-300 rounded-lg\">\n    <div class=\"flex flex-col justify-between md:flex-row\">\n        <h3 class=\"mb-2 text-2xl font-semibold leading-snug\">\n            Use TailwindCSS with Gatsby (with Emotion or styled-components)\n        </h3>\n        <div class=\"flex items-center mb-2 space-x-2\">\n            <p class=\"px-2 text-gray-200 bg-blue-600 rounded\">#gatsby</p>\n            <p class=\"px-2 text-gray-800 bg-teal-400 rounded\">#tailwindcss</p>\n            <p class=\"px-2 text-gray-200 bg-purple-600 rounded\">#css</p>\n        </div>\n    </div>\n    <p class=\"text-gray-700\">\n        Learn how to use TailwindCSS with Gatsby along with Emotion or\n        styled-components perfectly.\n    </p>\n</div>"
   }

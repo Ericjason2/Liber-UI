@@ -3,10 +3,10 @@
   "name": "simple-contact-us-form-2",
   "type": "registry:ui",
   "title": "Simple contact us form",
-  "description": "Simple contact us form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Simple contact us form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"flex items-center justify-center p-12\">\n    <!-- Author: FormBold Team -->\n    <!-- Learn More: https://formbold.com -->\n    <div class=\"mx-auto w-full max-w-[550px] bg-white\">\n        <form action=\"https://fabform.io/f/{form-id}\" method=\"post\">\n            <div class=\"mb-5\">\n                <label for=\"name\" class=\"mb-3 block text-base font-medium text-[#07074D]\">\n                    Full Name\n                </label>\n                <input type=\"text\" name=\"name\" id=\"name\" placeholder=\"Full Name\"\n                    class=\"w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md\" />\n            </div>\n            <div class=\"mb-5\">\n                <label for=\"email\" class=\"mb-3 block text-base font-medium text-[#07074D]\">\n                    Email Address\n                </label>\n                <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"example@domain.com\"\n                    class=\"w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md\" />\n            </div>\n            <div class=\"mb-5\">\n                <label for=\"subject\" class=\"mb-3 block text-base font-medium text-[#07074D]\">\n                    Subject\n                </label>\n                <input type=\"text\" name=\"subject\" id=\"subject\" placeholder=\"Enter your subject\"\n                    class=\"w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md\" />\n            </div>\n            <div class=\"mb-5\">\n                <label for=\"message\" class=\"mb-3 block text-base font-medium text-[#07074D]\">\n                    Message\n                </label>\n                <textarea rows=\"4\" name=\"message\" id=\"message\" placeholder=\"Type your message\"\n                    class=\"w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md\"></textarea>\n            </div>\n            <div>\n                <button\n                    class=\"hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none\">\n                    Submit\n                </button>\n            </div>\n        </form>\n        <a href=\"https://veilmail.io/e/FkKh7o\" class=\"font-medium text-blue-600 hover:underline\">Or\n            click here to reveal our protected email address</a>\n\n    </div>\n\n</div>"
   }

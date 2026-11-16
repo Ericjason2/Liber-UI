@@ -3,10 +3,10 @@
   "name": "otp-form",
   "type": "registry:ui",
   "title": "Otp form",
-  "description": "Otp form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Otp form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"max-w-md mx-auto border mt-20\">\r\n    <form class=\"bg-white shadow-md rounded px-8 py-6\">\r\n        <div class=\"mb-4\">\r\n            <label class=\"block text-gray-700 text-sm font-bold mb-2\" for=\"otp\">OTP:</label>\r\n            <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"otp\" type=\"text\" placeholder=\"Enter OTP\">\r\n        </div>\r\n        <div class=\"flex items-center justify-between\">\r\n            <button class=\"bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\" type=\"button\">\r\n                Verify\r\n             </button>\r\n            <a class=\"inline-block align-baseline font-bold text-sm text-teal-500 hover:text-teal-800\" href=\"#\">\r\n                Resend OTP\r\n            </a>\r\n        </div>\r\n    </form>\r\n</div>"
   }

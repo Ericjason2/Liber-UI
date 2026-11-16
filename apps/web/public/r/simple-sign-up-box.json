@@ -3,10 +3,10 @@
   "name": "simple-sign-up-box",
   "type": "registry:ui",
   "title": "Simple Sign-up Box",
-  "description": "Simple Sign-up Box — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Simple Sign-up Box — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"w-96 backdrop-blur-lg bg-opacity-80 rounded-lg shadow-lg p-5 bg-gray-900 text-white\">\n  <h2 class=\"text-2xl font-bold pb-5\">SignUp</h2>\n  <form>\n    <div class=\"mb-4\">\n      <label for=\"name\" class=\"block mb-2 text-sm font-medium\">Your name</label>\n      <input\n        type=\"text\"\n        id=\"name\"\n        class=\"bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full py-2.5 px-4\"\n        placeholder=\"Andrew Jackson\"\n        required\n        value=\"\"\n      >\n    </div>\n    <div class=\"mb-4\">\n      <label for=\"email\" class=\"block mb-2 text-sm font-medium\">Your email</label>\n      <input\n        type=\"email\"\n        id=\"email\"\n        class=\"bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full py-2.5 px-4\"\n        placeholder=\"andrew@mail.com\"\n        required\n        value=\"\"\n      >\n    </div>\n    <div class=\"mb-4\">\n      <label for=\"password\" class=\"block mb-2 text-sm font-medium\">Your password</label>\n      <input\n        type=\"password\"\n        id=\"password\"\n        class=\"bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full py-2.5 px-4\"\n        placeholder=\"*********\"\n        required\n        value=\"\"\n      >\n    </div>\n    <div>\n      <p class=\"text-red-500 pb-5\"></p>\n    </div>\n    <div class=\"flex items-center justify-between mb-4\">\n      <button\n        type=\"submit\"\n        class=\"text-white bg-purple-600 hover:bg-purple-700 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 px-5 w-full sm:w-auto\"\n      >\n        Register\n      </button>\n      <div class=\"flex items-center text-sm\">\n        <p>Already have an account?</p>\n        <p class=\"underline cursor-pointer ml-1\">Sign in</p>\n      </div>\n    </div>\n  </form>\n</div>"
   }

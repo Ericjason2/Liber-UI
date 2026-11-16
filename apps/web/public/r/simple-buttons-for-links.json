@@ -3,10 +3,10 @@
   "name": "simple-buttons-for-links",
   "type": "registry:ui",
   "title": "Simple buttons for links",
-  "description": "Simple buttons for links — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Simple buttons for links — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<nav class=\"\">\r\n    <ul class=\"flex flex-row items-center px-6 py-4 text-indigo-100 bg-indigo-900 rounded-lg\">\r\n        <li class=\"pr-8\">\r\n            <a href=\"/blog\" class=\"\">Blog\r\n            </a>\r\n        </li>\r\n        <li class=\"pr-8\">\r\n            <a href=\"\" target=\"_blank\">LinkedIn\r\n\r\n            </a>\r\n        </li>\r\n        <li class=\"pr-8\">\r\n            <a href=\"\" target=\"_blank\">Twitter\r\n            </a>\r\n        </li>\r\n        <li class=\"text-red-200\">\r\n            <a href=\"\" class=\"ml-2\">Email\r\n            </a>\r\n        </li>\r\n    </ul>\r\n</nav>"
   }

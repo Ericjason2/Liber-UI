@@ -3,10 +3,10 @@
   "name": "masonary-cards-effect-using-columns",
   "type": "registry:ui",
   "title": "masonary grids effect for cards using columns",
-  "description": "masonary grids effect for cards using columns — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, grid, footer).",
+  "description": "masonary grids effect for cards using columns — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -20,31 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "grid",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<div class=\"columns-2 md:columns-3 lg:columns-4 gap-4 m-4\">\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 150px;\">Card 1</div>\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 200px;\">Card 2</div>\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 250px;\">Card 3</div>\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 180px;\">Card 4</div>\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 220px;\">Card 5</div>\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 220px;\">Card 6</div>\n    <div class=\"break-inside-avoid bg-teal-300 rounded-lg shadow-md mb-4 text-teal-800 text-center font-bold p-3\" style=\"height: 220px;\">Card 7</div>\n</div>"
   }

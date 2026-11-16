@@ -3,10 +3,10 @@
   "name": "get-started-membership-section-responsive-darkmode",
   "type": "registry:ui",
   "title": "Get Started ,Membership section - responsive - darkMode",
-  "description": "Get Started ,Membership section - responsive - darkMode — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, call-to-action, footer).",
+  "description": "Get Started ,Membership section - responsive - darkMode — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "call-to-action",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<section class=\" w-full bg-white dark:bg-[#0A2025] py-9 px-8\">\n  <div class=\"mx-auto max-w-[1440px] \">\n    <h2 class=\"py-2.5 text-[#0a2025] dark:text-white text-2xl font-bold font-['Roboto']\">Keni Membership</h2>\n    <div\n      class=\"bg-[#3E9D26] text-center lg:text-left lg:bg-[url('https://iili.io/33CU9ZQ.png')] bg-[length:550px] bg-[position:calc(100%-50px)_center] bg-no-repeat rounded-xl mt-10 p-10\">\n      <h3 class=\"text-white text-5xl font-bold font-['Roboto']\">BECOME A MEMBER</h3>\n      <span class=\"text-white mt-3 text-xl font-normal font-['Roboto']\">Sign up for free. Join the community.</span>\n      <div class=\" justify-center lg:justify-start items-center mt-10 gap-5 flex\">\n        <button class=\"px-8 hover:cursor-pointer py-2.5 bg-white rounded-xl justify-center items-center gap-2.5 flex text-[#3e9d26] text-sm font-semibold font-['Roboto']\">Join Us</button><button class=\"px-8 py-2.5 hover:cursor-pointer bg-white rounded-xl justify-center items-center gap-2.5 flex text-[#3e9d26] text-sm font-semibold font-['Roboto']\">Sign In</button>\n      </div>\n    </div>\n  </div>\n</section>"
   }

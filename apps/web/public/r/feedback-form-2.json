@@ -3,10 +3,10 @@
   "name": "feedback-form-2",
   "type": "registry:ui",
   "title": "Feedback Form",
-  "description": "Feedback Form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Feedback Form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<form class=\"max-w-md mx-auto mt-20 p-6 bg-white border rounded-lg shadow-lg\">\n    <h2 class=\"text-2xl font-bold mb-6\">Feedback Form</h2>\n    <div class=\"mb-4\">\n        <label class=\"block text-gray-700 font-bold mb-2\" for=\"name\">\n      Name:\n    </label>\n        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"name\" type=\"text\" placeholder=\"Enter your name\">\n    </div>\n    <div class=\"mb-4\">\n        <label class=\"block text-gray-700 font-bold mb-2\" for=\"email\">\n      Email:\n    </label>\n        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"email\" type=\"email\" placeholder=\"Enter your email\">\n    </div>\n    <div class=\"mb-4\">\n        <label class=\"block text-gray-700 font-bold mb-2\" for=\"feedback\">\n      Feedback:\n    </label>\n        <textarea class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"feedback\" rows=\"5\" placeholder=\"Enter your feedback\"></textarea>\n    </div>\n    <button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\" type=\"submit\">\n    Submit\n  </button>\n</form>"
   }

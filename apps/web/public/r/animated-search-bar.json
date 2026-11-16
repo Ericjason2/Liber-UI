@@ -3,10 +3,10 @@
   "name": "animated-search-bar",
   "type": "registry:ui",
   "title": "Animated Search bar",
-  "description": "Animated Search bar — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Animated Search bar — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"flex items-center flex-col gap-4 justify-center h-screen bg-gray-300\">\r\n  <h1 class=\"font-semibold \">Animated Search Bar</h1>\r\n\r\n  <div class=\"flex items-center space-x-2 bg-white border border-gray-300 rounded-full px-4 py-2 transition-all duration-300 focus-within:ring-2 focus-within:ring-blue-400 shadow-md w-72 focus-within:w-96\">\r\n    <input \r\n      type=\"text\" \r\n      placeholder=\"Search...\" \r\n      class=\"flex-grow bg-transparent outline-none text-gray-700 placeholder-gray-400 transition-all duration-300\"\r\n    />\r\n    <button class=\"text-white bg-blue-500 hover:bg-blue-600 transition px-2 py-1 rounded-full focus:bg-gray-400\">\r\n      🔍\r\n    </button>\r\n  </div>\r\n\r\n</div>"
   }

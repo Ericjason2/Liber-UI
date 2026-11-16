@@ -3,10 +3,10 @@
   "name": "cta-responsive",
   "type": "registry:ui",
   "title": "CTA Responsive",
-  "description": "CTA Responsive — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "CTA Responsive — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<!-- CTA Section -->\n<section class=\"bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-[40px] py-12 px-4 md:px-8\">\n  <div class=\"max-w-7xl mx-auto text-center text-white space-y-6 md:space-y-8\">\n    <h2 class=\"text-3xl md:text-4xl font-extrabold leading-tight\">\n      Ready to Elevate Your Business?\n    </h2>\n    <p class=\"text-lg md:text-xl opacity-90\">\n      Join thousands of satisfied customers. Get started today and transform your future!\n    </p>\n    <a\n      href=\"#\"\n      class=\"inline-block bg-white text-purple-600 font-semibold uppercase px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-300\"\n    >\n      Get Started Now\n    </a>\n  </div>\n</section>"
   }

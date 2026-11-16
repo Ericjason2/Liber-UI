@@ -3,10 +3,10 @@
   "name": "chats-message-screen-in-neomorphism-2",
   "type": "registry:ui",
   "title": "Chats Message Screen in neomorphism",
-  "description": "Chats Message Screen in neomorphism — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Chats Message Screen in neomorphism — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"w-full max-w-md bg-gray-100 dark:bg-gray-800 rounded-2xl neo-shadow p-6 space-y-6\">\n        <!-- Chat header -->\n        <div class=\"flex items-center space-x-4\">\n            <div class=\"w-12 h-12 rounded-full neo-shadow flex items-center justify-center\">\n                <span class=\"text-xl font-semibold text-gray-700 dark:text-gray-300\">JD</span>\n            </div>\n            <h1 class=\"text-2xl font-bold text-gray-800 dark:text-gray-200\">Chat with John Doe</h1>\n        </div>\n\n        <!-- Chat messages area -->\n        <div class=\"h-96 overflow-y-auto neo-inset p-4 rounded-xl space-y-4\">\n            <!-- Received message -->\n            <div class=\"flex items-start space-x-2\">\n                <div class=\"w-8 h-8 rounded-full neo-shadow flex-shrink-0 flex items-center justify-center\">\n                    <span class=\"text-sm font-medium text-gray-700 dark:text-gray-300\">JD</span>\n                </div>\n                <div class=\"bg-white dark:bg-gray-700 p-3 rounded-lg neo-shadow max-w-xs\">\n                    <p class=\"text-sm text-gray-700 dark:text-gray-300\">Hey there! How's it going?</p>\n                </div>\n            </div>\n\n            <!-- Sent message -->\n            <div class=\"flex items-start justify-end space-x-2\">\n                <div class=\"bg-blue-500 p-3 rounded-lg neo-shadow max-w-xs\">\n                    <p class=\"text-sm text-white\">Hi John! I'm doing well, thanks for asking. How about you?</p>\n                </div>\n            </div>\n        </div>\n\n        <!-- Message input area -->\n        <div class=\"flex items-center space-x-4\">\n            <div class=\"flex-grow\">\n                <input type=\"text\" placeholder=\"Type your message...\"\n                       class=\"w-full p-4 rounded-xl neo-inset bg-transparent text-gray-700 dark:text-gray-300 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none\">\n            </div>\n            <button class=\"p-4 rounded-xl neo-shadow neo-button focus:outline-none\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-blue-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 19l9 2-9-18-9 18 9-2zm0 0v-8\" />\n                </svg>\n            </button>\n        </div>\n    </div>"
   }

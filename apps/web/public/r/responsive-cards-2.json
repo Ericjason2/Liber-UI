@@ -3,10 +3,10 @@
   "name": "responsive-cards-2",
   "type": "registry:ui",
   "title": "Responsive Cards",
-  "description": "Responsive Cards — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Responsive Cards — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>CodeBar Grid Layout</title>\n    <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n\n  <div class=\"responsive-grid\">\n    \n    <div class=\"grid-item\">\n        <div class=\"card-image-wrapper\">\n            <div class=\"card-image\"></div>\n        </div>\n        <div class=\"card-content\">\n            <h3>Modern 3D Card</h3>\n            <p>Hover over this card to see the 3D elevation and glow effect.</p>\n            <div class=\"tags\">\n                <span>UI Design</span>\n                <span>3D</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"grid-item\">\n        <div class=\"card-image-wrapper\">\n            <div class=\"card-image gradient-2\"></div>\n        </div>\n        <div class=\"card-content\">\n            <h3>Glassmorphism</h3>\n            <p>Combines 3D depth with modern frosted glass aesthetics.</p>\n            <div class=\"tags\">\n                <span>CSS</span>\n                <span>Modern</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"grid-item\">\n        <div class=\"card-image-wrapper\">\n            <div class=\"card-image gradient-3\"></div>\n        </div>\n        <div class=\"card-content\">\n            <h3>Interactive Elements</h3>\n            <p>Elements that react to user interaction creates immersion.</p>\n            <div class=\"tags\">\n                <span>UX</span>\n            </div>\n        </div>\n    </div>\n    \n    </div>\n\n</body>\n</html>"
   }

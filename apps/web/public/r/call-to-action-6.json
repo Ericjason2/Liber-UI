@@ -3,10 +3,10 @@
   "name": "call-to-action-6",
   "type": "registry:ui",
   "title": "Call to action",
-  "description": "Call to action — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "Call to action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"py-8 px-4 mx-auto sm:py-16 lg:px-6 bg-green-50 mt-40\">\n    <div class=\"mx-auto max-w-screen-sm text-center\">\n        <h2 class=\"mb-4 text-3xl tracking-tight font-bold leading-tight text-green-800\">Start your\n            free trial today</h2>\n        <p class=\"mb-6 text-green-700 md:text-lg\">Try now. 30-day money-back guarantee</p>\n\n\n        <a href=\"#\"\n            class=\"inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-500 \">\n            Get started\n            <svg class=\"w-5 h-5 ml-2 -mr-1\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\n                <path fill-rule=\"evenodd\"\n                    d=\"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z\"\n                    clip-rule=\"evenodd\"></path>\n            </svg>\n        </a>\n    </div>\n</div>"
   }

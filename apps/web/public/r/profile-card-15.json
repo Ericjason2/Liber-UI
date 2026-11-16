@@ -3,10 +3,10 @@
   "name": "profile-card-15",
   "type": "registry:ui",
   "title": "Profile Card",
-  "description": "Profile Card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, profile, footer).",
+  "description": "Profile Card — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "profile"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "profile",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing"
+      "profile"
     ],
     "rawHtml": "<div class=\"max-w-sm mx-auto bg-white rounded-2xl shadow-md \noverflow-hidden hover:shadow-lg transition-shadow duration-300\">\n  <div class=\"flex flex-col items-center p-6\">\n    <img\n      class=\"w-24 h-24 rounded-full border-4 border-rose-500 shadow-sm\"\n      src=\"https://via.placeholder.com/150\"\n      alt=\"User Avatar\"\n    />\n    <h2 class=\"mt-4 text-xl font-semibold text-gray-900\">Jane Doe</h2>\n    <p class=\"text-gray-500 text-sm\">UI/UX Designer</p>\n\n    <p class=\"mt-3 text-center text-gray-600 text-sm\">\n      Passionate about creating user-friendly digital experiences and modern designs.\n    </p>\n\n    <div class=\"flex mt-4 space-x-3\">\n      <button\n        class=\"px-4 py-2 bg-rose-600 text-white text-sm \n        rounded-lg hover:bg-rose-700 focus:ring-2 focus:ring-blue-400\"\n      >\n        Follow\n      </button>\n      <button\n        class=\"px-4 py-2 bg-gray-100 text-gray-700 text-sm rounded-lg hover:bg-gray-200 focus:ring-2 focus:ring-gray-300\"\n      >\n        Message\n      </button>\n    </div>\n  </div>\n</div>"
   }

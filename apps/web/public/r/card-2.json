@@ -3,10 +3,10 @@
   "name": "card-2",
   "type": "registry:ui",
   "title": "Card",
-  "description": "Card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "Example:\n<div class=\"bg-gray-100\">\n  <div class=\"mx-auto max-w-7xl py-12 sm:px-6 lg:px-8\">\n    <div class=\"mx-auto max-w-3xl\">\n\n      <div class=\"bg-white shadow sm:rounded-lg\">\n        <div class=\"px-4 py-5 sm:p-6\">\n          <h3 class=\"text-lg font-medium leading-6 text-gray-900\">Little bit of carding, little bit of cards</h3>\n          <div class=\"mt-2 max-w-xl text-sm text-gray-500\">\n            <p>Share. Care. Its all just emptiness.\n              Commodo dragon, I jam in my jammies.</p>\n              <p>Kiss my french caramel</p>\n              <p>ↈ sig  ·  pik - feel · susceptible - saunter </p>\n          </div>\n          <div class=\"mt-3 text-sm\">\n            <a href=\"https://pebble.social\" class=\"font-medium text-indigo-600 hover:text-indigo-500\">\n              Learn more about Pebble\n              <span aria-hidden=\"true\"> →</span>\n            </a>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>"
   }

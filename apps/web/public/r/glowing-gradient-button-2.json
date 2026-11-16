@@ -3,10 +3,10 @@
   "name": "glowing-gradient-button-2",
   "type": "registry:ui",
   "title": "Glowing gradient button",
-  "description": "Glowing gradient button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Glowing gradient button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"h-screen w-screen dark:bg-black bg-white bg-white flex justify-center items-center\">\r\n\r\n    <div class=\"relative inline-flex group w-96\">\r\n        <div\r\n            class=\"absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-sky-300 to-rose-300 via-violet-300 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-pulse\">\r\n        </div>\r\n        <input\r\n            placeholder=\"Ask anything\"\r\n            class=\"relative w-full inline-flex items-center justify-center px-4 py-4 text-lg  text-[#001155] transition-all duration-200 bg-white font-pj rounded-xl focus:outline-none outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#001155]/opacity-70\"\r\n/>\r\n    </div>\r\n</div>"
   }

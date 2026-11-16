@@ -3,10 +3,10 @@
   "name": "login-template-3",
   "type": "registry:ui",
   "title": "Login Template",
-  "description": "Login Template — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Login Template — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"min-h-screen flex items-center justify-center\">\r\n  <div class=\"bg-white rounded-3xl shadow-xl flex flex-col md:flex-row overflow-hidden max-w-screen-xl w-full mx-4 min-h-[600px]\">\r\n    \r\n    <!-- Imagen -->\r\n    <div class=\"md:w-1/2 w-full\">\r\n      <img\r\n        src=\"https://media.istockphoto.com/id/1588289977/es/foto/feliz-estudiante-negra-durante-una-clase-en-la-sala-de-conferencias-mirando-a-la-c%C3%A1mara.jpg?s=612x612&w=0&k=20&c=uYsHI--vkn0-X6gkHMTZnJMyR8396cM85GJcnsCdduU=\"\r\n        alt=\"Welcome\"\r\n        class=\"object-cover h-full w-full\"\r\n      />\r\n    </div>\r\n\r\n    <!-- Formulario -->\r\n    <div class=\"md:w-1/2 w-full flex flex-col justify-center p-12 bg-white\">\r\n      <h2 class=\"text-4xl font-extrabold text-blue-600 mb-10 text-center\">Welcome Back</h2>\r\n\r\n      <form class=\"space-y-6\">\r\n        <div class=\"relative\">\r\n          <img\r\n            src=\"https://cdn-icons-png.flaticon.com/512/561/561127.png\"\r\n            alt=\"Email\"\r\n            class=\"w-5 h-5 absolute left-4 top-1/2 transform -translate-y-1/2 opacity-70\"\r\n          />\r\n          <input\r\n            type=\"email\"\r\n            placeholder=\"Email\"\r\n            class=\"pl-12 pr-4 py-3 w-full rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 text-base shadow-sm transition duration-200\"\r\n          />\r\n        </div>\r\n\r\n        <div class=\"relative\">\r\n          <img\r\n            src=\"https://cdn-icons-png.flaticon.com/512/3064/3064155.png\"\r\n            alt=\"Password\"\r\n            class=\"w-5 h-5 absolute left-4 top-1/2 transform -translate-y-1/2 opacity-70\"\r\n          />\r\n          <input\r\n            type=\"password\"\r\n            placeholder=\"Password\"\r\n            class=\"pl-12 pr-4 py-3 w-full rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 text-base shadow-sm transition duration-200\"\r\n          />\r\n        </div>\r\n\r\n        <button\r\n          type=\"submit\"\r\n          class=\"w-full py-3 bg-blue-500 text-white font-semibold text-lg rounded-lg hover:bg-blue-600 transition duration-300 shadow-md\"\r\n        >\r\n          Log In\r\n        </button>\r\n      </form>\r\n\r\n      <div class=\"text-center mt-6\">\r\n        <p class=\"text-gray-600 text-sm\">\r\n          Don't have an account?\r\n          <a href=\"#\" class=\"text-blue-600 font-semibold hover:underline ml-1\">Register</a>\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
   }

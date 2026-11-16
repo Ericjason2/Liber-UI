@@ -3,10 +3,10 @@
   "name": "buttons-htmlwind",
   "type": "registry:ui",
   "title": "Buttons - Htmlwind",
-  "description": "Buttons - Htmlwind — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Buttons - Htmlwind — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div class=\"bg-white py-8\">\n  <div class=\"mx-auto max-w-3xl px-4 flex flex-col items-center gap-y-4 sm:flex-row sm:items-center sm:justify-around\">\n    <!-- button-xl -->\n    <button type=\"button\" class=\"rounded-md bg-pink-500 px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-pink-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500\">Button text</button>\n    <!-- button-lg -->\n    <button type=\"button\" class=\"rounded-md bg-pink-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500\">Button text</button>\n    <!-- button-base -->\n    <button type=\"button\" class=\"rounded-md bg-pink-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-pink-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500\">Button text</button>\n    <!-- button-sm -->\n    <button type=\"button\" class=\"rounded-md bg-pink-500 px-2.5 py-1.5 text-xs font-semibold text-white shadow-sm hover:bg-pink-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500\">Button text</button>\n    <!-- button-xs -->\n    <button type=\"button\" class=\"rounded-md bg-pink-500 px-2 py-1 text-xs font-semibold text-white shadow-sm hover:bg-pink-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500\">Button text</button>\n  </div>\n</div>"
   }

@@ -3,10 +3,10 @@
   "name": "responsive-tailwind-css-navbar",
   "type": "registry:ui",
   "title": "Responsive Tailwind CSS Navbar",
-  "description": "Responsive Tailwind CSS Navbar — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (navbar, footer, header).",
+  "description": "Responsive Tailwind CSS Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "navbar"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "navbar",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "navbar"
     ],
     "rawHtml": "<nav class=\"bg-white shadow-md\">\n  <div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\n    <div class=\"flex justify-between h-16\">\n      <!-- Logo -->\n      <div class=\"flex-shrink-0 flex items-center\">\n        <a href=\"#\" class=\"text-xl text-blue-600 font-bold text-gray-800\">DanDev</a>\n      </div>\n\n      <!-- Desktop Menu -->\n      <div class=\"hidden md:flex space-x-6 items-center\">\n        <a href=\"#\" class=\"text-gray-600 hover:text-blue-600 font-medium\">Home</a>\n        <a href=\"#\" class=\"text-gray-600 hover:text-blue-600 font-medium\">Projects</a>\n        <a href=\"#\" class=\"text-gray-600 hover:text-blue-600 font-medium\">About</a>\n        <a href=\"#\" class=\"text-gray-600 hover:text-blue-600 font-medium\">Contact</a>\n      </div>\n\n      <!-- Mobile Menu Button -->\n      <div class=\"md:hidden flex items-center\">\n        <button id=\"menu-btn\" class=\"text-gray-600 focus:outline-none\">\n          <svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"\n            xmlns=\"http://www.w3.org/2000/svg\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\n              d=\"M4 6h16M4 12h16M4 18h16\"></path>\n          </svg>\n        </button>\n      </div>\n    </div>\n  </div>\n\n\n  <div id=\"mobile-menu\" class=\"md:hidden hidden px-4 pb-4 space-y-2\">\n    <a href=\"#\" class=\"block text-gray-600 hover:text-blue-600\">Home</a>\n    <a href=\"#\" class=\"block text-gray-600 hover:text-blue-600\">Projects</a>\n    <a href=\"#\" class=\"block text-gray-600 hover:text-blue-600\">About</a>\n    <a href=\"#\" class=\"block text-gray-600 hover:text-blue-600\">Contact</a>\n  </div>\n</nav>\n\n<script>\n  const btn = document.getElementById('menu-btn');\n  const menu = document.getElementById('mobile-menu');\n\n  btn.addEventListener('click', () => {\n    menu.classList.toggle('hidden');\n  });\n</script>"
   }

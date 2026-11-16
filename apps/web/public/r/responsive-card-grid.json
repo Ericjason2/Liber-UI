@@ -3,10 +3,10 @@
   "name": "responsive-card-grid",
   "type": "registry:ui",
   "title": "Responsive Card Grid",
-  "description": "Responsive Card Grid — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, grid, footer).",
+  "description": "Responsive Card Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -20,31 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "grid",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<div class=\"flex flex-wrap justify-center mt-10\">\n\n    <!-- card 1 -->\n    <div class=\"p-4 max-w-sm\">\n        <div class=\"flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col\">\n            <div class=\"flex items-center mb-3\">\n                <div\n                    class=\"w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0\">\n                    <svg fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                        stroke-width=\"2\" class=\"w-5 h-5\" viewBox=\"0 0 24 24\">\n                        <path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"></path>\n                    </svg>\n                </div>\n                <h2 class=\"text-white dark:text-white text-lg font-medium\">Feature 1</h2>\n            </div>\n            <div class=\"flex flex-col justify-between flex-grow\">\n                <p class=\"leading-relaxed text-base text-white dark:text-gray-300\">\n                    Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.\n                </p>\n                <a href=\"#\" class=\"mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center\">Learn More\n                    <svg fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                        stroke-width=\"2\" class=\"w-4 h-4 ml-2\" viewBox=\"0 0 24 24\">\n                        <path d=\"M5 12h14M12 5l7 7-7 7\"></path>\n                    </svg>\n                </a>\n            </div>\n        </div>\n    </div>\n\n    <!-- card 2 -->\n    <div class=\"p-4 max-w-sm\">\n        <div class=\"flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col\">\n            <div class=\"flex items-center mb-3\">\n                <div\n                    class=\"w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0\">\n                    <svg fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                        stroke-width=\"2\" class=\"w-5 h-5\" viewBox=\"0 0 24 24\">\n                        <path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"></path>\n                    </svg>\n                </div>\n                <h2 class=\"text-white dark:text-white text-lg font-medium\">Feature 2</h2>\n            </div>\n            <div class=\"flex flex-col justify-between flex-grow\">\n                <p class=\"leading-relaxed text-base text-white dark:text-gray-300\">\n                    Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet 33 nihil molestias. Rem perspiciatis iure ut laborum inventore et maxime amet.\n                </p>\n                <a href=\"#\" class=\"mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center\">Learn More\n                    <svg fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                        stroke-width=\"2\" class=\"w-4 h-4 ml-2\" viewBox=\"0 0 24 24\">\n                        <path d=\"M5 12h14M12 5l7 7-7 7\"></path>\n                    </svg>\n                </a>\n            </div>\n        </div>\n    </div>\n\n    <!-- card 3 -->\n    <div class=\"p-4 max-w-sm\">\n        <div class=\"flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col\">\n            <div class=\"flex items-center mb-3\">\n                <div\n                    class=\"w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0\">\n                    <svg fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                        stroke-width=\"2\" class=\"w-5 h-5\" viewBox=\"0 0 24 24\">\n                        <path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"></path>\n                    </svg>\n                </div>\n                <h2 class=\"text-white dark:text-white text-lg font-medium\">Feature 3</h2>\n            </div>\n            <div class=\"flex flex-col justify-between flex-grow\">\n                <p class=\"leading-relaxed text-base text-white dark:text-gray-300\">\n                    Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet 33 nihil molestias. Rem perspiciatis iure ut laborum inventore et maxime amet.\n                </p>\n                <a href=\"#\" class=\"mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center\">Learn More\n                    <svg fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                        stroke-width=\"2\" class=\"w-4 h-4 ml-2\" viewBox=\"0 0 24 24\">\n                        <path d=\"M5 12h14M12 5l7 7-7 7\"></path>\n                    </svg>\n                </a>\n            </div>\n        </div>\n    </div>\n\n</div>"
   }

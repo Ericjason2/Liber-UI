@@ -3,10 +3,10 @@
   "name": "material-3-cards-light",
   "type": "registry:ui",
   "title": "Material 3 Cards [Light]",
-  "description": "Material 3 Cards [Light] — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Material 3 Cards [Light] — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<head>\n    <!-- Roboto Font -->\n    <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&amp;display=swap\" rel=\"stylesheet\">\n    \n    <!-- Material Icons -->\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200\">\n</head>\n\n<body data-theme=\"light\">\n    \n    <!-- Demo Container -->\n    <div class=\"flex flex-col items-center gap-4 py-16 h-screen\">\n\n        <!-- Filled (Default) Card -->\n        <div class=\"card max-w-[64mm] w-full max-h-[32mm] h-full\">\n            <span class=\"text-2xl font-bold\">Filled Card</span>\n        </div>\n\n        <!-- Elevated Card -->\n        <div class=\"card card-elevated max-w-[64mm] w-full max-h-[32mm] h-full\">\n            <span class=\"text-2xl font-bold\">Elevated Card</span>\n        </div>\n\n        <!-- Outlined Card -->\n        <div class=\"card card-outlined max-w-[64mm] w-full max-h-[32mm] h-full\">\n            <span class=\"text-2xl font-bold\">Outlined Card</span>\n        </div>\n\n    </div>\n\n</body>"
   }

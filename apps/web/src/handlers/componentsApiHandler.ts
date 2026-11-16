@@ -1,7 +1,17 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { SAMPLE_COMPONENTS, type ComponentItem } from "../lib/catalog-components";
 
-const CATEGORY_IDS = ["buttons", "inputs", "data-display", "feedback"] as const;
+const CATEGORY_IDS = [
+  "card",
+  "form",
+  "button",
+  "navbar",
+  "hero",
+  "pricing",
+  "grid",
+  "profile",
+  "landing-page",
+] as const;
 
 let cachedCategoryCounts: Record<string, number> | null = null;
 let cachedAvailableTags: Array<{ tag: string; count: number }> | null = null;
@@ -16,7 +26,12 @@ function getMetadataCaches() {
 
   const counts: Record<string, number> = { all: SAMPLE_COMPONENTS.length };
   for (const cat of CATEGORY_IDS) {
-    counts[cat] = SAMPLE_COMPONENTS.filter((c) => c.category === cat).length;
+    counts[cat] = 0;
+  }
+  for (const comp of SAMPLE_COMPONENTS) {
+    if (comp.category) {
+      counts[comp.category] = (counts[comp.category] || 0) + 1;
+    }
   }
 
   const tagMap = new Map<string, number>();

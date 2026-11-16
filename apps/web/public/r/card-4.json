@@ -3,10 +3,10 @@
   "name": "card-4",
   "type": "registry:ui",
   "title": "card",
-  "description": "card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, grid, footer).",
+  "description": "card — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -20,31 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "grid",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<div class=\"flex justify-center items-center xl:h-screen lg:h-screen md:h-screen sm:h-screen p-5\">\n  <div class=\"grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 xl:gap-5 lg:gap-5 md:gap-5 sm:gap-5 gap-5 px-5\">\n    <div class=\"text-center w-[200px] shadow-2xl rounded-2xl p-5 border\">\n      <h1 class=\"font-extrabold\">Card</h1>\n      <p class=\"text-sm\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus accusamus perspiciatis at harum quaerat ad dolore, quia ea rerum pariatur minus. Doloremque, odit cum inventore enim porro voluptatum laborum. Natus?</p>\n    </div>\n\n    <div class=\"text-center w-[200px] shadow-2xl rounded-2xl p-5 border\">\n      <h1 class=\"font-extrabold\">Card</h1>\n      <p class=\"text-sm\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus accusamus perspiciatis at harum quaerat ad dolore, quia ea rerum pariatur minus. Doloremque, odit cum inventore enim porro voluptatum laborum. Natus?</p>\n    </div>\n\n    <div class=\"text-center w-[200px] shadow-2xl rounded-2xl p-5 border\">\n      <h1 class=\"font-extrabold\">Card</h1>\n      <p class=\"text-sm\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus accusamus perspiciatis at harum quaerat ad dolore, quia ea rerum pariatur minus. Doloremque, odit cum inventore enim porro voluptatum laborum. Natus?</p>\n    </div>\n\n    <div class=\"text-center w-[200px] shadow-2xl rounded-2xl p-5 border\">\n      <h1 class=\"font-extrabold\">Card</h1>\n      <p class=\"text-sm\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus accusamus perspiciatis at harum quaerat ad dolore, quia ea rerum pariatur minus. Doloremque, odit cum inventore enim porro voluptatum laborum. Natus?</p>\n    </div>\n\n\n  </div>\n</div>"
   }

@@ -3,10 +3,10 @@
   "name": "profile-form",
   "type": "registry:ui",
   "title": "Profile Form",
-  "description": "Profile Form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Profile Form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"flex justify-center mt-20 px-8\">\n    <form class=\"max-w-2xl\">\n        <div class=\"flex flex-wrap border shadow rounded-lg p-3 dark:bg-gray-600\">\n            <h2 class=\"text-xl text-gray-600 dark:text-gray-300 pb-2\">Account settings:</h2>\n\n            <div class=\"flex flex-col gap-2 w-full border-gray-400\">\n\n                <div>\n                    <label class=\"text-gray-600 dark:text-gray-400\">User\n                        name\n                    </label>\n                    <input\n                        class=\"w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow dark:bg-gray-600 dark:text-gray-100\"\n                        type=\"text\">\n                </div>\n\n                <div>\n                    <label class=\"text-gray-600 dark:text-gray-400\">Email</label>\n                    <input\n                        class=\"w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow dark:bg-gray-600 dark:text-gray-100\"\n                        type=\"text\">\n                </div>\n\n                <div>\n                    <label class=\"text-gray-600 dark:text-gray-400\">Bio</label>\n                    <textarea\n                        class=\"w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow dark:bg-gray-600 dark:text-gray-100\"\n                        name=\"bio\"></textarea>\n                </div>\n                <div class=\"flex justify-end\">\n                    <button\n                        class=\"py-1.5 px-3 m-1 text-center bg-violet-700 border rounded-md text-white  hover:bg-violet-500 hover:text-gray-100 dark:text-gray-200 dark:bg-violet-700\"\n                        type=\"submit\">Save changes</button>\n                </div>\n            </div>\n        </div>\n    </form>\n</div>"
   }

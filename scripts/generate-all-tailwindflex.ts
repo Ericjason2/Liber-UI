@@ -3,6 +3,13 @@ import path from "path";
 import esbuild from "esbuild";
 import type { ScrapedComponent } from "./scrape-all-tailwindflex";
 
+interface DiscoveredUrl {
+  url: string;
+  author: string;
+  slug: string;
+  tags: string[];
+}
+
 function sanitizeRawHtml(html: string): string {
   return html
     .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "")
@@ -84,12 +91,98 @@ export function toPascalCase(str: string): string {
   return pascal ? (pascal.match(/^[0-9]/) ? `Comp${pascal}` : pascal) : "Component";
 }
 
-function buildCleanDescription(name: string, tags: string[]): string {
-  const tagList = tags.slice(0, 3).join(", ");
-  if (tagList) {
-    return `${name} — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (${tagList}).`;
+function determinePreciseCategory(
+  slug: string,
+  name: string,
+  realTags: string[]
+): string {
+  const sLower = `${slug} ${name}`.toLowerCase();
+  const tSet = new Set(realTags.map((t) => t.toLowerCase()));
+
+  if (tSet.has("pricing") || sLower.includes("pricing") || sLower.includes("price") || sLower.includes("tier")) {
+    return "pricing";
   }
-  return `${name} — Composant d'interface responsive et personnalisable construit avec Tailwind CSS.`;
+  if (tSet.has("navbar") || sLower.includes("navbar") || sLower.includes("nav-bar") || sLower.includes("navigation")) {
+    return "navbar";
+  }
+  if (tSet.has("header") || sLower.includes("header") || sLower.includes("menu")) {
+    return "navbar";
+  }
+  if (tSet.has("hero") || sLower.includes("hero") || sLower.includes("banner") || sLower.includes("jumbotron")) {
+    return "hero";
+  }
+  if (
+    tSet.has("form") ||
+    sLower.includes("form") ||
+    sLower.includes("input") ||
+    sLower.includes("login") ||
+    sLower.includes("signup") ||
+    sLower.includes("register") ||
+    sLower.includes("contact")
+  ) {
+    return "form";
+  }
+  if (
+    tSet.has("button") ||
+    tSet.has("call-to-action") ||
+    sLower.includes("button") ||
+    sLower.includes("cta") ||
+    sLower.includes("action")
+  ) {
+    return "button";
+  }
+  if (
+    tSet.has("profile") ||
+    sLower.includes("profile") ||
+    sLower.includes("author") ||
+    sLower.includes("user") ||
+    sLower.includes("avatar")
+  ) {
+    return "profile";
+  }
+  if (
+    tSet.has("grid") ||
+    sLower.includes("grid") ||
+    sLower.includes("bento") ||
+    sLower.includes("gallery") ||
+    sLower.includes("column")
+  ) {
+    return "grid";
+  }
+  if (
+    tSet.has("landing-page") ||
+    sLower.includes("landing") ||
+    sLower.includes("showcase") ||
+    sLower.includes("feature")
+  ) {
+    return "landing-page";
+  }
+
+  return "card";
+}
+
+function buildCategoryDescription(name: string, category: string): string {
+  switch (category) {
+    case "pricing":
+      return `${name} — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.`;
+    case "navbar":
+      return `${name} — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.`;
+    case "hero":
+      return `${name} — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.`;
+    case "form":
+      return `${name} — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.`;
+    case "button":
+      return `${name} — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.`;
+    case "profile":
+      return `${name} — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.`;
+    case "grid":
+      return `${name} — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.`;
+    case "landing-page":
+      return `${name} — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.`;
+    case "card":
+    default:
+      return `${name} — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.`;
+  }
 }
 
 async function main() {
@@ -97,8 +190,28 @@ async function main() {
     process.cwd(),
     "apps/web/src/data/tailwindflex-scraped-all.json"
   );
+  const discoveredPath = path.resolve(
+    process.cwd(),
+    "apps/web/src/data/tailwindflex-discovered-urls.json"
+  );
+
   const data: ScrapedComponent[] = JSON.parse(fs.readFileSync(inputPath, "utf-8"));
-  console.log(`Processing all ${data.length} open-license UI components into shadcn format...`);
+  const discovered: DiscoveredUrl[] = JSON.parse(
+    fs.readFileSync(discoveredPath, "utf-8")
+  );
+
+  // Map each slug to its real discovered tags (clean from page footer noise)
+  const slugTagsMap = new Map<string, string[]>();
+  for (const d of discovered) {
+    if (!slugTagsMap.has(d.slug)) {
+      slugTagsMap.set(d.slug, d.tags || []);
+    } else {
+      const existing = slugTagsMap.get(d.slug) || [];
+      slugTagsMap.set(d.slug, Array.from(new Set([...existing, ...(d.tags || [])])));
+    }
+  }
+
+  console.log(`Processing all ${data.length} UI components with clean precise categorization...`);
 
   const publicRDir = path.resolve(process.cwd(), "apps/web/public/r");
   if (!fs.existsSync(publicRDir)) {
@@ -110,7 +223,7 @@ async function main() {
     kind: "component";
     name: string;
     description: string;
-    category: "inputs" | "buttons" | "data-display" | "feedback";
+    category: string;
     tags: string[];
     license: "MIT";
     author: string;
@@ -120,12 +233,18 @@ async function main() {
     rawHtml: string;
   }> = [];
 
+  const categoryStats: Record<string, number> = {};
   let directJsxCount = 0;
   let fallbackCount = 0;
 
   for (const item of data) {
     const sanitizedHtml = sanitizeRawHtml(item.rawHtml);
     const pascalName = toPascalCase(item.slug);
+
+    // Get real tags without footer duplicates
+    const realTags = slugTagsMap.get(item.slug) || (item.tags.length <= 5 ? item.tags : [item.category]);
+    const preciseCategory = determinePreciseCategory(item.slug, item.name, realTags);
+    categoryStats[preciseCategory] = (categoryStats[preciseCategory] || 0) + 1;
 
     // Try direct JSX conversion first
     const balanced = balanceTags(sanitizedHtml);
@@ -165,7 +284,6 @@ export { ${pascalName} }
       finalCode = directJsxCode;
       directJsxCount++;
     } catch {
-      // Fallback: Safe React component wrapper in shadcn format
       const fallbackCode = `import * as React from "react"
 
 function ${pascalName}({
@@ -188,15 +306,15 @@ export { ${pascalName} }
       fallbackCount++;
     }
 
-    const description = buildCleanDescription(item.name, item.tags);
+    const description = buildCategoryDescription(item.name, preciseCategory);
 
     const compItem = {
       slug: item.slug,
       kind: "component" as const,
       name: item.name,
       description,
-      category: item.category,
-      tags: item.tags,
+      category: preciseCategory,
+      tags: realTags,
       license: "MIT" as const,
       author: "Liber UI",
       registryDependencies: [],
@@ -215,7 +333,7 @@ export { ${pascalName} }
       title: item.name,
       description,
       author: "Liber UI",
-      categories: [item.category],
+      categories: [preciseCategory],
       dependencies: [],
       files: [
         {
@@ -226,7 +344,7 @@ export { ${pascalName} }
       ],
       meta: {
         kind: "component",
-        tags: item.tags,
+        tags: realTags,
         rawHtml: item.rawHtml,
       },
     };
@@ -238,9 +356,10 @@ export { ${pascalName} }
     );
   }
 
-  console.log(`\nAll ${processedComponents.length} components formatted in shadcn/ui style!`);
+  console.log(`\nAll ${processedComponents.length} components formatted in clean shadcn/ui style!`);
   console.log(`- Direct JSX components: ${directJsxCount}`);
   console.log(`- Safe wrapper JSX components: ${fallbackCount}`);
+  console.log(`- Precise Category Breakdown:`, categoryStats);
   console.log(`- Static manifests written to apps/web/public/r/*.json: ${processedComponents.length}`);
 
   // Save to apps/web/src/data/tailwindflex-components.ts
@@ -252,7 +371,7 @@ export interface TailwindFlexComponentItem {
   kind: "component";
   name: string;
   description: string;
-  category: "inputs" | "buttons" | "data-display" | "feedback";
+  category: string;
   tags: string[];
   license: "MIT";
   author: string;

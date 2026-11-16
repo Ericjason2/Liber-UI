@@ -3,10 +3,10 @@
   "name": "responsive-card-with-image",
   "type": "registry:ui",
   "title": "Responsive card with image",
-  "description": "Responsive card with image — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Responsive card with image — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl\">\r\n    <div class=\"md:flex\">\r\n        <div class=\"md:shrink-0\">\r\n            <img class=\"h-48 w-full object-cover md:h-full md:w-48\" src=\"https://loremflickr.com/g/320/240/team\">\r\n        </div>\r\n        <div class=\"p-8\">\r\n            <div class=\"uppercase tracking-wide text-sm text-indigo-500 font-semibold\">Company retreats</div>\r\n            <a href=\"#\" class=\"block mt-1 text-lg leading-tight font-medium text-black hover:underline\">Incredible\r\n                accommodation for your team\r\n            </a>\r\n            <p class=\"mt-2 text-slate-500\">Looking to take your team away on a retreat to enjoy awesome food and take in\r\n                some sunshine? We have a list of places to do just that.\r\n            </p>\r\n        </div>\r\n    </div>\r\n</div>"
   }

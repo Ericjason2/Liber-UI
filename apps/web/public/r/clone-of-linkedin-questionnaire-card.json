@@ -3,10 +3,10 @@
   "name": "clone-of-linkedin-questionnaire-card",
   "type": "registry:ui",
   "title": "Clone of LinkedIn Questionnaire Card",
-  "description": "Clone of LinkedIn Questionnaire Card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "description": "Clone of LinkedIn Questionnaire Card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "card"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "card",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "card"
     ],
     "rawHtml": "<div class=\"w-full h-screen flex items-center bg-gray-300 dark:bg-gray-900\">\n    <div class=\"xl:w-[40%] lg:w-[50%] sm:w-[80%] xs:w-[96%] mx-auto shadow-lg flex flex-col gap-2 justify-center items-center p-4 mx-4 border-2 rounded-lg bg-white dark:border-gray-500 dark:bg-gray-900\">\n        <img src=\"https://media.licdn.com/media/AAYQAgSuAAgAAQAAAAAAACusnN9kMj0wRRWck-KbrrrLSg.png\" alt=\"User Profile\" class=\"w-[6rem] h-[6rem] outline outline-2 outline-gray-200 rounded-full\" />\n        <div class=\"w-full pt-4 text-center\">\n            <h3 class=\"text-2xl font-serif text-gray-900 dark:text-white\">Hi Samuel, are you hiring?</h3>\n            <p class=\"text-xl text-serif pt-2 text-gray-500 dark:text-gray-400\">Discover free and easy ways to find a great\n                hire,\n                fast.</p>\n        </div>\n\n        <div class=\"flex sm:flex-row xs:flex-col gap-4 pt-4 dark:text-white\">\n            <button class=\"px-6 py-1 rounded-full outline outline-1 outline-blue-700 font-serif\">Yes, I'm hiring</button>\n            <button class=\"px-6 py-1 rounded-full outline outline-1 outline-blue-700 font-serif\">No, not right now</button>\n        </div>\n    </div>\n</div>"
   }

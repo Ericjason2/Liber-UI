@@ -3,10 +3,10 @@
   "name": "full-width-header-with-gradient",
   "type": "registry:ui",
   "title": "Full width header with gradient",
-  "description": "Full width header with gradient — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (header, footer, card).",
+  "description": "Full width header with gradient — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "navbar"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "header",
-      "footer",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "header"
     ],
     "rawHtml": "<div\n    class=\"bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-500 dark:from-gray-500 dark:via-gray-600 dark:to-gray-500 py-8 md:py-16\">\n    <div class=\"flex flex-col gap-3\">\n\n        <img src=\"https://tailwindflex.com/public/images/profile/1.png\" class=\"object-cover w-14 h-14 rounded-full m-auto\" alt=\"User image\" id=\"user_image\">\n\n        <p class=\"text-3xl font-bold text-center text-white\">\n            TailwindFlex\n        </p>\n\n        <p class=\"text-center text-gray-200\">\n            Free tailwind CSS components library\n        </p>\n\n        <div class=\"flex justify-center max-w-sm gap-2 mx-auto\">\n\n            <a href=\"#\">\n                <img src=\"https://tailwindflex.com/public/images/icons/github.svg\" class=\"object-cover w-6 h-6  m-auto\" title=\"github\">\n            </a>\n\n            <a href=\"#\">\n                <img src=\"https://tailwindflex.com/public/images/icons/linkedin.png\" class=\"object-cover w-6 h-6  m-auto\" title=\"linkedin\">\n            </a>\n\n            <a href=\"#\">\n                <img src=\"https://tailwindflex.com/public/images/icons/website.svg\" class=\"object-cover w-6 h-6  m-auto\" title=\"website\">\n            </a>\n\n            <a href=\"#\">\n                <img src=\"https://tailwindflex.com/public/images/icons/instagram.svg\" class=\"object-cover w-6 h-6  m-auto\" title=\"instagram\">\n            </a>\n\n        </div>\n    </div>\n</div>"
   }

@@ -3,10 +3,10 @@
   "name": "testimonial-card-with-image",
   "type": "registry:ui",
   "title": "Testimonial card with image",
-  "description": "Testimonial card with image — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, profile, footer).",
+  "description": "Testimonial card with image — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "profile"
   ],
   "dependencies": [],
   "files": [
@@ -20,30 +20,7 @@
     "kind": "component",
     "tags": [
       "card",
-      "profile",
-      "footer",
-      "header",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing"
+      "profile"
     ],
     "rawHtml": "<div class=\"max-w-sm\">\n    <div class=\"shadow-lg rounded overflow-hidden\">\n        <img class=\"\" src=\"https://loremflickr.com/g/600/400/girl\">\n        <div class=\"bg-white p-12\">\n            <p class=\"font-light text-xl italic font-gray-800\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\n                dolore magna aliqua. Ut enim ad minim veniam.\n            </p>\n            <p class=\"mt-4 font-light text-sm text-gray-500\">Customer Support Pro</p>\n            <p class=\"mt-1 font-semibold text-sm text-gray-900\">US transport</p>\n        </div>\n    </div>\n</div>"
   }

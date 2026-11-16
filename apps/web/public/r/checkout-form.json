@@ -3,10 +3,10 @@
   "name": "checkout-form",
   "type": "registry:ui",
   "title": "Checkout form",
-  "description": "Checkout form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Checkout form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<div class=\"container mx-auto p4-10\">\r\n    <div class=\"max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-xl\">\r\n        <div class=\"md:flex\">\r\n            <div class=\"w-full px-6 py-8 md:p-8\">\r\n                <h2 class=\"text-2xl font-bold text-gray-800\">Checkout</h2>\r\n                <p class=\"mt-4 text-gray-600\">Please fill out the form below to complete your purchase.</p>\r\n                <form class=\"mt-6\">\r\n                    <div class=\"mb-6\">\r\n                        <label class=\"block text-gray-800 font-bold mb-2\" for=\"name\">\r\n                            Name\r\n                        </label>\r\n                        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"name\" type=\"text\" placeholder=\"John Doe\">\r\n                    </div>\r\n                    <div class=\"mb-6\">\r\n                        <label class=\"block text-gray-800 font-bold mb-2\" for=\"email\">\r\n                            Email\r\n                        </label>\r\n                        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"email\" type=\"email\" placeholder=\"johndoe@example.com\">\r\n                    </div>\r\n                    <div class=\"mb-6\">\r\n                        <label class=\"block text-gray-800 font-bold mb-2\" for=\"card_number\">\r\n                            Card Number\r\n                        </label>\r\n                        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"card_number\" type=\"text\" placeholder=\"**** **** **** 1234\">\r\n                    </div>\r\n                    <div class=\"mb-6\">\r\n                        <label class=\"block text-gray-800 font-bold mb-2\" for=\"expiration_date\">\r\n                            Expiration Date\r\n                        </label>\r\n                        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"expiration_date\" type=\"text\" placeholder=\"MM / YY\">\r\n                    </div>\r\n                    <div class=\"mb-6\">\r\n                        <label class=\"block text-gray-800 font-bold mb-2\" for=\"cvv\">\r\n                            CVV\r\n                        </label>\r\n                        <input class=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"cvv\" type=\"text\" placeholder=\"***\">\r\n                    </div>\r\n                    <button class=\"bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\" type=\"button\">\r\n                        Submit\r\n                    </button>\r\n                </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
   }

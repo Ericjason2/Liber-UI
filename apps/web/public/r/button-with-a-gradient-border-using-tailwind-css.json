@@ -3,10 +3,10 @@
   "name": "button-with-a-gradient-border-using-tailwind-css",
   "type": "registry:ui",
   "title": "Button with a gradient border using Tailwind CSS",
-  "description": "Button with a gradient border using Tailwind CSS — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Button with a gradient border using Tailwind CSS — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<div style=\"max-width: 240px;\"\n    class=\"flex rounded-full mx-auto bg-gradient-to-tr from-red-400 via-orange-400 to-rose-400 p-1 shadow-lg\">\n    <button class=\"flex-1 font-bold text-xl bg-white px-6 py-1 rounded-full\">\n        Welcome\n    </button>\n</div>"
   }

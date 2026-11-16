@@ -3,10 +3,10 @@
   "name": "boost-your-business-with-a-stunning-website",
   "type": "registry:ui",
   "title": "Boost Your Business with a Stunning Website!",
-  "description": "Boost Your Business with a Stunning Website! — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "Boost Your Business with a Stunning Website! — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<main class=\"h-screen my-10\">\n      <section class=\"bg-gradient-to-r from-[#75723E] to-[#A06C5D]  text-white  flex justify-center items-center px-6 text-center py-20\">\n        <div class=\" max-w-3xl mx-auto\">\n          <h2 class=\"text-3xl md:text-4xl font-bold mb-4\">\n            Transform Your Online Presence Today!\n          </h2>\n          <p class=\"text-lg md:text-xl md:pb-20 pb-10\">\n            Get a high-performing, visually stunning website tailored for your business needs.\n          </p>\n          <a\n            href=\"/contact\"\n            class=\"bg-white  text-[#75723E] hover:bg-gray-200 text-lg font-semibold py-3 px-6 rounded-full shadow-lg transition-all duration-300\"\n          >\n            Get a Free Consultation\n          </a>\n        </div>\n      </section>\n</main>"
   }

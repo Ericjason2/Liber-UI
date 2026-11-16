@@ -3,10 +3,10 @@
   "name": "contact-us-form-7",
   "type": "registry:ui",
   "title": "Contact Us form",
-  "description": "Contact Us form — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (form, footer, header).",
+  "description": "Contact Us form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "form"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "form",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "form"
     ],
     "rawHtml": "<section class=\"dark:bg-gray-800 bg-[#F9F9F9]\">\n  <div class=\"max-w-[556px] px-4 py-10 mx-auto  flex flex-col \">\n    <div class=\"w-full flex flex-col gap-5\">\n      <div class=\"flex gap-9\">\n        <label class=\"flex items-center gap-4\"><input type=\"radio\" class=\"w-7 h-7  accent-[#b9ff66]\"><span class=\"justify-start dark:text-white text-black text-base sm:text-lg font-normal \">Say Hi</span></label><label class=\"flex items-center gap-4\"><input type=\"radio\" class=\"w-7 h-7  accent-[#b9ff66]\"><span class=\"justify-start dark:text-white text-black text-base sm:text-lg font-normal \">Get a Quote</span></label>\n      </div>\n      <div class=\"w-full flex flex-col justify-start items-start gap-6\">\n        <div class=\"w-full\">\n          <label class=\" dark:text-white text-black text-base font-normal  leading-7\">Name*</label><input placeholder=\"Name\" type=\"text\" class=\"mt-2 w-full px-5 py-2 bg-white rounded-xl outline outline-1 outline-offset-[-1px] outline-black  overflow-hidden  text-[#898989] text-lg font-normal \">\n        </div>\n        <div class=\"w-full\">\n          <label class=\"dark:text-white text-black text-base font-normal  leading-7\">Email*</label><input placeholder=\"Email\" type=\"email\" class=\"mt-2 w-full px-5 py-2 bg-white rounded-xl outline outline-1 outline-offset-[-1px] outline-black  overflow-hidden  text-[#898989] text-lg font-normal \">\n        </div>\n        <div class=\"w-full\">\n          <label class=\"dark:text-white text-black text-base font-normal  leading-7\">Message*</label><textarea class=\"mt-2 w-full resize-none px-5 py-2 bg-white rounded-xl outline outline-1 outline-offset-[-1px] outline-black  overflow-hidden  text-[#898989] text-lg font-normal \" placeholder=\"Message\" cols=\"40\" rows=\"10\"></textarea>\n        </div>\n      </div>\n      <button class=\" px-9 py-5 bg-[#191a23] rounded-2xl  dark:bg-white text-center dark:text-[#191a23]  text-white text-xl font-normal  leading-7\">Send Message</button>\n    </div>\n  </div>\n</section>"
   }

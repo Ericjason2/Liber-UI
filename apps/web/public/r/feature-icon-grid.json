@@ -3,10 +3,10 @@
   "name": "feature-icon-grid",
   "type": "registry:ui",
   "title": "Feature / Icon grid",
-  "description": "Feature / Icon grid — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (grid, footer, header).",
+  "description": "Feature / Icon grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "grid"
   ],
   "dependencies": [],
   "files": [
@@ -19,32 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "grid",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "grid"
     ],
     "rawHtml": "<!-- source: https://redpixelthemes.com/ -->\r\n\r\n<div class=\"container relative z-40 mx-auto mt-12\">\r\n\r\n    <div class=\"flex flex-wrap justify-center mx-auto lg:w-full md:w-5/6 xl:shadow-small-blue\">\r\n\r\n        <a href=\"#\" class=\"block w-1/2 py-10 text-center border lg:w-1/4\">\r\n            <div>\r\n                <img src=\"https://redpixelthemes.com/assets/images/icon-portfolio-green.svg\" class=\"block mx-auto\">\r\n\r\n                <p class=\"pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6\">\r\n                    portfolio\r\n                </p>\r\n            </div>\r\n        </a>\r\n\r\n        <a href=\"#\" class=\"block w-1/2 py-10 text-center border lg:w-1/4\">\r\n            <div>\r\n                <img src=\"https://redpixelthemes.com/assets/images/icon-blog-green.svg\" class=\"block mx-auto\">\r\n\r\n                <p class=\"pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6\">\r\n                    blog\r\n                </p>\r\n            </div>\r\n        </a>\r\n\r\n        <a href=\"#\" class=\"block w-1/2 py-10 text-center border lg:w-1/4\">\r\n            <div>\r\n                <img src=\"https://redpixelthemes.com/assets/images/icon-ecommerce-green.svg\" class=\"block mx-auto\">\r\n\r\n                <p class=\"pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6\">\r\n                    ecommerce\r\n                </p>\r\n            </div>\r\n        </a>\r\n\r\n        <a href=\"#\" class=\"block w-1/2 py-10 text-center border lg:w-1/4\">\r\n            <div>\r\n                <img src=\"https://redpixelthemes.com/assets/images/icon-startup-green.svg\" class=\"block mx-auto\">\r\n\r\n                <p class=\"pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6\">\r\n                    startup\r\n                </p>\r\n            </div>\r\n        </a>\r\n\r\n        <a href=\"#\" class=\"block w-1/2 py-10 text-center border lg:w-1/4\">\r\n            <div>\r\n                <img src=\"https://redpixelthemes.com/assets/images/icon-business-green.svg\" class=\"block mx-auto\">\r\n\r\n                <p class=\"pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6\">\r\n                    business\r\n                </p>\r\n            </div>\r\n        </a>\r\n\r\n        <a href=\"#\" class=\"block w-1/2 py-10 text-center border lg:w-1/4\">\r\n            <div>\r\n                <img src=\"https://redpixelthemes.com/assets/images/icon-lifestyle-green.svg\" class=\"block mx-auto\">\r\n\r\n                <p class=\"pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6\">\r\n                    lifestyle\r\n                </p>\r\n            </div>\r\n        </a>\r\n\r\n        <a href=\"#\" class=\"block w-1/2 py-10 text-center border lg:w-1/4\">\r\n            <div>\r\n                <img src=\"https://redpixelthemes.com/assets/images/icon-landing-page-green.svg\" class=\"block mx-auto\">\r\n\r\n                <p class=\"pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6\">\r\n                    landing pages\r\n                </p>\r\n            </div>\r\n        </a>\r\n\r\n        <a href=\"#\" class=\"block w-1/2 py-10 text-center border lg:w-1/4\">\r\n            <div>\r\n                <img src=\"https://redpixelthemes.com/assets/images/icon-health-green.svg\" class=\"block mx-auto\">\r\n\r\n                <p class=\"pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6\">\r\n                    health\r\n                </p>\r\n            </div>\r\n        </a>\r\n\r\n    </div>\r\n\r\n</div>"
   }

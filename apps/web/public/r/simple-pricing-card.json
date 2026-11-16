@@ -3,10 +3,10 @@
   "name": "simple-pricing-card",
   "type": "registry:ui",
   "title": "Simple pricing card",
-  "description": "Simple pricing card — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (pricing, footer, header).",
+  "description": "Simple pricing card — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "pricing"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "pricing",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "profile"
+      "pricing"
     ],
     "rawHtml": "<div class=\"max-w-xs mx-auto overflow-hidden bg-white rounded-lg shadow-lg\">\n  <div class=\"px-6 py-4 bg-gradient-to-r from-indigo-500 to-purple-600\">\n    <h2 class=\"text-2xl font-semibold text-white\">Pro Plan</h2>\n    <p class=\"text-gray-200\">Perfect for professionals</p>\n  </div>\n  <div class=\"px-6 py-4\">\n    <div class=\"text-4xl font-bold text-gray-800\">$19<span class=\"text-lg text-gray-600\">/month</span></div>\n    <p class=\"text-gray-600\">Billed annually</p>\n  </div>\n  <div class=\"px-6 py-4\">\n    <ul class=\"text-gray-600\">\n      <li class=\"flex items-center\">\n        <svg class=\"w-4 h-4 mr-2 text-green-500\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"\n          xmlns=\"http://www.w3.org/2000/svg\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n        </svg>\n        Unlimited projects\n      </li>\n      <li class=\"flex items-center\">\n        <svg class=\"w-4 h-4 mr-2 text-green-500\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"\n          xmlns=\"http://www.w3.org/2000/svg\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n        </svg>\n        24/7 customer support\n      </li>\n      <li class=\"flex items-center\">\n        <svg class=\"w-4 h-4 mr-2 text-green-500\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"\n          xmlns=\"http://www.w3.org/2000/svg\">\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 13l4 4L19 7\"></path>\n        </svg>\n        Access to premium templates\n      </li>\n    </ul>\n  </div>\n  <div class=\"px-6 pt-4 pb-6\">\n    <a href=\"#\"\n      class=\"block w-full px-4 py-2 font-semibold text-center text-white bg-indigo-500 rounded hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none\">Get\n      Started</a>\n  </div>\n</div>"
   }

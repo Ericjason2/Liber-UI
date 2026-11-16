@@ -44,10 +44,15 @@ export default function ComponentsPage({
   const [totalFiltered, setTotalFiltered] = useState<number>(TOTAL_COMPONENTS_COUNT);
   const [categoryCounts, setCategoryCounts] = useState<Record<string, number>>({
     all: TOTAL_COMPONENTS_COUNT,
-    buttons: 201,
-    inputs: 233,
-    "data-display": 1072,
-    feedback: 19,
+    card: 227,
+    form: 250,
+    navbar: 229,
+    button: 225,
+    hero: 194,
+    pricing: 131,
+    grid: 100,
+    profile: 97,
+    "landing-page": 70,
   });
   const [loading, setLoading] = useState<boolean>(false);
 
@@ -94,18 +99,23 @@ export default function ComponentsPage({
 
   const categories = [
     { id: "all", label: "Tous les composants", count: categoryCounts.all ?? TOTAL_COMPONENTS_COUNT },
-    { id: "data-display", label: "Cards, Hero, Navbar & Layouts", count: categoryCounts["data-display"] ?? 1072 },
-    { id: "inputs", label: "Formulaires & Inputs", count: categoryCounts.inputs ?? 233 },
-    { id: "buttons", label: "Boutons & CTA", count: categoryCounts.buttons ?? 201 },
-    { id: "feedback", label: "Alertes & Feedback", count: categoryCounts.feedback ?? 19 },
+    { id: "card", label: "Cards", count: categoryCounts.card ?? 0 },
+    { id: "form", label: "Formulaires", count: categoryCounts.form ?? 0 },
+    { id: "navbar", label: "Navbars & Menus", count: categoryCounts.navbar ?? 0 },
+    { id: "button", label: "Boutons & CTA", count: categoryCounts.button ?? 0 },
+    { id: "hero", label: "Hero & Bannières", count: categoryCounts.hero ?? 0 },
+    { id: "pricing", label: "Tarifs & Pricing", count: categoryCounts.pricing ?? 0 },
+    { id: "grid", label: "Grilles & Bento", count: categoryCounts.grid ?? 0 },
+    { id: "profile", label: "Profils & Auteurs", count: categoryCounts.profile ?? 0 },
+    { id: "landing-page", label: "Landing Pages", count: categoryCounts["landing-page"] ?? 0 },
   ];
 
   const totalPages = Math.max(1, Math.ceil(totalFiltered / PAGE_SIZE));
 
   return (
-    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-10">
+    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-12 sm:space-y-16">
       {/* 1. Breadcrumb & Top Bar */}
-      <div className="space-y-4">
+      <div className="space-y-5">
         <div className="flex items-center gap-2 font-mono text-xs text-muted-foreground tracking-tight">
           <Link href="/" className="hover:text-foreground transition-colors">
             Catalog
@@ -114,12 +124,12 @@ export default function ComponentsPage({
           <span className="text-foreground font-medium">Components</span>
         </div>
 
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-4 border-b border-border">
-          <div className="space-y-1.5">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pb-6 border-b border-border">
+          <div className="space-y-2">
             <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground">
               UI Components
             </h1>
-            <p className="text-sm text-muted-foreground max-w-2xl">
+            <p className="text-sm text-muted-foreground max-w-2xl leading-relaxed">
               {TOTAL_COMPONENTS_COUNT.toLocaleString()} composants open-source prêts à l&apos;emploi. Prévisualisez chaque élément en direct et accédez au code source React TSX et Tailwind CSS.
             </p>
           </div>
@@ -131,11 +141,10 @@ export default function ComponentsPage({
                   key={m}
                   type="button"
                   onClick={() => setPm(m)}
-                  className={`px-2 py-1 font-mono text-[11px] rounded-[6px] transition-colors ${
-                    pm === m
-                      ? "bg-muted text-foreground font-semibold"
-                      : "text-muted-foreground hover:text-foreground"
-                  }`}
+                  className={`px-2 py-1 font-mono text-[11px] rounded-[6px] transition-colors ${pm === m
+                    ? "bg-muted text-foreground font-semibold"
+                    : "text-muted-foreground hover:text-foreground"
+                    }`}
                 >
                   {m}
                 </button>
@@ -148,9 +157,9 @@ export default function ComponentsPage({
         </div>
       </div>
 
-      {/* 2. Interactive Control Bar: Search & Categories (Tags removed as requested) */}
-      <div className="space-y-3">
-        <div className="flex flex-col lg:flex-row items-stretch lg:items-center gap-3">
+      {/* 2. Interactive Control Bar: Search & Categories */}
+      <div className="space-y-4">
+        <div className="flex flex-col lg:flex-row items-stretch lg:items-center gap-4">
           <div className="relative flex-1">
             <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <input
@@ -161,11 +170,11 @@ export default function ComponentsPage({
                 setCurrentPage(1);
               }}
               placeholder="Rechercher un composant par nom (ex: card, hero, form, button, navbar, pricing, header)..."
-              className="w-full h-10 pl-10 pr-4 rounded-[10px] border border-border bg-card text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-all font-sans"
+              className="w-full h-11 pl-10 pr-4 rounded-[10px] border border-border bg-card text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-all font-sans"
             />
           </div>
 
-          <div className="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0 scrollbar-none">
+          <div className="flex items-center gap-2 overflow-x-auto pb-1.5 lg:pb-0 scrollbar-none">
             {categories.map((c) => (
               <button
                 key={c.id}
@@ -174,11 +183,10 @@ export default function ComponentsPage({
                   setSelectedCat(c.id);
                   setCurrentPage(1);
                 }}
-                className={`px-3.5 py-2 rounded-[8px] text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${
-                  selectedCat === c.id
-                    ? "bg-primary text-primary-foreground font-semibold"
-                    : "border border-border bg-card text-muted-foreground hover:text-foreground hover:bg-muted"
-                }`}
+                className={`px-3.5 py-2.5 rounded-[8px] text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${selectedCat === c.id
+                  ? "bg-primary text-primary-foreground font-semibold"
+                  : "border border-border bg-card text-muted-foreground hover:text-foreground hover:bg-muted"
+                  }`}
               >
                 <span>{c.label}</span>
                 <span className="font-mono text-[10px] opacity-70">({c.count})</span>
@@ -188,11 +196,10 @@ export default function ComponentsPage({
         </div>
       </div>
 
-      {/* 3. Live Visual Component Cards Grid (Clean, Clickable, No cluttered buttons/tags/dark hover) */}
+      {/* 3. Live Visual Component Cards Grid (Clean, Clickable, No buttons badge, Generous Spacing) */}
       <div
-        className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 transition-opacity duration-200 ${
-          loading ? "opacity-75" : "opacity-100"
-        }`}
+        className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-8 transition-opacity duration-200 ${loading ? "opacity-75" : "opacity-100"
+          }`}
       >
         {items.map((item) => {
           const exactHtml =
@@ -206,23 +213,15 @@ export default function ComponentsPage({
               href={`/components/${item.slug}`}
               className="group rounded-2xl border border-border bg-card overflow-hidden hover:border-foreground/35 hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
             >
-              {/* Card Header: Clean Title + Category Badge + Subtle Arrow */}
-              <div className="px-5 py-3.5 border-b border-border/80 bg-muted/20 flex items-center justify-between gap-3">
-                <div className="flex items-center gap-2 min-w-0">
-                  <h3 className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors truncate">
-                    {item.name}
-                  </h3>
-                </div>
-
-                <div className="flex items-center gap-2 shrink-0">
-                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-muted text-muted-foreground capitalize">
-                    {item.category}
-                  </span>
-                  <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </div>
+              {/* Card Header: Clean Title + Arrow (No category/button badge clutter) */}
+              <div className="px-5 py-4 border-b border-border/80 bg-muted/20 flex items-center justify-between gap-3">
+                <h3 className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors truncate">
+                  {item.name}
+                </h3>
+                <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0" />
               </div>
 
-              {/* Card Body: Live Visual Miniature Preview (No intrusive black hover overlay) */}
+              {/* Card Body: Live Visual Miniature Preview */}
               <div className="relative border-b border-border/80 overflow-hidden bg-slate-50 dark:bg-slate-950">
                 <ComponentLivePreview
                   rawHtml={exactHtml}
@@ -232,7 +231,7 @@ export default function ComponentsPage({
               </div>
 
               {/* Card Footer: Short Description + Elegant "Consulter le composant →" Link */}
-              <div className="p-4 sm:px-5 sm:py-3.5 flex items-center justify-between gap-3 text-xs bg-card">
+              <div className="p-4 sm:px-5 sm:py-4 flex items-center justify-between gap-3 text-xs bg-card">
                 <p className="text-muted-foreground line-clamp-1 text-xs flex-1">
                   {item.description}
                 </p>
@@ -249,7 +248,7 @@ export default function ComponentsPage({
 
       {/* 4. Pagination Controls */}
       {totalPages > 1 && (
-        <div className="pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="pt-10 sm:pt-14 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-xs text-muted-foreground font-mono">
             Affichage de {(currentPage - 1) * PAGE_SIZE + 1} à{" "}
             {Math.min(currentPage * PAGE_SIZE, totalFiltered)} sur {totalFiltered}{" "}
@@ -285,11 +284,10 @@ export default function ComponentsPage({
                         setCurrentPage(pageNum);
                         window.scrollTo({ top: 240, behavior: "smooth" });
                       }}
-                      className={`w-8 h-8 rounded-lg text-xs font-mono transition-colors ${
-                        currentPage === pageNum
-                          ? "bg-primary text-primary-foreground font-semibold"
-                          : "border border-border text-muted-foreground hover:text-foreground hover:bg-muted"
-                      }`}
+                      className={`w-8 h-8 rounded-lg text-xs font-mono transition-colors ${currentPage === pageNum
+                        ? "bg-primary text-primary-foreground font-semibold"
+                        : "border border-border text-muted-foreground hover:text-foreground hover:bg-muted"
+                        }`}
                     >
                       {pageNum}
                     </button>

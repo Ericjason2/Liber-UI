@@ -3,10 +3,10 @@
   "name": "call-to-action-section-for-home-page",
   "type": "registry:ui",
   "title": "Call to Action section for home page",
-  "description": "Call to Action section for home page — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (call-to-action, footer, header).",
+  "description": "Call to Action section for home page — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "call-to-action",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "button",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "call-to-action"
     ],
     "rawHtml": "<div class=\"max-w-5xl mx-auto mt-12 px-4 text-center\">\r\n    <div class=\"w-full max-w-3xl mx-auto\">\r\n        <h1 class=\"text-4xl font-bold mt-2 mb-6\">Helping you find your new home;<br>by simplifying the search.</h1>\r\n        <p class=\"px-4 leading-relaxed\">Propiti provides you with a quick, simple way to reach multiple estate\r\n            agents.<br>Allowing you to spend less time trawling through property portals,<br>giving you more time on the other things you enjoy.\r\n        </p>\r\n        <p class=\"mb-8 mt-4 px-4 leading-relaxed\">Oh, and the best bit...\r\n            <span class=\"text-pink-600 font-bold\">It's free!</span></p>\r\n        <div>\r\n            <a class=\"inline-block py-4 px-8 leading-none text-white bg-slate-800 hover:bg-pink-600 rounded shadow text-sm font-bold\"\r\n                href=\"/signup\">Sign-up for free</a>\r\n        </div>\r\n    </div>\r\n</div>"
   }

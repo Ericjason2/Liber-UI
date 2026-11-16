@@ -3,10 +3,10 @@
   "name": "floating-buttons-examples",
   "type": "registry:ui",
   "title": "Floating buttons examples",
-  "description": "Floating buttons examples — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "description": "Floating buttons examples — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
   "author": "Liber UI",
   "categories": [
-    "buttons"
+    "button"
   ],
   "dependencies": [],
   "files": [
@@ -19,31 +19,7 @@
   "meta": {
     "kind": "component",
     "tags": [
-      "button",
-      "footer",
-      "header",
-      "card",
-      "article",
-      "avatar",
-      "faq",
-      "banner",
-      "blog",
-      "breadcrumb",
-      "call-to-action",
-      "form",
-      "carousel",
-      "contact-us-page",
-      "error-page",
-      "feature",
-      "gallery",
-      "hero",
-      "input",
-      "loading",
-      "login",
-      "modal",
-      "pagination",
-      "pricing",
-      "profile"
+      "button"
     ],
     "rawHtml": "<!-- Bottom-Right Corner -->\n<div class=\"fixed bottom-4 right-4\">\n    <button class=\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n    Feedback\n  </button>\n</div>\n\n\n<!-- Bottom-Left Corner -->\n<div class=\"fixed bottom-4 left-4\">\n    <button class=\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n    Feedback\n  </button>\n</div>\n\n\n<!-- Top-Right Corner -->\n<div class=\"fixed top-4 right-4\">\n    <button class=\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n    Feedback\n  </button>\n</div>\n\n\n<!-- Top-Left Corner -->\n<div class=\"fixed top-4 left-4\">\n    <button class=\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n    Feedback\n  </button>\n</div>\n\n\n<!-- Center -->\n<div class=\"fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2\">\n    <button class=\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n    Feedback\n  </button>\n</div>\n\n\n<!-- Bottom-Center -->\n<div class=\"fixed bottom-4 left-1/2 transform -translate-x-1/2\">\n    <button class=\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg\">\n    Feedback\n  </button>\n</div>"
   }
