@@ -22,8 +22,8 @@ export async function generateMetadata({
     return { title: "Component Not Found — Liber UI" };
   }
   return {
-    title: `${component.name} — Prévisualisation Live & Code (${component.author}) | Liber UI`,
-    description: `${component.description} — Créé par ${component.author}. Prévisualisation interactive Tailwind CSS, code HTML exact et composant React TSX.`,
+    title: `${component.name} — Documentation, Preview & Installation | Liber UI`,
+    description: `${component.description} — Prévisualisation interactive, installation CLI, téléchargement direct et code source React TSX / Tailwind CSS.`,
   };
 }
 
@@ -53,4 +53,3 @@ export default async function ComponentDetailPage({
     />
   );
 }
-

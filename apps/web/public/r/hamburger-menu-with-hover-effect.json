@@ -3,16 +3,16 @@
   "name": "hamburger-menu-with-hover-effect",
   "type": "registry:ui",
   "title": "Hamburger menu button with hover effect",
-  "description": "Hamburger menu button with hover effect - Créé par @ui-dev-amar sur TailwindFlex.",
-  "author": "@ui-dev-amar (TailwindFlex)",
+  "description": "Hamburger menu button with hover effect — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/hamburger-menu-with-hover-effect.tsx",
-      "content": "/**\n * Component: Hamburger menu button with hover effect\n * Author: @ui-dev-amar (https://tailwindflex.com/@ui-dev-amar)\n * Source: https://tailwindflex.com/@ui-dev-amar/hamburger-menu-with-hover-effect\n * Attribution: Créé par @ui-dev-amar sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function HamburgerMenuWithHoverEffect() {\n  return (\n    <div>\n    <div\r\n        className=\"group flex h-20 w-20 cursor-pointer items-center justify-center rounded-3xl bg-white p-2 hover200\">\r\n        <div className=\"space-y-2\">\r\n            <span className=\"block h-1 w-10 origin-center rounded-full bg-slate-500 transition-transform ease-in-out group-hover1.5 group-hover45\"></span>\r\n            <span className=\"block h-1 w-8 origin-center rounded-full bg-orange-500 transition-transform ease-in-out group-hover10 group-hover1.5 group-hover45\"></span>\r\n        </div>\r\n    </div>\n    </div>\n  );\n}\n",
+      "path": "components/ui/hamburger-menu-with-hover-effect.tsx",
+      "content": "import * as React from \"react\"\n\nfunction HamburgerMenuWithHoverEffect({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"hamburger-menu-with-hover-effect\"\n      className={className}\n      {...props}\n    >\n      <div\r\n          className=\"group flex h-20 w-20 cursor-pointer items-center justify-center rounded-3xl bg-white p-2 hover200\">\r\n          <div className=\"space-y-2\">\r\n              <span className=\"block h-1 w-10 origin-center rounded-full bg-slate-500 transition-transform ease-in-out group-hover1.5 group-hover45\"></span>\r\n              <span className=\"block h-1 w-8 origin-center rounded-full bg-orange-500 transition-transform ease-in-out group-hover10 group-hover1.5 group-hover45\"></span>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { HamburgerMenuWithHoverEffect }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@ui-dev-amar",
-    "authorUrl": "https://tailwindflex.com/@ui-dev-amar",
-    "sourceUrl": "https://tailwindflex.com/@ui-dev-amar/hamburger-menu-with-hover-effect",
-    "mention": "Créé par @ui-dev-amar sur TailwindFlex",
     "rawHtml": "<div\r\n    class=\"group flex h-20 w-20 cursor-pointer items-center justify-center rounded-3xl bg-white p-2 hover:bg-slate-200\">\r\n    <div class=\"space-y-2\">\r\n        <span class=\"block h-1 w-10 origin-center rounded-full bg-slate-500 transition-transform ease-in-out group-hover:translate-y-1.5 group-hover:rotate-45\"></span>\r\n        <span class=\"block h-1 w-8 origin-center rounded-full bg-orange-500 transition-transform ease-in-out group-hover:w-10 group-hover:-translate-y-1.5 group-hover:-rotate-45\"></span>\r\n    </div>\r\n</div>"
   }
 }

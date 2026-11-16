@@ -3,16 +3,16 @@
   "name": "button-with-shadow",
   "type": "registry:ui",
   "title": "Button with shadow",
-  "description": "Button with shadow - Créé par @laurits sur TailwindFlex.",
-  "author": "@laurits (TailwindFlex)",
+  "description": "Button with shadow — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/button-with-shadow.tsx",
-      "content": "/**\n * Component: Button with shadow\n * Author: @laurits (https://tailwindflex.com/@laurits)\n * Source: https://tailwindflex.com/@laurits/button-with-shadow\n * Attribution: Créé par @laurits sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ButtonWithShadow() {\n  return (\n    <div>\n    <a className=\"mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover[1.02]\"\r\n        href=\"#\">\r\n        Sign up for free\r\n    </a>\n    </div>\n  );\n}\n",
+      "path": "components/ui/button-with-shadow.tsx",
+      "content": "import * as React from \"react\"\n\nfunction ButtonWithShadow({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-with-shadow\"\n      className={className}\n      {...props}\n    >\n      <a className=\"mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover[1.02]\"\r\n          href=\"#\">\r\n          Sign up for free\r\n      </a>\n    </div>\n  )\n}\n\nexport { ButtonWithShadow }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@laurits",
-    "authorUrl": "https://tailwindflex.com/@laurits",
-    "sourceUrl": "https://tailwindflex.com/@laurits/button-with-shadow",
-    "mention": "Créé par @laurits sur TailwindFlex",
     "rawHtml": "<a class=\"mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]\"\r\n    href=\"#\">\r\n    Sign up for free\r\n</a>"
   }
 }

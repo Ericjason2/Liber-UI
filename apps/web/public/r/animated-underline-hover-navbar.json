@@ -3,16 +3,16 @@
   "name": "animated-underline-hover-navbar",
   "type": "registry:ui",
   "title": "Animated underline hover navbar",
-  "description": "Animated underline hover navbar - Créé par @inbarajan sur TailwindFlex.",
-  "author": "@inbarajan (TailwindFlex)",
+  "description": "Animated underline hover navbar — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (navbar, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/animated-underline-hover-navbar.tsx",
-      "content": "/**\n * Component: Animated underline hover navbar\n * Author: @inbarajan (https://tailwindflex.com/@inbarajan)\n * Source: https://tailwindflex.com/@inbarajan/animated-underline-hover-navbar\n * Attribution: Créé par @inbarajan sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function AnimatedUnderlineHoverNavbar() {\n  return (\n    <div>\n    <nav className=\"bg-black h-screen flex justify-center items-center w-screen\">\r\n    \t<ul className=\"text-white flex gap-x-12\">\r\n    \t\t<li className=\"relative table-cell py-2\"><a className=\"inline-block relative no-underline after-line\" href=\"#\">About</a></li>\r\n    \t\t<li className=\"relative table-cell py-2\"><a className=\"inline-block relative no-underline after-line\" href=\"#\">Portfolio</a></li>\r\n    \t\t<li className=\"relative table-cell py-2\"><a className=\"inline-block relative no-underline after-line\" href=\"#\">Blog</a></li>\r\n    \t\t<li className=\"relative table-cell py-2\"><a className=\"inline-block relative no-underline after-line\" href=\"#\">Contact</a></li>\r\n    \t</ul>\r\n    </nav>\n    </div>\n  );\n}\n",
+      "path": "components/ui/animated-underline-hover-navbar.tsx",
+      "content": "import * as React from \"react\"\n\nfunction AnimatedUnderlineHoverNavbar({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"animated-underline-hover-navbar\"\n      className={className}\n      {...props}\n    >\n      <nav className=\"bg-black h-screen flex justify-center items-center w-screen\">\r\n      \t<ul className=\"text-white flex gap-x-12\">\r\n      \t\t<li className=\"relative table-cell py-2\"><a className=\"inline-block relative no-underline after-line\" href=\"#\">About</a></li>\r\n      \t\t<li className=\"relative table-cell py-2\"><a className=\"inline-block relative no-underline after-line\" href=\"#\">Portfolio</a></li>\r\n      \t\t<li className=\"relative table-cell py-2\"><a className=\"inline-block relative no-underline after-line\" href=\"#\">Blog</a></li>\r\n      \t\t<li className=\"relative table-cell py-2\"><a className=\"inline-block relative no-underline after-line\" href=\"#\">Contact</a></li>\r\n      \t</ul>\r\n      </nav>\n    </div>\n  )\n}\n\nexport { AnimatedUnderlineHoverNavbar }\n",
       "type": "registry:ui"
     }
   ],
@@ -46,10 +46,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@inbarajan",
-    "authorUrl": "https://tailwindflex.com/@inbarajan",
-    "sourceUrl": "https://tailwindflex.com/@inbarajan/animated-underline-hover-navbar",
-    "mention": "Créé par @inbarajan sur TailwindFlex",
     "rawHtml": "<nav class=\"bg-black h-screen flex justify-center items-center w-screen\">\r\n\t<ul class=\"text-white flex gap-x-12\">\r\n\t\t<li class=\"relative table-cell py-2\"><a class=\"inline-block relative no-underline after-line\" href=\"#\">About</a></li>\r\n\t\t<li class=\"relative table-cell py-2\"><a class=\"inline-block relative no-underline after-line\" href=\"#\">Portfolio</a></li>\r\n\t\t<li class=\"relative table-cell py-2\"><a class=\"inline-block relative no-underline after-line\" href=\"#\">Blog</a></li>\r\n\t\t<li class=\"relative table-cell py-2\"><a class=\"inline-block relative no-underline after-line\" href=\"#\">Contact</a></li>\r\n\t</ul>\r\n</nav>"
   }
 }

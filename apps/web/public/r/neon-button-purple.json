@@ -3,16 +3,16 @@
   "name": "neon-button-purple",
   "type": "registry:ui",
   "title": "neon-button-purple",
-  "description": "neon-button-purple - Créé par @mohammad-rashel sur TailwindFlex.",
-  "author": "@mohammad-rashel (TailwindFlex)",
+  "description": "neon-button-purple — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/neon-button-purple.tsx",
-      "content": "/**\n * Component: neon-button-purple\n * Author: @mohammad-rashel (https://tailwindflex.com/@mohammad-rashel)\n * Source: https://tailwindflex.com/@mohammad-rashel/neon-button-purple\n * Attribution: Créé par @mohammad-rashel sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NeonButtonPurple() {\n  return (\n    <div>\n    <button className=\"neon-button\">\n      click me\n    </button>\n    </div>\n  );\n}\n",
+      "path": "components/ui/neon-button-purple.tsx",
+      "content": "import * as React from \"react\"\n\nfunction NeonButtonPurple({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"neon-button-purple\"\n      className={className}\n      {...props}\n    >\n      <button className=\"neon-button\">\n        click me\n      </button>\n    </div>\n  )\n}\n\nexport { NeonButtonPurple }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@mohammad-rashel",
-    "authorUrl": "https://tailwindflex.com/@mohammad-rashel",
-    "sourceUrl": "https://tailwindflex.com/@mohammad-rashel/neon-button-purple",
-    "mention": "Créé par @mohammad-rashel sur TailwindFlex",
     "rawHtml": "<button class=\"neon-button\">\n  click me\n</button>"
   }
 }

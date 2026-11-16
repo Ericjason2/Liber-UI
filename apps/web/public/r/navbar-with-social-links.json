@@ -3,16 +3,16 @@
   "name": "navbar-with-social-links",
   "type": "registry:ui",
   "title": "Navbar with social links",
-  "description": "Navbar with social links - Créé par @vikram sur TailwindFlex.",
-  "author": "@vikram (TailwindFlex)",
+  "description": "Navbar with social links — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (navbar, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/navbar-with-social-links.tsx",
-      "content": "/**\n * Component: Navbar with social links\n * Author: @vikram (https://tailwindflex.com/@vikram)\n * Source: https://tailwindflex.com/@vikram/navbar-with-social-links\n * Attribution: Créé par @vikram sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function NavbarWithSocialLinks() {\n  return (\n    <div>\n    <header className=\"flex flex-col items-center justify-between max-w-full md6xl px-2 md6 py-12 mx-auto md\">\r\n        <a href=\"/\" className=\"text-indigo-900 z-10 active\">\r\n            <img src=\"https://www.svgrepo.com/show/489282/brand.svg\" className=\"w-24 py-8 md0 g-image\" />\r\n        </a>\r\n        <nav className=\"z-10\">\r\n            <ul className=\"flex flex-row items-center px-6 py-4 text-indigo-100 bg-indigo-900 rounded-lg\">\r\n                <li className=\"pr-8\">\r\n                    <a href=\"/blog\">Blog</a>\r\n                </li>\r\n                <li className=\"pr-8\">\r\n                    <a href=\"\" target=\"_blank\">LinkedIn</a>\r\n                </li>\r\n                <li className=\"pr-8\">\r\n                    <a href=\"\" target=\"_blank\">Twitter</a>\r\n                </li>\r\n                <li className=\"text-red-200\">\r\n                    <a href=\"\" className=\"ml-2\">Email</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </header>\n    </div>\n  );\n}\n",
+      "path": "components/ui/navbar-with-social-links.tsx",
+      "content": "import * as React from \"react\"\n\nfunction NavbarWithSocialLinks({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"navbar-with-social-links\"\n      className={className}\n      {...props}\n    >\n      <header className=\"flex flex-col items-center justify-between max-w-full md6xl px-2 md6 py-12 mx-auto md\">\r\n          <a href=\"/\" className=\"text-indigo-900 z-10 active\">\r\n              <img src=\"https://www.svgrepo.com/show/489282/brand.svg\" className=\"w-24 py-8 md0 g-image\" />\r\n          </a>\r\n          <nav className=\"z-10\">\r\n              <ul className=\"flex flex-row items-center px-6 py-4 text-indigo-100 bg-indigo-900 rounded-lg\">\r\n                  <li className=\"pr-8\">\r\n                      <a href=\"/blog\">Blog</a>\r\n                  </li>\r\n                  <li className=\"pr-8\">\r\n                      <a href=\"\" target=\"_blank\">LinkedIn</a>\r\n                  </li>\r\n                  <li className=\"pr-8\">\r\n                      <a href=\"\" target=\"_blank\">Twitter</a>\r\n                  </li>\r\n                  <li className=\"text-red-200\">\r\n                      <a href=\"\" className=\"ml-2\">Email</a>\r\n                  </li>\r\n              </ul>\r\n          </nav>\r\n      </header>\n    </div>\n  )\n}\n\nexport { NavbarWithSocialLinks }\n",
       "type": "registry:ui"
     }
   ],
@@ -46,10 +46,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@vikram",
-    "authorUrl": "https://tailwindflex.com/@vikram",
-    "sourceUrl": "https://tailwindflex.com/@vikram/navbar-with-social-links",
-    "mention": "Créé par @vikram sur TailwindFlex",
     "rawHtml": "<header class=\"flex flex-col items-center justify-between max-w-full md:max-w-6xl px-2 md:px-6 py-12 mx-auto md:flex-row\">\r\n    <a href=\"/\" class=\"text-indigo-900 z-10 active\">\r\n        <img src=\"https://www.svgrepo.com/show/489282/brand.svg\" class=\"w-24 py-8 md:py-0 g-image\">\r\n    </a>\r\n    <nav class=\"z-10\">\r\n        <ul class=\"flex flex-row items-center px-6 py-4 text-indigo-100 bg-indigo-900 rounded-lg\">\r\n            <li class=\"pr-8\">\r\n                <a href=\"/blog\">Blog</a>\r\n            </li>\r\n            <li class=\"pr-8\">\r\n                <a href=\"\" target=\"_blank\">LinkedIn</a>\r\n            </li>\r\n            <li class=\"pr-8\">\r\n                <a href=\"\" target=\"_blank\">Twitter</a>\r\n            </li>\r\n            <li class=\"text-red-200\">\r\n                <a href=\"\" class=\"ml-2\">Email</a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n</header>"
   }
 }

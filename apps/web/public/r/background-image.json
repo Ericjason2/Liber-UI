@@ -3,16 +3,16 @@
   "name": "background-image",
   "type": "registry:ui",
   "title": "Background image section",
-  "description": "Background image section - Créé par @charlotte-dupont sur TailwindFlex.",
-  "author": "@charlotte-dupont (TailwindFlex)",
+  "description": "Background image section — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (hero, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/background-image.tsx",
-      "content": "/**\n * Component: Background image section\n * Author: @charlotte-dupont (https://tailwindflex.com/@charlotte-dupont)\n * Source: https://tailwindflex.com/@charlotte-dupont/background-image\n * Attribution: Créé par @charlotte-dupont sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function BackgroundImage() {\n  return (\n    <div>\n    <div className=\"relative h-screen w-full\">\n        <img src=\"https://images.unsplash.com/photo-1494783367193-149034c05e8f\" alt=\"Background Image\" className=\"absolute inset-0 w-full h-full object-cover filter blur-sm\" />\n        <div className=\"absolute inset-0 bg-black bg-opacity-50\"></div>\n        <div className=\"absolute inset-0 flex flex-col items-center justify-center\">\n            <h1 className=\"text-4xl text-white font-bold\">Hello, World!</h1>\n            <p className=\"text-xl text-white mt-4\">This is a sample text</p>\n        </div>\n    </div>\n    </div>\n  );\n}\n",
+      "path": "components/ui/background-image.tsx",
+      "content": "import * as React from \"react\"\n\nfunction BackgroundImage({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"background-image\"\n      className={className}\n      {...props}\n    >\n      <div className=\"relative h-screen w-full\">\n          <img src=\"https://images.unsplash.com/photo-1494783367193-149034c05e8f\" alt=\"Background Image\" className=\"absolute inset-0 w-full h-full object-cover filter blur-sm\" />\n          <div className=\"absolute inset-0 bg-black bg-opacity-50\"></div>\n          <div className=\"absolute inset-0 flex flex-col items-center justify-center\">\n              <h1 className=\"text-4xl text-white font-bold\">Hello, World!</h1>\n              <p className=\"text-xl text-white mt-4\">This is a sample text</p>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { BackgroundImage }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@charlotte-dupont",
-    "authorUrl": "https://tailwindflex.com/@charlotte-dupont",
-    "sourceUrl": "https://tailwindflex.com/@charlotte-dupont/background-image",
-    "mention": "Créé par @charlotte-dupont sur TailwindFlex",
     "rawHtml": "<div class=\"relative h-screen w-full\">\n    <img src=\"https://images.unsplash.com/photo-1494783367193-149034c05e8f\" alt=\"Background Image\" class=\"absolute inset-0 w-full h-full object-cover filter blur-sm\">\n    <div class=\"absolute inset-0 bg-black bg-opacity-50\"></div>\n    <div class=\"absolute inset-0 flex flex-col items-center justify-center\">\n        <h1 class=\"text-4xl text-white font-bold\">Hello, World!</h1>\n        <p class=\"text-xl text-white mt-4\">This is a sample text</p>\n    </div>\n</div>"
   }
 }

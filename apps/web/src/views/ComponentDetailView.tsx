@@ -9,20 +9,19 @@ import {
   Check,
   Copy,
   Code2,
-  ExternalLink,
+  Download,
   Eye,
+  FileCode2,
   Laptop,
   Moon,
   Smartphone,
   Sun,
   Tablet,
   Terminal,
-  User,
 } from "lucide-react";
 import { useToast } from "@/context/ToastContext";
 import {
   PACKAGE_MANAGERS,
-  getCliCommand,
   type PackageManager,
 } from "@/lib/package-manager";
 
@@ -31,45 +30,97 @@ interface ComponentDetailViewProps {
   relatedComponents: ComponentItem[];
 }
 
+function toPascalCase(str: string): string {
+  const cleaned = str.replace(/[^a-zA-Z0-9]/g, " ");
+  const pascal = cleaned
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+    .join("");
+  return pascal ? (pascal.match(/^[0-9]/) ? `Comp${pascal}` : pascal) : "Component";
+}
+
+function getShadcnStyleCommand(pm: PackageManager, slug: string): string {
+  switch (pm) {
+    case "pnpm":
+      return `pnpm dlx @liber-ui/cli@latest add ${slug}`;
+    case "npm":
+      return `npx @liber-ui/cli@latest add ${slug}`;
+    case "yarn":
+      return `yarn dlx @liber-ui/cli@latest add ${slug}`;
+    case "bun":
+      return `bunx --bun @liber-ui/cli@latest add ${slug}`;
+  }
+}
+
 export default function ComponentDetailView({
   component,
   relatedComponents,
 }: ComponentDetailViewProps) {
   const { toast } = useToast();
   const [pm, setPm] = useState<PackageManager>("pnpm");
-  const [activeTab, setActiveTab] = useState<"split" | "preview" | "html" | "tsx">("split");
-  const [codeTab, setCodeTab] = useState<"html" | "tsx">("html");
+  const [topTab, setTopTab] = useState<"preview" | "code">("preview");
+  const [topCodeFormat, setTopCodeFormat] = useState<"tsx" | "html">("tsx");
+  const [installTab, setInstallTab] = useState<"cli" | "manual">("cli");
+  const [manualFormat, setManualFormat] = useState<"tsx" | "html">("tsx");
+  const [codeExpanded, setCodeExpanded] = useState<boolean>(false);
   const [viewport, setViewport] = useState<"100%" | "768px" | "375px">("100%");
   const [previewDark, setPreviewDark] = useState<boolean>(false);
-  const [copiedType, setCopiedType] = useState<"cmd" | "html" | "tsx" | null>(null);
+  const [copiedId, setCopiedId] = useState<string | null>(null);
 
+  const pascalName = toPascalCase(component.slug);
   const exactHtml =
     component.rawHtml ||
-    `<!-- ${component.name} -->\n<div class="p-6">\n  ${component.description}\n</div>`;
+    `<div class="p-6">\n  ${component.description}\n</div>`;
 
-  const cliCommand = getCliCommand(pm, `add ${component.slug}`);
+  const demoTsxCode = `import { ${pascalName} } from "@/components/ui/${component.slug}"
 
-  const handleCopy = (text: string, type: "cmd" | "html" | "tsx", label: string) => {
+export function ${pascalName}Demo() {
+  return (
+    <${pascalName} />
+  )
+}`;
+
+  const usageImportCode = `import { ${pascalName} } from "@/components/ui/${component.slug}"`;
+
+  const usageRenderCode = `<${pascalName} />`;
+
+  const cliCommand = getShadcnStyleCommand(pm, component.slug);
+
+  const handleCopy = (text: string, id: string, label: string) => {
     navigator.clipboard.writeText(text);
-    setCopiedType(type);
+    setCopiedId(id);
     toast(label);
-    setTimeout(() => setCopiedType(null), 2000);
+    setTimeout(() => setCopiedId(null), 2000);
+  };
+
+  const handleDownloadFile = (content: string, filename: string, mimeType: string) => {
+    const blob = new Blob([content], { type: mimeType });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    toast(`Fichier ${filename} téléchargé !`);
   };
 
   return (
-    <div className="max-w-[1280px] mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-10">
-      {/* 1. Top Breadcrumb & Back Navigation */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex flex-wrap items-center gap-2 font-mono text-xs text-muted-foreground">
+    <div className="max-w-[1040px] mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-12">
+      {/* 1. Breadcrumb & Back Link */}
+      <div className="flex flex-wrap items-center justify-between gap-4">
+        <div className="flex items-center gap-2 font-mono text-xs text-muted-foreground">
           <Link
             href="/components"
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border bg-card text-foreground hover:bg-muted transition-colors font-sans font-medium mr-2"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
-            <span>Tous les composants</span>
+            <span>Components</span>
           </Link>
-          <Link href="/" className="hover:text-foreground transition-colors">
-            Catalog
+          <Link href="/docs" className="hover:text-foreground transition-colors">
+            Docs
           </Link>
           <span>/</span>
           <Link href="/components" className="hover:text-foreground transition-colors">
@@ -81,118 +132,57 @@ export default function ComponentDetailView({
           </span>
         </div>
 
-        {/* Package Manager & Quick CLI Install */}
+        {/* Direct Download Buttons (.tsx & .html) */}
         <div className="flex flex-wrap items-center gap-2">
-          <div className="flex items-center gap-1 rounded-[10px] border border-border bg-card p-1">
-            {PACKAGE_MANAGERS.map((m) => (
-              <button
-                key={m}
-                type="button"
-                onClick={() => setPm(m)}
-                className={`px-2 py-1 font-mono text-[11px] rounded-[6px] transition-colors ${
-                  pm === m
-                    ? "bg-muted text-foreground font-semibold"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {m}
-              </button>
-            ))}
-          </div>
-
           <button
             type="button"
             onClick={() =>
-              handleCopy(cliCommand, "cmd", `Commande ${pm} copiée pour ${component.name}`)
+              handleDownloadFile(
+                component.code,
+                `${component.slug}.tsx`,
+                "text/typescript;charset=utf-8"
+              )
             }
-            className="inline-flex items-center gap-2 px-3.5 h-9 rounded-[10px] border border-border bg-card hover:bg-muted font-mono text-xs text-foreground transition-colors"
+            className="inline-flex items-center gap-1.5 px-3 h-8 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground transition-colors"
           >
-            <Terminal className="h-3.5 w-3.5 text-primary" />
-            <span className="truncate max-w-[240px]">{cliCommand}</span>
-            {copiedType === "cmd" ? (
-              <Check className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
-            ) : (
-              <Copy className="h-3.5 w-3.5 text-muted-foreground shrink-0" />
-            )}
+            <Download className="h-3.5 w-3.5 text-primary" />
+            <span>Télécharger .tsx</span>
+          </button>
+          <button
+            type="button"
+            onClick={() =>
+              handleDownloadFile(
+                exactHtml,
+                `${component.slug}.html`,
+                "text/html;charset=utf-8"
+              )
+            }
+            className="inline-flex items-center gap-1.5 px-3 h-8 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground transition-colors"
+          >
+            <Download className="h-3.5 w-3.5 text-muted-foreground" />
+            <span>Télécharger .html</span>
           </button>
         </div>
       </div>
 
-      {/* 2. Component Header, Creator Attribution & Tags */}
-      <div className="rounded-2xl border border-border bg-card p-6 sm:p-8 space-y-5 shadow-sm">
-        <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
-          <div className="space-y-2.5 max-w-3xl">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-primary/10 text-primary border border-primary/20 capitalize font-medium">
-                {component.category}
-              </span>
-              <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-muted text-muted-foreground border border-border">
-                Licence {component.license}
-              </span>
-              <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-muted text-muted-foreground border border-border">
-                Slug: {component.slug}
-              </span>
-            </div>
-
-            <h1 className="text-2xl sm:text-4xl font-semibold tracking-tight text-foreground">
-              {component.name}
-            </h1>
-
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              {component.description}
-            </p>
-          </div>
-
-          {/* Creator Attribution Box */}
-          <div className="shrink-0 rounded-xl border border-border bg-muted/30 p-4 space-y-2.5 min-w-[260px]">
-            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-              <User className="h-3.5 w-3.5 text-primary shrink-0" />
-              <span>Créateur du composant :</span>
-              {component.authorUrl ? (
-                <a
-                  href={component.authorUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-mono font-semibold text-foreground hover:text-primary hover:underline transition-colors"
-                >
-                  {component.author}
-                </a>
-              ) : (
-                <span className="font-mono font-semibold text-foreground">
-                  {component.author}
-                </span>
-              )}
-            </div>
-
-            {component.mention && (
-              <div className="text-[11px] font-mono text-muted-foreground bg-card px-2.5 py-1.5 rounded-lg border border-border">
-                {component.mention}
-              </div>
-            )}
-
-            {component.sourceUrl && (
-              <a
-                href={component.sourceUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-medium text-primary hover:underline pt-0.5"
-              >
-                <span>Voir la publication originale sur TailwindFlex</span>
-                <ExternalLink className="h-3 w-3" />
-              </a>
-            )}
-          </div>
+      {/* 2. Component Title & Description (Clean shadcn/ui Header) */}
+      <div className="space-y-4">
+        <div className="space-y-2">
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
+            {component.name}
+          </h1>
+          <p className="text-base text-muted-foreground leading-relaxed max-w-3xl">
+            {component.description}
+          </p>
         </div>
 
-        {/* Tags */}
         {component.tags && component.tags.length > 0 && (
-          <div className="pt-3 border-t border-border flex flex-wrap items-center gap-2">
-            <span className="text-xs font-mono text-muted-foreground mr-1">Tags :</span>
+          <div className="flex flex-wrap items-center gap-1.5 pt-1">
             {component.tags.map((tag) => (
               <Link
                 key={tag}
                 href={`/components?tag=${encodeURIComponent(tag)}`}
-                className="px-2.5 py-1 rounded-full text-xs font-mono bg-muted/70 text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+                className="px-2.5 py-0.5 rounded-md text-xs font-mono bg-muted text-muted-foreground hover:text-foreground transition-colors border border-border/60"
               >
                 #{tag}
               </Link>
@@ -201,267 +191,453 @@ export default function ComponentDetailView({
         )}
       </div>
 
-      {/* 3. Interactive Preview & Code Studio Toolbar */}
-      <div className="rounded-2xl border border-border bg-card overflow-hidden shadow-sm">
-        <div className="px-4 sm:px-6 py-3.5 border-b border-border bg-muted/40 flex flex-wrap items-center justify-between gap-3">
-          {/* View Mode Switcher */}
-          <div className="flex flex-wrap items-center gap-1 rounded-xl border border-border bg-card p-1">
+      {/* 3. Main Preview / Code Studio (shadcn/ui Top Section) */}
+      <div className="space-y-3">
+        {/* Tabs Bar: Preview | Code + Responsive Controls */}
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-2">
+          <div className="flex items-center gap-4">
             <button
               type="button"
-              onClick={() => setActiveTab("split")}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5 ${
-                activeTab === "split"
-                  ? "bg-primary text-primary-foreground font-semibold shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
+              onClick={() => setTopTab("preview")}
+              className={`pb-2 -mb-[9px] text-sm font-medium border-b-2 transition-colors flex items-center gap-1.5 ${
+                topTab === "preview"
+                  ? "border-foreground text-foreground font-semibold"
+                  : "border-transparent text-muted-foreground hover:text-foreground"
               }`}
             >
-              <Eye className="h-3.5 w-3.5" />
-              <span>Prévisualisation &amp; Code</span>
+              <Eye className="h-4 w-4" />
+              <span>Preview</span>
             </button>
             <button
               type="button"
-              onClick={() => setActiveTab("preview")}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5 ${
-                activeTab === "preview"
-                  ? "bg-primary text-primary-foreground font-semibold shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
+              onClick={() => setTopTab("code")}
+              className={`pb-2 -mb-[9px] text-sm font-medium border-b-2 transition-colors flex items-center gap-1.5 ${
+                topTab === "code"
+                  ? "border-foreground text-foreground font-semibold"
+                  : "border-transparent text-muted-foreground hover:text-foreground"
               }`}
             >
-              <Eye className="h-3.5 w-3.5" />
-              <span>Aperçu Plein Écran</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setActiveTab("html");
-                setCodeTab("html");
-              }}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5 ${
-                activeTab === "html"
-                  ? "bg-primary text-primary-foreground font-semibold shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              <Code2 className="h-3.5 w-3.5" />
-              <span>Code HTML exact</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setActiveTab("tsx");
-                setCodeTab("tsx");
-              }}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5 ${
-                activeTab === "tsx"
-                  ? "bg-primary text-primary-foreground font-semibold shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              <Code2 className="h-3.5 w-3.5" />
-              <span>Code React (TSX)</span>
+              <Code2 className="h-4 w-4" />
+              <span>Code</span>
             </button>
           </div>
 
-          {/* Viewport & Theme Controls + Quick Copy */}
-          <div className="flex flex-wrap items-center gap-2">
-            {/* Responsive Viewport Buttons */}
-            <div className="hidden sm:flex items-center gap-1 rounded-xl border border-border bg-card p-1">
-              <button
-                type="button"
-                onClick={() => setViewport("100%")}
-                title="Vue Desktop (100%)"
-                className={`px-2.5 py-1 rounded-lg text-xs font-mono flex items-center gap-1 transition-colors ${
-                  viewport === "100%"
-                    ? "bg-muted text-foreground font-semibold"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                <Laptop className="h-3.5 w-3.5" />
-                <span>100%</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => setViewport("768px")}
-                title="Vue Tablette (768px)"
-                className={`px-2.5 py-1 rounded-lg text-xs font-mono flex items-center gap-1 transition-colors ${
-                  viewport === "768px"
-                    ? "bg-muted text-foreground font-semibold"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                <Tablet className="h-3.5 w-3.5" />
-                <span>768px</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => setViewport("375px")}
-                title="Vue Mobile (375px)"
-                className={`px-2.5 py-1 rounded-lg text-xs font-mono flex items-center gap-1 transition-colors ${
-                  viewport === "375px"
-                    ? "bg-muted text-foreground font-semibold"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                <Smartphone className="h-3.5 w-3.5" />
-                <span>375px</span>
-              </button>
-            </div>
+          {/* Right Controls: Viewport Size & Light/Dark Toggle */}
+          <div className="flex items-center gap-2">
+            {topTab === "preview" ? (
+              <>
+                <div className="hidden sm:flex items-center gap-1 rounded-lg border border-border bg-card p-0.5">
+                  <button
+                    type="button"
+                    onClick={() => setViewport("100%")}
+                    title="Desktop (100%)"
+                    className={`px-2 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${
+                      viewport === "100%"
+                        ? "bg-muted text-foreground font-semibold"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    <Laptop className="h-3.5 w-3.5" />
+                    <span>100%</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setViewport("768px")}
+                    title="Tablet (768px)"
+                    className={`px-2 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${
+                      viewport === "768px"
+                        ? "bg-muted text-foreground font-semibold"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    <Tablet className="h-3.5 w-3.5" />
+                    <span>768px</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setViewport("375px")}
+                    title="Mobile (375px)"
+                    className={`px-2 py-1 rounded-md text-xs font-mono flex items-center gap-1 transition-colors ${
+                      viewport === "375px"
+                        ? "bg-muted text-foreground font-semibold"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    <Smartphone className="h-3.5 w-3.5" />
+                    <span>375px</span>
+                  </button>
+                </div>
 
-            {/* Dark / Light Preview Toggle */}
-            <button
-              type="button"
-              onClick={() => setPreviewDark((d) => !d)}
-              className="px-3 py-1.5 rounded-xl border border-border bg-card hover:bg-muted text-xs font-medium text-foreground flex items-center gap-1.5 transition-colors"
-              title="Basculer le thème Clair / Sombre de la prévisualisation"
-            >
-              {previewDark ? (
-                <>
-                  <Sun className="h-3.5 w-3.5 text-amber-400" />
-                  <span>Aperçu Clair</span>
-                </>
-              ) : (
-                <>
-                  <Moon className="h-3.5 w-3.5 text-slate-500" />
-                  <span>Aperçu Sombre</span>
-                </>
-              )}
-            </button>
-
-            {/* Quick Copy Exact HTML */}
-            <button
-              type="button"
-              onClick={() =>
-                handleCopy(
-                  exactHtml,
-                  "html",
-                  "Code HTML exact copié dans le presse-papiers !"
-                )
-              }
-              className="px-3.5 py-1.5 rounded-xl bg-primary text-primary-foreground hover:opacity-90 text-xs font-medium flex items-center gap-1.5 transition-opacity shadow-sm"
-            >
-              {copiedType === "html" ? (
-                <Check className="h-3.5 w-3.5" />
-              ) : (
-                <Copy className="h-3.5 w-3.5" />
-              )}
-              <span>Copier HTML exact</span>
-            </button>
+                <button
+                  type="button"
+                  onClick={() => setPreviewDark((d) => !d)}
+                  className="px-2.5 py-1.5 rounded-lg border border-border bg-card hover:bg-muted text-xs font-medium text-foreground flex items-center gap-1.5 transition-colors"
+                >
+                  {previewDark ? (
+                    <>
+                      <Sun className="h-3.5 w-3.5 text-amber-400" />
+                      <span>Light</span>
+                    </>
+                  ) : (
+                    <>
+                      <Moon className="h-3.5 w-3.5 text-slate-500" />
+                      <span>Dark</span>
+                    </>
+                  )}
+                </button>
+              </>
+            ) : (
+              <div className="flex items-center gap-1 rounded-lg border border-border bg-card p-0.5">
+                <button
+                  type="button"
+                  onClick={() => setTopCodeFormat("tsx")}
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors ${
+                    topCodeFormat === "tsx"
+                      ? "bg-muted text-foreground font-semibold"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  React (TSX)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setTopCodeFormat("html")}
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors ${
+                    topCodeFormat === "html"
+                      ? "bg-muted text-foreground font-semibold"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  Tailwind HTML
+                </button>
+              </div>
+            )}
           </div>
         </div>
 
-        {/* Live Visual Preview Canvas */}
-        {(activeTab === "split" || activeTab === "preview") && (
-          <div className="border-b border-border">
+        {/* Preview Canvas OR Demo Code Block */}
+        {topTab === "preview" ? (
+          <div className="rounded-xl border border-border bg-card overflow-hidden shadow-sm">
             <ComponentLivePreview
               rawHtml={exactHtml}
               title={component.name}
               mode="full"
               darkMode={previewDark}
               viewportWidth={viewport}
-              minHeight={activeTab === "preview" ? 680 : 540}
+              minHeight={520}
             />
           </div>
-        )}
-
-        {/* Code Viewer Section (Exact HTML & React TSX) */}
-        {(activeTab === "split" || activeTab === "html" || activeTab === "tsx") && (
-          <div className="bg-neutral-950 text-neutral-100">
-            {/* Code Header Bar */}
-            <div className="px-4 sm:px-6 py-3 border-b border-neutral-800 flex flex-wrap items-center justify-between gap-3">
-              <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  onClick={() => setCodeTab("html")}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-mono transition-colors ${
-                    (activeTab === "html" || (activeTab === "split" && codeTab === "html"))
-                      ? "bg-blue-600 text-white font-semibold"
-                      : "bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800"
-                  }`}
-                >
-                  HTML Exact (Original TailwindFlex)
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setCodeTab("tsx")}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-mono transition-colors ${
-                    (activeTab === "tsx" || (activeTab === "split" && codeTab === "tsx"))
-                      ? "bg-blue-600 text-white font-semibold"
-                      : "bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800"
-                  }`}
-                >
-                  React / Next.js ({component.slug}.tsx)
-                </button>
-              </div>
-
-              <div className="flex flex-wrap items-center gap-2">
-                <button
-                  type="button"
-                  onClick={() =>
-                    handleCopy(
-                      exactHtml,
-                      "html",
-                      "Code HTML exact copié dans le presse-papiers !"
-                    )
-                  }
-                  className="px-3 py-1.5 rounded-lg bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-xs font-mono text-neutral-200 flex items-center gap-1.5 transition-colors"
-                >
-                  {copiedType === "html" ? (
-                    <Check className="h-3.5 w-3.5 text-emerald-400" />
-                  ) : (
-                    <Copy className="h-3.5 w-3.5 text-neutral-400" />
-                  )}
-                  <span>Copier le code HTML exact</span>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() =>
-                    handleCopy(
-                      component.code,
-                      "tsx",
-                      "Code React TSX copié dans le presse-papiers !"
-                    )
-                  }
-                  className="px-3 py-1.5 rounded-lg bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-xs font-mono text-neutral-200 flex items-center gap-1.5 transition-colors"
-                >
-                  {copiedType === "tsx" ? (
-                    <Check className="h-3.5 w-3.5 text-emerald-400" />
-                  ) : (
-                    <Copy className="h-3.5 w-3.5 text-neutral-400" />
-                  )}
-                  <span>Copier le code React TSX</span>
-                </button>
-              </div>
+        ) : (
+          <div className="rounded-xl border border-neutral-800 bg-neutral-950 text-neutral-100 overflow-hidden shadow-sm">
+            <div className="px-4 py-2.5 border-b border-neutral-800 flex items-center justify-between text-xs font-mono text-neutral-400">
+              <span>
+                {topCodeFormat === "tsx"
+                  ? `${component.slug}-demo.tsx`
+                  : `${component.slug}.html`}
+              </span>
+              <button
+                type="button"
+                onClick={() =>
+                  handleCopy(
+                    topCodeFormat === "tsx" ? demoTsxCode : exactHtml,
+                    "top-code",
+                    "Code copié dans le presse-papiers !"
+                  )
+                }
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-200 transition-colors"
+              >
+                {copiedId === "top-code" ? (
+                  <Check className="h-3.5 w-3.5 text-emerald-400" />
+                ) : (
+                  <Copy className="h-3.5 w-3.5" />
+                )}
+                <span>Copier</span>
+              </button>
             </div>
-
-            {/* Code Content */}
-            <div className="p-4 sm:p-6 overflow-x-auto">
-              {(activeTab === "html" || (activeTab === "split" && codeTab === "html")) ? (
-                <pre className="font-mono text-xs sm:text-[13px] text-neutral-200 leading-relaxed select-all max-h-[600px] overflow-y-auto">
-                  <code>{`<!-- ${component.mention || `Créé par ${component.author} sur TailwindFlex`}${
-                    component.sourceUrl ? ` (${component.sourceUrl})` : ""
-                  } -->\n${exactHtml}`}</code>
-                </pre>
-              ) : (
-                <pre className="font-mono text-xs sm:text-[13px] text-neutral-200 leading-relaxed select-all max-h-[600px] overflow-y-auto">
-                  <code>{component.code}</code>
-                </pre>
-              )}
-            </div>
+            <pre className="p-4 sm:p-5 font-mono text-xs sm:text-[13px] text-neutral-200 leading-relaxed overflow-x-auto max-h-[520px] overflow-y-auto select-all">
+              <code>{topCodeFormat === "tsx" ? demoTsxCode : exactHtml}</code>
+            </pre>
           </div>
         )}
       </div>
 
-      {/* 4. Related Components Grid */}
+      {/* 4. Installation Section (Exact shadcn/ui Layout: Command | Manual) */}
+      <section className="space-y-4 pt-2">
+        <h2 className="text-2xl font-semibold tracking-tight text-foreground border-b border-border pb-2">
+          Installation
+        </h2>
+
+        {/* Command | Manual Sub-tabs */}
+        <div className="flex items-center gap-4 border-b border-border">
+          <button
+            type="button"
+            onClick={() => setInstallTab("cli")}
+            className={`pb-2.5 -mb-px text-sm font-medium border-b-2 transition-colors ${
+              installTab === "cli"
+                ? "border-foreground text-foreground font-semibold"
+                : "border-transparent text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            Command
+          </button>
+          <button
+            type="button"
+            onClick={() => setInstallTab("manual")}
+            className={`pb-2.5 -mb-px text-sm font-medium border-b-2 transition-colors ${
+              installTab === "manual"
+                ? "border-foreground text-foreground font-semibold"
+                : "border-transparent text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            Manual
+          </button>
+        </div>
+
+        {installTab === "cli" ? (
+          <div className="rounded-xl border border-neutral-800 bg-neutral-950 text-neutral-100 overflow-hidden shadow-sm">
+            <div className="px-4 py-2 border-b border-neutral-800 flex items-center justify-between">
+              <div className="flex items-center gap-1">
+                <Terminal className="h-3.5 w-3.5 text-neutral-400 mr-1.5" />
+                {PACKAGE_MANAGERS.map((m) => (
+                  <button
+                    key={m}
+                    type="button"
+                    onClick={() => setPm(m)}
+                    className={`px-2.5 py-1 rounded-md font-mono text-xs transition-colors ${
+                      pm === m
+                        ? "bg-neutral-800 text-white font-semibold"
+                        : "text-neutral-400 hover:text-neutral-200"
+                    }`}
+                  >
+                    {m}
+                  </button>
+                ))}
+              </div>
+              <button
+                type="button"
+                onClick={() =>
+                  handleCopy(cliCommand, "cli-cmd", `Commande ${pm} copiée !`)
+                }
+                className="p-1.5 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-300 hover:text-white transition-colors"
+                title="Copier la commande"
+              >
+                {copiedId === "cli-cmd" ? (
+                  <Check className="h-3.5 w-3.5 text-emerald-400" />
+                ) : (
+                  <Copy className="h-3.5 w-3.5" />
+                )}
+              </button>
+            </div>
+            <div className="p-4 font-mono text-xs sm:text-sm text-neutral-100 overflow-x-auto select-all">
+              <code>{cliCommand}</code>
+            </div>
+          </div>
+        ) : (
+          <div className="space-y-6 pt-2">
+            {/* Step 1: Copy or Download Component Source File */}
+            <div className="space-y-3">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <div className="flex items-center gap-2.5">
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-muted border border-border text-xs font-mono font-semibold text-foreground">
+                    1
+                  </span>
+                  <p className="text-sm font-medium text-foreground">
+                    Copiez et collez le code suivant dans votre projet ou téléchargez le fichier.
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-1 rounded-lg border border-border bg-card p-0.5">
+                  <button
+                    type="button"
+                    onClick={() => setManualFormat("tsx")}
+                    className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors ${
+                      manualFormat === "tsx"
+                        ? "bg-muted text-foreground font-semibold"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    components/ui/{component.slug}.tsx
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setManualFormat("html")}
+                    className={`px-2.5 py-1 rounded-md text-xs font-mono transition-colors ${
+                      manualFormat === "html"
+                        ? "bg-muted text-foreground font-semibold"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {component.slug}.html
+                  </button>
+                </div>
+              </div>
+
+              <div className="relative rounded-xl border border-neutral-800 bg-neutral-950 text-neutral-100 overflow-hidden shadow-sm">
+                <div className="px-4 py-2.5 border-b border-neutral-800 flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-neutral-400">
+                  <div className="flex items-center gap-2">
+                    <FileCode2 className="h-3.5 w-3.5 text-neutral-400" />
+                    <span className="text-neutral-200">
+                      {manualFormat === "tsx"
+                        ? `components/ui/${component.slug}.tsx`
+                        : `${component.slug}.html`}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        handleDownloadFile(
+                          manualFormat === "tsx" ? component.code : exactHtml,
+                          manualFormat === "tsx"
+                            ? `${component.slug}.tsx`
+                            : `${component.slug}.html`,
+                          manualFormat === "tsx"
+                            ? "text/typescript;charset=utf-8"
+                            : "text/html;charset=utf-8"
+                        )
+                      }
+                      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-200 transition-colors"
+                    >
+                      <Download className="h-3.5 w-3.5" />
+                      <span>Télécharger</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() =>
+                        handleCopy(
+                          manualFormat === "tsx" ? component.code : exactHtml,
+                          "manual-code",
+                          "Code source copié !"
+                        )
+                      }
+                      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-200 transition-colors"
+                    >
+                      {copiedId === "manual-code" ? (
+                        <Check className="h-3.5 w-3.5 text-emerald-400" />
+                      ) : (
+                        <Copy className="h-3.5 w-3.5" />
+                      )}
+                      <span>Copier</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  className={`relative overflow-hidden transition-all ${
+                    codeExpanded ? "max-h-[900px]" : "max-h-[320px]"
+                  }`}
+                >
+                  <pre className="p-4 sm:p-5 font-mono text-xs sm:text-[13px] text-neutral-200 leading-relaxed overflow-x-auto select-all">
+                    <code>
+                      {manualFormat === "tsx" ? component.code : exactHtml}
+                    </code>
+                  </pre>
+
+                  {!codeExpanded && (
+                    <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-neutral-950 via-neutral-950/80 to-transparent flex items-end justify-center pb-3">
+                      <button
+                        type="button"
+                        onClick={() => setCodeExpanded(true)}
+                        className="px-3.5 py-1.5 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-xs font-medium text-white border border-neutral-700 shadow-md transition-colors"
+                      >
+                        Expand code
+                      </button>
+                    </div>
+                  )}
+                </div>
+
+                {codeExpanded && (
+                  <div className="border-t border-neutral-800 py-2 flex justify-center bg-neutral-950">
+                    <button
+                      type="button"
+                      onClick={() => setCodeExpanded(false)}
+                      className="px-3 py-1 rounded-md text-xs font-mono text-neutral-400 hover:text-white transition-colors"
+                    >
+                      Collapse
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Step 2: Update import paths */}
+            <div className="flex items-center gap-2.5">
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-muted border border-border text-xs font-mono font-semibold text-foreground">
+                2
+              </span>
+              <p className="text-sm font-medium text-foreground">
+                Mettez à jour les chemins d&apos;importation selon la configuration de votre projet.
+              </p>
+            </div>
+          </div>
+        )}
+      </section>
+
+      {/* 5. Usage Section (Exact shadcn/ui Layout: Import + JSX) */}
+      <section className="space-y-4 pt-2">
+        <h2 className="text-2xl font-semibold tracking-tight text-foreground border-b border-border pb-2">
+          Usage
+        </h2>
+
+        {/* Import Block */}
+        <div className="rounded-xl border border-neutral-800 bg-neutral-950 text-neutral-100 overflow-hidden shadow-sm">
+          <div className="px-4 py-2 border-b border-neutral-800 flex items-center justify-between text-xs font-mono text-neutral-400">
+            <span>Import</span>
+            <button
+              type="button"
+              onClick={() =>
+                handleCopy(usageImportCode, "usage-import", "Import copié !")
+              }
+              className="p-1.5 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-300 hover:text-white transition-colors"
+            >
+              {copiedId === "usage-import" ? (
+                <Check className="h-3.5 w-3.5 text-emerald-400" />
+              ) : (
+                <Copy className="h-3.5 w-3.5" />
+              )}
+            </button>
+          </div>
+          <pre className="p-4 font-mono text-xs sm:text-[13px] text-neutral-200 overflow-x-auto select-all">
+            <code>{usageImportCode}</code>
+          </pre>
+        </div>
+
+        {/* Render Block */}
+        <div className="rounded-xl border border-neutral-800 bg-neutral-950 text-neutral-100 overflow-hidden shadow-sm">
+          <div className="px-4 py-2 border-b border-neutral-800 flex items-center justify-between text-xs font-mono text-neutral-400">
+            <span>JSX</span>
+            <button
+              type="button"
+              onClick={() =>
+                handleCopy(usageRenderCode, "usage-jsx", "JSX copié !")
+              }
+              className="p-1.5 rounded-md bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-300 hover:text-white transition-colors"
+            >
+              {copiedId === "usage-jsx" ? (
+                <Check className="h-3.5 w-3.5 text-emerald-400" />
+              ) : (
+                <Copy className="h-3.5 w-3.5" />
+              )}
+            </button>
+          </div>
+          <pre className="p-4 font-mono text-xs sm:text-[13px] text-neutral-200 overflow-x-auto select-all">
+            <code>{usageRenderCode}</code>
+          </pre>
+        </div>
+      </section>
+
+      {/* 6. Related Components Grid */}
       {relatedComponents.length > 0 && (
-        <section className="space-y-6 pt-4">
+        <section className="space-y-6 pt-6">
           <div className="flex items-center justify-between border-b border-border pb-3">
             <div>
               <h2 className="text-xl font-semibold text-foreground">
                 Composants similaires
               </h2>
               <p className="text-xs text-muted-foreground">
-                Cliquez sur un composant pour ouvrir sa prévisualisation interactive et son code exact.
+                Cliquez sur un composant pour ouvrir sa prévisualisation et ses instructions d&apos;installation.
               </p>
             </div>
             <Link
@@ -487,24 +663,18 @@ export default function ComponentDetailView({
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
                     <span className="px-3.5 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-medium shadow-md">
-                      Ouvrir l&apos;aperçu &amp; le code →
+                      Voir le composant →
                     </span>
                   </div>
                 </div>
 
-                <div className="p-4 space-y-2">
-                  <div className="flex items-center justify-between gap-2">
-                    <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors truncate">
-                      {rel.name}
-                    </h3>
-                    <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-muted text-muted-foreground capitalize shrink-0">
-                      {rel.category}
-                    </span>
-                  </div>
-                  <div className="flex items-center justify-between text-[11px] text-muted-foreground font-mono">
-                    <span>Par {rel.author}</span>
-                    <span>#{rel.tags[0] || "ui"}</span>
-                  </div>
+                <div className="p-4 flex items-center justify-between gap-2">
+                  <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors truncate">
+                    {rel.name}
+                  </h3>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-muted text-muted-foreground capitalize shrink-0">
+                    {rel.category}
+                  </span>
                 </div>
               </Link>
             ))}
@@ -514,4 +684,3 @@ export default function ComponentDetailView({
     </div>
   );
 }
-

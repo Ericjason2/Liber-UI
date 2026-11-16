@@ -3,16 +3,16 @@
   "name": "elevated-buton",
   "type": "registry:ui",
   "title": "Elevated Buton",
-  "description": "Elevated Buton - Créé par @anonymous sur TailwindFlex.",
-  "author": "@anonymous (TailwindFlex)",
+  "description": "Elevated Buton — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/elevated-buton.tsx",
-      "content": "/**\n * Component: Elevated Buton\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/elevated-buton\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ElevatedButon() {\n  return (\n    <div>\n    <a href=\"\" target=\"_blank\"\n      className=\"inline-flex items-center rounded cursor-pointer bg-[#273ef1] px-6 py-3 font-semibold text-white transition [box-shadow(171,_196,245)-8px_8px] hover:[box-shadow(171,_196,_245)0px_0px]\">\n      Get started →\n    </a>\n    </div>\n  );\n}\n",
+      "path": "components/ui/elevated-buton.tsx",
+      "content": "import * as React from \"react\"\n\nfunction ElevatedButon({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"elevated-buton\"\n      className={className}\n      {...props}\n    >\n      <a href=\"\" target=\"_blank\"\n        className=\"inline-flex items-center rounded cursor-pointer bg-[#273ef1] px-6 py-3 font-semibold text-white transition [box-shadow(171,_196,245)-8px_8px] hover:[box-shadow(171,_196,_245)0px_0px]\">\n        Get started →\n      </a>\n    </div>\n  )\n}\n\nexport { ElevatedButon }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@anonymous",
-    "authorUrl": "https://tailwindflex.com/@anonymous",
-    "sourceUrl": "https://tailwindflex.com/@anonymous/elevated-buton",
-    "mention": "Créé par @anonymous sur TailwindFlex",
     "rawHtml": "<a href=\"\" target=\"_blank\"\n  class=\"inline-flex items-center rounded cursor-pointer bg-[#273ef1] px-6 py-3 font-semibold text-white transition [box-shadow:rgb(171,_196,245)-8px_8px] hover:[box-shadow:rgb(171,_196,_245)0px_0px]\">\n  Get started →\n</a>"
   }
 }

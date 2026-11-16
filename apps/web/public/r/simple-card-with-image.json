@@ -3,16 +3,16 @@
   "name": "simple-card-with-image",
   "type": "registry:ui",
   "title": "Simple Card with Image",
-  "description": "Simple Card with Image - Créé par @prem sur TailwindFlex.",
-  "author": "@prem (TailwindFlex)",
+  "description": "Simple Card with Image — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (card, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/simple-card-with-image.tsx",
-      "content": "/**\n * Component: Simple Card with Image\n * Author: @prem (https://tailwindflex.com/@prem)\n * Source: https://tailwindflex.com/@prem/simple-card-with-image\n * Attribution: Créé par @prem sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function SimpleCardWithImage() {\n  return (\n    <div>\n    <div className=\"flex flex-col max-w-md m-12\">\n      <div className=\"flex flex-col sm border border-gray-700 py-1 px-1 w-full text-center sm\">\n        <div className=\"flex-shrink-0  m-4 w-16 h-16 rounded-full bg-gray-400 self-center\"></div>\n        <div className=\"flex flex-col py-2 pr-2\">\n          <h4 className=\"text-lg font-light\">Hello World</h4>\n          <p className=\"text-sm font-hairline\">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed porro, mollitia soluta, dignissimos labore ab magni temporibus sequi maiores.</p>\n        </div>\n      </div>\n      <br />\n      <div className=\"flex flex-col rounded-full sm border border-gray-700 py-1 px-1 w-full text-center sm\">\n        <div className=\"flex-shrink-0  m-4 w-16 h-16 rounded-full bg-gray-400 self-center\"></div>\n        <div className=\"flex flex-col py-2 pr-2\">\n          <h4 className=\"text-lg font-light\">Hello World</h4>\n          <p className=\"text-sm font-hairline\">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed porro, mollitia soluta, dignissimos labore ab magni temporibus sequi maiores.</p>\n        </div>\n      </div>\n    </div>\n    </div>\n  );\n}\n",
+      "path": "components/ui/simple-card-with-image.tsx",
+      "content": "import * as React from \"react\"\n\nfunction SimpleCardWithImage({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"simple-card-with-image\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex flex-col max-w-md m-12\">\n        <div className=\"flex flex-col sm border border-gray-700 py-1 px-1 w-full text-center sm\">\n          <div className=\"flex-shrink-0  m-4 w-16 h-16 rounded-full bg-gray-400 self-center\"></div>\n          <div className=\"flex flex-col py-2 pr-2\">\n            <h4 className=\"text-lg font-light\">Hello World</h4>\n            <p className=\"text-sm font-hairline\">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed porro, mollitia soluta, dignissimos labore ab magni temporibus sequi maiores.</p>\n          </div>\n        </div>\n        <br />\n        <div className=\"flex flex-col rounded-full sm border border-gray-700 py-1 px-1 w-full text-center sm\">\n          <div className=\"flex-shrink-0  m-4 w-16 h-16 rounded-full bg-gray-400 self-center\"></div>\n          <div className=\"flex flex-col py-2 pr-2\">\n            <h4 className=\"text-lg font-light\">Hello World</h4>\n            <p className=\"text-sm font-hairline\">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed porro, mollitia soluta, dignissimos labore ab magni temporibus sequi maiores.</p>\n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { SimpleCardWithImage }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@prem",
-    "authorUrl": "https://tailwindflex.com/@prem",
-    "sourceUrl": "https://tailwindflex.com/@prem/simple-card-with-image",
-    "mention": "Créé par @prem sur TailwindFlex",
     "rawHtml": "<div class=\"flex flex-col max-w-md m-12\">\n  <div class=\"flex flex-col sm:flex-row border border-gray-700 py-1 px-1 w-full text-center sm:text-left\">\n    <div class=\"flex-shrink-0  m-4 w-16 h-16 rounded-full bg-gray-400 self-center\"></div>\n    <div class=\"flex flex-col py-2 pr-2\">\n      <h4 class=\"text-lg font-light\">Hello World</h4>\n      <p class=\"text-sm font-hairline\">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed porro, mollitia soluta, dignissimos labore ab magni temporibus sequi maiores.</p>\n    </div>\n  </div>\n  <br>\n  <div class=\"flex flex-col rounded-full sm:flex-row border border-gray-700 py-1 px-1 w-full text-center sm:text-left\">\n    <div class=\"flex-shrink-0  m-4 w-16 h-16 rounded-full bg-gray-400 self-center\"></div>\n    <div class=\"flex flex-col py-2 pr-2\">\n      <h4 class=\"text-lg font-light\">Hello World</h4>\n      <p class=\"text-sm font-hairline\">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed porro, mollitia soluta, dignissimos labore ab magni temporibus sequi maiores.</p>\n    </div>\n  </div>\n</div>"
   }
 }

@@ -3,16 +3,16 @@
   "name": "color-changing-button",
   "type": "registry:ui",
   "title": "Color changing button",
-  "description": "Color changing button - Créé par @anonymous sur TailwindFlex.",
-  "author": "@anonymous (TailwindFlex)",
+  "description": "Color changing button — Composant d'interface responsive et personnalisable construit avec Tailwind CSS (button, footer, header).",
+  "author": "Liber UI",
   "categories": [
     "buttons"
   ],
   "dependencies": [],
   "files": [
     {
-      "path": "ui/color-changing-button.tsx",
-      "content": "/**\n * Component: Color changing button\n * Author: @anonymous (https://tailwindflex.com/@anonymous)\n * Source: https://tailwindflex.com/@anonymous/color-changing-button\n * Attribution: Créé par @anonymous sur TailwindFlex\n * License: Open Source (TailwindFlex community)\n */\nimport React from \"react\";\n\nexport function ColorChangingButton() {\n  return (\n    <div>\n    <button id=\"change-button\" className=\"bg-red-500 text-white px-4 py-2 rounded-lg\">\n        Change Color!\n    </button>\n    \n    \n    </div>\n  );\n}\n",
+      "path": "components/ui/color-changing-button.tsx",
+      "content": "import * as React from \"react\"\n\nfunction ColorChangingButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"color-changing-button\"\n      className={className}\n      {...props}\n    >\n      <button id=\"change-button\" className=\"bg-red-500 text-white px-4 py-2 rounded-lg\">\n          Change Color!\n      </button>\n      \n      \n    </div>\n  )\n}\n\nexport { ColorChangingButton }\n",
       "type": "registry:ui"
     }
   ],
@@ -45,10 +45,6 @@
       "pricing",
       "profile"
     ],
-    "author": "@anonymous",
-    "authorUrl": "https://tailwindflex.com/@anonymous",
-    "sourceUrl": "https://tailwindflex.com/@anonymous/color-changing-button",
-    "mention": "Créé par @anonymous sur TailwindFlex",
     "rawHtml": "<button id=\"change-button\" class=\"bg-red-500 text-white px-4 py-2 rounded-lg\">\n    Change Color!\n</button>\n\n<script>\n    let button = document.getElementById('change-button');\nlet colors = [\"red\", \"blue\", \"green\", \"yellow\", \"pink\", \"purple\", \"gray\"];  //Add more colors from tailwind design pallete as per requirement\n\nfunction changeColor(){\n    let color = colors[Math.floor(Math.random() * colors.length)]; \n    button.className = '';  \n    button.classList.add('px-4', 'py-2','rounded-lg','text-white',`bg-${color}-500`);\n}\n\nsetInterval(() => {\n    changeColor();\n}, 500);    //Color change duration is 500 ms, you can adjust the duration.\n</script>"
   }
 }
