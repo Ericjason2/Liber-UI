@@ -3,7 +3,11 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import type { ComponentItem } from "@/lib/catalog-components-base";
-import { ComponentLivePreview } from "@/components/ComponentLivePreview";
+import {
+  ComponentLivePreview,
+  buildPreviewSrcDoc,
+} from "@/components/ComponentLivePreview";
+import { SyntaxHighlightedCode } from "@/components/SyntaxHighlightedCode";
 import {
   ArrowLeft,
   ArrowRight,
@@ -25,6 +29,7 @@ import {
 import { useToast } from "@/context/ToastContext";
 import {
   PACKAGE_MANAGERS,
+  usePackageManager,
   type PackageManager,
 } from "@/lib/package-manager";
 
@@ -61,7 +66,7 @@ export default function ComponentDetailView({
   relatedComponents,
 }: ComponentDetailViewProps) {
   const { toast } = useToast();
-  const [pm, setPm] = useState<PackageManager>("pnpm");
+  const [pm, setPm] = usePackageManager();
   const [topTab, setTopTab] = useState<"preview" | "code">("preview");
   const [codeTab, setCodeTab] = useState<"tsx" | "html" | "css" | "config">("tsx");
   const [installTab, setInstallTab] = useState<"cli" | "manual">("cli");
@@ -143,15 +148,21 @@ export default function ExamplePage() {
   )
 }`;
 
-  // Escape key exits fullscreen
+  // Escape key exits fullscreen and body scroll is locked while fullscreen modal is active
   useEffect(() => {
+    if (!isFullscreen) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && isFullscreen) {
+      if (e.key === "Escape") {
         setIsFullscreen(false);
       }
     };
     window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   }, [isFullscreen]);
 
   const handleCopy = (text: string, id: string, label: string) => {
@@ -483,9 +494,11 @@ export default function ExamplePage() {
               </div>
             </div>
 
-            <pre className="p-4 sm:p-6 font-mono text-xs sm:text-[13px] text-neutral-200 leading-relaxed overflow-x-auto max-h-[580px] overflow-y-auto select-all">
-              <code>{getCodeContent(codeTab)}</code>
-            </pre>
+            <SyntaxHighlightedCode
+              code={getCodeContent(codeTab)}
+              language={codeTab}
+              className="p-4 sm:p-6 max-h-[580px] overflow-y-auto"
+            />
           </div>
         )}
       </div>
@@ -569,29 +582,7 @@ export default function ExamplePage() {
             >
               <iframe
                 title={`Fullscreen ${component.name}`}
-                srcDoc={`<!DOCTYPE html>
-<html lang="en" class="${previewDark ? "dark" : ""}">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body {
-      margin: 0; padding: 0; width: 100%; min-height: 100vh;
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    }
-  </style>
-</head>
-<body class="${previewDark ? "bg-slate-950 text-slate-100" : "bg-slate-50 text-slate-900"}">
-  <div class="min-h-screen w-full flex flex-col items-center justify-center p-6">
-    <div class="w-full">
-      ${exactHtml}
-    </div>
-  </div>
-</body>
-</html>`}
+                srcDoc={buildPreviewSrcDoc(exactHtml, previewDark, false)}
                 sandbox="allow-scripts"
                 className="w-full h-full border-0 block"
               />
@@ -856,11 +847,11 @@ export default function ExamplePage() {
                   className={`relative overflow-hidden transition-all ${codeExpanded ? "max-h-[900px]" : "max-h-[320px]"
                     }`}
                 >
-                  <pre className="p-4 sm:p-5 font-mono text-xs sm:text-[13px] text-neutral-200 leading-relaxed overflow-x-auto select-all">
-                    <code>
-                      {manualFormat === "tsx" ? component.code : exactHtml}
-                    </code>
-                  </pre>
+                  <SyntaxHighlightedCode
+                    code={manualFormat === "tsx" ? component.code : exactHtml}
+                    language={manualFormat}
+                    className={`p-4 sm:p-5 ${codeExpanded ? "max-h-[880px] overflow-y-auto" : ""}`}
+                  />
 
                   {!codeExpanded && (
                     <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-neutral-950 via-neutral-950/80 to-transparent flex items-end justify-center pb-3">
@@ -923,9 +914,11 @@ export default function ExamplePage() {
                     )}
                   </button>
                 </div>
-                <pre className="p-4 font-mono text-xs sm:text-[13px] text-neutral-200 overflow-x-auto select-all leading-relaxed">
-                  <code>{fullUsageSnippet}</code>
-                </pre>
+                <SyntaxHighlightedCode
+                  code={fullUsageSnippet}
+                  language="tsx"
+                  className="p-4"
+                />
               </div>
             </div>
           </div>
@@ -961,9 +954,12 @@ export default function ExamplePage() {
               )}
             </button>
           </div>
-          <pre className="p-4 font-mono text-xs sm:text-[13px] text-neutral-200 overflow-x-auto select-all">
-            <code>{usageImportCode}</code>
-          </pre>
+          <SyntaxHighlightedCode
+            code={usageImportCode}
+            language="tsx"
+            showLineNumbers={false}
+            className="p-4"
+          />
         </div>
 
         {/* Render Block */}
@@ -984,9 +980,12 @@ export default function ExamplePage() {
               )}
             </button>
           </div>
-          <pre className="p-4 font-mono text-xs sm:text-[13px] text-neutral-200 overflow-x-auto select-all">
-            <code>{usageRenderCode}</code>
-          </pre>
+          <SyntaxHighlightedCode
+            code={usageRenderCode}
+            language="tsx"
+            showLineNumbers={false}
+            className="p-4"
+          />
         </div>
       </section>
 

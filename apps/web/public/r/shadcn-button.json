@@ -3,7 +3,7 @@
   "name": "shadcn-button",
   "type": "registry:ui",
   "title": "shadcn Button",
-  "description": "shadcn Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "shadcn Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/shadcn-button.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ShadcnButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"shadcn-button\"\n      className={className}\n      dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n\\n<body class=\\\"bg-gray-200 p-8\\\">\\n    <div class=\\\"flex justify-center\\\">\\n        <button class=\\\"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-4 py-2\\\">Hola</button>\\n    </div>\\n</body>\\n\\n</html>\" }}\n      {...props}\n    />\n  )\n}\n\nexport { ShadcnButton }\n",
+      "content": "import * as React from \"react\"\n\nfunction ShadcnButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"shadcn-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex justify-center\">\n              <button className=\"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-4 py-2\">Hola</button>\n          </div>\n    </div>\n  )\n}\n\nexport { ShadcnButton }\n",
       "type": "registry:ui"
     }
   ],

@@ -3,7 +3,7 @@
   "name": "simple-buttons-for-links",
   "type": "registry:ui",
   "title": "Simple buttons for links",
-  "description": "Simple buttons for links — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Simple buttons for links — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

@@ -3,7 +3,7 @@
   "name": "call-to-action-cta-section",
   "type": "registry:ui",
   "title": "Call to action (CTA) section",
-  "description": "Call to action (CTA) section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Call to action (CTA) section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/call-to-action-cta-section.tsx",
-      "content": "import * as React from \"react\"\n\nfunction CallToActionCtaSection({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"call-to-action-cta-section\"\n      className={className}\n      {...props}\n    >\n      <section className=\"bg-blue-600 py-16 text-white\">\n              <div className=\"container mx-auto px-4 text-center\">\n                  <h2 className=\"text-3xl md4xl font-bold mb-6\">Ready to Get Started?</h2>\n                  <p className=\"text-lg md mb-8\">Sign up now and start using our awesome product.</p>\n                  <a href=\"#\" className=\"px-6 py-3 bg-white text-blue-600 rounded-lg font-bold shadow-md hover50\">Sign Up\n                      Now</a>\n              </div>\n          </section>\n    </div>\n  )\n}\n\nexport { CallToActionCtaSection }\n",
+      "content": "import * as React from \"react\"\n\nfunction CallToActionCtaSection({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"call-to-action-cta-section\"\n      className={className}\n      {...props}\n    >\n      <section className=\"bg-blue-600 py-16 text-white\">\n              <div className=\"container mx-auto px-4 text-center\">\n                  <h2 className=\"text-3xl md:text-4xl font-bold mb-6\">Ready to Get Started?</h2>\n                  <p className=\"text-lg md:text-xl mb-8\">Sign up now and start using our awesome product.</p>\n                  <a href=\"#\" className=\"px-6 py-3 bg-white text-blue-600 rounded-lg font-bold shadow-md hover:bg-blue-50\">Sign Up\n                      Now</a>\n              </div>\n          </section>\n    </div>\n  )\n}\n\nexport { CallToActionCtaSection }\n",
       "type": "registry:ui"
     }
   ],

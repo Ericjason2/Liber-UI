@@ -3,7 +3,7 @@
   "name": "buttons-in-pair-2",
   "type": "registry:ui",
   "title": "Buttons in pair",
-  "description": "Buttons in pair — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Buttons in pair — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/buttons-in-pair-2.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ButtonsInPair2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"buttons-in-pair-2\"\n      className={className}\n      {...props}\n    >\n      <div className=\"mt-5 sm8 sm sm lg\">\n          <div className=\"rounded-md shadow\">\n              <a className=\"w-full flex items-center justify-center px-8 py-3 text-base leading-6 font-medium rounded-md text-white bg-pink-400 hover500 hover focus ring-offset-2 ring-pink-400 focus transition duration-150 ease-in-out md4 md md10\"\n                  href=\"\">\n                  Get started\n              </a>\n          </div>\n          <div className=\"mt-3 sm0 sm3\">\n              <a className=\"w-full flex items-center justify-center px-8 py-3 text-base leading-6 font-medium rounded-md text-purple-700 dark700 bg-purple-100 hover50 hover600 focus ring-offset-2 ring-purple-100 focus transition duration-150 ease-in-out md4 md md10\"\n                  href=\"\" rel=\"noopener\" target=\"_blank\">\n                  Source Code\n              </a>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonsInPair2 }\n",
+      "content": "import * as React from \"react\"\n\nfunction ButtonsInPair2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"buttons-in-pair-2\"\n      className={className}\n      {...props}\n    >\n      <div className=\"mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start\">\n          <div className=\"rounded-md shadow\">\n              <a className=\"w-full flex items-center justify-center px-8 py-3 text-base leading-6 font-medium rounded-md text-white bg-pink-400 hover:bg-pink-500 hover:text-white focus:ring ring-offset-2 ring-pink-400 focus:outline-none transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10\"\n                  href=\"\">\n                  Get started\n              </a>\n          </div>\n          <div className=\"mt-3 sm:mt-0 sm:ml-3\">\n              <a className=\"w-full flex items-center justify-center px-8 py-3 text-base leading-6 font-medium rounded-md text-purple-700 dark:text-purple-700 bg-purple-100 hover:bg-purple-50 hover:text-purple-600 focus:ring ring-offset-2 ring-purple-100 focus:outline-none transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10\"\n                  href=\"\" rel=\"noopener\" target=\"_blank\">\n                  Source Code\n              </a>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonsInPair2 }\n",
       "type": "registry:ui"
     }
   ],

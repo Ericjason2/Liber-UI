@@ -3,7 +3,7 @@
   "name": "glassmorphism-form",
   "type": "registry:ui",
   "title": "Glassmorphism form",
-  "description": "Glassmorphism form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Glassmorphism form — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

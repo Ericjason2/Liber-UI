@@ -3,7 +3,7 @@
   "name": "card-2",
   "type": "registry:ui",
   "title": "Card",
-  "description": "Card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "Card — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/card-2.tsx",
-      "content": "import * as React from \"react\"\n\nfunction Card2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-2\"\n      className={className}\n      {...props}\n    >\n      Example:\n      <div className=\"bg-gray-100\">\n        <div className=\"mx-auto max-w-7xl py-12 sm6 lg8\">\n          <div className=\"mx-auto max-w-3xl\">\n      \n            <div className=\"bg-white shadow sm\">\n              <div className=\"px-4 py-5 sm6\">\n                <h3 className=\"text-lg font-medium leading-6 text-gray-900\">Little bit of carding, little bit of cards</h3>\n                <div className=\"mt-2 max-w-xl text-sm text-gray-500\">\n                  <p>Share. Care. Its all just emptiness.\n                    Commodo dragon, I jam in my jammies.</p>\n                    <p>Kiss my french caramel</p>\n                    <p>ↈ sig  ·  pik - feel · susceptible - saunter </p>\n                </div>\n                <div className=\"mt-3 text-sm\">\n                  <a href=\"https://pebble.social\" className=\"font-medium text-indigo-600 hover500\">\n                    Learn more about Pebble\n                    <span aria-hidden=\"true\"> →</span>\n                  </a>\n                </div>\n              </div>\n            </div>\n      \n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { Card2 }\n",
+      "content": "import * as React from \"react\"\n\nfunction Card2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-2\"\n      className={className}\n      {...props}\n    >\n      Example:\n      <div className=\"bg-gray-100\">\n        <div className=\"mx-auto max-w-7xl py-12 sm:px-6 lg:px-8\">\n          <div className=\"mx-auto max-w-3xl\">\n      \n            <div className=\"bg-white shadow sm:rounded-lg\">\n              <div className=\"px-4 py-5 sm:p-6\">\n                <h3 className=\"text-lg font-medium leading-6 text-gray-900\">Little bit of carding, little bit of cards</h3>\n                <div className=\"mt-2 max-w-xl text-sm text-gray-500\">\n                  <p>Share. Care. Its all just emptiness.\n                    Commodo dragon, I jam in my jammies.</p>\n                    <p>Kiss my french caramel</p>\n                    <p>ↈ sig  ·  pik - feel · susceptible - saunter </p>\n                </div>\n                <div className=\"mt-3 text-sm\">\n                  <a href=\"https://pebble.social\" className=\"font-medium text-indigo-600 hover:text-indigo-500\">\n                    Learn more about Pebble\n                    <span aria-hidden=\"true\"> →</span>\n                  </a>\n                </div>\n              </div>\n            </div>\n      \n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { Card2 }\n",
       "type": "registry:ui"
     }
   ],

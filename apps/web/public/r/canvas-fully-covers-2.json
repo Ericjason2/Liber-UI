@@ -3,7 +3,7 @@
   "name": "canvas-fully-covers-2",
   "type": "registry:ui",
   "title": "canvas fully covers",
-  "description": "canvas fully covers — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "canvas fully covers — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/canvas-fully-covers-2.tsx",
-      "content": "import * as React from \"react\"\n\nfunction CanvasFullyCovers2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"canvas-fully-covers-2\"\n      className={className}\n      dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\r\\n<html lang=\\\"en\\\">\\r\\n\\r\\n<head>\\r\\n  <meta charset=\\\"UTF-8\\\">\\r\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r\\n  <title>Cosmos Node Network</title>\\r\\n\\r\\n</head>\\r\\n<style>\\r\\n  * {\\r\\n    margin: 0;\\r\\n    padding: 0;\\r\\n    box-sizing: border-box;\\r\\n  }\\r\\n\\r\\n  body {\\r\\n    margin: 0;\\r\\n    padding: 0;\\r\\n    overflow: hidden;\\r\\n    height: 100vh;\\r\\n    background: radial-gradient(circle, #1b2735, #090a0f);\\r\\n  }\\r\\n\\r\\n  canvas {\\r\\n    display: block;\\r\\n    position: absolute;\\r\\n    top: 0;\\r\\n    left: 0;\\r\\n    width: 100%;\\r\\n    /* Ensure  the width */\\r\\n    height: 100%;\\r\\n    /* Ensure canvas fully covers the height */\\r\\n  }\\r\\n</style>\\r\\n\\r\\n<body>\\r\\n\\r\\n  <canvas id=\\\"cosmosCanvas\\\"></canvas>\\r\\n  \\r\\n</body>\\r\\n\\r\\n</html>\" }}\n      {...props}\n    />\n  )\n}\n\nexport { CanvasFullyCovers2 }\n",
+      "content": "import * as React from \"react\"\n\nfunction CanvasFullyCovers2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"canvas-fully-covers-2\"\n      className={className}\n      {...props}\n    >\n      <style>{\"* {\\r\\n    margin: 0;\\r\\n    padding: 0;\\r\\n    box-sizing: border-box;\\r\\n  }\\r\\n\\r\\n  body {\\r\\n    margin: 0;\\r\\n    padding: 0;\\r\\n    overflow: hidden;\\r\\n    height: 100vh;\\r\\n    background: radial-gradient(circle, #1b2735, #090a0f);\\r\\n  }\\r\\n\\r\\n  canvas {\\r\\n    display: block;\\r\\n    position: absolute;\\r\\n    top: 0;\\r\\n    left: 0;\\r\\n    width: 100%;\\r\\n    /* Ensure  the width */\\r\\n    height: 100%;\\r\\n    /* Ensure canvas fully covers the height */\\r\\n  }\"}</style>\n      <canvas id=\"cosmosCanvas\"></canvas>\n    </div>\n  )\n}\n\nexport { CanvasFullyCovers2 }\n",
       "type": "registry:ui"
     }
   ],

@@ -3,7 +3,7 @@
   "name": "test-deepseek-ticket",
   "type": "registry:ui",
   "title": "test deepseek ticket",
-  "description": "test deepseek ticket — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "test deepseek ticket — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

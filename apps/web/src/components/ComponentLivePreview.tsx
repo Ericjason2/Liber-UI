@@ -42,10 +42,11 @@ export function buildPreviewSrcDoc(
     : "bg-slate-50 text-slate-900";
 
   return `<!DOCTYPE html>
-<html lang="fr" class="${htmlClass}">
+<html lang="en" class="${htmlClass}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' 'unsafe-eval' https: data: blob:; connect-src 'none';" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
   <script>
@@ -151,7 +152,7 @@ export function ComponentLivePreview({
       >
         {inView ? (
           <iframe
-            title={`Aperçu de ${title}`}
+            title={`Preview of ${title}`}
             srcDoc={srcDoc}
             loading="lazy"
             sandbox="allow-scripts"
@@ -178,7 +179,7 @@ export function ComponentLivePreview({
         className="relative rounded-xl border border-border bg-white dark:bg-slate-950 shadow-sm overflow-hidden transition-all duration-300 w-full"
       >
         <iframe
-          title={`Prévisualisation interactive de ${title}`}
+          title={`Interactive preview of ${title}`}
           srcDoc={srcDoc}
           sandbox="allow-scripts"
           style={{ minHeight: `${minHeight}px` }}

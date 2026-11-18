@@ -3,7 +3,7 @@
   "name": "ribbon-at-corner",
   "type": "registry:ui",
   "title": "Ribbon at Corner",
-  "description": "Ribbon at Corner — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "Ribbon at Corner — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"

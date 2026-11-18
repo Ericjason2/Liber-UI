@@ -3,7 +3,7 @@
   "name": "button-with-hover-to-button-shadow",
   "type": "registry:ui",
   "title": "Button with hover to button shadow",
-  "description": "Button with hover to button shadow — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Button with hover to button shadow — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/button-with-hover-to-button-shadow.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ButtonWithHoverToButtonShadow({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-with-hover-to-button-shadow\"\n      className={className}\n      {...props}\n    >\n      <div className=\"h-screen w-full bg-[#262626] flex items-center justify-center\">\n        <button className=\"h-fit cursor-pointer py-2.5 px-4 rounded-full text-orange-500 border border-orange-500 hover\">\n          Zayed Hossain\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonWithHoverToButtonShadow }\n",
+      "content": "import * as React from \"react\"\n\nfunction ButtonWithHoverToButtonShadow({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-with-hover-to-button-shadow\"\n      className={className}\n      {...props}\n    >\n      <div className=\"h-screen w-full bg-[#262626] flex items-center justify-center\">\n        <button className=\"h-fit cursor-pointer py-2.5 px-4 rounded-full text-orange-500 border border-orange-500 hover:shadow-button-shadow\">\n          Zayed Hossain\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonWithHoverToButtonShadow }\n",
       "type": "registry:ui"
     }
   ],

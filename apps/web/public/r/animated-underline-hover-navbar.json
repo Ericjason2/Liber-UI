@@ -3,7 +3,7 @@
   "name": "animated-underline-hover-navbar",
   "type": "registry:ui",
   "title": "Animated underline hover navbar",
-  "description": "Animated underline hover navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Animated underline hover navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

@@ -3,7 +3,7 @@
   "name": "tailwind-cta-section",
   "type": "registry:ui",
   "title": "Tailwind CTA section",
-  "description": "Tailwind CTA section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Tailwind CTA section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/tailwind-cta-section.tsx",
-      "content": "import * as React from \"react\"\n\nfunction TailwindCtaSection({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"tailwind-cta-section\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-gray-900 text-white py-20\">\r\n          <div className=\"max-w-6xl mx-auto px-4 sm6 lg8\">\r\n              <div className=\"flex flex-col gap-8 lg items-center\">\r\n                  <div className=\"lg1/2\">\r\n                      <h1 className=\"text-4xl font-bold leading-tight mb-4\">Welcome to Tailwind CSS!</h1>\r\n                      <p className=\"text-xl mb-8\">Tailwind CSS is a utility-first CSS framework for rapidly building custom user\r\n                          interfaces.</p>\r\n                      <a href=\"#\"\r\n                          className=\"bg-white text-gray-900 py-3 px-6 rounded-lg shadow-lg hover transition duration-200\">Get\r\n                          started\r\n                      </a>\r\n                  </div>\r\n                  <div className=\"lg1/2 lg12\">\r\n                      <img src=\"https://cdn.pixabay.com/photo/2016/09/21/11/31/youtube-1684601_960_720.png\" alt=\"Tailwind CSS\" className=\"rounded-lg shadow-lg hover transition duration-200\" />\r\n                  </div>\r\n              </div>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { TailwindCtaSection }\n",
+      "content": "import * as React from \"react\"\n\nfunction TailwindCtaSection({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"tailwind-cta-section\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-gray-900 text-white py-20\">\r\n          <div className=\"max-w-6xl mx-auto px-4 sm:px-6 lg:px-8\">\r\n              <div className=\"flex flex-col gap-8 lg:flex-row items-center\">\r\n                  <div className=\"lg:w-1/2\">\r\n                      <h1 className=\"text-4xl font-bold leading-tight mb-4\">Welcome to Tailwind CSS!</h1>\r\n                      <p className=\"text-xl mb-8\">Tailwind CSS is a utility-first CSS framework for rapidly building custom user\r\n                          interfaces.</p>\r\n                      <a href=\"#\"\r\n                          className=\"bg-white text-gray-900 py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition duration-200\">Get\r\n                          started\r\n                      </a>\r\n                  </div>\r\n                  <div className=\"lg:w-1/2 lg:ml-12\">\r\n                      <img src=\"https://cdn.pixabay.com/photo/2016/09/21/11/31/youtube-1684601_960_720.png\" alt=\"Tailwind CSS\" className=\"rounded-lg shadow-lg hover:shadow-xl transition duration-200\" />\r\n                  </div>\r\n              </div>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { TailwindCtaSection }\n",
       "type": "registry:ui"
     }
   ],

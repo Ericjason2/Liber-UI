@@ -19,8 +19,9 @@ import {
   PACKAGE_MANAGERS,
   getCliCommand,
   getPackageInstallCommand,
-  type PackageManager,
+  usePackageManager,
 } from "@/lib/package-manager";
+import { SyntaxHighlightedCode } from "@/components/SyntaxHighlightedCode";
 
 interface Props {
   logo: LogoItem;
@@ -35,7 +36,7 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
   const [previewDarkBg, setPreviewDarkBg] = useState(false);
   const [monoColor, setMonoColor] = useState("#000000");
   const [activeTab, setActiveTab] = useState<CodeTab>("react");
-  const [pm, setPm] = useState<PackageManager>("pnpm");
+  const [pm, setPm] = usePackageManager();
   const [svgContent, setSvgContent] = useState<string>("");
   const [copiedType, setCopiedType] = useState<string | null>(null);
   const [pngSize, setPngSize] = useState<number>(256);
@@ -315,8 +316,13 @@ export function LogoDetailClient({ logo, relatedLogos }: Props) {
               </button>
             </div>
 
-            <div className="p-3 bg-card overflow-x-auto max-h-48 text-xs font-mono leading-relaxed text-foreground whitespace-pre">
-              {getCodeSnippet()}
+            <div className="bg-neutral-950 text-neutral-100">
+              <SyntaxHighlightedCode
+                code={getCodeSnippet()}
+                language={activeTab === "react" ? "tsx" : activeTab === "svg" ? "html" : "css"}
+                showLineNumbers={activeTab !== "cli"}
+                className="p-3 max-h-48 overflow-y-auto"
+              />
             </div>
             {(activeTab === "react" || activeTab === "cli") && (
               <div className="px-3 py-2 border-t border-border bg-surface-subtle flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono">

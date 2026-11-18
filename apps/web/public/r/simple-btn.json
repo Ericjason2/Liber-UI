@@ -3,7 +3,7 @@
   "name": "simple-btn",
   "type": "registry:ui",
   "title": "Simple Btn",
-  "description": "Simple Btn — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Simple Btn — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/simple-btn.tsx",
-      "content": "import * as React from \"react\"\n\nfunction SimpleBtn({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"simple-btn\"\n      className={className}\n      {...props}\n    >\n      <button type=\"button\" className=\"text-nowrap inline-flex items-center justify-center rounded-md border-2 border-transparent bg-gray-900 bg-none px-12 py-3 text-center text-base font-bold text-white transition-all duration-200 ease-in-out focus hover800\">\n                                          Submit\n                                      </button>\n    </div>\n  )\n}\n\nexport { SimpleBtn }\n",
+      "content": "import * as React from \"react\"\n\nfunction SimpleBtn({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"simple-btn\"\n      className={className}\n      {...props}\n    >\n      <button type=\"button\" className=\"text-nowrap inline-flex items-center justify-center rounded-md border-2 border-transparent bg-gray-900 bg-none px-12 py-3 text-center text-base font-bold text-white transition-all duration-200 ease-in-out focus:shadow hover:bg-gray-800\">\n                                          Submit\n                                      </button>\n    </div>\n  )\n}\n\nexport { SimpleBtn }\n",
       "type": "registry:ui"
     }
   ],

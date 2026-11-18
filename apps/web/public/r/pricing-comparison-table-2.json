@@ -3,7 +3,7 @@
   "name": "pricing-comparison-table-2",
   "type": "registry:ui",
   "title": "Pricing comparison table",
-  "description": "Pricing comparison table — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
+  "description": "Pricing comparison table — Clear pricing table or tier comparison grid highlighting subscription plans, perks, and feature tiers.",
   "author": "Liber UI",
   "categories": [
     "pricing"

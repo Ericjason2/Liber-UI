@@ -3,7 +3,7 @@
   "name": "rgb-border-button",
   "type": "registry:ui",
   "title": "rgb border button",
-  "description": "rgb border button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "rgb border button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

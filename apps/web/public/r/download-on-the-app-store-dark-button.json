@@ -3,7 +3,7 @@
   "name": "download-on-the-app-store-dark-button",
   "type": "registry:ui",
   "title": "Download on the App Store dark button",
-  "description": "Download on the App Store dark button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Download on the App Store dark button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

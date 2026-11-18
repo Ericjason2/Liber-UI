@@ -3,7 +3,7 @@
   "name": "floating-pus-button",
   "type": "registry:ui",
   "title": "Floating pus button",
-  "description": "Floating pus button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Floating pus button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/floating-pus-button.tsx",
-      "content": "import * as React from \"react\"\n\nfunction FloatingPusButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"floating-pus-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"fixed bottom-4 right-4\">\n        <button className=\"bg-blue-500 hover600 text-white rounded-full py-2 px-4 shadow-lg\">\n          +\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { FloatingPusButton }\n",
+      "content": "import * as React from \"react\"\n\nfunction FloatingPusButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"floating-pus-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"fixed bottom-4 right-4\">\n        <button className=\"bg-blue-500 hover:bg-blue-600 text-white rounded-full py-2 px-4 shadow-lg\">\n          +\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { FloatingPusButton }\n",
       "type": "registry:ui"
     }
   ],

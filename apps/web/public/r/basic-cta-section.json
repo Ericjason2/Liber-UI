@@ -3,7 +3,7 @@
   "name": "basic-cta-section",
   "type": "registry:ui",
   "title": "Basic CTA section",
-  "description": "Basic CTA section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Basic CTA section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/basic-cta-section.tsx",
-      "content": "import * as React from \"react\"\n\nfunction BasicCtaSection({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"basic-cta-section\"\n      className={className}\n      {...props}\n    >\n      <section className=\"container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center\">\n          <h3 className=\"text-5xl font-semibold\">Ready to grow your business?</h3>\n          <p className=\"mt-8 text-xl font-light\">Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque\n              fermentum dui faucibus in.\n          </p>\n          <p className=\"mt-8\">\n              <button type=\"button\" className=\" py-5 px-16 text-lg bg-teal-500 hover600 rounded text-white \">Get\n                  Started Now\n              </button>\n          </p>\n      </section>\n    </div>\n  )\n}\n\nexport { BasicCtaSection }\n",
+      "content": "import * as React from \"react\"\n\nfunction BasicCtaSection({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"basic-cta-section\"\n      className={className}\n      {...props}\n    >\n      <section className=\"container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center\">\n          <h3 className=\"text-5xl font-semibold\">Ready to grow your business?</h3>\n          <p className=\"mt-8 text-xl font-light\">Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque\n              fermentum dui faucibus in.\n          </p>\n          <p className=\"mt-8\">\n              <button type=\"button\" className=\" py-5 px-16 text-lg bg-teal-500 hover:bg-teal-600 rounded text-white \">Get\n                  Started Now\n              </button>\n          </p>\n      </section>\n    </div>\n  )\n}\n\nexport { BasicCtaSection }\n",
       "type": "registry:ui"
     }
   ],

@@ -3,7 +3,7 @@
   "name": "login-popup-modal-2",
   "type": "registry:ui",
   "title": "Login popup modal",
-  "description": "Login popup modal — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Login popup modal — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

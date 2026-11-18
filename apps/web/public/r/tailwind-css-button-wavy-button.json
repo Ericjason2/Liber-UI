@@ -3,7 +3,7 @@
   "name": "tailwind-css-button-wavy-button",
   "type": "registry:ui",
   "title": "Tailwind CSS Button (Wavy Button)",
-  "description": "Tailwind CSS Button (Wavy Button) — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Tailwind CSS Button (Wavy Button) — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/tailwind-css-button-wavy-button.tsx",
-      "content": "import * as React from \"react\"\n\nfunction TailwindCssButtonWavyButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"tailwind-css-button-wavy-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"w-full h-screen flex items-center justify-center bg-gray-100 font-poppins\">\n      \n          <button className=\"relative w-[250px] h-[60px] bg-yellow-400 border border-black rounded-[5mm] shadow-[3px_3px_0_rgb(0,0,0)] cursor-pointer overflow-hidden transition-shadow duration-300 hover[6px_6px_0_rgb(0,0,0)] hover10\">\n          \n          <div className=\"relative z-10 flex items-center justify-center h-full text-xl font-bold text-black font-poppins\">\n            HOVER ME!\n          </div>\n          \n          <div className=\"absolute w-full h-1/2 top-full left-0 wave\"></div>\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { TailwindCssButtonWavyButton }\n",
+      "content": "import * as React from \"react\"\n\nfunction TailwindCssButtonWavyButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"tailwind-css-button-wavy-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"w-full h-screen flex items-center justify-center bg-gray-100 font-poppins\">\n      \n          <button className=\"relative w-[250px] h-[60px] bg-yellow-400 border border-black rounded-[5mm] shadow-[3px_3px_0_rgb(0,0,0)] cursor-pointer overflow-hidden transition-shadow duration-300 hover:shadow-[6px_6px_0_rgb(0,0,0)] hover:z-10\">\n          \n          <div className=\"relative z-10 flex items-center justify-center h-full text-xl font-bold text-black font-poppins\">\n            HOVER ME!\n          </div>\n          \n          <div className=\"absolute w-full h-1/2 top-full left-0 wave\"></div>\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { TailwindCssButtonWavyButton }\n",
       "type": "registry:ui"
     }
   ],

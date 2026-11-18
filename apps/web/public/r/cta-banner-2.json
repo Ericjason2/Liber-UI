@@ -3,7 +3,7 @@
   "name": "cta-banner-2",
   "type": "registry:ui",
   "title": "CTA banner",
-  "description": "CTA banner — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
+  "description": "CTA banner — High-impact hero section featuring a bold headline, supporting subtitle, and clear calls to action.",
   "author": "Liber UI",
   "categories": [
     "hero"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/cta-banner-2.tsx",
-      "content": "import * as React from \"react\"\n\nfunction CtaBanner2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"cta-banner-2\"\n      className={className}\n      {...props}\n    >\n      <div className=\"p-4 max-w-xl rounded-lg border-l-4 border-teal-400 bg-gradient-to-r from-teal-100/50 to-white\">\n        <p className=\"text-xl font-semibold text-gray-800\">\n          Have a Custom Design in Mind?\n        </p>\n        <p className=\"mt-1 text-gray-700\">\n          Bring your idea to us, and we will work on it to create something special just for you.\n        </p>\n        <div className=\"mt-4\">\n          <a href=\"/\"\n            className=\"inline-block px-4 py-2 font-medium text-white transition duration-300 rounded-md bg-red-500 hover600\">\n            Submit Your Idea\n          </a>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { CtaBanner2 }\n",
+      "content": "import * as React from \"react\"\n\nfunction CtaBanner2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"cta-banner-2\"\n      className={className}\n      {...props}\n    >\n      <div className=\"p-4 max-w-xl rounded-lg border-l-4 border-teal-400 bg-gradient-to-r from-teal-100/50 to-white\">\n        <p className=\"text-xl font-semibold text-gray-800\">\n          Have a Custom Design in Mind?\n        </p>\n        <p className=\"mt-1 text-gray-700\">\n          Bring your idea to us, and we will work on it to create something special just for you.\n        </p>\n        <div className=\"mt-4\">\n          <a href=\"/\"\n            className=\"inline-block px-4 py-2 font-medium text-white transition duration-300 rounded-md bg-red-500 hover:bg-red-600\">\n            Submit Your Idea\n          </a>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { CtaBanner2 }\n",
       "type": "registry:ui"
     }
   ],

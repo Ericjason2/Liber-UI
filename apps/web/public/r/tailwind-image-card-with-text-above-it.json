@@ -3,7 +3,7 @@
   "name": "tailwind-image-card-with-text-above-it",
   "type": "registry:ui",
   "title": "Tailwind image card with text above it",
-  "description": "Tailwind image card with text above it — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "Tailwind image card with text above it — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"

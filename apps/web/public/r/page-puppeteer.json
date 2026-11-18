@@ -3,7 +3,7 @@
   "name": "page-puppeteer",
   "type": "registry:ui",
   "title": "Page puppeteer",
-  "description": "Page puppeteer — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
+  "description": "Page puppeteer — User profile card or bio section presenting avatars, user credentials, badges, and social statistics.",
   "author": "Liber UI",
   "categories": [
     "profile"

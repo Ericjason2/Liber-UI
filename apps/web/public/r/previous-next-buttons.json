@@ -3,7 +3,7 @@
   "name": "previous-next-buttons",
   "type": "registry:ui",
   "title": "Previous Next Buttons",
-  "description": "Previous Next Buttons — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Previous Next Buttons — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/previous-next-buttons.tsx",
-      "content": "import * as React from \"react\"\n\nfunction PreviousNextButtons({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"previous-next-buttons\"\n      className={className}\n      {...props}\n    >\n      <nav className=\"inline-flex space-x-2.5\">\n          <a className=\"flex items-center py-2 px-3 rounded font-medium select-none border text-gray-900 dark bg-white dark800 transition-colors hover600 hover400 hover dark\"\n              href=\"#\">\n              ⪻\n              Previous\n          </a>\n          <a className=\"flex items-center py-2 px-3 rounded font-medium select-none border text-gray-900 dark bg-white dark800 transition-colors hover600 hover400 hover dark\"\n              href=\"#\">\n              Next\n              ⪼\n          </a>\n      </nav>\n    </div>\n  )\n}\n\nexport { PreviousNextButtons }\n",
+      "content": "import * as React from \"react\"\n\nfunction PreviousNextButtons({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"previous-next-buttons\"\n      className={className}\n      {...props}\n    >\n      <nav className=\"inline-flex space-x-2.5\">\n          <a className=\"flex items-center py-2 px-3 rounded font-medium select-none border text-gray-900 dark:text-white bg-white dark:bg-gray-800 transition-colors hover:border-blue-600 hover:bg-blue-400 hover:text-white dark:hover:text-white\"\n              href=\"#\">\n              ⪻\n              Previous\n          </a>\n          <a className=\"flex items-center py-2 px-3 rounded font-medium select-none border text-gray-900 dark:text-white bg-white dark:bg-gray-800 transition-colors hover:border-blue-600 hover:bg-blue-400 hover:text-white dark:hover:text-white\"\n              href=\"#\">\n              Next\n              ⪼\n          </a>\n      </nav>\n    </div>\n  )\n}\n\nexport { PreviousNextButtons }\n",
       "type": "registry:ui"
     }
   ],

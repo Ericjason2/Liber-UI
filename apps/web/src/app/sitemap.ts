@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 import { OFFICIAL_LOGOS } from "@/lib/catalog-logos";
+import { SAMPLE_COMPONENTS } from "@/lib/catalog-components";
+import { BASE_FONTS } from "@/lib/catalog-fonts-base";
 
 const BASE_URL = "https://liber-ui-delta.vercel.app";
 
@@ -13,6 +15,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/fonts",
     "/docs",
     "/legal",
+    "/legal/mentions-legales",
+    "/legal/terms",
+    "/legal/cookies",
   ].map((route) => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date(),
@@ -27,6 +32,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...logoRoutes];
-}
+  const componentRoutes = SAMPLE_COMPONENTS.map((comp) => ({
+    url: `${BASE_URL}/components/${comp.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
 
+  const fontRoutes = BASE_FONTS.map((font) => ({
+    url: `${BASE_URL}/fonts/${font.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticRoutes, ...logoRoutes, ...componentRoutes, ...fontRoutes];
+}

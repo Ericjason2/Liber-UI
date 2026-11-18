@@ -3,7 +3,7 @@
   "name": "profile-card-16",
   "type": "registry:ui",
   "title": "profile card",
-  "description": "profile card — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
+  "description": "profile card — User profile card or bio section presenting avatars, user credentials, badges, and social statistics.",
   "author": "Liber UI",
   "categories": [
     "profile"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/profile-card-16.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ProfileCard16({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"profile-card-16\"\n      className={className}\n      {...props}\n    >\n      <a className=\"p-8 max-w-lg border border-indigo-300 rounded-2xl hover hover50 flex flex-col items-center\"\n          href=\"#\">\n          <img src=\"https://loremflickr.com/800/600/girl\" className=\"shadow rounded-lg overflow-hidden border\"  />\n          <div className=\"mt-8\">\n              <h4 className=\"font-bold text-xl\">Exercises</h4>\n              <p className=\"mt-2 text-gray-600\">Create Exercises for any subject with the topics you and your students care about.\n              </p>\n              <div className=\"mt-5\">\n                  <button type=\"button\" className=\"inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover900\">Start Creating</button>\n              </div>\n          </div>\n      </a>\n    </div>\n  )\n}\n\nexport { ProfileCard16 }\n",
+      "content": "import * as React from \"react\"\n\nfunction ProfileCard16({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"profile-card-16\"\n      className={className}\n      {...props}\n    >\n      <a className=\"p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center\"\n          href=\"#\">\n          <img src=\"https://loremflickr.com/800/600/girl\" className=\"shadow rounded-lg overflow-hidden border\"  />\n          <div className=\"mt-8\">\n              <h4 className=\"font-bold text-xl\">Exercises</h4>\n              <p className=\"mt-2 text-gray-600\">Create Exercises for any subject with the topics you and your students care about.\n              </p>\n              <div className=\"mt-5\">\n                  <button type=\"button\" className=\"inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900\">Start Creating</button>\n              </div>\n          </div>\n      </a>\n    </div>\n  )\n}\n\nexport { ProfileCard16 }\n",
       "type": "registry:ui"
     }
   ],

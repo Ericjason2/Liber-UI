@@ -3,7 +3,7 @@
   "name": "macos-style-webpage-macos-design-in-the-browser",
   "type": "registry:ui",
   "title": "macOS Style Webpage – macOS Design in the Browser",
-  "description": "macOS Style Webpage – macOS Design in the Browser — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "macOS Style Webpage – macOS Design in the Browser — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

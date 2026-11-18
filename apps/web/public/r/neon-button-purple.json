@@ -3,7 +3,7 @@
   "name": "neon-button-purple",
   "type": "registry:ui",
   "title": "neon-button-purple",
-  "description": "neon-button-purple — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "neon-button-purple — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

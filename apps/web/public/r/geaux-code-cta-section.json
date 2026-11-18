@@ -3,7 +3,7 @@
   "name": "geaux-code-cta-section",
   "type": "registry:ui",
   "title": "Geaux Code CTA Section",
-  "description": "Geaux Code CTA Section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Geaux Code CTA Section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

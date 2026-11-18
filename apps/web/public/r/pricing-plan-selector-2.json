@@ -3,7 +3,7 @@
   "name": "pricing-plan-selector-2",
   "type": "registry:ui",
   "title": "Pricing Plan Selector",
-  "description": "Pricing Plan Selector — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
+  "description": "Pricing Plan Selector — Clear pricing table or tier comparison grid highlighting subscription plans, perks, and feature tiers.",
   "author": "Liber UI",
   "categories": [
     "pricing"

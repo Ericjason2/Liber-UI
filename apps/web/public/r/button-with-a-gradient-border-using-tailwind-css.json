@@ -3,7 +3,7 @@
   "name": "button-with-a-gradient-border-using-tailwind-css",
   "type": "registry:ui",
   "title": "Button with a gradient border using Tailwind CSS",
-  "description": "Button with a gradient border using Tailwind CSS — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Button with a gradient border using Tailwind CSS — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/button-with-a-gradient-border-using-tailwind-css.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ButtonWithAGradientBorderUsingTailwindCss({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-with-a-gradient-border-using-tailwind-css\"\n      className={className}\n      {...props}\n    >\n      <div style=\"max-width: 240px;\"\n          className=\"flex rounded-full mx-auto bg-gradient-to-tr from-red-400 via-orange-400 to-rose-400 p-1 shadow-lg\">\n          <button className=\"flex-1 font-bold text-xl bg-white px-6 py-1 rounded-full\">\n              Welcome\n          </button>\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonWithAGradientBorderUsingTailwindCss }\n",
+      "content": "import * as React from \"react\"\n\nfunction ButtonWithAGradientBorderUsingTailwindCss({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-with-a-gradient-border-using-tailwind-css\"\n      className={className}\n      {...props}\n    >\n      <div style={{ maxWidth: \"240px\" }}\n          className=\"flex rounded-full mx-auto bg-gradient-to-tr from-red-400 via-orange-400 to-rose-400 p-1 shadow-lg\">\n          <button className=\"flex-1 font-bold text-xl bg-white px-6 py-1 rounded-full\">\n              Welcome\n          </button>\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonWithAGradientBorderUsingTailwindCss }\n",
       "type": "registry:ui"
     }
   ],

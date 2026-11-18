@@ -3,7 +3,7 @@
   "name": "sleek-modern-button-with-hover-effect-tailwind-css",
   "type": "registry:ui",
   "title": "🔥 Sleek &amp; Modern Button with Hover Effect – Tailwind CSS",
-  "description": "🔥 Sleek &amp; Modern Button with Hover Effect – Tailwind CSS — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "🔥 Sleek &amp; Modern Button with Hover Effect – Tailwind CSS — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/sleek-modern-button-with-hover-effect-tailwind-css.tsx",
-      "content": "import * as React from \"react\"\n\nfunction SleekModernButtonWithHoverEffectTailwindCss({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"sleek-modern-button-with-hover-effect-tailwind-css\"\n      className={className}\n      {...props}\n    >\n      <div className=\"w-svw h-svh flex justify-center items-center\">\n        <button className=\"inline-flex items-center gap-2 transition duration-300 ease-linear \n          bg-[#5751E1] text-white text-lg font-semibold font-['Poppins',sans-serif] leading-[1.12] \n          px-8 py-4 text-center capitalize select-none rounded-full shadow-[4px_6px_0px_0px_#050071] \n          whitespace-nowrap hover[#ffc224] hover\">\n          Button\n      </button>\n      </div>\n    </div>\n  )\n}\n\nexport { SleekModernButtonWithHoverEffectTailwindCss }\n",
+      "content": "import * as React from \"react\"\n\nfunction SleekModernButtonWithHoverEffectTailwindCss({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"sleek-modern-button-with-hover-effect-tailwind-css\"\n      className={className}\n      {...props}\n    >\n      <div className=\"w-svw h-svh flex justify-center items-center\">\n        <button className=\"inline-flex items-center gap-2 transition duration-300 ease-linear \n          bg-[#5751E1] text-white text-lg font-semibold font-['Poppins',sans-serif] leading-[1.12] \n          px-8 py-4 text-center capitalize select-none rounded-full shadow-[4px_6px_0px_0px_#050071] \n          whitespace-nowrap hover:bg-[#ffc224] hover:shadow-none\">\n          Button\n      </button>\n      </div>\n    </div>\n  )\n}\n\nexport { SleekModernButtonWithHoverEffectTailwindCss }\n",
       "type": "registry:ui"
     }
   ],

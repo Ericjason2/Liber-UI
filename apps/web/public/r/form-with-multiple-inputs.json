@@ -3,7 +3,7 @@
   "name": "form-with-multiple-inputs",
   "type": "registry:ui",
   "title": "Form with multiple Inputs.",
-  "description": "Form with multiple Inputs. — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Form with multiple Inputs. — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

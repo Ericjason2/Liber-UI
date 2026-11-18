@@ -3,7 +3,7 @@
   "name": "input-formulario",
   "type": "registry:ui",
   "title": "Input Formulario",
-  "description": "Input Formulario — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Input Formulario — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/input-formulario.tsx",
-      "content": "import * as React from \"react\"\n\nfunction InputFormulario({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"input-formulario\"\n      className={className}\n      {...props}\n    >\n      <div className=\"w-screen h-screen flex flex-col justify-center items-center  dark900\">\n          <div className=\"relative py-3 sm sm\">\n              <div className=\" px-8 py-6 mt-4 text-left\">\n                  \n                  <div className=\"w-full flex flex-col gap-2 select-none\">\n                      <label className=\"font-semibold text-xs text-gray-400 \">Username</label>\n                      <input className=\"border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark500 dark900\" placeholder=\"Username\" />\n                  </div>\n              </div>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { InputFormulario }\n",
+      "content": "import * as React from \"react\"\n\nfunction InputFormulario({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"input-formulario\"\n      className={className}\n      {...props}\n    >\n      <div className=\"w-screen h-screen flex flex-col justify-center items-center  dark:bg-gray-900\">\n          <div className=\"relative py-3 sm:max-w-xs sm:mx-auto\">\n              <div className=\" px-8 py-6 mt-4 text-left\">\n                  \n                  <div className=\"w-full flex flex-col gap-2 select-none\">\n                      <label className=\"font-semibold text-xs text-gray-400 \">Username</label>\n                      <input className=\"border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark:border-gray-500 dark:bg-gray-900\" placeholder=\"Username\" />\n                  </div>\n              </div>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { InputFormulario }\n",
       "type": "registry:ui"
     }
   ],

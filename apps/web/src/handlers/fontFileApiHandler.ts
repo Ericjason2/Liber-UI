@@ -99,7 +99,9 @@ export function extractFontFromZipBuffer(
     return { data: compressedSlice, ext: chosen.ext };
   }
   if (chosen.compressionMethod === 8) {
-    const inflated = inflateRawSync(compressedSlice);
+    const inflated = inflateRawSync(compressedSlice, {
+      maxOutputLength: 15 * 1024 * 1024,
+    });
     return { data: inflated, ext: chosen.ext };
   }
 
@@ -131,6 +133,7 @@ export async function GET(
         const cssRes = await fetch(
           `https://fonts.googleapis.com/css2?family=${encodeURIComponent(font.googleFontsFamily)}`,
           {
+            signal: AbortSignal.timeout(8000),
             headers: {
               // Classic desktop User-Agent ensures Google Fonts returns a direct .ttf URL
               "User-Agent": "Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0",
@@ -141,7 +144,9 @@ export async function GET(
           const cssText = await cssRes.text();
           const urlMatch = cssText.match(/url\((https:\/\/fonts\.gstatic\.com\/[^)]+)\)/);
           if (urlMatch && urlMatch[1]) {
-            const ttfRes = await fetch(urlMatch[1]);
+            const ttfRes = await fetch(urlMatch[1], {
+              signal: AbortSignal.timeout(8000),
+            });
             if (ttfRes.ok) {
               const ttfBuffer = await ttfRes.arrayBuffer();
               return new NextResponse(new Uint8Array(ttfBuffer), {
@@ -172,6 +177,7 @@ export async function GET(
 
   try {
     const response = await fetch(font.downloadUrl, {
+      signal: AbortSignal.timeout(8000),
       headers: {
         "User-Agent":
           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",

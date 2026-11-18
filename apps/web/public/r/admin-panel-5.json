@@ -3,7 +3,7 @@
   "name": "admin-panel-5",
   "type": "registry:ui",
   "title": "Admin Panel",
-  "description": "Admin Panel — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Admin Panel — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

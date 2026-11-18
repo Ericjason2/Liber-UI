@@ -3,7 +3,7 @@
   "name": "floating-feedback-button",
   "type": "registry:ui",
   "title": "Floating feedback button",
-  "description": "Floating feedback button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Floating feedback button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/floating-feedback-button.tsx",
-      "content": "import * as React from \"react\"\n\nfunction FloatingFeedbackButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"floating-feedback-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"fixed bottom-4 right-4\">\n        <button className=\"bg-blue-500 hover600 text-white rounded-full py-3 px-4 shadow-lg\">\n          Feedback\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { FloatingFeedbackButton }\n",
+      "content": "import * as React from \"react\"\n\nfunction FloatingFeedbackButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"floating-feedback-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"fixed bottom-4 right-4\">\n        <button className=\"bg-blue-500 hover:bg-blue-600 text-white rounded-full py-3 px-4 shadow-lg\">\n          Feedback\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { FloatingFeedbackButton }\n",
       "type": "registry:ui"
     }
   ],

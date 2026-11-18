@@ -3,7 +3,7 @@
   "name": "button-with-hover-effect",
   "type": "registry:ui",
   "title": "Button with hover effect",
-  "description": "Button with hover effect — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Button with hover effect — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/button-with-hover-effect.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ButtonWithHoverEffect({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-with-hover-effect\"\n      className={className}\n      {...props}\n    >\n      <div className='flex items-center justify-center w-full h-[100vh] bg-white dark'>\n        <button className=\"flex items-center gap-2 w-max py-3 px-10 m-auto rounded-full border border-white bg-black text-white dark dark500 dark relative z-0 after after0 after0 after10 after after after after dark hover125 hover150 hover0 hover hover500\">\n          Hover me \n          <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth=\"1.5\" stroke=\"currentColor\" className=\"size-4\">\n            <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3\" />\n          </svg>\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonWithHoverEffect }\n",
+      "content": "import * as React from \"react\"\n\nfunction ButtonWithHoverEffect({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-with-hover-effect\"\n      className={className}\n      {...props}\n    >\n      <div className='flex items-center justify-center w-full h-[100vh] bg-white dark:bg-black'>\n        <button className=\"flex items-center gap-2 w-max py-3 px-10 m-auto rounded-full border border-white bg-black text-white dark:bg-white dark:border-gray-500 dark:text-black relative z-0 after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-full after:rounded-full after:bg-black dark:after:bg-white hover:after:scale-x-125 hover:after:scale-y-150 hover:after:opacity-0 hover:after:transition hover:after:duration-500\">\n          Hover me \n          <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth=\"1.5\" stroke=\"currentColor\" className=\"size-4\">\n            <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3\" />\n          </svg>\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonWithHoverEffect }\n",
       "type": "registry:ui"
     }
   ],

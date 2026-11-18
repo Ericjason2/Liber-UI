@@ -27,11 +27,29 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Liber UI",
+    url: "https://liber-ui-delta.vercel.app",
+    description:
+      "Open-source catalog of tech logos, UI components, CSS animations, WCAG color palettes, and self-hostable typographies.",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://liber-ui-delta.vercel.app/components?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </head>
       <body className="min-h-screen flex flex-col font-sans">
         <ThemeProvider>

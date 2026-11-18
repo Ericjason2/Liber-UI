@@ -3,7 +3,7 @@
   "name": "animated-button",
   "type": "registry:ui",
   "title": "Animated button",
-  "description": "Animated button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Animated button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/animated-button.tsx",
-      "content": "import * as React from \"react\"\n\nfunction AnimatedButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"animated-button\"\n      className={className}\n      {...props}\n    >\n      <button\n          className=\"relative border border-2 border-teal-600 rounded px-4 py-2 inline cursor-pointer text-4xl font-bold before600 hover before before0 before0  before before[4px] before before before0 before before300 before hover hover100\">\n          Hover me\n      </button>\n    </div>\n  )\n}\n\nexport { AnimatedButton }\n",
+      "content": "import * as React from \"react\"\n\nfunction AnimatedButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"animated-button\"\n      className={className}\n      {...props}\n    >\n      <button\n          className=\"relative border border-2 border-teal-600 rounded px-4 py-2 inline cursor-pointer text-4xl font-bold before:bg-teal-600 hover:rounded-b-none before:absolute before:-bottom-0 before:-left-0  before:block before:h-[4px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100\">\n          Hover me\n      </button>\n    </div>\n  )\n}\n\nexport { AnimatedButton }\n",
       "type": "registry:ui"
     }
   ],

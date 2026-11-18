@@ -3,7 +3,7 @@
   "name": "color-changing-button",
   "type": "registry:ui",
   "title": "Color changing button",
-  "description": "Color changing button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Color changing button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/color-changing-button.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ColorChangingButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"color-changing-button\"\n      className={className}\n      {...props}\n    >\n      <button id=\"change-button\" className=\"bg-red-500 text-white px-4 py-2 rounded-lg\">\n          Change Color!\n      </button>\n      \n      \n    </div>\n  )\n}\n\nexport { ColorChangingButton }\n",
+      "content": "import * as React from \"react\"\n\nfunction ColorChangingButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"color-changing-button\"\n      className={className}\n      {...props}\n    >\n      <button id=\"change-button\" className=\"bg-red-500 text-white px-4 py-2 rounded-lg\">\n          Change Color!\n      </button>\n    </div>\n  )\n}\n\nexport { ColorChangingButton }\n",
       "type": "registry:ui"
     }
   ],

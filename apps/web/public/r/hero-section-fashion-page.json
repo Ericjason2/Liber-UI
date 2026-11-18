@@ -3,7 +3,7 @@
   "name": "hero-section-fashion-page",
   "type": "registry:ui",
   "title": "Hero Section Fashion Page",
-  "description": "Hero Section Fashion Page — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
+  "description": "Hero Section Fashion Page — High-impact hero section featuring a bold headline, supporting subtitle, and clear calls to action.",
   "author": "Liber UI",
   "categories": [
     "hero"

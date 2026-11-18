@@ -3,7 +3,7 @@
   "name": "very-simple-navbar",
   "type": "registry:ui",
   "title": "Very simple navbar",
-  "description": "Very simple navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Very simple navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/very-simple-navbar.tsx",
-      "content": "import * as React from \"react\"\n\nfunction VerySimpleNavbar({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"very-simple-navbar\"\n      className={className}\n      {...props}\n    >\n      <nav className=\"bg-gray-800 text-white py-3 px-4 flex items-center justify-between\">\r\n          <a className=\"font-bold text-xl tracking-tight\" href=\"#\">My Site</a>\r\n          <div className=\"flex items-center\">\r\n              <a className=\"text-sm px-4 py-2 leading-none rounded-full hover700\" href=\"#\">Home</a>\r\n              <a className=\"text-sm px-4 py-2 leading-none rounded-full hover700\" href=\"#\">About</a>\r\n              <a className=\"text-sm px-4 py-2 leading-none rounded-full hover700\" href=\"#\">Contact</a>\r\n          </div>\r\n      </nav>\n    </div>\n  )\n}\n\nexport { VerySimpleNavbar }\n",
+      "content": "import * as React from \"react\"\n\nfunction VerySimpleNavbar({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"very-simple-navbar\"\n      className={className}\n      {...props}\n    >\n      <nav className=\"bg-gray-800 text-white py-3 px-4 flex items-center justify-between\">\r\n          <a className=\"font-bold text-xl tracking-tight\" href=\"#\">My Site</a>\r\n          <div className=\"flex items-center\">\r\n              <a className=\"text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700\" href=\"#\">Home</a>\r\n              <a className=\"text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700\" href=\"#\">About</a>\r\n              <a className=\"text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700\" href=\"#\">Contact</a>\r\n          </div>\r\n      </nav>\n    </div>\n  )\n}\n\nexport { VerySimpleNavbar }\n",
       "type": "registry:ui"
     }
   ],

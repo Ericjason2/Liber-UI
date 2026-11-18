@@ -1,5 +1,5 @@
 import { readFile, writeFile, mkdir, access } from "node:fs/promises";
-import { join, resolve, dirname } from "node:path";
+import { join, resolve, dirname, relative, isAbsolute } from "node:path";
 
 export interface LiberConfig {
   $schema?: string;
@@ -24,6 +24,7 @@ export interface RegistryItemResponse {
   author?: string;
   categories?: string[];
   dependencies?: string[];
+  registryDependencies?: string[];
   files?: RegistryFileEntry[];
   meta?: {
     kind?: string;
@@ -156,23 +157,184 @@ async function fetchRegistryItem(name: string, baseUrl: string): Promise<Registr
   );
 }
 
+function isInsideWorkspace(destPath: string): boolean {
+  const workspaceRoot = resolve(process.cwd());
+  const rel = relative(workspaceRoot, destPath);
+  return rel !== "" && !rel.startsWith("..") && !isAbsolute(rel);
+}
+
+/**
+ * Resolves the destination path for a registry file based on its registry
+ * metadata/path when the user has not forced a custom `--out` directory.
+ */
+export function resolveFileDestPath(
+  file: RegistryFileEntry,
+  item: RegistryItemResponse,
+  configOutDir: string,
+  hasCustomOutFlag: boolean,
+  fallbackName: string
+): string {
+  const normalizedPath = (file.path || "").replace(/^\/+/, "").replace(/\\/g, "/");
+  const fileName = normalizedPath.split("/").pop() || `${fallbackName}.tsx`;
+
+  if (hasCustomOutFlag) {
+    return join(configOutDir, fileName);
+  }
+
+  if (item.meta?.kind === "logo" || normalizedPath.includes("logos/")) {
+    return join(configOutDir, fileName);
+  }
+
+  if (normalizedPath.startsWith("components/ui/") || normalizedPath.startsWith("ui/")) {
+    return join("src/components/ui", fileName);
+  }
+
+  if (normalizedPath.startsWith("styles/")) {
+    return join("src", normalizedPath);
+  }
+
+  return join(configOutDir, fileName);
+}
+
+interface InstallOptions {
+  registryUrl: string;
+  outDir: string;
+  hasCustomOutFlag: boolean;
+  format: "react" | "svg";
+  variant: "color" | "mono" | "wordmark";
+  dryRun: boolean;
+  force: boolean;
+  visited: Set<string>;
+}
+
+async function installResource(name: string, opts: InstallOptions): Promise<void> {
+  const key = name.trim().toLowerCase();
+  if (!key || opts.visited.has(key)) {
+    return;
+  }
+  opts.visited.add(key);
+
+  const item = await fetchRegistryItem(name, opts.registryUrl);
+
+  // Recursively install registryDependencies first
+  if (Array.isArray(item.registryDependencies) && item.registryDependencies.length > 0) {
+    for (const dep of item.registryDependencies) {
+      await installResource(dep, opts);
+    }
+  }
+
+  console.log(`\n-> Installing [${item.type || "ui"}] "${item.title || name}"...`);
+
+  if (opts.format === "svg" && item.meta?.kind === "logo" && item.name) {
+    const registryOrigin = opts.registryUrl.replace(/\/r\/?$/, "");
+    const svgUrl = `${registryOrigin}/svg/${item.name}/${opts.variant}.svg`;
+    const svgFileName = `${item.name}-${opts.variant}.svg`;
+    const destPath = resolve(join(opts.outDir, svgFileName));
+
+    if (!isInsideWorkspace(destPath)) {
+      throw new Error(`Access violation: target path ${destPath} is outside current workspace.`);
+    }
+
+    const svgRes = await fetch(svgUrl);
+    if (!svgRes.ok) {
+      throw new Error(`Could not fetch SVG variant "${opts.variant}" from ${svgUrl}`);
+    }
+    const svgContent = await svgRes.text();
+
+    if (opts.dryRun) {
+      console.log(`  [DRY-RUN] Would write: ${destPath} (${svgContent.length} bytes)`);
+      return;
+    }
+
+    try {
+      await access(destPath);
+      if (!opts.force) {
+        console.log(`  [SKIP] File exists: ${destPath}. Use --force to overwrite.`);
+        return;
+      }
+    } catch {
+      // File does not exist
+    }
+
+    await mkdir(dirname(destPath), { recursive: true });
+    await writeFile(destPath, svgContent, "utf8");
+    console.log(`  [OK] Wrote SVG: ${destPath}`);
+    return;
+  }
+
+  if (!item.files || item.files.length === 0) {
+    console.warn(`  [WARN] Resource "${name}" has no registered files.`);
+    return;
+  }
+
+  for (const file of item.files) {
+    const relDest = resolveFileDestPath(
+      file,
+      item,
+      opts.outDir,
+      opts.hasCustomOutFlag,
+      name
+    );
+    const destPath = resolve(relDest);
+
+    if (!isInsideWorkspace(destPath)) {
+      throw new Error(`Access violation: target path ${destPath} is outside current workspace.`);
+    }
+
+    if (opts.dryRun) {
+      console.log(`  [DRY-RUN] Would write: ${destPath} (${file.content.length} bytes)`);
+      continue;
+    }
+
+    try {
+      await access(destPath);
+      if (!opts.force) {
+        console.log(`  [SKIP] File exists: ${destPath}. Use --force to overwrite.`);
+        continue;
+      }
+    } catch {
+      // File does not exist, can write
+    }
+
+    await mkdir(dirname(destPath), { recursive: true });
+    await writeFile(destPath, file.content, "utf8");
+    console.log(`  [OK] Wrote: ${destPath}`);
+  }
+
+  if (item.dependencies && item.dependencies.length > 0) {
+    console.log(`  [DEP] Recommended dependencies: ${item.dependencies.join(", ")}`);
+  }
+}
+
 async function handleAdd(args: string[]) {
-  const flags = new Set(args.filter((a) => a.startsWith("-")));
-  const names = args.filter((a) => !a.startsWith("-"));
+  const dryRun = args.includes("--dry-run");
+  const force = args.includes("--force");
+  const config = await loadConfig();
+
+  // Extract positional resource names while ignoring flags AND their option values
+  const valueFlags = new Set(["--out", "--format", "--variant"]);
+  const names: string[] = [];
+  for (let i = 0; i < args.length; i++) {
+    const arg = args[i];
+    if (!arg) continue;
+    if (valueFlags.has(arg)) {
+      i++; // skip option value
+      continue;
+    }
+    if (arg.startsWith("-")) continue;
+    names.push(arg);
+  }
 
   if (names.length === 0) {
     console.error("[ERR] Please specify at least one resource name. Example: liber add react");
     process.exit(1);
   }
 
-  const dryRun = flags.has("--dry-run");
-  const force = flags.has("--force");
-  const config = await loadConfig();
-
   // Parse custom --out, --format, --variant
   let outDir = config.outDir || "src/components/ui/logos";
   const outIdx = args.indexOf("--out");
   const outArg = outIdx !== -1 ? args[outIdx + 1] : undefined;
+  const hasCustomOutFlag = Boolean(outArg);
   if (outArg) {
     outDir = outArg;
   }
@@ -192,89 +354,24 @@ async function handleAdd(args: string[]) {
   }
 
   console.log(
-    `Installing ${names.length} resource(s) into ./${outDir} (format=${format}, variant=${variant})...`
+    `Installing ${names.length} resource(s) (format=${format}, variant=${variant}${hasCustomOutFlag ? `, out=${outDir}` : ""})...`
   );
+
+  const registryUrl = config.registryUrl || DEFAULT_CONFIG.registryUrl || "";
+  const visited = new Set<string>();
 
   for (const name of names) {
     try {
-      const registryUrl = config.registryUrl || DEFAULT_CONFIG.registryUrl || "";
-      const item = await fetchRegistryItem(name, registryUrl);
-      console.log(`\n-> Installing [${item.type || "ui"}] "${item.title || name}"...`);
-
-      if (format === "svg" && item.meta?.kind === "logo" && item.name) {
-        const registryOrigin = registryUrl.replace(/\/r\/?$/, "");
-        const svgUrl = `${registryOrigin}/svg/${item.name}/${variant}.svg`;
-        const svgFileName = `${item.name}-${variant}.svg`;
-        const destPath = resolve(join(outDir, svgFileName));
-
-        if (!destPath.startsWith(process.cwd())) {
-          throw new Error(`Access violation: target path ${destPath} is outside current workspace.`);
-        }
-
-        const svgRes = await fetch(svgUrl);
-        if (!svgRes.ok) {
-          throw new Error(`Could not fetch SVG variant "${variant}" from ${svgUrl}`);
-        }
-        const svgContent = await svgRes.text();
-
-        if (dryRun) {
-          console.log(`  [DRY-RUN] Would write: ${destPath} (${svgContent.length} bytes)`);
-          continue;
-        }
-
-        try {
-          await access(destPath);
-          if (!force) {
-            console.log(`  [SKIP] File exists: ${destPath}. Use --force to overwrite.`);
-            continue;
-          }
-        } catch {
-          // File does not exist
-        }
-
-        await mkdir(dirname(destPath), { recursive: true });
-        await writeFile(destPath, svgContent, "utf8");
-        console.log(`  [OK] Wrote SVG: ${destPath}`);
-        continue;
-      }
-
-      if (!item.files || item.files.length === 0) {
-        console.warn(`  [WARN] Resource "${name}" has no registered files.`);
-        continue;
-      }
-
-      for (const file of item.files) {
-        const fileName = file.path.split("/").pop() || `${name}.tsx`;
-        const destPath = resolve(join(outDir, fileName));
-
-        // Safety check: ensure path stays within project directory
-        if (!destPath.startsWith(process.cwd())) {
-          throw new Error(`Access violation: target path ${destPath} is outside current workspace.`);
-        }
-
-        if (dryRun) {
-          console.log(`  [DRY-RUN] Would write: ${destPath} (${file.content.length} bytes)`);
-          continue;
-        }
-
-        try {
-          await access(destPath);
-          if (!force) {
-            console.log(`  [SKIP] File exists: ${destPath}. Use --force to overwrite.`);
-            continue;
-          }
-        } catch {
-          // File does not exist, can write
-        }
-
-        await mkdir(dirname(destPath), { recursive: true });
-        await writeFile(destPath, file.content, "utf8");
-        console.log(`  [OK] Wrote: ${destPath}`);
-      }
-
-      if (item.dependencies && item.dependencies.length > 0) {
-        console.log(`  [DEP] Recommended dependencies: ${item.dependencies.join(", ")}`);
-      }
+      await installResource(name, {
+        registryUrl,
+        outDir,
+        hasCustomOutFlag,
+        format,
+        variant,
+        dryRun,
+        force,
+        visited,
+      });
     } catch (err) {
       console.error(`  [ERR] Failed to install "${name}":`, (err as Error).message);
     }
@@ -365,7 +462,8 @@ async function handleDiff(args: string[]) {
     const item = await fetchRegistryItem(name, registryUrl);
     for (const file of item.files || []) {
       const fileName = file.path.split("/").pop() || `${name}.tsx`;
-      const localPath = resolve(join(outDir, fileName));
+      const relDest = resolveFileDestPath(file, item, outDir, false, name);
+      const localPath = resolve(relDest);
       try {
         const localContent = await readFile(localPath, "utf8");
         if (localContent.trim() === (file.content || "").trim()) {
@@ -374,7 +472,7 @@ async function handleDiff(args: string[]) {
           console.log(`  [DIFF] ${fileName} differs from upstream (${localContent.length} bytes local vs ${file.content.length} bytes remote).`);
         }
       } catch {
-        console.log(`  [MISSING] ${fileName} is not installed locally in ./${outDir}.`);
+        console.log(`  [MISSING] ${fileName} is not installed locally at ./${relDest}.`);
       }
     }
   } catch (err) {

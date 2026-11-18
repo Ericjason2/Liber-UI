@@ -3,7 +3,7 @@
   "name": "hamburger-menu-with-hover-effect",
   "type": "registry:ui",
   "title": "Hamburger menu button with hover effect",
-  "description": "Hamburger menu button with hover effect — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Hamburger menu button with hover effect — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/hamburger-menu-with-hover-effect.tsx",
-      "content": "import * as React from \"react\"\n\nfunction HamburgerMenuWithHoverEffect({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"hamburger-menu-with-hover-effect\"\n      className={className}\n      {...props}\n    >\n      <div\r\n          className=\"group flex h-20 w-20 cursor-pointer items-center justify-center rounded-3xl bg-white p-2 hover200\">\r\n          <div className=\"space-y-2\">\r\n              <span className=\"block h-1 w-10 origin-center rounded-full bg-slate-500 transition-transform ease-in-out group-hover1.5 group-hover45\"></span>\r\n              <span className=\"block h-1 w-8 origin-center rounded-full bg-orange-500 transition-transform ease-in-out group-hover10 group-hover1.5 group-hover45\"></span>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { HamburgerMenuWithHoverEffect }\n",
+      "content": "import * as React from \"react\"\n\nfunction HamburgerMenuWithHoverEffect({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"hamburger-menu-with-hover-effect\"\n      className={className}\n      {...props}\n    >\n      <div\r\n          className=\"group flex h-20 w-20 cursor-pointer items-center justify-center rounded-3xl bg-white p-2 hover:bg-slate-200\">\r\n          <div className=\"space-y-2\">\r\n              <span className=\"block h-1 w-10 origin-center rounded-full bg-slate-500 transition-transform ease-in-out group-hover:translate-y-1.5 group-hover:rotate-45\"></span>\r\n              <span className=\"block h-1 w-8 origin-center rounded-full bg-orange-500 transition-transform ease-in-out group-hover:w-10 group-hover:-translate-y-1.5 group-hover:-rotate-45\"></span>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { HamburgerMenuWithHoverEffect }\n",
       "type": "registry:ui"
     }
   ],

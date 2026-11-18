@@ -3,7 +3,7 @@
   "name": "jobs-recommended-for-you",
   "type": "registry:ui",
   "title": "Jobs recommended for you",
-  "description": "Jobs recommended for you — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
+  "description": "Jobs recommended for you — User profile card or bio section presenting avatars, user credentials, badges, and social statistics.",
   "author": "Liber UI",
   "categories": [
     "profile"

@@ -3,7 +3,7 @@
   "name": "menu-button",
   "type": "registry:ui",
   "title": "Menu button",
-  "description": "Menu button — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Menu button — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/menu-button.tsx",
-      "content": "import * as React from \"react\"\n\nfunction MenuButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"menu-button\"\n      className={className}\n      {...props}\n    >\n      <button className=\"flex items-center gap-1 bg-gray-800 text-white py-2 px-4 rounded-md hover700 transition duration-300 ease-in-out transform hover110\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" className=\"w-6 h-6\">\n          <path d=\"M2.75 7.25h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5zM2.75 11.25h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5zM2.75 15.25h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5z\"/>\n        </svg>\n        Menu\n      </button>\n    </div>\n  )\n}\n\nexport { MenuButton }\n",
+      "content": "import * as React from \"react\"\n\nfunction MenuButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"menu-button\"\n      className={className}\n      {...props}\n    >\n      <button className=\"flex items-center gap-1 bg-gray-800 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition duration-300 ease-in-out transform hover:scale-110\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" className=\"w-6 h-6\">\n          <path d=\"M2.75 7.25h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5zM2.75 11.25h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5zM2.75 15.25h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5z\"/>\n        </svg>\n        Menu\n      </button>\n    </div>\n  )\n}\n\nexport { MenuButton }\n",
       "type": "registry:ui"
     }
   ],

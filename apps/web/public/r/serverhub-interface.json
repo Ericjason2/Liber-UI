@@ -3,7 +3,7 @@
   "name": "serverhub-interface",
   "type": "registry:ui",
   "title": "ServerHub Interface",
-  "description": "ServerHub Interface — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+  "description": "ServerHub Interface — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
   "author": "Liber UI",
   "categories": [
     "landing-page"

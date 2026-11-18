@@ -3,7 +3,7 @@
   "name": "playstore-button",
   "type": "registry:ui",
   "title": "Playstore Button",
-  "description": "Playstore Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Playstore Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

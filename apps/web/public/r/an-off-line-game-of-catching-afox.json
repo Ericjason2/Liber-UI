@@ -3,7 +3,7 @@
   "name": "an-off-line-game-of-catching-afox",
   "type": "registry:ui",
   "title": "an  off line game of catching afox",
-  "description": "an  off line game of catching afox — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "an  off line game of catching afox — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/an-off-line-game-of-catching-afox.tsx",
-      "content": "import * as React from \"react\"\n\nfunction AnOffLineGameOfCatchingAfox({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"an-off-line-game-of-catching-afox\"\n      className={className}\n      dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"/>\\n  <title>Catch the Fox Game</title>\\n  \\n  <style>\\n    .fox {\\n      position: absolute;\\n      font-size: 2rem;\\n      cursor: pointer;\\n      transition: transform 0.2s ease;\\n    }\\n    .fox:active {\\n      transform: scale(1.2);\\n    }\\n  </style>\\n</head>\\n<body class=\\\"bg-green-100 flex flex-col items-center justify-center min-h-screen text-center px-4\\\">\\n\\n  <h1 class=\\\"text-3xl font-bold mb-4 text-orange-600\\\">🦊 Catch the Fox!</h1>\\n  <p class=\\\"mb-2 text-lg\\\">Click the fox as many times as you can in <span id=\\\"time\\\" class=\\\"font-bold\\\">15</span> seconds!</p>\\n  <p class=\\\"mb-6 text-xl\\\">Score: <span id=\\\"score\\\" class=\\\"font-bold text-blue-600\\\">0</span></p>\\n\\n  <div id=\\\"gameArea\\\" class=\\\"relative w-[300px] h-[300px] bg-white rounded-lg shadow-lg overflow-hidden\\\">\\n    <div id=\\\"fox\\\" class=\\\"fox\\\">🦊</div>\\n  </div>\\n\\n  <button class=\\\"mt-6 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600\\\">\\n    Start Game\\n  </button>\\n\\n  \\n</body>\\n</html>\" }}\n      {...props}\n    />\n  )\n}\n\nexport { AnOffLineGameOfCatchingAfox }\n",
+      "content": "import * as React from \"react\"\n\nfunction AnOffLineGameOfCatchingAfox({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"an-off-line-game-of-catching-afox\"\n      className={className}\n      {...props}\n    >\n      <style>{\".fox {\\n      position: absolute;\\n      font-size: 2rem;\\n      cursor: pointer;\\n      transition: transform 0.2s ease;\\n    }\\n    .fox:active {\\n      transform: scale(1.2);\\n    }\"}</style>\n      <h1 className=\"text-3xl font-bold mb-4 text-orange-600\">🦊 Catch the Fox!</h1>\n        <p className=\"mb-2 text-lg\">Click the fox as many times as you can in <span id=\"time\" className=\"font-bold\">15</span> seconds!</p>\n        <p className=\"mb-6 text-xl\">Score: <span id=\"score\" className=\"font-bold text-blue-600\">0</span></p>\n      \n        <div id=\"gameArea\" className=\"relative w-[300px] h-[300px] bg-white rounded-lg shadow-lg overflow-hidden\">\n          <div id=\"fox\" className=\"fox\">🦊</div>\n        </div>\n      \n        <button className=\"mt-6 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600\">\n          Start Game\n        </button>\n    </div>\n  )\n}\n\nexport { AnOffLineGameOfCatchingAfox }\n",
       "type": "registry:ui"
     }
   ],

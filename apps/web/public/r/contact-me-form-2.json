@@ -3,7 +3,7 @@
   "name": "contact-me-form-2",
   "type": "registry:ui",
   "title": "Contact me form",
-  "description": "Contact me form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Contact me form — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

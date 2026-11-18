@@ -3,7 +3,7 @@
   "name": "404-error-card",
   "type": "registry:ui",
   "title": "404 Error card",
-  "description": "404 Error card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "404 Error card — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/404-error-card.tsx",
-      "content": "import * as React from \"react\"\n\nfunction Comp404ErrorCard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"404-error-card\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-gray-100 h-screen flex items-center justify-center\">\r\n          <div className=\"bg-white p-8 rounded-lg shadow-lg max-w-md w-full\">\r\n              <h1 className=\"text-4xl font-bold text-gray-800 mb-8\">404 - Page Not Found</h1>\r\n              <p className=\"text-gray-600 mb-6\">The page you are looking for might have been removed, had its name changed or is\r\n                  temporarily unavailable.</p>\r\n              <a href=\"/\" className=\"inline-block py-3 px-6 bg-blue-500 hover600 text-white rounded-lg font-semibold\">Go\r\n                  back to homepage</a>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { Comp404ErrorCard }\n",
+      "content": "import * as React from \"react\"\n\nfunction Comp404ErrorCard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"404-error-card\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-gray-100 h-screen flex items-center justify-center\">\r\n          <div className=\"bg-white p-8 rounded-lg shadow-lg max-w-md w-full\">\r\n              <h1 className=\"text-4xl font-bold text-gray-800 mb-8\">404 - Page Not Found</h1>\r\n              <p className=\"text-gray-600 mb-6\">The page you are looking for might have been removed, had its name changed or is\r\n                  temporarily unavailable.</p>\r\n              <a href=\"/\" className=\"inline-block py-3 px-6 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold\">Go\r\n                  back to homepage</a>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { Comp404ErrorCard }\n",
       "type": "registry:ui"
     }
   ],

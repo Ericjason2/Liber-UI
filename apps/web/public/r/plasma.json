@@ -3,7 +3,7 @@
   "name": "plasma",
   "type": "registry:ui",
   "title": "Plasma",
-  "description": "Plasma — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Plasma — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/plasma.tsx",
-      "content": "import * as React from \"react\"\n\nfunction Plasma({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"plasma\"\n      className={className}\n      dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"es\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Plasma Effect</title>\\n    <style>\\n        * {\\n            margin: 0;\\n            padding: 0;\\n            box-sizing: border-box;\\n        }\\n        body {\\n            width: 100vw;\\n            height: 100vh;\\n            overflow: hidden;\\n            background: #000;\\n        }\\n        #container {\\n            width: 100%;\\n            height: 100%;\\n            position: relative;\\n            overflow: hidden;\\n        }\\n        canvas {\\n            width: 100%;\\n            height: 100%;\\n            display: block;\\n        }\\n    </style>\\n</head>\\n<body>\\n\\n<div id=\\\"container\\\"></div>\\n\\n\\n\\n</body>\\n</html>\" }}\n      {...props}\n    />\n  )\n}\n\nexport { Plasma }\n",
+      "content": "import * as React from \"react\"\n\nfunction Plasma({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"plasma\"\n      className={className}\n      {...props}\n    >\n      <style>{\"* {\\n            margin: 0;\\n            padding: 0;\\n            box-sizing: border-box;\\n        }\\n        body {\\n            width: 100vw;\\n            height: 100vh;\\n            overflow: hidden;\\n            background: #000;\\n        }\\n        #container {\\n            width: 100%;\\n            height: 100%;\\n            position: relative;\\n            overflow: hidden;\\n        }\\n        canvas {\\n            width: 100%;\\n            height: 100%;\\n            display: block;\\n        }\"}</style>\n      <div id=\"container\"></div>\n    </div>\n  )\n}\n\nexport { Plasma }\n",
       "type": "registry:ui"
     }
   ],

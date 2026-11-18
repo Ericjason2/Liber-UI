@@ -3,7 +3,7 @@
   "name": "disabled-button-active-button-2",
   "type": "registry:ui",
   "title": "Disabled Button &amp; Active Button",
-  "description": "Disabled Button &amp; Active Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Disabled Button &amp; Active Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/disabled-button-active-button-2.tsx",
-      "content": "import * as React from \"react\"\n\nfunction DisabledButtonActiveButton2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"disabled-button-active-button-2\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex gap-2\">\n        \n        <button className=\"bg-gray-300 px-4 py-2 rounded-md opacity-50\" >\n          Disabled Button\n        </button>\n      \n        \n        <button className=\"bg-green-500 hover700 active800 px-4 py-2 rounded-md text-white\">\n          Active Button\n        </button>\n      \n      </div>\n    </div>\n  )\n}\n\nexport { DisabledButtonActiveButton2 }\n",
+      "content": "import * as React from \"react\"\n\nfunction DisabledButtonActiveButton2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"disabled-button-active-button-2\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex gap-2\">\n        \n        <button className=\"bg-gray-300 px-4 py-2 rounded-md opacity-50\" >\n          Disabled Button\n        </button>\n      \n        \n        <button className=\"bg-green-500 hover:bg-green-700 active:bg-green-800 px-4 py-2 rounded-md text-white\">\n          Active Button\n        </button>\n      \n      </div>\n    </div>\n  )\n}\n\nexport { DisabledButtonActiveButton2 }\n",
       "type": "registry:ui"
     }
   ],

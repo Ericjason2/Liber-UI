@@ -3,7 +3,7 @@
   "name": "store-buttons-applegoogle-play",
   "type": "registry:ui",
   "title": "Store buttons (apple,google play)",
-  "description": "Store buttons (apple,google play) — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Store buttons (apple,google play) — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

@@ -3,7 +3,7 @@
   "name": "download-on-the-app-store-light-button",
   "type": "registry:ui",
   "title": "Download on the App Store light button",
-  "description": "Download on the App Store light button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Download on the App Store light button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

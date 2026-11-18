@@ -3,7 +3,7 @@
   "name": "buy-me-a-coffee-cta-section",
   "type": "registry:ui",
   "title": "Buy Me a Coffee CTA section",
-  "description": "Buy Me a Coffee CTA section — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Buy Me a Coffee CTA section — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/buy-me-a-coffee-cta-section.tsx",
-      "content": "import * as React from \"react\"\n\nfunction BuyMeACoffeeCtaSection({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"buy-me-a-coffee-cta-section\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-gray-100 dark800 py-8 px-4 sm6 lg8\">\n          <div className=\"max-w-7xl mx-auto\">\n              <div className=\"max-w-3xl mx-auto text-center\">\n                  <h2 className=\"text-3xl font-extrabold text-gray-900 dark sm4xl\">\n                      Enjoying my content?\n                  </h2>\n                  <p className=\"mt-3 text-xl text-gray-500 dark400 sm4\">\n                      Consider buying me a coffee to support my work!\n                  </p>\n                  <div className=\"mt-8\">\n                      <img className=\"mx-auto h-14\" src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me a Coffee\" />\n                  </div>\n              </div>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { BuyMeACoffeeCtaSection }\n",
+      "content": "import * as React from \"react\"\n\nfunction BuyMeACoffeeCtaSection({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"buy-me-a-coffee-cta-section\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-gray-100 dark:bg-gray-800 py-8 px-4 sm:px-6 lg:px-8\">\n          <div className=\"max-w-7xl mx-auto\">\n              <div className=\"max-w-3xl mx-auto text-center\">\n                  <h2 className=\"text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl\">\n                      Enjoying my content?\n                  </h2>\n                  <p className=\"mt-3 text-xl text-gray-500 dark:text-gray-400 sm:mt-4\">\n                      Consider buying me a coffee to support my work!\n                  </p>\n                  <div className=\"mt-8\">\n                      <img className=\"mx-auto h-14\" src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me a Coffee\" />\n                  </div>\n              </div>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { BuyMeACoffeeCtaSection }\n",
       "type": "registry:ui"
     }
   ],

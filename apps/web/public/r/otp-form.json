@@ -3,7 +3,7 @@
   "name": "otp-form",
   "type": "registry:ui",
   "title": "Otp form",
-  "description": "Otp form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Otp form — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/otp-form.tsx",
-      "content": "import * as React from \"react\"\n\nfunction OtpForm({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"otp-form\"\n      className={className}\n      {...props}\n    >\n      <div className=\"max-w-md mx-auto border mt-20\">\r\n          <form className=\"bg-white shadow-md rounded px-8 py-6\">\r\n              <div className=\"mb-4\">\r\n                  <label className=\"block text-gray-700 text-sm font-bold mb-2\" htmlFor=\"otp\">OTP:</label>\r\n                  <input className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus focus\" id=\"otp\" type=\"text\" placeholder=\"Enter OTP\" />\r\n              </div>\r\n              <div className=\"flex items-center justify-between\">\r\n                  <button className=\"bg-teal-500 hover700 text-white font-bold py-2 px-4 rounded focus focus\" type=\"button\">\r\n                      Verify\r\n                   </button>\r\n                  <a className=\"inline-block align-baseline font-bold text-sm text-teal-500 hover800\" href=\"#\">\r\n                      Resend OTP\r\n                  </a>\r\n              </div>\r\n          </form>\r\n      </div>\n    </div>\n  )\n}\n\nexport { OtpForm }\n",
+      "content": "import * as React from \"react\"\n\nfunction OtpForm({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"otp-form\"\n      className={className}\n      {...props}\n    >\n      <div className=\"max-w-md mx-auto border mt-20\">\r\n          <form className=\"bg-white shadow-md rounded px-8 py-6\">\r\n              <div className=\"mb-4\">\r\n                  <label className=\"block text-gray-700 text-sm font-bold mb-2\" htmlFor=\"otp\">OTP:</label>\r\n                  <input className=\"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\" id=\"otp\" type=\"text\" placeholder=\"Enter OTP\" />\r\n              </div>\r\n              <div className=\"flex items-center justify-between\">\r\n                  <button className=\"bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\" type=\"button\">\r\n                      Verify\r\n                   </button>\r\n                  <a className=\"inline-block align-baseline font-bold text-sm text-teal-500 hover:text-teal-800\" href=\"#\">\r\n                      Resend OTP\r\n                  </a>\r\n              </div>\r\n          </form>\r\n      </div>\n    </div>\n  )\n}\n\nexport { OtpForm }\n",
       "type": "registry:ui"
     }
   ],

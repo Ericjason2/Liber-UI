@@ -3,7 +3,7 @@
   "name": "hero-section-27",
   "type": "registry:ui",
   "title": "Hero Section",
-  "description": "Hero Section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Hero Section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { mkdtemp, rm, readFile } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { runCli } from "../../packages/cli/src/index.js";
@@ -69,6 +70,60 @@ describe("@liber-ui/cli unit tests", () => {
     await runCli(["node", "liber", "add", "react", "--dry-run"]);
     const output = spy.mock.calls.map((c) => c.join(" ")).join("\n");
     expect(output).toContain("[DRY-RUN]");
+  });
+
+  it("routes UI components to src/components/ui and styles to src/styles while resolving registryDependencies", async () => {
+    vi.spyOn(console, "log").mockImplementation(() => {});
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockImplementation(async (url: string) => {
+        if (url.endsWith("/card.json")) {
+          return {
+            ok: true,
+            json: async () => ({
+              name: "card",
+              type: "registry:ui",
+              title: "Card",
+              registryDependencies: ["theme-neutral"],
+              files: [
+                {
+                  path: "components/ui/card.tsx",
+                  content: "export function Card() { return <div />; }",
+                  type: "registry:ui",
+                },
+              ],
+            }),
+          };
+        }
+        if (url.endsWith("/theme-neutral.json")) {
+          return {
+            ok: true,
+            json: async () => ({
+              name: "theme-neutral",
+              type: "registry:theme",
+              title: "Neutral",
+              files: [
+                {
+                  path: "styles/themes/neutral.css",
+                  content: ":root { --background: #ffffff; }",
+                  type: "registry:style",
+                },
+              ],
+            }),
+          };
+        }
+        return { ok: false, status: 404 };
+      })
+    );
+
+    await runCli(["node", "liber", "add", "card"]);
+
+    const compPath = join(tempDir, "src/components/ui/card.tsx");
+    const themePath = join(tempDir, "src/styles/themes/neutral.css");
+    expect(existsSync(compPath)).toBe(true);
+    expect(existsSync(themePath)).toBe(true);
+    expect(await readFile(compPath, "utf8")).toContain("export function Card()");
+    expect(await readFile(themePath, "utf8")).toContain("--background: #ffffff;");
   });
 });
 

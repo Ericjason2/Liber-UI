@@ -3,7 +3,7 @@
   "name": "user-profile-sidebar-menu",
   "type": "registry:ui",
   "title": "User Profile Sidebar Menu",
-  "description": "User Profile Sidebar Menu — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "User Profile Sidebar Menu — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

@@ -3,7 +3,7 @@
   "name": "demo-dev",
   "type": "registry:ui",
   "title": "demo dev",
-  "description": "demo dev — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "demo dev — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/demo-dev.tsx",
-      "content": "import * as React from \"react\"\n\nfunction DemoDev({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"demo-dev\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-white dark800 flex justify-center items-center w-screen h-screen p-5\">\n        <div className=\"border shadow-teal-300 shadow-md max-w-2xl p-6 rounded-lg dark700 dark300\">\n          <h1 className=\"text-4xl font-mono font-extrabold py-3\">Tailwind Playgroundd</h1>\n          <ul className=\"list-disc text-lg px-6\">\n            <li>Everything here works just like it does when you're running Tailwind locally.</li>\n            <li>Live updating as you code.</li>\n            <li>Save and share your component with community</li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { DemoDev }\n",
+      "content": "import * as React from \"react\"\n\nfunction DemoDev({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"demo-dev\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\">\n        <div className=\"border shadow-teal-300 shadow-md max-w-2xl p-6 rounded-lg dark:bg-gray-700 dark:text-gray-300\">\n          <h1 className=\"text-4xl font-mono font-extrabold py-3\">Tailwind Playgroundd</h1>\n          <ul className=\"list-disc text-lg px-6\">\n            <li>Everything here works just like it does when you're running Tailwind locally.</li>\n            <li>Live updating as you code.</li>\n            <li>Save and share your component with community</li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { DemoDev }\n",
       "type": "registry:ui"
     }
   ],

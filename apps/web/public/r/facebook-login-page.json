@@ -3,7 +3,7 @@
   "name": "facebook-login-page",
   "type": "registry:ui",
   "title": "Facebook Login page",
-  "description": "Facebook Login page — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Facebook Login page — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

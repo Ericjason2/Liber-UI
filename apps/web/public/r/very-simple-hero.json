@@ -3,7 +3,7 @@
   "name": "very-simple-hero",
   "type": "registry:ui",
   "title": "Very simple hero",
-  "description": "Very simple hero — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
+  "description": "Very simple hero — High-impact hero section featuring a bold headline, supporting subtitle, and clear calls to action.",
   "author": "Liber UI",
   "categories": [
     "hero"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/very-simple-hero.tsx",
-      "content": "import * as React from \"react\"\n\nfunction VerySimpleHero({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"very-simple-hero\"\n      className={className}\n      {...props}\n    >\n      <div className=\"pt-16 pb-8 mx-auto max-w-5xl px-4 sm24\">\r\n          <div className=\"text-center\">\r\n              <h1 className=\"text-5xl tracking-tight font-extrabold sm5xl pb-3 md0 md6xl\">\r\n                  The Reverse Job Board for Blockchain developers\r\n              </h1>\r\n              <p className=\"mt-3 max-w-md mx-auto text-base text-gray-600 sm md5 md md3xl\">\r\n                  <code className=\"text-gray-600 font-semibold\">BlockchainDevs</code>\r\n                  <span>helps independent developers get their next Web3 gig.</span>\r\n              </p>\r\n              <div className=\"mt-5 max-w-md mx-auto sm sm md8\">\r\n                  <div className=\"rounded-md shadow\">\r\n                      <a className=\"w-full text-white flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-md  bg-green-600 hover500 md5  md2xl md10\"\r\n                          href=\"#\">Get started for free</a>\r\n                  </div>\r\n      \r\n              </div>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { VerySimpleHero }\n",
+      "content": "import * as React from \"react\"\n\nfunction VerySimpleHero({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"very-simple-hero\"\n      className={className}\n      {...props}\n    >\n      <div className=\"pt-16 pb-8 mx-auto max-w-5xl px-4 sm:pt-24\">\r\n          <div className=\"text-center\">\r\n              <h1 className=\"text-5xl tracking-tight font-extrabold sm:text-5xl pb-3 md:pb-0 md:text-6xl\">\r\n                  The Reverse Job Board for Blockchain developers\r\n              </h1>\r\n              <p className=\"mt-3 max-w-md mx-auto text-base text-gray-600 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl\">\r\n                  <code className=\"text-gray-600 font-semibold\">BlockchainDevs</code>\r\n                  <span>helps independent developers get their next Web3 gig.</span>\r\n              </p>\r\n              <div className=\"mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8\">\r\n                  <div className=\"rounded-md shadow\">\r\n                      <a className=\"w-full text-white flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-md  bg-green-600 hover:bg-green-500 md:py-5  md:text-2xl md:px-10\"\r\n                          href=\"#\">Get started for free</a>\r\n                  </div>\r\n      \r\n              </div>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { VerySimpleHero }\n",
       "type": "registry:ui"
     }
   ],

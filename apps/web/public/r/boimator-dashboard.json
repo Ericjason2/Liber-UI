@@ -3,7 +3,7 @@
   "name": "boimator-dashboard",
   "type": "registry:ui",
   "title": "Boimator  welcoming back",
-  "description": "Boimator  welcoming back — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Boimator  welcoming back — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/boimator-dashboard.tsx",
-      "content": "import * as React from \"react\"\n\nfunction BoimatorDashboard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"boimator-dashboard\"\n      className={className}\n      dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"en\\\" >\\n<head>\\n  <meta charset=\\\"UTF-8\\\" />\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\" />\\n  \\n  <title>Greeting Card</title>\\n  <style>\\n    @keyframes fadeInUp {\\n      0% {\\n        opacity: 0;\\n        transform: translateY(20px);\\n      }\\n      100% {\\n        opacity: 1;\\n        transform: translateY(0);\\n      }\\n    }\\n    .fade-in-up {\\n      animation: fadeInUp 0.8s ease forwards;\\n    }\\n  </style>\\n</head>\\n<body class=\\\"bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen flex items-center justify-center p-4\\\">\\n\\n  <div class=\\\"max-w-md bg-white bg-opacity-90 rounded-3xl shadow-xl p-8 text-center fade-in-up\\\">\\n    <h1 class=\\\"text-4xl font-extrabold text-purple-700 mb-4\\\">Welcome Back!</h1>\\n    <p class=\\\"text-gray-700 text-lg mb-6\\\">Hope you’re having a fantastic day. Let’s make it even better with some amazing projects ahead!</p>\\n    <button\\n      class=\\\"bg-purple-700 hover:bg-purple-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition\\\"\\n     \\n    >\\n      Say Hello\\n    </button>\\n  </div>\\n\\n</body>\\n</html>\" }}\n      {...props}\n    />\n  )\n}\n\nexport { BoimatorDashboard }\n",
+      "content": "import * as React from \"react\"\n\nfunction BoimatorDashboard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"boimator-dashboard\"\n      className={className}\n      {...props}\n    >\n      <style>{\"@keyframes fadeInUp {\\n      0% {\\n        opacity: 0;\\n        transform: translateY(20px);\\n      }\\n      100% {\\n        opacity: 1;\\n        transform: translateY(0);\\n      }\\n    }\\n    .fade-in-up {\\n      animation: fadeInUp 0.8s ease forwards;\\n    }\"}</style>\n      <div className=\"max-w-md bg-white bg-opacity-90 rounded-3xl shadow-xl p-8 text-center fade-in-up\">\n          <h1 className=\"text-4xl font-extrabold text-purple-700 mb-4\">Welcome Back!</h1>\n          <p className=\"text-gray-700 text-lg mb-6\">Hope you’re having a fantastic day. Let’s make it even better with some amazing projects ahead!</p>\n          <button\n            className=\"bg-purple-700 hover:bg-purple-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition\"\n           \n          >\n            Say Hello\n          </button>\n        </div>\n    </div>\n  )\n}\n\nexport { BoimatorDashboard }\n",
       "type": "registry:ui"
     }
   ],

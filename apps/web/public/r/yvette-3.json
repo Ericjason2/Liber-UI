@@ -3,7 +3,7 @@
   "name": "yvette-3",
   "type": "registry:ui",
   "title": "yvette",
-  "description": "yvette — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "yvette — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

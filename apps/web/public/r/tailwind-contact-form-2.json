@@ -3,7 +3,7 @@
   "name": "tailwind-contact-form-2",
   "type": "registry:ui",
   "title": "tailwind contact form",
-  "description": "tailwind contact form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "tailwind contact form — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

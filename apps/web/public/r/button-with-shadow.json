@@ -3,7 +3,7 @@
   "name": "button-with-shadow",
   "type": "registry:ui",
   "title": "Button with shadow",
-  "description": "Button with shadow — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Button with shadow — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/button-with-shadow.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ButtonWithShadow({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-with-shadow\"\n      className={className}\n      {...props}\n    >\n      <a className=\"mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover[1.02]\"\r\n          href=\"#\">\r\n          Sign up for free\r\n      </a>\n    </div>\n  )\n}\n\nexport { ButtonWithShadow }\n",
+      "content": "import * as React from \"react\"\n\nfunction ButtonWithShadow({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-with-shadow\"\n      className={className}\n      {...props}\n    >\n      <a className=\"mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]\"\r\n          href=\"#\">\r\n          Sign up for free\r\n      </a>\n    </div>\n  )\n}\n\nexport { ButtonWithShadow }\n",
       "type": "registry:ui"
     }
   ],

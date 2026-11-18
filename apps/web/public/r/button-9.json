@@ -3,7 +3,7 @@
   "name": "button-9",
   "type": "registry:ui",
   "title": "button",
-  "description": "button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

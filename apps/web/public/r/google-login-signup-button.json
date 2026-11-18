@@ -3,7 +3,7 @@
   "name": "google-login-signup-button",
   "type": "registry:ui",
   "title": "Google login/signup button",
-  "description": "Google login/signup button — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Google login/signup button — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/google-login-signup-button.tsx",
-      "content": "import * as React from \"react\"\n\nfunction GoogleLoginSignupButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"google-login-signup-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex items-center justify-center h-screen dark800\">\r\n          <button className=\"px-4 py-2 border flex gap-2 border-slate-200 dark700 rounded-lg text-slate-700 dark200 hover400 dark500 hover900 dark300 hover transition duration-150\">\r\n              <img className=\"w-6 h-6\" src=\"https://www.svgrepo.com/show/475656/google-color.svg\" loading=\"lazy\" alt=\"google logo\" />\r\n              <span>Login with Google</span>\r\n          </button>\r\n      </div>\n    </div>\n  )\n}\n\nexport { GoogleLoginSignupButton }\n",
+      "content": "import * as React from \"react\"\n\nfunction GoogleLoginSignupButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"google-login-signup-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex items-center justify-center h-screen dark:bg-gray-800\">\r\n          <button className=\"px-4 py-2 border flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150\">\r\n              <img className=\"w-6 h-6\" src=\"https://www.svgrepo.com/show/475656/google-color.svg\" loading=\"lazy\" alt=\"google logo\" />\r\n              <span>Login with Google</span>\r\n          </button>\r\n      </div>\n    </div>\n  )\n}\n\nexport { GoogleLoginSignupButton }\n",
       "type": "registry:ui"
     }
   ],

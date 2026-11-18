@@ -3,7 +3,7 @@
   "name": "call-to-action-5",
   "type": "registry:ui",
   "title": "Call to action",
-  "description": "Call to action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Call to action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/call-to-action-5.tsx",
-      "content": "import * as React from \"react\"\n\nfunction CallToAction5({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"call-to-action-5\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-gray-800 mt-10\">\n          <div className=\"max-w-screen-xl mx-auto text-center py-12 px-4 sm6 lg16 lg8\">\n              <h2 className=\"text-3xl leading-9 font-extrabold tracking-tight text-white sm4xl sm10\">\n                  Ready to get started?\n                  <br />\n                 Create a portfolio for free!\n              </h2>\n              <div className=\"mt-8 flex justify-center\">\n                  <div className=\"inline-flex rounded-md shadow\">\n                      <a href=\"#\"\n                          className=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover500 focus focus transition duration-150 ease-in-out\">\n                          Get started\n                      </a>\n                  </div>\n      \n              </div>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { CallToAction5 }\n",
+      "content": "import * as React from \"react\"\n\nfunction CallToAction5({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"call-to-action-5\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-gray-800 mt-10\">\n          <div className=\"max-w-screen-xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8\">\n              <h2 className=\"text-3xl leading-9 font-extrabold tracking-tight text-white sm:text-4xl sm:leading-10\">\n                  Ready to get started?\n                  <br />\n                 Create a portfolio for free!\n              </h2>\n              <div className=\"mt-8 flex justify-center\">\n                  <div className=\"inline-flex rounded-md shadow\">\n                      <a href=\"#\"\n                          className=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out\">\n                          Get started\n                      </a>\n                  </div>\n      \n              </div>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { CallToAction5 }\n",
       "type": "registry:ui"
     }
   ],

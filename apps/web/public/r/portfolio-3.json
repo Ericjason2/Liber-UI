@@ -3,7 +3,7 @@
   "name": "portfolio-3",
   "type": "registry:ui",
   "title": "portfolio 3",
-  "description": "portfolio 3 — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
+  "description": "portfolio 3 — User profile card or bio section presenting avatars, user credentials, badges, and social statistics.",
   "author": "Liber UI",
   "categories": [
     "profile"

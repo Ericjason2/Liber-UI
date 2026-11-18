@@ -3,7 +3,7 @@
   "name": "tailwind-animated-login-form",
   "type": "registry:ui",
   "title": "Tailwind Animated Login Form",
-  "description": "Tailwind Animated Login Form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Tailwind Animated Login Form — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

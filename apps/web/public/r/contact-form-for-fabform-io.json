@@ -3,7 +3,7 @@
   "name": "contact-form-for-fabform-io",
   "type": "registry:ui",
   "title": "Contact Form for fabform.io",
-  "description": "Contact Form for fabform.io — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Contact Form for fabform.io — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

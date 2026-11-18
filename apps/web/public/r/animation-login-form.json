@@ -3,7 +3,7 @@
   "name": "animation-login-form",
   "type": "registry:ui",
   "title": "animation login form",
-  "description": "animation login form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "animation login form — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

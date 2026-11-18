@@ -3,7 +3,7 @@
   "name": "admin-portal-landing-page",
   "type": "registry:ui",
   "title": "Admin portal landing page",
-  "description": "Admin portal landing page — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Admin portal landing page — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

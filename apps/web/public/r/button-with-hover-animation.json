@@ -3,7 +3,7 @@
   "name": "button-with-hover-animation",
   "type": "registry:ui",
   "title": "Button with hover animation",
-  "description": "Button with hover animation — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Button with hover animation — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/button-with-hover-animation.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ButtonWithHoverAnimation({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-with-hover-animation\"\n      className={className}\n      {...props}\n    >\n      <button className=\"inline-block px-7 py-1.5 overflow-hidden text-sm font-semibold transition-transform rounded-full group text text-green-700/70 bg-green-300/30 hover500/70 hover\">\n        <span before=\"Send message\" className=\"relative py-1.5 transition-transform inline-block before[attr(before)] before1.5 before before group-hover\">Send message</span>\n      </button>\n    </div>\n  )\n}\n\nexport { ButtonWithHoverAnimation }\n",
+      "content": "import * as React from \"react\"\n\nfunction ButtonWithHoverAnimation({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-with-hover-animation\"\n      className={className}\n      {...props}\n    >\n      <button className=\"inline-block px-7 py-1.5 overflow-hidden text-sm font-semibold transition-transform rounded-full group text text-green-700/70 bg-green-300/30 hover:bg-green-500/70 hover:text-white\">\n        <span before=\"Send message\" className=\"relative py-1.5 transition-transform inline-block before:content-[attr(before)] before:py-1.5 before:absolute before:top-full group-hover:-translate-y-full\">Send message</span>\n      </button>\n    </div>\n  )\n}\n\nexport { ButtonWithHoverAnimation }\n",
       "type": "registry:ui"
     }
   ],

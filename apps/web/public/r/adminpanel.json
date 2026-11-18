@@ -3,7 +3,7 @@
   "name": "adminpanel",
   "type": "registry:ui",
   "title": "Adminpanel",
-  "description": "Adminpanel — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Adminpanel — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

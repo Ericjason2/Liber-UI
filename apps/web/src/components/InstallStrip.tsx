@@ -7,13 +7,13 @@ import {
   PACKAGE_MANAGERS,
   getCliCommand,
   getPackageInstallCommand,
-  type PackageManager,
+  usePackageManager,
 } from "@/lib/package-manager";
 
 type InstallMode = "package" | "cli";
 
 export function InstallStrip() {
-  const [pm, setPm] = useState<PackageManager>("pnpm");
+  const [pm, setPm] = usePackageManager();
   const [mode, setMode] = useState<InstallMode>("package");
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();

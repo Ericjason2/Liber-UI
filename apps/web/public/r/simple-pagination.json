@@ -3,7 +3,7 @@
   "name": "simple-pagination",
   "type": "registry:ui",
   "title": "Simple Pagination",
-  "description": "Simple Pagination — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Simple Pagination — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

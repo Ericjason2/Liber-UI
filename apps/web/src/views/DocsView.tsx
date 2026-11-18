@@ -22,7 +22,7 @@ import {
   PACKAGE_MANAGERS,
   getCliCommand,
   getPackageInstallCommand,
-  type PackageManager,
+  usePackageManager,
 } from "@/lib/package-manager";
 
 interface SidebarLink {
@@ -42,7 +42,7 @@ const SIDEBAR_LINKS: SidebarLink[] = [
 ];
 
 export default function DocsPage() {
-  const [manager, setManager] = useState<PackageManager>("pnpm");
+  const [manager, setManager] = usePackageManager();
   const [selectedPkg, setSelectedPkg] = useState<"@liber-ui/logo" | "@liber-ui/svg" | "@liber-ui/core" | "@liber-ui/cli">("@liber-ui/logo");
   const [activeSection, setActiveSection] = useState<string>("introduction");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);

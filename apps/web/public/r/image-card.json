@@ -3,7 +3,7 @@
   "name": "image-card",
   "type": "registry:ui",
   "title": "Image card",
-  "description": "Image card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "Image card — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/image-card.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ImageCard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"image-card\"\n      className={className}\n      {...props}\n    >\n      <a className=\"p-8 max-w-lg border border-indigo-300 rounded-2xl hover hover50 flex flex-col items-center\"\r\n          href=\"#\">\r\n          <img src=\"https://loremflickr.com/800/600/girl\" className=\"shadow rounded-lg overflow-hidden border\"  />\r\n          <div className=\"mt-8\">\r\n              <h4 className=\"font-bold text-xl\">Exercises</h4>\r\n              <p className=\"mt-2 text-gray-600\">Create Exercises for any subject with the topics you and your students care about.\r\n              </p>\r\n              <div className=\"mt-5\">\r\n                  <button type=\"button\" className=\"inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover900\">Start Creating</button>\r\n              </div>\r\n          </div>\r\n      </a>\n    </div>\n  )\n}\n\nexport { ImageCard }\n",
+      "content": "import * as React from \"react\"\n\nfunction ImageCard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"image-card\"\n      className={className}\n      {...props}\n    >\n      <a className=\"p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center\"\r\n          href=\"#\">\r\n          <img src=\"https://loremflickr.com/800/600/girl\" className=\"shadow rounded-lg overflow-hidden border\"  />\r\n          <div className=\"mt-8\">\r\n              <h4 className=\"font-bold text-xl\">Exercises</h4>\r\n              <p className=\"mt-2 text-gray-600\">Create Exercises for any subject with the topics you and your students care about.\r\n              </p>\r\n              <div className=\"mt-5\">\r\n                  <button type=\"button\" className=\"inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900\">Start Creating</button>\r\n              </div>\r\n          </div>\r\n      </a>\n    </div>\n  )\n}\n\nexport { ImageCard }\n",
       "type": "registry:ui"
     }
   ],

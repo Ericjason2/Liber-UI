@@ -3,7 +3,7 @@
   "name": "e-commerce-website-ui-design",
   "type": "registry:ui",
   "title": "E-commerce Website UI Design",
-  "description": "E-commerce Website UI Design — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
+  "description": "E-commerce Website UI Design — Clear pricing table or tier comparison grid highlighting subscription plans, perks, and feature tiers.",
   "author": "Liber UI",
   "categories": [
     "pricing"

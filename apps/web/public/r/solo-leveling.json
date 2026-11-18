@@ -3,7 +3,7 @@
   "name": "solo-leveling",
   "type": "registry:ui",
   "title": "Solo leveling",
-  "description": "Solo leveling — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Solo leveling — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

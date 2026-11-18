@@ -3,7 +3,7 @@
   "name": "pricing-card-14",
   "type": "registry:ui",
   "title": "pricing card",
-  "description": "pricing card — Grille tarifaire moderne et responsive avec options d'abonnement, tableau comparatif et boutons d'appel à l'action Tailwind CSS.",
+  "description": "pricing card — Clear pricing table or tier comparison grid highlighting subscription plans, perks, and feature tiers.",
   "author": "Liber UI",
   "categories": [
     "pricing"

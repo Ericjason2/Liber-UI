@@ -3,7 +3,7 @@
   "name": "feature-highlights-cards",
   "type": "registry:ui",
   "title": "Feature Highlights cards",
-  "description": "Feature Highlights cards — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+  "description": "Feature Highlights cards — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
   "author": "Liber UI",
   "categories": [
     "grid"

@@ -118,7 +118,10 @@ export async function GET(req: NextRequest) {
     return true;
   });
 
-  const components = filtered.slice(offset, offset + limit);
+  const includeCode = searchParams.get("includeCode") === "true";
+  const components = filtered.slice(offset, offset + limit).map((c) =>
+    includeCode ? c : { ...c, code: "" }
+  );
 
   return NextResponse.json(
     {

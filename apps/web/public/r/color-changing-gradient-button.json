@@ -3,7 +3,7 @@
   "name": "color-changing-gradient-button",
   "type": "registry:ui",
   "title": "Color Changing Gradient Button",
-  "description": "Color Changing Gradient Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Color Changing Gradient Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/color-changing-gradient-button.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ColorChangingGradientButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"color-changing-gradient-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex justify-center\">\n        <button className=\"rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 text-white hover500 hover500\">\n          Let's Go\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { ColorChangingGradientButton }\n",
+      "content": "import * as React from \"react\"\n\nfunction ColorChangingGradientButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"color-changing-gradient-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex justify-center\">\n        <button className=\"rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 text-white hover:from-pink-500 hover:to-yellow-500\">\n          Let's Go\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { ColorChangingGradientButton }\n",
       "type": "registry:ui"
     }
   ],

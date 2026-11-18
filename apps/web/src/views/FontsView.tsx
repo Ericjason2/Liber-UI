@@ -18,6 +18,7 @@ import { BASE_FONTS, TOTAL_FONTS_COUNT, type FontItem } from "@/lib/catalog-font
 import { useToast } from "@/context/ToastContext";
 import { useSiteOrigin } from "@/hooks/useSiteOrigin";
 import { getFontPreviewUrl } from "@/lib/fontPreviewUtils";
+import { updateUrlQueryParams } from "@/lib/url-params";
 
 const ALPHABET = [
   "All",
@@ -74,6 +75,24 @@ export default function FontsPage() {
 
   const { toast } = useToast();
   const siteOrigin = useSiteOrigin();
+
+  useEffect(() => {
+    const readFromUrl = () => {
+      const params = new URLSearchParams(window.location.search);
+      const urlQ = params.get("q") || "";
+      setSearchQuery(urlQ);
+      setDebouncedQuery(urlQ);
+      setSelectedTheme(params.get("theme") || "all");
+      setSelectedSubtheme(params.get("subtheme") || "all");
+      setSelectedLetter(params.get("letter") || "All");
+    };
+    const timer = setTimeout(readFromUrl, 0);
+    window.addEventListener("popstate", readFromUrl);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("popstate", readFromUrl);
+    };
+  }, []);
 
   useEffect(() => {
     const handler = setTimeout(() => {
@@ -196,6 +215,7 @@ export default function FontsPage() {
                   setSelectedTheme("all");
                   setSelectedSubtheme("all");
                   setSelectedLetter("All");
+                  updateUrlQueryParams({});
                 }}
                 className="h-10 px-3.5 rounded-[10px] border border-border bg-card hover:bg-muted text-xs font-mono text-muted-foreground hover:text-foreground flex items-center gap-1.5 transition-colors"
               >
@@ -226,6 +246,12 @@ export default function FontsPage() {
                 key={char}
                 onClick={() => {
                   setSelectedLetter(char);
+                  updateUrlQueryParams({
+                    theme: selectedTheme,
+                    subtheme: selectedSubtheme,
+                    letter: char,
+                    q: searchQuery,
+                  });
                 }}
                 className={`min-w-[32px] h-8 px-2 rounded-[6px] text-xs font-mono transition-colors flex items-center justify-center ${
                   selectedLetter === char
@@ -250,6 +276,12 @@ export default function FontsPage() {
                   onClick={() => {
                     setSelectedTheme(t.id);
                     setSelectedSubtheme("all");
+                    updateUrlQueryParams({
+                      theme: t.id,
+                      subtheme: "all",
+                      letter: selectedLetter,
+                      q: searchQuery,
+                    });
                   }}
                   className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${
                     selectedTheme === t.id
@@ -274,7 +306,14 @@ export default function FontsPage() {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => {
-                  setSearchQuery(e.target.value);
+                  const nextQ = e.target.value;
+                  setSearchQuery(nextQ);
+                  updateUrlQueryParams({
+                    theme: selectedTheme,
+                    subtheme: selectedSubtheme,
+                    letter: selectedLetter,
+                    q: nextQ,
+                  });
                 }}
                 placeholder="Search font or author..."
                 className="w-full h-8 pl-8 pr-3 text-xs rounded-[8px] border border-border bg-muted/30 text-foreground placeholder:text-muted-foreground focus:outline-none focus:bg-card"
@@ -291,6 +330,12 @@ export default function FontsPage() {
               <button
                 onClick={() => {
                   setSelectedSubtheme("all");
+                  updateUrlQueryParams({
+                    theme: selectedTheme,
+                    subtheme: "all",
+                    letter: selectedLetter,
+                    q: searchQuery,
+                  });
                 }}
                 className={`px-2.5 py-1 rounded-[6px] text-xs font-mono transition-colors ${
                   selectedSubtheme === "all"
@@ -305,6 +350,12 @@ export default function FontsPage() {
                   key={st}
                   onClick={() => {
                     setSelectedSubtheme(st);
+                    updateUrlQueryParams({
+                      theme: selectedTheme,
+                      subtheme: st,
+                      letter: selectedLetter,
+                      q: searchQuery,
+                    });
                   }}
                   className={`px-2.5 py-1 rounded-[6px] text-xs font-mono whitespace-nowrap transition-colors ${
                     selectedSubtheme === st

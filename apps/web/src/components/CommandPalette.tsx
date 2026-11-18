@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { Search, CornerDownLeft, Sparkles, Box, Zap, Palette, Type } from "lucide-react";
 import type { SearchDoc } from "@/lib/search";
 import { useToast } from "@/context/ToastContext";
+import { getCliCommand, usePackageManager } from "@/lib/package-manager";
 
 interface CommandPaletteProps {
   open: boolean;
@@ -101,6 +102,7 @@ export function CommandPalette({ open, onClose }: CommandPaletteProps) {
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
   const { toast } = useToast();
+  const [pm] = usePackageManager();
 
   const results = query.trim() ? fetchedResults : DEFAULT_QUICK_ITEMS;
 
@@ -132,12 +134,16 @@ export function CommandPalette({ open, onClose }: CommandPaletteProps) {
   }, [query, open]);
 
   useEffect(() => {
-    if (open) {
-      const timer = setTimeout(() => {
-        inputRef.current?.focus();
-      }, 50);
-      return () => clearTimeout(timer);
-    }
+    if (!open) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const timer = setTimeout(() => {
+      inputRef.current?.focus();
+    }, 50);
+    return () => {
+      clearTimeout(timer);
+      document.body.style.overflow = prevOverflow;
+    };
   }, [open]);
 
   useEffect(() => {
@@ -165,7 +171,7 @@ export function CommandPalette({ open, onClose }: CommandPaletteProps) {
       } else if (e.key === "Tab" && results[selectedIndex]) {
         e.preventDefault();
         const item = results[selectedIndex];
-        navigator.clipboard.writeText(`npx @liber-ui/cli add ${item.slug}`);
+        navigator.clipboard.writeText(getCliCommand(pm, `add ${item.slug}`));
         toast(`Copied install command for ${item.name}`);
         onClose();
       }
@@ -173,7 +179,7 @@ export function CommandPalette({ open, onClose }: CommandPaletteProps) {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [open, results, selectedIndex, router, onClose, toast]);
+  }, [open, results, selectedIndex, router, onClose, toast, pm]);
 
   if (!open) return null;
 
@@ -196,6 +202,9 @@ export function CommandPalette({ open, onClose }: CommandPaletteProps) {
 
   return (
     <div
+      role="dialog"
+      aria-modal="true"
+      aria-label="Search catalog"
       className="fixed inset-0 z-50 flex items-start justify-center pt-20 sm:pt-28 bg-black/40 dark:bg-black/80 backdrop-blur-none animate-in fade-in"
       onClick={onClose}
     >

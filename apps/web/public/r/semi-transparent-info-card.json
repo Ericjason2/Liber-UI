@@ -3,7 +3,7 @@
   "name": "semi-transparent-info-card",
   "type": "registry:ui",
   "title": "Semi transparent Info card",
-  "description": "Semi transparent Info card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "Semi transparent Info card — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"

@@ -3,7 +3,7 @@
   "name": "info-cards",
   "type": "registry:ui",
   "title": "Info cards",
-  "description": "Info cards — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+  "description": "Info cards — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
   "author": "Liber UI",
   "categories": [
     "grid"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/info-cards.tsx",
-      "content": "import * as React from \"react\"\n\nfunction InfoCards({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"info-cards\"\n      className={className}\n      {...props}\n    >\n      <ul className=\"flex flex-col md grid-cols-3 gap-5 text-redis-neutral-800 max-w-2xl mx-auto p-10 mt-10\">\n          <li\n              className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n              <span className=\"mb-1 text-teal-400 font-display text-5xl\">45K+</span>\n              Users\n          </li>\n          <li\n              className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n              <span className=\"mb-1 text-teal-400 font-display text-5xl\">78K+</span>\n              Downloads\n          </li>\n          <li\n              className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n              <span className=\"mb-1 text-teal-400 font-display text-5xl\">50+</span>\n              Products\n          </li>\n      </ul>\n    </div>\n  )\n}\n\nexport { InfoCards }\n",
+      "content": "import * as React from \"react\"\n\nfunction InfoCards({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"info-cards\"\n      className={className}\n      {...props}\n    >\n      <ul className=\"flex flex-col md:grid grid-cols-3 gap-5 text-redis-neutral-800 max-w-2xl mx-auto p-10 mt-10\">\n          <li\n              className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n              <span className=\"mb-1 text-teal-400 font-display text-5xl\">45K+</span>\n              Users\n          </li>\n          <li\n              className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n              <span className=\"mb-1 text-teal-400 font-display text-5xl\">78K+</span>\n              Downloads\n          </li>\n          <li\n              className=\"w-full text-sm font-semibold text-slate-900 p-6 bg-white border border-slate-900/10 bg-clip-padding shadow-md shadow-slate-900/5 rounded-lg flex flex-col justify-center\">\n              <span className=\"mb-1 text-teal-400 font-display text-5xl\">50+</span>\n              Products\n          </li>\n      </ul>\n    </div>\n  )\n}\n\nexport { InfoCards }\n",
       "type": "registry:ui"
     }
   ],

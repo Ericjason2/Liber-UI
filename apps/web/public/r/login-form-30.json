@@ -3,7 +3,7 @@
   "name": "login-form-30",
   "type": "registry:ui",
   "title": "login form",
-  "description": "login form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "login form — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

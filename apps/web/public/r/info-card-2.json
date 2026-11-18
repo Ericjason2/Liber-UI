@@ -3,7 +3,7 @@
   "name": "info-card-2",
   "type": "registry:ui",
   "title": "Info Card",
-  "description": "Info Card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "Info Card — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"

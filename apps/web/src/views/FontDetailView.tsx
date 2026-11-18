@@ -20,8 +20,9 @@ import { getFontPreviewUrl, getFontCharmapUrl } from "@/lib/fontPreviewUtils";
 import {
   PACKAGE_MANAGERS,
   getCliCommand,
-  type PackageManager,
+  usePackageManager,
 } from "@/lib/package-manager";
+import { SyntaxHighlightedCode } from "@/components/SyntaxHighlightedCode";
 
 interface FontDetailClientProps {
   font: FontItem;
@@ -49,7 +50,7 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
   const [fontSize, setFontSize] = useState<number>(48);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<"specimen" | "alphabet" | "install">("specimen");
-  const [pm, setPm] = useState<PackageManager>("pnpm");
+  const [pm, setPm] = usePackageManager();
   const [imgLoaded, setImgLoaded] = useState(true);
   const { toast } = useToast();
 
@@ -112,7 +113,7 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
       </div>
 
       {/* 2. Hero Header */}
-      <div className="space-y-6 pb-8 border-b border-border">
+      <div className="space-y-6 pb-4">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-2">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground">
@@ -653,9 +654,13 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
                 <span>Copy</span>
               </button>
             </div>
-            <pre className="p-4 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
-              <code>{cssFontFaceSnippet}</code>
-            </pre>
+            <div className="rounded-[8px] border border-neutral-800 bg-neutral-950 overflow-hidden">
+              <SyntaxHighlightedCode
+                code={cssFontFaceSnippet}
+                language="css"
+                className="p-3.5"
+              />
+            </div>
             <div className="flex flex-wrap items-center gap-3 pt-1 text-xs font-mono">
               <a
                 href={`/api/font-css/${font.slug}`}
@@ -703,9 +708,13 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
                   <span>Copy</span>
                 </button>
               </div>
-              <pre className="p-3 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
-                <code>{nextFontLocalSnippet}</code>
-              </pre>
+              <div className="rounded-[8px] border border-neutral-800 bg-neutral-950 overflow-hidden">
+                <SyntaxHighlightedCode
+                  code={nextFontLocalSnippet}
+                  language="tsx"
+                  className="p-3.5"
+                />
+              </div>
             </div>
 
             <div className="p-6 rounded-[12px] border border-border bg-card space-y-3">
@@ -731,9 +740,13 @@ export function FontDetailClient({ font, relatedFonts }: FontDetailClientProps) 
                   <span>Copy</span>
                 </button>
               </div>
-              <pre className="p-3 rounded-[8px] bg-muted/60 font-mono text-xs text-foreground overflow-x-auto">
-                <code>{tailwindSnippet}</code>
-              </pre>
+              <div className="rounded-[8px] border border-neutral-800 bg-neutral-950 overflow-hidden">
+                <SyntaxHighlightedCode
+                  code={tailwindSnippet}
+                  language="config"
+                  className="p-3.5"
+                />
+              </div>
             </div>
           </div>
         </div>

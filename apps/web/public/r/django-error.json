@@ -3,7 +3,7 @@
   "name": "django-error",
   "type": "registry:ui",
   "title": "django error",
-  "description": "django error — Section de page d'atterrissage complète avec mise en page moderne, titres contrastés et composants harmonisés.",
+  "description": "django error — Complete landing page section featuring a modern layout, bold typography, and cohesive components.",
   "author": "Liber UI",
   "categories": [
     "landing-page"

@@ -3,7 +3,7 @@
   "name": "imdb-score-and-votes-box",
   "type": "registry:ui",
   "title": "IMDB score and votes box",
-  "description": "IMDB score and votes box — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "IMDB score and votes box — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

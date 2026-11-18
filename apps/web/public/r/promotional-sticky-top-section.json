@@ -3,7 +3,7 @@
   "name": "promotional-sticky-top-section",
   "type": "registry:ui",
   "title": "Promotional sticky top section",
-  "description": "Promotional sticky top section — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Promotional sticky top section — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

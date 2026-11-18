@@ -3,7 +3,7 @@
   "name": "card-15",
   "type": "registry:ui",
   "title": "Card",
-  "description": "Card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "Card — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/card-15.tsx",
-      "content": "import * as React from \"react\"\n\nfunction Card15({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-15\"\n      className={className}\n      {...props}\n    >\n      <div className=\"max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden\">\n        \n        <img\n          className=\"w-full h-48 object-cover\"\n          src=\"https://via.placeholder.com/400x200\"\n          alt=\"Sample\"\n        />\n        \n        <div className=\"p-6\">\n          <h2 className=\"text-xl font-bold text-gray-800\">Card Title</h2>\n          <p className=\"mt-2 text-gray-600\">\n            This is a sample card component built with Tailwind CSS. You can easily customize it!\n          </p>\n          <button className=\"mt-4 px-4 py-2 bg-blue-600 text-white rounded hover700\">\n            Learn More\n          </button>\n        </div>\n      \n        \n      </div>\n    </div>\n  )\n}\n\nexport { Card15 }\n",
+      "content": "import * as React from \"react\"\n\nfunction Card15({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-15\"\n      className={className}\n      {...props}\n    >\n      <div className=\"max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden\">\n        \n        <img\n          className=\"w-full h-48 object-cover\"\n          src=\"https://via.placeholder.com/400x200\"\n          alt=\"Sample\"\n        />\n        \n        <div className=\"p-6\">\n          <h2 className=\"text-xl font-bold text-gray-800\">Card Title</h2>\n          <p className=\"mt-2 text-gray-600\">\n            This is a sample card component built with Tailwind CSS. You can easily customize it!\n          </p>\n          <button className=\"mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700\">\n            Learn More\n          </button>\n        </div>\n      \n        \n      </div>\n    </div>\n  )\n}\n\nexport { Card15 }\n",
       "type": "registry:ui"
     }
   ],

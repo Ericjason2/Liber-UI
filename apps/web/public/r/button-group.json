@@ -3,7 +3,7 @@
   "name": "button-group",
   "type": "registry:ui",
   "title": "Button group",
-  "description": "Button group — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Button group — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/button-group.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ButtonGroup({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-group\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex justify-center m-r-auto bg-violet-600\" id=\"buttons_container\">\n          <button className=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover50\"\n             >\n              sm\n          </button>\n          <button className=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover50\"\n             >\n              md\n          </button>\n          <button className=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover50\"\n             >\n              lg\n          </button>\n          <button className=\"text-gray-200 px-6 py-2 text-xl font-mono hover50\"\n             >\n              xl\n          </button>\n      </div>\n      \n    </div>\n  )\n}\n\nexport { ButtonGroup }\n",
+      "content": "import * as React from \"react\"\n\nfunction ButtonGroup({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-group\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex justify-center m-r-auto bg-violet-600\" id=\"buttons_container\">\n          <button className=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover:text-slate-50\"\n             >\n              sm\n          </button>\n          <button className=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover:text-slate-50\"\n             >\n              md\n          </button>\n          <button className=\"text-gray-200 px-6 py-2 text-xl font-mono border-r-2 hover:text-slate-50\"\n             >\n              lg\n          </button>\n          <button className=\"text-gray-200 px-6 py-2 text-xl font-mono hover:text-slate-50\"\n             >\n              xl\n          </button>\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonGroup }\n",
       "type": "registry:ui"
     }
   ],

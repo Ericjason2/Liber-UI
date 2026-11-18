@@ -14,6 +14,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { useToast } from "@/context/ToastContext";
+import { updateUrlQueryParams } from "@/lib/url-params";
 
 function getContrastColor(hex: string): string {
   const cleanHex = hex.replace("#", "");
@@ -102,6 +103,20 @@ export default function ThemesPage() {
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [highlightedSlug, setHighlightedSlug] = useState<string | null>(null);
   const { toast } = useToast();
+
+  useEffect(() => {
+    const readFromUrl = () => {
+      const params = new URLSearchParams(window.location.search);
+      setSelectedCategory(params.get("category") || "all");
+      setSearchQuery(params.get("q") || "");
+    };
+    const timer = setTimeout(readFromUrl, 0);
+    window.addEventListener("popstate", readFromUrl);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("popstate", readFromUrl);
+    };
+  }, []);
 
   const copyToClipboard = (text: string, label: string, key: string) => {
     navigator.clipboard.writeText(text);
@@ -291,7 +306,11 @@ export default function ThemesPage() {
             <input
               type="text"
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={(e) => {
+                const nextQ = e.target.value;
+                setSearchQuery(nextQ);
+                updateUrlQueryParams({ category: selectedCategory, q: nextQ });
+              }}
               placeholder="Search theme (e.g. médécine, nature, tech, luxe, pastel, dark, sunset)..."
               className="w-full h-10 pl-10 pr-4 rounded-[10px] border border-border bg-card text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-all font-sans"
             />
@@ -323,12 +342,12 @@ export default function ThemesPage() {
             onClick={() => {
               setSelectedCategory("all");
               setSearchQuery("");
+              updateUrlQueryParams({});
             }}
-            className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors flex items-center gap-1.5 ${
-              selectedCategory === "all" && !searchQuery
-                ? "bg-primary text-primary-foreground font-semibold"
-                : "border border-border bg-card text-muted-foreground hover:text-foreground"
-            }`}
+            className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors flex items-center gap-1.5 ${selectedCategory === "all" && !searchQuery
+              ? "bg-primary text-primary-foreground font-semibold"
+              : "border border-border bg-card text-muted-foreground hover:text-foreground"
+              }`}
           >
             <span>All</span>
             <span className="font-mono text-[10px] opacity-70">({SAMPLE_THEMES.length})</span>
@@ -340,7 +359,10 @@ export default function ThemesPage() {
                 <span>Theme: &ldquo;{searchQuery}&rdquo;</span>
                 <span className="text-muted-foreground font-semibold">({filteredThemes.length})</span>
                 <button
-                  onClick={() => setSearchQuery("")}
+                  onClick={() => {
+                    setSearchQuery("");
+                    updateUrlQueryParams({ category: selectedCategory, q: "" });
+                  }}
                   className="hover:text-primary transition-colors ml-0.5"
                   title="Clear search"
                 >
@@ -373,8 +395,8 @@ export default function ThemesPage() {
               key={theme.slug}
               id={`palette-${theme.slug}`}
               className={`rounded-[10px] border transition-all duration-200 bg-card p-4 space-y-4 flex flex-col justify-between ${isHighlighted
-                  ? "border-primary ring-2 ring-primary ring-offset-2"
-                  : "border-border hover:border-neutral-400 dark:hover:border-neutral-600"
+                ? "border-primary ring-2 ring-primary ring-offset-2"
+                : "border-border hover:border-neutral-400 dark:hover:border-neutral-600"
                 }`}
             >
               {/* Card Header: Title, Category Badge, Contrast Ratio */}
@@ -549,6 +571,7 @@ export default function ThemesPage() {
               onClick={() => {
                 setSearchQuery("");
                 setSelectedCategory("all");
+                updateUrlQueryParams({});
               }}
               className="px-4 py-2 text-xs rounded-[10px] bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
             >

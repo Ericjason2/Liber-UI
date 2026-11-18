@@ -3,7 +3,7 @@
   "name": "content-2",
   "type": "registry:ui",
   "title": "Content showing for Call to action",
-  "description": "Content showing for Call to action — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Content showing for Call to action — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

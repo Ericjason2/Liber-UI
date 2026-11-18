@@ -3,7 +3,7 @@
   "name": "conatct-form",
   "type": "registry:ui",
   "title": "contact form",
-  "description": "contact form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "contact form — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

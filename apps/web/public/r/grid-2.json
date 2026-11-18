@@ -3,7 +3,7 @@
   "name": "grid-2",
   "type": "registry:ui",
   "title": "Grid",
-  "description": "Grid — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+  "description": "Grid — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
   "author": "Liber UI",
   "categories": [
     "grid"

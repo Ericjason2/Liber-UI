@@ -3,7 +3,7 @@
   "name": "form-4",
   "type": "registry:ui",
   "title": "form",
-  "description": "form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "form — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

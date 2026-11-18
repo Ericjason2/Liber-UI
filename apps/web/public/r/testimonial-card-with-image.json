@@ -3,7 +3,7 @@
   "name": "testimonial-card-with-image",
   "type": "registry:ui",
   "title": "Testimonial card with image",
-  "description": "Testimonial card with image — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
+  "description": "Testimonial card with image — User profile card or bio section presenting avatars, user credentials, badges, and social statistics.",
   "author": "Liber UI",
   "categories": [
     "profile"

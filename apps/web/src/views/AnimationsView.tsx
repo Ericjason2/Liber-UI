@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import {
   Copy,
@@ -13,6 +13,8 @@ import {
 } from "lucide-react";
 import { SAMPLE_ANIMATIONS } from "@/lib/catalog-animations";
 import { useToast } from "@/context/ToastContext";
+import { SyntaxHighlightedCode } from "@/components/SyntaxHighlightedCode";
+import { updateUrlQueryParams } from "@/lib/url-params";
 
 type CodeTab = "css" | "tailwind";
 type PlaybackSpeed = "0.5x" | "1x" | "2x";
@@ -28,6 +30,20 @@ export default function AnimationsPage() {
   const [replayKeys, setReplayKeys] = useState<Record<string, number>>({});
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const { toast } = useToast();
+
+  useEffect(() => {
+    const readFromUrl = () => {
+      const params = new URLSearchParams(window.location.search);
+      setSelectedCategory(params.get("category") || "all");
+      setSearchQuery(params.get("q") || "");
+    };
+    const timer = setTimeout(readFromUrl, 0);
+    window.addEventListener("popstate", readFromUrl);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("popstate", readFromUrl);
+    };
+  }, []);
 
   const categories = useMemo(() => {
     const counts: Record<string, number> = {};
@@ -163,7 +179,11 @@ export default function AnimationsPage() {
             <input
               type="text"
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={(e) => {
+                const nextQ = e.target.value;
+                setSearchQuery(nextQ);
+                updateUrlQueryParams({ category: selectedCategory, q: nextQ });
+              }}
               placeholder="Search animations (shimmer, border beam, float, blur, marquee, heartbeat)..."
               className="w-full h-10 pl-10 pr-4 rounded-[10px] border border-border bg-card text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-all font-sans"
             />
@@ -179,7 +199,10 @@ export default function AnimationsPage() {
           {categories.map((cat) => (
             <button
               key={cat.id}
-              onClick={() => setSelectedCategory(cat.id)}
+              onClick={() => {
+                setSelectedCategory(cat.id);
+                updateUrlQueryParams({ category: cat.id, q: searchQuery });
+              }}
               className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${selectedCategory === cat.id
                   ? "bg-primary text-primary-foreground font-semibold"
                   : "border border-border bg-card text-muted-foreground hover:text-foreground"
@@ -326,22 +349,27 @@ export default function AnimationsPage() {
 
                 {/* Collapsible Syntax Code Snippet */}
                 {isExpanded && (
-                  <div className="relative rounded-[8px] bg-neutral-950 p-3 text-[11px] font-mono text-neutral-300 overflow-x-auto max-h-48 border border-neutral-800">
-                    <pre className="whitespace-pre">
-                      {currentTab === "css"
-                        ? `${item.cssKeyframes}\n\n${
-                            motionSafe
-                              ? `@media (prefers-reduced-motion: no-preference) {\n  ${(infiniteLoop ? item.cssClasses.replace(/;\s*\}/, " infinite;\n}") : item.cssClasses).replace(/\n/g, "\n  ")}\n}`
-                              : infiniteLoop
-                                ? item.cssClasses.replace(/;\s*\}/, " infinite;\n}")
-                                : item.cssClasses
-                          }`
-                        : `/* Tailwind Classes */\n${motionSafe ? "motion-safe:" : ""}${
-                            infiniteLoop
-                              ? item.tailwindClasses.replace(/_both\]$/, "_infinite_both]")
-                              : item.tailwindClasses
-                          }\n\n/* Tailwind Config */\n${item.tailwindConfig}`}
-                    </pre>
+                  <div className="relative rounded-[8px] bg-neutral-950 p-3 border border-neutral-800 max-h-48 overflow-y-auto">
+                    <SyntaxHighlightedCode
+                      language={currentTab === "css" ? "css" : "config"}
+                      showLineNumbers={false}
+                      className="text-[11px]"
+                      code={
+                        currentTab === "css"
+                          ? `${item.cssKeyframes}\n\n${
+                              motionSafe
+                                ? `@media (prefers-reduced-motion: no-preference) {\n  ${(infiniteLoop ? item.cssClasses.replace(/;\s*\}/, " infinite;\n}") : item.cssClasses).replace(/\n/g, "\n  ")}\n}`
+                                : infiniteLoop
+                                  ? item.cssClasses.replace(/;\s*\}/, " infinite;\n}")
+                                  : item.cssClasses
+                            }`
+                          : `/* Tailwind Classes */\n${motionSafe ? "motion-safe:" : ""}${
+                              infiniteLoop
+                                ? item.tailwindClasses.replace(/_both\]$/, "_infinite_both]")
+                                : item.tailwindClasses
+                            }\n\n/* Tailwind Config */\n${item.tailwindConfig}`
+                      }
+                    />
                   </div>
                 )}
               </div>

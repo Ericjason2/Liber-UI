@@ -3,7 +3,7 @@
   "name": "alert",
   "type": "registry:ui",
   "title": "alert",
-  "description": "alert — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "alert — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"

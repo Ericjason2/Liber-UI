@@ -3,7 +3,7 @@
   "name": "button-5",
   "type": "registry:ui",
   "title": "Button",
-  "description": "Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/button-5.tsx",
-      "content": "import * as React from \"react\"\n\nfunction Button5({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-5\"\n      className={className}\n      {...props}\n    >\n      <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css\" />\n      \n      \n      <button id=\"btn\" className=\"border rounded-md m-3 p-2 bg-blue-500 text-white font-bold active1 hover[1.1] transition-all\">\n         <i id=\"spin\" className=\"fa-solid fa-spinner fa-spin-pulse\" hidden></i>\n         <span id=\"btnText\">Subscribe</span>\n      </button>\n      \n      \n    </div>\n  )\n}\n\nexport { Button5 }\n",
+      "content": "import * as React from \"react\"\n\nfunction Button5({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-5\"\n      className={className}\n      {...props}\n    >\n      <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css\" />\n      \n      \n      <button id=\"btn\" className=\"border rounded-md m-3 p-2 bg-blue-500 text-white font-bold active:translate-y-1 hover:scale-[1.1] transition-all\">\n         <i id=\"spin\" className=\"fa-solid fa-spinner fa-spin-pulse\" hidden></i>\n         <span id=\"btnText\">Subscribe</span>\n      </button>\n    </div>\n  )\n}\n\nexport { Button5 }\n",
       "type": "registry:ui"
     }
   ],

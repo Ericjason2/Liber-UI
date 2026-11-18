@@ -3,7 +3,7 @@
   "name": "neon-morphism-button",
   "type": "registry:ui",
   "title": "Neon Morphism button",
-  "description": "Neon Morphism button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Neon Morphism button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/neon-morphism-button.tsx",
-      "content": "import * as React from \"react\"\n\nfunction NeonMorphismButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"neon-morphism-button\"\n      className={className}\n      {...props}\n    >\n      \n          <button className=\"neon bg-black text-[#ff00de] font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out hover focus\">\n              Neon button\n          </button>\n    </div>\n  )\n}\n\nexport { NeonMorphismButton }\n",
+      "content": "import * as React from \"react\"\n\nfunction NeonMorphismButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"neon-morphism-button\"\n      className={className}\n      {...props}\n    >\n      \n          <button className=\"neon bg-black text-[#ff00de] font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:text-white focus:outline-none\">\n              Neon button\n          </button>\n    </div>\n  )\n}\n\nexport { NeonMorphismButton }\n",
       "type": "registry:ui"
     }
   ],

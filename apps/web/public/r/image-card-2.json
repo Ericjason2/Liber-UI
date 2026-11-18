@@ -3,7 +3,7 @@
   "name": "image-card-2",
   "type": "registry:ui",
   "title": "Image Card",
-  "description": "Image Card — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Image Card — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

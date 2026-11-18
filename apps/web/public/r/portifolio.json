@@ -3,7 +3,7 @@
   "name": "portifolio",
   "type": "registry:ui",
   "title": "portifolio",
-  "description": "portifolio — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "portifolio — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

@@ -3,7 +3,7 @@
   "name": "navbar-for-filters",
   "type": "registry:ui",
   "title": "Simple Filters Navbar",
-  "description": "Simple Filters Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Simple Filters Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

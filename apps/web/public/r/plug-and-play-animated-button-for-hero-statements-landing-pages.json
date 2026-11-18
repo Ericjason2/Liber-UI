@@ -3,7 +3,7 @@
   "name": "plug-and-play-animated-button-for-hero-statements-landing-pages",
   "type": "registry:ui",
   "title": "Plug and Play Animated Button for Hero Statements / Landing Pages",
-  "description": "Plug and Play Animated Button for Hero Statements / Landing Pages — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
+  "description": "Plug and Play Animated Button for Hero Statements / Landing Pages — High-impact hero section featuring a bold headline, supporting subtitle, and clear calls to action.",
   "author": "Liber UI",
   "categories": [
     "hero"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/plug-and-play-animated-button-for-hero-statements-landing-pages.tsx",
-      "content": "import * as React from \"react\"\n\nfunction PlugAndPlayAnimatedButtonForHeroStatementsLandingPages({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"plug-and-play-animated-button-for-hero-statements-landing-pages\"\n      className={className}\n      {...props}\n    >\n      <button className=\"relative px-5 py-2 rounded-full text-zinc-300 flex items-center overflow-hidden group bg-black\">\n          <div className=\"absolute -inset-[130%] flex items-center justify-center bg-gradient-to-t from-blue-100 to-transparent animate-spin [animation_4s_linear_infinite]\">\n          </div>\n          <div className=\"absolute inset-[2px] rounded-full bg-zinc-900\">\n          </div>\n          <div className=\"relative z-10 flex items-center group-hover transition duration-1000\">\n          Refresh Page</div>\n      </button>\n    </div>\n  )\n}\n\nexport { PlugAndPlayAnimatedButtonForHeroStatementsLandingPages }\n",
+      "content": "import * as React from \"react\"\n\nfunction PlugAndPlayAnimatedButtonForHeroStatementsLandingPages({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"plug-and-play-animated-button-for-hero-statements-landing-pages\"\n      className={className}\n      {...props}\n    >\n      <button className=\"relative px-5 py-2 rounded-full text-zinc-300 flex items-center overflow-hidden group bg-black\">\n          <div className=\"absolute -inset-[130%] flex items-center justify-center bg-gradient-to-t from-blue-100 to-transparent animate-spin [animation:spin_4s_linear_infinite]\">\n          </div>\n          <div className=\"absolute inset-[2px] rounded-full bg-zinc-900\">\n          </div>\n          <div className=\"relative z-10 flex items-center group-hover:text-white transition duration-1000\">\n          Refresh Page</div>\n      </button>\n    </div>\n  )\n}\n\nexport { PlugAndPlayAnimatedButtonForHeroStatementsLandingPages }\n",
       "type": "registry:ui"
     }
   ],

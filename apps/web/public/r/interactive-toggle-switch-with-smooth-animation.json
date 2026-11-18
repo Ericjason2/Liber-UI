@@ -3,7 +3,7 @@
   "name": "interactive-toggle-switch-with-smooth-animation",
   "type": "registry:ui",
   "title": "Interactive Toggle Switch with Smooth Animation",
-  "description": "Interactive Toggle Switch with Smooth Animation — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Interactive Toggle Switch with Smooth Animation — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/interactive-toggle-switch-with-smooth-animation.tsx",
-      "content": "import * as React from \"react\"\n\nfunction InteractiveToggleSwitchWithSmoothAnimation({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"interactive-toggle-switch-with-smooth-animation\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex items-center justify-center h-screen\">\n        <div className=\"flex items-center\">\n          <input\n            type=\"checkbox\"\n            id=\"toggleSwitch\"\n            className=\"hidden\"\n           \n          />\n          <label\n            htmlFor=\"toggleSwitch\"\n            className=\"select-none relative inline-flex h-6 w-14 items-center rounded-full transition-colors duration-200 cursor-pointer bg-[#E6E6E6]\"\n          >\n            <span\n              id=\"toggleText\"\n              className=\"absolute w-full text-xs transition-transform duration-200 text-right pr-1.5 text-black\"\n            >\n              OFF\n            </span>\n            <span\n              id=\"toggleBall\"\n              className=\"inline-block w-[17px] h-[17px] transform rounded-full bg-white transition-transform duration-200 translate-x-1\"\n            ></span>\n          </label>\n        </div>\n      </div>\n      \n      \n    </div>\n  )\n}\n\nexport { InteractiveToggleSwitchWithSmoothAnimation }\n",
+      "content": "import * as React from \"react\"\n\nfunction InteractiveToggleSwitchWithSmoothAnimation({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"interactive-toggle-switch-with-smooth-animation\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex items-center justify-center h-screen\">\n        <div className=\"flex items-center\">\n          <input\n            type=\"checkbox\"\n            id=\"toggleSwitch\"\n            className=\"hidden\"\n           \n          />\n          <label\n            htmlFor=\"toggleSwitch\"\n            className=\"select-none relative inline-flex h-6 w-14 items-center rounded-full transition-colors duration-200 cursor-pointer bg-[#E6E6E6]\"\n          >\n            <span\n              id=\"toggleText\"\n              className=\"absolute w-full text-xs transition-transform duration-200 text-right pr-1.5 text-black\"\n            >\n              OFF\n            </span>\n            <span\n              id=\"toggleBall\"\n              className=\"inline-block w-[17px] h-[17px] transform rounded-full bg-white transition-transform duration-200 translate-x-1\"\n            ></span>\n          </label>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { InteractiveToggleSwitchWithSmoothAnimation }\n",
       "type": "registry:ui"
     }
   ],

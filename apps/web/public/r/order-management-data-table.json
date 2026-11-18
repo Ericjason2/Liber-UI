@@ -3,7 +3,7 @@
   "name": "order-management-data-table",
   "type": "registry:ui",
   "title": "Order Management Data Table",
-  "description": "Order Management Data Table — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Order Management Data Table — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

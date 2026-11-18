@@ -3,7 +3,7 @@
   "name": "responsive-grid-layout-3",
   "type": "registry:ui",
   "title": "Responsive grid layout",
-  "description": "Responsive grid layout — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+  "description": "Responsive grid layout — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
   "author": "Liber UI",
   "categories": [
     "grid"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/responsive-grid-layout-3.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ResponsiveGridLayout3({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"responsive-grid-layout-3\"\n      className={className}\n      {...props}\n    >\n      <div className=\"mt-16 grid grid-cols-1 sm2 md3 lg4 xl5 2xl6 gap-4 p-4\">\r\n          <div className=\"bg-gray-100 p-4\">Item 1</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 2</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 3</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 4</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 5</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 6</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 7</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 8</div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { ResponsiveGridLayout3 }\n",
+      "content": "import * as React from \"react\"\n\nfunction ResponsiveGridLayout3({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"responsive-grid-layout-3\"\n      className={className}\n      {...props}\n    >\n      <div className=\"mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 p-4\">\r\n          <div className=\"bg-gray-100 p-4\">Item 1</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 2</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 3</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 4</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 5</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 6</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 7</div>\r\n          <div className=\"bg-gray-100 p-4\">Item 8</div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { ResponsiveGridLayout3 }\n",
       "type": "registry:ui"
     }
   ],

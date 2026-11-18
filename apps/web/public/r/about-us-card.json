@@ -3,7 +3,7 @@
   "name": "about-us-card",
   "type": "registry:ui",
   "title": "About us card",
-  "description": "About us card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "About us card — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/about-us-card.tsx",
-      "content": "import * as React from \"react\"\n\nfunction AboutUsCard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"about-us-card\"\n      className={className}\n      {...props}\n    >\n      <div className=\"max-w-[400px] bg-white shadow flex flex-col my-4 p-6\">\r\n          <p className=\"text-xl font-semibold pb-5\">About Us</p>\r\n          <p className=\"pb-2\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis est eu odio sagittis\r\n              tristique. Vestibulum ut finibus leo. In hac habitasse platea dictumst.</p>\r\n          <a href=\"#\"\r\n              className=\"w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover700 flex items-center justify-center px-2 py-3 mt-4\">\r\n              Get to know us\r\n          </a>\r\n      </div>\n    </div>\n  )\n}\n\nexport { AboutUsCard }\n",
+      "content": "import * as React from \"react\"\n\nfunction AboutUsCard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"about-us-card\"\n      className={className}\n      {...props}\n    >\n      <div className=\"max-w-[400px] bg-white shadow flex flex-col my-4 p-6\">\r\n          <p className=\"text-xl font-semibold pb-5\">About Us</p>\r\n          <p className=\"pb-2\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis est eu odio sagittis\r\n              tristique. Vestibulum ut finibus leo. In hac habitasse platea dictumst.</p>\r\n          <a href=\"#\"\r\n              className=\"w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-4\">\r\n              Get to know us\r\n          </a>\r\n      </div>\n    </div>\n  )\n}\n\nexport { AboutUsCard }\n",
       "type": "registry:ui"
     }
   ],

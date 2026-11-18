@@ -3,7 +3,7 @@
   "name": "login-page-2",
   "type": "registry:ui",
   "title": "login page",
-  "description": "login page — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "login page — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

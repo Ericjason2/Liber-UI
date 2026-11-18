@@ -3,7 +3,7 @@
   "name": "free-tailwind-personal-portfolio-template",
   "type": "registry:ui",
   "title": "free tailwind personal portfolio template",
-  "description": "free tailwind personal portfolio template — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "free tailwind personal portfolio template — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

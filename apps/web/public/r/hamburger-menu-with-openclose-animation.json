@@ -3,7 +3,7 @@
   "name": "hamburger-menu-with-openclose-animation",
   "type": "registry:ui",
   "title": "Hamburger menu button with open/close animation",
-  "description": "Hamburger menu button with open/close animation — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Hamburger menu button with open/close animation — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/hamburger-menu-with-openclose-animation.tsx",
-      "content": "import * as React from \"react\"\n\nfunction HamburgerMenuWithOpencloseAnimation({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"hamburger-menu-with-openclose-animation\"\n      className={className}\n      dangerouslySetInnerHTML={{ __html: \"\\n<div class=\\\"min-h-screen bg-gray-100 flex flex-col justify-center\\\">\\n    <div class=\\\"relative py-3 sm:max-w-xl mx-auto\\\">\\n        <nav x-data=\\\"{ open: false }\\\">\\n            <button class=\\\"w-14 h-14 relative focus:outline-none bg-teal-600 rounded\\\" @click=\\\"open = !open\\\">\\n                <div class=\\\"block w-5 absolute left-6 top-1/2   transform  -translate-x-1/2 -translate-y-1/2\\\">\\n                    <span  class=\\\"block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out\\\" :class=\\\"{'rotate-45': open,' -translate-y-1.5': !open }\\\"></span>\\n                    <span  class=\\\"block absolute  h-0.5 w-5 text-white bg-current   transform transition duration-500 ease-in-out\\\" :class=\\\"{'opacity-0': open } \\\"></span>\\n                    <span  class=\\\"block absolute  h-0.5 w-7 text-white bg-current transform  transition duration-500 ease-in-out\\\" :class=\\\"{'-rotate-45': open, ' translate-y-1.5': !open}\\\"></span>\\n                </div>\\n            </button>\\n        </nav>\\n    </div>\\n</div>\" }}\n      {...props}\n    />\n  )\n}\n\nexport { HamburgerMenuWithOpencloseAnimation }\n",
+      "content": "import * as React from \"react\"\n\nfunction HamburgerMenuWithOpencloseAnimation({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"hamburger-menu-with-openclose-animation\"\n      className={className}\n      {...props}\n    >\n      <div className=\"min-h-screen bg-gray-100 flex flex-col justify-center\">\n          <div className=\"relative py-3 sm:max-w-xl mx-auto\">\n              <nav>\n                  <button className=\"w-14 h-14 relative focus:outline-none bg-teal-600 rounded\">\n                      <div className=\"block w-5 absolute left-6 top-1/2   transform  -translate-x-1/2 -translate-y-1/2\">\n                          <span  className=\"block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out\"></span>\n                          <span  className=\"block absolute  h-0.5 w-5 text-white bg-current   transform transition duration-500 ease-in-out\"></span>\n                          <span  className=\"block absolute  h-0.5 w-7 text-white bg-current transform  transition duration-500 ease-in-out\"></span>\n                      </div>\n                  </button>\n              </nav>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { HamburgerMenuWithOpencloseAnimation }\n",
       "type": "registry:ui"
     }
   ],

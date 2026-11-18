@@ -15,10 +15,15 @@ import {
 } from "lucide-react";
 import {
   PACKAGE_MANAGERS,
-  type PackageManager,
+  usePackageManager,
 } from "@/lib/package-manager";
+import { updateUrlQueryParams } from "@/lib/url-params";
 
 const PAGE_SIZE = 12;
+
+function syncUrlParams(cat: string, page: number, q: string) {
+  updateUrlQueryParams({ category: cat, page, q });
+}
 
 export default function ComponentsPage({
   initialItems,
@@ -26,14 +31,30 @@ export default function ComponentsPage({
   initialItems?: ComponentItem[];
 }) {
   const [selectedCat, setSelectedCat] = useState<string>("all");
-  const [searchQuery, setSearchQuery] = useState<string>(() => {
-    if (typeof window !== "undefined") {
-      return new URLSearchParams(window.location.search).get("q") || "";
-    }
-    return "";
-  });
+  const [searchQuery, setSearchQuery] = useState<string>("");
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const [pm, setPm] = useState<PackageManager>("pnpm");
+  const [pm, setPm] = usePackageManager();
+
+  // Restore filter state from URL query string cleanly after mount & on browser Back/Forward
+  useEffect(() => {
+    const readFromUrl = () => {
+      const params = new URLSearchParams(window.location.search);
+      const urlCat = params.get("category") || "all";
+      const parsedPage = parseInt(params.get("page") || "1", 10);
+      const urlPage = Number.isNaN(parsedPage) || parsedPage < 1 ? 1 : parsedPage;
+      const urlQ = params.get("q") || "";
+      setSelectedCat(urlCat);
+      setCurrentPage(urlPage);
+      setSearchQuery(urlQ);
+    };
+
+    const timer = setTimeout(readFromUrl, 0);
+    window.addEventListener("popstate", readFromUrl);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("popstate", readFromUrl);
+    };
+  }, []);
 
   // Server-fetched paginated items
   const [items, setItems] = useState<ComponentItem[]>(() =>
@@ -166,8 +187,10 @@ export default function ComponentsPage({
               type="text"
               value={searchQuery}
               onChange={(e) => {
-                setSearchQuery(e.target.value);
+                const nextQ = e.target.value;
+                setSearchQuery(nextQ);
                 setCurrentPage(1);
+                syncUrlParams(selectedCat, 1, nextQ);
               }}
               placeholder="Search components by name (e.g. card, hero, form, button, navbar, pricing, header)..."
               className="w-full h-11 pl-10 pr-4 rounded-[10px] border border-border bg-card text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-all font-sans"
@@ -182,6 +205,7 @@ export default function ComponentsPage({
                 onClick={() => {
                   setSelectedCat(c.id);
                   setCurrentPage(1);
+                  syncUrlParams(c.id, 1, searchQuery);
                 }}
                 className={`px-3.5 py-2.5 rounded-[8px] text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${selectedCat === c.id
                   ? "bg-primary text-primary-foreground font-semibold"
@@ -260,7 +284,9 @@ export default function ComponentsPage({
               type="button"
               disabled={currentPage === 1}
               onClick={() => {
-                setCurrentPage((p) => Math.max(1, p - 1));
+                const nextPage = Math.max(1, currentPage - 1);
+                setCurrentPage(nextPage);
+                syncUrlParams(selectedCat, nextPage, searchQuery);
                 window.scrollTo({ top: 240, behavior: "smooth" });
               }}
               className="px-3 py-1.5 rounded-lg border border-border text-xs font-medium text-foreground hover:bg-muted disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
@@ -282,6 +308,7 @@ export default function ComponentsPage({
                       type="button"
                       onClick={() => {
                         setCurrentPage(pageNum);
+                        syncUrlParams(selectedCat, pageNum, searchQuery);
                         window.scrollTo({ top: 240, behavior: "smooth" });
                       }}
                       className={`w-8 h-8 rounded-lg text-xs font-mono transition-colors ${currentPage === pageNum
@@ -308,7 +335,9 @@ export default function ComponentsPage({
               type="button"
               disabled={currentPage === totalPages}
               onClick={() => {
-                setCurrentPage((p) => Math.min(totalPages, p + 1));
+                const nextPage = Math.min(totalPages, currentPage + 1);
+                setCurrentPage(nextPage);
+                syncUrlParams(selectedCat, nextPage, searchQuery);
                 window.scrollTo({ top: 240, behavior: "smooth" });
               }}
               className="px-3 py-1.5 rounded-lg border border-border text-xs font-medium text-foreground hover:bg-muted disabled:opacity-40 disabled:cursor-not-allowed transition-colors"

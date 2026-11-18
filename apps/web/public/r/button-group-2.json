@@ -3,7 +3,7 @@
   "name": "button-group-2",
   "type": "registry:ui",
   "title": "Button Group",
-  "description": "Button Group — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Button Group — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/button-group-2.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ButtonGroup2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-group-2\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex items-center\">\n          <button type=\"button\" className=\"w-full border-l border-t border-b text-base font-medium rounded-l-md text-black bg-white hover100 px-4 py-2\">\n              Left\n          </button>\n          <button type=\"button\" className=\"w-full border text-base font-medium text-black bg-white hover100 px-4 py-2\">\n              Center\n          </button>\n          <button type=\"button\" className=\"w-full border-t border-b border-r text-base font-medium rounded-r-md text-black bg-white hover100 px-4 py-2\">\n              Right\n          </button>\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonGroup2 }\n",
+      "content": "import * as React from \"react\"\n\nfunction ButtonGroup2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-group-2\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex items-center\">\n          <button type=\"button\" className=\"w-full border-l border-t border-b text-base font-medium rounded-l-md text-black bg-white hover:bg-gray-100 px-4 py-2\">\n              Left\n          </button>\n          <button type=\"button\" className=\"w-full border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2\">\n              Center\n          </button>\n          <button type=\"button\" className=\"w-full border-t border-b border-r text-base font-medium rounded-r-md text-black bg-white hover:bg-gray-100 px-4 py-2\">\n              Right\n          </button>\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonGroup2 }\n",
       "type": "registry:ui"
     }
   ],

@@ -3,7 +3,7 @@
   "name": "futuristic-button",
   "type": "registry:ui",
   "title": "futuristic button",
-  "description": "futuristic button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "futuristic button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

@@ -3,7 +3,7 @@
   "name": "animated-button-2",
   "type": "registry:ui",
   "title": "Animated Button",
-  "description": "Animated Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Animated Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/animated-button-2.tsx",
-      "content": "import * as React from \"react\"\n\nfunction AnimatedButton2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"animated-button-2\"\n      className={className}\n      {...props}\n    >\n      <div className=\"p-4 flex flex-col items-center justify-center\">\n          <div className=\"cursor-pointer\">\n              <button className=\"relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-teal-600 transition duration-300 ease-out border-2 border-teal-500 rounded-full shadow-md group\">\n            <span className=\"absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate- bg-teal-500 group-hover0 ease\">\n              <svg className=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M14 5l7 7m0 0l-7 7m7-7H3\"></path></svg>\n            </span>\n            <span className=\"absolute flex items-center justify-center w-full h-full text-teal-500 transition-all duration-300 transform group-hover ease\">Continue</span>\n            <span className=\"relative invisible\">Continue</span>\n          </button>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { AnimatedButton2 }\n",
+      "content": "import * as React from \"react\"\n\nfunction AnimatedButton2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"animated-button-2\"\n      className={className}\n      {...props}\n    >\n      <div className=\"p-4 flex flex-col items-center justify-center\">\n          <div className=\"cursor-pointer\">\n              <button className=\"relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-teal-600 transition duration-300 ease-out border-2 border-teal-500 rounded-full shadow-md group\">\n            <span className=\"absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-teal-500 group-hover:translate-x-0 ease\">\n              <svg className=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth=\"2\" d=\"M14 5l7 7m0 0l-7 7m7-7H3\"></path></svg>\n            </span>\n            <span className=\"absolute flex items-center justify-center w-full h-full text-teal-500 transition-all duration-300 transform group-hover:translate-x-full ease\">Continue</span>\n            <span className=\"relative invisible\">Continue</span>\n          </button>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { AnimatedButton2 }\n",
       "type": "registry:ui"
     }
   ],

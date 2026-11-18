@@ -3,7 +3,7 @@
   "name": "buy-me-a-coffee-floating-button",
   "type": "registry:ui",
   "title": "Buy me a coffee floating button",
-  "description": "Buy me a coffee floating button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Buy me a coffee floating button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/buy-me-a-coffee-floating-button.tsx",
-      "content": "import * as React from \"react\"\n\nfunction BuyMeACoffeeFloatingButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"buy-me-a-coffee-floating-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"fixed bottom-6 right-6\">\n          <a href=\"https://www.buymeacoffee.com/yourusername\" target=\"_blank\" rel=\"noopener noreferrer\"\n              className=\"bg-yellow-500 text-white font-medium rounded-md px-4 py-2 flex items-center justify-center hover600 transition duration-300 ease-in-out shadow-lg\">\n              <span className=\"text-lg mr-2\">☕</span>\n              Buy me a coffee\n          </a>\n      </div>\n    </div>\n  )\n}\n\nexport { BuyMeACoffeeFloatingButton }\n",
+      "content": "import * as React from \"react\"\n\nfunction BuyMeACoffeeFloatingButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"buy-me-a-coffee-floating-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"fixed bottom-6 right-6\">\n          <a href=\"https://www.buymeacoffee.com/yourusername\" target=\"_blank\" rel=\"noopener noreferrer\"\n              className=\"bg-yellow-500 text-white font-medium rounded-md px-4 py-2 flex items-center justify-center hover:bg-yellow-600 transition duration-300 ease-in-out shadow-lg\">\n              <span className=\"text-lg mr-2\">☕</span>\n              Buy me a coffee\n          </a>\n      </div>\n    </div>\n  )\n}\n\nexport { BuyMeACoffeeFloatingButton }\n",
       "type": "registry:ui"
     }
   ],

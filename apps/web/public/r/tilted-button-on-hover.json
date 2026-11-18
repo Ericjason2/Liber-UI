@@ -3,7 +3,7 @@
   "name": "tilted-button-on-hover",
   "type": "registry:ui",
   "title": "Tilted button on hover.",
-  "description": "Tilted button on hover. — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Tilted button on hover. — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/tilted-button-on-hover.tsx",
-      "content": "import * as React from \"react\"\n\nfunction TiltedButtonOnHover({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"tilted-button-on-hover\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-white dark800 flex justify-center items-center w-screen h-screen p-5\">\n        <button\n              className=\"inline-flex items-center justify-center px-8 py-4\n                text-lg font-bold text-white\n                bg-gradient-to-r from-teal-500 to-teal-700\n                dark500 dark700\n                rounded-lg\n                drop-shadow-md\n                transform-gpu\n                hover[1deg] hover105\n                hover1\n                transition-all duration-300\n                shadow-lg hover\"\n          >\n              <span className=\"uppercase\">\n                Hover to tilt!\n              </span>\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { TiltedButtonOnHover }\n",
+      "content": "import * as React from \"react\"\n\nfunction TiltedButtonOnHover({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"tilted-button-on-hover\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-white dark:bg-gray-800 flex justify-center items-center w-screen h-screen p-5\">\n        <button\n              className=\"inline-flex items-center justify-center px-8 py-4\n                text-lg font-bold text-white\n                bg-gradient-to-r from-teal-500 to-teal-700\n                dark:from-teal-500 dark:to-teal-700\n                rounded-lg\n                drop-shadow-md\n                transform-gpu\n                hover:rotate-[1deg] hover:scale-105\n                hover:skew-x-1\n                transition-all duration-300\n                shadow-lg hover:shadow-xl\"\n          >\n              <span className=\"uppercase\">\n                Hover to tilt!\n              </span>\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport { TiltedButtonOnHover }\n",
       "type": "registry:ui"
     }
   ],

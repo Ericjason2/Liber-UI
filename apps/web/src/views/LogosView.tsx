@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import {
   Search,
@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { OFFICIAL_LOGOS, type LogoItem } from "@/lib/catalog-logos";
 import { useToast } from "@/context/ToastContext";
+import { updateUrlQueryParams } from "@/lib/url-params";
 
 type VariantType = "color" | "mono" | "wordmark";
 
@@ -25,7 +26,7 @@ const ALPHABET = [
 
 const CATEGORIES = [
   { id: "all", label: "All Logos" },
-  { id: "africa", label: "Afrique / Fintech" },
+  { id: "africa", label: "Africa / Fintech" },
   { id: "frontend", label: "Front-end" },
   { id: "backend", label: "Back-end & DB" },
   { id: "devops", label: "Cloud & DevOps" },
@@ -47,6 +48,21 @@ export default function LogosPage() {
   const [variant, setVariant] = useState<VariantType>("color");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const { toast } = useToast();
+
+  useEffect(() => {
+    const readFromUrl = () => {
+      const params = new URLSearchParams(window.location.search);
+      setSelectedCategory(params.get("category") || "all");
+      setSelectedLetter(params.get("letter") || "All");
+      setSearch(params.get("q") || "");
+    };
+    const timer = setTimeout(readFromUrl, 0);
+    window.addEventListener("popstate", readFromUrl);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("popstate", readFromUrl);
+    };
+  }, []);
 
   const filteredLogos = useMemo(() => {
     return OFFICIAL_LOGOS.filter((logo) => {
@@ -173,6 +189,7 @@ export default function LogosPage() {
               onClick={() => {
                 setSelectedCategory(cat.id);
                 setSelectedLetter("All");
+                updateUrlQueryParams({ category: cat.id, letter: "All", q: search });
               }}
               className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${isSelected
                   ? "bg-primary text-primary-foreground shadow-sm"
@@ -199,13 +216,28 @@ export default function LogosPage() {
           <input
             type="text"
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={(e) => {
+              const nextQ = e.target.value;
+              setSearch(nextQ);
+              updateUrlQueryParams({
+                category: selectedCategory,
+                letter: selectedLetter,
+                q: nextQ,
+              });
+            }}
             placeholder="Search all logos by name, alias, tool, or software..."
             className="w-full h-9 pl-9 pr-8 text-xs rounded-[8px] border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary"
           />
           {search && (
             <button
-              onClick={() => setSearch("")}
+              onClick={() => {
+                setSearch("");
+                updateUrlQueryParams({
+                  category: selectedCategory,
+                  letter: selectedLetter,
+                  q: "",
+                });
+              }}
               className="absolute right-2.5 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground text-xs p-1"
             >
               ✕
@@ -235,7 +267,14 @@ export default function LogosPage() {
         {ALPHABET.map((letter) => (
           <button
             key={letter}
-            onClick={() => setSelectedLetter(letter)}
+            onClick={() => {
+              setSelectedLetter(letter);
+              updateUrlQueryParams({
+                category: selectedCategory,
+                letter,
+                q: search,
+              });
+            }}
             className={`min-w-[28px] h-7 px-2 rounded-[6px] flex items-center justify-center transition-colors ${selectedLetter === letter
                 ? "bg-primary text-primary-foreground font-bold shadow-sm"
                 : "text-muted-foreground hover:text-foreground hover:bg-muted"
@@ -257,6 +296,7 @@ export default function LogosPage() {
             onClick={() => {
               setSearch("");
               setSelectedLetter("All");
+              updateUrlQueryParams({ category: selectedCategory, letter: "All", q: "" });
             }}
             className="mt-2 text-xs font-medium text-primary hover:underline"
           >

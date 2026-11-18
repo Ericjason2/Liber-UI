@@ -3,7 +3,7 @@
   "name": "call-to-action-section-for-home-page",
   "type": "registry:ui",
   "title": "Call to Action section for home page",
-  "description": "Call to Action section for home page — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Call to Action section for home page — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/call-to-action-section-for-home-page.tsx",
-      "content": "import * as React from \"react\"\n\nfunction CallToActionSectionForHomePage({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"call-to-action-section-for-home-page\"\n      className={className}\n      {...props}\n    >\n      <div className=\"max-w-5xl mx-auto mt-12 px-4 text-center\">\r\n          <div className=\"w-full max-w-3xl mx-auto\">\r\n              <h1 className=\"text-4xl font-bold mt-2 mb-6\">Helping you find your new home;<br />by simplifying the search.</h1>\r\n              <p className=\"px-4 leading-relaxed\">Propiti provides you with a quick, simple way to reach multiple estate\r\n                  agents.<br />Allowing you to spend less time trawling through property portals,<br />giving you more time on the other things you enjoy.\r\n              </p>\r\n              <p className=\"mb-8 mt-4 px-4 leading-relaxed\">Oh, and the best bit...\r\n                  <span className=\"text-pink-600 font-bold\">It's free!</span></p>\r\n              <div>\r\n                  <a className=\"inline-block py-4 px-8 leading-none text-white bg-slate-800 hover600 rounded shadow text-sm font-bold\"\r\n                      href=\"/signup\">Sign-up for free</a>\r\n              </div>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { CallToActionSectionForHomePage }\n",
+      "content": "import * as React from \"react\"\n\nfunction CallToActionSectionForHomePage({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"call-to-action-section-for-home-page\"\n      className={className}\n      {...props}\n    >\n      <div className=\"max-w-5xl mx-auto mt-12 px-4 text-center\">\r\n          <div className=\"w-full max-w-3xl mx-auto\">\r\n              <h1 className=\"text-4xl font-bold mt-2 mb-6\">Helping you find your new home;<br />by simplifying the search.</h1>\r\n              <p className=\"px-4 leading-relaxed\">Propiti provides you with a quick, simple way to reach multiple estate\r\n                  agents.<br />Allowing you to spend less time trawling through property portals,<br />giving you more time on the other things you enjoy.\r\n              </p>\r\n              <p className=\"mb-8 mt-4 px-4 leading-relaxed\">Oh, and the best bit...\r\n                  <span className=\"text-pink-600 font-bold\">It's free!</span></p>\r\n              <div>\r\n                  <a className=\"inline-block py-4 px-8 leading-none text-white bg-slate-800 hover:bg-pink-600 rounded shadow text-sm font-bold\"\r\n                      href=\"/signup\">Sign-up for free</a>\r\n              </div>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { CallToActionSectionForHomePage }\n",
       "type": "registry:ui"
     }
   ],

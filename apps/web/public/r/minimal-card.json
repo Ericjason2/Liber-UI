@@ -3,7 +3,7 @@
   "name": "minimal-card",
   "type": "registry:ui",
   "title": "Minimal Card",
-  "description": "Minimal Card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "Minimal Card — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/minimal-card.tsx",
-      "content": "import * as React from \"react\"\n\nfunction MinimalCard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"minimal-card\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-white flex justify-center items-center w-screen h-screen p-5\">\n        <div className=\"shadow-md max-w-2xl p-3 rounded-lg dark600 dark200 mx-auto\">\n          <div className=\"bg-green-200 h-40 rounded-lg flex justify-center items-center text-gray-700\">Image</div>\n          <h1 className=\"text-xl sm2xl font-semibold p-3\">Card Heading</h1>\n          <p className=\"text-sm sm md font-medium px-3\">This is a small description of card</p>\n          <button className=\"bg-sky-300 font-medium p-2 text-gray-700 rounded w-full mt-3\">Button</button>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { MinimalCard }\n",
+      "content": "import * as React from \"react\"\n\nfunction MinimalCard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"minimal-card\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-white flex justify-center items-center w-screen h-screen p-5\">\n        <div className=\"shadow-md max-w-2xl p-3 rounded-lg dark:bg-gray-600 dark:text-gray-200 mx-auto\">\n          <div className=\"bg-green-200 h-40 rounded-lg flex justify-center items-center text-gray-700\">Image</div>\n          <h1 className=\"text-xl sm:text-2xl font-semibold p-3\">Card Heading</h1>\n          <p className=\"text-sm sm:text-md md:text-lg font-medium px-3\">This is a small description of card</p>\n          <button className=\"bg-sky-300 font-medium p-2 text-gray-700 rounded w-full mt-3\">Button</button>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { MinimalCard }\n",
       "type": "registry:ui"
     }
   ],

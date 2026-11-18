@@ -3,7 +3,7 @@
   "name": "coupon-code-card",
   "type": "registry:ui",
   "title": "Coupon code card",
-  "description": "Coupon code card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "Coupon code card — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/coupon-code-card.tsx",
-      "content": "import * as React from \"react\"\n\nfunction CouponCodeCard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"coupon-code-card\"\n      className={className}\n      {...props}\n    >\n      <div className=\"container bg-gradient-to-r from-indigo-500 to-violet-500 text-white p-8 rounded-lg shadow-lg max-w-md mx-auto\">\n          <div className=\"text-3xl font-bold mb-4\">Special Offer!</div>\n          <div className=\"text-lg mb-4\">Get <span className=\"text-yellow-400 font-bold\">25% OFF</span> your next purchase!</div>\n          <div className=\"text-base mb-4\">Use coupon code:</div>\n          <div className=\"bg-white text-gray-800 rounded-lg px-4 py-2 flex items-center justify-between\">\n              <span className=\"text-2xl font-semibold\">TAILOFFER25</span>\n              <button className=\"bg-blue-800 text-white px-3 py-1 rounded hover600 focus focus2 focus500\">Copy</button>\n          </div>\n          <div className=\"text-sm mt-4\">\n              <p>Valid until <span className=\"font-semibold\">December 31, 2023</span></p>\n              <p>Terms and conditions apply.</p>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { CouponCodeCard }\n",
+      "content": "import * as React from \"react\"\n\nfunction CouponCodeCard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"coupon-code-card\"\n      className={className}\n      {...props}\n    >\n      <div className=\"container bg-gradient-to-r from-indigo-500 to-violet-500 text-white p-8 rounded-lg shadow-lg max-w-md mx-auto\">\n          <div className=\"text-3xl font-bold mb-4\">Special Offer!</div>\n          <div className=\"text-lg mb-4\">Get <span className=\"text-yellow-400 font-bold\">25% OFF</span> your next purchase!</div>\n          <div className=\"text-base mb-4\">Use coupon code:</div>\n          <div className=\"bg-white text-gray-800 rounded-lg px-4 py-2 flex items-center justify-between\">\n              <span className=\"text-2xl font-semibold\">TAILOFFER25</span>\n              <button className=\"bg-blue-800 text-white px-3 py-1 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500\">Copy</button>\n          </div>\n          <div className=\"text-sm mt-4\">\n              <p>Valid until <span className=\"font-semibold\">December 31, 2023</span></p>\n              <p>Terms and conditions apply.</p>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { CouponCodeCard }\n",
       "type": "registry:ui"
     }
   ],

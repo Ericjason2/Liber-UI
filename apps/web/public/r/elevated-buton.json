@@ -3,7 +3,7 @@
   "name": "elevated-buton",
   "type": "registry:ui",
   "title": "Elevated Buton",
-  "description": "Elevated Buton — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Elevated Buton — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/elevated-buton.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ElevatedButon({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"elevated-buton\"\n      className={className}\n      {...props}\n    >\n      <a href=\"\" target=\"_blank\"\n        className=\"inline-flex items-center rounded cursor-pointer bg-[#273ef1] px-6 py-3 font-semibold text-white transition [box-shadow(171,_196,245)-8px_8px] hover:[box-shadow(171,_196,_245)0px_0px]\">\n        Get started →\n      </a>\n    </div>\n  )\n}\n\nexport { ElevatedButon }\n",
+      "content": "import * as React from \"react\"\n\nfunction ElevatedButon({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"elevated-buton\"\n      className={className}\n      {...props}\n    >\n      <a href=\"\" target=\"_blank\"\n        className=\"inline-flex items-center rounded cursor-pointer bg-[#273ef1] px-6 py-3 font-semibold text-white transition [box-shadow:rgb(171,_196,245)-8px_8px] hover:[box-shadow:rgb(171,_196,_245)0px_0px]\">\n        Get started →\n      </a>\n    </div>\n  )\n}\n\nexport { ElevatedButon }\n",
       "type": "registry:ui"
     }
   ],

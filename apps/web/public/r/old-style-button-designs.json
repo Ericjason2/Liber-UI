@@ -3,7 +3,7 @@
   "name": "old-style-button-designs",
   "type": "registry:ui",
   "title": "Old style Button Designs",
-  "description": "Old style Button Designs — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Old style Button Designs — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/old-style-button-designs.tsx",
-      "content": "import * as React from \"react\"\n\nfunction OldStyleButtonDesigns({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"old-style-button-designs\"\n      className={className}\n      {...props}\n    >\n      <div className=\"\">\r\n          <span className=\"inline-block mr-2 mb-2\">\r\n              <a href=\"\" className=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-teal-500 hover600\">Buy on Booktopia\r\n              </a>\r\n          </span>\r\n          <span className=\"inline-block mr-2 mb-2\">\r\n              <a href=\"\" className=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-gray-400 hover500\">Buy on Amazon USA\r\n              </a>\r\n          </span>\r\n          <span className=\"inline-block mr-2 mb-2\">\r\n              <a href=\"\" className=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-red-400 hover500\">Buy on Amazon UK\r\n              </a>\r\n          </span>\r\n      </div>\n    </div>\n  )\n}\n\nexport { OldStyleButtonDesigns }\n",
+      "content": "import * as React from \"react\"\n\nfunction OldStyleButtonDesigns({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"old-style-button-designs\"\n      className={className}\n      {...props}\n    >\n      <div className=\"\">\r\n          <span className=\"inline-block mr-2 mb-2\">\r\n              <a href=\"\" className=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-teal-500 hover:bg-teal-600\">Buy on Booktopia\r\n              </a>\r\n          </span>\r\n          <span className=\"inline-block mr-2 mb-2\">\r\n              <a href=\"\" className=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-gray-400 hover:bg-gray-500\">Buy on Amazon USA\r\n              </a>\r\n          </span>\r\n          <span className=\"inline-block mr-2 mb-2\">\r\n              <a href=\"\" className=\"px-4 py-2 text-white uppercase tracking-wide no-underline text-sm font-semibold rounded shadow inline-block bg-red-400 hover:bg-red-500\">Buy on Amazon UK\r\n              </a>\r\n          </span>\r\n      </div>\n    </div>\n  )\n}\n\nexport { OldStyleButtonDesigns }\n",
       "type": "registry:ui"
     }
   ],

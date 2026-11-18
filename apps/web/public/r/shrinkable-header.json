@@ -3,7 +3,7 @@
   "name": "shrinkable-header",
   "type": "registry:ui",
   "title": "Shrinkable Header",
-  "description": "Shrinkable Header — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Shrinkable Header — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

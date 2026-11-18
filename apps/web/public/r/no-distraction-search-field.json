@@ -3,7 +3,7 @@
   "name": "no-distraction-search-field",
   "type": "registry:ui",
   "title": "No distraction search field",
-  "description": "No distraction search field — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
+  "description": "No distraction search field — High-impact hero section featuring a bold headline, supporting subtitle, and clear calls to action.",
   "author": "Liber UI",
   "categories": [
     "hero"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/no-distraction-search-field.tsx",
-      "content": "import * as React from \"react\"\n\nfunction NoDistractionSearchField({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"no-distraction-search-field\"\n      className={className}\n      {...props}\n    >\n      <div style=\"background(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1684487747385-442d674962f2) no-repeat center;background-size\"\r\n          className=\"py-52 px-1 md8 text-center relative text-white font-bold text-2xl md3xl overflow-auto\">\r\n          <h1 className=\"pb-4\">Search for product</h1>\r\n          <div className=\"w-11/12 md3/4 lg3xl m-auto\">\r\n              <div className=\"relative z-30 text-base text-black\"><input type=\"text\" value=\"\" placeholder=\"Keyword\" className=\"mt-2 shadow-md focus rounded-2xl py-3 px-6 block w-full\" />\r\n                  <div\r\n                      className=\"text-left absolute top-10 rounded-t-none rounded-b-2xl shadow bg-white divide-y w-full max-h-40 overflow-auto\">\r\n                  </div>\r\n              </div>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { NoDistractionSearchField }\n",
+      "content": "import * as React from \"react\"\n\nfunction NoDistractionSearchField({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"no-distraction-search-field\"\n      className={className}\n      {...props}\n    >\n      <div style={{ background: \"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1684487747385-442d674962f2) no-repeat center\", backgroundSize: \"cover\" }}\r\n          className=\"py-52 px-1 md:px-8 text-center relative text-white font-bold text-2xl md:text-3xl overflow-auto\">\r\n          <h1 className=\"pb-4\">Search for product</h1>\r\n          <div className=\"w-11/12 md:w-3/4 lg:max-w-3xl m-auto\">\r\n              <div className=\"relative z-30 text-base text-black\"><input type=\"text\" value=\"\" placeholder=\"Keyword\" className=\"mt-2 shadow-md focus:outline-none rounded-2xl py-3 px-6 block w-full\" />\r\n                  <div\r\n                      className=\"text-left absolute top-10 rounded-t-none rounded-b-2xl shadow bg-white divide-y w-full max-h-40 overflow-auto\">\r\n                  </div>\r\n              </div>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { NoDistractionSearchField }\n",
       "type": "registry:ui"
     }
   ],

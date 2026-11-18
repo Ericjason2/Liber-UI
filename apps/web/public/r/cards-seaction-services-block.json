@@ -3,7 +3,7 @@
   "name": "cards-seaction-services-block",
   "type": "registry:ui",
   "title": "Cards Seaction - Services block",
-  "description": "Cards Seaction - Services block — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Cards Seaction - Services block — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

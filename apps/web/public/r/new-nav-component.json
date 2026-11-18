@@ -3,7 +3,7 @@
   "name": "new-nav-component",
   "type": "registry:ui",
   "title": "New Nav Component",
-  "description": "New Nav Component — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "New Nav Component — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/new-nav-component.tsx",
-      "content": "import * as React from \"react\"\n\nfunction NewNavComponent({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"new-nav-component\"\n      className={className}\n      {...props}\n    >\n      <nav className=\"bg-red-100 py-4 px-2 flex justify-between\">\n        <div>\n          <button className=\"bg-white rounded shadow-md px-2 py-1\">\n            Login\n          </button>\n          <button className=\"bg-white rounded shadow-md px-2 py-1\">\n            Register\n          </button>\n        </div>\n      \n        <h1 className=\"text-3xl\">\n          Logo\n        </h1>\n        \n        <ul className=\"list-style-none flex pl-4\">  \n          <li className=\"bg-gray-600 px-2 py-1 mx-2 rounded shadow-sm\">\n            <a href=\"#\" className=\"text-blue-100 hover100 transition-all duration-150\">Home</a>\n          </li>\n          <li className=\"bg-gray-600 px-2 py-1 mx-2 rounded shadow-sm\">\n            <a href=\"#\" className=\"text-blue-100 hover100 transition-all duration-150\">About</a>\n          </li>\n          <li className=\"bg-gray-600 px-2 py-1 mx-2 rounded shadow-sm\">\n            <a href=\"#\" className=\"text-blue-100 hover100 transition-all duration-150\">Contact</a>\n          </li>\n        </ul>\n      </nav>\n    </div>\n  )\n}\n\nexport { NewNavComponent }\n",
+      "content": "import * as React from \"react\"\n\nfunction NewNavComponent({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"new-nav-component\"\n      className={className}\n      {...props}\n    >\n      <nav className=\"bg-red-100 py-4 px-2 flex justify-between\">\n        <div>\n          <button className=\"bg-white rounded shadow-md px-2 py-1\">\n            Login\n          </button>\n          <button className=\"bg-white rounded shadow-md px-2 py-1\">\n            Register\n          </button>\n        </div>\n      \n        <h1 className=\"text-3xl\">\n          Logo\n        </h1>\n        \n        <ul className=\"list-style-none flex pl-4\">  \n          <li className=\"bg-gray-600 px-2 py-1 mx-2 rounded shadow-sm\">\n            <a href=\"#\" className=\"text-blue-100 hover:text-blue-100 transition-all duration-150\">Home</a>\n          </li>\n          <li className=\"bg-gray-600 px-2 py-1 mx-2 rounded shadow-sm\">\n            <a href=\"#\" className=\"text-blue-100 hover:text-blue-100 transition-all duration-150\">About</a>\n          </li>\n          <li className=\"bg-gray-600 px-2 py-1 mx-2 rounded shadow-sm\">\n            <a href=\"#\" className=\"text-blue-100 hover:text-blue-100 transition-all duration-150\">Contact</a>\n          </li>\n        </ul>\n      </nav>\n    </div>\n  )\n}\n\nexport { NewNavComponent }\n",
       "type": "registry:ui"
     }
   ],

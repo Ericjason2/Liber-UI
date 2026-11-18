@@ -3,7 +3,7 @@
   "name": "github-stars-button",
   "type": "registry:ui",
   "title": "Github stars button",
-  "description": "Github stars button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Github stars button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

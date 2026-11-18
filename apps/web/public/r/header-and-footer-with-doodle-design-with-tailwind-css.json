@@ -3,7 +3,7 @@
   "name": "header-and-footer-with-doodle-design-with-tailwind-css",
   "type": "registry:ui",
   "title": "Header and footer with Doodle design with Tailwind CSS",
-  "description": "Header and footer with Doodle design with Tailwind CSS — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Header and footer with Doodle design with Tailwind CSS — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

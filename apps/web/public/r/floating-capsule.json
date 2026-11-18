@@ -3,7 +3,7 @@
   "name": "floating-capsule",
   "type": "registry:ui",
   "title": "Floating capsule",
-  "description": "Floating capsule — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "Floating capsule — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/floating-capsule.tsx",
-      "content": "import * as React from \"react\"\n\nfunction FloatingCapsule({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"floating-capsule\"\n      className={className}\n      {...props}\n    >\n      <body className=\"bg-[#ecf7f8] flex items-end justify-center p-10\">\n        <div className=\"relative bg-[#061120] text-white w-full max-w-4xl rounded-[2rem] pb-24 pt-16 text-center\">\n          <div className=\"text-xl font-semibold\">\n            Some card content here\n          </div>\n      \n          <div\n            className=\"absolute left-1/3 bottom-0 translate-x-[-50%] translate-y-2 bg-[#061120] border-[10px] border-[#ecf7f8] px-8 py-3 rounded-full  text-lg font-semibold\">\n            © 2025 xyz. All Rights Reserved\n          </div>\n        </div>\n      </body>\n    </div>\n  )\n}\n\nexport { FloatingCapsule }\n",
+      "content": "import * as React from \"react\"\n\nfunction FloatingCapsule({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"floating-capsule\"\n      className={className}\n      {...props}\n    >\n      <div className=\"relative bg-[#061120] text-white w-full max-w-4xl rounded-[2rem] pb-24 pt-16 text-center\">\n          <div className=\"text-xl font-semibold\">\n            Some card content here\n          </div>\n      \n          <div\n            className=\"absolute left-1/3 bottom-0 translate-x-[-50%] translate-y-2 bg-[#061120] border-[10px] border-[#ecf7f8] px-8 py-3 rounded-full  text-lg font-semibold\">\n            © 2025 xyz. All Rights Reserved\n          </div>\n        </div>\n    </div>\n  )\n}\n\nexport { FloatingCapsule }\n",
       "type": "registry:ui"
     }
   ],

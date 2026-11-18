@@ -3,7 +3,7 @@
   "name": "button-2",
   "type": "registry:ui",
   "title": "Button",
-  "description": "Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/button-2.tsx",
-      "content": "import * as React from \"react\"\n\nfunction Button2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-2\"\n      className={className}\n      {...props}\n    >\n      <button className=\"relative px-4 py-2 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 bg-white overflow-hidden transition-transform duration-300 ease-in-out hover600 hover hover focus focus2 focus600 focus2\">\n          <div className=\"text-animation\">\n            <span>M</span>\n            <span>e</span>\n            <span>s</span>\n            <span>s</span>\n            <span>a</span>\n            <span>g</span>\n            <span>e</span>\n          </div>\n        </button>\n    </div>\n  )\n}\n\nexport { Button2 }\n",
+      "content": "import * as React from \"react\"\n\nfunction Button2({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-2\"\n      className={className}\n      {...props}\n    >\n      <button className=\"relative px-4 py-2 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 bg-white overflow-hidden transition-transform duration-300 ease-in-out hover:bg-purple-600 hover:border-transparent hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2\">\n          <div className=\"text-animation\">\n            <span>M</span>\n            <span>e</span>\n            <span>s</span>\n            <span>s</span>\n            <span>a</span>\n            <span>g</span>\n            <span>e</span>\n          </div>\n        </button>\n    </div>\n  )\n}\n\nexport { Button2 }\n",
       "type": "registry:ui"
     }
   ],

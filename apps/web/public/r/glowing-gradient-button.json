@@ -3,7 +3,7 @@
   "name": "glowing-gradient-button",
   "type": "registry:ui",
   "title": "Glowing gradient button",
-  "description": "Glowing gradient button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Glowing gradient button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/glowing-gradient-button.tsx",
-      "content": "import * as React from \"react\"\n\nfunction GlowingGradientButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"glowing-gradient-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"container max-w-full\">\r\n          <div className=\"h-screen bg-black flex flex-wrap content-center justify-evenly\">\r\n              <div className=\"relative inline-flex group\">\r\n                  <div\r\n                      className=\"absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg group-hover100 group-hover1 group-hover200 animate-tilt\">\r\n                  </div>\r\n                  <a href=\"#\" title=\"Get quote now\"\r\n                      className=\"relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-purple-900 font-pj focus focus2 focus2 focus900\"\r\n                      role=\"button\"> Code Eating Ants\r\n                  </a>\r\n              </div>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { GlowingGradientButton }\n",
+      "content": "import * as React from \"react\"\n\nfunction GlowingGradientButton({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"glowing-gradient-button\"\n      className={className}\n      {...props}\n    >\n      <div className=\"container max-w-full\">\r\n          <div className=\"h-screen bg-black flex flex-wrap content-center justify-evenly\">\r\n              <div className=\"relative inline-flex group\">\r\n                  <div\r\n                      className=\"absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt\">\r\n                  </div>\r\n                  <a href=\"#\" title=\"Get quote now\"\r\n                      className=\"relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-purple-900 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900\"\r\n                      role=\"button\"> Code Eating Ants\r\n                  </a>\r\n              </div>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { GlowingGradientButton }\n",
       "type": "registry:ui"
     }
   ],

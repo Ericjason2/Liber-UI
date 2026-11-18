@@ -3,7 +3,7 @@
   "name": "call-to-action-cta-with-background-image",
   "type": "registry:ui",
   "title": "Call to Action (CTA with Background Image)",
-  "description": "Call to Action (CTA with Background Image) — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Call to Action (CTA with Background Image) — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/call-to-action-cta-with-background-image.tsx",
-      "content": "import * as React from \"react\"\n\nfunction CallToActionCtaWithBackgroundImage({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"call-to-action-cta-with-background-image\"\n      className={className}\n      {...props}\n    >\n      <body className=\"flex items-center justify-center min-h-screen bg-gray-900\">\n          <div className=\"relative w-full h-full bg-cover bg-center flex items-center justify-center bg-cover bg-center p-8 my-8 dui-bg-fixed\"\n              style=\"background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2400');\">\n              <div\n                  className=\"p-8 bg-gray-900 bg-opacity-50 text-white/75 rounded-xl shadow-lg text-center w-full max-w-full mx-2\">\n                  <h1 className=\"text-4xl font-bold mb-4\">Call to Action (CTA)</h1>\n                  <p className=\"text-lg mb-8\">Jadilah bagian dari komunitas kami dan nikmati manfaat eksklusif.</p>\n                  <a href=\"https://github.com/idugeni\" target=\"_blank\" rel=\"noopener noreferrer\"\n                      className=\"btn btn-neutral btn-wide\">Daftar Sekarang</a>\n              </div>\n          </div>\n      </body>\n    </div>\n  )\n}\n\nexport { CallToActionCtaWithBackgroundImage }\n",
+      "content": "import * as React from \"react\"\n\nfunction CallToActionCtaWithBackgroundImage({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"call-to-action-cta-with-background-image\"\n      className={className}\n      {...props}\n    >\n      <div className=\"relative w-full h-full bg-cover bg-center flex items-center justify-center bg-cover bg-center p-8 my-8 dui-bg-fixed\"\n              style={{ backgroundImage: \"url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2400')\" }}>\n              <div\n                  className=\"p-8 bg-gray-900 bg-opacity-50 text-white/75 rounded-xl shadow-lg text-center w-full max-w-full mx-2\">\n                  <h1 className=\"text-4xl font-bold mb-4\">Call to Action (CTA)</h1>\n                  <p className=\"text-lg mb-8\">Jadilah bagian dari komunitas kami dan nikmati manfaat eksklusif.</p>\n                  <a href=\"https://github.com/idugeni\" target=\"_blank\" rel=\"noopener noreferrer\"\n                      className=\"btn btn-neutral btn-wide\">Daftar Sekarang</a>\n              </div>\n          </div>\n    </div>\n  )\n}\n\nexport { CallToActionCtaWithBackgroundImage }\n",
       "type": "registry:ui"
     }
   ],

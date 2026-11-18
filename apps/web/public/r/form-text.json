@@ -3,7 +3,7 @@
   "name": "form-text",
   "type": "registry:ui",
   "title": "form text",
-  "description": "form text — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "form text — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

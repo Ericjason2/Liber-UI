@@ -3,7 +3,7 @@
   "name": "navigation-bar",
   "type": "registry:ui",
   "title": "Navigation bar",
-  "description": "Navigation bar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Navigation bar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/navigation-bar.tsx",
-      "content": "import * as React from \"react\"\n\nfunction NavigationBar({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"navigation-bar\"\n      className={className}\n      {...props}\n    >\n      <navbar>\n            <div className='w-full py-3 border-b'>\n      \n              <div className='flex justify-between px-20 items-center font-semibold'>\n                <div>\n                  <h1 className=\"text-2xl\">LOGO</h1>\n                </div>\n                <div className='flex xl10 md8  gap-2'>\n                  <a href=\"\">Home</a>\n                  <a href=\"\">Work</a>\n                  <a href=\"\">About</a>\n                  <a href=\"\">Services</a>\n                  <a href=\"\">Testimonial</a>\n                </div>\n                <div>\n                  <button className='py-2 px-6 bg-black text-white rounded-3xl font-semibold'>Contact</button>\n                </div>\n              </div>\n              \n            </div>\n          </navbar>\n    </div>\n  )\n}\n\nexport { NavigationBar }\n",
+      "content": "import * as React from \"react\"\n\nfunction NavigationBar({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"navigation-bar\"\n      className={className}\n      {...props}\n    >\n      <navbar>\n            <div className='w-full py-3 border-b'>\n      \n              <div className='flex justify-between px-20 items-center font-semibold'>\n                <div>\n                  <h1 className=\"text-2xl\">LOGO</h1>\n                </div>\n                <div className='flex xl:gap-10 md:gap-8  gap-2'>\n                  <a href=\"\">Home</a>\n                  <a href=\"\">Work</a>\n                  <a href=\"\">About</a>\n                  <a href=\"\">Services</a>\n                  <a href=\"\">Testimonial</a>\n                </div>\n                <div>\n                  <button className='py-2 px-6 bg-black text-white rounded-3xl font-semibold'>Contact</button>\n                </div>\n              </div>\n              \n            </div>\n          </navbar>\n    </div>\n  )\n}\n\nexport { NavigationBar }\n",
       "type": "registry:ui"
     }
   ],

@@ -3,7 +3,7 @@
   "name": "contact-us-form-template-2",
   "type": "registry:ui",
   "title": "Contact us form template",
-  "description": "Contact us form template — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Contact us form template — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

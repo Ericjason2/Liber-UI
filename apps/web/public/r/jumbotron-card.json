@@ -3,7 +3,7 @@
   "name": "jumbotron-card",
   "type": "registry:ui",
   "title": "Jumbotron card",
-  "description": "Jumbotron card — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
+  "description": "Jumbotron card — High-impact hero section featuring a bold headline, supporting subtitle, and clear calls to action.",
   "author": "Liber UI",
   "categories": [
     "hero"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/jumbotron-card.tsx",
-      "content": "import * as React from \"react\"\n\nfunction JumbotronCard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"jumbotron-card\"\n      className={className}\n      {...props}\n    >\n      <div className=\"w-full flex justify-center mt-16\">\n          <div className=\"bg-gray-800 relative rounded-2xl -mx-4 p-8 space-y-8 max-w-4xl text-center\">\n              <div className=\"space-y-4\">\n                  <h2 className=\"text-white font-heading font-bold text-2xl\">\n                      Title of card\n                  </h2>\n      \n                  <p className=\"text-xl text-white\">\n                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\n                      deserunt mollit anim id est laborum.\n                  </p>\n              </div>\n      \n              <a className=\"inline-flex items-center justify-center font-medium tracking-tight rounded-lg border transition hover105 hover1 focus focus2 focus2 focus h-11 px-4 text-lg text-white shadow focus border-transparent bg-yellow-500 hover400 focus600 focus600\"\n                  href=\"#\">\n                  <span>Check out our plugins →</span>\n              </a>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { JumbotronCard }\n",
+      "content": "import * as React from \"react\"\n\nfunction JumbotronCard({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"jumbotron-card\"\n      className={className}\n      {...props}\n    >\n      <div className=\"w-full flex justify-center mt-16\">\n          <div className=\"bg-gray-800 relative rounded-2xl -mx-4 p-8 space-y-8 max-w-4xl text-center\">\n              <div className=\"space-y-4\">\n                  <h2 className=\"text-white font-heading font-bold text-2xl\">\n                      Title of card\n                  </h2>\n      \n                  <p className=\"text-xl text-white\">\n                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\n                      deserunt mollit anim id est laborum.\n                  </p>\n              </div>\n      \n              <a className=\"inline-flex items-center justify-center font-medium tracking-tight rounded-lg border transition hover:scale-105 hover:-rotate-1 focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset h-11 px-4 text-lg text-white shadow focus:ring-white border-transparent bg-yellow-500 hover:bg-yellow-400 focus:bg-yellow-600 focus:ring-offset-yellow-600\"\n                  href=\"#\">\n                  <span>Check out our plugins →</span>\n              </a>\n          </div>\n      </div>\n    </div>\n  )\n}\n\nexport { JumbotronCard }\n",
       "type": "registry:ui"
     }
   ],

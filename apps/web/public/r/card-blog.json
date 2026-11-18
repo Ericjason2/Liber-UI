@@ -3,7 +3,7 @@
   "name": "card-blog",
   "type": "registry:ui",
   "title": "Card blog",
-  "description": "Card blog — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "Card blog — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"

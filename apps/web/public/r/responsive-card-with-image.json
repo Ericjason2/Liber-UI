@@ -3,7 +3,7 @@
   "name": "responsive-card-with-image",
   "type": "registry:ui",
   "title": "Responsive card with image",
-  "description": "Responsive card with image — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "Responsive card with image — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/responsive-card-with-image.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ResponsiveCardWithImage({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"responsive-card-with-image\"\n      className={className}\n      {...props}\n    >\n      <div className=\"max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md2xl\">\r\n          <div className=\"md\">\r\n              <div className=\"md0\">\r\n                  <img className=\"h-48 w-full object-cover md md48\" src=\"https://loremflickr.com/g/320/240/team\" />\r\n              </div>\r\n              <div className=\"p-8\">\r\n                  <div className=\"uppercase tracking-wide text-sm text-indigo-500 font-semibold\">Company retreats</div>\r\n                  <a href=\"#\" className=\"block mt-1 text-lg leading-tight font-medium text-black hover\">Incredible\r\n                      accommodation for your team\r\n                  </a>\r\n                  <p className=\"mt-2 text-slate-500\">Looking to take your team away on a retreat to enjoy awesome food and take in\r\n                      some sunshine? We have a list of places to do just that.\r\n                  </p>\r\n              </div>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { ResponsiveCardWithImage }\n",
+      "content": "import * as React from \"react\"\n\nfunction ResponsiveCardWithImage({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"responsive-card-with-image\"\n      className={className}\n      {...props}\n    >\n      <div className=\"max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl\">\r\n          <div className=\"md:flex\">\r\n              <div className=\"md:shrink-0\">\r\n                  <img className=\"h-48 w-full object-cover md:h-full md:w-48\" src=\"https://loremflickr.com/g/320/240/team\" />\r\n              </div>\r\n              <div className=\"p-8\">\r\n                  <div className=\"uppercase tracking-wide text-sm text-indigo-500 font-semibold\">Company retreats</div>\r\n                  <a href=\"#\" className=\"block mt-1 text-lg leading-tight font-medium text-black hover:underline\">Incredible\r\n                      accommodation for your team\r\n                  </a>\r\n                  <p className=\"mt-2 text-slate-500\">Looking to take your team away on a retreat to enjoy awesome food and take in\r\n                      some sunshine? We have a list of places to do just that.\r\n                  </p>\r\n              </div>\r\n          </div>\r\n      </div>\n    </div>\n  )\n}\n\nexport { ResponsiveCardWithImage }\n",
       "type": "registry:ui"
     }
   ],

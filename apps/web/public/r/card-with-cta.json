@@ -3,7 +3,7 @@
   "name": "card-with-cta",
   "type": "registry:ui",
   "title": "Greeting Card with CTA",
-  "description": "Greeting Card with CTA — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Greeting Card with CTA — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/card-with-cta.tsx",
-      "content": "import * as React from \"react\"\n\nfunction CardWithCta({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-with-cta\"\n      className={className}\n      {...props}\n    >\n      <div className=\"px-4 md8 py-12 bg-gray-100 rounded-lg shadow-2xl max-w-xl\">\n      \n        <h1 className=\"text-lg mb-4\">\n          Hey Amit<span className=\"mx-2\" id=\"demo\"></span><span className=\"text-xl\">😄</span>,\n          <br />\n          <span className=\"text-4xl font-semibold\">Have you booked your</span>\n          <span className=\"text-4xl font-semibold text-blue-700\">Seat?</span>\n        </h1>\n      \n        <div className=\"flex flex-col justify-center w-full text-center mt-8 gap-6 sm text-lg font-semibold\">\n          <a href=\"https://tailwindflex.com/@amit\"\n            className=\"py-4 w-full sm40 border border-blue-700 rounded-lg hover2xl hover700 shadow-lg\">\n            Yes\n          </a>\n          <a href=\"https://tailwindflex.com\"\n            className=\"bg-blue-600 w-full sm40 py-4 rounded-lg text-white hover700 shadow-lg\">\n            Book Now\n          </a>\n        </div>\n      \n      </div>\n      \n      \n    </div>\n  )\n}\n\nexport { CardWithCta }\n",
+      "content": "import * as React from \"react\"\n\nfunction CardWithCta({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-with-cta\"\n      className={className}\n      {...props}\n    >\n      <div className=\"px-4 md:px-8 py-12 bg-gray-100 rounded-lg shadow-2xl max-w-xl\">\n      \n        <h1 className=\"text-lg mb-4\">\n          Hey Amit<span className=\"mx-2\" id=\"demo\"></span><span className=\"text-xl\">😄</span>,\n          <br />\n          <span className=\"text-4xl font-semibold\">Have you booked your</span>\n          <span className=\"text-4xl font-semibold text-blue-700\">Seat?</span>\n        </h1>\n      \n        <div className=\"flex flex-col justify-center w-full text-center mt-8 gap-6 sm:flex-row text-lg font-semibold\">\n          <a href=\"https://tailwindflex.com/@amit\"\n            className=\"py-4 w-full sm:w-40 border border-blue-700 rounded-lg hover:shadow-2xl hover:text-blue-700 shadow-lg\">\n            Yes\n          </a>\n          <a href=\"https://tailwindflex.com\"\n            className=\"bg-blue-600 w-full sm:w-40 py-4 rounded-lg text-white hover:bg-blue-700 shadow-lg\">\n            Book Now\n          </a>\n        </div>\n      \n      </div>\n    </div>\n  )\n}\n\nexport { CardWithCta }\n",
       "type": "registry:ui"
     }
   ],

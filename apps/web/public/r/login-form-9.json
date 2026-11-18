@@ -3,7 +3,7 @@
   "name": "login-form-9",
   "type": "registry:ui",
   "title": "Login form",
-  "description": "Login form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Login form — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/login-form-9.tsx",
-      "content": "import * as React from \"react\"\n\nfunction LoginForm9({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"login-form-9\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex justify-center items-center h-screen p-10 \">\n        <div className=\"grid md2 grid-cols-1  border rounded-3xl\">\n          <div className=\"flex justify-center items-center p-5\">\n            <form action=\"\">\n              <h1 className=\"text-center mb-10 font-bold text-4xl\">Login</h1>\n              <input type=\"text\" className=\" bg-gray-100 border outline-none rounded-md py-3 w-full px-4 mb-3\" placeholder=\"Email\" />\n              <input type=\"text\" className=\" bg-gray-100 border outline-none rounded-md py-3 w-full px-4 mb-3\" placeholder=\"Email\" />\n              <button type=\"submit\" className=\" bg-yellow-400 hover500 border outline-none rounded-md py-3 w-full px-4 font-semibold text-white\">submit</button>\n            </form>\n          </div>\n          <div className=\"\">\n            <img src=\"https://img.freepik.com/premium-vector/vector-abstract-seamless-pattern-with-stars-blue-background_117177-1008.jpg\" className=\"rounded-3xl\"  alt=\"\" />\n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { LoginForm9 }\n",
+      "content": "import * as React from \"react\"\n\nfunction LoginForm9({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"login-form-9\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex justify-center items-center h-screen p-10 \">\n        <div className=\"grid md:grid-cols-2 grid-cols-1  border rounded-3xl\">\n          <div className=\"flex justify-center items-center p-5\">\n            <form action=\"\">\n              <h1 className=\"text-center mb-10 font-bold text-4xl\">Login</h1>\n              <input type=\"text\" className=\" bg-gray-100 border outline-none rounded-md py-3 w-full px-4 mb-3\" placeholder=\"Email\" />\n              <input type=\"text\" className=\" bg-gray-100 border outline-none rounded-md py-3 w-full px-4 mb-3\" placeholder=\"Email\" />\n              <button type=\"submit\" className=\" bg-yellow-400 hover:bg-yellow-500 border outline-none rounded-md py-3 w-full px-4 font-semibold text-white\">submit</button>\n            </form>\n          </div>\n          <div className=\"\">\n            <img src=\"https://img.freepik.com/premium-vector/vector-abstract-seamless-pattern-with-stars-blue-background_117177-1008.jpg\" className=\"rounded-3xl\"  alt=\"\" />\n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { LoginForm9 }\n",
       "type": "registry:ui"
     }
   ],

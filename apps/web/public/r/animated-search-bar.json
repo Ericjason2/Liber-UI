@@ -3,7 +3,7 @@
   "name": "animated-search-bar",
   "type": "registry:ui",
   "title": "Animated Search bar",
-  "description": "Animated Search bar — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Animated Search bar — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/animated-search-bar.tsx",
-      "content": "import * as React from \"react\"\n\nfunction AnimatedSearchBar({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"animated-search-bar\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex items-center flex-col gap-4 justify-center h-screen bg-gray-300\">\r\n        <h1 className=\"font-semibold \">Animated Search Bar</h1>\r\n      \r\n        <div className=\"flex items-center space-x-2 bg-white border border-gray-300 rounded-full px-4 py-2 transition-all duration-300 focus-within2 focus-within400 shadow-md w-72 focus-within96\">\r\n          <input \r\n            type=\"text\" \r\n            placeholder=\"Search...\" \r\n            className=\"flex-grow bg-transparent outline-none text-gray-700 placeholder-gray-400 transition-all duration-300\"\r\n          />\r\n          <button className=\"text-white bg-blue-500 hover600 transition px-2 py-1 rounded-full focus400\">\r\n            🔍\r\n          </button>\r\n        </div>\r\n      \r\n      </div>\n    </div>\n  )\n}\n\nexport { AnimatedSearchBar }\n",
+      "content": "import * as React from \"react\"\n\nfunction AnimatedSearchBar({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"animated-search-bar\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex items-center flex-col gap-4 justify-center h-screen bg-gray-300\">\r\n        <h1 className=\"font-semibold \">Animated Search Bar</h1>\r\n      \r\n        <div className=\"flex items-center space-x-2 bg-white border border-gray-300 rounded-full px-4 py-2 transition-all duration-300 focus-within:ring-2 focus-within:ring-blue-400 shadow-md w-72 focus-within:w-96\">\r\n          <input \r\n            type=\"text\" \r\n            placeholder=\"Search...\" \r\n            className=\"flex-grow bg-transparent outline-none text-gray-700 placeholder-gray-400 transition-all duration-300\"\r\n          />\r\n          <button className=\"text-white bg-blue-500 hover:bg-blue-600 transition px-2 py-1 rounded-full focus:bg-gray-400\">\r\n            🔍\r\n          </button>\r\n        </div>\r\n      \r\n      </div>\n    </div>\n  )\n}\n\nexport { AnimatedSearchBar }\n",
       "type": "registry:ui"
     }
   ],

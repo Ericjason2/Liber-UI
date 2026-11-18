@@ -3,7 +3,7 @@
   "name": "buttons-with-shadow",
   "type": "registry:ui",
   "title": "Buttons with shadow",
-  "description": "Buttons with shadow — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Buttons with shadow — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/buttons-with-shadow.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ButtonsWithShadow({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"buttons-with-shadow\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex flex-col items-center justify-center gap-5 mt-6 md\"><a\n              className=\"inline-block w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm bg-gradient-to-r from-blue-600 to-blue-500 hover dark900 shadow-blue-200 hover2xl hover400 hover \"\n              href=\"\">Browse All Examples\n          </a>\n          <a className=\"inline-block w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all bg-gray-700 dark dark800 rounded-md shadow-xl sm hover900 hover shadow-neutral-300 dark700 hover2xl hover400 hover\"\n              href=\"\">Seach Examples\n          </a>\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonsWithShadow }\n",
+      "content": "import * as React from \"react\"\n\nfunction ButtonsWithShadow({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"buttons-with-shadow\"\n      className={className}\n      {...props}\n    >\n      <div className=\"flex flex-col items-center justify-center gap-5 mt-6 md:flex-row\"><a\n              className=\"inline-block w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:bg-gradient-to-b dark:shadow-blue-900 shadow-blue-200 hover:shadow-2xl hover:shadow-blue-400 hover:-tranneutral-y-px \"\n              href=\"\">Browse All Examples\n          </a>\n          <a className=\"inline-block w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all bg-gray-700 dark:bg-white dark:text-gray-800 rounded-md shadow-xl sm:w-auto hover:bg-gray-900 hover:text-white shadow-neutral-300 dark:shadow-neutral-700 hover:shadow-2xl hover:shadow-neutral-400 hover:-tranneutral-y-px\"\n              href=\"\">Seach Examples\n          </a>\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonsWithShadow }\n",
       "type": "registry:ui"
     }
   ],

@@ -3,7 +3,7 @@
   "name": "user-profile-card-with-social-icons",
   "type": "registry:ui",
   "title": "User profile card with social icons",
-  "description": "User profile card with social icons — Carte de profil utilisateur avec avatar, informations personnelles, statistiques et liens sociaux.",
+  "description": "User profile card with social icons — User profile card or bio section presenting avatars, user credentials, badges, and social statistics.",
   "author": "Liber UI",
   "categories": [
     "profile"

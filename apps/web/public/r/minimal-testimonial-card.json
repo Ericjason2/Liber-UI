@@ -3,7 +3,7 @@
   "name": "minimal-testimonial-card",
   "type": "registry:ui",
   "title": "Minimal Testimonial Card",
-  "description": "Minimal Testimonial Card — Carte d'affichage de contenu élégante avec image, en-tête, description et actions interactives Tailwind CSS.",
+  "description": "Minimal Testimonial Card — Polished content card component featuring media preview, structured header, description, and interactive Tailwind CSS actions.",
   "author": "Liber UI",
   "categories": [
     "card"

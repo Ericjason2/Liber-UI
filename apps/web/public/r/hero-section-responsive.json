@@ -3,7 +3,7 @@
   "name": "hero-section-responsive",
   "type": "registry:ui",
   "title": "Hero section responsive",
-  "description": "Hero section responsive — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
+  "description": "Hero section responsive — High-impact hero section featuring a bold headline, supporting subtitle, and clear calls to action.",
   "author": "Liber UI",
   "categories": [
     "hero"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/hero-section-responsive.tsx",
-      "content": "import * as React from \"react\"\n\nfunction HeroSectionResponsive({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"hero-section-responsive\"\n      className={className}\n      {...props}\n    >\n      \r\n      <section className=\"px-3 py-5 bg-neutral-100 lg10\">\r\n          <div className=\"grid lg2 items-center justify-items-center gap-5\">\r\n              <div className=\"order-2 lg1 flex flex-col justify-center items-center\">\r\n                  <p className=\"text-4xl font-bold md7xl text-orange-600\">25% OFF</p>\r\n                  <p className=\"text-4xl font-bold md7xl\">SUMMER SALE</p>\r\n                  <p className=\"mt-2 text-sm md\">For limited time only!</p>\r\n                  <button className=\"text-lg md2xl bg-black text-white py-2 px-5 mt-10 hover800\">Shop Now</button>\r\n              </div>\r\n              <div className=\"order-1 lg2\">\r\n                  <img className=\"h-80 w-80 object-cover lg[500px] lg[500px]\" src=\"https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80\" alt=\"\" />\r\n              </div>\r\n          </div>\r\n      </section>\n    </div>\n  )\n}\n\nexport { HeroSectionResponsive }\n",
+      "content": "import * as React from \"react\"\n\nfunction HeroSectionResponsive({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"hero-section-responsive\"\n      className={className}\n      {...props}\n    >\n      \r\n      <section className=\"px-3 py-5 bg-neutral-100 lg:py-10\">\r\n          <div className=\"grid lg:grid-cols-2 items-center justify-items-center gap-5\">\r\n              <div className=\"order-2 lg:order-1 flex flex-col justify-center items-center\">\r\n                  <p className=\"text-4xl font-bold md:text-7xl text-orange-600\">25% OFF</p>\r\n                  <p className=\"text-4xl font-bold md:text-7xl\">SUMMER SALE</p>\r\n                  <p className=\"mt-2 text-sm md:text-lg\">For limited time only!</p>\r\n                  <button className=\"text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-zinc-800\">Shop Now</button>\r\n              </div>\r\n              <div className=\"order-1 lg:order-2\">\r\n                  <img className=\"h-80 w-80 object-cover lg:w-[500px] lg:h-[500px]\" src=\"https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80\" alt=\"\" />\r\n              </div>\r\n          </div>\r\n      </section>\n    </div>\n  )\n}\n\nexport { HeroSectionResponsive }\n",
       "type": "registry:ui"
     }
   ],

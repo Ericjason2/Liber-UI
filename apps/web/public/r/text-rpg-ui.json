@@ -3,7 +3,7 @@
   "name": "text-rpg-ui",
   "type": "registry:ui",
   "title": "Text Rpg UI",
-  "description": "Text Rpg UI — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Text Rpg UI — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

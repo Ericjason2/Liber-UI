@@ -3,7 +3,7 @@
   "name": "section-heading",
   "type": "registry:ui",
   "title": "Section Heading",
-  "description": "Section Heading — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Section Heading — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

@@ -3,7 +3,7 @@
   "name": "button",
   "type": "registry:ui",
   "title": "Button",
-  "description": "Button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/button.tsx",
-      "content": "import * as React from \"react\"\n\nfunction Button({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button\"\n      className={className}\n      {...props}\n    >\n      <button className=\"px-10 py-4 rounded-full cursor-pointer border-0 bg-white shadow-sm uppercase text-sm tracking-wider transition-all duration-500 ease-in-out hover hover[#5d18dc] hover hover[0_7px_29px_0_rgba(93,24,220,0.5)] active active[#5d18dc] active active active2.5 active100\">\n          Button Text\n      </button>\n    </div>\n  )\n}\n\nexport { Button }\n",
+      "content": "import * as React from \"react\"\n\nfunction Button({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button\"\n      className={className}\n      {...props}\n    >\n      <button className=\"px-10 py-4 rounded-full cursor-pointer border-0 bg-white shadow-sm uppercase text-sm tracking-wider transition-all duration-500 ease-in-out hover:tracking-widest hover:bg-[#5d18dc] hover:text-white hover:shadow-[0_7px_29px_0_rgba(93,24,220,0.5)] active:tracking-widest active:bg-[#5d18dc] active:text-white active:shadow-none active:translate-y-2.5 active:duration-100\">\n          Button Text\n      </button>\n    </div>\n  )\n}\n\nexport { Button }\n",
       "type": "registry:ui"
     }
   ],

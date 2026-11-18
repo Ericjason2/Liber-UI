@@ -3,7 +3,7 @@
   "name": "responsive-contact-section-using-tailwind-css",
   "type": "registry:ui",
   "title": "Responsive Contact Section Using Tailwind CSS",
-  "description": "Responsive Contact Section Using Tailwind CSS — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Responsive Contact Section Using Tailwind CSS — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

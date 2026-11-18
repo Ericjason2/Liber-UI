@@ -3,7 +3,7 @@
   "name": "pixel-blast",
   "type": "registry:ui",
   "title": "Pixel Blast",
-  "description": "Pixel Blast — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Pixel Blast — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/pixel-blast.tsx",
-      "content": "import * as React from \"react\"\n\nfunction PixelBlast({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"pixel-blast\"\n      className={className}\n      dangerouslySetInnerHTML={{ __html: \"<!DOCTYPE html>\\n<html lang=\\\"es\\\">\\n<head>\\n<meta charset=\\\"UTF-8\\\">\\n<meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n<title>PixelBlast Effect</title>\\n<style>\\n* {\\n  margin: 0;\\n  padding: 0;\\n  box-sizing: border-box;\\n}\\nbody {\\n  width: 100vw;\\n  height: 100vh;\\n  overflow: hidden;\\n  background: #000;\\n}\\n#container {\\n  width: 100%;\\n  height: 100%;\\n  position: relative;\\n  overflow: hidden;\\n}\\n</style>\\n</head>\\n<body>\\n\\n<div id=\\\"container\\\"></div>\\n\\n\\n\\n\\n\\n</body>\\n</html>\" }}\n      {...props}\n    />\n  )\n}\n\nexport { PixelBlast }\n",
+      "content": "import * as React from \"react\"\n\nfunction PixelBlast({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"pixel-blast\"\n      className={className}\n      {...props}\n    >\n      <style>{\"* {\\n  margin: 0;\\n  padding: 0;\\n  box-sizing: border-box;\\n}\\nbody {\\n  width: 100vw;\\n  height: 100vh;\\n  overflow: hidden;\\n  background: #000;\\n}\\n#container {\\n  width: 100%;\\n  height: 100%;\\n  position: relative;\\n  overflow: hidden;\\n}\"}</style>\n      <div id=\"container\"></div>\n    </div>\n  )\n}\n\nexport { PixelBlast }\n",
       "type": "registry:ui"
     }
   ],

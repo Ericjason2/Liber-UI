@@ -3,7 +3,7 @@
   "name": "button-group-7",
   "type": "registry:ui",
   "title": "Button group",
-  "description": "Button group — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Button group — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/button-group-7.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ButtonGroup7({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-group-7\"\n      className={className}\n      {...props}\n    >\n      <div className=\"container mx-auto flex justify-center p-3\">\r\n          <a className=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-yellow py-2 px-2  hover300 focus bg-yellow\"\r\n              href=\"\">👪 Everyone\r\n          </a>\r\n          <a className=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-blue-300 py-2 px-2 ml-5 hover300 focus \"\r\n              href=\"\">👍 Following\r\n          </a>\r\n          <a className=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-purple-300 py-2 px-2 ml-5 hover300 focus \"\r\n              href=\"\">💰 For sale\r\n          </a>\r\n          <a className=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-emerald-300 py-2 px-2 ml-5 hover300 focus \"\r\n              href=\"\">🔥 Leaderboard\r\n          </a>\r\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonGroup7 }\n",
+      "content": "import * as React from \"react\"\n\nfunction ButtonGroup7({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-group-7\"\n      className={className}\n      {...props}\n    >\n      <div className=\"container mx-auto flex justify-center p-3\">\r\n          <a className=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-yellow py-2 px-2  hover:bg-yellow-300 focus:outline-none bg-yellow\"\r\n              href=\"\">👪 Everyone\r\n          </a>\r\n          <a className=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-blue-300 py-2 px-2 ml-5 hover:bg-blue-300 focus:outline-none \"\r\n              href=\"\">👍 Following\r\n          </a>\r\n          <a className=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-purple-300 py-2 px-2 ml-5 hover:bg-purple-300 focus:outline-none \"\r\n              href=\"\">💰 For sale\r\n          </a>\r\n          <a className=\"bg-bg font-bold text-center text-sm border-2 border-black rounded-md shadow-emerald-300 py-2 px-2 ml-5 hover:bg-emerald-300 focus:outline-none \"\r\n              href=\"\">🔥 Leaderboard\r\n          </a>\r\n      </div>\n    </div>\n  )\n}\n\nexport { ButtonGroup7 }\n",
       "type": "registry:ui"
     }
   ],

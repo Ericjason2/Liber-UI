@@ -3,7 +3,7 @@
   "name": "back-to-top-button",
   "type": "registry:ui",
   "title": "Back to top button",
-  "description": "Back to top button — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Back to top button — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"

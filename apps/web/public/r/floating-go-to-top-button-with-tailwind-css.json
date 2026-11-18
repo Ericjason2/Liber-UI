@@ -3,7 +3,7 @@
   "name": "floating-go-to-top-button-with-tailwind-css",
   "type": "registry:ui",
   "title": "Floating &quot;Go to Top&quot; Button with Tailwind CSS",
-  "description": "Floating &quot;Go to Top&quot; Button with Tailwind CSS — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Floating &quot;Go to Top&quot; Button with Tailwind CSS — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/floating-go-to-top-button-with-tailwind-css.tsx",
-      "content": "import * as React from \"react\"\n\nfunction FloatingGoToTopButtonWithTailwindCss({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"floating-go-to-top-button-with-tailwind-css\"\n      className={className}\n      dangerouslySetInnerHTML={{ __html: \"<head>\\n<link rel=\\\"stylesheet\\\" href=\\\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css\\\" integrity=\\\"sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==\\\" crossorigin=\\\"anonymous\\\" referrerpolicy=\\\"no-referrer\\\" />\\n</head>\\n\\n<body class=\\\"relative h-[2000px] bg-slate-100 dark:bg-slate-900\\\">\\n  <h1 class=\\\"text-6xl font-extrabold text-center pt-40 dark:text-slate-100 text-slate-900\\\">Scroll Down ⬇ To see the Button</h1>\\n  <button id=\\\"goTopBtn\\\"\\n    class=\\\"fixed bottom-20 right-8 z-50 w-16 h-16 hidden rounded-full bg-slate-950 dark:bg-slate-500 p-4 text-white shadow-lg transition-all duration-300 hover:bg-slate-800 hover:scale-110  hover:shadow-xl active:scale-90\\\"\\n   >\\n    <!--Use Your Icon Here--->\\n     <i class=\\\"fas fa-chevron-up text-xl\\\"></i>\\n  </button>\\n\\n  \" }}\n      {...props}\n    />\n  )\n}\n\nexport { FloatingGoToTopButtonWithTailwindCss }\n",
+      "content": "import * as React from \"react\"\n\nfunction FloatingGoToTopButtonWithTailwindCss({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"floating-go-to-top-button-with-tailwind-css\"\n      className={className}\n      {...props}\n    >\n      <h1 className=\"text-6xl font-extrabold text-center pt-40 dark:text-slate-100 text-slate-900\">Scroll Down ⬇ To see the Button</h1>\n        <button id=\"goTopBtn\"\n          className=\"fixed bottom-20 right-8 z-50 w-16 h-16 hidden rounded-full bg-slate-950 dark:bg-slate-500 p-4 text-white shadow-lg transition-all duration-300 hover:bg-slate-800 hover:scale-110  hover:shadow-xl active:scale-90\"\n         >\n          \n           <i className=\"fas fa-chevron-up text-xl\"></i>\n        </button>\n    </div>\n  )\n}\n\nexport { FloatingGoToTopButtonWithTailwindCss }\n",
       "type": "registry:ui"
     }
   ],

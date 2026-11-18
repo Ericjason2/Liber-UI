@@ -3,7 +3,7 @@
   "name": "contact-us-form-3",
   "type": "registry:ui",
   "title": "Contact us Form",
-  "description": "Contact us Form — Formulaire interactif et accessible avec validation visuelle des champs, états de focus et typographie claire.",
+  "description": "Contact us Form — Comprehensive form layout with input fields, visual validation, and integrated action triggers.",
   "author": "Liber UI",
   "categories": [
     "form"

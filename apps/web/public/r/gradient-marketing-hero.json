@@ -3,7 +3,7 @@
   "name": "gradient-marketing-hero",
   "type": "registry:ui",
   "title": "Gradient Marketing Hero",
-  "description": "Gradient Marketing Hero — Section Hero à fort impact visuel avec titre accrocheur, boutons d'action et disposition moderne Tailwind CSS.",
+  "description": "Gradient Marketing Hero — High-impact hero section featuring a bold headline, supporting subtitle, and clear calls to action.",
   "author": "Liber UI",
   "categories": [
     "hero"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/gradient-marketing-hero.tsx",
-      "content": "import * as React from \"react\"\n\nfunction GradientMarketingHero({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"gradient-marketing-hero\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-gradient-to-r from-purple-600 to-indigo-600 dark700 dark700 py-20\">\n        <div className=\"container mx-auto\">\n          <div className=\"flex items-center justify-center\">\n            <div className=\"text-center text-white\">\n              <h1 className=\"mb-12 font-serif text-5xl font-bold\">\n                Supercharge <br className=\"md\" />\n                Your Marketing\n              </h1>\n              <p className=\"mb-14 text-2xl font- tracking-wide\">\n                Boost your brand awareness <br className=\"sm\" />\n                and reach new customers.\n              </p>\n              <a href=\"#\"\n                className=\"rounded-md bg-white px-6 py-4 text-lg font-semibold text-indigo-600 shadow-sm hover200 focus-visible focus-visible2 focus-visible2 focus-visible/80\">Get\n                Started</a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { GradientMarketingHero }\n",
+      "content": "import * as React from \"react\"\n\nfunction GradientMarketingHero({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"gradient-marketing-hero\"\n      className={className}\n      {...props}\n    >\n      <div className=\"bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-700 dark:to-indigo-700 py-20\">\n        <div className=\"container mx-auto\">\n          <div className=\"flex items-center justify-center\">\n            <div className=\"text-center text-white\">\n              <h1 className=\"mb-12 font-serif text-5xl font-bold\">\n                Supercharge <br className=\"md:hidden\" />\n                Your Marketing\n              </h1>\n              <p className=\"mb-14 text-2xl font- tracking-wide\">\n                Boost your brand awareness <br className=\"sm:hidden\" />\n                and reach new customers.\n              </p>\n              <a href=\"#\"\n                className=\"rounded-md bg-white px-6 py-4 text-lg font-semibold text-indigo-600 shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/80\">Get\n                Started</a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport { GradientMarketingHero }\n",
       "type": "registry:ui"
     }
   ],

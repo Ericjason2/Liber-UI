@@ -3,7 +3,7 @@
   "name": "button-with-bouncing-animation",
   "type": "registry:ui",
   "title": "Button with Bouncing Animation",
-  "description": "Button with Bouncing Animation — Composant interactif d'appel à l'action avec transitions fluides, variantes d'état et classes Tailwind optimisées.",
+  "description": "Button with Bouncing Animation — Interactive call-to-action component featuring smooth transitions, state variants, and clean Tailwind classes.",
   "author": "Liber UI",
   "categories": [
     "button"
@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "components/ui/button-with-bouncing-animation.tsx",
-      "content": "import * as React from \"react\"\n\nfunction ButtonWithBouncingAnimation({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-with-bouncing-animation\"\n      className={className}\n      {...props}\n    >\n      <a href=\"\"\n          className=\"animate-bounce focus hover inline-flex text-md font-medium bg-indigo-900 mt-3 px-4 py-2 rounded-lg tracking-wide text-white\">\n          <span className=\"ml-2\">Bouncing Button 🏀</span>\n      </a>\n    </div>\n  )\n}\n\nexport { ButtonWithBouncingAnimation }\n",
+      "content": "import * as React from \"react\"\n\nfunction ButtonWithBouncingAnimation({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"button-with-bouncing-animation\"\n      className={className}\n      {...props}\n    >\n      <a href=\"\"\n          className=\"animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium bg-indigo-900 mt-3 px-4 py-2 rounded-lg tracking-wide text-white\">\n          <span className=\"ml-2\">Bouncing Button 🏀</span>\n      </a>\n    </div>\n  )\n}\n\nexport { ButtonWithBouncingAnimation }\n",
       "type": "registry:ui"
     }
   ],

@@ -3,7 +3,7 @@
   "name": "navbar-2",
   "type": "registry:ui",
   "title": "Navbar",
-  "description": "Navbar — Barre de navigation réactive et accessible avec logo, liens, menu déroulant et support pour écran mobile.",
+  "description": "Navbar — Responsive and accessible navigation bar with logo branding, quick links, dropdowns, and mobile menu support.",
   "author": "Liber UI",
   "categories": [
     "navbar"

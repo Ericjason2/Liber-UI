@@ -3,7 +3,7 @@
   "name": "galerie-de-produits-gis-et-affiche-tailwind",
   "type": "registry:ui",
   "title": "Galerie de produits Gis et Affiche Tailwind",
-  "description": "Galerie de produits Gis et Affiche Tailwind — Disposition en grille responsive adaptée aux galeries, fonctionnalités et présentations de projets.",
+  "description": "Galerie de produits Gis et Affiche Tailwind — Responsive grid layout designed for galleries, feature showcases, and project portfolios.",
   "author": "Liber UI",
   "categories": [
     "grid"
